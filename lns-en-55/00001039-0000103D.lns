@@ -1,0 +1,55 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=202, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=235, target=)
+; Links:
+;    0: TWdLink(count=202, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<EVENT VALUE="MOTION\r\n789\r\nリファレンス表題\r\n11\r\n255\r\n1000\r\nNORMAL\r\nPASS">
+{MOTION "456" "リファレンス詳細テキスト" "11" "255" "1000" "NORMAL" "WAIT"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\超炭酸ボンバー川.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MOTION "789" "リファレンスボード" "3" "-900" "500" "INC" "WAIT"}
+{DELETECG "リファレンス表題,リファレンスボード,リファレンス表題テキスト" "1" "0" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\カウボーイ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "リファレンス専用\超炭酸ボイス\0_hey.ogg" "VOICE" "NORMAL" "1000" "0"}
+<TXSPN>―Hey, you bastards! The day has finally come when a human flies through the sky on a convenience-store drink!
+{PAUSE ""}
+　
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\超炭酸.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "リファレンス専用\超炭酸ボイス\1_there.ogg" "VOICE" "NORMAL" "1000" "0"}
+What I've got here is Super Soda Bomber, which just went on sale in Japan the other day!
+{PAUSE ""}
+　
+{PLAYSND "リファレンス専用\超炭酸ボイス\2_just.ogg" "VOICE" "NORMAL" "1000" "0"}
+<BR>
+The bottle can alone weighs a whole 1 kilogram―amazing stuff!<PG>
+{PLAYSND "リファレンス専用\超炭酸ボイス\3_well.ogg" "VOICE" "NORMAL" "1000" "0"}
+Okay, first let's test how far one bottle flies!
+{PAUSE ""}
+　
+{PLAYSND "リファレンス専用\超炭酸ボイス\4_the.ogg" "VOICE" "NORMAL" "1000" "0"}
+The method is the same as a bottle rocket! Except we don't pump in any air, we just shake the bottle.
+{PAUSE ""}
+　
+{PLAYSND "リファレンス専用\超炭酸ボイス\5.ogg" "VOICE" "NORMAL" "1000" "0"}
+Set it on the bottle-rocket stand, press this switch, and the cap opens automatically.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MOTION "789" "000" "4" "-290" "5000" "DEC" "WAIT"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

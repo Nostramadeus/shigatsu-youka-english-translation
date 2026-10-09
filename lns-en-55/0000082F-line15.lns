@@ -1,0 +1,28 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=9, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=65280, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=24, target=)
+; Links:
+;    0: TWdLink(count=11, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<BR>
+<BR>
+<TXSPN>"Hey, <STYLE ID="1">Daddy</STYLE>, it's dangerous."<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\罅（ひび）\桜3.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供血突き飛ばす.gal" "NORMAL" "#1" "600" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000,人物1" "QUAKE" "1" "5" "5" "0" "30"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "WAIT" "1000" "0"}
+{QUAKESTOP "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供血.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "SE" "1000" "100" "PASS"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

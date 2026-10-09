@@ -1,0 +1,224 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=360, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=148, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=166, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=4, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=11, unk2=16755455, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=11, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=876, target=)
+; Links:
+;    0: TWdLink(count=708, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{MESON "500"}
+<TXSPN>と、再び<STYLE ID="1">なつみ</STYLE>の部屋のドアが開く。
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「どうした？　トイレか？」</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">「あの、これ、押入れの裏に貼り付けられてたんだけど……」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「押入れの裏？」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">「うん、荷物入れようとしたら、見つけたの」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">なつみ</STYLE>が見つけたもの――それは……。<PG>
+{MESOFF "500"}
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+それは、桃色の液体が入った注射器だった。
+{PAUSE ""}
+<BR>
+これがあったのは、<STYLE ID="1">なつみ</STYLE>の部屋の押し入れ。
+{PAUSE ""}
+<BR>
+つまり、<STYLE ID="3">私のお母さん</STYLE>が使っていた押入れだ。<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">「何なんだろ、これ……」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「見るからに怪しいけど、事件に関係あるのか……？」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">「だったら家宅捜索のときに</STYLE><STYLE ID="4">伊勢さん</STYLE><STYLE ID="1">が持っていってるはずだよね？」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「だよな。押入れの裏と言っても、警察が見落とすとは思えないし……」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">「何かラベルが貼ってるよ？」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「えっと……。</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">『ド</STYLE>
+{PAUSE ""}
+<STYLE ID="2">ロ</STYLE>
+{PAUSE ""}
+<STYLE ID="2">ー</STYLE>
+{PAUSE ""}
+<STYLE ID="2">ガ』？」</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "環境音\アポカリプティック.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "5000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">「何この音……！」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「すぐ近くだ……！」</STYLE>
+{PAUSE ""}
+<BR>
+その時聞こえたのは、鼓膜を破かんばかりに響き渡る怪音。
+{PAUSE ""}
+<BR>
+巨大な鉄の扉がゆっくりと開くかのような、不快な音。<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">「</STYLE><STYLE ID="1">なつみ</STYLE><STYLE ID="2">、大丈夫か！？」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">「うん……。でも、この音って……」</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "1000" "PASS"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+その時、インターホン。
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+既に0時を回った夜中の来訪客。
+{PAUSE ""}
+<BR>
+<STYLE ID="1">「</STYLE><STYLE ID="2">春花</STYLE><STYLE ID="1">……」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">「大丈夫だ、きっと今の音で、どこかの部屋の人が飛び出してきただけだ」</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\新村家ドア閉.gal" "NORMAL" "#1" "R" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+この夜中の訪問客と言うのも不気味だ。
+{PAUSE ""}
+<BR>
+開ける前に外の確認は不可欠。<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループドアスコープ背景.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">「あれ……？」</STYLE>
+{PAUSE ""}
+<BR>
+ドアスコープをのぞいても、誰もいない。いたずらか……？<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\ドア開ける前.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+一応、開けてみるか。チェーンは外さずにな。<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\ドア開けた.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+{MESON "500"}
+と、突然外から強風が吹き込んでくる。<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+<STYLE ID="5">「</STYLE><STYLE ID="6">春花</STYLE><STYLE ID="5">！　開けちゃダメ！」</STYLE>
+{PAUSE ""}
+<BR>
+何だ、今の<STYLE ID="1">なつみ</STYLE>の発言は。
+{PAUSE ""}
+<BR>
+まさか、危険予知……？
+{PAUSE ""}
+<BR>
+そんなバカな、もう桜なんて咲いていない。<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\花びら.gal" "NORMAL" "#1" "600" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+そんな常識をあざ笑うかのように、一片の桜の花びらが、風に乗って入り込んでくる。<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\栄一郎白装束.gal" "NORMAL" "#1" "960" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\手直し・追加\ドア開けた.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+ドアの向こうに、人の気配。
+{PAUSE ""}
+<BR>
+誰？　誰がいるの？<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\イラスト\明徴編\過去へ馳せる夢新ルート2.gal" "NORMAL" "#1" "R" "540" "200" "1" "0" "0" "0" "" "0" "0" "0" "0" ""}
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n0\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n5000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n123\r\n111\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n255\r\n2000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7"><TXSPS>「やあ</STYLE><STYLE ID="2">春花</STYLE><STYLE ID="7">、久しぶりだね」</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPN>「お</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">と</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">う</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">さ</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">ん？」</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "111" "グラフィック\イラスト\明徴編\過去へ馳せる夢新ルート.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,000" "1" "100" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000,人物1,111" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\明徴編完.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

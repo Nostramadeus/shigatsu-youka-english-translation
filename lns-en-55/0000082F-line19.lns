@@ -1,0 +1,86 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=306, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=28, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=13, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=18, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=8, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=435, target=)
+; Links:
+;    0: TWdLink(count=379, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>Suddenly, <STYLE ID="1">Natsumi</STYLE> shoved me hard in the chest.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\kan_ge_kieda_oru02.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\落ちた枝.gal" "NORMAL" "#1" "C" "-500" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n300\r\nNORMAL\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+{MOTION "789" "アイテム1" "4" "540" "0" "NORMAL" "WAIT"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\落ちた枝.gal" "NORMAL" "#1" "C" "B" "100" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+At that instant, a big tree branch came falling down.
+{PAUSE ""}
+<BR>
+Into the gap between me and <STYLE ID="1">Natsumi</STYLE>, barely 30 cm wide.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">... What's gotten into </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+This was the branch <STYLE ID="3">Eiichiro</STYLE> had climbed.
+{PAUSE ""}
+<BR>
+It must have broken just now, unable to bear <STYLE ID="3">Eiichiro</STYLE>'s weight.<PG>
+{PLAYSND "環境音\救急車.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "800" "5000" "PASS"}
+Which meant that, by rights, <STYLE ID="3">Eiichiro</STYLE> should have landed right where <STYLE ID="1">Natsumi</STYLE> was.
+{PAUSE ""}
+<BR>
+And yet <STYLE ID="3">Eiichiro</STYLE> had landed in a slightly different spot.<PG>
+<STYLE ID="3">Eiichiro</STYLE>, you twisted yourself to save <STYLE ID="1">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+And <STYLE ID="1">Natsumi</STYLE>... what on earth happened to <STYLE ID="1">you</STYLE>?
+{PAUSE ""}
+<BR>
+Did she read the situation and decide? Could 4-year-old <STYLE ID="1">Natsumi</STYLE> do something like that?<PG>
+{MESOFF "500"}
+{STOPSND "SE2" "500" "PASS"}
+{CHANGECG "000" "グラフィック\背景\罅（ひび）\救急車.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサー横顔.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Mifuyu-san</STYLE> didn't seem to understand the situation either.
+{PAUSE ""}
+<BR>
+No, she probably understood it, but her mind couldn't keep up.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Mifuyu-san</STYLE> and I got into the ambulance with <STYLE ID="3">Eiichiro</STYLE>, who no longer moved.
+{PAUSE ""}
+<BR>
+We had <STYLE ID="5">Akane</STYLE> stay at the park for <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="6">Haruka-chan</STYLE> and come to the hospital by taxi.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供血.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "0" "0" "PASS"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

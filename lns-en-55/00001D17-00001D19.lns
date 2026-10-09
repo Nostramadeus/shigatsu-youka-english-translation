@@ -1,0 +1,145 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=110, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=103, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=40, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=24, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=157, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=100, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=636, target=)
+; Links:
+;    0: TWdLink(count=536, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\茅萱子供バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Mm... Geez, when grown-ups drink, they really make such a racket. 
+{PAUSE ""}
+<STYLE ID="1">Kana</STYLE> will wake up."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I wonder if sake tastes good..."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... But if it makes me like that, I will never, ever drink sake!"<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="2">Haruka-chan</STYLE><STYLE ID="3">! Here, your New Year's money!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Oh my, </STYLE><STYLE ID="3">Kotaro-san</STYLE><STYLE ID="4">, you just gave </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="4"> her New Year's money a moment ago."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hm?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Hmm? Did I?</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="3">　Did I, </STYLE><STYLE ID="5">Sakura</STYLE><STYLE ID="3">?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "人物1" "WAVE" "1" "15" "0" "0" "2000"}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"Ahahaha!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Give it, give it!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Ahahaha!"</STYLE>
+{PLAYSND "BGM死月編\天然ボケにご用心.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\エデン\茅萱子供バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>"Mm... <STYLE ID="5">Mom</STYLE>, really... 
+{PAUSE ""}
+Normally she is so ladylike, but whenever she drinks, she always gets like this."<PG>
+<STYLE ID="5"><TXSPS>"By the way, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="5">!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Did you learn that thing?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPN>"That thing... an impression of </STYLE><STYLE ID="6">Grandma</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ手.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"Haha! No way!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Forget that </STYLE><STYLE ID="6">cosplaying old hag</STYLE><STYLE ID="5">, forget her!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Come on, the Arata children's song, 'The Princess Song'!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6"><TXSPN>"</STYLE><STYLE ID="5">Sakura</STYLE><STYLE ID="6">, who's a cosplaying old hag?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"Oh my! Speak of the </STYLE><STYLE ID="6">cosplaying old hag</STYLE><STYLE ID="5">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6"><TXSPN>"Honestly, </STYLE><STYLE ID="5">Sakura</STYLE><STYLE ID="6"> and her drinking... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Haruka</STYLE><STYLE ID="6">, did you learn The Princess Song?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah! I learned it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Good girl!</STYLE>
+{PAUSE ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="6">　Everyone! </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="6"> says she's learned The Princess Song!"</STYLE><PG>
+<STYLE ID="2">"Huh? I have to sing it?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ手.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5"><TXSPS>"Of course you do! A song you learned and never sing is a treasure gone to waste!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Come on, come on, step up front!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "2000" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{MESON "500"}
+<STYLE ID="2"><TXSPN>"U-um, okay then... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">Haruka Niimura will now sing The Princess Song!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "リファレンス専用\SE\拍手複数人.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESOFF "500"}
+<STYLE ID="2">"Phew... Here goes."</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\SE\手拍子.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "600" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYMOVIE "雪.wmv" "343" "C" "C" "REPEAT" "FALSE" "200" "0"}
+{CREATECG "000" "グラフィック\背景\女神\集落全景夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n798\r\n111\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n465\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

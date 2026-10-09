@@ -1,0 +1,513 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2575, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1047, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=490, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めかけ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いたいけ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=3, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみし, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちゅうぼう, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てんしんらんまん, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=20, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=40, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しか, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あわ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=20, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のり, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なら, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あふ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4558, target=)
+; Links:
+;    0: TWdLink(count=4221, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Ohh my, welcoooome, <STYLE ID="1">Dai-chan</STYLE>."<PG>
+{MESOFF "500"}
+{PLAYSND "My_life_Without_Your_Love.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\バース\そばや中.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Hello, it's been a while."</STYLE>
+{PAUSE ""}
+<BR>
+A doddering old woman greets us with a beaming smile.
+{PAUSE ""}
+<BR>
+There are no customers in the shop, but it's filled with the smell of delicious food.<PG>
+"Ohh my, <STYLE ID="1">Dai-chan</STYLE>, is <STYLE ID="2">that</STYLE> your girlfriend?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚きバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"W-w-w-wait! No, no, no, no! I'm a police officer!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Taking a young girl like this as a </STYLE><STYLE ID="3" RUBY="めかけ">mistress</STYLE><STYLE ID="1">―absolutely unacceptable!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　In the first place, laying a hand on an </STYLE><STYLE ID="4" RUBY="いたいけ">innocent</STYLE><STYLE ID="1"> young girl is something that must never happen, even for a police officer!"</STYLE>
+{PAUSE ""}
+<BR>
+The girlfriend theory has been denied with all his might.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san's</STYLE> looks are my type, so I feel a little lonely about that.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">This girl</STYLE><STYLE ID="1"> is... well, it's like this. She's a distant relative of mine, and we happened to run into each other in </STYLE><STYLE ID="5" RUBY="みなかみし">Minakami City</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So I'm giving her a ride back to Motoki-cho while I'm at it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Right? Right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> looks my way, frantically pleading for me to agree.<PG>
+<STYLE ID="2">"Ah, yes, my name is Kana Niimura!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I was walking through town when he suddenly called out to me, and I hopped right in and came along!"</STYLE>
+{PAUSE ""}
+<BR>
+"Just came up and spoke to her?
+{PAUSE ""}
+　I knew it, <STYLE ID="1">Dai-chan</STYLE>..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚きバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"N-n-n-no, I said!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Hey, </STYLE><STYLE ID="2">Akina-chan</STYLE><STYLE ID="1">! Don't say weird things!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'm not Akina, I'm Kana."</STYLE>
+{PAUSE ""}
+<BR>
+"So she was using a false name?
+{PAUSE ""}
+　<STYLE ID="1">Dai-chan</STYLE>, so you really are up to something shady..."
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1"><TXSPS>"Waaaaah...!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n300\r\nNORMAL\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+{MOTION "789" "人物1" "4" "540" "0" "NORMAL" "WAIT"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<TXSPN>Battered by every combo there is, <STYLE ID="1">Ise-san</STYLE> collapses on the spot.
+{PAUSE ""}
+<BR>
+Seeing <STYLE ID="1">Ise-san</STYLE> like that, the old woman cackles.
+{PAUSE ""}
+<BR>
+"The usual for you, <STYLE ID="1">Dai-chan</STYLE>? And what about you, <STYLE ID="2">young lady</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? Um..."</STYLE>
+{PAUSE ""}
+<BR>
+But there's no menu on the walls or the tables.<PG>
+<STYLE ID="2">"Then the same as '</STYLE><STYLE ID="1">Dai-chan</STYLE><STYLE ID="2">'!"</STYLE>
+{PAUSE ""}
+<BR>
+"Yep, yep, the same as '<STYLE ID="1">Dai-chan</STYLE>.' 
+{PAUSE ""}
+Honestly, <STYLE ID="1">Dai-chan</STYLE>, a police officer and still up to that kind of thing, huh."
+{PAUSE ""}
+<BR>
+The old woman teases <STYLE ID="1">Ise-san</STYLE> as she goes into the <STYLE ID="6" RUBY="ちゅうぼう">kitchen</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\伊勢うつむくバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Pretty girls are to be cherished... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">laying a hand on them... unthinkable..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> mutters to himself, too quietly to make out.
+{PAUSE ""}
+<BR>
+Would it be that bad if I were his girlfriend...?<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">, don't you have a girlfriend or a wife?"</STYLE>
+{PAUSE ""}
+<BR>
+Still mumbling to himself, he shakes his head.
+{PAUSE ""}
+<BR>
+So I guess I'm out of his strike zone age-wise as well...
+{PAUSE ""}
+<BR>
+And I'm a runaway girl to begin with.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">, what kind of person is your type?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"My type...?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Petite... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">innocent, you could say... </STYLE>
+{PAUSE ""}
+<STYLE ID="7" RUBY="てんしんらんまん">carefree and open-hearted</STYLE><STYLE ID="1">, you could say..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> answers flatly.
+{PAUSE ""}
+<BR>
+Then apart from my age, aren't I a dead-center strike?<PG>
+<STYLE ID="1">Ise-san's</STYLE> face is my type too, and he's very serious, and I think he's a wonderful man.
+{PAUSE ""}
+<BR>
+But the sticking point is the age gap, after all.
+{PAUSE ""}
+<BR>
+He's probably more than double my age.<PG>
+At school my friends and I often talk about what type of guy we like, but they all name delinquent types.
+{PAUSE ""}
+<BR>
+Maybe because they've picked up on that, once they're third-year middle schoolers, you see a few boys here and there acting tough in how they dress and what they say.
+{PAUSE ""}
+<BR>
+Boys that sloppy who talk back to the teachers just seem uncool to me.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> here, more than double my age, is a far better man.<PG>
+I guess <STYLE ID="1">Ise-san</STYLE> would rather have someone closer to his own age.
+{PAUSE ""}
+<BR>
+And he did say laying a hand on young girls is unthinkable.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"What's life at school like for </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　No, this isn't questioning, just small talk..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"School's ordinary. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Ordinary, I mean... I go from home every day, and when classes are over I go back..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So you go diligently."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I've never skipped. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If I did, </STYLE><STYLE ID="8">Daddy</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="9">Mommy</STYLE><STYLE ID="2"> would get mad at me."</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">You</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">didn't run away from home, then..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, it's nothing. Any more and it'd turn into an interrogation. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">At least during a meal, it's better to relax."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">... you're kind."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+The man who was fidgeting until a moment ago has turned quiet and somber.
+{PAUSE ""}
+<BR>
+Ever since he talked in the car about why he became a police officer, and about the case 4 years ago, the air around <STYLE ID="1">Ise-san</STYLE> has been a little different.
+{PAUSE ""}
+<BR>
+Not so much somber as brooding.<PG>
+<STYLE ID="2">"Um, if there's anything you want to ask, go ahead and ask.</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　It's only small talk, after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Small talk, huh..."</STYLE>
+{PAUSE ""}
+<BR>
+Then <STYLE ID="1">Ise-san</STYLE> takes a sip from his glass of water, which has no ice in it.<PG>
+<STYLE ID="1">"The kids I've taken into custody up to now have really been all kinds. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Some were always badly behaved, and some were serious through and through. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But what they had in common is that they were all just looking for a place to belong. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Things like home being hard to stay in because of family circumstances, or going along reluctantly so as not to ruin things with their friends from school."</STYLE><PG>
+<STYLE ID="1">"But </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> were going to school, and you have parents who'd </STYLE><STYLE ID="10" RUBY="しか">scold</STYLE><STYLE ID="1"> you if you skipped. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You</STYLE><STYLE ID="1"> hadn't lost your place to belong, had you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san's</STYLE> eyes aren't blaming or angry, but somehow <STYLE ID="11" RUBY="あわ">pitying</STYLE>.<PG>
+<STYLE ID="1">"No, if it's hard to say, you don't have to say it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Um, why do you hold back from asking like that?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Don't you have to properly get it out of people in cases like this...?"</STYLE><PG>
+<STYLE ID="1">"I want the boys and girls who've lost their place to belong to find a proper place to belong as soon as possible. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Forcing it out of them won't solve anything. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If I did that, they'd just repeat the same mistake again. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In that case, hearing them out thoroughly in one sitting is better for me, and better for them."</STYLE><PG>
+<STYLE ID="2">"I... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">have a place to belong. There's no one I don't get along with. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm sorry. I can't tell you about myself."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... You must have circumstances that aren't the ordinary kind."</STYLE>
+{PAUSE ""}
+<BR>
+Far from ordinary―I can't see <STYLE ID="9">Mommy</STYLE> at all.
+{PAUSE ""}
+<BR>
+If I do, I'll kill <STYLE ID="9">Mommy</STYLE>.<PG>
+I'm told that when <STYLE ID="12">Sis</STYLE> was 10, she suddenly went into a frenzy and tried to kill <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+But after being shut away in the basement of that secret base for a few days, the frenzy subsided, or so I heard.
+{PAUSE ""}
+<BR>
+And at the same time, they say, <STYLE ID="12">Sis's</STYLE> eyes, green and blue until then, both turned blue.<PG>
+When I started middle school, <STYLE ID="9">Mommy</STYLE> told me to improve my behavior a little more.
+{PAUSE ""}
+<BR>
+That it was about time I used polite language with adults I didn't know, and refrained from crude talk.
+{PAUSE ""}
+<BR>
+That's about all <STYLE ID="9">Mommy</STYLE> told me.
+{PAUSE ""}
+<BR>
+I've kept to what <STYLE ID="9">Mommy</STYLE> said, and believe it or not, I try to be as well-behaved a woman as I can.<PG>
+But <STYLE ID="8">Daddy</STYLE> was different.
+{PAUSE ""}
+<BR>
+What <STYLE ID="8">Daddy</STYLE> told me when I started middle school was to tell him as soon as I had my first period.
+{PAUSE ""}
+<BR>
+By age, it wouldn't have been strange if I'd already had it, but he said it right when I started middle school.
+{PAUSE ""}
+<BR>
+I suppose it was hard for <STYLE ID="8">Daddy</STYLE> to say, in all kinds of ways.
+{PAUSE ""}
+<BR>
+So I think he decided to just come out with it at the milestone of starting middle school.<PG>
+But why did I have to tell <STYLE ID="8">Daddy</STYLE> something like that?
+{PAUSE ""}
+<BR>
+I asked him the reason, and that's when I heard about what happened with <STYLE ID="12">Sis</STYLE> in the past.
+{PAUSE ""}
+<BR>
+After <STYLE ID="12">Sis</STYLE> had her first period, she tried to kill <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+I can't escape the same thing happening to me.
+{PAUSE ""}
+<BR>
+So I was to tell <STYLE ID="8">Daddy</STYLE> right away.<PG>
+<STYLE ID="8">Daddy</STYLE> said he could suppress the urge to kill <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+But once my period started, I must never, ever see <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+Otherwise, before <STYLE ID="8">Daddy</STYLE> could suppress my urge to kill, I might kill <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+Hearing that, I was terrified.<PG>
+According to <STYLE ID="8">Daddy</STYLE>, to cure it, I first have to feel that murderous intent toward <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+Then he'll give me some treatment, apparently, but...
+{PAUSE ""}
+<BR>
+The thought of wanting to kill <STYLE ID="9">Mommy</STYLE> is terrifying.
+{PAUSE ""}
+<BR>
+I can't bear having a thought like that, even for an instant.<PG>
+So I had decided.
+{PAUSE ""}
+<BR>
+That when I had my first period, or once I'd saved up enough allowance and had a plan for leaving home, I'd leave Arata.
+{PAUSE ""}
+<BR>
+I absolutely refuse to ever want to kill <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+I don't know how he'd suppress my urge to kill, but even if it can be cured, I don't want to have a feeling like that.
+{PAUSE ""}
+<BR>
+Without the courage to face that fate, I ran away.
+{PAUSE ""}
+<BR>
+I suppose it comes from my own immaturity.<PG>
+An urge to kill that's hard to believe at first―
+{PAUSE ""}
+<BR>
+But I never once suspected <STYLE ID="8">Daddy</STYLE> of telling a lie like that.
+{PAUSE ""}
+<BR>
+Even now I don't doubt it.
+{PAUSE ""}
+<BR>
+If I meet <STYLE ID="9">Mommy</STYLE>, I'll want to kill her.
+{PAUSE ""}
+<BR>
+Even if it can be cured, if it means wanting to kill <STYLE ID="9">Mommy</STYLE>―
+{PAUSE ""}
+I won't see <STYLE ID="9">Mommy</STYLE>.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">, I have a place to belong. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Daddy</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="9">Mommy</STYLE><STYLE ID="2"> and my friends at school―I love them all. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But I have to run away. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">No... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I don't have the courage to face it, so all I can do is run..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So there are circumstances that are very hard to talk about..."</STYLE>
+{PAUSE ""}
+<BR>
+It's not so much hard to talk about as something no one would believe if they thought about it normally.
+{PAUSE ""}
+<BR>
+That my green eyes are cursed.<PG>
+Besides, if I did tell him this, it would naturally lead to talk of the Arata settlement.
+{PAUSE ""}
+<BR>
+Then the talk would turn to <STYLE ID="13">Haruka-chan</STYLE> and <STYLE ID="14">Auntie</STYLE> too.
+{PAUSE ""}
+<BR>
+Telling this story is dangerous in that sense too.<PG>
+<STYLE ID="1">"Do </STYLE><STYLE ID="2">your</STYLE><STYLE ID="1"> parents know why you left home?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"They know... maybe..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Can't you contact your parents?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　You don't have to say where you are. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Just let them know you're safe."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Well, if that's all..."</STYLE><PG>
+They're bound to be worried by now.
+{PAUSE ""}
+<BR>
+If I call, I'm sure they'll tell me to come straight back and see <STYLE ID="9">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+If I see <STYLE ID="9">Mommy</STYLE> and the urge to kill comes on, everything will be ready to lift this curse of the green eyes.
+{PAUSE ""}
+<BR>
+Even so, I don't have the courage to face it.
+{PAUSE ""}
+<BR>
+And how would he cure it, anyway?<PG>
+"Heeere we go, thanks for waaaiting!"
+{PAUSE ""}
+<BR>
+Just then, the old woman brought out our food.
+{PAUSE ""}
+<BR>
+This is... 
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\そば.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Zaru soba?
+{PAUSE ""}
+<BR>
+The sides are simple too, just <STYLE ID="15" RUBY="のり">nori</STYLE> and condiments.<PG>
+<STYLE ID="1">"Well, let's continue after we eat."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Normally soba's in season in the fall, but the soba here is a little unusual in that it tastes best in spring."</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="1">Ise-san</STYLE> slurps up his soba vigorously.
+{PAUSE ""}
+<BR>
+I <STYLE ID="16" RUBY="なら">follow</STYLE> his example, dip just half a mouthful into the dipping sauce, and put it in my mouth.<PG>
+............ 
+{PAUSE ""}
+Delicious...!
+{PAUSE ""}
+<BR>
+This dipping sauce has a very familiar taste.
+{PAUSE ""}
+<BR>
+The stock must be made from nothing but things from the mountains.
+{PAUSE ""}
+<BR>
+Noodle dipping sauce usually has kombu or bonito in it, but this stock uses mushrooms, river fish, and mountain vegetables.
+{PAUSE ""}
+<BR>
+A very familiar taste, for someone like me who grew up deep in the mountains.<PG>
+And the soba, too, tastes like nothing I've eaten before.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> said soba is in season in the fall, but both the flavor and the way it goes down are completely different from the soba I usually eat.
+{PAUSE ""}
+<BR>
+A strong taste brimming with vitality, having come through the harsh cold of winter.
+{PAUSE ""}
+<BR>
+Compared to this, the soba I usually eat somehow lacks strength, maybe because it grew somewhere easy to grow.<PG>
+The spring wild plants from the mountains of Arata are full to <STYLE ID="17" RUBY="あふ">overflowing</STYLE> with this kind of strength too.
+{PAUSE ""}
+<BR>
+For harvesting a lot, fall is good, but if you want to take in the strength that vitality carries, spring ingredients suit it best.
+{PAUSE ""}
+<BR>
+For a while we kept slurping up this meal brimming with vitality, in silence.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">"Thanks for the meal, I'll come again."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay, okaaay, be good to your <STYLE ID="2">girlfriend</STYLE> nooow."
+{PAUSE ""}
+<BR>
+The old woman saw us off cheerfully to the very end.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

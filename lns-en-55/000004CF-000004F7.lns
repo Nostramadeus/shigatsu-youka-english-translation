@@ -1,0 +1,413 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=594, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=60, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1403, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=480, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みほ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=き, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=49, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=24, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=25, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=づて, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=122, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3071, target=)
+; Links:
+;    0: TWdLink(count=2769, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "700" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\駅前.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Knew it, <STYLE ID="1">Goto's a godsend</STYLE>! A same-day delivery service, what a blessing!"
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "79" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">We left the shops inside the station and went outside.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The sun had begun to shine a little out of the cloudy sky, but there was still no wind.</STYLE><PG>
+<STYLE ID="3">"But I'm so relieved! Nothing happened to </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+"No kidding! Those guys, next time I see them I'm gonna let them have it."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Now, now..."</STYLE>
+{PAUSE ""}
+<BR>
+"But hey..."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\元木駅前マンション.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Take a look at this view... Motoki-cho didn't used to have this many buildings, did it..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But, like </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3"> said, lots of people move here for the cherry blossoms, right? Isn't it a good thing that Motoki-cho has that kind of appeal?"</STYLE><PG>
+<STYLE ID="3">"And Motoki-cho even has an unusual cherry tree called the goshinboku, in Central Park. I don't really get it, but I bet there are people who get </STYLE><STYLE ID="4" RUBY="みほ">enchanted</STYLE><STYLE ID="3"> by it."</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, come to think of it, do you know how the goshinboku came to be?"<PG>
+<STYLE ID="3">"Yeah, I heard it suddenly appeared. Wasn't it about 70 years ago?"</STYLE>
+{PAUSE ""}
+<BR>
+"That thing looks hundreds of years old any way you look at it, though. Did it just sprout up all of a sudden..."<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3"> said this a while back, but cherry trees don't grow out of the soil, apparently?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? Aren't trees things that grow out of the soil?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"The thing is, cherries like the Somei-yoshino spread through </STYLE><STYLE ID="5" RUBY="さ">cut</STYLE><STYLE ID="3">t</STYLE><STYLE ID="6" RUBY="き">ings</STYLE><STYLE ID="3"> or </STYLE><STYLE ID="7" RUBY="つ">graft</STYLE><STYLE ID="3">i</STYLE><STYLE ID="6" RUBY="き">ng</STYLE><STYLE ID="3">, apparently. So they don't spread unless people lend a hand, she said."</STYLE><PG>
+"Hmm... So cherry trees are a pretty strange plant, huh. 
+{PAUSE ""}
+But... I guess I like it better the way it used to be, after all... Fewer people, the station front not like this, a Motoki-cho full of nature. 
+{PAUSE ""}
+It reminds me a little of my dad's family home... No, that's an even more out-of-the-way, middle-of-nowhere place, though."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="2">'s family home was that kind of place, then. This was the first time I'd heard her talk about it.</STYLE><PG>
+<STYLE ID="3">"Hey, hey, </STYLE>Haruka<STYLE ID="3">, what's your family home like? Tell me more!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHANGECG "000" "グラフィック\背景\駅前.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Just then, a faint ringtone sounded from inside my bag.</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "1000" "PASS"}
+<STYLE ID="2">But it cut off right away. It seemed to be a message.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Whoa! Oh no!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Besides the mail, there were lots of incoming calls too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">In all that noise and the crowds, I hadn't noticed at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But, the numbers in the call log were all the same, and it was one I didn't know.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"What's wrong, <STYLE ID="3">Natsumi</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No... lots of calls from a number I don't know..."</STYLE>
+{PAUSE ""}
+<BR>
+"Show me."
+{PAUSE ""}
+<BR>
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">I handed the phone to </STYLE>Haruka<STYLE ID="2">.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"This... is from the police. See, the last four digits are 0110."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A call from the police, what on earth...</STYLE>
+{PAUSE ""}
+<BR>
+"Wh-what on earth could've happened!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Maybe it was just my imagination, but </STYLE>Haruka<STYLE ID="2">'s voice seemed to be trembling.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">The message was from </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="2">.</STYLE><PG>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“</STYLE><STYLE ID="9">Please come to the police station right away. Mom is here too.”</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="3"> says she's at the police station..."</STYLE>
+{PAUSE ""}
+<BR>
+"Th-the police station!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah, did something happen..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The police station means... some kind of trouble?</STYLE><PG>
+<STYLE ID="2">So many scary things are happening today.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">There was the murder in Central Park, I'd had a scary dream at </STYLE>Haruka<STYLE ID="2">'s house, and </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> had told me that dream was some kind of warning.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A bright-red man warned me in a dream, and now this time </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="2"> is at the police station...?</STYLE><PG>
+<STYLE ID="2">A man who even came into my dream to warn me, in the form of a bright-red corpse...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Surely not. Something like that...</STYLE><PG>
+<STYLE ID="10">Dad</STYLE><STYLE ID="2">'s away on a business trip to Hokkaido, after all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Mom</STYLE><STYLE ID="11" RUBY="づて"> passed along word</STYLE><STYLE ID="2"> that </STYLE><STYLE ID="10">Dad</STYLE><STYLE ID="2"> was worried about the incident, too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But... that same </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="2"> is at the police station...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A man who might warn me in a dream...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Surely that person isn't...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Dad</STYLE><STYLE ID="2">... maybe I should try calling him...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "50"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭抱える.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ah, ahhh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Just then, </STYLE>Haruka<STYLE ID="2"> clutched her head and began to shake violently.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"What's wrong, </STYLE>Haruka<STYLE ID="3">!? Are you okay!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花座り込み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Haruka<STYLE ID="2"> sank down onto the sidewalk.</STYLE><PG>
+"That's not it...! <STYLE ID="3">Natsumi</STYLE>, that's not it...! 
+{PAUSE ""}
+<STYLE ID="2">　</STYLE>I... I...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, calm down. Come on, deep breath."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It was so sudden that I was bewildered, but I spoke to </STYLE>Haruka<STYLE ID="2"> and rubbed her back.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\なつみ→五島.lcm" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">I had heard about </STYLE>Niimura-senpai<STYLE ID="2">'s father.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">He died 12 years ago, and what caused it was a balloon </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2"> had let fly away.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Those two, best friends, with a past like that...</STYLE><PG>
+<STYLE ID="2">Come to think of it, that time―</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\キーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中思い出.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "L" "B" "0" "12" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Yeah, I lived here in Motoki-cho till kindergarten, but my dad's job had us move. 
+{PAUSE ""}
+3 years ago my dad finally got transferred overseas, so it turned into a posting away from the family. 
+{PAUSE ""}
+Just me and <STYLE ID="12">Mom</STYLE> came back to this town."<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\キーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "12" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">That's it! This is what that odd feeling really was!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s family: why had they never tried to move away from Motoki-cho, with all its cherry trees?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even if there are cherry trees all over Japan, there had to be better places than here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If anything, for </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s springs, a place like Motoki-cho is the worst there is.</STYLE><PG>
+<STYLE ID="2">But they didn't move.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Kogori-senpai's father</STYLE><STYLE ID="2">'s work, or </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2"> loving Motoki-cho too much: say that, and maybe that's the end of it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But there still should have been a way.</STYLE><PG>
+<STYLE ID="2">The Niimura family, who left here once, and the Kogori family, who kept on staying.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">In other words, the Kogori family had a reason they could not leave this Motoki-cho, with its many cherry trees.</STYLE><PG>
+<STYLE ID="2">But this is nothing more than a way in.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">There's something more behind this. Something more... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">terrifying.</STYLE><PG>
+<STYLE ID="2">But, one thing has become clear.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The accident 12 years ago, this incident, the bad blood between the Kogori and Niimura families, and </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s dream.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Considering all this, the victim this time can only be that person.</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"</STYLE><STYLE ID="13">Ojisan</STYLE><STYLE ID="1">... this victim, could it be </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="1">'s..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Ise-san</STYLE><STYLE ID="2"> went quiet for a little while, but soon sighed and began to talk.</STYLE><PG>
+<STYLE ID="13">"Just what I'd expect from the genius girl. There's not a single mistake in </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="13">'s deduction."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">He had said the victim was unidentified, but the police aren't stupid either. They must have quickly identified the victim somehow.</STYLE><PG>
+<STYLE ID="1">"Aren't you going to tell </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"</STYLE><STYLE ID="8">Kogori-san's mother</STYLE><STYLE ID="13"> already knows. But, with the body in that state, we can't confirm the identity yet. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">So, </STYLE><STYLE ID="8">the mother</STYLE><STYLE ID="13">―</STYLE><STYLE ID="8">Akane Kogori</STYLE><STYLE ID="13">-san, 'Until it's confirmed, please keep it from my </STYLE><STYLE ID="3">daughter</STYLE><STYLE ID="13">,' she said..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">So confirming it from a scientific standpoint still takes time, then.</STYLE><PG>
+<STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s dream, if I think it through, would probably mean that her </STYLE><STYLE ID="10">father</STYLE><STYLE ID="2">, having died, stood at her bedside in a dream and warned her of danger.</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="2">Warned her of danger...?</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="13">"Wh-what's wrong, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="13">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Senpai</STYLE><STYLE ID="2">... the danger closing in on her...</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Quick, quick, I have to tell </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">... the person beside her is...!</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\五島→なつみ.lcm" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "見えない光_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\駅前.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花座り込み.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, have you calmed down?"</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="2">'s breathing had calmed somewhat, but she still didn't look able to stand.</STYLE>
+{PAUSE ""}
+<BR>
+"N-<STYLE ID="3">Natsumi</STYLE>... 
+{PAUSE ""}
+<STYLE ID="3">Natsumi</STYLE>..."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="2">, still sitting, gripped both my hands tightly.</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="2">'s hands were burning so that I couldn't tell if they were hot or cold, and damp with sweat.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I sat down too and brought my eyes level with </STYLE>Haruka<STYLE ID="2">'s.</STYLE><PG>
+<STYLE ID="3">"It's okay, I'm right here."</STYLE>
+{PAUSE ""}
+<BR>
+"Please...! Don't go to the police...! 
+{PAUSE ""}
+　With me... stay with me...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But, </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="3"> is―"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Please!"
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="2"> threw her arms around me, not caring who saw.</STYLE><PG>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">... I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I'm not going anywhere, I wanted to say, but </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="2"> was at the police station.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I couldn't just leave that alone either.</STYLE><PG>
+<STYLE ID="2">At the police station, </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Frightened when she heard the police mentioned, starting to make excuses to me, </STYLE>Haruka<STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And that dream.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I don't want to imagine it, but the victim this time really is...</STYLE><PG>
+<STYLE ID="2">So, should I go to the police station, or take </STYLE>Haruka<STYLE ID="2"> and run?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">This is a very important choice.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\なつみ→五島.lcm" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

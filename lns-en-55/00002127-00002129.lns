@@ -1,0 +1,112 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=326, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=17, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=137, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=557, target=)
+; Links:
+;    0: TWdLink(count=480, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\女神\集落全景.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hey! Come look! Over here!"
+{PAUSE ""}
+<BR>
+―<STYLE ID="1">Chigaya-chan</STYLE>, did they find her!?
+{PAUSE ""}
+<BR>
+"No, that's not it, but... what is this...?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\穴.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―What is this huge hole... It looks just like a grave.
+{PAUSE ""}
+<BR>
+"Yeah, there was never anything like this here before, was there?"
+{PAUSE ""}
+<BR>
+―True. There's no way nobody would've noticed something like this until now.
+{PAUSE ""}
+<BR>
+"Okay, I'm going in."
+{PAUSE ""}
+<BR>
+―Is that really safe...?<PG>
+"Damn, no good... It's blocked just in there."
+{PAUSE ""}
+<BR>
+―It's big enough for a person to get in easily. 
+{PAUSE ""}
+Could it be someone was trying to dig somebody's grave?
+{PAUSE ""}
+<BR>
+"Who would do something like that..."
+{PAUSE ""}
+<BR>
+―Okay, should we try digging?
+{PAUSE ""}
+<BR>
+"Yeah. If <STYLE ID="1">Chigaya-chan</STYLE> had been buried somewhere like this..."<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "環境音\穴掘り.ogg" "SE2" "REPEAT" "1000" "0"}
+{WAIT "5000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"What are you lot doing?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "SE2" "500" "PASS"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\穴.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Ah, <STYLE ID="2">Grand Witch-sama</STYLE>. Actually―"<PG>
+<STYLE ID="2">"A hole nobody's ever seen before?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　True, there's never been anything like this here..."</STYLE>
+{PAUSE ""}
+<BR>
+"So if <STYLE ID="1">Chigaya-chan</STYLE> had been buried here..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But to dig a hole this big without anyone seeing, and bury </STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="2"> in it..."</STYLE>
+{PAUSE ""}
+<BR>
+―True, anyone who tried digging something like this would get spotted partway through for sure...<PG>
+<STYLE ID="2">"You lot, that's enough here. I want you searching somewhere else."</STYLE>
+{PAUSE ""}
+<BR>
+"Understood."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "NORMAL" "800" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"This can't be... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The one from the legend, said to lead to Abaddon―"</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

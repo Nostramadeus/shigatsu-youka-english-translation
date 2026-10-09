@@ -1,0 +1,32 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=89, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=105, target=)
+; Links:
+;    0: TWdLink(count=89, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<TXSPN>"It appears there is quite a complex branching of routes from here on."<PG>
+"You may push on down one route, or advance each route a little at a time."<PG>
+"Please proceed in whatever way suits <VAR NAME="プレイヤー名" unk3="50">-sama 
+{CHGVOL "BGM" "0" "0" "PASS"}
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\グロ\春花グロ.lcm" "REPEAT" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "システム音\グロノイズ.ogg" "VOICE" "REPEAT" "1000" "0"}
+<TXSPD TIME="4294967246">縺ｦ荳九＆縺"
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\春花通常.lcm" "REPEAT" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "0" "PASS"}
+{CHGVOL "BGM" "1000" "0" "PASS"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\立木三日お辞儀.gal" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "立木三日,立木ボード,プレート" "1" "500" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

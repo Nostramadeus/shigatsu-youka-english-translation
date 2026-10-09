@@ -1,0 +1,148 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=216, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=234, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=6, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=10, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=568, target=)
+; Links:
+;    0: TWdLink(count=468, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "SE\パトカー.ogg" "SE2" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\手直し・追加\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"............"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\七海荘ドア.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "リファレンス専用\SE\outo1響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"From the bathroom?"<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "SE2" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\七海荘トイレ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hey, <STYLE ID="1">Akane</STYLE>! Are you okay!?"<PG>
+{PLAYSND "SE\トイレ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜横顔下.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1"><TXSPS>"Hah... hah... </STYLE>Ryoji-kun<STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>"What's wrong? Side effects?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">After seeing something like that, of course... </STYLE>
+{PAUSE ""}
+You<STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">um... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">did you do it?"</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Yeah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+{PLAYSND "リファレンス専用\SE\outo1一瞬.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">Ugh!"</STYLE>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+"Hang in there! Should we go to the hospital?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Wh-what are you saying... If they did a blood test on me now..."</STYLE>
+{PAUSE ""}
+<BR>
+"R-right..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Phew... Sorry, I've calmed down a little."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">"It was a horrible sight. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A girl about the same age as </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1">, her head fell off, and blood was gushing out. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Her father was frantically calling someone, and her mother was holding the headless girl and calling her name over and over."</STYLE>
+{PAUSE ""}
+<BR>
+"I see..."<PG>
+<STYLE ID="1">"With this, we'll be saved, and so will </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1">, and </STYLE><STYLE ID="4">Mifuyu</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... That's right, exactly right."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What about </STYLE>you<STYLE ID="1">? Are you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"Me... 
+{PAUSE ""}
+Yeah, I'm fine."<PG>
+<STYLE ID="1">"Come on, let's go back to the room, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Ryoji-kun<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+"Go on ahead."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+"Urgh!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\トイレ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPS>"Gh... Damn it...!
+{PAUSE ""}
+<TXSPN>　What should I have done...! There must have been some other way...!"<PG>
+"<STYLE ID="1">Akane</STYLE>... 
+{PAUSE ""}
+<STYLE ID="1">You</STYLE> really... 
+{PAUSE ""}
+Did you really do it...?"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

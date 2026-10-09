@@ -1,0 +1,949 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=5314, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=257, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=30, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=70, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=38, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=17, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほうこう, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にくしみ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=よみがえ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=うらみ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いかり, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=9, unk2=4294967295, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=8, unk2=4294967295, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=26, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=91, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かたき, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆりかご, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あお, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つやま, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きだい, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   22: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;   23: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ずがいこつ, unk10=4294967295, unk11=4294967295)
+;   24: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みらいえいごう, unk10=4294967295, unk11=4294967295)
+;   25: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もだ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6587, target=)
+; Links:
+;    0: TWdLink(count=5899, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\ヘリ荒田.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\キオク\ヘリ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>The deafening clatter of a helicopter―
+{PAUSE ""}
+<BR>
+I wake up to that sound.<PG>
+Maybe that isn't quite the right way to put it.
+{PAUSE ""}
+<BR>
+Better to say I come back to my senses.<PG>
+I had been awake the whole time.
+{PAUSE ""}
+<BR>
+Ever since then, I had forgotten to eat, to sleep, and even to breathe.
+{PAUSE ""}
+<BR>
+A helicopter flying about in the morning sun.
+{PAUSE ""}
+<BR>
+What has it come for?<PG>
+Of course. After a forest fire like this, there must be a huge uproar.
+{PAUSE ""}
+<BR>
+Then they'll find me sooner or later.
+{PAUSE ""}
+<BR>
+Then... 
+{PAUSE ""}
+what I did will be found out sooner or later.<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\イラスト\真呪殺編\キオク\キオク遠く.lcm" "REPEAT" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Without a wink of sleep, I had lain spread-eagled in the graveyard clearing.
+{PAUSE ""}
+<BR>
+Beside me lies the gun, every round fired.
+{PAUSE ""}
+<BR>
+I... how many people did I kill?
+{PAUSE ""}
+<BR>
+Probably 30, at least.<PG>
+{STOPSND "SE" "0" "PASS"}
+{CHANGECG "111" "$000000" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">“Our next story. Late last night, a forest fire broke out in the Arata district, which borders the north of Iizawa Prefecture.”</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\雲わすれの夏.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオク.lcm" "REPEAT" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What was that feeling back then?
+{PAUSE ""}
+<BR>
+I remember going out of my mind.
+{PAUSE ""}
+<BR>
+But right before that―
+{PAUSE ""}
+after <STYLE ID="2">Sakura-san</STYLE> was cut down, right before I went out of my mind―
+{PAUSE ""}
+a feeling I had never known raced through me.<PG>
+{MESOFF "500"}
+{CREATECG "222" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔背景.lcm" "REPEAT" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔ぼかし.lcm" "REPEAT" "#1" "L" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "222" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔背景ぼかし.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "111" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+An urge to kill I couldn't hold back.
+{PAUSE ""}
+<BR>
+A desire to kill I could not suppress, whatever I did.
+{PAUSE ""}
+<BR>
+Fierce murderous intent toward <STYLE ID="3">Kana-chan</STYLE> and <STYLE ID="4">Haruka-san</STYLE> welled up in me.<PG>
+{DELETECG "222,000,111" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">“Several burned bodies have been found, and there is said to be no hope that the residents survived.”</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオク.lcm" "REPEAT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+How did it come to that?
+{PAUSE ""}
+<BR>
+I pressed the muzzle to the heads of <STYLE ID="4">Haruka-san</STYLE> and <STYLE ID="3">Kana-chan</STYLE> and pulled the trigger without the slightest hesitation.<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">“Most of the bodies are badly damaged, and identifying them is expected to take time.”</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "222" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔背景.lcm" "REPEAT" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔ぼかし.lcm" "REPEAT" "#1" "L" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then the urge to kill ebbed smoothly away, and I felt intense pleasure and satisfaction.
+{PAUSE ""}
+<BR>
+I did it―I was able to kill.
+{PAUSE ""}
+<BR>
+I had eliminated what threatened me.
+{PAUSE ""}
+<BR>
+I killed <STYLE ID="3">Kana-chan</STYLE> and <STYLE ID="4">Haruka-san</STYLE>, and it felt so good.<PG>
+{MESOFF "500"}
+{CHANGECG "222" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔背景ぼかし.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "111" "グラフィック\イラスト\真呪殺編\キオク\記憶横顔.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Could that have been a curse-killing?
+{PAUSE ""}
+<BR>
+But I'm not green-eyed.
+{PAUSE ""}
+<BR>
+So it can't be a curse-killing...
+{PAUSE ""}
+<BR>
+I take my phone out of my pocket and look at my face on it, and―<PG>
+{CHANGECG "111" "$000000" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "222" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">“However, many of the residents are believed to have been shot dead by someone</STYLE>―<STYLE ID="1">”</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "111" "グラフィック\イラスト\真呪殺編\キオク\キオク銃.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Huh?
+{PAUSE ""}
+<BR>
+My eyes... one is dark brown, but―
+{PAUSE ""}
+the other one is―
+{PAUSE ""}
+green.<PG>
+Haha. So that's what it was...
+{PAUSE ""}
+<BR>
+There's no such thing as curses.
+{PAUSE ""}
+<BR>
+But curse-killing really does exist.
+{PAUSE ""}
+<BR>
+I proved it myself.<PG>
+When you're doused in <STYLE ID="2">Sakura-san's</STYLE> blood―
+{PAUSE ""}
+doused in the second generation's blood―
+{PAUSE ""}
+you're driven by an unbearable desire to kill the others doused in the same blood.<PG>
+{CHANGECG "111" "$000000" "NORMAL" "1" "1" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">“It is believed to be the work of </STYLE><STYLE ID="5">suspect Momoko Goto</STYLE><STYLE ID="1">, 24, who was in the Arata district at the time.”</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオク.lcm" "REPEAT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After I shot the two of them dead, every one of my cells let out a <STYLE ID="6" RUBY="ほうこう">roar</STYLE> of joy, and I was drunk on the pleasure.
+{PAUSE ""}
+<BR>
+At the same time, a feeling opposed to it was born.
+{PAUSE ""}
+<BR>
+It was intense grief and anger.
+{PAUSE ""}
+<BR>
+I wanted some way to get rid of it.
+{PAUSE ""}
+<BR>
+Instinctive pleasure, and rational anger and grief―
+{PAUSE ""}
+<BR>
+Those two took control of my mind, and...<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I shot dead every person I saw.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+I killed them all.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+Their legs were cut and they couldn't move, and I rained bullets on them without mercy.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+My desire for revenge, which should have perished, changed its form―
+{PAUSE ""}
+became the <STYLE ID="7" RUBY="にくしみ">tumor</STYLE> itself, and <STYLE ID="8" RUBY="よみがえ">came back to life</STYLE>.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+The <STYLE ID="9" RUBY="うらみ">tumor</STYLE> that should have been cured recurred.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+The <STYLE ID="10" RUBY="いかり">tumor</STYLE> that should have gone into remission recurred.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+I must have been out of my mind.
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+<PG>
+So it wasn't me who killed <STYLE ID="3">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+It's this Arata settlement.
+{PAUSE ""}
+<BR>
+I'm not to blame.
+{PAUSE ""}
+<BR>
+I'm not to blame.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">I'm not to blame...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">I'm not to blame!!</STYLE>
+{PAUSE ""}
+<BR>
+Hey, someone... 
+{PAUSE ""}
+take my side!
+{PAUSE ""}
+<BR>
+I'm... not to blame, right...?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">“</STYLE><STYLE ID="5">Suspect Goto</STYLE><STYLE ID="1"> was holding a handgun and was found lying in a clearing outside the area the fire had spread to.”</STYLE><PG>
+I wanted revenge on a settlement like that.
+{PAUSE ""}
+<BR>
+Toward the Arata settlement that killed <STYLE ID="3">Kana-chan</STYLE>, a desire for revenge I couldn't hold back showed itself.
+{PAUSE ""}
+<BR>
+Even though I was the one who killed <STYLE ID="3">Kana-chan</STYLE>―
+{PAUSE ""}
+I took revenge on the Arata settlement.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオクアップ.lcm" "REPEAT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After killing everyone there, I headed for the blazing settlement.
+{PAUSE ""}
+<BR>
+There was still one left. The person I really wanted to kill.<PG>
+Inside the settlement was a middle-aged woman.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "火の粉.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\キオク\美冬火事.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I had seen this woman's face in a photo.
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Mifuyu Niimura</STYLE>―
+{PAUSE ""}
+<BR>
+Found her.
+{PAUSE ""}
+<BR>
+Found her at last.
+{PAUSE ""}
+<BR>
+<STYLE ID="13">That</STYLE> was the one who killed <STYLE ID="14">Erina</STYLE>.<PG>
+<STYLE ID="13">Mifuyu Niimura</STYLE> was staring up at the flames.
+{PAUSE ""}
+<BR>
+What could she be thinking?
+{PAUSE ""}
+<BR>
+Like <STYLE ID="15">Kotaro-san</STYLE>, does she think it's all over?
+{PAUSE ""}
+<BR>
+Like <STYLE ID="3">Kana-chan</STYLE>, does she think it'll be fine if they rebuild?
+{PAUSE ""}
+<BR>
+But <STYLE ID="13">she</STYLE> has no need to worry about that.
+{PAUSE ""}
+<BR>
+I have no hesitation left in me now.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n200\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\赤背景.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I shot <STYLE ID="13">Mifuyu Niimura</STYLE> dead before she noticed me.
+{PAUSE ""}
+<BR>
+With that, I had killed every person in the Arata settlement.
+{PAUSE ""}
+<BR>
+My revenge had been achieved.
+{PAUSE ""}
+<BR>
+Haha... 
+{PAUSE ""}
+I did it... I finally got my revenge...!<PG>
+Hey, <STYLE ID="14">Erina</STYLE>, are you watching?
+{PAUSE ""}
+<BR>
+I took revenge on the settlement that killed <STYLE ID="14">you</STYLE>!
+{PAUSE ""}
+<BR>
+I killed them all!
+{PAUSE ""}
+<BR>
+Hey, are you watching? Are you happy?
+{PAUSE ""}
+<BR>
+Hey... 
+{PAUSE ""}
+Hey, <STYLE ID="14">Erina</STYLE>...
+{PAUSE ""}
+<BR>
+Hey, come on...
+{PAUSE ""}
+<BR>
+Say something...<PG>
+Even though I struck down <STYLE ID="14">Erina's</STYLE> <STYLE ID="16" RUBY="かたき">enemy</STYLE>.
+{PAUSE ""}
+<BR>
+Somewhere in my heart, I had been hoping to hear a hallucination of <STYLE ID="14">Erina</STYLE> praising me.
+{PAUSE ""}
+<BR>
+But there was no way I would hear such a thing.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\キオク\山火事森.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Alone, still gripping the gun, I left the settlement.
+{PAUSE ""}
+<BR>
+I walked the mountain path with my head down, vacantly looking back over what I had done.
+{PAUSE ""}
+<BR>
+The sound of trees burning, and the crunch of gravel under my feet.<PG>
+Listening to nothing but those sounds, my mind had stopped.
+{PAUSE ""}
+<BR>
+I no longer had any reason to live, and I could think neither about what lay ahead nor about what I had done just now.
+{PAUSE ""}
+<BR>
+Then something came into my blurred vision.<PG>
+A single bear cub ran past in front of me, as if fleeing the fire.
+{PAUSE ""}
+<BR>
+What happened to its parent?
+{PAUSE ""}
+<BR>
+Did they get separated in the fire?
+{PAUSE ""}
+<BR>
+Or has it already burned to death?<PG>
+Did it get separated from its siblings too, or was it the only one from the start?
+{PAUSE ""}
+<BR>
+A "helpless" creature that can do nothing for itself and can only wait for death.
+{PAUSE ""}
+<BR>
+Me and that cub―what is the difference?
+{PAUSE ""}
+<BR>
+With no desire for revenge left and no place that would take me in, I am the 'powerless' being I was supposed to have graduated from.<PG>
+Only my body became an adult. My heart is still as it was in my oldest memory.
+{PAUSE ""}
+<BR>
+Drowning in the longing for a little sister, I am still being dragged down into that mire.<PG>
+Hey, little cub, don't you have any brothers or sisters?
+{PAUSE ""}
+<BR>
+Could it be they died?
+{PAUSE ""}
+<BR>
+My <STYLE ID="14">little sister</STYLE> died too.<PG>
+As if following the cub, I took the same path.
+{PAUSE ""}
+<BR>
+Just as if I were following the cub's fate.
+{PAUSE ""}
+<BR>
+I see... my life won't last long either.
+{PAUSE ""}
+<BR>
+Because all that lies ahead is―
+{PAUSE ""}
+the raw reality of the gallows.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―And where I ended up was this clearing, thick with lush grass.
+{PAUSE ""}
+<BR>
+Could this be the graveyard clearing <STYLE ID="4">Haruka-san</STYLE> talked about?
+{PAUSE ""}
+<BR>
+I gave myself over to this <STYLE ID="17" RUBY="ゆりかご">graveyard clearing</STYLE> of soft grass and looked up at the sky.
+{PAUSE ""}
+<BR>
+And I gazed straight up at the sky, vacantly.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜山頂.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+{CHANGECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Half the sky was orange, half pitch-black.
+{PAUSE ""}
+<BR>
+The sky was burning.
+{PAUSE ""}
+<BR>
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n5000\r\nNORMAL\r\nPASS">
+Bright embers from the sky came fluttering down.
+{PAUSE ""}
+<BR>
+What are these embers?<PG>
+They were cherry blossom petals.
+{PAUSE ""}
+<BR>
+Cherry blossoms from the Niimura main house, carried up on the updraft.
+{PAUSE ""}
+<BR>
+Cherry blossoms fell from the sky, coloring this grotesque night sky with a bewitching beauty.
+{PAUSE ""}
+<BR>
+A hot wind <STYLE ID="18" RUBY="あお">fanned</STYLE> by the forest fire blew in, pleasantly warming the freezing air.<PG>
+Hey―what is the Arata cherry?
+{PAUSE ""}
+<BR>
+What was it after, to end up with a nature like this?<PG>
+If <STYLE ID="14">Erina</STYLE> were alive, would she have tried to figure it out?
+{PAUSE ""}
+<BR>
+If so, would she have had to start from the Megasawa City case?
+{PAUSE ""}
+<BR>
+I see. So even the Megasawa City case never reached the truth.
+{PAUSE ""}
+<BR>
+It was not a truth someone like me could reach, however much money and time I spent.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオクアップ.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―And while I watched those embers from the sky, at some point the sun rose and a helicopter was flying overhead.
+{PAUSE ""}
+<BR>
+In the end, what was the Megasawa City case?
+{PAUSE ""}
+<BR>
+Was it really set up just so <STYLE ID="13">Mifuyu Niimura</STYLE> could commit murder?
+{PAUSE ""}
+<BR>
+Was it really set up just to test a drug?<PG>
+Then what are all these by-products?
+{PAUSE ""}
+<BR>
+The Megasawa City case must be nothing more than a cover.
+{PAUSE ""}
+<BR>
+A cover, to hide something more important.<PG>
+...Haah. Forget it, none of that matters anyway.
+{PAUSE ""}
+<BR>
+More importantly, what should I do about what I did?
+{PAUSE ""}
+<BR>
+Tell the police or a lawyer I killed because I was doused in the second generation's blood?
+{PAUSE ""}
+<BR>
+Who would believe that?
+{PAUSE ""}
+<BR>
+Besides, there's a mountain of evidence of today's plan, so a guilty verdict and a death sentence are both certain.<PG>
+Enough. Everything is a dead end now.
+{PAUSE ""}
+<BR>
+A long time ago, I think―
+{PAUSE ""}
+in Okayama Prefecture, was it?
+{PAUSE ""}
+<BR>
+There was a case called the <STYLE ID="19" RUBY="つやま">Tsuyama</STYLE> Thirty Murders.
+{PAUSE ""}
+<BR>
+What I did was the same kind of thing.
+{PAUSE ""}
+<BR>
+The killer in that case―<PG>
+Committed suicide with a gun, was it?
+{PAUSE ""}
+<BR>
+It looks like this is as far as I go, too.
+{PAUSE ""}
+<BR>
+The tumor called the desire for revenge seems bent on destroying not only my heart but my body too.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオク銃.gal" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Are there any bullets left in this?
+{PAUSE ""}
+<BR>
+Either way is fine. If there are, I just die. If there aren't, I just get the death penalty.
+{PAUSE ""}
+<BR>
+In the near future, either way, what is waiting for me is―
+{PAUSE ""}
+death.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n-710\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n-710\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\イラスト\真呪殺編\キオク\キオク発砲前.gal" "NORMAL" "#1" "C" "B" "0" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "200" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000,111" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">“</STYLE><STYLE ID="5">Suspect Goto</STYLE><STYLE ID="1"> was rushed to the hospital, but</STYLE>―<STYLE ID="1">”</STYLE><PG>
+<STYLE ID="14">Erina</STYLE>, I'll be there soon.
+{PAUSE ""}
+<BR>
+I'm coming to see <STYLE ID="3">Kana-chan</STYLE> too.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオク発砲前.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{CHANGECG "000" "グラフィック\イラスト\真呪殺編\キオク\キオク発砲.gal" "NORMAL" "4" "100" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "100" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">“She is believed to have shot herself in the head with the handgun, and was pronounced dead at the hospital.”</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\雲わすれの夏高.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+I hear the gunshot right by my ear.
+{PAUSE ""}
+<BR>
+So there was a bullet left.
+{PAUSE ""}
+<BR>
+I'm going to die like this, aren't I?
+{PAUSE ""}
+<BR>
+But even though I heard the shot, I'm not losing consciousness.
+{PAUSE ""}
+<BR>
+Is this that slow-motion thing that happens right before you die?<PG>
+Ah... this is bad...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\日記ぼかし.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+So people will see that notebook after all.
+{PAUSE ""}
+<BR>
+Not that there's any point being embarrassed now...
+{PAUSE ""}
+<BR>
+Well, it's the notebook of an <STYLE ID="20" RUBY="きだい">unprecedented</STYLE> criminal. I bet they'll put it on display in a museum.
+{PAUSE ""}
+<BR>
+Haha... thinking about something so pointless at a time like this.<PG>
+More to the point, it seems the bullet will still take a while to go through my head.
+{PAUSE ""}
+<BR>
+Then in the meantime, at the very end, I'll at least comfort myself.
+{PAUSE ""}
+<BR>
+No, more than that... I have to apologize to the people I should apologize to.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE>, I know how hard it was for you to endure that murderous intent.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE>, you loved <STYLE ID="2">Sakura-san</STYLE> that much, didn't you?
+{PAUSE ""}
+<BR>
+I was still far more of a child than you, <STYLE ID="3">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+Just because it hurt, to shoot you, <STYLE ID="3">Kana-chan</STYLE>, without a moment's hesitation...<PG>
+And... thank you.
+{PAUSE ""}
+<BR>
+It felt like I had a little sister, and I was happy.
+{PAUSE ""}
+<BR>
+I wanted to talk with you more, <STYLE ID="3">Kana-chan</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Sakura-san</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+I said I would protect you, <STYLE ID="2">Sakura-san</STYLE>, but I couldn't protect you at all.
+{PAUSE ""}
+<BR>
+Protecting people is such a hard thing, isn't it?
+{PAUSE ""}
+<BR>
+Protecting is much, much harder than taking revenge.<PG>
+Only now, at this moment, have I finally understood that you can do it only because there is great love.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Sakura-san</STYLE>... 
+{PAUSE ""}
+I'm sorry.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\真呪殺\春花ナイフバストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Haruka-san</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+You came to help me when I was in a tight spot... 
+{PAUSE ""}
+and I shot you, <STYLE ID="4">Haruka-san</STYLE>...
+{PAUSE ""}
+<BR>
+You knew, <STYLE ID="4">Haruka-san</STYLE>, that <STYLE ID="13">Mifuyu Niimura</STYLE> was the culprit, didn't you?
+{PAUSE ""}
+<BR>
+Your <STYLE ID="21">best friend</STYLE> was killed, and still you went on accepting <STYLE ID="13">her</STYLE> as your mother.<PG>
+I understand very well why <STYLE ID="14">Erina</STYLE> looked up to <STYLE ID="4">you</STYLE>.
+{PAUSE ""}
+<BR>
+Were <STYLE ID="4">you</STYLE> happy, being with <STYLE ID="14">Erina</STYLE>?
+{PAUSE ""}
+<BR>
+If <STYLE ID="14">Erina</STYLE>, born because I wished for her, brought even a little happiness to you, <STYLE ID="4">Haruka-san</STYLE>―
+{PAUSE ""}
+nothing could make me happier.
+{PAUSE ""}
+<BR>
+But... I'm sorry...<PG>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+Haha... what is this...
+{PAUSE ""}
+<BR>
+How many people do I have to apologize to?
+{PAUSE ""}
+<BR>
+The bullet is about to go through my brain, and I can't finish apologizing...
+{PAUSE ""}
+<BR>
+If you go by that, to Dad, to Mom, even to the people of the settlement who were only <STYLE ID="22" RUBY="おび">frightened</STYLE> of the curse-killings...<PG>
+What's all this, shinigami, curse-killings...
+{PAUSE ""}
+<BR>
+I'm the one who's most like a shinigami...
+{PAUSE ""}
+<BR>
+But the one I most have to apologize to is...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="14">Erina</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+After all, <STYLE ID="14">Erina</STYLE>, you'd never want something like this, would you?
+{PAUSE ""}
+<BR>
+Because... I was lonely without you, <STYLE ID="14">Erina</STYLE>.
+{PAUSE ""}
+<BR>
+It's not fair. Going off somewhere far away without making up with me.<PG>
+<STYLE ID="14">Erina</STYLE>, you were born thanks to me, right?
+{PAUSE ""}
+<BR>
+I wanted a little sister, and that's why you were born, <STYLE ID="14">Erina</STYLE>, right?
+{PAUSE ""}
+<BR>
+Hey, do you understand? If it weren't for me, you, <STYLE ID="14">Erina</STYLE>, would never have been born, right?
+{PAUSE ""}
+<BR>
+And still, why did you just go and leave my side?<PG>
+I see... maybe <STYLE ID="14">Erina</STYLE> really did hate me after all.
+{PAUSE ""}
+<BR>
+No wonder. I'm the one who pushed her away.
+{PAUSE ""}
+<BR>
+Then maybe I should apologize for pushing her away, more than for what I did today.
+{PAUSE ""}
+<BR>
+Why did I never even think of that until now?
+{PAUSE ""}
+<BR>
+Why did it never occur to me to apologize for pushing her away?<PG>
+I was always like this.
+{PAUSE ""}
+<BR>
+I think I have to apologize, but in the end all I think up are excuses to protect myself.
+{PAUSE ""}
+<BR>
+Telling myself I'm not to blame, I keep running away with nothing but excuses, never knowing when to give up.
+{PAUSE ""}
+<BR>
+This is the creature called me, full of defects, no, made of nothing but defects.
+{PAUSE ""}
+<BR>
+But the reason I became like this is...
+{PAUSE ""}
+<BR>
+See, there I go again, trying to blame someone else.<PG>
+What I understand only now is how harmful a presence I was.
+{PAUSE ""}
+<BR>
+I wished for <STYLE ID="14">Erina</STYLE> to exist for my own selfish reasons, rejected her, and then came escape from reality, and revenge―
+{PAUSE ""}
+<BR>
+My existence is nothing but harm.
+{PAUSE ""}
+<BR>
+Someone like me is better off gone.
+{PAUSE ""}
+<BR>
+So shooting myself through the head is the greatest achievement of my life.<PG>
+But now I have one single wish.
+{PAUSE ""}
+<BR>
+Soon I'll see her.
+{PAUSE ""}
+<BR>
+I'll see <STYLE ID="14">Erina</STYLE>.
+{PAUSE ""}
+<BR>
+I'll see my <STYLE ID="14">cute little sister</STYLE>.
+{PAUSE ""}
+<BR>
+Surely I'll see <STYLE ID="14">Erina</STYLE> in the next world.
+{PAUSE ""}
+<BR>
+That alone is my comfort.<PG>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+But if there is a next world―
+{PAUSE ""}
+I'm probably going to hell.
+{PAUSE ""}
+<BR>
+Even after death, will I end up torn apart from my <STYLE ID="14">little sister</STYLE> and the others?
+{PAUSE ""}
+<BR>
+Aah... I should have given up on revenge after all.
+{PAUSE ""}
+<BR>
+I wanted to atone for my sins in this world and leave myself at least some chance of seeing <STYLE ID="14">Erina</STYLE> and the others.<PG>
+But it's too late now.
+{PAUSE ""}
+<BR>
+The feeling of the bullet crushing my <STYLE ID="23" RUBY="ずがいこつ">skull</STYLE>.
+{PAUSE ""}
+<BR>
+If I could go back one second, I could have atoned in this world, and maybe seen <STYLE ID="14">Erina</STYLE> and the others.
+{PAUSE ""}
+<BR>
+Even if I had atoned in this world, hell's judgment wouldn't be that lenient, would it?
+{PAUSE ""}
+<BR>
+But... at least let me dream.
+{PAUSE ""}
+<BR>
+I don't know how to scream, so at least a dream―<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\赤背景.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The bullet begins to enter my brain.
+{PAUSE ""}
+<BR>
+Little by little, my thoughts grow dull.
+{PAUSE ""}
+<BR>
+The nerve fibers of my brain are destroyed one after another, getting in the way of my comfort.
+{PAUSE ""}
+<BR>
+I did it to myself, but I wanted to die held by comfort and dreams until the end.<PG>
+But even that is no longer allowed.
+{PAUSE ""}
+<BR>
+My consciousness gradually falls into darkness, and in its place the hellfire comes into view.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\炎.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Mixed in with the roar of the hellfire, I hear the hideous screams of the damned.
+{PAUSE ""}
+<BR>
+I can't even tell whether the screams belong to the damned or to me.
+{PAUSE ""}
+<BR>
+In this agony that will go on <STYLE ID="24" RUBY="みらいえいごう">for all eternity</STYLE>, I <STYLE ID="25" RUBY="もだ">writhe</STYLE> and scream, but for some reason there is no despair.<PG>
+This hellfire burns not just my skin but my flesh and bones too.
+{PAUSE ""}
+<BR>
+If it's going to, I want it to burn away even my heart.
+{PAUSE ""}
+<BR>
+If it will burn my heart too, I'll gladly be burned.
+{PAUSE ""}
+<BR>
+While the hellfire burns me, I'll go on watching the rest of my hazy dream.
+{PAUSE ""}
+<BR>
+A heart this filthy, this twisted, this covered in tumors is better off purified away.<PG>
+My oldest memory and my last are all about my <STYLE ID="14">little sister</STYLE>.
+{PAUSE ""}
+<BR>
+Was I happy to have been born?
+{PAUSE ""}
+<BR>
+At first I was happy.
+{PAUSE ""}
+<BR>
+The days I spent with my cute <STYLE ID="14">little sister</STYLE> were so happy.
+{PAUSE ""}
+<BR>
+But something in my heart is twisted.<PG>
+I smashed the happiness I had gotten just as I wished, and what waited at the end was―
+{PAUSE ""}
+me, ravaged by memory and revenge and the tumor.
+{PAUSE ""}
+<BR>
+This hell will surely burn them all away.
+{PAUSE ""}
+<BR>
+Purify the tumor, purify the desire for revenge, purify the memories.
+{PAUSE ""}
+<BR>
+What lies beyond that?<PG>
+<TXSPS>If there is something beyond... 
+{PAUSE ""}
+Once more... 
+{PAUSE ""}
+Just once more, please let me see <STYLE ID="14">Erina</STYLE>.
+{PAUSE ""}
+<BR>
+I will never push <STYLE ID="14">Erina</STYLE> away again.
+{PAUSE ""}
+<BR>
+Just once more, please let me see my <STYLE ID="14">little sister</STYLE>.
+{PAUSE ""}
+<BR>
+And... please let me keep just the heart that loves <STYLE ID="14">Erina</STYLE>.<PG>
+<STYLE ID="14">Erina</STYLE>... 
+{PAUSE ""}
+I love you so much.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

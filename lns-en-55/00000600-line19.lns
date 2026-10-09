@@ -1,0 +1,202 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=12, unk2=16755370, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=12, unk2=65535, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=13, unk2=16755455, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=635, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほうこう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きょうかん, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たけだけ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひょうい, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=69, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=65, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=219, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しの, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1182, target=)
+; Links:
+;    0: TWdLink(count=1036, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "Attack.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "930" "NORMAL" "SKIP"}
+{PLAYMOVIE "炎.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "255"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花頭抱える.gal" "NORMAL" "#1" "R" "960" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール苦しむ.gal" "NORMAL" "#1" "L" "960" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n798\r\n人物1\r\n4\r\n20\r\n300\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n799\r\n人物2\r\n4\r\n90\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n798\r\n人物1\r\n4\r\n20\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n799\r\n人物2\r\n4\r\n90\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+{QUAKE "メッセージボックス" "QUAKE" "1" "5" "5" "0" "30"}
+<TXSPN>"Gyaaaaaah!!!"<BR>
+<STYLE ID="1">"Ugghuoueah!!!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Uppopopoooon!!!"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKESTOP "0"}
+<STYLE ID="3">Hearing the two of them scream louder than I'd expected, I let out a </STYLE><STYLE ID="4" RUBY="ほうこう">roar</STYLE><STYLE ID="3"> of joy.</STYLE><PG>
+<STYLE ID="3">Fwahahahahaha! Yes, cry, scream, howl!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">With my biggest complex mocked this much, I have no choice but to get serious.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A demon of fury has now possessed me!</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\黒塗り.gal" "WAIT" "#1" "C" "B" "100" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "0" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\雷.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\風神.gal" "NORMAL" "#1" "R" "T" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\雷神.gal" "NORMAL" "#1" "L" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n0\r\n10000\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n465\r\nアイテム2\r\n3\r\n560\r\n10000\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n123\r\n111\r\n11\r\n1\r\n3000\r\nNORMAL\r\nPASS">
+{MESON "500"}
+<STYLE ID="3">And I can tell.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">To the two-part melody of the pair's </STYLE><STYLE ID="5" RUBY="きょうかん">screams</STYLE><STYLE ID="3">, the demon of fury dances its dance.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The melody of screams, the dance of the demon of fury―so ghastly, so </STYLE><STYLE ID="6" RUBY="たけだけ">fierce</STYLE><STYLE ID="3">, so beautiful.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Yet the demon of fury that has </STYLE><STYLE ID="7" RUBY="ひょうい">possessed</STYLE><STYLE ID="3"> me deigns to declare that it is not yet satisfied.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花頭抱える.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール苦しむ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,アイテム1,アイテム2" "1" "1000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n465\r\nアイテム2\r\n3\r\n560\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n123\r\n111\r\n11\r\n1\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+<STYLE ID="8">"A drink...! A drink...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Teeea!!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The two of them tried to reach for their drinks, but I had already factored in that move before I ever planted the wasabi.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\伸びる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\超炭酸.gal" "NORMAL" "#1" "480" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\伸びる.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\お茶。.gal" "NORMAL" "#1" "300" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">At the last possible moment, I snatched their drinks away.</STYLE><PG>
+<STYLE ID="8">"</STYLE><STYLE ID="10">Natsumi</STYLE><STYLE ID="8">! It burns! Give it back!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="10">Senpai</STYLE><STYLE ID="9">, give it baaack!"</STYLE><PG>
+<STYLE ID="10">"Fwahahahaha! What's the matter, you two!</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Let those big boobs you're so proud of do the talking and </STYLE><STYLE ID="11" RUBY="しの">ride</STYLE><STYLE ID="10"> it out!</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Or are those things dangling so sloppily just useless, a pair of good-for-nothing twin boob tanks?</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Then you may as well go off to a ranch and become dairy cows!</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Oh, but you don't even give milk, so you're just failed, unexploded bombs... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Honestly, not even fit to be livestock, you big-boobed pieces of industrial waste...!"</STYLE><PG>
+<STYLE ID="8">"You... </STYLE><STYLE ID="10">monster</STYLE><STYLE ID="8">!!!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"I'm sorry, </STYLE><STYLE ID="10">Senpai</STYLE><STYLE ID="9">! I'll teach you boob massage later!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Having the two of them fear me and scream this much felt wonderful.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">How many years had it been since my heart fluttered like this?</STYLE><PG>
+<STYLE ID="10">"Fwahahaha! Very well, then! If you're going to wail and beg that much, I'll give them back!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I gave the two of them back the drinks I'd taken.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物2,アイテム1,アイテム2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="8">"Hah...! Hah...!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "1000" "PASS"}
+{PLAYSND "SE\追加分\ペットボトルふた生音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\噴出音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "SE\シャワー.ogg" "VOICE2" "REPEAT" "0" "0"}
+{CHGVOL "VOICE2" "1000" "1000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花超炭酸食らう.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\立ち絵\アイテム\超炭酸放物線.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "4" "500" "960" "1" "" "0"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島超炭酸.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{STOPSND "VOICE2" "1000" "PASS"}
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">The liquid hit </STYLE><STYLE ID="8">Haruka</STYLE><STYLE ID="3"> square in the face, as a matter of course.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">By now this was becoming Motoki-cho's specialty, second only to its cherry blossoms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The liquid that missed her face traced an arc through the air and scored a clean hit on </STYLE><STYLE ID="9">Goto</STYLE><STYLE ID="3">'s face.</STYLE><PG>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">I see... So even half-drunk, a Super Soda Bomber shaken with all your might does this...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I felt like I saw a rainbow.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\土下座.gal" "NORMAL" "#1" "C" "-200" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n500\r\nINC\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nINC\r\nPASS">
+{PLAYSND "SE\土下座ペチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="10">Natsumi-sama</STYLE><STYLE ID="8">. I. Am. Truly. Sorry."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="10">Kogori-sama</STYLE><STYLE ID="9">. I. Was. In. The. Wrong."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The two of them, feebly down on their knees and bowing to me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Sopping </STYLE><STYLE ID="12" RUBY="ぬ">wet</STYLE><STYLE ID="3">, </STYLE><STYLE ID="8">Haruka</STYLE><STYLE ID="3"> was, if I had to compare her to something, a snot-nosed neighborhood bully-kid.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Twin tails dripping </STYLE><STYLE ID="12" RUBY="ぬ">wet</STYLE><STYLE ID="3">, </STYLE><STYLE ID="9">Goto</STYLE><STYLE ID="3"> was, if I had to compare her to something, a geek-club princess who'd had water dumped on her and been told not to get full of herself.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\土下座.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Before the two of them, crestfallen and deflated, I found I was standing tall with my feet planted.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I get a little serious, whether it's </STYLE><STYLE ID="8">Haruka</STYLE><STYLE ID="3"> or the </STYLE><STYLE ID="9">genius girl</STYLE><STYLE ID="3">, this is all they amount to.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Truth is, it was my fault for snatching the ikura, but they both seem to have forgotten, so let's call it good...</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

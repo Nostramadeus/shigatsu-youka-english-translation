@@ -1,0 +1,99 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=128, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=116, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=54, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=367, target=)
+; Links:
+;    0: TWdLink(count=298, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\春の山.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\トンネル.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Yes, yes, that's right. We've got a flat tire. 
+{PAUSE ""}
+It's a tunnel without even any lights, so I can't change the tire. 
+{PAUSE ""}
+So please send help out here. 
+{PAUSE ""}
+I've still got passengers in the car, too―"<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">, are you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, I can still manage..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's been over 10 minutes, so we'd better get out now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hah... hah... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Let's... do that..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "リファレンス専用\SE\車ドア開閉響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "0" "0"}
+{PLAYSND "リファレンス専用\SE\アスファルトダッシュ響く.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{STOPSND "VOICE2" "5000" "PASS"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\トンネル.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Excuse me, Driver, </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1"> isn't feeling well, so we'll get out here."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? Oh, I'm really sorry... 
+{PAUSE ""}
+No need to pay the fare... Please ride with us again."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{PLAYSND "リファレンス専用\SE\アスファルトダッシュ響く.ogg" "VOICE2" "REPEAT" "0" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{CHGVOL "VOICE2" "1000" "3000" "PASS"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "500" "PASS"}
+{PLAYSND "リファレンス専用\SE\車ドア開閉響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1500" "NORMAL" "SKIP"}
+{STOPSND "VOICE" "50" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Okay, </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">, can you walk?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hah... hah... Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Here, put your arm around my shoulders. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">From now on we'll have to be careful about tunnels in the car, too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A dark tunnel, and a cramped car on top of it."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{WAIT "4000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

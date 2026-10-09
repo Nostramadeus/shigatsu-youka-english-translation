@@ -1,0 +1,133 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しよう, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=772, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さわけん, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さわぐん, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もときちょう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かない, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かつらこ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=883, target=)
+; Links:
+;    0: TWdLink(count=790, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Shiyo<STYLE ID="1"> 737.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In a certain small town, it happened.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "リファレンス専用\根淵奇譚_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "111" "グラフィック\リファレンス用\アイテム\超常現象特集.gal" "NORMAL" "#1" "C" "C" "0" "24" "3000" "100" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\昔の元木町.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "111" "24" "3000" "100" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2" RUBY="さわけん">Sawa Prefecture, </STYLE><STYLE ID="3" RUBY="さわぐん">Sawa District, </STYLE><STYLE ID="4" RUBY="もときちょう">Motoki-cho</STYLE><STYLE ID="1">―a small municipality whose population at the time was under 2,000.</STYLE>
+{PAUSE ""}
+<BR>
+In March of Shiyo<STYLE ID="1"> 737, in this town, a certain uncanny phenomenon is said to have occurred.</STYLE><PG>
+<STYLE ID="1">The one who found it was a then-resident of Motoki-cho, </STYLE><STYLE ID="6" RUBY="かつらこ">Katsurako </STYLE><STYLE ID="5" RUBY="かない">Kanai</STYLE><STYLE ID="1">-san.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In that season, when the cherry blossoms were starting to bloom, Kanai-san found something.</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "111" "グラフィック\背景\中央公園素材\御神木.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Was there ever a cherry tree in a place like this...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n0\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">What Kanai-san had found was a large, old cherry tree.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Larger by far than the other cherry trees, and giving off a dignity beyond them by far: its divine air.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">However, Kanai-san was </STYLE><STYLE ID="7" RUBY="つ">seized</STYLE><STYLE ID="1"> by a strange feeling.</STYLE><PG>
+<STYLE ID="1">Because, until then, she had never seen a cherry tree like this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kanai-san passed along this road nearly every day, going to draw water at a nearby well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In other words, to Kanai-san, this cherry tree had suddenly appeared.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At once, Kanai-san called the neighboring residents.</STYLE><PG>
+<STYLE ID="1">"Hm... was there a tree like this...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Kanai-san's the only one who comes along this road every day..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If you say it was here, I feel like it was, and if you say it wasn't, I feel like it wasn't..."</STYLE><PG>
+<STYLE ID="1">At the time, Kanai-san lived alone, and the only one who came along this road every day was Kanai-san.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">For that reason, the other residents' memories were vague too.</STYLE><PG>
+<STYLE ID="1">"But, well, if a cherry tree this magnificent suddenly appeared, shouldn't we treat it as a god and enshrine it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"True, it's too magnificent to just leave as it is."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The residents, all saying so, one after another.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">They decided to enshrine this cherry tree as the goshinboku of Motoki-cho, and in time it became the symbol of Motoki-cho today.</STYLE><PG>
+<STYLE ID="1">And now, the present day―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n-460\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n-460\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\中央公園素材\中央公園背景1gal.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The goshinboku is still enshrined in Motoki-cho's Central Park, and perhaps partly thanks to it, Motoki-cho has become one of the most famous cherry-blossom spots in the country.</STYLE><PG>
+<STYLE ID="1">But why did the goshinboku suddenly grow in this place?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was Kanai-san misremembering, or is there a supernatural phenomenon behind it, beyond even our imagining?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Paying no heed to our questions, the goshinboku continues to watch over Motoki-cho even now.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+{DELETECG "000,111" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,426 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=767, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1573, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=47, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=7, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=99, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=167, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=78, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=532, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3568, target=)
+; Links:
+;    0: TWdLink(count=3270, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>"Mm... Not coming?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, a little while ago </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> got in touch."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Not coming to the memorial service for her <STYLE ID="3">husband</STYLE>, the <STYLE ID="3">father</STYLE> of her child? Is it something that important?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who knows. </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> said it was 'work.'"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Work... 
+{PAUSE ""}
+Is it really all right to miss a memorial service for that?"<PG>
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">, </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> has been married into the Niimura family for nearly 20 years now. She must know how serious it is to miss a memorial service. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And besides... the household budget seems tight, too. She must want to earn even a little money for </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">'s sake. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well, not that you can say that out loud in front of the ancestors."</STYLE><PG>
+"Mm... I think <STYLE ID="2">Auntie</STYLE>'s been saved too, by <STYLE ID="1">Grandma</STYLE> being the Grand Witch."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's about all I can do. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Anything that would drag the residents into it, I really can't do on my own say-so."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Maybe I'll try calling <STYLE ID="4">Haruka</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"She's been unwell, I hear, but she seems a lot better now. Go on and call her."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Okay."<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱切.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Huh? You're calling somebody this early in the morning?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... <STYLE ID="4">Haruka</STYLE>. It looks like she can't come today."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hmph, so </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="5"> can't come after all... What a shame..."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Did you want to talk to <STYLE ID="4">Haruka</STYLE> about something?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"You bet! </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　</STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="5">'s fun to tease with dirty jokes, and I picked up a bunch of new material! </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　I figured I'd hit her with a round of bang-bang, bang-bang! </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Oh! Put me on the phone too, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... I know."
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="5">Kanaaa</STYLE><STYLE ID="6">! Could you come help me for a bit?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Coming, </STYLE><STYLE ID="6">Mommy</STYLE><STYLE ID="5">! </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Hmm, oh well! So, </STYLE>Sis<STYLE ID="5">, tell </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="5"> I said hi!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="4">"Yes... hello?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... <STYLE ID="4">Haruka</STYLE>, it's been a while."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That voice... Oh, it's you. I was wondering who it was..."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... You didn't have my number saved?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, I just got a new phone, and moving everything over didn't work right."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Haruka</STYLE><STYLE ID="7"> sounded the same as always.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Still, perhaps it was only my imagination, but I think her voice was shaking.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Is she really all right...?</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "太古の暗い鳴動.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\壺アップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Spouse</STYLE><STYLE ID="7"> and </STYLE><STYLE ID="4">child</STYLE><STYLE ID="7"> both absent from the memorial service.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">It was carried out as always, according to procedure.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Grandma</STYLE><STYLE ID="7"> properly counts heads and checks that no one is missing, but since everyone is dressed like that to begin with, the residents probably wouldn't notice if one person or so were absent.</STYLE><PG>
+<STYLE ID="7">But the Grand Witch and the witches are another matter.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Whoever takes the role of witch steps forward and performs the ritual.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Today the one in the witch role, </STYLE><STYLE ID="2">Auntie</STYLE><STYLE ID="7">, was absent, so to everyone there was one witch too few―</STYLE>
+{PAUSE ""}
+<STYLE ID="7">in other words, they would know right away that someone was missing.</STYLE><PG>
+<STYLE ID="7">So today I stood on the witches' side in her place.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">It was sprung on me so suddenly that I was flustered, but </STYLE><STYLE ID="6">Mom</STYLE><STYLE ID="7"> and </STYLE><STYLE ID="1">Grandma</STYLE><STYLE ID="7"> would do most of the work, and I was told that apart from carrying the implements at the start and the end, I only had to stand by and watch.</STYLE><PG>
+<STYLE ID="7">Honestly, I am a little worried.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">It isn't so much whether I can get through the ritual well. It's that </STYLE><STYLE ID="1">Grandma</STYLE><STYLE ID="7">'s rational way of thinking sometimes goes against the rules.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Of course, she keeps it so that no one outside the Niimura family can tell.</STYLE><PG>
+<STYLE ID="7">But if everyone found out by some fluke, wouldn't it damage her authority as the Grand Witch?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">And then wouldn't order in this settlement fall apart?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">It might be a needless worry, but lately worries like that had started coming to mind.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田集集会所.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\大魔女能面バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Whew. </STYLE>Chigaya<STYLE ID="1">, good work."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Good work, </STYLE>Chigaya<STYLE ID="6">. You did that very well."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... All I did was carry things. It's thanks to you two backing me up so well."
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE>Chigaya<STYLE ID="6">, what's wrong? You look a bit down."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... 
+{PAUSE ""}
+<STYLE ID="1">Grandma</STYLE>, I'd like to talk, just the two of us..."
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Oh? Then I'll go back ahead of you."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ大魔女バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"What is it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... I like the way you think, <STYLE ID="1">Grandma</STYLE>. 
+{PAUSE ""}
+Not getting hung up on the rules and all that, thinking rationally. I like that. 
+{PAUSE ""}
+But..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What everyone will think, you mean?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Right..."<PG>
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">, I'm 71. I have 4 years left."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... The matter of the suicide..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah. So there isn't much left that I can do. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I want to change this settlement."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Change it?"<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "#1" "C" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"In the old days, I hear, they made Droga, and when they had to, they'd even kill outsiders. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">On top of that, this settlement has little contact with the outside. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So the old temperament still lingers here. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But these days, it's hard to live cut off from the outside. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We need electricity, we need cars, and we need cell phones and the internet too."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "111" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">, do you think this settlement can stay peaceful forever, the way it is now?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... I don't know."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Sure, the rules are important. The rules aren't there to tie us down. They're there to protect everyone. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But a lot of the rules don't fit the times, right?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "200" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"For example, when someone marries and makes their life outside the settlement, the child isn't allowed to live here until they turn 16. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Do you know why?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... I never thought about the reason."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">, you remember, don't you? What happened to </STYLE>you<STYLE ID="1"> 10 years ago."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... How could I forget? I still see it in my dreams."<PG>
+<STYLE ID="1">"When a child who wasn't raised in the settlement actually comes here, they might end up like </STYLE>you<STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Long ago, something like what happened to </STYLE>you<STYLE ID="1"> must have happened. That's why the rule was made. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If it's a child born here, though, we can kill them right away, the moment we know they're green-eyed."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... But I was born with green eyes, and so was <STYLE ID="5">Kana</STYLE>. 
+{PAUSE ""}
+Why were we―"<PG>
+{MESOFF "500"}
+{DELETECG "111,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Until 10 years ago, hardly anyone knew about the rule to kill green-eyed children. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We call them rules, but they haven't all been passed down correctly. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Even the rule about letting children live here at 16 is pretty sloppy, when you think about it that way. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Properly, it's supposed to be 'a 16-year-old child with green eyes.'"</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So, 10 years ago, I told </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> something. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサーうつむき.gal" "NORMAL" "#1" "R" "B" "200" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">If life in Megasawa was hard, she could just come live here with </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">, I said. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well, it didn't actually turn out that way."</STYLE><PG>
+"Mm... If <STYLE ID="2">Auntie</STYLE> had said back then that she'd live here, how were you going to explain it to everyone?
+{PAUSE ""}
+　If you broke the rule and let them live here, wouldn't everyone get suspicious..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">, you're right. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1"> are my family. The precious family that </STYLE><STYLE ID="3">Eiichiro</STYLE><STYLE ID="1"> left behind. </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">If everyone was against it―"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "111,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Then I meant to leave this settlement."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+"But that's...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Otherwise, </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> and her daughter wouldn't be able to go on living. </STYLE>
+{PAUSE ""}
+Chigaya<STYLE ID="1">, if it were you, would you abandon them even so?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Abandon them... 
+{PAUSE ""}
+<STYLE ID="1">Grandma</STYLE>, I understand what you're saying. But the Grand Witch leaving―"<PG>
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What is it this settlement needs?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... What it needs...?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手直し・追加\新村家桜昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n7000\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="1">"There are words the founder of this place left more than 800 years ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">'We shall build a place where all who are here, and their descendants, may live in peace for all eternity.' Those were the words. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What this place needs is a peaceful life. It never meant the Grand Witch comes first."</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"And look what happened. Long ago, this settlement lived in fear of attacks from outside, armed itself, even made strange drugs, and when it had to, killed people. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Don't you think that goes against the founder's words?"</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Maybe so."<PG>
+<STYLE ID="1">"Sure, to protect ourselves, those violent things were probably necessary, and the rules were probably essential too. </STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<STYLE ID="1">But they don't fit the times now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Just keeping tradition isn't what's good. For as long as I have left to live, I want to change things. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And I want you, </STYLE>Chigaya<STYLE ID="1">, and the rest of you to carry on that will as well."</STYLE><PG>
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田集集会所.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ大魔女バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Mm... I see. It wasn't just about being rational. 
+{PAUSE ""}
+<STYLE ID="1">Grandma</STYLE>, you were thinking of everyone in the settlement, in your own way. 
+{PAUSE ""}
+Even laws change when they need to."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I don't expect everyone to understand my way of thinking all of a sudden. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So, starting with what I can do, little by little."</STYLE><PG>
+"Mm... All right, <STYLE ID="1">Grandma</STYLE>. I'll try to do what I can, too."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Good, good. Then this settlement will be fine."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... But..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Still unhappy about something?"</STYLE><PG>
+"Mm... No, it's not your ideas, <STYLE ID="1">Grandma</STYLE>. Is it really work for <STYLE ID="2">Auntie</STYLE>?
+{PAUSE ""}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+I mean, it's her <STYLE ID="3">husband</STYLE>'s thirteenth-year memorial service! Even in the ordinary world, surely..." [TN: Buddhist memorials count the year of death as the first year.]
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm... To be honest, I had my doubts too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But it must mean it's that urgent."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm... Right."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I don't know what's going on, but I wish </STYLE><STYLE ID="2">Mifuyu-san</STYLE><STYLE ID="1"> would just let herself rely on me..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

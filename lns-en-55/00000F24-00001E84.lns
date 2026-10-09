@@ -1,0 +1,582 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3226, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いとひめやま, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さんろう, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=204, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=8, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=20, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=6, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=20, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=89, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=24, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=610, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てい, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=346, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=21, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とうかつじごく, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あびじごく, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=むけんじごく, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ついぜんくよう, unk10=4294967295, unk11=4294967295)
+;   22: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぜいたく, unk10=4294967295, unk11=4294967295)
+;   23: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぼんのう, unk10=4294967295, unk11=4294967295)
+;   24: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はら, unk10=4294967295, unk11=4294967295)
+;   25: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こっき, unk10=4294967295, unk11=4294967295)
+;   26: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こっきしん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5035, target=)
+; Links:
+;    0: TWdLink(count=4620, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "WAIT"}
+{CREATECG "000" "グラフィック\背景\女神\たき火.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>This must be my second spring already.
+{PAUSE ""}
+<BR>
+It's been almost 2 years since I left the everyday world and shut myself away here on <STYLE ID="1" RUBY="いとひめやま">Mount Itohime</STYLE>.<PG>
+The <STYLE ID="2" RUBY="さんろう">mountain seclusion</STYLE>, a custom unique to this place, Arata.
+{PAUSE ""}
+<BR>
+The Arata settlement originally had a military character, with a strong sense of self-defense.
+{PAUSE ""}
+<BR>
+So that each and every one of them is strong, a person here is recognized as an adult only after going through this rite of passage, the mountain seclusion.<PG>
+The mountain seclusion is imposed on girls only.
+{PAUSE ""}
+<BR>
+Men are biologically muscular, which makes them a sufficient fighting force.
+{PAUSE ""}
+<BR>
+But no matter how much a woman trains, she can rarely beat a man's physical strength.
+{PAUSE ""}
+<BR>
+That's why, through a year of mountain seclusion, they acquire skills that make them a fighting force without relying on muscle.<PG>
+<STYLE ID="3">My mom</STYLE>, too, went through this mountain seclusion and married <STYLE ID="4">my dad</STYLE>.
+{PAUSE ""}
+<BR>
+Apparently there are hardly any prospective brides these days who can endure the mountain seclusion.
+{PAUSE ""}
+<BR>
+That's how strong <STYLE ID="3">Mom</STYLE>'s will was, and then I was born.
+{PAUSE ""}
+<BR>
+Since I inherited the blood of a <STYLE ID="3">mom</STYLE> like that―not that I take the mountain seclusion lightly―I should be able to see it through too.<PG>
+But there are also cases where the mountain seclusion is waived.
+{PAUSE ""}
+<BR>
+Right now, the ones who fall under that are <STYLE ID="5">Chiga-nee</STYLE> and <STYLE ID="6">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+Because there's no point in the mountain seclusion for girls who are already a sufficient fighting force.
+{PAUSE ""}
+<BR>
+Those sisters spent their whole childhood playing in the mountains, so you could say they'd been doing the mountain seclusion out of habit.<PG>
+Either way, as long as I live in the Arata settlement, I'll go through the mountain seclusion too and help make it a stronger settlement.
+{PAUSE ""}
+<BR>
+After <STYLE ID="7">Grandma</STYLE> died, <STYLE ID="8">Sakura-san</STYLE> became the Grand Witch, and she told me <STYLE ID="8">"There's no need to go that far. It's just a tradition now,"</STYLE> but―<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "500" "5000" "PASS"}
+{PLAYSND "BGM死月編\ホラーサウンド.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\血しぶき背景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神茜.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I lost <STYLE ID="3">Mom</STYLE> in the incident 2 years ago.
+{PAUSE ""}
+<BR>
+Was she killed by <STYLE ID="9">Natsumi's mom</STYLE>, or did she disappear of her own will?
+{PAUSE ""}
+<BR>
+Even if she was killed, it's not that I hold a grudge against <STYLE ID="9">Natsumi's mom</STYLE>.
+{PAUSE ""}
+<BR>
+I think I understand well enough how things came to that.<PG>
+But why did <STYLE ID="3">my mom</STYLE> vanish, and why did <STYLE ID="9">Natsumi's mom</STYLE> break into <STYLE ID="10">Goto</STYLE>'s house?
+{PAUSE ""}
+<BR>
+In the end, the reason is still unknown.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\雪山.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I've kept up the mountain seclusion a year longer than usual.
+{PAUSE ""}
+<BR>
+I started it at 18, and I'll finish it on my 20th birthday this month.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> said that on the day I turn 20, she'd tell me something that might be a clue to it.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\女神\たき火.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Either way, the day I come down from the mountain is close.
+{PAUSE ""}
+<BR>
+In about 20 more days, I'll be told that fact.
+{PAUSE ""}
+<BR>
+My birthday is April 30, and today is, if I remember right... 
+{PAUSE ""}
+April 7.
+{PAUSE ""}
+<BR>
+Tomorrow is the anniversary of <STYLE ID="3">Mom</STYLE>'s death.
+{PAUSE ""}
+<BR>
+Why, when <STYLE ID="3">Mom</STYLE> only vanished, is it the <STYLE ID="11" RUBY="・・">anniversary of her death</STYLE>?<PG>
+In Motoki-cho, Mom vanished on April 8, but because of something that happened afterward, <STYLE ID="3">Mom</STYLE>'s death came to light.
+{PAUSE ""}
+<BR>
+I close my eyes like this in front of the fire and think of <STYLE ID="3">Mom</STYLE>.
+{PAUSE ""}
+<BR>
+2 years ago in Motoki-cho, she murdered <STYLE ID="12">Natsumi's dad</STYLE> by <STYLE ID="13" RUBY="は">flaying</STYLE> him, and then disappeared.<PG>
+Apparently <STYLE ID="3">my mom</STYLE> used to be very timid and clingy.
+{PAUSE ""}
+<BR>
+After she had me, that same <STYLE ID="3">Mom</STYLE> apparently worked hard to be strong as a mother.
+{PAUSE ""}
+<BR>
+But maybe <STYLE ID="3">Mom</STYLE> tried too hard to be strong for my sake.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "escapescape.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I was being bullied, <STYLE ID="3">Mom</STYLE> <STYLE ID="14" RUBY="てい">put herself on the line</STYLE> to try to save me.
+{PAUSE ""}
+<BR>
+Back then, <STYLE ID="3">Mom</STYLE> was unwell after losing <STYLE ID="4">Dad</STYLE>, but she pushed herself for my sake.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom</STYLE> was really strong.
+{PAUSE ""}
+<BR>
+But that strength must have been the strength of someone pushing herself too hard.<PG>
+Did the gap between her deep psyche and reality grow too wide, until it broke <STYLE ID="3">Mom</STYLE>'s mind?
+{PAUSE ""}
+<BR>
+Even after we went back to Motoki-cho, her heart never healed, and through some mistake, <STYLE ID="3">Mom</STYLE> caused the <STYLE ID="13" RUBY="は">flaying</STYLE> incident.<PG>
+That's right. It was some kind of mistake.
+{PAUSE ""}
+<BR>
+There's no way <STYLE ID="3">Mom</STYLE> wanted to do something like that.
+{PAUSE ""}
+<BR>
+Even if <STYLE ID="3">Mom</STYLE> was the culprit, it must have been because she pushed herself too hard.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+Right after I arrived at the Arata settlement, <STYLE ID="7">Grandma</STYLE> died.
+{PAUSE ""}
+<BR>
+It was apparently a heart attack, and the funeral was held on short notice.
+{PAUSE ""}
+<BR>
+But something strange happened.
+{PAUSE ""}
+<BR>
+When they dug up the earth of the graveyard clearing to bury <STYLE ID="7">Grandma</STYLE>―<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hey! There's a body buried here! It's still decomposing!"
+{PAUSE ""}
+<BR>
+"Who is this? Nobody's died lately!"
+{PAUSE ""}
+<BR>
+That was the kind of uproar that broke out.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="5">, </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="5">, let's go over there."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kana</STYLE> and I were kept away from the graveyard clearing.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="8">, this..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE>, back from the graveyard clearing, handed me a grimy photo.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\写真茜美冬.gal" "NORMAL" "#1" "R" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was an old photo of two little girls standing side by side.
+{PAUSE ""}
+<BR>
+I recognized this photo.
+{PAUSE ""}
+<BR>
+It was the photo <STYLE ID="3">Mom</STYLE> had always kept so carefully.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+What <STYLE ID="8">Sakura-san</STYLE> told me was that the body they'd found was <STYLE ID="3">my mom</STYLE>, without a doubt.
+{PAUSE ""}
+<BR>
+Decomposition was advanced, but from the clothes, the build and the belongings, it had to be <STYLE ID="3">Mom</STYLE>.
+{PAUSE ""}
+<BR>
+I was also told she'd been dead for nearly a month.
+{PAUSE ""}
+<BR>
+In other words, you could say she died around Shiyo 800, April 8.<PG>
+Why was <STYLE ID="3">Mom</STYLE>, who was supposed to have vanished in Motoki-cho, buried in the Arata graveyard?
+{PAUSE ""}
+<BR>
+Nobody knows that.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom</STYLE> had been buried in this land. That's a fact nothing can change.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\壺アップ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In the end, it was decided that <STYLE ID="3">my mom</STYLE>'s funeral would be held at the same time.
+{PAUSE ""}
+<BR>
+I asked <STYLE ID="8">Sakura-san</STYLE> to let me see <STYLE ID="3">Mom</STYLE>'s face.
+{PAUSE ""}
+<BR>
+It was a terrible sight.
+{PAUSE ""}
+<BR>
+But the decomposing body covered in dirt was definitely <STYLE ID="3">my mom</STYLE>.
+{PAUSE ""}
+<BR>
+By Arata custom, the anniversary of <STYLE ID="3">Mom</STYLE>'s death was set not to the day she was found, but to the day she was thought to have died.<PG>
+Ever since what happened on April 8, I'd been bracing myself for the possibility that <STYLE ID="3">Mom</STYLE> was dead.
+{PAUSE ""}
+<BR>
+So even with the grief, I was able to switch to feeling at least a little positive, glad that we'd found <STYLE ID="3">Mom</STYLE>.
+{PAUSE ""}
+<BR>
+But another feeling welled up in me.<PG>
+It had to be my fault that <STYLE ID="3">Mom</STYLE> met such a fate.
+{PAUSE ""}
+<BR>
+I realized how weak I was, and how much I'd made <STYLE ID="3">Mom</STYLE> suffer.
+{PAUSE ""}
+<BR>
+I wanted to break with my weak self, once and for all.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom</STYLE> was gone now, but I wanted to be even a little strong.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"The mountain seclusion!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Yeah, I'm thinking of starting right away."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="8">, there's no need to be bound by that custom anymore."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"As long as I'm living here, I need the same strength as everyone else. I wanna retrain myself."</STYLE><PG>
+She was against it at first, but my mind didn't change.
+{PAUSE ""}
+<BR>
+If I'd lost <STYLE ID="3">Mom</STYLE> because of my own weakness, then I wanted to be even a little stronger.
+{PAUSE ""}
+<BR>
+Otherwise, I'd never be able to face <STYLE ID="3">Mom</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The moment I got to Arata, <STYLE ID="7">Grandma</STYLE> died and <STYLE ID="3">Mom</STYLE>'s body was found, so I still hadn't replied to the messages <STYLE ID="16">Natsumi</STYLE> and <STYLE ID="10">Goto</STYLE><STYLE ID="17"> had sent</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "NORMAL" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I wanted to let the two of them know how things stood with me now, but
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青切.gal" "NORMAL" "#1" "650" "C" "0" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I switched off my phone.<PG>
+Now that I knew my own weakness, I was reluctant to face them.
+{PAUSE ""}
+<BR>
+I'd get in touch with them once I'd become stronger.
+{PAUSE ""}
+<BR>
+I didn't want to drag them into anything more.
+{PAUSE ""}
+<BR>
+If my weakness dragged them into something again...<PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+The anniversary of <STYLE ID="3">Mom</STYLE>'s death: Shiyo 800, April 8.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom</STYLE>, please rest in peace.
+{PAUSE ""}
+<BR>
+Even if she sinned and was cast into hell, I pray for <STYLE ID="3">Mom</STYLE>'s soul.<PG>
+Come to think of it, I once heard something from <STYLE ID="10">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+I don't remember how the conversation got there, but we once talked about the afterlife.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ザッハ中思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="15">"A trillion years!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"1.6653 trillion years, to be exact. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">In Buddhist hell, even the sentence for the people with the lightest sins is this mind-boggling stretch of time. </STYLE>
+{PAUSE ""}
+<STYLE ID="18" RUBY="とうかつじごく">The Hell of Revival</STYLE><STYLE ID="10">, it's called, and apparently it's where people who killed or tormented animals fall."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Th-then the place with the longest sentence is...?"</STYLE><PG>
+<STYLE ID="10">"</STYLE><STYLE ID="19" RUBY="あびじごく">The Avici Hell</STYLE><STYLE ID="10">, or </STYLE><STYLE ID="20" RUBY="むけんじごく">the Hell of Uninterrupted Torment</STYLE><STYLE ID="10">, as they're called. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">For that sentence, you take a gigantic cube of stone 7 km on a side, and once every 100 years you brush it lightly with a thin cloth. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">You repeat that, and apparently it lasts even longer than it takes for the stone to wear away to nothing."</STYLE><PG>
+<STYLE ID="15">"That's so huge it doesn't even feel real..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"These things are meant as warnings, so maybe being a bit over the top made them easier for people back then to understand?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"If it's like that, the families of people who fell into hell have it rough. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">No matter how many memorial services they hold, the guy can't get out for trillions of years, right?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Actually, that's not the case. The family's prayers are really important!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"They are?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"How much the family prays for you is apparently an important measure in sentencing in the next world. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">So even a wicked person bound for hell apparently gets their sins reduced if they're prayed for with all the family's heart. </STYLE>
+{PAUSE ""}
+<STYLE ID="21" RUBY="ついぜんくよう">Have you ever heard of merit-adding prayers</STYLE><STYLE ID="10">?"</STYLE><PG>
+<STYLE ID="15">"Yeah, I've heard of 'em."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Merit-adding: you add good deeds― </STYLE>
+{PAUSE ""}
+<STYLE ID="10">When the family prays in place of someone who fell into hell, good gets added to their account. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">So if you ever think, 'This person's probably going to hell,' I think if you pray hard for them, they'll be saved sooner."</STYLE><PG>
+<STYLE ID="15">"Hmm... Well, it probably doesn't have anything to do with me, though."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Hey, hey, </STYLE><STYLE ID="15">Senpai</STYLE><STYLE ID="10">... when I die, will you say merit-adding prayers for me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Huh? </STYLE><STYLE ID="10">You</STYLE><STYLE ID="15"> did something bad?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島頭を抱えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Apparently gluttony is a sin too, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"</STYLE><STYLE ID="10">You</STYLE><STYLE ID="15"> know that and you keep eating anyway? You're not sorry at all... </STYLE>
+{PAUSE ""}
+<STYLE ID="15">Merit-adding prayers for someone like that would be a </STYLE><STYLE ID="22" RUBY="ぜいたく">luxury</STYLE><STYLE ID="15">!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"That's so mean...! </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">　Oh, excuse meee! Two more ozoni, pleeease!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"</STYLE><STYLE ID="10">You</STYLE><STYLE ID="15"> should go to hell once and learn your lesson! </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　And anyway, I'm gonna end up paying for that too, aren't I!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Buuut if I'm not getting merit-adding prayers, I figured I'd get plenty of offerings now, while I still can!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"I'll make proper offerings for you when you're dead, so give me a break for today!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "600" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\女神\たき火.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―A silly memory like that draws a small smile out of me.
+{PAUSE ""}
+<BR>
+If I keep praying hard, will <STYLE ID="3">Mom</STYLE> get out of hell sooner?
+{PAUSE ""}
+<BR>
+Even now, she must be burning in hellfire hotter than this fire.<PG>
+By rights I ought to be at the third-year memorial service too, but for now I'm on the mountain seclusion. I'll pray for <STYLE ID="3">Mom</STYLE>'s soul from here.
+{PAUSE ""}
+<BR>
+May <STYLE ID="3">Mom</STYLE>, who pushed herself for my sake, committed murders she never wanted, and then died, find even a little peace.
+{PAUSE ""}
+<BR>
+Please, let my merit-adding prayers reach her.<PG>
+Honestly, even now, it doesn't quite feel real that <STYLE ID="3">Mom</STYLE> is dead.
+{PAUSE ""}
+<BR>
+Since that incident in Motoki-cho, my life has changed a lot.
+{PAUSE ""}
+<BR>
+So much changed that I never had time to feel <STYLE ID="3">Mom</STYLE>'s death.<PG>
+But cutting off contact with <STYLE ID="16">Natsumi</STYLE> and <STYLE ID="10">Goto</STYLE> was my own choice.
+{PAUSE ""}
+<BR>
+Until the mountain seclusion is over, I won't contact <STYLE ID="16">Natsumi</STYLE> or <STYLE ID="10">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+It must be my fault that <STYLE ID="16">Natsumi</STYLE> lost her parents too.
+{PAUSE ""}
+<BR>
+People who get involved with me always meet with misfortune.<PG>
+What must <STYLE ID="16">Natsumi</STYLE> and the others be thinking?
+{PAUSE ""}
+<BR>
+Are they worried? Are they angry?
+{PAUSE ""}
+<BR>
+If so, that's still okay.
+{PAUSE ""}
+<BR>
+Have they already forgotten me?
+{PAUSE ""}
+<BR>
+I haven't forgotten them for a single day.<PG>
+I want to see <STYLE ID="16">Natsumi</STYLE> and <STYLE ID="10">Goto</STYLE>―
+{PAUSE ""}
+<BR>
+I'm continuing this mountain seclusion partly as a way of taking that <STYLE ID="23" RUBY="ぼんのう">worldly desire</STYLE> and <STYLE ID="24" RUBY="はら">purging</STYLE> it.
+{PAUSE ""}
+<BR>
+Following the traditions of the Arata settlement, I <STYLE ID="25" RUBY="こっき">master myself</STYLE> and forge myself into something stronger.
+{PAUSE ""}
+<BR>
+That was part of the purpose too, but...<PG>
+Even after 2 years, my mind still hasn't changed.
+{PAUSE ""}
+<BR>
+If anything, part of me is eagerly waiting to turn 20.
+{PAUSE ""}
+<BR>
+Once the mountain seclusion is over, I can see <STYLE ID="16">Natsumi</STYLE> and <STYLE ID="10">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+The rule I set for myself had, if anything, been feeding my longing to see them.<PG>
+In the end, my <STYLE ID="26" RUBY="こっきしん">self-discipline</STYLE> only amounted to this much.
+{PAUSE ""}
+<BR>
+What have I been doing these 2 years?
+{PAUSE ""}
+<BR>
+I've probably gotten stronger physically.<PG>
+But inside―nothing has changed.
+{PAUSE ""}
+<BR>
+I want to hurry back to the easy life in the world down below.
+{PAUSE ""}
+<BR>
+Meanwhile, my spirit stays as immature as ever.
+{PAUSE ""}
+<BR>
+I still haven't trained enough.<PG>
+―I let out a big sigh and pour water on the fire.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "最後の声・真呪殺\SE\火を消す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "5000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+My eyes, used to the firelight, are swallowed by total darkness.
+{PAUSE ""}
+<BR>
+But within 10 seconds, a sky full of stars slices through that darkness.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\星空.gal" "NORMAL" "#1" "C" "B" "0" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It must be past midnight by now.
+{PAUSE ""}
+<BR>
+So today's finally <STYLE ID="3">Mom</STYLE>'s third-year memorial service...
+{PAUSE ""}
+<BR>
+On Shiyo 802, April 8, the Arata settlement is supposed to hold a memorial service for <STYLE ID="3">Mom</STYLE>.
+{PAUSE ""}
+<BR>
+But I'm not going.
+{PAUSE ""}
+<BR>
+Until the day I decided on, until April 30, I won't see anyone.
+{PAUSE ""}
+<BR>
+Until I turn 20, I...<PG>
+<STYLE ID="3">Mom</STYLE>, have you been cast into hell after all?
+{PAUSE ""}
+<BR>
+If so, I will pray that your sins become even a little lighter, <STYLE ID="3">Mom</STYLE>.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

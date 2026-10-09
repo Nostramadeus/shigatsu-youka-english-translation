@@ -1,0 +1,287 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=730, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=577, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あんどかん, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=227, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=14, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=6, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1769, target=)
+; Links:
+;    0: TWdLink(count=1570, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "3000" "NORMAL" "SKIP"}
+{PLAYSND "見えない光_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "WAIT" "#1" "650" "C" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Now then, I am going to phone <STYLE ID="1">Niimura-senpai</STYLE>! It is fine if she finds out that I lied.
+{PAUSE ""}
+<BR>
+There is no time left for hesitating.<PG>
+{PLAYSND "環境音\心臓の鼓動.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+The index finger of my right hand would not go near the call button.
+{PAUSE ""}
+<BR>
+In my mind I shouted "Here goes," and pressed my index finger to the button with more force than necessary.<PG>
+{CHGVOL "BGM" "0" "5000" "PASS"}
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "WAIT" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "WAIT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+3 seconds... 5 seconds... 10 seconds...
+{STOPSND "VOICE" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+"The person you have called is unable to answer the phone at present. We are very sorry, but..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "WAIT" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "WAIT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "SE" "3000" "PASS"}
+As if I had been waiting for those words, I hung up at once.<PG>
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+I had not said the thing I ought to have said, and yet this <STYLE ID="2" RUBY="あんどかん">relief</STYLE>.
+{PAUSE ""}
+<BR>
+My heartbeat, which had been so loud, slowly quieted down.<PG>
+{MESOFF "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "WAIT" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As if to break that <STYLE ID="2" RUBY="あんどかん">relief</STYLE> apart, the phone rang shrilly.<PG>
+<STYLE ID="3">“Niimura-senpai”</STYLE> was displayed on the incoming-call screen.
+{PAUSE ""}
+<BR>
+What do I do... should I answer, or should I settle myself down a little?
+{PAUSE ""}
+<BR>
+I stopped thinking and pressed the call button.
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<PG>
+<STYLE ID="4">"Yes, yeees, Goto speaking!"</STYLE>
+{PAUSE ""}
+<BR>
+I took the call in a voice brighter than necessary.
+{PAUSE ""}
+<BR>
+Whether it sounded forced, I do not know.<PG>
+<STYLE ID="1">"Ohh, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">, is it. What's up? Did you find something out?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Niimura-senpai</STYLE>'s voice was the same as always.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, it is not really anything like that.</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="4">But, being alone is frightening after all..."</STYLE>
+{PAUSE ""}
+<BR>
+Oh―!
+{PAUSE ""}
+<BR>
+The instant I said it, I knew I had slipped.
+{PAUSE ""}
+<BR>
+I had just told her that I was alone.<PG>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Huh... so </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1"> is alone in the house right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Your parents did say before that it was a class reunion. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm alone right now too. </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> is home late today."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">It was a turn of phrase that oddly caught, but </STYLE><STYLE ID="1">Senpai</STYLE>'s voice had not particularly changed.<PG>
+<STYLE ID="1">"Aren't your parents worried? Their </STYLE><STYLE ID="4">daughter</STYLE><STYLE ID="1"> home alone on the day an incident like that happened."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Oh... no, I phoned them a little while ago, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm, well, make sure you lock up properly."</STYLE><PG>
+<STYLE ID="4">"Yes... but it is frightening after all, when something like this happens so close to home."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, actually I was wavering over whether to call </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1"> myself. And then, there was a call from </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Natsumi</STYLE><STYLE ID="1"> is the one who says it, not me, but being alone really does make you uneasy."</STYLE><PG>
+Was I fated to talk with <STYLE ID="1">Niimura-senpai</STYLE> either way?
+{PAUSE ""}
+<BR>
+No, whether I call or am called should change the impression of what I say from here quite a lot.<PG>
+<STYLE ID="1"><TXSPS>"Hey, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPN>Niimura-senpai</STYLE>'s voice dropped a little in tone.
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Can I ask you one strange question?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"What is it...?"</STYLE><PG>
+<STYLE ID="1"><TXSPS>"Why...</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">did you call me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"Huh?"</STYLE>
+{CREATECG "111" "グラフィック\背景\五島の部屋赤.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n0\r\n10000\r\nNORMAL\r\nPASS">
+<STYLE ID="1"><TXSPS>"Feeling uneasy on your own isn't like </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1">, is it?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　When a little while ago you were so fired up about it, saying you wanted to solve the incident."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"Oh... ahh... do you think so...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haha... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ha..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="4">... did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Something?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Something, you say... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What would that be?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"Oh... um... uh..."</STYLE><PG>
+<STYLE ID="1"><TXSPS>"What's with </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1">?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Could it be that you're afraid of me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"</STYLE><STYLE ID="4">You</STYLE><STYLE ID="1"> being that frightened means... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">could it be that you've figured something out?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"What, no answer at all?"</STYLE><PG>
+<STYLE ID="4"><TXSPN>"Se... se..."</STYLE> [TN: the words break off; the Japanese syllables are kept as sounds.]
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Hmm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"Uh... I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"............"</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "000,111" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"N-no, sorry! It's unusual for </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1"> to be scared, so I thought I'd tease you, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">At a time like this that really was in poor taste, wasn't it! Ahahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Niimura-senpai</STYLE> suddenly raised her voice and said it brightly.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's nothing! Nothing... Don't worry about it..."</STYLE>
+{PAUSE ""}
+<BR>
+But, my skin stayed in goosebumps the whole time.<PG>
+<STYLE ID="1">"Sorry! Really sorry, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">! I'm hanging up. The mood's gone strange somehow. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Tomorrow let's go and look in on </STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="1">! Good night!"</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="1">Senpai</STYLE> hung up, one-sidedly.
+{PLAYSND "SE\電話切れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+{STOPSND "VOICE" "5000" "PASS"}
+<BR>
+The dial tone went on sounding out of the phone for a while.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I slowly put the phone down on the bed.
+{PAUSE ""}
+<BR>
+In the end I could not ask what I wanted to ask.
+{PAUSE ""}
+<BR>
+Even so, <STYLE ID="1">Senpai</STYLE> was somehow strange―or so it felt to me...
+{PAUSE ""}
+<BR>
+Was she really only thinking of teasing me?
+{PAUSE ""}
+<BR>
+Or else...<PG>
+{MESOFF "0"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "3000" "PASS"}
+{MESON "500"}
+A short alert tone sounded without warning.
+{PAUSE ""}
+<BR>
+It startled me a little, but it seemed to be an incoming message.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "WAIT" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+............?
+{PAUSE ""}
+　It was from <STYLE ID="1">Niimura-senpai</STYLE>.
+{PAUSE ""}
+<BR>
+Why a message right after the call?
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+I opened the message.
+{PAUSE ""}
+<BR>
+This was what was written there.<PG>
+{DELETECG "000,アイテム1" "1" "0" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

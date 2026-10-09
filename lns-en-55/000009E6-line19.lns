@@ -1,0 +1,98 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=147, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=271, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=42, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=41, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=27, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=594, target=)
+; Links:
+;    0: TWdLink(count=530, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "0"}
+{PLAYSND "環境音\駅ホーム.ogg" "SE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\元木駅ホーム夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,人物3,人物1" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+<TXSPN>"Thank you for waiting. The delayed train will depart shortly."
+{PAUSE ""}
+<BR>
+Suddenly, that announcement rang out.
+{PAUSE ""}
+<BR>
+The woman who had been in front of me had vanished like smoke.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "WAIT" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"I heard afterwards that the hands of the high-school girl who jumped in front of the train were found right at that time. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Maybe the one delaying the train back then was searching for her lost hands, and even when she found them, she couldn't pick them up because she had no hands, so she wanted someone to find them for her. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That's the end of my story."</STYLE><PG>
+A classic scary story.
+{PAUSE ""}
+<BR>
+Scary, but maybe it lacked the impact of <STYLE ID="2">Goto</STYLE>'s.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="3">... so what was the drink that came out in the end...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who knows? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was too scared to check, but the hands were gone, so it probably wasn't the high-school girl who pressed the button."</STYLE><PG>
+<STYLE ID="3">"Huh? What do you mean by that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't tell me, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, you don't know it? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　The story of 'Motokizakura-sama' that's been handed down in Motoki-cho since long ago..."</STYLE> [TN: Motokizakura: 'Motoki cherry tree'; -sama is an honorific.]<PG>
+<STYLE ID="4">"Ah, wait, </STYLE><STYLE ID="1">Obasan</STYLE><STYLE ID="4">! I was going to tell that one!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, that's a shaaame! Then from here on, I'll leave it to </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="1">!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\立ち絵\アイテム\ろうそくフィルター.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\怪談テーブル.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形\紙人形古郡なつみ.gal" "NORMAL" "#1" "550" "540" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2,アイテム2" "1" "1000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="5">"Oho... and by coincidence, the next doll seems to be </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="5">'s."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Obaasan</STYLE> had drawn the paper doll before I knew it.
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="4">Natsumi Kogori</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+My turn at last.
+{PAUSE ""}
+<BR>
+Actually, mine was the only one written horizontally...
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

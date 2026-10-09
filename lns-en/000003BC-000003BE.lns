@@ -1,0 +1,84 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=140, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=199, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=392, target=)
+; Links:
+;    0: TWdLink(count=339, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "0000" "グラフィック\リファレンス\リファレンス詳細\rrr84\盗難車.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢眠い.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Assistant Inspector Ise</STYLE>, sorry to bother you, but..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hm... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ah, sorry. What is it?"</STYLE>
+{PAUSE ""}
+<BR>
+"A report of a stolen vehicle came in a moment ago..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A stolen vehicle? Here in Motoki-cho?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Now there's something you don't see often."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\手紙.gal" "WAIT" "#1" "600" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"A white minivan, the vehicle used for setting up the stalls at Chuo Park... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">They stole quite a conspicuous one, didn't they."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Assistant Inspector</STYLE>, let's get out on the search first thing tomorrow."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"What are you talking about! We search right now!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　The person it was stolen from is in trouble!"</STYLE>
+{PAUSE ""}
+<BR>
+"Hold on, please... <STYLE ID="1">Assistant Inspector</STYLE>, you've been working too much lately.
+{PAUSE ""}
+You ought to rest a little..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If we don't clear away small incidents like this one, steadily, one at a time...</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢眠い.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">Hm... damn..."</STYLE><PG>
+"Look, you've hardly slept, have you.
+{PAUSE ""}
+And even if we went searching now, at this hour it's impossible."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm... all right... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Damn... and I work the way I do every day for times exactly like this..."</STYLE>
+{PAUSE ""}
+<BR>
+―It's simply that you always work too much.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "0000,人物1,アイテム1" "1" "2000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

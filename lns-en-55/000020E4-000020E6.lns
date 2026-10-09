@@ -1,0 +1,176 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=31, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=58, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=346, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=33, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=414, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1006, target=)
+; Links:
+;    0: TWdLink(count=890, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\集会場.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎頭かく.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Come on, <STYLE ID="1">Eiichiro-kun</STYLE>, drink up, drink up!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Aw, I can't take much more, </STYLE><STYLE ID="2">Shirozaki-san</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+―After Shirozaki-san, I'll pour you one.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yiiikes..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Kotaro</STYLE><STYLE ID="3">, I'm going to slip out for a bit."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Hm? What's up?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"The cigarettes in this room are a little..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, this might be rough on </STYLE><STYLE ID="5">Chigaya</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Sorry."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田集集会所.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Oh?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\昼の月.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサーうつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Ah... um..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm Sakura Niimura. </STYLE><STYLE ID="4">Kotaro's</STYLE><STYLE ID="3"> wife."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I'm sorry, I should have introduced myself sooner. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I'm Mifuyu, soon to be a Niimura. I hope we'll get along for many years to come."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Heh, there's no need for such a formal greeting... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">What's the matter? Out here?"</STYLE><PG>
+<STYLE ID="6">"No, I just thought I'd get a little fresh air. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">The air here is so nice."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That's true, but that's about all this countryside has going for it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Uh... we've met before, haven't we?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, it was before </STYLE><STYLE ID="6">you</STYLE><STYLE ID="3"> went into the mountain seclusion, wasn't it? November the year before last. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I had morning sickness then, so I hardly ever showed my face."</STYLE><PG>
+<STYLE ID="6">"Now that you mention it, you were pregnant. Is this the baby from back then?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, this is </STYLE><STYLE ID="5">Chigaya</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"She's sound asleep. Are children as dear as everyone says?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, nothing in the world could take her place. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">You</STYLE><STYLE ID="3"> want children?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes. I've wanted a family."</STYLE><PG>
+<STYLE ID="3">"I see. I'm glad. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Really... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'm glad..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"What's the matter?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Because I was worried about </STYLE><STYLE ID="1">Eiichiro</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But now that he's met someone like </STYLE><STYLE ID="6">you</STYLE><STYLE ID="3">, I feel so relieved."</STYLE><PG>
+<STYLE ID="6">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh, but </STYLE><STYLE ID="1">Eiichiro</STYLE><STYLE ID="3"> and I were never in that kind of relationship."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"No, it's not that... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Eiichiro-san</STYLE><STYLE ID="6"> never quite tells me why he left Arata... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You</STYLE><STYLE ID="6">'re worried, so I figured it probably wasn't a very good reason."</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Eiichiro</STYLE><STYLE ID="3"> broke his leg while hunting..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes, that is what </STYLE><STYLE ID="1">Eiichiro-san</STYLE><STYLE ID="6"> says, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">whether that's really how it was..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE><PG>
+<STYLE ID="6">"I'm sorry. We've only just met, and here I am sounding like I doubt your </STYLE><STYLE ID="1">childhood friend</STYLE><STYLE ID="6">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, it's all right."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Even married couples don't get to pry into everything, after all. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">And </STYLE><STYLE ID="1">Eiichiro-san</STYLE><STYLE ID="6"> and I are only just starting out."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Thank you, </STYLE><STYLE ID="6">Mifuyu-chan</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'm sure </STYLE><STYLE ID="1">Eiichiro</STYLE><STYLE ID="3"> can find happiness with </STYLE><STYLE ID="6">you, Mifuyu-chan</STYLE><STYLE ID="3">."</STYLE><BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

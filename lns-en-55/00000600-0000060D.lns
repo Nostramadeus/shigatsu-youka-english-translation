@@ -1,0 +1,291 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=807, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=294, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=261, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=10, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=すしおけ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=サケ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=105, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そしゃく, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さめはだ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1716, target=)
+; Links:
+;    0: TWdLink(count=1490, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "My_life_Without_Your_Love.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>While we were in the bath, <STYLE ID="1">Goto</STYLE> had washed our clothes and even dried them in her state-of-the-art washing machine.
+{PAUSE ""}
+<BR>
+We were putting her to more trouble than I'd expected.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\超炭酸.gal" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The newest washers sure are fast! Sorry, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, for putting you to all this trouble."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> thanked her while gulping down a Super Soda Bomber.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Not at all! My clothes probably wouldn't fit you anyway."</STYLE><PG>
+<STYLE ID="2">"And anyway, why've you got your hair in twin tails again?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ehehe! That </STYLE><STYLE ID="3">Ojisan</STYLE><STYLE ID="1"> from earlier reacted so nicely, I thought I'd get a little carried away!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "800" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At the sound of the intercom, <STYLE ID="2">Haruka</STYLE> and I tensed up.<PG>
+<STYLE ID="1">"Oh, it's here, it's here!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">Goto</STYLE> ran off to the front door, paying no attention to the two of us frozen stiff.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Wonder who it is..."</STYLE>
+{PAUSE ""}
+<BR>
+Was it that <STYLE ID="3">lolicon detective</STYLE> again?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "800" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Before long, we heard <STYLE ID="1">Goto</STYLE>'s footsteps.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Sorry to keep you! Sakura Sushi's premium set, at your service!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> appeared carrying a big <STYLE ID="4" RUBY="すしおけ">sushi tub</STYLE>.<PG>
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Hey now, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">... Sakura Sushi's premium set? Something that expensive..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Please, don't worry about it! It's not like I get to eat this any other time!"</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "52" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\寿司.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,アイテム1,人物2,アイテム2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"But if the cops are staking the place out, ordering this much sushi would look weird―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Let's eeeat!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> started with the sea-urchin gunkan. [TN: gunkan: 'battleship' sushi, rice wrapped in seaweed with topping.]
+{PAUSE ""}
+<BR>
+True, <STYLE ID="2">Haruka</STYLE> had a point, but from the way <STYLE ID="1">Goto</STYLE> was acting, she must have had some plan.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">―</STYLE><STYLE ID="1">Goto</STYLE> had livened up the mood in the bath, and maybe thanks to that, <STYLE ID="2">Haruka</STYLE>, who had looked so uneasy, was eating heartily too.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"That's Sakura Sushi for you! Even the cucumber rolls are on another level!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール挨拶バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Oh, there's one ikura left! Goto will take it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hold it! Let your senpai have that! I haven't had any ikura yet!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="1">, you've got some nerve! I've only had one too!?"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "death_sound1.ogg" "BGM2" "REPEAT" "1000" "0"}
+{DELETECG "000,人物1,人物2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+Ikura...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\スチル\いくら.lcm" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Its name meaning 'fish eggs' in Russian: <STYLE ID="6" RUBY="サケ">salmon</STYLE> roe marinated in soy sauce.
+{PAUSE ""}
+<BR>
+The eggs not of the 'shake,' but of the 'sake.' [TN: 'shake' and 'sake' are two readings of the word for salmon.]
+{PAUSE ""}
+<BR>
+At times a garnet. At times a rubellite.
+{PAUSE ""}
+<BR>
+And at other times, like a ruby, a jewel of the sea giving off a red glow.<PG>
+When it comes to ikura, even I can't give it up so easily.
+{PAUSE ""}
+<BR>
+After all, I've only eaten six pieces of ikura sushi so far.
+{PAUSE ""}
+<BR>
+{STOPSND "BGM2" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="7">"Mine!"</STYLE>
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\食べるアニメ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"Mmm! Ikura's the beeest!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Ahh, </STYLE><STYLE ID="7">Kogori-senpai</STYLE><STYLE ID="1">, no fair! That's why your figure is just like you look!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">'s right! </STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="2">, go on a diet!"</STYLE>
+{PAUSE ""}
+<BR>
+They're really bringing that up again...!<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール挨拶バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"No, no, </STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="1">! </STYLE><STYLE ID="7">Kogori-senpai</STYLE><STYLE ID="1"> doesn't have any extra meat on her!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Not the meat she needs either, though!"</STYLE>
+{PAUSE ""}
+<BR>
+Rrgh...!
+{PLAYSND "SE\kan_ge_kieda_oru02.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+My right hand clenched, and the disposable chopsticks crumpled into a ball in my grip.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Now, now, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, there've gotta be guys who like girls as modest as </STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+Grrr...! To have the thing I'm most self-conscious about thrown at me this much!<PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\きらーん.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\アイテム\風神.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\アイテム\雷神.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物1,人物2" "12" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Something descended inside me.<PG>
+{MESOFF "500"}
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\スチル\寿司.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Yeah, yeah, that's right! Compared to you two, I've got a scrawny body that doesn't stick out where it should and sticks out where it shouldn't!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　That does it! Sushi, hear me! Become my chest!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\食べるアニメ.ogg" "SE" "REPEAT" "1000" "0"}
+I recklessly stuffed the rest of the sushi into my mouth.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="7">Senpai</STYLE><STYLE ID="1">, no hogging!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Damn, you're on!"</STYLE>
+{PAUSE ""}
+<BR>
+The two of them followed suit and started stuffing in sushi too.
+{PAUSE ""}
+<BR>
+In that case, all this premium stuff I hardly ever get to eat is mine!
+{PAUSE ""}
+<BR>
+Whoever eats the most wins!
+{PAUSE ""}
+<BR>
+Or so I thought, but after being told all that, I was most gravely displeased.<PG>
+{STOPSND "SE" "300" "PASS"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\わさび.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+While the two were busy <STYLE ID="8" RUBY="そしゃく">chewing</STYLE>, I reached for the wasabi served on the side.
+{PAUSE ""}
+<BR>
+Sakura Sushi is a genuine high-class sushi restaurant.
+{PAUSE ""}
+<BR>
+The wasabi they use is fresh, top-grade wasabi from Azumino in Nagano Prefecture.<PG>
+A chef grates it carefully, carefully, on a <STYLE ID="9" RUBY="さめはだ">sharkskin grater</STYLE>.
+{PAUSE ""}
+<BR>
+Even a small amount packs a heat and a smell that are no joke.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\死刑台.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Haruka Niimura</STYLE>... my <STYLE ID="2">best friend</STYLE>... curse your taste buds that can't handle spicy food...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Erina Goto</STYLE>... my <STYLE ID="1">cute junior</STYLE>... thank you truly for everything up to today...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\寿司.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "200" "0" "0" "" "0"}
+{MESON "500"}
+Now's my chance...!
+{PAUSE ""}
+<BR>
+The moment the two took their eyes off the <STYLE ID="4" RUBY="すしおけ">sushi tub</STYLE>, I loaded two pieces of sushi with a huge amount of wasabi.
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\食べるアニメ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\食べるアニメ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+And then, never noticing, the two of them grabbed the wasabi sushi at the same moment and crammed each into their mouths in one bite.<PG>
+{DELETECG "000" "1" "200" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

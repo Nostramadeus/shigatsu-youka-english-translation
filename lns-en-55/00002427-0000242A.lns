@@ -1,0 +1,1360 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=5780, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=585, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=404, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=416, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=222, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=590, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふところ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=8, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=27, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=5, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たいじ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=25, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=16, unk2=11195903, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=15, unk2=16776960, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ここ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=11, unk2=16755455, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささや, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さんたん, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=としゃぶつ, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=29, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=4, unk2=16755370, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けいれん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=9164, target=)
+; Links:
+;    0: TWdLink(count=8158, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家リビング夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Through <STYLE ID="1">Haruka</STYLE>'s phone, I had a rough grasp of the situation.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Akane</STYLE> and <STYLE ID="3">Natsumi-chan</STYLE> would be home soon.
+{PAUSE ""}
+<BR>
+And in step with that, <STYLE ID="1">Haruka</STYLE> and <STYLE ID="4">Goto-chan</STYLE> would come too.<PG>
+Now, with this many people, it gets rather troublesome.
+{PAUSE ""}
+<BR>
+As long as <STYLE ID="2">Akane</STYLE> and <STYLE ID="3">Natsumi-chan</STYLE> die, that's enough.
+{PAUSE ""}
+<BR>
+I can't let <STYLE ID="1">Haruka</STYLE> get hurt, and <STYLE ID="4">Goto-chan</STYLE>, frankly, doesn't matter to me.<PG>
+............ 
+{PAUSE ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+Maybe I'd better use this after all.
+{PAUSE ""}
+<BR>
+Even if they're all women, there are four of them.
+{PAUSE ""}
+<BR>
+I have to move as fast as I possibly can.
+{PAUSE ""}
+<BR>
+Above all, I absolutely can't let <STYLE ID="2">Akane</STYLE> and <STYLE ID="3">Natsumi-chan</STYLE> get away.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\外廊下夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+<STYLE ID="5">"............"</STYLE>
+{PAUSE ""}
+<BR>
+So the Kogori home isn't unlocked after all.
+{PAUSE ""}
+<BR>
+Then I have no choice but to wait in my own home next door.
+{PAUSE ""}
+<BR>
+But <STYLE ID="2">Akane</STYLE> is probably wary of me.
+{PAUSE ""}
+<BR>
+Is there some way to make <STYLE ID="2">Akane</STYLE> believe 'I'm not there'?<PG>
+All right, I'll think of it the other way around.
+{PAUSE ""}
+<BR>
+I just have to make her think I'm not here.
+{PAUSE ""}
+<BR>
+If she spotted me somewhere far from here―
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Akane</STYLE> and the others are coming in a police car, and the route is more or less fixed.<PG>
+Besides...
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+As long as I have 'this'.
+{PAUSE ""}
+<BR>
+Still, just in case, I put on a jacket and tucked several knives <STYLE ID="6" RUBY="ふところ">inside the front of it</STYLE>.
+{PAUSE ""}
+<BR>
+Considering what I'm about to do, moving around unarmed would be unwise.<PG>
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+I set the nata and the Noh mask in front of my home, ready for the crime.
+{PAUSE ""}
+<BR>
+If I draped the red robes over them too, anyone passing through here would be at least a little less likely to see them as suspicious objects.
+{PAUSE ""}
+<BR>
+Well, our apartment is at the far end, and people hardly ever pass by anyway.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\コンビニ夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I lay in wait in the shadows by a nearby convenience store.
+{PAUSE ""}
+<BR>
+Anyone heading from the police station to the apartment building would definitely pass here.
+{PAUSE ""}
+<BR>
+All I needed was to let <STYLE ID="2">Akane</STYLE> see me here.<PG>
+And right away, a police car with its light off came driving from the other direction.
+{PAUSE ""}
+<BR>
+That had to be the one.
+{PAUSE ""}
+<BR>
+I raised my hand as high as I could toward the police car.
+{PAUSE ""}
+<BR>
+The police car gradually slowed down.
+{PAUSE ""}
+<BR>
+Unlike with hitchhiking, a police car would have no choice but to stop.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\パトカー夜.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"What's the matter?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Excuse me! I saw </STYLE><STYLE ID="2">someone I know</STYLE><STYLE ID="5"> riding in the back!"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\後部座席夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In the back seat, just as I thought, were <STYLE ID="2">Akane</STYLE> and <STYLE ID="3">Natsumi-chan</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi-chan</STYLE> looked surprised, and <STYLE ID="2">Akane</STYLE> was glaring steadily at me.<PG>
+<STYLE ID="5">"H-hey, </STYLE><STYLE ID="2">Akane</STYLE><STYLE ID="5">! Do you know where </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5"> went!?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　I lost my phone, and when I got home, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5"> wasn't there either...!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Ah, honestly, and right after that incident happened...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi-chan</STYLE>, looking blank, and <STYLE ID="2">Akane</STYLE>, glaring at me as before.
+{PAUSE ""}
+<BR>
+What does she mean to do, glaring like that? Is she going to say I'm the killer?
+{PAUSE ""}
+<BR>
+She can't, can she. If she said that, it would come out that <STYLE ID="2">Akane</STYLE>, too, was the one who did the killing in the Megasawa City case.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="5">Mifuyu</STYLE><STYLE ID="2">, </STYLE><STYLE ID="1">Haruka-chan</STYLE><STYLE ID="2"> should be at </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="2">'s house. I called a little while ago, so don't worry."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see... That's good, then..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh, but </STYLE><STYLE ID="5">Obasan</STYLE><STYLE ID="3">, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="3"> and the others are about to―</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="7">Ow!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi-chan</STYLE>, suddenly crying out in pain.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Akane</STYLE> had probably pinched <STYLE ID="3">Natsumi-chan</STYLE>'s leg.<PG>
+<STYLE ID="5">"Thanks, </STYLE><STYLE ID="2">Akane</STYLE><STYLE ID="5">. I'll go over to </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="5">'s house."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "000,人物1,人物2" "1" "500" "0" "0" "" "0"}
+And I broke into a run, 
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\路地裏.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+and hid myself just around the corner.
+{PAUSE ""}
+<BR>
+The police car drove straight on toward the apartment building.
+{PAUSE ""}
+<BR>
+Good. That proved I wasn't hiding in the apartment building.<PG>
+Even so, that attitude of <STYLE ID="2">Akane</STYLE>'s.
+{PAUSE ""}
+<BR>
+She must have seen through it, that I killed <STYLE ID="8">Ryoji-san</STYLE>.
+{PAUSE ""}
+<BR>
+And she must know that I'm following <STYLE ID="1">Haruka</STYLE>'s movements through the bug.
+{PAUSE ""}
+<BR>
+The exchange just now seemed to have ended as nothing but a farce.<PG>
+In that case, <STYLE ID="2">Akane</STYLE> may be all the more on guard.
+{PAUSE ""}
+<BR>
+She'll probably lock the door the moment she gets home.
+{PAUSE ""}
+<BR>
+I should take it that the plan to make her think I'm not next door has failed.
+{PAUSE ""}
+<BR>
+Then―<PG>
+{STOPSND "BGM" "3000" "PASS"}
+Now, there's no time to hesitate.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I'll inject this all at once.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n1000\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\SE\心臓の鼓動一発.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\裏\路地裏赤.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The sensation of my body flaring hot.
+{PAUSE ""}
+<BR>
+My heartbeat quickening.
+{PAUSE ""}
+<BR>
+Strength welling up.<PG>
+{PLAYSND "エデンの桜\鎖の大地.ogg" "BGM" "REPEAT" "1000" "0"}
+An ordinary human couldn't catch up with the police car now, even running.
+{PAUSE ""}
+<BR>
+An ordinary human, that is.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\路地裏.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "5000" "PASS"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\裏\路地裏モーションブラー.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I moved quickly, choosing back streets.
+{PAUSE ""}
+<BR>
+I must never run at full strength.
+{PAUSE ""}
+<BR>
+If I go all out, my body will break down in no time.
+{PAUSE ""}
+<BR>
+For that distance, I hold it to half my strength at most.
+{PAUSE ""}
+<BR>
+I can't collapse now.
+{PAUSE ""}
+<BR>
+After I kill the two of them, I have to take <STYLE ID="1">Haruka</STYLE> and flee straight to the Arata settlement.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I covered a 5-minute walk in under 30 seconds.
+{PAUSE ""}
+<BR>
+The police car was parked in front of the apartment building, and <STYLE ID="2">Akane</STYLE> and the others were getting out.
+{PAUSE ""}
+<BR>
+I could hear <STYLE ID="2">Akane</STYLE> talking with the officer.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\マンション前夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\裏ルート\アイテム\パトカー夜.gal" "NORMAL" "#1" "500" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Then, as I said earlier, we'll call for backup and patrol this area for a while and guard the Kogori residence."
+{PAUSE ""}
+<BR>
+Wh...!
+{PAUSE ""}
+<BR>
+With this, it would be hard to make a move, however much I used the drug.
+{PAUSE ""}
+<BR>
+Some other plan―<PG>
+<STYLE ID="2">"No, actually, I've changed my mind. Please, take care going back."</STYLE>
+{PAUSE ""}
+<BR>
+"What!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's fine. I'll lock up properly. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Besides, I've had enough of facing police officers for today. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Please, go."</STYLE>
+{PAUSE ""}
+<BR>
+"That won't do. <STYLE ID="9">Lieutenant Ise</STYLE> also―"<PG>
+<STYLE ID="2">"Is this compulsory?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　If I tell you to go home, you still won't go?"</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Understood."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\自動車エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "アイテム1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+The officer got into the police car, and it drove off back the way it had come.<PG>
+I see. If I appeared now, the Megasawa City case might come out.
+{PAUSE ""}
+<BR>
+Still, to think she'd go this far to protect herself.
+{PAUSE ""}
+<BR>
+If I were in <STYLE ID="2">Akane</STYLE>'s position, I would put my daughter's life first, even if it came out that I was the culprit.<PG>
+Well, then again, 10 years ago I did threaten her that thoroughly, using the words 'someone I can trust.'
+{PAUSE ""}
+<BR>
+Does she think that if <STYLE ID="3">Natsumi-chan</STYLE> found out about the Megasawa City case, the Arata settlement would set its sights on them?
+{PAUSE ""}
+<BR>
+Her real intent is unclear, but things are going quite smoothly.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, go on into the house first. Lock the door properly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">, what are you going to do?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I left something in that police car. I'll call and have them come back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Lock it properly and put the chain on too, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Okay..."</STYLE><PG>
+<STYLE ID="3">Natsumi-chan</STYLE> went into the apartment building alone.
+{PAUSE ""}
+<BR>
+This is probably the signal that she's ready to <STYLE ID="10" RUBY="たいじ">face</STYLE> me.
+{PAUSE ""}
+<BR>
+The drug only lasts so long, so I'd better show myself soon.
+{PAUSE ""}
+<BR>
+I walked boldly up to <STYLE ID="2">Akane</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"So you were here after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I found my phone. And it turns out </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5">'s on her way here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Stop telling barefaced lies. Are you planning to kill </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"How dare you do that to </STYLE><STYLE ID="8">Ryoji-kun</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"For trying to snatch </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5"> away, </STYLE><STYLE ID="2">you</STYLE><STYLE ID="5"> people are the ones to blame, aren't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Otherwise, I never meant to do anything."</STYLE><PG>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Three years ago, I didn't want to come back to Motoki-cho. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="5"> died in this land, and </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="5"> lives in this place. What agony it is to be here. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="5"> wished for it so strongly. If not for that, I'd want to leave a place like this as soon as I possibly could."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE><PG>
+<STYLE ID="2">Akane</STYLE> made no attempt to say anything.
+{PAUSE ""}
+<BR>
+I see, she's stalling for time.
+{PAUSE ""}
+<BR>
+While this goes on, <STYLE ID="1">Haruka</STYLE> will arrive, and if she thinks I'm using the drug, she's waiting for it to wear off.
+{PAUSE ""}
+<BR>
+As if it'll go that easily...!<PG>
+{QUAKE "人物1,000,メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜横顔下.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="12">"Gh...!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I punched <STYLE ID="2">Akane</STYLE> in the pit of the stomach and knocked her out.
+{PAUSE ""}
+<BR>
+With the drug's effect in mind, I meant to hit her as weakly as I could.
+{PAUSE ""}
+<BR>
+It would be a nuisance if she vomited blood and died in a place like this.
+{PAUSE ""}
+<BR>
+The drug should last about another 8 minutes.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\マンション階段.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I carried <STYLE ID="2">Akane</STYLE> and climbed the stairs.
+{PAUSE ""}
+<BR>
+The residents hardly ever use these stairs.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\外廊下夜.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Good, no sign of anyone in the outside walkway either.
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\SE\鍵束.ogg" "VOICE" "NORMAL" "1000" "0"}
+I searched <STYLE ID="2">Akane</STYLE>'s pocket and took out the key to the Kogori home.<PG>
+Careful not to let <STYLE ID="3">Natsumi-chan</STYLE> notice, I quietly unlocked the door.
+{PAUSE ""}
+<BR>
+But,
+{PAUSE ""}
+<BR>
+the chain was on, as I expected.
+{PAUSE ""}
+<BR>
+Should I just tear it off by hand while the drug is still working?<PG>
+No, that won't do.
+{PAUSE ""}
+<BR>
+It would leave signs that it had been torn off by hand.
+{PAUSE ""}
+<BR>
+If I did something that far beyond what a human can do, it would inevitably be tied to the Megasawa City case.
+{PAUSE ""}
+<BR>
+The flaying case was done without the drug, strictly within what a human could manage.
+{PAUSE ""}
+<BR>
+Even if someone tried to explain today's incident by forcing a link to the Megasawa City case, the date is the only solid point in common.<PG>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+I picked up the nata I'd hidden under the red robes, 
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "裏ルート用\チェーン叩き切る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "500" "30"}
+{MESON "500"}
+and when I hacked through the chain in one stroke, a loud noise echoed down the outside walkway.
+{PAUSE ""}
+<BR>
+This way, even an ordinary person could do it if they set their mind to it.<PG>
+But surely <STYLE ID="3">Natsumi-chan</STYLE> had noticed that noise, and the people nearby would find it suspicious.
+{PAUSE ""}
+<BR>
+From here on, it would be a race against time in every respect, not just the drug.
+{PAUSE ""}
+<BR>
+I dragged <STYLE ID="2">Akane</STYLE>, gathered up the red robes and the Noh mask too, and forced my way into the Kogori home.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\居間.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+............?
+{PAUSE ""}
+<BR>
+Not here.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi-chan</STYLE> should be in this house.
+{PAUSE ""}
+<BR>
+Is she hiding somewhere?<PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "5000" "PASS"}
+{MESON "500"}
+A ringtone―
+{PAUSE ""}
+it was coming from the direction of the kitchen.
+{PAUSE ""}
+<BR>
+I set <STYLE ID="2">Akane</STYLE> and the nata, the Noh mask and the red robes down in the living room, and when I peeked into the kitchen...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\台所1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔頭かかえる.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There was <STYLE ID="3">Natsumi-chan</STYLE>, hiding under the sink, trembling.<PG>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="5">"What are you doing in a place like that?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"O... </STYLE><STYLE ID="5">Obasan</STYLE><STYLE ID="3">...?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Why are </STYLE><STYLE ID="5">you</STYLE><STYLE ID="3"> here...?"</STYLE>
+{PAUSE ""}
+<BR>
+From the look of it, she still hadn't realized that I was the killer.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="5">, it's all right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Ryoji-san</STYLE><STYLE ID="5">'s killer tried to break in, so I hit them from behind just now and knocked them out."</STYLE>
+{PAUSE ""}
+<BR>
+With this, I would put <STYLE ID="3">Natsumi-chan</STYLE> off her guard and make her easy to kill in one blow―
+{PAUSE ""}
+or so I intended.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">Natsumi-chan</STYLE> threw her arms around me.<PG>
+<STYLE ID="3">"Uuh...! </STYLE><STYLE ID="5">Obasan</STYLE><STYLE ID="3">...!</STYLE>
+{PAUSE ""}
+　<STYLE ID="3">Why did </STYLE><STYLE ID="8">Dad</STYLE><STYLE ID="3"> have to be killed!?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Why did the killer come this far and break in!?"</STYLE>
+{PAUSE ""}
+<BR>
+This had become tiresome.
+{PAUSE ""}
+<BR>
+With her clinging to me like this, it was hard to move.
+{PAUSE ""}
+<BR>
+There was no time, either. Quickly, <STYLE ID="3">this girl</STYLE>―,<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\裏ルート\茜鉈構える.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "32" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="12">"</STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="12">! Out of the way!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+When I turned at that voice, there was a figure swinging a nata up at me―<PG>
+{MESOFF "500"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "25" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Ugh...!"</STYLE>
+{PAUSE ""}
+<BR>
+A hard impact hit my head, and my vision blurred.
+{PAUSE ""}
+<BR>
+It seemed I had been struck with the back of the nata.<PG>
+{PLAYSND "BGM死月編\夢見る憧憬.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"M-</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">! Run, quickly!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Don't tell me... the killer </STYLE><STYLE ID="5">you</STYLE><STYLE ID="3"> hit from behind and knocked out is... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Mom</STYLE><STYLE ID="3">?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">'s the killer...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The killer is </STYLE><STYLE ID="5">Mifuyu</STYLE><STYLE ID="2">! Run!"</STYLE><PG>
+<STYLE ID="5">"</STYLE><STYLE ID="2">Akane</STYLE><STYLE ID="5">...!</STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="5">　</STYLE><STYLE ID="13">How dare you...!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ横.gal" "NORMAL" "#1" "R" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n100\r\n500\r\nDEC\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n-700\r\n200\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+An unpleasant sensation ran through my hand.
+{PAUSE ""}
+<BR>
+Much the same feeling as when I stabbed <STYLE ID="8">Ryoji-san</STYLE>, just yesterday.
+{PAUSE ""}
+<BR>
+The knife I'd kept inside my jacket was buried in <STYLE ID="2">Akane</STYLE>'s stomach.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\台所1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜横顔下.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2"><TXSPS>"Gh... </STYLE><STYLE ID="5">Mifuyu</STYLE><STYLE ID="2">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPN>"You people are finished...!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+I drew another knife from inside my jacket, 
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "5" "5" "500" "30"}
+and drove it into <STYLE ID="2">Akane</STYLE>'s stomach the same way.<PG>
+<STYLE ID="2"><TXSPS>"N... </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, at least... I...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>Even then, <STYLE ID="2">Akane</STYLE> still tried to raise the nata.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "300" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "15" "500" "0" "0" "" "0"}
+{MESON "500"}
+My vision hadn't recovered yet either.
+{PAUSE ""}
+<BR>
+Drug or no drug, dodging would be hard like this.
+{PAUSE ""}
+<BR>
+But,
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+the nata dropped straight to the floor, and <STYLE ID="2">Akane</STYLE> fell to her knees.<PG>
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">...! Run...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ座り込み.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ah... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Ahh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>Natsumi-chan</STYLE>'s legs seemed to have given out; she couldn't stand up.
+{PAUSE ""}
+<BR>
+Then, <STYLE ID="2">Akane</STYLE> first―<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+But <STYLE ID="2">Akane</STYLE> would never stand up again.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Akane</STYLE> lay sprawled on the floor, and I could hear her breathing, shallow but harsh.
+{PAUSE ""}
+<BR>
+So <STYLE ID="2">Akane</STYLE> is finished too.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="2">Akane</STYLE><STYLE ID="5">... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">It's over now. In the end, I never managed to crawl up out of the depths of misery. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Just as I thought: as long as I'm in </STYLE><STYLE ID="14" RUBY="ここ">Motoki-cho</STYLE><STYLE ID="5">, I can never be happy. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So I'm going to the Arata settlement. Taking </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5"> with me. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">For that, every witness has to disappear."</STYLE><PG>
+I said this to <STYLE ID="2">Akane</STYLE>, but she no longer showed any reaction.
+{PAUSE ""}
+<BR>
+The knife seemed to have reached the aorta; she had died sooner than I expected.
+{PAUSE ""}
+<BR>
+When I looked over at <STYLE ID="3">Natsumi-chan</STYLE>―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\居間.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Her legs gone, unable to stand, she was dragging herself on her belly toward the living room.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi-chan</STYLE> is finished now too.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE>'s own flesh and blood, <STYLE ID="3">Natsumi-chan</STYLE>―
+{PAUSE ""}
+this witch, too, is now...<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="5">, if you resist, it'll only hurt more, all right?"</STYLE>
+{PAUSE ""}
+<BR>
+I picked up the nata <STYLE ID="2">Akane</STYLE> had dropped and walked slowly toward <STYLE ID="3">Natsumi-chan</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔頭かかえる.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="15"><TXSPS>"N-no... </STYLE>
+{PAUSE ""}
+<STYLE ID="15">No!"</STYLE>
+{PAUSE ""}
+{QUAKESTOP "0"}
+<BR>
+<TXSPN>It could be taken for crying or for screaming, but it was a trembling shriek, like a <STYLE ID="16" RUBY="ささや">whisper</STYLE>.
+{PAUSE ""}
+<BR>
+When I hunted animals in the Arata settlement, they died like this at the end too.
+{PAUSE ""}
+<BR>
+I always gave them the finishing blow, so at least the animals wouldn't suffer.
+{PAUSE ""}
+<BR>
+So―
+{PAUSE ""}
+<STYLE ID="3">this prey</STYLE> too―<PG>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "14" "200" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\裏\首切るイメージ.gal" "NORMAL" "#1" "C" "B" "0" "14" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I cut off <STYLE ID="3">Natsumi-chan</STYLE>'s head with the nata.
+{PAUSE ""}
+<BR>
+Fresh blood sprayed across the wall, and the head rolled heavily onto the floor.
+{PAUSE ""}
+<BR>
+This is the end of the witch who killed <STYLE ID="11">Eiichiro-san</STYLE>.
+{PAUSE ""}
+<BR>
+The end of <STYLE ID="1">Haruka</STYLE>'s little sister by blood.
+{PAUSE ""}
+<BR>
+I feel nothing about it.
+{PAUSE ""}
+<BR>
+I only did what had to be done.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\古郡家居間美冬なし.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "300" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "15" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">"Gh...!"</STYLE>
+{PAUSE ""}
+<BR>
+My vision blurred again, and there was no strength in my legs.
+{PAUSE ""}
+<BR>
+The damage <STYLE ID="2">Akane</STYLE> had dealt me was greater than I'd expected.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+When I put a hand to my face, it came away sticky with blood.
+{PAUSE ""}
+<BR>
+This wasn't spattered blood from the others; it was blood from my own head, where the back of the nata had struck.<PG>
+Even so, I have to do what must be done.
+{PAUSE ""}
+<BR>
+Now, the next thing to do is... 
+{PAUSE ""}
+kill <STYLE ID="4">Goto-chan</STYLE>... 
+{PAUSE ""}
+then <STYLE ID="1">Haruka</STYLE>...!<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "300" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "15" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">"Nngh...!"</STYLE>
+{PAUSE ""}
+<BR>
+Little by little, the pain came surging up.
+{PAUSE ""}
+<BR>
+The drug seemed to have worn off.
+{PAUSE ""}
+<BR>
+I'd heard that the drug not only brought great strength and sharper dynamic vision, but also had a strong painkilling effect.
+{PAUSE ""}
+<BR>
+I couldn't walk the way I wanted to.
+{PAUSE ""}
+<BR>
+It looked like recovering would take time, but at this rate <STYLE ID="1">Haruka</STYLE> would get here first.<PG>
+In that case, maybe I'll go down here too and play dead.
+{PAUSE ""}
+<BR>
+When I see an opening, I'll knock <STYLE ID="1">Haruka</STYLE> out, then kill <STYLE ID="4">Goto-chan</STYLE> quickly.
+{PAUSE ""}
+<BR>
+After that, I'll take <STYLE ID="1">Haruka</STYLE> just as she is and flee to the Arata settlement.
+{PAUSE ""}
+<BR>
+The car should be fine for gas, too.<PG>
+{PLAYSND "SE\階段速上り.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "2000" "PASS"}
+Just then, I heard loud footsteps from outside.
+{PAUSE ""}
+<BR>
+It was probably <STYLE ID="1">Haruka</STYLE>, running this way.
+{PAUSE ""}
+<BR>
+I see, so it was <STYLE ID="1">Haruka</STYLE> who called <STYLE ID="3">Natsumi-chan</STYLE>.
+{PAUSE ""}
+<BR>
+Was she panicking because no one answered?<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I lay down where I was, closed my eyes, and followed what was happening by ear.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+Right then, <STYLE ID="1">Haruka</STYLE> came rushing in.<PG>
+<STYLE ID="1">"Ugh...! What is this...!"</STYLE>
+{PAUSE ""}
+<BR>
+Faced with this <STYLE ID="17" RUBY="さんたん">gruesome</STYLE> sight, <STYLE ID="1">Haruka</STYLE> was understandably shaken.
+{PAUSE ""}
+<BR>
+And then she ran straight toward the kitchen―<PG>
+{PLAYSND "裏ルート用\outo1低.ogg" "VOICE" "NORMAL" "1000" "0"}
+The sound of <STYLE ID="1">Haruka</STYLE>'s <STYLE ID="18" RUBY="としゃぶつ">vomit</STYLE> splattering out.
+{PAUSE ""}
+<BR>
+I'm sorry, <STYLE ID="1">Haruka</STYLE>, for letting you see something so filthy.
+{PAUSE ""}
+<BR>
+Soon we'll get away from this filthy place, all right?<PG>
+And <STYLE ID="4">Goto-chan</STYLE> seemed to have come into the room a little behind her.<PG>
+<STYLE ID="1">"Hey, look, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... Are you still going to say there's no curse, even with this?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Hahaha... Amazing, it's amazing! Me, I'm a witch, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"N-</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="4">... that's wrong... this isn't some curse..."</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1">... </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">'re still warm... If I'd gotten here a little sooner, would I have been able to save you...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... Up to now, it was only ever people I hated who died. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But, this time </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1">... and even </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Why...? There wasn't any paper doll for </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">..."</STYLE><PG>
+<STYLE ID="19">I opened my eyes a crack―</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CREATECG "000" "グラフィック\イラスト\呪殺編\証明.lcm" "REPEAT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The world my hazy mind showed me―
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE> had lifted <STYLE ID="3">Natsumi-chan</STYLE>'s head and was speaking to it.
+{PAUSE ""}
+<BR>
+As I watched her, a question welled up in me.
+{PAUSE ""}
+<BR>
+Why did you care so much about <STYLE ID="11">your father</STYLE>'s killer, about <STYLE ID="3">Natsumi-chan</STYLE>?
+{PAUSE ""}
+<BR>
+Don't you hate her? Don't you resent her?<PG>
+{PLAYSND "最後の声・真呪殺\たたら場.ogg" "BGM" "REPEAT" "1000" "0"}
+At that moment, some strange emotion pierced my heart.
+{PAUSE ""}
+<BR>
+A strange feeling I hadn't felt for more than 10 years.
+{PAUSE ""}
+<BR>
+This feeling―what is it?<PG>
+A very painful, suffocating emotion.
+{PAUSE ""}
+<BR>
+That emotion was directed at <STYLE ID="1">Haruka</STYLE>.
+{PAUSE ""}
+<BR>
+What is it, this feeling?
+{PAUSE ""}
+<BR>
+The name of this emotion was, I'm sure―<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At last I understood what this emotion was.
+{PAUSE ""}
+<BR>
+<STYLE ID="19">A suffocating weight, like darkness covering my heart, for the first time in a long while.</STYLE>
+{PAUSE ""}
+<BR>
+No, somewhere in my heart I had always had this feeling.
+{PAUSE ""}
+<BR>
+Only now, seeing <STYLE ID="1">Haruka</STYLE>, did I become aware of it for the first time.
+{PAUSE ""}
+<BR>
+That feeling was―
+{PAUSE ""}
+guilt.<PG>
+<STYLE ID="1">Haruka</STYLE> had leaned on <STYLE ID="3">Natsumi-chan</STYLE> to keep going, and for the first time, I felt guilt over killing her.
+{PAUSE ""}
+<BR>
+All at once, that guilt and that question took over my mind.
+{PAUSE ""}
+<BR>
+Even so, my vision was warped, and my eyes merely showed me the scene in front of them.
+{PAUSE ""}
+<BR>
+My mind did not enter into it.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE> pulled out one of the knives stuck in <STYLE ID="2">Akane</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... I like </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1"> too... so surely, </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1">'ll die today too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">... stop!"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+Why is that?
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Akane</STYLE> and I were once people who needed each other, too.
+{PAUSE ""}
+<BR>
+But give it some trigger, and a thing like that just breaks.
+{PAUSE ""}
+<BR>
+And yet <STYLE ID="1">Haruka</STYLE> and <STYLE ID="3">Natsumi-chan</STYLE>...<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">, you're wrong! This isn't a curse! It's murder! So..."</STYLE>
+{PAUSE ""}
+<BR>
+What would it have taken to break what <STYLE ID="1">Haruka</STYLE> and <STYLE ID="3">Natsumi-chan</STYLE> had?
+{PAUSE ""}
+<BR>
+Would it break if the one you love were taken, as with me?
+{PAUSE ""}
+<BR>
+Or else... 
+{PAUSE ""}
+or else... 
+{PAUSE ""}
+what could there be?
+{PAUSE ""}
+<BR>
+Something that could tear these two apart―<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... enough... </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> are both dead... Now, none of it matters... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">No... but </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1">'re still alive... </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1"> are still alive..."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+What was it that tore <STYLE ID="2">Akane</STYLE> and me apart?
+{PAUSE ""}
+<BR>
+Even after I had become like this, <STYLE ID="2">Akane</STYLE> still tried to reach out to me.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE> had her <STYLE ID="11">father</STYLE> taken from her, and still she needed <STYLE ID="3">Natsumi-chan</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1">, do you want to die?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"N-no...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Say it straight! Make it clear whether you want to die or don't want to die!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I... I... I don't want to die...!"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+Could it be...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hmm... I see... Yeah, of course not."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+Could it be... 
+{PAUSE ""}
+that I...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... what are you scared of... It's all right now... Haha... Trust me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Nnngh...! I-I don't want to die...!"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+Was I the one who was wrong?
+{PAUSE ""}
+<BR>
+The one who was destroying my happiness... 
+{PAUSE ""}
+was me...?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Like I said, stop worrying. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I should have done it this way from the start..."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+Why did I do something like this?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花ナイフ抜く.gal" "NORMAL" "#1" "R" "B" "0" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"This way, I won't have to kill anyone anymore."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+Will this make me happy?
+{PAUSE ""}
+<BR>
+What should I have done?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "#1" "R" "B" "0" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Goodbye, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">. </STYLE><STYLE ID="4">You</STYLE><STYLE ID="1">, at least, survive..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむきナイフ.gal" "NORMAL" "#1" "R" "B" "0" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "15" "200" "0" "0" "" "0"}
+{MESON "500"}
+When I came back to myself, <STYLE ID="1">Haruka</STYLE> had driven the knife into her own throat.
+{PAUSE ""}
+<BR>
+I hurried to get up and, while all her attention was on <STYLE ID="1">Haruka</STYLE>, struck <STYLE ID="4">Goto-chan</STYLE> on the back of the head.
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\イラスト\呪殺編\裏\証明\証明1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="13">"</STYLE><STYLE ID="20">Haruka</STYLE><STYLE ID="13">! </STYLE><STYLE ID="20">Harukaaa</STYLE><STYLE ID="13">!!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Mo... o... m...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPN>"Why, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5">...! What have you done...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Mo... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you were alive..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPN>"It's a lie...!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　It's a lie! </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5">! You can't die! Don't leave me alone!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE> moved her lips faintly, as if trying to say something, but―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\裏\証明\証明2.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000" "QUAKE" "1" "2" "2" "0" "100"}
+{WAIT "100" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\裏\証明\証明3.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000" "QUAKE" "1" "20" "20" "0" "100"}
+{PLAYSND "裏ルート用\喀血.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\裏\証明\証明2.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKESTOP "500"}
+{QUAKE "000" "QUAKE" "1" "2" "2" "0" "100"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\裏\証明\証明3.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Haruka</STYLE> coughed up a great deal of blood and <STYLE ID="21" RUBY="けいれん">convulsed</STYLE>.
+{PAUSE ""}
+<BR>
+Before long, all the strength left her body, and she began staring at the ceiling with dilated pupils.
+{QUAKESTOP "0"}
+<PG>
+What? This...
+{PAUSE ""}
+<BR>
+What's happening?
+{PAUSE ""}
+<BR>
+Why is everyone dead?
+{PAUSE ""}
+<BR>
+Why is everyone covered in blood?
+{PAUSE ""}
+<BR>
+Who... did this?<PG>
+I know.
+{PAUSE ""}
+<BR>
+This happened because of me.
+{PAUSE ""}
+<BR>
+I was the one wrecking my own happiness.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My best friend</STYLE>―
+{PAUSE ""}
+<STYLE ID="1">my daughter</STYLE>―
+{PAUSE ""}
+<STYLE ID="3">my daughter's little sister</STYLE>―
+{PAUSE ""}
+<STYLE ID="8">my best friend's husband</STYLE>―
+{PAUSE ""}
+<BR>
+I was the one who wrecked them.
+{PAUSE ""}
+<BR>
+Even though everyone had tried to reach out to me.<PG>
+Now, regret came crashing over me like a giant tsunami.
+{PAUSE ""}
+<BR>
+If only, back then, I had listened to <STYLE ID="8">Ryoji-san</STYLE>'s proposal.
+{PAUSE ""}
+<BR>
+If only, back then, I hadn't asked <STYLE ID="2">Akane</STYLE> and the others to kill.
+{PAUSE ""}
+<BR>
+If only, back then... 
+{PAUSE ""}
+I hadn't blamed <STYLE ID="11">Eiichiro-san</STYLE>'s death on someone else...
+{PAUSE ""}
+<BR>
+It's all over now.<PG>
+No, there's one hope left.
+{PAUSE ""}
+<BR>
+I turned my eyes to a small figure.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\裏ルート\五島上向き.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Goto-chan</STYLE> lay there unconscious.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE> had tried to save <STYLE ID="4">Goto-chan</STYLE> at the cost of her own life.
+{PAUSE ""}
+<BR>
+Then at least... 
+{PAUSE ""}
+at least what <STYLE ID="1">Haruka</STYLE> tried to do at the end, I'll...<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\新村春花.gal" "NORMAL" "#1" "200" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\新村美冬.gal" "NORMAL" "#1" "500" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I made paper dolls of myself and <STYLE ID="1">Haruka</STYLE>, dipped them in the <STYLE ID="18" RUBY="としゃぶつ">vomit</STYLE> in the kitchen, and pushed them into <STYLE ID="4">Goto-chan</STYLE>'s pocket.
+{PAUSE ""}
+<BR>
+Then I carried <STYLE ID="4">Goto-chan</STYLE> to the entryway, 
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+and sat her down leaning against the wall.
+{PAUSE ""}
+<BR>
+Then I soaked a blanket in the bathroom and draped it over <STYLE ID="4">her</STYLE>.<PG>
+With this, <STYLE ID="4">Goto-chan</STYLE> should survive.
+{PAUSE ""}
+<BR>
+But I can't cause trouble for the Arata settlement.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto-chan</STYLE> will have to go on believing this was a curse.
+{PAUSE ""}
+<BR>
+I have to make <STYLE ID="4">her</STYLE> testimony as muddled as possible.<PG>
+But this isn't enough.
+{PAUSE ""}
+<BR>
+The rest of the drug, and the drug I just injected, must not be found.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\布団夜.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,アイテム2,人物1" "1" "2000" "0" "0" "" "0"}
+{STOPSND "VOICE" "0" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In <STYLE ID="3">Natsumi-chan</STYLE>'s room, a kerosene reflector heater.
+{PAUSE ""}
+<BR>
+In the cold part of spring, <STYLE ID="3">Natsumi-chan</STYLE>, who disliked blowing air, apparently warmed her room with this.
+{PAUSE ""}
+<BR>
+It held plenty of kerosene.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\古郡家居間美冬なし.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "裏ルート用\waterfalls.ogg" "VOICE" "REPEAT" "1000" "0"}
+{MESON "500"}
+I opened the kerosene tank and splashed it around the living room, then cut through the gas hose in the kitchen.
+{PAUSE ""}
+<BR>
+This drug apparently becomes undetectable when exposed to high heat.
+{PAUSE ""}
+{STOPSND "VOICE" "1000" "PASS"}
+<BR>
+So... 
+{PAUSE ""}
+I...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\タバコ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\裏\古郡家居間美冬なし赤.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+When I set fire to the living room, this air, heavy as darkness, turned red.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Akane</STYLE>, <STYLE ID="1">Haruka</STYLE>, <STYLE ID="3">Natsumi-chan</STYLE>: none of them showed any reaction, even as the flames spread to them.
+{PAUSE ""}
+<BR>
+I, on the other hand, writhed in the unbearable heat.
+{PAUSE ""}
+<BR>
+The flames grew fiercer still, scorching my skin.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\爆発.ogg" "VOICE" "NORMAL" "800" "0"}
+{STOPSND "VOICE" "3000" "PASS"}
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "$4080FF" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\炎.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\イラスト\呪殺編\裏\証明\証明7.gal" "NORMAL" "#1" "L" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\炎.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then, maybe because the gas had caught, there was an explosion and my vision shook.
+{PAUSE ""}
+<BR>
+When I breathed, the scorching air burned my lungs, and the half-burned gas stole my consciousness.
+{PAUSE ""}
+<BR>
+Having lost even the feeling of pain in my skin, I collapsed right beside <STYLE ID="1">Haruka</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Haruka</STYLE>'s once-white skin charred hideously.
+{PAUSE ""}
+<BR>
+This was the last sight of the <STYLE ID="1">daughter</STYLE> who had been at my side for 17 years.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE>, I'm sorry I was such a terrible mother...
+{PAUSE ""}
+<BR>
+I thought that with <STYLE ID="1">Haruka</STYLE>, I could be happy...
+{PAUSE ""}
+<BR>
+To have that happiness destroyed by her own mother―
+{PAUSE ""}
+surely she'll never forgive me.<PG>
+But in my fading consciousness, I rejected the thought '<STYLE ID="1">Haruka</STYLE> won't forgive me' myself.
+{PAUSE ""}
+<BR>
+No matter what happened, <STYLE ID="1">Haruka</STYLE> had needed <STYLE ID="3">Natsumi-chan</STYLE>.
+{PAUSE ""}
+<BR>
+The problem was that I had drawn such a negative conclusion.
+{PAUSE ""}
+<BR>
+If that rejection is right, will <STYLE ID="1">Haruka</STYLE> forgive me?
+{PAUSE ""}
+<BR>
+Will <STYLE ID="1">Haruka</STYLE> accept me as her mother again?<PG>
+<TXSPS>If so―
+{PAUSE ""}
+I'm glad I got to be <STYLE ID="1">Haruka</STYLE>'s mother.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE>, thank you for coming to me.<PG>
+And... 
+{PAUSE ""}
+I'm sorry, <STYLE ID="1">Haruka</STYLE>...
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

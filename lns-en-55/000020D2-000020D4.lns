@@ -1,0 +1,72 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=168, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=108, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=319, target=)
+; Links:
+;    0: TWdLink(count=276, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Not here... 
+{PAUSE ""}
+Not here... 
+{PAUSE ""}
+Not here... 
+{PAUSE ""}
+Not here...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... </STYLE>Dad<STYLE ID="1">, what's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+"The falsificaso's gone."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... What do you need that for?"</STYLE><PG>
+"Don't you get it? Someone stole it!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... What could they mean to do with it?"</STYLE>
+{PAUSE ""}
+<BR>
+"It's strange... It was definitely here until yesterday. 
+{PAUSE ""}
+If it's been stolen, we're in trouble."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... We weren't planning to use it at next week's rite anyway, were we?"</STYLE><PG>
+"That's not what I mean. What if someone's planning to use the falsificaso as a drug?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... That certainly would be trouble. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But the falsificaso doesn't work anymore, does it?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's true, but... 
+{PAUSE ""}
+What on earth do they mean to use it for?"<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

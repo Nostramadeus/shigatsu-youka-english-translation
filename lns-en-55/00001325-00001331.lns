@@ -1,0 +1,765 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1917, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=6, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=36, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1780, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1172, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=86, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=12, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=むしば, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんか, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=12, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=8, unk2=11271932, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひろと, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=14, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひろと, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=クソガキ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てめえ, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きずな, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5579, target=)
+; Links:
+;    0: TWdLink(count=5062, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "L" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The residents' register... 
+{PAUSE ""}
+And this... a cosplay mail-order catalog...?
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In the living room</STYLE>, I was rummaging through <STYLE ID="2">Grandma's</STYLE> storage box without asking, but nothing worth noting turned up.
+{PAUSE ""}
+<BR>
+I was searching for something I'd really rather not find, but I was also scared of turning up things I didn't want to find in a different sense.
+{PAUSE ""}
+<BR>
+See? There it is...<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\コスプレ.gal" "NORMAL" "#1" "500" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This is from last year's Comiket, when <STYLE ID="2">Grandma</STYLE> dragged me to the cosplay hall.
+{PAUSE ""}
+<BR>
+The photos from that day were filed in a pretty album, one by one, with care.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">, how's it going? Finding anything?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... I don't know... Is everything all right outside?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah, looks like </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="2">Grandma</STYLE><STYLE ID="3"> went off somewhere on the buggy. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Probably the supermarket in Toyotake."</STYLE><PG>
+I had <STYLE ID="3">Kana</STYLE> keeping watch outside as my helper.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana's</STYLE> eyesight and animal instincts are more reliable than anything.
+{PAUSE ""}
+<BR>
+Though what <STYLE ID="3">Kana</STYLE> makes of what I'm doing is another question...<PG>
+<STYLE ID="3">"Hey, why are you going through </STYLE><STYLE ID="2">Grandma's</STYLE><STYLE ID="3"> stuff?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE> and I had a huge fight at New Year's.
+{PAUSE ""}
+<BR>
+The reason: I said the culprit in the curse-killings was <STYLE ID="5">Dad</STYLE>.
+{PAUSE ""}
+<BR>
+Naturally, <STYLE ID="3">Kana</STYLE> didn't take it well.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hey, come on..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Just something."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"So the culprits really are </STYLE><STYLE ID="2">Grandma</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="3">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... That's not it. There might be proof the two of them aren't the culprits, so I'm looking. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If I find it, they're not the culprits."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Oh, okay! I hope you find it!"</STYLE>
+{PAUSE ""}
+<BR>
+Though if I find it, it's settled that they're the culprits...<PG>
+It didn't seem to be here.
+{PAUSE ""}
+<BR>
+That leaves the room <STYLE ID="5">Dad</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Kana</STYLE> share.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, I'm going up to the second floor, so tell me if anyone comes."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Wait, I'm coming too! There's still time before the two of them get back!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\幸太郎の部屋.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I don't come into this room much.
+{PAUSE ""}
+<BR>
+Around the time <STYLE ID="6">Mom</STYLE> died, I was given a room of my own.
+{PAUSE ""}
+<BR>
+It wasn't because <STYLE ID="6">Mom's</STYLE> room had come free, but out of consideration for my growing into a woman.
+{PAUSE ""}
+<BR>
+It looked very different from the way I remembered <STYLE ID="5">Dad's</STYLE> room.
+{PAUSE ""}
+<BR>
+In the time since I'd last seen it, he'd apparently rearranged it over and over.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"So the proof that </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> isn't the culprit is in here?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Well..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............?"</STYLE>
+{PAUSE ""}
+<BR>
+The decisive proof―the book taken out of the storehouse.
+{PAUSE ""}
+<BR>
+If I find it here, it is hard proof that <STYLE ID="5">Dad</STYLE> has been deceiving everyone.
+{PAUSE ""}
+<BR>
+But at this rate, I'll end up making <STYLE ID="3">Kana</STYLE> search for that proof.<PG>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">listen."</STYLE>
+{PAUSE ""}
+<BR>
+Should I be honest with her here, after all?
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE> is trying to find the book to prove <STYLE ID="5">Dad</STYLE> innocent.
+{PAUSE ""}
+<BR>
+If things go on like this, <STYLE ID="3">Kana</STYLE> will gladly help look for the book.
+{PAUSE ""}
+<BR>
+But that will end in a result <STYLE ID="3">Kana</STYLE> doesn't want.<PG>
+I want to cover for <STYLE ID="5">Dad</STYLE> too.
+{PAUSE ""}
+<BR>
+But at this rate, the next curse-killing will happen.
+{PAUSE ""}
+<BR>
+And the 'someone' that kept <STYLE ID="7" RUBY="だま">deceiving</STYLE> us will go on <STYLE ID="8" RUBY="むしば">eating away at</STYLE> the Arata settlement, more or less forever.<PG>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, this is important, so please listen. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">About what I'm looking for right now..."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Oh! Come to think of it, I never asked what you're looking for!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Probably an old book. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">An old book from the storehouse, somewhere in this room."</STYLE><PG>
+<STYLE ID="3">"Got it! If we find that, </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="3"> is cleared of everything!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... That book should explain how to solve the curse-killings."</STYLE>
+{PAUSE ""}
+<BR>
+When I'd explained that much, <STYLE ID="3">Kana's</STYLE> face began to cloud over a little.<PG>
+<STYLE ID="3">"Hmm? Then </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> must know how to solve it, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE> seemed to have caught on too.
+{PAUSE ""}
+<BR>
+Yes―if my guess is right, far from knowing the solution, <STYLE ID="5">Dad</STYLE> may be deeply involved in the case.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I get it, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">. It's the other way around. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If the book doesn't turn up, </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> is innocent, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Don't worry, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">. Even if I find the book, I won't hide it or anything. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">No matter how much I want to think </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> isn't the culprit, that won't change the facts."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">..."</STYLE><PG>
+<STYLE ID="3">"At New Year's, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">, when I </STYLE><STYLE ID="9" RUBY="けんか">fought</STYLE><STYLE ID="3"> with you, </STYLE><STYLE ID="10">Auntie</STYLE><STYLE ID="3"> told me something. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">You</STYLE><STYLE ID="3"> really want to solve the case, she said, so you said </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> was the culprit even though you didn't want to. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And since the culprit is inside the settlement, it could be anyone. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> really is doing something bad, we have to make him stop."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, did you tell anyone what you talked about with </STYLE><STYLE ID="10">Auntie</STYLE><STYLE ID="4">?"</STYLE><PG>
+<STYLE ID="3">"As if I would. I don't want to tell anybody about something like this."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE> seemed to have found her resolve too.
+{PAUSE ""}
+<BR>
+We're trying to prove <STYLE ID="5">Dad's</STYLE> innocence and expose his guilt at the same time.
+{PAUSE ""}
+<BR>
+Which way it falls, we'll find out by searching this room.<PG>
+<STYLE ID="3">"But </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">, if it's that risky a book, wouldn't </STYLE><STYLE ID="5">Daddy</STYLE><STYLE ID="3"> throw it away somewhere instead of hiding it in his room?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... That book must have something very important written in it. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="4"> wouldn't throw it away that easily."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then what about hiding it in the mountains or something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... If he did that, the book would get ruined, wouldn't it?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Besides, animals might get into it."</STYLE><PG>
+<STYLE ID="3">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+There's no guarantee <STYLE ID="5">Dad</STYLE> acts by the same values I do.
+{PAUSE ""}
+<BR>
+But if I were in <STYLE ID="5">Dad's</STYLE> place, I'd want to keep it somewhere as safe as possible instead of throwing it away.
+{PAUSE ""}
+<BR>
+And a place only he goes into.<PG>
+<STYLE ID="3">"Oh well! Let's hurry up and look, before </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="3"> and Grandma get back."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+Kana opened the closet and started sticking her head into the darkness.
+{PAUSE ""}
+<BR>
+I have to look too.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE>'s taking the closet, so...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\夏菜の机.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What I had my eye on was <STYLE ID="3">Kana's</STYLE> desk.
+{PAUSE ""}
+<BR>
+This is <STYLE ID="5">Dad's</STYLE> room, but it's <STYLE ID="3">Kana's</STYLE> room too, so I have to go through both their things.
+{PAUSE ""}
+<BR>
+For all I know, <STYLE ID="5">Dad</STYLE> hid it in <STYLE ID="3">Kana's</STYLE> territory.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Wait, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">! You're going through my desk!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="4"> might have hidden it in </STYLE><STYLE ID="3">your</STYLE><STYLE ID="4"> desk, right? At the back of a drawer, somewhere you don't usually look."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="3">"W-w-w-w-wait! I have a right to privacy too, don't I!?"</STYLE><PG>
+<STYLE ID="4">"Mm... But that's exactly why I have to look―"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Bad_Luck.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"No, no, no! If dirty magazines turned up in my desk, you wouldn't know how to react, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, you have stuff like that?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, no, no, it's just an example!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... At this point, whatever I find, I'll pretend I didn't see it."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+And when I pulled the top drawer of <STYLE ID="3">Kana's</STYLE> desk―<PG>
+<STYLE ID="4">"Mm... It's locked..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="11">"See!?</STYLE>
+{PAUSE ""}
+<STYLE ID="11">　See!?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　It's locked, so you can't look, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... The one who locked it was </STYLE><STYLE ID="3">you</STYLE><STYLE ID="4">, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Or could you be hiding evidence tied to the curse-killings?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"O-of course not!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Of course not, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... People's lives are at stake. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Hand over the key?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ugh... you're a demon..."</STYLE>
+{PAUSE ""}
+<BR>
+Privacy crisis or not, <STYLE ID="3">Kana</STYLE> seemed to grasp how important this search was, and meekly handed over the key.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"U-um...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... What?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Ugh... it's nothing..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\鍵をかける.ogg" "VOICE" "NORMAL" "1000" "0"}
+I unlocked it and gently pulled the drawer open...
+{PAUSE ""}
+<BR>
+Inside was just one notebook.
+{PAUSE ""}
+<BR>
+Its title was... 
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\交換日記.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Exchange Diary?<PG>
+{MESOFF "500"}
+{DELETECG "人物1,アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Okay, okay, okay! No suspicious books, right!? So we're done here!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE> snatched away this so-called exchange diary, hugged it tight, and turned her back on me.
+{PAUSE ""}
+<BR>
+No way... 
+{PAUSE ""}
+An exchange diary... 
+{PAUSE ""}
+A fifth-grader... 
+{PAUSE ""}
+No way...!
+{PAUSE ""}
+<BR>
+That's... 
+{PAUSE ""}
+Even I've never done one!<PG>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, is that exchange diary with a boyfriend, by any chance?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"D-d-d-d-don't be stupid! It's nothing like that! He's not my boyfriend!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... If he's not your boyfriend... then what on earth is he?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Come on, I won't be angry. Tell your big sister."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"W-well, that's..."</STYLE><PG>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, listen carefully. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Our </STYLE><STYLE ID="6">mom</STYLE><STYLE ID="4"> died 10 years ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So as your big sister, I have to stand in for a mother too. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Supervising this kind of thing is a mother's duty, you know?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"S-</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">... your face is scary...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Now... what's written in it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I-I'm sorry...!"</STYLE>
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\交換日記.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+Apologizing, <STYLE ID="3">Kana</STYLE> held out the exchange diary.
+{PAUSE ""}
+<BR>
+For some reason that apology felt good.<PG>
+Let's see... what have we here?
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n1000\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+'March 1... 
+{PAUSE ""}
+Starting today, an exchange diary with Hiroto-kun!'
+{PAUSE ""}
+<BR>
+How is this name read, I wonder?
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... This boyfriend's name―how do you read it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hiroto..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh, </STYLE><STYLE ID="12" RUBY="ひろと">Hiroto</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Kids these days all have names you can't read."</STYLE><PG>
+<STYLE ID="3">"Your name's hard to read too, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, nothing..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, it'll be a pain if more characters I can't read come up, so </STYLE><STYLE ID="3">you</STYLE><STYLE ID="4"> read it. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Here."</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n1000\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n0\r\nNORMAL\r\nPASS">
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I-I have to read it out loud...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"You wrote it yourself, didn't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="3">You</STYLE><STYLE ID="4">'ll surely read it with more feeling than I would. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Come on, hold it properly, back straight."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">"M-March 1... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Starting today, an exchange diary with </STYLE><STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I don't know what to write yet, but I hope we can talk about lots of fun things..."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, were you really in such low spirits when you wrote that?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　From here on, put some feeling into it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But the next one is what </STYLE><STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun wrote..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ugh..."</STYLE><PG>
+<STYLE ID="3">"March 2... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I don't know what to write either. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Spring break's coming soon, and then I won't get to see you, Kana. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I wish the first term would hurry up and start!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　It'd be great if we're in the same class again in fifth grade, right?"</STYLE>
+{PAUSE ""}
+<BR>
+Oh? Not bad, for a fourth-grader at the time.<PG>
+<STYLE ID="3">"March 3... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Today we had Hinamatsuri at home!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　But we don't have a doll stand, so </STYLE><STYLE ID="2">Grandma</STYLE><STYLE ID="3"> did a cosplay of the Hina dolls!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE>, come on, don't write down our family's sore spots...<PG>
+<STYLE ID="3">"March 4... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">We did Hinamatsuri for my little sister at my house too!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　We've got a huge set of Hina dolls Grandma bought us, so my sister was super happy!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Hey, Kana, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">do you... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-r-r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">"</STYLE>
+{PAUSE ""}
+<BR>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="4">"Read it already."</STYLE><PG>
+<STYLE ID="3">"r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">r-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">really... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">like me...?"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<TXSPS>Kyeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee!!
+{QUAKESTOP "0"}
+<PG>
+<STYLE ID="3"><TXSPN>"March 5... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">O-of course, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I l-like you... </STYLE>
+{PAUSE ""}
+<STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun is serious and smart, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">and really, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">l-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">l-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">l-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">love you so much... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Me and </STYLE><STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun, I want us to </STYLE>
+{PAUSE ""}
+<STYLE ID="3">g-g-, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">-et married... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I want us to get married..., I do."</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<TXSPS>Kyeeeeeeeee!!
+{QUAKESTOP "0"}
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+Kyeeeeeeeee!!
+{QUAKESTOP "0"}
+<PG>
+<STYLE ID="3"><TXSPN>"March 6... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'm glad. It's embarrassing in front of everyone, so I could never say it, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">in the exchange diary, at least, I guess I can say it... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">right? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kana... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I l-like you."</STYLE>
+{PAUSE ""}
+<BR>
+Hey, <STYLE ID="14" RUBY="クソガキ">Hiroto</STYLE>, that's not a diary anymore.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"March 7... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I love you too, </STYLE><STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun..."</STYLE>
+{PAUSE ""}
+<BR>
+Oh, come on, <STYLE ID="15" RUBY="てめえ">Kana</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "200" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―And from there on, <STYLE ID="3">Kana</STYLE> read out a long volley of her and <STYLE ID="14" RUBY="クソガキ">Hiroto's</STYLE> sugar-sweet comments.
+{PAUSE ""}
+<BR>
+What's more, the diary had gone on without missing a single day.
+{PAUSE ""}
+<BR>
+And finally, yesterday―we reached the last page.<PG>
+{MESOFF "500"}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Thank you for today. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Seeing you really does cheer me up, </STYLE><STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I was so happy to be with you from morning till night..."</STYLE>
+{PAUSE ""}
+<BR>
+Tch...! So she met him yesterday too―all day long, at that.
+{PAUSE ""}
+<BR>
+After all that whining about not seeing him over spring break, the nerve of her.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+Hm...?
+{PAUSE ""}
+<BR>
+No, wait a minute...
+{PAUSE ""}
+<BR>
+Yesterday, <STYLE ID="3">Kana</STYLE> should have been home the whole time.
+{PAUSE ""}
+<BR>
+After all, she brought me the ohagi, didn't she?
+{PAUSE ""}
+<BR>
+That's strange... Then, what's written in this diary is... 
+{PAUSE ""}
+a lie...?<PG>
+Looking closely, <STYLE ID="3">Kana's</STYLE> handwriting and <STYLE ID="14" RUBY="クソガキ">Hiroto's</STYLE> are exactly the same.
+{PAUSE ""}
+<BR>
+And an exchange diary every single day, Sundays and spring break included―that's a bit much, surely?
+{PAUSE ""}
+<BR>
+Which means the truth about this exchange diary is...<PG>
+<STYLE ID="4">"Mm... Say, </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, this exchange diary, could it be... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">you wrote the whole thing yourself?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+At that, <STYLE ID="3">Kana</STYLE> went limp and collapsed.<PG>
+{PLAYSND "BGM死月編\Code_of_Honor_#2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"Th-th-th-th-that's why I said don't read it!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　A normal exchange diary would be one thing, but I never ever wanted anyone reading this!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE> finally burst into tears.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">, you idiot! At least inside my head I can do what I want!"</STYLE>
+{PAUSE ""}
+<BR>
+I see... 
+{PAUSE ""}
+I see, <STYLE ID="3">little sister</STYLE>.
+{PAUSE ""}
+<BR>
+I gently hugged <STYLE ID="3">Kana</STYLE> as she sobbed.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死ぬ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, I understand exactly how </STYLE><STYLE ID="3">you</STYLE><STYLE ID="4"> feel. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Even when there's a boy you like, it's hard to get close to him. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So you at least want to imagine fun times with him, like this―grown-ups feel that way too, you know?"</STYLE><PG>
+<STYLE ID="3">"Waaah...! </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">...!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　How can I ever go out with </STYLE><STYLE ID="13" RUBY="ひろと">Hiroto</STYLE><STYLE ID="3">-kun...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... It's all right. </STYLE><STYLE ID="3">You</STYLE><STYLE ID="4"> have your own good points, </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Just be yourself. There's no need to rush."</STYLE>
+{PAUSE ""}
+<BR>
+―That line, mind you, is borrowed from <STYLE ID="10">Auntie</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Waaah! Thank you, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="3">...!"</STYLE>
+{PAUSE ""}
+<BR>
+And so the <STYLE ID="16" RUBY="きずな">bond</STYLE> between us sisters grew stronger than ever.<PG>
+{STOPSND "BGM" "0" "PASS"}
+―This is no time to be playing around like this!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\紅葉のダンス.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Okay! I'm going to find </STYLE><STYLE ID="5">Daddy's</STYLE><STYLE ID="3"> secret too, you just watch!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　No way am I the only one who ends up totally embarrassed!"</STYLE>
+{PAUSE ""}
+<BR>
+It seems to have fired <STYLE ID="3">Kana</STYLE> up too, so all's well that ends well... I guess?
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

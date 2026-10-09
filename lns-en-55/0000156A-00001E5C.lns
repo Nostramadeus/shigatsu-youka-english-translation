@@ -1,0 +1,639 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3453, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=570, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=611, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ナナシナ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=710, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=80, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つな, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=6, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=63, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なかじまちょうじ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=く, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5955, target=)
+; Links:
+;    0: TWdLink(count=5503, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\テレビの声.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島うつむき32.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"I see... So that's what it was."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "最後の声・真呪殺\渦巻くシナプス.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "10000" "PASS"}
+"My research began with the goshinboku. 
+{PAUSE ""}
+If I remember right, <STYLE ID="2">Kogori-senpai</STYLE>, you said you knew the urban legend of Motokizakura-sama, didn't you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, I know it."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\モトキザクラ様.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"She's a youkai, a woman in a beautiful kimono, and there's a good Motokizakura-sama and a wicked Motokizakura-sama. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">In the old days, some people seem to have seriously worshipped Motokizakura-sama."</STYLE>
+{PAUSE ""}
+<BR>
+"Do you know how long that urban legend has been around?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, I wouldn't know that much..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\雑誌.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"The first time the story of Motokizakura-sama appeared was in the July issue of Shiyo 747 of 'M', the long-running occult magazine that's still published today. 
+{PAUSE ""}
+It was introduced as a youkai of the goshinboku that had suddenly appeared. 
+{PAUSE ""}
+But in the previous month's June issue, a certain murder case that happened in Shiyo 747 was run as a feature article, and the follow-up on that case was scheduled to appear in the July issue. 
+{PAUSE ""}
+But for some reason, what got written was that Motokizakura-sama, this heavily occult figure, was the culprit behind that murder case."<PG>
+<STYLE ID="2">"But for an occult magazine, isn't that kind of thing pretty common?"</STYLE>
+{PAUSE ""}
+<BR>
+"The thing is, that murder case actually happened. 
+{PAUSE ""}
+Don't you think blaming a real case on a youkai no one had ever heard of is far too sloppy, precisely because it's an occult magazine?
+{PAUSE ""}
+　A youkai people already had rumors about would be one thing, but this means a reporter at M made up Motokizakura-sama, right?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Then the truth behind that murder case is...?"</STYLE>
+{PAUSE ""}
+<BR>
+"That murder case got swapped out for an obviously phony urban legend. 
+{PAUSE ""}
+In other words, the murder was turned into an urban legend so that it would fade from people's memories."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So what does that have to do with your research on the goshinboku?"</STYLE><PG>
+"The victims of that murder case were―
+{PAUSE ""}
+members of a public research group that was trying to study the goshinboku at the time."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You mean there was a research group back then too...?"</STYLE><PG>
+"Yes. The goshinboku, said to have sprung up out of nowhere. 
+{PAUSE ""}
+To study that mysterious cherry tree, the group was set up as a public institution in what was then Motoki-cho. 
+{PAUSE ""}
+But soon after it was set up, every member stationed in Motoki-cho was killed by someone in their lodgings."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No way..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\中央公園素材\御神木.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"That 'no way' is exactly what happens with the goshinboku, with the Arata cherry. 
+{PAUSE ""}
+We call this the <STYLE ID="3" RUBY="ナナシナ">Nanashina</STYLE> Incident―nana-shi-na, 7-4-7, after the year―but what's odd here is that, unlike the Nanashina Incident, the staff of the International Research Institute, myself included, didn't die. 
+{PAUSE ""}
+Do you remember how I collected samples from the goshinboku?"<PG>
+<STYLE ID="2">"Um... what do you mean, collected samples?"</STYLE>
+{PAUSE ""}
+<BR>
+"How I got the pollen, the branches, and the bits of root."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hmm... breaking off branches, picking flowers... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">No, how did it go again...?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Mom</STYLE>, do you remember?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If I remember right..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "14" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I started by collecting the pollen drifting in the air, without touching the goshinboku's flowers."<PG>
+"Next I collected branches that had fallen around the goshinboku and fragments of root that had broken off above ground and examined them, and the roots contained spores too."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "L" "B" "0" "14" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Yes, I remember now. </STYLE>
+{PAUSE ""}
+Goto-chan<STYLE ID="1">, you kept away from the goshinboku, or rather... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you collected without touching the goshinboku."</STYLE>
+{PAUSE ""}
+<BR>
+"That's right. 
+{PAUSE ""}
+Actually, the state instructed us to collect samples that way. 
+{PAUSE ""}
+As a top-priority matter, no less. 
+{PAUSE ""}
+In other words, suppose touching the goshinboku to study it was the cause of the Nanashina Incident."<PG>
+<STYLE ID="1">"I don't really understand, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">the goshinboku―in other words, is it the idea that studying a god is presumptuous?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　After all, you were researching religion too, weren't you?"</STYLE>
+{PAUSE ""}
+<BR>
+"Not quite, but not off the mark either. 
+{PAUSE ""}
+The goshinboku didn't want to be studied, and as a result the research group was killed."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ考えるバストアップ32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The goshinboku didn't want it?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Um, is that what they call personification?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"How would it kill anyone in the first place...?"</STYLE><PG>
+"Let me explain step by step. 
+{PAUSE ""}
+First, the fact that the sampling method was specified at the national level means we can say the truth of the Nanashina Incident had been worked out to some extent. 
+{PAUSE ""}
+The countermeasure was to collect samples without touching the goshinboku. 
+{PAUSE ""}
+The hypothesis we can set up here: the goshinboku has a will. 
+{PAUSE ""}
+To keep from being studied, the goshinboku killed the researchers by some means."<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜山頂.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\元木市遠景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"And then there's this disaster. 
+{PAUSE ""}
+This disaster is clearly different from the Nanashina Incident. 
+{PAUSE ""}
+In the Nanashina Incident it killed only the people it had to, but this time it slaughtered nearly everyone who was in Motoki City. 
+{PAUSE ""}
+In other words, the purpose wasn't to keep from being studied; the killing itself was the purpose. 
+{PAUSE ""}
+Why did it need to kill?"<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\死体1溶けてる.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I became sure of it when I saw the footage of the body dissolving under the cherry petals. 
+{PAUSE ""}
+To grow that many enormous fruiting bodies, the Arata cherry must have drawn a tremendous amount of nourishment out of the earth. 
+{PAUSE ""}
+Now the ground of Motoki City has turned into barren land. 
+{PAUSE ""}
+Soil with no nutrients isn't suited to reproduction, even for the Arata cherry. 
+{PAUSE ""}
+So it's dissolving the bodies, returning them to the earth, and using them as nutrients."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"To sum up: the Nanashina Incident happens, and to cover it up, people's memories are overwritten with an obviously phony urban legend called Motokizakura-sama. 
+{PAUSE ""}
+The media back then wasn't as varied as it is now, so letting the memory fade must have been easy."<PG>
+"But a public institution―
+{PAUSE ""}
+that is, the state, investigated the goshinboku and the Nanashina Incident behind the scenes and once again set up a dedicated research body in Motoki City. 
+{PAUSE ""}
+That was the International Research Institute, where I was director."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So the state wants to know about the goshinboku, the Arata cherry and Droga badly enough to go that far."</STYLE><PG>
+"The government must also have found out about Droga somehow. 
+{PAUSE ""}
+Any country would be desperate for a drug that can easily remodel a human into a monster, so it makes sense that it's being studied at the national level."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But in the end, the researchers who touched the goshinboku were killed. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Is that because the goshinboku has a will...?"</STYLE><PG>
+"I think so. 
+{PAUSE ""}
+Because in the Nanashina Incident, the researchers were all beaten to death."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Beaten to death means..."</STYLE>
+{PAUSE ""}
+<BR>
+"Yes. It was done by human hands. 
+{PAUSE ""}
+There's 'someone' who doesn't want the secrets of the goshinboku and the Arata cherry to get out."<PG>
+<STYLE ID="1">"Someone is trying to protect the goshinboku's secret...?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Could it be the government...!?"</STYLE>
+{PAUSE ""}
+<BR>
+"No, that's not it. 
+{PAUSE ""}
+If it were, they'd never have let us do research. 
+{PAUSE ""}
+If anything, the government wants to know more about the ecology of the goshinboku and the Arata cherry."<PG>
+"If there's someone here in Motoki City too who's trying to kill those who learn the secret... 
+{PAUSE ""}
+doesn't anyone come to mind?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You mean the special unit coming tomorrow will slaughter all the survivors..."</STYLE><PG>
+"No, the special unit is people the government is sending, so they're on the side doing the research―
+{PAUSE ""}
+if anything, they'd be on the side that gets killed. 
+{PAUSE ""}
+So anyone trying to kill the special unit would strike them before being investigated. 
+{PAUSE ""}
+Which means the culprit is someone who's already in Motoki City. 
+{PAUSE ""}
+Apart from us."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">In that case...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">It can only be those two...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ考えるバストアップ32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE>Goto<STYLE ID="2">, hold on a second! Are you saying </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="2"> would kill people!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's right. Besides, there's no way those two could have caused the incident of Shiyo 747. They weren't even born back then."</STYLE>
+{PAUSE ""}
+<BR>
+"Back then, I believe the culprit was someone else. 
+{PAUSE ""}
+The work of a person parasitized by the Arata cherry, whose consciousness had been taken over."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Taking over someone's consciousness...?"</STYLE><PG>
+"<STYLE ID="2">Kogori-senpai</STYLE>, listen carefully. 
+{PAUSE ""}
+This morning I said 'the Arata cherry parasitizes humans,' didn't I?
+{PAUSE ""}
+　Some parasites control the behavior of their hosts.
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\ブードゥー4.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If a person parasitized by the Arata cherry were to kill people―"<PG>
+<STYLE ID="2">"That can't be...!"</STYLE>
+{PAUSE ""}
+<BR>
+"And you've been thinking, '<STYLE ID="5">Niimura-senpai</STYLE> is in the Arata settlement, isn't she?' haven't you?
+{PAUSE ""}
+　These aren't separate phenomena. They're all <STYLE ID="6" RUBY="つな">connected</STYLE> events."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">The Arata cherry, Droga, </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4">, </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="4">, parasitism, the goshinboku, the toxic gas―</STYLE>
+{PAUSE ""}
+<BR>
+Goto-chan<STYLE ID="4"> is right: these can certainly be strung together into a single story.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"First, the thing we most need to watch out for is that two people who seem to be <STYLE ID="5">Niimura-senpai</STYLE> and <STYLE ID="7">Mifuyu-san</STYLE> are wandering around this town. 
+{PAUSE ""}
+If we run into them, we could be killed, like in the Nanashina Incident. 
+{PAUSE ""}
+I have no solid proof, but it never hurts to be careful."<PG>
+<STYLE ID="1">"Say, just hypothetically, all right?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　If </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1"> and the other one are the kind that do people harm, what happens to the special unit coming tomorrow?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Will they get killed after all?"</STYLE>
+{PAUSE ""}
+<BR>
+"Actually, I'm concerned about that special unit too. 
+{PAUSE ""}
+The special unit will be armed, at the very least, don't you think? 
+{PAUSE ""}
+If things go badly, we could have a small war on our hands..."<PG>
+<STYLE ID="2">"So that means the government knows about </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="2"> and the others...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Not <STYLE ID="5">Niimura-senpai</STYLE> and the others so much as people like <STYLE ID="5">Niimura-senpai</STYLE> and the others―
+{PAUSE ""}
+it's possible they're anticipating beings similar to the culprit of the Nanashina Incident."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then is the special unit's purpose less an on-site disaster survey than tracking down people controlled by the Arata cherry?"</STYLE><PG>
+"Most likely, yes. 
+{PAUSE ""}
+From the government's point of view, it's a golden chance to get hold of the truth of the Nanashina Incident. 
+{PAUSE ""}
+And since there are hardly any survivors, as you can see, the special unit can operate fairly freely. 
+{PAUSE ""}
+I don't know whether they'd capture <STYLE ID="5">Niimura-senpai</STYLE> and the others or kill them, but <STYLE ID="2">you two</STYLE> had better not go out tomorrow either. 
+{PAUSE ""}
+If they find out you're people the toxic gas doesn't affect, there's no telling what they'd do to you."<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\テレビの声.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\ラジオ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">I'd been listening to the radio while we talked, but it seemed the press conference had ended with everything left vague.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">In the background, I could hear the reporters firing off one question after another.</STYLE><PG>
+<STYLE ID="8">―Chief Cabinet Secretary! Isn't human life supposed to come first in a case like this!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">―Even among the public, voices are now being raised questioning the government's response!</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+"That was a fine piece of acting. Just what you'd expect of the Chief Cabinet Secretary."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"It was as if something were being conveyed to us, the public, between the lines... 
+{PAUSE ""}
+Emergency or not, I can't believe the Chief Cabinet Secretary would give such a clumsy press conference. 
+{PAUSE ""}
+That distrust is being stirred up on purpose."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But even if that's so, what on earth..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "0" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\ラジオ電池切れ.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I'd say the government has already gotten across everything it wanted to. 
+{PAUSE ""}
+After all, hearing that press conference just now, I was able to work out the broad outline."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What do you mean?"</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\クリスタルコア.ogg" "BGM" "REPEAT" "1000" "0"}
+"The moment we felt that distrust just now, the government will have achieved its goal. 
+{PAUSE ""}
+In other words, it's telling us to be careful. 
+{PAUSE ""}
+It can't say so openly, but it's giving us some kind of warning."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Is that why the remarks were so stiff, or rather, so deliberately dismissive of human life?"</STYLE><PG>
+"Yes. Considering approval ratings and public opinion, they'd normally say human life comes first, like a slogan. 
+{PAUSE ""}
+But the fact that it's missing means either we're dealing with a naively honest fool who doesn't understand the public's feelings, or there's some other intention. 
+{PAUSE ""}
+Besides, do you know who this Chief Cabinet Secretary is?"<PG>
+<STYLE ID="1">"Who the Chief Cabinet Secretary is? I don't know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I know! It's the person who was mayor of Motoki-cho until about 10 years ago, right!?"</STYLE><PG>
+"That's right. Someone who contributed greatly to Motoki-cho's development, and under whom its crime rate was the best in the country. 
+{PAUSE ""}
+Even over the smallest things, the mayor personally stood on the front line and contributed to the town's development. 
+{PAUSE ""}
+It's <STYLE ID="9" RUBY="なかじまちょうじ">Choji Nakajima</STYLE>-san, who built that kind of community and was called a wise leader. 
+{PAUSE ""}
+If Motoki, that person's hometown, has ended up like this..."<PG>
+<STYLE ID="1">"So it wasn't the government so much as an independent decision to make those remarks. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Hoping the surviving people of Motoki City were listening."</STYLE>
+{PAUSE ""}
+<BR>
+"It's hard to <STYLE ID="10" RUBY="く">grasp</STYLE> the Chief Cabinet Secretary's exact intent, but wasn't the point to say, 'tomorrow, no one from Motoki City is to be found by anyone'? 
+{PAUSE ""}
+Normally I don't think a politician would be allowed to do something like this, though..."<PG>
+<STYLE ID="2">"If so, then there really is something behind it, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　If it's really the way </STYLE>Goto<STYLE ID="2"> worked it out..."</STYLE>
+{PAUSE ""}
+<BR>
+"Right. When I wondered what was behind it, I went back over it starting from the Nanashina Incident and the story of Motokizakura-sama. 
+{PAUSE ""}
+Our best move is to stay here and watch how things go for all of tomorrow."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="2">..."</STYLE><PG>
+{MESOFF "-1"}
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">The sound of the intercom.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">A tension sharper than any since we'd come to this room ran through us.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I'll put the entrance camera on screen."
+{PAUSE ""}
+<BR>
+Goto-chan<STYLE ID="4"> turned on the TV, and―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">On it appeared the figure of whoever was at the entrance.</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "300" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYMOVIE "モニターノイズ.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "100"}
+{CREATECG "000" "グラフィック\背景\プリズン\五島マンションエントランスインターホン.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\春花白装束インターホン.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "2" "2" "0" "30"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\ホラーインダストリアル.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="4">It was, unmistakably, </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">But she looked to be still only about 20.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi's</STYLE><STYLE ID="4"> senior by a year, </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4"> nonetheless had a youthfulness clearly far removed from her real age.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">And she was wearing that robe.</STYLE><PG>
+"What do I do... 
+{PAUSE ""}
+How did she know this room's number...?"
+{PAUSE ""}
+<BR>
+Goto-chan's<STYLE ID="4"> hand on the door remote was trembling.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="4"> gripped my hand hard.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">By rights, it's a reunion we should be glad of.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">But right now, the situation is different.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">She is the presence we should dread most of all.</STYLE><PG>
+<STYLE ID="2">"</STYLE>Goto<STYLE ID="2">, let's let her in..."</STYLE>
+{PAUSE ""}
+<BR>
+"W-we can't...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Why!?"</STYLE>
+{PAUSE ""}
+<BR>
+"You know why without me having to say it!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I know, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I know, but...!"</STYLE><PG>
+<STYLE ID="2">Natsumi's</STYLE><STYLE ID="4"> tone was strong, but she didn't seem ready to go as far as grabbing the remote to open the door.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4"> is someone she must want to let in, but her fear must be stronger than that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I want to let </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4"> in right away as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">But what happened at Zahha earlier keeps coming back to me.</STYLE><PG>
+<STYLE ID="4">The one who had kept watching, perfectly still, as I dissolved the body was </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">If that isn't eerie, what is?</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="2">... I'm sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Turning her eyes from the screen and hanging her head, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="4"> could only apologize in a tearful voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">As I thought, letting </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4"> in under these circumstances is...</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="4">And then―</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n600\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n600\r\n0\r\nNORMAL\r\nPASS">
+{QUAKESTOP "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">On the other side of the screen, </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4"> collapsed.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Seeing </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="4"> fall, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="4"> stood up and ran for the front door.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">! Wait!"</STYLE>
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "800" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Ignoring my attempt to stop her, she dashed out of the room.</STYLE>
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "800" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I understand how she feels, but I can't think this is the right thing to do.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島うつむき32.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Goto-chan<STYLE ID="4">, when I looked at her, was trembling slightly.</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Mom</STYLE>... What should I have done...? 
+{PAUSE ""}
+Am I the one who's right, or is <STYLE ID="2">Kogori-senpai</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Goto-chan<STYLE ID="1">, that's..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Both of them are right, and both are wrong.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">No, it's my own actions, taking neither side, that are the worst mistake of all.</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> can't just be left like this. I'll go take a look downstairs."</STYLE>
+{PAUSE ""}
+<BR>
+"Sorry..."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

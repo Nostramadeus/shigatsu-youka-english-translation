@@ -1,0 +1,978 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2324, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2244, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちょうちょ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1470, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちょう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=32, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しこうひん, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たた, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かない, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あっせん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6791, target=)
+; Links:
+;    0: TWdLink(count=6092, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―It was the summer vacation of my first year of elementary school.
+{PAUSE ""}
+<BR>
+The days were long, and we kept on playing and playing.
+{PAUSE ""}
+<BR>
+Every day was fun, and being able to be together made us happy―
+{PAUSE ""}
+<BR>
+Always, always, we would play until the stars came out.
+{PAUSE ""}
+<BR>
+Then, one time―<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\夕焼け.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "蝶がひらひらと舞う的なBGM.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\蝶々\青蝶々.lcm" "REPEAT" "#1" "960" "C" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n300\r\n5000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n300\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="1">"Hey, look! A pretty </STYLE><STYLE ID="2" RUBY="ちょうちょ">butterfly</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It really is!"</STYLE>
+{PAUSE ""}
+<BR>
+A summer evening. A single <STYLE ID="4" RUBY="ちょう">butterfly</STYLE> was fluttering gracefully before our eyes.
+{PAUSE ""}
+<BR>
+And just then―<PG>
+{MESOFF "500"}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\蝶々\赤蝶々.lcm" "REPEAT" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n3\r\n100\r\n5000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n100\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n3\r\n100\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n100\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="1">"Oh! Another pretty butterfly!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Let's catch them, </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> and I chased after the two butterflies.
+{PAUSE ""}
+<BR>
+But <STYLE ID="1">Akane</STYLE> kept getting farther and farther away from me.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wait up, </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, hurry, hurry!"</STYLE><PG>
+It was the hour when the summer night sky was about to rise in the east.
+{PAUSE ""}
+<BR>
+I ran desperately along a path where I could hardly see my feet.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Haah... haah... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">whoa!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,アイテム1,アイテム2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Akane</STYLE> was all I'd been watching as I ran. Maybe that was why I tripped over something and fell.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\夕焼け.gal" "WAIT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Uugh... it hurts... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">uugh... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Waaah! It hurts..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Are you okay, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> came running over right away.<PG>
+<STYLE ID="1">"There, pain, pain, fly awaaay!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> gently laid her hand on my scrape.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're okay now, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> took my hand and pulled me to my feet.<PG>
+It hadn't hurt all that much, but I bawled because I wanted the attention of <STYLE ID="1">Akane</STYLE>, who'd gone on ahead.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> probably knew that too, since all she did was lay her hand on my scrape.<PG>
+In front of us, sunflowers taller than we were.
+{PAUSE ""}
+<BR>
+We lined up our heads like the sunflowers too, and looked up at the summer evening sky.
+{PAUSE ""}
+<BR>
+In the east, stars were already beginning to twinkle here and there.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\蝶々\青蝶々.lcm" "REPEAT" "#1" "960" "C" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "100" "NORMAL" "SKIP"}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\蝶々\赤蝶々逆.lcm" "REPEAT" "#1" "-330" "C" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n700\r\n3000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n3\r\n300\r\n4000\r\nDEC\r\nPASS">
+{WAIT "4000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n700\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n3\r\n300\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+Then the two butterflies we'd been chasing fluttered around us.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\茜蝶々.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,アイテム2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+And they landed one on each of <STYLE ID="1">Akane</STYLE>'s hands and rested their wings.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\茜差し出す.gal" "NORMAL" "#1" "-900" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Here, a butterfly for </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Pretty... Hello, cute little butterfly!"</STYLE>
+{PAUSE ""}
+<BR>
+The two butterflies didn't seem <STYLE ID="5" RUBY="おび">frightened</STYLE> at all, and rested calmly right in front of us.<PG>
+<STYLE ID="3">"Do you think these little butterflies are a family?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Maybe they're friends?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\蝶々\青蝶々.lcm" "REPEAT" "#1" "R" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "100" "CLICK" "SKIP"}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\蝶々\赤蝶々逆.lcm" "REPEAT" "#1" "C" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n3000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n200\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n200\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n-400\r\n3000\r\nINC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n-400\r\n3000\r\nINC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n-400\r\n0\r\nINC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "-400" "0" "INC" "WAIT"}
+{DELETECG "アイテム1,アイテム2" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+The two butterflies flew up together into the dim, wide sky.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Bye-byyye, little butterflies! Take care!"</STYLE><PG>
+<STYLE ID="3">"Those little butterflies are close, just like us!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're right, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+Night fell completely, and Motoki-cho was covered by the starry summer sky.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\星空.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"The stars are pretty today too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, did you know? In a big city like Tokyo, you can't see a sky like this, apparently."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"How come?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"The city's so bright you can't see the stars in the sky, apparently."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hmm. Then I'll stay in Motoki-cho forever!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Me too!"</STYLE><PG>
+It was a small promise.
+{PAUSE ""}
+<BR>
+Both <STYLE ID="1">Akane</STYLE> and I were born in Motoki-cho, raised in Motoki-cho, and would live our lives in Motoki-cho.
+{PAUSE ""}
+<BR>
+May I always, always be able to look at this starry sky together with <STYLE ID="1">Akane</STYLE>.<PG>
+This is my best friend since the day I was born: <STYLE ID="1">Akane</STYLE>.
+{PAUSE ""}
+<BR>
+She's very dear to me, someone I could never replace.<PG>
+Even after we grew up, that didn't change.
+{PAUSE ""}
+<BR>
+We aren't related by blood, but by now you could call us family.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> is a big sister, older than me by only a few months.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+My mom died giving birth to me, and my dad died of an illness too, around when I started high school.
+{PAUSE ""}
+<BR>
+Through all of it, <STYLE ID="1">Akane</STYLE> was there for me, the same as ever.
+{PAUSE ""}
+<BR>
+It was one day, a few months after Dad's funeral...
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "77" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "リファレンス解禁画像2" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "80" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\喫茶店外観.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"So this is Primavera. It looks expensive..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> had picked this cafe as our meeting place.
+{PAUSE ""}
+<BR>
+She'd said she would at least treat me to a drink, but...
+{PAUSE ""}
+<BR>
+for a high schooler like me, it felt like a bit much...<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, over here."</STYLE>
+{PAUSE ""}
+<BR>
+In a fancy place like this, <STYLE ID="1">Akane</STYLE> was relaxing without the least bit of nerves.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Sorry, sorry! Did I keep you waiting...?"</STYLE>
+{PAUSE ""}
+<BR>
+I hurried over to <STYLE ID="1">Akane</STYLE> in a fluster.<PG>
+<STYLE ID="3">"Is this okay? A place this expensive..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Now that a new cafe's opened, we have to check it out. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There's no other place this nice in Motoki-cho."</STYLE><PG>
+<STYLE ID="3">"Y-you're right! I'll do my best so I can be like </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3"> too!"</STYLE>
+{PAUSE ""}
+<BR>
+I was always trying to catch up to <STYLE ID="1">Akane</STYLE>.
+{PAUSE ""}
+<BR>
+Even in high school, <STYLE ID="1">Akane</STYLE>, cool as she was, still turned a kind, warm gaze on me.
+{PAUSE ""}
+<BR>
+Someone like <STYLE ID="1">Akane</STYLE> was popular with boys, too.<PG>
+<STYLE ID="3">"Oh, by the way, </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">, how's your boyfriend from the technical high school? Going well?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="1">, you mean? Yeah, it's going well. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But for all his looks... he's too much of a kid, maybe..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"U-uh-huh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> was popular, but until now she'd never had a boyfriend.
+{PAUSE ""}
+<BR>
+The same <STYLE ID="1">Akane</STYLE> had decided to go out with him, so maybe this was just her covering up her embarrassment?<PG>
+<STYLE ID="3">"Lucky you. I want a boyfriend too..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, I think you've got good raw material... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Shouldn't you work a little more on being independent, or rather, on being able to take the plunge?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I know I'm the clingy type myself, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, you're always such a big baby, so even when you like someone, you can't go for it, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I... I really do depend on </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3"> too much, don't I..."</STYLE><PG>
+<STYLE ID="1">"That doesn't bother me at all. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But if that's why you can't take the plunge, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">... then it's a problem."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hmm, what should I do..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"You don't need to do anything. Trying to fix your personality will only cramp you. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Even if you got a boyfriend that way, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, you'd only wear yourself out."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh..."</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, what do you want to do? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Do you want to change yourself? Do you want a boyfriend?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Um... Which one should I start with..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+There I was, trying to get <STYLE ID="1">Akane</STYLE> to decide even things about myself.
+{PAUSE ""}
+<BR>
+It hit me all over again that I really was the clingy type.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I don't know which one you should start with... but why not start with appearances, for now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"With appearances?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right. Like changing that hiiicky fashion of yours, or fixing your habit of slouching. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That alone changes how people see you. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　When the way people see you changes, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, I bet you'll be able to change too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... That's hard..."</STYLE><PG>
+<STYLE ID="1">"Like I said before, </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">'ve got good raw material. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Let's see... to put it nicely, a beauty. To put it badly... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">an old face?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"So mean!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Having an old face in high school means you'll have a face that doesn't age much once you're grown up. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Who knows, even at 40, if you put on a school uniform... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">as a high schooler... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you could... pass... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">maybe...? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pf...!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+The corners of <STYLE ID="1">Akane</STYLE>'s mouth were twitching into a smirk.<PG>
+<STYLE ID="3">"You're not serious about that, are you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right... </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft! </STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　At 40...! In a uniform...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft-heh!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> played the cool type, but at times like this, in front of me, she showed her real self.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Haah... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, what kind of guy is your type?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uh, um... </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">, what do you think...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+Oops. Normally you don't ask other people something like that...<PG>
+<STYLE ID="3">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">someone I can become a family with!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A family? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Oh... I get it... </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, you don't have any family related by blood anymore..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah... I... want a family... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Akane</STYLE><STYLE ID="3">, I think of you as basically family, but I can't keep leaning on </STYLE><STYLE ID="1">you</STYLE><STYLE ID="3"> forever, or rather... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">No, I know I'm saying something really heavy..."</STYLE><PG>
+<STYLE ID="1">"To be independent, you want someone you can become a family with... huh... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Then first you'll have to start by getting rid of your picky eating."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh?! Why?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You'll be eating the same food as your husband for the rest of your life, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Being picky and not sharing tastes in food is a marriage-ending crisis."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"This is totally not a conversation for high schoolers..."</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">You</STYLE><STYLE ID="1">'re the one who brought it up..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I've been thinking this for a while, but </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">'ve got an extreme personality..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You think so...?"</STYLE><PG>
+<STYLE ID="1">"Just when I think you're timid and shy, it turns out your type is someone you can become a family with. As types go, that's both extreme and the ultimate form, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Is that extreme...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"At least, I don't think you'd find many high schoolers like that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So... since it's a good chance, try the coffee here."</STYLE><PG>
+<STYLE ID="3">"What?! Coffee's the one thing in the world I can't handle!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Didn't you say before that spicy food was the one thing in the world you couldn't handle?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... I can't handle either of them..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\コーヒーとクッキー.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Come on, it's coffee from a fancy place. It's my treat, so don't worry about it and drink."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That makes me worry even more..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\コーヒーカップ.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I lifted the coffee cup and sniffed it.
+{PAUSE ""}
+<BR>
+I can't believe people drink this stuff as a <STYLE ID="7" RUBY="しこうひん">treat</STYLE>...
+{PAUSE ""}
+<BR>
+I have to beat it here, just like <STYLE ID="1">Akane</STYLE> advised!
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> said so, so there's no way it's wrong!
+{PAUSE ""}
+<BR>
+Okay... I'm ready!<PG>
+<STYLE ID="1">"Oh, wait, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Wh-what?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why not at least put in milk and sugar?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But... what if my future husband likes it black..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, suit yourself..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\コーヒーカップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Once again I lifted the coffee cup and sniffed it.
+{PAUSE ""}
+<BR>
+I can't believe people drink this stuff as a <STYLE ID="7" RUBY="しこうひん">treat</STYLE>...
+{PAUSE ""}
+<BR>
+I have to beat it here, just like <STYLE ID="1">Akane</STYLE> advised!
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> said so, so there's no way it's wrong!
+{PAUSE ""}
+<BR>
+Okay... I'm ready!<PG>
+<STYLE ID="1">"Oh, wait, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Wh-what?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Nothing... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Pfft!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... I don't like today's </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\コーヒーカップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Once again I lifted the coffee cup (and so on)<BR>
+<BR>
+Okay... I'm ready!<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\すする.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Well?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Family is... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">a grown-up taste..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Geez! Actually, this is just a prank of yours, </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">, isn't it!"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">"Pfft-heh!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Her boyfriend</STYLE> she calls a kid, but in ways like this, <STYLE ID="1">Akane</STYLE>'s pretty much a kid herself...
+{PAUSE ""}
+<BR>
+They must get along well because they're two of a kind.<PG>
+<STYLE ID="1">"Well, coffee aside, let's start by changing your fashion and your slouch. I'll help too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah! If </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3"> is producing me, I'll be fine!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If you're still not popular after this... it's on me..."</STYLE>
+{PAUSE ""}
+<BR>
+I think I lean on <STYLE ID="1">Akane</STYLE> too much, but on the other hand, <STYLE ID="1">Akane</STYLE> spares no effort looking after me.<PG>
+Maybe you could call this codependency.
+{PAUSE ""}
+<BR>
+One way or another, <STYLE ID="1">Akane</STYLE> and I keep each other in balance like this.<PG>
+<STYLE ID="1">"Okay, first off, saying </STYLE><STYLE ID="3">your</STYLE><STYLE ID="1"> catchphrase 'Uugh' is banned. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If you break that in front of me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"If I break it...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A makeover into a head-to-toe sexy look... </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft! </STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">... going sexy...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft-heh-heh-hoh! </STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="1">This is hopeless! I'm cracking...! I'm cracking up...!"</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="8" RUBY="・・・">Uugh</STYLE><STYLE ID="3">... </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">, you're mean..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh..."</STYLE><BR>
+<STYLE ID="3">"Oh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay, you're out. Let's go buy some clothes... </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+―In the end, I got stuck going to buy clothes for my forfeit.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\服屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"H-how is it...? It's not weird, is it...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> recommended, and I just went along, wrapping myself in unfamiliar cloth like a dress-up doll.
+{PAUSE ""}
+<BR>
+It was thin, and it showed the lines of my body to an extreme, and it was embarrassing...
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Try fixing your posture properly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"My posture...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Look, you're slouching again, so stick your chest out!"</STYLE><PG>
+<STYLE ID="3">"B-but...! This outfit... it makes my chest stand out..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's the kind of outfit it is, so give up! </STYLE>
+{PAUSE ""}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">　There!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> <STYLE ID="9" RUBY="たた">smacked</STYLE> my shoulders and back, and I straightened up before I knew it.<PG>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">... say something..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">this is amazing..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Amazing?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, you look good! It really suits you! If I were a guy, I'd hit on you right now! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="3">You</STYLE><STYLE ID="1">'ve got a suuuper great figure! Out where it should be out, in where it should be in!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wh-wait, that's not..."</STYLE><PG>
+No doubt this was just another prank from <STYLE ID="1">Akane</STYLE>.
+{PAUSE ""}
+<BR>
+Or so I thought, but <STYLE ID="1">Akane</STYLE>'s mouth wasn't moving at all.
+{PAUSE ""}
+<BR>
+At times like this, the corners of her mouth would twitch as she tried to hold back a laugh, but...
+{PAUSE ""}
+<BR>
+Which meant... she really...?<PG>
+Just then, a pair of young men I didn't know came over.
+{PAUSE ""}
+<BR>
+"Hey, hey, <STYLE ID="3">miss</STYLE>, you there. Doing some shopping? Wanna hang out with us, if you're free?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"See, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, they're talking to </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+Not just <STYLE ID="1">Akane</STYLE>'s eyes but the men's eyes, too, were fixed straight on me.<PG>
+<STYLE ID="3">"N... no...! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　<TXSPS>N-n-n<TXSPN>o, it's not like that! This is all a mistake! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">, do something...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What are you saying? It's a great chance to be popular with guys."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="3">Miss</STYLE>, you look really grown-up, and you're gorgeous! 
+{PAUSE ""}
+　We've got a car, so if you want, how about a drive?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"N... </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3"><TXSPS>Nooooooo!!!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>I couldn't take it anymore and ran out of the store still wearing the clothes I'd been trying on.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, wait! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Ex-excuse me! I'm sorry! I'll pay for that outfit!"</STYLE><PG>
+―From then on, <STYLE ID="1">Akane</STYLE>'s hobby became playing with the dress-up doll that was me...
+{PAUSE ""}
+<BR>
+At every chance she got, <STYLE ID="1">Akane</STYLE> put me in that style of clothes and had me walk around outside.
+{PAUSE ""}
+<BR>
+And then a miracle happened: men spoke to me at least once a day.
+{PAUSE ""}
+<BR>
+Emboldened by that, <STYLE ID="1">Akane</STYLE> ended up producing my hairstyle and everything else.<PG>
+"<STYLE ID="10" RUBY="かない">Kanai</STYLE><STYLE ID="3">-san</STYLE>! I've always liked you! Please go out with me!"
+{PAUSE ""}
+<BR>
+"<STYLE ID="10" RUBY="かない">Mifuyu Kanai</STYLE><STYLE ID="3">-san</STYLE>! Please go on a date with me!"
+{PAUSE ""}
+<BR>
+"I'm captain of the basketball team... If you'd like, with me..."
+{PAUSE ""}
+<BR>
+It was as if the world had completely changed.
+{PAUSE ""}
+<BR>
+I'd only changed my looks and my posture. Inside, not a single thing had changed.
+{PAUSE ""}
+<BR>
+And of course, I still hated coffee...<PG>
+I'd become the hugely popular me I'd wanted to be, and yet nothing came of it, and only time went by, years of it...<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Oh, </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">. It's already been 3 years since we graduated high school. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　It's been 5 years since your makeover was a huge success, so how long are you going to be scared of men?"</STYLE>
+{PAUSE ""}
+<BR>
+With me never managing to get a man, <STYLE ID="1">Akane</STYLE> seemed to have finally lost her patience.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... But..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Haah... You're so innocent, or whatever you call it... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Are there really no good men in Motoki-cho?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's not that... They're just not my type..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Nobody you could become a family with...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Sure, I'm happy when people compliment my looks. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　But... it's only my looks... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Nobody ever looked at what's inside..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Honestly, you're hopeless, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You</STYLE><STYLE ID="1"> don't care about stuff like a guy's looks?"</STYLE><PG>
+<STYLE ID="3">"Mm, I think good-looking guys are nice and all... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">but just because you end up with someone like that doesn't mean you'll be happy, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　You can't become a family with just a face."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">You</STYLE><STYLE ID="1">'re pretty philosophical about it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... It's not like that..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Yesterday, </STYLE><STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="1"> proposed to me. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But I haven't answered yet."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh?! You're going to turn </STYLE><STYLE ID="6">Ryoji-san</STYLE><STYLE ID="3"> down?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Of course not. I just thought that before I answered, I should tell you properly, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Tell me...? Don't people normally answer on the spot? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　And putting him on hold just to tell me..."</STYLE><PG>
+<STYLE ID="1">"How do I put it... um..."</STYLE>
+{PAUSE ""}
+<BR>
+And then <STYLE ID="1">Akane</STYLE> suddenly looked at me with serious eyes.<PG>
+<STYLE ID="1">"Do you think it's okay for me to marry </STYLE><STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="1">?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">whaaat?!"</STYLE>
+{PAUSE ""}
+<BR>
+It was the first time <STYLE ID="1">Akane</STYLE> had ever come to me for advice like this.
+{PAUSE ""}
+<BR>
+Me, giving <STYLE ID="1">Akane</STYLE> advice...<PG>
+<STYLE ID="1">"I think by now, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, you've seen way more men than I have! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　So... what do you think, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Would it be okay for me and </STYLE><STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="1"> to become a family...? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We're both only 21, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Akane</STYLE> looked down, a little embarrassed.<PG>
+<STYLE ID="3">"Even if I've seen a lot of men, it's not like I dated any of them... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But I think </STYLE><STYLE ID="6">Ryoji-san</STYLE><STYLE ID="3"> is a good choice. Sure, </STYLE><STYLE ID="6">Ryoji-san</STYLE><STYLE ID="3">'s a little childish, but I think he's a really good match for you, </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Thanks! Hearing that is all I needed! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　As thanks, I'll introduce you to one of </STYLE><STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="1">'s coworkers sometime!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh? Introduce?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Come to think of it, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">, I've never </STYLE><STYLE ID="11" RUBY="あっせん">brokered</STYLE><STYLE ID="1"> a man for you, have I?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Brokered...?"</STYLE><PG>
+<STYLE ID="1">"Well, um... his looks aren't much... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">but he's a really nice person... and I thought he might be right for </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'll be there, and so will </STYLE><STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="1">! There's nothing to be scared of!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uugh... but someone like me..."</STYLE><PG>
+<STYLE ID="1">"Geez! I'm suggesting this because it's high time </STYLE><STYLE ID="3">you</STYLE><STYLE ID="1"> found a good guy too! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　So don't go saying no right away! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Prop-</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="1">er-</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="1">ly, </STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="1">give it your consideration! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　That is all!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">Akane</STYLE> paid for my share too and left the cafe.
+{PAUSE ""}
+<BR>
+Things had taken a turn I didn't really understand.
+{PAUSE ""}
+<BR>
+Did I just decide <STYLE ID="1">Akane</STYLE>'s fate...?
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

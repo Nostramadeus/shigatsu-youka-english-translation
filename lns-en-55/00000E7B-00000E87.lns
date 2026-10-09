@@ -1,0 +1,712 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=5144, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=へいたん, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=85, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふくしゅうしん, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふくしゅう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もう, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つな, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かしゃく, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5774, target=)
+; Links:
+;    0: TWdLink(count=5243, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\ヘリ機内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\キオク\朝日.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n10000\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Shiyo 804, April 8, 6:32 a.m.―<PG>
+"We are now over the Arata district. 
+{PAUSE ""}
+The fire appears to have burned itself out. 
+{PAUSE ""}
+The settlement is almost entirely burned down. We can't see anyone."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\パトカー通話ノイズ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+―Check for any evacuated residents in the vicinity.
+{PAUSE ""}
+<BR>
+"Roger."<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\電車昼.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "環境音\ヘリ機内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "揺れ画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "245" "1000" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\ヘリから.gal" "NORMAL" "#1" "C" "C" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"One person sighted, one person sighted in a clearing nearby. 
+{PAUSE ""}
+Just the one. We can't see anyone else."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\パトカー通話ノイズ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+―Can you confirm signs of life?
+{PAUSE ""}
+<BR>
+"No, lying spread-eagled. Unknown if alive or dead."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\パトカー通話ノイズ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+―Can you land nearby?
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Yes, we can land in a <STYLE ID="1" RUBY="へいたん">flat</STYLE> clearing nearby."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\パトカー通話ノイズ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+―Good. Determine at once whether alive or dead, and transport to the hospital.<PG>
+"Roger. Determining at once whether alive or dead, and transporting to the hospital."<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\電車昼.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,揺れ画像" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\死体縦長.gal" "NORMAL" "#1" "C" "T" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{PLAYSND "環境音\ヘリポート.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-1000\r\n10000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"Please respond. 
+{PAUSE ""}
+The person we found appears to be a woman in her early twenties."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\パトカー通話ノイズ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+―Well? Is she alive?
+{PAUSE ""}
+<BR>
+"Um... 
+{PAUSE ""}
+{MESOFF "0"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\電車昼.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-1000\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\死体縦長.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{PLAYSND "環境音\ヘリポート.ogg" "SE" "REPEAT" "1000" "0"}
+{MESON "500"}
+This is... 
+{PAUSE ""}
+{MESOFF "0"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\電車昼.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\イラスト\真呪殺編\キオク\死体.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{MESON "500"}
+Any way you look at it..."<PG>
+{MESOFF "0"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\電車汽笛.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\雲わすれの夏.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\夢.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This is the first time I have been the one to put a question to you like this.
+{PAUSE ""}
+<BR>
+For once, why not try answering a question of mine?
+{PAUSE ""}
+<BR>
+If you would simply give my questions some thought, that will be quite enough.<PG>
+I have two questions for you.
+{PAUSE ""}
+<BR>
+Please relax as you listen.
+{PAUSE ""}
+<BR>
+Now, the first―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\記憶イメージ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What is your oldest memory?
+{PAUSE ""}
+<BR>
+Long ago.
+{PAUSE ""}
+<BR>
+A memory from when you were small.
+{PAUSE ""}
+<BR>
+Surely everyone has thought about it at least once.
+{PAUSE ""}
+<BR>
+Please try to call that memory up once more, now.<PG>
+I have asked several friends the same question.
+{PAUSE ""}
+<BR>
+Their answers varied.
+{PAUSE ""}
+<BR>
+For one person, it was a memory of drowning in the sea and being saved by a parent.
+{PAUSE ""}
+<BR>
+It must have been the first moment in their life that they faced death, a vivid event.<PG>
+Another friend said this:
+{PAUSE ""}
+<BR>
+it was at the age of 3, when they first learned the concepts of 'right' and 'left.'
+{PAUSE ""}
+<BR>
+Human beings grow up learning all manner of things.
+{PAUSE ""}
+<BR>
+For that friend, it must have been the first time they truly felt the concept of 'learning,' the destiny of every human being.<PG>
+What is your oldest memory?
+{PAUSE ""}
+<BR>
+I believe you too have an oldest memory that is unlike anyone else's.
+{PAUSE ""}
+<BR>
+Some people even say they remember things from before they were born.
+{PAUSE ""}
+<BR>
+My little sister was one of them.<PG>
+Days of lying in a mother's dark, narrow womb, not yet knowing even the concept of light, surrendered to the warmth of her body―
+{PAUSE ""}
+<BR>
+My sister used to say she remembered what every human being lives through and then completely forgets.<PG>
+And the oldest memory inside me―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\赤ちゃん.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It is of the time I saw a baby, newly born to a friend of my mother's.
+{PAUSE ""}
+<BR>
+It was a baby girl.
+{PAUSE ""}
+<BR>
+Let me see, I think I was 1 or 2 at the time.
+{PAUSE ""}
+<BR>
+It surprises even me that so old a memory has stayed with me, but I can still recall it clearly.
+{PAUSE ""}
+<BR>
+That is how great a shock it was to me then.<PG>
+I myself had only just graduated from being a baby, and I was aware that I was powerless and could not live on my own.
+{PAUSE ""}
+<BR>
+Put that way, you may take me for a remarkably philosophical toddler, but...
+{PAUSE ""}
+<BR>
+It is simply that, when I apply the language I have learned since to my feelings at that time, that was how I understood it.<PG>
+I suspect you too had some vague awareness that you were too young to live without a guardian, that you were a powerless being.
+{PAUSE ""}
+<BR>
+If I remember rightly, in English this concept is expressed by the single word "helpless." [TN: "helpless" appears in English in the original.]
+{PAUSE ""}
+<BR>
+"A little baby is helpless."
+{PAUSE ""}
+<BR>
+It means that a baby cannot live on its own.<PG>
+At the time, I too was aware that I was "helpless."
+{PAUSE ""}
+<BR>
+But the baby of my mother's friend was more powerless still.
+{PAUSE ""}
+<BR>
+More powerless than I was: a "more helpless" being.
+{PAUSE ""}
+<BR>
+And yet, even a being like that had one radiance that was second to none.
+{PAUSE ""}
+<BR>
+A radiance far too dazzling for me.
+{PAUSE ""}
+<BR>
+The radiance of being adorable―<PG>
+A baby who could not yet properly perceive light, who knew no words, who did not even know that she existed.
+{PAUSE ""}
+<BR>
+A baby so small she could move her body only by reflex.
+{PAUSE ""}
+<BR>
+Powerless―and yet so very adorable.
+{PAUSE ""}
+<BR>
+That is my oldest memory.<PG>
+Right away, a desire sprouted in me as well: 'I want a little sister.'
+{PAUSE ""}
+<BR>
+I remember telling my mom 'I want a little sister!' in a loud voice at every opportunity.
+{PAUSE ""}
+<BR>
+Since I said it no matter where we were, I suspect Mom was embarrassed.
+{PAUSE ""}
+<BR>
+Even before Mom was pregnant with my sister, I was thinking up names for her and what we would play together.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\ルーシー人形.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I once got a doll that was popular at the time, called the 'Lucy doll.'
+{PAUSE ""}
+<BR>
+Silver hair and fair skin so pale it seemed translucent.
+{PAUSE ""}
+<BR>
+Odd eyes of blue and green that seemed to pull you in.
+{PAUSE ""}
+<BR>
+Even though the doll already had a name, 'Lucy,' I gave it the name I had thought up for my sister, and always carried it around with me.
+{PAUSE ""}
+<BR>
+I played house with my Lucy doll, always calling her by that name.
+{PAUSE ""}
+<BR>
+Erina―Erina―like that.<PG>
+Around the time I turned 4, the sister I had been longing for was born.
+{PAUSE ""}
+<BR>
+From the time my sister was still in Mom's belly, I called her by name the whole while, and my parents called her by the name I chose as well.
+{PAUSE ""}
+<BR>
+Written in kanji, Erina becomes <STYLE ID="2">Erina</STYLE>. [TN: the doll's name is in kana, the sister's in kanji.]
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Erina</STYLE> was born neither silver-haired nor odd-eyed, but with perfectly ordinary coloring.<PG>
+The Lucy doll Erina, my sister <STYLE ID="2">Erina</STYLE>, and I were always together, but the Lucy doll was torn to rags when <STYLE ID="2">Erina</STYLE> got into mischief with it.
+{PAUSE ""}
+<BR>
+I was sad, but it was "helpless" <STYLE ID="2">Erina</STYLE> who had done it, so there was nothing to be done.<PG>
+I buried the doll Erina in our yard and made her a grave.
+{PAUSE ""}
+<BR>
+If someone dug there, Erina's remains might still turn up even now.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夢.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\五島桃子子供.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\五島子供.gal" "NORMAL" "#1" "600" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Even after I started elementary school, I was always with <STYLE ID="2">Erina</STYLE>.
+{PAUSE ""}
+<BR>
+I would show her my school textbooks, which she could not possibly have understood, and tell her what I had studied that day. I even had <STYLE ID="2">Erina</STYLE> listen to my reading-aloud homework for Japanese class.
+{PAUSE ""}
+<BR>
+I clung to <STYLE ID="2">Erina</STYLE>, but <STYLE ID="2">Erina</STYLE> clung to me as well, and she listened with keen interest to whatever I had learned at school.<PG>
+Perhaps that was what paid off.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Erina</STYLE> learned words quickly, and by the time she started kindergarten, she could pick up whatever I had learned at school right away.
+{PAUSE ""}
+<BR>
+A sister 4 years younger, studying just as I did and working through homework together with me.
+{PAUSE ""}
+<BR>
+Perhaps this was what gave birth to the genius girl.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But―
+{PAUSE ""}
+I think my nature was warped in some way.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Erina</STYLE> came to learn more than I did, and to think about more.
+{PAUSE ""}
+<BR>
+Before long I was the one having <STYLE ID="2">Erina</STYLE> teach me my schoolwork, and <STYLE ID="2">Erina</STYLE> was teaching me things I did not know―
+{PAUSE ""}
+<BR>
+It was something to be truly glad of, that <STYLE ID="2">Erina</STYLE> grew up that way.
+{PAUSE ""}
+<BR>
+But―
+{PAUSE ""}
+I think my nature was warped in some way.<PG>
+Toward the <STYLE ID="2">Erina</STYLE> she had become, what I felt was fear.
+{PAUSE ""}
+<BR>
+What was I, to <STYLE ID="2">Erina</STYLE>?
+{PAUSE ""}
+<BR>
+Could it be that I was someone <STYLE ID="2">Erina</STYLE> had no need for?<PG>
+Unable to teach <STYLE ID="2">Erina</STYLE> anything anymore, would I be thrown away someday?
+{PAUSE ""}
+<BR>
+Would she come to find me tiresome, less capable than <STYLE ID="2">Erina</STYLE> as I was?<PG>
+It was around the time I entered high school that I felt this clearly.
+{PAUSE ""}
+<BR>
+Something set it off, and I came to hold a prejudice against clever people.
+{PAUSE ""}
+<BR>
+Clever people were sure to look down on me someday.
+{PAUSE ""}
+<BR>
+If <STYLE ID="2">Erina</STYLE> were ever to look at me with scorn in her eyes―<PG>
+I could no longer bear being with <STYLE ID="2">Erina</STYLE>, and I began to keep her at arm's length.
+{PAUSE ""}
+<BR>
+She was as clever and adorable a sister as ever, and yet―
+{PAUSE ""}
+my heart was warped.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But regretting it now, it is too late.
+{PAUSE ""}
+<BR>
+If it was going to come to this, I should have spent more time with <STYLE ID="2">Erina</STYLE>.
+{PAUSE ""}
+<BR>
+I wanted us to be close sisters to the very end, my adorable little sister and I.
+{PAUSE ""}
+<BR>
+Somewhere in my heart, I was hoping.
+{PAUSE ""}
+<BR>
+That surely a time would come when we could be close sisters again.
+{PAUSE ""}
+<BR>
+But with that dream never coming true―<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "$000080" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{CHANGECG "000" "グラフィック\背景\キオク\新聞.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Erina</STYLE> died.<PG>
+This has run long, but that is the end of the first question.
+{PAUSE ""}
+<BR>
+My oldest memory ended up giving me my greatest despair.
+{PAUSE ""}
+<BR>
+If I had not been driven by that desire back then, 'I want a little sister,' would I have been spared feeling this way?<PG>
+There would have been no fear of <STYLE ID="2">Erina</STYLE>, and no grief at losing her.
+{PAUSE ""}
+<BR>
+Those negative feelings of mine came to be directed at a certain person.
+{PAUSE ""}
+<BR>
+What I hold inside me now is―
+{PAUSE ""}
+{PLAYSND "Shadows_creeping.ogg" "BGM" "REPEAT" "1000" "0"}
+a pitch-black, ugly <STYLE ID="3" RUBY="ふくしゅうしん">thirst for revenge</STYLE>.
+{PAUSE ""}
+<BR>
+Toward the person who killed <STYLE ID="2">Erina</STYLE>, an insatiable <STYLE ID="3" RUBY="ふくしゅうしん">thirst for revenge</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now, the second question.
+{PAUSE ""}
+<BR>
+What do you think of '<STYLE ID="4" RUBY="ふくしゅう">revenge</STYLE>'?
+{PAUSE ""}
+<BR>
+Revenge is an act that tends to be condemned, generally speaking.
+{PAUSE ""}
+<BR>
+Even so, human beings are creatures ruled by the thirst for revenge.
+{PAUSE ""}
+<BR>
+Something called up not by reason, but by emotion.<PG>
+Some will say revenge is wrong.
+{PAUSE ""}
+<BR>
+Some will say it can be forgiven, depending on the circumstances.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "環境音\戦争1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\戦争1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Sometimes, it seems, countries even rename revenge 'retaliation' and go to war with one another.
+{PAUSE ""}
+<BR>
+But it is also said that what lies behind it is business on a national scale.
+{PAUSE ""}
+<BR>
+After all, war drives the economy and technology, and is apparently very <STYLE ID="5" RUBY="もう">profitable</STYLE>.<PG>
+Then what is the difference between 'revenge' and 'payback'?
+{PAUSE ""}
+<BR>
+Payback gives a comparatively lighter impression than revenge.
+{PAUSE ""}
+<BR>
+This is only my personal view, but I think the difference between revenge and payback lies in 'time.'
+{PAUSE ""}
+<BR>
+Payback is what is carried out over a comparatively short period, and revenge is what is undertaken over a long one.
+{PAUSE ""}
+<BR>
+With payback, you return what was done to you within a few days, or in an instant.
+{PAUSE ""}
+<BR>
+With revenge, you lay plans over a long time and pay the other person back.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What I intend to do is―revenge.
+{PAUSE ""}
+<BR>
+For this day, I have gathered every kind of information and worked out my plan.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\お金.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I spent a great deal of money on it as well.
+{PAUSE ""}
+<BR>
+Several million yen that I had originally saved up to run away from home―no, perhaps there was more than that.
+{PAUSE ""}
+<BR>
+Of that, all I have left is the fare for the train I am riding now and enough for a few days of food.
+{PAUSE ""}
+<BR>
+With that money, I gathered and gathered whatever information seemed necessary, from private detectives, from information brokers, and even from the yakuza.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The Arata settlement―
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Droga―
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+And the culprit who killed my sister.
+{PAUSE ""}
+<BR>
+My revenge―it is to destroy the Arata settlement.
+{PAUSE ""}
+<BR>
+I know the culprit behind the Megasawa City case, and the culprit who killed <STYLE ID="2">my sister</STYLE>.
+{PAUSE ""}
+<BR>
+And the Arata settlement, the root of it all, which made that spirited-away method possible.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\拳銃.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In my bag is something cold and heavy.
+{PAUSE ""}
+<BR>
+The population of the Arata settlement is about 30.
+{PAUSE ""}
+<BR>
+About five times that, 1 gross (144 rounds) of bullets, and a handgun.
+{PAUSE ""}
+<BR>
+My heart is warped in some way.
+{PAUSE ""}
+<BR>
+So I will take my revenge in a warped way.<PG>
+<STYLE ID="2">Erina</STYLE> wouldn't be happy if I did a thing like that.
+{PAUSE ""}
+<BR>
+Some people will say so.
+{PAUSE ""}
+<BR>
+If <STYLE ID="2">Erina</STYLE> were alive, she'd say the same.
+{PAUSE ""}
+<BR>
+But I know full well that the reality of revenge is nothing but self-satisfaction.
+{PAUSE ""}
+<BR>
+I made my peace with that from the very start.
+{PAUSE ""}
+<BR>
+What I need is this self-satisfaction.<PG>
+Ever since I was old enough to know anything, I longed for a sister, stayed by her side for so long, so long, and then one day suddenly lost her.
+{PAUSE ""}
+<BR>
+So what am I supposed to have left now?<PG>
+Yes, I know it myself.
+{PAUSE ""}
+<BR>
+The point of this revenge isn't the revenge itself.
+{PAUSE ""}
+<BR>
+It's my pitiful play of chasing a phantom, still pursuing the being called a <STYLE ID="2">little sister</STYLE>.
+{PAUSE ""}
+<BR>
+So that play ends today.<PG>
+Even once I have my revenge, I don't intend to run.
+{PAUSE ""}
+<BR>
+If I'm arrested, I'll probably get the death penalty.
+{PAUSE ""}
+<BR>
+I'll be a violent criminal whose name goes down in history.
+{PAUSE ""}
+<BR>
+But―it no longer matters.
+{PAUSE ""}
+<BR>
+My oldest memory <STYLE ID="6" RUBY="つな">connects</STYLE> to this last revenge, and brings down the curtain.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "0" "0"}
+{PLAYSND "環境音\電車進行中トンネル.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{CHGVOL "SE2" "800" "5000" "WAIT"}
+{PLAYSND "SE\電車汽笛.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "SE2" "1000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\電車昼.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I rode alone on the train that led to the Arata settlement.
+{PAUSE ""}
+<BR>
+It was a long journey.
+{PAUSE ""}
+<BR>
+Cherry trees had been planted along the tracks.
+{PAUSE ""}
+<BR>
+How did I know they were cherry trees?
+{PAUSE ""}
+<BR>
+It was a simple matter. The cherry blossoms were in bloom.<PG>
+It was in this season, when these cherries bloom, that <STYLE ID="2">my sister</STYLE> died.
+{PAUSE ""}
+<BR>
+Shiyo 800, April 8― My <STYLE ID="2">sister</STYLE> died on that day.<PG>
+There's no reason behind my choosing this season for carrying out my revenge.
+{PAUSE ""}
+<BR>
+It was just that I'd gathered enough information right about then, and I didn't want to travel in the cold.<PG>
+Today was Shiyo 804, April 7.
+{PAUSE ""}
+<BR>
+There was no one else on this train.
+{PAUSE ""}
+<BR>
+This train was running for one purpose only: to lead the Arata settlement to its ruin.
+{PAUSE ""}
+<BR>
+But―
+{PAUSE ""}
+having come this far, I felt a certain feeling begin to sprout inside me.
+{PAUSE ""}
+<BR>
+I know my revenge strays from the path a human being should walk.<PG>
+That feeling, now that I'm actually on my way to the Arata settlement like this, has started to scold me.
+{PAUSE ""}
+<BR>
+It has become a lump of conscience, spreading little by little and dulling my resolve.
+{PAUSE ""}
+<BR>
+Like a tumor, it appeared before I knew it, and it has begun to eat away at my thirst for revenge.<PG>
+If this tumor is benign, it will eventually stop growing.
+{PAUSE ""}
+<BR>
+If it's malignant, it will go on growing without end, and in the end it will destroy my thirst for revenge.<PG>
+To me, a conscience is nothing but a tumor that gets in the way of living.
+{PAUSE ""}
+<BR>
+If I'm listening to the <STYLE ID="7" RUBY="かしゃく">pangs</STYLE> of conscience at this point, my heart must not have been warped through and through.<PG>
+But how much time and money I've put into coming this far.
+{PAUSE ""}
+<BR>
+After going to such lengths, giving it all up over a conscience that welled up out of nowhere isn't worth it.
+{PAUSE ""}
+<BR>
+I cover the ears of my heart and turn my face away from the voice of the angel reciting pretty platitudes.<PG>
+These aren't any pangs of conscience.
+{PAUSE ""}
+<BR>
+Once my revenge is over, what am I supposed to live for?
+{PAUSE ""}
+<BR>
+It's because I'm worrying about a hollow future like that.
+{PAUSE ""}
+<BR>
+It isn't conscience. I'm a more selfish, more warped person than that.<PG>
+Oh... come to think of it...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\日記ぼかし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I'd left my planning notebook, which doubles as my diary, lying out on my desk.
+{PAUSE ""}
+<BR>
+It's fine, since the contents are in my head, but if my parents found something like that...
+{PAUSE ""}
+<BR>
+I'll get this over with and hurry home.
+{PAUSE ""}
+<BR>
+I don't mind if the revenge comes out, but... 
+{PAUSE ""}
+if they read it, it'd be embarrassing...
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\電車停止.ogg" "VOICE" "NORMAL" "0" "0"}
+{STOPSND "SE" "10000" "PASS"}
+{CHGVOL "VOICE" "1000" "500" "PASS"}
+{DELETECG "000" "1" "5000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

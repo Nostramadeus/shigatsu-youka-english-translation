@@ -1,0 +1,651 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1628, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=360, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=607, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1618, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=824, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あお, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=32, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=115, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=かない, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=かつらこ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=そ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かない, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かつらこ, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=10, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=12, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たち, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ざめつ, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+;   22: TDecorate(count=18, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   23: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たど, unk10=4294967295, unk11=4294967295)
+;   24: TDecorate(count=38, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   25: TDecorate(count=4, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5735, target=)
+; Links:
+;    0: TWdLink(count=5295, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\車走行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Going back to Motoki-cho was the sensible thing, as far as our safety went.
+{PAUSE ""}
+<BR>
+But one remark from <STYLE ID="1">Natsumi</STYLE> had changed all that.<PG>
+If this keeps up, Motoki-cho is going to disappear―
+{PAUSE ""}
+<BR>
+Both the connection and the sheer scale of it were outlandish.
+{PAUSE ""}
+<BR>
+But in a situation where common sense didn't apply, there was no dismissing that possibility out of hand.
+{PAUSE ""}
+<BR>
+More than anything, <STYLE ID="1">Natsumi</STYLE> looked uneasy.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ワゴン後部座席昼.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Mom</STYLE> came to pick us up at Toyotake Station in the car, and the four of us headed for the Arata settlement.
+{PAUSE ""}
+<BR>
+For a while the car was silent, but there was a lot we needed to talk about here.
+{PAUSE ""}
+<BR>
+But how to even bring it up...
+{PAUSE ""}
+<BR>
+It seemed as if everyone was stuck on that, and keeping their mouths shut.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+The first to speak was <STYLE ID="1">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+She must think it's <STYLE ID="1">her</STYLE> fault that we're headed for the Arata settlement.
+{PAUSE ""}
+<BR>
+But even I can weigh the pros and cons.
+{PAUSE ""}
+<BR>
+If we'd just gone back like that, Motoki-cho would...<PG>
+Then again, if it isn't precognition, like <STYLE ID="3">Goto</STYLE> says, and 'someone' is just making her hear what it wants her to hear, then even this stuff about something happening to Motoki-cho is pretty fishy, but...<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"But this has made one thing clear. The 'someone' really does exist. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And it controls the cherry trees."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Controls the cherry trees...?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHGVOL "SE" "500" "5000" "PASS"}
+<STYLE ID="3">"To </STYLE><STYLE ID="5" RUBY="あお">stoke</STYLE><STYLE ID="3"> our anxiety, it shows </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3"> illusions it passes off as precognition, and steers us into coming to the Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It seems to be a tougher enemy than I'd imagined."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="4">, what do you mean, controlling cherry trees and showing illusions?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Controlling the cherry trees means exactly what it says―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">there is something that can make cherry trees grow or wither, entirely at will. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">As for why it grew a cherry tree there, it was to stop the train. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">On top of that, it makes </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3"> recognize the destruction of Motoki-cho, and so turns our steps toward Arata."</STYLE><PG>
+<STYLE ID="4">"At this point, that thing's definitely not human..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That goes without saying, but it doesn't seem to be an animal either. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">For now, shall we call the 'someone' '</STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="3">'?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What's this </STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="4"> supposed to be..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"In English, a sorcerer is called a necromancer. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Shorten that, and you get </STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="3">."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="4"> the sorcerer, huh... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Mom</STYLE><STYLE ID="4">, don't you know anything about this </STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="4"> thing?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I don't think </STYLE><STYLE ID="7">your grandmother</STYLE><STYLE ID="2"> or </STYLE><STYLE ID="8">Kotaro-san</STYLE><STYLE ID="2"> knows anything about it either. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Necro</STYLE><STYLE ID="2">―the first time it clearly showed that it exists was that cherry tree just now, wasn't it?"</STYLE><PG>
+True, everything up to now could be explained away with "it must be some clever trick."
+{PAUSE ""}
+<BR>
+But a cherry tree suddenly appearing was beyond anything you could call a trick.
+{PAUSE ""}
+<BR>
+It was exactly as <STYLE ID="3">Goto</STYLE> had predicted: nothing less than proof that something outside common sense had slipped in among us―<STYLE ID="6">Necro</STYLE>.<PG>
+<STYLE ID="2">"Come to think of it, I believe something similar happened in Motoki-cho a long time ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The phenomenon of a cherry tree suddenly appearing."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"S-seriously!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes, I think it was before I was born. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">They say the goshinboku in Central Park appeared out of nowhere one day."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Oh! Now that you mention it, that's right!</STYLE>
+{PAUSE ""}
+　<STYLE ID="4">Hey, </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="4">! Can you look it up!?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"At this point, the chance that the goshinboku is just an urban legend has gotten pretty slim. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'll look into it in detail right away!"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">Goto</STYLE> whipped out her phone.
+{PAUSE ""}
+<BR>
+She seemed to have started looking up what had happened back then.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I've read about the goshinboku in some magazine."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"A magazine?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, I just happened to see a magazine article online. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I think it said that decades ago, some researchers who tried to investigate the goshinboku were killed, or something."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島うつむき逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Found it! It's a really small article, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE> handed her phone over.
+{PAUSE ""}
+<BR>
+The three of us <STYLE ID="9" RUBY="のぞ">peered</STYLE> at the screen.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "SE" "0" "5000" "PASS"}
+{CREATECG "111" "グラフィック\背景\新聞.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―A newspaper from March 30, Shiyo 737.
+{PAUSE ""}
+<BR>
+<STYLE ID="10">'Giant Cherry Tree Appears in Motoki!'</STYLE>
+{PAUSE ""}
+<BR>
+The headline read like something out of a gossip rag.
+{PAUSE ""}
+<BR>
+For all that, the article took up so little space that it was oddly comical.<PG>
+<STYLE ID="10">A nearby resident, </STYLE><STYLE ID="11" RUBY="かない">Keiko</STYLE><STYLE ID="12" RUBY="かつらこ"> Kanai</STYLE><STYLE ID="10">-san, discovered a large cherry tree growing there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13" RUBY="そ">The</STYLE><STYLE ID="10"> tree was reportedly already about 20 meters tall and in full bloom.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"It must be a god come to make flowers bloom in this Japan of ours," says Kanai-san, smiling fondly.</STYLE><PG>
+That was all there was to the article.<PG>
+{CHGVOL "SE" "500" "5000" "PASS"}
+{MESOFF "500"}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Hey, </STYLE><STYLE ID="2">Mom's</STYLE><STYLE ID="4"> maiden name was </STYLE><STYLE ID="14" RUBY="かない">Kanai</STYLE><STYLE ID="4">, wasn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That </STYLE><STYLE ID="15" RUBY="かつらこ">Keiko</STYLE><STYLE ID="2"> Kanai was my grandmother."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Seriously... what a crazy coincidence. So she'd be my great-grandma..."</STYLE><PG>
+<STYLE ID="3">"Starting with this year, Shiyo 737, Motoki-cho's population began to grow. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Gradually Motoki-cho became a famous cherry spot known nationwide, and from Shiyo 790 on, more and more of the newly rich bought up land in Motoki-cho, and the population grew even further."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I see, so that's the truth behind how it became a famous cherry spot."</STYLE><PG>
+<STYLE ID="1">"So that means what I sensed, 'Motoki-cho will disappear,' ties in too, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes. We can't overlook what they have in common: a big cherry tree suddenly growing. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But is that really the only thing connecting Motoki-cho and the Arata settlement? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I think it's likely </STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="3"> grew the goshinboku in Motoki-cho for some reason."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="4">, do you know anything about that?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Nothing really comes to mind. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">As far as I know, </STYLE><STYLE ID="16">Eiichiro-san</STYLE><STYLE ID="2"> moving to Motoki-cho was the first connection. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Before that, the two places should have had nothing whatsoever to do with each other."</STYLE><PG>
+It was when <STYLE ID="17">Dad</STYLE> came to Motoki-cho that the two places were first connected.
+{PAUSE ""}
+<BR>
+And <STYLE ID="17">Dad</STYLE> came to Motoki-cho when he was starting high school...
+{PAUSE ""}
+<BR>
+But the goshinboku was there before that, so going by the timeline, <STYLE ID="17">Dad</STYLE> wasn't connected after all.<PG>
+A chain of cause and effect seemed to be starting to show itself, faintly, yet it never quite came into view.
+{PAUSE ""}
+<BR>
+Part of me felt it would sit better to write it all off as coincidence.
+{PAUSE ""}
+<BR>
+But a cherry tree suddenly sprouting up was unthinkable under normal circumstances.
+{PAUSE ""}
+<BR>
+That very thing had happened just now, and it had also happened in Motoki-cho more than 60 years ago.
+{PAUSE ""}
+<BR>
+And <STYLE ID="1">Natsumi's</STYLE> intuition: 'the destruction of Motoki-cho.'<PG>
+No, I'll think positive.
+{PAUSE ""}
+<BR>
+We may still be a long way from the truth, but we can't be headed in the wrong direction.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="4">, what do </STYLE><STYLE ID="3">you</STYLE><STYLE ID="4"> think?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE> had been looking down for a while now, apparently lost in thought.
+{PAUSE ""}
+<BR>
+She's probably tying every factor together as she thinks it through.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Obasan</STYLE><STYLE ID="3">, do you know what variety the goshinboku in Motoki-cho is?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The variety? I've never heard anything that specific."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see... Actually, I've never heard either. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It looks like a Somei-yoshino cherry, but I'd been thinking it was a bit too big for one..."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島うつむき逆.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+With that, <STYLE ID="3">Goto</STYLE> started looking something up on her phone again.<PG>
+<STYLE ID="4">"You're looking up the goshinboku's variety?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes. If it's a cherry tree that just suddenly grows, I think it must be a special variety. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">No scholar would ever leave a cherry tree like that alone."</STYLE>
+{PAUSE ""}
+<BR>
+True, if a cherry tree were that bizarre, botanists would be falling over each other to study it.
+{PAUSE ""}
+<BR>
+In which case, maybe what that cherry tree really is is already known, and how it suddenly grows has been figured out too...<PG>
+{STOPSND "BGM" "5000" "PASS"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+<STYLE ID="3">"Huh...</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　That's weird..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE>, who'd been searching, was tilting her head and <STYLE ID="18" RUBY="にら">glaring</STYLE> at her phone.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What's up?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"When I try to look up the goshinboku, it seems an urban legend from Motoki-cho is involved somehow."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Could that be... Motokizakura-sama?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3">, you know about it?"</STYLE><PG>
+{CHGVOL "SE" "500" "5000" "PASS"}
+{PLAYSND "BGM死月編\和の廃墟.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"It's actually a pretty famous urban legend in Motoki-cho.</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　A yokai, a woman in a kimono, who gives whoever meets her either happiness or misfortune."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, the usual kind of story."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"We may not be able to laugh that urban legend off.</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　This urban legend of Motokizakura-sama seems to have been around for quite a long time."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It seems that story's been around since my parents' generation, at least."</STYLE><PG>
+<STYLE ID="4">"So it's an urban legend that old... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So what's that got to do with the variety?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"This is... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">a pretty </STYLE><STYLE ID="19" RUBY="たち">nasty</STYLE><STYLE ID="3"> story... Are you sure you want to hear it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't tell me it's actually a ghost story or something...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, apparently something ghost-story-like really happened. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It reads like a more detailed account of </STYLE><STYLE ID="1">Kogori-senpai's</STYLE><STYLE ID="3"> story from earlier―the researchers being slaughtered."</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "5000" "PASS"}
+{CREATECG "111" "グラフィック\背景\エデン\研究.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"In late April of Shiyo 747, an official team of five researchers was formed to investigate the goshinboku. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">They apparently started with a field survey of the cherry tree. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But then―"</STYLE><PG>
+<STYLE ID="3">"A few days after arriving in Motoki-cho, all five members of the research team apparently died suddenly at their lodgings. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The cause of death: </STYLE><STYLE ID="20" RUBY="ざめつ">crushed</STYLE><STYLE ID="3"> brains from blows to the head. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, they were beaten over the head and died."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What's that supposed to mean... That's a full-on ghost story..."</STYLE><PG>
+<STYLE ID="3">"The truly frightening part comes next. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Due to pressure from somewhere, the research on the goshinboku itself apparently fell through. </STYLE>
+{PAUSE ""}
+<STYLE ID="21" RUBY="・・">An official</STYLE><STYLE ID="3"> research team, no less. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, this is the same as saying the government halted the research."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"W-wait a minute! You mean...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"At the very least, the government knows what the goshinboku really is. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It's top secret of top secrets, something the general public must never know."</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "500" "5000" "PASS"}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">"No, wait, wait. But that's weird too, isn't it?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Why would a government secret be up on the net? That's got to be another urban legend, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Most likely, the murder of the research team got swapped out for the urban legend of Motokizakura-sama. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Back then the media were newspapers, TV, and radio, so manipulating the public must have been easy."</STYLE><PG>
+<STYLE ID="3">"Besides, all it says here is that 'the research was halted on orders from somewhere.' Pressure from the Japanese government is just my guess. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">By painting over the incident with an urban legend, they planted it in people's memories as 'a fishy-sounding case,' and let the incident fade from memory."</STYLE><PG>
+<STYLE ID="4">"So basically, we never find out the variety after all..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes. In this country, even knowing the variety seems to be taboo..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Damn! Before we knew it, we'd gotten dragged into something unbelievable..."</STYLE><PG>
+<STYLE ID="3">"But it means someone has known what that goshinboku really is since at least before Shiyo 737. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">They halted the research before it had gotten anywhere in Motoki-cho, and even went so far as to manipulate the public."</STYLE><PG>
+<STYLE ID="3">"Most likely, records that reveal what it really is already existed somewhere before Shiyo 737. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Considering the period, probably as paper records."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Paper records... so, books... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+<STYLE ID="4">Wait a second! That means...!"</STYLE><PG>
+Records that had existed since before Shiyo 737.
+{PAUSE ""}
+<BR>
+Those had to be paper records―books, without a doubt.
+{PAUSE ""}
+<BR>
+And there was someone who'd been looking into exactly that.
+{PAUSE ""}
+<BR>
+And <STYLE ID="22">that person</STYLE> was missing now...
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "262" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="22">Chiga-nee</STYLE><STYLE ID="4">... so she ended up </STYLE><STYLE ID="23" RUBY="たど">reaching</STYLE><STYLE ID="4"> the truth...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Those who try to learn the truth get erased..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm scared..."</STYLE>
+{PAUSE ""}
+<BR>
+{CHGVOL "SE" "500" "500" "PASS"}
+{PLAYSND "エデンの桜\SE\急ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Just then, the car suddenly slammed on its brakes.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="4">, what's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, I can't do this. Arata is too dangerous. We're going home."</STYLE><PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"W-wait a minute! If this keeps up, Motoki-cho's in trouble, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="2"> matters more to me than Motoki-cho!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What are you talking about! Are you gonna abandon Motoki-cho and the Arata settlement and </STYLE><STYLE ID="22">Chiga-nee</STYLE><STYLE ID="4">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's right! We can live anywhere!"</STYLE><PG>
+<STYLE ID="4">"Then... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Then what happens to </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4">!?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　She has precognition because </STYLE><STYLE ID="6">Necro</STYLE><STYLE ID="4"> already has its hooks in her, right!?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Is there any guarantee </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> will be safe if we just go home like this!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's..."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="22">Chiga-nee</STYLE><STYLE ID="4"> told me everything! In Megasawa, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> saved us, didn't she!?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　And you're gonna abandon </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> after that!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">, never mind me. You two go back to Motoki-cho―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">You</STYLE><STYLE ID="4"> keep your mouth shut!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+Just then, it was <STYLE ID="2">Mom's</STYLE> phone that rang.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="24">Akane</STYLE><STYLE ID="2">'s calling...?</STYLE>
+{PAUSE ""}
+{STOPSND "VOICE" "0" "PASS"}
+<STYLE ID="2">　Hello?"</STYLE>
+{PAUSE ""}
+<BR>
+It seemed to be from <STYLE ID="24">Natsumi's mom</STYLE>.
+{PAUSE ""}
+<BR>
+She must have heard that whole exchange through the bugging app.
+{PAUSE ""}
+<BR>
+They had to be talking about what to do to help <STYLE ID="1">Natsumi</STYLE>.<PG>
+<STYLE ID="2">"Yeah... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But then...!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　............"</STYLE>
+{PAUSE ""}
+<BR>
+The conversation didn't seem to be getting anywhere.
+{PAUSE ""}
+<BR>
+I took the hand of <STYLE ID="1">Natsumi</STYLE>, who sat with her head down, trembling.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4">, don't worry. I'm right here with you."</STYLE>
+{PAUSE ""}
+<BR>
+At that, <STYLE ID="1">Natsumi</STYLE> gave a weak nod.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> had said she'd go to Arata alone, but she must have been scared after all.<PG>
+<STYLE ID="2">"Phew..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ワゴン昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬うつむき.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Mom</STYLE> hung up and let out a breath.
+{PAUSE ""}
+<BR>
+What on earth had they talked about?<PG>
+<STYLE ID="2">"I'll ask just to be sure. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Are you really going to Arata?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That's..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm definitely going!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　There's something only I can do, so I'm definitely going!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then I'm going too!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Besides, I promised </STYLE><STYLE ID="22">Chiga-nee</STYLE><STYLE ID="3"> we'd meet in Arata!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"A-as if I could go home and leave these guys behind!"</STYLE><PG>
+That meant all three of us had flatly rejected <STYLE ID="2">Mom's</STYLE> proposal.
+{PAUSE ""}
+<BR>
+Hearing that, <STYLE ID="2">Mom</STYLE> heaved another big sigh.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="24">Akane</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="25">Ryoji-san</STYLE><STYLE ID="2"> were really torn, it seems. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">As things are, </STYLE><STYLE ID="1">Natsumi-chan's</STYLE><STYLE ID="2"> safety can't be guaranteed. Maybe it'd be better, instead, to trust everyone and see it through to the end, they said. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Also, </STYLE><STYLE ID="24">Akane</STYLE><STYLE ID="2"> told me this. </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="24">'Isn't it about time </STYLE><STYLE ID="2">you</STYLE><STYLE ID="24"> let go of your girl and let her travel?'</STYLE><STYLE ID="2"> she said. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So we'll leave it to you to decide. </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">You're really ready for this?"</STYLE><PG>
+The three of us looked at one another.
+{PAUSE ""}
+<BR>
+Without hesitation, we nodded to each other.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ワゴン後部座席昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE>, timid and yet somehow with nerves of steel.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE>, a cheeky little shrimp and yet more loyal than anyone.
+{PAUSE ""}
+<BR>
+I'm not thinking anything grand, like wanting to save Motoki-cho or Arata.
+{PAUSE ""}
+<BR>
+It's just that I like these two, so I can't leave them be.
+{PAUSE ""}
+<BR>
+So I'm going too.<PG>
+{PLAYSND "僕らの日常.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="4">! Take us to Arata! And we go home on schedule―April 9!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">That's my girl! Mine and </STYLE><STYLE ID="16">Eiichiro-san's</STYLE><STYLE ID="2">, through and through!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "環境音\車内.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼ブラー.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Mom</STYLE> stomped down hard on the accelerator, and the car lurched off, swaying from side to side.<PG>
+<STYLE ID="4">"H-hey, </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="4">! Calm down!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'm still plenty young, you know! As if I'd lose to you three!"</STYLE>
+{PAUSE ""}
+<BR>
+With us aboard, the car sped nimbly along the mountain road.<PG>
+That's right. We're not going in order to take risks, but to protect ourselves.
+{PAUSE ""}
+<BR>
+No risk, high return―we can't afford to be that greedy anymore.<PG>
+<STYLE ID="22">Chiga-nee</STYLE>, hang on. I swear I'll find you.
+{PAUSE ""}
+<BR>
+And... just you wait, <STYLE ID="6">Necro</STYLE>...
+{PAUSE ""}
+<BR>
+I'll expose what <STYLE ID="6">you</STYLE> are and save everyone!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

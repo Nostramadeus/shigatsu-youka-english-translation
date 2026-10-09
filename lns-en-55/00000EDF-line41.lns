@@ -1,0 +1,75 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=13, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=124, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=78, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=262, target=)
+; Links:
+;    0: TWdLink(count=215, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\電話切れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{MESON "500"}
+<TXSPN>Sis<STYLE ID="1"> tossed that out and hung up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The sound of the rain was gone, and animal cries echoed across the mountains of Arata.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\サード\五島影目.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Did you enjoy your call with </STYLE>your sister<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, you're not surprised to see me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'm not scared of you anymore."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Because you talked to </STYLE>your sister<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah. I'm fine now."</STYLE><PG>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Whoever it is, I'm glad too that there's someone to help </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hey, why don't you have any eyes?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Do you want to know?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I don't want to know. I'm sleepy, so don't bother me."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Poor thing..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

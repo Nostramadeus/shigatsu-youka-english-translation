@@ -1,0 +1,403 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=392, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=436, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1223, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=810, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=11, unk2=65535, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3179, target=)
+; Links:
+;    0: TWdLink(count=2876, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "30"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Oh, welcome back. You okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> had already finished her parfait.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At the bottom of the dish, some red strawberry juice was left.</STYLE><PG>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, there's something I want you to hear."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What's the matter?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> was gulping down her umpteenth drink-bar cola, glug glug, without even using a straw.</STYLE><PG>
+<STYLE ID="1">"Earlier, at </STYLE>Haruka<STYLE ID="1">'s place, I dozed off for a bit... and I had a strange dream then."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "3000" "PASS"}
+<STYLE ID="3">When I said that, the two of them started and looked at each other.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Whoa... <STYLE ID="1">Natsumi</STYLE>, that thing of yours is scary. And you had it at my place, of all places?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"I don't believe in stuff like the occult or psychic powers, though. But </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">'s famous intuition, that I do believe in!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> grinned from ear to ear.</STYLE><PG>
+<STYLE ID="1">"Somehow, I feel like it's connected to today's incident... It might just be my imagination, but will you hear me out?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">When I said that, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3"> opened her notepad.</STYLE><PG>
+<STYLE ID="3">―I told the two of them what the dream had been about.</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> listened with a serious face, and </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3"> listened while taking notes.</STYLE><PG>
+"That's creepy, or rather... it's a bit much to be a coincidence... 
+{PAUSE ""}
+And it's your intuition in this season, right? Can't exactly laugh that off..."<PG>
+<STYLE ID="2">"Hmm, hmm, it might have to do with </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">'s famous intuition. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Suppose it was a dream about being attacked by the red person. In that case, going by your reading, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, it doesn't quite add up. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">A few points bothered me, so I'll ask some questions."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Um, was that person a man? A woman? Couldn't you tell from the moaning?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"The voice sounded like a man's, maybe. But I think a woman could make that voice too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Even the scream at the end?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ah, that one, I think it was probably a man. Probably."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Then for now, I'll go ahead treating that person as a man."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> was scratching her head with her pen, glaring at her notes.</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, you said he was asking you for help, but was he really?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It was moaning, right? He didn't say anything like 'help me,' did he?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, that's true, but..."</STYLE><PG>
+<STYLE ID="2">"So it's not certain he was asking for help. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">After that, your ankle got grabbed, right? Right before that, what did you do, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"At that point, I was looking at the blood falling from the tree, and when I looked down, my eyes met that person's... I think."</STYLE><PG>
+<STYLE ID="2">"When your eyes met, he grabbed your leg?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> and </STYLE>Haruka<STYLE ID="3"> were watching me intently.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Let me try to remember a little better.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3">'s questions, held up against my memory, did turn up a spot that didn't sit right.</STYLE><PG>
+<STYLE ID="1">"That's not it... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">After our eyes met, I said 'I'll get help' in a small voice. Then I got grabbed."</STYLE><PG>
+<STYLE ID="2">"I see, I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> was smoothly jotting more notes.</STYLE><PG>
+<STYLE ID="2">"And at the end, when you said 'stop,' the man got up and screamed right in front of you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">What was he screaming?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That horrible scream was still burned into my ears.</STYLE><PG>
+<STYLE ID="1">"I don't know... Just something like 'Aaaaaah.'"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I see, I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> added still more to her notes, then put down her pen with a sigh.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Apparently she'd gathered the information she needed.</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, this is dream analysis, so please listen as though half of it's made up."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">"That person, it seems, wasn't asking you for help, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, and wasn't trying to harm you either."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That wasn't asking for help, and wasn't attacking me either?</STYLE><PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, he was trying to tell you something. The danger that's going to fall on you, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A chill ran through me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Earlier I'd only felt on instinct that it was dangerous, but now it matched </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3">'s logical analysis.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Why do you think that? <STYLE ID="1">Natsumi</STYLE>'s in danger from here on?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes. First, he wasn't clearly asking for help, right? But at the very least, he was trying to get something across."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah."</STYLE><PG>
+<STYLE ID="2">"And when you, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, tried to go for help, he grabbed your leg with tremendous strength. Do you get what that means?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I get it. So it meant 'Don't go.'"<PG>
+<STYLE ID="2">"Exactly. 'Don't go. I still haven't been able to tell </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2"> of the danger that will fall on you.'"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"But you can't say for sure that it was about warning of danger, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3">'s deductions, I knew, were pointless to interrupt.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But </STYLE>Haruka<STYLE ID="3"> was oddly impatient.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Right, that's the mystery. At the end, the man got up and screamed. It probably wasn't just a scream. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If he meant to harm you, he wouldn't just scream. He'd strangle you, or hit you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But that person chose to scream."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"............"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> finally stopped butting in, too.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"He was trying to get something across. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You see, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, you have an intuition that senses danger. If it comes from that, then 'he was trying to warn of danger.' That was that person's purpose. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Well, I'm explaining a hypothesis with a hypothesis, so it's not logically sound, though."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"So if we knew what that person screamed..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, can't you remember? What that person screamed."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm, no, I really can't..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I see..."</STYLE><PG>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, is it connected to this incident...? The situation's a little similar, and that bothers me..."</STYLE><PG>
+<STYLE ID="3">When I said that, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3"> began writing something, as if hiding her notepad.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But she stopped her hand right away and made a motion like erasing what she'd written.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "76" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">A silence settled for a while...</STYLE><PG>
+{MESOFF "500"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台,人物1" "QUAKE" "1" "15" "0" "0" "30"}
+<STYLE ID="4">"Dooooooh!!!!"</STYLE><BR>
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島万歳.gal" "NORMAL" "#1" "R" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n五島万歳\r\n人物1\r\n4\r\n0\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n五島万歳\r\n人物1\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{QUAKESTOP "500"}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Suddenly </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3"> threw both hands up and started shouting, not caring who was looking.</STYLE>
+{PAUSE ""}
+<BR>
+"What's wrong, <STYLE ID="2">Goto</STYLE>?!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You scared me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="3"> grinned from ear to ear.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"There's no point thinking about this stuff anymore! Come on, come on, the three of us are here together, so let's talk about fun things!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="2">Okay, okay, that's it, Operation complete!"</STYLE><PG>
+<STYLE ID="3">For a moment we were dumbfounded, but</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"O-ohh, <STYLE ID="2">Goto</STYLE>, well said! Even <STYLE ID="2">you</STYLE> say good stuff once in a while!"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> jumped in on it with a smile, too.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"I always say good stuff! </STYLE>Niimura-senpai<STYLE ID="2">, you're so ruuude!"</STYLE>
+{PAUSE ""}
+<BR>
+"Oh yeah, earlier, 
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE> here sees the online news, and it's scary, scary! <STYLE ID="5">Mom</STYLE>'s home late today, scary, scary!
+{PAUSE ""}
+<STYLE ID="3">　</STYLE>That's what she was saying! And she's in high school!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Wow! </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">, how cuuute!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"H-hey! Don't tease me!"</STYLE><PG>
+"Hahahaha! Sorry, sorry!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE>Niimura-senpai<STYLE ID="2">! You mustn't pick on </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2"> so much! Unlike </STYLE>Niimura-senpai<STYLE ID="2">, she's very delicate!"</STYLE>
+{PAUSE ""}
+<BR>
+"What was that, <STYLE ID="2">Goto</STYLE>! Are you saying I'm crude?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Huh? Huh? Any way you look at it, you're crudeness walking around in clothes. About as far from ladylike as it gets!"</STYLE>
+{PAUSE ""}
+<BR>
+"Why, <STYLE ID="2">you</STYLE>...!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"See, see, that's what I mean! </STYLE>
+{QUAKE "人物3" "QUAKE" "1" "15" "0" "500" "30"}
+<STYLE ID="2">H-hey, don't tickle me...!</STYLE>
+{QUAKE "人物3" "QUAKE" "1" "15" "0" "500" "30"}
+<STYLE ID="2">　Gyahahahaha!"</STYLE><PG>
+<STYLE ID="3">Watching the two of them go back and forth, I couldn't help giggling.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If that dream was one of the nasty intuitions peculiar to this season, I'd had a feeling it would come down on me in some form.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But </STYLE>Haruka<STYLE ID="3"> and </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3"> were both on my side, encouraging me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Getting it out and talking it over like this had definitely lightened my heart.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2,人物3" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">―After chatting for a while, we left Zahha.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ファミレス.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "R" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Goto</STYLE>, what're you doing now?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I've got cram school now."</STYLE>
+{PAUSE ""}
+<BR>
+"Isn't cram school canceled?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I checked the cram school's website, and it said my course is running."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\トラック通過.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "3000" "NORMAL" "SKIP"}
+{DELETECG "000,人物1,人物2" "1" "500" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\舞うさくら.gal" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">A big truck roared past on the road, and a violent wind swept over the area.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And the cherry petals lying on the asphalt were swept up into the wide, overcast sky.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{MESOFF "0"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\能面フラッシュ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\ファミレス.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "R" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,29 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=140, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=154, target=)
+; Links:
+;    0: TWdLink(count=140, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "システム音\The_Lampe.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日2.gal" "NORMAL" "#1" "C" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "プレート" "グラフィック\システム\立木三日プレート.gal" "NORMAL" "#1" "180" "380" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Thank you for your hard work, <VAR NAME="プレイヤー名" unk3="50">-sama. You have reached the second demise of the Wabigoto Arc [Apology].<PG>
+It seems the Megasawa City case was safely prevented, and Shiyo 800 could be reached.<PG>
+However, I have a feeling that yet another new incident is coming.<PG>
+Owing to Natsumi Kogori's danger sense, it came about that they would go to the Arata settlement.<PG>
+<VAR NAME="プレイヤー名" unk3="50">-sama, what impression do you have of the Arata settlement?
+{PAUSE ""}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

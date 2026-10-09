@@ -1,0 +1,167 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=140, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1, unk2=255, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1, unk2=255, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=255, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=323, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=5, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=すいがん, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=597, target=)
+; Links:
+;    0: TWdLink(count=478, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "エデンの桜\000.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "2000" "PASS"}
+{PLAYSND "環境音\心臓の鼓動.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "30" "30" "0" "30"}
+<TXSPS>"I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+"I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill I want to kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+"I want to kill I want to kill I want to kill I want to kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+"I want to kill I want to kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+"I want to kill I want to kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+"To kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+"Kill"
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<STYLE ID="1">Kill</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<STYLE ID="2">Kill</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<STYLE ID="3">Kill</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{MESOFF "0"}
+{QUAKESTOP "0"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "VOICE" "0" "PASS"}
+{STOPSND "SE" "100" "PASS"}
+{STOPSND "VOICE2" "100" "PASS"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\追加手直し\春花長髪横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\桃子銃逆.gal" "NORMAL" "#1" "-500" "C" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2,111" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\追加手直し\夏菜中学横顔血.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\桃子銃逆.gal" "NORMAL" "#1" "-500" "C" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2,111" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "エデンの桜\Amblygo.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4"><TXSPN>―I made it in time. </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Before the two of them went mad like me, I was able to settle it. </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I killed the people I wanted to kill. </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">This is... the unbearable murderous intent. </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">This is... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">a curse-killing. </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">The villagers who saw it all began to raise a clamor at once.</STYLE><PG>
+<STYLE ID="4">"I-I knew it! A curse-killing! It's a curse-killing!" </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="5">This woman</STYLE><STYLE ID="4">, she's </STYLE><STYLE ID="6" RUBY="すいがん">green-eyed</STYLE><STYLE ID="4">!" </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I knew we should never have let an outsider in!"</STYLE><PG>
+<STYLE ID="4">"Kill her!"</STYLE><BR>
+<STYLE ID="4">"Kill her!"</STYLE><BR>
+<STYLE ID="4">"Kill the </STYLE><STYLE ID="5">guest</STYLE><STYLE ID="4">!" </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">That chorus came at me from all around.</STYLE><PG>
+<STYLE ID="4">The unsightly Noh masks, their rears on the ground, unable to stand, hurled abuse at me. </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">What... what is this? </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Why am I the one who ends up being in the wrong? </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I'm not the one who killed them, am I...? </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">This settlement killed them, didn't it...?</STYLE><PG>
+<STYLE ID="4">Droga and―you people and―the cherry killed everyone, didn't they! </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Why is it only the people dear to me who keep dying...! </STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana-chan</STYLE><STYLE ID="4">―my little sister― </STYLE>
+{PAUSE ""}
+<STYLE ID="4">was killed by this settlement...!</STYLE><PG>
+I won't forgive this...!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "50"}
+{CHANGECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\銃声6発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "最後の声・真呪殺\SE\銃声6発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "最後の声・真呪殺\SE\銃声6発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "最後の声・真呪殺\SE\銃声6発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHGVOL "VOICE" "0" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n5000\r\nNORMAL\r\nPASS">
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000" "1" "5000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "2000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,864 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=6183, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゃにくかん, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひとけ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=122, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぶたい, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=500, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たいしょくさい, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そしゃく, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=えんげりょく, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7453, target=)
+; Links:
+;    0: TWdLink(count=6829, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\東京.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\スクランブル1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>―Shibuya, the scramble crossing.<PG>
+So many people.
+{PAUSE ""}
+<BR>
+Tomorrow they would close this place to traffic and hold the contest here.
+{PAUSE ""}
+<BR>
+Even the giant screens were running announcements for tomorrow's contest.
+{PAUSE ""}
+<BR>
+A country bumpkin like me gets nervous just standing here...<PG>
+If I can, I'll look for a place nearby with a challenge menu.
+{PAUSE ""}
+<BR>
+For tomorrow's visualization training, too, the bigger the gallery, the better.
+{PAUSE ""}
+<BR>
+And something that won't put too much strain on my stomach.
+{PAUSE ""}
+<BR>
+If it affects tomorrow's match, it's all for nothing.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "NORMAL" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I searched on my smartphone, and...
+{PAUSE ""}
+<BR>
+Hmm, there are lots of restaurants, but the one with a challenge menu is―
+{PAUSE ""}
+<BR>
+A steak house a 15-minute walk from here.
+{PAUSE ""}
+<BR>
+Its name: '<STYLE ID="1" RUBY="しゃにくかん">Shanikukan</STYLE>'. [TN: Shanikukan, roughly "carnival hall"; a pun on shanikusai, carnival]<PG>
+Apparently they had a 5-pound steak challenge menu.
+{PAUSE ""}
+<BR>
+One pound is about 450 grams, so 5 pounds is about 2300 grams.
+{PAUSE ""}
+<BR>
+Not a big amount, but it'll be dinnertime soon, so there should be a decent gallery.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\謝肉館外観.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+So this is it. Nothing about the outside stood out.
+{PAUSE ""}
+<BR>
+There was no sign advertising a big-eater menu, just a standing sign that said '<STYLE ID="1" RUBY="しゃにくかん">Shanikukan</STYLE>'.
+{PAUSE ""}
+<BR>
+All right, here goes: charge!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\風呂ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "SE2" "1000" "PASS"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "500" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\Feel_The_Brain_Shakes.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\謝肉館中1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+―When I went in, I was greeted by loud voices and flashy background music.
+{PAUSE ""}
+<BR>
+It was more like a bar than a restaurant.
+{PAUSE ""}
+<BR>
+And not the kind of place where men hit on women, either, but a very noisy one, like a cheap pub or a sports bar.
+{PAUSE ""}
+<BR>
+A place the kanji of 'Shanikukan' don't suit.<PG>
+Then a man with glossy regent hair (properly, a pompadour) sprang out in front of me, his forelock swaying.<PG>
+"W<TXSPS>eeeeeeeeeeee<TXSPN>lcome!
+{PAUSE ""}
+　Welcome to Shanikukan!
+{PAUSE ""}
+　Party of one, right this w<TXSPS>aaaaaaaaaaaaay<TXSPN>!"
+{PAUSE ""}
+<BR>
+I hadn't even told him how many, yet he saw that I was alone, and practically pushing me from behind, he showed me to a seat―
+{PAUSE ""}
+<BR>
+With the deftness of a magic trick he guided me to a chair, pulling it out and pushing it in with perfect timing to seat me.<PG>
+"Once you've decided on your order, call us with that button there, plea<TXSPS>aaaaaaaaaaaaase<TXSPN>!"
+{PAUSE ""}
+<BR>
+The cheerful waiter with the glossy pompadour set down a menu and left.<PG>
+Is this the Tokyo style of customer service?
+{PAUSE ""}
+<BR>
+Not a restful atmosphere for a meal.
+{PAUSE ""}
+<BR>
+But, well, as practice for tomorrow, it's just right.
+{PAUSE ""}
+<BR>
+A place this lively and <STYLE ID="2" RUBY="ひとけ">full of people</STYLE> feels more like a contest.<PG>
+When I opened the menu, the item I was after jumped right out at me.
+{PAUSE ""}
+<BR>
+5-pound steak, time limit 30 minutes.
+{PAUSE ""}
+<BR>
+Comes with 500 grams of rice and 500 grams of soup.
+{PAUSE ""}
+<BR>
+Free if you finish it, 5,000 yen + tax if you can't.
+{PAUSE ""}
+<BR>
+For me... 
+{PAUSE ""}
+I could probably polish it off in 15 minutes.
+{PAUSE ""}
+<BR>
+Okay, no need to hesitate.
+{PAUSE ""}
+<BR>
+I pressed the button right away.<PG>
+"Yes! Have you decid<TXSPS>eeeeee<TXSPN>ed!?"
+{PAUSE ""}
+<BR>
+The instant I pressed it, the waiter from before came flying over.
+{PAUSE ""}
+<BR>
+I made an X over my mouth with my fingers, then pointed at the 5-pound steak.<PG>
+"Oh dear, I'm s<TXSPS>oooooooooooo<TXSPN>rry!
+{PAUSE ""}
+　That item needs a reservation the day bef<TXSPS>ooooo<TXSPN>re!"
+{PAUSE ""}
+<BR>
+When I looked closely, the menu did say reservations were required.
+{PAUSE ""}
+<BR>
+Right, a steak that size would take time to cook, of course.
+{PAUSE ""}
+<BR>
+And I'd thought it would make good practice...
+{PAUSE ""}
+<BR>
+I hung my head in disappointment.<PG>
+"Hmm?
+{PAUSE ""}
+　Huh?
+{PAUSE ""}
+　Can't talk, taking on the big-eater menu, and with these looks, that means... 
+{PAUSE ""}
+By any chance, aren't <STYLE ID="3">you</STYLE> competing in tomorrow's cont<TXSPS>eeeee<TXSPN>st!?
+{PAUSE ""}
+　One moment, plea<TXSPS>aaaa<TXSPN>se!"
+{PAUSE ""}
+<BR>
+The waiter shot off to the kitchen.
+{PAUSE ""}
+<BR>
+So my face is known even in a place like this...
+{PAUSE ""}
+<BR>
+It's a little embarrassing...<PG>
+"Hey, hey, isn't <STYLE ID="3">that girl</STYLE> the Silent Angel from the commercial!?"
+{PAUSE ""}
+<BR>
+"Yeah, yeah! She ate 10 kilos of curry, right!?"
+{PAUSE ""}
+<BR>
+I could hear talk like that all around me.
+{PAUSE ""}
+<BR>
+A celebrity without knowing it. It really is embarrassing...
+{PAUSE ""}
+<BR>
+Then the same waiter came flying back, forelock swaying.<PG>
+"Thank you for w<TXSPS>aaaaaaaaaa<TXSPN>iting!
+{PAUSE ""}
+　I checked with the owner and the chef, and as a special exception, we can prepare the 5-pound steak for y<TXSPS>ooooooooo<TXSPN>u!"
+{PAUSE ""}
+<BR>
+When the waiter shouted that, 
+{PLAYSND "最後の声・真呪殺\SE\clapping-hands1.ogg" "SE2" "NORMAL" "1000" "0"}
+applause broke out all around at once.<PG>
+"For real!? It's a warm-up bout for tomorrow's contest!"
+{PAUSE ""}
+<BR>
+"Awesome! We get to see it live!?"
+{PAUSE ""}
+<BR>
+Suddenly the center of attention: the Silent Angel, <STYLE ID="3">Erina Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Enough! After coming this far, this is no time to be embarrassed!
+{PAUSE ""}
+<BR>
+Besides, a mere 5 pounds... are they all underestimating me?<PG>
+I pointed at the 5-pound steak and signaled 'Two, please' with my fingers.
+{PAUSE ""}
+<BR>
+"Huh?
+{PAUSE ""}
+　<TXSPS>Whaaaaaaaaaaat!?
+{PAUSE ""}
+<TXSPN>　Y-you're really taking on the 5-pound steak... 
+{PAUSE ""}
+two sets of it!?"
+{PAUSE ""}
+<BR>
+I stood up and gave a big nod.<PG>
+"Whoooaaa!!!"<BR>
+"That's a favorite to win for you!!!"
+{PAUSE ""}
+<BR>
+The audience stood up too and applauded.
+{PAUSE ""}
+<BR>
+Having stirred them up this much, I can't go making a fool of myself.
+{PAUSE ""}
+<BR>
+That's right! For tomorrow's sake, they need to get this fired up!<PG>
+"Th-then we will prepare the 10-pound st<TXSPS>eeeeeeeeee<TXSPN>ak!
+{PAUSE ""}
+　It takes time to cook, so please wait about 2 hours!"
+{PAUSE ""}
+<BR>
+The waiter shot off to the kitchen.
+{PAUSE ""}
+<BR>
+It's far too long to wait for a meal, but I'm the one who made the unreasonable order, so it can't be helped.<PG>
+"U-uh, could we get a picture with you!?"
+{PAUSE ""}
+<BR>
+Two girls of about high-school age walked up to me.
+{PAUSE ""}
+<BR>
+I grinned back at them.<PG>
+"Eeek, so cute! We'll come cheer for you tomorrow!"
+{PAUSE ""}
+<BR>
+After we took the picture together, we shook hands firmly.
+{PAUSE ""}
+<BR>
+And then, behind them, a long line had formed.
+{PAUSE ""}
+<BR>
+Everyone had taken out cameras and phones, apparently wanting pictures with me.<PG>
+"Thank you! Good luck!"
+{PAUSE ""}
+<BR>
+"<STYLE ID="3">Goto</STYLE>-san's smile is seriously cute!"
+{PAUSE ""}
+<BR>
+It was the first time I'd been fussed over like this since I threw away the name of genius girl.
+{PAUSE ""}
+<BR>
+Honestly, it doesn't feel bad.
+{PAUSE ""}
+<BR>
+I've really changed a lot in these few days.<PG>
+Still, I'd thought it was just an eating contest, but it sure gets a lot of attention.
+{PAUSE ""}
+<BR>
+Here, and at tomorrow's contest too, this means I really can't afford to fail...<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Meanwhile, onlookers who'd heard the rumor kept coming in one after another, until the place was packed with spectators.
+{PAUSE ""}
+<BR>
+What with keeping the gallery company and all, 2 hours went by in no time.
+{PAUSE ""}
+<BR>
+I had gotten completely hungry.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\謝肉館中1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Thank you for waiting, <STYLE ID="3">Goto</STYLE>-sama!
+{PAUSE ""}
+　We've prepared a special seat over there, so come, come, let me show you the w<TXSPS>aaaaaaaaaa<TXSPN>y!"
+{PAUSE ""}
+<BR>
+The waiter took my hand and pulled me toward the back of the restaurant.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\謝肉館ステージ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+What is this place? Like a live music club, it even had a stage and spotlights.
+{PAUSE ""}
+<BR>
+Normally they must bring in bands for live events.
+{PAUSE ""}
+<BR>
+On the stage, a chair for one and a large table had been set out.
+{PAUSE ""}
+<BR>
+I see, so this is tonight's <STYLE ID="4" RUBY="ぶたい">battlefield</STYLE>.<PG>
+{STOPSND "BGM" "2000" "PASS"}
+{STOPSND "SE" "2000" "PASS"}
+"Ladies aaand gentlemen!
+{PAUSE ""}
+　The 10-pound steak is off the grill!"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "800" "0"}
+When the waiter made the announcement, his glossy pompadour swaying, the restaurant was engulfed in the gallery's wild applause and cheers.
+{PAUSE ""}
+<BR>
+I, too, bowed deeply to the gallery.
+{PAUSE ""}
+<BR>
+Such fervor it no longer seemed like a steak house.
+{PAUSE ""}
+<BR>
+I sat down in the chair prepared for me and took in the view from up here.<PG>
+{STOPSND "SE" "5000" "PASS"}
+Everyone was looking at me.
+{PAUSE ""}
+<BR>
+This does make me a little nervous...
+{PAUSE ""}
+<BR>
+No, this is good. Tomorrow I'll be even more nervous.
+{PAUSE ""}
+<BR>
+This much nervousness is just right.<PG>
+"Noooooow!! At long last, the 10-pound steak set makes its entr<TXSPS>aaaaaa<TXSPN>nce!!!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\スイッチ大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "200" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\スイッチ大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\スポットライト.gal" "NORMAL" "#1" "C" "B" "0" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+The lights in the restaurant went down, and a spotlight was turned on the kitchen doorway.
+{PAUSE ""}
+<BR>
+A big tray, carried in by two people.
+{PAUSE ""}
+<BR>
+On it, 1 kilo of rice and 1 kilo of soup―
+{PAUSE ""}
+and a giant 4.6-kilo steak.<PG>
+"Can she really eat something like that!?"
+{PAUSE ""}
+<BR>
+"A tiny, skinny girl like that, eating that!?"
+{PAUSE ""}
+<BR>
+Rather than getting excited, the gallery was taken aback by the size of the steak.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "SE\鉄板で焼く.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\10ポンドステーキ.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The tray landed in front of me with a thud.
+{PAUSE ""}
+<BR>
+A slab of meat sitting on a sizzling-hot iron plate.
+{PAUSE ""}
+<BR>
+Unbelievable: it came out as one whole slab, not cut at all.
+{PAUSE ""}
+<BR>
+No wonder it took 2 hours.<PG>
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+As you'd expect, it was tremendously intimidating.
+{PAUSE ""}
+<BR>
+But if I can't eat this much, I'll only embarrass myself at tomorrow's contest.
+{PAUSE ""}
+<BR>
+As long as I don't know what <STYLE ID="5">Chigaya-san</STYLE> is capable of, even this steak may still be on the small side.
+{PAUSE ""}
+<BR>
+This is not a warm-up bout―today is the real thing too...!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\謝肉館ステージ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Now, can the Silent Angel <STYLE ID="3">Erina Goto</STYLE> devour this enormous slab of meat!?
+{PAUSE ""}
+　The time limit is 60 minutes!"
+{PAUSE ""}
+<BR>
+I estimated 15 minutes for 5 pounds, so I'll settle this within 30 minutes.
+{PAUSE ""}
+<BR>
+Including the rice and soup, 6.6 kilos in total.
+{PAUSE ""}
+<BR>
+So 1.1 kilos every 5 minutes.<PG>
+"And now, the Silent Angel <STYLE ID="3">Erina Goto's</STYLE> <STYLE ID="6" RUBY="たいしょくさい">Big Eating Festival</STYLE> 804 warm-up bout!
+{PAUSE ""}
+　<TXSPS>Nnnnnnnnnn...<TXSPN> Begiiiin!!!"
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "1000" "0"}
+At that signal, loud applause rang through the venue again.
+{PAUSE ""}
+<BR>
+I silently said the words before a meal and picked up my knife and fork.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\10ポンドステーキ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+First, I start by cutting into this slab of meat.
+{PAUSE ""}
+<BR>
+It's at least 30cm thick, so I have to shave it off as I eat, like churrasco or kebab.
+{PAUSE ""}
+<BR>
+I put my knife into a corner and quickly brought the meat to my mouth.<PG>
+............ 
+{PAUSE ""}
+Mm, it was fairly lightly seasoned, but the flavor had soaked in well, the meat barely smelled gamey, and it was delicious.
+{PAUSE ""}
+<BR>
+Several kinds of steak sauce had been provided too, so getting tired of the taste wouldn't be a problem.<PG>
+The problem is my technique at cutting the meat, my strength to chew, and my strength to swallow.
+{PAUSE ""}
+<BR>
+While I'm <STYLE ID="7" RUBY="そしゃく">chewing</STYLE>, I have to cut as much meat as I can.<PG>
+And then there's when to start on the rice and soup.
+{PAUSE ""}
+<BR>
+There's far less rice than meat, so as an item for changing the taste and texture to boost my appetite, it's very scarce.
+{PAUSE ""}
+<BR>
+The soup is best drunk in place of water.<PG>
+―Okay, I've worked out a rough plan.
+{PAUSE ""}
+<BR>
+I divide the 10 pounds of meat into 10 parts in my head, and each time I finish a pound's worth, I eat about 100 grams of rice by eye.
+{PAUSE ""}
+<BR>
+And since it strains the esophagus without liquid, I wash it down with soup as needed.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\スポットライト.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―5 minutes in, I finished what looked like the first pound.
+{PAUSE ""}
+<BR>
+As planned, I crammed about 1/10 of the rice into my mouth and washed it down into my stomach with soup.
+{PAUSE ""}
+<BR>
+With 1/6 of the time gone, I had eaten only 1/10.
+{PAUSE ""}
+<BR>
+I'm way behind...!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\謝肉館観客.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"5 minutes in, and she's already finished 1/10, hasn't she!
+{PAUSE ""}
+　That's a more than sufficient pace to finish in 60 minutes!"
+{PAUSE ""}
+<BR>
+What are you talking about! My goal is half that, 30 minutes!
+{PAUSE ""}
+<BR>
+Finishing something like this right at the time limit won't come close to tomorrow's level!
+{PAUSE ""}
+<BR>
+First I need to cut faster!
+{PAUSE ""}
+<BR>
+I've gotten pretty used to cutting the meat, so I should be able to improve there.<PG>
+After that, it's how long my <STYLE ID="7" RUBY="そしゃく">chewing power</STYLE> and <STYLE ID="8" RUBY="えんげりょく">swallowing power</STYLE> hold out.
+{PAUSE ""}
+<BR>
+This is no longer a battle of the stomach.
+{PAUSE ""}
+<BR>
+How efficiently can I eat―it's a real test of technique.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\謝肉館ステージ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Next, I finished the second pound.
+{PAUSE ""}
+<BR>
+Time elapsed: 8 minutes.
+{PAUSE ""}
+<BR>
+A pace of 4 minutes per pound means I can't finish in 30 minutes like this.
+{PAUSE ""}
+<BR>
+I have to make up ground somewhere!<PG>
+My stomach was still fine.
+{PAUSE ""}
+<BR>
+But now I was reaching the medium part inside.
+{PAUSE ""}
+<BR>
+The meat's gamey smell was strong there, as you'd expect.<PG>
+Okay, time for the steak sauce!
+{PAUSE ""}
+<BR>
+The options: wasabi soy sauce, ponzu, barbecue, garlic, whole-grain mustard, and so on.
+{PAUSE ""}
+<BR>
+I'll try the garlic sauce, as strong in aroma and flavor as they get.<PG>
+"Oh! She's finally used a sauce!
+{PAUSE ""}
+　Organically grown in Aomori Prefecture, fragrant premium garlic used without restraint: our house-pride garlic s<TXSPS>aaaaaaaaaaa<TXSPN>uce!"
+{PAUSE ""}
+<BR>
+Yes, this garlic sauce is really good!
+{PAUSE ""}
+<BR>
+My eating speed is picking up on its own!
+{PAUSE ""}
+<BR>
+While I can, wash the medium and rare parts down into my stomach with garlic sauce!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\10ポンドステーキ半分1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At 11 minutes, I finished the third pound.
+{PAUSE ""}
+<BR>
+1/3 of the time had already passed, but my speed still wasn't catching up.
+{PAUSE ""}
+<BR>
+And I was already eating at close to my limit...!
+{PAUSE ""}
+<BR>
+Think! Think, former genius girl...!<PG>
+My arms, jaw, and throat were starting to tire.
+{PAUSE ""}
+<BR>
+On top of that, the meat was cooling bit by bit and getting tougher.
+{PAUSE ""}
+<BR>
+Like this, whipping my body on to keep eating isn't going to work.
+{PAUSE ""}
+<BR>
+I have to change the way I'm eating itself!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\スポットライト.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+Hot!
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+My hand touched the big iron plate, still hot, and I dropped my fork.
+{PAUSE ""}
+<BR>
+But there were spare forks on the table, so it wasn't much of a time loss.
+{PAUSE ""}
+<BR>
+The hot iron plate...
+{PAUSE ""}
+<BR>
+That's it!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\10ポンドステーキ半分1.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\鉄板で焼く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\10ポンドステーキ半分2.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "SE" "5000" "PASS"}
+I flipped the 6-pound slab of meat over with both hands.
+{PAUSE ""}
+<BR>
+A side that was still hot and looked tender came up on top.
+{PAUSE ""}
+<BR>
+I stuck my knife into that side.<PG>
+Yes, it's tender!
+{PAUSE ""}
+<BR>
+Warm the cooled, tough parts on the iron plate, and attack from the warm parts!
+{PAUSE ""}
+<BR>
+This should speed me up a lot!<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\10ポンドステーキ半分3.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+4 pounds―
+{PAUSE ""}
+5 pounds―
+{PAUSE ""}
+6 pounds―
+{PAUSE ""}
+<BR>
+With more than half eaten, 10 minutes remained.
+{PAUSE ""}
+<BR>
+"Ooooh!!! With 40 minutes still to go, there's less than half the meat l<TXSPS>eeeeeeeee<TXSPN>ft!"
+{PAUSE ""}
+<BR>
+When the waiter shouted, cries of 'Go for it!' flew from the gallery.<PG>
+By the rules, still 40 minutes.
+{PAUSE ""}
+<BR>
+By my goal, 10 more minutes!
+{PAUSE ""}
+<BR>
+Come on, go for it, me!
+{PAUSE ""}
+<BR>
+You're good for nothing but eating, aren't you!? So what are you doing, losing at eating!?<PG>
+But my arms, throat, and jaw really were near their limit.
+{PAUSE ""}
+<BR>
+The iron plate had cooled too, so Operation Warm-the-Meat was no longer an option either.
+{PAUSE ""}
+<BR>
+The more time passed, the further I was driven into a corner.<PG>
+But I won't lose...!
+{PAUSE ""}
+<BR>
+This mouth is only there to eat!
+{PAUSE ""}
+<BR>
+Eating is the last goal I have left!
+{PAUSE ""}
+<BR>
+Come on, don't lose! Don't you dare lose...!<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "WAIT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+―When I put down my knife and fork, cheers and applause like never before sent a shock through Tokyo.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\謝肉館観客.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Amazing! It's amazing! She really finished it all!
+{PAUSE ""}
+　Time remaining... 
+{PAUSE ""}
+22 minutes!
+{PAUSE ""}
+　With 22 minutes to spare! In 38 minutes, the Silent Angel <STYLE ID="3">Erina Goto</STYLE> has crushed the 10-pound steak!!!"
+{PAUSE ""}
+<BR>
+I stood up and bowed to the gallery.
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "5000" "PASS"}
+For a while, I couldn't lift my head.<PG>
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+I had lost to myself.
+{PAUSE ""}
+<BR>
+The tears of frustration wouldn't stop.
+{PAUSE ""}
+<BR>
+I didn't want the excited gallery to see that.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\謝肉館ステージ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Now, <STYLE ID="3">Goto-san</STYLE>, a word for everyone... 
+{PAUSE ""}
+Oops, my apologies. 
+{PAUSE ""}
+With skills as splendid as these, tomorrow's <STYLE ID="6" RUBY="たいしょくさい">Big Eating Festival</STYLE> is sure to go to <STYLE ID="3">Goto-san</STYLE> as well!
+{PAUSE ""}
+　I have tomorrow off, so I'll definitely be there to cheer!
+{PAUSE ""}
+　Everyone, let's go cheer her o<TXSPS>oooooooooo<TXSPN>n!"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "REPEAT" "1000" "0"}
+The gallery gave another round of applause.
+{PAUSE ""}
+<BR>
+To the very end, I couldn't lift my head.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Eventually, most of the gallery left the restaurant.
+{PAUSE ""}
+<BR>
+By then, my tears had dried.
+{PAUSE ""}
+<BR>
+But among the gallery, there was one person who showed no sign of leaving―
+{PAUSE ""}
+<BR>
+This person is...<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\謝肉館中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="3">Goto-san</STYLE><STYLE ID="5">, that was amazing."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Chigaya-san</STYLE> had been watching too.<PG>
+<STYLE ID="5">"Mm... But it looks like you weren't satisfied with the result."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Chigaya-san</STYLE> seemed to have seen right through me.
+{PAUSE ""}
+<BR>
+My pace had been plenty to finish in 60 minutes, and yet there I was, abnormally frantic.
+{PAUSE ""}
+<BR>
+To someone who knows what to look for, it shows...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱横顔逆.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Mm... Look at this."</STYLE>
+{PAUSE ""}
+<BR>
+Chigaya-san pointed to a sheet of paper on the wall.
+{PAUSE ""}
+<BR>
+On it―<PG>
+“<STYLE ID="5">Chigaya Niimura</STYLE>　10-pound steak　Record: 36 minutes”
+{PAUSE ""}
+<BR>
+<STYLE ID="5">She</STYLE> had taken on the same challenge as me.
+{PAUSE ""}
+<BR>
+And she ate it 2 minutes faster than I did.<PG>
+<STYLE ID="5">"Mm... I was studying abroad until last month. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I'm back at my family home now, but last week I came to Tokyo on a small errand. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I took the challenge here, and Japonica TV happened to scout me."</STYLE>
+{PAUSE ""}
+<BR>
+So it was just last week. No wonder I couldn't find anything when I looked.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Mm... If you'd flipped the meat a little sooner, you would have tied my record. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">This told me that my ability and </STYLE><STYLE ID="3">Goto-san's</STYLE><STYLE ID="5"> are almost evenly matched. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I'm sorry. I just had to know what </STYLE><STYLE ID="3">you</STYLE><STYLE ID="5"> could do, so I followed you."</STYLE><PG>
+I see... The moment I let my guard down in front of <STYLE ID="5">Chigaya-san</STYLE>, my defeat was probably already decided.
+{PAUSE ""}
+<BR>
+If I had noticed <STYLE ID="5">Chigaya-san</STYLE> was there, I might have finished faster.<PG>
+With the gallery getting so worked up like that, I'd gotten carried away and let my guard slip.
+{PAUSE ""}
+<BR>
+That's all my resolve amounted to.<PG>
+<STYLE ID="3">“Are there any other contestants on your mind?”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Mm... From what I've seen, the favorites are </STYLE><STYLE ID="3">you</STYLE><STYLE ID="5"> and the current champion, Minamizaki-san. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Most likely the three of us, me included, will be the ones who get through the qualifier. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So don't fight all out in tomorrow's qualifier. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">It's bound to tell on you in the final."</STYLE><PG>
+<STYLE ID="3">“Why are you giving me that advice?”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Mm... Because it's not fair... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Only I got to see </STYLE><STYLE ID="3">Goto-san's</STYLE><STYLE ID="5"> ability, and I haven't shown mine. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Even if I tried to show you now, it would be hard to take the challenge under the same conditions as </STYLE><STYLE ID="3">Goto-san</STYLE><STYLE ID="5">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">“Thank you. But tomorrow, I am absolutely not going to lose!”</STYLE><PG>
+<STYLE ID="5">"Mm... I'm looking forward to it. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But the current champion, Minamizaki-san, is quite the veteran. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Depending on the food, inexperienced people like us could end up at a disadvantage. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Even if we beat her in stomach capacity, we can't let our guard down. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Today's challenge taught you that well, didn't it?"</STYLE><PG>
+True, today the key had been how efficiently I could eat.
+{PAUSE ""}
+<BR>
+Winning without a proper strategy is impossible.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\ホテル室内.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I parted ways with <STYLE ID="5">Chigaya-san</STYLE> when we left the restaurant.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Chigaya-san</STYLE> said she'd keep to a light meal to get in shape for tomorrow.<PG>
+I gained a lot from the battle at Shanikukan.
+{PAUSE ""}
+<BR>
+All that's left is to wait for the real thing tomorrow.
+{PAUSE ""}
+<BR>
+Everyone in Motoki-cho, please watch me.
+{PAUSE ""}
+<BR>
+I am absolutely going to win, you'll see!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

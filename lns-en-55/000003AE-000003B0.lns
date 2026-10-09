@@ -1,0 +1,225 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=673, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=831, target=)
+; Links:
+;    0: TWdLink(count=673, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\mike_noise.ogg" "SE" "REPEAT" "0" "10"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "0000" "グラフィック\リファレンス\リファレンス詳細\rrr97\1.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―Could you tell me your name?
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ta_ge_pi_1000hz.ogg" "VOICE" "NORMAL" "1000" "0"}
+"It's ××××."
+{STOPSND "VOICE" "0" "PASS"}
+{PAUSE ""}
+<BR>
+―Date of birth?
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ta_ge_pi_1000hz.ogg" "VOICE" "NORMAL" "1000" "0"}
+"It's ××××.
+{STOPSND "VOICE" "0" "PASS"}
+"<PG>
+―What does this look like to you?
+{PAUSE ""}
+<BR>
+"Cherry blossoms."
+{PAUSE ""}
+<BR>
+―Then, what about this?
+{PAUSE ""}
+<BR>
+"I don't know."
+{PAUSE ""}
+<BR>
+―Do you know who this person is?
+{PAUSE ""}
+<BR>
+"I do."
+{PAUSE ""}
+<BR>
+―What's the name?
+{PAUSE ""}
+<BR>
+"............"<PG>
+―You don't know?
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+―Then, try this math problem.
+{PAUSE ""}
+<BR>
+"Why is that?"
+{PAUSE ""}
+<BR>
+―You don't know?
+{PAUSE ""}
+<BR>
+"Why are you asking me things like that?"
+{PAUSE ""}
+<BR>
+―No, if you don't know, that's fine.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+"I'm asking you why!"
+{PAUSE ""}
+<BR>
+―Sorry, it's all right now.<PG>
+"I can't save anyone! Stop it already!"
+{PAUSE ""}
+<BR>
+―Someone! The patient's started thrashing!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\倒れる.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{PLAYSND "SE\ガラス割る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "SE" "2000" "PASS"}
+{DELETECG "0000" "1" "1000" "0" "0" "" "0"}
+{WAIT "3000" "NORMAL" "SKIP"}
+{PLAYSND "環境音\mike_noise.ogg" "SE" "REPEAT" "0" "10"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "0000" "グラフィック\リファレンス\リファレンス詳細\rrr97\1.gal" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{MESON "500"}
+―I'm sorry. 
+{PAUSE ""}
+Have you calmed down?
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+―Do you want to go back to school?
+{PAUSE ""}
+<BR>
+ 
+{PAUSE ""}
+<BR>
+―Why?
+{PAUSE ""}
+<BR>
+"Because nobody's there..."<PG>
+―There's someone you want to see?
+{PAUSE ""}
+<BR>
+ 
+{PAUSE ""}
+<BR>
+―Who is it you want to see?
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+―Sorry, shall we change the subject?
+{PAUSE ""}
+<BR>
+"N... pai..."<PG>
+―Hm?
+{PAUSE ""}
+<BR>
+"I want to see my senpais..."
+{PAUSE ""}
+<BR>
+―I see. But, they aren't at school, are they?
+{PAUSE ""}
+<BR>
+"Sensei..."
+{PAUSE ""}
+<BR>
+―Hm?
+{PAUSE ""}
+<BR>
+"If I die, can I see my senpais?"<PG>
+―No, you can't.
+{PAUSE ""}
+<BR>
+"Why not?
+{PAUSE ""}
+　Curses do exist. Shinigami exist too. 
+{PAUSE ""}
+So there's a world after death too. I want to go where my senpais are."
+{PAUSE ""}
+<BR>
+―Even so, you can't see them.
+{PAUSE ""}
+<BR>
+"But... I can't see them like this either, can I..."<PG>
+―............
+{PAUSE ""}
+<BR>
+"I'm a little... tired."
+{PAUSE ""}
+<BR>
+―Well then, shall we leave it here for today?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHGVOL "VOICE" "0" "5000" "WAIT"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+―Hello. Sorry, but 
+{PLAYSND "SE\ta_ge_pi_1000hz.ogg" "VOICE" "NORMAL" "1000" "0"}
+××-san 
+{STOPSND "VOICE" "0" "PASS"}
+needs to be kept under constant watch.
+{PAUSE ""}
+<BR>
+There's a chance of suicide.
+{PAUSE ""}
+<BR>
+Yes... yes...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+What is it! What happened!?
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\倒れる.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE2" "CLICK"}
+The tongue...!?
+{PAUSE ""}
+<BR>
+No, hold the patient down!
+{PAUSE ""}
+<BR>
+Hey! Call a surgeon right now!
+{PAUSE ""}
+<BR>
+We need emergency surgery!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "0000" "1" "2000" "0" "0" "" "0"}
+{WAIT "3000" "NORMAL" "SKIP"}
+<EVENT VALUE="MENUDISABLED">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,729 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2476, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=40, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しか, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=290, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=199, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あわ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=461, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=617, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=107, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いはい, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みじん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くう, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おえつ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4766, target=)
+; Links:
+;    0: TWdLink(count=4218, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\crows.ogg" "SE" "REPEAT" "800" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\警察署外観夕方.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Today the police station looked very different.
+{PAUSE ""}
+<BR>
+It was crows. Dozens of crows were surrounding this police station.
+{PAUSE ""}
+<BR>
+Could the smell of death be coming from here, or something?<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\警察署受付.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+At the police station, <STYLE ID="1">Mom</STYLE> was waiting.
+{PAUSE ""}
+<BR>
+I was <STYLE ID="2" RUBY="しか">scolded</STYLE> for not answering the phone.
+{PAUSE ""}
+<BR>
+I was <STYLE ID="2" RUBY="しか">scolded</STYLE> while being held tight. I was <STYLE ID="2" RUBY="しか">scolded</STYLE> by <STYLE ID="1">Mom</STYLE>, who was crying.<PG>
+But why was that?
+{PAUSE ""}
+<BR>
+The feeling that I was being scolded didn't sink in.
+{PAUSE ""}
+<BR>
+Even though I knew the reason I was being scolded, the reason <STYLE ID="1">Mom</STYLE> was crying, and also the reason I was being held.
+{PAUSE ""}
+<BR>
+My own heart seemed to be floating somewhere up in the air.<PG>
+Had <STYLE ID="3">Dad</STYLE> really died?
+{PAUSE ""}
+<BR>
+Yesterday morning, we had exchanged greetings as usual and headed off to school, to work.
+{PAUSE ""}
+<BR>
+And yet the next time we meet, even if I'm told he's a flayed body―<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Haruka</STYLE>, <STYLE ID="5" RUBY="おび">frightened</STYLE> and trembling, kept apologizing to me and <STYLE ID="1">Mom</STYLE>.
+{PAUSE ""}
+<BR>
+But, <STYLE ID="1">Mom</STYLE> said nothing. Neither blaming her, nor comforting her.
+{PAUSE ""}
+<BR>
+Perhaps it was just my imagination, but <STYLE ID="1">Mom</STYLE>'s eyes even seemed to look at <STYLE ID="4">Haruka</STYLE> with <STYLE ID="6" RUBY="あわ">pity</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"You're </STYLE><STYLE ID="4">Haruka Niimura</STYLE><STYLE ID="7">-san, right? Could you go up to the second floor?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+And <STYLE ID="4">Haruka</STYLE>, accompanied by a different officer, headed for the stairs without saying a word.
+{PAUSE ""}
+<BR>
+Was it "questioning as a murder suspect"?<PG>
+<STYLE ID="8">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="8">...!"</STYLE>
+{PAUSE ""}
+<BR>
+When I called her name, <STYLE ID="4">Haruka</STYLE> stopped for an instant.
+{PAUSE ""}
+<BR>
+But, without even turning toward me, she started up the stairs right away.
+{PAUSE ""}
+<BR>
+But I know.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> didn't kill <STYLE ID="3">Dad</STYLE>.
+{PAUSE ""}
+<BR>
+It must be some kind of mistake...<PG>
+<STYLE ID="7">"And, </STYLE><STYLE ID="8">Natsumi Kogori-san</STYLE><STYLE ID="7">, I'd like </STYLE><STYLE ID="8">you</STYLE><STYLE ID="7"> to come down to the basement."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Understood."</STYLE>
+{PAUSE ""}
+<BR>
+A reply so dry and calm it surprised even me.
+{PAUSE ""}
+<BR>
+Whether it's a hospital or the police, a basement doesn't give a very good impression.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="8">Kogori-senpai</STYLE><STYLE ID="9">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Goto</STYLE> seemed to have just arrived now, too.<PG>
+<STYLE ID="8">"They said to come down to the basement for a bit. I'll be back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"The basement...!"</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "700" "3000" "PASS"}
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "人物1,000,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\霊安室表札.gal" "WAIT" "#1" "R" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{MESON "500"}
+Where the detective called <STYLE ID="7">Ise-san</STYLE> stopped was in front of the room with this nameplate.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\警察署廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Ummm... that is... For the identification... the remains, you see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Ise-san</STYLE>, perhaps finding it hard to say, explained in a low mumble that was hard to catch.
+{PAUSE ""}
+<BR>
+In other words, he was telling me to confirm <STYLE ID="3">Dad</STYLE>'s body.<PG>
+A flayed body, even if it's <STYLE ID="3">Dad</STYLE>, is not something I want to see.
+{PAUSE ""}
+<BR>
+Rather, because it's <STYLE ID="3">Dad</STYLE>, I don't want to see it.
+{PAUSE ""}
+<BR>
+But the reason I came here was to make <STYLE ID="4">Haruka</STYLE>'s innocence clear.
+{PAUSE ""}
+<BR>
+If, by identifying the body, there might be a clue that could prove it.
+{PAUSE ""}
+<BR>
+From the moment I decided to head here with <STYLE ID="4">Haruka</STYLE>, I had been prepared.<PG>
+<STYLE ID="8">"You mean you'll let me see </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Well, that's so, but... um... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">do you know the state the body is in...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"The skin stripped from the whole body, a corpse too wretched to look at, is what I've heard."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Well... yeah... But, though it's strange for me to say it, I'd rather not recommend it... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Your mom</STYLE><STYLE ID="7"> already looked at it for us, anyway..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"I'm allowed to see him, aren't I?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Then, this way..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\献花台.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A small, dim room.
+{PAUSE ""}
+<BR>
+Funeral flowers and a blank <STYLE ID="10" RUBY="いはい">memorial tablet</STYLE> had been set out, and the smell of incense hung thick in the air.
+{PAUSE ""}
+<BR>
+Were the crows out front sniffing out the smell of death that this incense should have covered up?<PG>
+I couldn't make out any smell of death like that.
+{PAUSE ""}
+<BR>
+Only the smell of incense, and of somehow inorganic concrete―though in truth it was organic―was all I could make out.
+{PAUSE ""}
+<BR>
+And―<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\皮剥ぎ死体布.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+In the center of the room, a platform like a bed without a mattress.
+{PAUSE ""}
+<BR>
+On top of it, a 'something' with a white cloth draped over it.
+{PAUSE ""}
+<BR>
+That something―a little of something reddish-black was sticking out.
+{PAUSE ""}
+<BR>
+Under this is <STYLE ID="3">Dad</STYLE>...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\献花台.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="7">"You only need to check just a little. If you can tell whether it's </STYLE><STYLE ID="3">your dad</STYLE><STYLE ID="7"> or not, tell me so. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">If you can't tell... it can't be helped..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Then... I'm taking the cloth off."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\皮剥ぎ死体布.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="7">Ise-san</STYLE> put his hand on the edge of the cloth.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Please wait..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Hm? Going to stop after all? That's fine by me, even so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"No... please let me be the one to take off the cloth..."</STYLE>
+{PAUSE ""}
+<BR>
+I moved my stalled feet toward the platform.<PG>
+<STYLE ID="7">"All right..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Ise-san</STYLE> took one step back.
+{PAUSE ""}
+<BR>
+I took hold of the cloth, and then slowly lifted it up.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\黒塗り.gal" "WAIT" "20" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "堕ちる.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\皮剥ぎ死体1.gal" "NORMAL" "4" "300" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+The one sleeping there was, unmistakably, <STYLE ID="3">my dad</STYLE>.
+{PAUSE ""}
+<BR>
+Other people might not be able to tell, but, still, it's without a doubt <STYLE ID="3">my dad</STYLE>.
+{PAUSE ""}
+<BR>
+Even changed beyond recognition like this, I would never mistake him.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\皮剥ぎ死体2.gal" "NORMAL" "#1" "C" "B" "0" "5!" "200" "540" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"I thought it would be worse, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I can clearly tell, it's </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"I-I see..."</STYLE>
+{PAUSE ""}
+<BR>
+In the eyes of an ordinary person, it must be an extremely gruesome body.
+{PAUSE ""}
+<BR>
+But, feelings like fear or disgust didn't well up in me.<PG>
+<STYLE ID="8">"Why... even though the skin was stripped off... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">are the eyes gone too?"</STYLE><PG>
+{MESOFF "0"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\皮剥ぎ死体3.gal" "NORMAL" "#1" "C" "B" "0" "4" "300" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"That's, well... the direct cause of death was that he bled to death from crows pecking at him... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">The crows, you see..."</STYLE>
+{PAUSE ""}
+<BR>
+If this were someone else, I would probably have feelings like these.
+{PAUSE ""}
+<BR>
+'What a horrible lump of flesh. 
+{PAUSE ""}
+So people, when you skin them and crows peck at them a little, can turn into something this grotesque and ugly, and hideous. 
+{PAUSE ""}
+Truly disgusting, unpleasant, I don't even want to look.'<PG>
+But, what if it were someone close to me, someone I loved dearly?
+{PAUSE ""}
+<BR>
+I gazed at <STYLE ID="3">Dad</STYLE>'s face once more.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\皮剥ぎ死体全体.gal" "NORMAL" "#1" "C" "B" "0" "12" "7000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n500\r\nDEC\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\スチル\皮剥ぎ死体ノーマル.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Once I knew it was <STYLE ID="3">Dad</STYLE> and looked at his face, not the <STYLE ID="11" RUBY="みじん">slightest</STYLE> bit of the unpleasant feelings from before welled up.
+{PAUSE ""}
+<BR>
+Simply... 
+{PAUSE ""}
+simply, simply, 
+{PAUSE ""}
+simply, simply empty.
+{PAUSE ""}
+<BR>
+It was a feeling of <STYLE ID="12" RUBY="くう">emptiness</STYLE>.
+{PAUSE ""}
+<BR>
+There was no fear or revulsion―not even that, only a hollow, vacant feeling.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\献花台.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Excuse me, could you leave the two of us alone?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="7">I'll go see </STYLE><STYLE ID="4">Haruka Niimura-san."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+With those parting words, <STYLE ID="7">Ise-san</STYLE> left the room.
+{PAUSE ""}
+<BR>
+Beside <STYLE ID="3">Dad</STYLE>, a single folding chair had been placed.
+{PAUSE ""}
+<BR>
+I sat down on the chair, and looked at <STYLE ID="3">Dad</STYLE>'s face once more.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\皮剥ぎ死体ノーマル.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Sorry, </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">, I'm late..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">My dad</STYLE> is really cool and dapper... and yet, a little playful.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> often called me a daddy's girl, but, after all, I really do love <STYLE ID="3">Dad</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\居間セピア.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\良治バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="8">Natsumi</STYLE><STYLE ID="3">, congratulations on moving up a year."</STYLE>
+{PAUSE ""}
+<BR>
+Last Sunday, I had been given a new smartphone as a present.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤切.gal" "WAIT" "#1" "650" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Wow, thank you, </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">! Did </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8"> design this model too!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Of course!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　And also... I got ones ready for </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="3"> too. Got them cheap, since people know my face!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Matching phones for the three of us! Thank you, </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Nah, it's no big deal. So the three of you can always stay good friends. Like </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="13">Mifuyu-san</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yeah! I'll take good care of it!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Hey, hey, the first picture on this phone, I want it to be of </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\良治正面バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Haha! You sure you want me? Wouldn't </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="3"> or </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="3"> be better?"</STYLE>
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="8">"It's fine, it's fine! Okay! Smile, smile!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Hey!</STYLE>　<STYLE ID="8">Don't make a funny face, make a cool face!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\camera-shutter1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\白背景.gal" "NORMAL" "#1" "C" "B" "200" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\スチル\皮剥ぎ死体ノーマル.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤良治.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">, honestly... at least in the last picture, look properly cool... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">With you like this, now... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I can't take it over again, can I..."</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n携帯移動\r\nアイテム1\r\n4\r\n540\r\n1000\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n携帯移動\r\nアイテム1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Ngh... </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I don't want this... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I don't want this!!!"</STYLE>
+{PAUSE ""}
+<BR>
+From deep behind my eyes, a hot, boiling liquid came welling up.
+{PAUSE ""}
+<BR>
+As if to spout its steam, ugly <STYLE ID="14" RUBY="おえつ">sobs</STYLE> leaked from my mouth.
+{PAUSE ""}
+<BR>
+Even when I covered my eyes, even when I covered my mouth, it wouldn't stop.<PG>
+That they had welled up so suddenly wasn't because <STYLE ID="3">Dad</STYLE>'s condition was terrible.
+{PAUSE ""}
+<BR>
+It was because I felt, for the first time, that <STYLE ID="3">Dad</STYLE> had died.
+{PAUSE ""}
+<BR>
+That <STYLE ID="3">Dad</STYLE> of mine won't ever come home again...
+{PAUSE ""}
+<BR>
+The <STYLE ID="3">Dad</STYLE> who made a funny face and a funny pose on the screen will show me nothing but this painful form anymore, and eventually he'll be cremated and turn to ash.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\献花台.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I tried laying my hand on <STYLE ID="3">Dad</STYLE>'s cheek.
+{PAUSE ""}
+<BR>
+It was slightly dried out, just like jerky.
+{PAUSE ""}
+<BR>
+It was drier than a living person.
+{PAUSE ""}
+<BR>
+And it was cold...<PG>
+The black dents here and there, were they because crows had pecked at him?
+{PAUSE ""}
+<BR>
+On top of having his skin stripped off, to be eaten alive by crows and die, how much agony must he have gone through?
+{PAUSE ""}
+<BR>
+I can't even imagine it.<PG>
+<STYLE ID="3">Dad</STYLE>... surely, by now, it doesn't hurt anymore, right?
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Dad</STYLE>, how did it come to this?
+{PAUSE ""}
+<BR>
+It wasn't <STYLE ID="4">Haruka</STYLE>, right?
+{PAUSE ""}
+<BR>
+Tell me. Why...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夢の目.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+The dream I had at <STYLE ID="4">Haruka</STYLE>'s house, it might have been <STYLE ID="3">Dad</STYLE>'s dream.
+{PAUSE ""}
+<BR>
+His face was very different from the one in the dream, but <STYLE ID="3">Dad</STYLE> was trying to tell me something.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Dad</STYLE>, he must have breathed his last amid suffering beyond imagining.
+{PAUSE ""}
+<BR>
+But... even so, trying to tell me something.<PG>
+<STYLE ID="8">"Hey, </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="8">... Why did this happen to you? Who did this?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　This danger closing in on me, what is it?"</STYLE>
+{PAUSE ""}
+<BR>
+I spoke to him like that, but <STYLE ID="3">Dad</STYLE> stayed silent.
+{PAUSE ""}
+<BR>
+Please, <STYLE ID="3">Dad</STYLE><STYLE ID="15">...</STYLE> Let me hear you just once more...
+{PAUSE ""}
+<BR>
+What on earth... happened?
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "71" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+―How long had I been with <STYLE ID="3">Dad</STYLE>?
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"</STYLE><STYLE ID="8">Kogori-san</STYLE><STYLE ID="7">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\献花台.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I came to, <STYLE ID="7">Ise-san</STYLE> was shaking me by the shoulder.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Are you all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yes... all right..."</STYLE>
+{PAUSE ""}
+<BR>
+Had I been asleep, still sitting in the chair, in front of <STYLE ID="3">Dad</STYLE>?
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"It's about time, is that okay?"</STYLE>
+{PAUSE ""}
+<BR>
+When <STYLE ID="7">Ise-san</STYLE> said that, I stood up reflexively.<PG>
+<STYLE ID="7">"</STYLE><STYLE ID="8">Kogori-san</STYLE><STYLE ID="7">, I only needed you to confirm the identity... so you're free to go home now. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Niimura-san</STYLE><STYLE ID="7"> and the others are waiting over there. I'd like you to hurry and go let them see your face."</STYLE>
+{PAUSE ""}
+<BR>
+Had <STYLE ID="4">Haruka</STYLE> come back to her senses?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\皮剥ぎ死体布.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I covered <STYLE ID="3">Dad</STYLE> with the white cloth.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Dad</STYLE>... what on earth did he do?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\警察署廊下.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+On the chairs outside the morgue, there were <STYLE ID="4">Haruka</STYLE> and <STYLE ID="9">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> kept her head down, and <STYLE ID="9">Goto</STYLE> was rubbing <STYLE ID="4">Haruka</STYLE>'s back.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Sorry, </STYLE><STYLE ID="9">Goto</STYLE><STYLE ID="8">, for causing you all kinds of trouble."</STYLE>
+{PAUSE ""}
+<BR>
+I made the best smile I could.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">, you idiot!</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　Acting tough at a time like this!</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+　<STYLE ID="9">It's okay, isn't it... at a time like this, at least... not to act tough..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Haruka</STYLE>, her head still down, was clenching her fists tight.
+{PAUSE ""}
+<BR>
+If she's here, it means they did question her, but, as I thought, she must have been far from their picture of the culprit.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Haruka</STYLE>, raising her face, fixed <STYLE ID="7">Ise-san</STYLE> with a <STYLE ID="16" RUBY="にら">glare</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "人物2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+Seeing <STYLE ID="4">Haruka</STYLE>'s face like that, he looked a little troubled, but soon walked off somewhere.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="8">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Just as I thought, </STYLE><STYLE ID="7">the police</STYLE><STYLE ID="4"> wouldn't accept me as the culprit. All they said was 'Ridiculous,' and they threw me out of the interrogation room..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Well, obviously. </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="8">, you're not some culprit―"</STYLE>
+{PAUSE ""}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{STOPSND "BGM" "0" "PASS"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="17">"Wrong!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+Suddenly <STYLE ID="4">Haruka</STYLE> started shouting, and <STYLE ID="9">Goto</STYLE> and I jumped with a start.<PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="8">"Hey, </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="8">, this is a police station."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Those guys don't understand anything...! It was like this before, too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Before?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Hey, mind if we go somewhere else? I'll tell you everything, so..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+With that, <STYLE ID="4">Haruka</STYLE> stood up.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yeah, that's fine, but..."</STYLE>
+{PAUSE ""}
+<BR>
+I was worried about <STYLE ID="1">Mom</STYLE>, who was still being questioned.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島.gal" "WAIT" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="1">Senpai's mother</STYLE><STYLE ID="9">, they say, will need a little more time..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"I see... Got it. </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="8">, where's good?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"If we can, somewhere there </STYLE><STYLE ID="18" RUBY="・・">are</STYLE><STYLE ID="4"> people watching..."</STYLE>
+{PAUSE ""}
+<BR>
+Somewhere there <STYLE ID="19" RUBY="・・">are</STYLE> people watching? Isn't it better to have this kind of talk where nobody's watching?<PG>
+<STYLE ID="8">"Then, would Zahha be okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+I stood up too, and after letting the staff at the front desk know, I left the police station.
+{PAUSE ""}
+<BR>
+When I looked at the clock, it was already 18:00.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

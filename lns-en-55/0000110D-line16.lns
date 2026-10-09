@@ -1,0 +1,35 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=36, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=55, target=)
+; Links:
+;    0: TWdLink(count=38, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{MESOFF "0"}
+{PLAYSND "環境音\渓流.ogg" "SE" "REPEAT" "600" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地昼.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>Huh? 
+{PAUSE ""}
+<BR>
+Who? 
+{PAUSE ""}
+<BR>
+Did someone just talk to me?<PG>
+I looked around, but there was no one. 
+{PAUSE ""}
+<BR>
+And <STYLE ID="1">Kana</STYLE> was still asleep.<PG>
+{STOPSND "SE" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

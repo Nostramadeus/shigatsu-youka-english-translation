@@ -1,0 +1,755 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=461, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=8, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=3, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけえき, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=607, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=488, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1425, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=244, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=げき, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひさし, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひまつ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きり, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=502, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=41, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=12, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=3, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ましら, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=じんちょうげ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4387, target=)
+; Links:
+;    0: TWdLink(count=3813, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\春の兆し.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\豊岳駅外.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき電話.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hello, <STYLE ID="1">Mom</STYLE>? At <STYLE ID="2" RUBY="とよたけえき">Toyotake Station</STYLE>, we ran into <STYLE ID="3">Kana</STYLE>... 
+{PAUSE ""}
+Yeah... yeah..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島ぐったり.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Goto</STYLE><STYLE ID="5"> was worn out before we'd even set off.</STYLE><PG>
+<STYLE ID="4">"I understand that following </STYLE><STYLE ID="6">Kogori-senpai</STYLE><STYLE ID="4">'s intuition is best... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But climbing that mountain..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Sorry, I guess..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">So in the end, we followed </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Um... </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE><STYLE ID="5"> called out to her hesitantly.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Yes! Kana Niimura here! What's up, </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> latched onto </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5">'s arm.</STYLE><PG>
+<STYLE ID="4">"How long do we have to walk...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">for a normal person, about 2 hours?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"T-two hours!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">This wasn't a stroll. It was full-on mountain climbing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">And with all this luggage, too...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hup!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">With that, </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> grabbed our bags and slung them over her shoulders.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I'll take full responsibility for these bags! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　And if I lose them or anything... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">I'll make it up to you with my body... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Be gentle with me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">I was struck speechless along with </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5"> by the 10-year-old's blatant dirty joke.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Okay! I let <STYLE ID="1">Mom</STYLE> know! <STYLE ID="3">Kana</STYLE>, you sure you're okay carrying all that?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm fine, I'm fine! I've carried heavier stuff lots of times! I'll take </STYLE>Haruka-chan<STYLE ID="3">'s too!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\豊岳.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">She was going to climb that mountain carrying luggage for three...?</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "800" "3000" "PASS"}
+{PLAYSND "環境音\春の山.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\Shortbridge03-1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山道1.gal" "NORMAL" "2" "1000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"Hah... hah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Wheeze... wheeze..."</STYLE>
+{PAUSE ""}
+<BR>
+"This is rough..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">30 minutes in.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">As the sky burned orange, the slope began to wear on my legs and back.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Come on, everyone, hang in there, hang in there!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> was at the back, shouting </STYLE><STYLE ID="7" RUBY="げき">encouragement</STYLE><STYLE ID="5">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Her cheering was so hearty you'd never think she was carrying all that luggage.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"L-let's take a break..."
+{STOPSND "SE2" "1000" "PASS"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Haruka<STYLE ID="5"> sat down on a rock by the path.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE>Haruka-chan<STYLE ID="3">, won't sitting down just make it harder?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Just be quiet a sec... Let me sit for a little..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Still, neither </STYLE>Haruka<STYLE ID="5"> nor </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5"> had complained once since we started climbing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">It's probably because it's my intuition, but I still feel bad...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"But... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">what a nice view!"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="4">Goto</STYLE><STYLE ID="5"> looked out at the scenery visible between the trees.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山夕日.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">The sun was cut in half by the horizon, and from its half circle it sent us light that was dazzling yet gentle.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">And far off, I could see a mountain stream flowing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"The finish line is around that stream!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">It looked like there were still 3 km to go.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">A distance that would take over 30 minutes even on flat ground, and we had to climb it on this mountain path...</STYLE><PG>
+<STYLE ID="6">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="6">, are you okay? Isn't it heavy?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Tooootally fine! This kind of thing is my job, since I'm the youngest in the settlement!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> hadn't broken a single sweat.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">I could never live here...</STYLE><PG>
+<STYLE ID="3">"Come on, </STYLE>Haruka-chan<STYLE ID="3">, up you get! Let's go, let's go! It'll be bad if it gets pitch dark!"</STYLE>
+{PAUSE ""}
+<BR>
+"Daaamn... guess we're going..."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="5"> pushed herself up in one go.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="5">Just then, something cold hit my face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">―Rain.</STYLE>
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+<PG>
+{MESOFF "500"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山雨1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">The rain grew stronger in an instant, and as if the clear sky of a moment ago had been a lie, everything was wrapped in darkness.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Everyone, over here, over here!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "SE2" "REPEAT" "800" "0"}
+<STYLE ID="5">We hurried after </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">The mountain path had turned into a muddy torrent, impossible to walk on properly.</STYLE><PG>
+"Ugh, what the heck is this!"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I haaate mountain weather!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE2" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n798\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\登山雨宿り.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">―Where </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> led us was a rock </STYLE><STYLE ID="8" RUBY="ひさし">overhang</STYLE><STYLE ID="5">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">It was about 3 meters deep, and a little </STYLE><STYLE ID="9" RUBY="ひまつ">spray</STYLE><STYLE ID="5"> from the rain blew in, but it kept the rain off better than an umbrella.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">The ground inside was a bit raised, too, so there was no worry of the muddy water flowing in.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\夏菜見上げる.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Rain like this'll stop soon!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> showed no sign of being tired as she gazed up at the murky black sky.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Damn... I'm soaking <STYLE ID="10" RUBY="ぬ">wet</STYLE>..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Can't we make a fire? We'll catch colds like this..."</STYLE>
+{PAUSE ""}
+<BR>
+"I don't have anything for that... 
+{PAUSE ""}
+Oh, <STYLE ID="4">Goto</STYLE>!<STYLE ID="5"> </STYLE><STYLE ID="4">You</STYLE>'ve got that fireworks set, right!? Got matches or a lighter!?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE>Niimura-senpai<STYLE ID="4">'s so smart!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"It doesn't make me happy when <STYLE ID="4">you</STYLE> praise my brains... 
+{PAUSE ""}
+Anything we can burn?"<PG>
+<STYLE ID="6">"I've got a guidebook to Iizawa Prefecture. That alone won't last very long, though..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm, something that burns a long time... 
+{PAUSE ""}
+Oh! Come to think of it!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\手土産.gal" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\tearing_papers深い.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\銘酒.gal" "NORMAL" "5" "1500" "540" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Haruka<STYLE ID="5"> tore the wrapping paper off the sake we'd brought as a gift.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I knew it! This box is made of wood! We can burn this!"<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE>Niimura-senpai<STYLE ID="4">, that's </STYLE><STYLE ID="11" RUBY="きり">paulownia</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="11" RUBY="きり">Paulownia</STYLE><STYLE ID="4"> gets used for chests of drawers, so it's a wood that doesn't burn easily..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Other than that, the only things we had that would burn were our changes of clothes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Burning those would really be... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">wait―</STYLE>
+{PAUSE ""}
+<STYLE ID="5">if we have a change of clothes...</STYLE><PG>
+<STYLE ID="6">"Um... couldn't we just change our clothes?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="6">Natsumi</STYLE>'s so smart!"<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">'s so smart!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">That's... a compliment, right...?</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2,アイテム1" "1" "3000" "0" "0" "" "0"}
+{STOPSND "SE" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">―Just as </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> predicted, the rain stopped after about 10 minutes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">We changed and waited for the torrent on the path to die down.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\登山雨宿り.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="3">Kana</STYLE>, are <STYLE ID="3">you</STYLE> okay not changing? Even <STYLE ID="3">you</STYLE> can't stay <STYLE ID="10" RUBY="ぬ">wet</STYLE> like that, right?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ahaha! I'm all right, a... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">a... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">ah... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "人物2" "QUAKE" "1" "30" "0" "0" "30"}
+<STYLE ID="3"><TXSPS>Achoo!"</STYLE>
+{QUAKESTOP "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4"><TXSPN>"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">My clothes... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">want to wear them?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE><STYLE ID="5"> held out dry clothes to </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"What!? I can wear </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="3">'s clothes!? </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">　Yaaay!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> seemed less happy to be out of her </STYLE><STYLE ID="12" RUBY="ぬ">wet</STYLE><STYLE ID="5"> clothes than to be wearing </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5">'s.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Ahaha! I guess it's a little big? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　But I'm so happy! Thanks, </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Y-yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> hugged </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5">'s arm, delighted.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE><STYLE ID="5"> looked put out... or not really, actually. She didn't seem to mind it one bit.</STYLE><PG>
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="5">And just then―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "100" "PASS"}
+{MESON "500"}
+<STYLE ID="13">"Mm... I knew you'd be here."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Oh, </STYLE><STYLE ID="13">Sis</STYLE><STYLE ID="3">!"</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "124" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "SE" "REPEAT" "600" "0"}
+{MESON "500"}
+<STYLE ID="5">―We went on along the mountain path, led by </STYLE><STYLE ID="13">Chigaya Niimura-san</STYLE><STYLE ID="5">, otherwise known as </STYLE><STYLE ID="13">Chiga-nee</STYLE><STYLE ID="5">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\登山月.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">As if the downpour had been a lie, the sky cleared completely, and beautiful moonlight lit up the mountain.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Chiga-nee</STYLE><STYLE ID="5"> and </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> each carried half of our luggage, which our </STYLE><STYLE ID="12" RUBY="ぬ">wet</STYLE><STYLE ID="5"> clothes had made a little heavier.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山夜1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hey, hey, </STYLE><STYLE ID="13">Sis</STYLE><STYLE ID="3">! </STYLE><STYLE ID="4">She</STYLE><STYLE ID="3">'s my new big sister!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> grabbed </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5">'s arm and pulled her out in front of </STYLE><STYLE ID="13">Chiga-nee</STYLE><STYLE ID="5">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh? Huh? Big sister!?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="13">"Mm... my, my. Then </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="13"> is my little sister as well. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Goto-chan</STYLE><STYLE ID="13">, let's sleep together tonight."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Um... I..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"No! </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="3"> is mine! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Look! </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="3"> lent me these clothes!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"'Eri-nee'..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="13">, shall I give you a piggyback? </STYLE>
+{PAUSE ""}
+<STYLE ID="13">　Someone as little as </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="13"> is no trouble at all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"N-no, I'm fine, thank you..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"See! </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="3"> likes me better! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Right, </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="3">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="13"> was just holding back for my sake. Right, </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="13">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE><STYLE ID="5"> kept glancing our way, asking for help.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ah, <STYLE ID="13">Chiga-nee</STYLE>! Sorry! Making you come all the way out to get us..."
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... heh. If </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="13"> dragged you along, I figured it'd be something like this."</STYLE>
+{PAUSE ""}
+<BR>
+"Well, no... if anything, it was more like <STYLE ID="6">Natsumi</STYLE>'s advice, or something..."
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="13">'s...?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="6">Natsumi</STYLE> can hear her <STYLE ID="14">dad</STYLE>'s voice. 
+{PAUSE ""}
+Only in this season, when the cherry blossoms bloom."
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "100" "PASS"}
+{STOPSND "SE" "100" "PASS"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="13">"Huh?"</STYLE><BR>
+<STYLE ID="3">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">The smiles vanished from </STYLE><STYLE ID="13">Chiga-nee</STYLE><STYLE ID="5">'s and </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">'s faces.</STYLE><PG>
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"</STYLE><STYLE ID="13">Sis</STYLE><STYLE ID="3">, isn't that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... the same as </STYLE><STYLE ID="15">Mom</STYLE><STYLE ID="13">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Did that mean their </STYLE><STYLE ID="15">mother</STYLE><STYLE ID="5"> had intuition, too?</STYLE><PG>
+<STYLE ID="6">"Hey, hey, is </STYLE><STYLE ID="15">she</STYLE><STYLE ID="6"> at the Niimura main house, too!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="13">, I'm sorry. </STYLE><STYLE ID="15">Mom</STYLE><STYLE ID="13"> passed away 10 years ago."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Chiga-nee</STYLE><STYLE ID="5"> answered with a smile, not looking sad at all.</STYLE><PG>
+<STYLE ID="6">"Oh, I didn't know... Sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="13">, does your intuition work when you go into dark, narrow places, too?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Dark and narrow...? </STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Mine works when a strong wind hits me."</STYLE><PG>
+<STYLE ID="13">"Mm... that's different from </STYLE><STYLE ID="15">Mom</STYLE><STYLE ID="13">, then. </STYLE><STYLE ID="15">My mom</STYLE><STYLE ID="13">'s intuition seems to have worked when she went into dark, narrow places."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">That was certainly completely different from mine.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">It seemed each person had their own conditions.</STYLE><PG>
+<STYLE ID="6">"</STYLE><STYLE ID="13">Chiga-nee</STYLE><STYLE ID="6">, is there something about dark, narrow places?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... I don't know that much... </STYLE>
+{PAUSE ""}
+<STYLE ID="16">Dad</STYLE><STYLE ID="13"> might know."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">But if the </STYLE><STYLE ID="15">person herself</STYLE><STYLE ID="5"> was dead, there was no telling whether what </STYLE><STYLE ID="16">Chiga-nee's dad</STYLE><STYLE ID="5"> knew was reliable.</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="13">"Mm... oh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Chiga-nee</STYLE><STYLE ID="5"> stopped walking.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山土砂崩れ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Maybe there had been a landslide from the heavy rain earlier.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Blocking the mountain path, rocks large and small stood in front of us.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hey now, we can't get through like this..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"This is a problem... Even going back down to the foot of the mountain would be hard on a path this bad..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="13">"Mm... there's no way the three of you can get through here. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kana</STYLE><STYLE ID="13">, go back to the house and tell everyone."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Yup yup, roooger!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "人物2" "4" "540" "200" "DEC" "WAIT"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜ジャンプ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n4\r\n-540\r\n500\r\nDEC\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n4\r\n-540\r\n0\r\nDEC\r\nPASS">
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> climbed the pile of rubble with ease, still carrying the luggage.</STYLE><PG>
+<STYLE ID="6">"Huh? Huh? What was that...! </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="6">, that's amazing...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... when you live in Arata, this is nothing."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I told you <STYLE ID="3">she</STYLE> was a <STYLE ID="17" RUBY="ましら">monkey</STYLE>, didn't I?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"But climbing that with the luggage takes more than muscle. You'd have to be really good at using your whole body, wouldn't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="13"> can hunt a bear all by herself. She's no ordinary elementary schooler."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Eek...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">Either way, we had to wait here for a while.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Walking was hard in its own way, but sitting still here looked just as hard.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">I lightly brushed off the top of a knee-high rock and sat down.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Its rough, lumpy feel was really unpleasant.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Huh? There are flowers blooming."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE><STYLE ID="5">'s eyes were on some pale pink flowers.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">The plant was shorter than </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="5">, with its branches spread out like a hydrangea's.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\沈丁花.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="13">"Mm... this is </STYLE><STYLE ID="18" RUBY="じんちょうげ">daphne</STYLE><STYLE ID="13">. The daphne here blooms late."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Daphne blooms from February to March, after all. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If I remember right, in the language of flowers it means―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... immortality, imperishability, eternity."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ooh, </STYLE><STYLE ID="13">Chiga-nee</STYLE><STYLE ID="4">, you know a lot!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"Mm... </STYLE><STYLE ID="15">Mom</STYLE><STYLE ID="13"> loved this flower."</STYLE><PG>
+<STYLE ID="15">Sakura-san</STYLE><STYLE ID="5">'s favorite flower, then, had been daphne, not cherry blossoms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">And, contrary to what daphne means in the language of flowers, </STYLE><STYLE ID="15">Sakura-san</STYLE><STYLE ID="5"> had died young.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">How ironic.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

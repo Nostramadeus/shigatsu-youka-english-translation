@@ -1,0 +1,470 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1070, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=276, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=176, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1562, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=518, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=12, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=13, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=8, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらた, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=8, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらたしゅうらく, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=57, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きずな, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=りょうが, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4042, target=)
+; Links:
+;    0: TWdLink(count=3708, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "700" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\警察署外観夕方.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The sun had sunk a good way down.
+{PAUSE ""}
+<BR>
+The crows that had surrounded the police station were gone, not one of them left.<PG>
+<STYLE ID="1">"How did </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> get here?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"I got a ride from the </STYLE><STYLE ID="3">police officer</STYLE><STYLE ID="2"> who was with me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> has no choice but to walk too..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"You're all heading home already, I hear?"</STYLE>
+{PAUSE ""}
+<BR>
+From inside the police station, <STYLE ID="3">Ise-san</STYLE> appeared.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes, we thought we would hear </STYLE><STYLE ID="4">Niimura-senpai</STYLE><STYLE ID="2">'s story at Zahha."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE> answered <STYLE ID="3">Ise-san</STYLE> in a familiar way.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Could it be</STYLE> that <STYLE ID="3">Ise-san</STYLE> was the officer who got mistaken for a suspicious person at Zahha?<PG>
+<STYLE ID="3">"In that case I'll drive you. None of the three of you has a ride, right?"</STYLE>
+{PAUSE ""}
+<BR>
+At a time like this, the usual <STYLE ID="2">Goto</STYLE> would say,
+{PAUSE ""}
+"Ooh, that's <STYLE ID="3">Mister</STYLE> for you! A policeman you can rely on!" ― but this time,
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"We are sorry to put you to the trouble."</STYLE>
+{PAUSE ""}
+<BR>
+she answered politely, with a bow.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\車室内エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "NORMAL" "SKIP"}
+{PLAYSND "SE\車走行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{STOPSND "VOICE" "3000" "PASS"}
+{WAIT "2000" "NORMAL" "SKIP"}
+{CREATECG "000" "グラフィック\背景\車内後部座席.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Goto</STYLE> sat in the front passenger seat, and <STYLE ID="4">Haruka</STYLE> and I sat in the back.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> was as sullen as ever.<PG>
+<STYLE ID="3">"Going to Zahha, was that </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">'s idea?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's right. She said somewhere with as many eyes on us as possible."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see... that's good."</STYLE>
+{PAUSE ""}
+<BR>
+So <STYLE ID="3">Ise-san</STYLE> agreed with that idea too...<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">'s story is better heard by her friends than by us police. And one more thing... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">'s story, never make fun of it."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+It was the first sound <STYLE ID="4">Haruka</STYLE> had made in the car.<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"Why? In the questioning just now they said it was ridiculous..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Well, as long as we are conducting questioning, I have to move the investigation forward as a police officer. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And there were several others with me besides. I kept my own opinions out of it as far as I could."</STYLE><PG>
+<STYLE ID="3">"So here I will tell you what I think personally. Not as a police officer, as myself."</STYLE>
+{PAUSE ""}
+<BR>
+Our car was moving slowly along.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> says that a 'shinigami' called up by a 'curse' kills whoever it is aimed at."</STYLE> [TN: shinigami: a god of death]
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A curse...?"</STYLE><BR>
+<STYLE ID="2">"A curse...?"</STYLE><PG>
+<STYLE ID="3">"The fact is that 10 years ago, 6 years ago and 3 years ago, murders took place in the town </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> was living in at the time. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Two people each time on April 8, six in total, were killed. </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">'s 'curse', as she calls it. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">To curse someone you write the person's name on a paper figure, do a small charm over it, and it is done. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The Megasawa City murders, you will know the name."</STYLE><PG>
+<STYLE ID="3">"Every one of the victims was connected to the school </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> attended in Megasawa City. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Among them are children and pupils who had been bullying </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> had been bullied? There was nothing like that to be read in her letters...<PG>
+<STYLE ID="3">"And today is April 8 again. If it is the work of a 'curse', it would be no surprise for a murder to happen around </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> today."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"April 8, what do you mean? Is there something special about it?"</STYLE><PG>
+<STYLE ID="3">"Oh, that's right... </STYLE><STYLE ID="1">Kogori-san</STYLE><STYLE ID="3">, you don't know.</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="3">Today is the anniversary of Eiichiro Niimura-san's death."</STYLE>
+{PAUSE ""}
+<BR>
+The anniversary of <STYLE ID="4">Haruka</STYLE>'s dad's death?<PG>
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"Eiichiro Niimura-san died 12 years ago. He fell to his death trying to fetch a balloon </STYLE><STYLE ID="1">you</STYLE><STYLE ID="3"> had let go of."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I-I did...!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE> and <STYLE ID="4">Haruka</STYLE> stayed silent.
+{PAUSE ""}
+<BR>
+Which meant that both of them had known.<PG>
+<STYLE ID="1">"I'm sorry, </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Don't apologize. That was an accident. There is nothing for </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> to worry about..."</STYLE>
+{PAUSE ""}
+<BR>
+12 years ago, which made me 4 years old.
+{PAUSE ""}
+<BR>
+I do not mean to defend myself, but perhaps it could not be helped that I did not remember...<PG>
+{STOPSND "BGM" "0" "PASS"}
+Huh...?
+{PAUSE ""}
+<BR>
+Something is wrong...
+{PAUSE ""}
+<BR>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+Which means that both <STYLE ID="6">Dad</STYLE> and <STYLE ID="7">Mom</STYLE> had been hiding it from me.
+{PAUSE ""}
+<BR>
+Maybe it was out of concern for my state of mind, but there was no need to hide even the death itself for 12 years...<PG>
+<STYLE ID="3">"I said 10 years ago, 6 years ago, 3 years ago. There is a rule behind it. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Can you tell what it is?"</STYLE>
+{PAUSE ""}
+<BR>
+Odd numbers?
+{PAUSE ""}
+　Every 3 years?
+{PAUSE ""}
+<BR>
+No, between 6 years and 10 years there is a gap of 4.
+{PAUSE ""}
+<BR>
+What is it, then?<PG>
+<STYLE ID="3">"They are Eiichiro Niimura-san's memorial years."</STYLE>
+{PAUSE ""}
+<BR>
+Memorial years?
+{PAUSE ""}
+<BR>
+That is, the third-year memorial, the seventh-year memorial...
+{PAUSE ""}
+Um, the tenth-year memorial?
+{PAUSE ""}
+<BR>
+Was there even a tenth-year memorial?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Eiichiro Niimura-san's family home is in the </STYLE><STYLE ID="8" RUBY="あらた">Arata</STYLE><STYLE ID="3"> district of Iizawa Prefecture ― in the northwest of that same prefecture. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It is commonly called the </STYLE><STYLE ID="9" RUBY="あらたしゅうらく">Arata settlement</STYLE><STYLE ID="3">, deep in the mountains and with very few people in it. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The place has... how to put it, a great many very unusual customs. </STYLE>
+{PAUSE ""}
+<STYLE ID="9" RUBY="あらたしゅうらく">The Arata settlement</STYLE><STYLE ID="3"> has what Shinto calls the ten-year rite ― a tenth-year memorial, in other words.</STYLE> [TN: Shinto counts ten years; the Buddhist tenth-year rite falls at nine]
+{PAUSE ""}
+<STYLE ID="3">So by that rule, the murders were carried out along the line of Eiichiro Niimura-san's memorial services."</STYLE><PG>
+<STYLE ID="3">"But at every one of those services, </STYLE><STYLE ID="10">Mifuyu-san, Niimura-san's mother</STYLE><STYLE ID="3">, and </STYLE><STYLE ID="4">Haruka-san</STYLE><STYLE ID="3"> were both present. So their alibis are perfect. The police checked the movements of the two of them at the time, and there is no doubt about it."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\車内後部座席.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">, there is one thing I want to ask. Why didn't you attend today's thirteenth-year memorial?"</STYLE>
+{PAUSE ""}
+<BR>
+Now that he said it, today is 12 years since the death. The thirteenth-year memorial, in other words.
+{PAUSE ""}
+<BR>
+If the services had been held exactly on April 8 every time until now, then this one too would be held without being shifted to the weekend.<PG>
+<STYLE ID="4">"Because I wasn't well. I got food poisoning the day before yesterday, so to be safe it ended up being just </STYLE><STYLE ID="10">Mom</STYLE><STYLE ID="4"> who attended. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">And besides, if I went to the service, I thought somebody might die from the curse again."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"And today of all days..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> looked down and her voice hardened.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Today of all days, I don't want anyone to die! That curse must never be allowed to succeed!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> gritted her teeth with an audible grind.<PG>
+<STYLE ID="2">"Which means you made paper figures this time as well?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, it seems I did make them without knowing it after all... </STYLE><STYLE ID="6">Natsumi's dad</STYLE><STYLE ID="4">, and </STYLE><STYLE ID="7">her mom</STYLE><STYLE ID="4">... and then...</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="4">'s, too."</STYLE><PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"Ah, but </STYLE><STYLE ID="1">Kogori-san</STYLE><STYLE ID="3">, set your mind at rest. As she says, </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> has no awareness of having made those figures. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Somebody is using this so-called 'curse' to throw the incident into confusion. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">When she woke this morning, those paper figures were on </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">'s desk, apparently. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">On that alone, </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> believes she is the culprit."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Is that true? </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">After a short pause, </STYLE><STYLE ID="4">Haruka</STYLE> nodded without a word.<PG>
+<STYLE ID="3">"Well, that is everything I know. </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> knows all of it too, and I told </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> about what happened 12 years ago back at Zahha. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">, is there anything more you want to say?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> shook her head with her eyes still down.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\車エンジン切る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\コンビニ夕方.gal" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Ise-san</STYLE> pulled the car up at a convenience store nearby,
+{PLAYSND "SE\タバコ.ogg" "VOICE" "NORMAL" "1000" "0"}
+and then he opened the car window and lit a cigarette.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I know what </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="1">Kogori-san</STYLE><STYLE ID="3"> are thinking right now. That the one behind this whole run of incidents is </STYLE><STYLE ID="10">Niimura-san's mother</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Mifuyu Niimura</STYLE><STYLE ID="3">, isn't that it."</STYLE>
+{PAUSE ""}
+<BR>
+He was exactly right. <STYLE ID="4">Haruka</STYLE> herself might be thinking it could be so.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\車内後部座席.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"But, I don't think so.</STYLE>
+{PLAYSND "Lucky_You.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<STYLE ID="3">I don't know how it was done, but somebody put those paper figures there by some means. Somebody trying to pin the crime on the Niimura family."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">, did you go out last night?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, I was at home the whole time. But, </STYLE><STYLE ID="10">Mom</STYLE><STYLE ID="4"> works through the night, so she isn't home."</STYLE><PG>
+I see, in that case the culprit could slip into the house while <STYLE ID="4">Haruka</STYLE> was asleep and leave the paper figures there.
+{PAUSE ""}
+<BR>
+But to think that <STYLE ID="10">Haruka's mom</STYLE> works into the middle of the night...
+{PAUSE ""}
+<BR>
+She always acts lively and cheerful, but because of me she had been having a terrible time of it where nobody could see.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">... I'm sorry. Because of me, </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="1">'s dad..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Like I said, why are you apologizing! It was an accident when we were kids! And 12 years ago at that... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Dad was just being a fool!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But, you were hiding it from me all this time, weren't you? It must have been hard to say... that he died because of me..."</STYLE>
+{PAUSE ""}
+<BR>
+As I am now, I know how it feels to lose a <STYLE ID="6">parent</STYLE> well enough to hurt.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> had kept all of that crushed down inside her the whole time, and still called me her best friend.<PG>
+<STYLE ID="4">"Why are you crying! Are you an idiot! We've cried way too much today!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Haruka</STYLE> pulled me into a tight hug.
+{PAUSE ""}
+<BR>
+I could not help hugging her back.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Senpaaai</STYLE><STYLE ID="2">! Thank goodness! The </STYLE><STYLE ID="11" RUBY="きずな">bond</STYLE><STYLE ID="2"> between the two of you really is firmer than anything!"</STYLE>
+{PAUSE ""}
+<BR>
+For some reason <STYLE ID="2">Goto</STYLE> started crying too.<PG>
+<STYLE ID="3">"Hey now, give me a break... If people see you crying, they'll take me for a suspicious person..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\車室内エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+With that, <STYLE ID="3">Ise-san</STYLE> closed the window and set the car moving.
+{PAUSE ""}
+<BR>
+We were nearly at Zahha.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Considering the past incidents, the Niimura household is not what causes today's killing. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Most likely the real culprit ― the 'shinigami' ― arranged it. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So... so, </STYLE><STYLE ID="4">Niimura-san</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">stop torturing yourself. Right beside you there is a </STYLE><STYLE ID="1">precious best friend</STYLE><STYLE ID="3"> holding you up, isn't there?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+At <STYLE ID="3">Ise-san</STYLE>'s words, <STYLE ID="4">Haruka</STYLE> and I looked at each other.
+{PAUSE ""}
+<BR>
+And then, without even wiping our tears, we smiled at each other.<PG>
+<STYLE ID="2">"Waaah! Thank goodness!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Is the Motoki Bishojo Appreciation Society's No.1 favorite this noisy... Maybe I should quit the society..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ夕方.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+When we reached Zahha, we got out of the car with clear faces.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"See you! Get along, all of you!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Thank you very much!"</STYLE><BR>
+<STYLE ID="4">"Thanks, </STYLE><STYLE ID="3">Ise-san</STYLE><STYLE ID="4">!"</STYLE><BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Mister</STYLE><STYLE ID="2">, thanks for everything!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Still, just in case. Don't let your guard down until April 8 is over. The 'shinigami' may still be aiming at you. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">What is certain is that somebody put those paper figures there."</STYLE><PG>
+<STYLE ID="3">"And one more thing: I have not told </STYLE><STYLE ID="10">Niimura-san's mother</STYLE><STYLE ID="3"> that you came to the police today. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Niimura-san</STYLE><STYLE ID="3"> came to the station on her own and talked on her own. That is all it was, so there is no need to worry about reading </STYLE><STYLE ID="10">your mom</STYLE><STYLE ID="3">'s face."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\自動車エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Ise-san</STYLE> got back into the car and drove away.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Hey, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE> was staring after <STYLE ID="3">Ise-san</STYLE>'s car.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Ise-san</STYLE><STYLE ID="4"> is... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">pretty cool!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh!?</STYLE>
+{PAUSE ""}
+　<STYLE ID="1">Ah... ahahaha... You're right..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"But </STYLE><STYLE ID="4">Senpai</STYLE><STYLE ID="2">?</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+　<STYLE ID="3">That man</STYLE><STYLE ID="2"> is a serious lolicon, isn't he?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物2" "1" "3000" "0" "0" "" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Today <STYLE ID="4">Haruka</STYLE> had been <STYLE ID="12" RUBY="おび">afraid</STYLE> of the curse, and had shed tears out of the blame she laid on herself over us.
+{PAUSE ""}
+<BR>
+But the <STYLE ID="4">Haruka</STYLE> of this moment, <STYLE ID="13" RUBY="りょうが">surpassing</STYLE> all of that, showed the most tragic face of the whole day.
+{PAUSE ""}
+<BR>
+Read the room, <STYLE ID="2">Goto</STYLE>.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

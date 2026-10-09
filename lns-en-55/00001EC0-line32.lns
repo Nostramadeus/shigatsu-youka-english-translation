@@ -1,0 +1,117 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=119, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=56, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=25, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=25, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=39, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=352, target=)
+; Links:
+;    0: TWdLink(count=264, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYMOVIE "山桜夜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPD TIME="4294967246">Long ago, there were those who fled to this land. 
+{WAIT "2000" "CLICK" "SKIP"}
+This paradise was named Arata.
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{CREATECG "000" "グラフィック\背景\エデン\平治の乱.lcm" "REPEAT" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Those enchanted by the fruit of Eden in this land joined the ranks of history, 
+{WAIT "2000" "CLICK" "SKIP"}
+and vanish―
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "血と砂と鋼鉄.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"There is someone I want to protect. 
+{WAIT "2000" "CLICK" "SKIP"}
+Even I, who am of no use to anyone, have a way to protect them."
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島たこ焼き.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\たこしゃぶ.gal" "NORMAL" "#1" "L" "540" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n100\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n100\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"See, if you boil it properly, it turns red. </STYLE>
+{WAIT "2000" "CLICK" "SKIP"}
+<STYLE ID="1">Some things only become visible once they've been through the fire."</STYLE>
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "人物1,アイテム1" "1" "1000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ワゴン昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="2">, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">... </STYLE>
+{WAIT "2000" "CLICK" "SKIP"}
+<STYLE ID="2">I'm asking just to be sure. Are you really going to Arata?"</STYLE><BR>
+{WAIT "2000" "CLICK" "SKIP"}
+<STYLE ID="4">"I'm definitely going! There's something only I can do, so I'm definitely going!"</STYLE><BR>
+{WAIT "2000" "CLICK" "SKIP"}
+<STYLE ID="1">"I'm going too!"</STYLE><BR>
+{WAIT "2000" "CLICK" "SKIP"}
+<STYLE ID="3">"No way I could go home and leave these guys behind either!"</STYLE><BR>
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYMOVIE "eden3.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This is... 
+{WAIT "2000" "CLICK" "SKIP"}
+Shigatsu Youka...
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "0"}
+<EVENT VALUE="STOPMOVIE">
+{STOPSND "SE" "0" "PASS"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "2000" "NORMAL" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

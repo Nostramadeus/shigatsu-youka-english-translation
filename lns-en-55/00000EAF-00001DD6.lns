@@ -1,0 +1,997 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=6273, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=176, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=190, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さんしょう, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=マー, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かっしょくしぼうさいぼう, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あしゃ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=33, unk2=4294967295, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちゃわん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=21, unk2=65535, unk3=4294967295, unk4=24, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7432, target=)
+; Links:
+;    0: TWdLink(count=6716, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\Blaze.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\炊飯器名前.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\最後の声から\炊飯器4.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>"And now 30 minutes have passed, the halfway point!
+{PAUSE ""}
+　In the lead is <STYLE ID="1">Niimura</STYLE> with 5.8 kilos, followed by <STYLE ID="2">Goto</STYLE> with 5.0 kilos, and last is Champion Minamizaki with 4.9 kilos!
+{PAUSE ""}
+　Rookie <STYLE ID="1">Niimura</STYLE> is a head in front, but it is still anybody's game!"<PG>
+I was nearly level with Minamizaki-san, and nearly 1 kilo behind <STYLE ID="1">Chigaya-san</STYLE>.
+{PAUSE ""}
+<BR>
+I'd keep up this pace until the 45-minute mark.
+{PAUSE ""}
+<BR>
+Hold the gap to <STYLE ID="1">Chigaya-san</STYLE> within 1 kilo, and at the same time stay just a little ahead of Minamizaki-san.
+{PAUSE ""}
+<BR>
+In the last 15 minutes, put on a spurt and close that 1-kilo gap.<PG>
+My stomach was probably about half full.
+{PAUSE ""}
+<BR>
+Here I'd change side dishes in a big way and stoke the urge to eat rice.
+{PAUSE ""}
+<BR>
+Until now I'd picked only things that were easy on the stomach, but let's try a side dish that's a real side dish.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\バイキング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Oh! <STYLE ID="2">Goto</STYLE> is up and heading straight for the side-dish corner! What will she pick next!?"
+{PAUSE ""}
+<BR>
+Something here that makes you want rice, and that goes in a different direction from what I'd had so far...
+{PAUSE ""}
+<BR>
+Yeah, mapo tofu might be good.
+{PAUSE ""}
+<BR>
+The heat spurs the appetite, and it puts almost no strain on the jaw.
+{PAUSE ""}
+<BR>
+I shook a huge amount of chili powder over it.<PG>
+"Whoa, <STYLE ID="2">Goto</STYLE> is putting a huge amount of chili powder on her mapo tofu!
+{PAUSE ""}
+　This is not a super-spicy contest, but is she going to be all right!?"
+{PAUSE ""}
+<BR>
+I'm not tough enough to enter a super-spicy contest, but this much I can just about eat.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\麻婆豆腐.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I put just a little in my mouth to taste it.
+{PAUSE ""}
+<BR>
+...Nngh! Spicy!
+{PAUSE ""}
+<BR>
+This mapo tofu had plenty of <STYLE ID="3" RUBY="さんしょう">Sichuan pepper</STYLE> in it too, not just chili peppers.
+{PAUSE ""}
+<BR>
+This vivid, numbing heat.
+{PAUSE ""}
+<BR>
+Apparently this is the taste called '<STYLE ID="4" RUBY="マー">ma</STYLE>' that's peculiar to Sichuan cooking.
+{PAUSE ""}
+<BR>
+A heat on a different vector from chili pepper.
+{PAUSE ""}
+<BR>
+The combination of the two threw my sweat glands wide open all at once.<PG>
+I put it in my mouth slowly, savored the heat and the saltiness to the full, then swallowed.
+{PAUSE ""}
+<BR>
+I could feel my <STYLE ID="5" RUBY="かっしょくしぼうさいぼう">brown fat cells</STYLE>, which burn energy, working hard.
+{PAUSE ""}
+<BR>
+And my stomach, opening up still more room.<PG>
+But I still wasn't touching the rice.
+{PAUSE ""}
+<BR>
+At the very least, savor this heat and salt a little longer, and whip up the craving for rice even more.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"And here the champion seems to be picking up the pace!
+{PAUSE ""}
+　She has put raw egg in her grated yam and is slurping it down together with her rice!"
+{PAUSE ""}
+<BR>
+............!?
+{PAUSE ""}
+<BR>
+Fast...!
+{PAUSE ""}
+<BR>
+She was gulping down the rice in her bowl like a drink.<PG>
+Sure, that way it goes down smoother and she can raise her pace.
+{PAUSE ""}
+<BR>
+No, wait...
+{PAUSE ""}
+<BR>
+There's still more than 25 minutes left.
+{PAUSE ""}
+<BR>
+Bulking up the rice to raise her pace at this point means she must be pretty rattled.
+{PAUSE ""}
+<BR>
+Minamizaki-san's stomach capacity is probably around 8 kilos, so at this point she's out to shake <STYLE ID="1">Chigaya-san</STYLE>.
+{PAUSE ""}
+<BR>
+How is <STYLE ID="1">Chigaya-san</STYLE> doing?<PG>
+―She seemed to be eating her rice with salmon roe as the side dish.
+{PAUSE ""}
+<BR>
+Salmon roe works as an ingredient too.
+{PAUSE ""}
+<BR>
+The juice from the roe makes the rice easier to eat, and on top of that, it's strongly flavored.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chigaya-san</STYLE> seemed to be sticking to her own pace no matter what.
+{PAUSE ""}
+<BR>
+Come to think of it, salmon roe was <STYLE ID="6">Kogori-senpai's</STYLE> favorite food...<PG>
+<STYLE ID="2">"............?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chigaya-san</STYLE> was pouring a clear liquid from a bottle over her rice.
+{PAUSE ""}
+<BR>
+Is that... sushi vinegar?
+{PAUSE ""}
+<BR>
+I see, acetic acid stimulates the appetite too.
+{PAUSE ""}
+<BR>
+So she's whipped up an instant salmon-roe bowl.<PG>
+Different strategies, but each of us was working out ways to eat more rice than anyone else.
+{PAUSE ""}
+<BR>
+None of the three of us had given up on the match yet.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\炊飯器名前.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\最後の声から\炊飯器5.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Oh, and here the champion overtakes <STYLE ID="1">Niimura-san</STYLE> and storms into the lead!
+{PAUSE ""}
+　The champion at 7.0 kilos, <STYLE ID="1">Niimura</STYLE> at 6.8 kilos, and <STYLE ID="2">Goto</STYLE> has stalled at 5 kilos while eating her mapo tofu!"
+{PAUSE ""}
+<BR>
+No way!? When did the gap grow to 2 kilos...!?
+{PAUSE ""}
+<BR>
+The champion's comeback really is something else...!<PG>
+No! I can't panic here! There are still more than 20 minutes!
+{PAUSE ""}
+<BR>
+But... 
+{PAUSE ""}
+but letting the gap get any wider is dangerous!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\山盛りごはん.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"<STYLE ID="2">Goto</STYLE> has dug into her rice too! She is also going at an incredible pace!"
+{PAUSE ""}
+<BR>
+I know full well that getting dragged into an opponent's pace is dangerous.
+{PAUSE ""}
+<BR>
+But this gap really is dangerous.
+{PAUSE ""}
+<BR>
+Like it or not, I have no choice but to raise my pace.
+{PAUSE ""}
+<BR>
+I shoveled in rice together with the fiery mapo tofu.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\炊飯器名前.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\最後の声から\炊飯器6.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Now, we are down to the last 15 minutes!
+{PAUSE ""}
+　Still in the lead is the champion with 8.8 kilos, in second place <STYLE ID="1">Niimura</STYLE> with 8.0 kilos, and <STYLE ID="2">Goto</STYLE> with 7.2 kilos!
+{PAUSE ""}
+　This is a big advantage for the champion. Can she hold on to the end!?"
+{PAUSE ""}
+<BR>
+Why!? Why isn't Minamizaki-san's pace dropping!?
+{PAUSE ""}
+<BR>
+I'd estimated Minamizaki-san's stomach capacity at 8 kilos, but her high pace kept going...!<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At that moment, I imagined something awful.<PG>
+{MESOFF "500"}
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\カレー屋テーブル.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The time with the curry last week.
+{PAUSE ""}
+<BR>
+Could it be that Minamizaki-san noticed me come into the shop and gave up on purpose?
+{PAUSE ""}
+<BR>
+A strategy: make that line look like her limit, and get me, the one she wanted to beat more than anyone, to drop my guard.<PG>
+―<STYLE ID="2">Erina Goto-san</STYLE>, I haven't forgotten our match 4 years ago. 
+{PAUSE ""}
+The match began the moment I met <STYLE ID="2">you</STYLE> again.
+{PAUSE ""}
+<BR>
+"I'm sorry, I can't go on!"
+{PAUSE ""}
+<BR>
+"Ah, even the champion gives up on this 10kg curry with 2kg to go!"<PG>
+The match had already begun back at the curry shop.
+{PAUSE ""}
+<BR>
+The amount Minamizaki-san is eating right now proves it.
+{PAUSE ""}
+<BR>
+I can't afford to hesitate anymore.
+{PAUSE ""}
+<BR>
+I have to eat at top speed...!<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+But right here, the thing I'd feared most was starting to happen.
+{PAUSE ""}
+<BR>
+No, something utterly simple―
+{PAUSE ""}
+my stomach was gradually starting to buckle under the pressure of all that white rice.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="2">Goto</STYLE> has raised her pace even further!
+{PAUSE ""}
+　Can she turn around a 1.6-kilo gap in 15 minutes!?"
+{PAUSE ""}
+<BR>
+It had become a very hard fight.
+{PAUSE ""}
+<BR>
+Back to basics. I'd fight with pickles, furikake and miso soup.<PG>
+"What a pace from <STYLE ID="2">Goto</STYLE>! She is closing in on the champion and <STYLE ID="1">Niimura</STYLE>!"
+{PAUSE ""}
+<BR>
+Without looking around me, I kept track of the situation through the announcements alone.
+{PAUSE ""}
+<BR>
+How far can I go... how much can I eat...!<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\炊飯器名前.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\最後の声から\炊飯器7.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Whoa, the champion's chopsticks have finally stopped!
+{PAUSE ""}
+　A huge slowdown after eating 9.7 kilos!
+{PAUSE ""}
+　Meanwhile, <STYLE ID="1">Niimura</STYLE> is at 9.5 kilos and <STYLE ID="2">Goto</STYLE> at 9.1 kilos!
+{PAUSE ""}
+　At this rate it looks as if they could overtake the champion!?"
+{PAUSE ""}
+<BR>
+Minamizaki-san had stopped, apparently.
+{PAUSE ""}
+<BR>
+Can I close 600 grams with 10 minutes left...?<PG>
+{STOPSND "BGM" "5000" "PASS"}
+But even that might not happen.
+{PAUSE ""}
+<BR>
+From around the time I passed 9 kilos, my stomach had finally started screaming in earnest.
+{PAUSE ""}
+<BR>
+Counting the side dishes and drinks, I was definitely over 10 kilos.<PG>
+{PLAYSND "最後の声・真呪殺\Blaze2.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "8000" "PASS"}
+Ugh... so this is what being full feels like...
+{PAUSE ""}
+<BR>
+It hurts...
+{PAUSE ""}
+<BR>
+I don't... want to eat anymore...
+{PAUSE ""}
+<BR>
+It really hurts...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Now, with 10 minutes left, both <STYLE ID="1">Niimura</STYLE> and <STYLE ID="2">Goto</STYLE> have clearly slowed down. 
+{PAUSE ""}
+All three are neck and neck, but what drama will we see in these 10 minutes!?"
+{PAUSE ""}
+<BR>
+Is <STYLE ID="1">Chigaya-san</STYLE> close to her limit too...?
+{PAUSE ""}
+<BR>
+Minamizaki-san's hands seem to have stopped, but a 600-gram gap is pretty big.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\山盛りごはん.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I planted an elbow on the table and forced rice into my mouth.
+{PAUSE ""}
+<BR>
+But swallowing was painful...<PG>
+Some... some kind of plan...
+{PAUSE ""}
+<BR>
+Even if I thought of a plan, it's not as if my stomach would get any bigger.
+{PAUSE ""}
+<BR>
+I need room to cram in even a little more rice.
+{PAUSE ""}
+<BR>
+Each mouthful of rice was far too heavy.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"And finally, 5 minutes left!
+{PAUSE ""}
+　Right now, all three are tied at 9.7 kilos!
+{PAUSE ""}
+　From here on, we will be hiding the weight display!
+{PAUSE ""}
+　Nobody will know who wins until time is up!"<PG>
+Now there was no knowing what place I was in.
+{PAUSE ""}
+<BR>
+Pacing and tactics would both get harder.
+{PAUSE ""}
+<BR>
+But... I can't eat any more...
+{PAUSE ""}
+<BR>
+My chopsticks wouldn't go into my mouth.
+{PAUSE ""}
+<BR>
+Yes, my chopsticks had stopped completely.<PG>
+The only chopsticks still moving were <STYLE ID="1">Chigaya-san's</STYLE>, at a turtle's pace.
+{PAUSE ""}
+<BR>
+If things went badly, it might come down to single grams.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+But... I'm at my limit...
+{PAUSE ""}
+<BR>
+It's so frustrating... my stomach hurts...
+{PAUSE ""}
+<BR>
+So this is it for the mouth good for nothing but eating...?
+{PAUSE ""}
+<BR>
+I looked down and shut out everything around me.<PG>
+"Hey, genius girl of Motoki-cho, hang in there!"
+{PAUSE ""}
+<BR>
+Cheering aimed at me.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Keeping my face down, I turned only my eyes to the spectators: a group holding Motoki-cho placards.
+{PAUSE ""}
+<BR>
+It was the high school students from Motoki-cho.<PG>
+"<STYLE ID="2">Goto-saaan</STYLE>! Show us that drive from yesterday, ple<TXSPS>eeeeeeeeee<TXSPN>ase!"
+{PAUSE ""}
+<BR>
+A glossy pompadour.
+{PAUSE ""}
+<BR>
+That voice was the one from the steak house...<PG>
+I want to win...!
+{PAUSE ""}
+<BR>
+I want to live up to their hopes...!
+{PAUSE ""}
+<BR>
+But... my stomach...!<PG>
+Mom had said it.
+{PAUSE ""}
+<BR>
+That I didn't have to think about winning.
+{PAUSE ""}
+<BR>
+That I shouldn't let this chance slip away.
+{PAUSE ""}
+<BR>
+This chance... where is it supposed to lead?<PG>
+And Motoki-cho, which had sent me all the way here.
+{PAUSE ""}
+<BR>
+What had they sent me all this way for?
+{PAUSE ""}
+<BR>
+And in the first place, what am I doing this for...
+{PAUSE ""}
+<BR>
+What lies beyond winning here?
+{PAUSE ""}
+<BR>
+Sure, I want to win.
+{PAUSE ""}
+<BR>
+I want to win, but...<PG>
+It's not as if I'd been hoping for something beyond the eating contest.
+{PAUSE ""}
+<BR>
+Just, if I could see even a bit of a new world...
+{PAUSE ""}
+<BR>
+I've already seen enough of a new world.
+{PAUSE ""}
+<BR>
+So maybe I don't have to try any harder than this...<PG>
+{PLAYSND "環境音\eventhall1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+"<STYLE ID="2">Goto</STYLE>!
+{WAIT "300" "CLICK" "SKIP"}
+　<STYLE ID="2">Goto</STYLE>!
+{WAIT "300" "CLICK" "SKIP"}
+　<STYLE ID="2">Goto</STYLE>!"
+{PAUSE ""}
+<BR>
+Before I knew it, the audience had started a <STYLE ID="2">Goto</STYLE> chant.
+{PAUSE ""}
+<BR>
+Why is everyone cheering for me?
+{PAUSE ""}
+<BR>
+Because I'm a <STYLE ID="7" RUBY="あしゃ">mute</STYLE>...?
+{PAUSE ""}
+<BR>
+Because they pity me?
+{PAUSE ""}
+<BR>
+If they call out to me like that... 
+{PAUSE ""}
+there's no <STYLE ID="8" RUBY="ひ">backing</STYLE> down, I just can't <STYLE ID="8" RUBY="ひ">back</STYLE> down...!<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+<STYLE ID="2"><TXSPS>"I... wan... na... win...!"</STYLE><PG>
+<TXSPN>Huh...?
+{PAUSE ""}
+<BR>
+Just now...
+{PAUSE ""}
+<BR>
+For a moment, even I didn't notice.
+{PAUSE ""}
+<BR>
+My mouth had moved on its own.
+{PAUSE ""}
+<BR>
+In a voice nobody could have heard, I had spoken.<PG>
+That I want to win...
+{PAUSE ""}
+<BR>
+My reason as a human being, held down by instinct―
+{PAUSE ""}
+my soul cried out.<PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I lifted my head.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+Beyond Minamizaki-san, whose face was down, <STYLE ID="1">Chigaya-san</STYLE> was <STYLE ID="9" RUBY="にら">glaring</STYLE> at me.
+{PAUSE ""}
+<BR>
+But those eyes weren't meant to hold me in check.
+{PAUSE ""}
+<BR>
+Those eyes were speaking.<PG>
+<STYLE ID="1">"You're giving up over something like that?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I was an idiot to expect anything, even a little,"</STYLE> they said.
+{PAUSE ""}
+<BR>
+Then Minamizaki-san <STYLE ID="9" RUBY="にら">glared</STYLE> at me too.
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Goto-san</STYLE>, the one I want to fight is a much, much stronger <STYLE ID="2">you</STYLE>. 
+{PAUSE ""}
+Don't let down the hopes I had 4 years ago!"<PG>
+Seeing those two pairs of eyes, I felt a fierce anger well up.
+{PAUSE ""}
+<BR>
+That's not... that's not true!
+{PAUSE ""}
+<BR>
+I haven't lost yet!
+{PAUSE ""}
+<BR>
+My tensed right hand snapped the disposable chopsticks it was holding.
+{PLAYSND "SE\kan_ge_kieda_oru02.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+And still holding the broken chopsticks, I raised my hand straight up.<PG>
+<STYLE ID="2"><TXSPS>"New... chop... sticks... plea... se."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>I shouted.
+{PAUSE ""}
+<BR>
+My halting voice, for the first time in 4 years―
+{PAUSE ""}
+<BR>
+At my voice, which should have been small, the whole venue fell silent at once.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"S-s-s-s-staff! New chopsticks for <STYLE ID="2">Goto-san</STYLE>!"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "1000" "0"}
+At that moment, a cheer went up from the venue loud enough to shake all of Japan.<PG>
+"Incredible! From the Silent Angel who lost her voice, <STYLE ID="2">Erina Goto</STYLE>, comes a cry from the soul!
+{PAUSE ""}
+　Everyone, did you hear that!?
+{PAUSE ""}
+　Just now, without a doubt, <STYLE ID="2">Goto</STYLE> clearly spoke out loud!"
+{PAUSE ""}
+<BR>
+Chopsticks were brought to me right away.<PG>
+<STYLE ID="1">Chigaya-san</STYLE>, her eyes still <STYLE ID="9" RUBY="にら">glaring</STYLE> at me, gave a grin.
+{PAUSE ""}
+<BR>
+Minamizaki-san, too, turned back to her bowl, looking somehow relieved.<PG>
+{STOPSND "SE" "3000" "PASS"}
+What limit! So what if I'm at my limit!?
+{PAUSE ""}
+<BR>
+I tried to die once, so what am I scared of now!?
+{PAUSE ""}
+<BR>
+If I'm going to <STYLE ID="8" RUBY="ひ">back</STYLE> down here, I'd rather eat and eat and die!<PG>
+Following my soul's orders, my stomach began to move rapidly and opened up one last bit of room.
+{PAUSE ""}
+<BR>
+Shovel it in... shovel it in!
+{PAUSE ""}
+<BR>
+I have nothing to lose!
+{PAUSE ""}
+<BR>
+Collapse right here, cause an on-air accident, stir up complaints from the sponsors and viewers, and drive Japonica TV into bankruptcy!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\山盛りごはん.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Silent Angel, now Angel Voice, <STYLE ID="2">Erina Goto</STYLE>! The final spurt!
+{PAUSE ""}
+　Seeing that, <STYLE ID="1">Niimura</STYLE> is desperately hanging on too!
+{PAUSE ""}
+　The champion, too, is inching her chopsticks along again!"<PG>
+You eat in order to live.
+{PAUSE ""}
+<BR>
+You eat out of survival instinct.
+{PAUSE ""}
+<BR>
+But me, I eat ready to die.
+{PAUSE ""}
+<BR>
+I'll eat and die doing it!<PG>
+Now, watch the way I live!
+{PAUSE ""}
+<BR>
+I'm a woman good for nothing but eating!
+{PAUSE ""}
+<BR>
+If I can't even do that, I'm as good as dead!
+{PAUSE ""}
+<BR>
+Then... 
+{PAUSE ""}
+then even if my life runs out, I will never stop my chopsticks!<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+"5 seconds left!"
+{PAUSE ""}
+<BR>
+<BR>
+Show them...!<PG>
+"4!"
+{PAUSE ""}
+<BR>
+<BR>
+To the very end...!<PG>
+"3!"
+{PAUSE ""}
+<BR>
+<BR>
+The way I live...!<PG>
+"2!"
+{PAUSE ""}
+<BR>
+<BR>
+This is my...!<PG>
+"1!"
+{PAUSE ""}
+<BR>
+<BR>
+My holy war of instinct...!<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="10"><TXSPS>"Tiiiiime!!"</STYLE>
+{QUAKESTOP "500"}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "1000" "0"}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>Cheers and applause welling up.
+{PAUSE ""}
+<BR>
+And the spectators in a frenzy.
+{PAUSE ""}
+<BR>
+I... fought to the very end. I didn't give up.
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+<PG>
+No, <STYLE ID="1">Chigaya-san</STYLE> and Minamizaki-san fought to the very end too.
+{PAUSE ""}
+<BR>
+When the three of us met each other's eyes, smiles came naturally.<PG>
+{STOPSND "SE" "3000" "PASS"}
+"Well, the Big Eating Festival 804 final was without a doubt a life-and-death battle of the highest level ever!
+{PAUSE ""}
+　Surely every contestant gave it everything they had, with no regrets. 
+{PAUSE ""}
+Now, let us take a look at the results right away!
+{PAUSE ""}
+　First, the champion, Shinori Minamizaki, with...!"<BR>
+<PG>
+"9821 grams!
+{PAUSE ""}
+　Just what you would expect from the champion!
+{PAUSE ""}
+　She shook her two rivals with every tactic there is and gave it absolutely everything!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chigaya-san</STYLE> and I have probably both beaten that figure.
+{PAUSE ""}
+<BR>
+However much we beat her in stomach capacity, she was a really hard opponent to fight.
+{PAUSE ""}
+<BR>
+That's the champion for you. She was really strong.<PG>
+"Next, <STYLE ID="1">Chigaya Niimura</STYLE>!
+{PAUSE ""}
+　10221 grams!
+{PAUSE ""}
+　She has topped the 10-kilo mark!"
+{PAUSE ""}
+<BR>
+That's <STYLE ID="1">Chigaya-san</STYLE> for you. With the side dishes, could she be over 12 kilos?<PG>
+"And finally, Angel Voice <STYLE ID="2">Erina Goto</STYLE>, who let us hear the cry of her soul!
+{PAUSE ""}
+　Her result is...!"
+{PAUSE ""}
+<BR>
+Did I win, or did I lose...!?<PG>
+"Against <STYLE ID="1">Niimura's</STYLE> 10221 grams, <STYLE ID="2">Erina Goto</STYLE>!
+{PAUSE ""}
+　1
+{PAUSE ""}
+0
+{PAUSE ""}
+2
+{PAUSE ""}
+10 grams!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chigaya-san</STYLE> had 10221 grams.
+{PAUSE ""}
+<BR>
+By 11 grams... 
+{PAUSE ""}
+I lost...<PG>
+I see, so I lost...
+{PAUSE ""}
+<BR>
+But I have no regrets.
+{PAUSE ""}
+<BR>
+I lost, but I feel wonderfully refreshed.<PG>
+"Well done, genius girl!"
+{PAUSE ""}
+<BR>
+"You're Motoki-cho's treasure!"
+{PAUSE ""}
+<BR>
+Cheers thanking me for my effort.
+{PAUSE ""}
+<BR>
+Thank you, everyone.
+{PAUSE ""}
+<BR>
+Because all of you were here... I―<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+<STYLE ID="10">"Please wait! The match is not decided yet!"</STYLE><PG>
+Announcer Shinbashi raised her voice louder than ever.
+{PAUSE ""}
+<BR>
+The match isn't decided yet?<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"What is shown here is only the amount of rice that has gone from the rice cookers!
+{PAUSE ""}
+　It looks as if there is still rice left in the contestants' bowls!"
+{PAUSE ""}
+<BR>
+I see, so that's it.
+{PAUSE ""}
+<BR>
+In my bowl too, about half a <STYLE ID="11" RUBY="ちゃわん">rice bowl</STYLE> of rice was left.<PG>
+{PLAYSND "環境音\鼓動1.ogg" "SE" "REPEAT" "1000" "0"}
+"We will now weigh the rice left in the bowls."
+{PAUSE ""}
+<BR>
+With that, the three of us had our bowls taken away.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+"Now, we will show you all the results at once!<PG>
+{MESOFF "500"}
+{STOPSND "SE" "500" "PASS"}
+{PLAYSND "最後の声・真呪殺\SE\スイッチ大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\炊飯器名前.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\最後の声から\炊飯器8.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+"Champion Minamizaki, 9801 grams!
+{PAUSE ""}
+　<STYLE ID="1">Chigaya Niimura</STYLE>, 10098 grams!
+{PAUSE ""}
+　<STYLE ID="2">Erina Goto</STYLE>, 10150 grams!
+{PAUSE ""}
+　And so, Big Eating Festival 804 goes to Angel Voice <STYLE ID="2">Erina Goto</STYLE> for the wiiiin!!!!"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\eventhall1.ogg" "SE2" "REPEAT" "1000" "0"}
+Huh...?
+{PAUSE ""}
+<BR>
+I won...?
+{PAUSE ""}
+<BR>
+Me... the winner...?
+{PAUSE ""}
+<BR>
+I won... 
+{PAUSE ""}
+I won...!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\決勝会場5.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Genius girl of Motoki-cho, hooraaay!"
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Gotooo-saaan</STYLE>! I bel<TXSPS>iiiiiiiiie<TXSPN>ved you could win!"<PG>
+"Now, our new champion, <STYLE ID="2">Goto-san</STYLE>, this way please!"
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Tell_me.ogg" "BGM" "REPEAT" "1000" "0"}
+Doing as I was urged, I tottered with my heavy stomach to the center of the stage.
+{PAUSE ""}
+<BR>
+The people of Shibuya were looking at me.
+{PAUSE ""}
+<BR>
+People celebrating my win, raising their voices.<PG>
+"<STYLE ID="2">Goto-san</STYLE>, can you speak?"
+{PAUSE ""}
+<BR>
+Announcer Shinbashi brought the mic close to my mouth.
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "SE2" "3000" "PASS"}
+And the people's cheering quietly died away.
+{PAUSE ""}
+<BR>
+Everyone was waiting for my voice.<PG>
+<STYLE ID="12">"Ev...</STYLE>
+{PAUSE ""}
+<STYLE ID="12">ery...</STYLE>
+{PAUSE ""}
+<STYLE ID="12">one... </STYLE>
+{PAUSE ""}
+<STYLE ID="12">Thank... </STYLE>
+{PAUSE ""}
+<STYLE ID="12">you... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">very much!!!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "SE" "NORMAL" "1000" "0"}
+And the people erupted again.
+{PAUSE ""}
+<BR>
+It was the first time I'd used my voice in a long while, but I shouted.
+{PAUSE ""}
+<BR>
+To the people who had cheered me on.
+{PAUSE ""}
+<BR>
+And to everyone celebrating me, with all my thanks.<PG>
+I'm... so glad I stayed alive after all...!
+{PAUSE ""}
+<BR>
+If you stay alive, good things will come: it's far too simple a motto, but... 
+{PAUSE ""}
+to me now, those are words that ring loud enough to shake my soul.<PG>
+Thank you, everyone! Thank you for cheering me on!
+{PAUSE ""}
+<BR>
+Thank you for making me want to live again!<PG>
+I bowed deeply to the people in front of me, and to all the people who had cheered me on and celebrated me.
+{PAUSE ""}
+<BR>
+But I just couldn't lift my head again.<PG>
+Because I'm... 
+{PAUSE ""}
+not crying!
+{PAUSE ""}
+<BR>
+I don't cry over a mere eating contest!
+{PAUSE ""}
+<BR>
+So why won't my tears stop?
+{PAUSE ""}
+<BR>
+Why am I this happy?<PG>
+"Now, would former champion Minamizaki-san and runner-up <STYLE ID="1">Niimura-san</STYLE> please come this way as well."
+{PAUSE ""}
+<BR>
+Someone put a hand on my back as I stood there, still bowing.
+{PAUSE ""}
+<BR>
+It was Minamizaki-san.<PG>
+"<STYLE ID="2">Goto-san</STYLE>, congratulations, truly. 
+{PAUSE ""}
+No matter how hard I tried to shake you, you didn't budge. 
+{PAUSE ""}
+Even after 4 years, you weren't someone I could catch up to. 
+{PAUSE ""}
+It's my... complete defeat..."
+{PAUSE ""}
+<BR>
+The non-alcoholic beer at the start got me, but after that I'd kept a close eye on Minamizaki-san's moves.
+{PAUSE ""}
+<BR>
+The reason I could win is that Minamizaki-san showed me so many examples to follow.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Mm... </STYLE><STYLE ID="2">Goto-san</STYLE><STYLE ID="1">, congratulations. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You</STYLE><STYLE ID="1"> were someone I'm truly glad I got to fight."</STYLE>
+{PAUSE ""}
+<BR>
+If there hadn't been a rival as strong as <STYLE ID="1">Chigaya-san</STYLE>, my soul would never have cried out.
+{PAUSE ""}
+<BR>
+The one who made me want to live again is <STYLE ID="1">Chigaya-san</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\ヘリ機内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ライブ.gal" "NORMAL" "#1" "L" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\最後の声から\東京上空.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n0\r\n180000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+―Big Eating Festival 804.
+{PAUSE ""}
+<BR>
+It came to a close having made one girl, who had given up on living, resolve to live again.
+{PAUSE ""}
+<BR>
+An unorthodox genre called competitive eating.
+{PAUSE ""}
+<BR>
+An event like a freak show where people come to stare at eccentrics.<PG>
+But it showed me a glimmer of hope.
+{PAUSE ""}
+<BR>
+I kept chasing that hope, and many times I nearly gave up, but...
+{PAUSE ""}
+<BR>
+What lay at the end of the hope I chased to the very end without giving up was―
+{PAUSE ""}
+a truly important survival instinct I had nearly forgotten.<PG>
+The survival instinct that matters isn't only eat, sleep, breathe.
+{PAUSE ""}
+<BR>
+It was the survival instinct that longs to live, precious above all else, and human.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "111,アイテム1" "1" "5000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+But at the same time... 
+{PAUSE ""}
+it's also true that something that had been smoldering somewhere in my heart quietly began to show itself.
+{PAUSE ""}
+<BR>
+There was no way I could ever have forgotten.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,893 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4488, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=141, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1305, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=36, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=100, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たた, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=902, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=10, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=5, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はいかい, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=34, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんぴょうせい, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=4, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つな, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=356, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=ばら, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=すもも, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=8037, target=)
+; Links:
+;    0: TWdLink(count=7403, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The place where I ran into <STYLE ID="1">Chiga-nee</STYLE> just now.
+{PAUSE ""}
+<BR>
+It was dead silent, as if the commotion with the residents had never happened.
+{PAUSE ""}
+<BR>
+In other words, there was no one here.<PG>
+I carefully searched the ground all around.
+{PAUSE ""}
+<BR>
+There were lots of fresh footprints, but nothing that looked like bloodstains.
+{PAUSE ""}
+<BR>
+Whether there was no fight at all, or it was settled so quickly that no blood was even shed, I can't be sure.<PG>
+But if they'd made peace, they ought to have done something like calling us back.
+{PAUSE ""}
+<BR>
+That they haven't means―
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee</STYLE> has gone missing yet again―or else she really was a corpse.
+{PAUSE ""}
+<BR>
+Either way, as things stand, it's hard to guess <STYLE ID="1">Chiga-nee's</STYLE> current situation.<PG>
+But if she isn't a corpse, it's fair to assume that <STYLE ID="1">Chiga-nee</STYLE> isn't hiding of her own will, but has been carried off yet again.
+{PAUSE ""}
+<BR>
+Should I try going back to the settlement for now?
+{PAUSE ""}
+<BR>
+It's far too dangerous, but I'd like to know at least how things are in the settlement.
+{PAUSE ""}
+<BR>
+If I see how things are in the settlement, I should be able to tell what happened here earlier.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Never had I been so glad to be small.
+{PAUSE ""}
+<BR>
+Getting back to the settlement while staying hidden took little effort.
+{PAUSE ""}
+<BR>
+Lights were on in the houses, and there were signs of people.
+{PAUSE ""}
+<BR>
+Which means that, right now, the residents are each acting on their own.<PG>
+―!!
+{PAUSE ""}
+<BR>
+I heard footsteps.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\生け垣.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I quickly hid behind a nearby hedge.
+{PAUSE ""}
+<BR>
+Apparently two or so people were walking this way.
+{PAUSE ""}
+<BR>
+I could hear them talking. Grown men's voices.<PG>
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "800" "10000" "PASS"}
+"<STYLE ID="1">Chigaya-chan's</STYLE> dead after all, I bet."
+{PAUSE ""}
+<BR>
+"So the curse-killing happened this year too, in the end..."
+{PAUSE ""}
+<BR>
+"Look at it the other way―it means we get to live another year."
+{PAUSE ""}
+<BR>
+"But isn't something off this year? There was that weird sound."
+{PAUSE ""}
+<BR>
+"Wasn't that a helicopter passing nearby?"
+{PAUSE ""}
+<BR>
+"Does a helicopter make a sound like that?"<PG>
+"Well, <STYLE ID="2">Grand Witch-sama</STYLE> and <STYLE ID="3">Kotaro-kun</STYLE> have it rough. Trying to solve something like a curse."
+{PAUSE ""}
+<BR>
+"And this year it's <STYLE ID="1">the Niimura girl</STYLE>, of all people. 
+{PAUSE ""}
+Maybe this settlement should just break up already..."
+{PAUSE ""}
+<BR>
+"No, I want to fight to the end. Run from here and I couldn't face our ancestors."
+{PAUSE ""}
+<BR>
+"That's easy to say, but..."<PG>
+"I'm not telling you to do the same. These days, what you do is up to each of us."
+{PAUSE ""}
+<BR>
+"I don't want to let this place go either, but..."
+{PAUSE ""}
+<BR>
+"Well, let's turn in early tonight. The thirteenth-year memorial's tomorrow, right?"
+{PAUSE ""}
+<BR>
+"Who knows. <STYLE ID="1">Chigaya-chan's</STYLE> still missing, so won't the search come first?"
+{PAUSE ""}
+<BR>
+"Either way, it's an early morning tomorrow."<PG>
+{STOPSND "VOICE" "10000" "PASS"}
+―That was all I heard.
+{PAUSE ""}
+<BR>
+The two of them walked off without any sign of noticing me.<PG>
+What was that conversation just now? Something's clearly wrong.
+{PAUSE ""}
+<BR>
+They talked about <STYLE ID="1">Chiga-nee</STYLE> as if they knew nothing at all.
+{PAUSE ""}
+<BR>
+Were those two the only ones who didn't join that group just now?
+{PAUSE ""}
+<BR>
+But with that many people gathered, for the two who happened to pass by to be the only ones not in it...<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I went up to another house and listened to the sounds inside.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\集落ある家.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Ow, ow, ow... I knew it, sore muscles..."
+{PAUSE ""}
+<BR>
+"Honestly, at your age, you overdo it... here, a compress."
+{PAUSE ""}
+<BR>
+"Well, I'm worried about <STYLE ID="1">Chigaya-chan</STYLE>. Disappearing at this time of year..."
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">That girl</STYLE> will be fine, I'm sure. Unlike you, she's a born athlete."
+{PAUSE ""}
+<BR>
+"Yeah... she'll be fine, won't she."<PG>
+The next house―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"That fire at the Niimura place―what was that about, in the end..."
+{PAUSE ""}
+<BR>
+"Seems there were important books in there, and somebody tried to burn them."
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Chigaya-chan</STYLE> missing, a suspicious fire... it's one thing after another this year."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\集落全景夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This is absolutely wrong! Nobody knows <STYLE ID="1">Chiga-nee</STYLE> showed up!
+{PAUSE ""}
+<BR>
+If the people I eavesdropped on just happened not to be in that group, it might hold up.
+{PAUSE ""}
+<BR>
+No―even if they weren't in the group, they would know about <STYLE ID="4">Shigatsu Youka</STYLE>.<PG>
+Then who was that group just now?
+{PAUSE ""}
+<BR>
+They know about <STYLE ID="1">Chiga-nee</STYLE>, and they think going to the abandoned hut is a bad idea.
+{PAUSE ""}
+<BR>
+The hypothesis that fits these conditions is―<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{PLAYSND "エデンの桜\SE追加\肩をたたく.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And just then, someone <STYLE ID="5" RUBY="たた">tapped</STYLE> me on the shoulder.
+{PAUSE ""}
+<BR>
+Who on earth had found me?
+{PAUSE ""}
+<BR>
+Someone connected to the Niimura house would be safe, but if not―<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Um, <STYLE ID="6">you</STYLE>... you're one of the girls from Motoki-cho, aren't you..."
+{PAUSE ""}
+<BR>
+A well-built middle-aged man was standing there.<PG>
+<STYLE ID="6">"Uh, uh, um..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\すきま風の声.ogg" "BGM" "REPEAT" "1000" "0"}
+"Oh, sorry, did I scare you? I'm Shirozaki. 
+{PAUSE ""}
+Sorry you had to come at such an awful time."
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I'm... Erina Goto..."</STYLE>
+{PAUSE ""}
+<BR>
+"What are you doing out here? Want me to walk you to the Niimura house?
+{PAUSE ""}
+　Nobody knows where <STYLE ID="1">Chigaya-chan</STYLE> went, either. You shouldn't be wandering around alone, okay?"<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Shirozaki-san turned toward the Niimura house without waiting for my answer.
+{PAUSE ""}
+<BR>
+But I don't know whether I can trust this man.
+{PAUSE ""}
+<BR>
+No―even supposing I can't, resisting might be more dangerous still.
+{PAUSE ""}
+<BR>
+I followed Shirozaki-san in silence, keeping a little distance.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Just in case, keep your eyes open as we walk. Even I'd be scared to walk around alone, the way things are."
+{PAUSE ""}
+<BR>
+It's wrong... this is all wrong!
+{PAUSE ""}
+<BR>
+Who were those people just now?
+{PAUSE ""}
+<BR>
+Not residents of the Arata settlement―that much is certain.<PG>
+Yet even <STYLE ID="7">Kana-chan</STYLE> assumed they were residents of the settlement.
+{PAUSE ""}
+<BR>
+In other words, a large group of people even the residents of the settlement don't know.
+{PAUSE ""}
+<BR>
+A large group that never showed itself until now.
+{PAUSE ""}
+<BR>
+A group that fits that description... there's only one, after all.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+I had it backwards.
+{PAUSE ""}
+<BR>
+I'd been thinking in terms of whether <STYLE ID="1">Chiga-nee</STYLE> was living or dead.
+{PAUSE ""}
+<BR>
+That way of thinking was completely backwards.<PG>
+That group just now―
+{PAUSE ""}
+they are the ones who are... 
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+corpses.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\z50逆.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神軍団武器.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The most reasonable reading is that people who should be dead, like <STYLE ID="8">Sakura-san</STYLE> and <STYLE ID="9">Eiichiro-san</STYLE>, are <STYLE ID="10" RUBY="はいかい">walking about</STYLE>.
+{PAUSE ""}
+<BR>
+I'd thought <STYLE ID="1">Chiga-nee</STYLE> might be a corpse, but that was completely wrong.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee</STYLE> was resisting the group of corpses―<STYLE ID="4">Shigatsu Youka</STYLE>―alone.<PG>
+Either way, the odds that <STYLE ID="11">Kogori-senpai</STYLE> and the others are safe have gone up a little.
+{PAUSE ""}
+<BR>
+For now, going to the abandoned hut as <STYLE ID="1">Chiga-nee</STYLE> instructed is probably best.<PG>
+Then what did the corpses do to <STYLE ID="1">Chiga-nee</STYLE>?
+{PAUSE ""}
+<BR>
+Did they carry her off again?
+{PAUSE ""}
+<BR>
+If so, why are the corpses―<STYLE ID="4">Shigatsu Youka</STYLE>―so fixated on <STYLE ID="1">Chiga-nee</STYLE>?<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If <STYLE ID="1">Chiga-nee's</STYLE> precognition is the problem, it would be no surprise if <STYLE ID="11">Kogori-senpai</STYLE> were carried off at any moment too.
+{PAUSE ""}
+<BR>
+Besides, <STYLE ID="11">Kogori-senpai</STYLE> is being given information little by little too.
+{PAUSE ""}
+<BR>
+If I were <STYLE ID="4">Shigatsu Youka</STYLE>, I'd want to capture <STYLE ID="11">Kogori-senpai</STYLE> in advance as well.
+{PAUSE ""}
+<BR>
+But <STYLE ID="11">Kogori-senpai</STYLE>, at least, didn't become a target just now.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The difference between <STYLE ID="11">Kogori-senpai</STYLE> and <STYLE ID="1">Chiga-nee</STYLE>... what is it?
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Kogori-senpai</STYLE> is second generation, and <STYLE ID="1">Chiga-nee</STYLE> is third generation―
+{PAUSE ""}
+no, but then <STYLE ID="7">Kana-chan</STYLE> is third generation too, so she could just as well be a target for capture...
+{PAUSE ""}
+<BR>
+Because <STYLE ID="1">Chiga-nee</STYLE> learned too much about <STYLE ID="4">Shigatsu Youka</STYLE>...?
+{PAUSE ""}
+<BR>
+That would be a convincing enough reason in its own way, but...<PG>
+Then why was <STYLE ID="1">Chiga-nee</STYLE> caught twice?
+{PAUSE ""}
+<BR>
+What's plausible is this: <STYLE ID="1">Chiga-nee</STYLE> was caught once, but negotiated something with <STYLE ID="4">Shigatsu Youka</STYLE> and joined hands with it.
+{PAUSE ""}
+<BR>
+But that was so that <STYLE ID="1">Chiga-nee's</STYLE> senses would not be read, and <STYLE ID="1">Chiga-nee's</STYLE> real aim lay elsewhere.
+{PAUSE ""}
+<BR>
+In other words, she is only pretending to have joined hands with <STYLE ID="4">Shigatsu Youka</STYLE>.<PG>
+Then, if the commotion just now was an act put on by <STYLE ID="1">Chiga-nee</STYLE> and the corpses, what was the corpses' aim?
+{PAUSE ""}
+<BR>
+Was the aim to make us go to the abandoned hut?
+{PAUSE ""}
+<BR>
+But then they should have said "go to the hut," not "go back to the settlement."<PG>
+To give <STYLE ID="1">Chiga-nee's</STYLE> advice <STYLE ID="12" RUBY="しんぴょうせい">credibility</STYLE>, did the corpses deliberately say the opposite?
+{PAUSE ""}
+<BR>
+If at that moment the people in Noh masks had said "go to the hut" and <STYLE ID="1">Chiga-nee</STYLE> had likewise said "go to the hut," we would have distrusted <STYLE ID="1">Chiga-nee</STYLE>.<PG>
+Beyond this point, there's nothing left to base a guess on.
+{PAUSE ""}
+<BR>
+At this point, it could be interpreted in any direction.
+{PAUSE ""}
+<BR>
+I need some information to narrow it down.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+―In the end, I let Shirozaki-san's talk wash over me, only half listening, and we reached the Niimura house.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵火事後.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="2">Grand Witch-sama</STYLE>, <STYLE ID="6">this girl</STYLE>."
+{PAUSE ""}
+<BR>
+In front of the burnt storehouse, <STYLE ID="2">Obaasan</STYLE> had stayed behind.
+{PAUSE ""}
+<BR>
+The inspection of the storehouse seemed to be over, and <STYLE ID="2">Obaasan</STYLE> was gazing at the burnt-out building.
+{PAUSE ""}
+<BR>
+Is <STYLE ID="2">this person</STYLE> on our side?
+{PAUSE ""}
+<BR>
+Then <STYLE ID="2">Obaasan</STYLE> let out a big sigh and turned toward me.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Ah, </STYLE><STYLE ID="13">Shirozaki</STYLE><STYLE ID="2">, thank you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So... are you on your own, </STYLE><STYLE ID="6">young lady</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Um... I'll be heading home, then."
+{PAUSE ""}
+<BR>
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+Sensing the awkwardness between us, perhaps, Shirozaki-san slipped away.
+{PAUSE ""}
+<BR>
+Shirozaki-san hadn't shown a single odd gesture; he'd simply seen me safely here.
+{PAUSE ""}
+<BR>
+So the residents here really aren't directly involved in the case.<PG>
+Come to think of it, we hadn't exchanged a word beyond the first greeting.
+{PAUSE ""}
+<BR>
+Together with that awkwardness, an uncomfortable air hung between us.
+{PAUSE ""}
+<BR>
+And that's not all. Right now, I can't easily trust anyone from Arata.
+{PAUSE ""}
+<BR>
+That's what's creating this awkwardness.<PG>
+<STYLE ID="2">"Let's see... </STYLE><STYLE ID="6">Erina-chan</STYLE><STYLE ID="2">, was it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+How many years has it been since anyone but family called me by my first name?<PG>
+<STYLE ID="2">"I'm sorry. You came all this way, and now this..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"No, it's fine. I'd heard most of it already."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"............"</STYLE>
+{PAUSE ""}
+<BR>
+That uncomfortable air again.
+{PAUSE ""}
+<BR>
+The smell of the scorched storehouse was oddly sharp in my nose.<PG>
+<STYLE ID="2">"Shall we go inside?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+Had she sensed something? She led me inside as if out of consideration for me.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+For now, at least, the residents aren't hostile to us.
+{PAUSE ""}
+<BR>
+I decided to do as <STYLE ID="2">Obaasan</STYLE> said, quietly.<PG>
+{MESON "500"}
+<STYLE ID="2">"Here you are."</STYLE>
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYMOVIE "お茶.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Obaasan</STYLE> set a cup of hot tea in front of me.<PG>
+<STYLE ID="6">"Um, where is </STYLE><STYLE ID="3">Kotaro-san</STYLE><STYLE ID="6">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"He's out making his rounds to </STYLE><STYLE ID="14" RUBY="わ">apologize</STYLE><STYLE ID="2">. We've put everyone to trouble, what with </STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="2"> and that fire just now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"............"</STYLE>
+{PAUSE ""}
+<BR>
+I hadn't run into <STYLE ID="3">Kotaro-san</STYLE> when I went round the houses just now―was he still walking about?<PG>
+Come to think of it, the residents had been helping put out the storehouse fire, so they can't have had the leisure to arm themselves like that.
+{PAUSE ""}
+<BR>
+So the group I met in that forest must have been corpses.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Erina-chan</STYLE><STYLE ID="2">, there's something you want to ask, isn't there?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">This person</STYLE> seems good at reading what others mean.
+{PAUSE ""}
+<BR>
+Not by reasoning logically, as I do, but by reading expressions and pauses.
+{PAUSE ""}
+<BR>
+How much does <STYLE ID="2">this person</STYLE> know?<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="2">Obaasan</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="6">do you know anything about corpses that move?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Corpses that move...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Obaasan</STYLE> lowered her eyes a little and tilted her head slightly.
+{PAUSE ""}
+<BR>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Corpses moving? Never heard of such a thing."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Then can you think of anything like it?"</STYLE>
+{PAUSE ""}
+<BR>
+At that, she lowered her eyes even further and tilted her head.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hmm... From the look of you, something strange is going on, it seems. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Corpses moving, for instance."</STYLE>
+{PAUSE ""}
+<BR>
+For instance? It was my story, word for word...
+{PAUSE ""}
+<BR>
+But it was also a signal that <STYLE ID="2">Obaasan</STYLE> was ready to accept that story.<PG>
+<STYLE ID="6">"Then do you know of a fungus called </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="2">...?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Hmm... Sorry, never heard of it. Is that something </STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="2"> was looking into?"</STYLE><PG>
+<STYLE ID="6">"Yes. </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="6"> was reading the books in the storehouse. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6"> is a monster that nests in this land; it controls the dead at will, and in the end it turns humans into cherry trees and makes them part of </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6">'s own body. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Chiga-nee</STYLE><STYLE ID="6">, I think, was taken away by those corpses."</STYLE>
+{PAUSE ""}
+<BR>
+At that, <STYLE ID="2">Obaasan</STYLE> raised the eyes she'd lowered to me and straightened the head she'd tilted.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="6">Erina-chan</STYLE><STYLE ID="2">, do you have any idea where those corpses are?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"On the forest path toward the graveyard clearing, I saw </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="6"> and the corpses. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">We left the place for a moment, but I alone turned straight back... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">But what happened after that, I can only guess."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I see... So that's it..."</STYLE>
+{PAUSE ""}
+<BR>
+She seemed to have an idea.<PG>
+<STYLE ID="2">"This is... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">something only the Grand Witches down the line are told. </STYLE>
+{STOPSND "BGM" "5000" "PASS"}
+{PAUSE ""}
+<STYLE ID="2">But I never thought it could be used to solve the curse-killings. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If it helps, I don't mind telling you now, </STYLE><STYLE ID="6">Erina-chan</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Please."</STYLE><PG>
+Something only the Grand Witches down the line had been told―
+{PAUSE ""}
+I don't know whether it will help, but I want any clue I can get.
+{PAUSE ""}
+<BR>
+Not just a clue to finding <STYLE ID="1">Chiga-nee</STYLE>, but a clue to resolving this whole situation.<PG>
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"The dead come forth from the underworld, and uncanny bewitching flowers rise in rows. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Those who have become corpses also become bewitching flowers and come forth from the underworld."</STYLE>
+{PAUSE ""}
+<BR>
+Bewitching flowers rise in rows, and the dead come forth.
+{PAUSE ""}
+<BR>
+Is this the same as what's happening now...?<PG>
+<STYLE ID="6">"Wait! That's...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes. It's exactly what's happening now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Then where is </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="6">...!"</STYLE><PG>
+<STYLE ID="2">"If the 'uncanny bewitching flowers' are this </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Chigaya</STYLE><STYLE ID="2">, then, may be in the cave underground."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"The cave underground...?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　You mean the one </STYLE><STYLE ID="15">Niimura-senpai</STYLE><STYLE ID="6"> and the others went to search...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That cave, you see, was made. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">By the 'uncanny bewitching flowers.'"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6"> made the cave...?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地入口.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Shigatsu Youka</STYLE> is a giant fungus.
+{PAUSE ""}
+<BR>
+If its mycelial mat spreads across this whole area, it's no surprise that cavities would form where <STYLE ID="4">Shigatsu Youka</STYLE>'s giant hyphae once were.
+{PAUSE ""}
+<BR>
+In other words, the cave and the center of <STYLE ID="4">Shigatsu Youka</STYLE> are <STYLE ID="16" RUBY="つな">connected</STYLE>.
+{PAUSE ""}
+<BR>
+If the corpses have kidnapped and confined <STYLE ID="1">Chiga-nee</STYLE>, that cave, where <STYLE ID="4">Shigatsu Youka</STYLE> can easily reach, would suit them.<PG>
+<STYLE ID="6">"How far does that cave go?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"To tell the truth, I've never been all the way to the back myself. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Cave-ins happen easily there, so going that far has been forbidden since before my time."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">But, </STYLE><STYLE ID="2">Obaasan</STYLE><STYLE ID="6">, you're not completely in the dark about </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6">, are you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'm afraid I've never heard of </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="2">, or of corpses moving, outside the lore I just told you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If the books </STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="2"> was reading say so, then </STYLE><STYLE ID="3">Kotaro</STYLE><STYLE ID="2"> must know about it too. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kotaro</STYLE><STYLE ID="2"> was reading his way through those books, trying to cure </STYLE><STYLE ID="1">Chigaya's</STYLE><STYLE ID="2"> madness."</STYLE><PG>
+<STYLE ID="6">"Have you never read the books in the storehouse, </STYLE><STYLE ID="2">Obaasan</STYLE><STYLE ID="6">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What's down there is in foreign tongues or old script, so it's too hard for me, frankly. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm ashamed to say the only parts I've read are the customs for weddings and funerals, that sort of thing."</STYLE><PG>
+<STYLE ID="6">"Is there any other lore? Anything that might connect to </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"There's more. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">'The shinigami are the four divine messengers who serve Abaddon. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Abaddon appears from a volcano of sulfur. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">What the Grand Witch must do―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">is to keep Abaddon and the four divine messengers sealed away.'"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Abaddon...?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Divine messengers...?"</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="2">"That's oral tradition, so it isn't in the books, they say. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Every Grand Witch in the line is made to learn it by heart, like the times tables."</STYLE>
+{PAUSE ""}
+<BR>
+The shinigami, Abaddon, the four divine messengers, sulfur―
+{PAUSE ""}
+<BR>
+Words I'm hearing for the first time... 
+{PAUSE ""}
+No―I've seen the same words somewhere!
+{PAUSE ""}
+<BR>
+Somewhere since coming to the Arata settlement...!<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\BGM_212.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "悪天候.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n255\r\n5000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+That scripture, 'The Teachings of Cerejeira'!
+{PAUSE ""}
+<BR>
+Let me recall the key passages―<PG>
+<STYLE ID="17">The beautiful trees and flowers of the mother country.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">They resembled what in Japan is called the cherry, but they were also like the </STYLE><STYLE ID="18" RUBY="ばら">rose</STYLE><STYLE ID="17"> and the </STYLE><STYLE ID="19" RUBY="すもも">plum</STYLE><STYLE ID="17">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">We called them Bonita.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">Bonita means 'beautiful' in our tongue.</STYLE><PG>
+<STYLE ID="17">Then one day, with a great earthquake, Bonita changed beyond recognition into sinister forms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">The giant trees destroyed the towns and covered the whole sky.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">At the same time, every tree and flower other than Bonita withered away in an instant.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">Nor was that all. The dead came back to life and began to slaughter the people.</STYLE><PG>
+<STYLE ID="17">At first we too led armies against the army of the dead, but we could never have matched an army that could not die.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">Then, from a volcano of brimstone, there appeared four generals of the army of the dead, called divine messengers, and their demon king―</STYLE>
+{PAUSE ""}
+<STYLE ID="17">Abaddon.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">The divine messengers had cunning tongues and high intelligence, and far from merely killing us, one companion after another began to defect to the army of the dead.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">Yes, our companions fell prey to suspicion feeding on itself, and in the end they began to kill one another.</STYLE><PG>
+Yes―Abaddon, the four divine messengers, and sulfur: those words were all in there.
+{PAUSE ""}
+<BR>
+So a fungus just like <STYLE ID="4">Shigatsu Youka</STYLE> existed somewhere other than here after all.
+{PAUSE ""}
+<BR>
+Ginosuke Niimura, the founder of the Holy Cerejeira Church, had lived through the same kind of disaster in his mother country.<PG>
+Abaddon, the four divine messengers, sulfur―
+{PAUSE ""}
+<BR>
+Among all the words that look like metaphors, the one I thought worth attention was the oddly specific substance 'brimstone'―sulfur.
+{PAUSE ""}
+<BR>
+And the very existence of this lore is a second point to note.
+{PAUSE ""}
+<BR>
+Lore is created to pass some event down to later generations.<PG>
+Here, I became certain of one thing.
+{PAUSE ""}
+<BR>
+In the past, the Arata settlement had lived through a disaster caused by <STYLE ID="4">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+Not only Ginosuke Niimura's mother country, but this Arata too once came close to being wiped out by <STYLE ID="4">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+They must have recorded that disaster as lore, modeled on 'The Teachings of Cerejeira,' which had spread through the settlement in that era.<PG>
+But the fact that this settlement has survived all along means the residents of that time must somehow have succeeded in driving <STYLE ID="4">Shigatsu Youka</STYLE> off.
+{PAUSE ""}
+<BR>
+That method is―<BR>
+'to keep Abaddon and the four divine messengers sealed away'<BR>
+―that, and nothing else.<PG>
+Furthermore, by considering it together with the research report, a more scientific, logical connection can be inferred.
+{PAUSE ""}
+<BR>
+But it bothers me. 'Sulfur,' an oddly specific substance.
+{PAUSE ""}
+<BR>
+A volcano of sulfur...
+{PAUSE ""}
+<BR>
+Sulfur means...<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n0\r\n1000\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"Is there a volcano around here?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　One that has erupted in the last 800 years."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I couldn't say... At least, I don't know of one, and there's no record of an eruption."</STYLE>
+{PAUSE ""}
+<BR>
+Which means the volcano of sulfur isn't a volcano in the literal sense.
+{PAUSE ""}
+<BR>
+Other places where something containing sulfur gushes out―<PG>
+<STYLE ID="6">"Is there a hot spring around here?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Somewhere out of sight, where almost no one goes."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"There is, as it happens. About two hours' walk into the mountains from here―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">the top of Mount Itohime."</STYLE><PG>
+<STYLE ID="6">"The volcano of sulfur most likely means that hot spring. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">In Hebrew, Abaddon means the king of the abyss, and the four divine messengers are his underlings. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">The fact that this saying exists means there must have been a </STYLE><STYLE ID="4">Shigatsu Youka</STYLE><STYLE ID="6"> incident in the past too!"</STYLE><PG>
+<STYLE ID="2">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">When I took over as Grand Witch, I was told, 'It's an old saying, just remember it.' But... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The wisdom of those who came before isn't to be sneezed at, after all. Put together with </STYLE><STYLE ID="3">Kotaro's</STYLE><STYLE ID="2"> knowledge, we might see the real answer."</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="6">"When will </STYLE><STYLE ID="3">Kotaro-san</STYLE><STYLE ID="6"> be back?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Are you worried about </STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes. If we wait for </STYLE><STYLE ID="3">Kotaro-san</STYLE><STYLE ID="6">, rescuing </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="6"> will be delayed."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'll go. I'll leave </STYLE><STYLE ID="3">Kotaro</STYLE><STYLE ID="2"> a note."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Does that mean you'll come with me, </STYLE><STYLE ID="2">Obaasan</STYLE><STYLE ID="6">?"</STYLE><PG>
+{PLAYSND "Lucky_You.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"That's right. Or do I look suspicious to you after all?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"N-no! It's not that... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">It's just, I didn't expect the Grand Witch-sama herself to take action..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Is that so? I'd rather people treated me like everyone else, you know. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It's that grand title, Grand Witch―it does startle everyone from outside at first, true."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+―And <STYLE ID="2">Obaasan</STYLE> stood and put on a coat.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ指さし.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="11">Natsumi-chan</STYLE><STYLE ID="2"> calls me Erika-chan, you know. You can call me that too, </STYLE><STYLE ID="6">Erina-chan</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"But... wouldn't that be too </STYLE><STYLE ID="20" RUBY="な">fami</STYLE><STYLE ID="6">li</STYLE><STYLE ID="20" RUBY="な">ar</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">A-anyway, let's hurry and go look for her."</STYLE>
+{PAUSE ""}
+<BR>
+Calling her <STYLE ID="2">Erika-chan</STYLE> out of the blue was more than I could manage.<PG>
+But having this <STYLE ID="2">Obaasan</STYLE>, the one they call the Grand Witch, stand on the front line with me is a great reassurance.
+{PAUSE ""}
+<BR>
+Either way, right now <STYLE ID="2">she</STYLE> is the only one I can rely on.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

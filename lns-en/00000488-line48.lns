@@ -1,0 +1,89 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=31, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=24, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=9, unk2=16711680, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=34, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=36, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=28, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=17, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=17, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=12, unk2=12632256, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=21, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=67, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=351, target=)
+; Links:
+;    0: TWdLink(count=296, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPD TIME="4294967236">Run...!
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n500\r\nNORMAL\r\nPASS">
+　It's dan<STYLE ID="1">gerous here...!　Danger is clos</STYLE><STYLE ID="2">ing in!</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n250\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="2">　The cherry</STYLE><STYLE ID="3">'s warning...!　I knew it, that thing should never </STYLE><STYLE ID="4">have been used!　Whoever takes hold of the power die</STYLE><STYLE ID="5">s in April</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="5">　It's the curse of the cherry　Ge</STYLE><STYLE ID="6">t away from the cherry!　No, that was an accident</STYLE><STYLE ID="7">!　I won't hand Haruka over　I longed for a family</STYLE><STYLE ID="8">　There's no escaping the shinig</STYLE><STYLE ID="9">ami</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n250\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="9">　The witch's curse　I killed si</STYLE><STYLE ID="10">x people</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="10">　No, it was us who killed　</STYLE>
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<STYLE ID="10"><TXSPD TIME="4294967196">What is this... this voice...</STYLE><BR>
+{WAIT "3000" "CLICK" "SKIP"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "強風.ogg" "SE2" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\桜道夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "NORMAL" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{STOPSND "SE2" "0" "PASS"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n250\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="5"><TXSPD TIME="4294967236">Put on the Noh mask　This is the custom o</STYLE><STYLE ID="3">f the Arata settlement　Narcotics...?</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="3">　Surely I'm </STYLE><STYLE ID="1">allowed to dream　Who was it tha</STYLE>t saved me?　I don't believe that...
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n250\r\n500\r\nNORMAL\r\nPASS">
+　The witch sum<STYLE ID="4">mons the shinigami　Save Haruka</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n500\r\nNORMAL\r\nPASS">
+<STYLE ID="4">　Akane...　Beauty i</STYLE><STYLE ID="10">s demanded even of the look of a corpse　</STYLE><BR>
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<EVENT VALUE="STOPMOVIE">
+{DELETECG "111" "14" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+<STYLE ID="9"><TXSPD TIME="4294967196">Kogori-senpai</STYLE><STYLE ID="10">'s... the same as her intuition...?</STYLE><BR>
+{WAIT "3000" "CLICK" "SKIP"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "強風.ogg" "SE2" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\桜道夜.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神ハンマー上げる.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "NORMAL" "SKIP"}
+{STOPSND "SE2" "0" "PASS"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+<STYLE ID="10">Why do I have the same intuition as </STYLE><STYLE ID="9">Kogori-senpai</STYLE><STYLE ID="10">...?</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESOFF "0"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

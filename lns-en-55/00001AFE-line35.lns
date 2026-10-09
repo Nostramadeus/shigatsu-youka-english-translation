@@ -1,0 +1,117 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=136, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=255, unk3=4294967295, unk4=36, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=5, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=237, target=)
+; Links:
+;    0: TWdLink(count=150, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家夜.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MOTION "789" "000" "4" "0" "3000" "DEC" "WAIT"}
+{MESON "500"}
+<TXSPD TIME="4294967246">This is <STYLE ID="1">Haruka</STYLE>'s hometown, <STYLE ID="2">the Arata settlement</STYLE>.
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "2000" "NORMAL" "NORMAL"}
+{CREATECG "000" "グラフィック\背景\オッドアイ.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\イラスト\死月編\予告.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱.gal" "NORMAL" "#1" "350" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "180" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜.gal" "NORMAL" "#1" "480" "B" "200" "32" "500" "0" "0" "" "0" "0" "0" "180" ""}
+{WAIT "1000" "NORMAL" "SKIP"}
+{MESON "500"}
+Sisters with odd eyes?
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\紙人形6枚.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2,111" "32" "500" "0" "0" "" "0"}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+Six paper dolls...
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田桜1.gal" "NORMAL" "32" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{MESON "500"}
+The Arata settlement has a goshinboku too...?
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\詫言編　夢から\dark_attack.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎幽霊.gal" "NORMAL" "#1" "C" "B" "0" "32" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "11" "1000" "0" "0" "" "0"}
+{MESON "500"}
+Ojisan is alive...!
+{WAIT "1000" "NORMAL" "SKIP"}
+<BR>
+Or is it a ghost!?
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+It seems what happened in Megasawa City was only the tip of the iceberg.
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\住民簿\自殺.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+In this settlement, everyone dies by suicide!?
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\立ち絵\人物\死神\死神軍団武器.gal" "NORMAL" "33" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+What these guys are after is <STYLE ID="3">Natsumi</STYLE>'s life!
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\立ち絵\アイテム\サクラ写真.gal" "NORMAL" "33" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+This is <STYLE ID="4">Sakura-san</STYLE>.
+{WAIT "1000" "NORMAL" "SKIP"}
+<BR>
+Just like you, 
+{WAIT "1000" "NORMAL" "SKIP"}
+someone with precognition.
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "-1"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,814 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3515, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=90, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=52, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=265, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=998, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1197, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=50, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=26, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=36, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=も, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=22, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=か, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=11, unk2=65535, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にんげん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6881, target=)
+; Links:
+;    0: TWdLink(count=6284, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\アポカリプティック2.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Think. Think! There has to be some condition...!
+{PAUSE ""}
+<BR>
+The condition for the apocalyptic sound to ring out, and the condition for <STYLE ID="1">Shigatsu Youka</STYLE> to start moving.<PG>
+<STYLE ID="2">Chiga-nee's</STYLE> memo said, '<STYLE ID="1">Shigatsu Youka</STYLE> has no intelligence.'
+{PAUSE ""}
+<BR>
+If <STYLE ID="1">Shigatsu Youka</STYLE> has no intelligence, then, like ordinary plants and fungi, she should grow and reproduce in response to nothing but the seasons and her surroundings.
+{PAUSE ""}
+<BR>
+But what about now?<PG>
+{MESOFF "500"}
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYMOVIE "豊岳桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+She stopped us at Toyotake Station, gave <STYLE ID="3">Kogori-senpai</STYLE> a strange premonition, and brought us here.
+{PAUSE ""}
+<BR>
+Is that something a being with no intelligence could do?
+{PAUSE ""}
+<BR>
+Even granting, as the hypothesis goes, that <STYLE ID="1">Shigatsu Youka</STYLE> has the ability to hijack the five senses through <STYLE ID="3">Kogori-senpai</STYLE> and <STYLE ID="2">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+Perceiving through the five senses alone shouldn't be enough to recognize, think, and act.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Shigatsu Youka</STYLE> has gained intelligence by some means.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "111" "グラフィック\背景\エデン\茅萱手紙.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If I remember right, <STYLE ID="2">Chiga-nee's</STYLE> memo said something about that too, but...
+{PAUSE ""}
+<BR>
+There's no guarantee that <STYLE ID="2">Chiga-nee's</STYLE> memo is 'all accurate information,' but right now there's no better lead.
+{PAUSE ""}
+<BR>
+In that case, I have to build my guesses with <STYLE ID="2">Chiga-nee's</STYLE> memo as the starting point after all.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+Just then, I saw someone come out of the Niimura house's front door.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="4">! </STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4"> too!"</STYLE>
+{PAUSE ""}
+<BR>
+Had the apocalyptic sound startled the two of them into rushing out too?
+{PAUSE ""}
+<BR>
+When she saw me, <STYLE ID="3">Senpai</STYLE> immediately looked up at the sky where the eerie sound had rung out.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="3">... I hope she's okay... I sent her a message, but there's no reply... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I guess the signal really doesn't reach underground."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+―!!
+{PAUSE ""}
+<BR>
+Oh no...! <STYLE ID="3">Kogori-senpai</STYLE> knows what <STYLE ID="6">Niimura-senpai</STYLE> is doing!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "BGM死月編\bgm_semarikuru.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"K-</STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">! You told her!? You talked about </STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="4"> to </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="4">!?"</STYLE>
+{PAUSE ""}
+<BR>
+I grabbed <STYLE ID="5">Kana-chan</STYLE> by both shoulders, shook her, and pressed her at the top of my voice.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Um... what about </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Did you tell her that </STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="4"> was going to the cave!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Y-yeah..."</STYLE><PG>
+What a disaster...! Could the apocalyptic sound have rung out because of...!
+{PAUSE ""}
+<BR>
+It's my mistake for not telling <STYLE ID="5">Kana-chan</STYLE> to keep quiet, but I never thought things would change this much faster than I'd imagined.
+{PAUSE ""}
+<BR>
+Giving <STYLE ID="3">Kogori-senpai</STYLE> any more information is dangerous!<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Um, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="3">... what's wrong!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="4">, please stay inside the house! And close your eyes, and cover your ears too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Uh, um..."</STYLE>
+{PAUSE ""}
+<BR>
+I knew full well she wouldn't understand from an explanation like that.
+{PAUSE ""}
+<BR>
+But explaining it would mean giving <STYLE ID="1">Shigatsu Youka</STYLE> even more information.<PG>
+<STYLE ID="4">"Never mind that, </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="4">, please just come, quickly!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\引き戸速い.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I took <STYLE ID="3">Kogori-senpai's</STYLE> hand by force and pulled her into the house.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE> still didn't seem to grasp the situation, but I couldn't worry about that.
+{PAUSE ""}
+<BR>
+Whatever happens, <STYLE ID="3">Kogori-senpai</STYLE> has to be kept isolated the whole time.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "4" "500" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="4">, listen!?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Do NOT leave this room, <TXSPS>abso-lute-ly<TXSPN> not!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Um... what's this about...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I can't explain that! When you need the bathroom, call me!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Do not leave this room without me, ever!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Mm... o-okay..."</STYLE><PG>
+<STYLE ID="4">"Sorry, </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="4">, but right now this is the only way!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE> probably wasn't truly convinced.
+{PAUSE ""}
+<BR>
+But since I'd said it this forcefully, <STYLE ID="3">Kogori-senpai</STYLE> would surely see how important it was.<PG>
+According to <STYLE ID="2">Chiga-nee's</STYLE> research, the five senses can be hijacked but thoughts apparently can't, so as long as I give her no information, it should be all right.
+{PAUSE ""}
+<BR>
+Not that I trust <STYLE ID="2">Chiga-nee's</STYLE> research blindly...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Even so, I can't bear to keep <STYLE ID="3">Kogori-senpai</STYLE> shut up in that room forever.
+{PAUSE ""}
+<BR>
+I have to act fast toward a solution myself.
+{PAUSE ""}
+<BR>
+What I can do now is examine <STYLE ID="2">Chiga-nee's</STYLE> memo and the books, deepen my hypothesis further, and reach the truth.
+{PAUSE ""}
+<BR>
+What <STYLE ID="2">Chiga-nee</STYLE> found, I have to find as well.<PG>
+Is <STYLE ID="6">Niimura-senpai</STYLE> all right?
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Obasan</STYLE> is with her, so I think she's fine, but even if <STYLE ID="3">Kogori-senpai</STYLE> sent a message, it'll be hard to reach them underground.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄ストラップ切.gal" "NORMAL" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄ストラップ入.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+Just in case, I'll try calling.<PG>
+<STYLE ID="8">"The number you have dialed is currently outside the service area―"</STYLE>
+{PAUSE ""}
+<BR>
+No good after all...
+{PAUSE ""}
+<BR>
+A mummy probably isn't something you find right away, and if they've found a clue about <STYLE ID="2">Chiga-nee</STYLE>, the search will take a good while longer.
+{PAUSE ""}
+<BR>
+Just in case, I'll send a message too.<PG>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">"A lot happened, so I told </STYLE><STYLE ID="10">Kogori-senpai</STYLE><STYLE ID="9"> to stay in her room alone. How are things on your end?"</STYLE>
+{PAUSE ""}
+<BR>
+Once she's back in range, <STYLE ID="6">Senpai</STYLE> will probably send some kind of reply.
+{PAUSE ""}
+<BR>
+That is, if she hasn't run into danger...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Uh... uh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Kana-chan</STYLE> quietly appeared at the stairs.
+{PAUSE ""}
+<BR>
+Looking down, mumbling under her breath, fidgeting.<PG>
+<STYLE ID="5">"I'm sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+Probably because I'd suddenly gotten so angry.
+{PAUSE ""}
+<BR>
+By rights, I should have told <STYLE ID="5">Kana-chan</STYLE> to keep quiet too.
+{PAUSE ""}
+<BR>
+This is completely my mistake.<PG>
+{PLAYSND "BGM死月編\Code_of_Honor_#2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"</STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">, I'm the one who should be sorry. </STYLE><STYLE ID="5">You</STYLE><STYLE ID="4"> didn't do anything wrong..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"But... </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, you were angry..."</STYLE>
+{PAUSE ""}
+<BR>
+Hmm... grabbing her shoulders with a face like that probably went too far...
+{PAUSE ""}
+<BR>
+In that case, rather than smoothing it over, it's better to turn her attention elsewhere.<PG>
+<STYLE ID="4">"Listen, that just now was really important. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="4">―if she's told what's going on right now, things will get really bad. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So I panicked a little. I'm sorry too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"And also, I'd like </STYLE><STYLE ID="5">you</STYLE><STYLE ID="4"> to help look for </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="4"> too."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+Good, she reacted to that, just as I thought.<PG>
+<STYLE ID="4">"I need </STYLE><STYLE ID="5">your</STYLE><STYLE ID="4"> strength too. We absolutely have to find </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............ </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">Okay, I'll do my best!"</STYLE>
+{PAUSE ""}
+<BR>
+Thank goodness... she was finally smiling again.
+{PAUSE ""}
+<BR>
+But what about the time?
+{PAUSE ""}
+<BR>
+An elementary schooler should probably be in bed by now.<PG>
+<STYLE ID="5">"Okay, </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">! What should I do!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Kana-chan</STYLE>, it seemed, still had plenty of energy left.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Um, I want to look into things in the storehouse again. It's a bit much on my own..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Okay! Chores, shoulder </STYLE><STYLE ID="11" RUBY="も">rubs</STYLE><STYLE ID="5">, anything you want!</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">　But </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, shouldn't you eat something?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　The only ones who haven't eaten are </STYLE><STYLE ID="4">you</STYLE><STYLE ID="5"> and </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">."</STYLE><PG>
+I, of all people, had forgotten to eat.
+{PAUSE ""}
+<BR>
+The apocalyptic sound earlier had wiped out my appetite, but it looked like it would be an all-nighter, so I'd better eat at least a little.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Okay, then let's eat quickly and get back to the storehouse."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Okay! Actually, I haven't eaten yet either!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There seemed to be no one in the living room.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\日々と泉.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\新村家台所.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, sit down, I'll get it ready."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">, can you cook?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I can cook, but it looks like </STYLE><STYLE ID="12">Grandma</STYLE><STYLE ID="5"> and </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="5"> made it, so for today I just have to heat it up."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+That's right, <STYLE ID="3">Kogori-senpai</STYLE> said she'd help <STYLE ID="12">Obaasan</STYLE> get dinner ready.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE>... she must be feeling lonely and uneasy on her own...<PG>
+However strong a person <STYLE ID="3">Kogori-senpai</STYLE> is, I can't rely on that alone.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Senpai</STYLE> must be feeling uneasy right now too. I have to get back to her soon.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\食事.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Oh! Today's food is seasoned differently from usual! Did </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="5"> make this?"</STYLE>
+{PAUSE ""}
+<BR>
+Honestly, I can enjoy most food, so I can't really tell differences in taste.
+{PAUSE ""}
+<BR>
+But <STYLE ID="3">Kogori-senpai</STYLE> had worked hard too, trying to be even a little useful.
+{PAUSE ""}
+<BR>
+I <STYLE ID="13" RUBY="か">savored</STYLE> that taste and turned it into energy.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, can you cook?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh? Uh, me, not really..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Really! Just like </STYLE><STYLE ID="2">Sis</STYLE><STYLE ID="5">!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　</STYLE><STYLE ID="2">Sis</STYLE><STYLE ID="5"> isn't picky and eats anything, so she says unless it's way too salty or too spicy, she doesn't think it tastes bad."</STYLE>
+{PAUSE ""}
+<BR>
+Come to think of it, <STYLE ID="2">Chiga-nee</STYLE> did say she could eat quite a lot.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\新村家台所.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"I get that. My parents always told me never to leave food on my plate, even if it killed me. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So when I cook, people somehow don't like how it tastes. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">It's fine by me, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"You mean your strike zone for 'tasty' is wide?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes, that's it! </STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">, you're in elementary school and your vocabulary's already this good!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Ahaha! 'Vocabulary'! That's amazing!"</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">, are you good at Japanese class, by any chance?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Hmm, I like science and P.E. better than Japanese!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　See, it's all mountains around here, so there are all kinds of animals and plants, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　So science just comes easy to me!"</STYLE>
+{PAUSE ""}
+<BR>
+Mountains rich in animals and plants―
+{PAUSE ""}
+<BR>
+And right now, those very mountains were starting to come crashing down.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+If <STYLE ID="1">Shigatsu Youka</STYLE> is behind the trees that withered in that one instant, something even more terrible could happen from here on.
+{PAUSE ""}
+<BR>
+Going by that scripture, it won't stop at this.<PG>
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+What will happen?
+{PAUSE ""}
+<BR>
+Will the plants wither and the water dry up too?
+{PAUSE ""}
+<BR>
+Or will the mountain crumble and the land itself be destroyed?
+{PAUSE ""}
+<BR>
+Or will the damage even reach Motoki-cho...<PG>
+No good. Right now all I can imagine is the worst.
+{PAUSE ""}
+<BR>
+That's what I need to find out from here.
+{PAUSE ""}
+<BR>
+Don't let fear set your imagination running wild! Have hope!<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, are you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+So it showed on my face again...
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, I'm fine! So </STYLE><STYLE ID="5">you're</STYLE><STYLE ID="4"> good at P.E. too!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Yup! I'm faster than the sixth graders!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Wow, that's amazing!"</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+When it comes to elementary school girls, the standard answer for their type is 'the fast runners.'
+{PAUSE ""}
+<BR>
+Of course, in elementary school I lived the lonely life of a loner, so I never gave that kind of thing a thought, but what about <STYLE ID="5">Kana-chan</STYLE>?<PG>
+<STYLE ID="4">"But then you probably don't have a boy you like, do you?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　After all, you like the fast runners, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............ </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">What? What is that..."</STYLE>
+{PAUSE ""}
+<BR>
+Huh? In the time it took me to get to high school, did elementary schoolers' love trends change?<PG>
+{PLAYSND "BGM死月編\紅葉のダンス.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="5">"Everyone says they like the fast runners, but that's no good at all!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　What you want is someone with a proper income who can plan a family. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Someone who takes out loans without a word, or who you can't tell what he's doing when he's out―out of the question! An honest man is number one!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"O-oh... yeah, sure..."</STYLE>
+{PAUSE ""}
+<BR>
+An answer far too down-to-earth for her age, from <STYLE ID="5">Kana-chan</STYLE>.<PG>
+<STYLE ID="4">"B-but, no elementary schoolers have jobs or plan families, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Obviously! Nobody expects that from elementary schoolers!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh, so... are you into middle-aged men or something...?"</STYLE><PG>
+<STYLE ID="5">"No, no. What kind of man a guy turns into is up to the woman.</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　See, there are women whose boyfriends all turn out to be losers, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I've heard of that. Women with no luck with men, right?"</STYLE><PG>
+<STYLE ID="5">"Right, right. But listen, it's usually the woman's fault, they say. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Spoiling a man or doing too much for him is what makes him go bad, they say. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">You know the beauties who could topple a kingdom? The king spends the country's money on the woman he loves until the whole country falls. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">What kind of man he becomes is up to the woman.</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　How well you can support and flatter your husband is where a woman gets to show what she can do!"</STYLE><PG>
+<STYLE ID="4">"I-is that so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Men are proud creatures, after all. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">If you don't flatter him properly while steering him the right way, you'll go to ruin right along with your husband."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Uh... where do you pick up things like that...?"</STYLE><PG>
+<STYLE ID="5">"From web novels.</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　</STYLE><STYLE ID="12">Grandma</STYLE><STYLE ID="5"> knows a lot about the internet and stuff, so she shows me how and I read all kinds of things!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Well, if you can't even think that much through, then before luck with men even comes into it, you're just not thoughtful enough as a woman."</STYLE><PG>
+What is it...? Nobody has said anything bad about me, and there isn't much sarcasm in <STYLE ID="5">Kana-chan's</STYLE> words either.
+{PAUSE ""}
+<BR>
+But what is this feeling of defeat?
+{PAUSE ""}
+<BR>
+Ugh... this topic hurts...<PG>
+<STYLE ID="4">"A-anyway, we'd better get back to the storehouse! Okay, gochisosama!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh? </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, you barely ate anything..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Y-you think so!? Well, eating too much makes you sleepy, so I have to keep it moderate!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Oh, </STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">, take your time eating! I'll go on ahead to the storehouse!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Ah, wait! I'm coming too!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After that, <STYLE ID="5">Kana-chan's</STYLE> love lecture never resumed, and the two of us washed the dishes and left the Niimura house.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="5">Kana-chan</STYLE><STYLE ID="4">, aren't you sleepy? It's almost nine."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hmm... I'm just not really sleepy..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Are you worried about </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"If you get sleepy while we're working, you can go to sleep, okay? Food and sleep are the most important things."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Then I'll bring blankets and stuff. That way, </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="5">, you can rest right away if you get sleepy too."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">Kana-chan</STYLE> went back to the house once more.
+{PAUSE ""}
+<BR>
+Maybe I'll head over to the storehouse ahead of her.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As I walked, I thought.
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "5000" "PASS"}
+What is it...? Something feels off...
+{PAUSE ""}
+<BR>
+Sure, what common sense says cannot be is happening all over the place, so feeling that something's off is only natural.
+{PAUSE ""}
+<BR>
+But what I'm feeling now isn't that.
+{PAUSE ""}
+<BR>
+Something oddly off, within the bounds of common sense.<PG>
+As if a person were slipping in under cover of these supernatural phenomena, quietly pulling strings...
+{PAUSE ""}
+<BR>
+Is this really <STYLE ID="1">Shigatsu Youka's</STYLE> doing alone?
+{PAUSE ""}
+<BR>
+If I were <STYLE ID="1">Shigatsu Youka</STYLE>...<PG>
+Right. I'd plant a spy among the residents.
+{PAUSE ""}
+<BR>
+However far beyond human understanding <STYLE ID="1">Shigatsu Youka</STYLE> may be, she surely can't just do anything she likes.
+{PAUSE ""}
+<BR>
+Sending in a spy would surely be more convenient in all sorts of ways.<PG>
+I can't say for certain, but what strikes me as wrong right now is what <STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="14"> and Obasan</STYLE> are doing.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That's not to say <STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="14"> and Obasan</STYLE> are suspicious.
+{PAUSE ""}
+<BR>
+It's already been nearly an hour since the two of them set out.
+{PAUSE ""}
+<BR>
+They've probably found something in that underground place.
+{PAUSE ""}
+<BR>
+Otherwise they wouldn't be this late...
+{PAUSE ""}
+<BR>
+No. If <STYLE ID="1">Shigatsu Youka</STYLE> found out about the cave search, she may have done something to interfere with the two of them.<PG>
+It's one of three: <STYLE ID="6">Niimura-senpai</STYLE> and Obasan are still investigating, or they've run into danger, or both.
+{PAUSE ""}
+<BR>
+Maybe a spy's sabotage is at work here.
+{PAUSE ""}
+<BR>
+The enemy isn't necessarily <STYLE ID="1">Shigatsu Youka</STYLE> alone.
+{PAUSE ""}
+<BR>
+If <STYLE ID="6">Niimura-senpai</STYLE> had come into contact with someone in the settlement during the investigation...
+{PAUSE ""}
+<BR>
+I'll have to be very careful about that too.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And the moment <STYLE ID="3">Kogori-senpai</STYLE> learned about the cave investigation, the apocalyptic sound rang out.
+{PAUSE ""}
+<BR>
+In other words, it shows that having the cave investigated works against <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+That's it―by that logic, the sense-hijacking can be turned against her.<PG>
+In other words, feeding <STYLE ID="3">Kogori-senpai</STYLE> false information might let us confuse <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+When the apocalyptic sound rings out, it means <STYLE ID="1">Shigatsu Youka</STYLE> is making some kind of move. In other words, it means she has reacted to what we did.<PG>
+A deduction about <STYLE ID="1">Shigatsu Youka's</STYLE> spy, and a way, through <STYLE ID="3">Kogori-senpai</STYLE>, to have <STYLE ID="1">Shigatsu Youka</STYLE> <STYLE ID="15" RUBY="だま">deceived</STYLE>.
+{PAUSE ""}
+<BR>
+It wouldn't be bad to draw up a plan from here.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{STOPSND "BGM" "5000" "PASS"}
+Well, I was almost at the storehouse.
+{PAUSE ""}
+<BR>
+It's on the same Niimura property, yet when I think while walking, my pace naturally slows...<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+............?
+{PAUSE ""}
+<BR>
+............ 
+{PAUSE ""}
+............!!
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{PAUSE ""}
+<BR>
+Smoke!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵火事.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Black smoke was billowing out of the storehouse door.
+{PAUSE ""}
+<BR>
+Flickering red light was leaking from the second-floor window.
+{PAUSE ""}
+<BR>
+The storehouse was on fire...!<PG>
+{PLAYSND "エデンの桜\箱からの脱出.ogg" "BGM" "REPEAT" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="16">"Fire! Fiiire!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+I shouted at the top of my lungs, calling for help.
+{PAUSE ""}
+<BR>
+At my voice, <STYLE ID="12">Obaasan</STYLE>, <STYLE ID="17">Kotaro-san</STYLE>, and <STYLE ID="5">Kana-chan</STYLE> came running out right away.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "4" "500" "960" "1" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="4">! There's a fire! Please get out of the house right now!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"G-got it!"</STYLE>
+{PAUSE ""}
+<BR>
+Now that the fire might spread to the house, I couldn't keep <STYLE ID="3">Kogori-senpai</STYLE> shut in her room any longer.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+People from all over the settlement gathered and tried to put out the storehouse fire.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE> and I followed <STYLE ID="5">Kana-chan</STYLE> and took refuge near the meeting hall.
+{PAUSE ""}
+<BR>
+Little by little, the crimson burning the sky and the smoke grew fainter.
+{PAUSE ""}
+<BR>
+It seemed the fire was dying down.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="3">... is this my fault too...?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Did </STYLE><STYLE ID="1">Necro</STYLE><STYLE ID="3"> burn the storehouse...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Necro</STYLE>―<STYLE ID="1">Shigatsu Youka's</STYLE> doing...?
+{PAUSE ""}
+<BR>
+No... this is arson, by human hands!
+{PAUSE ""}
+<BR>
+So there IS a spy for <STYLE ID="1">Shigatsu Youka</STYLE>!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵火事.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+The outside hadn't burned. Smoke had risen from inside, and firelight could be seen on the second floor.
+{PAUSE ""}
+<BR>
+This means someone deliberately set fire to the second floor.
+{PAUSE ""}
+<BR>
+The aim is probably to burn every record connected to <STYLE ID="1">Shigatsu Youka</STYLE>, root and all.<PG>
+<STYLE ID="6">Niimura-senpai</STYLE> had taken the keys with her, so the storehouse couldn't be locked.
+{PAUSE ""}
+<BR>
+Someone slipped into the storehouse, went all the way up to the second floor, and set the fire.
+{PAUSE ""}
+<BR>
+Besides, there was no Fierce Sound, so it was not <STYLE ID="1">Shigatsu Youka</STYLE> moving either.
+{PAUSE ""}
+<BR>
+Someone... 
+{PAUSE ""}
+<STYLE ID="18" RUBY="にんげん">Someone</STYLE> is sabotaging us...!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

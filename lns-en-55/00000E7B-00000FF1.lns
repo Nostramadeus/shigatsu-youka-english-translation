@@ -1,0 +1,1049 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3518, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆが, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=32, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=751, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1312, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=744, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きれい, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=7, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=47, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=5, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=3, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かたき, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=16, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さんろう, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=14, unk2=8388863, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=18, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=8, unk2=255, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=32, unk2=255, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=15, unk2=11271932, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7309, target=)
+; Links:
+;    0: TWdLink(count=6535, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\キオク\秘密基地入口夕方.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>The sky was tinged a faint orange.
+{PAUSE ""}
+<BR>
+What lay at the end of revenge was a contradictory fact: it destroyed the desire for revenge.
+{PAUSE ""}
+<BR>
+I'll impose on them for just one night, then leave here as soon as I can.
+{PAUSE ""}
+<BR>
+Once I'm back in Motoki-cho, I have to rethink who I'll be from now on.<PG>
+The breeze, its heat gone, felt wonderfully refreshing.
+{PAUSE ""}
+<BR>
+I had thought my heart was <STYLE ID="1" RUBY="ゆが">twisted</STYLE>, but it was simpler than I'd imagined.
+{PAUSE ""}
+<BR>
+I'd only been distracting myself because I was lonely.
+{PAUSE ""}
+<BR>
+From the very start, I could never have killed anyone.<PG>
+Tomorrow happens to be the anniversary of <STYLE ID="2">Erina's</STYLE> death. When I get back to Motoki-cho, I'll visit <STYLE ID="2">Erina's</STYLE> grave.
+{PAUSE ""}
+<BR>
+And in front of <STYLE ID="2">Erina</STYLE>, I'll accept reality once more.
+{PAUSE ""}
+<BR>
+As her big sister, I'll go and show <STYLE ID="2">Erina</STYLE> that I'm properly facing forward.<PG>
+But... I still regret that we never made up, right to the end.
+{PAUSE ""}
+<BR>
+Well, it's entirely my fault, so I don't intend to complain about it now.<PG>
+Oh, come to think of it...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\日記ぼかし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That plan-and-diary I'd left lying on the desk in my room.
+{PAUSE ""}
+<BR>
+If my parents see it by some chance, there'll be real trouble.
+{PAUSE ""}
+<BR>
+I'd like to hurry home and get rid of it, but...<PG>
+But I've sorted out my feelings.
+{PAUSE ""}
+<BR>
+If they've seen it, I'll tell them honestly what's in my heart.
+{PAUSE ""}
+<BR>
+Surely they'll understand.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\荒田森夕方.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The beauty of this forest, which I hadn't noticed on the way to the secret base.
+{PAUSE ""}
+<BR>
+Just taking a walk here seems enough to make me sound in body and mind.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+It must be because she was born and raised in a place like this that <STYLE ID="3">Kana-chan</STYLE> turned out such a good girl.
+{PAUSE ""}
+<BR>
+And the influence of <STYLE ID="4">Sakura-san</STYLE>, too.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">, this forest is so </STYLE><STYLE ID="6" RUBY="きれい">beautiful</STYLE><STYLE ID="5">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">?"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学うずくまり.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Uuh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE> let out something like a groan.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, it's just, my stomach's been hurting a little for a while now... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">What is this...?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+It seemed to be a stomachache.
+{PAUSE ""}
+<BR>
+It didn't look that bad, though...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Then, suddenly, <STYLE ID="3">Kana-chan</STYLE> lifted her head.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I-I'm sorry! I'm going home ahead of you!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHGVOL "VOICE" "0" "10000" "PASS"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE> left me behind and ran off as fast as she could.
+{PAUSE ""}
+<BR>
+Is her stomach really that bad?
+{PAUSE ""}
+<BR>
+I know the way back, and it's still light, so I won't get lost, but...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家玄関.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Uh, I'm back."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+<STYLE ID="4">"Ah, welcome back."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\昼の月.ogg" "BGM" "REPEAT" "1000" "0"}
+When I went inside, <STYLE ID="4">Sakura-san</STYLE> came to greet me.
+{PAUSE ""}
+<BR>
+As if this were my own home.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san's</STYLE> smile really is lovely...<PG>
+<STYLE ID="5">"Hasn't </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> come back?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4"> came home a little while ago. It seems she went to her room on the second floor."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see. Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+Is <STYLE ID="3">Kana-chan</STYLE> all right? I'll go see how she's doing.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">"Y-yes..."</STYLE>
+{PAUSE ""}
+<BR>
+When I knocked on <STYLE ID="3">Kana-chan's</STYLE> door, the answer didn't sound very composed.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Can I come in?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, go ahead..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\キオク\夏菜の部屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学うずくまり.gal" "NORMAL" "#1" "R" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Are you feeling okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh, um... yes, I'm fine..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan's</STYLE> face seemed a little red.
+{PAUSE ""}
+<BR>
+And she wasn't really trying to meet my eyes.
+{PAUSE ""}
+<BR>
+How to put it... she looked terribly embarrassed...<PG>
+............
+{PAUSE ""}
+Oh, so that's what it is.
+{PAUSE ""}
+<BR>
+Same sex or not, this isn't something I should pry into any further.
+{PAUSE ""}
+<BR>
+From the look of her, it's probably her first time.
+{PAUSE ""}
+<BR>
+No, I'll stop even thinking about it. It's far too crude.<PG>
+<STYLE ID="5">"If you're okay, then that's good. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Well, if anything's wrong, come talk to me."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Yes... Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+At last <STYLE ID="3">Kana-chan</STYLE> met my eyes.
+{PAUSE ""}
+<BR>
+But she still seemed embarrassed...<PG>
+<STYLE ID="3">"Uh... </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="3">, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">for now... please don't tell anyone. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'll tell them myself..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Okay, I understand."</STYLE>
+{PAUSE ""}
+<BR>
+I had been thrown by something that sudden once myself.
+{PAUSE ""}
+<BR>
+I understand that feeling well, so I'll let <STYLE ID="3">Kana-chan</STYLE> do it her way.<PG>
+<STYLE ID="5">"I'm staying here, so I'll go downstairs and help with something."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学手バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"No, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="3">, you're a guest, so please relax. I'll go."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Is your stomach okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I-I'm fine! It's not like I'm sick."</STYLE><PG>
+<STYLE ID="5">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But I'll come too, after all. I want to sort out how I've felt up to now as well. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So I thought I'd properly meet the people here face to face."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then let's go together."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\新村家台所.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Mama</STYLE><STYLE ID="3">, anything I can help with?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Let me see... just staying with </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4"> is enough. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Dinner is almost ready already."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh, okay... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Hey, um... </STYLE><STYLE ID="4">Mama</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="3">No, never mind."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............?"</STYLE><PG>
+<STYLE ID="4">Sakura-san</STYLE> didn't seem to have noticed the change in <STYLE ID="3">Kana-chan</STYLE> yet.
+{PAUSE ""}
+<BR>
+It seems there's the type who can tell their parents about this kind of thing plainly, and the type who gets all fidgety, like <STYLE ID="3">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+Which one was I?<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "281" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\キオク\新村本家庭夕方.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I looked outside, the sun was setting and everything around was growing dark.
+{PAUSE ""}
+<BR>
+Soon it would be the time when <STYLE ID="4">Sakura-san's</STYLE> intuition worked.
+{PAUSE ""}
+<BR>
+Though apparently it didn't work unless she went somewhere narrow...<PG>
+{STOPSND "BGM" "3000" "PASS"}
+A dark, narrow place―
+{PAUSE ""}
+<BR>
+Unless she's somewhere like a bathroom with the light off, the intuition probably won't work.
+{PAUSE ""}
+<BR>
+But... what is this...
+{PAUSE ""}
+<BR>
+A very bad feeling, somewhere in this dusk.
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+I don't have intuition like the second generation's, but it's something like a foreboding...
+{PAUSE ""}
+<BR>
+I hope nothing bad happens.<PG>
+Not that I'm one to say so, when I first came here to kill every last person in this place.
+{PAUSE ""}
+<BR>
+I'm overthinking it. It's just tension that's still lingering.
+{PAUSE ""}
+<BR>
+My desire for revenge has died, tumor and all.<PG>
+<STYLE ID="4">"By the way, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">you seemed interested in my intuition. If you'd like, shall I do a reading for you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh? Of my future?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ手.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Calling it the future is a bit much. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If you're in any danger, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, I can give you advice. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">At this time of year, I do readings for everyone and check whether that day's hunt holds any danger. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Right now, I'm doing great work for this settlement!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE> said it a little proudly.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"But </STYLE><STYLE ID="4">Mama</STYLE><STYLE ID="3">, what about your health..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Just a little is fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Oh... as I told you, my intuition needs a dark, narrow place to work. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But if I stay there more than 15 minutes, I start to feel a little unwell..."</STYLE><PG>
+<STYLE ID="4">"Actually, this afternoon too, while I was riding in a taxi, we got stuck in a tunnel with no lights. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">The taxi just would not get fixed, and that is how I fell ill. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I got out of the taxi and forced myself as far as the station, and that's where I met you, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+Still, I hesitated to put any strain on <STYLE ID="4">Sakura-san's</STYLE> body.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">, 5 or 10 minutes is fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">This afternoon </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4"> helped me, so I have to do at least this much."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Don't overdo it, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+It's a rare chance, so I might as well let her do a reading, as if it were fortune-telling.<PG>
+<STYLE ID="5">"Then, just a little, please."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Then go on ahead to your room, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'll come as soon as I finish getting dinner ready."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+With that, <STYLE ID="4">Sakura-san</STYLE> went into the kitchen.<PG>
+<STYLE ID="5">"Hey, </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">, how often does </STYLE><STYLE ID="4">Sakura-san's</STYLE><STYLE ID="5"> foresight come true?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"How often...?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　It comes true 100% of the time, obviously!"</STYLE>
+{PAUSE ""}
+<BR>
+I see. So it's nothing like fortune-telling.
+{PAUSE ""}
+<BR>
+I have no proof yet that <STYLE ID="4">Sakura-san</STYLE> belongs to the second generation, but it's 99% certain.<PG>
+<STYLE ID="5">"Is foresight like this something only </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="5"> can do?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That's right. It'd be a real problem if everyone could do something like that."</STYLE>
+{PAUSE ""}
+<BR>
+Which means there's only one of the second generation here.
+{PAUSE ""}
+<BR>
+No one else who can foresee danger, then...<PG>
+Just then, I remembered what <STYLE ID="3">Kana-chan</STYLE> and I had talked about at the secret base.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE> was afraid that, like her <STYLE ID="7">older sister</STYLE>, she would come to harbor murderous intent toward <STYLE ID="4">Sakura-san</STYLE>.
+{PAUSE ""}
+<BR>
+But if that did happen, wouldn't <STYLE ID="4">Sakura-san</STYLE> be able to sense it?
+{PAUSE ""}
+<BR>
+In other words, whether she can foresee being killed by <STYLE ID="3">Kana-chan</STYLE>.<PG>
+If I remember right, the conditions for <STYLE ID="4">Sakura-san's</STYLE> intuition to work were...
+{PAUSE ""}
+<BR>
+・Only while the cherry trees are in bloom
+{PAUSE ""}
+<BR>
+・A dark, narrow place
+{PAUSE ""}
+<BR>
+・With the above two met, seeing in person someone who will meet danger
+{PAUSE ""}
+<BR>
+・Or else, hearing that person's voice
+{PAUSE ""}
+<BR>
+I believe that was it.<PG>
+Earlier, <STYLE ID="4">'check whether </STYLE><STYLE ID="8" RUBY="・・・">that day's</STYLE><STYLE ID="4"> hunt holds any danger,'</STYLE> <STYLE ID="4">Sakura-san</STYLE> had said.
+{PAUSE ""}
+<BR>
+Which means she can probably foresee about a day ahead at most.
+{PAUSE ""}
+<BR>
+Isn't there some sign that <STYLE ID="3">Kana-chan</STYLE> will harbor murderous intent?
+{PAUSE ""}
+<BR>
+Some sign, before she turns 15, that gives a glimpse of it―<PG>
+And one more thing: a different question welled up in me.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\予知のし合い.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Suppose there were two of the second generation, and one of them tried to harm the other. What would happen?
+{PAUSE ""}
+<BR>
+And on top of that, with both of them meeting the conditions for foresight.
+{PAUSE ""}
+<BR>
+If A tried to do harm, B would naturally respond in some way.
+{PAUSE ""}
+<BR>
+If B were driven by the will to 'strike before being struck'...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\予知のループ.gal" "NORMAL" "2" "500" "20" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Most likely, each would sense danger from the other, and neither could judge calmly anymore.
+{PAUSE ""}
+<BR>
+In other words, 'a foresight loop' would arise.
+{PAUSE ""}
+<BR>
+Since it's called intuition, it probably judges danger not on purpose but like a flashback.
+{PAUSE ""}
+<BR>
+If a foresight loop arises that neither one can control...<PG>
+The nerve cells of the brain exchange information through faint electric currents.
+{PAUSE ""}
+<BR>
+Normally this information processing takes place within one brain, but when a foresight loop arises, it is the same as two brains processing the same information.<PG>
+Unstoppable flashbacks would go on, and on top of that, twice the usual information would pour into the brain.
+{PAUSE ""}
+<BR>
+Couldn't this be an extremely dangerous state?
+{PAUSE ""}
+<BR>
+It would go on until the conditions for foresight disappeared or one of them lost consciousness.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="4">"Oh, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, you're still here?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Well, I'm all done here, so let's go up to the second floor."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Oh, yes. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">, what are you going to do?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学手バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I guess I'll go heat up the bath or something. It's not done yet, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That's right. Then I'll leave it to you."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I'd imagined something strange.
+{PAUSE ""}
+<BR>
+Even if a foresight loop could happen, for it to be a dangerous state...
+{PAUSE ""}
+<BR>
+Besides, there's only one of the second generation, so a situation like that can't actually happen.
+{PAUSE ""}
+<BR>
+Apparently this side of me is like <STYLE ID="2">Erina</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\キオク\三畳間夕方.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Sakura-san</STYLE> and I sat facing each other in the darkening room.
+{PAUSE ""}
+<BR>
+In another 10 minutes it would be pitch dark.<PG>
+<STYLE ID="5">"Is a room about this size all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes, a three-mat room like this is about the limit. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If the ceiling is low, I can do it in a slightly bigger room. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">When I use my foresight, I always use this room."</STYLE>
+{PAUSE ""}
+<BR>
+The room we had entered was a small one in a corner of the second floor.<PG>
+<STYLE ID="5">"Uh... why do you have precognition like that...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That's... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Mm... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'm sorry, I haven't told anyone this. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So..."</STYLE>
+{PAUSE ""}
+<BR>
+She hasn't told anyone?
+{PAUSE ""}
+<BR>
+That would mean neither <STYLE ID="9">Kotaro-san</STYLE> nor <STYLE ID="3">Kana-chan</STYLE> knows the reason.<PG>
+But from the way she just put it, <STYLE ID="4">Sakura-san</STYLE> seems to know the cause.
+{PAUSE ""}
+<BR>
+Could it be... the blood of <STYLE ID="10">Eiichiro Niimura</STYLE>...?
+{PAUSE ""}
+<BR>
+If so, it would make sense that <STYLE ID="4">Sakura-san</STYLE> became the second generation...
+{PAUSE ""}
+<BR>
+But it's hard to probe any further.
+{PAUSE ""}
+<BR>
+Well, it doesn't matter now anyway.<PG>
+More importantly, <STYLE ID="3">Kana-chan</STYLE> had suggested I talk to <STYLE ID="4">Sakura-san</STYLE> about the revenge too.
+{PAUSE ""}
+<BR>
+It was true: looking into <STYLE ID="4">Sakura-san's</STYLE> eyes, I felt very calm, very soothed...
+{PAUSE ""}
+<BR>
+There was still time before the room went completely dark.<PG>
+<STYLE ID="5">"Uh... earlier, I told </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Why I came here..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Why you came here?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I'm sorry. I lied. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I wasn't traveling alone. I meant to come here from the start."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Thank you. For telling me honestly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE> answered that way, still wearing a smile without a trace of resentment.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, just as </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4"> said, you sometimes looked very sad. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, where have you come from?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"From Motoki-cho, in Sawa Prefecture. My real name is Momoko Goto."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Motoki-cho...?</STYLE>
+{PAUSE ""}
+　<STYLE ID="4">So... that's how it was..."</STYLE>
+{PAUSE ""}
+<BR>
+The smile vanished from <STYLE ID="4">Sakura-san's</STYLE> face.
+{PAUSE ""}
+<BR>
+In its place, a very sad look.<PG>
+<STYLE ID="4">"If I remember correctly, among the victims of the Motoki-cho case was someone named </STYLE><STYLE ID="2">Erina Goto-san</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, could you be..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="5"> is my little sister. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I wanted revenge for my </STYLE><STYLE ID="2">sister</STYLE><STYLE ID="5"> on her </STYLE><STYLE ID="11" RUBY="かたき">enemy</STYLE><STYLE ID="5">, so I came here... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But talking with </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">, I've sorted out my feelings. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> said that if I talked to you too, </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="5">, I might feel even calmer."</STYLE><PG>
+<STYLE ID="4">"Is that so... I'm glad </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4"> could be of help to you, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">And... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I am truly sorry. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Your sister</STYLE><STYLE ID="4">... considering how you must feel about her, </STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">, it is only natural that you came here."</STYLE>
+{PAUSE ""}
+<BR>
+Why is <STYLE ID="4">Sakura-san</STYLE> apologizing?
+{PAUSE ""}
+<BR>
+Apologizing on behalf of the settlement...?<PG>
+<STYLE ID="4">"The root cause of what happened in Motoki-cho is―</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="4">none other than me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+What is she suddenly saying?
+{PAUSE ""}
+<BR>
+Even if she's speaking for the settlement, calling herself the root cause is surely―<PG>
+<STYLE ID="5">"But I know. The one who killed </STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="5"> was </STYLE><STYLE ID="12">Mifuyu Niimura</STYLE><STYLE ID="5">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">The root cause, </STYLE><STYLE ID="12">she</STYLE><STYLE ID="5">―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes, I also know that it was indeed </STYLE><STYLE ID="12">Mifuyu-chan</STYLE><STYLE ID="4"> who did it with her own hands. </STYLE>
+{PAUSE ""}
+<STYLE ID="12">Mifuyu-chan</STYLE><STYLE ID="4"> and her daughter, </STYLE><STYLE ID="13">Haruka-chan</STYLE><STYLE ID="4">, are shut away in the mountains for a while, to escape the public eye."</STYLE><PG>
+Is that the tradition <STYLE ID="3">Kana-chan</STYLE> called the <STYLE ID="14" RUBY="さんろう">mountain seclusion</STYLE> or something?
+{PAUSE ""}
+<BR>
+They can't tell <STYLE ID="3">Kana-chan</STYLE>, young as she is, that they're hiding a murderer, relative or not, so they probably explained it with the tradition as a pretext.<PG>
+<STYLE ID="4">"But... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kana's</STYLE><STYLE ID="4"> older sister, </STYLE><STYLE ID="7">Chigaya</STYLE><STYLE ID="4">... to save her, I... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">The Megasawa City case happened because of that..."</STYLE>
+{PAUSE ""}
+<BR>
+That incident happened in order to save her <STYLE ID="7">daughter</STYLE>?
+{PAUSE ""}
+<BR>
+I can't see any connection at all.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Momoko-san</STYLE><STYLE ID="4">. There is a terrible curse in this settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">A curse that makes you want to kill people."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"You mean―"</STYLE>
+{PAUSE ""}
+<BR>
+The first thing that came to mind was <STYLE ID="3">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+How <STYLE ID="3">Kana-chan</STYLE> would want to kill <STYLE ID="4">Sakura-san</STYLE> one of these days, she'd said.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5"> told me. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="5">, she said she'd probably come to want to kill you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"So </STYLE><STYLE ID="9">Kotaro</STYLE><STYLE ID="4"> had already told </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">In this settlement, a killing that comes about that way is called―"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+At that moment, the sun set completely, and the room was wrapped in darkness.
+{PAUSE ""}
+<BR>
+The foresight... 
+{PAUSE ""}
+was beginning...<PG>
+{MESOFF "500"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\夏菜首絞め.gal" "NORMAL" "#1" "C" "B" "0" "20" "50" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "20" "1000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ頭抱える2.gal" "NORMAL" "#1" "R" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "人物1" "4" "0" "200" "DEC" "WAIT"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="15">"U-uaaaagh!!!!"</STYLE><PG>
+{QUAKESTOP "0"}
+{MESOFF "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\キオク\三畳間夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Suddenly <STYLE ID="4">Sakura-san</STYLE> clutched her head and collapsed.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="5">! What's wrong!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ頭抱える.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Ka... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kana</STYLE><STYLE ID="4">... she's...!"</STYLE>
+{PAUSE ""}
+<BR>
+What on earth is going on...!?
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE>, what's happened to her...!?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just then, the door of the room was opened.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ma... </STYLE><STYLE ID="4">Mama</STYLE><STYLE ID="3">! What's wrong!? Are you okay!?"</STYLE>
+{PAUSE ""}
+<BR>
+It was <STYLE ID="3">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE> ran to <STYLE ID="4">Sakura-san</STYLE> and helped her sit up.
+{PAUSE ""}
+<BR>
+But―<PG>
+<STYLE ID="3">"Uuuh...! What is this...!"</STYLE>
+{PAUSE ""}
+<BR>
+This time it was <STYLE ID="3">Kana-chan</STYLE> who, just like <STYLE ID="4">Sakura-san</STYLE>, hung her head and began breathing hard.<PG>
+<STYLE ID="3"><TXSPS>"Ah... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Gk-k-k-k-k-k-k-k-k-k-k"</STYLE><PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="16">"Ghhk-k-k-k-k-k-k-k-k-k-k-k-k-k-k"</STYLE>
+{QUAKESTOP "100"}
+<PG>
+<TXSPN>The faint light leaking in from the hallway lit up <STYLE ID="3">Kana-chan's</STYLE> eyes.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan's</STYLE> eyes were opened wide and bloodshot, every single blood vessel in them standing out clearly enough to see.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学近い.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Mama</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Ghhk-k-k-k-k-k. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Mama</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="3">die..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\夏菜首絞め.gal" "NORMAL" "#1" "C" "B" "0" "16" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="17">"Dieeeee"</STYLE><PG>
+{PLAYSND "BGM死月編\Slippery_Slope.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{QUAKESTOP "0"}
+{QUAKE "000" "QUAKE" "1" "3" "3" "0" "30"}
+{PLAYSND "SE\bakibaki.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE> leapt at <STYLE ID="4">Sakura-san</STYLE> and squeezed her throat, tighter and tighter.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">, stop it!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+I grabbed <STYLE ID="3">Kana-chan</STYLE> by both shoulders to pull her away.
+{PAUSE ""}
+<BR>
+But she was as strong as a grown man.<PG>
+<STYLE ID="4"><TXSPS>"Uh... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">aaah..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\bakibaki.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="4"><TXSPN>Sakura-san's</STYLE> neck creaked, and <STYLE ID="3">Kana-chan's</STYLE> fingers sank in deeper.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000" "16" "500" "0" "0" "" "0"}
+{MESON "500"}
+{QUAKESTOP "0"}
+Then suddenly <STYLE ID="3">Kana-chan</STYLE> let go, clutched her head, 
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+and writhed around the cramped three-mat room.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\三畳間夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="18"><TXSPS>"Kill meeee!!</STYLE>
+{PAUSE ""}
+<STYLE ID="18">　Hurry and kill meeee!!</STYLE>
+{PAUSE ""}
+<STYLE ID="18">　Ghhk-k-k-k-k-k-k"</STYLE><PG>
+{QUAKESTOP "0"}
+<TXSPN>Now she began begging to be killed.
+{PAUSE ""}
+<BR>
+Could it be... this is the curse that makes you kill people, the one she just mentioned!?<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="5">, hurry, get away!"</STYLE>
+{PAUSE ""}
+<BR>
+But <STYLE ID="4">Sakura-san</STYLE> stayed down on the floor, holding her throat.
+{PAUSE ""}
+<BR>
+I hauled <STYLE ID="4">Sakura-san</STYLE> up by the arm and dragged her out into the hallway.<PG>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+But <STYLE ID="4">Sakura-san's</STYLE> leg was caught in <STYLE ID="3">Kana-chan's</STYLE> grip.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学近い.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="3"><TXSPS>"</STYLE><STYLE ID="5">Momo... ko... san</STYLE><STYLE ID="3">!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Hurry, kill me...!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Shoot me... through the head...!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="4">Mama</STYLE><STYLE ID="3">... is going to die... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Mama</STYLE><STYLE ID="3">... die... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Kill... me...!"</STYLE>
+{QUAKESTOP "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPN>"What are you saying!? There's no way I could..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\夏菜中学横顔怖い.gal" "NORMAL" "17" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="19"><TXSPS>"</STYLE><STYLE ID="15">Mama</STYLE><STYLE ID="19"> is going to diiiiiie!!!"</STYLE><PG>
+{QUAKESTOP "0"}
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-750\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{STOPSND "VOICE" "200" "PASS"}
+{PLAYSND "SE\ガラス割る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "1000" "30"}
+{MESON "500"}
+<TXSPN>No sooner had she stood up than she threw herself against the window and leapt out of the house.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="5">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家庭夜.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I hurriedly looked down, but...
+{PAUSE ""}
+<BR>
+She wasn't there.
+{PAUSE ""}
+<BR>
+The sun had fully set, and all I could see was the garden, lit by a faint glow.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHANGECG "000" "グラフィック\背景\キオク\三畳間夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="9">!"</STYLE>
+{PAUSE ""}
+<BR>
+Just then <STYLE ID="9">Kotaro-san</STYLE> appeared.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="5">Fujino-san</STYLE><STYLE ID="9">! Where's </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="9">!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎うつむき.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "200" "PASS"}
+{MESON "500"}
+Even as he asked, <STYLE ID="9">Kotaro-san</STYLE> rushed to my side and looked down from the window.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Damn! I was too late! </STYLE><STYLE ID="5">Fujino-san</STYLE><STYLE ID="9">! Take care of </STYLE><STYLE ID="4">Sakura</STYLE><STYLE ID="9">!"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{STOPSND "VOICE" "200" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+And then he left the room at once.<PG>
+<STYLE ID="4">Sakura-san</STYLE> and I were left behind in the room.
+{PAUSE ""}
+<BR>
+I don't know what happened, but one thing I can say is that the 'murderous intent' <STYLE ID="3">Kana-chan</STYLE> feared has surfaced.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="5">, are you all right!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.lcm" "REPEAT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Y-yes... </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="4"><TXSPS>Cough, cough...!"</STYLE>
+{QUAKESTOP "0"}
+{PAUSE ""}
+<BR>
+<TXSPN>It seemed she had somehow escaped serious injury.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE> must have had a terrible foresight just before <STYLE ID="3">Kana-chan</STYLE> appeared.
+{PAUSE ""}
+<BR>
+That reaction was anything but normal.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "281" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家庭夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The cherry blossoms danced gracefully through the air, feigning ignorance.
+{PAUSE ""}
+<BR>
+These flowers must know where <STYLE ID="3">Kana-chan</STYLE> has gone.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE>... where did you go...?
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,474 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=17, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1633, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=96, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=132, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=27, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=179, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=14, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2478, target=)
+; Links:
+;    0: TWdLink(count=2100, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<TXSPN>"Stop it!!!"
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+{PLAYSND "明かされた真実.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">Without thinking, I shoved away the table in front of me.</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, listen to me! I'm sorry I hid it! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　But that was so you, </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, wouldn't get worried―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm sorry, I...! I don't know...! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　I don't know who I should trust...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHGVOL "BGM" "700" "1000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="1">I hurried up the stairs to the second floor.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア早い開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\鍵をかける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "SE\haa1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Hah... hah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I went into </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">'s room and locked the door.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\連続ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\連続ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="4">, calm down! Open this door!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, I'm really sorry I kept quiet! But it's dangerous in there!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I sat down in the corner of the room with my ears covered.</STYLE><PG>
+<STYLE ID="1">I know that already...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That I'm overthinking and suspecting the two of them, I know that already...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But being told out of nowhere that the culprit of the Megasawa City case is after me, I can't possibly stay calm.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And on top of that, the one who set it in motion is </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I need a little time to calm down.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "500" "NORMAL" "SKIP"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="1">Just then, the sound of many footsteps came thundering up the stairs.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Natsumi Kogori-san</STYLE><STYLE ID="5">! This is Ise of the Motoki Police Station! I've come to protect </STYLE><STYLE ID="3">you</STYLE><STYLE ID="5">! Open up!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">That policeman</STYLE><STYLE ID="1">'s voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">This man</STYLE><STYLE ID="1">, too, I don't know whether I can trust.</STYLE><PG>
+<STYLE ID="1">Calm down! Breathe! Not shallow breaths, deep breaths!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Remember what </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1"> said! </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1"> told me that because she believed in the strength of my heart!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">How can I betray that!</STYLE><PG>
+<STYLE ID="1">But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">but it seems there's no doubt a terrifying murderer is after me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Staying calm at will when I might be killed is next to impossible.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Against my will, cold sweat ran down my forehead.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It seemed to prove how panicked I was, and my mind was thrown into even more disorder.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The more I screamed at myself in my head to calm down, the more my heart </STYLE><STYLE ID="6" RUBY="おび">cowered</STYLE><STYLE ID="1"> at that scream and covered its ears.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\五島の部屋夜.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Suddenly, everything before my eyes went dark.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "39" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+<STYLE ID="5">"What!? A power cut!? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Hey, somebody go check it out!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">A power cut in the whole house...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At this sudden switch in my five senses, my head and heart cooled down all at once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">As if I had turned into a different person, my body moved at once to grasp the situation around me.</STYLE><PG>
+<STYLE ID="1">I went to the window and reached for the curtain.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\カーテン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\五島家からの外.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">From what I could see outside, it didn't seem that the whole neighborhood had lost power.</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "BGM" "0" "WAIT"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神ハンマー上げる.gal" "NORMAL" "#1" "R" "960" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "人物1" "4" "50" "1000" "DEC" "WAIT"}
+{PLAYSND "SE\ガラス割る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\ガラス割れる.gal" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神ハンマー振りおろし.gal" "NORMAL" "1" "50" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000,人物1,111" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "300" "50"}
+{CREATECG "000" "グラフィック\背景\lcm\死神五島家.lcm" "WAIT" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\立ち絵\人物\死神しゃがみ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\立ち絵\人物\死神.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "1000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\五島の部屋月.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The window glass shattered, and a strong wind, a storm of cherry petals, and moonlight came swirling into the room.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And what came in through the window was a strange figure in large red robes, holding a nata and a metal blunt weapon, and wearing a Noh mask.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wh-who...?"</STYLE><PG>
+{MESOFF "500"}
+{QUAKE "000,人物1" "QUAKE" "1" "5" "5" "0" "30"}
+{PLAYSND "SE\spo_ge_ringmat_taoreru01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKESTOP "500"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢銃.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Ise-san</STYLE><STYLE ID="1"> broke through the door and burst in with his gun raised.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Don't move! Drop your weapons!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\能面横顔3.gal" "NORMAL" "#1" "L" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">The strange figure slowly turned toward </STYLE><STYLE ID="5">Ise-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And without flinching, it walked toward </STYLE><STYLE ID="5">Ise-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Dammiiit!!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\lcm\死神かわす.lcm" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物3,人物2" "1" "100" "0" "0" "" "0"}
+{WAITPLAY "人物1" "CLICK"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Damn...! So it's no good after all...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\能面横顔3.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">The strange figure dodged every bullet and turned toward </STYLE><STYLE ID="5">Ise-san</STYLE><STYLE ID="1"> again.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="STOPMOVIE">
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\五島家リビング思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "14" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"The shinigami isn't human! There's no way they can catch it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">For an instant, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">'s words crossed my mind.</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "50"}
+{CHANGECG "000" "グラフィック\背景\五島の部屋月.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">I see, this strange figure is...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This is the shinigami...!</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\死神鉈振り上げ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">This time the shinigami raised its nata and advanced on </STYLE><STYLE ID="5">Ise-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">"Everyone fall back!</STYLE><STYLE ID="1">　</STYLE><STYLE ID="5">Get the two high-school girls in the hallway somewhere safe!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">Ise-san</STYLE><STYLE ID="1"> fell back into the hallway, and the shinigami matched his pace, closing in on </STYLE><STYLE ID="5">Ise-san</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kogori-san</STYLE><STYLE ID="5">, what are you doing!?</STYLE><STYLE ID="1">　</STYLE><STYLE ID="5">Hurry, get out through the window!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There was no time to think.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">I grabbed the shoes I'd left under the bed and </STYLE><STYLE ID="7" RUBY="のぞ">peered</STYLE><STYLE ID="1"> down from the window.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The shinigami had come in through a second-floor window, and yet there wasn't so much as a ladder.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島家外壁.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">What caught my eye was a rainwater drainpipe.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right now, the wrong thing to do is hesitate.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I dropped my shoes to the ground and, before I could feel afraid, reached for the drainpipe.</STYLE><PG>
+<STYLE ID="3">"Ngh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Don't look down! Keep looking up!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just do the reverse of climbing up!</STYLE><PG>
+<STYLE ID="3">"Whoa!"</STYLE>
+{DELETECG "000" "17!" "500" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3"><TXSPS>"Ugh... nngh..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\五島家庭.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1"><TXSPN>Trying an unfamiliar stunt in a situation like this had been too much after all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I fell from about 2 meters up, and a searing pain shot through my left elbow.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, it's only a sore elbow! It shouldn't get in the way of walking.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\五島家庭赤.gal" "NORMAL" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\五島家庭.gal" "NORMAL" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<TXSPS>"Aaaah...!"
+{QUAKESTOP "500"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPN>Just bending my elbow a little sent a pain through me like being struck by lightning, and all the strength drained from my body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I thought I could walk with an arm injury...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This is... impossible...! How am I supposed to get away...!?</STYLE><PG>
+<STYLE ID="1">And on top of that, an opponent who dodges bullets.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even if I hadn't been hurt, I can't imagine I'd get away.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "700" "0"}
+{MESON "500"}
+<STYLE ID="4">Goto</STYLE><STYLE ID="1">'s house echoed with gunshots.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Spurred on by the gunshots, I put all my strength into my legs.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ngh... kh!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At last the pain in my elbow let me stand, and I began to stagger forward.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">, what's going to happen to them?</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\五島家庭赤.gal" "NORMAL" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\五島家庭.gal" "NORMAL" "15" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Uuugh!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If my arm moved even slightly, the pain was so bad I couldn't stay on my feet.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My legs just wouldn't carry me forward, and I crouched down.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I didn't know whether it was broken, but walking while enduring this pain was hard.</STYLE><PG>
+<STYLE ID="1">But if I stay stuck here, will I become the shinigami's prey?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My head understands, but this is past the limit of what willpower can endure.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\赤い人立ち.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\五島家庭.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">What was that...?</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\赤い人立ち.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Come here."</STYLE><PG>
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{MESOFF "0"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\五島家庭.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Someone was calling me...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It felt so nostalgic... happy, and sad...</STYLE><PG>
+<STYLE ID="1">Was it because that voice had distracted me?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The pain eased slightly, and I looked around.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">No one was there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Could it be my danger sense...?</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\赤い人立ち.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Come on, come here."</STYLE><PG>
+{MESOFF "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{CREATECG "000" "グラフィック\背景\手直し・追加\五島家庭.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Who...?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\追加分\アスファルトゆっくり歩く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Buffeted by the scattering storm of cherry petals and the strong wind, toward where the voice came from, slowly, slowly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島家夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Ngh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The strong wind moved my elbow slightly, and it hurt.</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Kuh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The jolt of each step hurt it even more.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I didn't stop walking.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The one who's calling me... that person, I'm going to see.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{STOPSND "VOICE" "3000" "PASS"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

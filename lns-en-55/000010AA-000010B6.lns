@@ -1,0 +1,901 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=6576, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たきぎ, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=584, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あんど, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふじよしろう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にいむら, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぎのすけ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かいがい, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふじ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たら, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=や, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=10, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごと, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みぞう, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=びこう, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほうじゅん, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=じみ, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=12, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まがわ, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=3, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おうだ, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てだ, unk10=4294967295, unk11=4294967295)
+;   22: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こわいろ, unk10=4294967295, unk11=4294967295)
+;   23: TDecorate(count=21, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おうだ, unk10=4294967295, unk11=4294967295)
+;   24: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しん, unk10=4294967295, unk11=4294967295)
+;   25: TDecorate(count=3, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かんが, unk10=4294967295, unk11=4294967295)
+;   26: TDecorate(count=1, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;   27: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まがわもとよし, unk10=4294967295, unk11=4294967295)
+;   28: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しかわ, unk10=4294967295, unk11=4294967295)
+;   29: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひらまつやすもと, unk10=4294967295, unk11=4294967295)
+;   30: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とがわやすいえ, unk10=4294967295, unk11=4294967295)
+;   31: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とりで, unk10=4294967295, unk11=4294967295)
+;   32: TDecorate(count=9, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たるはざま, unk10=4294967295, unk11=4294967295)
+;   33: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さきぞなえ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7893, target=)
+; Links:
+;    0: TWdLink(count=7279, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―The smell of burning <STYLE ID="1" RUBY="たきぎ">firewood</STYLE>.
+{PAUSE ""}
+<BR>
+And a warm room.
+{PAUSE ""}
+<BR>
+Even before I opened my eyes, I knew I was inside somebody's house.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\囲炉裏2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I... 
+{PAUSE ""}
+that's right, that giant creature sent me flying.
+{PAUSE ""}
+<BR>
+Thinking back now, it does look like a boar, but a boar that far off the scale...
+{PAUSE ""}
+<BR>
+It must've just been a landslide that sent a giant boulder rolling down.<PG>
+"Oh, you've come to."
+{PAUSE ""}
+<BR>
+It was a man's voice.
+{PAUSE ""}
+<BR>
+Not old exactly, but likely a good deal older than me.
+{PAUSE ""}
+<BR>
+But... there was something off about the way he talked.
+{PAUSE ""}
+<BR>
+Somehow, for the language of Japan, the rise and fall of it sounded wrong...<PG>
+"Ah, and you don't seem to have any serious injuries."
+{PAUSE ""}
+<BR>
+Who was he? This man...
+{PAUSE ""}
+<BR>
+A Westerner had once come to call on my lord, and this man looked a lot like him.
+{PAUSE ""}
+<BR>
+His clothes were like ours, but his face and build were clearly different.
+{PAUSE ""}
+<BR>
+No, more important than that, there seemed no doubt he was the one who'd saved me.
+{PAUSE ""}
+<BR>
+First, I had to thank him.<PG>
+<STYLE ID="2">"Um, it seems you've helped me... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm much obliged..."</STYLE>
+{PAUSE ""}
+<BR>
+When I sat up and straightened myself, the Westerner looked even more <STYLE ID="3" RUBY="あんど">relieved</STYLE>.
+{PAUSE ""}
+<BR>
+"Hah hah hah! <STYLE ID="2">Traveler</STYLE>, this is a remote land where people hardly ever come. 
+{PAUSE ""}
+Please rest here well before you set off."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ah, that's truly more than I deserve... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh, forgive me for not introducing myself sooner. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm called </STYLE><STYLE ID="4" RUBY="ふじよしろう">Fujiyoshiro</STYLE><STYLE ID="2">."</STYLE><PG>
+"I am called <STYLE ID="5" RUBY="にいむら">Ginosuke</STYLE> <STYLE ID="6" RUBY="ぎのすけ">Niimura</STYLE>. I am the one who serves as this village's doctor. 
+{PAUSE ""}
+Ah, yes."
+{PAUSE ""}
+<BR>
+The Westerner who called himself Ginosuke turned toward the next room.
+{PAUSE ""}
+<BR>
+"Clientes para trazer uma refeicao."
+{PAUSE ""}
+<BR>
+Ginosuke, speaking words I couldn't make out.
+{PAUSE ""}
+<BR>
+His name might be Japanese, but was he a Westerner after all?<PG>
+Then a woman came in from the next room.
+{PAUSE ""}
+<BR>
+"Oh, you've come to. You slept the whole night through!
+{PAUSE ""}
+　I'll get your meal ready right away."
+{PAUSE ""}
+<BR>
+The woman speaking to me so <STYLE ID="7" RUBY="かいがい">attentively</STYLE> was Japanese, any way you looked at it.
+{PAUSE ""}
+<BR>
+A village where Westerners and Japanese lived together―where on earth was this?<PG>
+<STYLE ID="2">"Um, Ginosuke-dono, what kind of village is this...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Hah hah hah! So you do find it strange!"
+{PAUSE ""}
+<BR>
+He seemed to know full well that this village was a strange place.
+{PAUSE ""}
+<BR>
+And without seeming to mind it in particular―<PG>
+"<STYLE ID="8" RUBY="ふじ">Fuji</STYLE><STYLE ID="2">-dono</STYLE>, this is a village called Arata. 
+{PAUSE ""}
+A remote land dozens of ri from where people live. 
+{PAUSE ""}
+For hundreds of years it has been an isolated village with almost no contact with the outside world."<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\和ぴあの２.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHGVOL "SE" "0" "3000" "PASS"}
+{PLAYMOVIE "山桜夜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Hundreds of years ago, caught up in the war between the Emperor and the <STYLE ID="9" RUBY="たら">Tara</STYLE> clan, <STYLE ID="10" RUBY="や">a </STYLE><STYLE ID="11">personage </STYLE><STYLE ID="12" RUBY="ごと">of </STYLE><STYLE ID="13" RUBY="な">the highest </STYLE><STYLE ID="11">birth</STYLE> fled to this land, and that was the beginning.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">He</STYLE> is said to have been trying to flee to the Eastern Capital, but along the way he was <STYLE ID="14" RUBY="ひ">drawn</STYLE> to this land and stayed here.
+{PAUSE ""}
+<BR>
+The beasts here are all large, and food is plentiful.
+{PAUSE ""}
+<BR>
+For those who would live quietly, it is like a paradise.<PG>
+And so this village has a side that is closed to outsiders.
+{PAUSE ""}
+<BR>
+We accept no daimyo's men whatsoever, and belong to no domain.
+{PAUSE ""}
+<BR>
+If anyone attacks by force, we unite as one and drive them off.
+{PAUSE ""}
+<BR>
+That is this village of Arata.<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\エデン\囲炉裏2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Then why were you good enough to take me in? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I'm from the outside world too..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Fuji-dono</STYLE>, you are a traveler, are you not?
+{PAUSE ""}
+　This village is not so heartless as to abandon someone passing through. 
+{PAUSE ""}
+In fact, I too collapsed here 10 years ago, and was saved by the people of this village. 
+{PAUSE ""}
+So it is only right that I help you, <STYLE ID="2">Fuji-dono</STYLE>. 
+{PAUSE ""}
+One for all, all for one. 
+{PAUSE ""}
+That is how this village has survived until now, quietly, and yet with strength."<PG>
+<STYLE ID="2">"Ginosuke-dono, you did say you came here 10 years ago... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">so you're from the West after all?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, I came here from the West. 
+{PAUSE ""}
+However, in the Eastern Capital, where we drifted ashore, foreigners like us were not welcome, it seems..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Drifted ashore... meaning?"</STYLE><PG>
+"We had been entrusted with running a colony far from our Western homeland. 
+{PAUSE ""}
+But an <STYLE ID="15" RUBY="みぞう">unheard-of</STYLE> disaster struck there, and we fled by ship with only the clothes on our backs. Where we washed up was near this country's Eastern Capital."
+{PAUSE ""}
+<BR>
+And so Ginosuke-dono had put down roots in this land, changed his name to a Japanese-style one, and lived here like this, at home in the village.<PG>
+But I had no intention of doing anything like that.
+{PAUSE ""}
+<BR>
+I had to get my hands on strength-giving food fast and go back to Owari.
+{PAUSE ""}
+<BR>
+There was no time left.<PG>
+"I am not the only Westerner who made it here. About 20 of us are now in this village's care. 
+{PAUSE ""}
+All of them have grown quite used to life here, and their names have become Japanese-style too."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Um, Ginosuke-dono, I hate to say this after you've looked after me, but I'm in a hurry, so―"</STYLE>
+{PAUSE ""}
+<BR>
+Just then, the woman from before came into the room.<PG>
+"<STYLE ID="2">Fuji-sama</STYLE>, sorry to keep you waiting. Eat this, and you'll be well again in no time."
+{PAUSE ""}
+<BR>
+The meal she set out looked like some kind of roasted game.
+{PAUSE ""}
+<BR>
+Was this boar meat?
+{PAUSE ""}
+<BR>
+I was in a hurry, but... I put a piece in my mouth.<PG>
+I knew it before the meat even touched my mouth.
+{PAUSE ""}
+<BR>
+The aroma that tickled my <STYLE ID="16" RUBY="びこう">nostrils</STYLE> was far too <STYLE ID="17" RUBY="ほうじゅん">rich</STYLE> for boar meat.
+{PAUSE ""}
+<BR>
+In my mouth, it was soft as a cloud.
+{PAUSE ""}
+<BR>
+So good it seemed a waste to swallow: a powerful <STYLE ID="18" RUBY="じみ">savor</STYLE> that filled my whole mouth.
+{PAUSE ""}
+<BR>
+Even the choicest meat my lord had once let me eat came nowhere near this boar meat.<PG>
+It was boar meat, sure enough.
+{PAUSE ""}
+<BR>
+But it was a completely different food from the boar I knew.
+{PAUSE ""}
+<BR>
+And besides tasting good, it seemed to be restorative too, as if strength were surging through my whole body.<PG>
+<STYLE ID="2">"This meat, what on earth...!"</STYLE>
+{PAUSE ""}
+<BR>
+"I thought it would surprise you!
+{PAUSE ""}
+　It is a giant boar that can only be caught around here. 
+{PAUSE ""}
+The beasts around here are big, and delicious. 
+{PAUSE ""}
+I understand well how the <STYLE ID="11">village's founder</STYLE> felt, putting down roots in this land long ago."
+{PAUSE ""}
+<BR>
+I see, so what slammed into me really was a boar.<PG>
+Makes sense. It's enough to make you sorry to leave this land.
+{PAUSE ""}
+<BR>
+In a land swarming with things like this, you could surely live healthy days and a long life, too.<PG>
+But this isn't what I'm after.
+{PAUSE ""}
+<BR>
+Sure, it's tasty and it'd build up your stamina, but I'm not looking for health food.
+{PAUSE ""}
+<BR>
+I need a strength-giving food that can beat <STYLE ID="19" RUBY="まがわ">Magawa</STYLE> for certain.<PG>
+But if boars that huge live here, maybe there's some secret I've never heard of.
+{PAUSE ""}
+<BR>
+If what I'm looking for is in this land...<PG>
+<STYLE ID="2">"Ginosuke-dono, why are there such big beasts in these mountains? Is there some secret after all?"</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm, who can say... 
+{PAUSE ""}
+I thought it was simply that this land is fertile... 
+{PAUSE ""}
+but lately I have begun to think that may not be all there is to it. 
+{PAUSE ""}
+Ah, I am a doctor. 
+{PAUSE ""}
+So I study the ecology of the animals and plants around here as well."<PG>
+Ginosuke-dono scratched his head, laughing.
+{PAUSE ""}
+<BR>
+Ginosuke-dono, a doctor.
+{PAUSE ""}
+<BR>
+A man with the West's culture of the mind and a learning in biology wasn't someone you came across very often.
+{PAUSE ""}
+<BR>
+This man, maybe he could...<PG>
+<STYLE ID="2">"Ginosuke-dono, there's something important I need to ask you."</STYLE>
+{PAUSE ""}
+<BR>
+I knelt, put both hands on the floor and faced Ginosuke-dono.
+{PAUSE ""}
+<BR>
+"Wh-what is the matter, <STYLE ID="2">Fuji-dono</STYLE>... Please, sit at ease."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The truth is, I'm the kitchen steward of the </STYLE><STYLE ID="20" RUBY="おうだ">Ouda</STYLE><STYLE ID="2"> house. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Please... please, I want you to help the Ouda house!"</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\雪山.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―I told Ginosuke-dono how I'd come to be here.
+{PAUSE ""}
+<BR>
+Why I served my lord.
+{PAUSE ""}
+<BR>
+What <STYLE ID="19" RUBY="まがわ">Magawa</STYLE> was up to.
+{PAUSE ""}
+<BR>
+What I'd been feeling all the way here.
+{PAUSE ""}
+<BR>
+I'd also wondered whether telling Ginosuke-dono all this might be dangerous.<PG>
+After all, the people here lived cut off from the world.
+{PAUSE ""}
+<BR>
+And whatever daimyo or landholder attacked them, they drove him off.
+{PAUSE ""}
+<BR>
+It had to be a settlement full of real <STYLE ID="21" RUBY="てだ">veterans</STYLE>.
+{PAUSE ""}
+<BR>
+If things went wrong, I might be taken for an invader from outside too, and...<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\囲炉裏2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="2">Fuji-dono</STYLE>, please, sit at ease. 
+{PAUSE ""}
+I understand well what you were feeling when you came here."
+{PAUSE ""}
+<BR>
+Ginosuke-dono's calm <STYLE ID="22" RUBY="こわいろ">tone of voice</STYLE> hadn't changed.
+{PAUSE ""}
+<BR>
+And I had said what I thought honestly, without any maneuvering.<PG>
+Now we're facing each other, heart to heart, head-on.
+{PAUSE ""}
+<BR>
+Will Ginosuke-dono answer what I feel?
+{PAUSE ""}
+<BR>
+Is what I want here in this land?<PG>
+"Traga as drogas."
+{PAUSE ""}
+<BR>
+Ginosuke-dono speaks to the woman in the Western tongue, and she walks straight out of the room.
+{PAUSE ""}
+<BR>
+He sent her out of the room. Does that mean he's about to talk about something important?<PG>
+"<STYLE ID="2">Fuji-dono</STYLE>... 
+{PAUSE ""}
+I regard your coming here―
+{PAUSE ""}
+with great wariness."
+{PAUSE ""}
+<BR>
+Without changing his <STYLE ID="22" RUBY="こわいろ">tone of voice</STYLE>, Ginosuke-dono looks at me with sharp eyes.
+{PAUSE ""}
+<BR>
+From those blue eyes comes a gaze so keen it sees right through to my heart.
+{PAUSE ""}
+<BR>
+But I'm not hiding anything.
+{PAUSE ""}
+<BR>
+But it's precisely because I'm not hiding anything that he's wary of me.<PG>
+"<STYLE ID="2">You</STYLE> want to protect the <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> house no matter what. That is what you think, is it not?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes, that's right."</STYLE>
+{PAUSE ""}
+<BR>
+"If I refused that request, what would you do?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"Would <STYLE ID="2">you</STYLE> just go home?"<PG>
+If I'm driven off from here...?
+{PAUSE ""}
+<BR>
+What would I do then, he's asking?
+{PAUSE ""}
+<BR>
+What does this mean...
+{PAUSE ""}
+<BR>
+If I'm driven off...
+{PAUSE ""}
+<BR>
+That means giving up on the food here, and on the secret of its strength...<PG>
+I see... if I'm driven off, I'll want the secret of this land's strength, whatever it takes.
+{PAUSE ""}
+<BR>
+And if I report that to my lord... 
+{PAUSE ""}
+this is my lord we're talking about.
+{PAUSE ""}
+<BR>
+A settlement with a Western doctor, giant beasts, and a record of holding off every invasion.
+{PAUSE ""}
+<BR>
+There's no way my lord wouldn't be interested.
+{PAUSE ""}
+<BR>
+He might even invade this land.<PG>
+In other words, what Ginosuke-dono is saying is―
+{PAUSE ""}
+<BR>
+・Meekly reveal the secret of their strength to us
+{PAUSE ""}
+<BR>
+・Go to war with us
+{PAUSE ""}
+<BR>
+He's saying only these two choices are left.
+{PAUSE ""}
+<BR>
+No, there's one more choice.
+{PAUSE ""}
+<BR>
+Killing me right here...!<PG>
+―For a while, only silence rings "<STYLE ID="24" RUBY="しん">forest</STYLE>"-quiet through this room.
+{PAUSE ""}
+<BR>
+Ginosuke-dono stares at me, without shifting his posture or his gaze.
+{PAUSE ""}
+<BR>
+A cold sweat runs down my forehead.
+{PAUSE ""}
+<BR>
+Now... what do I do?
+{PAUSE ""}
+<BR>
+What should I...!?<PG>
+"Excuse me."
+{PAUSE ""}
+<BR>
+It's the voice of that woman.
+{PAUSE ""}
+<BR>
+At the same moment, Ginosuke-dono and I both shift slightly, as if to loosen up.
+{PAUSE ""}
+<BR>
+The tense air eases, just barely.<PG>
+She seems to be holding something.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\ドローガ瓶.gal" "NORMAL" "#1" "650" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That's a Western vessel called glass, if I remember right.
+{PAUSE ""}
+<BR>
+Inside it are a number of pink lumps, like ice.
+{PAUSE ""}
+<BR>
+Ginosuke-dono takes the vessel and speaks, gazing at it.<PG>
+"<STYLE ID="2">Fuji-dono</STYLE>... 
+{PAUSE ""}
+if <STYLE ID="2">you</STYLE> had lied, or spoken in a way that tried to sound out my intentions―
+{PAUSE ""}
+by now, <STYLE ID="2">you</STYLE> would be dead."
+{PAUSE ""}
+<BR>
+And then, a number of footsteps, moving away from the house.<PG>
+Only now do I realize it.
+{PAUSE ""}
+<BR>
+This house has been surrounded by the people who live here.
+{PAUSE ""}
+<BR>
+If I'd tried anything funny...<PG>
+Ginosuke-dono sets the glass vessel down in front of me.
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">You</STYLE> told me honestly what was in your heart, without any maneuvering. 
+{PAUSE ""}
+I am sure you understand well what danger that carries. 
+{PAUSE ""}
+That is why I have decided to trust <STYLE ID="2">you</STYLE>. 
+{PAUSE ""}
+Coming all this way alone, so lightly equipped, must have been very hard. 
+{PAUSE ""}
+<STYLE ID="2">Fuji-dono</STYLE>, you want, purely and simply, to protect the <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> house."<PG>
+Ginosuke-dono's eyes have gone gentle again.
+{PAUSE ""}
+<BR>
+Does he really mean to trust me after just this one exchange?<PG>
+"Besides, I have heard on the wind that the lord of Ouda is called a fool, yet carries out bold, innovative rule, and takes a great interest in Western culture as well. 
+{PAUSE ""}
+So rather than <STYLE ID="19" RUBY="まがわ">Magawa</STYLE>, I would like to see the lord of Ouda prosper. That is how I feel."<PG>
+<STYLE ID="2">"W-wait just a moment, Ginosuke-dono! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　You say you'll trust me after </STYLE><STYLE ID="25" RUBY="かんが">weighing</STYLE><STYLE ID="2"> my words and the political situation, and I'm truly glad! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　But isn't that far too trusting...? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　What would you do if I were outfoxing you and </STYLE><STYLE ID="26" RUBY="だま">deceiving</STYLE><STYLE ID="2"> you...!?"</STYLE><PG>
+"<STYLE ID="2">You</STYLE> said you want to rise as far as you can, all the way to the top. 
+{PAUSE ""}
+Do you know what it takes to do that?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What it takes to rise...?"</STYLE><PG>
+"Military might, power, and... 
+{PAUSE ""}
+people. 
+{PAUSE ""}
+Force and power and money only take on meaning when there are people. 
+{PAUSE ""}
+If <STYLE ID="2">you</STYLE> make enemies everywhere, the road to rising will close in no time. 
+{PAUSE ""}
+Surely you understand that, <STYLE ID="2">Fuji-dono</STYLE>, having been entrusted with the post of kitchen steward?"
+{PAUSE ""}
+<BR>
+Honestly, hearing that doesn't really click for me.<PG>
+Sure, I think people matter.
+{PAUSE ""}
+<BR>
+No matter how great a warrior a man is, he can't literally be one man worth a thousand.
+{PAUSE ""}
+<BR>
+I know full well you need the numbers and the comrades to match.
+{PAUSE ""}
+<BR>
+And that's not just in war. You need people for anything at all.<PG>
+"Here in the land of Arata, there is a saying handed down from the <STYLE ID="11">founder</STYLE>. 
+{PAUSE ""}
+One for all, all for one. 
+{PAUSE ""}
+I was told it when I came here 10 years ago, and it holds true for insects and animals as well. 
+{PAUSE ""}
+That to work so that the one may live, so that all may live, is the very path by which one lives oneself."<PG>
+"<STYLE ID="2">Fuji-dono</STYLE>, <STYLE ID="2">you</STYLE> know how to move people. 
+{PAUSE ""}
+No, even if you have not realized it yet, <STYLE ID="2">you</STYLE> have a gift for moving people, for moving their hearts. 
+{PAUSE ""}
+Surely you can see people's hearts, hear them and answer them, well enough to move this whole country."<PG>
+<STYLE ID="2">"No way, me? Like that―"</STYLE>
+{PAUSE ""}
+<BR>
+"But if that is not so, <STYLE ID="2">you</STYLE> will never rise, will you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You're right, that's true..."</STYLE>
+{PAUSE ""}
+<BR>
+"That you collapsed here, <STYLE ID="2">Fuji-dono</STYLE>, was surely the will of God. 
+{PAUSE ""}
+That is what I believe."
+{PAUSE ""}
+<BR>
+With that, Ginosuke-dono picks up the jar.<PG>
+"In here are about 10 crystals of a drug called Droga, made from this land's cherry trees. 
+{PAUSE ""}
+Just before the battle, heat this over a fire and have your soldiers breathe in the smoke. 
+{PAUSE ""}
+It has no smell. One crystal is enough for 1,000 men. 
+{PAUSE ""}
+And end the battle within an hour. The drug's effect lasts about an hour. 
+{PAUSE ""}
+With this, every one of your soldiers will gain the strength of demon warriors."<PG>
+<STYLE ID="2">"The strength of demon warriors...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Please, use this for the realm. 
+{PAUSE ""}
+I entrust it not to the <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> house, but to you, <STYLE ID="2">Fuji-dono</STYLE>. 
+{PAUSE ""}
+If it is <STYLE ID="2">you</STYLE>, then surely..."<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―I stayed in their care for one more night only, and left Arata.
+{PAUSE ""}
+<BR>
+Added to my usual light kit were a few days' food and this unknown drug called Droga.
+{PAUSE ""}
+<BR>
+With this... with this, the <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> house would be saved.
+{PAUSE ""}
+<BR>
+But there was a condition.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "山桜夜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Never speak of this land to anyone else.
+{PAUSE ""}
+<BR>
+Not even to my lord. Never let a word of it out.
+{PAUSE ""}
+<BR>
+If I should ever break that promise...<PG>
+I know.
+{PAUSE ""}
+<BR>
+A settlement where only about 100 people live has a history of turning back every invasion so far.
+{PAUSE ""}
+<BR>
+Making an enemy of this land would probably be trouble, even if not as bad as <STYLE ID="19" RUBY="まがわ">Magawa</STYLE>.
+{PAUSE ""}
+<BR>
+Besides, Ginosuke-dono trusted me and entrusted this to me.
+{PAUSE ""}
+<BR>
+Going against a debt like that isn't my way.<PG>
+In this jar are about 10 crystals of a drug called whatever-it-was.
+{PAUSE ""}
+<BR>
+In the coming battle with <STYLE ID="19" RUBY="まがわ">Magawa</STYLE>, I'll probably use two or so.
+{PAUSE ""}
+<BR>
+Now... how to make use of the rest.
+{PAUSE ""}
+<BR>
+That'll be the test of how far I can go.<PG>
+And then there's how to report to my lord.
+{PAUSE ""}
+<BR>
+I didn't find what I was after, but maybe I'll tell him <STYLE ID="19" RUBY="まがわ">Magawa</STYLE> is making suspicious moves.
+{PAUSE ""}
+<BR>
+That's worthwhile information, and he'll be able to prepare ahead.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\箱からの脱出.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+―Shiyo 310, June 12.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\桶狭間1.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Word has come from Hokichi that <STYLE ID="27" RUBY="まがわもとよし">Motoyoshi Magawa</STYLE> is heading for the Western Capital.
+{PAUSE ""}
+<BR>
+But something is definitely off.
+{PAUSE ""}
+<BR>
+Moving with more than 20,000 soldiers in tow―
+{PAUSE ""}
+that's as good as Magawa's entire army.
+{PAUSE ""}
+<BR>
+Even if it's to meet the Emperor, isn't that a force all set for war...?<PG>
+And he's even called on the <STYLE ID="28" RUBY="しかわ">Shikawa</STYLE> region's <STYLE ID="29" RUBY="ひらまつやすもと">Yasumoto Hiramatsu</STYLE> (later <STYLE ID="30" RUBY="とがわやすいえ">Yasuie Togawa</STYLE>) to join him. It's a full mobilization, no question.
+{PAUSE ""}
+<BR>
+No―this is an invasion of Ouda...!<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYMOVIE "炎.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n200\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\エデン\いくさ半透明.gal" "NORMAL" "30" "200" "480" "270" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―10 a.m.
+{PAUSE ""}
+<BR>
+Yasumoto Hiramatsu's troops attack the <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> house's <STYLE ID="31" RUBY="とりで">forts</STYLE> one after another, and the Ouda army defending them is wiped out.
+{PAUSE ""}
+<BR>
+But it buys time for the Ouda main force to head to <STYLE ID="32" RUBY="たるはざま">Taruhazama</STYLE>.
+{PAUSE ""}
+<BR>
+The Ouda strength that remains: about 2,000.
+{PAUSE ""}
+<BR>
+To close this ten-to-one gap in strength, it'll have to be...<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\ドローガ瓶.gal" "NORMAL" "#1" "650" "B" "200" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This stuff is used by heating it over a fire.
+{PAUSE ""}
+<BR>
+And the effect lasts about an hour.
+{PAUSE ""}
+<BR>
+I haven't even told my lord that I got this drug.
+{PAUSE ""}
+<BR>
+It was me Ginosuke-dono gave it to.
+{PAUSE ""}
+<BR>
+I'll use it for my own sake alone.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+<EVENT VALUE="STOPMOVIE">
+{DELETECG "000,アイテム1" "30" "0" "480" "270" "" "0"}
+{MESON "500"}
+―1 p.m., the land of <STYLE ID="32" RUBY="たるはざま">Taruhazama</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\桶狭間1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\桶狭間雨.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> army's 2,000 soldiers have assembled.
+{PAUSE ""}
+<BR>
+The sky's been looking threatening for a while now, and the wind has picked up.
+{PAUSE ""}
+<BR>
+If it rains, I won't be able to use the drug.
+{PAUSE ""}
+<BR>
+My lord probably means to let a downpour drown out the horses' hoofbeats and launch a surprise attack.
+{PAUSE ""}
+<BR>
+All right, it's time.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYMOVIE "ドローガあぶり.wmv" "256" "C" "C" "NORMAL" "FALSE" "0" "255"}
+{WAITPLAY "ムービー" "CLICK"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\桶狭間雨.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Hidden in the grass, I start a fire and send the smoke of the heated drug from upwind to the <STYLE ID="23" RUBY="おうだ">Ouda</STYLE> main force.
+{PAUSE ""}
+<BR>
+Now, well? How about it?
+{PAUSE ""}
+<BR>
+With this, they get the strength of demon warriors, right?<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\雷雨.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "5000" "PASS"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "エデンの桜\弔い合戦.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+And then, at last, a downpour begins over <STYLE ID="32" RUBY="たるはざま">Taruhazama</STYLE>.
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\おたけび.ogg" "VOICE" "NORMAL" "1000" "0"}
+At the same moment, war cries ring out from the main force's <STYLE ID="33" RUBY="さきぞなえ">vanguard</STYLE>.
+{PAUSE ""}
+<BR>
+Looks like the charge has finally begun.
+{PAUSE ""}
+<BR>
+I'm the food man, so I won't fight in the battle myself, but I've just delivered them the finest feast there is.
+{PAUSE ""}
+<BR>
+Now do it... do it, my demon warriors!<PG>
+The hoofbeats of horses bearing down on the Taruhazama lowland, and the war cries of the foot soldiers.
+{PAUSE ""}
+<BR>
+I'm literally watching from on high.
+{PAUSE ""}
+<BR>
+Just as planned from the start, the Magawa army has been held up by the merchants I arranged, and is resting.
+{PAUSE ""}
+<BR>
+Hit them there by surprise, and the fight should go our way at first.
+{PAUSE ""}
+<BR>
+But even so, overturning a ten-to-one gap in strength is hard.
+{PAUSE ""}
+<BR>
+The rest is―trusting Ginosuke-dono.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\桶狭間絵巻.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―I can't believe my own eyes.
+{PAUSE ""}
+<BR>
+The foot soldiers leap some eight shaku into the air and race past as fast as horses.
+{PAUSE ""}
+<BR>
+The mounted soldiers, too, move in a way you'd never think human.
+{PAUSE ""}
+<BR>
+Before the 2,000 demon warriors who have appeared in front of them, 20,000 ordinary soldiers quake in fear.
+{PAUSE ""}
+<BR>
+And the Ouda soldiers, feeling their own unbelievable strength, grow all the more fired up.<PG>
+Truly, one man worth a thousand.
+{PAUSE ""}
+<BR>
+A single soldier cuts down dozens, one after another, and they drive toward the enemy's headquarters in the blink of an eye.
+{PAUSE ""}
+<BR>
+Ginosuke-dono, this really is an amazing drug...!
+{PAUSE ""}
+<BR>
+It works better than I ever imagined!<PG>
+Not to be outdone by the downpour pounding Taruhazama, I let out a roar of wild joy.
+{PAUSE ""}
+<BR>
+How could I not shout?
+{PAUSE ""}
+<BR>
+I've gotten my hands on an invincible drug.
+{PAUSE ""}
+<BR>
+As long as I have this, the Ouda house won't lose to any enemy!
+{PAUSE ""}
+<BR>
+There's nothing left for me to fear!<PG>
+Magawa's fall is already in sight.
+{PAUSE ""}
+<BR>
+What's in my head now is who on earth will take over once my lord, who makes enemies so easily, is gone―
+{PAUSE ""}
+<BR>
+Obviously, it'll be the man who's kept earning merit at my lord's side!
+{PAUSE ""}
+<BR>
+I'll leave the villain's part to my lord, and after that, I'll rule the realm.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "SE2" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\桶狭間雨.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―By the time the downpour eased, Magawa was already effectively finished.
+{PAUSE ""}
+<BR>
+The resistance against Magawa, which had seemed reckless, ended in victory for Ouda.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

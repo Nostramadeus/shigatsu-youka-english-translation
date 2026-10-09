@@ -1,0 +1,600 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4003, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=324, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=50, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=160, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=30, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=18, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はい, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=40, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=10, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=12, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=42, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5141, target=)
+; Links:
+;    0: TWdLink(count=4700, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\春の山.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\女神\集落全景.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Heeey!<STYLE ID="1"> Chigaya-chaaan</STYLE>!"
+{PAUSE ""}
+<BR>
+"Where are yooou!?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1朝.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Siiis</STYLE><STYLE ID="2">! Come ooout!"</STYLE>
+{PAUSE ""}
+<BR>
+"Everyone's worried about yooou!"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家昼.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Heeey!"
+{PAUSE ""}
+<BR>
+"Where are you hiiiding!?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋昼.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋天井昼.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+April 7, morning―.
+{PAUSE ""}
+<BR>
+Someone, and then a whole crowd of people, were shouting all over.
+{PAUSE ""}
+<BR>
+Just as I'd expected, everyone seemed to have started searching for me.
+{PAUSE ""}
+<BR>
+I think they're probably voices calling for me.<PG>
+I had cut strips from my clothes with the knife and stuffed them in my ears.
+{PAUSE ""}
+<BR>
+That way, I send no sound to <STYLE ID="3">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+In other words, my location stays unknown.
+{PAUSE ""}
+<BR>
+In other words... I still can't move.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\地下に突然できたトンネル.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\エデン\栄一郎白装束.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Yesterday I learned firsthand the terror of the soldiers of death under <STYLE ID="3">Shigatsu Youka</STYLE>'s control.
+{PAUSE ""}
+<BR>
+Even if <STYLE ID="2">Kana</STYLE> or I stood up to them, they weren't opponents we could do anything about.
+{PAUSE ""}
+<BR>
+It was the same state as using Droga, <STYLE ID="4">Mom</STYLE> had said.<PG>
+So I mustn't even think of resisting them.
+{PAUSE ""}
+<BR>
+And on top of that, they can't die. We're hopelessly outmatched.
+{PAUSE ""}
+<BR>
+I feel bad for everyone out searching, but all I can do is hide here and let it pass.
+{PAUSE ""}
+<BR>
+I have to stay hidden here until night comes again.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋天井昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Actually, I'd already made a plan last night.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Shigatsu Youka</STYLE> can hijack my five senses, but it can't read my thoughts.
+{PAUSE ""}
+<BR>
+Couldn't this, perhaps, be turned around and used as a way of keeping <STYLE ID="3">Shigatsu Youka</STYLE> <STYLE ID="5" RUBY="だま">deceived</STYLE>?
+{PAUSE ""}
+<BR>
+That is, that is―I will pretend to have gone mad.<PG>
+I'll wander the settlement in a daze, letting out a stream of mutterings that cozy up to <STYLE ID="3">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I can't beat </STYLE><STYLE ID="3">Shigatsu Youka</STYLE><STYLE ID="1">. So everyone should surrender to </STYLE><STYLE ID="3">Shigatsu Youka</STYLE><STYLE ID="1">,"</STYLE><STYLE ID="6"> and so on.</STYLE>
+{PAUSE ""}
+<BR>
+I'll mumble it as if mentally worn down.
+{PAUSE ""}
+<BR>
+At the very least, through my hearing, I can let <STYLE ID="3">Shigatsu Youka</STYLE> hear my voice.<PG>
+<STYLE ID="6">And </STYLE><STYLE ID="3">Shigatsu Youka</STYLE>, for its part, must want a living human spy.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Shigatsu Youka</STYLE>'s goal is probably to cover this settlement in fruiting bodies once again.
+{PAUSE ""}
+<BR>
+That way, an ecosystem forms around the fruiting bodies, and mammals that can be made into <STYLE ID="7" RUBY="はい">embryos</STYLE> are drawn in too.
+{PAUSE ""}
+<BR>
+It's not only humans that can be made into <STYLE ID="7" RUBY="はい">embryos</STYLE>, but other wild creatures as well.<PG>
+But to become an <STYLE ID="7" RUBY="はい">embryo</STYLE>, you have to use Droga or be bathed in the blood of someone who has―
+{PAUSE ""}
+in other words, it seems you have to become the first or second generation.
+{PAUSE ""}
+<BR>
+What I can do is let them hear the words
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Let's all become cherry trees!"</STYLE>
+{PAUSE ""}
+<BR>
+and so, quite naturally, get everyone to evacuate the settlement.<PG>
+It would be effective if I could let <STYLE ID="8">Dad</STYLE> hear my act.
+{PAUSE ""}
+<BR>
+He would grasp its meaning at once―
+{PAUSE ""}
+though not, probably, whether the madness is an act―
+{PAUSE ""}
+and get everyone out of the settlement.
+{PAUSE ""}
+<BR>
+If I can, I must keep my own eyes and ears from taking in that evacuation or the decision behind it.
+{PAUSE ""}
+<BR>
+If <STYLE ID="3">Shigatsu Youka</STYLE> learned that everyone was evacuating, who knows what it would do...<PG>
+The problem is whether something like this can keep <STYLE ID="3">Shigatsu Youka</STYLE> <STYLE ID="5" RUBY="だま">deceived</STYLE> to the end.
+{PAUSE ""}
+<BR>
+So, to raise the odds of success even a little, I'll start the game of bluff right now, from this moment.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋昼内部.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"I can't... I just can't... there's no getting away..."</STYLE>
+{PAUSE ""}
+<BR>
+I mumbled it to myself.
+{PAUSE ""}
+<BR>
+Even with the earplugs in, I could hear my own voice clearly.<PG>
+<STYLE ID="1">"What do I do... maybe I should stop resisting..."</STYLE>
+{PAUSE ""}
+<BR>
+At first, I'll voice feeble complaints like this.
+{PAUSE ""}
+<BR>
+Then, taking my time, I'll gradually turn them into words of surrender to <STYLE ID="3">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+That will seem more natural than suddenly announcing I'm on its side.
+{PAUSE ""}
+<BR>
+Even so, I can't let it know where I am right now.<PG>
+<STYLE ID="1">"I just... want to die..."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+―And then, the presence of someone approaching this hut.
+{PAUSE ""}
+<BR>
+Not hearing, not touch―a human presence felt on the skin.
+{PAUSE ""}
+<BR>
+Someone was coming this way.
+{PAUSE ""}
+<BR>
+Could <STYLE ID="3">Shigatsu Youka</STYLE> perceive even this sense, which I could hardly call one of the five?
+{PAUSE ""}
+<BR>
+I covered my ears and made myself tremble.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\エデン\目を閉じる.lcm" "NORMAL" "#1" "C" "T" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "111" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"No...! How am I supposed to fight that...!"</STYLE>
+{PAUSE ""}
+<BR>
+I closed my eyes and hid under the table.
+{PAUSE ""}
+<BR>
+Shaking with fear and covering my ears―that's a natural thing to do.
+{PAUSE ""}
+<BR>
+No one can be allowed to find out where I am.
+{PAUSE ""}
+<BR>
+{PLAYSND "強風.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+Then I felt air moving inside the hut.
+{PAUSE ""}
+<BR>
+Someone seemed to have opened the door.<PG>
+<STYLE ID="1">"Please...! I don't want to die...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I don't want to die...!"</STYLE>
+{PAUSE ""}
+<BR>
+I kept on screaming, in a voice too small for even someone a meter away to hear.
+{PAUSE ""}
+<BR>
+I pressed my hands over my ears as hard as I could.
+{PAUSE ""}
+<BR>
+If whoever just came into the hut looks into every corner, that's it.
+{PAUSE ""}
+<BR>
+That eerie sound will ring again, and corpses will appear where I am.<PG>
+"―
+{PAUSE ""}
+―
+{PAUSE ""}
+―"
+{PAUSE ""}
+<BR>
+I thought I heard someone's voice.
+{PAUSE ""}
+<BR>
+I couldn't even tell if it was a man or a woman, young or not.
+{PAUSE ""}
+<BR>
+All I can do now is pray that whoever is searching doesn't find me.
+{PAUSE ""}
+<BR>
+With just the letter and the audio I left in the storehouse, no one but <STYLE ID="9">Goto-chan</STYLE> would understand.
+{PAUSE ""}
+<BR>
+If I'm found now, it's all over.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"No! No! No!"</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="1">, </STYLE><STYLE ID="10">Uncle</STYLE><STYLE ID="1">...! Wake up...!"</STYLE><PG>
+<STYLE ID="1">"I don't want to become a cherry tree...!"</STYLE><PG>
+<STYLE ID="1">"At least save me...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Turn the others into cherry trees instead...!"</STYLE><PG>
+<STYLE ID="1">"Let everyone else do the dying!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I don't want to die! Everyone else can die in my place!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "強風.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Suddenly, air moved through the hut again.<PG>
+And the sense of someone there was unmistakably moving away.
+{PAUSE ""}
+<BR>
+Even so, I didn't stop muttering.
+{PAUSE ""}
+<BR>
+Like a sutra to drive humans away, I kept up the words of terror, on and on.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Since I was talking while keeping track of what was around me, there was no variety to the vocabulary; I repeated the same words.
+{PAUSE ""}
+<BR>
+A plea of terror in a poor vocabulary―that may have been all the more real.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋天井昼.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Before I knew it, I had taken my hands from my ears, opened my eyes, and was gazing at the ceiling.
+{PAUSE ""}
+<BR>
+But my mouth was still voicing terror now and then.
+{PAUSE ""}
+<BR>
+That's probably just because talking to myself has become a bit of a habit. I'm not seriously thinking of surrendering to <STYLE ID="3">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+Seen from outside, would I look dazed and limp?
+{PAUSE ""}
+<BR>
+Maybe I've made it more realistic without meaning to...<PG>
+{MESOFF "500"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1朝.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now and then I sensed people far off, but none of them seemed to come this way.
+{PAUSE ""}
+<BR>
+They seemed to have divided up the search areas properly.
+{PAUSE ""}
+<BR>
+In that case, the person who searched this hut earlier...
+{PAUSE ""}
+<BR>
+Past this hut, the steep mountain path toward Toyotake Station goes on.
+{PAUSE ""}
+<BR>
+Only one person comes to mind as best suited to heading there on foot.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The one who entered the hut just now was <STYLE ID="2">Kana</STYLE>, without a doubt.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kana</STYLE> has sharper senses than I do, so there's no way she missed that I was here.
+{PAUSE ""}
+<BR>
+Did <STYLE ID="2">Kana</STYLE> sense something, ignore me, and go away?
+{PAUSE ""}
+<BR>
+If so... this is a pretty painful failure.<PG>
+<STYLE ID="6">What makes it painful isn't that </STYLE><STYLE ID="2">Kana</STYLE> found me.
+{PAUSE ""}
+<BR>
+The usual <STYLE ID="2">Kana</STYLE> would have called out to me right away and called for help.
+{PAUSE ""}
+<BR>
+But this time, she sensed something and left.
+{PAUSE ""}
+<BR>
+What on earth did <STYLE ID="2">Kana</STYLE> pick up on?
+{PAUSE ""}
+<BR>
+Why did <STYLE ID="2">Kana</STYLE> act differently from usual...?<PG>
+Yesterday, <STYLE ID="2">Kana</STYLE> was right beside me, watching what I was doing.
+{PAUSE ""}
+<BR>
+I dug into the past, suspected <STYLE ID="8">Dad</STYLE> and <STYLE ID="11">Grandma</STYLE>, and then found the books in the attic together with her.
+{PAUSE ""}
+<BR>
+The ones who know best what I've been doing lately are <STYLE ID="2">Kana</STYLE> and <STYLE ID="9">Goto-chan</STYLE>.
+{PAUSE ""}
+<BR>
+If <STYLE ID="2">Kana</STYLE> sensed something and left here at once―<PG>
+{STOPSND "BGM" "3000" "PASS"}
+That's why being found by <STYLE ID="2">Kana</STYLE> is a painful failure.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If I don't survive, there'll be no one left who knows that <STYLE ID="8">Dad</STYLE> or <STYLE ID="11">Grandma</STYLE> is the culprit who hid the books.
+{PAUSE ""}
+<BR>
+At New Year's, <STYLE ID="2">Kana</STYLE> and I had a huge fight over whether <STYLE ID="8">Dad</STYLE> was the culprit.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kana</STYLE> must still want to believe <STYLE ID="8">Dad</STYLE> isn't the culprit, after all.
+{PAUSE ""}
+<BR>
+So it's possible, too, that she'd leave me here to die, and―<PG>
+If that were it, she could simply have played dumb yesterday when we found the books in the attic―<STYLE ID="2">"I don't know anything."</STYLE>
+{PAUSE ""}
+<BR>
+Besides, <STYLE ID="2">Kana</STYLE> herself told me that if <STYLE ID="8">Dad</STYLE> was doing something bad, we'd have to stop him.
+{PAUSE ""}
+<BR>
+There's no way <STYLE ID="2">Kana</STYLE> would do something like that now...
+{PAUSE ""}
+<BR>
+Unfortunately, the reason <STYLE ID="2">Kana</STYLE> left me here could be read either way, good or bad.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\廃屋天井昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Maybe I really should give up... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That way I wouldn't have to suffer..."</STYLE>
+{PAUSE ""}
+<BR>
+I let out the muttering I'd half forgotten.
+{PAUSE ""}
+<BR>
+In a few hours, the Motoki-cho group will arrive.
+{PAUSE ""}
+<BR>
+But come to think of it, the circumstances bringing the Motoki-cho group here are puzzling too.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜散る.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If they're coming here because of <STYLE ID="12">Natsumi-chan's</STYLE> danger sense, then <STYLE ID="3">Shigatsu Youka</STYLE> has called <STYLE ID="12">Natsumi-chan</STYLE> here.
+{PAUSE ""}
+<BR>
+That's been on my mind since last night.
+{PAUSE ""}
+<BR>
+So there's one more thing I have to do tonight.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\元木町組.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That is to confine the Motoki-cho group.
+{PAUSE ""}
+<BR>
+To put it more precisely, to keep the Motoki-cho group and the corpses―
+{PAUSE ""}
+<STYLE ID="3">Shigatsu Youka</STYLE>―from coming into contact.
+{PAUSE ""}
+<BR>
+<STYLE ID="12">Natsumi-chan</STYLE> is second generation, so if she comes near a third-generation corpse, her constitution would turn her into fourth generation.
+{PAUSE ""}
+<BR>
+If <STYLE ID="3">Shigatsu Youka</STYLE> were to use corpses to dig up Verde's mummy, that would truly be the end.<PG>
+Second generation...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">My mom</STYLE> was second generation too.
+{PAUSE ""}
+<BR>
+Which means that 10 years ago, she met the conditions for making the cherry reproduce.
+{PAUSE ""}
+<BR>
+If Verde's mummy were dug up, or if I died, <STYLE ID="4">Mom</STYLE> was fated to change into fourth generation.<PG>
+With that, <STYLE ID="4">Mom</STYLE> would have sunk to being <STYLE ID="3">Shigatsu Youka</STYLE>'s servant, and could even have gotten everyone to use Droga in the name of danger sense.
+{PAUSE ""}
+<BR>
+Why has <STYLE ID="3">Shigatsu Youka</STYLE> started moving only now, and why does it need to bring the Motoki-cho group here?
+{PAUSE ""}
+<BR>
+There's still a lot about its aims that isn't clear...
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+Let me sort this out a bit.<PG>
+{MESOFF "500"}
+{PLAYSND "太古の暗い鳴動.ogg" "BGM" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{CREATECG "000" "グラフィック\背景\エデン\雪山.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This land has had a certain fungus rooted in it since the beginning of time.
+{PAUSE ""}
+<BR>
+Her name is <STYLE ID="3">Shigatsu Youka</STYLE>, a kind of mushroom classed as a honey fungus.
+{PAUSE ""}
+<BR>
+But <STYLE ID="3">Shigatsu Youka</STYLE> has traits other fungi don't.<PG>
+<STYLE ID="3">Shigatsu Youka</STYLE>, by its ecology, seems to have an extreme aversion to having its true nature known, and tries to kill or carry off anyone who learns it, as I did, by controlling corpses.
+{PAUSE ""}
+<BR>
+I just can't make out what <STYLE ID="3">Shigatsu Youka</STYLE> is after.
+{PAUSE ""}
+<BR>
+To begin with, from <STYLE ID="3">Shigatsu Youka</STYLE>'s point of view, my ending up in this situation is, in a sense, an accident.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If I hadn't been looking things up in the storehouse's books, I wouldn't have been carried off either.
+{PAUSE ""}
+<BR>
+So doing anything to me is probably somewhat removed from <STYLE ID="3">Shigatsu Youka</STYLE>'s goal.<PG>
+I see. Now I know why <STYLE ID="3">Shigatsu Youka</STYLE> used those two to abduct me.
+{PAUSE ""}
+<BR>
+It was to keep everyone from finding out about <STYLE ID="3">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+Keep me away from everyone, and the discovery that <STYLE ID="3">Shigatsu Youka</STYLE> exists can be delayed.<PG>
+No, but...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But then I can't see why <STYLE ID="8">Dad</STYLE>, who was looking into the storehouse's books 10 years ago, is unharmed.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Dad</STYLE> knew about <STYLE ID="3">Shigatsu Youka</STYLE> too.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Dad</STYLE> was looking into the storehouse's books, and through <STYLE ID="4">Mom</STYLE>, <STYLE ID="3">Shigatsu Youka</STYLE> must have known that as well.
+{PAUSE ""}
+<BR>
+And yet he's still unharmed, which means...
+{PAUSE ""}
+<BR>
+Could it be that <STYLE ID="8">Dad</STYLE> had already sunk to being <STYLE ID="3">Shigatsu Youka</STYLE>'s spy...?<PG>
+But that's only a possibility.
+{PAUSE ""}
+<BR>
+It really is hard to trust the people of the settlement completely, even when they're family.<PG>
+Either way, one of <STYLE ID="3">Shigatsu Youka</STYLE>'s aims is the Motoki-cho group―
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+to bring them here, <STYLE ID="12">Natsumi-chan</STYLE> in particular.
+{PAUSE ""}
+<BR>
+Even though it already had <STYLE ID="4">Mom</STYLE> 10 years ago, it went to the trouble of bringing <STYLE ID="12">Natsumi-chan</STYLE> here...<PG>
+Is there, perhaps, some secret about <STYLE ID="3">Shigatsu Youka</STYLE> that I still don't know?
+{PAUSE ""}
+<BR>
+What could it want to accomplish once it has brought <STYLE ID="12">Natsumi-chan</STYLE> here?
+{PAUSE ""}
+<BR>
+Either way, nothing good will come of it.<PG>
+So what I have to do is pretend to surrender to <STYLE ID="3">Shigatsu Youka</STYLE>, confine the Motoki-cho group, and get them out when I see an opening.
+{PAUSE ""}
+<BR>
+No one must see that my madness is an act.
+{PAUSE ""}
+<BR>
+To keep <STYLE ID="3">Shigatsu Youka</STYLE> <STYLE ID="5" RUBY="だま">deceived</STYLE>, I have to <STYLE ID="5" RUBY="だま">deceive</STYLE> everyone.
+{PAUSE ""}
+<BR>
+For that, rather than persuading them, I have to confine them by force.<PG>
+<STYLE ID="6">And to fool </STYLE><STYLE ID="3">Shigatsu Youka</STYLE> further, I myself have to propose the plan of 'turning the people who came here into cherry trees.'
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Shigatsu Youka</STYLE> probably won't let anyone who has learned its true nature get away, so I'll pretend to go along with that too.
+{PAUSE ""}
+<BR>
+Then, when I see an opening, I just have to get them all to escape at once.
+{PAUSE ""}
+<BR>
+If I can manage to get in with <STYLE ID="3">Shigatsu Youka</STYLE>, an opening is bound to appear somewhere.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\廃屋昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+All right. Around the time the Motoki-cho group learns of the memo and audio I left, I'll leave this hut.
+{PAUSE ""}
+<BR>
+Pretending to be mad, I'll approach the Motoki-cho group and confine them in this hut.
+{PAUSE ""}
+<BR>
+I'm not exactly confident a plan like this will really work, but unfortunately, this is the best my head can do.<PG>
+Still... it bothers me.
+{PAUSE ""}
+<BR>
+Why did <STYLE ID="3">Shigatsu Youka</STYLE> summon <STYLE ID="12">Natsumi-chan</STYLE>?
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

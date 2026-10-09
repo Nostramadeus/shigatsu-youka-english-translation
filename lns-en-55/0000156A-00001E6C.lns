@@ -1,0 +1,859 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=5310, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=97, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゃば, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=22, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=やまがき, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しっせき, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささや, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=24, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=21, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=21, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんそう, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だんらん, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あわ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=3, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=やまがき, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひきょう, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さんさん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6168, target=)
+; Links:
+;    0: TWdLink(count=5526, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+<TXSPN>―Judgment. <STYLE ID="1">Akane Kogori</STYLE> is hereby sentenced to life imprisonment.
+{WAITPLAY "VOICE" "CLICK"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\共有殺人.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\プリズン\裁判所.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+From this moment, a new step in my life begins.
+{PAUSE ""}
+<BR>
+Despair, or hope―
+{PAUSE ""}
+<BR>
+That goes without saying.
+{PAUSE ""}
+<BR>
+No one could possibly call it hope.
+{PAUSE ""}
+<BR>
+I'm no exception.<PG>
+When it comes to life imprisonment, can you imagine how long it takes before you get out?
+{PAUSE ""}
+<BR>
+The longest fixed-term sentence is 30 years, so you'd think about the same, 30 years at most?
+{PAUSE ""}
+<BR>
+Naive―not getting out even after 50 years is normal.
+{PAUSE ""}
+<BR>
+Life imprisonment is, in practice, imprisonment until you die.<PG>
+Even supposing I could get out while I'm still alive, it would no longer be the society I know.
+{PAUSE ""}
+<BR>
+I'd be an aged Urashima Taro, a doddering, brutal old woman thrown out into a world she knows nothing about.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+―April, Shiyo 815.
+{PAUSE ""}
+<BR>
+Sawa Prison, in Minakami City, Sawa Prefecture.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\プリズン\独房.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Wake-up is fixed at 6:30 on workdays, 7:30 on rest days.
+{PAUSE ""}
+<BR>
+After nearly 15 years of the same life, my body wakes up on its own before the guard comes to wake me.
+{PAUSE ""}
+<BR>
+Without exception, up at 6:30 or 7:30, and lights-out at 9 p.m.
+{PAUSE ""}
+<BR>
+I don't need a clock anymore.
+{PAUSE ""}
+<BR>
+My body clock can tell me what time it is.<PG>
+Without my thinking about anything, roll call and cell inspection are over.
+{PAUSE ""}
+<BR>
+I've gone through them every day without fail.
+{PAUSE ""}
+<BR>
+So today, too, I would get through roll call and cell inspection in a daze.
+{PAUSE ""}
+<BR>
+Or so I'd intended―
+{STOPSND "BGM" "5000" "PASS"}
+<PG>
+"<STYLE ID="1">Number 204</STYLE>, move out!"
+{PAUSE ""}
+<BR>
+One morning, a guard shouted that.
+{PAUSE ""}
+<BR>
+Move out?
+{PAUSE ""}
+<BR>
+Was I going into another solitary cell? Or into a shared cell, with a group?<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+I like this solitary cell.
+{PAUSE ""}
+<BR>
+In a shared cell, everyone would pry into my past, just out of curiosity.
+{PAUSE ""}
+<BR>
+Hear that I'm the one who actually did the Megasawa City case, and they're bound to be curious.
+{PAUSE ""}
+<BR>
+Anyone who takes an interest in me, a few years short of 60, is a peculiar sort indeed.<PG>
+Normally, inmates go into a shared cell, but anyone who finds group living difficult for some reason is put in a solitary cell like this one.
+{PAUSE ""}
+<BR>
+In my case, as the one who actually did the Megasawa City case, even the other inmates look at me with curious eyes.
+{PAUSE ""}
+<BR>
+That can start trouble, or get you judged unfit for group activity.
+{PAUSE ""}
+<BR>
+Perhaps they foresaw that, because I've been kept in solitary from the very beginning.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\手錠.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I was handcuffed and taken out of my solitary cell.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\追加分\歩く響く2人.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\プリズン\刑務所廊下.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+No, but this is strange.
+{PAUSE ""}
+<BR>
+Normally, you don't get handcuffed.
+{PAUSE ""}
+<BR>
+The last time I was handcuffed was the day I was brought to this prison.
+{PAUSE ""}
+<BR>
+Inside a prison, you almost never get handcuffed.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\追加分\屋上ドア前半.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Up the stairs, through several sets of bars―
+{PAUSE ""}
+we were clearly heading somewhere other than the cell blocks.
+{PAUSE ""}
+<BR>
+Could it be an execution, out of nowhere?
+{PAUSE ""}
+<BR>
+Well, that's not so bad either.
+{PAUSE ""}
+<BR>
+Not that I'd particularly mind if a life like this ended right now. Not particularly...<PG>
+But once even the faintest possibility of execution surfaced, I grew very anxious.
+{PAUSE ""}
+<BR>
+I'd thought a life like this was as good as dead, yet when it came to actually dying, a sudden clinging to life welled up in me.
+{PAUSE ""}
+<BR>
+Surely not an execution, out of nowhere...<PG>
+I was sentenced to life imprisonment.
+{PAUSE ""}
+<BR>
+So I won't die.
+{PAUSE ""}
+<BR>
+So calm down, me...<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "3000" "PASS"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\すずめ.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\プリズン\護送車.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Dazzling spring sunlight.
+{PAUSE ""}
+<BR>
+What appeared in front of me was a bus.
+{PAUSE ""}
+<BR>
+It was a large prison bus.
+{PAUSE ""}
+<BR>
+I'd probably be put on it, but would other inmates be riding along too?<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\護送車内部.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I was pushed inside with no say in the matter.
+{PAUSE ""}
+<BR>
+{PLAYSND "環境音\車内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+Once several prison officers and several inmates had boarded, the bus slowly started to move.
+{PAUSE ""}
+<BR>
+Where did they mean to take me?
+{PAUSE ""}
+<BR>
+Curtains were drawn over the windows, and the driver's side was shut off by a windowless door, so I couldn't even see the windshield.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\護送車車窓.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Through a gap in the curtains, I could see outside.
+{PAUSE ""}
+<BR>
+The <STYLE ID="2" RUBY="しゃば">outside world</STYLE>, seen with my own eyes for the first time in ages.
+{PAUSE ""}
+<BR>
+A world I would probably never set foot in again.
+{PAUSE ""}
+<BR>
+Maybe I should fix it in my memory while I can.<PG>
+...But I soon got tired of that, too.
+{PAUSE ""}
+<BR>
+I'd been cut off from the world for 15 years, but nothing in particular had changed much.
+{PAUSE ""}
+<BR>
+The utility poles, the buildings, the cars, the clothes people wore, all were just as they'd been.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\護送車内部.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I turned my eyes back to the inside of the bus.
+{PAUSE ""}
+<BR>
+Around me were only female officers and inmates.
+{PAUSE ""}
+<BR>
+Naturally, since where I'd been was a women's prison.<PG>
+If they were moving several inmates, was this a transfer to another prison?
+{PAUSE ""}
+<BR>
+I might get scolded, but... I wanted to make sure.<PG>
+<STYLE ID="1">"Um..."</STYLE>
+{PAUSE ""}
+<BR>
+When I spoke up quietly, the young officer nearest me turned her face slightly toward me.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Where are we going now...?"</STYLE>
+{PAUSE ""}
+<BR>
+At that, the young officer glanced restlessly around, as if reading the faces of the others.
+{PAUSE ""}
+<BR>
+Checking whether it was all right to answer, maybe?
+{PAUSE ""}
+<BR>
+But the other officers showed no reaction at all.<PG>
+"You're being transferred from Sawa Prison to the newly built Motoki Prison."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Motoki Prison...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes. With Motoki City's population growing, all kinds of facilities are being built. 
+{PAUSE ""}
+The prison is one of them. <STYLE ID="1">Kogori-san</STYLE>, your family is in Motoki-cho, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, that's right..."</STYLE>
+{PAUSE ""}
+<BR>
+"So―"<PG>
+When the young officer had gotten that far, another officer spoke up.
+{PAUSE ""}
+<BR>
+"<STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san, that's enough."
+{PAUSE ""}
+<BR>
+"Ah, sorry..."
+{PAUSE ""}
+<BR>
+The young officer called <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE> was <STYLE ID="4" RUBY="しっせき">reprimanded</STYLE>, and she closed her mouth and hung her head.
+{PAUSE ""}
+<BR>
+I see. So she's <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san, the rookie.<PG>
+Then <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san whispered under her breath.
+{PAUSE ""}
+<BR>
+"Starting today I'm posted to Motoki Prison. I look forward to working with you."
+{PAUSE ""}
+<BR>
+No one but me seemed to have noticed her <STYLE ID="5" RUBY="ささや">whisper</STYLE>.
+{PAUSE ""}
+<BR>
+How many years had it been since anyone spoke such kind words to me?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\護送車車窓.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now and then <STYLE ID="6">Natsumi</STYLE> came to visit, but apart from <STYLE ID="6">Natsumi</STYLE>, there'd been no one who treated me the way <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san did.
+{PAUSE ""}
+<BR>
+But before long, <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san would learn to carry herself as a prison officer, and stop treating me like this.
+{PAUSE ""}
+<BR>
+Well, not that I mean to find hope in something this small.<PG>
+Even so...
+{PAUSE ""}
+<BR>
+Motoki-cho, huh.
+{PAUSE ""}
+<BR>
+Fifteen years on, and I'm setting foot in Motoki-cho again―
+{PAUSE ""}
+no, in Motoki City.
+{PAUSE ""}
+<BR>
+It seems it's now a regional city with a population of over 150,000.<PG>
+Just being able to go back to a place like that makes me feel a little happy.
+{PAUSE ""}
+<BR>
+Though since I can't see out from inside the walls, it's still a treat I'm made to wait for...
+{PAUSE ""}
+<BR>
+But <STYLE ID="6">Natsumi</STYLE> ought to come see me more often than before.
+{PAUSE ""}
+<BR>
+That alone is my pleasure, and my comfort.<PG>
+What has become of <STYLE ID="7">Haruka-chan</STYLE>?
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+My other daughter. There's no way I wouldn't worry about her, and no way I could forget her.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\スチル\人質カラー2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I'm told that on that day, <STYLE ID="8">Mifuyu</STYLE> took <STYLE ID="7">Haruka-chan</STYLE> and vanished somewhere.
+{PAUSE ""}
+<BR>
+She must have used Droga. She jumped from the apartment building and was gone in the blink of an eye.
+{PAUSE ""}
+<BR>
+And then, maybe, she headed straight for the Arata settlement.<PG>
+No one has ever told me where <STYLE ID="7">Haruka-chan</STYLE> went.
+{PAUSE ""}
+<BR>
+What became of <STYLE ID="8">Mifuyu</STYLE> never reaches my ears either.
+{PAUSE ""}
+<BR>
+No, probably no one knows.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―The bus began to slow.
+{PAUSE ""}
+<BR>
+The road swung in a wide curve, and then we gradually picked up speed.
+{PAUSE ""}
+<BR>
+It seemed we'd gotten onto the expressway.
+{PAUSE ""}
+<BR>
+If the roads and the speed limits were the same as 15 years ago, we'd arrive in about an hour.
+{PAUSE ""}
+<BR>
+I think I'll close my eyes for a bit. Right now, surely, even dozing off is allowed.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{WAITPLAY "BGM" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Please wake up, <STYLE ID="1">Kogori-san</STYLE>, please wake up."
+{PAUSE ""}
+<BR>
+{PLAYSND "環境音\車内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+A young woman's voice.
+{PAUSE ""}
+<BR>
+Was it <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san?<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\プリズン\護送車内部.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+When I opened my eyes, <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san was sitting there, looking at me out of the corner of her eye.
+{PAUSE ""}
+<BR>
+"We'll be there in about 20 minutes."
+{PAUSE ""}
+<BR>
+The bus was still moving.
+{PAUSE ""}
+<BR>
+I seemed to have slept more deeply than I'd thought.
+{PAUSE ""}
+<BR>
+We were probably already in Motoki City.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\20171011より\big-city1.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "700" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\元木町車窓.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+From outside the bus came the <STYLE ID="9" RUBY="けんそう">bustle</STYLE> of cars and the city.
+{PAUSE ""}
+<BR>
+Motoki City seemed to have become more urban than I'd imagined.<PG>
+Come to think of it, going outside the walls and riding a bus was an event I'd never experience again.
+{PAUSE ""}
+<BR>
+Falling asleep had been a waste. I'd have liked to enjoy the feeling of a trip a little longer.
+{PAUSE ""}
+<BR>
+Right now―
+{PAUSE ""}
+could I escape right now? The joke floated into my head.<PG>
+If I had that Droga, I might even be able to escape from here.
+{PAUSE ""}
+<BR>
+But <STYLE ID="8">Mifuyu</STYLE> had said it: it was strictly a drug that takes off the brake the brain puts on to protect the body.
+{PAUSE ""}
+<BR>
+Push it even a little, and the body falls apart in no time.<PG>
+But if I did have Droga on hand right now, and used it, what would I do?
+{PAUSE ""}
+<BR>
+I'd strike these officers' vital points so they couldn't move, find the handcuff key, and run as far as I could.
+{PAUSE ""}
+<BR>
+No, before that, maybe I'd better take an officer's uniform.
+{PAUSE ""}
+<BR>
+Droga only lasts about 10 minutes.
+{PAUSE ""}
+<BR>
+If I dawdled, I wouldn't even manage to get away.<PG>
+If I got away, then first of all, of course, I'd want to see <STYLE ID="6">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+See <STYLE ID="6">Natsumi</STYLE>, and enjoy some <STYLE ID="10" RUBY="だんらん">time together</STYLE> somewhere other than a prison.
+{PAUSE ""}
+<BR>
+Anywhere would do.
+{PAUSE ""}
+<BR>
+A park bench, a fast-food place, or even just standing and chatting in the street.
+{PAUSE ""}
+<BR>
+And while we were at it, the police would surely come to catch me.<PG>
+............
+{PAUSE ""}
+I held back a laugh.
+{PAUSE ""}
+<BR>
+I'd gone to the trouble of escaping, and all I'd do was talk with <STYLE ID="6">Natsumi</STYLE> somewhere different.
+{PAUSE ""}
+<BR>
+My imagination was poorer than I'd thought.
+{PAUSE ""}
+<BR>
+At this rate, it might be more fun to tell <STYLE ID="6">Natsumi</STYLE> this one at a visit.<PG>
+{MESOFF "500"}
+{STOPSND "SE2" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\護送車内部.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Before long the city's <STYLE ID="9" RUBY="けんそう">bustle</STYLE> faded, and the bus picked up speed.
+{PAUSE ""}
+<BR>
+We seemed to be heading for the outskirts.
+{PAUSE ""}
+<BR>
+The bus was tilted back slightly.
+{PAUSE ""}
+<BR>
+We seemed to be driving up a slope.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If I had Droga here and could break out, then I...
+{PAUSE ""}
+<BR>
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+would go to the Arata settlement.
+{PAUSE ""}
+<BR>
+Whether <STYLE ID="7">Haruka-chan</STYLE> and <STYLE ID="8">Mifuyu</STYLE> are doing well, whether they're even alive.
+{PAUSE ""}
+<BR>
+I don't even know that much.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If I could confirm just that much, whether those two are alive or not, I might have no regrets left.
+{PAUSE ""}
+<BR>
+Even now, after <STYLE ID="8">Mifuyu</STYLE> threatened me and I got life imprisonment, I can't bring myself to resent <STYLE ID="8">Mifuyu</STYLE>.<PG>
+Why is that? Because she's been my best friend since we were born?
+{PAUSE ""}
+<BR>
+Or because we've stayed by each other's side for so many years?
+{PAUSE ""}
+<BR>
+Because we share a <STYLE ID="7">daughter</STYLE>?<PG>
+No, that's not it.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Mifuyu</STYLE> was someone I <STYLE ID="11" RUBY="あわ">pitied</STYLE> from the bottom of my heart.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi</STYLE> let a balloon fly away, <STYLE ID="12">Eiichiro</STYLE>-san died, and <STYLE ID="8">Mifuyu</STYLE> and her family were living a miserable life.
+{PAUSE ""}
+<BR>
+Caught up in that chain of cause and effect, <STYLE ID="8">Mifuyu</STYLE> and her family had my <STYLE ID="11" RUBY="あわ">pity</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">That girl</STYLE>... she's timid at heart, yet she pushes herself too hard and goes to extremes.<PG>
+No, to begin with, in the Megasawa City case, who on earth―<PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{DELETECG "人物1,人物2" "1" "0" "0" "0" "" "0"}
+{PLAYSND "環境音\地響き.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{PLAYSND "環境音\アポカリプティック.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "700" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\プリズン\護送車内部.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000" "QUAKE" "1" "5" "5" "0" "30"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"An earthquake...!?"</STYLE>
+{PAUSE ""}
+<BR>
+Whether it was an earthquake or not, the bus shook violently.
+{PAUSE ""}
+<BR>
+Maybe because of the shaking, at some point the bus had slowed down.
+{PAUSE ""}
+<BR>
+I heard a rumbling of the earth, and a sound like a gigantic trumpet.
+{PAUSE ""}
+<BR>
+<STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san started to panic.
+{PAUSE ""}
+<BR>
+The other officers stayed seated, strangely calm.<PG>
+No, they were all gripping their armrests tight.
+{PAUSE ""}
+<BR>
+Everyone was just as panicked.
+{PAUSE ""}
+<BR>
+I gripped one armrest the same way and braced myself.
+{PAUSE ""}
+<BR>
+The bus slowly came to a stop, and then―<PG>
+{MESOFF "0"}
+{PLAYSND "SE\詫言編　夢から\爆発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "500" "PASS"}
+{STOPSND "SE2" "500" "PASS"}
+{DELETECG "000" "12" "500" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<TXSPS>―The last thing I heard, as the bus flipped over, was a rumbling of the earth so violent I thought a bomb had dropped.<PG>
+{MESOFF "500"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>How long had I been unconscious?
+{PAUSE ""}
+<BR>
+What position was I in right now?
+{PAUSE ""}
+<BR>
+I remembered the bus flipping over.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\プリズン\護送車灰色.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If the bus was still upside down, then so was I.
+{PAUSE ""}
+<BR>
+I couldn't tell which way I was facing.<PG>
+I felt a faint pain all over my body, but I didn't seem to be badly hurt.
+{PAUSE ""}
+<BR>
+I moved my body little by little, checking my condition.
+{PAUSE ""}
+<BR>
+Then, sensing for certain which way gravity pulled, I slowly stood up.
+{PAUSE ""}
+<BR>
+I seemed to be standing on the ceiling of the bus.<PG>
+Was everyone all right?
+{PAUSE ""}
+<BR>
+If I was unhurt like this, surely everyone else was too―
+{PAUSE ""}
+<BR>
+With my still-handcuffed hands, I shook the officer in front of me.<PG>
+<STYLE ID="1">"Um, are you all right?"</STYLE>
+{PAUSE ""}
+<BR>
+Had she passed out? No response.
+{PAUSE ""}
+<BR>
+Then the officer I'd shaken rolled over heavily.<PG>
+{MESOFF "0"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "リファレンス専用\se_horror2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\プリズン\護送車赤.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+―!!
+{PAUSE ""}
+<BR>
+{PLAYSND "リファレンス専用\se_fuon2.ogg" "BGM" "REPEAT" "1000" "0"}
+The officer's eyes were wide open, and a pink organ was <STYLE ID="13" RUBY="のぞ">peeking</STYLE> out of her head.
+{PAUSE ""}
+<BR>
+Her brain seemed to have spilled out.
+{PAUSE ""}
+<BR>
+No matter how I looked at it, she couldn't be alive.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="14" RUBY="やまがき">Yamagaki</STYLE><STYLE ID="1">-san, </STYLE><STYLE ID="14" RUBY="やまがき">Yamagaki</STYLE><STYLE ID="1">-san!"</STYLE>
+{PAUSE ""}
+<BR>
+I shook her, but she was just as unresponsive.
+{PAUSE ""}
+<BR>
+When I put my ear to her chest, there was no heartbeat.<PG>
+―She's dead.
+{PAUSE ""}
+<BR>
+When I put my hand to her face, it no longer had a human's warmth.
+{PAUSE ""}
+<BR>
+It seemed several hours had already passed since the accident.<PG>
+I put my hand to the face of everyone who'd been on board.
+{PAUSE ""}
+<BR>
+They were all cold, like rubber.
+{PAUSE ""}
+<BR>
+<STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san, the officer who'd given <STYLE ID="3" RUBY="やまがき">Yamagaki</STYLE>-san that <STYLE ID="4" RUBY="しっせき">reprimand</STYLE>, the other officers and the inmates, the bus driver―
+{PAUSE ""}
+<BR>
+All of them were dead.<PG>
+At last I realized the situation I was in.
+{PAUSE ""}
+<BR>
+Many people must have died in this massive earthquake.
+{PAUSE ""}
+<BR>
+Even in urbanized Motoki City, buildings had probably collapsed all over.
+{PAUSE ""}
+<BR>
+Whether Motoki Prison, where I'd been headed, would even be usable...<PG>
+Maybe this is... 
+{PAUSE ""}
+a chance?
+{PAUSE ""}
+<BR>
+Couldn't I just escape like this?
+{PAUSE ""}
+<BR>
+That <STYLE ID="15" RUBY="ひきょう">cowardly</STYLE> idea raced through my head, and my excitement won out over my fear of the disaster.
+{PAUSE ""}
+<BR>
+That's right, I can escape now! It's an act of necessity―fleeing a disaster!<PG>
+I hurriedly searched the officers' belongings.
+{PAUSE ""}
+<BR>
+To find the key to these handcuffs.
+{PAUSE ""}
+<BR>
+But I didn't know which officer had it, and rigor mortis made the bodies hard to move.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+............?
+{PAUSE ""}
+<BR>
+There was a strange smell.
+{PAUSE ""}
+<BR>
+This was...
+{PAUSE ""}
+{PLAYSND "エデンの桜\Brutal.ogg" "BGM" "REPEAT" "1000" "0"}
+the smell of something burning.
+{PAUSE ""}
+<BR>
+{PLAYMOVIE "レポートノイズ.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+Black smoke rapidly began to fill the bus.
+{PAUSE ""}
+<BR>
+Something must have set the gasoline alight.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+I hurried out of the bus.
+{STOPSND "VOICE" "2000" "PASS"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\爆発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE2" "CLICK"}
+{MESON "500"}
+The blast slammed into my back like a giant iron ball, and scorching wind raged around me.
+{PAUSE ""}
+<BR>
+My body was blown several meters and thrown down onto soft ground.<PG>
+<STYLE ID="1">"Uugh..."</STYLE>
+{PAUSE ""}
+<BR>
+And the foul smell, growing even fiercer.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\プリズン\元木市遠景.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYMOVIE "バス炎.wmv" "256" "C" "B" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "111" "グラフィック\背景\プリズン\護送車燃える.gal" "NORMAL" "#1" "C" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I turned around, huge flames were stretching from the bus toward the sky.
+{PAUSE ""}
+<BR>
+There was no way I could search for the key now.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"............?"</STYLE>
+{PAUSE ""}
+<BR>
+Beyond the huge flames, I could see an even bigger shadow.
+{PAUSE ""}
+<BR>
+A mountain?
+{PAUSE ""}
+　A building?
+{PAUSE ""}
+<BR>
+No, for a mountain or a building, its shape was bizarrely complex.
+{PAUSE ""}
+<BR>
+I stood up to see what that shadow really was.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\ホラー.ogg" "BGM" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n500\r\n5000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n123\r\n000\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n500\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n123\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Motoki City lies in a basin, surrounded by highlands about 1,000 meters high.
+{PAUSE ""}
+<BR>
+Motoki Prison was probably built somewhere partway up these highlands.
+{PAUSE ""}
+<BR>
+Being on the way there, this spot was much higher than the city center.
+{PAUSE ""}
+<BR>
+So from here, I could see the city center clearly.<PG>
+Fires rising here and there.
+{PAUSE ""}
+<BR>
+A city center without even a hint of the <STYLE ID="9" RUBY="けんそう">bustle</STYLE> from before.
+{PAUSE ""}
+<BR>
+No, if that were all, I could still understand it.
+{PAUSE ""}
+<BR>
+The great shadow beyond the flames was―<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{PLAYMOVIE "真明徴編.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Countless giant cherry trees, towering as if looking down on the tall buildings.
+{PAUSE ""}
+<BR>
+As though they had been growing there all along, there was even a dignity to their appearance.
+{PAUSE ""}
+<BR>
+I understood the sight before my eyes.
+{PAUSE ""}
+<BR>
+But I couldn't accept it. There was no way I could accept it.<PG>
+At my feet, piled thick, cherry petals.
+{PAUSE ""}
+<BR>
+Pouring <STYLE ID="16" RUBY="さんさん">brilliantly</STYLE> down from the heavens, cherry petals.
+{PAUSE ""}
+<BR>
+Ruling the sky so thickly they hid even the light of the sun, cherry petals.<PG>
+It was the day Motoki City was swallowed by giant cherries.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

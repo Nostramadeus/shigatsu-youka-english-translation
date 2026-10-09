@@ -1,0 +1,66 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=264, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=17, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=321, target=)
+; Links:
+;    0: TWdLink(count=283, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\服屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hey, hey, look at this!"
+{PAUSE ""}
+<BR>
+"Hm? Shabetter?"
+{PAUSE ""}
+<BR>
+"Yeah, yeah, somebody posted this on Shabetter."
+{PAUSE ""}
+<BR>
+"Um... 
+{PAUSE ""}
+'<STYLE ID="1">Genius girl Erina Goto</STYLE>, at Zahha with a suspicious person.'"
+{PAUSE ""}
+<BR>
+"This is bad news, right?"
+{PAUSE ""}
+<BR>
+"Isn't he a brother or a relative or something?"<PG>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "VOICE" "NORMAL" "1000" "0"}
+"Oh! A new one! With a picture!"
+{PAUSE ""}
+<BR>
+"Whoa, this guy is totally breaking out in a cold sweat. 
+{PAUSE ""}
+His face is damn good-looking, but the look in his eyes is sketchy... 
+{PAUSE ""}
+It's so bad even 'only if he's hot' doesn't apply."<PG>
+"You can't see the face of the one with him, but from the silhouette it's definitely the <STYLE ID="1">genius girl</STYLE>."
+{PAUSE ""}
+<BR>
+"Hey, the <STYLE ID="1">genius girl</STYLE> and <STYLE ID="2">Niimura</STYLE> know each other, right? Should we tell her?"
+{PAUSE ""}
+<BR>
+"Yeah, I think this is seriously bad news."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

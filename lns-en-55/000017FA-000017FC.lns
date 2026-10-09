@@ -1,0 +1,97 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=249, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=197, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=7, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=10, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=532, target=)
+; Links:
+;    0: TWdLink(count=471, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "My_life_Without_Your_Love.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\居間.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Haah... where's <STYLE ID="1">Dad</STYLE>?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"He says he'll be home any minute now."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What's wrong? You look glum. Is studying hard?"</STYLE>
+{PAUSE ""}
+<BR>
+"Well, sure it's hard, but... 
+{PAUSE ""}
+it's not just that, I guess..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Something worrying you?"</STYLE><PG>
+"Hmm, not worrying exactly... <STYLE ID="3">Haruka</STYLE>'s been weird lately. 
+{PAUSE ""}
+I ran into her on the way home yesterday and today, and she said she was on her way back from the hospital."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The hospital? Is she not feeling well?"</STYLE>
+{PAUSE ""}
+<BR>
+"She doesn't seem like it. I just get the feeling she's hiding something from me."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"About her health?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah. Haven't you heard anything from <STYLE ID="4">Obasan</STYLE>?"<PG>
+<STYLE ID="2">"Nothing in particular. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">A high schooler wouldn't go to the hospital in secret, so </STYLE><STYLE ID="4">Mifuyu</STYLE><STYLE ID="2"> should know about it."</STYLE>
+{PAUSE ""}
+<BR>
+"Maybe I'll ask <STYLE ID="4">Obasan</STYLE> tomorrow..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I understand how you feel, but that's not something you should pry into too much."</STYLE><PG>
+"I know, but... I'm just worried. 
+{PAUSE ""}
+What could it be that she can't even tell me? 
+{PAUSE ""}
+No way, maybe at the OB-GYN, there's, like, happy news..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's enough of that. If that were the case, it'd be all the harder to talk about."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "900" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"Oh, is that <STYLE ID="1">Dad</STYLE>!? Coming!"<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="2">... I wonder if something happened..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "人物1,000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

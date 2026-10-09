@@ -1,0 +1,30 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=30, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=45, target=)
+; Links:
+;    0: TWdLink(count=30, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>First, we would like you to take a look at this.
+{PAUSE ""}
+<BR>
+Pay particular attention to the sound.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\アポカリ動画導入.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYMOVIE "アポカリ.wmv" "256" "C" "C" "NORMAL" "FALSE" "0" "255"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,677 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=849, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2229, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=202, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=879, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=18, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=15, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=51, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=14, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なら, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=193, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=3, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きずな, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てんびん, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=た, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=20, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4965, target=)
+; Links:
+;    0: TWdLink(count=4481, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Heave-ho!"
+{PLAYSND "SE\詫言編　夢から\壺を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I put the last of the rite tools back in its place.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Mm... you must be worn out, </STYLE>Haruka<STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+"Phew! This is pretty tough work... 
+{PAUSE ""}
+What tools do we need tomorrow?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... for tomorrow, just the things up top will be enough."</STYLE><PG>
+"Okay! Let's head back, then!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"You must both be worn out. Let's go back and rest."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ハシゴ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+"<STYLE ID="3">Mom</STYLE>, you okay? You look pretty, or rather, totally wiped out..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh? </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">　Ho-ho-ho! This much is nothing at all!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom's</STYLE><STYLE ID="1"> loud laugh is tinged with exhaustion.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Until we got here, she and Shirozaki-san must have had a rough time, just the two of them, with the preparations and the town office and everything.</STYLE><PG>
+"Hey, can't I help out tomorrow too? The witch's work takes three people, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh my, no! </STYLE>Haruka<STYLE ID="3">, you can't become a witch until you turn 20 and I'm dead!"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, I know that... 
+{PAUSE ""}
+But there's nobody around, either, so isn't it about time you did it more efficiently?"<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="2">, I think so too. There are only three of us in this settlement: me, </STYLE><STYLE ID="4">Kana</STYLE><STYLE ID="2">, and </STYLE><STYLE ID="5">Shirozaki-san</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? <STYLE ID="2">Chiga-nee</STYLE>, what about school and studying abroad?"<PG>
+<STYLE ID="2">"Mm... I can't leave </STYLE><STYLE ID="4">Kana</STYLE><STYLE ID="2"> on her own. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And it wouldn't be good for this place to end up empty, either. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Shirozaki-san</STYLE><STYLE ID="2"> on his own would have a hard time too."</STYLE>
+{PAUSE ""}
+<BR>
+"Seriously...? 
+{PAUSE ""}
+But the three of you living here forever, that's not great either... 
+{PAUSE ""}
+<STYLE ID="2">Chiga-nee</STYLE>, and <STYLE ID="4">Kana</STYLE> too, sooner or later you'll get married and head outside the settlement―"<PG>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, you don't have to worry about all that. Things like this are the witch's work."</STYLE>
+{PAUSE ""}
+<BR>
+"But come on..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE>Haruka<STYLE ID="2">, for now, pray for </STYLE><STYLE ID="6">Grandma's</STYLE><STYLE ID="2"> soul. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="2">, I'm happy you worry about all this, though."</STYLE><PG>
+<STYLE ID="7">Dad</STYLE><STYLE ID="1"> was born in this settlement, </STYLE><STYLE ID="6">Grandma</STYLE><STYLE ID="1"> protected it all these years, and now its survival is on the line...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">By blood I'm an outsider, but it still makes me sad to see this place wither away.</STYLE><PG>
+<STYLE ID="1">Isn't there some way I can make this place lively again?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Grandma's</STYLE><STYLE ID="1"> wish: turn it into a place where everyone can live happily...</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="3">, go on back ahead of us. I've got somewhere to go with </STYLE>Haruka<STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... All right. </STYLE>Haruka<STYLE ID="2"> doesn't know yet, after all."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">With that, </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1"> left, leaving her cryptic words behind.</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, follow me. Keep me company a little longer."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"Ah, wait up!"<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Where on earth are we going?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This way leads toward the graveyard clearing, but...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\渓流.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Mom</STYLE><STYLE ID="1"> comes to a stop, and sure enough, it's at the graveyard clearing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Tomorrow, </STYLE><STYLE ID="6">Grandma</STYLE><STYLE ID="1"> will be buried here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">From close by, I can hear the sound of that mountain stream.</STYLE><PG>
+"What's up? Checking out <STYLE ID="6">Grandma's</STYLE> hole ahead of time?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The hole to bury </STYLE><STYLE ID="6">Grandma</STYLE><STYLE ID="1"> in tomorrow has already been dug.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In the Arata settlement, this custom of burial in the ground still continues to this day.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even I, who've only ever known Arata's funerals, used to think it was unusual.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Though apparently, on a worldwide scale, cremation is actually the minority, and burial is still more common even now.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, right here is where </STYLE>your<STYLE ID="3"> sister is sleeping."</STYLE>
+{PAUSE ""}
+<BR>
+"My sister?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"A child of my blood and </STYLE><STYLE ID="7">Eiichiro-san's</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">She couldn't be born alive."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Saying that, </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1"> closes her eyes and puts her hands together.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At times like this, people in Arata wear a Noh mask, but </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1"> puts her hands together with her face bare.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">I </STYLE><STYLE ID="8" RUBY="なら">follow</STYLE><STYLE ID="1"> suit and put my hands together.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">The other day, </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1"> told me―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">about the sister who was in </STYLE><STYLE ID="3">Mom's</STYLE><STYLE ID="1"> belly before I was born.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom's</STYLE><STYLE ID="1"> body was where she arrived, but she ended her short life right there in the womb.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My sister who never saw the light of day, with no blood ties to me, is sleeping here.</STYLE><PG>
+"If my sister had lived, I'd have grown up as sisters with <STYLE ID="9">Natsumi</STYLE>, huh."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"That's right. She was due at almost the same time as you, </STYLE>Haruka<STYLE ID="3">, so it would probably have been a friendship like the one between me and </STYLE><STYLE ID="10">Akane</STYLE><STYLE ID="3">."</STYLE><PG>
+"How many months did my sister get to live?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"5 months. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">She was inside me for just 5 months. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But for those 5 months, I was very happy. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Eiichiro-san</STYLE><STYLE ID="3"> and I would talk about our dreams for the future, and I'd talk with </STYLE><STYLE ID="10">Akane</STYLE><STYLE ID="3"> about how I'd live as a mother."</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Honestly, I have mixed feelings.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'd thought I grew up with all of </STYLE><STYLE ID="3">Mom's</STYLE><STYLE ID="1"> love to myself.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The sister who should have gotten that love is sleeping here.</STYLE><PG>
+<STYLE ID="1">Is this feeling jealousy? Anger at </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1">? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Or disappointment in myself for not even knowing about any of this?</STYLE><PG>
+<STYLE ID="3">"The truth is, I wasn't going to tell you about this, </STYLE>Haruka<STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"If you saw me like this, </STYLE>Haruka<STYLE ID="3">, it wouldn't sit well with you, would it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Th-that's not..."<PG>
+<STYLE ID="3">"To me, </STYLE>Haruka<STYLE ID="3">, you matter more than anything. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Even so, I can't forget this child. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Once you knew that, </STYLE>Haruka<STYLE ID="3">, you might feel inferior over blood ties..."</STYLE>
+{PAUSE ""}
+<BR>
+"You idiot... 
+{PAUSE ""}
+As if I'd ever think that..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The voice I argued back with was weak and small.</STYLE><PG>
+<STYLE ID="3">"But today might be the last chance. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="3">, for you to meet Ayaka."</STYLE>
+{PAUSE ""}
+<BR>
+"Ayaka...?
+{PAUSE ""}
+　Is that my sister's name?"<PG>
+<STYLE ID="3">"There are hardly any people left in this settlement anymore. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In a few more years, it might disappear."</STYLE>
+{PAUSE ""}
+<BR>
+"No way..."<PG>
+<STYLE ID="3">"So while Arata's memorial prayers still go on, I wanted you to meet her, </STYLE>Haruka<STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Ayaka is my child by blood. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="3">, you're the child I was given through </STYLE><STYLE ID="10">Akane</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="11" RUBY="きずな">the bond</STYLE><STYLE ID="3"> between us. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Which of you matters more, that's not something I can weigh on </STYLE><STYLE ID="12" RUBY="てんびん">the scales</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="3">, you, too, are to me―"</STYLE><PG>
+"<STYLE ID="3">Mom</STYLE>, don't say any more! I get it!
+{PAUSE ""}
+　I know exactly how you've felt all this time, <STYLE ID="3">Mom</STYLE>, raising me. 
+{PAUSE ""}
+Even if you don't put it into words now, I get it..."<PG>
+<STYLE ID="1">I lied.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I cut her off because I didn't want to hear any more about my sister.</STYLE><PG>
+<STYLE ID="1">I don't mean to deny that my sister existed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But if my heart had been even a tiny bit more childish than it is now, I might have cried.</STYLE><PG>
+"Hahaha! Right, so I had a sister too!
+{PAUSE ""}
+　Hahahaha!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom's</STYLE><STYLE ID="1"> eyes―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">they're eyes I saw long, long ago.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Yes, the eyes she looks at me with when I lie.</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "12" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hey, hey, <STYLE ID="3">Mom</STYLE>! <STYLE ID="9">Natsumi</STYLE>'s gonna be in elementary school soon too, right!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see... </STYLE><STYLE ID="9">Natsumi-chan</STYLE><STYLE ID="3">'s starting elementary school already. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="3">, is school fun?"</STYLE>
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+Yeah, it's fun!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Really... is it really fun?"</STYLE>
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+Yeah, it is fun!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE><PG>
+<STYLE ID="3">Mom's</STYLE><STYLE ID="1"> eyes are the same as back then.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My lie, </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1"> saw right through it with an almost frightening look.</STYLE><PG>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, if you're having fun, then that's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But if anything hurts, make sure you tell me."</STYLE>
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+Yeah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom's</STYLE><STYLE ID="1"> words made me burst into tears, and I confessed about the bullying.</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"If </STYLE>Haruka<STYLE ID="3"> is all right, then that's enough. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But if </STYLE>Haruka<STYLE ID="3"> is hurting―"</STYLE>
+{PAUSE ""}
+<BR>
+"You haven't changed."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="3">Mom</STYLE>, you haven't changed. Not since way back, and not now."<PG>
+<STYLE ID="1">Those eyes, trying to see through me so hard it's almost frightening, are the best proof there is of her love for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The way she lives as a mother, desperate to protect me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom</STYLE><STYLE ID="1"> hasn't changed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I look up at the sky―</STYLE><PG>
+"Hey, Sis! <STYLE ID="3">Our mom</STYLE> is the best in the world!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I shouted toward the heavens.</STYLE><PG>
+"<STYLE ID="3">Mom</STYLE>, thank you for letting me meet Sis."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mom's</STYLE><STYLE ID="1"> frightening eyes had, before I knew it, </STYLE><STYLE ID="13" RUBY="た">filled</STYLE><STYLE ID="1"> with tears.</STYLE><PG>
+"C'mon, let's go home. We've got the burial tomorrow, so it's gonna be rough."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I led </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1"> by the hand.</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, it's okay if I come here again and say hi, right?
+{PAUSE ""}
+　This isn't some weak place that'll vanish just 'cause there are fewer people. 
+{PAUSE ""}
+As long as I'm around, it'll be fine."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You're right, it'll be fine..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">I have a place I need to protect: the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Grandma</STYLE><STYLE ID="1"> worked so hard to change this land. Sis is sleeping in this land.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What I can do to protect this land is...</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―By the time we got back to the house, it was already 9 p.m.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\風呂.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家風呂.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\風呂入る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">I soaked in the tub alone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What I can do for Arata... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What could it be?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Grandma</STYLE><STYLE ID="1"> worked this hard trying to solve the curse-killings and to make the settlement easy for everyone to live in, and yet...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Abandoning that halfway through is something I just can't do.</STYLE><PG>
+<STYLE ID="3">Mom</STYLE><STYLE ID="1"> has the company, so she can't leave Motoki-cho, and </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1"> has a dream she wants to fulfill by studying abroad.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If someone asked whether I have a dream... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">for now, not really.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, just now, I found one.</STYLE><PG>
+{PLAYSND "BGM死月編\Code_of_Honor_#2.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="1">My dream is to rebuild the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Grandma</STYLE><STYLE ID="1">―I don't think I can do it as well as she did, and besides, there's hardly anyone here to rebuild it with in the first place.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But at this rate, the Arata settlement will disappear.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's why this place needs someone who will protect it with unshakable will.</STYLE><PG>
+<STYLE ID="1">What I can do is stay here and keep protecting Arata.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Living here means being separated from </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1">, too.</STYLE><PG>
+<STYLE ID="1">If I don't live here, </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1"> will probably quit school and come back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But rather than </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1"> giving up her dream and coming back, there should be someone whose dream is protecting this place.</STYLE><PG>
+<STYLE ID="3">Mom</STYLE><STYLE ID="1">―what will she say?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She'll definitely be against it.</STYLE><PG>
+<STYLE ID="1">But I won't </STYLE><STYLE ID="15" RUBY="ひ">back</STYLE><STYLE ID="1"> down.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The fate of this settlement depends on my will alone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I―will absolutely not back down.</STYLE><PG>
+<STYLE ID="1">Reasoning this flimsy probably won't convince </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If anything, I won't even be able to convince </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, and she'll withdraw from school and come back here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In that case, I'll make it a done deal, even by force, and move here.</STYLE><PG>
+<STYLE ID="1">Once I'm back in Motoki-cho, I'll do the paperwork to withdraw from school right away, then tell </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I think I'm gonna get yelled at a lot.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I'm ready for that much.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If I'm scared of getting yelled at, I can't serve as this place's keeper.</STYLE><PG>
+<STYLE ID="1">First, maybe I'll try talking to </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Those two are sure to be against it too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I really hate the thought of being apart from </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> and Goto, too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I hate it, but...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\風呂潜る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">I got out of the bath early.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'll go back to the room and tell </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> and Goto.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Just as I was about to go into the room on the second floor, </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I passed </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> in the hallway.</STYLE>
+{PAUSE ""}
+<BR>
+"Taking a bath now?"
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Yeah. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Haruka<STYLE ID="9">, what's wrong? You look really grim."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="9">Natsumi</STYLE>... after you're out of the bath, I've got something important to tell you both, <STYLE ID="9">Natsumi</STYLE> and <STYLE ID="14">Goto</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Okay... you can tell me anything, all right? </STYLE>
+{PAUSE ""}
+<STYLE ID="9">　If anything hurts, you can't keep it all to yourself, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Oh, and also, </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="9"> says she'll look after </STYLE><STYLE ID="4">Kana-chan</STYLE><STYLE ID="9"> in Motoki-cho. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Then </STYLE><STYLE ID="4">Kana-chan</STYLE><STYLE ID="9"> won't be lonely either, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="9">　</STYLE><STYLE ID="5">Shirozaki-san</STYLE><STYLE ID="9">―what's he going to do...?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="9">Natsumi</STYLE>... Let's talk about that later."
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"............? </STYLE>
+{PAUSE ""}
+<STYLE ID="9">　Okay, got it..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> went down the stairs.</STYLE><PG>
+<STYLE ID="4">Kana</STYLE><STYLE ID="1"> and Shirozaki-san, taking care of them isn't what this is about!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Do you even get what it means for people to be gone from here!?</STYLE><PG>
+<STYLE ID="1">No, there's no way she could.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1">―expecting that much from them would be cruel.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But it makes me really happy, the way you look out for me like that.</STYLE><PG>
+<STYLE ID="1">I've always been held up by </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> like this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">From now on, I have to live without </STYLE><STYLE ID="9">Natsumi's</STYLE><STYLE ID="1"> support.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Natsumi</STYLE><STYLE ID="1">... I'm sorry... Thank you for everything until now.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家布団.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">In the futon, </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1"> is breathing softly in her sleep.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="14">Goto</STYLE><STYLE ID="1"> cut her family trip short and came all the way here too, huh.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Grandma</STYLE><STYLE ID="1"> must be happy about it too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Thanks, </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1">.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家布団暗い.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="9">Natsumi</STYLE><STYLE ID="1">―once she's back from the bath, should I wake </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1"> up?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, I'll talk to </STYLE><STYLE ID="9">Natsumi</STYLE><STYLE ID="1"> first.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I've already decided. There's no need to go out of my way to wake </STYLE><STYLE ID="14">Goto</STYLE><STYLE ID="1"> when she's tired.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "最後の声・真呪殺\SE\窓を開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">I opened the window and gazed out at the mountains of Arata.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Down in the garden, a cherry tree that's withered away.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It's as if it symbolizes this settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The Arata settlement has withered away.</STYLE><PG>
+<STYLE ID="1">But I won't give up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'm going to bring Arata back to life, for sure.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And so, for that...</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="1">Everyone... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">goodbye.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

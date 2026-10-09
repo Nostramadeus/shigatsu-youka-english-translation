@@ -1,0 +1,134 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=263, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=167, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=16, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=32, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆりこ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=8, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=583, target=)
+; Links:
+;    0: TWdLink(count=491, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\chilly_hell.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\SE\キーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$FFFFFF" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "1" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "0" "0" "0" "" "1"}
+{PLAYMOVIE "光.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "255"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "111" "1" "500" "0" "0" "" "1"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Chigaya</STYLE>, I'm sorry. Mom died, you see..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Mom<STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+"But, <STYLE ID="1">Chigaya</STYLE>, you're the only one I've been allowed to see. 
+{PAUSE ""}
+Somewhere no one is watching, just for a little while."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really...?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Really, I can see you, </STYLE>Mom<STYLE ID="1">? I can keep seeing you from now on!?"</STYLE><PG>
+"Yes, it's true. 
+{PAUSE ""}
+But... there's a condition. 
+{PAUSE ""}
+Every year, you have to kill one person, <STYLE ID="1">Chigaya</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's...!"</STYLE>
+{PAUSE ""}
+<BR>
+"You know that <STYLE ID="2">Dad</STYLE> is suspected of being the one who killed me, don't you?
+{PAUSE ""}
+　If <STYLE ID="2">Dad</STYLE> disappears from this settlement, I won't be able to appear before you anymore, <STYLE ID="1">Chigaya</STYLE>."<PG>
+<STYLE ID="1">"No, I don't want that!"</STYLE>
+{PAUSE ""}
+<BR>
+"That's why, <STYLE ID="1">Chigaya</STYLE>, so we don't lose any more family, you have to get rid of the people who suspect <STYLE ID="2">Dad</STYLE>. 
+{PAUSE ""}
+<STYLE ID="1">You're</STYLE> strong, so you can do it, can't you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............</STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+"This is a secret just between the two of us, okay?
+{PAUSE ""}
+　You must always do it with a knife."<PG>
+<STYLE ID="1">"With a knife...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, with a knife."<PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "人物1,000" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="1">"Hah...!?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\茅萱の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mm... A dream...?"</STYLE><PG>
+<STYLE ID="1">"Mm... If </STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="1"> were gone... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I don't want that... not ever...!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mm... With a knife... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">With a knife...!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,アイテム1" "1" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\すずめ.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Heeey! Somebody come! It's </STYLE><STYLE ID="4" RUBY="ゆりこ">Yuriko</STYLE><STYLE ID="3">!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\夏菜の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"What's wrong, </STYLE><STYLE ID="6">Shirozaki</STYLE><STYLE ID="5">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yuriko's... dead...!"</STYLE><PG>
+<STYLE ID="1">"............</STYLE>
+{PAUSE ""}
+Mom<STYLE ID="1">..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

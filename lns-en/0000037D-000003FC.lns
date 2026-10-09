@@ -1,0 +1,333 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1393, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=293, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=89, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほお, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=26, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=237, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=18, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=6, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=としゃぶつ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=22, unk2=65535, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2330, target=)
+; Links:
+;    0: TWdLink(count=2090, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\pipipi.ogg" "VOICE" "REPEAT" "0" "100"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\天井.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Dazzling light was pouring into my eyeballs.
+{PAUSE ""}
+<BR>
+The brightness sent a stabbing pain deep in my eyes, and my eyelids grew heavy on their own.<PG>
+<STYLE ID="1">"Oh, she's awake!"</STYLE>
+{PAUSE ""}
+<BR>
+A voice I knew―
+{PAUSE ""}
+<BR>
+　Where am I? My head was pounding, and the skin all over my body stung.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "650" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mooom! </STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="1"> opened her eyes!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Erina</STYLE> is... my name.
+{PAUSE ""}
+<BR>
+This voice is... <STYLE ID="1">Sis</STYLE>.<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\病院.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Before long, my mom came.
+{PAUSE ""}
+<BR>
+"Ahh, <STYLE ID="2">Erina</STYLE>! Thank goodness!"
+{PAUSE ""}
+<BR>
+Mom stroked my <STYLE ID="3" RUBY="ほお">cheek</STYLE>.
+{PAUSE ""}
+<BR>
+But, I could hardly feel the touch of Mom's hand.
+{PAUSE ""}
+<BR>
+I realized that something like bandages was wrapped all over my face.<PG>
+{MESOFF "0"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\古郡家居間死体.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "14" "200" "0" "0" "" "0"}
+{WAIT "500" "NORMAL" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\病院.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "650" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "見えない光_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+Just then, it came back to me with a jolt.
+{PAUSE ""}
+<BR>
+The carnage at <STYLE ID="4">Kogori-senpai</STYLE>'s house, and <STYLE ID="5">Niimura-senpai</STYLE>, who had driven a knife into her throat to kill herself.
+{PAUSE ""}
+<BR>
+But although I remember that much, I have no memory at all of what came after.
+{PAUSE ""}
+<BR>
+Was that really real?<PG>
+<STYLE ID="2">"Hey, when is it now!?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　What month, what d...</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">Cough!</STYLE>
+{QUAKESTOP "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">cough...</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="2">hh..."</STYLE>
+{PAUSE ""}
+<BR>
+I tried to raise my voice, but the back of my throat hurt and I could not speak properly.
+{PAUSE ""}
+<BR>
+"Today is April 9. You were asleep the whole night. It's 10:30 in the morning now."
+{PAUSE ""}
+<BR>
+Mom was worried, but she put on a smile and answered.<PG>
+<STYLE ID="2">"A whole night...? </STYLE><STYLE ID="5">Niimura... senpai</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+At that, Mom's face clouded a little.<PG>
+<STYLE ID="1">"Mom, why don't you tell her?</STYLE> <STYLE ID="1">You have to tell her, right? Surely by now..."</STYLE>
+{PAUSE ""}
+<BR>
+Before Mom could answer, <STYLE ID="1">Sis</STYLE> started talking.<PG>
+<STYLE ID="1">"Listen calmly. Everyone died, they say. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">The friend who came over yesterday</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="6">her mom</STYLE><STYLE ID="1">, </STYLE><STYLE ID="4">that senpai you love so much</STYLE><STYLE ID="1"> too, and </STYLE><STYLE ID="7">her mom</STYLE><STYLE ID="1"> as well..."</STYLE>
+{PAUSE ""}
+<BR>
+Then <STYLE ID="5">Niimura-senpai</STYLE> really did try to kill herself with the knife...?
+{PAUSE ""}
+<BR>
+To protect me from the curse...?
+{PAUSE ""}
+<BR>
+<STYLE ID="8">―</STYLE><STYLE ID="1">Sis</STYLE> went on.<PG>
+<STYLE ID="1">"After that, the Kogori house caught fire, and they say </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> alone, the one in the entryway, were barely pulled out. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Everyone else... the fire had already spread, and apparently the bodies are in a terrible state."</STYLE>
+{PAUSE ""}
+<BR>
+There was a fire after that?
+{PAUSE ""}
+<BR>
+What does that mean? I don't understand... I don't understand any of it...<PG>
+<STYLE ID="1">"And so, </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">'re in this hospital now, that's the deal."</STYLE>
+{PAUSE ""}
+<BR>
+And before I had time to think,
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+there was a knock on the hospital room door, which had been left open.<PG>
+"Ooh, so you've come to."
+{PAUSE ""}
+<BR>
+I had seen him before. The old-man-like detective I met at the police station yesterday.<PG>
+"You're <STYLE ID="2">Erina Goto</STYLE>-san, aren't you. Last night must have been hard on you."
+{PAUSE ""}
+<BR>
+The detective spoke to me with a smile.
+{PAUSE ""}
+<BR>
+But hearing it, no feeling welled up in me at all.
+{PAUSE ""}
+<BR>
+I felt no tension and no annoyance, and that smile did not soften me.<PG>
+"Sorry to bother you just as you've woken up, but there's something I'd like to ask."
+{PAUSE ""}
+<BR>
+With that, the detective began rummaging around in his bag.
+{PAUSE ""}
+<BR>
+Is this a formal statement?
+{STOPSND "BGM" "3000" "PASS"}
+<PG>
+"This was found in <STYLE ID="2">your</STYLE> pocket, but does it mean anything to you?"
+{PAUSE ""}
+<BR>
+In the clear plastic bag the detective took out, there was something white and flat.<PG>
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Huh...?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Huh...!?"</STYLE>
+{PAUSE ""}
+<BR>
+What the detective showed me, it was...<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\新村春花.gal" "NORMAL" "#1" "200" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\新村美冬.gal" "NORMAL" "#1" "500" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was two paper figures.
+{PAUSE ""}
+<BR>
+And on the paper figures―
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="5">Haruka Niimura</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Mifuyu Niimura</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+Their surfaces were fouled with something like <STYLE ID="9" RUBY="としゃぶつ">vomit</STYLE>.<PG>
+<STYLE ID="2">"I-I don't know..."</STYLE>
+{PAUSE ""}
+<BR>
+I was too frightened to say that I did know.
+{PAUSE ""}
+<BR>
+It was the first time I had seen the paper figures of the two of them, but I understand what this means.<PG>
+"Is that so... By the way, this dirt-like stuff on the surface, it is actually <STYLE ID="5">Haruka Niimura-san</STYLE>'s―"<PG>
+{CREATECG "000" "グラフィック\背景\病院.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,アイテム2" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="10">"I told you I don't know!!!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+I forgot the pain in my throat and shouted.
+{PAUSE ""}
+<BR>
+Mom and <STYLE ID="1">Sis</STYLE> both froze where they stood at my voice, and the hospital room fell silent.<PG>
+"My apologies. If that is how it is, that is fine. Well then, take care of yourself."
+{PAUSE ""}
+<BR>
+The detective left briskly.
+{PAUSE ""}
+<BR>
+What is it... what is this...<PG>
+"<STYLE ID="2">Erina</STYLE>, are you all right? Do you want something to drink?"
+{PAUSE ""}
+<BR>
+Mom said that, but it did not get into my head.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "650" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"But, </STYLE><STYLE ID="5">Niimura-san</STYLE><STYLE ID="1">'s father, yesterday was the anniversary of his death, right? And </STYLE><STYLE ID="4">that senpai you like</STYLE><STYLE ID="1"> never knew that all this time? Isn't that strange?</STYLE>
+{PAUSE ""}
+　<STYLE ID="2">You</STYLE><STYLE ID="1">'d have noticed long ago, I'd think."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Momoko</STYLE>... that is enough now."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ahh... yeah, sorry, sorry."</STYLE>
+{PAUSE ""}
+<BR>
+But <STYLE ID="1">Sis</STYLE>'s words gave me the final shock.<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\キーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "$FFFFFF" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "12" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPS>Now that I think of it...
+{PAUSE ""}
+That time...<PG>
+{MESOFF "500"}
+{PLAYSND "明かされた真実.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "10000" "PASS"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中思い出.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="5"><TXSPN>"Yeah, I lived here in Motoki-cho until kindergarten, but it was Dad's work. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">3 years ago Dad finally got transferred overseas, so it became a posting away from the family. Just me and </STYLE><STYLE ID="6">Mom</STYLE><STYLE ID="5">, we came back to this town."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Our moms were childhood friends, and through that we've been friends since we were old enough to remember. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">3 years ago, once it was settled that we would move back to Motoki-cho, </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="5"> told me, 'the place next door is empty'. </STYLE><STYLE ID="6">Mom</STYLE><STYLE ID="5"> let me have my way, and we moved into the apartment we're in now."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\病院.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "14" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I see... So that was what it was...
+{PAUSE ""}
+<BR>
+I never noticed at all...
+{PAUSE ""}
+<BR>
+There were still so many things I had overlooked.<PG>
+Why did I not notice something as simple as this?
+{PAUSE ""}
+<BR>
+If I had noticed it then, my senpai might not have had to die.
+{PAUSE ""}
+<BR>
+But I have stopped thinking.
+{PAUSE ""}
+<BR>
+A head that works too well is nothing but suffering.<PG>
+So much for the genius girl. I want nothing more to do with that title.
+{PAUSE ""}
+<BR>
+I don't want to think about anything anymore.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Niimura-senpai</STYLE> was right. If everyone is dead, then... nothing matters anymore.
+{PAUSE ""}
+<BR>
+If they say it is a curse... then fine, let it be...<PG>
+The Operation is... a failure.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPS>Through the open window of the hospital room,
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\花びら.gal" "NORMAL" "#1" "650" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+cherry petals came fluttering in.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+Mom... <STYLE ID="1">Sis</STYLE>...
+{PAUSE ""}
+<BR>
+Cherry blossoms are beautiful, aren't they.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+{MESOFF "3000"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\lcm\ルートエンド.lcm" "WAIT" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

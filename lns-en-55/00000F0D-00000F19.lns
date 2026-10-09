@@ -1,0 +1,608 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3912, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=8, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=463, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=14, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみし, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さわけん, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しか, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふるむら, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あきな, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あお, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いいざわ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=5, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんか, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てい, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4849, target=)
+; Links:
+;    0: TWdLink(count=4428, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "WAIT"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>I'm running away. Without the courage to face my fate―
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Daddy</STYLE> says there's no need to run away, and even the misfortune will be over soon.<PG>
+But I'm running away.
+{PAUSE ""}
+<BR>
+I haven't decided on any destination. I just want to get away, that's all.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\電車昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I also thought about holing up in the mountains for a while.
+{PAUSE ""}
+<BR>
+But that would be a waste of time.
+{PAUSE ""}
+<BR>
+Just using up time isn't like me.
+{PAUSE ""}
+<BR>
+I only get one life; wasting time is out of the question.<PG>
+In that case, I'd rather try going somewhere nobody knows me―somewhere with lots of people.
+{PAUSE ""}
+<BR>
+With a little sense of adventure helping things along, I'm swaying on a train.
+{PAUSE ""}
+<BR>
+Where is this train headed?
+{PAUSE ""}
+<BR>
+I haven't even looked that up.
+{PAUSE ""}
+<BR>
+I don't even feel like looking. Anywhere is fine.<PG>
+I check the contents of my wallet once more.
+{PAUSE ""}
+<BR>
+In elementary school, I used to buy snacks now and then from the ice cream stand at <STYLE ID="2" RUBY="とよたけ">Toyotake</STYLE> Station.
+{PAUSE ""}
+<BR>
+But I've held back from even that for about 2 years now.
+{PAUSE ""}
+<BR>
+I need money.<PG>
+<STYLE ID="3">"100,000 and... 394 yen, huh."</STYLE>
+{PAUSE ""}
+<BR>
+This is all the money I have.
+{PAUSE ""}
+<BR>
+Since I started middle school, I've barely spent any of my allowance.
+{PAUSE ""}
+<BR>
+Touching my New Year's money is out of the question.
+{PAUSE ""}
+<BR>
+You can't weigh money against a person's life.<PG>
+I've heard that where there are lots of people, there are lots of good people and lots of bad people.
+{PAUSE ""}
+<BR>
+This wallet is my lifeline.
+{PAUSE ""}
+<BR>
+I keep it in my inside pocket, always on me, so I can feel it there at all times.
+{PAUSE ""}
+<BR>
+Even this little-over-100,000 yen will probably be gone in a few days.<PG>
+Once I'm out in a big town, I'll have to do my own hunting as much as I can, find water, and find somewhere I can sleep outdoors, too.
+{PAUSE ""}
+<BR>
+I'd be glad to find a place like that secret base, but a spot that good is rare even in Arata.
+{PAUSE ""}
+<BR>
+Even if I can manage somewhere to sleep, food, I'll just have to get for myself.
+{PAUSE ""}
+<BR>
+A big town has lots of people, so there must be lots of animals to hunt for food, too.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+I'm heading for a big town in order to run away.
+{PAUSE ""}
+<BR>
+It's not that I hated life in the Arata settlement.
+{PAUSE ""}
+<BR>
+If anything, I didn't want to leave.
+{PAUSE ""}
+<BR>
+But I don't have the courage to face it.
+{PAUSE ""}
+<BR>
+Because I can't face the urge to want to kill <STYLE ID="4">Mommy</STYLE>, an urge I don't even want to imagine.<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\東京.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\日々と泉.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "10000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\バース\長城駅前.gal" "NORMAL" "#1" "C" "B" "0" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After changing trains a few times, I arrived at a bustling station.
+{PAUSE ""}
+<BR>
+This place is apparently called 'Sawa-<STYLE ID="5" RUBY="みなかみ">Minakami</STYLE> Station.'
+{PAUSE ""}
+<BR>
+I've heard that <STYLE ID="6" RUBY="みなかみし">Minakami City</STYLE> is the prefectural capital of <STYLE ID="7" RUBY="さわけん">Sawa Prefecture</STYLE>, a city with a population of about 400,000.
+{PAUSE ""}
+<BR>
+I can probably manage here.<PG>
+<STYLE ID="3">"Whoa..."</STYLE>
+{PAUSE ""}
+<BR>
+I'm overwhelmed by a cluster of buildings I've only ever seen on the school trip.
+{PAUSE ""}
+<BR>
+I see. So this is what they call civilization.
+{PAUSE ""}
+<BR>
+Animals... 
+{PAUSE ""}
+there aren't any...
+{PAUSE ""}
+<BR>
+With this many people around, the animals probably won't come near, so if I'm going to hunt, night would be better.<PG>
+What I have with me right now is a few days' changes of clothes and toiletries―
+{PAUSE ""}
+and just two knives I'm used to using.
+{PAUSE ""}
+<BR>
+After all, I had no time to prepare.
+{PAUSE ""}
+<BR>
+I had to pick a time when no one would see me leave home, and on top of that, 'that' came suddenly.
+{PAUSE ""}
+<BR>
+I'd actually meant to leave on August 1, my 15th birthday, but because 'that' came so suddenly, I had to move my plans up by nearly 4 months.<PG>
+It was one or the other: 'that' first, or turning 15 first.
+{PAUSE ""}
+<BR>
+But honestly, I couldn't really picture that happening to me.
+{PAUSE ""}
+<BR>
+Though I do feel it's late for my age.<PG>
+Now, first I need to secure a base.
+{PAUSE ""}
+<BR>
+I'll head toward the mountains as far as I can and look for a cave or a big tree that's perfect to live in, or else an empty house.
+{PAUSE ""}
+<BR>
+Even better if there's a stream nearby.<PG>
+―And then, 
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\パトカー走行.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+several police cars race past right in front of me, lined up one behind another.
+{PAUSE ""}
+<BR>
+Their roof lights are spinning, but they're not sounding their sirens, and their speed is normal.
+{PAUSE ""}
+<BR>
+Some kind of security detail?
+{PAUSE ""}
+<BR>
+I'll try following them a little.<PG>
+I thought about running after them, but at school there was no one who could run as fast as me.
+{PAUSE ""}
+<BR>
+A TV drama said that to live among lots of people, it's better to avoid standing out.
+{PAUSE ""}
+<BR>
+I decide to follow them at a light jog, about the same as everyone else.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\長城駅前.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I shift my bag on my shoulder and head off in the direction the police cars went.
+{PAUSE ""}
+<BR>
+This town has a lot of traffic lights.
+{PAUSE ""}
+<BR>
+Every 500 meters or so, the police cars stop at a light.
+{PAUSE ""}
+<BR>
+So I can catch up to them right away.
+{PAUSE ""}
+<BR>
+In this town, with so many people and so many cars, cars don't seem very useful.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I ran through Minakami City for about an hour, chasing the police cars.
+{PAUSE ""}
+<BR>
+Luckily I never lost sight of them, and it seems I made it to their destination.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\バース\日の丸集団.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There, a crowd of thousands.
+{PAUSE ""}
+<BR>
+Everyone is holding Rising Sun flags and shouting toward something.
+{PAUSE ""}
+<BR>
+And lots of people are taking pictures.
+{PAUSE ""}
+<BR>
+At my height, I can't see the front very well...<PG>
+"His Majesty the Emperor, banzaaai!"
+{PAUSE ""}
+<BR>
+"Your Majesty the Empreeess!"
+{PAUSE ""}
+<BR>
+His Majesty the Emperor?
+{PAUSE ""}
+<BR>
+If he's really here, this is the perfect chance to lay eyes on him!<PG>
+I see, so the Sawa Prefectural Police and whoever else are out as his security detail.
+{PAUSE ""}
+<BR>
+The flag-waving gawkers cheer even louder.
+{PAUSE ""}
+<BR>
+His Majesty the Emperor and the Empress must be waving to everyone with gentle smiles.
+{PAUSE ""}
+<BR>
+It dawns on me, belatedly, that I may be in an outrageous place.
+{PAUSE ""}
+<BR>
+Since I'm here anyway, I'll mingle with the gawkers a little longer.<PG>
+Then, from beyond the crowd, a black car sets off and, flanked by police cars, heads away somewhere.
+{PAUSE ""}
+<BR>
+And the gawkers scatter.
+{PAUSE ""}
+<BR>
+It seems His Majesty the Emperor has left.
+{PAUSE ""}
+<BR>
+Seems I got here a little too late.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\庭園入口.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Looking around again, I seem to be in front of grounds with large gardens.
+{PAUSE ""}
+<BR>
+It looks like there's an admission fee, but beyond the gate I can glimpse vivid flowers.
+{PAUSE ""}
+<BR>
+It's already spring, after all.
+{PAUSE ""}
+<BR>
+So His Majesty was here on a visit.<PG>
+Thanks to chasing the police cars, I seem to have come out to the edge of town.
+{PAUSE ""}
+<BR>
+The mountains are right there, too.
+{PAUSE ""}
+<BR>
+Okay, I'll look for a place to sleep around here.
+{PAUSE ""}
+<BR>
+Just then, a man walks up.<PG>
+"Hey, hey, what are you doing with that big bag?"
+{PAUSE ""}
+<BR>
+He's about 50, maybe?
+{PAUSE ""}
+<BR>
+His clothes are youthful for his face, he's neat, and at a glance he makes a good impression.
+{PAUSE ""}
+<BR>
+What am I doing, he asks...<PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="3">"Um... I was thinking I'd look for a place to sleep tonight."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? <STYLE ID="3">Miss</STYLE>, don't tell me you ran away from home?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Well... I guess you could say that..."</STYLE>
+{PAUSE ""}
+<BR>
+"Then I'll show you a nice place!
+{PAUSE ""}
+　Come on, the car's over this way!"<PG>
+{PLAYSND "日曜日の朝.ogg" "BGM" "REPEAT" "1000" "0"}
+At last I understand the situation.
+{PAUSE ""}
+<BR>
+So this is what they call a pickup.
+{PAUSE ""}
+<BR>
+In elementary school, I was a kid who told nothing but dirty jokes to <STYLE ID="8">Haruka-chan</STYLE> and my school friends, so my knowledge in that area was way beyond my age.
+{PAUSE ""}
+<BR>
+But around when I started middle school, <STYLE ID="4">Mommy</STYLE> <STYLE ID="9" RUBY="しか">scolded</STYLE> me that it was about time I learned how to carry myself as a woman, and since then I've kept the crude talk sealed away.<PG>
+At first glance, I'm a runaway girl fresh from the countryside.
+{PAUSE ""}
+<BR>
+And that sheltered girl is being picked up by some old guy I don't know.
+{PAUSE ""}
+<BR>
+This looks fun!
+{PAUSE ""}
+<BR>
+If it looks like I'm in danger, I can just run, or beat him to a pulp.
+{PAUSE ""}
+<BR>
+Judging from his build and the way he moves, he's clearly weaker than me.<PG>
+<STYLE ID="3">"Really!? I'm so glad I met a nice person!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　You'll show me a nice place... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">what kind of place is it?"</STYLE>
+{PAUSE ""}
+<BR>
+Smiling, I play along with the old guy's offer.
+{PAUSE ""}
+<BR>
+"Why, a place with a proper bed and bath and everything!
+{PAUSE ""}
+　This old guy's somebody important, you know!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wow, amaaazing! I'll go, I'll go!"</STYLE><PG>
+I have no intention whatsoever of relying on this old guy.
+{PAUSE ""}
+<BR>
+It's just curiosity, and if things look dangerous, I'll just run.
+{PAUSE ""}
+<BR>
+Whatever my real purpose is, I came all the way to a big town, so it's no fun without an event like this.<PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "700" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\車室内エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\車走行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\バース\助手席から1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I get into the car he leads me to, leave the destination to the old guy, and relax in the passenger seat.
+{PAUSE ""}
+<BR>
+As before, the car keeps getting caught at red lights, with none of the speed of the buggy back in Arata.
+{PAUSE ""}
+<BR>
+At this rate, I'd be faster on foot...
+{PAUSE ""}
+<BR>
+Still, this car is fitted with some imposing machinery I've never seen before.
+{PAUSE ""}
+<BR>
+What's it used for?<PG>
+"<STYLE ID="3">Miss</STYLE>, what's your name?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm... </STYLE>
+{PAUSE ""}
+<STYLE ID="10" RUBY="ふるむら">My name's Akina </STYLE><STYLE ID="11" RUBY="あきな">Furumura</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+Just in case, I give a false name I came up with on the spot.
+{PAUSE ""}
+<BR>
+Turning Kana Niimura into Akina Furumura was maybe a little too easy... [TN: nii/furu = new/old, ka/aki = summer/autumn]<PG>
+"<STYLE ID="3">Akina-chan</STYLE>, huh! What a cute name!"
+{PAUSE ""}
+<BR>
+This old guy is blatantly a lolicon...
+{PAUSE ""}
+<BR>
+I'll <STYLE ID="12" RUBY="あお">egg him on</STYLE> a little more.<PG>
+<STYLE ID="3">"Hehe! I turn 15 this year! Finally, I round up to 20!"</STYLE>
+{PAUSE ""}
+<BR>
+"So you're 14 now, huh!
+{PAUSE ""}
+　I see, I see!
+{PAUSE ""}
+　Hmmm! I see, I see!"
+{PAUSE ""}
+<BR>
+I desperately hold back from bursting out laughing.
+{PAUSE ""}
+<BR>
+This blatant, I don't find him creepy―if anything, I almost find him cute.<PG>
+"<STYLE ID="3">Akina-chan</STYLE>, are you half-Japanese!?
+{PAUSE ""}
+　Your skin's so white and your face is so pretty, and your eyes are blue and green, too!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That's right! My dad's half Japanese, half American, and my mom's Russian!"</STYLE>
+{PAUSE ""}
+<BR>
+Of course, this is a huge lie.
+{PAUSE ""}
+<BR>
+Despite how I look, I'm fully Japanese.<PG>
+"Ho-hooo! I see, I see!
+{PAUSE ""}
+　Hmmm! I see, I see!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ehehe, do I have a cute face!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Anyone can see it! I thought you were a fairy!"
+{PAUSE ""}
+<BR>
+At that, for a second, I burst out snorting.
+{PAUSE ""}
+<BR>
+Me...! A fairy...!<PG>
+"<STYLE ID="3">Akina-chan</STYLE>, where are you from?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="13" RUBY="いいざわ">Iizawa</STYLE><STYLE ID="3"> Prefecture!"</STYLE>
+{PAUSE ""}
+<BR>
+"Iizawa Prefecture!? You came all the way from the next prefecture over, huh... 
+{PAUSE ""}
+Why Sawa Prefecture?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I figured, if I'm going anyway, I'd go somewhere nobody knows me!"</STYLE><PG>
+"I see, I see! <STYLE ID="3">Akina Furumura-chan</STYLE>, 14, from Iizawa Prefecture, huh!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes!"</STYLE>
+{PAUSE ""}
+<BR>
+The old guy, going out of his way to repeat my personal information.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Akina-chan（provisional）</STYLE>, answering cheerfully.
+{PAUSE ""}
+<BR>
+This cheerful, maybe it's a little too much of an act...
+{PAUSE ""}
+<BR>
+I'll put on a slightly anxious act and try tugging at his male heartstrings.<PG>
+<STYLE ID="3">"Um... but why are you being so kind to me?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Could it be you want to do something weird to me..."</STYLE>
+{PAUSE ""}
+<BR>
+"Does this old guy... look like a bad person to you...?"
+{PAUSE ""}
+<BR>
+You do, you do! You totally do!
+{PAUSE ""}
+<BR>
+Or rather, never mind your looks, it's what you say and do that's suspicious!
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I just thought... you might be a little dangerous..."</STYLE><PG>
+"Hmm, I figured as much... 
+{PAUSE ""}
+Guess that's why this kind of work suits this old guy, huh."
+{PAUSE ""}
+<BR>
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{STOPSND "BGM" "5000" "PASS"}
+............?
+{PAUSE ""}
+<BR>
+Normally you'd hide how suspicious you are as much as you could and pretend to be a gentleman...<PG>
+"Here we are."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The car pulls into a big parking lot in front of a big building.
+{PAUSE ""}
+<BR>
+And instead of parking in the outdoor lot, it heads for the building's underground entrance.
+{PAUSE ""}
+<BR>
+Where... is this?
+{PAUSE ""}
+<BR>
+Not knowing who the old guy really is, I gradually start to feel uneasy.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "SE\車エンジン切る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\バース\地下駐車場.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Okay, let's get out."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Um... where is this?"</STYLE>
+{PAUSE ""}
+<BR>
+"Sawa Prefectural Police Headquarters. The police."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"The police!?"</STYLE><PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+"His Majesty the Emperor is visiting today, so we had a lot of plainclothes officers posted, and <STYLE ID="3">you</STYLE> were obviously a runaway girl. 
+{PAUSE ""}
+So I'm taking <STYLE ID="3">you</STYLE> into protective custody here."
+{PAUSE ""}
+<BR>
+Then he shows me a police badge with a photo of the same face as the old guy's.<PG>
+<STYLE ID="3">"A police officer!?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Um... do I have to go home...?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's right. Now, get out."
+{PAUSE ""}
+<BR>
+No way...! If I go home I'll run right into <STYLE ID="4">Mommy</STYLE>!
+{PAUSE ""}
+<BR>
+Until the color of these eyes is cured like <STYLE ID="14">Sis's</STYLE> was, I can't possibly see <STYLE ID="4">Mommy</STYLE>...!<PG>
+If he were a pervert, I could've beaten him to a pulp, but the police are another story.
+{PAUSE ""}
+<BR>
+I'll just have to find an opening and run...
+{PAUSE ""}
+<BR>
+No, if it got out that I'd run away from the police, it might cause trouble for <STYLE ID="1">Daddy</STYLE> and <STYLE ID="4">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+It can't be helped. I'll claim that <STYLE ID="4">Mommy</STYLE> and I <STYLE ID="15" RUBY="けんか">had a fight</STYLE>, use that <STYLE ID="16" RUBY="てい">story</STYLE>, and try to have contact only with <STYLE ID="1">Daddy</STYLE> as much as I can.<PG>
+<STYLE ID="3">"Um... I don't want to see </STYLE><STYLE ID="4">Mommy</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If you're going to tell my parents, I want to talk to </STYLE><STYLE ID="1">Daddy</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+"Well, come inside for now."
+{PAUSE ""}
+<BR>
+I'd better do as I'm told for now.
+{PAUSE ""}
+<BR>
+Maybe I should've at least left a note.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,514 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=403, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2128, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=409, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=58, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=187, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=237, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=6, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くじこうじ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はたなか, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おり, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3803, target=)
+; Links:
+;    0: TWdLink(count=3436, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\tumbling1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Oof!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I woke up to a hard blow to the stomach.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供バストアップ.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\春花子供バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Gyahahaha, </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">! Take that!"</STYLE>
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The two of them were having a wrestling match first thing in the morning.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Akane</STYLE><STYLE ID="1">, too, squirmed awake at the commotion.</STYLE><PG>
+"Hey, <STYLE ID="2">Natsumi</STYLE>... Be quiet..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> had apparently been up already.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> was getting a look from </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1">, whose face seemed happy, and sad, and angry.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just like a Noh mask.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供喜び.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="5">Obachan</STYLE><STYLE ID="2">, long time no see!"</STYLE>
+{PLAYSND "SE\軽くぶつかる.ogg" "SE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> jumped on </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Whoa! Wait, </STYLE><STYLE ID="2">Natsumi-chan</STYLE><STYLE ID="5">!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Uh... hee hee, it's been a while. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">How have you been?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah! I hate cherry blossoms, but when I see </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="2">, I feel all better!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I'm happy to see you too, </STYLE><STYLE ID="5">Obachan</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> gave </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> a big, beaming smile.</STYLE><PG>
+<STYLE ID="5">"I see... I'm happy to see you too, </STYLE><STYLE ID="2">Natsumi-chan</STYLE><STYLE ID="5">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="5">Obachan</STYLE><STYLE ID="2">, you really are pretty!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Now that she mentioned it, her expression was different from last night.</STYLE><PG>
+<STYLE ID="1">Yesterday she had been haggard and lifeless, but today she was lively, like a different person.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Or was it that, since I hadn't seen her smile yesterday, today she just looked the way she used to?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Today there was something gentle in her expression, somehow.</STYLE><PG>
+<STYLE ID="1">Could it be that </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1">'s face hasn't actually changed?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If so, it's a matter of the heart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right now, </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> had a face I remembered: the one from that time when she was happy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1">: had seeing them made her remember the days when </STYLE><STYLE ID="6">Eiichiro</STYLE><STYLE ID="1"> was alive?</STYLE><PG>
+<STYLE ID="1">In that case... this might not be such a hard problem after all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> doesn't truly want to kill the bullies.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She just wants to live a quiet life.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Eiichiro</STYLE><STYLE ID="1">'s death put a crack in her life, and she just doesn't know how to repair it.</STYLE><PG>
+<STYLE ID="1">Then there's no way killing the bullies could bring her peace.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Killing the bullies would defeat the whole purpose.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The point is, as long as </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1"> can live peaceful days, that's all that matters.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It's this simple, so why was I wavering!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I see. I finally understand, firsthand, what </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1"> always used to say: '</STYLE><STYLE ID="5">Mifuyu</STYLE><STYLE ID="1"> is extreme.'</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサーうつむき.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="5">Obachan</STYLE><STYLE ID="2">, what's wrong? Are you not feeling well?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> was still being hugged as </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> worriedly </STYLE><STYLE ID="7" RUBY="のぞ">peered</STYLE><STYLE ID="1"> into her face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　N... no... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I have to go out with </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="5"> now, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> seemed almost flustered at herself for accepting </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="1">I became sure of one more thing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> doesn't hate </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> from the bottom of her heart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She just wants to blame someone for the way things are now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Otherwise, </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> can't bear it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was probably just her being 'a big baby at heart,' showing itself in the worst possible form.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"</STYLE>Ryoji-san<STYLE ID="5">, I'm going to change, so..."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? Oh, sorry."<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\手直し・追加\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―It was a clear, sunny day.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There wasn't much wind either, so it might not affect </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">'s health much.</STYLE><PG>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1">'s personality: 'not stupid,' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">'extreme,' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">'a big baby at heart,' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">'simple and honest.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">These had tangled together in a bad way and led </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> to a bad choice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was all probably for </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1">'s sake, but as if she had hypnotized </STYLE><STYLE ID="5">herself</STYLE><STYLE ID="1">, she seemed to have nothing in her head but killing the bullies.</STYLE><PG>
+<STYLE ID="1">But through her contact with </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">, the true feelings hidden under the hypnosis had shown, just a tiny bit.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> wants to live a peaceful life, but because she can't, she's looking outside herself for the cause.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then what I should do today is―</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">"Well then, I'm counting on you for the rest."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">, see you!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At 7 a.m., the two of them left for the memorial service.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> left behind detailed instructions.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">They laid out the whole plan for today.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">For now, I had </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1"> look after the energetic </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">, and went over the instructions.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\手紙.gal" "WAIT" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">They covered the targets' behavior patterns, and even where we were to hide.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She must have checked very carefully.</STYLE><PG>
+<STYLE ID="1">The boy, </STYLE><STYLE ID="8" RUBY="くじこうじ">Koji Kuji</STYLE><STYLE ID="1">, plays at a friend's house every Thursday, then goes home and heads to cram school, which starts at 16:30.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So at around 16:00, he rides his bicycle along the road </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> specified.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The ambush point is near the boy's house, so he will hardly take a different road, it said.</STYLE><PG>
+<STYLE ID="1">The girl, Kokona </STYLE><STYLE ID="9" RUBY="はたなか">Hatanaka</STYLE><STYLE ID="1">: her father has Thursdays and Fridays off every week.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On Thursday evenings she always goes out with her parents, the three of them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She has an older brother, but he's at cram school, so he joins the three of them as soon as it's over.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Where this family goes is a large shopping complex, the 'Megamall.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The girl loves the 'Pri-Girl Show,' which has been held every day lately.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The show starts at 16:10, so around 16:00 is the time to strike.</STYLE><PG>
+<STYLE ID="1">I see. Both kids followed set routines.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But the movements it called for were, any way you looked at it, beyond what a human could do.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Some spots demanded a 2-meter-high jump, and others required running 50 meters in 3 seconds.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was that drug really that powerful?</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\ドローガ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The instructions included precautions about the drug.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">All it does is remove the limiter the brain puts on muscle strength.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Keep going at full power for a long time, and your body will be wrecked, without a doubt.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The allowable time at full power is 3 seconds at most.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Recommended: moving at 80% power for just 10 seconds, huh...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Test beforehand with half the dose... it said that too.</STYLE><PG>
+<STYLE ID="1">If we carried this out, </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1"> would both be saved, for the time being.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">We, too, could go back to living in Motoki-cho the way we always had.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But that surely isn't what </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> really wants.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> had been shown that face only briefly, but it was surely </STYLE><STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1">'s true heart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1">, I'm glad I brought </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> along.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">I looked at the boxes that had been prepared.</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">Akane</STYLE>, we're staying here all day today. We won't use that stuff."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Okay... I'll trust you, </STYLE>Ryoji-kun<STYLE ID="4">."</STYLE>
+{PLAYSND "Lucky_You.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Akane</STYLE><STYLE ID="1">, too, readily went along with it.</STYLE><PG>
+<STYLE ID="1">Happiness built on top of a crime can't possibly last forever.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even if it looks peaceful, the same thing happens again, and it all falls apart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Cutting it off here, now, is best.</STYLE><PG>
+"<STYLE ID="4">Akane</STYLE>, you understand, right? What <STYLE ID="5">Mifuyu-san</STYLE> really wants."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes. </STYLE><STYLE ID="5">Mifuyu</STYLE><STYLE ID="4"> doesn't want to kill. She just wants to live in peace together with </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But won't we end up marked by </STYLE><STYLE ID="5">Mifuyu</STYLE><STYLE ID="4">'s 'someone I can trust'...?"</STYLE><PG>
+"If things get to where <STYLE ID="5">Mifuyu-san</STYLE> can accept them, she'll talk that person around. 
+{PAUSE ""}
+And then <STYLE ID="5">Mifuyu-san</STYLE> wouldn't allow them to lay a hand on us either."<PG>
+<STYLE ID="4">"You're right... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Okay. </STYLE>Ryoji-kun<STYLE ID="4">, let's save them together. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Mifuyu</STYLE><STYLE ID="4">, </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="4">, and of course </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="4"> too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Akane</STYLE><STYLE ID="1">'s eyes, too, no longer held any hesitation.</STYLE><PG>
+<STYLE ID="5">Mifuyu-san</STYLE><STYLE ID="1"> and her daughter would be back around 20:00 today.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Until then, we would do nothing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But... even so, this was a bit boring...</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供喜び.gal" "WAIT" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hey, hey, </STYLE>Dad<STYLE ID="2">! Where are we going!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh!? Uh, um..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE>Ryoji-kun<STYLE ID="4">, I know it's not the best time, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="4"> seems to be doing well, so why don't we go out for a bit?"</STYLE>
+{PAUSE ""}
+<BR>
+"You're saying we should go sightseeing in Megasawa City at a time like this?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Then you'd rather stay cooped up in this cold room all day?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm not really in the mood for sightseeing, though..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"We're not going out...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> gave me a lonely look.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If it were just me and </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1">, fine, but keeping </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> quiet here looked like more trouble...</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE>Ryoji-kun<STYLE ID="4">, let's go."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay, okay!<STYLE ID="1">　</STYLE>
+{PAUSE ""}
+<STYLE ID="2">Natsumi</STYLE>, where do you want to go?"<PG>
+{STOPSND "BGM" "3000" "PASS"}
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "2" "500" "960" "1" "" "0"}
+{PLAYSND "僕らの日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\女ケ沢市全景.gal" "WAIT" "#1" "C" "B" "0" "2" "500" "960" "1" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Megasawa City is a sprawling city of about 200,000 people.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">From what I looked up, there seemed to be a fair number of places to see.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A zoo... a cable car with a view down over the sea...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A shopping complex called the Megamall.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> would enjoy a lot of these places, but there was no way to cover them all in one day.</STYLE><PG>
+"<STYLE ID="2">Natsumi</STYLE>, apparently there's a zoo and a cable car. Want to try the zoo first?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah! My first time at a zoo!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\動物園蛇.gal" "NORMAL" "2" "500" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供喜び.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hey, hey, look! That snake is huge!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE>Dad, Dad<STYLE ID="2">! Take a picture of me with the snake!"</STYLE>
+{PAUSE ""}
+<BR>
+"Okay, look over here... 
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "SE\風呂飛込み.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Ah! It went under the water!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Aww, Mr. Snake, show your face!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\スチル\アリクイ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE>Dad<STYLE ID="2">, what's that?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's a lesser anteater, it says. An animal that eats ants."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hmm, it's doing the same pose as the kanji for 'big.'"</STYLE>
+{PAUSE ""}
+<BR>
+"Apparently that's its threat pose. Wait, you know kanji?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah! One, and two, and three, and... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And I can read the one for 'small' too!"</STYLE><PG>
+"Oh, <STYLE ID="2">Natsumi</STYLE>, you're so smart. 
+{PAUSE ""}
+By the way, 'lesser anteater' means a small anteater."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Why's it doing the 'big' pose when it's a small anteater?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh, I get it! It's small, so it's doing that pose to get big!"</STYLE>
+{PAUSE ""}
+<BR>
+"Uh, y-yeah, you're right..."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\動物園ライオン.gal" "NORMAL" "2" "500" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Grrr... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">RAWR!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> was imitating a lion in front of the </STYLE><STYLE ID="10" RUBY="おり">cage</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供喜び.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Oh, baby lions! So cute!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The mother lion was minding the cubs, and the father lion was napping in the sun.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was a rare day off, so I could leave the driving to </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1"> and have a beer or something...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, this time of all times, I should probably hold back...</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{STOPSND "BGM" "0" "PASS"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

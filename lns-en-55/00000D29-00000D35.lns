@@ -1,0 +1,346 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1845, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=16, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=5, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=35, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=30, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=307, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=12, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=14, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2521, target=)
+; Links:
+;    0: TWdLink(count=2275, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\バギー運転中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "2000" "WAIT"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田外道路.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Once again we headed for the Arata settlement on the buggy.
+{PAUSE ""}
+<BR>
+It was the first time I'd had an intuition so intense I could feel it with my eyes.
+{PAUSE ""}
+<BR>
+My heart was still pounding.
+{PAUSE ""}
+<BR>
+One more time... I'll go back over it carefully one more time.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYMOVIE "盗視.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n150\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地入口.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n150\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The first thing I saw was a cave, probably somewhere in the Arata settlement.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> must have been inside that cave.
+{PAUSE ""}
+<BR>
+That place is a very dangerous―<PG>
+No, that's not it.
+{PAUSE ""}
+<BR>
+On reflex I told <STYLE ID="1">Goto</STYLE>, 'It's dangerous, get away from there,' but thinking back carefully, I never saw <STYLE ID="1">Goto</STYLE> herself.
+{PAUSE ""}
+<BR>
+If I remember right―<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎幽霊バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ白.gal" "NORMAL" "#1" "500" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\スチル\壺幻影.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There was a man, and a woman.
+{PAUSE ""}
+<BR>
+And in front of the two of them, a suspicious-looking <STYLE ID="2" RUBY="つぼ">pot</STYLE>.
+{PAUSE ""}
+<BR>
+After that, the woman ended up covered in blood―
+{PAUSE ""}
+<BR>
+The man looked vaguely familiar...<PG>
+Probably <STYLE ID="3">Kotaro-san</STYLE>.
+{PAUSE ""}
+<BR>
+I didn't recognize the woman.
+{PAUSE ""}
+<BR>
+A woman at <STYLE ID="3">Kotaro-san</STYLE>'s side, then... could that have been <STYLE ID="4">Sakura-san</STYLE>?<PG>
+As I thought, it was clearly different from my intuitions until now.
+{PAUSE ""}
+<BR>
+Rather than foreseeing danger to <STYLE ID="1">Goto</STYLE>, I had seen <STYLE ID="3">Kotaro-san</STYLE> and <STYLE ID="4">Sakura-san</STYLE>.
+{PAUSE ""}
+<BR>
+But <STYLE ID="4">Sakura-san</STYLE> had already died 10 years ago, so...
+{PAUSE ""}
+<BR>
+What I'd just seen felt old, if anything.<PG>
+Something like an event in 'the past.'
+{PAUSE ""}
+<BR>
+It felt as if I'd seen something that happened there in the past.<PG>
+The feeling that it's a dangerous place now... 
+{PAUSE ""}
+Hmm... maybe it was a little different from that.
+{PAUSE ""}
+<BR>
+It's vague even to me, but if I had to put it in a word, maybe 'a place where there was danger.'<PG>
+―<STYLE ID="1">Goto</STYLE> had said it.
+{PAUSE ""}
+<BR>
+'No matter what, we reach <STYLE ID="3">Kotaro-san</STYLE> so easily that it's actually strange.'
+{PAUSE ""}
+<BR>
+If I wanted to argue against that, it would be with 'where there's smoke, there's fire.'
+{PAUSE ""}
+<BR>
+Even if <STYLE ID="3">Kotaro-san</STYLE> isn't the culprit, he probably has some connection.<PG>
+That suspicious-looking <STYLE ID="2" RUBY="つぼ">pot</STYLE>... 
+{PAUSE ""}
+<STYLE ID="3">Kotaro-san</STYLE>... 
+{PAUSE ""}
+A blood-soaked <STYLE ID="4">Sakura-san</STYLE>.
+{PAUSE ""}
+<BR>
+On my own, I'd have a hard time examining that and working out an answer.
+{PAUSE ""}
+<BR>
+Without a doubt, this is something I should talk over with <STYLE ID="1">Goto</STYLE>.<PG>
+No... before that, maybe I should ask Shirozaki-san...
+{PAUSE ""}
+<BR>
+If it was something that happened in the past, he might know something.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\バギー運転中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "2000" "WAIT"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田外道路.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Excuse me! </STYLE><STYLE ID="6">Shirozaki-san</STYLE><STYLE ID="5">!"</STYLE>
+{PAUSE ""}
+<BR>
+I shouted so the buggy's engine wouldn't drown out my voice.
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+What is it!?"
+{PAUSE ""}
+<BR>
+After a slight pause, his voice came back.<PG>
+<STYLE ID="5">"When I called </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="5"> earlier, she said she was 'in a secret place.' Do you have any idea where that might be!?"</STYLE>
+{PAUSE ""}
+<BR>
+"A secret place...?
+{PAUSE ""}
+　No... I can't really say from just that..."
+{PAUSE ""}
+<BR>
+I guess that's true. If it's a secret place, maybe even the residents don't know about it.
+{PAUSE ""}
+<BR>
+Though it's also possible Shirozaki-san is playing dumb―<PG>
+<STYLE ID="5">"Then do you recognize a tripod like the ones you use in science experiments, and a </STYLE><STYLE ID="7" RUBY="つぼ">pot</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+With something this specific, he might take it for a witch's power instead.
+{PAUSE ""}
+<BR>
+But if so, that's fine.
+{PAUSE ""}
+<BR>
+I have to draw out any information, however little, that <STYLE ID="1">Goto</STYLE> can use for her analysis.<PG>
+"Oh, I know those!
+{PAUSE ""}
+　They're ritual implements we use at memorial services! You'll probably see them tomorrow!"
+{PAUSE ""}
+<BR>
+Ritual implements used at memorial services...?
+{PAUSE ""}
+<BR>
+What were <STYLE ID="3">Kotaro-san</STYLE> and <STYLE ID="4">Sakura-san</STYLE> doing, taking those out?<PG>
+<STYLE ID="5">"How are those ritual implements used at the memorial service?"</STYLE>
+{PAUSE ""}
+<BR>
+"How do I put it... it's like offering incense. 
+{PAUSE ""}
+The mourners just pour a little liquid into the <STYLE ID="2" RUBY="つぼ">pot</STYLE>. Tomorrow, just copy everyone else and it'll be easy."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Can just anyone take that </STYLE><STYLE ID="7" RUBY="つぼ">pot</STYLE><STYLE ID="5"> out?"</STYLE><PG>
+"Hmm, hard to say... 
+{PAUSE ""}
+Basically, only whoever holds the post of 'witch' can touch it, but I guess anyone could take it out if they wanted to. 
+{PAUSE ""}
+But if you only wanted to use a <STYLE ID="2" RUBY="つぼ">pot</STYLE>, I don't see any need to go to the trouble of taking out the ritual implements..."
+{PAUSE ""}
+<BR>
+It's hard to say anything for sure...<PG>
+So does that mean the <STYLE ID="2" RUBY="つぼ">pot</STYLE> used as a ritual implement isn't anything special either?
+{PAUSE ""}
+<BR>
+Still, Shirozaki-san is being awfully talkative...
+{PAUSE ""}
+<BR>
+Does that mean he'll answer plain questions, as long as they don't involve my premonitions?<PG>
+<STYLE ID="5">"Uh, </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="5"> had a witch's power―the danger-sense ability, didn't she?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Since when?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="5">Natsumi-chan</STYLE>, about that..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"But this is something everyone knows, right? Isn't it okay for me to know that much too?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "環境音\バギーアイドリング.ogg" "SE2" "REPEAT" "800" "0"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Shirozaki-san stopped the buggy.
+{STOPSND "SE2" "0" "PASS"}
+{PLAYSND "SE\車エンジン切る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田駅夜外.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Was this a station?
+{PAUSE ""}
+<BR>
+This was probably Arata Station, where we'd originally planned to meet up with <STYLE ID="8">Obasan</STYLE>.
+{PAUSE ""}
+<BR>
+There was no one around at all, not even a streetlight.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"You know what that is?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田駅資材倉庫夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What Shirozaki-san pointed at was something like a shed, like a small storehouse―
+{PAUSE ""}
+<BR>
+At least, it wasn't anyone's home.
+{PAUSE ""}
+<BR>
+Could this be the storage shed they'd mentioned?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\door_old1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田駅資材倉庫中.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I tried opening the door.
+{PAUSE ""}
+<BR>
+Inside were lumber, blue tarps and other things you'd expect in a storage shed.
+{PAUSE ""}
+<BR>
+So <STYLE ID="9">Dad</STYLE> and Mom had meant to spend the night in a place like this...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田駅資材倉庫夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="6">Shirozaki-san</STYLE><STYLE ID="5">, does this place have something to do with it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Today...
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+there was an oracle..."
+{PAUSE ""}
+<BR>
+An oracle...? Suddenly the talk was turning occult again.<PG>
+"That today, the curse-killer would be lurking here... that's what it said."
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\恐怖BGM2.ogg" "BGM" "REPEAT" "1000" "0"}
+The blood drained from my face all at once.
+{PAUSE ""}
+<BR>
+Which means... 
+{PAUSE ""}
+someone tipped them off that <STYLE ID="9">Dad</STYLE> and <STYLE ID="10">Mom</STYLE> are the culprits!?<PG>
+<STYLE ID="5">"Sorry, could you tell me a little more...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Let's get a little away from here. If the curse-killer shows up, we're in danger too."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Shirozaki-san got on the buggy.
+{PAUSE ""}
+<BR>
+Judging from this, Shirozaki-san must believe in this so-called oracle too.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+It still didn't <STYLE ID="11" RUBY="ふ">sit</STYLE> right with me, but I got on the buggy too.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\バギー運転中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "2000" "WAIT"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道夜バギー.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="6">Shirozaki-san</STYLE><STYLE ID="5">, what do you mean!? The culprit, there...!"</STYLE>
+{PAUSE ""}
+<BR>
+"I know. Even if someone does come, they probably won't be the culprit. 
+{PAUSE ""}
+An oracle... something like that..."
+{PAUSE ""}
+<BR>
+Huh...? He was saying the opposite of what he'd said before.
+{PAUSE ""}
+<BR>
+Shirozaki-san doesn't believe in the oracle...?<PG>
+I was losing track of what was going on.
+{PAUSE ""}
+<BR>
+At least, there's someone out there who has <STYLE ID="9">my dad</STYLE> and mom pegged as the culprits.
+{PAUSE ""}
+<BR>
+And I can't believe Shirozaki-san said 'oracle' as a joke...<PG>
+<STYLE ID="5">"Who is it!? The person who gave that oracle!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

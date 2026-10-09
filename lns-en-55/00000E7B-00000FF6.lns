@@ -1,0 +1,805 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=480, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2253, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=417, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=304, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=371, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かっぷく, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=15, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まんしんそうい, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=681, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=22, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=7, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なた, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5138, target=)
+; Links:
+;    0: TWdLink(count=4564, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "2000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Kana-chan<STYLE ID="1"> had headed into the forest that led to that secret base.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> had been searching around here by himself, then...</STYLE><PG>
+<STYLE ID="1">That's it! </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> thought </STYLE>Kana-chan<STYLE ID="1"> was at the secret base, so he came straight this way.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's why he was able to find </STYLE>Kana-chan<STYLE ID="1"> on his own.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="3">, are you feeling okay?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ死神.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Haah... haah... Yes, I'm fine..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">How is that fine? She's even more unsteady than she was at Toyotake Station...</STYLE><PG>
+<STYLE ID="4">"K-</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">...!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">...! Where are you!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> cried out in a feeble voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Could he even hear her, out in these vast mountains?</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学死神.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"............
+{PAUSE ""}
+<STYLE ID="4">Mama</STYLE>, I smell blood. 
+{PAUSE ""}
+It's coming from over there!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Kana-chan<STYLE ID="1"> ran on, deeper into the forest.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="3">, come on!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Sakura-san's</STYLE><STYLE ID="1"> arm slung over my shoulder, I went after </STYLE>Kana-chan<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And right after that―</STYLE><PG>
+"He's here!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right nearby, </STYLE>Kana-chan's<STYLE ID="1"> voice.</STYLE>
+{PAUSE ""}
+<BR>
+Kana-chan<STYLE ID="1"> stood in front of a lone </STYLE><STYLE ID="5" RUBY="かっぷく">portly</STYLE><STYLE ID="1"> man.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">He was sitting slumped against a tree.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎大けが.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Wh-who's there...!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学死神.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Papa</STYLE>, thank goodness! You're alive!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That voice... is that </STYLE>Kana<STYLE ID="2">...?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Why did you come back...? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I told you to run..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ死神.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"K-</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">...!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Hurry... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">let's run...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> finally collapsed.</STYLE><PG>
+<STYLE ID="2">"S-</STYLE><STYLE ID="4">Sakura</STYLE><STYLE ID="2">...! </STYLE><STYLE ID="4">You</STYLE><STYLE ID="2">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">, leave you behind... and run? As if I could...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You idiot... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">done for now, so, together with </STYLE>Kana<STYLE ID="2">..."</STYLE><PG>
+<STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> was sitting in a large pool of blood.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">He was bleeding far too badly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Then </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> looked up at the sky.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"In the settlement... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">what happened...?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\雲わすれの夏.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">An orange that seemed to scorch the starry sky.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A huge blaze, visible through the trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The fire at the Niimura house seemed to be spreading all around.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At that rate, it would soon swallow this place too.</STYLE><PG>
+<STYLE ID="2">"The Arata settlement... is finished now... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It went on for 800 years, and today..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Papa</STYLE>, don't say that... It's only the house we're losing... 
+{PAUSE ""}
+We can just build the house again. 
+{PAUSE ""}
+As long as we're here, the Arata settlement will never be gone!
+{PAUSE ""}
+　So... let's run away together..."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎大けが.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"You two... take these..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "100" "200" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム4" "グラフィック\立ち絵\アイテム\女神\注射器透明.gal" "NORMAL" "#1" "400" "200" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> took something long and thin out of his pocket.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Syringes...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">One of cherry-pink liquid, one of clear liquid.</STYLE><PG>
+<STYLE ID="2">"There's only enough left for one person, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">if you inject the pink one into a muscle... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">for just 10 minutes... you can push your strength to the human limit... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Use it to get away... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But after that... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">you have to inject the clear one as well... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">That way... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">you can escape the curse-killing."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学死神.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,アイテム2,アイテム3,アイテム4,アイテム5,アイテム6" "1" "500" "0" "0" "" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"No, <STYLE ID="2">Papa</STYLE>! I can't leave <STYLE ID="2">Papa</STYLE> behind...!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.lcm" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">, please...! Don't die...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Sorry... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I can't see very well anymore... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">This is... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The short, rapid breathing of </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> was growing shallower.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">All </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> and </STYLE>Kana-chan<STYLE ID="1"> could do was hold his hand and watch.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I, too, was about to witness the moment a family was torn apart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If I hadn't come here, would none of this have happened?</STYLE><PG>
+<STYLE ID="1">Either way, today might have been the day </STYLE>Kana-chan<STYLE ID="1"> was fated to be driven by that murderous intent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But if she could have been given the falsificaso right away, the villagers would never have noticed and would have spent a peaceful night.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If I hadn't come, it might have been some other, good ending.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2"><TXSPS>"</STYLE>Kana<STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Mama</STYLE><STYLE ID="2"> and... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> and... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">get along... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">all right..."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>"<STYLE ID="2">Papa</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">""</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎うつむき.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Kotaro-san's</STYLE><STYLE ID="1"> whole body went limp all at once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">His eyes stayed half open and would not close.</STYLE><PG>
+"<STYLE ID="2">Papa</STYLE>...! Why did you die...!?
+{PAUSE ""}
+　Dying because of me, that's just too cruel...!"
+{PAUSE ""}
+<BR>
+Kana-chan<STYLE ID="1"> dropped to her knees on the ground, her shoulders shaking.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Like that, </STYLE>Kana-chan<STYLE ID="1"> was slowly drawn into </STYLE><STYLE ID="4">Sakura-san's</STYLE><STYLE ID="1"> arms.</STYLE><PG>
+<STYLE ID="1">Curse-killing... what curse-killing...</STYLE>
+{PAUSE ""}
+<BR>
+Kana-chan<STYLE ID="1"> hasn't killed anyone! The only ones killing are the people afraid of the curse-killing!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What was cursed wasn't </STYLE>Kana-chan<STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">it was this settlement itself...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Because they want to be saved themselves, because they want to survive themselves, they just kill whoever is in the way.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Weren't they all friends who'd lived together all this time...?</STYLE><PG>
+<STYLE ID="1">That sudden selfishness, isn't it the same as mine...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Are all their hearts as twisted as mine?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just me being that way should be more than enough...!</STYLE><PG>
+<STYLE ID="1">Enough.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I've had all I can take of families being torn apart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Me and </STYLE><STYLE ID="7">Erina</STYLE><STYLE ID="1">, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">that mother bear and her cub, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">and </STYLE>Kana-chan's<STYLE ID="1"> family too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I don't want to see it anymore.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I want to be gone from here now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'll leave this place now.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="3">, </STYLE>Kana-chan<STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I know how you feel, but we have to get out of here, fast..."</STYLE>
+{PAUSE ""}
+<BR>
+"You're right..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes, I know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, they could hardly bring themselves to leave </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just how close a family had they been?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A happy family falling apart... I don't want to see that anymore...!</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">"Found them!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Suddenly a voice went up behind us, and at the same moment, footsteps all around.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\死神軍団.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "BGM死月編\竹林黒霧.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"They're here...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Before we knew it, we were surrounded by shinigami.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">They seemed to have noticed we'd fled and come after us.</STYLE><PG>
+<STYLE ID="1">"Now, </STYLE><STYLE ID="4">Grand Witch-sama</STYLE><STYLE ID="1">, please hand </STYLE>Kana<STYLE ID="1"> over. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Grand Witch-sama</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">our guest</STYLE><STYLE ID="1"> will come to no harm."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Don't talk nonsense! How dare you do this to </STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> staggered to her feet.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I won't forgive you... How dare you do this to <STYLE ID="2">Papa</STYLE>...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then,</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "100" "200" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\女神\注射器透明.gal" "NORMAL" "#1" "100" "250" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Kana-chan<STYLE ID="1"> pressed the syringes into my hand.</STYLE><PG>
+"<STYLE ID="3">Momoko-san</STYLE>, please, make sure you get away safely. 
+{PAUSE ""}
+If you go straight down this path, you'll reach <STYLE ID="8" RUBY="とよたけ">Toyotake</STYLE> Station."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wait a minute, what are you planning to do, </STYLE>Kana-chan<STYLE ID="3">!?"</STYLE>
+{PAUSE ""}
+<BR>
+"My <STYLE ID="2">father</STYLE> was killed. I have to settle this."<PG>
+<STYLE ID="1">The syringes handed to me―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Something like this...</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物2,アイテム1,人物3,アイテム2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\桃子銃逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I threw the syringes away and aimed my gun at them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Run away alone? Leave </STYLE>Kana-chan<STYLE ID="1"> and </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> to die?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I had this powerful weapon. There was no option but to join the fight.</STYLE><PG>
+<STYLE ID="1">Besides, I know.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Droga's effects last only about 10 minutes, and on top of that, it puts a heavy strain on the body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">By now they must be </STYLE><STYLE ID="9" RUBY="まんしんそうい">battered all over</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Grand Witch-sama</STYLE><STYLE ID="1">, surely you understand you cannot win?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I will never back down...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Neither will I...! I can't leave <STYLE ID="4">Mama</STYLE> behind!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then it can't be helped. </STYLE><STYLE ID="4">Grand Witch-sama</STYLE><STYLE ID="1">, </STYLE><STYLE ID="3">our guest</STYLE><STYLE ID="1">, prepare yourselves."</STYLE><PG>
+<STYLE ID="3">"A bluff like that won't work on me!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I took one step forward and raised my voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"The Droga should have worn off by now, and your bodies are falling apart. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You're the ones who need to prepare yourselves!"</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Our guest</STYLE><STYLE ID="1">, how do you know that?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Well, no matter. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In case something like this happened, we split into one group that used Droga first and one that uses it now. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Our guest</STYLE><STYLE ID="1"> and the others will be dealt with by those who take the Droga now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wha...!?"</STYLE><PG>
+<STYLE ID="1">If that's true, then is this the end...!?</STYLE>
+{PAUSE ""}
+<BR>
+Kana-chan<STYLE ID="1"> won't cause any curse-killing now!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Somebody, help us!</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\lcm\夏菜ナイフドローガ.lcm" "WAIT" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "300" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "300" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\死神倒れる.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Suddenly there was a sound like a razor wind slicing the air, and the next instant every one of the villagers collapsed where they stood.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Gah! What is this...!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who's there...!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Damn...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It seemed the tendons in their legs had been cut, and they couldn't stand.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To bring down this many people in an instant, it had to be someone with considerable physical ability.</STYLE><PG>
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> and </STYLE>Kana-chan<STYLE ID="1"> had both stayed right beside </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The two of them seemed just as surprised by the sight.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then who on earth...?</STYLE><PG>
+<STYLE ID="10">"Phew, made it in time...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The voice of a long-haired woman who talked like a man.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This person is...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\春花ナイフ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">"Hey, </STYLE>Kana<STYLE ID="10">! I'm here to help!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学手.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="10">Haruka-chan</STYLE>...?"
+{PAUSE ""}
+<BR>
+{PLAYSND "Lucky_You.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">Which means this person is </STYLE><STYLE ID="10">Haruka Niimura</STYLE><STYLE ID="1">?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The one said to have been training in the mountains, the daughter of </STYLE><STYLE ID="11">Mifuyu Niimura</STYLE><STYLE ID="1">...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\春花ナイフ2.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"All of a sudden the animals went quiet, and I figured it was a forest fire, so I came to take a look, and things have gotten real bad here..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Nngh...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="10">Haruka</STYLE><STYLE ID="1">...! Why go after us...! It's </STYLE>Kana<STYLE ID="1"> you should be taking out!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"</STYLE><STYLE ID="2">Kotaro-san's</STYLE><STYLE ID="10"> dead, and you're ganging up on </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="10"> and the others when they can barely stand. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">As if I'd side with a sickening bunch like you!"</STYLE><PG>
+<STYLE ID="1">"But...! </STYLE>Kana<STYLE ID="1"> will cause a curse-killing!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Curse-killing, what curse-killing! Which side actually killed people!?</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　</STYLE>Kana<STYLE ID="10"> killed who, exactly!? Go on, say it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"From now on... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">from now on, she's going to kill!"</STYLE><PG>
+<STYLE ID="10">"Heh! I doubt it!</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Like I'm gonna listen to a bunch of scared cowards who won't even show their faces."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Haruka-san</STYLE><STYLE ID="1"> brushed aside the villagers' claims one after another.</STYLE><PG>
+"<STYLE ID="10">Haruka-chan</STYLE>, where's <STYLE ID="11">Auntie</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"</STYLE><STYLE ID="11">Mom's</STYLE><STYLE ID="10"> gone to check on the settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">But the way it looks, there's no putting that fire out... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">So, who's </STYLE><STYLE ID="3">this</STYLE><STYLE ID="10">?"</STYLE><PG>
+"This is... 
+{PAUSE ""}
+<STYLE ID="3">Momoko Goto-san</STYLE>. She saved us."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Goto...!?</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Goto, as in... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\春花ナイフ2バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">Are you, by any chance, </STYLE><STYLE ID="7">Goto's</STYLE><STYLE ID="10"> older sister?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Yes. I hear my </STYLE><STYLE ID="7">sister</STYLE><STYLE ID="3"> owed you a great deal while she was alive..."</STYLE><PG>
+<STYLE ID="10">"Ah, I knew it... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">uh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then </STYLE><STYLE ID="10">Haruka-san</STYLE><STYLE ID="1"> lowered her eyes.</STYLE><PG>
+<STYLE ID="10">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">I know it's strange for me to say this, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">My mother</STYLE><STYLE ID="10">, I'm truly sorry about her..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Um... </STYLE><STYLE ID="11">my mother</STYLE><STYLE ID="10">, truly..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Is she talking about the murder of </STYLE><STYLE ID="7">Erina</STYLE><STYLE ID="1">?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She knows that, and she's still with her, as mother and daughter...</STYLE><PG>
+<STYLE ID="10">"How you feel about </STYLE><STYLE ID="11">my mother</STYLE><STYLE ID="10">, I can sort of tell from the gun you're holding, </STYLE><STYLE ID="3">Momoko-san</STYLE><STYLE ID="10">. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">But still, my mom is </STYLE><STYLE ID="11">her</STYLE><STYLE ID="10"> and nobody else, so... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">So... I'm sorry. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">I know it's not something an apology can make right, but..."</STYLE><PG>
+<STYLE ID="10">She</STYLE><STYLE ID="1"> had been close to </STYLE><STYLE ID="7">Erina</STYLE><STYLE ID="1">, and best friends with </STYLE><STYLE ID="12">Natsumi Kogori</STYLE><STYLE ID="1"> too, from what I knew.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, she had gone on accepting the woman who killed her </STYLE><STYLE ID="12">best friend</STYLE><STYLE ID="1">, </STYLE><STYLE ID="11">Mifuyu Niimura</STYLE><STYLE ID="1">, as her mother.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Simple-minded, if you want to call it that, but think of it as a warm heart and it's a wonderful quality.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Erina</STYLE><STYLE ID="1"> really had come across a very good person.</STYLE><PG>
+<STYLE ID="1">No, this was no time to wallow in sentiment.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Next, there was the fire closing in.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="10">Haruka-san</STYLE><STYLE ID="3">, let's talk about that later. The fire is coming this way too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Oh, y-yes, you're right..."</STYLE><PG>
+<STYLE ID="3">"And... thank you for saving us."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Don't thank me... </STYLE><STYLE ID="3">Momoko-san</STYLE><STYLE ID="10">, no matter how much I </STYLE><STYLE ID="13" RUBY="わ">apologize</STYLE><STYLE ID="10">, it can never be forgiven... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Oh, right, that's for later. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="10">, can you stand?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san's</STYLE><STYLE ID="1"> legs were unsteady.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It looked like she would need more time to recover.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "150" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"What do we do about everyone?"
+{PAUSE ""}
+<BR>
+Kana-chan<STYLE ID="1"> looked around at the villagers huddled on the ground with their legs cut.</STYLE><PG>
+<STYLE ID="10">"We can't really leave them behind, can we... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Hey, can anybody move!?</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　This place is gonna burn soon too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Haruka-san's</STYLE><STYLE ID="1"> command had some of them trying to stand.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, it didn't look like they could walk properly.</STYLE><PG>
+<STYLE ID="10">"We can't haul this many people all the way down to the foot of the mountain. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Okay, the graveyard clearing has no trees, and it's close to here. </STYLE>
+{PAUSE ""}
+Kana<STYLE ID="10">, help me out!"</STYLE>
+{PAUSE ""}
+<BR>
+"G-got it!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="10">Haruka-san</STYLE><STYLE ID="1"> and </STYLE>Kana-chan<STYLE ID="1"> began lending their shoulders to the fallen villagers.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">After all this, they wouldn't still attack us, would they?</STYLE><PG>
+<STYLE ID="10">"</STYLE><STYLE ID="3">Momoko-san</STYLE><STYLE ID="10">, please head for the graveyard with </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="10">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Y-yes!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I lent </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> my shoulder and stood up.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="3">, please hold on just a little longer. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Which way is the graveyard clearing?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Haah... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">haah... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Down this path... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">just a little way... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But </STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎うつむき.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"I'm sorry, </STYLE><STYLE ID="3">Momoko-san</STYLE><STYLE ID="4">. Please give me just a little more time."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">With that, </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> leaned against </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1">, almost falling onto him.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\幸太郎サクラ抱き合う後ろから.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Thank you. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I love you."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "15" "15" "500" "30"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神ハンマー振りおろし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\幸太郎サクラ抱き合う背中.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\桃子血を浴びる.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Cursed parent and child...! Die for Arata...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> had a shinigami behind her, holding a </STYLE><STYLE ID="14" RUBY="なた">nata</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> had just been given a final embrace by </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="1">, and now a great gush of blood sprayed from her back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That blood splashed onto my face.</STYLE><PG>
+<STYLE ID="4">Sakura-san</STYLE><STYLE ID="1"> stayed as she was, slumped over </STYLE><STYLE ID="2">Kotaro-san's</STYLE><STYLE ID="1"> body, and did not move.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san's</STYLE><STYLE ID="1"> attacker, the shinigami who had cut her, also collapsed on the spot with a thud.</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "500" "PASS"}
+{CREATECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">"Hey, </STYLE><STYLE ID="4">Sakura-san</STYLE><STYLE ID="10">!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">Mama</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Haruka-san</STYLE><STYLE ID="1"> and </STYLE>Kana-chan<STYLE ID="1"> rushed to </STYLE><STYLE ID="4">Sakura-san's</STYLE><STYLE ID="1"> side.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And they shook her body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Haruka-san</STYLE><STYLE ID="1"> and </STYLE>Kana-chan's<STYLE ID="15"> faces</STYLE><STYLE ID="1"> were smeared with </STYLE><STYLE ID="4">Sakura-san's</STYLE><STYLE ID="1"> blood too.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+<EVENT VALUE="STOPMOVIE">
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

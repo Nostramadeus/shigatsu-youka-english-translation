@@ -1,0 +1,122 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=76, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=102, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=49, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=211, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そろ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=82, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=606, target=)
+; Links:
+;    0: TWdLink(count=527, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Lions are part of the cat family!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\五島子供.gal" "WAIT" "#1" "600" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Ah!"</STYLE><BR>
+"Ah!"<BR>
+<STYLE ID="2">"Ugh!"</STYLE>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This kid is that jinx... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">No, the </STYLE>genius girl<STYLE ID="3">!</STYLE><PG>
+<STYLE ID="1">"Ah, </STYLE>Erina-chan<STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+"It's <STYLE ID="1">Natsumi-chan</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This is bad! I've got a feeling something bad is going to happen!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Besides, this is way too much of a coincidence!</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Come to think of it, where are </STYLE>this kid<STYLE ID="3">'s parents?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Is she wandering around on her own!?</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供喜び.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, hey, </STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="1">! I want this!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Buy me and </STYLE>Erina-chan<STYLE ID="1"> </STYLE><STYLE ID="4" RUBY="そろ">matching</STYLE><STYLE ID="1"> ones! One for </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1"> too!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ストラップ.gal" "WAIT" "#1" "L" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="3"> brought over phone straps from the shop right next to the lion area.</STYLE><PG>
+<STYLE ID="3">100 yen each! Okay, I'll give one to </STYLE>this kid<STYLE ID="3"> and politely ask her to leave, quick!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Okay, go buy them with this money!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yay! Thank you!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,アイテム1" "1" "500" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\五島桃子子供.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE>Erina<STYLE ID="6">, I finally found you! You're always wandering off on your own!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Good timing! It's that </STYLE><STYLE ID="6">sister</STYLE><STYLE ID="3"> of hers!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Oh! We met at Zahha...!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　I'm sorry, </STYLE>this kid<STYLE ID="6">'s been bothering you again... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Come on, </STYLE>Erina<STYLE ID="6">, we're going."</STYLE><PG>
+"Ah, but..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+The genius girl<STYLE ID="3"> was led away by </STYLE><STYLE ID="6">her sister</STYLE><STYLE ID="3">.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="1">, I bought them!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Huh? Where's </STYLE>Erina-chan<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Her sister</STYLE><STYLE ID="2"> came to get her, and they've already left."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmph! And I was trying to make us all </STYLE><STYLE ID="4" RUBY="そろ">match</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I should've given her the strap before sending her off.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I panicked and made the wrong call...</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

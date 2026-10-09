@@ -1,0 +1,709 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1269, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1677, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=428, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=383, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=8, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なた, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=10, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=8, unk2=65535, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=50, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=7, unk2=16755455, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4387, target=)
+; Links:
+;    0: TWdLink(count=3851, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\隠れる草むら1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"It's fine, looks like we shook him off."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">We were hiding in the undergrowth.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There were no streetlights at all, and the moonlight was hidden by the dense leaves of the trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The road beside us was so narrow that one car could only just get through.</STYLE><PG>
+"Damn it, why won't you listen to me, Dad!
+{PAUSE ""}
+　Hey, <STYLE ID="2">Goto</STYLE>!"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> was shouting into her smartphone in a low voice, but there was still no response of any kind.</STYLE>
+{PAUSE ""}
+<BR>
+"Dammit, the charge is about to run out, too...
+{PAUSE ""}
+<STYLE ID="3">Natsumi</STYLE>, turn <STYLE ID="3">your</STYLE> smartphone on."
+{PAUSE ""}
+<BR>
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "1000" "PASS"}
+<STYLE ID="1">Just then, a strong wind came raging through the whole area.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\能面フラッシュ.gal" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="4">! Look out!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MOTION "春花突き飛ばし" "人物1" "3" "960" "200" "NORMAL" "WAIT"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\鉈峰うち.gal" "NORMAL" "#1" "R" "-180" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n鉈振りおろし\r\nアイテム1\r\n4\r\n480\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n鉈振りおろし\r\nアイテム1\r\n4\r\n480\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\剣衝突.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "000,アイテム1,111" "1" "1000" "0" "0" "" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "300" "50"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神全身.gal" "NORMAL" "#1" "C" "B" "0" "17!" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "escape2.ogg" "BGM" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n200\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n200\r\n0\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\隠れる草むら1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The instant I shoved </STYLE>Haruka<STYLE ID="1"> out of the way, a </STYLE><STYLE ID="6" RUBY="なた">nata</STYLE><STYLE ID="1"> buried itself in that spot.</STYLE> [TN: a nata is a heavy single-edged Japanese billhook]
+{PAUSE ""}
+<BR>
+"Damn! This way, <STYLE ID="3">Natsumi</STYLE>!"
+{PAUSE ""}
+<BR>
+{CHGVOL "BGM" "700" "1000" "PASS"}
+{PLAYSND "SE\アスファルトダッシュずれ用.ogg" "VOICE" "REPEAT" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+<STYLE ID="1">We started running again.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "SE\haa1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Haah... haah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Running the mountain road was finally taking its toll.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, is this just plain exhaustion?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If this is that...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "500" "1000" "PASS"}
+{CREATECG "000" "グラフィック\背景\隠れる草むら2.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"We're fine here. There's no way he can see us."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Stifling my ragged breath, I crouched down in the undergrowth again.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The wind went on raging, and cherry blossoms were whirling down.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At that moment my intuition handed me a warning ― no, a verdict.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There is no way out. Escape is impossible, it said.</STYLE><PG>
+{PLAYSND "SE\砂利を歩く.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+<STYLE ID="1">Just then, footsteps from straight ahead―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It's the shinigami...!</STYLE> [TN: shinigami: a god of death]
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even though we were completely hidden,</STYLE>
+{STOPSND "SE2" "3000" "PASS"}
+<STYLE ID="1">it was heading straight for us.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\死神近づく.lcm" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{MESON "500"}
+"What is that guy...! How does he know where we are!?"
+{PAUSE ""}
+<BR>
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+<STYLE ID="1">No matter where we hid, the shinigami pinpointed our location exactly and came after us immediately.</STYLE><PG>
+<STYLE ID="1">Once a curse has been placed on you, it will follow you anywhere.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That is death, and that is the shinigami who rules over death.</STYLE><PG>
+<STYLE ID="1">No, that's wrong! That thing is just somebody in a disguise using some kind of trick!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Calling it a shinigami is a stretch at best!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And like this, in the past, six people...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And this time... even </STYLE><STYLE ID="7">my own dad</STYLE><STYLE ID="1">!</STYLE><PG>
+"Hey, <STYLE ID="3">Natsumi</STYLE>! Let's get to the wide road, quick! Hiding is no good!"
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\アスファルトダッシュずれ用.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+Haruka<STYLE ID="1"> pulled me by the hand again and started running.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My legs were like lead by now, but I could not let myself stop here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If I stopped moving, </STYLE>Haruka<STYLE ID="1"> would be the shinigami's prey as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A moment ago the shinigami had tried to slash </STYLE>Haruka<STYLE ID="1"> open with the nata, after all.</STYLE><PG>
+<STYLE ID="1">But this really was not simple fatigue after all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's right, I have a condition peculiar to this time of year.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And it is starting up at the worst possible time.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\アスファルトダッシュずれ用.ogg" "VOICE" "REPEAT" "0" "0"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "500" "0"}
+{CHGVOL "VOICE" "1000" "10000" "PASS"}
+{CREATECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―We ran down a narrow asphalt mountain road colored by a blizzard of cherry petals.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There still seemed to be a fair distance to go before the wide road.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "15" "500" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "#1" "C" "B" "0" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{DELETECG "000" "15" "500" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "#1" "C" "B" "0" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, sorry...! Wait!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "VOICE" "1000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"What's wrong!? If you're tired, use my shoulder!"<PG>
+<STYLE ID="3">"That's part of it, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">at a time like this..."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't tell me... the April sickness..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That distinctive dizziness and sense of collapse.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Being fine all day today was the abnormal part.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\山車道.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">There was no sign of anything coming after us from behind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">One side was a high rock face and the other a cliff, so there was no route for the shinigami to come by except from behind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The road was as narrow as ever, though...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">, run for it alone..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Are you an idiot! I told you I would protect <STYLE ID="3">Natsumi</STYLE> no matter what!
+{PAUSE ""}
+　Besides, Dad is after me too. Running for it alone changes nothing!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\アスファルト歩くずれ用.ogg" "VOICE" "REPEAT" "1000" "0"}
+{MESON "500"}
+Haruka<STYLE ID="1"> put my arm around her shoulder and started walking.</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> had to be quite tired herself.</STYLE><PG>
+<STYLE ID="1">No, if the shinigami is carrying weapons, it must be badly worn out as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It probably cannot come after us quickly.</STYLE><PG>
+<STYLE ID="3">"Sorry, </STYLE>Haruka<STYLE ID="3">... making trouble for you even at a time like this..."</STYLE>
+{PAUSE ""}
+<BR>
+"If it comes to that, this is all because I told you not to go to the police...
+{PAUSE ""}
+I'm the one who dragged you into this... no number of kowtows would ever make up for it..."<PG>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">... do you still think the curse is what made </STYLE>Haruka<STYLE ID="3">'s dad appear?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm not sure...
+{PAUSE ""}
+The truth is, I've started to think something is off.
+{PAUSE ""}
+I thought he came here to kill <STYLE ID="3">Natsumi</STYLE>, but he is weirdly drawing it out ― he doesn't go straight for the kill.
+{PAUSE ""}
+And a minute ago he tried to cut me with the nata too.
+{PAUSE ""}
+If that is Dad... what is he thinking?"<PG>
+<STYLE ID="1">With that monstrous strength and a way of pinning down our exact position, killing us would be no trouble at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Why such a roundabout way? Is it enjoying the crime?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No. If I had not shoved </STYLE>Haruka<STYLE ID="1"> out of the way a moment ago, </STYLE>Haruka<STYLE ID="1"> would have been killed.</STYLE><PG>
+"<STYLE ID="3">Natsumi</STYLE>, you were feeling fine all day, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah... sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+"No, that's not it, I'm not blaming you.
+{PAUSE ""}
+I've been thinking. Maybe cherry blossom isn't the only thing that sets off <STYLE ID="3">Natsumi</STYLE>'s April sickness attacks..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"What do you mean...?"</STYLE>
+{PAUSE ""}
+<BR>
+"The weather today..."
+{STOPSND "VOICE" "1000" "PASS"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE2" "NORMAL" "1000" "0"}
+<PG>
+"It's <STYLE ID="2">Goto</STYLE>!
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき電話.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">　</STYLE>Hello!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="9">Senpai</STYLE><STYLE ID="8">, are you alive!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Somehow... I'm not hurt, at least for now."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1">'s breathing had gotten very rough.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I ended up sinking down where I was.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"We'll be there soon ourselves! It's... going to take another 40 minutes, though... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh, but the local police should be there in about 10 minutes!"</STYLE>
+{PAUSE ""}
+<BR>
+"10 minutes, huh... But we keep going down the mountain and the mountain road never ends..."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Go down the road along Sakuraoka Station about 2 kilometers and the road opens out all at once; there should be one convenience store there. Get inside it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A man's voice, out of nowhere ― probably the police officer who had been mistaken for a suspicious person.</STYLE><PG>
+"Then we should be getting there pretty soon. Thank you."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So if I got to my feet with everything I had and walked a few hundred meters, would that be enough?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I could not let a thing like April sickness make me give in.</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+<STYLE ID="1">And then, all at once, the wind picked up again.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "環境音\fear1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "20" "1000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\能面フラッシュ.gal" "NORMAL" "#1" "C" "B" "100" "15" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\山車道3.gal" "NORMAL" "15" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{DELETECG "000,人物1,000" "15" "500" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Huh...? All of a sudden my vision...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">An even more violent dizziness came over me, and all my senses were gone.</STYLE><PG>
+"...<STYLE ID="3">mi</STYLE>!
+{PAUSE ""}
+　<STYLE ID="3">Natsumi</STYLE>!
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "#1" "R" "B" "0" "15" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">　</STYLE>Pull yourself together!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">...?"</STYLE>
+{PAUSE ""}
+<BR>
+"I knew it, <STYLE ID="3">you</STYLE>...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It seemed I had only been out for a few seconds...</STYLE><PG>
+"No, that doesn't matter right now. We're going, hang in there!"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> tried to pull me to my feet, but no strength would come into my legs.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If we stayed stuck here, the shinigami would catch up with us.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Haruka<STYLE ID="3">... sorry... I... I think this is as far as I go..."</STYLE>
+{PAUSE ""}
+<BR>
+"It's all right! I'm with you!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But... the April sickness... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">sorry, just run for it alone after all..."</STYLE>
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+<PG>
+"Don't be ridiculous! I'm absolutely not leaving you behind!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But the one being targeted was </STYLE>Haruka<STYLE ID="3">, wasn't it!"</STYLE>
+{PAUSE ""}
+<BR>
+"Even so...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3">, please! Convince </STYLE>Haruka<STYLE ID="3">!"</STYLE><PG>
+<STYLE ID="2">"Are you sure? </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Please..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>Niimura-senpai<STYLE ID="2">, first get to the convenience store and call for help."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Goto</STYLE>! Don't screw around! Think of a way for <STYLE ID="3">Natsumi</STYLE> and me to survive together!
+{PAUSE ""}
+　And anyway, against something like that, going to a convenience store won't do any good!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"In the Megasawa City murders, not one person has seen the culprit. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So a convenience store, with security cameras and people's eyes, is exactly what the culprit will avoid. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And besides, has </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2"> actually been attacked by this so-called shinigami?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh!? What's that supposed to mean?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Is it possible that the only one who was attacked was </STYLE>Niimura-senpai<STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+"So what if it was!"<PG>
+<STYLE ID="2">"The shinigami's target is </STYLE>Niimura-senpai<STYLE ID="2">. If you want to secure </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s safety, </STYLE>Niimura-senpai<STYLE ID="2"> must get away from her."</STYLE>
+{PAUSE ""}
+<BR>
+"I just happened to be the one attacked!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"If the two of you move separately, the shinigami can only go after one of you. The fewer victims there are, the better. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Please understand. It is for </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s sake."</STYLE>
+{PAUSE ""}
+<BR>
+"If you're saying it's for <STYLE ID="3">Natsumi</STYLE>'s sake, then I should stay beside her―"<PG>
+<STYLE ID="2">"The shinigami is closing in fast. Rather than taking </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2"> to the convenience store, it has to be faster for </STYLE>Niimura-senpai<STYLE ID="2"> to run there and back."</STYLE>
+{PAUSE ""}
+<BR>
+"But... I can't leave <STYLE ID="3">Natsumi</STYLE> behind...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Throw away your self-satisfied heroics. That is nothing but </STYLE>Niimura-senpai<STYLE ID="2">'s self-satisfaction."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Goto</STYLE>...! Are you telling me I'm acting out of self-satisfaction!?"<PG>
+<STYLE ID="2">"We are wasting time. Please hurry."</STYLE>
+{PAUSE ""}
+<BR>
+"Kh...! Why won't you understand! Pulling a stunt like abandoning <STYLE ID="3">Natsumi</STYLE> and running away is―"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">""</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, are you listening!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">""</STYLE>
+{PAUSE ""}
+<BR>
+"Damn! Out of battery, at a time like this...!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Haruka<STYLE ID="1"> turned to face me, her lips trembling.</STYLE><PG>
+"I'll be back in 3 minutes. I'm definitely going to save you."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Even if it costs my life, I will protect you."<PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "800" "2000" "PASS"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{STOPSND "VOICE" "10000" "PASS"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">I watched </STYLE>Haruka<STYLE ID="1"> run off down the road with everything she had.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Thank you, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">. This way </STYLE>Haruka<STYLE ID="1"> should be saved.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And... I'm sorry, </STYLE>Haruka<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It looks like I'm not going to make it after all.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\車走行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\山車道1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">A faint light came into view behind me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It seemed to be a car.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I had picked it up when I collapsed a moment ago.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The shinigami is coming after us. There is no running away anymore.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The one riding in that car is―</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\能面フラッシュ.gal" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\山車道2.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">It's the shinigami.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At that speed, we would have been caught before we reached the convenience store together.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So if I hold the shinigami here, I can save </STYLE>Haruka<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This time it is one or the other: I die, or we both die.</STYLE><PG>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> has no idea that the shinigami is closing in on me in a car.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> only worked out the way that gave us the highest chance of surviving.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1">'s good will is what I took advantage of.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "SE\車爆走中.ogg" "VOICE" "REPEAT" "0" "50"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\山車道3.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Ah, in 3 seconds I will be crushed by that car body bearing down at furious speed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'm sorry, </STYLE><STYLE ID="11">Mom</STYLE><STYLE ID="1">, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, and </STYLE>Haruka<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Dad</STYLE><STYLE ID="1">, I'm coming to see you.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "SE\car-accident1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\春花かばう.lcm" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "50"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\春花吹っ飛び.lcm" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "10000" "PASS"}
+{CREATECG "000" "グラフィック\背景\山車道.gal" "REPEAT" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花倒れる.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ha... </STYLE>Haruka<STYLE ID="3">...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\月の影に.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPS>"U... gh...
+{PAUSE ""}
+<STYLE ID="3">Na... tsumi</STYLE>... are you... safe...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPN>Why is </STYLE>Haruka<STYLE ID="1">, who should have run on alone, here...? Why is she lying there covered in wounds?</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\アスファルト歩く.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+{STOPSND "VOICE" "1000" "WAIT"}
+{CHANGECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\テールランプ.gal" "NORMAL" "#1" "C" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Behind her, backlit by the car's tail lights, the shinigami was standing.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\月の影ににやけ.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPS>"Khu-hu-hu-hu-hu... Hey... Dad...
+{PAUSE ""}
+What's wrong... I... am still...
+{PAUSE ""}
+alive..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"</STYLE>Haruka<STYLE ID="3">... for my... sake..."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPS>"H-hahaha...! Serves you right! The curse failed...!
+{PAUSE ""}
+　Making me die when I have no paper figure... you're a failure as a shinigami!
+{PAUSE ""}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\月の影に苦痛.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">　</STYLE>Ugh...!"
+{QUAKESTOP "500"}
+<PG>
+<STYLE ID="3"><TXSPN>"</STYLE>Haruka<STYLE ID="3">, don't... talk anymore... quickly, to a hospital..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\月の影ににやけ.lcm" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPS>"H-hey, Dad... this is my... win, right...?
+{PAUSE ""}
+　So... <STYLE ID="3">Natsumi</STYLE>, at least...
+{PAUSE ""}
+<STYLE ID="3">Natsumi</STYLE>, at least, let her go...
+{PAUSE ""}
+A last request before I die... at least... hear me...
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\月の影に閉じ.gal" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+out..."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\テールランプ.gal" "NORMAL" "#1" "C" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"</STYLE>Haruka<STYLE ID="3">...?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE>Haruka<STYLE ID="3">...! No, wake up!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　I don't want you to die! Please wake up!"</STYLE>
+{PAUSE ""}
+<BR>
+""
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No... </STYLE>Haruka<STYLE ID="3">..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\死神バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,アイテム1,000" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="12">"</STYLE><STYLE ID="13">Haruka</STYLE><STYLE ID="12">aaaa!"</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

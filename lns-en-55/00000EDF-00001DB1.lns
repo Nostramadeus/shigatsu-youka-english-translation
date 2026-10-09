@@ -1,0 +1,656 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1247, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=51, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1814, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=579, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=880, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=583, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=642, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しつよう, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ARATA, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=アルファ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=22, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おきて, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=9, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=64, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=15, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=10, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=5, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・・・, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いびつ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6387, target=)
+; Links:
+;    0: TWdLink(count=5938, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>―We were sitting around the table in the living room.
+{PAUSE ""}
+<BR>
+The air had finally settled, and the mood was right for hearing them out.
+{PAUSE ""}
+<BR>
+Here were the five of us: me, <STYLE ID="1">Kana-chan</STYLE>, <STYLE ID="2">Kotaro-san</STYLE>, <STYLE ID="3">the old lady</STYLE>, and <STYLE ID="4">Sakura-san</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I haven't introduced myself yet. I'm </STYLE><STYLE ID="2">Kotaro's</STYLE><STYLE ID="3"> mother, Erika Niimura. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You kindly came all this way for the funeral, and you've had such a hard time of it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"No, I'm the one who caused trouble. I'm truly sorry."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Now then, where should I even start... You've looked through most of the books in the storehouse, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I read up properly on Droga and Green-Eye Curse-Killing."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Then let me explain that part properly. It'll double as a review."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"―It was spring, 10 years ago."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\三畳間割れる暗い.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"All of a sudden, </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> tried to stab </STYLE><STYLE ID="4">Sakura</STYLE><STYLE ID="2"> with a knife. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Somehow I pulled </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> off her, but even then, </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> kept trying, </STYLE><STYLE ID="7" RUBY="しつよう">relentlessly</STYLE><STYLE ID="2">, to kill </STYLE><STYLE ID="4">Sakura</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So I had no choice but to knock </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> out. But what to do from there?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"At </STYLE><STYLE ID="3">Mom's</STYLE><STYLE ID="2"> suggestion, we decided to confine </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> in the underground storeroom."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Confine her!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah. On top of that, it was night at the time, and taking her to a hospital would have taken a while. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">We decided to keep an eye on her underground for the night."</STYLE><PG>
+<STYLE ID="5">"Why confine her underground?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"We didn't want the residents to find out. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">They're friendly to outsiders now, but back then they were still very wary, the type to be </STYLE><STYLE ID="8" RUBY="おび">frightened</STYLE><STYLE ID="2"> by even the slightest threat. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It was underground so we wouldn't scare everyone."</STYLE><PG>
+<STYLE ID="2">"After we took </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> underground, I left </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> with </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> and went to the archive room in the storehouse. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">What I found there was </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\翠眼呪殺.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">that book on Green-Eye Curse-Killing."</STYLE><PG>
+<STYLE ID="5">"So until then, nobody knew about Green-Eye Curse-Killing?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah. It was a curse hidden in green eyes that even </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> didn't know about."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚明るい.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"In that archive room there's a research report on Droga. Did you see that?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"No, not yet, but I did see a book called 'The Droga Refining Method.'"</STYLE><PG>
+<STYLE ID="2">"I see. Then what about falsificaso?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yes, I checked that too."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\世代説明.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Apparently Droga passes across generations, infecting other people. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">There are three generations in all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The first generation: anyone who used Droga directly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The second generation: anyone whose mucous membranes of the head touched more than a certain amount of fresh-shed blood from the first generation.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The third generation: anyone whose mucous membranes of the head touched more than a certain amount of fresh-shed blood from the second generation."</STYLE><PG>
+<STYLE ID="2">"The first generation gains superhuman strength for a set time after a dose.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The second generation can sense danger when the circumstances in which they were splashed with the blood are recreated.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The third generation can always sense danger, regardless of conditions like the second generation's."</STYLE><PG>
+<STYLE ID="2">"But the third generation has traits the second generation doesn't.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">・Only girls who have had their first period gain precognition (males too, if in a bleeding state)</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">・From the moment of touching the blood, one eye turns green</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">・After the first period, on sensing the precognition of the second or third generation, one is seized by unbearable murderous intent"</STYLE><PG>
+<STYLE ID="5">"What about the mechanism?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　There's a proper reason the effects differ between generations, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"When you take Droga, a substance called ephedrine activates the sympathetic nerves, and for about 10 minutes you get superhuman strength and dynamic vision far beyond the ordinary. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But even after the effect wears off, Droga's residual substances stay in the body until death. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You awaken to sensing danger by touching those residual substances with the mucous membranes of the face―the eyes or the lips. That's the second generation."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\エフェドリン.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"But apparently the ephedrine in the Arata cherry has a slightly different molecular structure. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Taking the A of </STYLE><STYLE ID="9" RUBY="ARATA">Arata</STYLE><STYLE ID="2">, they called this ephedrine unique to the Arata cherry A-ephedrine―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">and from that, apparently, </STYLE><STYLE ID="10" RUBY="アルファ">alpha</STYLE><STYLE ID="2">-ephedrine. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Droga's basic effect is that alpha-ephedrine powerfully activates the sympathetic nerves. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And that alpha-ephedrine is secreted by the spores contained in Droga."</STYLE><PG>
+<STYLE ID="5">"Spores? Spores, as in the seeds of molds and fungi?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, Droga has... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">what was it... apparently it contains a large amount of spores from a fungus called something-or-other, the traditional name for the Arata cherry. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">When those spores get inside a human body, they put out tiny micron-sized sprouts. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Those are what secrete the alpha-ephedrine―that was the theory, if I remember right."</STYLE><PG>
+<STYLE ID="5">"Doesn't that mean it's 'parasitizing' humans?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Maybe that has something to do with the Arata cherry's life cycle."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"True, if you think of it as infection through blood happening across up to three generations, you could see it that way..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, I have no idea what you're talking about..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Me neither..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Same here."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"Well, theory aside, if you get splashed with the blood of someone who used Droga, precognition kicks in. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And get splashed in turn with that person's blood, and you get what happened to </STYLE><STYLE ID="5">Goto-chan</STYLE><STYLE ID="2">. That much should do. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Those aren't curses. They've been scientifically verified."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see. So there was a proper basis that explains curse-killing, huh. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Which means... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sakura</STYLE><STYLE ID="3">, there's something I have to ask </STYLE><STYLE ID="4">you</STYLE><STYLE ID="3">."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"The first generation was </STYLE><STYLE ID="11">Eiichiro</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I was being bullied at school back then, and trying to help me, what </STYLE><STYLE ID="12">he</STYLE><STYLE ID="4"> found was..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"'The Droga Refining Method,' huh."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="11">He</STYLE><STYLE ID="4"> did not call it 'Droga,' but that is probably what it was. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But when </STYLE><STYLE ID="11">Eiichiro</STYLE><STYLE ID="4"> made a trial batch of something like Droga, I don't know if it was a side effect, but he went berserk and hurt..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Why did you keep quiet until now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Because... </STYLE><STYLE ID="11">Eiichiro</STYLE><STYLE ID="4"> broke </STYLE><STYLE ID="13" RUBY="おきて">the rule</STYLE><STYLE ID="4">..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="3">, this isn't the place to blame her. That was something </STYLE><STYLE ID="11">Eiichiro</STYLE><STYLE ID="3"> did on his own. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Even if it meant breaking the rule, he must have wanted to protect </STYLE><STYLE ID="4">Sakura</STYLE><STYLE ID="3">."</STYLE><PG>
+<STYLE ID="2">"Well, that's just like </STYLE><STYLE ID="11">him</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sakura</STYLE><STYLE ID="2"> kept quiet all this time to cover for </STYLE><STYLE ID="11">Eiichiro</STYLE><STYLE ID="2"> breaking the rule, then."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"I'm sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's just like </STYLE><STYLE ID="4">you</STYLE><STYLE ID="2">, too."</STYLE><PG>
+Problems like these aren't mine to stick my nose into.
+{PAUSE ""}
+<BR>
+But there's something I absolutely have to get to the bottom of.
+{PAUSE ""}
+<BR>
+That's why I didn't bring <STYLE ID="14">Niimura-senpai</STYLE> here.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="5">, the talk's over now, so go back to your room."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hurry, out. Get out."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+In a firm tone, I urged <STYLE ID="1">Kana-chan</STYLE> to leave the room.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Then please tell me. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">10 years ago, who sent Droga to </STYLE><STYLE ID="15">Mifuyu Niimura-san</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+Someone must have sent <STYLE ID="15">her</STYLE> Droga.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="5">Goto-chan</STYLE><STYLE ID="2">, how do you know about that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"4 days ago, on April 8, </STYLE><STYLE ID="16">Kogori-senpai</STYLE><STYLE ID="5"> and </STYLE><STYLE ID="17">her father</STYLE><STYLE ID="5">, and </STYLE><STYLE ID="15">Mifuyu Niimura-san</STYLE><STYLE ID="5"> died. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I'm asking who caused it."</STYLE>
+{PAUSE ""}
+<BR>
+I had no intention of holding back.
+{PAUSE ""}
+<BR>
+I drove a hard glare into the three of them, so much older than me.
+{PAUSE ""}
+<BR>
+Pierced by that glare, the three of them froze, unable even to blink.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="15">Mifuyu Niimura-san</STYLE><STYLE ID="5"> used Droga to kill </STYLE><STYLE ID="16">Kogori-senpai</STYLE><STYLE ID="5">, and tried to kill me too. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But thanks to my intuition, I got away. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">That's when I sensed it. That </STYLE><STYLE ID="15">she</STYLE><STYLE ID="5"> would burn herself to death to destroy the Droga in her body."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "L" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Do you two know something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The old lady</STYLE>, too, turned her eyes on <STYLE ID="2">Kotaro-san</STYLE> and <STYLE ID="4">Sakura-san</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"It is true that I sent supplies to </STYLE><STYLE ID="15">Mifuyu-chan</STYLE><STYLE ID="4"> 10 years ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But what I sent was a nata and a mace, and red robes and a Noh mask. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So that she could sell them and help with her living costs, even a little."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You didn't send Droga?"</STYLE><PG>
+<STYLE ID="4">"I knew about falsificaso, but today was the first time I heard the name Droga. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Eiichiro's</STYLE><STYLE ID="4"> trial batch was the only time I ever saw anything like it... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I did not know something like that could be made from the Arata cherry."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The one who sent Droga was... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">me. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sakura</STYLE><STYLE ID="2"> didn't know. I kept it from her. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Back then, with </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> in the state she was in, I needed to make sure falsificaso was really safe to use on a human body. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sakura</STYLE><STYLE ID="2"> had also told me what kind of life </STYLE><STYLE ID="15">Mifuyu-chan</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="14">Haruka-chan</STYLE><STYLE ID="2"> were living in Megasawa."</STYLE><PG>
+<STYLE ID="2">"In that case, Droga would be something </STYLE><STYLE ID="15">Mifuyu-chan</STYLE><STYLE ID="2"> needed, and I sent falsificaso too, calling it the antidote."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"And then the Megasawa City case happened, and you were convinced the experiment was a success? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So you used falsificaso on </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You utter fool! I've been telling you for years not to use Droga!"</STYLE><PG>
+<STYLE ID="2">"Say whatever you want! To save </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="4">Sakura</STYLE><STYLE ID="2">, this was the only...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ugh...! Honestly..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The old lady</STYLE> made no attempt to blame him any further.
+{PAUSE ""}
+<BR>
+Judging <STYLE ID="2">Kotaro-san</STYLE>, who had been forced into a difficult choice, was not something that could be done on the spot.<PG>
+But something about that just now nags at me.
+{PAUSE ""}
+<BR>
+<STYLE ID="15">Mifuyu Niimura</STYLE> burned herself to death to destroy the Droga in her body.
+{PAUSE ""}
+<BR>
+Even if, at worst, she meant to kill herself, with falsificaso she wouldn't have had to go out of her way to choose the agony of burning to death.
+{PAUSE ""}
+<BR>
+Why didn't <STYLE ID="15">Mifuyu Niimura</STYLE> use falsificaso?<PG>
+<STYLE ID="3">"You brothers stop at nothing for the people you want to help..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2">... do you think all lives are equal?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, I don't. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'd choose you, my family, over the lives of strangers, and I hunt animals to feed the people of the settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">What I'm saying is, why didn't you talk it over with me?"</STYLE><PG>
+<STYLE ID="2">"And what would you have done then..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'd have made myself the test subject for the drug, or anything else."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"This is the result of what </STYLE><STYLE ID="2">you</STYLE><STYLE ID="3"> did!</STYLE>
+{PAUSE ""}
+　<STYLE ID="3">Six dead in Megasawa City, three in Motoki-cho, and what happened last night?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　If that's how it is, using just my one life would have been far better!"</STYLE><PG>
+Before I knew it, the exchange between those two had weakened my glare.
+{PAUSE ""}
+<BR>
+I understood the situation, more or less.
+{PAUSE ""}
+<BR>
+Right now, I have to somehow bring these two together.
+{PAUSE ""}
+<BR>
+They both hold the same values, yet they chose different methods.
+{PAUSE ""}
+<BR>
+Settling a dispute like this is harder than reconciling people whose values differ.<PG>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="4">"Uh... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Mother</STYLE><STYLE ID="4">, </STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+In the hostile atmosphere, <STYLE ID="4">Sakura-san</STYLE> spoke up in a thin voice.<PG>
+<STYLE ID="4">"All lives... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">are equal."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">Sakura-san</STYLE> had just flatly rejected the values of both of them.
+{PAUSE ""}
+<BR>
+To a parent, a child's life should be more precious than anything.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Sakura-san</STYLE>, with two daughters, should understand that too, but...<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4"> and </STYLE><STYLE ID="3">Mother</STYLE><STYLE ID="4">, I think you care about this settlement and this family more than anyone. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But... even strangers have families. Even animals do. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">To them, their own families must matter far more than we do."</STYLE><PG>
+<STYLE ID="4">"The people who died in Megasawa, </STYLE><STYLE ID="17">Kogori-san</STYLE><STYLE ID="4"> and </STYLE><STYLE ID="16">his daughter</STYLE><STYLE ID="4">, who died in Motoki-cho, and </STYLE><STYLE ID="15">Mifuyu-chan</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Could you say to the families grieving their deaths, 'Our family is more important than your family'?"</STYLE><PG>
+<STYLE ID="4">"I can understand the view that, to a single individual, lives are unequal. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But... that does not make anyone's death acceptable. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Even animals do not kill other animals more than they need to. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Kotaro</STYLE><STYLE ID="4">, did you think of any way other than sending Droga to </STYLE><STYLE ID="15">Mifuyu-chan</STYLE><STYLE ID="4">?"</STYLE><PG>
+<STYLE ID="2">"...That was the only thing I could think of."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"If you had talked it over with someone else, you might have come up with another way."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But then...! Everyone else would have been wary of </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2">!</STYLE>
+{PAUSE ""}
+　<STYLE ID="2">The book in the storehouse even said 'Kill the green-eyed girl'!"</STYLE><PG>
+<STYLE ID="4">"Then if you had at least told just me or </STYLE><STYLE ID="3">Mother</STYLE><STYLE ID="4">, 'I'm sending Droga to </STYLE><STYLE ID="15">Mifuyu-chan</STYLE><STYLE ID="4">'...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Would telling you have changed anything...?"</STYLE><PG>
+<STYLE ID="4">"I don't know... But it might have turned out better than you, </STYLE><STYLE ID="2">Kotaro</STYLE><STYLE ID="4">, agonizing over it alone. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Lives are equal, and unequal. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So we should have thought of a way to make lives as equal as we could. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Because it is so much better for lives to be equal than unequal..."</STYLE><PG>
+<STYLE ID="2">"One for all, all for one, huh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"So the wisdom of our ancestors isn't to be scoffed at after all..."</STYLE><PG>
+As an outsider, all I could do was listen.
+{PAUSE ""}
+<BR>
+But what I can say is that they had no choice but to make sacrifices for the people they wanted to help.
+{PAUSE ""}
+<BR>
+Both <STYLE ID="2">Kotaro-san</STYLE> and <STYLE ID="15">Mifuyu Niimura</STYLE> dirtied their own hands to save their families, and then it came to that...
+{PAUSE ""}
+<BR>
+<STYLE ID="18">But </STYLE><STYLE ID="4">Sakura-san</STYLE> is saying that using the word family as a shield is wrong.
+{PAUSE ""}
+<BR>
+If they had only said a word to someone...<PG>
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+Just then, someone came into the living room.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物4" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "#1" "R" "B" "200" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2">, </STYLE><STYLE ID="6">you</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"You were listening..."</STYLE>
+{PAUSE ""}
+<BR>
+And <STYLE ID="6">Chiga-nee</STYLE> dropped to her knees right there.<PG>
+{PLAYSND "最後の声・真呪殺\ある冬の寒い夜に_2低.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="6">"Mm... I... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">so many people, to save me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="2">, that's not how it is. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">You</STYLE><STYLE ID="2"> have had that constitution since you were born..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Mm... Even now, I think about it. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Back then, how could I have held down the urge to kill </STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="6">?"</STYLE><PG>
+<STYLE ID="5">"</STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="5">, that's impossible... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">There's no way anyone could hold back something like that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Mm... But... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">but the reason I can be here like this now is that so many people were sacrificed. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">My life is something built up out of so many equal lives, isn't it?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2,人物3,人物4" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\土下座ペチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+With that, <STYLE ID="6">Chiga-nee</STYLE>, still on her knees, bowed her head to the floor before me.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\サード\茅萱土下座.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"Mm... </STYLE><STYLE ID="5">Goto-chan</STYLE><STYLE ID="6">... I'm sorry. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Because I was saved... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Goto-chan's</STYLE><STYLE ID="6"> </STYLE><STYLE ID="16">dear one</STYLE><STYLE ID="6">, and </STYLE><STYLE ID="5">Goto-chan</STYLE><STYLE ID="6"> herself, both ended up like that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="5">... I know it's impossible to endure that murderous intent. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Not one person committed murder gladly. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">That's the only saving grace..."</STYLE><PG>
+Saving the people you want to save is very hard.
+{PAUSE ""}
+<BR>
+All the more when a life is at stake.
+{PAUSE ""}
+<BR>
+When exceptional ethics go beyond what the law anticipates, this is what happens.<PG>
+Even the law isn't perfect.
+{PAUSE ""}
+<BR>
+It's an imperfect thing, built up by all of humanity trying to be right.
+{PAUSE ""}
+<BR>
+Proof of having tried to be right.
+{PAUSE ""}
+<BR>
+If you twist it with selfish justice, with talk of love and family―<PG>
+That's why I hate this kind of selfish justice.
+{PAUSE ""}
+<BR>
+Running into a wall the law can do nothing about, having no choice but to turn to crime―
+{PAUSE ""}
+that I can understand.
+{PAUSE ""}
+<BR>
+But calling it justice is wrong.
+{PAUSE ""}
+<BR>
+Because then ethics get twisted, self-righteous morality runs on ahead, and exceptions happen one after another.<PG>
+Those many exceptions brought about the Megasawa City case and the Motoki-cho case.
+{PAUSE ""}
+<BR>
+That's why I hate justice that uses a <STYLE ID="19" RUBY="・・・・・">pristine</STYLE> word like family as a shield.
+{PAUSE ""}
+<BR>
+In the end, the ones sacrificed to this <STYLE ID="20" RUBY="いびつ">warped</STYLE> justice were uninvolved people in Megasawa City and Motoki-cho.<PG>
+And the very family they meant to protect―<STYLE ID="6">Chiga-nee's</STYLE> heart.
+{PAUSE ""}
+<BR>
+The one suffering most right now is <STYLE ID="6">Chiga-nee</STYLE>.<PG>
+<STYLE ID="6">"Mm... </STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="6">, </STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="6">, </STYLE><STYLE ID="3">Grandma</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I think my life... is heavier than anyone's. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">My life, which goes on at the cost of so many people, is very heavy. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">So... in return, I want to help other people, people I don't know."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Mm... I'm... going abroad to study welfare, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　I've always wanted to help as many people as I could. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Maybe somewhere in my heart I'd noticed how heavy this life is. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I know doing that is just a self-righteous idea of justice, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">even so, if I can use my life for many other lives―"</STYLE><PG>
+<STYLE ID="6">"A heavy life means I'm carrying a sin just as heavy. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">So from now on, I want to help strangers all over the world, even if only a little. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">If even a heavy life is equal, then I want to live for other lives. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Because that's the least I can do to make amends..."</STYLE><PG>
+No one had any words left to give back to <STYLE ID="6">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\サード\茅萱土下座.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then <STYLE ID="6">Chiga-nee</STYLE> bowed her head to everyone.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Mm... All of this for me... I am so sorry. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">This life that stands on the sacrifice of so many people, this whole life of mine... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I will never let it go to waste."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

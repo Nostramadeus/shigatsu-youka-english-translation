@@ -1,0 +1,562 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=130, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1382, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=414, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=750, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=63, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=25, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=260, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=85, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=16757864, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かれん, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=97, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けさ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たた, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=5, unk2=13464752, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3638, target=)
+; Links:
+;    0: TWdLink(count=3221, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\春の兆し.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Thank you for the meal."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Hands pressed together, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> and I gave a proper after-meal thanks.</STYLE>
+{PAUSE ""}
+<BR>
+"Come to think of it, is <STYLE ID="3">Obaasan</STYLE> still not here?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In the end, even after dinner was over, </STYLE><STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> never showed up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Obasan</STYLE><STYLE ID="1"> had gone to wash the dishes, and </STYLE><STYLE ID="5">Kotaro-san</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1"> were drunk and asleep in the living room.</STYLE><PG>
+{STOPSND "BGM" "500" "PASS"}
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Then the sliding door of the living room opened.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\五島エリカ.ogg" "BGM" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール挨拶.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"The genius girl, as everyone agrees, me included, </STYLE><STYLE ID="2">Erina Goto</STYLE><STYLE ID="3">! Has arrived at the Arata settlement!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On the other side of the sliding door stood an old woman in a school uniform, with twin tails.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Who is this supposed to be...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No way...</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "BGM死月編\Bad_Luck.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"How about it, </STYLE>Kogori-senpai<STYLE ID="3">! Today's food was delicious, wasn't it!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Which one, which one did you like best?"</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, uh, um..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> dressed up as </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> was painful on a criminal level.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This needed self-censorship.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This far gone, it wasn't an impression, or even cosplay anymore. It was a costume-party act.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Still, her gestures and way of talking were spot on.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"I sent </STYLE><STYLE ID="3">Grandma</STYLE><STYLE ID="7"> a video of </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="7"> last week, so she probably practiced with that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To copy her this well from a video sent last week, she must have practiced a lot.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール挨拶.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="7">Niimura-senpai</STYLE><STYLE ID="3">, what do you think? My twin tails, seeing them once in a while, don't you think they're pretty nice?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="3">I heard you were all coming today, so I've been planning my operation the whole time!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\五島スマイル.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$FFFFFF" "NORMAL" "#1" "C" "B" "100" "12" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "20" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">With that, </STYLE><STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> spun around once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Had she really gotten a uniform and a wig ready just for this?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> was knitting her brow as if she were looking at weird food.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{MESON "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="8">"Wrong!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At the sudden shout, the room went silent.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The voice belonged to </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1">, who had sat up.</STYLE><PG>
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "5" "0" "0" "30"}
+<STYLE ID="6">"</STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="6"> isn't like this!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　She's quieter... and </STYLE><STYLE ID="9" RUBY="かれん">lovely</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">she doesn't talk in such a vulgar way!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1"> was trembling all over.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{QUAKESTOP "0"}
+{PLAYSND "SE\きらーん.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Just then, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">'s mouth twisted into a smirk.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> took hair ties from her pocket, quickly put her hair in twin tails, and stood next to </STYLE><STYLE ID="3">Obaasan</STYLE><STYLE ID="1">.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール挨拶.gal" "WAIT" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Here before us is none other than </STYLE><STYLE ID="3">Erika Goto</STYLE><STYLE ID="2">!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Oh-ho? Don't tell me you're a fan of the genius girl, as everyone agrees, me included, Erina Goto?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> grinned at </STYLE><STYLE ID="3">Obaasan</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Come to think of it, the two names were just one letter apart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> was Erika Niimura, if I remembered right.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール挨拶.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Why, it's Motoki-cho's genius girl, </STYLE><STYLE ID="2">Erina Goto</STYLE><STYLE ID="3">!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　I see, so you're afraid this Erika Goto will steal your title of genius girl, and that's why you're competing with me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> grinned at </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="2">"As if the one and only original genius girl could have her throne threatened by a single fan!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="2">If you like, shall we have a showdown?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げる.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Shall we have a showdown?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Kana-chan</STYLE><STYLE ID="1"> seemed to be trying her hand at a </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> impression too.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Oho, challenging this genius girl Erika Goto to a showdown, you've got quite the nerve. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Very well! A showdown it is!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What on earth is this turn of events...</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Wrong... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Goto-chan</STYLE><STYLE ID="6"> isn't like this...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1">, faced with reality, was on the verge of losing her reason.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Though she was the type to act on instinct to begin with.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="6">"</STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="6"> isn't this vulgar!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　She isn't some cheeky kid who says arrogant things like that and acts all high and mighty!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At these words, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> seemed a little miffed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The everyday </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> was exactly like this, so </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1">'s words amounted to rejecting her whole personality.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"What's that, </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="2">! Didn't the men you've met so far think the same thing about </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="2">!?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　All looks and nothing else, that's </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="2">, so I bet the men got disillusioned, didn't they?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げる.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Got disillusioned, didn't they?"</STYLE><PG>
+<STYLE ID="6">"Wha...! What's with you, shorty!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Talking like that to a grown-up 20-year-old!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh my, you're 20?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　You sure have an old-looking face."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"An old-looking face."</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "人物1" "QUAKE" "1" "5" "0" "0" "30"}
+<STYLE ID="6">"You said the thing I worry about most...!"</STYLE><PG>
+<STYLE ID="2">"Besides, I could tell when you hugged me earlier. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">That big, puffed-up chest of </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="2">'s is 97 percent padding, isn't it!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Padding, isn't it!?"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "人物1" "QUAKE" "1" "10" "0" "0" "30"}
+<STYLE ID="6">"Ngh...! You said the thing I worry about second most...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It looked like </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1"> was losing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In this kind of showdown, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> was strong through and through.</STYLE><PG>
+<STYLE ID="1">But badmouthing someone's chest didn't sit right with me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That kind of worry, I understand it painfully well.</STYLE><PG>
+{QUAKESTOP "0"}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島ツインテール挨拶.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Honestly, it's so unsightly... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The old face can't be helped, I suppose, but she should just live proudly with her chest as it is. </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+Even Kogori-senpai<STYLE ID="2"> has accepted that about herself and lives proudly!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Lives proudly!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Hey, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, what did you just say?</STYLE><PG>
+{PLAYSND "Attack.ogg" "BGM" "REPEAT" "1000" "0"}
+"<STYLE ID="2">Goto</STYLE>, I can't let that remark pass... 
+{PAUSE ""}
+Why does this turn into talk about my chest?
+{PAUSE ""}
+　A shrimpy nitwit numbskull like you is nowhere near ready to defy me!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sharing the same worry: </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1">. I had no choice but to take </STYLE><STYLE ID="6">her</STYLE><STYLE ID="1"> side.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="7">"H-Hey, you guys..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2,人物3" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"<STYLE ID="2">Goto</STYLE>, I'm siding with <STYLE ID="6">Chiga-nee</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I stood next to </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱横顔.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Oh, </STYLE>Natsumi-chan<STYLE ID="6">, you're a girl who understands. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">That's right!</STYLE><STYLE ID="1"> </STYLE><STYLE ID="6">As if I'd lose to this </STYLE><STYLE ID="2">vulgar little shrimp</STYLE><STYLE ID="6"> and that </STYLE><STYLE ID="3">cosplay hag</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">For some reason, </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1"> was burning with rivalry against </STYLE><STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Probably a case of: hate the monk, and you hate his </STYLE><STYLE ID="11" RUBY="けさ">robes</STYLE><STYLE ID="1"> too.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="7">Niimura-senpai</STYLE><STYLE ID="2">. </STYLE><STYLE ID="7">Senpai</STYLE><STYLE ID="2">, you're on my side, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"On my side, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花頭抱える.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Huh!? This has nothing to do with me, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Haruka</STYLE><STYLE ID="1"> seemed to be trying to flee this battlefield.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1">, don't you let her get away.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Mifuyu-saaan</STYLE><STYLE ID="3">! Get over here this instant! </STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="3">, you're on my team."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"U-Um..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Timidly emerging from the kitchen: </STYLE><STYLE ID="4">Obasan</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Judging by </STYLE><STYLE ID="4">Obasan</STYLE><STYLE ID="1">'s manner, she had heard the conversation.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="3">, you know what we're about to do, don't you?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬土下座.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Y... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">yes..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The old woman in a uniform and twin tails</STYLE><STYLE ID="1"> wasn't even doing an impression. She was talking down to her.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">"All right, I'm going to go sleep in my room."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-600\r\n500\r\nINC\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-600\r\n0\r\nINC\r\nPASS">
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Though he was supposed to be asleep, </STYLE><STYLE ID="5">Kotaro-san</STYLE><STYLE ID="1"> suddenly got up and left.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That </STYLE><STYLE ID="5">fatso</STYLE><STYLE ID="1"> ran away!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Scurrying off like a wharf roach, only at times like this...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Hmph, fine. This battlefield is a women-only battle stage.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"All right, everyone, sit down. It's showdown time!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">We gathered around the cleared table.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Me and </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="1">, </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="7">Haruka</STYLE><STYLE ID="1">, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="4">Obasan</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Apparently we'd be having a battle royale in these pairs.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Ooh, a showdown, it's been forever! Who's gonna win?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Kana-chan</STYLE><STYLE ID="1"> seemed set on being just a spectator.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But what kind of showdown would it be?</STYLE><PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"The showdown we're about to have was passed down by Westerners who reached the Arata settlement long ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">A showdown the Arata way, based on a time-honored tradition."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I didn't know what kind of showdown it was, but if it meant crushing </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> here, I'd take on anything!</STYLE><PG>
+<STYLE ID="3">"Here's the showdown!"</STYLE>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\追加分\テーブルバシン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> brought something down on the table with a </STYLE><STYLE ID="12" RUBY="たた">slam</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\紙人形6枚.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<BR>
+{MESON "500"}
+<STYLE ID="1">These are... paper dolls...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Six paper dolls were lined up on the table.</STYLE><PG>
+<STYLE ID="3">"Some of you are new today, so let me explain the rules. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">First, write your name on this doll."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Each of us was handed a paper doll and a pen.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Writing my own name on a paper doll felt a little creepy.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬土下座.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Obasan</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="7">Haruka</STYLE><STYLE ID="1"> looked pale.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Did they have some bad memory involving paper dolls?</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Looks like everyone's done. Okay, hand them over."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obaasan</STYLE><STYLE ID="1"> gathered everyone's paper dolls and stacked them in one pile.</STYLE><PG>
+<STYLE ID="3">"Next, I'll draw one paper doll from these, like drawing lots. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Whoever's name is on the doll goes first. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="3">, the lights."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">On </STYLE><STYLE ID="3">Obaasan</STYLE><STYLE ID="1">'s instructions, </STYLE><STYLE ID="4">Obasan</STYLE><STYLE ID="1"> turned off the light in the room.</STYLE><PG>
+<STYLE ID="1">With no streetlights outside, it was truly pitch-black, but after a few seconds, moonlight began to filter in faintly.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\火をつける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "NORMAL" "#1" "C" "B" "200" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">At the same time, an orange glow fell softly on </STYLE><STYLE ID="13">Obaasan</STYLE><STYLE ID="1">'s face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She seemed to have lit a candle.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\ろうそく.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"What we'll be doing is... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">ghost stories."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ghost stories?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So, a scary-story contest?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"When one person's story is over, I draw the next paper doll. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">That's how you'll take turns telling ghost stories. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">At the end, you vote with your own paper doll for whoever was scariest. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The team with the most votes wins. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Of course, voting for your own team is against the rules."</STYLE><PG>
+<STYLE ID="1">I see, so all I had to do was tell a scary story.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The usual me would be bad with this kind of story, but now that the demon of fury had possessed me, nothing could scare me.</STYLE><PG>
+<STYLE ID="3">"But there's a little jinx to this showdown... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">They say the story you vote for will befall you someday. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Especially around a memorial service..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Don't say scary stuff like that..."</STYLE><PG>
+<STYLE ID="1">Only a candle lit the room, and paper dolls with names written on them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The atmosphere was perfect.</STYLE><PG>
+<STYLE ID="1">Now then... on this night before the memorial service, who would tell the scariest story...?</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

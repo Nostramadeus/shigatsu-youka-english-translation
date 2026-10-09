@@ -1,0 +1,738 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1137, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1749, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2118, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こごおり, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=261, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=6, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にいむら, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=12, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごとう, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=12, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めがさわし, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めがさわし, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いいざわけん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いいざわけん, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めがさわし, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=8, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=6, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5885, target=)
+; Links:
+;    0: TWdLink(count=5335, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\公園野次馬.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "2000" "WAIT"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\シナリオ\公園.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "700" "1000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"What a crowd..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">For a park it was nothing as grand as the ones in the city, just a children's park about 100m on a side.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\フェンス.gal" "NORMAL" "#1" "C" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The play equipment was gathered together in the middle, and cherry trees stood in a ring around it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The outside was closed in by a fence about 1m20cm high, so the inside of the park could be seen from anywhere.</STYLE><PG>
+<STYLE ID="1">Naturally the park was off-limits.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Several police officers were still at work.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The blue sheet I had seen in the photo online had been taken away.</STYLE><PG>
+<STYLE ID="1">Around it stood a group that had to be the press, and outside them dozens of rubberneckers had gathered.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No doubt the residents of that bulletin board were mixed in among them.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"Honestly, every last one of them... Don't these guys have anything else to do...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Though that was hardly something </STYLE>Haruka<STYLE ID="1"> could say.</STYLE><PG>
+"At this rate the food stalls are probably closed for a while too. Good thing we went yesterday..."<PG>
+{MESOFF "500"}
+{STOPSND "SE" "1000" "PASS"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="3" RUBY="こごおり">Kogori</STYLE><STYLE ID="4">-senpaaai</STYLE><STYLE ID="2">! </STYLE><STYLE ID="5" RUBY="にいむら">Niimura</STYLE>-senpaaai<STYLE ID="2">!"</STYLE> [TN: senpai = an older schoolmate]<PG>
+{MESOFF "0"}
+{CREATECG "000" "グラフィック\シナリオ\公園.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "#1" "300" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">No sooner had a girl's shout gone up than somebody slammed into us from behind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There is only one girl who calls us senpai and greets us like this.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"So you were both here!"</STYLE>
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+"Huh? <STYLE ID="6" RUBY="ごとう">Goto</STYLE>, is it. So <STYLE ID="2">you</STYLE> came here too."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes! Did you two just get here, Senpai?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6" RUBY="ごとう">Goto</STYLE><STYLE ID="1"> grinned from ear to ear.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I was so bored I dragged <STYLE ID="4">Natsumi</STYLE> out here by force."<PG>
+<STYLE ID="1">Incidentally, </STYLE><STYLE ID="3" RUBY="こごおり">Kogori</STYLE><STYLE ID="1"> is my family name, and </STYLE><STYLE ID="5" RUBY="にいむら">Niimura</STYLE><STYLE ID="1"> is </STYLE>Haruka<STYLE ID="1">'s.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And this noisy little thing is </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, my junior, a year below me.</STYLE><PG>
+<STYLE ID="1">She is the very one </STYLE>Haruka<STYLE ID="1"> mentioned in passing yesterday, who ate her way through the food stalls in the park.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">For all that she is as small as a child, she has a bottomless stomach.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考える.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hm, but are you all right, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="2">? The cherries don't bother you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, I'm feeling strangely good today."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Is that so! Then nothing could be finer!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Hey, hey, Senpai, do you two have a little time? Actually, you do, don't you? You came here because you were bored, after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1">'s one remark made </STYLE>Haruka<STYLE ID="1">'s eyes gleam.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Oh! Have you got some good information or something?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Just what I would expect of </STYLE>Niimura-senpai<STYLE ID="2">! Your nose for this sort of thing is fearsome! In truth, </STYLE>Boss<STYLE ID="2">, it is exactly as you say."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6" RUBY="ごとう">Goto</STYLE><STYLE ID="1"> rubbed her hands together and sidled up to </STYLE>Haruka<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Who are you imitating...?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"I have been here since morning gathering information of every kind. I am surely the ordinary citizen who knows this incident best!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="6" RUBY="ごとう">Goto</STYLE>! Have you had lunch!? This <STYLE ID="5" RUBY="にいむら">Niimura</STYLE>-senpai is treating you!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oooh! Just what I would expect of the </STYLE>Boss<STYLE ID="2">!</STYLE><STYLE ID="1"> </STYLE><STYLE ID="2">Operation successful!"</STYLE><PG>
+"Hah! So you were after lunch all along. Well, I've got the funds today."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> and </STYLE><STYLE ID="6" RUBY="ごとう">Goto</STYLE><STYLE ID="1"> see eye to eye on this sort of thing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6" RUBY="ごとう">Goto</STYLE><STYLE ID="1"> was the one I met first, but after I brought her together with </STYLE>Haruka<STYLE ID="1"> later on, it has been like this every time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Their getting along is a fine thing, but being dragged around by it is very hard work.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"Come on, <STYLE ID="4">Natsumi</STYLE>! Let's go! We're moving to Zahha!"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ah, wait for me!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">By the time I noticed, the two of them were already astride their bicycles.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\自転車開始.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">In the end we were at the park for only 2 or 3 minutes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But having run into </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, it looked as though we would learn all sorts of things.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "VOICE" "3000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\ファミレス.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{PLAYSND "SE\自転車ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">We arrived at Zahha.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">We used this family restaurant fairly often.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Plenty of bicycles that looked like school bikes were parked outside.</STYLE><PG>
+<STYLE ID="1">"Welcome. Is it three of you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Zahha was very crowded today.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">From the look of it, it was all groups of high school students.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">High school students overflowing the park and the family restaurant alike. So much for the stay-at-home order.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Right then, <STYLE ID="2">Goto</STYLE>, no holding back! Eat whatever you like!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The Boss is openhanded today as well."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> opened the menu in high spirits.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,000,人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\食器を動かす.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">We finished ordering, and each of us came back from the drink bar.</STYLE> [TN: a self-serve drinks counter]
+{PAUSE ""}
+<BR>
+"Ah, <STYLE ID="2">Goto</STYLE>, there's one thing I want you to be careful about."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yep?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"If it were just me I wouldn't mind, but today <STYLE ID="4">Natsumi</STYLE> is here too. Anything that would spoil <STYLE ID="4">Natsumi</STYLE>'s meal, keep it until after we've eaten."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"As you command, </STYLE>Boss<STYLE ID="2">! I understand perfectly!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> snapped off a salute.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Then, on to carrying out the Operation! Now, what shall I start with?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">As she said it, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> took a notepad out of her pocket.</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "2000" "PASS"}
+<STYLE ID="1">And then, with a suddenly serious face, she began to stare at the notepad.</STYLE><PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Ummm... you already know that the body has been found, don't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　The body was found at about 5:10 a.m. It was found by a 68-year-old man. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">They say he had gone into the park to set up his food stall."</STYLE><PG>
+<STYLE ID="2">"At that time the victim was still alive, they say. Apparently there was a moaning voice, asking for help. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The man was startled, but he called the police and an ambulance right away, and yet..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Didn't make it in time, huh..."<PG>
+<STYLE ID="2">"Yes. But all of that is in the news by now, so it isn't especially good information."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Right. We read that much on the online news ourselves."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I listened in silence throughout.</STYLE><PG>
+<STYLE ID="2">"So, from here on it's information I went around asking for myself―"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\鉄板で焼く.ogg" "SE" "REPEAT" "0" "30"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> had got that far when the sound of grilling meat came closer.</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="1">"Thank you for waiting. The customer for the Special Steak Lunch?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ah, yes! That's me!"</STYLE>
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "2000" "PASS"}
+<STYLE ID="2">Goto</STYLE><STYLE ID="1">'s serious face went straight back into the noisy mode of a moment ago, and her hand shot up cheerfully.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,000,人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\食器を動かす.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">Before long the food for all of us was brought over.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ステーキ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Ooh, amazing! A Special Steak 5 centimeters thick!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Well then, </STYLE>Niimura-senpai<STYLE ID="2">! Thank you for the meaaal!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> began cutting the slab of meat with a clinking of cutlery.</STYLE><PG>
+"So then, what is this information <STYLE ID="2">Goto</STYLE> went around hearing?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPD TIME="4294967256">"Uhh, ho, yoo hee, vhere wah a himihar inhihenh, a himihar inhihenh hehoreuhh, ho, yoo hee, vhere wah a himihar inhihenh, a himihar inhihenh hehoreuhh, ho, yoo hee, vhere wah a himihar inhihenh, a himihar inhihenh hehore</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<TXSPN>"Swallow the meat before you talk..."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> said that, and </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> grinned from ear to ear and</STYLE>
+{PLAYSND "SE\ごくり.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1"> moved her throat with a gulp.</STYLE><PG>
+<STYLE ID="2">"Mmm!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "1"}
+<STYLE ID="7">So good!</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="2">　This flavor, this volume, for this price! Well now, is this really beef?"</STYLE>
+{PAUSE ""}
+<BR>
+"Don't say weird things..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ahahaha! I'm sorry."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> said that, and then took</STYLE>
+{PLAYSND "SE\すする.ogg" "VOICE" "NORMAL" "900" "0"}
+<STYLE ID="8"> one</STYLE><STYLE ID="1"> sip of her miso soup.</STYLE><PG>
+<STYLE ID="2">"Haah... Um, so. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It seems there was one before as well. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">A similar incident."</STYLE>
+{STOPSND "BGM" "2000" "PASS"}
+{PAUSE ""}
+<BR>
+"Huh?"<BR>
+<STYLE ID="4">"Huh?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "50"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"A similar incident, meaning one like today's?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's right. Well, I'll talk about the details after we eat. </STYLE>
+{PAUSE ""}
+<STYLE ID="9" RUBY="めがさわし">Megasawa City</STYLE><STYLE ID="2"> murders, do you know about them?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="10" RUBY="めがさわし">Megasawa City</STYLE><STYLE ID="4">... murders?"</STYLE><PG>
+<STYLE ID="2">"Yes. In the neighboring </STYLE><STYLE ID="11" RUBY="いいざわけん">Iizawa Prefecture</STYLE><STYLE ID="2">, there is </STYLE><STYLE ID="9" RUBY="めがさわし">Megasawa City</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">There, every few years, and on April 8 at that, a brutalized body is found."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I had heard of it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, it was more than a matter of having heard of it.</STYLE><PG>
+<STYLE ID="1">If I remembered right, from about 10 years ago, in the neighboring </STYLE><STYLE ID="12" RUBY="いいざわけん">Iizawa Prefecture</STYLE><STYLE ID="13" RUBY="めがさわし">, in Megasawa City</STYLE><STYLE ID="1">, murders have been happening every 3 years or so.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">・Occurs every few years, always on April 8</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">・The body is found in a state horrific beyond the ordinary</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">・Two people killed each time</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">・A crime physically impossible for a human being</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">・Occurred three times in the past</STYLE><PG>
+<STYLE ID="1">Moreover, they say the culprit still has not been caught.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I didn't remember the details, but the method in every case was so baffling that it could only be taken for the work of a spiriting-away.</STYLE> [TN: a disappearance blamed on gods or spirits]
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The sort that would demand instantaneous movement, or a leap of several meters, or monstrous strength no human could produce.</STYLE><PG>
+"I-I've heard something about that..."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1">'s face set hard, and she answered in a low voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Actually, I've been looking into it because I thought this incident and the </STYLE><STYLE ID="9" RUBY="めがさわし">Megasawa City</STYLE><STYLE ID="2"> murders might be connected. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But then I made another new discovery."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And here, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> took a mouthful of cola and steadied her breath.</STYLE><PG>
+<STYLE ID="2">"The first Megasawa City murders happened 10 years ago, on Shiyo 790, April 8. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But on April 8 some years before that,</STYLE>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="2">they say that here in Motoki-cho, in Chuo Park, one hanami visitor died."</STYLE> [TN: hanami = cherry-blossom viewing]
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh? In the Chuo Park we were in just now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes, that Chuo Park. Which means that, counting today's incident, people have died on April 8 five times."</STYLE><PG>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">Goosebumps rose on my skin.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In Motoki-cho even an incident is rare, and yet in the park, in the hanami season, a person had died.</STYLE>
+{PAUSE ""}
+<BR>
+"So, you're saying murders happened on April 8, twice in Motoki-cho and three times in Megasawa City..."<PG>
+<STYLE ID="2">"No, that's a little off. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The first one, in Chuo Park in Motoki-cho, was purely an accidental death. There were plenty of witnesses, too. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">They say an off-duty police officer was there for the hanami as well, so the chance of it being a case is zero. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Nom nom..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Today's incident... and the Megasawa City murders... and the accident in Chuo Park more than 10 years ago...
+{PAUSE ""}
+Is that Chuo Park accident from more than 10 years ago connected to the other four incidents?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's not."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> declared it flatly.</STYLE><PG>
+<STYLE ID="2">"Senpai, your hands have stopped. Let's leave the rest until after we eat. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh, may I add an order for the spring-only parfait?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Huh? Ah... eat whatever you want."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> carried a slice of pizza to her mouth as if she had just remembered it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I carried spaghetti to my mouth the same way.</STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+<PG>
+<STYLE ID="2">"By the way, changing the subject, do many people from our high school go to universities outside the prefecture?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+"Hm? No, it's pretty rare. Apparently the members barely change from middle school to high school to university."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Is that so. I'm still not sure which university to apply to."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="4">, you're smart, so I'm sure you'll get in wherever you want."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ehehee! I'm the genius girl, by my own account and everyone else's!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> turned to me and grinned from ear to ear.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"But, leaving Motoki-cho would be lonely... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Come to think of it, </STYLE>Niimura-senpai<STYLE ID="2">, you left this town once, didn't you?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Yeah, I lived here in Motoki-cho until kindergarten, but it was Dad's work.
+{PAUSE ""}
+3 years ago Dad finally got transferred overseas, so it became a posting away from the family.
+{PAUSE ""}
+Just me and <STYLE ID="14">Mom</STYLE>, we came back to this town."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> said all this while starting to pour a huge amount of Tabasco onto her pizza.</STYLE><PG>
+<STYLE ID="4">"............?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Huh? You two have been friends since kindergarten? That's the first I've heard of it."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Didn't I tell you?
+{PAUSE ""}
+　Our moms were childhood friends, and through that we've been friends since we were old enough to remember.
+{PAUSE ""}
+After I moved away it was letters and email.
+{PAUSE ""}
+3 years ago, once it was settled that we would move back to Motoki-cho, <STYLE ID="4">Natsumi</STYLE> told me, 'the place next door is empty'.
+{PAUSE ""}
+<STYLE ID="14">Mom</STYLE> let me have my way, and we moved into the apartment we're in now."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> spoke in a soft voice, as if remembering fondly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"I see indeed!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Come to think of it, did you know? Motoki-cho is famous for its cherry trees, and they say the population keeps growing!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　It seems a lot of people move here for the cherry blossom. The population has passed 40,000 already, so it's only a matter of time before it becomes Motoki 'City'."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh! I knew Motoki-cho was famous for cherries, but so that's why the population has grown this much!
+{PAUSE ""}
+　Come to think of it, there are all kinds of buildings going up everywhere!
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>Above all, the goshinboku in Chuo Park really is something."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"That's true! Oh! Speaking of cherries―"</STYLE>
+{PAUSE ""}
+<BR>
+"Uh... <STYLE ID="2">Goto</STYLE>... let's drop the cherry talk about now..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh... I'm sorry, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ah, I see. She must have thought that talking too much about cherries in front of me was a bad idea.</STYLE><PG>
+<STYLE ID="4">"Ahaha, just talking about it doesn't bother me. It's fine."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Making the people around me feel they have to be careful like this is, apparently, another feature of the April sickness.</STYLE><PG>
+<STYLE ID="4">"</STYLE>Haruka<STYLE ID="4"> coming back made me really happy! But still, not having your dad around is lonely, isn't it...? </STYLE>
+{PAUSE ""}
+<STYLE ID="15">My dad</STYLE><STYLE ID="4"> has only been away on a business trip to Hokkaido since yesterday, and even that is lonely..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Honestly, <STYLE ID="4">Natsumi</STYLE>... <STYLE ID="4">You</STYLE> really are a daddy's girl..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huuuh? But with family you do want to be close to them, don't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Having talked that far, I happened to look over toward </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">―</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1">'s face turned solemn for an instant, but</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's nice, being close since you were little. I'm envious."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> grinned from ear to ear at once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That expression </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> had just now...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Had we said something strange?</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "72" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Thanks for the foooood! That was gooood!"</STYLE><PG>
+{MESOFF "0"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Did that fill you up?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Not yet, not yet! The spring-limited parfait is yet to arrive!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE><STYLE ID="1"> gave a beaming grin from ear to ear.</STYLE><PG>
+"Haha, that's right."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Well then, now that everyone has finished eating, on with the story."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "BGM" "3000" "PASS"}
+{MESON "500"}
+"Right, go ahead."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ahem. Well then..."</STYLE><PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"At this season, come 5 a.m., a fair number of people come to the park. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It has gotten warmer, so the elderly take walks and students do morning practice. And of course setting up the food stalls."</STYLE><PG>
+"So the body being found at 5 a.m. isn't all that unnatural, then."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's right. The point is that between the discovery and the police arriving, the body―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">to be exact, the victim who was on the way to becoming a body, was seen by a great many people. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But..."</STYLE><PG>
+"But...?"<BR>
+<STYLE ID="4">"But...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Together with </STYLE>Haruka<STYLE ID="1">, I swallowed with a gulp.</STYLE><PG>
+<STYLE ID="2">"Not one person could tell the face, or the sex, or the age. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Do you understand what this means?"</STYLE>
+{PAUSE ""}
+<BR>
+"But that was in the online news too. That they couldn't tell the sex and so on."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That is the police's point of view. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">What matters is that 'the witnesses were ordinary people'."</STYLE>
+{PAUSE ""}
+<BR>
+"What's that supposed to mean?"<PG>
+<STYLE ID="2">"Now listen. The police are, when all is said and done, a public body. They do not put out opinions with anything subjective in them. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">They release nothing but objective information."</STYLE>
+{PAUSE ""}
+<BR>
+"Uh-huh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Somehow, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">'s talk was getting hard to follow.</STYLE><PG>
+<STYLE ID="2">"But what about ordinary people? Don't they talk about things only subjectively?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">'Probably a man', 'probably someone young', that sort of thing; I think they would say at least that much."</STYLE>
+{PAUSE ""}
+<BR>
+"Well, true enough..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But the fact that there is none of that means the damage to the body was so severe that not even the sex could be told. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And yet! At the time of discovery the victim was still alive!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="2">There is only one situation, I think, that leaves a body like that."</STYLE><PG>
+<STYLE ID="1">The mood of the </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> who had been grinning from ear to ear until a moment ago was not to be seen in the slightest.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">We were listening intently to </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">'s words.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="16">And then </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> took a mouthful of water and said this.</STYLE><PG>
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{MESOFF "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

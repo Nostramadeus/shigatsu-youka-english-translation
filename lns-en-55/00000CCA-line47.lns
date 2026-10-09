@@ -1,0 +1,88 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=272, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とどろ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=337, target=)
+; Links:
+;    0: TWdLink(count=275, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\lcm\屋根2.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\背景\lcm\死神屋根3.gal" "NORMAL" "#1" "500" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\lcm\道.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\背景\lcm\親子.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\lcm\景色2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\能面土下座逆.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<TXSPN>"Kokona, you really love your walk at this time of day!"
+{PAUSE ""}
+<BR>
+"Yeah! 'Cause there's a Pri-Girl Show at Megamall!"
+{PAUSE ""}
+<BR>
+"Oh, so it's Pri-Girl you're after!"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\lcm\屋根2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\背景\lcm\死神屋根3.gal" "NORMAL" "#1" "500" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\swish1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "11" "100" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\lcm\親子死ぬ.lcm" "WAIT" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"K-Kokona! What? What is this?"
+{PAUSE ""}
+<BR>
+"Nooooo!!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\パトカー.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "10000" "PASS"}
+{CREATECG "000" "グラフィック\背景\lcm\屋根2.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\背景\lcm\死神屋根4.gal" "NORMAL" "#1" "500" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hey, a kid's been killed in 2-chome too!"
+{PAUSE ""}
+<BR>
+"What is going on!? Who did this!?"
+{PAUSE ""}
+<BR>
+"Nobody saw anyone like that!"
+{PAUSE ""}
+<BR>
+"The killer's still nearby!"
+{PAUSE ""}
+<BR>
+"Get inside, quick!"<PG>
+{MESOFF "500"}
+{DELETECG "人物2" "11" "100" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Megasawa City, Iizawa Prefecture, had until then been a provincial city with no name recognition anywhere in the country.
+{PAUSE ""}
+<BR>
+But on Shiyo 790, April 8―
+{PAUSE ""}
+<BR>
+through these crimes, as if people had been spirited away, Megasawa City made its infamy <STYLE ID="1" RUBY="とどろ">resound</STYLE>.
+{PAUSE ""}
+<BR>
+<BR>
+This was the first Megasawa City case.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

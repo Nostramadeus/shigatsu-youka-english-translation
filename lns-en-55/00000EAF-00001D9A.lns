@@ -1,0 +1,585 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4607, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみ, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=10, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=チャレンジャー, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あしゃ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちゅうぼう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=22, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなみざき, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=51, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=うかい, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だて, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そしゃく, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=えんげ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あお, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5137, target=)
+; Links:
+;    0: TWdLink(count=4718, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\東京駅.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\東京駅.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>―From Motoki Station on the local line to Sawa-<STYLE ID="1" RUBY="みなかみ">Minakami</STYLE> Station, and then connecting on the all-stops bullet train―
+{PAUSE ""}
+<BR>
+Eventually, I arrived in Tokyo.
+{PAUSE ""}
+<BR>
+When I got off the train, the air, so different from Motoki-cho's, made it hard to breathe.
+{PAUSE ""}
+<BR>
+If even one of eat, sleep, breathe is held down, I panic.<PG>
+To calm myself, I took a deep breath for just 3 seconds.
+{PAUSE ""}
+<BR>
+Actually, this is my first time coming to Tokyo.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "環境音\東京.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループ東京.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+One of the largest economic cities in the world.
+{PAUSE ""}
+<BR>
+With this many people around, nobody will pay any attention to me.
+{PAUSE ""}
+<BR>
+I should be able to get by on the bare minimum of communication.<PG>
+Now then, first I need to secure a place to sleep tonight.
+{PAUSE ""}
+<BR>
+For someone like me without a steady job, renting a room should take a little time.
+{PAUSE ""}
+<BR>
+It'll probably be internet cafe life for a while.
+{PAUSE ""}
+<BR>
+I have more than enough money for that.<PG>
+But before that... 
+{PAUSE ""}
+I was hungry...
+{PAUSE ""}
+<BR>
+For me, with a survival instinct more sensitive than most people's, filling an empty stomach matters more than anything.
+{PAUSE ""}
+<BR>
+First, I'll go somewhere I can eat.
+{PAUSE ""}
+<BR>
+Somewhere as cheap as possible, with big portions.<PG>
+While I was on the bullet train, I'd memorized the route map to some extent.
+{PAUSE ""}
+<BR>
+I got on a random local line and got off at a random station.
+{PAUSE ""}
+<BR>
+I don't have much luggage, and it would help me get used to the Tokyo air, so maybe I'll walk around a little.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\雑踏.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I'd heard the rumors, but there really were a lot of people.
+{PAUSE ""}
+<BR>
+In the short time I stood at an intersection, people kept piling up on the other side.
+{PAUSE ""}
+<BR>
+And when the light turned green, they surged toward me like a bursting dam.
+{PAUSE ""}
+<BR>
+A wave of people that someone as small as me would have a pretty hard time swimming across.<PG>
+I'll slip off onto a side street for a bit.
+{PAUSE ""}
+<BR>
+When I turned into a narrow street, a certain shop caught my eye, and I stopped.<PG>
+{MESOFF "500"}
+{CHGVOL "SE2" "700" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\カレー屋外観.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What I'd stopped for was a curry shop.
+{PAUSE ""}
+<BR>
+Curry House '<STYLE ID="2" RUBY="チャレンジャー">Challenger</STYLE>'.
+{PAUSE ""}
+<BR>
+That's a pretty provocative name for a shop.
+{PAUSE ""}
+<BR>
+When I looked at the sign out front...<PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE2" "5000" "PASS"}
+Challenge menu by level available.
+{PAUSE ""}
+<BR>
+The biggest is the 10kg curry, 
+{PAUSE ""}
+prize money 100,000 yen, 
+{PAUSE ""}
+plus a lifetime free-meal pass.
+{PAUSE ""}
+<BR>
+If they hand a lifetime free pass to a big eater, won't the shop go under?
+{PAUSE ""}
+<BR>
+Well, that just shows how high the bar is for this menu.<PG>
+How much would 10kg be?
+{PAUSE ""}
+<BR>
+I may be a big eater, but I've never measured how much food I eat.
+{PAUSE ""}
+<BR>
+But the prize money and the prize are both very attractive.
+{PAUSE ""}
+<BR>
+All right, this is the place.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{STOPSND "SE2" "1000" "PASS"}
+{PLAYSND "SE\風呂ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\カレー屋カウンター.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Welcome!"
+{PAUSE ""}
+<BR>
+I was greeted with a bright welcome.
+{PAUSE ""}
+<BR>
+Fitting that bright greeting, the interior was neat and stylish as well.<PG>
+When I sat down at the counter, a staff member handed me a menu.
+{PAUSE ""}
+<BR>
+Without hesitation, I pointed to the 10kg curry.<PG>
+"Are you really sure? Nobody's ever finished it."
+{PAUSE ""}
+<BR>
+Instead of answering, I made an X in front of my mouth with my fingers, and once it got across that I was <STYLE ID="3" RUBY="あしゃ">a mute</STYLE>, I gave a thumbs-up.<PG>
+"Understood! Good luck!"
+{PAUSE ""}
+<BR>
+With that, the staff member went into the <STYLE ID="4" RUBY="ちゅうぼう">kitchen</STYLE>.
+{PAUSE ""}
+<BR>
+It didn't seem to matter that I was <STYLE ID="3" RUBY="あしゃ">mute</STYLE>, either.<PG>
+Still, so nobody has ever finished it.
+{PAUSE ""}
+<BR>
+I've never left food uneaten, no matter how big the portion.
+{PAUSE ""}
+<BR>
+In other words, I don't know my stomach's limit.
+{PAUSE ""}
+<BR>
+Am I going to see that limit today?
+{PAUSE ""}
+<BR>
+Just then, another table was getting noisy about something.<PG>
+When I looked over, people holding cameras and microphones were surrounding a certain table.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\カレー屋テーブル.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I'm sorry, I can't go on!"
+{PAUSE ""}
+<BR>
+"Even the eating champion gives up on this 10kg curry with 2kg to go!
+{PAUSE ""}
+　She was making good progress, but it seems it suddenly hit her hard."
+{PAUSE ""}
+<BR>
+A woman in front of a large plate wore a pained expression.
+{PAUSE ""}
+<BR>
+Apparently, it was a TV shoot.<PG>
+It seemed the woman, an eating champion, had taken on the 10kg curry but hadn't been able to finish it.
+{PAUSE ""}
+<BR>
+Left on the plate: 2kg worth of curry.
+{PAUSE ""}
+<BR>
+So it's simply five times that.
+{PAUSE ""}
+<BR>
+If it's only that much... 
+{PAUSE ""}
+it's no big deal...<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\カップ置く音.ogg" "VOICE" "WAIT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\カレー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Sorry to keep you waiting! The 10kg curry, time limit 60 minutes!"
+{PAUSE ""}
+<BR>
+While I was looking at the TV shoot, a super-large curry was set down in front of me.
+{PAUSE ""}
+<BR>
+At that moment, the TV crew started buzzing.<PG>
+Whatever they're making a fuss about, it has nothing to do with me.
+{PAUSE ""}
+<BR>
+Itadakimasu, I said in my heart, and plunged my spoon into the curry.<PG>
+............ 
+{PAUSE ""}
+Mm, delicious!
+{PAUSE ""}
+<BR>
+It wasn't just curry. Fried chicken, a cutlet, and raw vegetables like a salad were on it too.
+{PAUSE ""}
+<BR>
+The sauce was well spiced and rich, yet without much of a peculiar edge, so it was a taste I wouldn't tire of.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\カレー屋カウンター.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Just then, a man came over.
+{PAUSE ""}
+<BR>
+"Uh, I'm with Japonica TV. Would it be all right if we filmed you eating, just for a little bit?"
+{PAUSE ""}
+<BR>
+Japonica TV, if I remember right, was the biggest private TV station in Japan.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\カレー.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Is this 10kg curry really that big a deal?
+{PAUSE ""}
+<BR>
+Well, even the champion gave up on it.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\カレー屋カウンター.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I nodded silently and made an X in front of my mouth to show I was <STYLE ID="3" RUBY="あしゃ">a mute</STYLE>.<PG>
+"Thank you!
+{PAUSE ""}
+　Also, I'm terribly sorry to ask, but if you could switch off your phone during filming..."
+{PAUSE ""}
+<BR>
+So he wants to shoot nothing but the eating, with no interruptions.
+{PAUSE ""}
+<BR>
+The man told the whole crew to come over.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\カレー.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Honestly, eating while being watched made me uneasy, but if I was going to live somewhere as crowded as Tokyo, I'd better get used to it.
+{PAUSE ""}
+<BR>
+I paid it no mind and kept eating.<PG>
+"Here, a <STYLE ID="5">petite girl</STYLE> is taking on the 10kg curry!
+{PAUSE ""}
+　Can <STYLE ID="5">she</STYLE> beat the 10kg curry that defeated the champion just a moment ago!?"
+{PAUSE ""}
+<BR>
+Ignoring the crew's commentary, I kept bringing curry to my mouth.
+{PAUSE ""}
+<BR>
+I may come off as unfriendly for TV, but I'm the one letting them film me as a favor.
+{PAUSE ""}
+<BR>
+More than anything, I want to focus on the ritual of satisfying my instinct's demands.<PG>
+That said, this is Tokyo curry for you.
+{PAUSE ""}
+<BR>
+The more I ate, the hungrier I got. My pace rose, and my stomach worked harder and harder.<PG>
+"<STYLE ID="5">Her</STYLE> pace isn't slowing down one bit!
+{PAUSE ""}
+　What do you think, Champion <STYLE ID="6" RUBY="みなみざき">Minamizaki</STYLE>-san!?"
+{PAUSE ""}
+<BR>
+"Wow, this is amazing!"
+{PAUSE ""}
+<BR>
+Minamizaki-san?<BR>
+A name I've heard somewhere.
+{PAUSE ""}
+<BR>
+She's on TV, so I've probably just heard it at some point.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―28 minutes later, without any drama at all, the 10kg curry had all been put away in my stomach.<PG>
+{MESOFF "500"}
+{PLAYSND "Lucky_You.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\カレー屋カウンター.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Gochisosama deshita. [TN: the words said after a meal]
+{PAUSE ""}
+<BR>
+I said it in my heart, putting my hands together.<PG>
+"Amazing, this is amazing! She really finished it all!"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\SE\clapping-hands1.ogg" "SE" "NORMAL" "1000" "0"}
+When I'd cleaned the plate, applause and cheers rose from the whole shop.<PG>
+"Uh, may we interview you?"
+{PAUSE ""}
+<BR>
+An interview?<BR>
+I took out my notepad.<PG>
+"May I ask your name!?
+{PAUSE ""}
+　Your age!?
+{PAUSE ""}
+　Where are you from!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="7">“Erina Goto　age 19　from Motoki-cho, Sawa Prefecture”</STYLE>
+{PAUSE ""}
+<BR>
+"Ah... um, is this your real name? Is it all right if we broadcast your real name?"
+{PAUSE ""}
+<BR>
+<STYLE ID="7">“That's fine. My hometown and age are OK too.”</STYLE><PG>
+"Thank you!
+{PAUSE ""}
+　Right now, together with the champion, we're scouting contestants for next week's eating contest. How about it, <STYLE ID="5">Goto</STYLE>-san!?"
+{PAUSE ""}
+<BR>
+A-an eating contest!?
+{PAUSE ""}
+<BR>
+It must be on a totally different scale from the Motoki-cho eating contest.<PG>
+And it'll probably be broadcast nationwide.
+{PAUSE ""}
+<BR>
+That's a little embarrassing...<PG>
+<STYLE ID="7">“Please let me think about it a little.”</STYLE>
+{PAUSE ""}
+<BR>
+was all I wrote.<PG>
+"Understood! If we can have your answer by the end of this week, that's fine!
+{PAUSE ""}
+　By the way, the contest will be broadcast live nationwide, so if you take part, please come in top condition!"<PG>
+And live, at that.
+{PAUSE ""}
+<BR>
+Even if I do enter, I don't want to push myself too hard and show the whole country me keeling over...
+{PAUSE ""}
+<BR>
+I've only just come to Tokyo, but maybe I'll go back to Motoki-cho for now and get myself into proper shape.<PG>
+When the TV cameras stopped, the man who'd first spoken to me handed me a business card.
+{PAUSE ""}
+<BR>
+"My name is <STYLE ID="8" RUBY="うかい">Ukai</STYLE>. I'm the program director. 
+{PAUSE ""}
+If you're willing to take part, please contact this phone number... 
+{PAUSE ""}
+No, please contact me at this email address. 
+{PAUSE ""}
+With a strong contestant like <STYLE ID="5">Goto-san</STYLE>, it's sure to be exciting!
+{PAUSE ""}
+　And this is your appearance fee for today."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Along with the business card, I was handed a brown envelope.<PG>
+"Wow, Champion, a formidable rival has shown up!"
+{PAUSE ""}
+<BR>
+"Beating <STYLE ID="5">Goto-san</STYLE> is going to be really tough!
+{PAUSE ""}
+　There are other strong contestants as well, so I can't let my guard down!"
+{PAUSE ""}
+<BR>
+Huh? Have I met this person somewhere...?
+{PAUSE ""}
+<BR>
+"Oh? Have I met <STYLE ID="5">you</STYLE> somewhere?"
+{PAUSE ""}
+<BR>
+The champion, Minamizaki-san, seemed to have the same question.
+{PAUSE ""}
+<BR>
+But since I couldn't remember, all I could do was tilt my head.<PG>
+"A long time ago, at some contest, there was this really strong girl. 
+{PAUSE ""}
+Small, just like you, and her name was... 
+{PAUSE ""}
+What was it...?"
+{PAUSE ""}
+<BR>
+If you can't remember, then there's nothing to be done...
+{PAUSE ""}
+<BR>
+As champion, she's competed in all sorts of places, so she probably knows a lot of big eaters by sight.
+{PAUSE ""}
+<BR>
+Even so―<PG>
+Normally, I'd turn down an invitation like this.
+{PAUSE ""}
+<BR>
+Why did I put off answering?
+{PAUSE ""}
+<BR>
+Just then, I noticed something hot starting to simmer up inside me.<PG>
+My mouth is something less than a baby, good for nothing but eating.
+{PAUSE ""}
+<BR>
+To think it was enough to draw attention on a national level...
+{PAUSE ""}
+<BR>
+What is it... this feeling...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループ東京.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Something hot and seething, something I'd never felt before, had sprouted inside me.
+{PAUSE ""}
+<BR>
+Something that might give my fallen self a reason to exist once more: this unorthodox genre called competitive eating.
+{PAUSE ""}
+<BR>
+Isn't it a fight made for me, whose instinct to eat is stronger than anyone's?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\東京駅.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+How many years has it been since I felt this heat?
+{PAUSE ""}
+<BR>
+It took me a while to realize what that feeling really was.
+{PAUSE ""}
+<BR>
+That it was the feeling of 'I want to win'...!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\新幹線.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―On the bullet train home, I was gazing at the envelope that held the 100,000-yen prize and the 5,000-yen bill of the appearance fee.
+{PAUSE ""}
+<BR>
+There was something I could do precisely because I'd lost my voice and was good for nothing but eating.
+{PAUSE ""}
+<BR>
+It's fine even if it's an event like a freak show, where people come to gawk at oddballs.
+{PAUSE ""}
+<BR>
+I'd already been through that, at the Motoki-cho eating contest and with my new-student speech in high school.
+{PAUSE ""}
+<BR>
+It's nothing to be ashamed of at this point.
+{PAUSE ""}
+<BR>
+If anything, backing down after coming this far is what would be shameful!<PG>
+In just this one day, how many feelings had raced through me?
+{PAUSE ""}
+<BR>
+I had already made up my mind.
+{PAUSE ""}
+<BR>
+A mouth good for nothing but eating?
+{PAUSE ""}
+<BR>
+Bring it on! Then I'll show the whole country just what a mouth that can only eat is capable of!<PG>
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\新幹線車内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+Still, my stomach did feel a little tight, as I'd expected.
+{PAUSE ""}
+<BR>
+10kg is <STYLE ID="9" RUBY="だて">no joke</STYLE>.<PG>
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+Judging by this feeling, my stomach's capacity is probably around 11 to 12kg.
+{PAUSE ""}
+<BR>
+The amount I can eat should also vary a lot depending on the food.<PG>
+If it's extremely greasy or tough, time will run out before my stomach reaches its limit.
+{PAUSE ""}
+<BR>
+No, not just stomach capacity: <STYLE ID="10" RUBY="そしゃく">chewing</STYLE> power will matter too.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ステーキ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With something tough like steak, for example, I probably couldn't eat even half my limit.
+{PAUSE ""}
+<BR>
+On top of that, what something like steak demands is <STYLE ID="11" RUBY="えんげ">swallowing</STYLE> power―the strength to get food down.
+{PAUSE ""}
+<BR>
+The esophagus moves under the control of the autonomic nervous system, so I don't need to control it myself.
+{PAUSE ""}
+<BR>
+Put the other way around, since I can't control it, the muscles around the esophagus are bound to tire out.<PG>
+If my <STYLE ID="11" RUBY="えんげ">swallowing</STYLE> power drops, my speed will suffer too.
+{PAUSE ""}
+<BR>
+Training <STYLE ID="10" RUBY="そしゃく">chewing</STYLE> power and <STYLE ID="11" RUBY="えんげ">swallowing</STYLE> power takes a fair amount of time, and there's no time left for that now.
+{PAUSE ""}
+<BR>
+The most I can do is get myself into shape so I'm at my best on the day.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\新幹線.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What about the rivals?
+{PAUSE ""}
+<BR>
+If someone at that level can be champion, my victory is a sure thing.
+{PAUSE ""}
+<BR>
+Is what I'd like to say, but there might be competitive eaters I haven't seen yet hiding out there.
+{PAUSE ""}
+<BR>
+I'll assume lots of contestants like that will show up on the day.
+{PAUSE ""}
+<BR>
+In that case, the back-and-forth with opponents―
+{PAUSE ""}
+the battle of nerves will matter too.<PG>
+For example, I could go all out only at the start to rattle the other contestants, 
+{PAUSE ""}
+or catch up in the second half and <STYLE ID="12" RUBY="あお">stoke</STYLE> the anxiety of the ones out in front.
+{PAUSE ""}
+<BR>
+I can't know this part until I see how the others play it, but at the very least, I have to keep from getting dragged into their pace.<PG>
+Even if it's just about eating a lot, if I go all out from the start, I might get full before my stomach has stretched enough, 
+{PAUSE ""}
+or overwork my jaw and esophagus until I can't eat anymore.
+{PAUSE ""}
+<BR>
+I should at least figure out my own optimal pace beforehand.<PG>
+It's been a long time since I used my head this much.
+{PAUSE ""}
+<BR>
+And on top of that, I'd never once thought before about how to eat a lot.<PG>
+No... 
+{PAUSE ""}
+{STOPSND "BGM" "5000" "PASS"}
+before anything else... 
+{PAUSE ""}
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I get home, I have to apologize to Mom...
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

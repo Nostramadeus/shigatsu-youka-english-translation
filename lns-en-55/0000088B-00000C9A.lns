@@ -1,0 +1,98 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=140, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=139, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=57, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=15, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=19, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=434, target=)
+; Links:
+;    0: TWdLink(count=370, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>As I was about to get into the car, <STYLE ID="1">Natsumi</STYLE> yanked on my sleeve―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "50"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\外崎家.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+A strong wind full of cherry blossoms swept through.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="1">, you can't go...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Please... I'm going too. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1">... let me see her...!"</STYLE>
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Wha...!"</STYLE>
+{PAUSE ""}
+<BR>
+She even sensed we were going to see <STYLE ID="3">Haruka-chan</STYLE>?<PG>
+<STYLE ID="1">"You absolutely can't go just the two of you...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I'm... I'm going too...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, you...!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, you stay here!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No...! It's no good like this...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="2">Ryoji-kun</STYLE><STYLE ID="4">..."</STYLE><PG>
+<STYLE ID="2">"No! There's no way we can take </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="1">...! I have to go! Otherwise I can't save everyone!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Ryoji-kun</STYLE><STYLE ID="4">...! It's </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> who's saying this!?"</STYLE><PG>
+But really, all the way to Megasawa...
+{PAUSE ""}
+<BR>
+Then again, if <STYLE ID="1">Natsumi</STYLE> seeing <STYLE ID="3">Haruka-chan</STYLE> could somehow make things better...<PG>
+Now, what should I do?
+{PAUSE ""}
+<BR>
+Take <STYLE ID="1">Natsumi</STYLE> with us, or leave her behind.
+{PAUSE ""}
+<BR>
+This is a very important choice.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "SE\車走行中.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\運転席夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

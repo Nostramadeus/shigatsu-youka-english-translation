@@ -1,0 +1,197 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=609, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=10, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=6, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=24, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=353, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しろざき, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=6, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そそのか, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1142, target=)
+; Links:
+;    0: TWdLink(count=1020, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田駅資材倉庫夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田駅資材倉庫中.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Get in there!"
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "500" "30"}
+{PAUSE ""}
+<BR>
+"You'll stay put in here."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ngh... damn it...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">... </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="2">..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\door_old1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田駅資材倉庫夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Phew..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="5">Kotaro-kun</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="6" RUBY="しろざき">Shirozaki</STYLE><STYLE ID="5">-san, it won't be long now. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">With this, the curse-killings will end."</STYLE>
+{PAUSE ""}
+<BR>
+"Will they really end?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yes, without a doubt."</STYLE><PG>
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+"How can you be so sure?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"How, you ask... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Let's say it's the result of careful thought. Now all that's left is to catch the witch―"</STYLE>
+{PAUSE ""}
+<BR>
+"That the last ten years of curse-killings were caused by an ordinary married couple who live in Motoki-cho. 
+{PAUSE ""}
+Why did you think that?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Like I said, it's the result of careful thought―"</STYLE>
+{PAUSE ""}
+<BR>
+"Don't mess with me. I won't be <STYLE ID="7" RUBY="だま">fooled</STYLE>."<PG>
+<STYLE ID="5">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"Sure, I swung a weapon down on that couple too. 
+{PAUSE ""}
+Do you know why?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Well... you had your wife killed in the first curse-killing. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So..."</STYLE>
+{PAUSE ""}
+<BR>
+"Wrong. Here, going against them isn't an option. 
+{PAUSE ""}
+If I didn't swing a weapon here, I'd be ostracized by the village. 
+{PAUSE ""}
+Isn't that obvious?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hmm... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Is that... how it is...?"</STYLE><PG>
+"Just as <STYLE ID="5">you</STYLE> said, two people with nothing to do with Arata sneaked into the storage shed at this time of year. 
+{PAUSE ""}
+What's more, they were secretly in contact with <STYLE ID="3">the high-school girl they call a 'witch'</STYLE>. 
+{PAUSE ""}
+Well, sure, it's suspicious. It's no wonder people think they're connected to the curse-killings. 
+{PAUSE ""}
+The fact is, everyone's <STYLE ID="8" RUBY="おび">terrified</STYLE> of the curse-killings, they've had family killed, and the culprit is the one they should hate most. 
+{PAUSE ""}
+I can understand why everyone's out for blood."<PG>
+"But listen... what if it's the other way around?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"The other way around?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's right. The <STYLE ID="3">high-school girls</STYLE> came to help this settlement, and that couple was hiding in this storage shed to support them from outside. 
+{PAUSE ""}
+That could have been the case too, couldn't it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"No, that's...!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　But </STYLE><STYLE ID="3">she</STYLE><STYLE ID="5"> has a witch's power...!"</STYLE><PG>
+"She's a witch because she has the same power as <STYLE ID="9">Sakura-chan</STYLE>?!
+{PAUSE ""}
+　Don't give me that! It was the same last time too, wasn't it!
+{PAUSE ""}
+　Even when we kept watch on <STYLE ID="5">you</STYLE> at the meeting hall, knowing there'd be a victim...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"But I heard it! That the couple were the culprits!"</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+"Who from?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's what I wanted to hear. 
+{PAUSE ""}
+Even someone like <STYLE ID="5">you</STYLE> finally slipped up. 
+{PAUSE ""}
+There's someone who has <STYLE ID="5">you</STYLE> <STYLE ID="10" RUBY="そそのか">led astray</STYLE>, isn't there?"
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"Who's the one pulling the strings?"<PG>
+―Shirozaki, <STYLE ID="5">Kotaro-kun</STYLE>! The <STYLE ID="3">witches</STYLE> are coming!<PG>
+<STYLE ID="5">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Now, Shirozaki-san, it's time for the finishing touch."</STYLE>
+{PAUSE ""}
+<BR>
+"I'm out! I can't go any further...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"If you don't join us here... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">You know what'll happen, don't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　You were scared of being ostracized, weren't you?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ngh...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"You're not allowed to betray us anymore. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">And take this."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"So this is Droga... 
+{PAUSE ""}
+Damn it...!"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

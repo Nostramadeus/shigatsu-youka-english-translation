@@ -1,0 +1,415 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1292, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=579, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=682, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いせ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だいじろう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2877, target=)
+; Links:
+;    0: TWdLink(count=2563, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The genius girl, by my own account and everyone else's, <STYLE ID="1">Erina Goto</STYLE>, age 15.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島万歳.gal" "NORMAL" "#1" "R" "540" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "五島登場" "人物1" "4" "100" "300" "DEC" "WAIT"}
+{MESON "500"}
+On the scene once again!
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\シナリオ\公園.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I came back to the park alone.
+{PAUSE ""}
+<BR>
+The rubberneckers had almost all vanished, but the park still seemed to be closed off.<PG>
+<STYLE ID="1">"Now then, as for what Goto is going to do from here...</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\桜道.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">It is door-to-door questioning, relentlessly!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\道1.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\コンビニ昼.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\シナリオ\公園.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\草むら.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"There's a limit to plodding door-to-door inquiries. I have to think up a new Operation."</STYLE>
+{PAUSE ""}
+<BR>
+It seemed there was no getting any more new information out of door-to-door inquiries.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\スチル\五島芝生.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I lay down spread-eagled on the grass beside the park.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\桜越しの曇天.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I closed my eyes, the dream <STYLE ID="2">Senpai</STYLE> had told me about came back to me.
+{PAUSE ""}
+<BR>
+And so did the fact that my <STYLE ID="2">senpai</STYLE> had been childhood friends since they were small.
+{PAUSE ""}
+<BR>
+That conversation between my senpai earlier... there was something odd about it.<PG>
+Whether it has anything to do with this incident or not...
+{PAUSE ""}
+<BR>
+I still do not really know. I do overthink things, and I know that is a bad habit of mine.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\五島芝生.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Haah! A break, a break! Resting properly matters too, if the Operation is to succeed!"</STYLE>
+{PAUSE ""}
+<BR>
+There was no direct sun, so it was not particularly bright.
+{PAUSE ""}
+<BR>
+And there was no wind, and the temperature was not bad either.
+{PAUSE ""}
+<BR>
+Shall I take a bit of a nap...?<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+Somehow a scene from long ago floated up in my head, in a form that was neither dream nor memory.
+{PAUSE ""}
+<BR>
+When I was very small, in this season, we went to a zoo as a family.
+{PAUSE ""}
+<BR>
+Which zoo was it that we went to?
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "12" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="3">"A b-beautiful girl..."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly, a man's voice nearby.
+{PAUSE ""}
+<BR>
+I could not make out what he said, though.<PG>
+When I opened my eyes―
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\草むら.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A man was standing there.
+{PAUSE ""}
+<BR>
+About 30 years old, perhaps.
+{PAUSE ""}
+<BR>
+Tall, with regular features.
+{PAUSE ""}
+<BR>
+And yet... his expression was strangely rigid.<PG>
+<STYLE ID="1">"Uh... who are you?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考える.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Oh, oh, oh... no, uh..."</STYLE>
+{PLAYSND "伊勢.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+When I spoke to <STYLE ID="3">the man</STYLE>, his expression stiffened further and he began to fidget.
+{PAUSE ""}
+<BR>
+But then he spoke to me in a forceful tone.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Y-</STYLE><STYLE ID="1">you</STYLE><STYLE ID="3">! This area is off limits to anyone but the police! Get out of here at once!"</STYLE>
+{PAUSE ""}
+<BR>
+Going by what he said, was <STYLE ID="3">this person</STYLE> a police officer?
+{PAUSE ""}
+<BR>
+But he was restless, and sweating oddly.<PG>
+<STYLE ID="1">"I'm sorry! So this part was off limits as well."</STYLE>
+{PAUSE ""}
+<BR>
+I stood up at once and honestly <STYLE ID="4" RUBY="わ">apologized</STYLE> to <STYLE ID="3">the man</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考える.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"A-aaah! No! As long as you understand, that's fine!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The man</STYLE>, for some reason, lowered his head as though embarrassed.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uh, you're with the police, aren't you?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I-indeed I am! Motoki Police Station, Assistant Inspector, </STYLE><STYLE ID="6" RUBY="だいじろう">Daijiro</STYLE><STYLE ID="5" RUBY="いせ"> Ise</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\警察手帳.gal" "NORMAL" "#1" "500" "C" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+The man who gave his name as <STYLE ID="3">Ise-san</STYLE> thrust his police ID at me with great energy.
+{PAUSE ""}
+<BR>
+I could not tell whether he was full of bluster or full of nerves.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "35" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+But, if <STYLE ID="3">the person in front of me</STYLE> is a police officer, and of the rank of Assistant Inspector at that, there might be a chance of good information.
+{PAUSE ""}
+<BR>
+I had just been feeling the limits of door-to-door questioning, and nothing is lost if it comes to nothing, so let me at least ask.<PG>
+<STYLE ID="1">"Uh, may I ask you something?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚き.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+When I said that, <STYLE ID="3">Ise-san</STYLE> grew even more flustered.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Wh-wh-wha! <TXSPS>S-s-s-s-s<TXSPN>o, I am a police officer! I am absolutely not a suspicious person!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+Without my even doubting him, he began making excuses with foam gathering at the corners of his mouth.<PG>
+<STYLE ID="1">"Um... I've been looking into this incident from all sorts of angles, and I was hoping I might get a little information."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Looking into the incident...?"</STYLE>
+{PAUSE ""}
+<BR>
+I know that ordinarily one cannot ask a thing like this.
+{PAUSE ""}
+<BR>
+But having come this far, there is nothing to do but push through by force.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\五島スマイル.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$FFFFFF" "NORMAL" "#1" "C" "B" "200" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚き.gal" "WAIT" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I made my appeal with my specialty, the smile that grins from ear to ear.<PG>
+<STYLE ID="3">"Ngh...! S-so bright...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Ise-san</STYLE> retreated three steps and reeled backward.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Ise-san</STYLE> put a hand to his chest and took a long, deep breath.<PG>
+<STYLE ID="3">"Ahem... </STYLE><STYLE ID="1">You</STYLE><STYLE ID="3">, your name?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Ise-san</STYLE> asked his question while straightening his tie.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Assistant Inspector, sir</STYLE><STYLE ID="1">! I am the genius girl, by my own account and everyone else's! Motoki High School, first year, Erina Goto, sir!"</STYLE>
+{PAUSE ""}
+<BR>
+I snapped a salute.
+{PAUSE ""}
+<BR>
+And then <STYLE ID="3">Ise-san</STYLE>'s eyes suddenly began to shine.<PG>
+<STYLE ID="3">"Wha...!? I-I did wonder if it could be, but the Motoki Bishojo Appreciation Society's No.1 favorite, </STYLE><STYLE ID="1">Erina Goto</STYLE><STYLE ID="3">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+He spoke too fast for me to catch it, but I have the feeling there was a word in there I did not know.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考える.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I'm the Motoki... what, sorry?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No no no! I said the Motoki High School No.1 genius, </STYLE><STYLE ID="1">Erina Goto</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+Huh, so I am that much of a celebrity!
+{PAUSE ""}
+<BR>
+If he knows that much, there seems to be room to negotiate.<PG>
+<STYLE ID="1">"Just what I would expect of the </STYLE><STYLE ID="3">Assistant Inspector, sir</STYLE><STYLE ID="1">! Indeed, a perfect score with room to spare on the entrance exam the other day! The greatest genius girl since Motoki High School opened, Erina Goto, sir!"</STYLE>
+{PAUSE ""}
+<BR>
+Grinning from ear to ear, I snapped a salute.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Ise-san</STYLE> began observing me intently.<PG>
+<STYLE ID="3">"Hmm... so the famous </STYLE><STYLE ID="1">Erina Goto</STYLE><STYLE ID="3"> is investigating the incident. Um, how far have </STYLE><STYLE ID="1">you</STYLE><STYLE ID="3"> looked into it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ummm, let me see..."</STYLE>
+{PAUSE ""}
+<BR>
+I talked through my reasoning about the incident, the same way as before.<PG>
+<STYLE ID="1">"―And so, I am guessing that the body had had its skin flayed off."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hrmm..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Just what one would expect of the </STYLE><STYLE ID="1">genius girl</STYLE><STYLE ID="3">. Reasoning power not to be laughed at..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh? Then does that mean my reasoning is broadly correct?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Almost entirely correct."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ooh! Bullseye, bullseye! Operation successful!"</STYLE>
+{PAUSE ""}
+<BR>
+With my answers checked, I expressed my delight honestly, with my whole body.<PG>
+<STYLE ID="1">"So that's why, if I could get more information, I thought I might get closer to the truth. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Come on, come on, I am the genius girl, by my own account and everyone else's, so I think I could be of some use to the police?"</STYLE>
+{PAUSE ""}
+<BR>
+I grinned from ear to ear at <STYLE ID="3">Ise-san</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hrmmmm..."</STYLE>
+{PAUSE ""}
+<BR>
+Well then, what would his answer be?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ah, excuse me a moment."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Yes, Ise speaking. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Huh? The stolen minivan has been found? Right, I'll head over there myself at once... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">No, I'll send the Sergeant over there. I've found a new witness, so I'll join you as soon as the interview is finished."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">Ise-san</STYLE> hung up and immediately looked at me.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ummm, </STYLE><STYLE ID="1">Erina Goto-san</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes!"</STYLE><PG>
+<STYLE ID="3">"I'd like to hear </STYLE><STYLE ID="1">your</STYLE><STYLE ID="3"> thinking. Let's go somewhere else and, with me... that is...</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\伊勢うつむくバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Haha, let's have a talk!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Ise-san</STYLE>'s cheeks, not to be outdone by the cherry blossoms, flushed redder still, like maple leaves out of season.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yesss! That means I get information from </STYLE><STYLE ID="3">Ise-san</STYLE><STYLE ID="1"> as well, doesn't it!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ah... yeah... that's right. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Well, that's fine too... I suppose."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Hey! Sergeant! Word is the stolen vehicle has been found! Take two others and get over there!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　The rest of you carry on with the investigation here! I'm stepping away for a while!"</STYLE>
+{PAUSE ""}
+<BR>
+When <STYLE ID="3">Ise-san</STYLE> shouted at the workers in the park, the workers saluted in our direction.
+{PAUSE ""}
+<BR>
+To be an Assistant Inspector at <STYLE ID="3">Ise-san</STYLE>'s age, even if he is not quite on the career track, does that mean he is a very able man? [TN: career track = fast-stream police recruits groomed as future executives]<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Now, get in this car. That's </STYLE><STYLE ID="1">your</STYLE><STYLE ID="3"> bicycle, isn't it? We'll look after it for you."</STYLE>
+{PAUSE ""}
+<BR>
+To be able to get information from the police, and from an Assistant Inspector at that, is the greatest catch imaginable.
+{PAUSE ""}
+<BR>
+But...<PG>
+{STOPSND "BGM" "3000" "PASS"}
+I have some idea, vague as it is, of the identity of that flayed body.
+{PAUSE ""}
+<BR>
+I am hoping that my reasoning is wrong.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

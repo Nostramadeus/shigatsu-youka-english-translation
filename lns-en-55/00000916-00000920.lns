@@ -1,0 +1,118 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=244, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=267, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=83, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=117, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぜんしょうせん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=793, target=)
+; Links:
+;    0: TWdLink(count=714, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>It had been a while since I'd come to the area around the station. The cherry blossoms were in pretty bloom here too.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Senpaaai</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+At the bus stop 50 meters away, a small figure.
+{PAUSE ""}
+<BR>
+Carrying a big bag, little <STYLE ID="1">Goto</STYLE> came running.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">! What kind of lunch is it!? I came good and hungry!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I've planned all kinds of operations for conquering that lunch!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hey now, worrying about lunch right off the bat...? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="3"> gave orders to show up only 70% full, didn't she?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Ehh? Did she now?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Isn't that just your imagination? I'm pretty sure I never got it."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Playing dumb about something you'll get caught on in two seconds... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Anyway, we don't have much time. Let's hurry to the platform!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\駅ホーム.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "2000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\元木駅.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+To get to the Arata settlement from here, we had to change trains three times and then drive 30 minutes up a mountain road.
+{PAUSE ""}
+<BR>
+It was a fairly long trip, but with the three of us, we probably wouldn't get bored.
+{PAUSE ""}
+<BR>
+Would we be able to reach the Arata settlement by 17:00?<PG>
+<STYLE ID="2">"Hey, hey, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, I was just talking with </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, and how about the three of us go somewhere over Golden Week?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Ooh! Golden Week!</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+　<STYLE ID="1">Hmm, there might be a family trip. I can keenly sense Dad and the others getting all sorts of things ready..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh, I see..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"But you don't really have to stick to Golden Week, do you?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I think even an overnight trip on a weekend would be fun!"</STYLE><PG>
+<STYLE ID="2">"Oh, right, when you think about it, that's true!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"An overnight trip on a weekend, huh. Where would be good..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then let's plan that operation too as we proceed to the Arata settlement!"</STYLE><PG>
+“The express train bound for Megasawa will arrive shortly.”
+{PAUSE ""}
+<BR>
+It seemed the first train we'd ride was approaching.
+{PAUSE ""}
+<BR>
+First we'd go as far as Megasawa in Iizawa Prefecture, then head north from there on local trains.
+{PAUSE ""}
+<BR>
+Now then, the <STYLE ID="4" RUBY="ぜんしょうせん">opening skirmish</STYLE> of our trip, here it begins!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

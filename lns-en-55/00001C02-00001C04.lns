@@ -1,0 +1,177 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=420, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=371, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=14, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=200, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=32, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1156, target=)
+; Links:
+;    0: TWdLink(count=1041, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\居間.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"All right, are you ready?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Yes, I've packed our things."</STYLE>
+{PAUSE ""}
+<BR>
+"Good. <STYLE ID="2">Eiichiro</STYLE>, I'm counting on you..."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Oh, it's from </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜電話.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">Hello?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hello, </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="3">, where are you now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"We're just about to leave the house."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Sorry, but instead of the train, could you come partway by car?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? What's wrong?"</STYLE><PG>
+<STYLE ID="3">"It seems </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="3"> and the others took a train one later. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It's the last train that gets to Arata, so you're sure to run into each other."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Got it. How far should we go?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You know the last transfer station, </STYLE><STYLE ID="5" RUBY="とよたけ">Toyotake</STYLE><STYLE ID="3"> Station, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　It's fine to leave a car there for a night or so. The police hardly ever come by."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Got it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Okay, bye."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Ryoji-kun<STYLE ID="1">, did you hear?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, I got the gist. 
+{PAUSE ""}
+But..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+"Why did <STYLE ID="6">Natsumi</STYLE> and the others miss the train? They had plenty of time to make it, didn't they?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who knows. She didn't tell me that much."</STYLE><PG>
+"If <STYLE ID="6">Natsumi</STYLE> took a later train because of her intuition, wouldn't that mean we really shouldn't go after all?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But she can't sense danger unless she sees us or hears our voices, can she?"</STYLE>
+{PAUSE ""}
+<BR>
+"Well, that's true, but... 
+{PAUSE ""}
+<STYLE ID="6">Natsumi</STYLE> told us ten days ago, <STYLE ID="6">'Don't go to Arata.'</STYLE> Going back on that just doesn't sit right with me..."<PG>
+<STYLE ID="1">"That's why we're going to wait in the storage shed at Arata Station, just outside the Arata settlement, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"I wonder if it's really that simple..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then I'll ask </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">. Why they missed the train."</STYLE>
+{PAUSE ""}
+<BR>
+"No... let's not. We're staying here after all."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Ryoji-kun<STYLE ID="1">...! But </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1"> might be in danger...!"</STYLE>
+{PAUSE ""}
+<BR>
+"It's not <STYLE ID="6">Natsumi</STYLE> who's in danger, it's us. 
+{PAUSE ""}
+Don't you think it'll cause far more trouble if we, the risk factors, get close?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But! When it comes down to it, we have to go and help...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Then we'd end up setting foot in the Arata settlement!"<PG>
+<STYLE ID="1">"Saying that now, after all this..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Akane</STYLE>, the reason we didn't make a mistake ten years ago is that we trusted <STYLE ID="6">Natsumi</STYLE>'s intuition to the very end. 
+{PAUSE ""}
+Putting our own selfish judgment into that would be the same as ignoring the will of <STYLE ID="2">Eiichiro</STYLE>, who's trying so hard to help us."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+"<STYLE ID="3">Mifuyu-san</STYLE> is over there, and <STYLE ID="2">Eiichiro</STYLE> is watching over them too. 
+{PAUSE ""}
+So―"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜電話.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Hello, </STYLE><STYLE ID="3">Mifuyu</STYLE><STYLE ID="1">?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Actually, I'm thinking we won't come after all. </STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<STYLE ID="1">We thought it'd be better to trust what </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1"> said to the very end."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Yes, I think that's a good decision too. </STYLE>
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<STYLE ID="3">Don't worry, leave things here to me. I'll make sure everyone gets home safe."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay, please do. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Bye."</STYLE><PG>
+"<STYLE ID="1">Akane</STYLE>..."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"</STYLE>Ryoji-kun<STYLE ID="1">... thank you for stopping me. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">This is fine. This is the best way."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

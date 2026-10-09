@@ -1,0 +1,224 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=58, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=67, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=342, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=276, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=16, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=13, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=39, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=27, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=65, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1067, target=)
+; Links:
+;    0: TWdLink(count=909, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{DELETECG "人物2" "1" "0" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\罅（ひび）\救急車.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサー横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\救急車.ogg" "SE" "REPEAT" "500" "0"}
+{PLAYSND "SE\車走行中.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "1000" "PASS"}
+{MESON "500"}
+<TXSPN>"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> had no chance to answer before the ambulance doors were shut.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサーうつむき.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">That girl</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That girl</STYLE><STYLE ID="3">, she...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, <STYLE ID="3">Mifuyu-san</STYLE>! Calm down!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサー怒り.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">That girl</STYLE><STYLE ID="3"> did it to </STYLE><STYLE ID="4">Eiichiro-san</STYLE><STYLE ID="3">!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　What is </STYLE><STYLE ID="1">that girl</STYLE><STYLE ID="3">!</STYLE><STYLE ID="2"> </STYLE><STYLE ID="1">That girl</STYLE><STYLE ID="3">... is she a witch!?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE>Ryoji-san<STYLE ID="3">, you saw it, didn't you!? How </STYLE><STYLE ID="4">Eiichiro-san</STYLE><STYLE ID="3">'s body twisted as he fell!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="1">That girl</STYLE><STYLE ID="3"> did something, didn't she!"</STYLE>
+{PAUSE ""}
+<BR>
+"The way he was falling, <STYLE ID="1">Natsumi</STYLE> would have ended up under <STYLE ID="4">Eiichiro</STYLE>! That's why <STYLE ID="4">Eiichiro</STYLE>...!"<PG>
+<STYLE ID="3">"And what was that just now!? The ambulance is dangerous? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="1">That girl</STYLE><STYLE ID="3"> did something to this ambulance too, didn't she!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="3">And that weird sound earlier, she scared </STYLE><STYLE ID="5">Eiichiro-san</STYLE><STYLE ID="3"> with it so he'd fall out of the tree, didn't she!</STYLE>
+{PAUSE ""}
+{DELETECG "人物1" "1" "300" "0" "0" "" "0"}
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000,メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">　Let me out!</STYLE>
+{QUAKESTOP "0"}
+{PAUSE ""}
+<STYLE ID="3">　Stop the car, now!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000,メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+"Stop it, <STYLE ID="3">Mifuyu-san</STYLE>!"
+{QUAKESTOP "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサー怒り.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Don't tell me... </STYLE>you<STYLE ID="3">, too...?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Stop the car already! We'll all be killed!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "200" "0" "0" "" "0"}
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="2">I desperately held </STYLE><STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> down.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">In the middle of it, the view through the windshield leapt out at me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A truck, weaving toward us.</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "SE2" "3000" "PASS"}
+{PLAYSND "SE\car-accident1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "15" "5000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "SE" "3000" "PASS"}
+<STYLE ID="2">The truck driver had apparently been driving drunk.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Nobody was seriously hurt in the accident.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">But for </STYLE><STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2">'s heart, it was enough to deal one more blow.</STYLE><PG>
+<STYLE ID="2">Next to </STYLE><STYLE ID="5">Eiichiro</STYLE><STYLE ID="2">, sprawled on the ambulance floor, </STYLE><STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> huddled close.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="5">Eiichiro-san</STYLE><STYLE ID="3">... you poor thing. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Killed by a witch... you poor, poor thing... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Haruka</STYLE><STYLE ID="3">―I have to save her. I won't let </STYLE><STYLE ID="7">Haruka</STYLE><STYLE ID="3"> become the witch's prey..."</STYLE><PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">A month later...</STYLE><PG>
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">"</STYLE>Ryoji-kun<STYLE ID="8">, something terrible's happened!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\罅（ひび）\居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">Akane</STYLE><STYLE ID="2"> hurriedly brought over a sheet of paper.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\手紙.gal" "WAIT" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"This was in our mailbox...!"</STYLE><PG>
+<STYLE ID="9">To Akane</STYLE><STYLE ID="10">,</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="10">I can no longer stay in Motoki-cho.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">It is far too painful for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Today, I am leaving Motoki-cho with </STYLE><STYLE ID="11">Haruka</STYLE><STYLE ID="10">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Thank you for everything.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Goodbye.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="10">Mifuyu</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="2">We took </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> with us and hurried to the apartment building where </STYLE><STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> lived.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "800" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\罅（ひび）\新村家新居.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">When we arrived, </STYLE><STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="7">Haruka-chan</STYLE><STYLE ID="2"> were just about to get into a car.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="7">Haruka-chan</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\春花子供.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="7">!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\美冬アラサー全身.gal" "WAIT" "#1" "200" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Come on, </STYLE><STYLE ID="7">Haruka</STYLE><STYLE ID="3">, we're going."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2,人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"No! </STYLE><STYLE ID="7">Haruka-chan</STYLE><STYLE ID="1">, don't go!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="7">iii!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">As if to tear apart the two small screams, </STYLE>
+{PLAYSND "SE\詫言編　夢から\車ドア閉める.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> shut the car door.</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\自動車エンジン.ogg" "SE2" "NORMAL" "1000" "0"}
+<STYLE ID="2">And then </STYLE><STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> drove off without even meeting our eyes.</STYLE>
+{STOPSND "SE2" "5000" "PASS"}
+<PG>
+<STYLE ID="2">Holding the wailing </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, all we could do was watch the car go.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Aaaaah! </STYLE><STYLE ID="7">Haruka-chaaan</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Mifuyu-san</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="8">Akane</STYLE><STYLE ID="2">―and </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="7">Haruka-chan</STYLE><STYLE ID="2">: a crack had formed between them.</STYLE><BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

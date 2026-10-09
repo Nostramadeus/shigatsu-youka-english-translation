@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shigatsu Youka EN — how the translation pipeline works (2026-09-25)</title>
+<style>
+  :root { --ink:#1d1d1f; --mute:#6b6b70; --line:#d9d9de; --box:#f6f6f8; --acc:#2b6cb0; --ok:#2f855a; --warn:#b7791f; --bad:#c53030; }
+  body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--ink); margin:0; background:#fff; }
+  main { max-width: 1040px; margin: 0 auto; padding: 28px 24px 80px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 40px 0 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p { margin: 8px 0; max-width: 78ch; }
+  .sub { color: var(--mute); margin-bottom: 18px; }
+  nav a { margin-right: 14px; color: var(--acc); text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  .flow { display: flex; flex-direction: column; gap: 0; margin: 14px 0; }
+  .step { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; }
+  .step .n { width: 36px; height: 36px; border-radius: 50%; background: var(--acc); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .step .n.done { background: var(--ok); } .step .n.run { background: var(--warn); } .step .n.next { background: #a0aec0; }
+  .card { background: var(--box); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .card b { display: block; margin-bottom: 4px; }
+  .arrow { height: 22px; margin-left: 17px; border-left: 2px solid var(--line); }
+  .lanes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 14px 0; }
+  .lane { border: 2px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff; }
+  .lane h3 { margin: 0 0 6px; font-size: 15px; }
+  .lane.run { border-color: var(--warn); } .lane.done { border-color: var(--ok); } .lane.next { border-color: #a0aec0; }
+  .tag { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 999px; background: #edf2f7; color: var(--mute); margin-left: 6px; }
+  .tag.run { background: #fefcbf; color: #744210; } .tag.done { background: #c6f6d5; color: #22543d; } .tag.next { background: #e2e8f0; }
+  table { border-collapse: collapse; margin: 10px 0; font-size: 15px; }
+  th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--box); }
+  .glue { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .glue .card { background: #fff; }
+  .warnbox { border-left: 4px solid var(--warn); background: #fffaf0; padding: 10px 14px; border-radius: 6px; }
+  .okbox { border-left: 4px solid var(--ok); background: #f0fff4; padding: 10px 14px; border-radius: 6px; }
+  code { background: #eef; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  .small { font-size: 13px; color: var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<h1>How the translation pipeline works</h1><p class="meta">Unofficial fan translation (非公式・二次創作). Not affiliated with New++. Private review page: never publish (shows the Japanese script).</p>
+<div class="sub">Shigatsu Youka JP→EN · state at 16:40, 2026-09-25 · no story content on this page</div>
+<nav>
+  <a href="#now">What is running now</a>
+  <a href="#flow">The pipeline, one part at a time</a>
+  <a href="#glue">Why parallel workers do not drift (the Joe/Mike/Bob question)</a>
+  <a href="#limits">Why not 20 workers</a>
+  <a href="#cost">Time and tokens</a>
+</nav>
+
+<h2 id="now">What is running right now (3 workers)</h2>
+<div class="lanes">
+  <div class="lane run"><h3>Drafter D <span class="tag run">running</span></h3>Part 2, scripts 1 to 4 of 15 (about 465 lines). Heavy worker.</div>
+  <div class="lane run"><h3>Drafter E <span class="tag run">running</span></h3>Part 2, script 5 of 15 alone (about 870 lines, the long one). Heavy worker.</div>
+  <div class="lane run"><h3>Title worker <span class="tag run">running</span></h3>11 scene titles for the part-2 navigator entries. Tiny: a few thousand tokens, minutes.</div>
+</div>
+<p>The rule "at most 3 at once" is about heavy workers. Two heavy drafters at once is today's experiment (the audit saw three heavy ones stall together). The title worker is a small errand, not a third drafter.</p>
+<div class="lanes">
+  <div class="lane next"><h3>Drafter F <span class="tag next">queued</span></h3>Part 2, scripts 6 to 15 (ten short ones, about 730 lines). Starts when D or E finishes.</div>
+  <div class="lane next"><h3>Part-2 reviewer <span class="tag next">queued</span></h3>Starts when all part-2 drafts are in. Can overlap with part-3 drafting.</div>
+  <div class="lane done"><h3>Part 1 <span class="tag done">done</span></h3>12 scripts drafted, reviewed, compiled, playable in <code>F:\4gatsu_8ka_EN</code>. Zip in <code>patch\</code>.</div>
+</div>
+
+<h2 id="flow">The pipeline, one part at a time</h2>
+<div class="flow">
+  <div class="step"><div class="n done">0</div><div class="card"><b>Read-through (done once, before any translation)</b>One worker read the whole script in order and wrote notes: who speaks how, who calls whom what, fixed terms, open questions. Every fact carries the file it was learned in. Nobody translates without these notes.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n done">1</div><div class="card"><b>Rulebook: one distilled file (CORE) plus the style sheet</b>The 360 KB notes were boiled down to one ~120 KB file. A worker reads it once. A "fenced" copy removes every line about files later than the worker's own, so it cannot leak future knowledge into early lines.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n done">2</div><div class="card"><b>Packet per script (built by a tool, one read)</b>Summary of the scene, glossary rows for the terms in it, the voice cards of the speakers present, who-calls-whom rows, the lines that must stay open, and the text in reading order. Also fenced by file id.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n run">3</div><div class="card"><b>Drafters (2 running now)</b>Each takes 1 to 4 scripts in reading order. Translates in blocks of at most 60 lines, saves after every block, keeps the engine tags byte-identical, logs decisions, notes, questions and flags to its own log file. Self-check = one script (<code>qa_check</code>): tags, quotes, leftover Japanese, character set, glossary names, length ratio.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n next">4</div><div class="card"><b>Merge + rulings (me, between waves)</b>I merge every drafter log into the master logs, answer the questions, lock new terms in the glossary, and record rules in the style sheet. The next wave starts with those locks in place.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n next">5</div><div class="card"><b>Reviewer (one per part)</b>A fresh worker with the same rulebook reads every flagged line, two random scripts in full, and a quarter sample of the rest; fixes meaning errors, additions, flattening, fence leaks; escalates to full reads if the error rate is high. Part 1: 1 real error in 297 lines on one full-read script, 0 in 98 on the other.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n next">6</div><div class="card"><b>Build (scripted)</b>Compile each script back into the engine format, drop reading-aid furigana, keep meaning furigana as English ruby, patch button labels, convert data tables, sync the play folder, write the zip, shoot screenshots, render your side-by-side review page.</div></div>
+  <div class="arrow"></div>
+  <div class="step"><div class="n next">7</div><div class="card"><b>You (100 lines per part)</b>Your proofread of the review page is the outside check on the whole chain. Today it caught a one-word tilt in line 33 and overruled a stiff literalism in line 41. Both became rules.</div></div>
+</div>
+
+<h2 id="glue">Why parallel workers do not drift (Joe, Mike and Bob)</h2>
+<p>Your worry is right for humans working blind. Three translators who each start from zero will render the same catchphrase three ways and address the same person with three different levels of politeness. What stops that here is the same thing that stops it in a professional team: the shared state is written down before anyone starts, and one editor merges between rounds.</p>
+<div class="glue">
+  <div class="card"><b>Same knowledge</b>All workers start from the same read-through notes. Nobody "discovers" the cast; the voice cards, address forms and fixed terms are handed over.</div>
+  <div class="card"><b>Same glossary, locked</b>Names, interjections, catchphrases, set phrases have one fixed English each. A worker that disagrees uses the fixed form anyway and files a question. I rule, the glossary changes, the next wave uses the change.</div>
+  <div class="card"><b>Same style sheet</b>Punctuation, quotes, tense test, honorifics, dialect policy, American English, ruby policy. Rewritten today after the rules audit (18 fixes).</div>
+  <div class="card"><b>Merge points</b>Waves are sequential: between them I merge logs and lock decisions. Two workers at once can still collide on a brand-new term, so the reviewer sweeps for those; part 1 found a handful and unified them.</div>
+  <div class="card"><b>Reviewer with the whole part in view</b>The reviewer reads across all scripts of the part, so a term that drifted between workers is caught there, not by a reader.</div>
+  <div class="card"><b>Mechanical checks</b>Glossary-name spelling, character set, tag parity, length ratio, and the spoiler fence on packets are enforced by scripts, not by good intentions.</div>
+</div>
+
+<h2 id="limits">Why not 20 workers at once</h2>
+<div class="warnbox">
+<p><b>Where the work actually runs.</b> The workers run on Anthropic's servers, not on your PC. Renting a stronger computer changes nothing. The limits are your weekly token cap and how the API behaves when many long calls hit it at once.</p>
+<p><b>What breaks with 20.</b> 1) The merge points vanish: 20 workers decide 20 new terms at the same moment with nobody locking them, and the reviewer inherits 20-way drift. 2) The audit saw three heavy workers stall together for 22 minutes and re-bill their whole contexts; short turns cap the damage now, but 20 would multiply it. 3) Reading order matters for the spoiler fence: a worker on part 9 must have the locks from parts 1 to 8.</p>
+<p><b>The workable middle.</b> Two or three drafters at once per part, sequential parts, reviewer overlapped with the next part's drafting, and the whole thing running unattended overnight. That gives about 1.2 hours of wall time per part without giving up the merge points.</p>
+</div>
+
+<h2 id="cost">Time and tokens</h2>
+<table>
+<tr><th></th><th>old plan (this morning)</th><th>now</th></tr>
+<tr><td>workers per part</td><td>11 drafters + 11 checkers</td><td>3 to 4 drafters + 1 reviewer</td></tr>
+<tr><td>rulebook load per worker</td><td>60k to 85k tokens, by grepping around</td><td>~35k tokens, one file, fenced</td></tr>
+<tr><td>turn shape</td><td>one 20-minute thinking turn per file</td><td>blocks of 60 lines, save after each</td></tr>
+<tr><td>billed tokens per part (estimate)</td><td>~20M</td><td>~2.5M to 3M</td></tr>
+<tr><td>wall time per part</td><td>~3 h+</td><td>~3.2 h with one drafter at a time; ~1.2 h with 2 to 3 in parallel and the reviewer overlapped</td></tr>
+</table>
+<p class="small">Part 1 measured: drafters 429k / 385k / 301k final context, reviewer 415k; the two-at-once timing for part 2 is being measured now (start 16:30).</p>
+<div class="okbox"><p><b>Where to look.</b> Your review page: <code><repo>\review\00000024.html</code>. Playable folder: <code>F:\4gatsu_8ka_EN</code> (use <code>Play (fullscreen).cmd</code>). Friends' zip: <code><repo>\patch\</code>.</p></div>
+</main>
+</body>
+</html>

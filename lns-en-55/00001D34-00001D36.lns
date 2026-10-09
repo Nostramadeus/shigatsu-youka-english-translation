@@ -1,0 +1,48 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=66, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=94, target=)
+; Links:
+;    0: TWdLink(count=66, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\女神\たき火.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Something's off. 
+{PAUSE ""}
+The animals are quiet."
+{PAUSE ""}
+<BR>
+―You're right, this has never happened before.
+{PAUSE ""}
+<BR>
+"What do we do?"
+{PAUSE ""}
+<BR>
+―Let's go take a look. I have a bad feeling.
+{PAUSE ""}
+<BR>
+"Right."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "500" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "エデンの桜\SE\砂利を走る2人.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "2000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,186 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=222, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=418, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=773, target=)
+; Links:
+;    0: TWdLink(count=644, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\テレビの声.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\五島家玄関.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"I'm hooome."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I'm home..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Wait."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"What...?"<PG>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1">, I heard you were involved in solving that case the other day?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... sort of..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"That's all?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It all started with an accident 12 years ago where a cherry-blossom viewer died. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Then things went wrong in all kinds of ways, and the Megasawa City case and the </STYLE><STYLE ID="2" RUBY="は">flayed</STYLE><STYLE ID="1">-body case happened. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That's what I heard."</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+"<STYLE ID="1">Sis</STYLE>, what's with you all of a sudden?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"</STYLE>You<STYLE ID="1">... don't remember?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　What happened 12 years ago."</STYLE>
+{PAUSE ""}
+<BR>
+"12 years ago... you mean that accident?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1"> were at the accident scene with me."</STYLE>
+{PAUSE ""}
+<BR>
+"What!?"<PG>
+<STYLE ID="1">"Well, you were 3, so I guess you don't remember..."</STYLE>
+{PAUSE ""}
+<BR>
+"Why are you bringing this up?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, if you don't remember, that's fine."</STYLE>
+{PAUSE ""}
+<BR>
+"Hey... now I want to know..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"There was a sound."</STYLE>
+{PAUSE ""}
+<BR>
+"A sound?"<PG>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1"> and I, the two of us, had gone to see the cherry blossoms in Central Park."</STYLE>
+{PAUSE ""}
+<BR>
+"Uh-huh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"When that accident happened, there was a strange sound. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A sound like a trumpet."</STYLE>
+{PAUSE ""}
+<BR>
+"Sorry, I don't remember..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">That's all."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"I'll go to the convenience store..."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\五島家玄関.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{STOPSND "VOICE" "0" "PASS"}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">"Hey."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>You<STYLE ID="1">... if you don't remember, it can't be helped, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">the one 12 years ago, do you really think it was just an accident?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+<STYLE ID="1">"It's true there were a lot of witnesses. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But I think almost nobody saw the </STYLE><STYLE ID="3" RUBY="・・">moment</STYLE><STYLE ID="1"> he fell from the tree. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I didn't see it either."</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, <STYLE ID="1">Sis</STYLE>, what's wrong with you today? You're acting weird."<PG>
+<STYLE ID="1">"The Megasawa City case and the </STYLE><STYLE ID="2" RUBY="は">flayed</STYLE><STYLE ID="1">-body case, do you think they were really solved?"</STYLE>
+{PAUSE ""}
+<BR>
+"What do you mean...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1"> saw the moment of the accident."</STYLE>
+{PAUSE ""}
+<BR>
+"I did...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right after the accident happened... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you told me."</STYLE>
+{PAUSE ""}
+<BR>
+"Told you what...?"<PG>
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

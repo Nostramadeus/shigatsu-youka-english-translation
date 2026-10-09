@@ -1,0 +1,48 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=53, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=6, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=111, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=195, target=)
+; Links:
+;    0: TWdLink(count=170, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ苦しむ.gal" "NORMAL" "#1" "R" "960" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "人物1" "4" "50" "300" "DEC" "WAIT"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Uingyaaaagyaaaaagoaaauoeeeeeeeuaebaaaaaaiiiiaaah!!! 
+{PAUSE ""}
+p"<PG>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> let out a demonic scream.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2">'s face wore an expression not of this world.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If I had to compare it to something... yes... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">a shinigami.</STYLE><PG>
+<STYLE ID="2">I won... I won!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A total victory, won by avoiding the dangerous colors, reading Zahha's intentions, and holding to my resolve to the very end!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Not by luck. A victory by skill!</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1,000" "1" "500" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

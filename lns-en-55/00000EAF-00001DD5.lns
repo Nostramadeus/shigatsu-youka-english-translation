@@ -1,0 +1,762 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4854, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=うかい, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=515, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=131, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かいわい, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のり, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=か, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そしゃく, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=えんげ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めいそう, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=14, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=72, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=27, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=66, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちのり, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たいしょくさい, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんばし, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぜいたく, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6273, target=)
+; Links:
+;    0: TWdLink(count=5711, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\アラーム.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>I woke up to my phone's alarm, which I'd used for the first time in a long while.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\カーテン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\ホテル室内.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "僕らの日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+When I opened the curtains, the sun shining on Tokyo announced the morning to this room too.
+{PAUSE ""}
+<BR>
+With a big nnnnn, I stretched out and went over once more in my head what I had to do today.<PG>
+...Okay. My jaw, throat and arms, which I'd pushed hard yesterday, and my stomach too, weren't all that tired.
+{PAUSE ""}
+<BR>
+The bit of training in Motoki-cho seemed to have paid off.
+{PAUSE ""}
+<BR>
+So what kind of menu would I be competing on today?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\ホテル.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Good morning, contestants! 
+{PAUSE ""}
+　We'll take you to the venue, so please board the bus."
+{PAUSE ""}
+<BR>
+Following <STYLE ID="1" RUBY="うかい">Ukai</STYLE>-san's directions, I got on the bus.
+{PAUSE ""}
+<BR>
+Same as yesterday, I sat next to <STYLE ID="2">Chigaya-san</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\バス車内椅子.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">“Good morning.”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Good morning, </STYLE><STYLE ID="3">Goto-san</STYLE><STYLE ID="2">. Not worn out from yesterday?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">“No, I'm in top condition.”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... That's good to hear. </STYLE><STYLE ID="3">Goto-san</STYLE><STYLE ID="2">, if you're not at your best, there's no challenge in it for me."</STYLE><PG>
+Just then, whispers reached us from all around.
+{PAUSE ""}
+<BR>
+"Heard <STYLE ID="3">that girl</STYLE> sitting up front polished off a 10-pound steak yesterday, no sweat."
+{PAUSE ""}
+<BR>
+"10 pounds!? How are we supposed to beat a monster like that...?"
+{PAUSE ""}
+<BR>
+"Even getting through the qualifier's gonna be tough..."
+{PAUSE ""}
+<BR>
+Word of yesterday's results already seemed to be going around.<PG>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="3">Goto-san</STYLE><STYLE ID="2">, your performance yesterday seems to have given you quite a psychological edge."</STYLE>
+{PAUSE ""}
+<BR>
+It wasn't much of a performance, but in this <STYLE ID="4" RUBY="かいわい">world</STYLE>, sure enough, word travels fast.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\バス車内.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The moment the bus set off, Ukai-san stood at the front and took a microphone.<PG>
+"Uh, good morning, everyone. 
+{PAUSE ""}
+We're now heading to the qualifier venue; the qualifier will be held in a special studio at our station. 
+{PAUSE ""}
+The three who make it through the qualifier will compete in the final at the Shibuya crossing. 
+{PAUSE ""}
+Note that the qualifier will be broadcast live as well, so―"
+{PAUSE ""}
+<BR>
+From there, we got a boring rundown of precautions and the like.
+{PAUSE ""}
+<BR>
+The gist seemed to be: you'll be on TV, so behave with some common sense.<PG>
+The scenery flowing past the window was no different from yesterday.
+{PAUSE ""}
+<BR>
+I'm no more than one grain among the people scattered across this Tokyo.
+{PAUSE ""}
+<BR>
+But today, I might show myself before the whole country.
+{PAUSE ""}
+<BR>
+Just how much of a diamond's sparkle can this one grain become?<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\テレビ局前.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Before long, we arrived in front of Japonica TV.
+{PAUSE ""}
+<BR>
+The time was 8:30.
+{PAUSE ""}
+<BR>
+How would I spend the hour and a half until the qualifier started?
+{PAUSE ""}
+<BR>
+How I handled my final tuning could set me apart too.
+{PAUSE ""}
+<BR>
+We were told to wait in a waiting room called the dressing room.<PG>
+{MESOFF "500"}
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\テレビ局楽屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="3">Goto-san</STYLE><STYLE ID="2">, are you nervous?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">“Well, of course I am.”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... But like I said yesterday, you should think about the final more than the qualifier. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Goto-san</STYLE><STYLE ID="2">, with your ability you can probably get through the qualifier, but if you burn out there, it'll hit you hard in the final. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Don't let your guard down, but make sure you always keep something in reserve."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\ビニール.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With that, <STYLE ID="2">Chigaya-san</STYLE> took out a convenience-store rice ball.
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "500" "PASS"}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Mm... Eating contest or not, if you go in on an empty stomach first thing in the morning, your stomach is sluggish and you can't eat much. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You eat just a little, so your stomach is up and moving. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Goto-san</STYLE><STYLE ID="2">, would you like one too?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Chigaya-san</STYLE> held out the same kind of rice ball.<PG>
+<STYLE ID="3">“Thank you very much. Itadakimasu.”</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\おにぎり.gal" "NORMAL" "#1" "600" "C" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+I took a bite of the pickled-plum rice ball, the kind with no <STYLE ID="5" RUBY="のり">nori</STYLE>.
+{PAUSE ""}
+<BR>
+Saliva spread through my whole mouth, and my half-asleep appetite woke up.<PG>
+Yeah, this really does seem to work.
+{PAUSE ""}
+<BR>
+Holding back the urge to swallow right away, I <STYLE ID="6" RUBY="か">chewed</STYLE> it well to make it even a little easier to digest, and sent it down to my stomach.
+{PAUSE ""}
+<BR>
+For the first time, I could actually feel my stomach start moving and the digestive juices start flowing.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"Mm... What could the qualifier menu be? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">With 100 people competing, I don't think they'll serve anything complicated. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It should be something portable, easy for the staff to carry around. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The contest menu might even be rice balls."</STYLE><PG>
+Something portable, huh.
+{PAUSE ""}
+<BR>
+Rice balls, to start with, then sandwiches, hamburgers, or the kind of thing they serve at food stalls.
+{PAUSE ""}
+<BR>
+There are lots of candidates, but considering the qualifier lasts 30 minutes, it'll probably be something where gaps open easily, in other words, something where it's easy to rack up a count.
+{PAUSE ""}
+<BR>
+So my prediction: nothing that overworks your <STYLE ID="7" RUBY="そしゃく">chewing</STYLE> power or <STYLE ID="8" RUBY="えんげ">swallowing</STYLE> power.<PG>
+No. There's a final after this.
+{PAUSE ""}
+<BR>
+So stomachs don't get overloaded, they might deliberately pick something hard to eat and hard to swallow...
+{PAUSE ""}
+<BR>
+Once I start thinking, there's no end to it. I'll stop thinking.
+{PAUSE ""}
+<BR>
+If the blood goes to my brain now, it's bad for my stomach.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Having finished the rice ball, I closed my eyes and decided to wait like that until it was time.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\夢.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As if <STYLE ID="9" RUBY="めいそう">meditating</STYLE>, I faced my other self.
+{PAUSE ""}
+<BR>
+<STYLE ID="9" RUBY="めいそう">Meditating</STYLE> only in order to eat is something the me of a little while ago couldn't even have imagined.
+{PAUSE ""}
+<BR>
+Days when I coasted through my part-time work and did nothing but eat, sleep, breathe.<PG>
+And that same me is now <STYLE ID="9" RUBY="めいそう">meditating</STYLE> ahead of the trial that's about to begin.
+{PAUSE ""}
+<BR>
+You never know how life will turn out.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Out of nowhere, the faces of <STYLE ID="10">Kogori-senpai</STYLE> and <STYLE ID="11">Niimura-senpai</STYLE> came back to me.
+{PAUSE ""}
+<BR>
+If the two of them were alive, I wouldn't be in a place like this right now.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\証明.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That time, <STYLE ID="11">Niimura-senpai</STYLE> had lifted <STYLE ID="10">Kogori-senpai's</STYLE> head and was talking to her.
+{PAUSE ""}
+<BR>
+That moment is not something I can forget.
+{PAUSE ""}
+<BR>
+In the end, what was the truth of that incident―?
+{PAUSE ""}
+<BR>
+I'm supposed to have given up on thinking, but now that I'm active again for the first time in ages, my head can't help heading that way.<PG>
+Solving that incident now wouldn't change anything.
+{PAUSE ""}
+<BR>
+Everyone involved died, and I alone survived.
+{PAUSE ""}
+<BR>
+No. If it was a problem between the Kogori family and the Niimura family, then I was probably closer to a bystander.
+{PAUSE ""}
+<BR>
+So it might be fair to say that's why I survived.
+{PAUSE ""}
+<BR>
+Then who was the culprit?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\古郡家居間死体.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">Kogori-senpai</STYLE> had been beheaded, and <STYLE ID="12">Kogori-senpai's mother</STYLE> had a knife stuck in her abdomen.
+{PAUSE ""}
+<BR>
+And <STYLE ID="13">Niimura-senpai's mother</STYLE> lay collapsed, bleeding from the head.<PG>
+............?
+{PAUSE ""}
+<BR>
+Huh?
+{PAUSE ""}
+<BR>
+Of these, only <STYLE ID="13">Niimura-senpai's mother</STYLE> is clearly off.
+{PAUSE ""}
+<BR>
+The knife <STYLE ID="11">Niimura-senpai</STYLE> drove into her own neck was the one pulled out of the abdomen of <STYLE ID="12">Kogori-senpai's mother</STYLE>.
+{PAUSE ""}
+<BR>
+In other words, the knife really was stuck in the abdomen of <STYLE ID="12">Kogori-senpai's mother</STYLE>, so there's no faking that.<PG>
+So it would seem that only in the case of <STYLE ID="13">Niimura-senpai's mother</STYLE> could the body have been faked.
+{PAUSE ""}
+<BR>
+All it takes is some <STYLE ID="14" RUBY="ちのり">fake blood</STYLE> smeared on the head.
+{PAUSE ""}
+<BR>
+Besides, the nata had been left at the scene, but the weapon that must have struck the head wasn't there.
+{PAUSE ""}
+<BR>
+That would mean the culprit took away only the weapon used on the head, but...<PG>
+That really is a little unnatural.
+{PAUSE ""}
+<BR>
+In that case the culprit would have taken the nata too, and would never have left the Noh mask at the scene either.
+{PAUSE ""}
+<BR>
+It's as if the things left at the scene were left there on purpose...<PG>
+I see. The culprit's aim was to make <STYLE ID="11">Niimura-senpai</STYLE> think it was 'the curse coming true.'
+{PAUSE ""}
+<BR>
+Just before that, <STYLE ID="11">Niimura-senpai</STYLE> had said, 'You wear a Noh mask at memorial services.'
+{PAUSE ""}
+<BR>
+Leaving the Noh mask at the scene would burn the image of death into <STYLE ID="11">Niimura-senpai's</STYLE> mind and make her think the curse had come true.<PG>
+All of that is only speculation.
+{PAUSE ""}
+<BR>
+At the very least, the body of <STYLE ID="13">Niimura-senpai's mother</STYLE> is the only unnatural one.
+{PAUSE ""}
+<BR>
+Both the state of the body and the weapon are wrong.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\証明.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And then, there was what <STYLE ID="11">Niimura-senpai</STYLE> had said.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"</STYLE><STYLE ID="10">You</STYLE><STYLE ID="11">'re still warm,"</STYLE> she'd said.
+{PAUSE ""}
+<BR>
+Which means it was still early enough that body heat remained and rigor mortis hadn't set in.<PG>
+In that case, even if <STYLE ID="11">Niimura-senpai</STYLE> had touched her <STYLE ID="13">mother's</STYLE> body, she wouldn't have felt anything was off.
+{PAUSE ""}
+<BR>
+Before I went into the Kogori house, <STYLE ID="11">Niimura-senpai</STYLE> may have touched her <STYLE ID="13">mother's</STYLE> body.
+{PAUSE ""}
+<BR>
+So it looks like her <STYLE ID="13">mother</STYLE> noticed we were coming and hastily faked it.<PG>
+The accident, for the culprit, was that <STYLE ID="11">Niimura-senpai</STYLE> killed herself.
+{PAUSE ""}
+<BR>
+The moment <STYLE ID="11">Senpai</STYLE> drove the knife into her throat, the culprit must have rushed to stop it.
+{PAUSE ""}
+<BR>
+To keep me from witnessing the moment the suicide was stopped, the culprit knocked me out, hitting me from behind or some such.
+{PAUSE ""}
+<BR>
+But by then, it was already too late.<PG>
+Huh... With a little thought, I could have seen both the culprit and the feint aimed at <STYLE ID="11">Niimura-senpai</STYLE> right away.
+{PAUSE ""}
+<BR>
+Though at that point, it would have been too late.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\炎.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then the one who set fire to the room was <STYLE ID="13">Senpai's mother</STYLE>.
+{PAUSE ""}
+<BR>
+Then why did she set the fire?
+{PAUSE ""}
+<BR>
+Probably to destroy some kind of evidence.
+{PAUSE ""}
+<BR>
+But <STYLE ID="13">Senpai's mother</STYLE> burned to death right then.
+{PAUSE ""}
+<BR>
+In other words, she got rid of the evidence, but chose to die <STYLE ID="13">herself</STYLE>.<PG>
+Getting rid of evidence when you're going to die... what does that mean...?
+{PAUSE ""}
+<BR>
+What comes to mind is the existence of an accomplice.
+{PAUSE ""}
+<BR>
+By setting the fire, she wiped out the evidence that would lead to the accomplice.
+{PAUSE ""}
+<BR>
+Or else <STYLE ID="13">she</STYLE> herself was some kind of 'evidence.'
+{PAUSE ""}
+<BR>
+So she chose death, and by setting the fire on top of that, wiped out the 'evidence.'<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Past this point, I've got no information to reason from...
+{PAUSE ""}
+<BR>
+Come to think of it, the person next to me is a <STYLE ID="15" RUBY="・・">Niimura</STYLE>: <STYLE ID="2">Chigaya-san</STYLE>.
+{PAUSE ""}
+<BR>
+If by any chance <STYLE ID="2">Chigaya-san</STYLE> is related to <STYLE ID="11">Niimura-senpai</STYLE>, I might be able to ask about the Niimura way of memorial services.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\テレビ局楽屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―When I opened my eyes, <STYLE ID="2">Chigaya-san</STYLE> had her eyes closed too, just like me.
+{PAUSE ""}
+<BR>
+I tapped <STYLE ID="2">Chigaya-san</STYLE> on the shoulder,<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Mm... What is it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">“</STYLE><STYLE ID="2">Chigaya-san</STYLE><STYLE ID="3">, do you know a person named </STYLE><STYLE ID="11">Haruka Niimura</STYLE><STYLE ID="3">?”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+In that instant, <STYLE ID="2">Chigaya-san's</STYLE> eyes went wide.
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+Two blue eyes turned toward mine.<PG>
+<STYLE ID="2">"Mm... I know her. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">My cousin. Though she passed away 4 years ago..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">“I was very close to </STYLE><STYLE ID="11">her</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">She</STYLE><STYLE ID="3"> and I were together right up to the moment she died.”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Up to the moment...!? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Don't tell me </STYLE><STYLE ID="3">you</STYLE><STYLE ID="2">... from the Motoki-cho..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "$000080" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+For a little while after that, the silent eye contact went on.
+{PAUSE ""}
+<BR>
+Sure enough, <STYLE ID="2">this person</STYLE> knows about <STYLE ID="11">Niimura-senpai</STYLE>.
+{PAUSE ""}
+<BR>
+And not just that. Even about the Motoki-cho case...!<PG>
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "800" "0"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\テレビ局楽屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+"Everyone, it's almost showtime, so this way, please!"
+{PAUSE ""}
+<BR>
+At that call, we both came back to ourselves.
+{PAUSE ""}
+<BR>
+The participants around us stood up and filed out of the dressing room.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Mm... Let's leave this talk for later."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Chigaya-san</STYLE> stood up too and left the dressing room.<PG>
+...For now, I'll focus on the contest.
+{PAUSE ""}
+<BR>
+I've stumbled onto a link to the incident in an unexpected place, but it can wait.<PG>
+The rice ball she'd given me was already gone from my stomach, and all that seemed to remain was a lively appetite and good digestive juices.
+{PAUSE ""}
+<BR>
+Okay, my health and my condition are both perfect.
+{PAUSE ""}
+<BR>
+The reasoning can wait.
+{PAUSE ""}
+<BR>
+I'll switch gears and focus on the fight in front of me.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\予選スタジオ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―We went into the filming studio, and I took the seat with my assigned number.
+{PAUSE ""}
+<BR>
+Sets made to look like a Chinese restaurant stood in rows.
+{PAUSE ""}
+<BR>
+In that case, nine times out of ten, the menu would be Chinese food.
+{PAUSE ""}
+<BR>
+The tables weren't side by side but round, each one shared by several people.
+{PAUSE ""}
+<BR>
+My seat was away from both <STYLE ID="2">Chigaya-san</STYLE> and the champion, Minamizaki-san.<PG>
+There was no smell of food in the studio.
+{PAUSE ""}
+<BR>
+The menu hadn't been brought out yet, but at least it probably wasn't anything strong-smelling.
+{PAUSE ""}
+<BR>
+Or were they keeping it sealed up, smell and all...?
+{PAUSE ""}
+<BR>
+Either way, I still couldn't tell what would come out.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now... It's almost 10.<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\青い目の猫.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\予選ライブ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Good morning! Now, at long last, the day has arrived: <STYLE ID="16" RUBY="たいしょくさい">Big Eating Festival</STYLE> 804! 
+{PAUSE ""}
+　I'm your host, Japonica TV announcer Yukino <STYLE ID="17" RUBY="しんばし">Shinbashi</STYLE>! 
+{PAUSE ""}
+　Now, take a look! Gathered from all over the country, 100 proud big eaters!"
+{PAUSE ""}
+<BR>
+If I remembered right, she was the announcer people affectionately called Yukipin.
+{PAUSE ""}
+<BR>
+When she finished her greeting, the monitor set up at the front showed us.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\clapping-hands1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\予選スタジオ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At that, the contestants each showed off their fighting spirit with loud applause and war cries.
+{PAUSE ""}
+<BR>
+The way I am now, this kind of hype is too much for me...
+{PAUSE ""}
+<BR>
+For now, I'll at least clap...<PG>
+"Now, we're coming to you completely live, so to keep us on schedule, allow me to present the qualifier menu right away!"
+{PAUSE ""}
+<BR>
+So the event is finally about to be revealed.
+{PAUSE ""}
+<BR>
+What will it be...?<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\スイッチ大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "BGM" "1000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\予選スタジオ暗い.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\ラスボスというほどではない中ボスぐらいの戦闘.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+The studio went dark, and grandiose background music began to play.
+{PAUSE ""}
+<BR>
+So even for a TV shoot, they really do play the music inside the studio too.
+{PAUSE ""}
+<BR>
+I always thought this kind of thing could only be heard by the people watching on TV.
+{PAUSE ""}
+<BR>
+I guess it's needed to get us performers fired up too.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\スイッチ大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+A spotlight was thrown onto one corner of the studio.
+{PAUSE ""}
+<BR>
+There, set on a small table, was something that looked like a dish―<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"The qualifier menu is... 
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\スイッチ大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\肉まん紹介.gal" "NORMAL" "#1" "C" "B" "0" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+pork buns!"
+{PAUSE ""}
+<BR>
+I see. Portable, no strong smell, can be eaten in quantity, and on top of that, the thick skin demands plenty of <STYLE ID="7" RUBY="そしゃく">chewing</STYLE> power and <STYLE ID="8" RUBY="えんげ">swallowing</STYLE> power.
+{PAUSE ""}
+<BR>
+Plus, this food even brings in the element of being 'hot.'
+{PAUSE ""}
+<BR>
+It's a menu that demands real all-around ability.
+{PAUSE ""}
+<BR>
+On the monitor, a video introducing this meat bun began to play.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\肉まん紹介2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"This pork bun is provided by the famous dim sum shop 'Taro.' 
+{PAUSE ""}
+Piping-hot filling, and a springy, chewy skin. 
+{PAUSE ""}
+There's always a line in front of the shop―"
+{PAUSE ""}
+<BR>
+While this video's playing, I need to work out at least some kind of strategy.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\予選スタジオ暗い.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+First off, choosing meat buns has to be quite a risk for Japonica TV as well.
+{PAUSE ""}
+<BR>
+Because if someone tries to swallow one in one go, they could choke, and it'd be an on-air accident.
+{PAUSE ""}
+<BR>
+Then what's the intention behind picking it as the food...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\肉まん紹介2.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"And the number one feature of Taro's pork buns is this thin skin, like a xiaolongbao's, and the huge amount of soup that flows out from inside. 
+{PAUSE ""}
+That soup uses chicken bones and, believe it or not, <STYLE ID="18" RUBY="ぜいたく">lavish</STYLE> dried abalone, slowly―"
+{PAUSE ""}
+<BR>
+I see, so it's not your ordinary meat bun.
+{PAUSE ""}
+<BR>
+With a thin skin and soup, the risk of choking drops a lot.
+{PAUSE ""}
+<BR>
+Then since the soup takes up a lot of the volume, it'll come down to a battle with the heat.<PG>
+According to the video, each one weighed 200 grams.
+{PAUSE ""}
+<BR>
+An ordinary meat bun, if I remembered right, was a little over 100 grams each, so these were pretty big.
+{PAUSE ""}
+<BR>
+In proportion, there'd be a lot of soup inside too.<PG>
+In that case, better not to think of it as a meat bun, but as eating wonton soup.
+{PAUSE ""}
+<BR>
+And yet, a skin that's thin but still chewy.
+{PAUSE ""}
+<BR>
+It's bound to be a hard fight to eat in every respect.<PG>
+But being able to eat it with my hands makes it easier.
+{PAUSE ""}
+<BR>
+There's no need for cutlery technique (the general term for chopsticks, forks and so on) like with yesterday's steak, so it all comes down to how I get it into my mouth and swallow it.<PG>
+Leaving the heat aside, 6 kilos in 30 minutes is probably a fair result for me.
+{PAUSE ""}
+<BR>
+I put the cutoff for getting through the qualifier at 5 kilos.
+{PAUSE ""}
+<BR>
+In other words, I expect 25 of them will get me through.<PG>
+But the problem really is the heat.
+{PAUSE ""}
+<BR>
+I'm inexperienced, so 5 kilos is my limit at most.
+{PAUSE ""}
+<BR>
+The same as the 5-kilo cutoff I predicted...
+{PAUSE ""}
+<BR>
+This food is tougher than I imagined.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\予選スタジオ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Now then, we're one minute from the start of the contest. 
+{PAUSE ""}
+The pork buns are being placed in front of the contestants! 
+{PAUSE ""}
+　The champion, Minamizaki-san: how much do you think you can manage?"
+{PAUSE ""}
+<BR>
+"Let's see. They look pretty hot, so my target is 7 kilos."<PG>
+7 kilos...! A veteran really does talk differently.
+{PAUSE ""}
+<BR>
+She's probably aiming high as part of the show, but maybe a 5-kilo cutoff is too optimistic.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\肉まん目の前.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A meat bun was set down on my placemat.
+{PAUSE ""}
+<BR>
+Seen up close like this, a meat bun bigger than I'd imagined―
+{PAUSE ""}
+<BR>
+Heat I could feel even with my face 30 centimeters away.
+{PAUSE ""}
+<BR>
+Now, everyone cheering for me on TV, watch me...!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\予選スタジオ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"And now, at last, it's time to begin! 
+{STOPSND "BGM" "5000" "PASS"}
+{PAUSE ""}
+　5, 
+{PAUSE ""}
+4, 
+{PAUSE ""}
+3, 
+{PAUSE ""}
+2, 
+{PAUSE ""}
+1... 
+{PAUSE ""}
+Start!"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{PLAYSND "最後の声・真呪殺\SE\ドラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,344 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=605, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=48, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=540, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=126, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=26, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=35, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=23, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=7, unk2=255, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1679, target=)
+; Links:
+;    0: TWdLink(count=1415, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "$000080" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜美冬抑える.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "人物1" "QUAKE" "1" "5" "5" "0" "30"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Let go...!
+{PAUSE ""}
+　Let gooooo!!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Wake up, </STYLE>Mifuyu<STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="2">But </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="2"> was shoved away by </STYLE>Mifuyu-san<STYLE ID="2">.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茜横顔下.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="3">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="2"> ran to the fallen </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="2"> and called out to her.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Khh-heh-heh-heh-heh...! You really do love rubbing it in my face. 
+{PAUSE ""}
+That's how you always went on ahead of me, <STYLE ID="1">Akane</STYLE>, and got the happiness of having a family without wanting for a thing. 
+{PAUSE ""}
+Why... why is it always, always only me..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2,人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Then </STYLE>Mifuyu-san<STYLE ID="2"> took something out of the box.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I'll kill you all...!
+{PAUSE ""}
+　Me and <STYLE ID="4">Haruka</STYLE> too, this is as far as we go. 
+{PAUSE ""}
+Ahahahaha! I'll put an end to all of it!"
+{PAUSE ""}
+<BR>
+Mifuyu-san<STYLE ID="2">'s hand was gripping something―</STYLE> 
+{PAUSE ""}
+{DELETECG "000,人物1,アイテム1" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="2">it stabbed deep into </STYLE>Mifuyu-san<STYLE ID="2">'s arm.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\春花子供泣く.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE>Mom<STYLE ID="4">... I'm scared... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">What are you doing...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬ハンマー振り上げ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="4">Haruka</STYLE>... 
+{PAUSE ""}
+It's all right. Over there, together with <STYLE ID="5">Dad</STYLE>, let's be happy."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "$000080" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\春花頭ふっとび.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "200" "0" "0" "" "0"}
+{DELETECG "000,人物2" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="2">With a dull thud, bits of vivid red flesh scattered across the whole room.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\夢見る憧憬.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ah... ahh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="2">'s legs gave out, and she fell on her bottom right where she was.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬ハンマー.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Heh. A witch, and you put on a show of being <STYLE ID="6" RUBY="おび">frightened</STYLE> like a normal person. 
+{PAUSE ""}
+<STYLE ID="3">You</STYLE> too, soon... 
+{PAUSE ""}
+No, if <STYLE ID="3">you</STYLE> followed us over there―"
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Stop!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Beside myself, I threw myself at </STYLE>Mifuyu-san<STYLE ID="2">.</STYLE><PG>
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "111" "QUAKE" "1" "15" "15" "0" "30"}
+{CREATECG "111" "グラフィック\背景\詫言編　夢から\手直し・追加\血のイメージ.gal" "NORMAL" "#1" "C" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="7">"Ghaaah...!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But something slammed into my chest faster than the eye could see, and blood gushed from my mouth all at once.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬ハンマー.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Oh my, did that burst your lungs? This drug really is something. 
+{PAUSE ""}
+Go on, drown in your own blood and die in agony."
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Ngh...! Hack!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I tried to breathe, but my lungs wouldn't move and no air came in.</STYLE><PG>
+"What would you like, <STYLE ID="1">Akane</STYLE>?
+{PAUSE ""}
+　How do you want to die?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"S-stop...! Don't lay a hand on </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Don't worry. It'd be a nuisance to have that <STYLE ID="3">witch</STYLE> follow us over here too, so I'll let <STYLE ID="3">that child</STYLE> live. 
+{PAUSE ""}
+In exchange, though, she's going to get a good look at <STYLE ID="1">you</STYLE> two dying."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサー鉈.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Then, this time, she switched to the nata―</STYLE><PG>
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\立ち絵\アイテム\鉈エフェクト横.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物3,111,人物2" "4!" "100" "960" "1" "" "0"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "4!" "100" "960" "1" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "$000080" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="2">'s futon, where she had been put to sleep, filled with red liquid pumping out in gushes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And without a pause, </STYLE>Mifuyu-san<STYLE ID="2"> grabbed the hair of </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="2">, who was now only a head, and pressed her against </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手直し・追加\なつみ茜首押し付け.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Come on, <STYLE ID="1">Akane</STYLE>, can you still hear me? Your hearing's still alive, isn't it?
+{PAUSE ""}
+　Go on, why not give <STYLE ID="3">Natsumi-chan</STYLE> one last kiss?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">With </STYLE><STYLE ID="1">Akane</STYLE><STYLE ID="2">'s head ground against her, </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, not understanding anything, was letting out screams that never became screams.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My lungs torn open, drowning in my own blood, I could do nothing but watch it happen.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手直し・追加\七海荘赤.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hey, <STYLE ID="7">Ryoji-san</STYLE>, can you hear me?
+{PAUSE ""}
+　Heh-heh... I really am such an idiot... 
+{PAUSE ""}
+Killing <STYLE ID="7">you</STYLE> all doesn't mean a thing..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Then, this time, she lit the gas stove and set fire to </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="2">'s clothes, which had been hung up.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手直し・追加\七海荘火事.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Apparently, exposing the drug in my body to high heat destroys the evidence. 
+{PAUSE ""}
+I can't cause Arata any trouble, so I'll burn to death right here. 
+{PAUSE ""}
+What about you, <STYLE ID="7">Ryoji-san</STYLE>? Burning to death hurts. Do you want me to finish you off?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I could hear her voice saying that, but I was suffocating, my mind was hazy, and I couldn't respond.</STYLE><PG>
+"Well, you look like you'll suffocate soon anyway, so I suppose that's fine. 
+{PAUSE ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n0\r\n5000\r\nNORMAL\r\nPASS">
+<TXSPS>Then― Ryo―ji-san― 
+{PAUSE ""}
+Good―
+{PAUSE ""}
+by―
+{PAUSE ""}
+e."<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2"><TXSPN>―Shiyo 800, April 8</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Kogori-san, good morning."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\カーテン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\病院.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Good morning, </STYLE><STYLE ID="3">Kogori-san</STYLE><STYLE ID="2">. The cherry blossoms are beautiful again today."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\イラスト\詫言編\逆なで.lcm" "REPEAT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Kogori-san</STYLE><STYLE ID="2">, you're going out today, right? I heard it's the anniversary of your parents' deaths."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\詫言編\詫言編逆なで横目.gal" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\肉付き\病院外風景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"The cherry blossoms... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">they're in bloom..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's right, it's spring, after all."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\病院.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\イラスト\詫言編\詫言編逆なで横目.gal" "REPEAT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\イラスト\詫言編\逆なで.lcm" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I hate cherry blossoms."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Oh, that's the first I've heard of it. Did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\詫言編\詫言編逆なで閉じ.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Because I'm a witch..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"A witch? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Ahaha, </STYLE><STYLE ID="3">Kogori-san</STYLE><STYLE ID="2">, you say the funniest things."</STYLE><PG>
+<STYLE ID="3">"Uh... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">please be careful."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hm?"</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\イラスト\詫言編\詫言編逆なで通常.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<BR>
+<STYLE ID="3">"You―"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\イラスト\詫言編\逆なで睨み.lcm" "SCRAP" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "200" "0" "0" "" "0"}
+{WAITPLAY "人物1" "CLICK"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+<STYLE ID="9">You're going to die today.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\lcm\ルートエンド.lcm" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAITPLAY "000" "CLICK"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

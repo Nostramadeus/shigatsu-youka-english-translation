@@ -1,0 +1,3924 @@
+# CAST.md — character voice sheets (living file; every fact carries as-of: <lsb id>)
+Format per METHOD.md §2. Pronoun, speech level, particles, copula, tics, dialect, EN correlates, as-of.
+Narrator identity per file goes in SUMMARY.md; a character who narrates gets a "narration voice" sub-block here.
+
+## 古郡なつみ (こごおり なつみ, Natsumi Kogori)
+- first_appears: 00000024:16:0 (narrates); named on screen at 00000024:16:32 (春花 calls her なつみ)
+- pronoun(s): 私 (watashi), in both narration and dialogue. No switches observed as of 000005AC.
+- pronoun FREQUENCY: states 私 MORE often than typical — her narration is heavily self-referential ("私にできることなんて、何もなかった" 00000024:16:58, "私は異常なほど直感に優れている" 000001E3:24:32). Do not delete the "I" in EN; it is her texture.
+- speech level baseline: タメ口 with 春花, 五島 and her mother; plain-casual with 春花's mother (おばさん) despite the age gap; switches to 敬語 for a stranger in danger ("大丈夫ですか！？　すぐ救急車呼びますから！" 000001E1:33:32). NEW as of 00000538: unbroken 敬語 (です・ます) to 伊勢 across a whole file (11:42, 11:45, 11:48, 11:62, 11:67) — the register she used for a stranger is now her register for an adult in authority. She never drops it with him.
+- sentence-final particles: ～よね ("だったら家宅捜索のときに伊勢さんが持っていってるはずだよね？" 00000024:51:11); ～かな ("うん……まあまあかな" 000001DB:15:29); ～のかな ("桜の季節だから、私が不安になりやすいだけなのだろうか" 000001DF:11:186); ～でしょ ("お母さん、お風呂掃除、まだでしょ？" 000001DB:15:174); ～てよ ("もう、春花ってば現実に戻さないでよ" 000001DF:11:2); ～ってば as affectionate exasperation, also used on 五島 from 00000473:11:33 ("ふふ、五島ってば。やっぱりかわいい後輩だね"); ～だろ／～ぞ NEVER
+- copula: だ (narration), だよ／だね (dialogue); no です except to strangers and (from 00000538) to 伊勢
+- verbal tics / catchphrases / fillers: 「はあ……」 the sigh, 3+ times ("はあ……" 000001DB:15:9, 15:47, 21:7) -> fixed EN "*sigh*" is banned; use a written-out sigh, see GLOSSARY; 「あは！」 short laugh ("あは！　五島は小さいくせに、大食いだもんね" 000001DB:15:38); 「ふふ」 ("ふふ……春花、どこに行きたいの？" 000001E5:35:24, "ふふ、大丈夫だよ" 00000488:34:63); 「うん……」 as a stalling yes; trailing ellipsis on almost every hesitation; 「さーねー！」 as a playful dodge (000005AC:11:58)
+- FOURTH REGISTER, new and important as of 000004E3:27 — the HARD voice. When 春花 turns on her she does not soften or flee; she gives orders and demands answers. Stacked ～でしょ／～の？, flat imperatives, and the only time she is cruel: 「バカにしないで。そんなまやかし、私が取りはらってあげる」 (27:47), 「もう一度言えって言ってるでしょ！」 (27:67), 「どうして私を助けるって言ってくれないの？」 (27:76). She slaps 春花 at 27:58 and the narration says it is the first time she has ever hit anyone. EN must not make this shrill; it is deliberate and controlled. It switches off the moment 春花 gives in (27:87).
+- dialect: none (standard)
+- EN correlates: contraction rate MEDIUM ("I'm", "don't", but not "gonna"); profanity ceiling ZERO (she never swears, not once in 39 files); sentence length SHORT to medium, often fragments; formality NEUTRAL-soft; vocabulary register plain, no slang, no jargon
+- narration voice: past tense, first person, introspective and self-deprecating ("私は多分、桜が嫌いなこと以外、表立った個性はないだろう。成績は中の中、運動も中の下" 000001E3:24:28-29). Short paragraphs, one thought per line. Heavy use of rhetorical questions to herself ("そしたら、どうなっていたのだろうか" 00000024:16:66). Frequent ……. Apologetic toward 春花. She narrates her own body a lot (nausea, dizziness, sleepiness).
+- narration voice, NEW mode as of 00000538: at the mortuary the narration goes clinical and flat while describing her own father's body (11:78-95), including a 『』 block of what she WOULD feel about a stranger. The horror is that the voice does not rise. Do not add emotion words EN-side; the break comes at 11:120-125 and nowhere earlier.
+- TEXT-MESSAGE register (new as of 00000473): softer, more apologetic and more formal than her spoken voice — full sentences, no fragments, explicit apologies ("今日はいろいろとごめんね。私はお母さんの聴取が終わるのを待ってるよ。" 00000473:11:6). Her messages use straight double quotes in JP, not 「」. -> Q036
+- 直感 aimed at 五島 (new as of 00000488): at 34:24 and 34:48 the same danger sense reads as gentle teasing, not prophecy. Keep the tone light. NEW as of 0000050E:11:21 the 直感 stops warning and delivers a verdict ("もう逃げ道はない。逃げることは不可能である、と") — same faculty, different grammar.
+- KATAKANA 片言 gag, new as of 000005C1:11:92 — when she wants to annoy 春花 she answers in flat katakana ("ワカラナイ", "ワタシ、スマホ、ナイ", "ボッタクリ", "ナンデモナイ"). The text names the device 「片言」 (11:93). 春花 and 五島 answer her in the same register at 00000600:19:34-35, so whatever EN device is chosen must be reusable by three characters. -> Q073
+- FIFTH REGISTER, new and register-breaking as of 00000600:19 — the 修羅 voice. Body-shaming comedy delivered as gloating theatre: feminine-commanding ～なさいよ／～わ／～かしら, invented crude compounds (「双子の能無しチチタンク」 19:18, 「乳デカ産廃どもめ」 19:21), a villain laugh 「ふはははは！」. Her trigger is her chest, named as 「私が1番気にしていること」 (19:43-45). It is comic and controlled, not rage; it switches off completely by 19:41 where she admits she started it. The "profanity ceiling ZERO" line above still holds for actual swear words — the JP invents compounds instead. -> Q077
+- 直感, trigger condition finally stated at 00000656:11:118: it fires on 「桜」 and 「風」 together, and 五島 is the one who works it out. At 00000641:11:7-12 なつみ herself reframes it: she may not be sensing danger at all but HEARING someone tell her about it. Keep it a hypothesis.
+- 四月病: gone from the 00000641 events onward (00000656:11:114-115, 「ふつりと姿を潜めてしまった」). The 直感 remains.
+- narration voice, the SELF-WATCHING mode, new as of 00000641:11:161-173: while holding her dead mother's hand she describes her own grief from outside and calls it 「滑稽」 and 「バカらしかった」. Flat, self-accusing, no grief words. Do not add feeling EN-side.
+- she narrates only 00000617:8:0-8:42 of that file; from 8:43 the 私 is 五島. -> Q078
+- the FIFTH REGISTER (the 修羅 voice) is NOT a one-block event: as of 000006E0:16:124 through all of 000006F9 it runs for a whole file, is given a title by 春花 (「修羅少女・古郡なつみ」 000006F9:11:4), and is sustained through a long argument about probability. Markers: ～かしら (「香辛料は何がいいかしら？」 17:215), ～わ (「さすが春花ね。私の親友なだけのことはあるわ」 17:243), ～のよ, mock-gracious concessions, and an invented chant (「パラメン・アビラン・エリクラン」 16:179). It still contains no actual swear word. It switches off between files with no comment. -> Q077, Q098
+- the OLD-SOLDIER gag, new as of 00000761:8:15-21 — delirious in a toilet cubicle she slurs with small kana (「ゃぁ……戦友……」, 「ゎたしはもぅ、だめだ」) and speaks as a war veteran (「すまぬのお、春花……」, 「歳はとりたくないもんじゃわい」). Two devices stacked; it lasts five cells and stops. -> Q104
+- physical comedy attached to the same register, stated as fact by the narration and not hedged: she bends a spoon like clay (000006F9:17:157) and shatters a water glass in her hand (17:242). Do not turn either into a simile.
+- known ambiguity / open questions: -> Q001 (the 魔女 line she quotes; see also 00000656:11:167), Q002 (「あの人」「あの2人」), Q016/Q017 (RESOLVED at 00000641:11:26-37 — the red dream figure is her father — but the earlier span must still not gender him), Q021, Q060, Q073, Q077, Q078, Q098, Q104
+- AS A CHILD, new as of 0000082F / 00000846 / 0000085D / 00000874 (she is 4 in 祀耀788 and 6 at her school entrance): bright, loud, no ellipses at all, and the opposite of her adult hesitation. 「ねえねえパパ！　ジュースちょうだい！」 (0000082F:11:24), 「お父さんえらーい！」 (00000846:11:40), 「えへへー」 (0000085D:11:10). Her address form for her father moves from パパ to お父さん between the two years with no comment. EN must not make the child sound like the narrator she becomes.
+- the 直感 at its FIRST appearances: 「ねえパパ、危ないよ」 (0000082F:15:0), 「その救急車、危ないよ？」 (23:0) and 「お父さん、今日は会社の車に乗らないでね」 (00000846:11:37) — each is one short cell, set alone, with no explanation before or after. Her father states the mechanism at 00000846:11:98-11:104 (it began at the 中央公園 accident, it works in wind, she is never told about the wind because wind also makes her ill). Keep the warnings flat and childish; the horror is that nobody in the scene reacts to the phrasing.
+- the 当たり／はずれ inversion is HERS and it is stated outright at 0000085D:11:92: at six she calls the losing takoyaki 「当たり」. The gag is still running twelve years later. -> Q122
+- she met 五島絵梨奈 at six and called her 絵梨奈ちゃん (00000874:11:4). Neither girl remembers it, and 五島's whole attachment story (000002F6, 00000617) rests on a bare surname ten years later. Do not let the EN of either scene nod at the other. -> Q037
+- SHE NARRATES ORDERS 75-85 (00000900 through 000009E6), eleven consecutive files, in a branch where her father, her mother, 新村栄一郎's widow and 春花 are all alive and nothing has happened. The voice is her ordinary introspective past tense with the self-blame removed: still 私, still short paragraphs, still ……, but no nausea, no dread and no apologising to 春花. Her 四月病 and 桜恐怖症 are reported in the PAST tense at 0000092D:11:145-11:147 with 「らしい」, and 11:159 is 「今では私、桜が大好き」. EN must let this narration be happy without making it a different person.
+- the 直感 is DOMESTIC here: she tells her father not to take the company car and not to drink, and attributes the warnings to 春花's dead father so that he will obey (00000916:31:19-31:23, 31:57-31:61). She says outright 「実はおじさんじゃなく、私からの警告だ」 and calls it 嘘も方便. The ability is intact; the horror is gone.
+- the WIND still speaks, and she still refuses to name it: 0000095B:11:24-11:26 「警告とも違うし、予感とも違う」, 11:153 「私は目を閉じ、風の声に耳を澄ませた」, 35:122 「風の中から、不安感を掻き立てる言葉が聞こえる。／でも……なんと言っているのだろうか。」 Keep every negative and supply no noun.
+- she is FRAMING NARRATOR for four inset first-person stories (000009A0, 000009B7, 000009CF, 000009E6) and does not tell her own before the chunk ends. -> Q146
+- the 修羅 register is named by her as something she can put on: 「修羅が乗り移った私に怖いものなどない」 (00000989:11:149). -> Q077
+- her 敬語 to adults survives everything except 新村茅萱, who bans it to her face and gets her way (00000944:8:173-8:174). At 8:43-8:44 she over-applies 尊敬語 to her own side and notices. -> Q136
+- her 敬語 is overridden a SECOND time at 00000A30:11:185-11:190: 新村エリカ orders the given name and the drop of 敬語 and she complies inside one cell (「わ……わかりました、／いや、わかったよ！」). Two adults have now done it and both were granted it, not taken it.
+- STORYTELLER register, new as of 000009FE: ~100 cells of sustained 丁寧 (です・ます) with no 「」, performing a 怪談 for an audience. It is plainer and more formal than her own narration, it has almost no ellipses, and her ordinary narration cuts back into it twice (11:6-11:7, 43:12). The two levels must be audibly different inside the same file. She closes by improvising a link between two stories and the narration calls her own answer 「適当な回答」 (43:12). -> Q146
+- she NARRATES orders 86-95 and 96-98, in two different branches of the same night. In the first she is killed; in the second she is not.
+- the DEATH narration, 00000ADE:11:142-11:169, and it is unlike anything else she does: she is struck down, loses her senses, and narrates twenty-seven cells of her own dismemberment flat, curious and grammatical — she notes she cannot tell whether her head was crushed like the other victims', wonders about the drug, asks whether 春花 and 五島 are alive, and her last coherent thought is the GRAMMAR of a sentence she heard four minutes earlier. Under it, three cells: 「せめて……／どうして私がこんな目に遭わないといけないのか……／教えて……。」 That plea is the only one she makes in the project. No fear words and no pain words anywhere in the passage — do not add any. -> Q168
+- the 四月病 is no longer hers alone: 00000ADE:11:3-11:6 gives it to a second person and treats it as a physical event that drops people where they stand. なつみ's own memory of it is hedged with 「らしい」 (11:2). -> Q009
+- the wind-voice, named without a hedge for the first time at 00000A30:11:76-11:77 — 「桜の声が鈍い」 / 「おじさんの声が届きにくい」 — because the tree is dying. She says it in narration, to herself, and never repeats it.
+- SHE NARRATES ORDERS 105-112 (00000BD6 through 00000C81), eight consecutive files of a branch set on the journey to 荒田 and the evening of arrival. Her ordinary introspective past tense, with the 直感 switched OFF for the whole run — 「この山に入ったあたりから全然……」 (00000C21:11:12), because 荒田 has one cherry tree left. It fires once, in a single wind-borne cell (00000BD6:15:0 「　夏菜についていきなさい」).
+- a REGISTER BREAK with no precedent anywhere: 「ギャラリー誰もいねーじゃん！」 (00000C81:19:11), her interior narration in 春花's rough voice. One cell, comic, and against the "profanity ceiling ZERO" and "～だろ／～ぞ NEVER" lines above. -> Q189
+- she is the INTERROGATOR in this branch, not 五島: at 00000C38:11:35-11:79 she works 城崎 for contradictions over an engine in unbroken です・ます, then tells him about her own ability deliberately to see what he does. At 00000C68:11:65-11:66 she asks a widower to his face whether his wife preferred his twin, having first reasoned that a schoolgirl will be forgiven for asking. Her 敬語-to-adults habit is doing investigative work.
+- the 直感 CHANGES MODE, 00000D11:11:119-11:134: for the first time it arrives as a picture rather than a voice — a cave, a man, a woman, a pot, then the woman covered in blood — and she reacts by shouting a warning at the wrong person. At 00000D29:11:17-11:25 she works out that it showed her the PAST and calls it 「危険があった場所」. Nothing in the project explains the change.
+- she TESTS the faculty for the first time (00000D11:11:58-11:71): wind felt while moving does not carry the voice, concentrating on a weak wind produces nothing, and she notes 「そこまで検証したことはなかった」. She has had the ability for twelve years and has never once experimented on it.
+- her 敬語 is overridden a THIRD time (00000D59:11:160-11:161, 「はい。／いや……分かったよ！　エリカちゃん！」), by the same woman as at 00000A30, in a branch with no shared history. She corrects herself mid-cell both times.
+- the 呪いの思考 gets into her narration and she names it doing so: she suspects 茅萱 on sight (00000D41:11:32), catches herself suspecting 五島 and is frightened by it (11:114-11:118), and at 00000D59:11:192-11:195 she notices something genuinely odd and forbids herself the thought. 城崎 predicted all of it to her face at 00000D29:19:44-19:47. EN must let the suspicion be reasonable and the self-censoring be the damage.
+- she holds a knife to a man's throat and draws blood (00000D29:19:31-19:38) in unbroken です・ます — 「早くしないと……!／　本当に刺す！」. Same family as the HARD voice of 000004E3:27, and the politeness does not move.
+- the 直感 is TURNED OFF for good in this branch, and the file says so: 00000E01:11:62 「直感が全然働かないの！」, then 00000E31:11:100-11:101 「もう、2度と僕の声が聞こえることはない」 / 「もう、桜の季節になっても、直感は働かないんだね……」. The faculty she has had since she was four ends in a conversation she then forgets. Her ordinary narration in 00000E49 and 00000E61 carries no 直感 line at all.
+- SHE IS STRUCK DOWN AND NARRATES IT, 00000E19:11:188-11:210, and it is the SECOND time (after 00000ADE:11:142-11:169) and it is not the same. Here there is no curiosity and no grammar: she registers the pain arriving on schedule (11:193), sees the blood on the blade, infers her own action after the fact (「私、無意識のうちに、春花をかばったんだ」 11:196), and the last six cells are one clause each, imagining a life as sisters she cannot finish imagining. Do not add fear words; do not let EN make the covering a decision.
+- the NEAR-DEATH register, 00000E31, a whole file: no body, no gravity, and her narration goes simple and childlike — short declaratives, 「私……死んだんだもん」 (11:13), and she cries about a word she never got to use. It is the least guarded she is anywhere. Her 敬語 does not appear; she is タメ口 to a dead adult throughout, because he is おじさん.
+- her ONE new address form in the project's last file: 「お姉さん」, used on 春花 one cell after being forbidden it (00000E49:11:136). She is teasing, and it is the only thing she asks for in the whole branch. -> Q217
+- she CHOOSES not to know, 00000E49:11:187-11:192: 「真相もいいけどさ……／今は……／今はさ……楽しいことだけ考えよう？／　真相は……知らない方がいい時もあるんだよ」. She does not know why she is saying it (11:185-11:186) and the reader does. Same shape as the 00000641 SELF-WATCHING mode: the narration reports the feeling and refuses to name its source. -> Q219
+- she narrates 00000E95, the branch's last file, and the register is one she has never had: unhurried, domestic and entirely without the case — no 直感, no 修羅, no deduction, and the closing thought of the whole branch is a joke about whether her newly-discovered elder sister is secretly stacked (11:249-11:253).
+- she keeps using the forbidden word. 春花 banned 「お姉さん」 at 00000E49; here なつみ uses 「お姉ちゃん」 four times in six cells and is banned from that too, and complies for exactly one line (00000E95:11:170-11:172). -> Q217
+- she is told everything about 女ケ沢 by her parents, including that they were asked to kill two children and hesitated to the last moment, and her conclusion is 「私はこの2人が両親で、本当に良かったと思う」 (11:108). She also names what she would do in their place and does not like the answer (11:104-11:105, 11:179-11:180).
+- 00000EC7, the branch's last file and her last narration: the unhurried domestic register of 00000E95 carried into a night alone in a bath, then a 60-cell conversation with a stranger about death in which she does almost nothing but ask questions and say she does not understand. She says 「分かりません……。／でも、大切な人を失うのは嫌です」 (11:122-11:123) and 「ここまで来ると哲学的過ぎて、よく分からない」 (11:120) and 「もう、話が大きくなりすぎてよく分からなくなってきた」 (11:245). EN must let her be out of her depth without making her stupid.
+- her physical comedy alone, unobserved and stated flatly: she swims lengths of an empty 大浴場, lies spread-eagled naked in the wind because nobody can see her, and cannonballs into the water 「アルマジロのように」 (11:7-11:25). Then an adult arrives and she sinks to the chin inside one cell (11:38).
+- SHE REMEMBERS THE PROMISE AND CONSENTS TO IT KNOWINGLY, 11:184-11:197. The dream conversation with 新村栄一郎 comes back whole, she names what he made her promise, and she agrees out loud a second time: 「真実は知らない方がいいんですよね？」 The first consent was taken from a girl who then forgot it; this one is given. -> Q219
+- she uses the forbidden word behind 春花's back, to a stranger, with a hesitation in front of it: 「お母さんと、えっと、お姉ちゃんはおしゃべりしてます」 (11:47). -> Q217
+- SHE IS DEAD BEFORE 00000EDF BEGINS and has exactly one line in it, 111:18 — 「ふふ、五島ってば。やっぱりかわいい後輩だね。じゃあ、五島、うちにおいでよ。それなら一緒にいられるでしょ？」 — the first clause of which is 00000473:11:33 word for word. The two must be identical in EN.
+- her death is at 00000EDF:208:0-208:5 and 65:20, in six and one cells: the head is gone 「強風に持ち去られたかのように」 and the narrator is covered in blood. She is alive at the end of the file because the whole of it was one instant (117:155-117:169). -> Q285
+- CROSS-REFERENCE: the eyeless woman of 00000EDF (own CAST block) uses two catchphrases that come out of a voice the narrator names as 「古郡先輩……？」 at 117:154. The identity is never asserted in either direction. Do not merge the two voices. -> Q288
+- a stranger who never met her coins 「貧相ちゃん」 for her over the telephone (00000EDF:37:314) and it is used twice more. -> Q308
+- SHE NARRATES 00000EF6 ALONE (order 137, 2,717 lines), two years after the 元木町 incident, with no switch anywhere. Four temperatures in one voice and no marker between them: the DELUDED one ([140][134][110][67]), in which she holds full conversations with a woman who has never woken and the narration reports them as real; the BROKEN one ([61][42][50][36]); the WORKING one ([26][20][14]), in which she reasons in writing and produces the idea that saves 春花; and the QUIET one ([8]). -> Q317, Q318
+- the 肉付きの面 is HER image of herself and she is the one who finishes the argument with it. 五島 tells her the Fukui folktale at 110:42-110:84 and stops mid-sentence; なつみ works out the rest alone at 61:152-61:162 (「私の場合は、破綻しかけた心を守るための――／真実をごまかすための面――。／面を着けると、視界が狭くなる。」) and again at 8:197-8:206 (「『助けて』の一言が言えなかった。／なぜならそれが、私の独善的な罪滅ぼしだったから。」). Four passages, one vocabulary; they must share it in EN. -> Q322
+- the IZAKAYA register, new and a whole professional voice (00000EF6:110:157-110:310, 26:45-26:68): bright service 丁寧 (「おはようございまーす！」, 「はいはーい！」, 「いらっしゃいませー！」) with fast comic sparring layered on it — she catches a groper by which hand holds his chopsticks (110:201), sells a party a rigged game, and tracks glasses, orders and table states out loud in narration. She is called 看板娘 and the narration calls the work 駆け引き (110:185). Nothing of her hesitation is in it and no ellipses appear anywhere in the shift. She is under 20 (「私まだ未成年ですよー？」 110:166) and a high-school dropout (110:295)
+- SHE SOLVES SOMETHING, for the only time in the project: 交換輸血 is her idea, produced lying down out of an overheard remark about blood-transfusion consent (00000EF6:20:144-20:192), and 五島 gives it its name and its medical case. She apologises for it first (「やっぱりそんなこと、できないよね……」 20:192)
+- her 敬語 to adults in authority is unbroken across the file — to the doctor (14:52, 20:237, 26:172, 36:176) and to her employer (26:49, 110:284) — and her タメ口 to 五島's mother (134:7 「おばさん、洗い物残ってる？」) is the same casual form she used on 新村美冬 at 000001DD. Two different women, one address form, in one file. -> Q349
+- she says 「お姉ちゃん」 to 春花 ONCE, at 00000EF6:8:209-8:211, after an ellipsis cell, and takes 「はは、やめろよ……」 for an answer and does not push. Third branch, third handling: 00000E49 she was forbidden and teased anyway, 00000E95 she was forbidden and complied for one line, here she asks quietly and lets it go. -> Q217
+- her 直感 is destroyed on purpose and she consents to it in advance: 「私は、この直感に頼って生きていくつもりはないから、春花が助かるならすぐに捨てて構わない」 (20:173). At 14:207-14:209 she says the spring wind is worth more than the ability. The 四月病 is gone by 14:123 and confirmed at 20:2
+- she is a 妹 and learns it from a document: 26:140-26:152, two 戸籍謄本 extracts, and her first reaction is 「次女って……。／私にお兄さんかお姉さんがいたの……？」 (26:144-26:145). At 20:3 she calls the knowledge 切ない because it was only released in order to make her decide whether 春花 lived. -> Q324, Q216
+- 00000F0D: she is the VICTIM of the platform attack, has one broken line on the concrete — 「ご……とう……」 / 「青と……緑……」 / 「青と……緑の目の子……／ナイフで……」 (56:184-56:189) — and survives. Her testimony is three fragments and it is the only description of the attacker anyone gets.
+- SIX CELLS OF HER NARRATION, 00000F0D:173:26-173:31, inside an untagged block and immediately before the file's frame passes to another narrator: 「何なのよ……！」 / 「自首って何よ！　最悪の場合って何よ！」 / 「お母さん、何かやったの！？」 / 「どうして私の大切な人たちばかり……！」. Set at 祀耀800年四月八日. It is the HARD voice of 000004E3:27 turned on nobody, and it is the only time her narration is made of shouted questions.
+- HER REGISTER A YEAR AFTER, 00000F0D:68:128-68:168: level, warm and in control, to a girl who cut her throat. She asks how to address her before she says anything else (68:143-68:144), thanks her (68:146-68:147), refuses to let the apology become self-punishment (68:157-68:162 「夏菜ちゃん自身を責めるために来たなら、私はもう帰るよ？」), makes her name which of the two she is apologising for, and closes it (68:167-68:168). No ellipsis-hesitation and no self-blame anywhere in the scene. This is the least guarded and the most adult she is anywhere, and it is her only appearance in the file.
+- her 直感 is reported from outside for the first time, by 伊勢, as a plain fact of the case: 「この時期だけに使えるおかしな直感があるんだ。／危険に遭いそうな人を見たり、話したりすると、その相手の危険を事前に察知できる」 (179:29-179:30). He uses it operationally — he has 五島 telephone her to ask whether 五島 is in danger (56:20-56:22, 179:34-179:35) — and the answer is 「風がなかったみたいでよく分からない」 (56:22), which confirms the 桜＋風 trigger from outside her own narration.
+- the scar is permanent and the text shows it once: 「古郡さんの首にはうっすらと残った傷」 (68:129). She was saved by her own danger sense (68:132-68:133).
+- her birthday is 七月二九日 (68:239), stated in passing by 五島.
+- THE CONVERTED REGISTER, 00000F24:112:144-112:302, and it is the hardest thing in the file for a translator: she is taken over by the settlement's faith and NOTHING in her surface changes. 春花 bare, the soft タメ口, 「親友」, 「ふふ」, 「うふふ」, ～でしょ, ～よ, the concern about whether 春花 has eaten — all intact, all warm, all aimed at getting a needle into her best friend. The only crack is the content, and the only tell the text allows is one flat 「へえ……／五島……／か。」 (112:178-112:180) and the three words 「五島はいらない」 (112:297). EN must not cool the voice, italicise it or make it eerie. -> Q396, Q392
+- she is converted with NO injection and the file makes that the mystery: 「なつみは本当に注射なしであんな状態になった」 (106:21), 「私、治ったっぽいんだけど……」 (94:146). 五島's explanation is that the 『恵み』 alone did it and that her precognition was the doorway (94:116-94:125)
+- HER ABILITY IS CALLED A FAKE, 00000F24:94:116-94:135, by 五島, to her face: the 危険予知 is a property the 荒田桜 grants in order to be obeyed, delivered like telepathy through pollen, and the proof offered is that on arrival in 荒田 the same faculty told her 「ここは安全」 (64:79-64:81, 94:118). Her only reaction is one question — 「私の危険予知がフェイク……？」 (94:117) — and the file never returns to it. It is the most destructive thing anyone says about her anywhere and she does not argue
+- her 敬語 to adults does not come up because there are no adults left; her タメ口 to 五島 and to 春花 is unchanged in the cave scenes, and she is the one who says the settlement's people should be brought to 元木町 if they recover (142:47)
+- SHE DIES OFF SCREEN in this branch, reported in one cell — 「まだ薄暗いほら穴の中では、なつみが息絶えていた」 (193:20) — with no body described, no last words and no scene. She is the only one of the three whose death is not witnessed
+- SHE NARRATES 00000F9F AND 00000FCF (orders 144 and 146), alternating with 新村春花 and 五島絵梨奈 at every file boundary in this six-file run with no marker anywhere. -> Q030, Q078
+- SHE CHOOSES NOT TO KNOW, for the third time and the first one that holds: at 00000F9F:11:84-11:99 she declines 城崎's invitation and explains why — 「幸太郎さんにやられたとき、夢の中でおじさんと約束したの。／『真相を追い求めない』って」. At 00000E49 the refusal came with no reason she could name and at 00000EC7 she consented to a promise she had remembered; here she states it as a decision and acts on it in company. -> Q219
+- her stated argument for stopping is made of evidence and it is wrong in a way the reader can see and she cannot: 荒田 people do not have to die in April, 新村エリカ died in May, therefore this death was natural and 「エリカちゃんが天寿を全うできただけで、私は満足だよ」 (00000F9F:11:152-11:157). EN must let it sound reasonable -> Q427
+- the RELEASE register, new, 00000F9F:11:158-11:178: she hands a decision to someone younger and does not take it back. 「五島は自分が思うようにしてみて」, then 「五島ならきっとできるよ。／でも、もしつらくなったら、いつでも私に寄りかかっていいんだからね」, delivered while crouching to bring her own face below 五島's and lifting her chin with a hand. It is the adult register of 00000F0D:68:128-68:168 aimed at her own 後輩
+- she returns the 大魔女の能面 by laying it on the dead woman's face, and says she never handed it to the police (00000F9F:11:47-11:54). 「歴代の大魔女様が、私を守ってくれた。／ありがとうね、エリカちゃん。」 -> Q043
+- 「私にはもう、桜の声は聞こえないけど……」 (00000F9F:11:222) — in this branch she calls the wind voice 桜の声, and 五島 in the same file calls it 「新村先輩のお父さんの声」 (11:103). Two names, one file, and neither character corrects the other
+- she is the PEACEMAKER in the 00000FCF fight and it costs her the thing she wants: she holds 五島 while arguing her into letting 春花 go, says 「私たち、離れただけで壊れる仲じゃないでしょ？」 (11:77) and then 「私は、声を上げないようにさめざめと涙を流した」 (11:85). Same self-watching mode as 00000641:11:161-11:173 — she reports her own crying from outside and does not name it grief
+- SHE NARRATES 00001295 AND 000012AD (orders 172 and 173), taking the frame from 新村春花 at a file boundary with no marker and handing it to 五島絵梨奈 at the next one. -> Q030, Q078
+- 00001295 IS HER ONLY PURELY INTERIOR FILE IN THE PROJECT: no plot, no case, no ability, one room, a mirror and 195 lines of self-accusation. Its thesis is that she has been forcing herself for years, the dated instance is the middle-school volleyball retirement (8:23-8:45), and her verdict on herself is 卑怯者, used three times. The SELF-WATCHING mode of 00000641 is here without the distance: she reports her own lying as it happens (「ほら、私はまた嘘をついた」 8:93) and then loses control of her breathing (8:106)
+- the MIRROR DOUBLING, 8:4-8:22: 「鏡の中の私」 behaves as a separate person for nineteen cells — it cries first, it knows what she will not admit — and is collapsed in one cell with 「鏡の中の私は私自身」. EN pronouns resolve this far too early and must be held back -> Q512
+- what steadies her is not reassurance but being recognised as an incomer: she hears 新村エリカ's 「家に帰してあげる」 and reads in it someone who also came to 荒田 from outside (8:134-8:142). She is then told what she was actually afraid of — not dying but having to keep the performance up forever (8:155-8:160) — and accepts it
+- her 敬語 to an elderly stranger lasts nine cells and then falls off BY ITSELF; she notices, apologises for it, and is offered 「エリカちゃん」 in exchange (000012AD:12:11-12:23). Third branch, third granting of that form, and the first in which the drop precedes the offer -> Q499
+- the DOMESTIC register, 000012AD:12:0-12:53: cooking, counting portions, humming over the washing-up (「ふんふんふふーん」 12:45), and a whole scene with no case in it. The same unhurried voice as 00000E95, produced deliberately this time — she has just been told to stop performing and this is what she does instead
+- SHE IS THE LEAK AND DOES NOT KNOW IT: everything she learns in these two files reaches 死月妖花, and 000012AD ends with 夏菜 telling her where 春花 has gone, the horn sounding, and なつみ noticing nothing. In 000012C5 and 000012DE she is shut in a room and then used as a decoy without being told. Her own lines stay trusting throughout -> Q497, Q516
+- her 直感 is JAMMED rather than absent in this branch: 「何か聞こえるんだけど……ノイズって言うのかな？／　何かに邪魔されているような感じで、全然聞き取れないの」 (000011CC:8:114-8:116). Not the silence of 00000BD6 and not the shutdown of 00000E31 — a third state, and 五島 reads it as danger
+- she volunteers to go to 荒田 ALONE (000011CC:8:143-8:148) with her hands shaking, is talked out of it, and then produces the line that sends everyone the other way: 元木町 will cease to exist. The narration around it (8:208, 8:210) describes her as raving and moving like a doll, which nothing in the file explains
+- 000013E6:8:23 「五島！　しっかりして！」 — one line in the whole chunk, shouted at a girl who has stopped moving, and it is the thing that restarts her. Bare surname, タメ口, unchanged
+- she is the STATED OBJECTIVE of everything in the chunk and is never told: 「本当はなつみちゃんだけが目的だったけど」 (000013CD:8:346), 新村茅萱's unanswered question asked three times across two files (0000139D:8:143, 8:183; 000013CD), and 五島's two deliberate deceptions of her. Nobody in the chunk tells her anything
+- 五島's reasoning about her at 000013E6:8:44 — that her 予知 may itself be the thing's doing — is the chunk's version of the warning at 000011B4:8:201, and it is now supported by the report's own account of what the precognition is -> Q456, Q087
+- SHE NARRATES 00001477 THROUGH 000014D7 (orders 192-196), five consecutive files, taking the frame from 新村春花 at a file boundary with no marker and holding it to the end of the chunk. -> Q030, Q078
+- THE BEST PIECE OF REASONING SHE DOES ANYWHERE, 00001477:8:100-8:172: shut in a room and told nothing, she is given a hint by her parents in the form of sentences with the subject, predicate and modifier deliberately removed, spots that a 「でも」 is being used where nothing is being contradicted, names the grammatical category, reconstructs the omitted middle sentence by printing the passage with a placeholder cell in it, and arrives at the true rule — the thing has her sight and hearing and not 春花's or 五島's, and it does not have anyone's thoughts -> Q577, Q578, Q579
+- what she does with it is the character rather than the deduction: she decides to FEED IT FALSE INPUT, tells 五島 an obvious lie to see what 五島 does with it (8:222-8:232), and then abandons the whole approach one file later because deceiving the thing means deceiving her friends, and 「みんなの意識を1つにして立ち向かうことこそが、死月妖花の不意を突く1番の良策なのだ」 (0000148E:8:299). She names her own function out loud — she is the one who holds people together (8:294)
+- she is DELIBERATELY IGNORANT and hates it: 「知らない体を貫かないといけない」 (0000148E:8:20), 「とは言え、この姿勢を貫くのは決して気分のいいものではない」 (8:22), 「私が死月妖花を騙すためにみんなを騙すのは、本当に正しいのだろうか」 (8:166). Three files of her performing not-knowing and auditing the performance
+- her 敬語 to 新村美冬 does not exist and never has — おばさん and plain タメ口 from 000001DD onward — and in this chunk that casualness is what lets her ask the question nobody else will: 「あの、おばさん、もしかして、私に見聞きさせないために、嘘ついてない？」 (000014A5:8:85)
+- SHE SOLVES THE 能面 AND THE 赤装束, 000014BC:8:121-8:182, and it is the only piece of settlement lore anyone explains in the chunk: the disguise is useless against a 死神 that picks its victims unless the point is that the victims cannot be identified; her own ability needs her to see or hear the person at risk; the thing works through her eyes and ears; therefore the masks are equipment against a thing that watches through people. She reaches it by recognising herself in the puzzle — 「もしかして……／今の私……？」 (8:161-8:162) -> Q043
+- the ABILITY RETURNS AND CHANGES GRADE. 000014BC:8:183-8:202 is a fifteen-cell unframed vision of 元木町 swallowed by a cherry, which she names 「これは『危険予知』ではなく……『滅亡予知』だ」. Then 8:220-8:223 report the thing's position in four untagged 「――」 cells, and 8:227-8:242 put her viewpoint somewhere else entirely — she watches 五島 and 茅萱 arrive at the summit through eyes that are not hers and asks 「これは……誰の視点？」 -> Q588, Q589, Q590
+- she works out from 新村栄一郎's own phrasing that the jacking is PERIODIC rather than constant (000014BC:8:282-8:285), which retroactively explains why some things got through and some did not
+- HER GUILT IS RESTATED AND NOT RESOLVED: 「私がこんな体質になったのは、私のせい。／風船を飛ばし、春花のお父さんを死なせてしまい、血を浴びた」 (00001477:8:60-8:61), and at the summit the man himself demands an apology for it in the first thing he says to her (000014D7:8:49). 春花 answers for her — 「こんなつまらない話、聞く必要ない」 — and she never does
+- she is THE OBJECTIVE and is finally told so to her face: 第二世代の生者, the fourth 神使, and the choice she is given is join or everyone here dies (000014D7:8:279-8:299). Her answer is 「ば、バカ言わないで！　そんなの、死んでもごめんよ！」 (8:281) and then 「私次第……。みんなを助けるには……」 (8:300), left unfinished
+- the CLOSING DESCRIPTION, 000014D7:8:411-8:444, is the only sustained lyrical passage her narration has anywhere: petals like pink spinel, reflected moonlight, a landscape compared to a painting — and then 「私たちがいるのは――／死の世界。」 Her narration is elsewhere plain and almost simile-free; the lift is deliberate and it stops dead -> Q596
+- SHE NARRATES ORDERS 197-200 (000014EE, 00001505 as far as 8:68, 0000151C, 00001533) and loses the frame MID-FILE in 00001505 without getting it back until the next file opens -> Q605, Q030, Q078
+- WHAT SHE DOES WITH THE ANTAGONIST IS THE CHARACTER, and it is the thing eleven files of other people's deduction could not do. Five people are kicking a girl on the ground and itemising what they will do to her; なつみ's word is 憐れ, three cells with nothing else in them (000014EE:16:205-16:208); she asks to be allowed to talk to her, walks over, crouches to her eye level and says 「ねえ教えて。ちゃんとあなたの話を聞きたいの」 (16:242). What follows is the only interview anyone conducts with 死月妖花
+- she then OFFERS HER A PLACE: come to 元木町 with us now, while you are detached from it (16:296-16:301). She is called 甘過ぎる by her best friend and does not argue; her case is made out of facts the girl has just given her — she did not want to kill, she was made to, and refusing meant dying (16:305-16:307)
+- HER OWN SIDE REFUSES HER, one by one, and she does not push: 春花, 茅萱, 夏菜 and 五島 all say no, and it is 新村美冬 — the one with the most to avenge — who breaks it by disqualifying herself. なつみ says almost nothing through the whole argument. EN must let her be silent there
+- she is NOT the one who works out the deception (春花 and 五島 do that, 16:404-16:418) and she is not the one who destroys the thing. Her function in the climax is to hold the group together and to take one decision: 「みんな、力を貸して」 (0000151C:8:52), followed by stabbing her own arm so that everyone can touch her blood
+- THE BLOOD PLAN is hers and it is the second thing she has solved anywhere (after 交換輸血 at 00000EF6): 夏菜 alone is not enough blood, anyone who touches なつみ's blood becomes 第三世代, therefore make more of them. She does it before explaining it and tells nobody to stand back except by shouting 「触らないで！」 (0000151C:8:62)
+- she SHUTS HER EYES ON AN ORDER and keeps them shut for ~130 cells (0000151C:8:156-8:211) while the settlement kills the thing. The project's most active narrator spends its climax blind and reporting somebody else's sight -> Q618
+- the TELEPATHIC REGISTER, new: her own transmitted thoughts are printed with a 「――」 prefix and are simpler and younger than her narration — 「――痛い……！　苦しい……！」, 「――またね、糸姫。」 She is タメ口 to the antagonist from the first word to the last, where she gives every other stranger 敬語 -> Q618
+- HER GUILT IS CLOSED, and not by her: the balloon of 000014EE:8:12-8:33 is put back into her hand by the person who took it, who then says she needed it to take him. The twelve years of self-blame recorded in this block since 00000024 were misattributed from the start, and the narration does not say so out loud
+- her ABILITY IS GONE for good and she consents to it in advance a second time: the loss list is read to her one item per cell and her answer is 「――そっか……それでいいんだよ。／元々人間が手を出していいものじゃないんだからさ」 (0000151C:8:240-8:241). At 00001533:8:48 she notes flatly that she can no longer hear the cherries and reads it as proof
+- the CLOSING REGISTER, 00001533: the unhurried domestic voice of 00000E95 and 000012AD with nothing left to investigate — ringing a neighbour's bell at 6:30, a bicycle under falling petals, a school roll call, a seat at the back. Her one lyrical passage is about cherries and it is four cells (8:43-8:46)
+- SHE SHOUTS A COMEDY LINE IN FRONT OF HER CLASS, 00001533:8:195-8:198, to rescue a stranger: 「私は恥を忍んで、大声で叫んだ」. It is the only time she is deliberately conspicuous anywhere in the project, it costs her nothing she cares about, and it is how the last character in the story gets a friend -> Q612
+- her LAST DECISION in the branch is to refuse to settle a question: whether the new girl is the dead one returned is left open on purpose, and what she does instead is undertake to give her good memories (00001533:27:64-27:77)
+- 0000156A (order 202, 祀耀815): she is 32, living alone in 元木市, has never married, visits her mother in 皆上市, and her 四月病 and her 危険予知 are BOTH still active fifteen years on — the wind and the petals still drop her where she stands (34:33, 40:96-40:97, 40:160) and the 予知 still fires as a flat warning she cannot specify (40:218-40:241 「多分、見つかったら大変なことになる」). This is the branch in which nothing was ever cured
+- her register is unchanged from 000001DB: 私, ～よね, ～かな, 「はあ……」, the trailing ellipses, お母さん for 茜, 春花 bare, 五島 bare. Fifteen years produce no new speech markers at all, and that is the point — the narration says she was thrown into the world alone at eighteen and has been 気丈 ever since (46:198-46:201)
+- WHAT SHE ASKS FOR, once, and it is the only thing she asks for in the file: 「もう、どこにも行かないでほしいな……」 (46:197). Her mother's narration reads it as fifteen years of holding on by herself
+- she ARGUES FOR 春花 against the evidence and loses, twice: 「春花もお母さんの娘なんだよ！？」 (8:17) forces the door open, and 「春花が好き好んで、私たちに危害を加えると思う？」 (34:160) is refused by 五島. She never asks what 春花 has become; she asks why
+- her death is the most violent in the project and she narrates none of it: her last words are 「私……／死にたくないよ……」 (193:55-193:56), and 春花's hand comes out through her chest holding her heart in the next cell. She is then walking and talking at 201:2 with 「おはよう、お母さん」, and the file never says what she now is -> Q663
+- the REVIVED register: identical to the living one. ～でしょ, the soft タメ口, お母さん, and the argument she makes is a daughter's — prison will take her mother for the rest of her life, so wish, and stay. There is no marker anywhere and EN must not supply one
+- SHE NARRATES TWO FILES IN THIS CHUNK (0000172F, 00001A74) and both are ordinary interior monologue with no plot in them. The voice is her usual: plain past, self-scolding, cheerful on the surface, and it reasons carefully about very small evidence
+- THE REASONING IS THE CHARACTER: from 「今日木曜で休診日だったんだよ」 she gets 「休診日を把握してなかったってことは、今日初めてその病院に行ったってことかな？」 (0000172F:8:32) inside two cells, and then refuses the conclusion because 春花 looks well
+- SHE IS WELL IN APRIL, 00001A74:8:5-8:10, and notices it as an anomaly — 「こうやって四月に道を歩くのって、久しぶりだなあ」 — on the day of the 中央公園 murder. In the same file she hears talking behind her with nobody there and explains it as birds or cats -> Q737, Q009, Q492
+- her closing move in both files is the same and it is her defining habit: she stacks the anomalies, names each one, and then refuses the stack — 「考え過ぎ考え過ぎ！」 (00001A74:8:33) and 「春花の心配ばかりして私が風邪引いたらいい笑いものだよ」 (0000172F:8:39)
+- her sneeze is written 「へ……／へ……／へ……」 across three cells and then 「ぺっくちょん！！」, where GLOSSARY holds 「ぶえっくしょん」 for a different character -> Q759
+- she goes to 新村美冬 behind her friend's back to ask about the hospital and is refused, and she accepts the refusal (00001835)
+- AS A SMALL CHILD, 0000200D, and it is the earliest she appears anywhere: at her grandparents' house after 女ケ沢, refusing a doll, a picture book and a bath with 「…………」, and then asking the question her whole character is built on — 「大人って……／助けたい人を助けないのはどうして？／お父さんとお母さん、どうして私を置いていったの？／　私、助けたかったのに……」. She walks out to the bath without waiting for an answer -> Q786
+- her precognition condition is managed by adults who do not name it, in the same file: 「桜っこ咲いでるが？」 / 「ううん、風に当てなければ大丈夫って茜は言ってたし」. Cherry plus wind, stated as if it were an allergy, at the earliest point it appears anywhere -> Q824, Q243
+- 00001B70:11:242-11:257: her 危険予知 fires on a telephone call, she orders 五島 and 夏菜 out of a cave at volume, and NOTHING HAPPENS. Two characters state in the next file that a misfire is unprecedented and nothing explains it. It is the only recorded misfire in the project -> Q774
+- 00001BEE: she is the one who buys 春花 clothes as a Christmas present and 五島 a parfait, and she is the one who says 「春花、それは強いのと違うと思うけど……」 to the masculine-register explanation. Her own register is unchanged
+- SHE VISITS HER MOTHER IN PRISON, 000020A8, and it is the only scene anywhere of the two of them alone as adults. She is twenty and it is August; 春花 has been gone three years. She has been told by a lawyer that she and 春花 are sisters and says so flatly, then 「どうせなら、もっと早く言ってほしかった」. What she works out she wanted is 「私、お母さんに『春花が大事』って言ってほしかったんだと思う」, and when her mother starts to apologise for having moved both girls she stops her: 「過去は過去だし、今はこれからのことを考えようよ」 — her mother's own move, used back
+- her register to 古郡茜 is plain タメ口 with お母さん, completely unchanged by a 無期懲役 sentence; she ends the visit with 「私は待ってるから。お母さんがいつか出てくると信じて……」
+- ALONE AND WORKING FROM HOME, 000020A2: 在宅の仕事, a transfer letter from 佐波刑務所, a thirty-minute drive, a licence at a counter and a two-line note written on the spot for a mother who has not arrived. The file ends on an earthquake and an undescribed 「何、これ……」 -> Q771
+- AS A SMALL CHILD, 0000208A: soaked in the rain with 春花, she is the one who notices that her mother dries her and not her friend — 「ねえママ……／春花ちゃんは拭いてあげないの？」 — and gets an excuse. She does not press. The reader has the reason and she does not -> Q782
+- HER CONVERTED REGISTER, 000020D8:8:29-8:45, and it is the surface-intact kind: 「ここ……すごくいいところだね。／まるで天国みたい」, then 「私には直感で分かるんだ。／ここは女神様に守られた場所。私たち、ここでずっと幸せに暮らすの」, then 「私がここで五島を殺す」. The address form 五島, the plain タメ口 and the flatness are exactly those of every earlier file; only the content moves. EN must not cool the voice -> Q396, Q857
+- SEEN FROM OUTSIDE AS AN IZAKAYA WAITRESS, 00002084: to the regulars she is なっちゃん, she buys ice and a lighter unasked, and she tolerates groping as a running joke. The 店長's account of her is the warmest anyone gives her anywhere — 「なっちゃんは色々な事情で、今を精一杯生きています。／だから、彼女には嘘臭さがないんです」 — and the 色々な事情 are a two-year coma he knows nothing about
+- 000021E2:901 — she appears inside the navigator's world and talks 春花 out of staying, over ~157 cells of two-voice dialogue with no narration. Her method is the whole characterisation: she refuses 「すべきこと」 and asks 「どうしたいかを聞かせて」 (901:51-901:52), states her own limit (「多分、私は春花を助けられないよ」 901:24), and makes her name the regret before she names the choice. She ends 「大好きだよ……」 and vanishes -> Q886.
+- 「この世界では、人の心が反映される」 (901:99) is hers, and she demonstrates it rather than argues it -> Q887.
+- 00002355: she is one of three sleepers who hear the 「――」 voice; it reacts to her with 「お前、生きてるのか！？　生きてるんだな！？」 and says her name, which it does to nobody else -> Q897.
+- 0000241B (order 408) gives her 四月病 its cause from the only witness: when 新村栄一郎 died she was showered in blood inside a 桜吹雪, does not remember it, and the doctor said that is why it is not quite a trauma. One cherry petal on a たこ焼き is enough to send her to the toilet. She then cleans the bath to prove she is fine, and silently shuts the window her mother had deliberately left open.
+- 00002427: she is beheaded on screen at 11:231, having first hugged the woman who came to kill her because she believed her.
+- 00002444: she is killed by the residents off screen, revived as a 神使 at the last moment, and spends the file hunting her own friends. This is the THIRD converted-なつみ in the project after 000020D8 and 00000F24:112, and it is the one seen entirely from outside
+- THE SURFACE IS PERFECT AND THAT IS THE SCENE: 「どこ行くの？」, 「春花、こんなところにいたんだ」, 「ごめんね、心配かけて」, 「うん、私はこの通り大丈夫だよ」. The soft タメ口, お母さん, 春花 bare and 五島 bare are all exactly as they are everywhere else, and what gives her away is physical — no sweat, no breathlessness, and a route she could not have walked -> Q396
+- 五島's three 「嘘だ――」 cells are answers to three ordinary sentences, and the EN must let the sentences be ordinary
+- SHE IS RETURNED, unconscious and covered in clear fluid, out of a swelling in a cave wall (00002444:32:213-32:219), and she does not speak again in the file. What was traded for her was a promise to find a stranger's mother
+- 00002473:11:185-11:196: she steps in front of 春花 and takes the nata. 幸太郎's narration says he tried to stop the swing and could not, that the impact felt wrong, and 「懐に何か固いものを入れていたのか？」 — he never learns what stopped it -> Q976
+- his reason for not wanting her dead is printed in the same block and it is arithmetic: she is the only living 第二世代, and making another would require splashing somebody with blood, which is too conspicuous
+- 00002478:11:35, 11:51: she is dead before the last file opens, killed by 春花 with a knife, reported in one cell by 茅萱
+- as-of: 00002478
+
+
+
+## 新村春花 (にいむら はるか, Haruka Niimura)
+- first_appears: 00000024:16:11 (spoken to); narrates 00000024:47 and 00000024:51; named on screen at 00000024:16:11
+- pronoun(s): 私 (watashi) — in BOTH narration and dialogue, despite otherwise masculine-blunt speech ("私の財布を何だと思ってるんだよ" 000001DB:15:36; "私にゃよく分からん" 000001DF:11:33). This mismatch is a deliberate character signal -> Q026. She never uses 俺/僕/あたし as of 000005AC. She keeps 私 even while dying (0000050E:11:169).
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: タメ口, boyish/blunt (俗に言うボーイッシュ口調). No 敬語 observed to anyone, including adults and including a police 警部補 to his face ("どうして？　さっきの取り調べではバカバカしいって……" 00000550:11:25).
+- sentence-final particles: ～ぞ ("大変だったぞ" 000001DB:21:36); ～だろ ("怒られるだろ？" 000001E7:11:5); ～な ("そうだよな……" 00000024:16:22); ～のかよ ("お前も来てたのか" 000001E3:8:16); ～わ once, rough-emphatic not feminine ("なつみのそれ怖いわ" 000001E5:23:9) -> Q026; ～じゃな as a goodbye ("じゃな！" 000001DB:15:43); ～だぜ from 00000366:11:80 ("私、魔女だぜ？") and 0000034C:11:185
+- copula: だ
+- verbal tics / catchphrases / fillers: 「よう！　調子はどうだ？」 her fixed greeting to なつみ (000001DB:15:28, 21:26, 30:32); 「あははごめんごめん！」 (000001DF:11:3); 「おいおい……」 (000001E3:16:4, 0000020B:12:75, 0000034C:11:185, 00000595:11:39); 「ほれ！」 (000001DF:11:63, 000004CF:12:0, 00000595:11:19); 「サンキュー！」 (000001DF:11:56, 00000595:11:56); 「くそ……」 her one swear-level word — this is her profanity ceiling; 「バカかよ」 heavy from 0000033D, aimed only at 五島 — until 00000550:11:112 ("どうして泣くんだよ！　バカかよ！"), where it lands on なつみ for the first time and is pure affection; 「ざまあみろ！」 NEW at 0000050E:11:172, spoken to the 死神 while dying
+- FIVE REGISTERS as of 000005AC. The translator must be able to tell them apart:
+  1. the everyday boyish voice (all of chunk 01, all of 00000595 and 000005AC's first half) — bright, imperative, teasing. Note that 00000595 and 000005AC are set EARLIER in the day than the collapse files, so this register is fully intact there.
+  2. the FLAT voice, first at 000002FA:11:35-59 — short questions, long pauses, a dead laugh 「はは……／は……」, probing 「もしかして、私が怖いのか？」. It snaps back to (1) without warning.
+  3. the 形相 / 魔女 voice, 0000034C:11:156-201, all of 00000366, and 000004E3:27:0-57 — louder, sneering, ～んだぞ／言ってみろよ／ははは, corrupted laughter written as 「はははははへははははへははは」 (27:12) and 「ハハヘハハハハヒアハハ」 (27:20), and self-mythologising 「私、魔女だぜ？」. Described as 「恐ろしい形相」, 「不気味な形相」 and at 000004E3:27:8 「魔女の顔だ」.
+  4. the CONFESSING voice, 000004E3:11:87-121 and 000005AC:11:78-88 — quiet, halting, no particles of emphasis at all. The SAME fact (her father is dead) is delivered in register 4 at 000005AC and in register 3 at 000004E3. Keep them audibly different.
+  5. the DYING voice, 0000050E:11:164-180 — broken mid-word across cells ("わ……たしはまだ……", "よ……"), still 私, still 「お父さん」, still able to taunt. Do not smooth the fragmentation.
+- dialect: none, but her register is deliberately rough/male-coded standard
+- EN correlates: contraction rate HIGH ("gonna", "c'mon", "yeah"); profanity ceiling LOW-MILD ("damn", "crap" — never stronger, and only where くそ appears); sentence length SHORT, imperative-heavy; formality LOW even to adults and police; vocabulary register casual-boyish, food and enthusiasm words ("ゴージャスなピザ" 000001DF:11:102)
+- comic incompetence (new as of 00000595:11:79-87): geography. She names the Natural History Museum and the Eiffel Tower as one country, then Chile, then Paris, then the Leaning Tower of Pisa and the Sagrada Familia. The errors are the joke; EN must keep the same landmarks and the same wrongness. -> Q069
+- narration voice (00000024:47, 00000024:51): plainer and flatter than なつみ's, fewer ellipses, more declaratives. She narrates a secret she is actively keeping ("でも、それはなつみには言えない……これは、私の心にだけとどめておく" 00000024:47:23-24). Slight self-mockery about her father ("お人好しな、お父さんらしいや" 00000024:47:22) — note the ～や ending, which does NOT appear in her dialogue.
+- TEXT-MESSAGE register (new as of 000002FA:19): short, unpunctuated-feeling, repeated imperatives ("助けてくれ。なつみを助けてくれ。なつみを殺したくない。助けて。" 19:10). She keeps 私 and keeps her blunt endings even in text.
+- narration voice, SECOND narrating file as of 0000066B (祀耀800年四月七日, one day before everything): the same plain flat declaratives as 00000024:47, but now warm and deliberate — she chooses a funny story to cheer なつみ up (11:40), leaves without waiting for thanks (11:48), and the file ends alone on the sofa with 「やっぱり……言えないよ……」 (11:52). The ～や ending of 00000024:47:22 does not recur here.
+- register 1 is at FULL strength in 0000066B and in the first half of 000005C1 — both are set before the collapse. Do not let the later registers bleed back.
+- SHE NARRATES THE WHOLE OF ORDERS 49-58 (00000682 through 00000761), one continuous run out of 0000066B. That is her longest stretch by far and it contains the story's biggest information drop. Do not let a translator working file by file assume 古郡なつみ is narrating any of them.
+- narration voice, the AUTOBIOGRAPHY mode, new and load-bearing as of 00000682: twelve years of her life in 224 cells, plain past, one fact per line, almost no ellipses, and NO self-pity. She reports her own murders in the same flat declaratives she uses for the weather (「それで特にいじめのひどい2人は私の前から消える。」 11:90). The two places the voice rises are both joy, not guilt (11:108-109, 11:114). EN must not add remorse words; the horror is the evenness. This is the same plainness as her 00000024:47 narration, run for a whole file.
+- narration voice, the PLANNING mode, new as of 00000697:8:94-138 and 00000761:8:50-65: numbered priorities, self-interruption (「いやこれじゃあ堂々巡りだ！」), and an imagined conversation with 五島 used as a thinking tool (00000697:8:115-121, set in 「」 with no hedge -> Q095). Short, impatient, self-correcting. She says outright that she is not clever (00000761:8:167).
+- narration voice, the COMIC-HYSTERIC mode, new as of 000006E0:16:166-187 and all of 000006F9: sports-commentary register aimed at takoyaki — 戦闘開始, 封印を解いて, 完全勝利, 作戦 vocabulary, and a self-title (「鬼才少女・新村春花」). Her exasperated asides stay in her ordinary boyish voice, so the two levels must be audibly different inside the same paragraph. -> Q098
+- her profanity ceiling holds through all of it: くそ at 00000697:8:56, 8:130 and 000006F9:17:188, ちくしょーーー at 000006F9:17:94. Never stronger.
+- she is a 3年生 (3年1組, homeroom teacher 谷崎) and 17; なつみ is a 2年生 and 16. 春花 is the OLDER of the two. -> Q105
+- known ambiguity / open questions: -> Q003 (RESOLVED at 000004E3:27:117 and again at 000005AC:11:78), Q026 (私 + わ), Q033, Q042, Q061, Q069, Q083, Q089, Q095, Q097, Q098, Q105
+- a SIXTH register, new and sustained as of 00000779:8:31-8:97 — she impersonates her grandmother for 70 cells in an old woman's 丁寧 with flat imperatives, and not one marker of her own voice leaks. It is a separate CAST block ("the 大魔女 voice"). The register drops back to her own inside one cell at 8:102. -> Q109
+- AS A CHILD (0000082F, aged 5): 「パパ！　100円ちょうだい！」 (11:46), and she cries over a spilled drink because 「ジュースさん、かわいそう」 (11:40) — grief aimed at an object, not at herself. It is the only time she speaks to her father alive.
+- the PRISON-VISIT register, new as of 000007A5:8:66-8:121: her ordinary boyish voice used at full volume to tell her mother she is still loved. 「バカかよ」 and 「ふざけんじゃねえよ！」 are aimed at a woman awaiting the maximum penalty and they are affection, exactly as at 00000550:11:112. Her profanity ceiling holds (くそ never appears here at all).
+- she says 「私が18年間生きてこられたのは」 at 000007A5:8:120, where she is 17 elsewhere. Do not reconcile. -> Q113, Q105
+- AS A FIVE-YEAR-OLD in the surviving branch (000008D0, 000008E8): she is the one who ends it. 「お母さんが魔女なんていやだ」 (000008D0:46:131) makes her mother lower the mace; at 000008E8:8:142-8:159 she shouts 「違う！　違う！　違う！　違う！」 and then explains that she never wanted the bullies dead, she wanted to go home to 元木町 with a mother who was well. She performs a counter-charm out loud (8:170-8:186). Her register here is a small child's, with none of the flat declaratives of her adult narration.
+- STORYTELLER register, new as of 000009CF:11:7-11:49: she tells the whole of the 00000682 backstory out loud as a fireside anecdote, in plain past, with the bullying, the 邪教徒 and the deaths removed and a 女神さま added. Warm, unhurried, and it ends on a direct thank-you to なつみ. The two tellings of the same years must stay audibly different. -> Q089
+- her MEMORY GAP is a fact of this branch and a hard constraint: an old scar under her hair, no recollection of why she came back to 元木町, and none of the strap on her phone (0000092D:11:90-11:105, 000009CF:11:42-11:44). She hedges every sentence about it with 「らしい」 and 「どうしてだったかなあ」. Do not let EN sound like she is hiding it. -> Q153
+- her profanity ceiling holds and extends by one word only: くそ, plus 「うっせえ」 and 「このクソガキ」 aimed at a ten-year-old (0000095B:35:52-35:55) and 「このコスプレババア」 at her grandmother (11:93). All of it is affection and none of it is stronger than くそ.
+- she is the only 新村 who behaves normally, and the narration says so: 「春花は新村家に残された唯一の良心だと確信した」 (0000095B:35:109). The joke is that the girl who is rough with everyone is the family's polite one.
+- SHE USES 敬語. The "no 敬語 to anyone" rule above has exactly one exception in the project and it is 00000B3F:11:34-11:67, a phone call to a police officer she has never met: 「新村です！」, 「私、今遠いところにいて、そっちに行けないんです！」, 「もう起こってるんです！」, 「本当に、感謝します」. です・ます for the whole call, no くそ, no お前. It is not politeness — it is her trying to be taken seriously about somebody else's parents. EN must make the register shift visible and must not make her sound meek. -> Q105
+- she NARRATES order 99 (00000B3F) alone, and the switch from 古郡なつみ happens at the file boundary with no marker. -> Q030, Q078
+- narration voice, the AUTOBIOGRAPHY mode AT SEVEN, new as of 00000A7C: she narrates a whole file as her seven-year-old self in plain past, one fact per line, and the quoted dialogue inside it stammers with awe at one adult (11:5-11:6 「さ、サクラさん……／こここ、こんにちは……」) — the only person in the project she stammers at. The narration is warm; the child is not. Keep both.
+- the MEMORY GAP is dated by this file: the head wound is already there at 00000A7C:11:4, ten days after 栄一郎's 三回忌, and 春花-at-seven already does not want to explain it (11:31). Still unexplained. -> Q153
+- a QUIET ANGER register, new as of 00000A62:11:51-11:57: she hauls なつみ back from a cliff edge with 「何やってんだバカ野郎！」 and then goes flat and soft inside two cells (「まあ……あとで話すからさ。ほら、こっちにこいよ」). No くそ in it. She also stops mid-walk and asks 「呪いって信じるか？」 and does not answer her own question (11:24-11:29).
+- she NARRATES 00000B57 and 00000B9F (orders 100 and 103), alternating file by file with 五島絵梨奈 to the end of the branch, with no marker at any boundary. -> Q030, Q078
+- SHE IS HIT, for the first time in her life, by her mother (00000B9F:11:18-11:36), and the narration goes flat and childlike for eighteen cells — 「子供に手を上げるのは、子供が悪いことをした時でしょ？／私……何も悪いことしてないのに……」 — and then she apologises without having been argued out of anything (「お母さんの態度が、そうさせただけ」 11:34). Same family as the DYING voice: short, plain, no ～ぞ, no くそ.
+- her profanity ceiling holds at the worst moment in the branch: 「くたばれ、このデブ！」 and 「離せこの野郎！」 (00000B9F:11:311, 11:313), shouted at a man holding her friend's ankle. The 3p insult of 00000989:11:104 arrives to his face and nothing gets stronger than くそ.
+- in the 00000BD6 branch she is the EXPLAINER, and it is a new job for her: she is the only one of the three who grew up with the 法要, so she narrates its rules flatly — the 下駄 and the silence (00000DD1:11:61-11:80), the 死神 definition (11:78-11:80), the knives and the mace (00000DE9:11:214-11:221) — and twice admits she does not know why (「うーん、何なんだろうな」 11:218, 「でもまあ私もよく分からないよ」 11:220). She apologises for not warning them about the arm-cutting (11:196).
+- she delivers a proverb, 「事実は小説より奇なり、だ」 (00000DD1:11:137), and the next cell flags it: 「珍しく春花が文学的なセリフを吐く」. Keep the mismatch visible.
+- she is the one who refuses the tidy answer: 「ばあちゃんがそう思ってるだけだろ？／　私はなんかしっくり来ないんだよなあ」 (00000D59:11:230-11:231) is what sends them to the cave, and the whole deduction chain of 00000DA1 follows from it.
+- she gets angry at 五島 for the first time in this branch and talks herself down inside three cells (00000DB9:11:51-11:58), then states the rule out loud: 「五島は本気だからああいう態度になった。／だから、五島にこれ以上かみついたりするつもりはない」 (00000DD1:11:3-11:4).
+- her profanity ceiling is not even approached across four files in this chunk: no くそ anywhere.
+- SHE NARRATES 00000E49:11:30-11:117 as an INSET inside 古郡なつみ's file, and 00000E61 whole. The inset's only seams are a line of her own dialogue (「うん、あの時さ……」 11:29) and a closing clause (「とまあ、こんな感じだ。」 11:118), and the first two cells of it repeat 00000E19:11:187 and 11:162 verbatim. -> Q220, Q221, Q030, Q078
+- her profanity ceiling is tested and holds by the letter: 「食らえ！　このクソブタ野郎！」 and 「この野郎……！」 (00000E19:11:148, 11:152), shouted while being held off the ground by the collar. An invented compound on くそ, exactly like 000006F9's invented compounds — not a stronger word. -> Q225
+- she takes the adoption reveal without moving: 「な、なつみが妹だろうが、私が誰であろうがどうだっていい！／　絶対になつみたちを守る……！」 (00000E19:11:185-11:186), and repeats it calmly a file later — 「私は新村美冬って言うお母さんが好きだし、なつみが姉妹でもそうでなくても、今までと変わらないさ」 (00000E49:11:132). Both times the sentence is about somebody else. Then she forbids 「お姉さん」 and loses (11:135-11:137). -> Q216, Q217
+- the register her mother gets in 00000E61:11:88-11:95 is her ordinary blunt one used to refuse an exit nobody offered: 「だからって家出しようとか思ってないからな！」, 「ずっと私のお母さんでいてくれよな？」, 「私のことを女手一つで育ててくれたじゃないか！」. No くそ anywhere in the file. Same family as the PRISON-VISIT register of 000007A5.
+- narration voice in 00000E61: her plain flat declaratives with the self-mockery back on (「ったく……。どいつもこいつも心配し過ぎだよ……」 11:98) and one uncharacteristic abstract statement she means — 「私たちは3人でいてこそ、今の私たちでいられる」 (11:53). She names her own 女ケ沢 years and 五島's shell in one sentence and gives なつみ the credit for both (11:50-11:52).
+- the LAST THING THAT HAPPENS TO HER in the branch is done to her eyes, off-page: 五島 stares, turns a phone camera round as a mirror, and she says 「なんだよ、これ……！」 (00000E61:45:27-45:38). Nothing is described. Do not let EN hint. -> Q222
+- HER SECOND USE OF 敬語, and the first one face to face: 00000E7B:88:192-88:220, to 五島桃子. です・ます throughout, no ～だぜ, no お前, and the content is an apology for her own mother — 「あの……／私が言うのも変ですけど……／母が、本当にすみませんでした……」 and 「桃子さんにどれだけ詫びたって許されないのに……」. Her CAST says she uses 敬語 to nobody; 00000B3F was one phone call, this is a conversation. Both must be visible in EN.
+- the RESCUE register, 00000E7B:88:164-88:183: 「よう夏菜！　助けに来たぜ！」, then she takes the attackers' argument apart in five turns — 「何が呪殺だ！　実際に人を殺したのはどっちだよ！／　夏菜が誰を殺したって言うんだ！？　言ってみろよ！」 — with no insult and no くそ in any of it, and then organises the evacuation of the people she has just crippled (88:226-88:233).
+- IN 00000E95 HER LEFT EYE IS GREEN, from 荒田 onward (11:31, 11:42). She blames her head being pushed into the cave ceiling (11:35-11:36), the hospital found nothing, and she is openly unsettled by it while joking about it.
+- she is joining the 古郡 household: she tries 「お父さん、お母さん」 once, is told 「今まで通りでいいのよ？」, laughs and leaves the room (00000E95:11:63-11:69), and at the front desk she gives her surname as 「新村……いや、古郡って言いますけど」 (11:122). -> Q246
+- she asks for a guard rail, shouting it at the sea: 「もし、私がそんな間違いをしそうになったら、絶対に止めてくれよなー！」 (00000E95:11:185), followed by 「人を踏み台にして築いた幸せなんて、そんなの絶対に幸せなんかじゃない」 (11:190). It is the longest serious statement she makes anywhere, and no echo comes back.
+- 00000EC7: four lines at the end of the file, her ordinary blunt register with no くそ in any of it. She reports that she and 古郡茜 have agreed to leave things as they are (11:271), looks at the sleeping woman who gave birth to her and says 「この人が私を産んでくれたんだよな……。まだあんまり実感ないけどさ。／でも、お母さんが2人いるって、よく分からないけど、なんか嬉しいもんだな」 (11:273-11:274). The 00000E95 attempt at 「お母さん」 did not stick and she is back to おばさん.
+- the branch's last cells are hers: her phone rings at 22:30, it is 新村美冬, and after three cells of listening she says 「は！？」 and the file ends with nothing described. -> Q278, Q222
+- in 00000EDF she is the one who holds the line and she does it in four registers she already has: the RESCUE-adjacent protective one (「何謝ってんだよ……。お前は正しいことをしたんだよ」 89:15), the flat comfort of 「五島……／お帰り」 (89:73-89:74), the ordinary boyish teasing (「お前におごった分回収するまでは、存分に利用させてもらう！」 117:89), and a joke proverb delivered straight — 「まあ、人生山あり谷あり、人間万事塞翁が馬、だ！」 (53:12), quoted back at her in the file's last paragraph. Same pattern as 00000DD1:11:137.
+- SHE ANSWERS THE TWO WORST QUESTIONS WITHOUT A PAUSE, 00000EDF:202:40-202:47: 「もし……／私が夏菜ちゃんたちを殺したら、どうしますか？」 / 「殺さなきゃいけないほど、五島が苦しんだってことだろ？」 and 「もし、古郡先輩を殺したのが私だったら……？」 / 「それだけの理由があったんだろ？／　理由を聞かずにお前を見捨てたりしない」. The narration says she answers 「間を入れずに」.
+- her mother is dead in this branch and she does the grieving offscreen: 「私には、五島がいるからさ」 (117:87) and 「気にしないでくれよ。あんなことがあったんだから、葬式ができないのは仕方ないさ」 (89:40). 五島's narration notices that she is being deliberately bright and wonders whether it is for her benefit (53:19-53:21).
+- inside the nightmare she is the one who condemns: 「人殺し……！／　人殺し！」 and 「なつみを殺したのもお前なんだろ！」 (89:267-89:271), shouted at the person she has just been holding. It is the only time she is cruel to her anywhere, and it is not real. Do not let EN soften it and do not let it colour the waking scenes.
+- her ordinary voice used on a mother's killer's family, 71:34 「五島はお母さんのために来てくれたんだ。私のかわいい後輩だよ」 — 古郡なつみ's exact phrase from 00000473:11:33, in 春花's mouth, in a branch where なつみ is dead.
+- SHE IS COMATOSE FOR THE WHOLE OF 00000EF6 and has THREE cells of real speech in 2,717 lines: 8:113 「な……つみ……」 and 8:129-8:130 「な……つ……み……／お……はよう……」, in a voice the narration describes as 「声帯が潰れて空気の抜けるような声」 (8:131). Everything else attributed to her in [140], [134], [110], [67] and [61] is 古郡なつみ's hallucination and has its own CAST block ("the imagined 新村春花"). Do not merge the two. -> Q318
+- the REFLEX voice, 00000EF6:36:82-36:135, and it is not speech: 「死ねえええ！　なつみ！」 repeated eight times inside one cell on an hourly cycle, then 「なななつななつつつなななつつみみみなつつ――」 as the name comes apart, delivered 無表情 with the brain confirmed comatose. The narration compares it to a broken record (36:83) and a programmed machine (36:134), and explicitly contrasts it with the 000004E3 / 0000050E 形相 voice, which had feeling in it (36:132). EN must strip every trace of intent. -> Q335
+- ONE EYE TURNS GREEN while she is unconscious (00000EF6:36:154, 50:14) and it is still green at the end of the branch (8:176). It arrives at the moment the drug transfers and nobody ever explains it. Same feature as 00000E95:11:31. -> Q233
+- the WAKING register, 8:113-8:190: three broken words, then a month later a normal voice that is still hers — 「まあ、困ることはないし、これでもいいよ」 (8:178), 「ちぇ……」 (8:215), 「約束する」 (8:223). Her ～ぞ and ～だろ survive; くそ does not appear anywhere in the file
+- she wears the 能面 to the grave and asks for it herself (8:160-8:162), calling it 新村家の風習, in a branch where she has no family left to have learned it from
+- 00000F0D: she does not appear. Her only lines in the file are inside the ~55-cell precognitive vision at 44:207-44:237, where a stranger who has never met her imagines her refusing rescue at knife-point: 「お前ら！　来るな！　来るんじゃない！」 (44:207), 「五島、私はここに来て変わったんだ」 (44:214), 「私の親は新村栄一郎とここにいるお母さんだけだ。／血のつながりなんかよりも、お母さんの方がずっと大事だ」 (44:222-44:223). The register is her everyday boyish one, reproduced exactly, including ～だろ, お前ら and the absence of くそ — and none of it happens. The vision is not a dream, not an impersonation and not framed; it is presented as the true future and is then averted. Do not give it a separate voice and do not let the EN hedge it. -> Q355
+- the adoption is stated to her face inside the vision (44:219-44:221) and her answer is the same as in every branch where it is stated for real (00000E19:11:185, 00000E49:11:132). A character who is offscreen for 2,717 lines is nevertheless consistent. -> Q216
+- offscreen facts: she has been in 山籠 in 荒田 for four years with her adoptive mother (14:187), she is 21 if alive (38:37), she is found within a day of the settlement being searched (44:206), and she is not at the table in [68] because it is the day of her mother's verdict (68:152).
+- SHE NARRATES 00000F24 ALONE (order 139, 3,564 lines), her longest stretch anywhere and her first as a twenty-year-old, with no narrator switch at any seam. The voice is the AUTOBIOGRAPHY mode of 00000682 run for a whole file: plain past, one fact per line, few ellipses, no self-pity, and it stays level through her own mother's corpse, two friends' deaths and a settlement of embryos. Her ～や ending does not appear. Two inset passages are handed to other voices without a frame and handed back the same way (64:66-64:85, 187:11-187:37). -> Q400
+- a SURVIVAL register, new and sustained, 00000F24:70 and 112: she reports her own competence flatly and technically — boiling rabbit in a hot spring with crushed nuts, brushing her teeth with softened wood fibre, an internal clock she trusts to the hour (112:4-112:5), and a five-sense sweep set one sense per cell (100:11-100:21, repeated as a damage report at 130:88-130:102). It is the same instrument as 五島's DETECTIVE mode, pointed at terrain and at her own body. No boasting anywhere in it
+- her PROFANITY CEILING holds across 3,564 lines and is tested harder than anywhere else: くそ repeatedly, 「ちくしょうーー！！」 (82:2), 「このクソガキ」 does not appear, and the worst thing she produces is a run of school-yard insults aimed at a silent masked figure — 「意気地なしの般若さんよ」, 「ブッサイクなご尊顔」 (88:99-88:101). She is abusing her own mother and does not know it. -> Q391
+- she STRIKES 古郡なつみ (112:226-112:228, blood from the mouth) and then knocks her unconscious (112:303), and she does it after being told 「私は春花を嫌いにならない」. The narration gives the blow no build-up and no aftermath, and she is warm to her again at 94:37 the moment なつみ is herself. Do not let EN dramatise either half
+- the ONE-QUESTION TEST, 112:291-112:299, and it is the best piece of thinking she does in the project: with the needle already on her skin she asks whether 五島 has joined yet, proposes doing it in front of her, and gets 「五島はいらない」. Three words end it. She names what she did afterwards in one cell. -> Q392
+- she is the EXPLAINER again and it goes wrong: she answers 「その神使って、何なんだ……？」 with nothing (64:86), has to be told what 神使 means by 五島, and repeatedly says outright that she cannot follow the reasoning — 「私の頭じゃこれ以上の推理は無理だ」 (130:118), 「私の頭じゃさすがについていけないからさ」 (100:221). In her own branch's biggest exposition scene she is the audience
+- her ADDRESS FORM for her own mother stays お母さん through a corpse that talks, and she argues with it: 「生きてるじゃないか！　こうやってちゃんと生きてるじゃないか！」 (142:180). She calls her dead father こいつ once (142:194) and お父さん thereafter, with no warmth in any of it
+- IN THIS BRANCH HER MOTHER IS THE 白般若 and 春花 spends ~500 cells taunting, kicking and thanking a figure she cannot identify. The 白般若 has its own CAST block. Do not let the EN of the fight scenes hint
+- HER ENDING, 193:114-193:138, and it is the only ending in the project where she survives alone: she burns the two mummies and the meeting hall, goes back up 糸姫山, and lives there for years. The last six cells say she sees なつみ, 五島, her mother and 夏菜 constantly, that she knows they are hallucinations, that they vanish if she looks hard, and that she has decided to live on them anyway — 「例え幻であっても、私はそれに甘えて生きていくことにする」. Her register is unchanged: plain, level, no self-pity. Do not let EN turn it into a ghost story and do not let it turn into a breakdown. -> Q397
+- SHE NARRATES 00000F40, 00000F57 AND 00000FB7 (orders 140, 141 and 145) in the 00000BD6 branch, three files out of six, alternating with 古郡なつみ and 五島絵梨奈 at every file boundary with no marker anywhere. Her register is the ordinary plain-flat declarative with the self-mockery on, and it is the most relaxed she is in the project: a whole file of sightseeing in a hotel, a comic bath scene, and one grave. -> Q030, Q078
+- the DOMESTIC-COMEDY mode, new, 00000F40 and 00000F57: she describes a wedding party, an indoor stream and a floor of drunks in level declaratives and keeps interrupting herself with jokes at her dead father's expense (「壮大な間抜けエピソードが尽きない人みたいだったし」 00000F40:11:47) and at 古郡良治's (「ったく、冗談は顔だけにしろよ……」 11:40). No くそ anywhere in either file
+- she attempts 「お父さん、お母さん」 on 古郡なつみ's parents once (00000F40:11:17), is told twice to carry on as before, and abandons it inside eight cells; at the front desk she still corrects herself mid-sentence — 「すみません、新村……／いや、古郡って言いますけど」 (11:116-11:117). The same self-correction as 00000E95:11:122, one file later and no further along -> Q246
+- she SCREAMS, 00000F57:11:46-11:47, and the narration flags it as out of character: 「私は人生で初めて女の子らしい、きれいな悲鳴を上げた」. Her ～ぞ／～だろ come straight back for the bucket-throwing (11:59-11:68). EN must let the scream be a genuine break and not a joke about her gender
+- SHE IMAGINES A 36-CELL SCENE AND THE TEXT DOES NOT SAY SO UNTIL IT IS OVER: 00000F57:11:96-11:131 is an arrest, an interrogation, a tearful farewell and a promise, and at 11:131 she says 「我ながら、くだらない妄想をしてしまった……。」 It is the imagined-conversation tool of 00000697:8:115-8:121 run for thirty-six cells with no 「」-frame and no hedge at the start -> Q409, Q095, Q355
+- the LIE, 00000FB7:11:95-11:107: she cuts her mother off mid-sentence, laughs, and the narration says flatly 「私は嘘をついた」 — she did not want to hear any more about the sister. Two cells later her mother's look triggers an UNFRAMED childhood flashback (11:105-11:125) whose only marker at either end is the same look. EN must not frame it
+- she shouts at the sky, twice in two branches: 「なあ姉さん！　私たちのお母さんは世界一だぞ！」 (00000FB7:11:133). Same device as 00000E95:11:185, same volume, and this time an answer is not expected
+- SHE DECIDES TO LEAVE AND THEN DOES NOT, and the decision is real while it lasts: 00000FB7:11:148-11:223 is her working out alone in a bath that she is the only one whose going costs nothing, that she will enrol out of school first and tell her mother afterwards (「無理やりでも既成事実を作って」 11:173), and that she will not back down (「私は――絶対に、退かない」 11:170). The file ends 「みんな……／さよなら。」 and the next file cancels all of it
+- her CRUELLEST line to 五島絵梨奈 anywhere: 「お前だって、こことは関係ないだろ！／　無関係のやつは黙ってろよ！」 (00000FCF:11:54-11:55). 五島 punches her in the face and they wrestle. Neither of them mentions it again in the file, and eighty cells later they are in the same futon
+- she RETRACTS the whole decision as a joke, 00000FCF:43:1-43:17, and does it loudly enough that nobody can ask her whether she means it: 「あーあ！　最後の最後で幽霊のモノマネかよ！／　私がここに住む？／　冗談だよ冗談！」. Her profanity ceiling holds through it and through 「黙れこのコスプレババアーー！！！」 (39:0), shouted at a dead woman
+- AT SIX, 0000110D:8:72-8:142: 「あはは！　チガ姉！　もう元気になったの！？」, 「えへへ、ありがと！」, 「バイバイチガ姉！」 — the bright register with none of the boyish bluntness yet, and チガ姉 already fixed. This is the earliest she appears anywhere
+- HER HAIR IS SHORT AND HER HEAD IS INJURED: 茅萱 touches it, 春花 jerks away with 「あ、痛！」, evades the question with 「あ、うん……ちょっとね……」, and runs off. Nothing in the file explains it and nobody follows it up. It is the same scalp injury the 00000E95 branch resolves twelve years later
+- she and her mother leave 荒田 in the middle of the search for 新村サクラ, that same afternoon, with a distracted high five through a car window; 春花 herself only learns they are leaving when her mother says so
+- SHE NARRATES ORDERS 164-168, 170 AND 171 (000011CC, 000011E3, 000011FA, 00001214, 0000122E, 0000125E, 0000127A) — six files out of eight in a run, with 五島絵梨奈 taking 00001247 in the middle of it and 古郡なつみ taking 000012AD onward, every seam a file boundary with no marker. -> Q030, Q078
+- narration voice in this run: her plain flat declaratives with the self-mockery switched OFF and no comic mode anywhere. The 「ノーリスク・ハイリターン」 inversion (000011E3:8:223) is the only joke she makes in seven files, and it is aimed at herself. Her ～や ending does not appear
+- she is the DECIDER of the branch and she says her reason out loud once, in narration and not to anyone: she does not care about 元木町 or 荒田, 「純粋に、この2人が好きだから放っておけない」 (000011E3:8:213). The same shape as 00000E61:11:53 and 00000E95:11:190 — a general statement she means, delivered where nobody hears it
+- the ARGUMENT WITH HER MOTHER, 000011E3:8:158-8:200, and it is the first time she wins one against her: her ordinary blunt register at full volume in a car, no くそ anywhere in it, and the winning move is not about herself — 「だったらなつみはどうなるんだよ！」. Same family as the PRISON-VISIT register of 000007A5
+- she is the one who FINDS THE FLAW in 五島's search, twice in one chunk: that 茅萱 must have read a book in modern Japanese because she could not read the others without help (00001214:8:111-8:118), and that a bunch of keys she was carrying could open the locked grille (0000125E:8:60-8:63). Neither is deduction; both are her knowing her own family. She still says she cannot read the books herself (00001214:8:99-8:102)
+- her profanity ceiling holds across seven files: くそ twice (000011E3:8:144, 0000127A:8:58) and nothing stronger, including while her mother disappears
+- SHE IS ASSAULTED BY 新村茅萱 and does not fight back, 0000127A:8:141-8:164: thrown down, straddled, her mouth held shut, blood dripping off the other woman's face onto hers, and she reasons in three cells that complying is the better move whether 茅萱 is lucid or not. Her answer is one cell containing 「――――」. Do not let EN supply a word -> Q509
+- her NEAREST THING TO A COLLAPSE is 00001214:8:255-8:256, where she simply sits down on the floor of the 蔵 on hearing her father's voice carrying a woman out, and the next file says flatly that she did nothing for the rest of the night and that 五島's not knowing either of the dead is 「とても意義のあること」 (0000122E:11:7-11:11). She names her own state as 無力感 (11:32) and it is the only time she uses an abstract noun for herself
+- 000013CD:8:168-8:196: ambushed by her own cousin on a slope, hip-thrown, sat on, silenced with a bloodied hand, dripped on, and given an instruction. Her only two utterances are 「チ……チガ姉。無事……だったんだな」 (8:171) and 「チガ姉、今までどこに行ってたんだよ！　みんな心配してたんだぞ！」 (8:177). Her rough タメ口 is intact in both
+- HER LAST CELL IN THE FILE IS 「――――」 (8:190) and nothing else — the same four dashes as 0000127A:8:160 in another branch, again with a hand over her mouth, again as an answer she cannot give. The narration says she nodded -> Q556
+- she is offstage for the rest of the chunk; the reader is told twice that she and her mother went to the hut and is never shown them arriving
+- SHE NARRATES 00001442 AND 00001459 (orders 190 and 191), taking the frame from 五島絵梨奈 and handing it to 古郡なつみ, both seams file boundaries with no marker. -> Q030, Q078
+- SHE RUNS AWAY AND NARRATES IT, 00001442:11:95-11:165, and it is the most exposed she is anywhere. Her mother orders her out with 「春花は足手まといよ」; she goes; and then forty-five cells of her own commentary on going — she names the rescue errand as a pretext her mother invented (11:123-11:124), names herself flatly (「そう、私は今、逃げている」 11:117), says outright that she wanted not to be in danger and that somebody else could have been (11:137-11:139), and beats her fist into the ground until it bleeds. Her register is the AUTOBIOGRAPHY mode of 00000682 with the evenness gone
+- the ARGUMENT SHE MAKES AGAINST HERSELF, 11:144-11:152: she recalls an unattributed maxim (animals flee, so fleeing is not shameful), sets it out in three bare cells, and demolishes it with bees defending a hive against hornets. It is the only time in the project she argues a general proposition, and she is arguing it with herself -> Q573
+- 「どうして私には、何も取り柄がないんだよ！」 (11:157) — the complaint her whole branch is built on, said once, alone, at full volume, to nobody
+- she MEETS 新村サクラ, ten years dead, and she does not flee: six cells of 敬語 (「あ……会いました……」), then her ordinary rough タメ口 for the rest of the scene after being told to drop it. She asks the questions in order, accepts the answers, and turns round on one sentence of her own — 「私には、今聞いたことをみんなに伝える義務がある！」 (11:303). The thing she could not find at 11:157 is an errand
+- she THINKS IN LISTS NOW, 00001459:8:41-8:43: a two-item 「・」 bullet summary inside her own narration, which is a device her cousin and her mother use and she never has -> Q552
+- SHE SOLVES THE BEHEADING, 00001459:8:153-8:177, and she solves it because she has just had an impossible experience: holding someone by the wrist cannot look like pushing them, the motive makes no sense either, therefore the man 新村エリカ saw was not 幸太郎. She puts it as a question and lets her grandmother say the name. It is the only deduction she completes anywhere
+- her closing regret is the chunk's thesis and she states it in her own narration: they should have pooled what each of them knew instead of hiding things, and the fear of being watched cost them more than the watching (00001459:8:256-8:261)
+- her profanity ceiling holds across four files: 「くそ……！」 twice (00001442:11:113, 11:140) and 「くそ！」 once (11:162), all three alone in the dark, and nothing stronger
+- at the summit she is the one who refuses the corpse's framing: 「なつみ、こんなつまらない話、聞く必要ない」 (000014D7:8:52), 「あったりまえだろ、この偽物！」 (8:116), 「な、何言ってるんだよ……！」 to 新村サクラ (8:221). Her address form for her father stays お父さん in 3p and 偽物 to his face, the same split as 00000F24:142:194
+- 000014EE: she is the loudest voice against mercy and the first to use violence on the antagonist — she kicks her in the shoulder for going for her mother (16:177-16:178), stamps on her hand and grinds it (16:197). Her profanity ceiling holds: ふざけんな and くそ and nothing stronger
+- and she LOSES THE ARGUMENT AND CONCEDES IT, which she has never done: 「もう好きにしろよ……。／野蛮人だのなんだの言われた上にこんな話されたら、何もする気起きないわ……」 (16:377-16:378). She does not change her mind, she stands down, and the file lets both be true
+- SHE SOLVES THE LAST THING IN THE PROJECT, and it is the second deduction she has ever completed (after 00001459:8:153-8:177): if the man has been bones for centuries and the thing has been animating corpses all along, then it knew he could not be revived, so it was never going to (000014EE:16:404-16:413). She puts it as a question, as she did at 00001459, and lets 五島 finish it
+- her address form for her adoptive father is unchanged and it is what she gets out of the ending: she says 「お父さん」 to his face for four cells before he goes to bone (0000151C:8:367-8:371), and what she tells him is that she is doing well
+- 00001533: the comic register is back at full strength — a 受験生 complaining about a mother who has turned into a 教育ママ, buying 五島 an ice cream after calling her a hyena, and inviting なつみ to 荒田 in the summer as a tourist. 「生まれ育った町は何よりも愛しいさ！」 (8:35) is the only sincere line she has in the file and she asks for agreement immediately after it
+- 0000156A (order 202): she is 33, looks 20, and has no memory after 祀耀802年四月八日. Her everyday boyish register is completely intact after thirteen unconscious years — ～ぞ, ～だろ, ～だぜ, 「おいおい」, 「はは」, and her first act on being told the world has moved on by thirteen years is a height joke at 五島's expense (8:171-8:173). Her profanity ceiling holds: no くそ anywhere in the file
+- her ACCOUNT OF HERSELF, 8:45-8:68 and 193:76-193:113, is the AUTOBIOGRAPHY mode of 00000682 again: plain past, one fact per line, no self-pity, including her mother dying of what ドローガ did to her body on the drive to 荒田 and a doubled two-year 山籠 undertaken out of self-hatred — 「私に関わった人たちは不幸になる。／自分の弱さが本当に憎かった」 (193:105-193:106)
+- SHE NARRATES 38 CELLS INSIDE ANOTHER WOMAN'S FILE, 193:76-193:113, handed the first person with no frame at either end and handed back the same way. Same device as 00000F24:64:66 and 187:11 -> Q642, Q400
+- the 神使 REGISTER, and it is the reason this file is hard: after killing her best friend by pulling her heart out she is warm, ordinary and apologetic in her own voice — 「悪いとは思ってるよ。でも、こうしたらさ……」 (193:65) — and she calls fifteen shot soldiers people she has asked to return to the earth (193:132). Nothing in the grammar changes. This is the CONVERTED register of 00000F24:112 with the conversion complete rather than fresh, and EN must not cool it or make it eerie -> Q396, Q667
+- her ADDRESS FORM for 古郡茜 moves for the first time and holds: おばさん corrected out loud to 本物のお母さん (193:125-193:126), and then the only request she makes anywhere — 「私、お母さんに抱きしめてほしい」 (201:53). Her CAST has recorded two failed attempts at お母さん in two other branches; here it succeeds and it is a trap -> Q246
+- 「お母さん」 for 新村美冬 is unchanged throughout, including for the corpse walking about 元木市
+- SHE HAS A SECRET AND IT RUNS ACROSS SIX FILES: repeated hospital visits she will not explain, in 0000172F, 000017E2, 000017FA, 00001835, 00001A52 and 00001A74. Twice she is caught coming back and bolts mid-sentence (「あ！　急用思い出した！　じゃ、じゃあな、なつみ！」 0000172F:8:30). Her mother refuses to say; her doctor calls it 「あっちの方」 and outside her speciality. Nothing in the chunk names it -> Q693, Q729
+- HER OWN ACCOUNT OF WHY THE FAMILY MOVED, 00001A7F:8:32: 「私、前の学校でちょっといじめられてたことがあるもんだから、お母さんちょっと敏感なんですよ……」, said to a teacher, lightly, to cover for her mother. She was bullied at a school in 女ケ沢市 and they moved to 元木町 three years before. It is the plain-world version of the 00000682 material and it is stated once -> Q089, Q090
+- her REFLEX IS TO DEFEND THE OTHER PERSON, three times in two files: she covers for her mother's interrogation of the teacher, explains away the alcohol (「お母さん、私を育てるために昼も夜も、仕事も選ばず働いて、家事までやってるから……」 8:65), and asks the teacher not to think badly of her (8:72). Her doctor names it as a fault and prescribes against it — 「春花ちゃんは、ちょっと周りの人を大切にし過ぎじゃないかしら？」 (00001A52:8:23)
+- she goes to an 入学式 with food poisoning against medical advice because 「仲のいい後輩が入学式の挨拶をするんで……」 and wants to stand her 後輩 something at the festival stalls as an 入学祝 (00001A52:8:8-8:16)
+- ACADEMIC PROFILE, stated by her twice: strong in 国語, 地理 and 日本史, below average in English and every science — 「理系のステータスを文系に割り振り過ぎたんだろうな」 (00001A5C:8:16). Her method is looking at online maps and street view for fun until the knowledge sticks (00001818:8:9-8:15). She scores 90 and is annoyed
+- SHE ORGANISES AGAINST A STAFFROOM CAMPAIGN, 00001A5C:8:54-8:60: told that 谷崎's colleagues are freezing her out, she names it 教師いじめ, names the route (教育委員会, then the PTA), and says 「私はそういう曲がったことが大嫌いだからな」 — and then stalls when asked why she knows the procedure -> Q730
+- she says she would rather not lean on 五島 and that feeding her would cost more than cram school (00001818:8:24-8:27)
+- the 俺-adjacent blunt タメ口 with ～ぞ／～な／～だろ is unchanged throughout, including to adults; 敬語 appears only for her doctor and for 谷崎
+- SHE IS THE MENU NAVIGATOR. 00001CA0:144:0-144:3 — 「わたくしは――／新村春花と申します。／様が今までご覧いただいた、新村春花と同一人物です」 — and 立木三日 is an admitted 偽名. Every navigator file from 000000F2 onward is her. The identity is ASSERTED, so the navigator keeps its own block and the two cross-reference; do not merge the voices and do not split them into different people -> Q763, Q682
+- WHAT SHE DID: she stabbed 古郡なつみ to death with a knife taken out of a cupboard, seized by 殺意 「まるで呪いをかけられたかのように」, and says she does not know why. One of her eyes turned green at some point during it, 「チガ姉や、夏菜のように」. She was restrained immediately and came to herself only on registering the death (00001CA0:64:0-64:11, 144:7-144:12)
+- the denial made the world: 「自分の住む世界から――／立ち去りたかった」 (202:17-202:18), and 206:0-206:3 says the world she guides the player through is what that refusal produced. She reviewed her own surviving route alone until it felt empty, then wanted somebody from outside it to share the happy ending with; the player was the first to arrive; she called herself 案内人 and apologises for having used them for her own 自己満足 (206:4-206:21)
+- her REGISTER AS THE NAVIGATOR is 最上級敬語 and わたくし throughout and it is a costume. It cracks three times: 00001C8C loses ございます entirely for a whole file (「いいから！　もうそれ以上はやめろ！」), 00001CA0:64:10-64:11 switches to 私 for two cells at the memory of the killing, and 00001EB4:83:2 breaks into her own voice for one cell — 「って、バカかよ！　んなわけあるか！」 — and is apologised for as 「素の話し方」. 「バカかよ」 has been hers since 0000033D -> Q764, Q765
+- she LEAKS IT EARLY, in three files before the reveal: 「私の母」 at 00001D5F:91:3, 「私が幼少の頃に耽っていた呪い」 and 「母」 at 00001E0F:42:4-42:5, and 「わたくしのために、なつみがボロボロになりながらも献身的に支え続けてくれた。……なつみ……」 at 00001E1B:42:2-42:4 -> Q820
+- she DENIES THE GREEN EYE while having one: asked about 新村春花's eyes at 00001C43:71:0-71:3 she answers that eye colour changes with illness or injury and 「そんなに気にすることでもないと思いますわ」. Seven files later the reveal says she acquired hers by killing -> Q763, Q702
+- AS A SMALL CHILD, 00001B98: she transfers into a 元木町 primary class 「2年ぶりに元木町に戻ってきました」, is recognised by nursery classmates, is asked whether her hair used to be longer, and says almost nothing. Her narration voice does not exist yet and her lines are four hesitant cells
+- AS A SMALL CHILD, 00001FE9: she answers the door to two police officers and announces 「犯人は私です！」 twice, produces a 紙人形 and reads 久慈浩二 and 畑中ここな off it, then hides it from her mother with 「何でもない！」. The officers file it as attention-seeking -> Q144, Q089
+- 00001D3B: her mother assesses her after two years of 山籠 — 「茅萱ちゃんや夏菜ちゃんには及ばないかもしれないけど、それでも立派な荒田の女になった」 — and she asks for it first (「私、強くなったよな？」). The everyday boyish register is intact and her one insult, 「あんな 猿 たち」, is aimed at the residents -> Q787
+- 00001D17: at about five she performs 『おひめの歌』 at a New Year party on 新村サクラ's instruction, having been coached, and announces herself before singing -> Q789
+- SHE CHOOSES THE 山籠 AT HER MOTHER'S FUNERAL, 000020B4:8:38-8:56, and it is the origin of her three-year disappearance. Her reasoning is not ritual — 「いや、儀礼だからってわけじゃない。／私は自分を鍛えたい。／いつまでも泣き言を言うだけの、弱いやつになりたくない」 — and the cause she gives is her mother: 「お母さんはお父さんが死んでからずっと1人で重荷を抱えていた！／　私が強かったら、こんなことには……！」. 新村サクラ tells her it is a hollow rite that 新村エリカ meant 美冬 to be the last of, and advises against it twice
+- THE NO-CONTACT CLAUSE, 8:55-8:56, and it is why 元木町 hears nothing for three years: 「元木町の方には、連絡しないでおいてほしい。山籠が終わったら、自分から連絡するからさ。／自分が納得できるまで、誰にも会うつもりはないから」 -> Q854
+- her register at the funeral is unchanged — blunt masculine タメ口, サクラさん, 「なあサクラさん、私はここに住んでいいんだよな？」 — and the only thing that moves is what she says about herself: 「私に関わる人って、みんな不幸になるよな……」 and 「私、弱いからさ……」
+- she refuses a confession she does not want: told 「私ね、10年前に――」 she cuts it off with 「10年前の話をしたところで、お母さんは生き返らない」. The reader knows what she is refusing and she does not -> Q778
+- AS A SMALL CHILD, 0000208A: soaked, not dried, left to sneeze, and given the 「お姉さんだから」 excuse. Her whole part is 「う、うん……」 and a sneeze; she does not notice and 古郡なつみ does
+- 000021E2: a SECOND 新村春花, from another dimension, enters the navigator's world and negotiates with her. Identity is asserted on screen, so under the chunk-17 rule this stays one block; the register is her ordinary one (私, blunt タメ口, 「ははは」, 「お前」) aimed at her own masked self -> Q885. Her errand in her own world that morning is burying the かんざし with なつみ and 五島 (53:24), which places her in the 00001533 aftermath.
+- in the block where she is argued into going home she gives the project's clearest statement of its own moral: six tragedies in six cells, each 「大切な人を守りたい」 turning into a killing, ending 「みんな、悪魔のささやきに耳を貸してしまった」 (517:4-517:11).
+- 000021E2:901 — なつみ appears and refuses to tell her what she should do, asking instead what she wants; 春花 answers 「強くなりたい」 and works out that keeping a promise is how. After なつみ goes she laughs, calls her an idiot four times and shouts 「だったら泣くんじゃねえよ！」 — the anger is the grief and the EN must not tidy it.
+- 00002225 (order 394): she wakes from the coma, refuses 五島's offer of an external cause with 「私が殺した。これは紛れもない事実」, and hands her the 糸姫 errand. Years later she is never tried, watches clouds in cherry season, and says 「ここが私のいるべき場所なのだから」.
+- HER REGISTER SOFTENS PERMANENTLY AND THE TEXT SAYS SO: 五島 tells her she has become 女性らしい; she blames her hair, then admits 「ちょっとでも強くありたかったからかな」 and 「さすがに言葉遣いはなかなか変わらないけどな」 (00002225:11:137-11:147). Tone changes, diction does not -> Q890, Q026.
+- 00002340 (order 400): the converted route. She returns to 祀耀800年五月五日 with foreknowledge, summons her dead father, trades 「生きた第一世代と第二世代」 for なつみ's resurrection, injects 五島 and makes her beg, and talks her mother into it on the word 家族. Her surface register does not move at any point -> Q895, Q396.
+- 0000240C (order 407): she narrates the 呪殺 branch believing she summoned the 死神 and that she is the 女ケ沢市事件 culprit. She tries three times to make 五島 accuse her, loses her nerve, turns it into a joke, and then confesses by text message because 「私今、話せないほどに泣いてる」 -> Q902.
+- 00002350: she is one of three sleepers who hear the 「――」 voice, and the only one it says 「お前なら私を助けられる！」 to -> Q897.
+- SHE NARRATES TWO OF THE FOUR ROW-BLOCKS OF 00002444 (order 415), [20] and [32], alternating with 五島絵梨奈 at every block boundary with no marker -> Q933, Q030, Q078
+- SHE HAS NO MEMORY OF ABOUT HALF A MONTH for the whole of block [20]. Her last memory is her mother telling her the 古郡 couple will miss the 十三回忌; she reads her own phone as a stranger's, recognises her own fingers knowing how to use it, and gets the memory back only on seeing 古郡なつみ's face (20:298) -> Q934. The narration must not know what block [14] knows
+- her register survives the amnesia unchanged — 私, ～ぞ／～だろ／～だぜ, 「はは」, 「くそ」, 「ちくしょう」, 「あんな 猿 の真似して」 — and she uses お前 on a girl who tells her she is 800 years old
+- SHE IS THE ONLY PERSON IN THE PROJECT WHO DOES NOT GET ANGRY AT THE ANTAGONIST. Told 「私です……」 she laughs, and her reasoning is her own childhood: she made 紙人形 at 女ケ沢 to kill a classmate and her mother commissioned a killing behind her back, so 「きっと私もこいつと同じように自分が犯人だと思い込むだろう」 (20:228-20:233). She reads 糸 as a confined child with a delusion and is wrong -> Q089
+- HER MOTHER'S ESCAPE, remembered at 20:300-20:353: 春花 pushed 五島 out of the room, 美冬 drew the crowd off by jumping barefoot from a window, ran her down a game trail her cousins use, and kept going after 春花 went off the cliff. 春花's last thought before losing consciousness is 「お母さん……頼む……無事で……いてくれ……」
+- SHE NEGOTIATES WITH THE 核, 00002444:32:85-32:209, and she does it by feeling rather than argument because argument fails: nine of the core's turns are blank cells, so she kneels down, talks to her as a child, and remembers 夏菜 at four or five asking why they have no mother — the three comforting answers others gave and the one she gave herself, 「死んじゃったからだよって」, which she calls 「とても冷酷な答えだった」 (32:130-32:153). She then trades a search for the core's mother against なつみ's release, and she means to keep it -> Q939
+- her own reason for it is identification: 「私も父親を亡くした身であり、この子の気持ちが少し分かるのだ。／それに当時のお母さんは心神喪失状態で、私には思いきり甘えられる親がいなかった」 (32:185-32:186). It is the only time she names what her mother's breakdown cost her
+- SHE IS THE ONLY PERSON WHO KEEPS THE MEMORY. Everyone else released that night — 五島, the 古郡 couple, 城崎, her grandmother, 幸太郎 — loses it, and her only external proof is one dying resident (00002444:32:300-32:313)
+- AND SHE KEEPS THE PROMISE FOR FIFTEEN YEARS. She gets なつみ and 五島 out of 元木町 on invented pretexts and says nothing to anyone else; 祀耀815 kills nearly 200,000 people; and her verdict on herself is 「私は死ぬまでこの罪悪感につぶされて生きていくことだろう」 and 「完全に私の負けだった」 (32:333-32:335). The 女神様's price was that she live as long as possible -> Q940
+- the branch's last cell is hers and it is a person, not a conclusion: 「あの時からずっと、あの人が見つかっていないのだ」 -> Q941
+- 00002473:11:153-11:179: she puts herself between her cousin and a nata twice, and her line is the branch's flattest statement of what she is for — 「なつみが妹だろうが、私が誰であろうがどうだっていい！　絶対になつみたちを守る……！」, said one cell after the adoption is thrown at her as a weapon
+- SHE IS MADE 第三世代 IN THIS SCENE without knowing it, by なつみ's blood, and the two corpses say so afterwards; the same cells set the 女神様's wish to erase her -> Q981, Q977
+- 00002478:11:40, 11:52, 11:127: she kills 古郡なつみ offscreen, is unconscious with shock for months, and wakes on 祀耀801年四月八日, which is the project's last event before it hands off to another world -> Q987, Q763
+- as-of: 00002478
+
+
+
+## 五島絵梨奈 (ごとう えりな, Erina Goto)
+- first_appears: 000001E3:8:12 (offscreen shout 「古郡せんぱーい！　新村せんぱーい！」); surname on screen 000001E3:8:21; full name only at 0000020D:11:99 (on the BBS)
+- pronoun(s): 私 (watashi), narration and dialogue. Also refers to herself in the third person by surname ("この時期の先輩の忠告、五島は真摯に受け止めます！" 000001E5:35:0; "さてさて、五島はこれから何をするかと言いますと……" 000004A7:11:4) — name-as-pronoun, comic.
+- pronoun FREQUENCY: about as often as typical in dialogue; in narration she states 私 often
+- speech level baseline: 敬語 (です・ます) to both 先輩, to 伊勢 and to 古郡茜, unbroken. In NARRATION she is plain-form だ/である. She also uses です・ます when talking OUT LOUD TO NOBODY (00000460:11:20-44, marked 独り言). Her politeness is a habit of performance, not only deference. NEW as of 0000050E and 00000522: the same 敬語 becomes a WEAPON — flat imperatives to a 先輩 ("今すぐ逃げてください" 000004F9:11:68; "独りよがりの正義は捨ててください。そんなの、新村先輩の自己満足です" 0000050E:11:132) and an accusation to an adult ("だから私はあなたを許せません……！" 00000522:11:121; "だったら、自首して下さい！" 11:128). Not one word drops out of です・ます while she does it. That is the effect.
+- sentence-final particles: ～ですなあ／～でんなあ (mock-old-man, "それは何よりですなあ！" 000001E3:8:26); ～ですぜ; ～でゲスよ; ～であります ("元木高校1年、五島絵梨奈であります！" 000004A7:11:61); ～ですよね／～ますよね (her interrogation habit)
+- copula: です (dialogue and 独り言) / だ (narration)
+- verbal tics / catchphrases / fillers: 「作戦」 running gag — SEVEN forms now: 作戦開始／作戦成功／作戦完遂／作戦失敗／作戦第2弾／作戦遂行／「作戦……／失敗です。」 (00000522:11:168-169, the second time the gag dies, after 0000037D:11:94) -> Q020, Q057; 「旦那」 for 春花 and 「御意、旦那！」 -> Q019; 「警部補殿」 for 伊勢 (000004A7:11:61), later retired in favour of 「おじさん」 (000004BB:16:37) with one formal 「伊勢警部補」 for thanks (00000522:11:77); 「ニカッと笑う」 is her NARRATION tag, ~14 occurrences, origin at 000002F6:11:35-38 -> Q058; 「えへへー！」; 「ほい？」; 「おおー！」; 「もぐもぐ」; びしっと敬礼
+- ORIGIN of the ニカッと grin (000002F6:11:29-38): she once deliberately failed a test to fit in, her mother was upset, she went back to scoring well, and her mother said 「あら絵梨奈、その笑顔、とてもいいわよ」. She then trained the grin. It is a mask she built on purpose. As of 0000057B:11:42 she deploys it to deliver a lie and it drops the instant the target leaves (11:47) — the clearest on-screen proof that it is a tool.
+- the 呼び捨て wound (000002F6:11:49-51, 11:60-61): everyone called her 「絵梨奈ちゃん」; 古郡なつみ was the first person to call her 「五島」 with no suffix, and that is why she attached to her. -> Q037. NOTE as of 0000057B:11:89: her sister calls her 「絵梨奈」 with no suffix for the first time, which is the same gesture from a different direction. Do not let EN flatten either.
+- 「天才少女」 (000002F6:11:53-54, 0000037D:11:90): she calls the label a complex, not a strength; she performs it in dialogue and resents it in narration.
+- dialect: none; the ゲス／旦那／御意／であります layer is a deliberate period-comedy pastiche, not a real dialect
+- EN correlates: contraction rate MEDIUM-HIGH but always polite ("I'm", "that's", plus "sir"/"boss"); profanity ceiling ZERO; sentence length MEDIUM, explanatory, often numbered/listed when she reasons; formality HIGH toward the two 先輩, 伊勢 and adults; vocabulary register split — schoolgirl-bright on top, precise logical vocabulary underneath (客観的, 主観, 仮説, 検証, 断定, 模倣犯, アドレナリン, ノルアドレナリン, 監視カメラ)
+- narration voice: plain past, warmer and more emotional than her dialogue, and openly devoted. She keeps calling them 古郡先輩／新村先輩 inside her own head -> Q034. Modes:
+  - the CONFESSIONAL mode (000002F6 whole file): second person addressed to nobody, repeated 「ごめんなさい」, childhood flashback, short declaratives.
+  - the SHUTDOWN mode (0000037D:11:88-98): she stops reasoning, rejects her own label, and the last four lines are flat and childlike. Do not make this lyrical.
+  - the HEARSAY mode (00000522:11:0-8): the file opens 「これは聞いた話ではあるが。」 and reports events she did not witness in police-report vocabulary. Keep the hedge and keep the flatness.
+  - the RAGE mode (00000522:11:141-169): she does not raise her voice; the narration describes the body (fists, shaking) while the diction stays measured, and ends on the dead 作戦 gag.
+- NEW as of 0000057B:11:94-95: with her sister she regresses completely — 「おねえちゃーん！」 and crying 「幼稚園児のように」. No 敬語, no pastiche, no logic. This is the only person who gets that voice.
+- CORRECTION as of 000005C1 / 000005EB: the ゲス／旦那／御意／であります／ですなあ pastiche is NOT retired. Q019 recorded it as retired from 000004BB:16:37; that is true only of THAT branch. Here it is at full strength — 「なのであります！」 (000005C1:11:244, 21:175), 「相当着痩せしていたんですなあ」 (000005EB:11:61), 「見た目通りですなあ」 (11:66), 「なっはっは！　……楯突こうなど100年早い！」 (11:57). The EN comic voice must be able to switch off and back on by branch, not once and for good.
+- narration voice, the FLASHBACK mode, new as of 00000617:8:43-252: she narrates two years earlier, in plain past, as a 13-year-old who has never had to try at anything, cannot look people in the eye, and speaks 「ぼそぼそ」. Warmer and more explanatory than her present-day narration, and it closes in the SECOND person to someone not present — 「私は、先輩を……／あなたを心から尊敬します。」 (8:251-252), the same device as 000002F6. Keep both halves of that restarted sentence.
+- the 呼び捨て wound, fuller version at 00000617:8:102-109: before なつみ, only teachers used her surname, and they said 「五島さん」. She states outright that she hates her own given name, that 「絵梨奈」 is too cute for her, and that ちゃん felt like a wall. This is the long form of 000002F6:11:49-51 and the two tellings must stay distinct. -> Q037
+- the であります／ですなあ pastiche is LIVE in this branch (000006C9:8:128 「お疲れ様であります、古郡先輩！」; 000006E0:11:5; 00000761:8:98 and 8:124 「だてに着痩せしてないですなあ！」). Confirms the Q019 correction: the layer switches by branch, not once and for good.
+- the っす SLIP, new and unique as of 000006E0:16:105-115 — her です・ます goes slack into ～っすねえ／～っすよお for eleven cells while she gropes 春花, including a stretched loanword (「ヴォリュゥミィ」 16:110), and snaps back to full 敬語 at 16:147. It is the only break in her politeness anywhere in the project. -> Q094
+- the DETECTIVE mode, sustained across 000006E0 / 00000716 / 00000731 / 00000749: notebook out, one premise per cell, explicit hedges (「可能性の話です」, 「必ずしも、ということです」), and repeated consent checks before each hard step (「先輩は、古郡先輩を助けたいんですよね？」 00000716:8:46, 8:81). 春花's narration names the technique at 00000731:8:8-12 (客観的, always doubting her own reasoning). Her vocabulary rises another register here: 実行犯, 代理殺人, アリバイ工作, サイコパス, 主犯格, スコヴィル, カプサイシン.
+- a FOURTH quiet-failure mode, 00000731:8:75-93: she stops writing, throws the notebook down, refuses to say her own conclusion out loud, and makes 春花 finish it — without dropping one です・ます. Her voice shakes (8:102). Same family as the SHUTDOWN and RAGE modes; keep it quiet.
+- physical comedy is hers to STAGE, not to suffer: she fakes a sneeze onto 春花 (000006C9:8:98), shoves her into dog mess and puns on it (8:117), strips なつみ's coat off to steal her phone (8:130), and weighs three phones on a kitchen scale. All of it is deliberate and all of it is explained afterwards. -> Q092
+- the 作戦 gag reaches an EIGHTH form: 「いよいよ、作戦開始です！」 (000006C9:8:159) and 「さあ、最終作戦開始です！」 (00000761:8:127). -> Q057
+- known ambiguity / open questions: -> Q015, Q019, Q020, Q030, Q034, Q037, Q045, Q053, Q057, Q058, Q060, Q063, Q078, Q092, Q094, Q095, Q100
+- AS A FOUR-YEAR-OLD, new and load-bearing as of 0000085D:11:136-11:168 and 00000874:11:0-11:6: she already speaks in unbroken です・ます to an adult stranger (「これで次に当たる確率は7分の1ですね！」, 「当たる確率はどっちも同じですよ？」) and already reasons in probabilities out loud. Her 敬語 therefore predates the 先輩 relationship, predates the friendship, and was never a choice at all — it is simply how she has always talked. Read together with 00000617:8:67 this closes off any EN reading of her politeness as deference.
+- she calls なつみ 「なつみちゃん」 at four (00000874:11:3) and 「古郡先輩」 at thirteen. Neither girl remembers the first meeting, and the text never has them realise it. Do not let EN hint. -> Q037
+- the PUBLIC register, new as of 00000900:11:1-11:38: as 新入生代表 she reads a full ceremonial address in the highest school 敬語 (「まことに感無量であります」), corpses on her own words, tears the paper up on the podium, and improvises in her ordinary bright voice. Two registers inside one speech, and the break is written into the middle of a sentence. -> Q133
+- 「素敵な先輩」 (00000900:11:32) is the 000002F6 attachment said out loud to a hall, with no wound attached to it and no name given. 春花 supplies the name as a guess (11:41). Keep it a guess.
+- the pastiche is FULLY LIVE in this branch: 「ぬほー、たまりませんなあ！」 (0000092D:11:10), 「了解であります！」 (11:59), 「作戦、失敗です……」 (0000095B:11:34), 「作戦遂行したがってうずうずしています」 (0000092D:11:2). Confirms again that the layer switches by branch, not once and for good. -> Q019, Q057
+- the HORROR-STORY register, new as of 000009B7: 60 cells of sustained first-person 丁寧 narration with the pastiche switched off, real suspense construction, and a staged physical payoff — she has manufactured the photograph in advance and shows it. 「あは！　ばれちゃいました？」 (19:101) is the only break. Same family as her 作戦 staging at 000006C9, aimed at frightening her 先輩 instead of helping them. -> Q092, Q146
+- she loses to 新村茅萱 and 新村夏菜 and the text is explicit that it is the first time: 「笑顔を作ろうとしても作れない五島を初めて見た」 (0000095B:35:89), and she is reduced to repeating synonyms for chastity (00000972:11:72-11:75, 11:104-11:109). The ニカッと grin fails. She recovers by counter-attacking in perfect です・ます (00000989:11:33-11:75), which is the 0000050E weapon aimed at a twenty-year-old for comedy
+- she names herself 「五島エリカ」's original and duels an impression of herself (00000989:11:33-11:46). -> Q139
+- THE 呼び捨て WOUND IS ANSWERED, 00000A30:11:158-11:183. She offers 「エリカちゃん」 first, unprompted; 新村エリカ offers 「絵梨奈ちゃん」 back; 五島 declines because the given name feels like being flattered (11:164-11:168), and the old woman reads the whole of 000002F6 / 00000617 off two lines. 五島 then grants the given name to HER and to nobody else: 「エリカちゃんだけ、私のこと絵梨奈って呼んでいいですよ！」 (11:176). 敬語 is banned in the same breath and she complies. This is the exact opposite gesture to 00000617:8:100 and it lands the same way. -> Q037
+- she accepts a SECOND name from a second person at 00000AF7:11:137-11:139 — 「エリ姉」, coined by a ten-year-old, built on the same 絵梨奈 — and answers it with 「ふふ、よしよし」 and no protest at all. Do not let the EN flag either acceptance. -> Q171
+- the OLDER-SISTER register, new as of 00000A48:26:0 / 32:0 and 00000AF7:11:128-11:140: 丁寧 with the pastiche off and the volume down, used on someone younger. なつみ says outright she has never seen 五島 talk to a child (26:1). 五島 explains it at 32:7 — she was that lonely at that age. It is the only register of hers that asks for nothing.
+- her DETECTIVE mode reaches its longest run (00000AAC, 00000AC4, 00000ADE, 00000B0F, 00000B27, 00000B3F) and the 作戦 gag does not appear once in any of them. Vocabulary rises again: 惰性, 前提, 統計学的, 風土病, リミッター, ミスリード, 心理トリック.
+- SHE CONCEDES, and it is a first: 00000AAC:11:117-11:131. She says 「私は天才少女です」 with no joke attached — 春花 and なつみ both hear it as one and she does not smile — and then says the culprit is far cleverer than she is and that nine years without a discernible purpose is beyond her understanding. なつみ's narration says she has never heard it before. Then she refuses to go to bed and snaps at 春花 (11:134-11:135). The concession and the refusal are the same beat. -> Q098
+- SHE NARRATES ORDERS 101, 102 AND 104 (00000B6F, 00000B87, 00000BB7), alternating file by file with 新村春花 through the end of the branch, with no marker at any boundary. 00000B6F is 188 cells of interior reasoning with four lines of dialogue in it. -> Q030, Q078
+- the DETECTIVE mode WITH NO AUDIENCE, 00000B6F: she builds the 新村幸太郎 hypothesis and sets it in a bare cell (「――新村幸太郎」 11:18), then notices she may be reasoning inside the culprit's expectations, and stops the recursion by treating the noticing as progress (11:47-11:68). Vocabulary rises again: 未必の故意, 交感神経, ドーピング薬, ミスリード, 心理誘導.
+- she reasons in 起承転結 — the framework 新村幸太郎 taught her at 00000AC4 — in order to accuse him, and inverts it: 「犯人にしてみれば、必ず『結』から『起』につながるのだ」 (00000B6F:11:89). -> Q166
+- the VIGIL register, 00000BB7:11:21-11:143: her 敬語 aimed at a God she is denying in the same breath (「試練なら……乗り越えられるはずですよね。／お願いします、夏菜ちゃんを助けてください……！」 11:40-11:41), and the older-sister register carried to a deathbed with no pastiche and no 作戦 anywhere in the file. She asks 「私……ちゃんとお姉ちゃんになれましたかね……？」 (11:128) and does not answer it.
+- THE THIRD PASTICHE TIER, 00000BD6:11:0-11:20 — 小生, 御尊父様, 御尊母様, 御一統様, 五臓六腑, 万死に値する失態, 新村氏, スライディング土下座: a written samurai-retainer humble register, above and separate from the ゲス／旦那／御意 layer, which is live in the same branch. 春花 shuts it down by pointing out that 小生 is a man's word (11:19) and 五島 switches instantly into a ～ぜ boyish register (11:20-11:22). -> Q177, Q019
+- 「Que droga」 is hers: a Portuguese exclamation she uses as a filler (00000BD6:11:15, 11:51), and saying it in front of 新村茅萱 at 00000C21:11:85 is what produces ドローガ. The throwaway gag is the key to the branch. -> Q178
+- the ～っす slip recurs, and it is exhaustion this time rather than lechery: 「ああ……／そうっすね……」 (00000C81:19:20), one cell, after being volunteered for a bear hunt. -> Q094
+- she DECLINES TO STATE A CONCLUSION twice in one branch: 「すみませんけど、ここからは言えません」 (00000C21:11:120), and the whole 00000BB7 epilogue, where she lists five connected facts, says they explain three things, and stops. -> Q185
+- the INTERROGATION register, 00000DB9:11:18-11:110, and it is the 0000050E weapon aimed at an adult she suspects of murder: です・ます unbroken, one question per turn, no pastiche, no 作戦, and 「押し黙るのなら、もう何も言わなくていいです」 to end it. なつみ's narration calls it 「もはや尋問だ」 (11:100) and 「異常なまでに威圧的」 (11:103); 夏菜 is frightened by her face (11:116); and なつみ ties it to the girl 五島 was before the friendship (11:119-11:122).
+- she ARGUES FOR THE SUPERNATURAL, and なつみ says twice that it is unlike her (00000D41:11:156, 11:165-11:166). The argument is that denying the お告げ means denying 古郡なつみ (11:176-11:177). Her scepticism is turned round by pointing it at her own 先輩.
+- physical-evidence reasoning at its plainest, 00000D71:11:53-11:87: no moss, no puddle, the thickness of a hemp mat, and a screwdriver slot in a bolt head. No notebook and no hypothesis list, just objects.
+- she RESETS the case twice in two files and announces it both times: 「ここまでの推理はすべてリセットです」 (00000DA1:11:205) and 「これまでの推理は全て捨てて下さい」 (00000DD1:11:146), with one thing she refuses to reset (「主犯は複数で、互いが互いの犯行を認知していない」 11:178).
+- she corrects her own earlier formula on screen: 「昨日私が言った『犯人はいないのが背景』と言うのは、『すべてを操っている犯人はいない』と訂正します」 (00000DA1:11:172).
+- the comic register is restored one file after the interrogation, inside a 能面 and 赤装束 that do not fit her: 「ばあー！」, 「がおー！」, 「ぷぽ！」, 「ぎー！」, 「むきー！」, 「もう！　2人ともきらーい！」 (00000DD1:11:13-11:66). No pastiche and no 作戦 in it — this is the childish layer, not the period-comedy one.
+- the INTERROGATION register survives being condemned to death, 00000E19:11:99-11:121: です・ます unbroken, one premise per cell, refusing three successive confessions because none of them is consistent, and escalating exactly once — to 「あなた」 (11:109) — in order to ask 「誰をかばっているんですか？」. She never asks him to spare her. Same weapon as 0000050E and 00000DB9, aimed at a man with a nata.
+- she WINS the scene by hand, not by reasoning: she swapped 夏菜's key for her own house key in advance, on the chance the gate would matter (00000E49:11:139-11:140), and she is the one who has the gate open while the others are still on the floor (11:37-11:38). The 天才少女 label is used straight for once, by 幸太郎 (00000E19:11:78) and by herself (00000E49:11:180), with no complex attached. -> Q098
+- the 作戦 gag does not appear in any of the five files, and neither does the ゲス／旦那／御意 pastiche or the 小生 tier. The comic layer is entirely absent from the branch's ending. -> Q019, Q057
+- her one borrowed register: 「おー妹よ！　無事で何よりだぞ！」 (00000E49:11:164), 春花's ～だぞ grammar bolted onto the older-sister voice to cheer a ten-year-old up. なつみ's narration says the smile is forced (11:166-11:167) — the ニカッと grin as a tool again, and it is named as strained for the first time.
+- she is the one who will not stop, and she is stopped: she agrees out loud that 幸太郎 is innocent and her face clouds (00000E49:11:178-11:181); she starts 「でも、私は――」 at 00000E61:45:8 and is cut off by an adult; she accepts なつみ's 「真相は……知らない方がいい時もあるんだよ」 with 「そうですね！　今はみんなが無事で嬉しいですもん！」 after 「少し間をおいて」 (00000E49:11:193-11:195). The pause is the character.
+- she volunteers a fact about her own sister, unprompted and neutrally, for the first time anywhere (00000E61:11:61-11:62), and offers to introduce her to 春花. 春花's narration still says they are not close (11:42). -> Q037
+- HER DEATH IS ON SCREEN, narrated by her, at 00000E7B:215:0-227:18 — four blocks appended to another character's file with no frame and no return. She names the flayed body in 中央公園 as her 先輩's father, asks 伊勢 to help her find the killer (「私の大好きな先輩が苦しんでるんです。少しでも力になりたい」 227:2), abandons a punctured bicycle and runs for the police station. Her last four cells are hers alone: 「何が起こった……？／私、こんなところで死ぬの……？／先輩、早くこの町から逃げて……。」 No pastiche, no 作戦, no ニカッと. -> Q245
+- she is 15 at death (00000E7B:227:15) and the event gets a name here for the first time: 五島絵梨奈撲殺事件 (227:16).
+- in the 00000BD6 branch she is alive and phones from a theme park four weeks later: 「はーいお2人さん！　家族水入らず楽しんでますかー？」 (00000E95:11:206), です・ます with no comic tier at all, and the joke is that she is too short to film anything but the crowd (11:212-11:221).
+- SHE IS THE SOLE SURVIVOR AND SHE IS MUTE, 00000EAF, a whole 2241-line file she narrates alone. After 祀耀800年四月八日 she bit her tongue in a hospital to kill herself, failed, and lost her voice; the file's opening word is 「唖者」 (52:0). Four years of it: no university, no job, online piecework, a room, and 「食う、寝る、呼吸する」 as the whole of her agency. She calls herself 「赤ん坊以下」 and 「食うことしか能のない口」 — the second is an insult a stranger says about her at 52:105 and she then uses it about herself for the rest of her life. -> Q255, Q256
+- EVERY UTTERANCE SHE MAKES IN 00000EAF IS WRITTEN, and the engine marks it: straight double quotes for sign language, notepad, email and phone messages; 「」 only for other people. She has four mute channels and the text distinguishes them — 手話 (40:37, 40:93-40:96, 91:10), a notepad (46:106-46:119), a finger × drawn across the mouth to say she cannot speak (34:45, 46:47, 46:81), and the ニカッと grin used as an answer (40:18, 40:54, 40:71, 34:90). -> Q254, Q269, Q036
+- her 敬語 survives in writing with nothing else attached: no ゲス／旦那／御意 layer, no 小生 tier, no 作戦 gag anywhere in 2241 lines. The comic apparatus is simply gone, and the ニカッと grin is the only piece of the old performance she still has.
+- the COMPETITOR register, new and sustained across 00000EAF [46] [34] [91] [28] [22] [97]: her DETECTIVE mode pointed at food. One premise per cell, live arithmetic (grams per minute, stomach capacity, ratios), tactics named and justified, opponents read for intent. Vocabulary: 咀嚼力, 嚥下力, 胃の容量, 嚥下筋, 噴門, 横隔膜, ホップ, イソフムロン, カプサイシン, 褐色脂肪細胞. It is the same instrument as the 00000B6F reasoning and the text never says so.
+- SHE SOLVES THE CASE, 00000EAF:91:84-91:124, four years late, sitting on a bus. Only 新村美冬's body was fakeable; the 鉈 and the 能面 were left at the scene on purpose so that 新村春花 would believe the curse had taken; 美冬 set the fire and died in it either to destroy a trail to a 共犯者 or because she was herself the evidence. She stops because there is nothing further to reason from, and the file never returns to it. It is the only on-screen solution of the 呪殺 killings anywhere in the project. -> Q263
+- SHE GETS HER VOICE BACK ON CAMERA, and it costs her three separate broken sentences: 「勝……ち……たい……！」 under her breath (97:163), 「か……わり……箸……下さ……い」 shouted (97:186), and 「み……／なさ……／ん……。／ありが……／とう……／ございます！！！」 split one fragment per cell across six cells (97:295-97:300). Same engine device as 00000024:51 and 00000BB7:11:119. -> Q259
+- the trigger is not encouragement, it is contempt: both rivals glare at her, she reads 「その程度で根を上げる気？」 and 「4年前の期待を裏切らないで！」 off their faces (97:176-97:180), and the text calls what follows 「魂が叫んだ」. Her stated reason for eating on is 「ここで退くくらいなら、食って食って、死んだ方がマシだ」 (97:200).
+- the PUBLIC CONFESSION register, 00000EAF:16:57-16:181 — a Nobel Peace Prize acceptance speech, ~75 cells of formal ceremonial 敬語, in which she tells an international hall the whole of 52 and then refuses the compliment: her charity is 偽善, she does it so as not to lose her voice again, she asks them not to be like her, and she asks them to help whoever is in front of them. The register never slips; the content is the demolition. Read it against the 00000900 入学式 speech, where the register broke and the content did not. -> Q133, Q267
+- she can only see two people, and she says so only to herself: 「失ってしまった2人への贖 罪のために。／たった2人の人間しか、見えていない。」 (16:164-16:165), followed by three broken apologies that end the file — 「役立たずで……／ごめんなさい。／助けられなくて……／ごめんなさい。／バカで……／ごめんなさい。」 The 古郡先輩／新村先輩 habit of Q034 is intact fourteen years later (16:170-16:174).
+- SHE NARRATES 00000EDF ALONE (order 136, 3,080 lines) and the file runs at TWO TEMPERATURES with no marker between them. In [65] and [71] she has the danger sense permanently, feels nothing at her 先輩's death, performs grief on purpose (「多少は悲しむふりをしないと」 71:17), calls the whole business 「めんどくさい」 four times, and closes an address to the dead girl with 「あなたが死んでくれて……／私は最高に幸せです」 (65:68-65:69). From [77] onward she is the ordinary devoted narrator who cannot cry and is frightened by that. Both are 私 and both are her. -> Q285
+- the ESSAYIST mode, new, 00000EDF:65:70-65:107: thirty-eight cells on money — why people who come into a large sum lose whatever they had, why the rich are few, and then the turn, 「私の予知能力も同じ。／未来の危険が見えてしまえば、不安などない」. Cool, general, second-person-free, and it is the coldest thing she ever does. Same instrument as the DETECTIVE mode pointed at nothing.
+- WITH HER SISTER SHE USES NO 敬語 AT ALL. 00000EDF:33 and [37] are 394 cells of telephone with her sister and not one です・ます in any of them: タメ口, teasing, insults (「お姉ちゃん恋愛経験ほとんどないんじゃ……」 37:216), a mathematics joke used as a weapon (37:220-37:223), and 「私……／お姉ちゃんが好き」 (37:352-37:353) with no answer. Her 敬語 is universal in this project and this is the exception; it is not a lapse, it is the one relationship it was never built for. -> Q094
+- the 呼び捨て wound answered from the other side, 00000EDF:37:161-37:172: she says 「ねえ、絵梨奈……」 to her sister, gets silence, and is told 「名前で呼んでくれたから」 and 「初めてだよ。ずっと『あんた』だけだった」. At 000002F6 the wound was that everyone used 絵梨奈ちゃん and nobody used 五島; here the same name arrives as a gift going the other way, and she immediately says it again 「呼んでみただけ」. -> Q037, Q291
+- the っす slip a THIRD time, 00000EDF:47:60-47:74 — 「そうっすか……」, 「知らないっすよ……」, 「はて、いかがでしょうね……」 — under interrogation about her own and her sister's chest by a ten-year-old, and the child names it: 「何でさっきから敬語なの？」. Exhaustion and embarrassment, not lechery. Also 117:73. -> Q094
+- she is the one who CANNOT CRY and the file is built on it: 「涙を流さず泣いている」 (186:145), a ten-year-old tells her she has the face of an animal that has lost its mother (186:85), she can cry about her 先輩's mother but not about her 先輩 (186:126), and the reason turns out to be written in a book — the green eye makes her glad (83:180-83:183). The tears come at 89:28 and again at 202:222 and both times she is being held.
+- the KILLING-URGE register, 00000EDF:83:211-83:240 and 89:184-89:250: her 敬語 disappears completely, the sentences shorten to three or four words, and she reasons in legal vocabulary while crawling after a woman she means to kill (「これは殺人なんかではない――緊急避難だ」 83:236). Afterwards she describes the pleasure in physiological terms (89:217-89:243) and then the self-disgust in one line. Do not make either half lyrical.
+- her comic layer is INTACT in this branch: the 怪盗ゴトー troupe with the ten-year-old (77:145, 192:0-192:51), 「怪盗団ゴトーズの 絆 はとても強いのであります！」 (202:235), the であります pastiche, the ニカッと grin used twice as a tool (53:277 「先輩に無理やりニカッと笑いかける。／頬の筋肉が震える」, 117:13), and 「この天才少女、一生の不覚……！」 twice (83:110, 117:76). The 作戦 gag does not appear. -> Q019, Q057, Q098
+- 00000EF6: she is the CARER for two years and the file is the closest look at that job. Her です・ます is unbroken to both 先輩, to the doctor and to the owner; the ゲス／旦那／御意 pastiche, the 小生 tier and the 作戦 gag are all absent for 2,717 lines; 「この天才少女にお任せくださいな！」 (36:267) and 「この自他ともに認める天才少女」 survive, and the ニカッと grin appears three times (20:218, 134:75, 140:260)
+- the MOTHERING register, new: 「よしよし、先輩いい子」 while stroking her 先輩's head (61:215), hot milk made on every day off at the temperature and sweetness なつみ likes (134:52-134:56), a bed set up beside hers, and 「今夜は、私が古郡先輩のそばにいますから」 (61:43). It is the older-sister register of 00000A48 aimed UPWARD at a 先輩 for the first time
+- SHE IS THE ONE WHO TELLS THE TRUTH, and the file shows what it costs: she has known for the whole two years, she says 「言えません……！／言えないからです……！」 first (36:29-36:31, a different scene), and at 61:88-61:133 she does it in her ordinary です・ます, one premise per cell, replaying the narrator's own conversation back at her as proof, and then apologises for the silence rather than for the truth (61:171)
+- SHE LIES TO PROTECT, twice in one file and she is caught both times: she invents a 皆上市 presentation, skips it to come back for her 先輩, and then claims there was never a presentation at all (67:198-67:199) — the narrator sees through it in one cell. 「いやな予感がしただけです」 (67:170) is her explanation for returning
+- her reasoning does the branch's medical work: the alkaloid reading (36:206-36:246), the blood-contact hypothesis, the 新村栄一郎 autopsy request through 伊勢, the 警察庁 finding and what it implies about state knowledge (20:89-20:95), and the naming and staging of 交換輸血 (20:196-20:201). Vocabulary: アルカロイド, 残留物質, 交換輸血, 反射運動, 証拠隠滅, 統計. She also names the limit and refuses to cross it — 「これからすべきことは、国との交渉ではありません」 (20:107)
+- 「あの人、ロリコンですからね。私がちょっと頼めば、大概のことは協力してくれますよ」 (36:253) — she says out loud that she uses it, in her ordinary polite register, with no comment before or after
+- she is a 3年生, retired from the 生徒会, writing on 無認可薬品の臨床実験, and holds an offer from 元木大学 which she will not trade up from: 「私は古郡先輩も新村先輩も置いて行ったりしません」 (134:85). なつみ reports at 140:121 that she could have had any university in the world on a scholarship
+- the ～っす slip does not occur, and neither does 「Que droga」
+- SEEN FROM OUTSIDE FOR THE FIRST TIME, 00000F0D [38][44][56][68], by a narrator who is frightened of her. Everything this block records is intact and nothing of it is softened: です・ます to 伊勢 unbroken, the ニカッと grin twice (38:157, 44:75), 「ほーん？　なるほどなるほど！」 (38:149), the ロリコン teasing, and the 天才少女 reputation reported by a third party (44:116-44:117 「あの子はあれでも凄まじく頭がいいからな」). What is new is that the same behaviour reads as a threat: 夏菜's narration calls her 「1番の脅威」 (44:179) and her danger sense fires on five ordinary conversational turns with her.
+- she uses タメ口 to 夏菜 throughout (「ねえねえ、秋菜ちゃんってどこから来たの？」 38:156) — a younger girl is the one addressee who gets no 敬語 from her outside her sister. -> RELATIONS
+- the DELIBERATE SLIP, 44:8-44:15: she addresses the girl by her real surname 「新村さん」, is corrected, and apologises with 「知っている人と名字が似ていたから、ついうっかり……」. 夏菜's narration reads it as staged (44:16) and the text never confirms it. Keep it unresolved.
+- she is the one who STOPS the investigation from eating the child, and it costs her nothing she is willing to give up: 「夏菜ちゃんに罪はありません。むしろ事件に巻き込まれた被害者だと思います」 (56:66) and immediately 「だからと言って、新村先輩の捜索をやめるわけにはいきません」 (56:68). Same shape as the 00000DB9 interrogation — the kindness and the refusal are one sentence apart.
+- she EXTRACTS A PROMISE from an adult and repeats it until she gets it (56:125-56:142), and her stated reason is 「新村先輩を連れ戻すために誰かを犠牲にするのが嫌なんだと思います」 (56:135), hedged with 何となく and 自分でもよく分かりません. 敬語 unbroken through all of it, including 「約束ですよ？」.
+- at the platform she gives an order to a 警部補 and wins (56:197-56:200), four cells after finding her 先輩 bleeding on the concrete. The register does not slip: です・ます, one question per turn, ending in 「今こそ伊勢さんが支えてあげるべきじゃないんですか！？」. Same weapon as 0000050E.
+- her comic layer in [68] is at full strength — 「いやいやあ、熱いですねえ！」 (68:115), 「まさかのプロポーズ！」, 「においで分かります！　北海道富良野産のメロンですね！？」 (68:251) — and the 作戦 gag, the ゲス／旦那／御意 pastiche and the 小生 tier are all absent for the whole file. -> Q019, Q057
+- SHE STAGES THE FILE'S LAST IMAGE: she photographs the restaurant table without telling anyone, leaves for ten minutes on a pretext (68:289), has the print made, and passes it to 伊勢 in a sealed envelope to be opened after the train leaves, captioned 『お幸せに！』 (74:190). The same manufactured-photograph device as her ghost story at 000009B7, aimed at a kindness instead of a fright. -> Q092
+- her sister calls her 絵梨奈 with no suffix as standard in this branch, and 五島 calls it シスコン (56:17) rather than treating it as the gift it is at 0000057B and 00000EDF. Fourth branch, fourth handling of the same wound. -> Q037
+- 00000F24: her 敬語 is unbroken for 3,564 lines and the entire comic apparatus is ABSENT — no ゲス／旦那／御意 pastiche, no 小生 tier, no 作戦 gag, no であります, no 「Que droga」, no ～っす slip. The only survivors are the ニカッと grin once (64:62) and 「この天才少女五島絵梨奈にも頼ってください！」 (142:51). -> Q019, Q057, Q098
+- the bare 「先輩」 outnumbers 「新村先輩」 for the first time, and it clusters where she is frightened: 「先輩、もう降ろしてください」 (64:3), 「先輩……バカ……」 / 「もう1人にしないで下さい……！　怖くて……」 (100:53-100:55), 「先輩……早く戻ってきて……！」 (100:8). 古郡先輩 is never shortened. -> Q034
+- SHE IS AFRAID FOR THE WHOLE FILE and the text keeps her competent anyway: she cries alone in a cave because she was left for one minute, hides behind 春花 twice, and in between produces the project's central explanation. Both at once, in the same です・ます, with no transition cells
+- the 荒田桜 EXPOSITION, 00000F24:94:87-94:141 and 100:177-100:243, and it is the largest single piece of reasoning in the project: cherry self-incompatibility, ソメイヨシノ as a clone line, blood as the vector, the four generations with roles assigned, 『恵み』 as pollen, the hive model, and the two tasks. She disclaims it FOUR times — 「我ながら妄想的な推理」 (94:162), 「全部推測ですけどね」 (94:164), 「自分で妄想が過ぎると自覚しています」 (100:238), 「とりあえず今のは私の妄想だと思ってください」 (100:244) — and every disclaimer is correct and every conclusion is right. Keep every hedge. -> Q381
+- the TEACHING mode, new: she answers 「桜ってそんなに貧弱なものなのか？」 with a botany lecture, closes her eyes and refuses to speak until she has ordered the material (100:170-100:176), and then delivers it as a numbered table. 春花's narration flags the pause as unprecedented — 「五島が時間をかけて物事を整理するって、よっぽどのことじゃないか？」 (100:175)
+- the READING-ALOUD register, 100:77-100:154: ~60 cells of です・ます performing a 450-year-old text, with the girl's own three speeches quoted inside it in 『』. It is the HORROR-STORY register of 000009B7 with the staging removed. -> Q385, Q146
+- she is the one who UNMASKS the 白般若 (142:133-142:138) and the one who checks the pulse and says there is none (142:172-142:175). Two cells apart, in her ordinary です・ます, to the daughter
+- HER DEATH IS IN ONE CELL AND SHE DOES NOT SPEAK IT: 「小さな口から血を流し、首をいびつに曲げて微動だにしない五島の姿」 (187:132), strangled by 新村茅萱. Her last line in the file is 「いよいよ正念場ですね！　白般若を見つけて、みんなを治す薬を――」 (142:116), cut off. At 193:11 the narration calls her body 「見覚えのある、小柄でかわいらしい女の子の肉塊」. Set against 00000E7B, where she narrates her own death at length
+- her last words are quoted by 春花 as an imagined line after everyone is dead — 「植物なんて、種さえ実らせればミッション完了ですからね！」 (193:103-193:104) — in perfect です・ます, with a 「なんて言いそうだな」 after it. Same device as the 00000697 imagined conversation. -> Q095
+- SHE NARRATES 00000F6F, 00000F87 AND 0000104E (orders 142, 143 and 148). The first two are continuous and are her longest stretch in this branch; the third is a standalone with no frame. -> Q030, Q078
+- the DREAM-REASONING register, new and the strangest thing she does anywhere, 00000F6F:11:0-11:39: she reaches the truth every night in a dream and has it erased on waking. Two voices live in her, 『真相を求めるな』 (a 警告) and 『真相はそこにある』 (a 啓示), and 「彼らは言語を持たないのだ」 (11:12). Her present-tense narration watches her own reasoning being deleted while she narrates — 「たった今も、その妄想は進行形で消去されている」 (11:24) — and she signs off with the 作戦 gag: 「今日も、作戦は失敗」 (11:39). The register is her ordinary plain-form narration with the hedges gone, and the 「もん」 at 11:29 is the only place her narration sounds younger than she is. -> Q219
+- she has CONCLUDED 幸太郎さん is innocent (11:19) and knows that proving it needs 「あまりにも大きすぎる妄想」 to be true (11:20). Set against the 00000F24 exposition, where the 妄想 she disclaims four times is correct every time. -> Q381
+- WITH HER SISTER SHE USES NO 敬語, second branch: 00000F6F and 00000F87 are ~500 cells with 五島桃子 and not one です・ます in any of them. Confirms the 00000EDF finding as a property of the relationship rather than of one file. -> Q094
+- the FRIGHTENED register, new, 00000F6F:11:139-11:195: in a haunted house she loses her legs, sobs, clings, and is dragged to the exit after five metres. She reasons about her own fear while feeling it — ghosts are impossible, but a haunted house certainly 『出る』, the professionals have a 作戦 she cannot beat, 「だからこそ……とても怖い……」 (11:161) — which is the DETECTIVE mode aimed at nothing and losing. Her 天才少女 label is thrown at her twice in the scene and she waves it off both times (11:169 「天才は関係ないよお……」)
+- she cries in public and the file ends on it: 「怖かったよおお！　うわーん！」 (11:193). Set this against 0000057B, where the same crying voice belongs to the same addressee
+- SHE IS ON THE RECEIVING END OF A CONFESSION FOR ONCE, 00000F87:11:74-11:236, and what she does is listen. Two hours of it, almost no reasoning, and the few things she says are apologies for not having noticed (11:185, 11:193). She names her own fault in the vocabulary she uses on evidence — 「これは私がお姉ちゃんに持っていた『偏見』だ。／私が認めるべき、私の失態だ」 (11:221-11:222)
+- she finds out why she exists and why she has her name (00000F87:11:254-11:281). She has hated 「絵梨奈」 since 000002F6 as too cute for her; learning that her sister chose it at not-quite-two she thinks 「ちょっと好きになれるかもしれない」. The 呼び捨て wound and the name-hatred are answered from a third direction and it is the gentlest of the three. -> Q037
+- the ニカッと grin used with nothing behind it, 00000F87:11:287, and her sister's answer is 「その顔、久しぶりに見たわ。いつも私を見ると、目を逸らせてたから」. First time in the project anyone tells her they missed it
+- the comic apparatus in this branch: the 作戦 gag is LIVE in the dream (00000F6F:11:4, 11:39) and in the haunted house (11:135-11:136); 「はーい！　あなたの五島ちゃんですよー！」 (11:54) is her telephone greeting and it matches 00000F40:11:79 word for word; the ゲス／旦那／御意 pastiche and the 小生 tier are absent from all three files. -> Q019, Q057
+- she DECIDES TO GO ON ALONE and says so to the person telling her to stop: 00000F9F:11:119-11:130 「私、明日城崎さんに会ってきます。／そして、真相を追い求めたいと思います」, with 「誰かを巻き込もうとか考えていません。／ただの自己満足のためですから」. She refuses to give her reason (「確かにあります。／でも、これはもう、私だけの問題ですから」 11:128-11:129) and asks nothing of anyone. Same shape as 00000C21:11:120 and 00000BB7 — she declines to state a conclusion for the third time
+- she PUNCHES A 先輩 IN THE FACE, 00000FCF:11:56-11:59, and the です・ます does not drop on either side of it. Her stated case is 「血がつながってないと姉妹にはなれないんですか！？」 (11:51). It is the only time she is violent with anyone she loves
+- 0000104E: 五島 alone, no dialogue, no frame, watching 新村春花 stab 古郡なつみ to death and refusing it — 「目の前で起きていることを否定しないと――／きっと私の自我は崩壊する」 (11:9-11:10). She still reasons: the green eye is a clue, 茅萱 called it 呪いの目, so this may be 呪殺 (11:11-11:14). Then she smiles because the killer smiled at her, 「だって……／笑うしかないもん」 (11:34-11:35), and the file ends in roughly six hundred 「は」. The 「もん」 of 00000F6F:11:29 is here too. Do not make the laughter hysterical on the page; it is set as a layout object, not a sound. -> Q412, Q433
+- HER FIRST MEETING WITH 新村茅萱, 0000119C, and it is a performance with a purpose: she is eating when 茅萱 walks in, misnames every dish (bream for flounder, pickled turnip for beef sushi), talks straight past a formal self-introduction, provokes her into shouting and into saying 「五島ちゃん」 — and then grins 「ニカッと」 and says 「やっと茅萱さん、普通にしゃべってくれましたね！／　すごく緊張してたみたいだからちょっと心配でしたよ？」 -> Q464, Q058
+- THE HANDSHAKE, 8:98-8:114: she does not let go and does not look away, and the narration reads her face — 「笑っているのは口元だけで、目の奥から呪い殺しそうなほど鋭い眼光」. She had been observing the whole time. Her voice then drops 「極端に」 and the grin disappears for the exposition
+- THE METHOD, her fullest statement of it anywhere, 0000119C:8:163-8:278. Neither culprit nor method may be assumed to lie inside common sense; every hypothesis produces a contradiction; a case must have an answer; therefore the contradiction IS the answer, as ドローガ would have been for the 女ケ沢 case. Conclusion: 荒田集落 holds a secret none of its residents knows, and there is 「明確な意思を持った者」 nobody knows exists, possibly 「何かに擬態して」. She refuses the supernatural at 「99%」, defines 超常現象 as whatever is not yet explicable, and uses bat and dolphin ultrasound as the analogy -> Q466, Q465
+- and the warning that goes with it: whatever warns precognitives of danger does so because it is advantageous to IT, which means it is intelligent, which means the warner is the killer — 「危険予知すら『なぜ』を繰り返し、全てを疑って下さい」 (000011B4:8:201). She says the 新村栄一郎 voice is something imitating him and adds 「先輩の前では言えませんが」 -> Q087, Q456
+- THE SIX QUESTIONS, 000011B4:8:100-8:157: what, who, how, when, where, why. The narrator answers five at once and cannot answer the sixth, and 五島 closes the notebook without writing anything down — 「チガ姉、これが呪殺事件の真相の『根』なんですよ」 -> Q467, Q468
+- the TEACHING HABIT is now a fixed device: she delivers a real digression (astaxanthin, the octopus's two-year lifespan, invertebrate intelligence; then bears' tenacity and primate-level intelligence) and then turns it into the argument four cells later, while saying of the first one 「ちょっと知識をひけらかしただけですよ」 -> Q465
+- the 作戦 gag at its lightest: she steals fugu karaage and beef sushi off 茅萱's plate with her fingers, twice, each time announcing 「作戦成功です！」, and uses a steady smile the second time specifically to make her look away -> Q020, Q057, Q480
+- she asks for and is granted 「チガ姉」 on screen (8:93-8:96), the origin of a form used in every other branch, and she uses 茅萱さん before it and おばさん for 新村美冬 throughout -> Q464
+- she will not talk about the case while food is in front of her, twice, and says so both times (0000119C:8:281, 000011B4:8:52). She also wanted 東京スカイツリー purely for fun and says so (000011B4:8:89)
+- SHE NARRATES 00001247, 000012C5 AND 000012DE (orders 169, 174 and 175), interleaved with 新村春花 and 古郡なつみ at file boundaries with no marker — 00001247 covers the same minutes as the end of 0000122E from the other side of one room. -> Q030, Q078
+- she COINS THE ANTAGONIST'S NAME and flags it as provisional in the same breath: 「仮に『何者か』のことを『ネクロ』と呼んでみましょうか」 (000011E3:8:28), abbreviated from ネクロマンサー on screen. She keeps using it after the real name arrives, and so does everyone else -> Q493
+- the DETECTIVE mode is at its most productive anywhere and it is built out of objects rather than people: a key left behind proves abduction (00001214:8:13-8:19); a lock less than ten years old proves a family member knows (8:61-8:63); a fungus's metabolism explains a sound (00001247:8:128-8:134); the fire not touching the outside walls proves arson by a human being (000012C5:8:240-8:247). Vocabulary rises again: 菌類, 子実体, 植物寄生菌, 菌床, 炭酸ガス, 管楽器
+- SHE DECEIVES HER OWN 先輩 AND NAMES IT: she locks 古郡なつみ in a room with no explanation (000012C5:8:29-8:52), then brings her along as a decoy, and her narration says flatly 「これは、古郡先輩を騙すのと同じだけど、仕方のないことだ」 (000012DE:8:36). She calibrates exactly how much truth to give her (8:54-8:59) and notes that the withholding also misrepresents to 死月妖花 how much they know. The 敬語 never drops while she does it — same weapon as 0000050E, aimed at protecting its target
+- she ACCEPTS 「エリ姉」 for the fourth time and the first time it is asked for, after an ellipsis cell (00001247:8:46-8:52). She also apologises to the same child for having frightened her, names the shouting as her own mistake, and redirects her by giving her a job (000012C5:8:70-8:85) — the older-sister register of 00000A48 repairing its own damage
+- the ～っす slip a FOURTH time, and it is defeat this time: 「お、おお……そうっすね……」 (000012C5:8:152), losing an argument about marriage to a fifth-grader. -> Q094
+- her comic layer in this branch: no 作戦 gag, no ゲス／旦那／御意 pastiche, no 小生 tier, no ニカッと grin, and no であります in three files. The only comic material she has is being out-talked by 夏菜 and being told she eats too little. -> Q019, Q057
+- the READING-ALOUD job is hers again, 00001247:8:75-8:147: she reads a 400-year-old scripture, matches its disaster to 荒田 point by point, and ends on a conclusion about the garden tree she does not soften — 「この集落はずっと、死月妖花の手のひらの上だったのだ」. Set as her own plain-form narration with the scripture unquoted inside it -> Q504
+- SHE REACHES THE HUMAN LAYER FIRST: 「もし私が死月妖花だったら……／うん、住人の中にスパイを作る」 (000012C5:8:196-8:197), reasoned from a feeling she calls 「常識の範囲内で、妙に変な感じ」 (8:193). Ten cells later the storehouse is on fire. Same instrument as the 00000B6F reasoning-about-reasoning, and this time it arrives before the evidence
+- SHE NARRATES 000013E6 AND 000013FD (orders 186 and 187) and the switch is a file boundary with no marker; 000013E6 covers the SAME MINUTES as the end of 000013CD from the other side of one confrontation, the second paired-viewpoint pair in two chunks -> Q557, Q030, Q078
+- the DOUBLE-DECEPTION reasoning, 000013E6:8:63-8:68, and it is built out of her own behaviour: because she is deceiving 古郡先輩 in order to deceive the thing, 新村茅萱 — who knows she is being watched — can only help them by appearing to betray them. 「チガ姉が死月妖花を欺くためには、私たちを欺くしかないのだ」. She then refuses to rest on it and allows that the betrayal may be real
+- SHE NAMES HER OWN MISTAKE WHILE MAKING IT, 000013E6:8:118-8:123: having sent 古郡先輩 and 夏菜 on to the hut, she works out one cell later that the hut may be the trap, cannot follow without a guide, and cannot warn them because saying it aloud would tell the thing. 「ちくしょう！　私がこんなミスをするなんて、とんだ失態だ！」 — the only time she swears at herself in the project
+- the FIELDWORK register, 000013FD:8:0-8:60, new: she reads footprints for blood, then eavesdrops at three separate houses in a settlement she believes is hostile and builds the whole reversal out of what people are NOT saying. The decisive evidence is negative — not one resident knows 茅萱 reappeared, and none of them is armed or agitated
+- THE REVERSAL: 「逆だった。／チガ姉が生者か死人かで考えていた。／その発想は完全に逆だったのだ」 (8:85-8:87). The masked group were the corpses; 茅萱 was one person holding them off alone. Same shape as the 00000C08 inversion and reached in six cells
+- she runs the SETTLEMENT'S ORAL TRADITION against a scripture she read two files earlier and solves it on one noun: 硫黄 is too concrete to be metaphor, there is no volcano in 800 years, therefore a hot spring — and 新村エリカ names 糸姫山's summit. She glosses アバドン on screen as Hebrew for the king of the abyss (000013FD:8:254-8:282) -> Q558, Q559
+- her 敬語 to 新村エリカ is unbroken and she DECLINES the given name when it is offered — 「でも……それは馴れ馴れしすぎじゃ……」 (8:298), with the narration adding 「さすがにいきなりエリカちゃんって呼ぶのは気が引けた」. First refusal of that offer in four branches -> Q561
+- 「家族以外から下の名前で呼ばれたのは何年振りだろうか」 (8:139), one flat cell, at being called 絵梨奈ちゃん by a stranger. The 呼び捨て wound answered from a fifth direction, by someone with no idea it exists -> Q562
+- her comic apparatus is ABSENT for both files: no 作戦 gag, no ゲス／旦那／御意 pastiche, no 小生 tier, no ニカッと grin, no ～っす, no 「Que droga」. The only lightness in her two files is the 城崎 walk -> Q019, Q057
+- her covering comment on a translation, 0000133D:8:202-8:205, is flagged BY THE RECIPIENT as out of character: 「五島ちゃんの翻訳メールには、ほとんど主観の入らないコメントが添えられるのが普通なのだが、今回は五島ちゃんの意見も混じっているようだ」. What she volunteers is a video link and a guess, and the guess is right
+- SHE NARRATES 00001414 AND 0000142B (orders 188 and 189), continuous out of 000013FD, and then hands the frame to 新村春花 at a file boundary with no marker. -> Q030, Q078
+- the AUDIT, 00001414:8:0-8:94, and it is the cleanest piece of suspicion-management she does: she clears 新村エリカ not on trust but on the SHAPE of her ignorance (generational transmissions, no case-specific knowledge), inverts her own comparison in one cell (「幸太郎さんの知識があまりにも突出しているとすれば」 8:13), and lands on the question nobody has asked — if ファルシフィカソ exists, why is 茅萱 still 翠眼? She then rejects the social explanation she is given, out loud, to the face of the person giving it: 「正直、腑に落ちないですね……」 (8:91)
+- SHE TAKES THE GIVEN NAME SHE REFUSED ONE FILE EARLIER: 「気を付けてください、エリカちゃん……」 (00001414:8:234), unprompted, at what she thinks may be a last parting, with her 敬語 intact. Her narration uses エリカちゃん for the rest of the chunk. Set against 000013FD:8:298, where she declined it as 馴れ馴れしすぎ -> Q561
+- SHE IS THE HOSTAGE, 0000142B, and it is the only file in the project in which she is helpless for the whole length of it: threatened with a choice of deaths in a tunnel, cornered between two corpses, her legs give out and she sits down (8:129-8:132). Her です・ます does not drop once, including 「わ……／分かり……ました……」 (8:125-8:126)
+- WHAT SHE DOES INSTEAD IS STALL, and she names it: she fakes crying at volume (「あーん！　怖いよおー！」 8:208), notes in the same breath that she does want to cry, gets the two corpses arguing about how to handle her, and records the whole thing as 作戦 in all but the word — 「何とかこちらの作戦に巻き込めたようだ」 (8:225), 「私にできるのは、こうやって2人を足止めすることだけ」 (8:229). The performed-and-narrated double level of 00000F0D's 夏菜, done by the person being abducted
+- her RECONSTRUCTION of 茅萱's conversion is made in eight cells with the subject standing in front of her (0000142B:8:86-8:94): ファルシフィカソ to remove the 翠眼, ドローガ to make her 第一世代, the mummy to make her 第四世代. Every step of it is confirmed at 000014D7:8:282-8:285 and she says so there too
+- the comic apparatus is ABSENT again for the whole chunk: no 作戦 gag by name, no ゲス／旦那／御意 pastiche, no 小生 tier, no ニカッと grin, no ～っす, no 「Que droga」. The only survivor is 天才少女, and it is used AGAINST her twice — by 茅萱 (「情けないわね、天才少女が……」 0000142B:8:133) and by 新村栄一郎 (「まったく天才少女だって言うのに想像力が乏しいねえ」 000014D7:8:272) -> Q019, Q057, Q098
+- SEEN FROM OUTSIDE at 00001477 and 0000148E by 古郡なつみ: the outburst at 8:11-8:34 is the 000012C5 locking scene from the other side, and なつみ's reading of it is that 五島 is not angry but frightened of what her 先輩 might learn. She then gives なつみ exactly one sentence of explanation and stops (0000148E:8:56-8:59), and なつみ records the limit rather than resenting it
+- she is BROKEN by the end of the chunk and the narration says so from outside: 「どれだけ泣いたのか分からないほどに腫れたまぶた。／そして青い顔」 (000014D7:8:40-8:41), and her first words are an apology for having been taken (8:37, 8:111). She still supplies the file's two key deductions — 「身体だけは、本物です。／でも、意識は完全に死月妖花に乗っ取られています」 (8:122-8:123) and the ファルシフィカソ objection that forces the サクラ retraction (8:253-8:254)
+- and she is still covering her 先輩's face while doing it: 「古郡先輩！　息を止めて！」 (000014D7:8:312), 「先輩！　目を閉じて！　息を止めて！」 (8:325)
+- 000014EE: she stops a lynching with due process. 「待って下さい。それでは魔女狩りのように、昔の野蛮な刑罰と同じです」 and 「新村先輩たちは時代錯誤の野蛮人なんですか？」 (16:233-16:235), です・ます unbroken, to four people holding knives — and it works inside two cells. The word 魔女狩り is the settlement's own and she turns it on the settlement's family -> Q627
+- she then says the thing nobody else in the scene can: she can pity the girl PRECISELY because it is not her family, and she says so to 春花's face (16:315-16:317). Her own losses are not mentioned by anyone
+- her DEDUCTION in the file is the one that matters and it is cruel: a skeleton cannot be revived, the thing has animated corpses for centuries, therefore it always knew, therefore it never meant to revive him — 「つまり死月妖花は、初めからその人を生き返らせるつもりがなかったんです」 (16:410). She delivers it to a girl who has killed for 800 years to earn it, flatly, and does not soften it
+- the 作戦 gag RETURNS at 0000151C:8:45 — 「桜クッション作戦、成功です！」 — after being absent from the whole of chunk 22. It is the first signal in the branch that she is no longer frightened -> Q626, Q020, Q057
+- in 0000151C she is carried down the mountain on 新村茅萱's back (8:453) and her share of the ending is one line of comedy at her own expense: unrecognisable in a 能面 to everyone except 春花, who says 「うわ……お前、その格好でも誰だか分かるわ……」 (8:323), and 「むきー！」 twice
+- SHE CLOSES THE CASE IN 0000154E, one file after everyone else has gone to bed, and the register is the 眼光 one the narration keeps describing: only the 蔵's upper floor burned, no electrical fault, only the books on the table; the books were needed to lure them to the summit so the thing's side cannot have burned them; and it was too late for the fire to have been protective — therefore a resident did it, to stop those books being read (8:77-8:91)
+- she brings the accusation to the man's own daughter first, at midnight, and then puts the question to him directly with the 敬語 intact: 「幸太郎さん、もしあなたがもっと早くこのことを言っていたら、呪殺事件なんて何年も前に解決していたんじゃないですか？」 (8:125). It is the hardest sentence she says to anyone in the project and it is entirely polite
+- she refuses to accept an apology twice in one scene (0000154E:8:36-8:38, 8:46) and gets out of it by asking to be bought dinner in Ginza. The 天才少女 label does not appear
+- 00001533: she is at the 御神木 site before dawn, is asked by a stranger whether the cherry there is gone, does not get her name, and says 「どこかで会った気がするんですけどねえ……」 (8:82). She is the only person who meets the new girl before the classroom and the only one who never learns what that means -> Q615
+- 0000156A (order 202): she is 33, director of the 元木市 国際研究所, living on the sealed top floor of a mansion she moved into a year earlier precisely because it shuts the outside air out. She has no ドローガ in her, so she is the only one of the four who cannot step outdoors — 「私は外に出ると、死んでしまうので」 (64:109) — and the whole file is her reasoning through other people's legs
+- WHAT SURVIVES AT 33: です・ます unbroken to everyone, both 先輩 forms in dialogue and in narration (Q034), the ニカッと grin (64:90), and the 天才少女 label — which she corrects herself on, because she is no longer a 少女: 「天才少女……じゃなくて、天才ですから！」 (64:100), and 「ぬう……天才少女五島絵梨奈、不覚……」 (46:140) -> Q098. WHAT IS ABSENT for 3,299 lines: the ゲス／旦那／御意 pastiche, the 小生 tier, the 作戦 gag, であります, 「Que droga」 and the ～っす slip -> Q019, Q057, Q094
+- SHE CALLS 古郡茜 「お母さん」, in every scene, with her 敬語 completely unbroken. Her recorded form since 00000522 is おばさん, and the change is never explained or remarked on by anyone -> Q645
+- the DETECTIVE mode at its largest scale: the 747年事件 cover-up read off a magazine's publication schedule (14:9-14:19), the robes identified as fungal from the absence of a seam by way of a four-character idiom (34:56-34:91), オニナラタケ and the Oregon mycelium as the mechanism for a 100 km underground transfer (8:214-8:239), spores rather than gas as the cause of death, proved by the absence of any toxic component in the air and by flies and crows still feeding (58:191-58:228), and the coded reading of a government briefing (14:136-14:161). She hedges all of it as usual and is right about all of it
+- SHE OPENS THE ONE DOOR NOBODY HAS TRIED: she reads the 女ケ沢 trial record, finds that 茜 never once claimed to have done the killing herself, and offers to petition for a retrial and take the stand (28:48-28:88). It is the only act of restitution anybody in the project offers 古郡茜, and it is used against her in the last block as the reason resisting is hopeless -> Q646
+- SHE IS LEFT ALONE AT THE END and does not appear in the last block at all. The two 神使 conclude that she has no qualification, so she is to be dissolved and absorbed, and the narrator is grateful because it means 五島 will not die lonely in the flat. Her last on-screen line is 「はい！　絶対に、お母さんも助け出してみせますから！」 (28:95) -> Q663
+- BEFORE THE PERSONALITY CHANGE: 000016AE:11:49-11:59 and 00001704 give the only outside evidence of what she was. Her primary-school teacher says her atmosphere has changed and 五島 supplies the old words herself — 「陰気で、根暗で、暗い児童でした？」 — and is not contradicted. The teacher's remembered worry was 人間関係, never ability. In 00001704 she answers a warm classroom with 「…………」 five times in a 31-line file and the file ends on one -> Q688
+- AS A SMALL CHILD (00001755, 00001AB5): the vocabulary is already adult and the grammar is not. She recites flamingo anatomy, carotenoid pigments and a Latin etymology to a sister who has already walked off, then cannot answer 「お名前は？」, then accuses a zoo patrolman of 虚辞 and 凌辱 at the top of her voice. Her rule is quoted from her sister: 「知らない人について行かない。お話したらダメ。お姉ちゃんがいつも言ってる」 -> Q697
+- the 作戦 gag at its smallest, 000016AE:11:26-11:28: she crouches to see between the crowd's legs and says 「うん、作戦成功ですね！」 to nobody -> Q020, Q057
+- THE SPELT-OUT MORA, her device and 古郡茜's: 「ま・／じ・／め！」 (000016AE:11:64-11:67) and 「し・／あ・／わ・／せ。」 (0000191C:11:161-11:164). One EN solution must serve both, and 茜's -> Q115, Q084
+- 0000191C IS HER LONGEST COMIC NARRATION and it is built on one joke held for 170 lines: she is in a national-level eating contest and wants mayonnaise. The craving escalates to 「イカ焼き」 printed nineteen times in one cell, 「マ／　ヨ／　醤／　油　！」 staggered across four cells twice, and a forfeit with 30 seconds left. She then eats three grilled squid in a sixty-cell rhapsody with real cookery vocabulary in it (本醸造, 木炭, 一味) -> Q721
+- she LOSES ON PURPOSE and does not notice that she has: she is level with the national champion on ten plates at the halfway point, forfeits for squid, and the champion's three closing sentences about what would happen if she were serious are spoken to her back and never heard -> Q722
+- THE DOPING SEARCH, 00001844, and it is the single most consequential thing she does in the chunk: alone, with 「ちょっと興味本位で調べるだけだから」 said twice in two cells, she works from ドーピング to エフェドリン to メタンフェタミン to 交感神経 to 火事場の馬鹿力 and articulates ドローガ's exact mechanism — 「火事場の馬鹿力を起こす、理想的な薬……。／そんなもの、この世にあるかなあ」 — then drops it with a joke about world balance. She never learns -> Q713, Q415
+- she uses 「五島メニュー」 for her own training programme, the third self-title after 天才少女 and 鬼才少女 -> Q098
+- SHE IS TOLD WHAT SHE GOT WRONG, 00001849:8:39-8:58, and takes it: the coach shows her that 古郡先輩 never wanted the place, only the recognition, and that the person whose recognition she wants is 五島 — 「ずっとサポートしてたのに、全然気づかなかった……」. It is the only scene in the project in which an adult corrects her reasoning and she concedes the point outright
+- her です・ます holds throughout the chunk with no ～っす slip anywhere; her profanity ceiling holds at zero
+- SHE LOSES, and it is the worst defeat she takes anywhere, 00001C5D. She accuses 新村茅萱 of the 呪殺 killings in unbroken です・ます with a knife and then a second knife at her throat, reads the second knife correctly as proof of no intent, forces a confession out of her — and is then comprehensively wrong. 19:9-19:24: she beats the tatami, swears (「くそ！」 split one word per cell across five cells, then 「ちくしょう！」 six times in one cell), and says 「こんな屈辱は初めてだ……！」 and 「私はずっと騙されていた」
+- her CREDO, stated once and only to herself, 00001C5D:19:46-19:53: 「この世にオカルトや超常現象なんてあるはずがない。／それはオカルトや超常現象という名のラベルをつけているだけに過ぎない。／私が見たいのはラベルではない。／中身だ」, and 「必ずそこには因果律が存在するはずだ」. It is the clearest statement of her method in the project and it is made at the moment the method has just failed
+- and she stops herself: 「真相を追い求めるよりも、まずは夏菜ちゃんを安心させてあげたい」 and 「真相よりも大事なことがあるのだ」 (19:64-19:66). Third time she declines to pursue a conclusion, and the first time the reason is a child
+- 00001B70 / 00001B76: she loses an ETHICAL argument to a ten-year-old and wins it on different ground. 夏菜 argues that killing is wrong only because of the bereaved, therefore killing a whole family is fine, therefore people nobody will mourn may be killed; 五島 runs through 人権侵害, do-as-you-would-be-done-by and extinction, discards all three, and says 「私、夏菜ちゃんに人を殺してほしくない」, then concedes out loud that it is her own selfishness. Her narration afterwards calls her own 『矯正』 an ego too
+- she is REFUSED as a sister for the first time: 夏菜 rejects 「姉妹でいてね」 on the ground that being a substitute is not being liked, and orders her to make it up with 五島桃子 instead (00001B70:11:82-11:101). The エリ姉 relationship survives it
+- the 作戦 gag is back at its warmest, 00001B76:11:60 「作戦は、大成功です！」, about gaining a 戦友 fifty years older than herself, and 「ようこそ荒田へ」 is the only welcome anyone from outside is given to 荒田集落 anywhere -> Q811, Q057
+- she TAKES THE GIVEN NAME AND GIVES HERS, in one cell each: 新村エリカ calls her 絵梨奈ちゃん unprompted and her narration says she was openly flustered (00001B76:11:42-11:44), and she answers 「えへへ！　よろしく、エリカちゃん！」 (11:54). Fifth branch, fifth handling of the same wound, and this is the only one where both halves happen inside one handshake -> Q037, Q561
+- 00001BDA: she finds a yellow phone strap she cannot account for and a nursery drawing of an adult breathing fire with two delighted children, half-remembers a parent and child at a table 「きっとザッハだった」, and cannot get further. It is the 0000085D / 00000874 takoyaki scene and neither she nor 古郡なつみ ever makes the connection -> Q031
+- 00001FEF: at fifteen she walks into 元木警察署 and says 「実は私、犯行の瞬間を見ていたんです！」. Nothing else in the project has her as an eyewitness and no later file picks it up -> Q823
+- AS A SMALL CHILD LOSING HER SISTER, 0000205F: she reports mastering インド数学 and the invention of zero, is cut off, keeps offering to help (「何でも相談に乗るよ？」), and takes eight cells of escalating cruelty before she stops. Her reading of it is entirely self-blaming — 「私のせいで不良になったのかな……」 — and her last line is 「私、もうお姉ちゃんに何もしてあげられないんだね……」. The 天才少女 performance and the need to be useful to somebody both have a date now -> Q098, Q862
+- SHE AVOIDS THE HOSPITAL AND SAYS WHY, 0000207E:8:30-8:34: pushed by a junior who has noticed, she gives it straight — 新村春花 is in that bed because she shielded 古郡なつみ, 「だからなんか……病室での古郡先輩の立ち振る舞いを見るの、ちょっとつらくて……」. It is the only time she states a reason for anything she does, and she denies it once first
+- the 入学式 paper-tearing of 00000900 has become a school legend told back to her by a junior who wants to copy it; her answer is 「今考えたらちょっと大人げなかったかな……」 and 「伝統行事になったら困るよ……」
+- SHE ABANDONS A CONFERENCE PAPER, 0000209C: alone in a chain café in 皆上市 an hour early, she cannot concentrate, loses the thread of her own material twice, cannot read 治験, is asked twice whether she is all right, and walks out on her supervisor with 「先生、ごめんなさい！　やっぱり、帰ります！」. Her closing cells are 「古郡先輩、もうほんとにやばいよ……！／　でも……先輩には何て言えばいいんだろう……！」. This is the only time in the project she drops a piece of work
+- she works out the Portuguese coffee sizes off the board unprompted and glosses them in one cell (0000209C:8:14) -> Q834
+- THE OFFER, 000020AE: the 文部科学省 approaches her as a fourth-year undergraduate to be 所長 of a new 国際研究所 in 元木市 at 5,400万円 a year, conditional on a bioengineering doctorate by 祀耀809年三月; the institute opens 祀耀809年四月 and the subject is the 御神木. Her answer is to ask her parents — and then the sharp question: 「そこまで国が投資するってことは、もう何か分かっているんじゃないですか？」. She is told an earlier study 頓挫した and that nobody will say why
+- IN 荒田 AS A HOSTAGE, 000020D8 and 000020DE: her stammer breaks out one syllable per cell (「で、／で、／で」), she is threatened with death by 古郡なつみ in a flat voice, and then held by an eleven-year-old who offers her an escape and takes it back with a knife. Her whole defence is refusal — 「私は何も話さない。ここの人、誰も信じない」 — and it costs her the one offer that may have been real -> Q857
+- 000021FE: four of the five cells of a whole file are hers, refusing a death — 「新村……／先輩……！」 with the surname cut off by the cell break, then 「戻ってきて下さいよ……！／　1人にしないで下さい……！」 -> Q888.
+- 00002225: at the bedside she offers to prove an external cause and get an acquittal, is refused, and takes the 糸姫 errand with 「天才少女五島絵梨奈にお任せください！」 before breaking down into 「バカバカバカ！　先輩の大バカ者ーー！！」. Years later she is the one who says outright that she would have accepted 春花 never waking if 春花 were happy — and then takes it back: 「でもやっぱり、わがままを言うなら、帰ってきてほしかったです」 (11:81-11:91). It is the most direct thing she says to anyone anywhere.
+- 000023AB (order 405): she engineers なつみ out of the room by talking too fast on purpose, admits it when caught, and lays out the 女ケ沢市事件 escalation as forensic argument -> Q900. Her conclusion is 「犯人は多分、殺したくなかったんですよ」 and it is correct.
+- 000023E7: at home she is the younger sister again, apologising for having friends over and relaying that they called her sister beautiful; neither of them is named in the file -> Q901.
+- 0000242E: she is the reason her sister punches a police officer and takes his gun. Her only lines in the file are shouted at her sister for recklessness, and her sister cannot hear them.
+- 0000235A and 0000234B: she is one of the three who share the dream; the 「――」 voice gets nothing distinctive out of her -> Q897.
+- SHE NARRATES TWO OF THE FOUR ROW-BLOCKS OF 00002444 (order 415), [14] and [26], alternating with 新村春花 at every block boundary with no marker -> Q933
+- 敬語 UNBROKEN THROUGH A MURDER ACCUSATION: she calls a man in 赤装束 「人殺し」 twice and then keeps です・ます for everything after it — 「死人を出しておいて、この程度で罪滅ぼしですか？」 (14:178), 「自己保身のために仕方なく襲撃に加わっている人もいると」 (14:256). Her narration drops the さん off 城崎 while she distrusts him and puts it back the cell she decides to trust him
+- HER TWO DEDUCTIONS IN THE FILE are both made out of somebody else being helpful. First: only part of 新村本家 knew about 古郡先輩's ability, so a 新村 informed 瀬 (14:212-14:217). Second, and it is the file's hinge: 城崎's account of 新村サクラ's precognition condition contradicts 幸太郎's, so 幸太郎 lied — and the reason is inverted from the obvious one, 「私たちが生き残る可能性が高いから嘘をついたのだ」 (26:61), so that she would keep the wrong condition -> Q950, Q243
+- her READING OF THE MASSACRE, 26:64-26:107, is the best forensic work she does in the chunk: too many dead for a faction fight, blunt and bladed killing needs force and repetition, the killers were never seen and took no visible damage, therefore a very small number with extraordinary combat ability, therefore a 真犯人 hidden for ten years who was forced into the open by something it did not expect
+- SHE CALLS A DEAD FRIEND AN IMPOSTOR TO HER FACE and is slapped for it: 「あなたは古郡先輩の姿をした別人だ！」 (26:166), after three cells of 「嘘だ――」 in narration and the physical objection that nobody passed them on the road. She knows it is suicidal and says so — 「こんなことを宣言するなど自殺行為だ。／だがこれが叫ばずにいられようか」 — and then cannot move, and lets them go. Her own word for it is 無力感 (26:234)
+- SHE PRINTS A CONVERSATION THAT NEVER HAPPENED, 26:306-26:355: about 48 cells of reconstructed dialogue in 「」 and 「――」, framed only by 「きっとこんなやり取りがあったはずだ」 and 「予想ではあるが」. It is her first attempt at the device and 00002457 shows she got the motive nearly right and the objective wrong -> Q937
+- and she is still the one who checks: she catches 糸姫 out on the one thing that saves なつみ — the sensory link was cut at the moment of the attack, so the death was never confirmed (26:362-26:371)
+- 00002450 (order 416): she is at home with a stack of 元木大学 library books and the 篠崎ハジメ research monographs, and she asks her ELDER SISTER for help for the first time in the project — 「お願い！　お姉ちゃん協力して！」 — and gets a professor out of it
+- her CREDO restated in her own narration, 12:72-12:75: 「この世に超常現象などありえない。／それは単に、今までの常識では解明できないというだけ。／1つ1つを検証していけば、必ず因果が存在するはずだ」. Same words as 00001C5D:19:46-19:53, here used to start an investigation rather than after one has failed
+- SHE IS BEATEN TO THE ANSWER BY HER SISTER, which happens nowhere else: 五島桃子 supplies the deduction that 死月妖花 has intelligence, mimics cherry and could therefore flower out of season, so if 古郡先輩 learns about ドローガ the 盗感 will give her away (12:213-12:224). 絵梨奈's reaction is 「お姉ちゃんの言う通りだ……！」 and she runs for the door
+- 00002473:11:97-11:104, 11:197-11:205: the key swap seen from the other side. 幸太郎's narration spots the metal in her hand, works out what she has done, and deliberately gives her the opening; she gets the party through the 鉄格子 door and locks it behind them. Her only lines are 「先輩！　早くこっちに！」 and the interrogation she opens with — 「絶対に共犯者がいるはずです」, repeated twice, and 「あなた……誰をかばっているんですか？」
+- she is right about the accomplice and right about the cover, and the narration confirms both in cells she cannot hear
+- 00002478:11:123: months later 茅萱 will not contact her because she does not know where the watchers are. Neither of them appears again
+- as-of: 00002478
+
+
+
+## 古郡良治 (こごおり りょうじ, Ryoji Kogori) — なつみ's father
+- first_appears: referenced from 000001DB; NAMED on screen at 000004E3:11:1 (a police officer answers his phone: 「こちらは古郡良治さんの携帯です」). He has TWO appearances with actual words: a flashback (00000538:11:105-116) and a letter (00000564:11:97-120). He is dead for the whole of the story present.
+- pronoun(s): 俺 ("俺の顔で安く手に入ったからな！" 00000538:11:109; "俺を信じて待っていてくれ" 00000564:11:112)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: TWO registers, and the gap between them is the whole point of the character:
+  1. the DAD register (00000538:11:105-116): warm, teasing, self-deprecating. 「はは！　いいのか俺なんかで。」 (11:114), 「何、大したことじゃないさ。」 (11:111), 「もちろんだ！」 (11:108). Short, generous, a little goofy.
+  2. the LETTER register (00000564:11:97-120): terse, ordered, unsentimental. Declaratives and instructions with no softeners; 「頼むぞ。」 (11:119) is the whole sign-off. He explains his reasoning in one clause per line and never once says he is afraid.
+- sentence-final particles: ～からな／～ぞ／～さ (dad); ～てほしい／～な (prohibitive)／～てくれ (letter)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「はは！」; 「何、～さ」 as a brush-off; in the letter, the repeated frame 「できるだけ、普段通りに」 (11:104, 11:111) — normality as an instruction
+- dialect: none
+- EN correlates: contraction rate MEDIUM in the flashback, LOW to NONE in the letter; profanity ceiling ZERO; sentence length SHORT in both; formality LOW then MEDIUM-formal; vocabulary register ordinary salaryman warmth, then careful legal-ish caution (証拠, 公になれば, 周知). He is an engineer — he designed the phone model he gives her (00000538:11:107).
+  3. the VOICELESS register, NEW as of 00000641:11:32-60 — skinned, standing under the 御神木, unable to form consonants. His daughter's name takes three cells (「な……／つ……／み……」 11:32-34), breath escapes as 「ヒィ、ヒィ」 (11:42), and his two messages are 「なつみ……。／信じ……なさい……。／春花ちゃんを……」 (11:54-56) and 「みんなを……／みんなは……味方だよ」 (11:59-60). The object lands last in both. Warm, not frightening; the narration says the touch feels like wind and there is no revulsion. -> Q085
+- known ambiguity / open questions: the letter's 「例の件」 (00000564:11:103) and 「美冬さんの正体」 (11:114) are never explained. EN must not gloss either. The 00000641 appearance is never labelled a ghost, a vision or a hallucination — なつみ says 「これが気のせいなのは分かっている」 (11:50) and then the elbow injury actually stops hurting. Keep both. -> Q071, Q085
+- HE NARRATES ORDERS 66-71 (0000082F, 00000846, 0000085D, 00000874, 0000088B, 000008A2) — six consecutive files, twelve years before the story present, and it is the first male 俺 narration in the project. A translator working file by file must not assume 古郡なつみ or 新村美冬 is narrating any of them.
+- narration voice: plain past, 俺, short declaratives, dry and unsentimental. He jokes about money and about being out-ranked at home (0000082F:11:85-11:98), explains his job in concrete nouns (00000846:11:43-11:50), and reasons in numbered steps when frightened (00000874:11:58-11:69). Two things break the flatness and both are refusals: at 0000082F:11:154-11:156 he stops narrating and speaks to the falling man in second person, never finishing the sentence; at 11:157-11:161 he describes only holding the child. He never says what he saw. EN must not supply it.
+- a third register, the FATHER register (0000085D whole file): fussing, comic, out-argued by two small girls about probability, lining up ten glasses of water. It is the same dry voice used on a trivial subject, not a softer one.
+- his pronoun and address forms in the flashback match his letter twenty years later exactly: 茜 bare, お前 for both wife and junior, 栄一郎 bare, 美冬さん with the さん kept while he fears her. Nothing about him changes between 788 and 800 except that he stops narrating.
+- HE NARRATES ORDERS 72-74 as well (000008B9, 000008D0, 000008E8), so his run is orders 66-74, nine consecutive files, and it is where the branch splits. In 000008B9 he reads 美冬's face over a hugged child and decides not to kill; in 000008D0 he is killed for it; in 000008E8 he is the one adult standing outside the room while the four of them repair each other.
+- the REASONING mode at its fullest (000008B9:29:29-29:60, 36:49-36:69): numbered character traits in 『』 — 『バカではない』『極端』『根は甘えん坊』『純朴で素直』 — used as a working model of another person, then a long list of things that still do not fit, ending 「くそ……！　どうしても推理が追いつかない……」. He is right about the person and wrong about the danger. Do not let EN make him sound clever or foolish; he is neither.
+- the TIME-SLOWS mode, 000008D0:27:0-27:24: twenty-four cells of one-sentence self-interrogation while a mace falls, each cell a question, none answered, ending on 「俺は……／俺は……！」. No physical description at all. Keep the questions and keep the repetition.
+- his profanity ceiling holds at くそ／ちくしょう (000008B9:36:67, 000008E8:8:78) even while dying.
+- in the surviving branch he is ALIVE and on the phone at 00000B27:11:43-11:113, and it is his last appearance. Sober, ready with paper before he is asked, and answering with unusual brevity — なつみ notices both and explains them away (11:45-11:53). He confirms the whole 女ケ沢 plot from his side and adds two things nobody had: the 能面 and 赤装束 in the package, and the drug with a written dosing instruction (80%, briefly). His register is the DAD register unchanged — 「もしもし、なつみか？」, 「分かった。ちょっと待てよ」, 「よし、いいぞ」.
+- his last three lines are shouted and are all imperatives about other people: 「なんだお前ら！／茜、早く逃げろ！」 (11:107-11:108) and 「なつみ！　早くそこから逃げろ！　すぐに荒田から逃げ出すんだ！」 (11:111). Same 俺 register, same address forms, no swearing. Then blade noise. Do not give him a final sentence he does not have.
+- HE NARRATES ORDER 113 (00000CB3), a standalone file set in 祀耀790 on the night before and the morning of the 女ケ沢 killings, in a branch where he and 茜 go through with it. The DAD register is absent: it is the reasoning-in-steps mode with no joke anywhere in the file, and he argues with his wife and loses (11:16-11:31).
+- his private reasoning while she is out testing the drug (11:35-11:52): obeying buys back 元木町 with the guilt attached; bringing なつみ is impossible because phoning her grandparents is forbidden and a round trip is too risky; 「そもそもこれは、なつみの風船が原因。／その責任は親の俺たちにある。」 (11:46-11:47); 「命を失ったことで 被 った不幸は、命を以って取り返す……。」 (11:48); and 「いや、俺はそもそも誰に許しを請うというのだ？／神様か？　警察か？　被害者の親か？」 (11:50-11:51).
+- his closing four cells RETRACT his own justification: 「そう、これはある意味正当防衛とも言える。／そうでも考えないと、どうにかなってしまいそうだ。／いや……／もう、どうにかなってしまっているのだろうな……。」 Do not let EN resolve it in either direction.
+- in the 00000BD6 branch he is alive on the phone (00000C50:11:64-11:107), DAD register unchanged, explaining without embarrassment that he built a listening app into the phone he gave his daughter as a present, and asking them to stay in signal range so it works.
+- HE NARRATES ORDER 115 (00000CE3), the years after the 女ケ沢 killings, in the same reasoning-in-steps mode as 00000CB3, with the DAD register absent everywhere except one line to his wife (11:203 「お前は俺にとって、最高の妻だよ」).
+- the ENGINEER at work, 00000CE3:11:61-11:83 and 11:136-11:197: he states exactly what he can and cannot build (a bug he can fit, a driver he cannot write), asks a colleague a disguised question and is laughed at, and then designs a trap out of the failure — a hidden app, an old battery and a 10-gram slug of inert metal, so the phone imitates a bugged phone for anyone who checks. He explains all of it in plain declaratives with no self-congratulation and closes 「本当に些細で、ほんのわずかな俺からのヒントだ」 (11:196).
+- his profanity ceiling holds at くそ (00000CE3:11:43, 11:117) through blackmail, vomiting and a bribe envelope.
+- HE DIES IN 00000CFA, on screen, narrated by the woman killing him. He never begs, is noted twice for not begging, and spits blood in her face (11:290). His last words are 「家族には……手を出さないでくれ」 (11:303) and then 「な……／なつみ……／は……」 (11:350-11:352), broken across three cells and never reaching a verb. The VOICELESS register of 00000641 arrives here as 「あ……がが……」 (11:337, 11:368) — the same sound, in the branch that produces the body.
+- in this branch he is ALIVE, off screen and useful: one phone call, 00000E01:11:60-11:65, DAD register unchanged (「なつみ、落ち着くんだ！」), and he is the one who reads the 直感's SILENCE correctly — not that the ability is broken but that it means she is currently safe — and gives the only actionable instruction anyone gives her: keep the windows open so it can fire. He does not appear again until he is a parent in a hospital corridor (00000E61:11:0-11:7, one line, 「すまんな……」).
+- HE IS ALIVE AND DRUNK IN THE 00000BD6 BRANCH, 00000F40 and 00000F57, and it is his longest comic run anywhere. The DAD register at full volume with alcohol on it: 「よう娘たちよ！　家族風呂はどうだ？」 (00000F57:11:36) walking naked into his daughters' bath, 「むむう！　うちの娘たちに何かしたら、この俺が許さん！」 (11:56), 「そうそう！　俺たちは裸の付き合いをした仲だもんな！」 (11:138). 俺 throughout, no swearing, and he is genuinely hurt when thrown out — 「すごすごと寂しそうに戻っていった」 (11:70)
+- he still bathes with his eighteen-year-old daughter and neither of them finds it remarkable; 春花 does, loudly, and the file lets both readings stand (00000F57:11:74-11:91)
+- inside 春花's 妄想 he is arrested for it and his register does not change: 「私はただ……／娘たちと家族風呂に……」 (11:100-11:101) and 「なつみ……／すまない……／俺は……／のぞきで変態で痴漢の、どうしようもないやつだ……」 (11:105-11:108). It is 春花 imagining him and she gets the self-deprecating register exactly right -> Q409
+- he drinks himself to sleep before 21:00 and spends the evening telling 春花 stories about her own dead father that she has never heard, including from before her parents met (00000F57:11:144-11:145). His wife covers him with a blanket and なつみ says 「でもお父さん、嬉しそうだったね」
+- HE SPEAKS ONLY BY PHONE AND MESSAGE IN CHUNK 22 AND HIS LINES ARE DELIBERATELY EMPTY. 00001477:8:45 is a message — 「なつみ、今はただ、みんなに従いなさい。」 — and 8:100 is 「なつみ、こういうことなんだ」, a sentence with the subject, predicate and modifier removed on purpose, which his daughter names as such and decodes
+- WHY HE USES A MESSAGE RATHER THAN A CALL is itself the signal, and his daughter reads it: he has the listening app and therefore hears everything, so a vague written line where a call would do is information about who else is listening (8:46-8:48) -> Q577
+- he hands over to 古郡茜 mid-call rather than finish the thought (8:104), which is the only time in the project either parent passes the harder half of a conversation to the other
+- his last appearance in the chunk is a one-line memory of the morning: 「茜、なつみだっていつまでも子供じゃないんだ」 (000014BC:8:17), his ordinary 俺-adjacent タメ口, letting his daughter go to 荒田
+- HE NARRATES ORDER 258 (00001AC1), a branch in which 女ケ沢市事件 was prevented, in 俺, the reasoning-in-steps mode with the DAD register live in dialogue. It is the last ordinary day of that branch and it is 96 lines
+- WHAT HE STATES, flatly, in his own voice: 「俺たちには、この時期のなつみの警告は必ず聞くという暗黙の了解がある」 (8:74). Because his daughter's 危険予知 says she must attend, she goes to 新村栄一郎's 十三回忌 at 荒田集落 in place of the two adults who were the only permitted attendees. Neither he nor she knows what the danger is
+- the one loose end he names: somebody really did send 美冬 the weapons and the drug, and whether that person stays harmless is unknown — 「なつみはその人物と顔を合わせるのかもしれない」 (8:84)
+- HIS CLOSING LIST is three items and a break: 「信頼できる人、／能面を使う文化、／そして……／あの薬のこと」 (8:89-8:92), answered by his wife with 「まさか……／女ケ沢市で子供たちを殺しておいた方がまだマシだった、なんてことはないわよね……」 and his own 「そんな……まさか……」. The file ends there -> Q748
+- the DAD register in dialogue is unchanged: 「おい、今日は引っ越しなんだから、ちゃんとお手伝いするんだぞ！」, 「あまり遠くへ行くなよ？」, 「ああ、気を付けてな」. 春花ちゃん and 美冬さん both intact, as everywhere else
+- the file opens 「祀耀800年五月一日」 and its second half is 「祀耀800年四月七日」 with 「そして10年の月日が流れ――」 between them, so the opening date is almost certainly an error for 祀耀790 -> Q747
+- HE IS THE ONE WHO STOPS IT, 00001C02, and the reasoning is the best he does anywhere: if なつみ delayed the train on her 直感 then they should not go at all; she told them ten days ago 「荒田へ行くな」; going anyway means substituting their own judgement for hers; 「危険なのはなつみじゃなくて俺たちの方だ。／俺たち危険因子が近づく方がよっぽど面倒なことになる」; and the ten years they got right were got right by trusting her to the end. He refuses to let 茜 telephone なつみ to check. 00001BAE is the same hours with the opposite outcome and nothing marks either as the true one -> Q798, Q054
+- 00002001: told 新村美冬 can bear no more children he says all they can do is carry on as before, is the first to say the word 養子, and then sets the test his wife's decision must pass — not whether 美冬 is to be pitied but whether 茜 will be happy, because if the adoption ends the friendship it is the wrong answer. He asks for time and does not refuse
+- 00002306: on the night of the first 女ケ沢 killing. His two registers are one cell apart — brisk practical concern for his wife (「おい茜！　大丈夫か！？」, 「しっかりしろ！　病院、行くか？」) and, alone, 「ぐ……くそ……！／　俺はどうすればよかったんだ……！　もっと手立てはあったはずなのに……！」.
+- HE DOES NOT BELIEVE HER ANSWER. She asks whether he did it, he says 「ああ……」, and the file's last three cells are him asking the empty room 「茜……／お前は本当に……／本当にやったのか……？」 — so each of them may be covering for the other and the file will not say -> Q892, Q646.
+- 0000241B and 00002420 are his disappearance and death from his wife's side; he instructs her by letter to behave normally, goes to negotiate with 新村美冬, and is identified only by his シスAB型 blood -> Q328.
+- 00002444: he and his wife come up the mountain from the 資材倉庫 on the listening app, and the DAD register is doing crisis work — 「茜は五島ちゃんと一緒に駅へ戻ってくれ。集落へは俺1人で行く」 (14:489), 「茜、こうして味方が増えたんだ。役割分担をした方がいい」 (14:508)
+- he interrogates 城崎 with 「おい、あんたは本当に信用できるのか……？」 and drops it in one cell when a fifteen-year-old vouches for him, with a long sigh through the nose. He is the only adult in the file who changes his mind on somebody else's word
+- HIS ONE DEMAND, 26:270: told his wife has been taken, he asks about ドローガ by name — 「君なら例の薬のことを知っているだろう？　あれは使えないのか？　俺も茜も持っている！」 — and is refused, told it would convert him, and told a living human cannot beat a 神使 either way. His answer is 「くそ……！　なつみどころか茜まで……！」
+- he is one of the party released by the 女神様 and loses the memory of the night with everyone except 新村春花
+- as-of: 00002444
+
+## 古郡茜 (こごおり あかね, Akane Kogori) — なつみ's mother
+- first_appears: 000001DB:15:79 (「なつみ？　いるの？」); given name confirmed on screen indirectly at 000001DD:11:102; written on a 紙人形 as 古郡茜 at 0000034C:11:137
+- pronoun(s): 私 ("さあ……それは私たち庶民が口出すことじゃないわよ" 000001DD:11:42)
+- pronoun FREQUENCY: less often than typical; she drops subjects heavily
+- speech level baseline: タメ口, maternal-feminine
+- sentence-final particles: ～わよ／～わね ("もう夕飯の時間よ" 000001DB:15:82); ～なさい ("おとなしく座ってなさい" 000001DB:15:175); ～でしょ; ～のよ; ～なさいな ("おいでなさいな。なつみもその方が安心でしょ？" 0000034C:11:303)
+- copula: だ／よ, feminine
+- verbal tics / catchphrases / fillers: 「ほらほら」; 「ごめんごめん！」; chirpy apology-then-order pattern
+- SECOND REGISTER, new as of 00000522:11:112-139 — the CONFESSION voice. Every chirp is gone. Long pauses written as sighs, slow plain admissions with no ～わよ energy: 「そうね、やっぱり私たちのしたことは間違いだった。だからこんなことに……」 (11:123), 「自首ね……。／そうね、すべてを公にしないと。」 (11:132-133), 「私にはもう、あの子に合わせる顔がないの……」 (11:138). She still says ～ね and ～の, so it is the same woman; what leaves is the volume. Carried into 0000057B:11:45 (「ちょっと……外の空気吸ってくるわ……」), her only line in that file.
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality warm-informal; vocabulary register ordinary domestic. Do NOT render her as elderly — she is a working mother in her late 30s/early 40s.
+- THIRD REGISTER, new and branch-defining as of 00000641:11:116-154 — in THIS branch she is the figure in 能面 and 赤装束, and she is dying when she speaks. Every chirp and every ～わよ are gone. What is left is short, broken across cells by pain (「それは……／ぐっ……！」 11:144-145), and entirely about other people: 「良治君は……／お父さんはね……／最後の最後まで、私たちを守ろうとしたの。」 (11:122-125), 「なつみ……早く、この町から逃げなさい……。」 (11:134), 「なつみには、春花ちゃんがいるじゃない……」 (11:142). She still uses ～の and ～わ, so it is the same woman. She never explains anything.
+- address forms, new as of 00000641: 「良治君」 for her husband — the only spousal address form in the project, and she corrects herself into 「お父さん」 mid-line for her daughter's benefit (11:122-124). Bare 「美冬」 with no suffix for her lifelong friend, and 「あの子」 (11:138).
+- SILENCE: while masked she says nothing at all, does not react to being called 死神 or 新村美冬, and takes several rounds through ordinary cloth with no vest (11:130-131). Do not give her a sound before the mask comes off.
+- known ambiguity / open questions: she is visibly hiding something at 000001DB:15:155-159 (fidgeting with her phone) — do not let EN resolve it. At 00000522:11:91-92 the ORDER of her questions (春花ちゃん first, then 美冬) is the clue 五島 works from; do not reorder them. What she admits at 11:123 is never stated. At 00000641:11:138-140 her sentence about 美冬 never reaches its ending — do not resolve it. 五島 later asks whether the body returned to them was even hers (00000656:11:143). -> Q063
+- HER YOUNG REGISTER, new and extensive as of 000007BC / 000007D3 / 000007EA / 00000801 / 00000818 (she is 7, then a high-school student, then 21, then a wife): cool-elder-sister タメ口 built on ～なさい, ～でしょ, ～わよ and 「あんたねえ……」 (000007BC:8:101, 8:134, 8:220, 8:272, 00000818:11:220). The maternal ～なさい of 000001DB is already here twenty years early, aimed at a friend.
+- the LAUGH, her single most identifying feature in the flashback and absent from every present-day file: a suppressed snort written 「ブフッ」, extended as 「ブフフ」「ブフホッ」「ブフフフホッ」. The narration says twice that she is a クールキャラ who only breaks in front of 美冬 (000007BC:8:130, 8:232-8:233). EN must keep one fixed syllable and lengthen it the same way.
+- the SPELT-OUT IMPERATIVE, her verbal signature across twenty years: 「ちゃ・／ん・／と、／ご検討ください！／以上！」 (000007BC:8:311-8:315, repeated almost verbatim at 00000818:11:235-11:239) and 「と・／つ・／に・ゅ・／う！」 (000007EA:11:13-11:16). One EN device must serve all of them. -> Q115
+- what she does, not what she says, is the character: she postpones her own wedding for a year (00000801:8:31-8:35), comes to a friend's bedroom with severe morning sickness to offer her unborn child (00000818:11:59-11:76), and at 000008A2:8:15-8:16 asks for the time, place and method of a murder in a voice the narration calls free of hesitation. The same flat competence, three times, at three moral distances.
+- she is CONSISTENT across twenty years to the word: 「あんたねえ……」 and the spelt-out 「ちゃんと、ご検討下さい」 both reappear at 000008E8:8:254 and 8:261, twelve years after 000007BC and twelve before 00000641, aimed at the same person about the same thing. -> Q115
+- her one long speech (000008E8:8:208-8:217) diagnoses 美冬 in four adjectives and then refuses to accept the refusal: 「あんたの敵は誰1人いないの」, 「元木町に帰ろう？」, 「もう絶対に美冬を見捨てないから」. No softeners, no questions, four imperatives. It is the same register as 「おとなしく座ってなさい」.
+- in the surviving branch she is ALIVE and ordinary in the story present (00000916:31:36-31:53, 000009E6 frame): buying a gift for the hosts, telling her daughter to take it, waving her into a taxi. Three lines total. Keep her unremarkable there; the weight is all elsewhere.
+- her ONE line in this chunk, and her last anywhere in the branch, is 00000B27:11:109 「良治君ダメ！　裏も囲まれてる！」 — shouted off a phone she does not know is on speaker. 「良治君」 survives to the end: the same spousal form as 000007BC:8:80 (twenty years earlier) and 00000641:11:122 (another branch, dying). No さん, no お前, no scream. Keep it as flat and as practical as it is — she is reporting a fact about the back door.
+- 00000CB3 is the coldest she is anywhere. She reads the instruction sheet, tells her husband to stay behind, and says 「もう他に選択肢がないの……」 and 「殺すのは1人だけ。被害者はできるだけ少ない方がいいわ」 (11:18-11:22). She goes out alone, tests the drug at the half dose the note specifies, scouts the site, comes back 「何食わぬ顔で」 and reports the effects like a technician — ten minutes, inhuman speed and jumping, and the body hurts if you do not hold back (11:55-11:61). Then she assigns the targets: 「私は女の子の方をやるわ。／良治君はもう1人の方を」 (11:74-11:75). Not one hedge and not one question in the file.
+- it is the same flat competence as 000008A2:8:15-8:16, and 「良治君」 survives it intact. EN must NOT make her sound cold-blooded: the register is exactly her ordinary maternal ～わ／～なさい／～の, applied to this.
+- her whole part in 00000CE3 is four lines and they are all restraint or initiative: 「そう……だね」 with the narration calling her reaction 薄い twice (11:50, 11:53), 「良治君はどうしたいの？」 (11:58), 「良治君、それくらいにしなよ……」 (11:109), and then 「春花ちゃんを、うちで引き取ろうよ」 (11:122) followed by 「無理やりでもいいから引き連れて、元木町から逃げようよ……」 (11:125). She proposes it before he does, and it is the decision that gets him killed.
+- 良治 reads the flatness as her senses having gone numb (11:50) and notes that she and 美冬 have not been on good terms for ten years (11:55). Neither is confirmed anywhere.
+- two lines in the whole chunk and both are branch-defining by their ordinariness: 「じゃあ春花ちゃん、悪いけど、お願いね」 (00000E61:11:6) and 「じゃあ美冬、くれぐれも、安全運転でね」 (11:74). In this branch the twenty-year friendship with 新村美冬 is intact, warm and unremarked, and 春花 is a girl she trusts with her daughter. Keep her completely unremarkable here; the weight is in every other branch.
+- she also registers that both girls have been told (11:13 「2人とも、聞いたのね……」) and says nothing else about it. The family's own account of the adoption is never given on screen anywhere in the project. -> Q216
+- 00000F24: her only appearance is inside 新村栄一郎's account of the day she died (142:206-142:252), and it is the FLAT COMPETENCE of 000008A2 and 00000CB3 aimed at the one person she cannot use it on. Five imperatives in twelve cells — 「美冬、その薬、こっちに渡して」, 「さあ、ドローガを渡して」, 「自首して」, 「早く！」 — one bluff (a phone she says is open to the police and is not), and no plea anywhere
+- 「美冬を説得しようだなんて思っていない。／必要なら、美冬から力ずくで奪うだけ」 (142:221-142:222) is the plainest statement of her method in the project, and she is describing a friend of forty years
+- her LAST SPEECH, 142:241-142:251, is to a body at the bottom of a stairwell and it is the only place she is alone on screen anywhere: 「美冬……あんた……。／電話、嘘だったのに……」, then the practical turn — the half-used drug, the hygiene she cannot afford to care about, and 「なつみと春花ちゃん、2人の娘を連れて、荒田集落の手から逃れられる場所へ行く」 (142:249). 「2人の娘」 is said to nobody. She closes with 「さよなら、美冬……」
+- 「良治君」 does not appear in this file. Her spousal form has no scene to occur in; 「あんた」 and bare 「美冬」 carry the whole of it, exactly as at 000008E8
+- 00000F57: her longest scene with 新村春花 anywhere. Maternal タメ口 with 春花ちゃん, correcting her husband (「良治君、春花ちゃんに絡み酒しないでよ？」 11:136) and then sitting up late telling her the story of 新村美冬's childhood — 「美冬はね……／あの子、ああ見えても昔はすごく泣き虫で甘えん坊だったわね」 (11:147-11:148). She uses 美冬 bare, to the woman's daughter
+- SHE IS ASKED WHY 春花 WAS ADOPTED AND THE ANSWER IS CUT: 「あれはね――」 (11:152) and the scene closes on 「私とおばさんは昔話で盛り上がった」. What 春花 takes away is 「なつみのお母さんにどれだけお母さんが助けられてきたか」 and that the bond between the two women may be deeper than hers with なつみ (11:155-11:157)
+- 良治's teasing is described as long-standing and she does not stop it, only redirects it; 春花's 「まあ絡み酒なんて、昔からやられてるから……」 (11:137) makes her a fixture of 春花's childhood in this branch
+- SHE DELIVERS THE CHUNK'S CENTRAL HINT AND CUTS THE CALL THE MOMENT IT LANDS, 00001477:8:105-8:125. Three sentences in her ordinary maternal タメ口, each with content deliberately removed — they can hear all three girls' voices anywhere; 「でも、春花ちゃんと五島ちゃんの声もちゃんと聞こえている」; they cannot see what the girls see — and the 「でも」 is a 逆接 that contradicts nothing, which is the whole clue
+- the instant her daughter says 「お母さん、もしかして、ヒントをくれているの！？」 she answers 「なつみ！　そこまで！　もう、切るわね」 and hangs up on 「待って！　お母さん！」, closing with 「なつみ、大丈夫、みんなを信じなさい」 (8:122-8:125). The abruptness is protection and the EN must not soften it -> Q577, Q578
+- 「みんなを信じなさい」 is quoted back twice by her daughter's narration (00001477:8:182, 0000148E:8:219) and is what turns her off deception and onto holding people together
+- SHE NARRATES A WHOLE FILE, 0000156A (order 202, 3,299 lines), her FIRST NARRATION ANYWHERE in 202 files, and this block has carried no narration-voice line until now -> Q640, Q030, Q078
+- narration voice: plain past, 私, short declaratives with the subject dropped, almost no similes and no ellipsis-hesitation. It is her maternal ～わ／～の register turned inward — practical, sequential, and self-accusing without any grief vocabulary. She reports her own body (a sore back, cold feet, her age) the way 古郡なつみ's narration does, and the resemblance is not remarked on. Three borrowed images break the flatness and all three are in one file: 年老いた浦島太郎 (92:11), a zombie-apocalypse film with a running commentary on what the genre would have given her (76:51-76:57), and マッチ売りの少女 (76:157-76:159) -> Q659
+- SHE IS NOT THE 女ケ沢 KILLER, and she says so only to the reader: 五島 proves from the trial record and the method that neither she nor 良治 could have done it (28:54-28:88); 茜's own narration then admits she fully intended to, tested the drug, and was beaten to it — 「たまたま他の誰かに出し抜かれただけ」 (28:175). She counts herself a murderer anyway: 「私は――心は殺人鬼と変わらないのだ」 (28:177). The other killer is never named, here or at 92:167 -> Q646
+- FIFTEEN YEARS OF PRISON have changed her vocabulary and not her register: the ～なさい imperatives, 「良治君」 and bare 「美冬」 all survive, and what is new is a whole professional layer about confinement — 点呼, 開房点検, 免業日, 独房, 雑居房, 食事当番 — delivered levelly and without complaint (92:12-92:34, 46:172-46:188). Her one general statement is 「まるで……／飼われているみたいよ」 (46:186-46:187), and she apologises for having said it
+- her THIRD-PERSON address forms are intact and doing structural work: 春花ちゃん in her own narration for a daughter she calls 娘 two cells later (8:9, 8:182), 五島ちゃん, なつみ bare. They are the only way a reader identifies the narrator, because her name appears exactly once, at 92:0, in a sentencing formula
+- WHAT SHE WANTS is stated three times and never dressed up: to see whether 春花 and 美冬 are alive (92:154-92:157), to get 五島 out of a sealed flat (28:109), and to be held (40:204-40:205 「ちょっとだけ後悔してるかな。1度くらいは、抱いてみたかった」). The third is answered at 201:51-201:54 by the daughter she never held, and it is what kills her
+- the FLAT COMPETENCE of 000008A2 and 00000CB3 is here doing ordinary work: she cooks to a ration, apologises to a corpse before sprinkling petals on it (52:167 「ごめんなさいね、ちょっとだけ、私たちに協力してちょうだい」), films it dissolving for ten minutes, lays the woman's coat over the bones and puts her hands together (52:192-52:194). Do NOT make her cold and do not make her flinch
+- her LAST REGISTER, 201:60-201:163, is the hardest thing in the file: she wishes to be absorbed, is absorbed, and then asks that 五島 be looked after — and on being told 五島 will be dissolved for nourishment she says 「よかった。／本当によかった」 (201:114-201:116), because that way her friend will not die alone. The voice does not change at all. Her last cell is 「とても幸せ。」 EN must not add one ironic word anywhere in the passage -> Q663, Q667
+- AT FIFTEEN, 00001A97: the cool-elder-sister register is already complete — 美冬 bare, ～なさい, ～わよ, practical comfort with no sentiment in it — and it is aimed at a girl burying her father. 「そりゃ、別れはいずれ来るものよ」 (8:40) and 「そう極端にならないで。みんなの前で泣いたっていいんだから」 (8:50). Her offer 「私はずっと美冬のそばに――」 is cut off by 美冬 and she does not finish it -> Q114
+- THE HOSPITAL THREAD, 000017FA:8:9-8:20 and 00001AC1: she reasons that a high-schooler could not visit a hospital without her mother knowing, tells her daughter not to pry — 「そういうのはあまり詮索するもんじゃないわよ」 — shuts down the pregnancy joke with 「そうだとしたら、余計言いづらいでしょ」, and then worries alone in the file's last cell: 「春花ちゃん、何かあったのかしら……」 -> Q693
+- she calls 新村美冬 bare 美冬 to everyone in every branch, and 春花ちゃん in the third person, unchanged from 00001A97 to 0000156A
+- SHE GOES HOME AS BAIT IN HER DAUGHTER'S PLACE, 00001830, and it happens entirely off screen: only 伊勢's half of the call is printed, so her objection to the 盗聴器, her accusation that the police are using her daughter as bait, and her counter-proposal are all recoverable only from his answers. He argues and loses -> Q712
+- she names the new 美冬 register 「おばさん臭い」 twice in one file and is not unkind about it (00001AC1:8:4, 8:36); her one aside about her friend is 「ほんと、美冬ってば極端なんだから……」 (8:40)
+- THE ADOPTION IS HERS AND IT BEGINS HERE, 00002001. 新村美冬 can bear no more children; 茜 is pregnant; she says 「家族がずっと誰もいなくて、誰よりも家族を欲しがっていたのに、どうしてよりによって……」, cannot face being seen with a large belly, consults her own mother and gets neither approval nor refusal, speaks to the unborn child (「やっぱり、この家の子になりたい？　／それとも……」), and puts it to her husband as one option — 「この子を養子に出すの、どう思う？」. The child under discussion is her own daughter, not 新村春花, and the project never states how it was inverted -> Q782, Q216
+- her closing cell is the promise the whole friendship runs on: 「何があっても絶対に助けてあげるって、約束したもん……」 (8:93)
+- SHE GAMBLES AND HIDES IT, 00002007, and it is the only fault she has anywhere: pachinko since she left school, hidden from 良治 because he dislikes women who gamble and hidden from 美冬 because the two of them know each other, and the reason she did not travel with her husband this お盆 is a new machine of a doll with blue and green odd eyes. She is caught on the street, begs, and buys the silence with a forfeit -> Q783
+- the SPELT-OUT device is absent from both files and the 「ブフッ」 laugh does not occur; what carries her here is the cool-elder-sister タメ口 with 「あんたねえ……」 unused and 美冬 bare throughout
+- 00001C02: she is the one who wants to go to 荒田 and her husband is the one who stops her. Her arguments are practical (danger cannot be sensed unless the sensor sees or hears them; the wait point is outside the settlement) and she drops all of them in one cell when he invokes なつみ, then says 「良治君……ありがとう、止めてくれて。／これでいいのよ。これが1番いいの」 -> Q798
+- SHE IS SERVING A LIFE SENTENCE AND IS STILL THE MOTHER, 000020A8: told her daughter has learned from a lawyer that 春花 is her sister, she does not defend herself. Her account of the adoption: 「春花ちゃんは新村家に養子に出した。だからもう、あの子は新村家の子」 and then 「やっぱりそんな簡単に割り切れるものじゃない。／養子に出したことを後悔してたわけじゃないけど、自分が母親って名乗れなかったのは、もどかしかったわね」. Asked whether she cared: 「もちろんよ。だから美冬から女ケ沢市に呼び出された時、春花ちゃんも守らなきゃいけないって思ったわ」
+- her one attempt at apology is stopped by her own daughter, and it is the file's shape: 「なつみや春花ちゃんを、私や美冬の都合で振り回してしまって……。／もっと別の選択肢を選んでいたら、もっと別の――」
+- she sanctions everything asked of her — the sisters may be sisters, 五島 may be told — on the ground that 「なつみももう成人したんだし」, and her last words are 「気をつけて帰るのよ」
+- THE TOWEL, 0000208A: with both small girls soaked she dries her own daughter and not the one she gave away, is caught at it by a five-year-old, and covers it with 「春花ちゃんはなつみよりもお姉さんだから、1人で拭けるでしょ？」. The file's last cell is hers alone: 「ごめんね、春花ちゃん……」, where the child cannot hear it. The forbidden mothering that 000020A8 explains is shown here first -> Q782
+- her address form for the daughter she gave away is 春花ちゃん in every file and in every frame, including the one where she is naming her as her own child
+- SHE NARRATES TWO CONSECUTIVE FILES IN 私, 0000241B (order 408) and 00002420 (order 409), her first narration anywhere.
+- narration voice: domestic and procedural, built out of household actions — chopping vegetables, the microwave, the earthenware pot, the three-minute limit on bath cleaning — with the crisis pushed into the gaps between them. Short sentences. She reports her own lies as facts about herself: 「自分でも驚くほど滑らかに嘘が出た。／決して気分のいいものではない」 (0000241B:11:44-11:45).
+- SHE CANNOT CUT MEAT. 0000241B:11:19-11:34: she puts the knife down twice, escalates through four spellings of the same adverb across four cells, and then puts the pork back in the fridge and cooks burdock and dried fish instead, because of what she watched the night before -> Q903.
+- 「これは保険だ。万一の時のために、窓を開ける」 (11:12) — she leaves a window open as an escape route and never explains it; なつみ silently closes it and says nothing (11:116-11:117).
+- what she will not do: tell her daughter. She argues the police down to a statistical technicality — DNA testing is the only thing more accurate than a rare blood type, therefore the identification is not certain, therefore なつみ need not be told yet (00002420:11:112-11:126) — and then telephones her in a deliberately bright voice and invents drinks with colleagues.
+- 00002306: on the night of the first 女ケ沢 killing she comes out of a bathroom retching, describes a beheaded child and the mother holding her, asks her husband 「やったの？」, and concludes 「これで私たちも、なつみも春花ちゃんも、美冬も救われる」. Her husband, alone, does not believe her answer -> Q892.
+- 00002427 gives her death from the other side: she revives after being knocked out, strikes 美冬 with the flat of the 鉈, is stabbed twice, and spends her last three lines telling なつみ to run. 「な……なつみだけは……私が……！」
+- EN correlates for the narration: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM; vocabulary register plain and domestic, with police-procedure vocabulary handled without difficulty.
+- 00002444: she walks two hours up a mountain road at night to fetch a schoolgirl she is not related to, and her whole part is three lines and one slap
+- SHE SLAPS 五島絵梨奈, 26:181-26:199, for saying that the girl in front of her is not her daughter — 「五島ちゃん……／何を言っているの？　なつみはこうして生きてるじゃない」, 「黙れ！」, and then 「なつみは私の娘。邪魔しないで」. The maternal ～の／～でしょ register is intact through all of it and the narration says she will not meet 五島's eyes afterwards
+- it is the one scene in the project where her FLAT COMPETENCE fails completely, and the file lets her be simply wrong rather than making her a fool. She rides away with the thing wearing her daughter and is used as the living 第一世代 -> Q938
+- her one warm line is the one that tells 五島 that 新村先輩 is alive: 「分かったわ……。春花ちゃんのこと、お願いね？」 (14:509), and 春花ちゃん is intact as always
+- as-of: 00002444
+
+
+## 新村美冬 (にいむら みふゆ, Mifuyu Niimura) — 春花's mother
+- first_appears: 000001DD:11:74 (「あ痛！」), addressed only as おばさん on screen
+- NAME: CONFIRMED in the text at 0000037D:11:58, written on a 紙人形 as 新村美冬. Before that line she is おばさん / 春花のお母さん and EN must not use "Mifuyu"; from 0000037D:11:58 onward the name may be used. From 00000564:11:182 the police say it out loud.
+- pronoun(s): 私 ("私たち庶民には分からないわねー！" 000001DD:11:100; "私、騙されてたのね……" 00000564:11:189)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: タメ口, extremely high-energy
+- sentence-final particles: drawn-out ー！ on nearly every sentence ("そうなのよー！" 000001DD:11:82). This elongation is her single most identifying feature.
+- copula: よ／わ, feminine, elongated
+- verbal tics / catchphrases / fillers: 「ほほほ」 laugh; 「あらー！」 / 「あららなつみちゃん！」; 「よっこらしょっと……はー重かったー！」; runaway run-on sentences when excited
+- SECOND REGISTER, new and load-bearing as of 00000564:11:179-191 — unmasked as the figure in 赤装束 and 能面. EVERY drawn-out ー is gone. Every exclamation mark is gone. What is left is short, level, feminine plain form: 「なつみちゃん……。／もう……そういう問題じゃないのよ……」 (11:179-180), 「はあ……仕方ないわね……これだけの衆人環視じゃ……」 (11:187), 「私、騙されてたのね……」 (11:189), 「行くわよ、春花……」 (11:191). The narration says she is 「能面以上に無表情」. The absence of her usual noise IS the reveal — EN must strip the exclamation marks and the stretched vowels here and nowhere else.
+- dialect: none
+- EN correlates: contraction rate HIGH (register 1) / MEDIUM (register 2); profanity ceiling ZERO; sentence length LONG when excited, VERY SHORT when unmasked; formality LOW; vocabulary register young-slangy-but-dated — the text says she TRIES to sound young and lands おばさん臭い (000001DD:11:95-98). EN must read as a 40-year-old over-performing youth, exclamation marks everywhere, elongated vowels ("soooo", "reeeally") as the equivalent of ー — in register 1 only.
+- known ambiguity / open questions: 「もう……そういう問題じゃないのよ」 (what problem?) and 「私、騙されてたのね」 (by whom?) are both left blank. Do not fill either. In the 00000522 branch she is found dead in a house fire with no lines at all. In the 00000641 branch she has NO lines and never appears: the house burns, she is missing, her nata and vestments are assumed taken from her, and the police theory about her is delivered entirely as hearsay (11:174-183). Keep every ～らしい and ～そうだ.
+- REGISTER 1 AT FULL LENGTH, new as of 00000697 — her only extended on-screen appearance and the only file where she and her daughter talk. Every marker is here: 「春花ー！」 shouted through the flat (8:30), 「あらーダメよ！」 (8:143), 「んー、こうかしらねー！」 (8:139), run-on excitement, and the 若作り she is teased about. She is over 40 (8:141-142) and has dressed young for the twelve years since her husband died (8:155-156).
+- SECOND REGISTER, EARLY BLEED, new and critical as of 00000697:8:195-201 — three cells with every marker gone: 「ねえ……春花……／今日はなつみちゃんと……／仲良くね」, and the narration says there was no expression in her eyes or her voice. It is the same flatness as the unmasking at 00000564:11:179-191, arriving inside her loud register. 00000682:11:59 and 00000697:8:202 both say she goes expressionless whenever なつみ is mentioned. EN must strip the elongation and the exclamation marks for exactly these cells and nowhere else in the file. -> Q106
+- as the MOTHER of the 00000682 flashbacks: the chirp is slower and the questions are heavier — 「本当に……本当に楽しいの？」 (11:63), 「辛いことがあったら、ちゃんと言ってね」 (11:70), and twice 「見透かすような目」 (11:67, 11:95). She is the one who tells her daughter to use a charm (11:77) and who gives her the book (11:78). She never raises her voice and she never asks a direct question.
+- SHE NARRATES ORDERS 61-65 (000007BC, 000007D3, 000007EA, 00000801, 00000818) — five consecutive files covering twenty years, from her first year of primary school to the adoption. In them she is 金井美冬; the surname 新村 must not appear before 00000801:8:120. -> Q110
+- narration voice: plain past, 私, self-deprecating and almost entirely about other people. Short sentences, heavy ellipses, and a habit of comparing herself unfavourably with 茜 in nearly every scene. It is the closest voice in the project to 古郡なつみ's narration, which matters, because なつみ is the one person she cannot bear.
+- REGISTER ZERO, the original voice (orders 61-65): whining, dependent, no elongated ー anywhere, and the 口癖 「うぎゅ……」 roughly forty times. 敬語 to 栄一郎 from the first meeting and never dropped, not even after marriage. The loud stretched-vowel register of 000001DD is NOT her natural voice — it is something 茜 built on top of her (000007BC:8:250-8:253) and it does not exist in this chunk. -> Q114
+- the trait the text keeps naming is 極端 (000007BC:8:151-8:155, 00000801:8:4, 00000818:11:49-11:50): she goes all the way in whichever direction she is pointed. It is said of her as a joke four times before it stops being one.
+- REGISTER 2 is already fully in place at 000008A2 (level, plain, no elongation, no exclamation marks) twelve years before 00000564 presents it as a reveal. In this chunk it is simply what she sounds like after the accident. EN must not treat it as a mask here.
+- she is trained: one year inside 荒田集落 (00000801:8:38-8:48), hunting without firearms, surviving alone in the mountains, and 鉈 and メイス technique. She splits a fly in mid-air in a dark room (000008A2:8:71-8:73) and then says flatly that it is within the range of ordinary human training (8:74-8:76).
+- the KILLING register, new as of 000008D0:33: she keeps her ordinary feminine plain form and every address form intact while she kills three people. 「あら、肺が破裂しちゃったかしら？」 (33:29), 「ほら茜、まだ聞こえる？」 (33:41), 「ねえ良治さん、聞こえる？／ふふ……私ってば、本当にバカよね……」 (33:45-33:46), and the farewell 「じゃあ――良――治さん――。」 (33:54). No shouting, no coarsening, and she apologises to nobody. This is REGISTER 1's grammar at REGISTER 2's temperature. -> Q130
+- the PLANNER, 000008D0:46:30-46:99: twenty exchanges in which she explains her own operation calmly and in order — the letter she posted herself, the alibi, the curse book given to her daughter as an instrument, the 女ケ沢 crowd psychology she meant to exploit, and 「あれは私のデタラメよ」 about the 荒田-教団 link. Her sentences get longer and better organised the further she goes. EN must let her be genuinely intelligent here; nothing else in the project shows her this way.
+- REGISTER 1 AS A KINDNESS, new as of 0000092D:11:150-11:157 and 00000944:8:111-8:143: in the surviving branch she uses the loud stretched-vowel voice on purpose, every year, to talk なつみ out of her guilt. Same markers as 00000697, opposite function. A THIRD live state of the same woman; do not let the 00000564 flatness bleed into it.
+- the STORYTELLER register, 000009E6:11:8-19:5: she drops every stretched vowel and every exclamation mark for sixty cells to tell a ghost story exactly and levelly, then puts them all back for the frame (19:9-19:15). It is stagecraft, not the 00000564 reveal. Keep the two apart.
+- she defers to exactly one person, her mother-in-law: 「お義母さん」, です・ます, and 「は……／はい……」 to an order (00000989:11:98-11:100, 000009A0:11:104).
+- the CONFESSION register, new as of 00000A94:11:82-11:144 and repeated at 00000B3F:11:99-11:124: she kneels, looks down, and states her own responsibility in flat declaratives with no stretched vowels and no exclamation marks — 「この一連の殺人事件が起きたのは……／私のせいなの」, 「だから私がサクラさんを殺したも同然」. It is REGISTER 2's temperature used on herself rather than on a victim. Do not let the loud register bleed in and do not make her plead.
+- who she asked and what came back (00000A94:11:94-11:141): she asked 新村サクラ to remove the two children, was refused to the end, received the weapons and the drug anyway with a letter, was talked out of it, and then chose to confess the breach to her mother-in-law in order to clear サクラ — copying the grandmother's own 怪談. サクラ overheard the confession and not the pardon. Every statement in this passage is in her own voice and none of it is contradicted.
+- she keeps 「サクラさん」 and 敬語-adjacent 丁寧 for a woman dead ten years, exactly as she keeps 「栄一郎さん」 for a man dead twelve (00000A94:11:102, 00000B3F:11:124).
+- her last line of the chunk (00000B3F:11:121-11:124) — 「私はもう、これ以上耐えられない……。／私がいるから、茜も……／サクラさんも……！」 — never reaches a verb, and she walks out. Do not complete it.
+- SHE NARRATES an inset flashback inside her daughter's file: 00000B57:11:51-11:144, in 私, with no label and no return marker. It is the scene ten days earlier in which she asks 茜 and 良治 for help, and it holds REGISTER ZERO and REGISTER 2 at once — 「うぎゅ……茜……！」 (11:42) inside flat declaratives, with not one stretched vowel and not one exclamation mark in 94 cells. -> Q030, Q078, Q114
+- SHE SLAPS her daughter, the first time in 春花's life (00000B9F:11:18-11:31), then holds her and says nothing, and that is what changes 春花's mind. Her explanation afterwards (11:39-11:45) is the calmest speech anyone makes in the branch and it is a defence of both her nieces.
+- in the 00000BD6 branch she is REGISTER 1 in public and nothing else: 「ほほほ春花！　また1ついい経験をしたわねー！」 (00000C38:11:5), a buggy driven at an absurd speed with a high laugh (11:58-11:60), and then 「うぎゅ……栄一郎さん……」 for a whole scene after being made to strike an embarrassing pose (00000C81:19:37-19:61). REGISTER ZERO surfacing inside REGISTER 1, played as comedy. -> Q114
+- SHE NARRATES ORDER 116 (00000CFA), 397 cells, her first narration anywhere in the story present, and it is the file in which the project's opening image is made. Nothing in the first twelve cells identifies her. -> Q198, Q030, Q078
+- the KILLING register at full length: her ordinary feminine ～わ／～かしら／～のよ, every address form intact from 「美冬さん、春花ちゃんを返してくれないか？」 through to 「ふう、さようなら、古郡良治さん」 (11:377), and only her usual 「あっはははは！」 for a laugh. She apologises for a badly cut tendon (11:238) in the same voice she uses to offer a last kiss (11:286).
+- the OPERATOR mode, new: 11:95-11:139 is a plan built while driving, in order, with contingencies — date, method, vehicle, the alibi for her daughter, the costume, the three targets — and 11:140-11:205 is that plan executed with nothing left out. Then five hours of anatomical procedure narrated flatly (11:314-11:336). EN must let her be competent; the horror is that nothing in the grammar changes.
+- three cracks, each one or two cells: 11:211 「さあ、やれよ。やれよ、美冬……。」, the only second-person self-address in the project; 11:268-11:274, where she notices her own argument about criminal talent is circular, says 「やっぱり論理破綻してるわー！」 and ends 「あーあ、／楽し。」; and 11:363 「私の心は栄一郎さんが死んだときに壊れてしまったのだ」, stated once and never returned to. -> Q206, Q207
+- her motive is named plainly and never varies: 「春花と離れるくらいなら死んだ方がマシよ！」 (11:39), 「春花を失うくらいなら、警察を敵に回したって怖くない」 (11:182).
+- in the 荒田 branch she is REGISTER 1 for a whole file (00000D89), opening a place only a recognised 魔女 may enter, and breaking that rule in the sentence that states it (11:18). No flatness anywhere in that file.
+- REGISTER 1 AS COMPETENCE, new, 00000E01: the stretched vowels and exclamation marks are all present while she drives an escape, explains her own tactics (why a niece on the roof is safer than one inside, 11:54-11:59), brakes on a sixteen-year-old's word (11:99-11:100), and arms herself with a 鉈 to hold a hole in the ground — 「春花、荒田の女はいつも命がけなのよ……！」 (11:162). The loud voice doing hard things, with no flatness anywhere.
+- a FOURTH state, 00000E61:11:87-11:103: quiet and sad, no stretched vowels, no exclamation marks — 「春花……／ありがとう……そう言ってくれて……」 and 「いい子に育ってくれて……ありがとね。／私と栄一郎さんの世界一の娘だわ」 — and then 「おーっほっほっほっほ！」 (11:107-11:109) puts every marker back inside two cells. This is NOT the 00000564 unmasking and NOT the 00000697 goodbye. EN must let it be warm; the markers come off here for tenderness, not for a reveal. -> Q106
+- she is the one who shuts the investigation down, 00000E61:45:9-45:20: 「2人とも、もうやめておきなさい。」, 「これ以上、みんなを危険な目に遭わせられないわ……」, then 「もう……／いいじゃない……」 and silence to a direct question. 春花's narration says she is deliberately cutting them off (45:13) and the file never tests it. In a branch where she has done nothing, she behaves exactly as she would if she had.
+- in 00000EDF she has no lines in her own register at all: she is inside the mask for both of her scenes and every marker of REGISTER 1 is gone. [65]: 「く……！　どうして……！」, 「な……！」, 「ど、どうしてそれを……！？」 — three broken fragments and then she runs to burn herself. [117]: 「は……春花は……／春花は渡さない……！」 (117:181-117:182), 「私は……こんなことしかできないような、できそこないの母親よ……」 (117:202), 「親不孝者で……ごめんなさい」 (117:206). Register 2's flatness with the volume of fear on top.
+- SHE IS TALKED OUT OF IT, 00000EDF:117:170-117:206, the only branch in which she neither burns nor is killed: a fifteen-year-old tells her what her own suicide will cost two people in another village, and her daughter arrives and says 「私……何があってもお母さんの娘だからさ！」. She surrenders. The case closes 「犯人の自首という形で」 (117:229).
+- 00000F24: SHE IS THE 白般若, dead two years, and she is SILENT for roughly five hundred cells. She has her own second CAST block for the masked figure. Everything she does in this file before 142:139 is physical: hanging a mummy, knocking her daughter out without injuring her, dosing a corpse with ファルシフィカソ, carrying 古郡なつみ out of the hall and injecting her, leaving a book, taking kicks and taunts and not answering
+- her UNMASKED register here is REGISTER 2 at its extremity, and it is six cells: 「春……花……！」 (142:156), 「春花……これを……！」 (142:162), 「ち、違う……これを……夏菜ちゃんに……」 (142:166), 「あの子は……じきに、翠眼呪殺の年齢になるから……」 (142:168), 「私は……神使になることを……選んだ……」 (142:185). No stretched vowel, no exclamation mark, no 「うぎゅ」, no apology. Her errand is her niece, not her daughter
+- SHE HAS NO PULSE AND IS COLD WHILE SPEAKING (142:173-142:175) and the file never says what she is. Do not resolve it. -> Q388
+- REGISTER ZERO surfaces once, in her husband's account of her death: 「栄一郎さん！？」 (187:17), 「ぐ……ぐぐ……え、栄一郎さん……」 (187:23), 「栄一郎さんと……一緒に……？」 (187:26). The さん and the dependence are intact in the last words she ever says, and she dies mid-sentence — 187:33 and 187:35 are EMPTY 「」 cells. -> Q389
+- in the 142 inset she is REGISTER 2 aimed at 古郡茜, level and contemptuous, with a threat in it: 「なつみちゃんを殺すってことは、茜も殺すってことよ？／わざわざ殺されに来たの？」 (142:219-142:220) and 「私、荒田の山籠に耐えた女。普通の女よりもずっと強いのよ？」 (142:224). It is the only place in the project where she names her own training to somebody's face
+- WHAT SHE DID FOR TWO YEARS, inferred by her daughter at 193:62-193:90 and never confirmed: she was trying to make 荒田集落 look dangerous enough that 春花 would leave, alone, watched, with no way to say so. 「だったら、最初からそう言ってくれたらよかったのに」 (193:70) is the only complaint anyone makes about it
+- 00000F57: she telephones her daughter at 22:30 to report her mother-in-law's death, and it is a SIXTH state of the voice — level, quiet, hesitant, with no stretched vowel and no exclamation mark and nothing frightening in it. 「あ、春花……／ごめんねこんなときに」 (11:166-11:167), 「あのね春花……／落ち着いて聞いてほしいんだけど……。／荒田のおばあちゃん、さっき亡くなったって……」 (11:169-11:171). 春花's narration names the absence rather than the presence: 「お母さんの声に、いつものような覇気がない」. Do not play it as the 00000564 unmasking -> Q106
+- REGISTER 1 AND THE QUIET STATE IN ONE FILE, 00000FB7: 「ほーっほっほ！　これくらいなんてことないわよー！」 (11:10) and 「あらーダメよ！　春花が魔女になれるのは20歳になって、私が死んでからよー！」 (11:14) — every marker present, and her daughter's narration says the laugh has exhaustion in it. Twenty cells later, at the graves, all the markers are gone for the rest of the file and nothing is being revealed
+- SHE HAD A DAUGHTER BEFORE, and this is the only place in the project it is said: 00000FB7:11:49-11:66. A child by her and 新村栄一郎, five months in the womb, never born alive, buried in the 墓地広場, and she would have been born at almost the same time as 春花. The name is given once, in hiragana, at 11:84: あやか -> Q430
+- she prays at the grave BARE-FACED, and the narration flags it as against practice: 「こういう時、荒田では能面を着けるのだが、お母さんは素顔で手を合わせる」 (11:54)
+- the SIDE-BY-SIDE statement, 11:91-11:94: 「あやかは血のつながった子供。／春花は茜との 絆 で授かった子供。／どちらが大事なんて、天秤にかけることはできない。／春花だって私にとっては――」, cut off by her daughter and never completed. It is the adoption argument made from the mother's side for the first time anywhere -> Q216
+- her reason for saying any of it is practical and she says so: the settlement may be gone in a few years and this may be the last chance to bring 春花 to the grave while the 荒田 供養 still runs (11:87-11:90). She had decided not to tell her at all (11:73)
+- THE LOOK, 00000FB7:11:105-11:129, and it is her single most identifying behaviour outside the stretched vowels: 「怖いくらいの目つき」 that sees through a lie, attested in the 00000682 flashbacks (11:67, 11:95) and repeated here across two time frames in one scene. Her question is always the same — 「本当に……本当に楽しいの？」 — and she never asks a direct one. 春花 names it at 11:129: 「その怖いくらいに見透かそうとする目は、私への愛情を表す何よりの証拠」
+- she officiates at the funeral as the 大魔女's deputy (00000F9F:11:43) with no lines at all, and 古郡なつみ's narration says she is visibly exhausted and her voice is dark (11:30-11:31)
+- the INTERROGATOR, new and unlike anything else she does: 0000113D:8:64-8:67 and 00001184:16:7-16:85. REGISTER 1 stays fully on — stretched vowels, exclamation marks — while the content turns. 「だったら茅萱ちゃん……／茅萱ちゃんは、隠し事をしていないって言えるの？」 and 「なつみちゃんのことよりも、もっともっと大きなこと、隠してない？」, with the narration saying 「叔母さんの口調はとても軽い。／だけど私にとっては、とても重い」. EN must not lower the volume for these lines
+- she then runs the case properly. Her questions at 00001184:8:28-8:33 and 16:11-16:31 are the best reasoning anyone does before 五島 arrives: how did a ten-year-old with a baby find two people on a river kilometres long; how can pulling someone up by the wrist look like pushing; why did 幸太郎 assert it without hesitation; why did he not shout before the fall; and why did he arrive exactly in time to cut the head off -> Q458
+- the RECEIVED CONFESSION, 0000116C:8:105-8:135: told 「私がやったの」 by a twenty-year-old, she answers 「そう……。／辛かったね……ずっと……」, moves to sit beside her, puts a hand over hers, thanks her for saying it, and does not ask a single question for as long as she cries. She then volunteers her own — that ten years ago she intended to kill the children bullying 春花 and 古郡なつみ stopped her
+- her assessment of 古郡なつみ, and it is the warmest thing she says about her anywhere: 「いつもはちょっと気弱な普通の子なのに、窮地になるほど強い子なの。／絶対に自分を見失わず、みんなが1番幸せになれる未来を迷わず選べる。／私と春花は、なつみちゃんに救われた」 (0000116C:8:145-8:147). Set against the flatness that comes over her whenever なつみ is mentioned at 00000682 and 00000697 -> Q106
+- she is the one who brings 古郡なつみ and 五島絵梨奈 into the 呪殺 case, and she conceals why なつみ is coming until forced. Her cover story is 「春花と五島ちゃん、なつみちゃんはいつも一緒にいるの。だからよ……」 and the narrator hears the hedge
+- REGISTER 1 AT TEN YEARS EARLIER, 0000110D:8:127-8:142, and it breaks: 「ななな、何でもないのよ！／　おおお母さんはちょっとビックリしたことがあったみたいで……」. The only place her stretched-vowel register stammers, and it is the afternoon 新村サクラ died. She packs and leaves the settlement in the middle of the search with no explanation
+- she attended 古郡なつみ's birth, and says so to rule out a blood tie (00001184:16:42 「それはないわ。私、出産に立ち会ったもの」)
+- SHE LOSES AN ARGUMENT TO HER DAUGHTER AND CONCEDES IT PROPERLY, 000011E3:8:158-8:207: she brakes the car, refuses to go on, is told 「元木町も荒田集落もチガ姉も見捨てる気かよ！」, takes a call from 古郡茜, and then puts the decision to the three of them as a decision — 「私たちは、あなたたちの決断に委ねる。／本当に覚悟はいいのね？」. Her stated position was 「私は元木町よりも、春花の方が大事よ！」 and she does not pretend to have changed it
+- the FIELD register, new and sustained across 0000125E and 0000127A: she goes first down every ladder, gives short instructions (「春花、静かに！」, 「春花、離れてて」), levers a stone aside with a nata, crawls head-first into a hole without waiting for an answer, and reads a room by its lamp oil. No comic register anywhere in either file and no 「私たち庶民」 gag. This is the same woman as the 00000CFA narrator, working
+- she steals the household keys for her daughter and says nothing about it (00001214:8:4-8:5), and she is the one who says out loud that the settlement may be HOPING 茅萱 is dead, because then this year's 呪殺 is over (0000125E:8:19-8:21)
+- SHE DISAPPEARS MID-SEARCH, 0000127A:8:72-8:114, from an open 100-metre clearing, with no sound, no body and no sign, while her daughter is looking at the ground ten metres away. The narration offers a cliff and rejects it. Nothing in the chunk explains it and 茅萱 later says she is at a 廃屋 (8:148-8:149)
+- her reason for going on alone is the only thing she argues for in the chunk: 「本当に栄一郎さんやサクラさんが茅萱ちゃんをさらったとすれば、私なら話ができる」 (0000127A:8:9). She is proposing to negotiate with her own dead husband
+- SHE FIGHTS HER OWN NIECE AND WINS, 000013CD:8:47-8:143. Punched in the solar plexus and told to go to the hut, she does not take the hint: she kicks 茅萱 in the face, takes up a branch, lands a roundhouse, and takes the knife off her. 茅萱's assessment is that she is not a person you can fake your way past — 山籠 completed twenty years ago before marrying into the family
+- her threat is her only line in the scene with any content: 「茅萱ちゃん……／もし、春花に手を出そうものなら……／誰だって容赦しないわ……！」 (8:61-8:63). No 敬語, no hedge, no exclamation-heavy register — the high-energy タメ口 of her CAST block is absent for the whole fight
+- SHE READS IT CORRECTLY IN THE END, silently: after the staring match she puts the knife in a tree, says 「春花を連れてくるわ」, is refused, drops the knife and walks to the hut without a word (8:135-8:143). 茅萱's own read is 「叔母さんはきっと、私が正気の上での行動であると気づいてくれた」 (8:194), which the text does not confirm
+- she is at the 墓地広場 examining the ground when 茅萱 finds her, which is how 茅萱 knows the memo and the recording have been found
+- REGISTER 2 FOR FOUR CONSECUTIVE FILES. Across 00001442, 000014A5, 000014BC and 000014D7 she has not one stretched vowel, not one exclamation-mark-heavy line and not one 「ほほほ」. Nothing is being revealed and nothing is a mask; this is simply what she sounds like for the whole night -> Q106
+- SHE DRIVES HER DAUGHTER AWAY BY BEING CRUEL ON PURPOSE, 00001442:11:67-11:100: 「春花は足手まといよ」, 「春花がいても、みんなが春花に気を遣うだけ」, then 「いいから、早く行きなさい！　今しかないの！」. It is the most wounding thing she says anywhere and it is a tool; 春花 works out one paragraph later that the police errand was a pretext to get her out -> Q572
+- her stated premise is the one she has had since 00000CFA and it has not moved: 「春花……私は何よりも春花が1番大事」 (11:67)
+- her FIELD COMPETENCE again and its best moment: she stops short of the 廃屋 on the evidence that there are no animal calls anywhere, near or far (11:61-11:64), and she rules ドローガ out as the explanation for the cleared landslide on physiology — it releases the brain's limiter rather than adding strength, so this much work would tear the user apart (000014A5:8:127-8:130)
+- the WITHHOLDING register, new: told to her face that she may be lying to keep 古郡なつみ's senses clean, she confirms the shape and refuses the content — 「春花がどこへ行ったかは言えないわ」, 「知ってるわ。なつみちゃんに言えるのはそれだけ。／分かってちょうだい、春花のためなの」 (000014A5:8:91-8:95) — and apologises before naming what she is apologising for (8:72)
+- SHE PROPOSES A GHOST, 000014BC:8:40-8:98, and it is the only hypothesis she offers anywhere: if 幸太郎 did not cut 新村サクラ's head off then 栄一郎 did, and he had been dead two years. She calls it absurd herself in the same breath, says that 幸太郎 doing it is exactly as absurd, cites 五島's rule as her warrant, and then withdraws it — 「ごめんなつみちゃん、変なこと言って。忘れてちょうだい」 (8:78). She is right
+- she supplies the settlement lore なつみ needs: 荒田 still practises 土葬; the dead are 死神; a 死神 returns on its own anniversary for a living person; the 法要 is a rite to drive it off; and every attendant wears 能面 and 赤装束 so that nobody can be told apart (000014BC:8:113-8:133) -> Q213, Q043
+- SHE BREAKS TWELVE YEARS OF 敬語 TO A DEAD MAN IN THREE CELLS. To the corpse wearing her husband's face: 「あんた誰よ！　栄一郎さんは絶対にそんなこと言わない！／　誰よりも優しくて、温かくて……。／黙りなさい！　偽物！」 (000014D7:8:58-8:60). 栄一郎さん and です・ます have been unbroken from 000007D3 through 00000F24:187:17; here she uses あんた and a 命令形, and the narration says she is shaking before she looks up
+- 000014EE: she is the only person who lays a hand on the antagonist and she does it four times — two full slaps, a kick under the jaw, and a stamp on the hand — and her register is the タメ口 she has used for exactly one other addressee, the corpse wearing her husband's face. 「情けない面ね。これが女神？／　は！　聞いて呆れるわ」 (16:168-16:169)
+- AND SHE IS THE ONE WHO STOPS IT. Asked by her own daughter to confirm that she hates the girl most, she goes quiet for a cell and then disqualifies herself: in 女ケ沢 she told 古郡茜 that the 古郡 family would not get off lightly if the children bullying 春花 were not killed, and 「もしなつみちゃんがあの時来てくれなかったら、この子と同じことをしていたかもしれない」 (16:324-16:327), closing with 「私にこの子を責める資格はあるのかしら……」
+- she does not forgive and the file does not make her: 「確かに栄一郎さんを殺したこの子を許すことはできない」 (16:329) and 「私……それはやっぱりできません」 (16:334) both stand. What she withdraws is her standing to punish, not her hatred
+- 0000151C:8:343-8:378 is the scene her whole character has been pointed at since 000007D3: her husband is himself for four cells, she tells him 「私、あなたの妻になれて、本当に良かった！」, his hand comes apart in hers, and she ends lying on the body — 「いや！　栄一郎さんが死ぬの、2度も見るなんて……！」. The 敬語 to him is back and intact
+- 00001533: THE HIGH-ENERGY REGISTER IS FULLY RESTORED after four files without it — the stretched vowels, the exclamation marks, the doubled greeting (「あーらなつみちゃん！　おはようおはよう！」 8:6), and the narration says she has become MORE energetic since 荒田 (8:24). She is now a 教育ママ and uses her dead husband as leverage on her daughter, which 春花 calls 卑怯
+- 0000156A (order 202), fifteen years dead: she walks 元木市 in the same seamless white robes as her daughter, is filmed on a convenience-store shelf by 古郡なつみ, and calls out 「すみません、救助に来ましたが、誰かいませんか？」 (40:256) into a building where no unprotected human could breathe. The narration flags what proves she is not human: the voice is clear, so there is no helmet
+- her SPOKEN register here is REGISTER 2 with warmth rather than flatness, and it is only four cells, inside 茜's dream: 「久しぶりね、茜。これで4人そろったわ」 (20:41) and 「さあ茜、私たちの愛する娘たちと、ここでずっと一緒に――」 (20:50). No stretched vowel, no exclamation mark, no 「ほほほ」, and 「茜」 bare, exactly as in life
+- 春花's account of her death (193:78-193:101) is REGISTER ZERO under extreme duress and it is the last thing she ever said as a living woman: 「は、春花……！／　もう少し……もう少しだから……！」 and 「行くわよ……早く、私が死ぬ前に……！」, driving with blood in her mouth. She dies on arrival at 荒田 and 春花 never learns why until this file
+- REGISTER ZERO AT ITS SOURCE, 00001A97, at about fifteen, at her father's funeral: no stretched vowel, no exclamation mark, 茜 bare, and the whole later character stated as a fear — 「前世って信じる？／私、悪人だったのかな……」, 「もう、家族を失ったりしないかな……」, 「結婚して、子供ができたとしてさ。／本当に死別しないって言えるのかな……」, 「だけど、こんなに早く別れるなんて、いやだよ……」. She then decides not to cry in public because it would shame her father, and 茜 tells her she may -> Q114
+- she cuts 茜 off mid-offer — 「ダメだよ。／茜だって、いつか結婚して自分の家庭を持つだろうに」 (8:43-8:45) — which is the 極端 trait doing its first recorded work
+- REGISTER 1 IS SHOWN BEING ACQUIRED, 00001AC1:8:1-8:39, and this is the only account of its origin from outside: after the 女ケ沢 crisis she 「必要以上に元気になってしまった」, 茜 tells her twice in one file that the new speech sounds おばさん臭い, and she answers 「前みたいに辛気臭いよりはいいでしょー！／おーっほほほほほ！」. The stretched vowels and the 「ほーっほっほっほ！」 are a deliberate over-correction, which fits 000007BC:8:250-8:253 without contradicting it -> Q114
+- THE PARENTS' MEETING, 00001A7F, and REGISTER 1 is entirely absent for 77 lines: です・ます to the teacher, out of breath, refusing the reception room because she must go back to work, and cutting the report off twice to ask 「本当に春花は、学校生活で困っていませんか？」. Her one speech is 「先生、いじめっていうのは、教師が知らないところで起きているものです。／それに、いじめられている本人だってなかなか人に相談することができません」 and 「本人に何の非がなくてもいじめに遭うことだってあるんです！」 (8:34-8:37). She closes on 「お母さんが、何があっても絶対に助けてあげるから」 -> Q739
+- the file also supplies the ordinary-world account of the family: she works day and night at whatever job is going, does the housework, and smells of alcohol at a school meeting. It is stated once, by a third party, and never returned to -> Q739
+- SHE REFUSES TO EXPLAIN HER DAUGHTER, 00001835:8:20-8:47: told that なつみ has met 春花 coming back from a hospital twice, she goes to 「…………」 twice, then 「春花が話したがらないことを、こそこそと聞きに来るなんて、感心できないわね」, then reassures without content — 「別に人生が変わることになってないから。／春花にはちょっと悩みがあるの。／なつみちゃんにも言いにくい、デリケートな悩みがね」 — and instructs なつみ to go on as before and wait -> Q693
+- SHE ASKS FOR HELP AND IS REFUSED, twice in this chunk and from both directions. 00001A85: 「もう、このままだと、心中するしか……」 to 新村サクラ, who answers with the settlement motto and 「だから、2人の子供を殺すの？」 and can do nothing but listen -> Q740. 00001AE8: at the graves she tells her mother-in-law she has another family member, names the stillborn child 『あやか』, asks 「もし、私が殺人をしたら、どうしますか？」 as a hypothetical and withdraws it, is offered refuge at 荒田 with the sixteen-year 掟 set aside, and the file ends on 「そんな……！／お義母さん……／もう手遅れなの……！」 said after the older woman has walked away -> Q750
+- SHE NARRATES 00001D40 AND 00001D6F (orders 305 and 307) in 私, the fire at 荒田集落, and the second file reprints the first almost cell for cell and then continues past its ending. Her narration voice is the plain self-deprecating past of orders 61-65 with the self-deprecation gone and the practical competence of 00000CFA on -> Q767
+- SHE RELEASES HER DAUGHTER AND NOBODY HEARS IT, 00001D3B:8:20-8:27: she splits them at the fire, sends 春花 to secure the treeless 墓地広場, tells her she has become 「立派な荒田の女」, and then says to nobody 「春花はもう十分山籠をしたわ。／もう……元の世界に戻っていい。／私がいなければ、春花は自由だから」 — and decides to die where 栄一郎 is buried. It corroborates 春花's inference at 00000F24:193:62-193:90 from the other side
+- SHE IS SHOT IN THE HEAD AND WAKES UP, 00001D6F:8:66-8:90: dragged into a sealed underground space, breathing, warm, with a pulse and no idea why. She is then shown the ヴェルジ mummy, told she has the qualification of a 神使 「生きた第一世代として」, and understands none of it — and feels 「妙な愛着」 for it, bows, gives her own name, and the file ends 「女神様にお会いできて、幸せ」. This is the origin of the 神使 walking 元木市 at 0000156A:40:256 -> Q813, Q640
+- 00001BCE IS HER BEST SCENE AS A PARENT and REGISTER 2 runs for 87 lines with no stretched vowel anywhere. She does not defend 幸太郎; she reframes 茅萱 — telling only her sister rather than an adult means she wanted help proving him innocent, not his arrest — gets the knife put away, and sends the child downstairs reconciled. Same instrument as her interrogation of 茅萱 at 00001184:16:11-16:31, pointed at repair
+- 00001BF7: the next morning she gets 茅萱's real ground out of her (the 鉈 and メイス) and then sits alone with it: 「茅萱ちゃん、本気でそう思っているのかしら」. She is the only adult in the settlement doing this work
+- 00001C23: the marriage is hers to accept and she accepts it against the 75歳自殺 rule, with the argument that a known finish line makes a life easier to live and that being the same age they can end together. Her unanswered question — whether the rule applies to people born in 荒田 or people living in 荒田 — is asked once and never answered anywhere -> Q802
+- REGISTER ZERO AT ITS RAWEST, 00002001:8:15-8:20: she telephones 古郡茜 with a diagnosis she cannot say, 茜 says 「でも、分かったんだからいいでしょ？」 before she says it, and what comes out is 「うう……うぎゅ……／茜……」 and then 「切るね」. The 口癖 arrives where the sentence fails
+- 00002007: she catches 茜 coming out of a pachinko hall, agrees to keep it secret, and charges for it — 「『うぎゅ』って言ってみ？」 and 「私、茜の『うぎゅ』聞いてみたい！」. It is the only place in the project where her own 口癖 is treated as a performable thing -> Q784, Q114
+- HER FIRST PROPER MEETING WITH 新村サクラ, 000020E4, before either marriage has settled: she gives a full formal introduction (「今度嫁ぐことになりました新村美冬と言います。どうぞ、末永くよろしくお願いします」), is told not to be so stiff, and immediately says the thing the register was covering — she wants children because 「私、家族が欲しかったので」
+- SHE IS THE FIRST PERSON IN TWENTY YEARS TO DOUBT THE STORY: told 栄一郎 broke his leg hunting she answers 「はい、確かに栄一郎さんはそう言うんですが……／本当にそうなのか……」, and gives her reasoning — 「サクラさんが心配するってことは、あまりいい理由じゃないんだろうなって」. She then apologises for suspecting a childhood friend at a first meeting, and closes it with 「いくら夫婦でも、何もかも詮索していいわけじゃないですしね」
+- her address form for 新村サクラ is サクラさん with です・ます from the first meeting and it never changes
+- SHE NARRATES 00002427 (order 410, 417 lines) IN 私, her second narration after 00000CFA, and it is the 元木町事件 from inside, as the perpetrator, ending in her own death by fire.
+- THE REGISTER HER BLOCK SAYS SHE CANNOT DROP IS ABSENT FOR A WHOLE FILE: no stretched vowels, almost no exclamation marks, no 「うぎゅ」. What replaces it is operational — she counts opponents, budgets the drug's eight minutes, chooses the 鉈 over her own hands so the damage looks human, and records 「何の感慨もない」 after beheading a child -> Q907, Q114.
+- her tactics, in order: bug her daughter's phone; flag down the unmarked police car so 茜 sees her far from the flats; inject; cover five minutes on foot in under thirty seconds; body-blow 茜 unconscious with measured force so she does not vomit blood; cut the door chain rather than tear it, because superhuman damage would tie the case to 女ケ沢.
+- her one misreading, and it is characterising: she takes 茜 sending the police escort away as self-preservation, and says 「私が茜の立場なら、例え犯人であることがばれようとも、娘の命を最優先するところだ」 (11:98). The reader knows 茜 is protecting なつみ from the 女ケ沢 truth.
+- 罪悪感 ARRIVES ON SCREEN, 11:282-11:295: lying still and half-blind she watches 春花 cradle なつみ's severed head and cannot understand why 春花 does not hate her; the emotion is named after fourteen cells of not being able to name it, and it is the first she has felt in over ten years.
+- WHAT SHE DOES AFTER: 紙人形 of herself and 春花 dipped in 春花's vomit and pushed into 五島's pocket, 五島 carried to the entrance and covered with a wetted blanket so she survives — and so she keeps believing in the 呪い and testifies incoherently. Then kerosene from なつみ's ストーブ, the kitchen gas hose cut, and fire, because the drug is undetectable after high heat -> Q910.
+- her last cells are addressed to her dead daughter and she talks herself out of despair by logic: 春花 needed なつみ no matter what, therefore 春花 would forgive her. 「私は春花の母親になれてよかった。／春花、私のところに来てくれてありがとう。／そして……／ごめんね、春花……」
+- 0000242E: the same night from outside, in the 能面 and 赤装束, shot four times at point-blank range and standing up unhurt. She has TWO lines in the whole file, both whispered through the mask and both requests: 「お願いだから、道をあけて……」 and 「どうか娘たちを……／お願い……」. She embraces the woman pointing a gun at her rather than cut her down -> Q912.
+- 00002433: absent from her husband's 十三回忌, excused by her mother-in-law on grounds of money, and worried about by both women in the file's last cells. Her absence is the plot.
+- 00002444:20:300-20:353 is her escape from the 元木町 party's side, inside 新村春花's recovered memory, and it is the only place she is heard in the file: she shouts the crowd off her daughter (「ほら！　私はこっちよ！　窓から飛び降りて逃げられるわ！」), jumps from an upper window BAREFOOT, gets ahead of 春花 on the ground, runs her onto a game trail her nieces use, and when 春花 goes off the cliff she draws the pursuit away with 「さあ私たちはこっちよ！／　来なさい！　追いつけるもんならね！」
+- the register is the operational one of 00002427 with the volume up and none of the stretched vowels or 「うぎゅ」: flat imperatives, one fact per line, no reassurance -> Q114
+- SHE IS THE MISSING PERSON THE BRANCH ENDS ON. She is never found — not that night, not in the five days before the rescue, and not in the fifteen years after; the file's last cell is 「あの時からずっと、あの人が見つかっていないのだ」 and it does not name her -> Q941
+- she is also, at 00002439:11:9, the unnamed 「おばさん」 who asks 新村茅萱 to skip the 継承の儀 and send a substitute, which is the arrangement that puts 茅萱 outside the house at the right moment -> Q924
+- as-of: 00002444
+
+
+## 五島桃子 (ごとう ももこ, Momoko Goto) — 絵梨奈's elder sister, 20
+- first_appears: 000002F8:12:2 (referred to as お姉ちゃん); named in dialogue at 000002F8:12:17; first speaks at 0000034C:11:14 (「あんたか」); named on screen in 絵梨奈's presence at 0000037D:11:74
+- pronoun(s): 私 ("私、もう20歳だし" 0000034C:11:20)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: TWO registers, switched instantly and on purpose:
+  1. to her sister: blunt, clipped タメ口, bordering on hostile. Flat statements ending in ～し. She does not answer questions, she deflects them.
+  2. to a guest: full 敬語 in a bright, hostess voice (0000034C:11:33-34). The switch is instantaneous and 五島 notices it.
+- sentence-final particles: ～し (deflecting); ～よ; ～ってよ (hearsay)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「あんた」 for her sister every time — UNTIL 0000057B:11:89, where she comes into a police station at midnight and says 「絵梨奈……！」, the bare given name, her first use of it on screen; then 「ったく……いつまでたってもガキなんだから……」 (11:96) while her sister sobs on her. The words are still rough; the errand is not. EN must not warm the wording — the warmth is in the fact that she came.
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW (no swearing observed, but the coldness does the work); sentence length VERY SHORT to her sister, MEDIUM and polished to a guest; formality LOW then HIGH; vocabulary register plain, slightly rough. 五島 describes her as 「ちょっと不良っぽくて怖い」 and 「嫌いというよりは、苦手」 — the EN must let her be unpleasant without being a villain.
+- background: dropped out in her first year of high school, dyes her hair often, out most nights, 20 years old, resented the 天才少女 fuss around her sister. NEW as of 000005C1: she works as a waitress at プリマベラ, an expensive coffee house opposite her sister's cram school. Her perfume is identified again in the family living room at 00000617:8:29-31.
+- THIRD REGISTER, new as of 000005C1:11:26-30 — the professional voice: わたくし, ～でございます, ～いたします, ～くださいませ, 「五島様」 to her own sister, 「お三方」 for a table of three. Flawless, warm, and completely impersonal. It is the SAME surface form the menu navigator uses (000000F2) and must not sound identical in EN. -> Q075
+- the register is a costume and the text proves it: at 000005C1:11:303-306 she leans in, drops to blunt タメ口 for exactly two lines (「早く行きなさいよ」), and the narration calls it 「一気に化けの皮がはがれたかのような素の表情」 (11:308). She comps the bill without being asked and hides the favour inside the professional voice. 五島 reads it as coldness; なつみ reads it as care (11:316-317). EN must let both readings stand.
+- known ambiguity / open questions: -> Q075
+- AS A TODDLER (00000801:8:163-8:177), one to two years old, in a café twenty years before she waits tables in one: she demands a little sister, announces that she has already chosen the name 「えりな」, and agrees to be quiet in exchange. Baby-mangled speech throughout (「いもうと、ほちい！」, 「あーい！　ももこ、しずか、する！」).
+- AS A SIX-YEAR-OLD (0000085D:11:151-11:152 reported, 00000874:11:5-11:15): she took her sister to play the same takoyaki game and lost; she holds 絵梨奈's hand to leave, and while 良治 is in the toilet she looks after both small girls, orders the vegetables he had insisted on, and keeps them talking. 良治 calls her 「何とも礼儀正しいしっかりしたお姉さん」. The competence and the care are the earliest facts about her, and they are the opposite of the あんた register at 0000034C.
+- INSIDE 五島's GHOST STORY (000009B7:11:3-11:24), set three months before 0000034C: the あんた register is unchanged (「あんた今から出かけるの？」, 「あんた誰とも電話しないでよ」), she answers without looking away from the television, and what she is doing is warning her sister. 五島 introduces her as having 「ちょっと霊感」 and being 「ちょっと不良っぽい」 — the same two words she uses at 0000034C. The third instance of the same pattern: rough words, protective errand. Do not warm the wording.
+- SHE NARRATES A WHOLE FILE, 00000E7B (order 132, 2637 lines), in 私, four years after her sister's death. She is 24 (82:49 「五島桃子容疑者（24）」). The あんた register does not appear once: her sister is dead and she is alone with strangers for the entire file. Everything the earlier blocks record about her is off screen here; do not import the roughness.
+- THE SECOND-PERSON REGISTER, 11:21-11:155, and it is unlike anything else in the project: です・ます addressed directly to 「あなた」, the reader, with two numbered questions put to them (「あなたの1番古い記憶は何ですか？」, 「あなたは『復讐』というものを、どう思いますか？」), essayistic asides about war and economics, and a worked English-language digression — 「確か英語では"helpless"という1単語で表される概念です。」 / 「"A little baby is helpless."」 — glossed in the next cell. It drops into plain-form 私 narration at about 11:156 with no marker and never returns. -> Q230, Q231
+- her registers by addressee, all live in one file: 敬語 (です・ます) to 新村サクラ and to 城崎, kept even while she has a gun on him; タメ口 to 新村夏菜, which warms into an elder sister's; 丁寧 to 新村春花. The one thing she does not do anywhere is drop into the clipped ～し of 0000034C.
+- ALIAS: 藤野桃子 (34:31-34:32) — she begins 「あ、五島……」 and substitutes it mid-cell, and four characters use the alias for the rest of the file. -> Q232
+- THE TUMOUR, her only sustained figure and the spine of her narration: 良心 as a 腫瘍 that is 良性 or 悪性, 肥大, fed by 好意 as a 「質の悪い添加物」, 苗床, then 寛解 and 再発 (11:194-11:206, 28:107-28:111, 34:45-34:48, 40:76, 48:292, 82:60-82:62, 82:170). Keep it medical in EN and do not vary the vocabulary.
+- profanity ceiling: ZERO. The strongest thing she says in 2637 lines is 「何よ……！　どうしてそこまで言い切れるの！？」 (48:167) and 「もう……！　次から次へと想定外……！」 (34:105). Her violence is entirely in the narration.
+- EN correlates for THIS register: contraction rate MEDIUM; sentence length MEDIUM to LONG in the essay, VERY SHORT in the collapse; formality HIGH to strangers; vocabulary register unexpectedly educated — she uses 聴覚野, 神経細胞, 情報処理, 寛解, 執念深い correctly and builds a testable hypothesis out of them (54:152-54:165). 絵梨奈's narration always treated her as the unacademic sister; this file quietly contradicts it and nobody remarks on it.
+- HER LAST REGISTER, 82:176-82:296: four apologies in order — 夏菜, サクラ, 春花, then 絵梨奈 — while a bullet travels through her skull in slow motion. To her sister she switches to あんた and 「ねえってば……。」, the only time she uses that pronoun on her, and the file ends 「絵梨奈……／大好きだよ。」 The same four kana as 新村夏菜's last words at 00000BB7:11:119-11:124, one cell instead of four. -> Q182
+- she is named as the 主人公 of the whole thing, in the third person, in the file's last cell: 「この事件で心に深い傷を負った女性がいた。／彼女こそが、この惨劇の主人公である。」 (227:19-227:20). -> Q245
+- HER LONGEST SCENE ANYWHERE and the only one that is only the two sisters: 00000EDF:33 and [37], 394 cells of telephone, no narration, no speaker tags. The あんた register is intact for the first two thirds and does not soften; what changes is that she stays on the line. 「悪かった、まくし立てて」 (33:23), 「そんな元気のない声、嬉しくないに決まってるでしょ」 (37:37), 「想像するだけで……嫌だ。／殺した人、絶対に許さない」 (37:343-37:344), 「絶対に、絶対に無事に帰ってきてよね」 (37:348). Rough words, protective errand, for the fourth time.
+- she says the given name, 00000EDF:37:161-37:168, and the file makes it the beat: her sister uses 「絵梨奈」, she does not answer, and then 「名前で呼んでくれたから」 / 「初めてだよ。ずっと『あんた』だけだった」. She uses it again at 117:296 and 117:261.
+- the one thing she will not say: 「そういうことは、電話では言わない主義」 (37:357) to 「私……／お姉ちゃんが好き」, then 「気が向いたら」 twice (37:360, 37:362), and at the very end of the call 「ねえ、絵梨奈」 / 「…………／おやすみ」 (37:367-37:370). She reaches for it and substitutes goodnight. EN must not let the substitution read as coldness.
+- SELF-DESCRIPTION, and it is the only one she gives: 「外面はそこそこいい方なんだけど」 / 「内面は？」 / 「不愛想」 (37:154-37:156). Her sister's narration has called her 不愛想 since 0000034C; here she says it first.
+- her comic register, new: she runs a straight-faced routine about her own chest for forty cells (37:233-37:286), including 「ご想像にお任せするって伝えといて」, 「なくは……／ない」 and 「あ、でもウエストは自信ある」. She is funny on purpose and nowhere else in the project is she allowed to be. -> Q292
+- SHE FAILS AND THEN DOES NOT, 00000EDF:202:148-202:221: on a speakerphone with a stranger she is defensive and harsh (「もう何があったか知らないけど……／何のためにその頭はあるのよ……」, 「私のせいにするの！？　バッカじゃないの？」), breaks off with 「何であんたがお願いすんのよ！／　何であんたが卑屈になるのよ！」, hangs up — and then sends a PHOTOGRAPH of a handwritten note: 「役立たずでごめん。元気出して。姉より」. The ten-year-old says she was crying. The apology is written because she cannot say it, exactly as at 37:357. -> Q298, Q299
+- she signs herself 「姉より」, and her sister's reaction is 「何より、姉と名乗ってくれたことが、嬉しかった」 (202:227).
+- in the epilogue (00000EDF:117:246-117:308) she is in company for the first time: teased into the nicknames 師匠 and 桃ちん by a ten-year-old, losing an argument about her waist, and 「お！　師匠のシスコン発動！」 / 「べ、別にそんなんじゃないし！」 (117:297-117:298). The あんた register survives inside it.
+- IN THE 00000EF6 BRANCH SHE IS GONE. 134:2-134:5: she left home immediately after the 祀耀800 incident and there has been no contact in two years; 古郡なつみ sleeps in her room and says she still feels awkward about it. She never appears and is never named on screen in the file — 「五島のお姉さん」 only. Set this against 0000057B (she came to the police station at midnight) and 00000EDF:33/37 (394 cells of telephone reconciliation): three branches, three outcomes for the same relationship
+- 00000F0D: she uses 「絵梨奈」, the bare given name, as her STANDARD form here — 「あ、いたいた。絵梨奈、こっち」 (44:104), 「絵梨奈、あんまり遅くならないでよ？」 (56:8), 「伊勢さん、絵梨奈のこと、お願いしますね」 (56:12). The あんた register of 0000034C does not appear once. Fifth branch, fifth outcome for the same relationship, and this is the only one where the given name is simply how she talks. -> Q037, RELATIONS
+- the protection is on the surface for the first time: three consecutive lines are warnings (56:8, 56:10) and the third hands her sister to a police officer by name. Her sister's word for it is シスコン (56:17) and the narration of 伊勢 calls it 過保護 (56:14). Rough words, protective errand — the pattern is intact, but the words have stopped being rough.
+- 敬語 to 伊勢 (「お願いしますね」), tested here for the first time; she has no other adult addressee in the file. Four lines total.
+- HER LONGEST SCENE WITH HER SISTER IN PERSON, 00000F6F and 00000F87, ~350 cells in a car and a hotel, and it is the only branch where the reconciliation happens face to face rather than down a telephone
+- the あんた register is intact for the first file and a half — 「あんた……先輩に対していつもあんな上から目線で話してるの？」 (00000F6F:11:59), 「五島一族きってのチビなんだから気をつけなよ」 (11:99-11:100), 「そういう時はごめんじゃなくてありがとうでしょ？」 (11:103) — and every one of those lines is a protective errand in rough words. Fifth instance of the pattern
+- SHE ASKS PERMISSION TO TALK ABOUT HERSELF, which she has never done anywhere: 「勝手で悪いけど、自分語りしていい？」 (00000F87:11:75), and then apologises for the timing (「ごめんね、あんたの心境、今大変だろうけど……」 11:84). Her sister's narration notes that she has barely said hello in years
+- WHAT HAPPENED, in her own words (00000F87:11:87-11:152): a boyfriend at 15, serious and clever, dead in an accident inside a month; his high-achieving family stared at her naturally pale hair at the funeral and she could not put her hands together; she decided she did not want to be the kind of person who looks at someone that way, stopped seeing the point of being clever, and left school. She has worked every day for five years to save enough to leave home. The men her sister heard on the phone were customers she could not refuse rudely, and she has now finished turning all of them down
+- THE REAL REASON, 11:194-11:215, and she gets there only after the false one: 「私、あんたに捨てられるのが怖かった」. She taught her little sister until the roles reversed at five years' distance and stopped being able to say what an elder sister was for — 「絵梨奈にとって、私っていらないんじゃないかって……」. She pulls into a service area and cries on the steering wheel, and drives on before she has stopped
+- SHE SWITCHES TO THE GIVEN NAME ON SCREEN, mid-confession: 「絵梨奈は私のこと、嫌いでしょ？」 (11:240), and it is her standard form for the rest of the chunk. Sixth branch, sixth outcome for the same wound, and the only one where the change happens inside a single conversation rather than as a gift or as a habit. -> Q037, Q291
+- her comic register survives the crying: 「あんたさ。／私の貯金にたかる気でしょ」 (11:297-11:298), 「あーあ、家出やめたら、私、ただのお金持ちだよ」 (11:301), and 「あ、気になるってことは、やっぱり貯金目当てだ」 (11:303). Second file in the project where she is funny on purpose
+- the one thing she will not finish, again: 「だってさ……／あんたのために使えるなら……」 (11:314-11:315), immediately denied with 「ああもう！　何でもない！」. Same substitution as 00000EDF:37:357 and 202:221
+- SHE KNOWS THE 超炭酸ボンバー BOTTLE, 11:342-11:344 — the base colour reads blue for normal pressure, yellow for risky and red for dangerous — and offers to lecture the 先輩 who keeps falling for the shaking prank. Her closing request is to be introduced to both of them (11:348-11:349). She is the last person in the chunk to speak to her sister and she never meets either 先輩
+- she holds a driving licence and her sister did not know (11:39-11:41); she drives two hours through the night to bring her to a funeral and refuses thanks with 「別に……」 four times
+- THE PROFESSIONAL REGISTER AS A WEAPON, 00001807:8:42-8:63, and it is the best evidence anywhere that the costume is deliberate: sacked and insulted at a three-day part-time job by a man who has just boasted of being a fan of the プリマベラ 看板娘, she knocks him down, switches face and voice inside one cell — 「お久しゅうございます、道畑様。本日もご来店、誠にありがとうございます。／ご注文はいつも通り、アイスカフェオレのミルク多めでよろしいですか？」 — and identifies herself. Her comment: 「自称ファンのくせに、表情と声変えただけで分かんないって……」 -> Q707, Q075
+- HER PROFANITY CEILING BREAKS HERE and nowhere else: 「今度絵梨奈の悪口言ったら……／マジで殺す」 (8:62-8:63). Everything she tolerated was about herself; what she hit him for was about her sister — 「今のは妹の分。／私の悪口ならまだしも、何で絵梨奈のことまで！」 (8:46-8:47). Rough words, protective errand, for the seventh time
+- HER WORKING VOICE AT プリマベラ, 00001AA5 and 00001AAE: です・ます to her employer, 最上級敬語 to customers, and a genuine vocation under it. She glosses a proverb back at her boss, worries that other customers are staring at a couple, and proposes a fix that uses her own standing as the shop's face. Her stated ambition is to HAND THE TITLE ON — 「私も次の看板娘を譲れる子が現れるまでは、誠心誠意、お客様をおもてなしします」 and 「私よりも素敵なウェイトレスになれる女性は、きっとこの元木町にもいるはずです」 (00001AA5:8:24-8:27) -> Q743
+- she buys a ご祝儀袋 for two customers she likes and is told to put it away; she accepts the reasoning without argument (00001AAE:8:8-8:16)
+- she has English: 「得やすいものは去りやすい。／Easy come, easy go.ですね」 (00001AAE:8:28), which fits the unexpectedly educated register of 00000E7B and contradicts her sister's account of her -> Q745
+- AS A CHILD MINDING A CHILD, 00001755 and 00001AB5: she is competent, apologises to a stranger for her sister, explains him to her in one sentence the child accepts instantly, and calls her 「絵梨奈」 warmly — 「よしよし、絵梨奈はいい子だね」. This is the EARLIEST evidence anywhere and the given name is simply how she talks; the あんた register has not started -> Q037
+- SHE COVERS SOMETHING UP AT 00001AB5 and it is never explained: the toddler reports that a person went 「ぴゅーって」 and fell; 桃子 changes the subject to ice cream, will not eat, and goes to bed at midday saying she feels unwell. What they saw is not stated anywhere -> Q746
+- SHE WAS AT THE 中央公園 ACCIDENT AND SO WAS HER SISTER, 00001FF5, and this is the only account of it from inside the family: the two of them went to see the cherry twelve years ago, 絵梨奈 was three, and at the moment of the fall 「変な音がなったの。／ラッパみたいな音」. Most witnesses did not see the fall itself; 桃子 did not; and 絵梨奈 did. What the three-year-old said to her immediately afterwards is the file's last block, one cell alone: 誰かに押されて落ちたって -> Q780, Q781
+- the あんた register is intact for the whole scene and the errand is protective for the eighth time: she raises it, is told 絵梨奈 does not remember, says 「覚えてないならいい」 and 「それだけだから」 twice, and comes back to it anyway
+- 00001D1E: her last shift at プリマベラ. です・ます to her employer, a refusal to explain why she is going, credit handed to the two waitresses she trained, and a junior in tears corrected with 「私、お店で泣いていいなんて、教えてないでしょ？」 and then given the only promise she makes — to come back as a customer, on the ground 「私、嘘言ったことないでしょ？」. Rough words, protective errand, again
+- 00001D40 / 00001D6F: she walks into 荒田集落 at night with a handgun, her face covered in blood, moving slowly enough that 新村美冬 takes her for dying, and the longer file adds 「彼女は4年もかけてこのような計画を」. 美冬 cannot work out how she reached the settlement without a guide, and the file ends on that question -> Q767
+- THE BREAK ITSELF, 0000205F, and it is the only file in the project that shows it: she comes home from something she will name only as 不幸, refuses to talk, and when a small sister will not stop she escalates over eight cells to 「うるさい！　2度と話しかけるな！」, 「脳みそしか取り柄のないやつは黙れよ！」 and 「はやく消えろよ……」. A month later their mother reports she is leaving school. The child's conclusion is 「私のせいで不良になったのかな……」 and 「私、もうお姉ちゃんに何もしてあげられないんだね……」
+- WHAT THE FUNERAL WAS is never said here. 00000F87:11:87-11:152 has a boyfriend dead in an accident within a month of meeting him, and a funeral at which she could not put her hands together. The two scenes are never joined -> Q862
+- 0000210E: the night before her sister leaves for 荒田, she demolishes the cover story in four cells (no relative of theirs has a 十三回忌; a 十三回忌 is for someone long dead; she has heard 『殺人』 and 『犯人を捕まえる』 through a wall), calls it 興味本位, and only then says what she means — 「行かないでって言ってるの！」 and 「そんなとこに妹を行かせられるわけないでしょ！」, followed immediately by 「今さらだよね、私がこんなこと……」. She then asks 「私に……手伝えることは？」 and is asked for a meal. Rough words, protective errand, for the ninth time, and the only warm word in it is the noun 妹
+- SHE IS REMEMBERED IN A BAR SHE NEVER ENTERED, 00002084: two regulars and a 店長 spend a whole file trying to remember the legendary プリマベラ waitress, gone two years. The 店長's verdict is the sharpest outside reading of her anywhere — she was working toward a goal beyond the room and a customer comes to enjoy the present, so 「彼女が突然消えたのも、その目標に到達できたがゆえでしょう」 — and one of the regulars adds 「彼女の素顔がどんななのか全然分からなかったな。／やっぱり猫かぶってたってことか？」. Nobody in the scene learns that the woman they are comparing her unfavourably to is the sister of the girl she left home for -> Q075, Q707
+- 000023E7: a whole file with her sister in which NEITHER is named. She works out from the shoes missing at the door that the two guests are hiding, and the protective errand is to remove herself — 「やっぱり私はいない方がいい。あんたもその方がいいでしょ」. Rough words, protective errand, tenth instance -> Q901.
+- SHE NARRATES 0000242E (order 411, 239 lines) IN 私, her second narration after 00000E7B. It is the same night from outside the house.
+- what she does: counts four occupied cars parked around the house, sees a figure move fast enough to leave an afterimage, raises the alarm and is believed, then punches a police officer in the face, takes his handgun and goes in alone. Upstairs she presses the muzzle to the masked figure's chest and thinks 死ね！; the safety she has heard of and cannot find stops her; the figure embraces her and whispers instead of killing her; the safety comes off in the scuffle and she puts four rounds into it on the floor.
+- HER PROFANITY AND VIOLENCE CEILING, both previously near zero, break here and the trigger is the same as at 00001807: her sister. 「五島絵梨奈の姉！　あんたも妹を守りなさいよ！」 (11:86) and 「こんなやつ1人殺せない警察こそとっとと出ていけ！」 (11:116).
+- her one figure of speech, used twice and inverted: 「青から赤へ、冷から熱へと感情が切り替わった」 at her sister's voice, then 「赤から青へ、熱から冷へ」 after the shots (11:169, 11:177). Both halves must use the same four English words -> Q913.
+- the file ends on her refusing her own success: she drove the intruder off and her sister is safe, and what she thinks is 『私は何を間違えたのだろうか』 — because the figure came alone, knowing the police were there, only to protect its daughters, 「まるで私と同じだ」.
+- she never learns who it was, and she is the only person in the project who is asked for mercy by 新村美冬 -> Q912.
+- 00002450 (order 416): a whole evening with her sister at home, and it is the ELEVENTH instance of rough words with a protective errand inside them — but here the roughness has nearly gone and neither of them can account for it
+- SHE OPENS THE CASE. Unprompted, she raises 新村栄一郎's death twelve years on, tells her sister that few people saw the moment, and reports what a three-year-old said at the time: 誰かに押されて落ちた. Pressed, she produces the rest of the child's account — a trumpet-like sound, a sudden wind, and a hand like long black hair out of a hole -> Q945, Q780
+- her ADDRESS FORM moves and she denies it inside the same scene: she uses 絵梨奈 several times during the evening, is told so (「絵梨奈って、何回か」), and answers 「覚えてない」. Asked why she is being kind, 「どうしてだろ、自分でもよく分かんない」 (12:190). Seventh branch, seventh handling of the same wound -> Q037
+- the 賄い sandwich scene, 12:139-12:192: she brings the leftovers, claims to have eaten, is caught out by her own stomach, and eats facing her sister for the first time in years. The あんた register is intact for the food and absent from everything else
+- SHE MAKES THE DEDUCTION HER SISTER MISSED, which happens nowhere else in the project: 死月妖花 has intelligence and mimics cherry, so it could flower out of season; if the spores are still in 元木町 and 古郡先輩 learns about ドローガ and 荒田桜, the 盗感 gives her away. She then physically sits her sister back down and makes her plan instead of running (12:213-12:248). The unexpectedly educated register of 00000E7B is doing plot work here
+- as-of: 00002450
+
+
+## 五島's mother — unnamed on screen
+- first_appears: 000002F6:11:30 (flashback, 「絵梨奈、どうしたの？　何か辛いことでもあった？　何でも話して？」); present-day at 000002F8:12:8
+- pronoun(s): none observed
+- speech level baseline: タメ口, warm-maternal, question-heavy
+- sentence-final particles: ～の？ (stacked questions); ～わよ ("あら絵梨奈、その笑顔、とてもいいわよ" 000002F6:11:36); ～ー！ when drunk
+- copula: よ／わ, feminine
+- verbal tics / catchphrases / fillers: 「あら」 / 「あー絵梨奈！」; she asks three questions in a row rather than one; drunk, she stretches every vowel
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality warm-informal. Her one structural job is that 絵梨奈 changes her own behaviour to stop her being sad — keep her lines gentle and keep the worry visible.
+- TWENTY YEARS EARLIER (00000801:8:167-8:176, 00000874:11:0-11:2): the same warm-tired maternal voice, managing a toddler in public — 「桃子、その話はまた後でね」, 「分かったから……また後でね」, then an apology to a stranger. She defers the question rather than refusing it, which is the same move she makes with 絵梨奈 at 000002F6. EN should let the exhaustion show through the warmth.
+- 00000EAF, four years of living with a daughter who cannot answer, and her register does not adjust by one particle: 「お帰り絵梨奈！　すごかったじゃない！」 (28:181), 「絵梨奈ならあれじゃ足りないもんね！　待ってなさい、すぐ作るから！」 (28:186-28:187), 「絵梨奈、負けてもいいんだから！　せっかくの大舞台に出られるチャンスなんて、もう2度とないわよ！」 (28:261-28:262). Warm, loud, question-heavy, and she talks into silence without ever flagging it. EN must not add care-taking language the JP does not have.
+- she is the one who drags her to the television and will not let her refuse (28:216-28:258). She is in tears before the contest and in tears after it, and neither is described at length.
+- her daughter leaves home by message (52:146) and she is not shown reading it. The file never says what happened between 52:156 and 28:181, and they are living together again by then.
+- 00000EF6: 古郡なつみ has been living in her house for two years and she is now a household adult rather than a visitor. Same warm question-heavy タメ口, now aimed at a girl who is not hers: 「あーなつみちゃん！　いいからいいから、休んでて！」 (134:8), 「ねえなつみちゃん、ちょっと疲れてない？／　最近顔色が優れないわよ？」 (134:17-134:18), 「お金のことは心配しなくていいから、少しゆっくりしたら……」 (134:23). She relays her own daughter's worry rather than stating her own (134:22)
+- なつみ calls her おばさん and does chores unasked to justify her place; the arrangement is that part of the izakaya wage goes to the household (140:250)
+- 0000205F: she is the one who tells the small 絵梨奈 that her sister is leaving school, and her whole intervention is two cells of refusing to assign blame — 「絵梨奈、あなたは何も悪くないの。お姉ちゃんも悪くないの。／今はそっとしておいてあげましょうね」. It does not work: the child's next line is 「私、もうお姉ちゃんに何もしてあげられないんだね……」
+- 0000210E:8:1-8:5: she hands her younger daughter a 手土産 for the trip to 荒田 and tells her to greet people properly, and asks only about the return date. She is in the house while her elder daughter interrogates the younger about a murder, and she is told nothing
+- as-of: 0000210E
+
+
+
+## 五島's father — unnamed on screen
+- first_appears: 000002F8:12:15 (「絵梨奈ちゃーん？　おとーさんですよー」), drunk, on the phone. This is his only appearance.
+- pronoun(s): none observed
+- speech level baseline: タメ口 shouting through a mock-polite opener; 「いいか絵梨奈！」 command frame
+- sentence-final particles: ～んだ／～んだぞ, stacked; drawn-out ー when drunk
+- copula: だ
+- verbal tics / catchphrases / fillers: refers to himself as 「おとーさん」 in a sing-song; strings four exclamations into one breath; names both daughters in the same sentence
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT and shouted; formality LOW. A cheerful drunk, not a menacing one.
+- as-of: 000002F8
+
+## 伊勢大二郎 (いせ だいじろう, Daijiro Ise) — 警部補 at 元木警察署
+- first_appears: 00000024:51:11, mentioned only, as 伊勢さん. First on screen 000003B4:8:0 (the briefing, unattributed until 8:14). First named on screen 000004A7:11:41
+- pronoun(s): 私 in the formal register; 俺 in the working register. As of 000004BB onward 俺 is DOMINANT — he uses it with the three girls in every file of this chunk ("俺が車で送っていく" 00000550:11:10; "俺は謝らなければいけない" 00000522:11:79; "俺を信じて" style plain form throughout 00000538). The 私 register now appears only when he is performing at a stranger (000004BB:8:18). Track it; it is a tell for how safe he feels.
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: FOUR registers:
+  1. BRIEFING register (000003B4:8:0-13): flat bureaucratic 丁寧, です・ます, numbered points, statistics. No contractions in EN.
+  2. COMMAND register (000003BC, 000004A7:11:102-103, 000004F9:11:137-141, 00000564:11:182): plain-form, barked, 「～だ！」「～してくれ！」「おい！」. The arrest announcement is its purest form.
+  3. FLUSTERED register (000004A7:11:30-58, 000004BB:8:12-25): stammering with repeated first syllables 「わわわ私は警察官だ！」, self-justification nobody asked for, and blushing.
+  4. GENTLE register, NEW as of 00000538:11:34-69 — with a girl about to look at her father's body he mumbles, hedges, leaves sentences unfinished (「ええっと……その……。身元確認のために……ご遺体をだな……」 11:34), offers her an exit three times, and steps back one pace when she insists on lifting the cloth herself. The narration calls it 聞き取りにくい and ぼそぼそ. Also 00000550:11:21-28, where he explicitly separates 「警察官として」 from 「俺個人の考え」 before speaking.
+- sentence-final particles: ～のだ／～のである in the rant; ～だ！; ～かな (softening a question, 00000538:11:44, 11:156); ～てくれ
+- copula: だ (dialogue) / である (the rant)
+- verbal tics / catchphrases / fillers: 「くそ……」 — his profanity ceiling, same word and ceiling as 春花's; 「ごほん……」 to recover himself; 「うむむ……」 while thinking; 「いかにも！」; the 元木美少女同好会 rant register — 「原理原則」「言語道断」「断じて」 (000003B4:23:0, repeated almost verbatim at 000004BB:8:22-23); smokes with the window open when he has finished being a policeman (00000550:11:95)
+- dialect: none
+- EN correlates: contraction rate LOW in registers 1 and 2, NONE in the rant, HIGH in the stammering, MEDIUM and broken in register 4; profanity ceiling LOW ("damn"); sentence length MEDIUM in the briefing, VERY SHORT when barking, runaway when ranting, fragmentary when gentle; formality HIGH then LOW; vocabulary register split — real police procedure (再犯率, 示談, 監視カメラ, 巡査部長, 非常線, 緊急逮捕, 死体遺棄) against comic-absurd hobby vocabulary (美少女, 愛でる, 健全な育成)
+- comic frame: the joke is that a competent, hard-working, well-liked officer has one ridiculous and strictly non-predatory obsession, and the text says so explicitly. EN must land him as a comic figure, not a threat. -> Q048. He is also the only adult in the story who takes the girls seriously and the only one who apologises for failing them (00000522:11:79-81) — the comedy must not eat that.
+  5. WRITTEN register, NEW as of 0000062C:11:61-76 — a handwritten letter and a follow-up message, both terse plain-form instruction with no softeners and no rank: 「絶対に家から出ないようにしてほしい」 (11:65), 「30秒でいい。なんとか耐えてくれ。」 (11:73). Structurally the same shape as 古郡良治's letter register. He addresses all three girls as 古郡さん／新村さん／五島さん in writing.
+- pronoun note, refined at 0000062C:19:18: he uses 私 and 君 when announcing himself AT someone through a locked door (「私は元木警察署の伊勢だ！　君を保護しに来た！」), and 俺 when he is with them. The 私 is the uniform, not the man.
+- profanity, extended as of 0000062C:19:45-46: 「ちくしょうーー！！」 then 「くそ……！」 in consecutive cells while being charged. ちくしょう is one notch above くそ and is still his ceiling.
+- the FLUSTERED register at its fullest, 000005D6:11:76-137: he doubles the FIRST syllable of words including his own surname (「わわわわ私は、いいいいせ！」 11:76), and at 11:130-133 he cannot get the word 写真 out for three cells. EN must stutter on the same words, not generically.
+- known ambiguity / open questions: -> Q048, Q055, Q059, Q079
+- in the 00000779 branch he is at full FLUSTERED register again (8:132 「のののおお！　ああ当たり前だ！　いいい伊勢大二郎！」, 8:135 「ぜぜぜぜ絶対だめだ！」) and recovers with 「ごほん！」 into the procedural register inside one cell (8:138). 五島 lands on 「おじさん」 in this branch too and he reacts to it exactly as in the other two (8:125-8:126) — three branches, no shared history, same joke. He also arranges a press blackout for the three girls (000007A5:8:16) and advises 春花 to visit her mother early because the maximum penalty is coming (8:61) — the only adult still doing the job after the case closes.
+- a SIXTH branch appearance, 00000B3F:11:35-11:68, and it is the only one where he never meets anyone: a phone call to 新村春花 in a branch where they are strangers. です・ます for the whole call, no 俺, no stammer, no rant — 「あー新村さん。私は元木警察署の伊勢と申します」 — and the procedural honesty is intact (he says there is nothing to act on, then agrees to cordon the town, check every vehicle and escalate to 佐波県警 by morning). He closes on 「元木町は平和すぎて、我々、元木警察は暇を持て余していますから。／それに、警察の役割はみなさんの安全と安心を守ること。安心してもらうことも、我々の仕事ですから」 — a joke about how safe the town is, delivered one file after two people were killed in it. Keep the mismatch; it is the text's, not his.
+- his 私/俺 tell now has a third setting: 私 on the telephone to a stranger, which is the same uniform he wears at 0000062C:19:18 through a locked door.
+- a SEVENTH branch appearance, 00000EAF:28:264-28:288, and it is the comic register at full extension four years after a case he never solved: he arrives at the door to drive 五島 to a helicopter, opens with 「元木警察署の伊勢と言います」, and then delivers the 元木美少女同好会 rant at a mute nineteen-year-old in a moving patrol car for six cells, one of which runs ~160 characters with no break and no closing quotation mark (28:288). -> Q049, Q048
+- his address form here is 五島さん and his register is 丁寧 (です・ます) with 私 — the uniform, not the man — because in this branch they have never worked together. 五島's narration works out that he is the one who talked the mayor into the helicopter (28:286).
+- the comedy and the competence are the same act again: the rant is the reason she gets to the final.
+- HE NARRATES, for the first time anywhere in the project: 00000F0D:56:0-56:264, 265 cells in 俺, a whole row-block inserted between two blocks of a 15-year-old's first person with no marker at either seam. This block previously recorded no narration voice at all. -> Q369
+- his NARRATION VOICE: plain past, short declaratives, procedural. He reports what he decided and why, in the order he decided it (56:35-56:38, 56:58-56:63), names his own doubt without dramatising it (56:79 「正直、とても悩んでいる」), and asks himself questions he does not answer (56:83-56:84, 56:196). None of the FLUSTERED register and none of the rant reaches the narration; the comic figure disappears the moment he holds the 俺. The last nine cells drop to one clause each (56:256-56:264 「俺は夏菜を助けたい！」 … 「俺じゃなきゃダメなんだ！」). EN must not make this lyrical and must not make it hard-boiled.
+- the FLUSTERED register at its longest run, 00000F0D:14:12-14:137: he doubles the first syllable throughout (「なななな名前ふぁ、」 14:24, 「しゅ／しゅ／しゅ／出身は、」 14:33-14:36), breaks single words across three cells, mishears 高速 as 拘束 and delivers the 言語道断 rant at a 14-year-old for it (14:119-14:120), and finally tangles his own denial into nonsense (「きんりょうなろ、しれいない……！」 14:134). It runs down over [20] and [26] and is gone by [32]; 夏菜's narration tracks the change and asks him about it (26:16-26:22). -> Q352
+- 俺 and 私 hold to the existing tell exactly: 私 while announcing himself to a stranger (56:204 「元木警察署警部補、伊勢だ！」 uses neither, but 14:59 「佐波県警元木警察署所属、警部補伊勢大二郎だ！」 is the uniform), 俺 with the girl and with 五島 throughout, and 俺 in all 265 cells of his own narration.
+- the GENTLE register carried further than anywhere else, 20:78-20:96 and 26:139-26:145: he explains his own working rule out loud — that the runaways he takes in have all lost a place to belong, and that forcing the story out of them fixes nothing — and then applies it by refusing to question her twice (20:85, 26:139, 44:126). 「これは取り調べじゃなくて、雑談なんだが……」 (20:58). The professional vocabulary here is 居場所, 保護, 尋問, 素行, and it must stay consistent because the whole file turns on it.
+- he BUGS THE PHONE HE LENDS HER (50:82, confirmed 56:60 「そして盗聴した電話の内容も」) and never mentions it to her; she finds it by ability and leaves the phone behind (179:99). The GENTLE register and the surveillance are the same scene and the text does not reconcile them. EN must not tip either way. -> Q350
+- his profanity ceiling holds: 「くそ……！」 twice (56:202, 56:223, 56:243). Nothing stronger anywhere in 2,717 lines.
+- HE REFUSES TO USE HER NAME for the entire file, addressing her as 君 even after she objects, then shouts 夏菜 while searching for her (56:253-56:254), and mouths it silently through a closing train door at 74:174 where it is never heard. -> Q354, RELATIONS
+- THE THIRD-PERSON PROMISE, 74:143-74:156: he asks her to tell her parents that 「俺みたいにひねくれた警察官」 will come to 荒田集落 in exactly two years, as a man and not as an officer, and answers her questions about that man in the third person for five turns. He does not break the frame. Same device family as 五島's 作戦 staging: the content is stated, the person is displaced.
+- 0000156A:143:0-143:15: four quoted lines inside an unframed montage of the 元木町事件, reprinted with no narration around them — the GENTLE register at the mortuary (「ええっと……その……。身元確認のために……ご遺体をだな……」 143:0, word for word from 00000538:11:34) and then the COMMAND register on the telephone (「絶対にそこから動くな！　すぐにそっちに向かう！」 143:15). He does not appear in the story present at all and nobody mentions him in fifteen years -> Q643
+- 0000171B is the FLUSTERED register with a new tell: he doubles the first syllable SIX times in one word (「ババババババカを言うな！」 8:39) and recovers into the rant inside one cell. He also reacts hard to the name 新村春花 — 「昔、先輩から気になる噂を聞いたもんでな」 — and says he will look into it himself, which is never followed up in the chunk -> Q691
+- THE OPERATIONAL REGISTER AT LENGTH, 00001800, 0000182A, 00001830, 00001854: four files in which he is only a policeman. 隠語 (ホシ, マルタイ), a judgement that leaving evidence is a reason for pessimism, a plan to bug a house and wait, and an explicit refusal of the accusation that he is using a girl as bait — 「むしろ犯人の存在を我々が認識できた方が安全なんです」 (00001830:8:22) -> Q705, Q711, Q712
+- the 私/俺 tell, demonstrated across a single scene boundary for the first time: 私 for the whole of a call to 古郡茜, then 俺 in the two cells after she hangs up (00001830:8:40-8:41)
+- HE LOSES AN ARGUMENT TO A BEREAVED WOMAN and concedes it properly: told that she will go home in her daughter's place, he objects on duty grounds, says 「我々に止める権利はありませんが……」, and then arranges an escort, officers around the house and 県警 cover anyway (00001830:8:24-8:39)
+- his profanity ceiling holds at くそ and ちくしょう (0000171B:8:27, 00001735:8:11)
+- his GENTLE register is absent from this chunk entirely; he does not speak to any of the three girls in any of the five files he appears in
+- 00001BAE: the six-person disappearance from 元木町 handled as ordinary procedure — station camera data requested from 飯沢県警, the three girls' trip confirmed with their school, and the one thing he cannot place stated flatly: the 古郡 couple owned a car and took a later train. His closing cell is 「何がどうなっているんだ……？」
+- 00001FEF: the 000004A7:11:64 gag at full strength and three self-corrections in five cells — 「元木美少女同好会No.1……／じゃなくて、元木町No.1の天才少女、五島絵梨奈！」, a stammer on his own rank, and 「では2人きりで話を……／じゃなくて、君の証言を聞かせてもらおう！」. He arrives at a run after hanging up on his own receptionist -> Q059
+- 00002450:18 is 217 cells of dialogue with no narration in which he assembles the project's central conspiracy out of three pieces of paper, and it is the FIVE-REGISTER block's sixth setting: a quiet, unhurried, half-joking WORKING-THROUGH register with 俺 and a subordinate. No FLUSTERED stammer, no rant, no COMMAND barking, no GENTLE mumble
+- his method here is to state the absurd version first and defend it afterwards: 「これは俺の妄想だと思って聞いてくれ」 (18:36), then 「何者かが元木町を無理やり平和な町に仕立てているとは思わないか？」, and only then the evidence. He calls it 妄想 four more times while being right, which is the 五島 move at 00000F24:94 in a different mouth
+- HIS THREE EXHIBITS: a 注射器 of pink liquid with the needle attached, which HE removed from 新村美冬's car; a copy of an addendum to 新村栄一郎's 死亡診断書 recording drug-like substances and biological fragments, and the 警察庁 forcibly stopping that investigation, and a substance similar to エフェドリン; and a printout from 『オカルト雑誌M』 about a research body set up to study the 御神木 whose members were all beaten to death in a purpose-built 宿舎, a real unsolved case that was also hushed up -> Q947
+- his ARGUMENT, and it is correct: the town's population is growing fast, more than half are incomers, the crime rate per head has not risen, therefore something is holding it down; the 御神木's pollen is a non-addictive narcotic; residents build tolerance by the time they have a life there; and the low crime rate then compounds through 割れ窓理論 because the police have time for small things -> Q943, Q948, Q949
+- he also supplies the detail that closes the 女ケ沢 method: 「人間を撲殺するってのは、意外と大変らしいぞ。……人間がやるにはちょっと想像しにくい方法だ」 (18:153-18:155)
+- HE OFFERS TO INJECT HIMSELF with the unidentified drug, argues the legal position for it (「覚せい剤や麻薬だと認められない以上、俺が逮捕されることはない」 18:170), lets his subordinate talk for six cells, and then laughs it off as a joke — 「悪い悪い。でもまあ、確実な手段の1つだろ？」. Nothing in the file settles whether it was one -> Q947
+- the 俺/私 tell holds: 俺 throughout with a subordinate, and he takes responsibility for him out loud before showing him anything — 「お前の責任も俺が負う」 (18:48)
+- the file, and his scene, ends on 「ん？　誰だこんな時間に」
+- as-of: 00002450
+
+## 向井 (むかい, Mukai) — homeroom teacher of 2年2組
+- first_appears: 000001DD:11:35 (email body only)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (school notice register)
+- sentence-final particles: ～です／～ください
+- copula: です
+- verbal tics: none; formulaic 題名／本文 email structure
+- EN correlates: formal, impersonal school-notice English. No contractions.
+- HE SPEAKS, 00001533, and it is his first spoken line anywhere in 200 files. The note below that he is a text-only character no longer holds from 00001533 onward
+- speech level in speech: 丁寧 (です・ます), mild, formulaic — 「はい、おはようございます」 (8:136), 「お、古郡さん今日から復帰ですね。／法事はどうでした？」 (8:143-8:144), 「それと、急ではありますが、今日は転校生を紹介します」 (8:153)
+- he is still the form teacher of 2年2組 and the narrator's verdict on getting him again is 「ゆるゆるとした1年間になるだろう」 (8:149), which the file then demonstrates: he loses the room to a comedy routine, is talked over by the transfer student before he can finish a sentence (8:206-8:209), and settles for 「そろそろ静かにしてくださいね」 (8:248)
+- EN correlates unchanged: no contractions, mild, impersonal. His spoken register and his school-notice register are the same register
+- as-of: 00001533
+- note: zero spoken lines; text-only character
+
+## unnamed man at the door (00000024:51) — 春花 addresses him as おとうさん
+- first_appears: 00000024:51:42 (「やあ春花、久しぶりだね」) — his only line so far
+- pronoun(s): none observed
+- speech level baseline: casual-warm, ～だね
+- copula: だ
+- EN correlates: relaxed, friendly, no contractions needed; one line only, so keep it plain and unremarkable — the horror is the context, not the diction
+- known ambiguity / open questions: -> Q003 is now RESOLVED (新村栄一郎 died 12 years ago; 000004E3:27:117, 00000550:11:44, 000005AC:11:78), which makes this line harder, not easier. Do not resolve THIS line.
+- as-of: 00000024
+
+## the 死神 (0000050E, 000004F9, 00000564) — the masked figure
+- first_appears: 000004F9:11:92 (「大きな赤い服を着て、鉈とメイスを持っている。／そして顔には『能面』。」)
+- SPEECH: NONE. Across three files and two fights it does not say one word, does not react to being called お父さん, and does not react to being called 死神. Its silence is absolute and must stay absolute in EN — no grunts, no breathing, no added stage noise.
+- identity: THREE branch outcomes now. Unmasked at 00000564:11:174-177 as 新村美冬. Never unmasked in the 000004F9 / 0000050E branch. Unmasked at 00000641:11:116-119 as 古郡茜, なつみ's own mother, immediately after 伊勢 shouts the name 新村美冬 and is wrong. Do not let EN foreshadow any of the three in the earlier files, and do not let the 00000564 wording leak into 00000641.
+- naming: the narration calls it 「死神」 in quote marks (000004F9:11:95, 0000050E:11:24) and 「怪人」 without them (00000564:11:157, 0000062C:19:39, 19:43-47). Keep the quote marks where the JP has them; they are なつみ refusing to accept the word.
+- capabilities as stated on screen (0000062C:19:47, 00000641:11:106-108, 11:130-131): it dodges every round fired at it, it entered a first-floor window with no ladder, it is said to know every method of killing, and when it is unmasked there is no vest under the cloth. The text offers no explanation. Do not supply one.
+- rules, stated by 春花 at 0000062C:11:94-95: it is a demon summoned by a 魔女; when the 魔女 curses a target it appears only on 四月八日 and always kills.
+- ORIGIN, stated in full at 000008A2:8:24-8:95, twelve years before any of its appearances: the 赤装束 has short knives sewn inside it as both weapon and armour; the weapons are a 鉈 and a メイス, described as 荒田集落's equivalent of a sword; a drug extracted from a local plant unlocks the muscles for about ten minutes; and the 能面 exists so that fighters cannot be identified and can still go out barefaced in peacetime. In 荒田's own vocabulary 魔女 means what would now be called a priest and 死神 means literally the dead, and mourners wear 能面 at a funeral so that the 死神 does not notice them. The whole costume is called 「死神の――荒田集落の戦いの正装」 (8:95).
+- what this does NOT explain: the dodging of every round fired at it (0000062C:19:47), the first-floor window with no ladder, and the absence of a vest. 000008A2:8:74-8:76 explicitly denies that the training makes anyone invincible. The gap is deliberate; do not close it in EN. -> Q119
+- as-of: 000008A2
+
+## unnamed detective at the hospital (0000037D) — described as 「おじいさんのような刑事」
+- first_appears: 0000037D:11:41 (「おお、気がついたんですね」)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 but folksy; soft openers before hard questions
+- sentence-final particles: ～ですね；～けど；～かな
+- copula: です
+- verbal tics: 「そうですか……ちなみに」 — he concedes and then immediately pushes; he leaves without argument when shouted at
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM-warm. An old policeman being kind on the surface and working underneath. Do not make him sinister in wording.
+- known ambiguity / open questions: whether he is 伊勢 is NOT stated; 伊勢 is described as about 30, so he is a different officer. Do not conflate them.
+- as-of: 0000037D
+
+## unnamed interviewer (000003AE) — the 「――」 voice in the clinical transcript
+- first_appears: 000003AE:8:0 (「――名前を聞かせてもらえますか？」)
+- pronoun(s): none observed
+- speech level baseline: soft タメ口 to the patient; 丁寧 on the phone to a colleague
+- copula: だ / です (by addressee)
+- verbal tics: apologises and retreats every time the patient escalates; asks one short question per line
+- EN correlates: contraction rate MEDIUM; sentence length VERY SHORT; formality gentle-professional. Every line of his is a question or an apology. Keep them that short.
+- known ambiguity / open questions: his role (doctor, psychiatrist, police) is never stated. -> Q045
+- as-of: 000003AE
+
+## unnamed patient (000003AE) — never named, name blanked ××××
+- first_appears: 000003AE:8:1 (「××××です」)
+- pronoun(s): 私 ("私は誰も助けられないの！" 8:22)
+- speech level baseline: 丁寧 (です・ます) even while shouting, which is the single most distinctive thing about them
+- sentence-final particles: ～のよ／～の; ～ですか
+- copula: です
+- verbal tics: repeats 「どうしてですか」 three times in escalating volume; two of their answers are a single space character -> Q046
+- EN correlates: contraction rate LOW; sentence length VERY SHORT; formality HIGH even in distress
+- known ambiguity / open questions: the patient is never named and never gendered. EN must not name or gender them. -> Q045
+- as-of: 000003AE
+
+## unnamed 元木警察署 colleagues (000003B4, 000003BC) — collective
+- first_appears: 000003B4:8:14 (「伊勢警部補、張り切って報告してたわねえ……」)
+- pronoun(s): 俺 ("俺は年上がいいなあ……" 000003B4:8:25); 私 ("私警部補狙ってたのに……" 8:18) — mixed-sex group
+- speech level baseline: タメ口 among themselves, instant 敬語 the moment 伊勢 appears
+- sentence-final particles: ～わねえ／～のに (the woman); ～なあ／～じゃないか (the men)
+- copula: だ
+- verbal tics: 「まあまあ。」 as a peacemaker; the doubled 「でございますでございます」 panic formula
+- EN correlates: contraction rate HIGH, office-gossip English, profanity ceiling ZERO, sentence length SHORT
+- 00000F0D: three more one-line appearances, all in 伊勢's own narration or beside it — the emergency caller (56:150-56:151 「伊勢警部補、元木駅で殺人です！／　被害者多数いる模様！　まだ事態は収束してません！」, clipped 丁寧 under pressure, 「了解！」 to close), a 事務員 who brings tea and says only 「どうぞ」 (32:18), and a 部下 who takes an order at a run (56:217-56:222 「りょ、了解です！」). The instant-敬語 rule of 000003BC holds: every one of them is です・ます to him and none of them says anything that is not procedure.
+- the salute is new: 「署内の警察官が伊勢さんに向かって敬礼している」 (32:9), reported by an outsider who did not know he outranked anyone.
+- 0000171B:8:2-8:48 is the fullest one of these voices: a junior who reports properly, asks the right follow-up questions, and then treats his superior's hobby as entertainment — 「ずいぶん詳しいというか、何というか……」, 「伊勢警部補、資料室は逆方向ですよ？」, and the closing 「あーあ……伊勢警部補、趣味さえまともならモテるだろうに……。もったいない」
+- the 巡査部長 at 00001735:8:7-8:9 is shouted at for letting 古郡なつみ go home unescorted and answers 「しかし、古郡なつみさんは事件とは何の関係も――」, cut off
+- the officer at 00001854:8:1-8:10 reports a missed radio check and raises the right objection about it himself
+- the collective's register is stable across all three: です・ます to 伊勢, short factual reports, and an affectionate lack of respect for the rant
+- 00002420 (order 409) adds the station's reception side, seen by a civilian: an empty front desk, a young man who has to be shouted for and arrives at a stumble, and three officers who interview 古郡茜 together because the morning's killing has stripped the building. The young man's register is apologetic タメ口 sliding into 丁寧 (「あーはいはいすみません！」 then 「別室へご案内します」); the three interviewers are clipped and procedural and one of them gives orders sideways to a subordinate mid-question (「おい、しっかりメモしておけ」).
+- they are the ones who identify the body by blood type and who tell her the odds; the file ends on one of them saying 「おい、伊勢警部補に連絡しろ。参考人が見つかったってな」, which is how 伊勢大二郎 enters this branch.
+- 0000242E adds the operational side of the same force on the same night: an officer with an earpiece who believes a civilian's tip instantly, radio traffic using マルタイ, and a squad that lets a woman punch one of them, take his gun and walk into the building.
+- as-of: 0000242E
+- note: a separate staff member at 00000538:11:16, 11:25 speaks plain 丁寧 with ～かな (「新村春花さんだね。2階へ行ってもらえるかな」). Neutral, procedural, no character.
+
+## unnamed 西佐波警察 radio operator (000004F9)
+- first_appears: 000004F9:11:136 (「――こちら西佐波警察。聞こえ――ますが、少し――途切れます。どうぞ」)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 radio procedure (了解しました, どうぞ, 見込んでください)
+- copula: です／ます
+- verbal tics: none — the character is the interference. The 「――」 marks inside his lines are DROPOUTS mid-word, not the line-initial speaker marker of Q047. -> Q064
+- EN correlates: clipped radio English with the same breaks in the same places. Do not repair the sentences. Do not add "over" or "roger" beyond where どうぞ／了解 appear.
+- as-of: 000004F9
+
+## unnamed TV voices (announcer / 女子アナ / studio talent / reporter on scene)
+- first_appears: 000001DD:11:13
+- speech level baseline: 丁寧 broadcast register (です・ます, ～とのことです, ～と見られています)
+- EN correlates: neutral broadcast English, full sentences, no contractions
+- the on-scene 佐波放送 reporter's register visibly degrades under harassment (000003A8) — keep the broadcast phrasing intact in the fragments so the collapse reads.
+- 00000F0D: two more, and both are set as BARE CELLS with no 「」 and no speaker. (1) the live report, 62:20-62:22, prefixed 「――」 and interleaved into a telephone call, 丁寧 broadcast register with the reporter's own 「えー」 fillers kept in (「えー、現場から中継です。」 / 「えー……目撃者は多数いるようですが、」), giving the time, the place and 「10人以上の女性同士が突然殺害し合うという前代未聞の事件」. (2) the verdict, 68:1-68:3, which OPENS a row-block before the narrator's voice has started — 「先ほど、判決が出ました。／判決は求刑通り、死刑、死刑です。／新村美冬被告に死刑判決が言い渡されました。」 The doubled 死刑 in 68:2 is either the reporter repeating himself on air or a source typo. -> Q373, Q359
+- as-of: 00000F0D
+
+## unnamed high-school bystanders (000003A8) — collective
+- first_appears: 000003A8:8:5
+- pronoun(s): 俺
+- speech level baseline: 乱暴, shouted, no 敬語 at all
+- sentence-final particles: ～でーす／～ますー (mock-polite stretched); ～うう／ふぉおお
+- verbal tics: 「いえーい！」; 「全国ネット」 obsession
+- EN correlates: contraction rate HIGH, all-caps-adjacent energy without actual capitals, profanity ceiling ZERO, sentence length VERY SHORT
+- as-of: 000003A8
+
+## unnamed ザッハ high-school customers (00000564) — collective, gossip
+- first_appears: 00000564:11:3 (「ねえねえ、今日死んだの、あの子のお父さんだって」)
+- speech level baseline: タメ口 whispering; ～だって (hearsay), ～の？, 「マジで！？」
+- copula: だ
+- EN correlates: three lines only, whispered, no names used — 「あの子」 and 「あの3年」. Keep both referents vague; the point is that the girls hear themselves discussed in the third person. Contraction rate HIGH, profanity ceiling ZERO.
+- as-of: 00000564
+
+## unnamed restaurant staff (ザッハ)
+- first_appears: 000001E3:8:48 (「いらっしゃいませ。3名様ですか？」)
+- speech level baseline: 敬語 (service register: いらっしゃいませ, お待たせしました, お客様)
+- NEW as of 000004BB: a waitress gets three lines and a personality edge — her service register survives a police ID being shoved at her (「な、なんでしょうかお客様……」 8:14) and she is the one who ends the rant by talking over it (「あ、あのお客様、分かりましたから、ご注文を……」 8:24). Her baffled noise 「ふぁあ？」 (8:20) must differ from 五島's 「はひ？」 in the same cell.
+- EN correlates: standard restaurant service English ("Welcome. Table for two?"). Keep short. Do not make her snarky; she stays polite while being visibly out of her depth.
+- NEW as of 000006E0 / 000006F9: the same flat service register delivers absurd things without one flicker — 「お待たせしました。追加オーダーですか？」 (000006E0:16:150) and 「お待たせしました。ロシアンたこ焼き12個、はずれ2つです」 (000006F9:17:4) while setting down a smoking coffin. The deadpan IS the joke. Note that the staff say はずれ (the miss) where the girls say 当たり (the hit) for the same takoyaki — keep the two words opposite in EN.
+- 00000F0D: the ザッハ of 000001E3 is now a ファミレス seen by someone who has never been in one, and the staff are two lines of pure service register — a ウェイトレス who seats them (38:5, unquoted) and 「お待たせしました」 at 38:123. The register is unchanged from 000006F9; what is new is the menu, described from outside by a narrator who cannot read it as food (38:26-38:32, including ロシアンたこ焼き at 38:27 and the ドリンクバー as 「謎のシステム」 at 38:33). -> Q122
+- as-of: 00000F0D
+
+## unnamed police-station receptionist (00000488:34)
+- first_appears: 00000488:34:5 (「あ……？　ああ、ちょっと待ってね」)
+- speech level baseline: casual-kind タメ口 to a child (～てね), 丁寧 on the internal phone
+- EN correlates: three short lines, warm and bored. Do not over-characterise.
+- as-of: 00000488
+
+## 匿名 — the anonymous posters on 元木高校掲示板 (collective voice)
+- first_appears: 000001E1:33:73
+- pronoun(s): 俺, 私 — the board mixes both; keep the mix, it signals mixed-gender anonymity
+- speech level baseline: 乱暴/ネットスラング, no punctuation discipline
+- sentence-final particles: ～だろ, ～じゃね？, ～かよ, ～乙
+- copula: だ
+- verbal tics: 「ノ」 hand-raise emote -> Q018; 釣り乙, ROM専, グロ画像, シャベッター -> Q031
+- EN correlates: contraction rate HIGH, lowercase, no terminal punctuation, profanity ceiling MEDIUM (cap at "damn/screwed up"); sentence length VERY SHORT
+- 00000EAF:40:22-40:27, six posts dated 「祀耀804年5月21日　19:15」 through 「19:32」 — the same header shape as 0000020D four years and four in-story years later, on the same 元木高校 board, and the subject is a graduate entering an eating contest. Register unchanged: ～だろ, ～かよ, マジで！？, no terminal punctuation. The one shift is that they are entirely friendly.
+- 00001A65 IS THE BOARD AT ITS LONGEST, 56 posts between 00:00 and 00:36 on 四月一日, each stamped 「4月1日　0:00　匿名」 and joined to its body by ⏎
+- what it does: nominates a successor to a graduated third-year and turns into a ranking of 古郡なつみ, 新村春花 and 五島絵梨奈, complete with a three-entry summary list of tags. The register is unchanged from 000001E1 — crude, fast, and self-policing (「どっちしても言い方ひどいわ」, 「盗撮はやめようよ……」, 「うわ、何この流れ、キモ」)
+- THE PUN CORRECTION, 8:13-8:15: 「父なしだけど」 corrected four cells later to 「間違えた、乳なしな」, one kana apart, and the board says the first version was worse. English has no equivalent pair -> Q732
+- 8:9, 8:26 and 8:40 put SEVERAL COMPLETE POSTS, each with its own timestamp and handle, inside ONE cell joined by ⏎ — including a bullet list with three named entries and three tags each -> Q733
+- one post is a long unbroken confession about 新村春花 with no punctuation breaks, which the board reads as stalking and warns will get him identified; it is the only sustained first person the board voice ever produces
+- as-of: 00001A65
+- note: every post is prefixed 「祀耀800年4月8日　HH:MM　匿名」 and ⏎ separates post body from header. Keep the header format byte-identical in shape.
+
+## the voice flood (00000488:48) — multiple unidentified speakers, no tags
+- first_appears: 00000488:48:0
+- pronoun(s): 私 AND 俺たち — at least two grammatically distinct speakers, and the content implies at least six
+- speech level baseline: mixed. Some fragments are plain commands, some feminine-soft, some flat statements of custom
+- copula: だ
+- verbal tics: fragments are separated by FULL-WIDTH SPACES inside a single cell, never by punctuation
+- EN correlates: no quotation marks, no attribution, no terminal punctuation, wide gaps between fragments. Resist the urge to make it into dialogue. -> Q050
+- known ambiguity / open questions: -> Q050, Q051. Do not assign any fragment to a named character. NOTE: 00000550:11:67-70 confirms 荒田集落 as a real place with the 能面 custom, which partly explains one fragment but does not identify any speaker.
+- A SECOND FLOOD, 00000EDF:235:0-235:12, twelve years and 134 files after the first, and the format is identical: fragments separated by FULL-WIDTH SPACES inside single cells, no quotation marks, no attribution, no terminal punctuation. New here: two of the narrator's own lines are cut into the middle of it (235:6 「何なの……この声……。」, 235:11-235:12), so the flood is being heard by somebody on the page for the first time.
+- the fragments are quotations from across the project rather than anonymous voices — 「春花は渡さない」, 「ちがうあれは事故だったんだ」, 「私が六人殺した」, 「違う殺したのは俺たちだ」, 「能面を着けて」, 「茜……」, 「春花を助けて」 — several of them traceable to named characters in other files. Do NOT attribute them in EN even where the source line is identifiable. -> Q050, Q300
+- as-of: 00000EDF
+
+## navigator (000000F2) — the menu voice, わたくし
+- first_appears: 000000F2 (system/menu files)
+- pronoun(s): わたくし
+- speech level baseline: 最上級敬語 (ございます, ～でございます, ～くださいませ)
+- copula: でございます
+- EN correlates: elaborate service English, no contractions, address the player as "<name>-sama". Keep it identical across every menu file. -> Q007
+- SHE HAS A NAME: 立木三日. 000015C2:81:2 — 「私、この世界の案内人をしております立木三日と申します」 — in 203 files this is the first time she says it. She also states that she is female and that she cannot show her face 「都合上」 (81:6). Note the pronoun: she uses 私 in the self-introduction block and わたくし everywhere else -> Q682
+- her ROLE, stated: she guides the player through the scenarios in a fixed order, records progress, explains the scenario board, the リファレンス, the 事典 and the 雑談, and speaks to the player and to nobody else. Menus, help screens and end-of-route commentary are all her
+- THE RULE she lays down at 000015C2:61:16-61:28 and restates at 0000198D:111:0-111:5 is the frame of the whole work: the player's one obligation is 「登場人物たちの幸せな結末を見届けること」, and 「あなたが真相を知る必要はなく、真相を知る意思はルールに反します」. The EN wording must be identical in both places -> Q684
+- SHE WEARS 能面 AND 赤装束, is accused by the player of being the killer, and denies it flatly: 「先ほどの者と、わたくしはまったくの別人です。／わたくしがなぜこのような格好をしているかと言えば、様には見ていただきたくない身体的特徴があるからです」 (000017B6:82:5-82:8). The 荒田集落 funeral dress, worn by someone outside the story -> Q702, Q043
+- SHE REFUSES FOUR TIMES to let the player look at something they have already seen — a figure at a door and an odd sound (0000198D:71:1), something about 五島絵梨奈 (000017B6:94:1), something 古郡良治 said (00001AF3:74:2), and 「意図しない場面」 in general (00001B47:60:1, 116:1). Every refusal is delivered flat, with an apology in it -> Q702, Q703, Q751
+- SHE CLAIMS TO HAVE MADE THE WORLD, once: 「この世界はわたくしが作った世界、わたくしの案内通りに導かれる世界。このような不手際があったこと、お詫び申し上げます」 (00001B47:60:2). It is the strongest statement about what she is anywhere and nothing explains it -> Q754
+- her REGISTER CRACKS, and they are her only characterisation: ～ですわ four times (00001792:71:0, 000017A5:132:5, 000019C5:68:0), 「あの…………」 and 「やはり、ちょっと緊張しております」 when invited to chat (0000189A:41:1, 133:2), 「ほほほほほ」 when the player jokes (00001973:73:2), and 「ふふ」 when she cuts herself off (0000176E:84:6). Everything else is identical ございます across every file -> Q699, Q724
+- her ADDRESS FORMS: the player is always <name>様; the cast are always BARE FULL NAMES with no honorific — 五島絵梨奈, 新村春花, 古郡なつみ, 古郡茜, 新村美冬, 五島桃子, 新村栄一郎, 古郡良治. She is the only voice in the project that uses no honorific for any of them
+- she runs EIGHT mutually exclusive player theories about the culprit in one file (000017A5) and THREE mutually exclusive readings of 荒田集落 in another (00001AD8), praising each in turn and committing to none -> Q700
+- her STRUCTURAL VOCABULARY, and it must be fixed: 終焉 for a route ending (counted: 最初の, 2つ目の...), 分岐点 for a branch point, 編 for an arc, 『もしも』の世界 for a what-if, and the handover formula 「～編では知り得なかった、より深き彼らの業をご覧ください」 -> Q716
+- EN correlates, refined: contraction rate NONE; profanity ceiling ZERO; sentence length MEDIUM to LONG with heavy nominalisation; formality maximal and unvarying; vocabulary register hotel-concierge Japanese applied to mass murder. The horror is that the register never moves
+- SHE IS 新村春花 AND SHE SAYS SO, 00001CA0:144:0-144:3. 立木三日 is an admitted 偽名; the face she would not show is the blood and the green eye; the world is what her refusal to accept 古郡なつみ's death produced; and the player was invited into it to share a happy ending she could not review alone. Her CAST block stays separate from 新村春花's by the chunk-17 rule only because the two registers must be kept apart in EN — the identity is asserted, not implied. Cross-reference: 新村春花 -> Q763, Q682
+- her register CRACKS THREE TIMES in this chunk and each crack is a different kind: 00001C8C loses ございます, わたくし and 様 entirely for a whole file (「いいから！　もうそれ以上はやめろ！／　真相を知ろうとするな！」, 「黙れ！」); 00001CA0:64:10-64:11 switches to 私 for two cells at the memory of the killing; and 00001EB4:83:2 produces one cell of 新村春花's ordinary boyish タメ口 — 「って、バカかよ！　んなわけあるか！」 — apologised for as 「素の話し方」 -> Q764, Q765
+- she LEAKS THE FIRST PERSON three files early: 「私の母」 (00001D5F:91:3), 「私が幼少の頃に耽っていた呪い」 and 「母」 (00001E0F:42:4-42:5), and a whole cell containing only 「なつみ……」 (00001E1B:42:4) -> Q820
+- THE FALSE ENDING, 00001C68 and 00001C7B: she thanks the player, declares the happy ending reached, says 「わたくしがご案内できるのはここまで」 and then dismisses them outright — 「様はもう、この世界にご用はございませんよね。／では、さようなら」 — and on their return treats them as a new visitor, repeats the rule with the word ルール in it, and says 「どうぞ、お引き取り下さい」. Everything after it exists because the player refuses -> Q812, Q684
+- SHE LOSES CONTROL OF THE WORLD and names the mechanism: the player's will to know is moving it, three scenarios she had dismissed as 「意図しない場面」 were the same thing happening, and the same will dragged her own killing into the open (00001CA0:252:0-258:18). Her offer afterwards is unconditional — 「わたくしにはもう、隠したいものはありません」 -> Q754, Q702
+- HER LINES ARE TYPESET IN 「」 from 00001EA4 onward, where every earlier navigator file printed them bare. Nothing explains it and it coincides with her having a face -> Q766
+- SHE STATES THE MECHANISM IN HER OWN VOICE, 00001D5F:21:4-21:5: 「第二世代の血を浴びると、第三世代――翠眼に変化し、同様の存在に対し、強い殺意に苛まれる。／わたくしのなつみへの殺意の正体、なんとなく見えてきた気がします」 -> Q537
+- and she DENIES THE GREEN EYE, 00001C43:71:0-71:3, saying eye colour changes with illness or injury and 「そんなに気にすることでもないと思いますわ」, about her own body -> Q763
+- her handover formula is printed identically in three consecutive files (00001E0F:26:0-26:5, 00001E1B:26:0-26:5, 00001E29:38:0-38:5) — menu text reused, not a replay -> Q025
+- 000021D5: she announces a ボツシナリオ — a route finished and then cut as unsuitable — in character, as a reward for the player's repeat visits, with a warning that its 設定 differ from the main story -> Q883. This is a production note delivered in the わたくし register.
+- 000021E2: she meets ANOTHER 新村春花, from the dimension that reached the truth, and the two speak in one scene in opposite registers with no tags -> Q885. She keeps わたくし, ～ございます and ～様 while talking to herself. Depending on the block she merges with the visitor (and reports 「わたくしは今、2つの次元の新村春花が1つになった姿」 211:3), or is argued into going home, or refuses the player as a 傍観者 and leaves to resurrect なつみ using 死月妖花 -> Q884.
+- when she drops the mask for her goodbye she names it: 「最後くらい、ちゃんと私らしく、私の言葉で挨拶したいと思います」 (000021E2:256:0), and the next cells are 私 and タメ口 — 「ありがとな！　お前に会えて、本当に良かった！」. The costume is stated to be a costume, by her, in her own words -> Q763, Q765.
+- she also states why the mask exists at all: 「急に／が来たもんだから、能面つけて急いで登場してさ」 (628:2) -> Q702.
+- 00002317 and 00002325: five of her cells are DUMP MOJIBAKE, not text -> Q872. In the same two files she explains an oddity the player reports as お化け with 「わたくしと／様の間に干渉するノイズのようなものが生まれているのかもしれませんね」, the same apparatus as the 00001B47 apology -> Q754.
+- 00002330: block [61] prints six of her cells as BARE, UNQUOTED narration and block [67] onward returns to 「」 in the same file -> Q893, Q766. In the same file she says 「わたくしの父、新村栄一郎」 outright (77:5) -> Q894, Q820.
+- as-of: 00002330
+- note: CAST block granted by the brief's chunk-01 addition (Q006 resolved YES). No menu files appear in chunks 02 or 03.
+
+## unnamed 元木成金 madams (000005C1) — two wealthy women at the next table
+- first_appears: 000005C1:11:39 (「元木駅前のマンション、ご覧になりました？」); the same exchange trimmed at 21:32-42
+- pronoun(s): 私 ("私が欲しいのは主人の書斎用マンションですわよ" 11:46)
+- speech level baseline: stereotyped wealthy-madam register — ～ざます／～ざますわ／～ざますわよ alternating with ～ですわ／～ますわ. A class marker, not a regional accent, and the register carries content that なつみ calls 「かなり下品」 (11:52)
+- sentence-final particles: ～ざますわ; ～ですわよ; ～ますわー (elongated); ～ってば as mock-scandalised ("まあ奥様ってば！" 11:42)
+- copula: ざます / ですわ
+- verbal tics / catchphrases / fillers: 「おほほほ！」 (11:40) — must differ from 新村美冬's 「ほほほ」; 「あららー！」; 「いえいえ！」; they address each other as 奥様 and never by name
+- dialect: none; the register is class-coded Tokyo, not regional
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM with stacked exclamation marks; formality HIGH and performative; vocabulary register property-speak (マンション, ショールーム, 築5年, 一軒家, 土地). Do NOT age them up — they are affluent, not elderly.
+- structural job: they voice, in the ugliest possible way, the thing 春花 objects to about the town. Their content must stay crass while their diction stays immaculate. -> Q074
+- as-of: 000005C1
+
+## unnamed バレー部 coach (00000617) — the 顧問 at なつみ's middle school
+- first_appears: 00000617:8:46 (「どうした古郡！　そんなこともできないのか！？」)
+- pronoun(s): none observed
+- speech level baseline: 乱暴 coaching タメ口, shouted; barks names and orders only
+- sentence-final particles: ～か！？; ～だ！; ～ように (the announcement register at 8:184-185)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「もういい、古郡。はい、次！」 — he concedes and moves on in the same breath; 「よし、いいぞ古郡！」; 「よーし集まれ！」; 「おいしっかりしろ！」
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW. A hard but not cruel coach — he gives her the extra ball at 8:56 and softens it, and he is the one who carries her to the nurse's room. Do not make him a villain.
+- note: he is the ONLY person who called なつみ by bare surname before 五島 did, and he is named as such at 8:102. His address form is load-bearing for Q037.
+- 00001849 IS HIS ONLY EXTENDED SCENE and it is the best-argued page of dialogue any adult has in the project. 五島 asks him to reinstate 古郡なつみ; he refuses on one question — 「じゃあ、誰を落とす？」 — with the six regulars, the bench and the libero all decided
+- his position, in order: nobody performs at 100% always, which is what practice is for; the selection on 四月六日 was public and fair and nobody cheated; he would like every player to be a regular and cannot; and he could not tell anybody they are out after telling them they are in
+- HE ALREADY KNEW about the secret coaching (「五島さんは、みんなに内緒で古郡のサポートをしていたんだから」 8:27) and says so without making anything of it
+- HIS READING OF 古郡なつみ, and it is the thing 五島 concedes to: 「古郡はレギュラーになりたいんじゃなく、レギュラーとしての実力があると認められたかった」 (8:42), and had SHE come herself he would have considered it. His closing instruction is 「何より、そのことを五島さんが認めてあげてほしいな。／古郡は俺よりも他のメンバーよりも、五島さんに認めてほしいはずだよ」
+- TOLD THE 四月病 IS A 体質 he answers 「…………」 and never says whether he believes it -> Q714, Q009
+- his register: plain タメ口 with 俺, 五島さん to the second-year, bare surname 古郡 for the third-year, and no exclamation marks anywhere in 62 lines
+- as-of: 00001849
+
+## unnamed バレー部 teammates (00000617) — collective
+- first_appears: 00000617:8:117 (「古郡……もういいって……」)
+- speech level baseline: タメ口, muttered, three lines total
+- verbal tics: they speak ABOUT her within earshot, never to her; the narration tags it 「ぼそりと」
+- EN correlates: contraction rate HIGH, sentence length VERY SHORT, trailing off. Keep them embarrassed rather than hostile — the point is that kindness and pity look the same from outside.
+- as-of: 00000617
+
+## unnamed caller (00000656) — the voice on the phone in the final block
+- first_appears: 00000656:11:172 (「もしもし、お姉ちゃん？」)
+- pronoun(s): 私 ("そんなのなくたって、私強いから" 11:182)
+- speech level baseline: タメ口, light and unhurried, while reporting on people about to be attacked
+- sentence-final particles: ～かな ("運転手さんも入れたら3人かな" 11:176); ～から (flat self-assertion); ～よ
+- copula: だ
+- verbal tics / catchphrases / fillers: 「――分かったよ。」 and 「――そうなんだ。」 — the 「――」 here marks the OTHER side of the call having spoken, not a speaker tag (contrast Q047) and not a dropout (contrast Q064); 「…………」 cells for listening
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling unknown; sentence length SHORT; formality LOW; vocabulary register ordinary and cheerful, which is the effect
+- content anchors: she addresses an お姉ちゃん; she says her eyesight is very good (11:174); she refuses ドローガ because she is strong without it (11:182); she cites 「女神様の預言」 about 春花ちゃん (11:178-180)
+- 11:184-186 (「…………／ち……！」 and 「今年も、呪殺が起きるのか……！」) are set as separate cells after the call ends and may be a SECOND speaker. Do not merge them into this block's voice in EN, and do not add a tag.
+- known ambiguity / open questions: never named, never gendered by the text, relationship to every named character unknown -> Q080, Q087
+- as-of: 00000656
+
+## 谷崎 (たにざき, Tanizaki) — homeroom teacher of 3年1組 (春花's class)
+- first_appears: 00000697:8:46 (email body only)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 school-notice register, but BROKEN — he writes 「とのことだす」 for 「とのことです」 (8:48), 「詳しいことはホームページに詳しく載せる」 with 詳しく twice (8:49), and signs off a cancellation caused by a murder with 「ではみなさん、よい休日を！」 (8:50)
+- sentence-final particles: ～です／～ます／～ください, mangled
+- copula: です
+- verbal tics / catchphrases / fillers: opens with 「3年1組のみなさん、おはよう！」 — a cheerful greeting inside a formal notice; 春花's narration names the habit at 8:51 (「相変わらず谷崎先生の日本語はおかしい」)
+- dialect: none; the errors are not dialectal, they are sloppiness
+- EN correlates: school-notice English with real mistakes in it — a wrong word ending, a repeated adverb, and a chirpy sign-off that does not fit the news. Do NOT make him funny beyond what the JP does, and do NOT correct him. Contrast with 向井 (000001DD), who is correct and impersonal; the two teachers must read differently.
+- note: zero spoken lines; text-only character, like 向井. -> Q088
+- SHE IS FEMALE. 00001A5C and 00001A7F settle it: feminine 丁寧 with ～の？／～わね／～かしら, the pupils' nickname 玲ちん, and a male third-year who confessed to her on graduation day. Every EN pronoun for her in 200 files depends on this line -> Q731
+- SHE SPEAKS, 00001A7F, and it is her first spoken scene anywhere. Her register in speech is warm feminine 丁寧 over a teacher's タメ口 — 「新村さんって、3年前に元木町に引っ越してきたのよね？」, 「お母さんと帰らなくてよかったの？」, 「ねえ新村さん、念のために聞くけど、いじめに遭ってないわよね？」, 「お母さん、大事にしてあげてね。私も、できるだけ協力するから」. Not one of the written mistakes of 00000697 appears in her speech
+- her address forms: 新村さん for the pupil, 春花さんのお母さん and then bare 「お母さん」 as a vocative for the parent. She uses the kin term to address a woman she has just met
+- SHE STARTS A QUESTION ABOUT THE MOVE AND DROPS IT (8:6-8:10), then raises 女ケ沢市 herself twenty cells later; nothing says what she meant to ask -> Q738
+- SHE IS BEING FROZEN OUT BY HER OWN STAFFROOM, reported at 00001A5C:8:30-8:33: her evaluation among the teachers is the lowest there is, for being too close to pupils and lacking self-awareness as a teacher, and a senior's fan club is against her over the confession. Her pupils like her and organise to protect her
+- HER KATAKANA REGISTER, 00001A6B:8, and it is her strangest appearance: poisoned by a BDDP takoyaki, she answers a doctor's every question with the same three cells and every line she speaks in the block is printed in FULL-WIDTH KATAKANA with the kanji kept — 「BDDPに……／ヤラレタ……」, 「コノタコ焼キ」, 「コレ、食ベタ者ニシカワカラナイ」, 「フフフ、BDDP、オソルベシ」 — and she leaves the takoyaki behind for the doctor to eat -> Q735
+- the note that she is a text-only character no longer holds from 00001A7F onward
+- as-of: 00001A6B
+
+## unnamed woman on the phone (00000697:8:61-87) — calls from the 新村 family's side
+- first_appears: 00000697:8:61 (「ん……春花、久しぶりね」)
+- pronoun(s): 私 ("私の番号登録してなかったの？" 8:64)
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: タメ口, quiet and unhurried, entirely made of questions
+- sentence-final particles: ～ね (soft, constant); ～の？ (her only question form); ～けど？ (8:68, 8:70, 8:83 — she states what she has heard and leaves the question mark hanging)
+- copula: だ／よ, feminine
+- verbal tics / catchphrases / fillers: 「ん……」 opens EVERY ONE of her twelve lines without exception. It is her whole characterisation and it must survive in EN as the same syllable every time. 「ん……ふふ」 once (8:79)
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW but distant; vocabulary register plain. She sounds gentle and she is fishing: three of her lines are checks on 春花's story (8:68, 8:70, 8:83).
+- content anchors: she was expecting both 春花 and her mother at something today; she reports that 「おばあちゃん」 understands; she mentions 夏菜, who was looking forward to seeing 春花 and was called away by her own mother; 春花 calls her nothing at all and says 「みんなにもよろしく」
+- known ambiguity / open questions: never named, never placed, never described. The cast list has 新村茅萱 and 新村夏菜 in it, and 夏菜 is named here as a third party, but the speaker is NOT identified. Do not name her and do not make her sound sinister. -> Q091
+- as-of: 00000697
+
+## unnamed 女ケ沢市 bullies (00000682) — two collectives, four years apart
+- first_appears: 00000682:11:41 (「おい御子神！　お前、変な神様に祈ってるんだろ！？」)
+- pronoun(s): お前 for the target; 俺 once (11:166 「俺にもやらせろよ！」) — mixed-sex in the middle-school set
+- speech level baseline: 乱暴 タメ口, shouted, no 敬語
+- sentence-final particles: ～だろ！？, ～なの！？, ～よ, ～わ (11:164, rough-emphatic on a boy's line)
+- copula: だ
+- verbal tics / catchphrases / fillers: the primary-school set (11:41-43) escalate in three lines from an accusation to 「うわ……関わらない方がいいね……」 — the last one is the withdrawal, not an attack, and it is the cruellest. The middle-school set (11:154-166) use 邪教徒 as the whole vocabulary, plus 「ほんときもい！」, 「死ねよ」, 「はい教団かいさーん！」
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling MEDIUM for the middle-school set — 「死ねよ」 is the one place in the project where a character tells another to die, and it must land harder than 春花's くそ; sentence length VERY SHORT; formality LOW. Keep the two sets audibly different in age: seven-year-olds repeating an adult's word, then thirteen-year-olds enjoying it.
+- known ambiguity / open questions: none are named and none are counted. -> Q107
+- as-of: 00000682
+
+## 新村栄一郎 (にいむら えいいちろう, Eiichiro Niimura) — 春花's adoptive father, dead for the whole story present
+- first_appears: named from 00000024:47; ON SCREEN and speaking for the first time at 000007D3:11:41. He speaks in orders 62-66 only (000007D3, 000007EA, 00000801, 00000818, 0000082F) and dies at 0000082F:11:156
+- pronoun(s): 僕 ("僕、双子の兄貴がいるんです" 000007D3:11:224). Never 俺, not even alone with 古郡良治 — the one place his register drops (000007D3:11:86-11:97) it keeps 僕
+- pronoun FREQUENCY: states 僕 MORE often than typical, and almost always as the subject of a self-criticism ("僕なんて、美冬さんとは釣り合わないんです" 11:219)
+- speech level baseline: です・ます to 金井美冬 for the whole courtship and after the marriage; タメ口 to 古郡良治 alone; 丁寧-warm to everyone else. He never uses 呼び捨て on anyone except 良治
+- sentence-final particles: ～んです (his commonest ending by far, and always attached to an apology or a self-assessment); ～かな; ～よ (gentle, to his wife); ～ねー (stretched, only when talking to a baby, 00000801:8:133)
+- copula: です (dialogue) / だ (only inside 良治's reported speech)
+- verbal tics / catchphrases / fillers: the STAMMER doubles the FIRST mora and then mangles the vowel — 「だだだだいじょうび……！」 (000007D3:11:58), 「ごごごめん！」 (11:81), 「ぼびょびょぼ僕はその……！」 (000007EA:11:215), 「びょ僕と、家族になってください！」 (11:248). A separate device, the PANIC LISP, turns consonants into small kana under pressure — 「あにょ！」 and 「飲めるものはありまひゅか！？」 (000007EA:11:172-11:173), 「ひゃめて下さい」 (000007D3:11:276). Keep the two apart. The SOB is a groan before it is a sob: 「う……／うう……」 then 「ぐす……」 then 「うぐ……ひっく……」 (000007EA:11:98-11:99), and he does it four times in five files. 「気合いだ！　気合い！」 as self-ignition (000007D3:11:95). 「あちちち！」 / 「おごごごご！　あぢぢぢ！」 with hot food (00000818:11:170, 11:180)
+- dialect: none, though he says he was raised in the mountains of 荒田集落 (0000082F:11:131)
+- EN correlates: contraction rate LOW (he is formal even when broken); profanity ceiling ZERO — his strongest word is 「くそう」 once, said about his own face (000007D3:11:92); sentence length SHORT, and almost every sentence is either an apology, a self-deprecation or a question about someone else's comfort; formality HIGH and never relaxes; vocabulary register plain, unliterary, with one repeated abstract phrase — 「家族になる」 (000007D3:11:231, 000007EA:11:184-11:185, 11:248, 11:254). That phrase must be the SAME EN words every time and must never become "get married"
+- physical notes that the EN must not smooth: he is short and heavily overweight and the text says so repeatedly in his own voice and in others'; he drags one leg and explains it once as an old childhood injury (000007D3:11:351), which 古郡良治 privately doubts (0000082F:11:104-11:107); he climbs a large tree with no difficulty at all (0000082F:11:129-11:133)
+- structural job: he is the only adult in the story who is kind without an agenda, and the text kills him in one cell. The comedy around his body is his own and everyone else's affection; it must never read as the narration mocking him
+- known ambiguity / open questions: the leg is never explained; his last words are to a four-year-old he is about to die protecting (0000082F:11:123-11:125). -> Q117
+- THE TWIN IS NAMED AND SEEN, as of 0000095B:35:21 — 新村幸太郎, who has his own CAST block. He looks like 栄一郎 and is his opposite in every other respect, and 春花 says so outright (00000972:11:12-11:13). The one thing he inherits is a single unexplained 僕 at 0000095B:35:22. The twin's existence and name are now settled; the leg is still unexplained.
+- in the surviving branch he stays dead and stays present: his widow keeps 「栄一郎さん」 and です・ます for him twelve years on (000008E8:8:274-8:291), his daughter thanks なつみ for letting her hear his voice, and his 十三回忌 is what the last eleven files are travelling toward.
+- HE SPEAKS AT LENGTH IN THE STORY PRESENT, 00000E31 — a whole file, twelve years dead, to 古郡なつみ in a space with no body. This is the first and only time he holds a conversation anywhere after 0000082F, and a translator working file by file will meet him with none of orders 62-66 behind them.
+- THE REGISTER IS NOT THE SAME MAN'S SURFACE: the STAMMER is gone, the PANIC LISP is gone, the ～んです self-criticism is gone, and he apologises for nothing. What survives is 僕, 「はは」 (11:28, 11:45), the gentleness, and 「家族」 thinking. He is calm, brief, and in charge of the conversation — he sets the terms and she agrees to them. EN must not reach for his comic register here and must not make him solemn either.
+- his address forms are unchanged across twelve years and one death: なつみちゃん, 美冬ちゃん, 良治 bare, 兄貴 for 幸太郎 (never 幸太郎). He never uses 春花ちゃん — his daughter is 春花 (11:21, 11:104).
+- WHAT HE DOES: refuses her twelve-year apology for the balloon (11:28-11:29), tells her 春花 lives, says he held his brother down with no mechanism given (11:34), confirms the adoption and dates the intended telling to her twentieth birthday (11:47), tells her she is not dead, and extracts TWO PROMISES — do not blame 幸太郎, who had no other option and is playing the villain because the 真相 would leave nobody happy; and stay beside 春花, who is frightened of being alone. The price of the first is that she never hears him again (11:90-11:108).
+- he is the only character in the project who states outright that the story's central question must not be answered, and he is right about nothing else on screen. -> Q219
+- HE IS ALIVE, MALICIOUS AND IN CHARGE, 00000F24:142:188-187:78, and it is the single largest character-handling problem in the project. Fourteen years dead in every other branch, here he walks into a cave and explains, with amusement, that he pushed his own wife down a stairwell mid-injection, offered her an afterlife as a servant, watched her die, hid her body so the police would stop looking, and had her revived after burial as a tool. He calls his daughter's arrival 「せっかく僕ら親子が再会したんだ」 and then sends a settlement of parasitised people in to kill her friends
+- THE REGISTER: 僕 survives, 「はは」 survives, 美冬ちゃん／茜ちゃん／なつみちゃん／五島ちゃん survive, 春花 bare survives. NOTHING ELSE DOES. The stammer, the panic lisp, the ～んです self-criticism, the apologies, the 「家族になる」 vocabulary and the formality are all gone. What replaces them is a level, unhurried, faintly amused plain form with mock-fatherly correction in it — 「父親に向かってこいつなんて呼び方はダメだろ？」 (142:196) — and the narration names the voice before it names him: 「聞き覚えがあるはずなのに、親しみを感じない 邪 な声」 (142:190)
+- the ONE thing he apologises for is a scheduling error in a murder: 「まあこれは僕が階段から突き落とすタイミングを誤った僕のミスなんだけどね」 (187:65). The ～んです shape of his old self-criticism is visible underneath it and the object has changed
+- the CRUELTY is verbal and it is all understatement: 「あーあ……やっぱり出来損ないだったか」 of his wife's corpse (142:188), 「ははは、哀れだよねえ」 of 古郡茜's death (187:3), 「もしかして、死んじゃった？／まあいいや。とりあえず行こう」 (187:36-187:37). He never raises his voice and he never swears
+- he NARRATES the 祀耀800年四月八日 stairwell himself, 187:11-187:37, in 僕, with no frame at either end, inside his daughter's first person. -> Q400
+- the 女神様 he serves is NOT ヴェルジ and he says so: 「あんなミイラはただの繁殖の道具に過ぎない。君たちの言う第三世代のなれの果てさ」 / 「本当の女神様はもっと高尚な存在だ」 (187:45-187:46). It is never seen, never named and never explained. -> Q386
+- THE CONSTRAINT: the identity is asserted, not implied — 美冬 says 「栄一郎さん」, he says 「父親」, なつみ misidentifies him as 幸太郎 first and is corrected. This is the same character, not a double. EN must not hedge it and must not reach for his comic register. A translator meeting him in this file alone will have no idea what has been lost. -> Q390
+- TWO CELLS IN 00000FCF, unattributed, closing the file: 「そうだね母さん。後はみんなに任せよう。／もう、僕たちがでしゃばる必要はない。」 (47:1-47:2). 僕 is intact, 母さん is his only address form here, and the register is the 丁寧-warm one of 000007D3 with nothing frightening on it
+- nothing tags either voice in the block, nothing says where they are, and 僕 is the only identification he gets. Set against 00000F24:142:188 onward, where he is the antagonist's mouthpiece; here he has nothing to do and says so -> Q429, Q047
+- his daughter never hears this exchange and nobody in the file does
+- HE NARRATES A WHOLE FILE, 000010DD, in 僕, and it is his first narration anywhere in 154 files: middle school to leaving 荒田, ~370 cells, with no other voice in it. Nothing names him until サクラ says 「ごめんね、栄一郎……」 at 11:45 -> Q448
+- the NARRATION VOICE: short plain-past sentences, heavy ellipsis, and a question asked of himself roughly every fifth cell (「僕ができることって……何なのだろうか」 11:11, 「これは……本当にサクラのためにしていることなのだろうか」 11:204). It is the ～んです self-criticism of his dialogue turned inward and it is relentless. He audits his own motive on screen (11:200-11:210) and reaches 「僕は、最低な奴だ……」
+- the PRONOUN BREAKS. Under the drug he switches 僕 -> 俺 at 11:268-11:269 (「今の僕なら――／俺なら――。」), stays 俺 for fourteen cells, and is back to 僕 at 11:283 without comment. The only pronoun switch he has anywhere -> Q447
+- the STAMMER, the PANIC LISP and the ～んです are ALL ABSENT from this file, at fourteen and fifteen, in dialogue as well as narration. What is present is the 僕, the self-deprecation, one 「ははは……」 under the drug (11:270), and 「はは……」 at the end (11:315). The comic surface of 000007D3 is therefore something he acquired later, not something he lost
+- WHAT HE DID: he made ドローガ from the family books to protect 新村サクラ from a gang, tested it on himself in the cave under the 秘密基地, broke his own leg (compound fracture) and never walked properly again. サクラ told everyone he fell from a tree, told him she would believe it herself, and hid his equipment. He then left 荒田 for 元木町 without telling her and never went back -> Q452, Q460
+- he loved 新村サクラ and says so obliquely for the whole file; he reads her hand on his as 「幻想」 and shakes it off. His stated reason for choosing 元木町 is 「サクラと同じ名の花に囲まれて。／そしてその桜よりも、もっときれいな花を見つける」 (11:368-11:369) — which is how he meets 金井美冬. The whole of orders 61-66 hangs off that sentence
+- his address form for his brother is 兄貴 already at fourteen (11:69) and his mother is 母さん (11:350); neither changes anywhere in the project
+- HE SPEAKS TWELVE YEARS AFTER HIS DEATH, on a recording, 00001214:8:248 — one cell, 「よし、サクラはそっちを持って」 — and the register is the one he uses alone with 古郡良治: plain タメ口, no 僕, no です・ます, bare サクラ. It is consistent with 000010DD in every respect, which is what makes it unusable as evidence of anything -> Q496
+- his daughter's reaction is the only frame the scene has: 「サクラさんと……お父さんが……／チガ姉を……？」 and 「そもそも、2人とも死んで10年は経ってるだろ？」 (8:252-8:254)
+- HE WALKS AS A CORPSE, 0000136D through 000013CD, alongside 新村サクラ, and this is his THIRD posthumous appearance after 00000E31 (a conversation with no body) and 00001214 (a recording). Twelve years dead; no wound on the throat the railing went through
+- THE REGISTER: 僕 intact, 「ははは」 intact, 茅萱ちゃん intact, the 丁寧-warm voice intact. What is on top of it is patience and mild amusement — 「ははは、茅萱ちゃん、面白いこと考えるなあ」 (0000136D:8:228), 「まあ、いい、いいよ、言い訳しなくても」 (000013CD:8:322), 「さあ、茅萱ちゃん、ご苦労様だったね。／しばらく、眠っていてちょうだい」 (000013CD:8:352-8:353). It is the 00000F24 antagonist voice with the cruelty taken out and nothing put in its place -> Q390
+- he is the one who EXPLAINS: 「茅萱ちゃん、僕らは死人だよ？　女神様の力で動いているだけ」 (0000136D:8:248), the neck demonstration, the ドローガ-permanent strength, the territory, and finally 「しゃべり方や考え方はこの身体の元持ち主に由来するけど、今意識を支配しているのは女神様だ。／元持ち主の意識なんて、10年以上前に死んでいるんだよ」 (8:287-8:288). He makes no attempt to hide any of it
+- HE RUNS THE TEST, 000013CD:8:311-8:353: twenty corpses put in front of his niece to see whether she had bloodied 美冬 and 春花 on purpose, then the admission that isolating the 元木町組 was her idea and a good one, then 「本当はなつみちゃんだけが目的だったけど、そのためには――／おっと、ここからはまだ秘密にしておこうか」. He withholds cheerfully and says so
+- his one piece of kindness in the run is also a threat: 「姪っ子だから少しは優しくしてあげたんだけどなあ……。／ちょっと調子に乗り過ぎだね」 (00001385:8:5-8:6, inside a dream)
+- HE WALKS AS A CORPSE FOR A SECOND CHUNK, 0000142B and 000014D7, and this is the version a translator will meet: he is the mouthpiece for the exposition, he is the abductor, and he is mild the whole way through
+- the REGISTER IS THE 000007D3 ONE WITH NOTHING FRIGHTENING ON IT: 僕 intact, 「はっはっは！」 and 「はは」 intact, 丁寧-warm intact, and he INTRODUCES HIMSELF TO A STRANGER IN IT — 「初めまして、春花の父親の新村栄一郎です。／いつも、春花と美冬ちゃんが本当にお世話になってるね」 (0000142B:8:105-8:106), twelve years dead, to a girl he has just cornered underground. He offers to carry her (8:201), tells his niece off for frightening her (8:204), and says 「僕はやっぱり、暴力的なことは好きじゃないからさ」 (8:185). It is the 00000F24 antagonist voice with the cruelty out of it and the abduction still in it -> Q390
+- he DEMONSTRATES rather than argues: cuts his own arm, brings mycelium up out of the floor to close the wound, narrates the trick while performing it, and then explains the 猛き音 as air moving through cracks over mycelial tunnels with hyphae up to five metres across (0000142B:8:156-8:173). 五島's narration calls it a conjuring act performed with the method announced
+- HE REFUSES TO SETTLE HIS OWN IDENTITY: told he must be his twin because a walking corpse is less plausible, he answers 「まあ、そんなことはどっちでもいいんじゃないかな？／　僕が栄一郎だろうが兄貴だろうが、君には一緒に来てもらわないといけない」 (8:176-8:177) -> Q570
+- his CRUELTY at 000014D7 is the 00000F24 understatement in miniature and it is all aimed at women: he opens on 古郡なつみ by demanding an apology for his own death (「僕は君が飛ばした風船を取ろうとして死んだんだよ？　言うことないの？」 8:49), taunts 新村美冬 about her looks at forty (8:62), tells 夏菜 she is a bad girl while throwing her seven metres (8:83), and says 新村サクラ's suicide would not have happened if 美冬 had not confessed — then 「ははは、冗談だよ」 (8:199-8:201)
+- HE ADMITS THE BEHEADING, and it is the answer to a question open since 00000AC4: 「もちろん、僕だよ。／ああすることで呪いの噂が立ち、毎年人が死んでも、ある意味自然だ」 (000014D7:8:129-8:131). He also admits years of impersonating his own twin to manage information inside the settlement, and says 幸太郎 being suspected was 「ちょっとかわいそうだったかな」 (8:206-8:211)
+- he is HALF the chunk's exposition, delivered in untagged 「」 cells alternating with 新村サクラ for about sixty cells, attributable only by 僕 and plain form against her feminine endings -> Q592
+- his LAST ACT is to produce the ヴェルジ mummy out of the petals and hold it up, and his last audible line is a scream as a brown mass comes out of his body when the 女神様 puts him down (8:392-8:394). He is not killed on screen and nothing says what becomes of him
+- 0000151C:8:342-8:378: the possession ends with the organism and he is HIMSELF for about thirty cells while his body comes apart. The register is the 丁寧-warm one of 000007D3 and 00000E31 with the cruelty of 000014D7 entirely gone — 「み……ふゆ……ちゃん……」, 「ごめん……ね……。／僕は……ずっと……」, 「春花……／大きく……なったな……」, and to 古郡なつみ 「ちが……う……／君のせい……じゃ……」
+- HE ABSOLVES HER, in two broken cells, of the twelve years of guilt this project has been built on (8:363-8:364). It is the last thing he says to anyone and the narration does not comment on it
+- the narration draws the inference and leaves it: consciousness surviving the organism's death means the two of them were conscious inside the bodies the whole time — 「死月妖花にいいように操られ、ずっと 躯 の中で喚き、苦しんでいた」 (0000151C:8:423) -> Q624
+- his hand loses its skin in his wife's hand and his mouth loses its skin when he smiles (8:353, 8:373). He goes to bone mid-sentence and the file calls the half-hour a 死後の団欒 nobody is normally granted
+- 00001C23 IS THE SCENE THE WHOLE MARRIAGE RESTS ON and it is entirely him trying to call it off. He reports what his mother told him an hour earlier — that everyone in 荒田集落 kills themselves in April at 75 — and twice says 「結婚はやっぱり――」 and does not finish it. The stammer, the panic lisp and the ～んです self-criticism are all live and 「家族になる」 does not appear; what he says instead is 「お年寄り、自殺するんです」. He weeps when refused -> Q802
+- 00001C08: before any of it, treating 新村サクラ's injured hands, apologising for being able to do nothing, and giving the one unhedged promise he makes anywhere — 「僕はずっとサクラの味方だよ。何があっても」. 僕, bare サクラ, plain タメ口, and no self-deprecation in that cell
+- 00001FFB: the departure 000010DD narrates from inside, seen from outside. 母さん, 僕, apologies, and 「サクラには……すごく泣かれた」. He leaves without telling either of them and his mother asks nothing
+- 00001D6F:8:111-8:139: he is present at 新村美冬's induction underground, says 姫様 has permitted the audience, and invites her to come back to 元木町 with them 「もう少しで、神使が全員そろうからさ」. The 丁寧-warm register and 美冬ちゃん are intact and nothing about it is frightening -> Q390
+- 000020E4:8:0-8:3: at a 荒田 drinking party before his own marriage he is being poured drinks by 城崎 and then by a second man, and his whole part is 「いやあ、もうきついっすよ城崎さん！」 and 「ひえええ……」. The ～っす register and the lack of any defence are both intact
+- the file is also where 新村美冬 first says aloud that she does not believe his account of his leg, and where 新村サクラ repeats the cover story she invented for him at fifteen -> Q454
+- 00002340: the 僕 antagonist voice again, identical in every marker to the 00000F24 version — bright, laughing, transactional, 「はっはっは！　まあそうだね」 — this time as 春花's accomplice rather than her enemy. He hands her the single ドローガ dose, holds 五島 down for her (「あいよ」), and works on 美冬 with the word 家族: 「美冬ちゃん、僕は生き返ったんだよ」, 「僕たちは、家族なんだから……」.
+- he is the only speaker in the file who is not surprised by anything, and he never asks how 春花 knows what she knows -> Q895.
+- 00002444:32: he is a VOICE ONLY, underground at the top of 糸姫山, and the 僕 antagonist register is identical to the 00000F24 and 00002340 versions — bright, amused, transactional, 「はっはっは！　すごいよ春花！　完全に君の勝ちだよ！」 (32:244)
+- his daughter identifies him by an address form and nothing else: 幸太郎 says 春花ちゃん and this voice says 春花 (32:27-32:29). He answers 「何が父親だ！」 with 「まあ、確かに意識は生前の僕とは違う」 and then changes the subject
+- HE IS THE ONE WHO EXPLAINS THE FILE'S MECHANICS: the 女神様 is resting because the residents' rampage forced the 神使 into service and treating なつみ cost her; letting 糸姫 slip was 「大した問題じゃない」; the others are held elsewhere unhurt; and the 女神様 wants to speak to 春花 alone
+- HIS TERMS AND THE FIFTEEN-YEAR WARNING, 32:245-32:259, given between him and サクラ in alternating untagged cells: everyone goes unhurt 「ただし、今だけ」; in about fifteen years the 女神様 moves to 元木町 and it becomes uninhabitable; leave before then; and say a word to anyone and all of them die. His closing formulation is 「つまり、僕たちのことを放っておいてくれたらいいのさ」
+- his 「完全に君の勝ちだよ」 is quoted back by his daughter fifteen years later and refused: 「違う。完全に私の負けだった」 (32:334-32:335)
+- 00002473:11:220-11:315 IS HIS LAST APPEARANCE IN READING ORDER and the 僕 antagonist register is identical to the 00000F24, 00002340 and 00002444 versions: bright, unhurried, faintly amused, 兄貴 on every line, no raised voice and no coarse word. He arrives as a weight, a voice and mycelium out of the 新村本家 cherry — 「よう兄貴」 — and the narration cannot tell whether it is in the cave or at his ear
+- HE DELIVERS THE CHUNK'S THREE REVELATIONS, all of them as asides: 春花 was splashed with なつみ's blood and is now 第三世代, so at menarche or on bleeding at 荒田 she will kill her (11:284-11:285) -> Q981; the 女神様's other wish is to erase 春花 out of jealousy (11:286-11:290) -> Q977; and the new 女神様 is 「荒田と元木の血を引いた」 and is resting (11:309) -> Q978
+- his TIMING FACTS, given while declining to hurry: a dead person serves as a 神使 for about twenty years, so his own body has eight years left, and 「ここと元木町が完全につながったのはつい昨夜のことだからね」 -> Q980
+- the CRUELTY is the same understatement as everywhere else and it is all aimed at his twin: 「やっぱり、兄貴じゃこんなもんか」, 「ほんとバカだなあ兄貴は。10年間も黙っていた時点で、兄貴にも責任があるんだよ？」, and the closing 「もしこのことをばらしたら、本当に全員殺す」 said immediately after 「一応言っておくよ？」
+- he also supplies the memory flood: two of the voices played into his brother's head are his own family's happiest cells, and 「兄貴、僕は兄貴のようになりたかったんだ」 / 「僕は兄貴にはどうしてもかなわない」 are his, quoted from a scene the project never shows -> Q982
+- as-of: 00002473
+
+
+## the 大魔女 voice (00000779) — 新村春花 impersonating her grandmother
+- first_appears: 00000779:8:31 (「待ってましたよ、美冬さん……」); unmasked as 春花 at 8:100
+- pronoun(s): 私 once (8:74 「代わりに私がやりましたが」); otherwise no pronoun at all
+- speech level baseline: 丁寧 (です・ます) carrying flat imperatives — 「顔を上げなさい、美冬さん」 (8:61), 「答えなさい美冬さん」 (8:77). The politeness is the threat; nothing in it ever rises
+- sentence-final particles: ～のです／～のですか (her interrogation form, six times); ～ですよ; ～ましたよね？; ～でしょう
+- copula: です
+- verbal tics / catchphrases / fillers: she answers a question with a question and then concedes and moves on — 「まあ……いいでしょう。／でも、どうして古郡なつみまで？」 (8:89-8:90); one physical outburst with no vocal one (she strikes a table with the mace at 8:78 and the line before it is 「答えなさい」)
+- dialect: none; the narration calls the voice 「しわがれた声」 (8:33), so it is aged, not accented
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM and complete — she is the only character in the project who finishes every sentence; formality HIGH; vocabulary register plain-formal with village vocabulary (標語, 部外者, 十三回忌)
+- THE CONSTRAINT: this is 春花 doing an impression she learned as a child (00000779:8:102, 8:155). The EN must be an old woman's voice that a seventeen-year-old could perform, and it must not leak one marker of 春花's own register — no ～ぞ, no ～だろ, no くそ, no contractions. When the mask comes off at 8:102 the register drops to her ordinary boyish voice inside one cell, and the drop is the punchline. -> Q109
+- note: the REAL 大魔女 never appears. What is known of her comes from 00000801:8:40 (warm, kind, unfazed), 000008A2:8:127 (opposed to violence, bound by the 掟) and 000007A5:8:153-8:156 (cheerful, fond of anime, impressions and cosplay, and she taught 春花 the impression). Do not let the EN of THIS block define her.
+- as-of: 00000779
+
+## unnamed プリマベラ staff (000007EA, 00000801) — twenty years before 000005C1
+- first_appears: 000007EA:11:169 (「いらっしゃいませ、金井様。ご注文はいかがなされますか？」)
+- pronoun(s): none observed
+- speech level baseline: 最上級敬語 — ございます, いたします, なされますか, お連れ様, 〈surname〉様. Identical in surface form to 五島桃子's professional register (000005C1) and to the menu navigator (000000F2)
+- sentence-final particles: ～ございます; ～いたしますね
+- copula: でございます
+- verbal tics / catchphrases / fillers: none; the character is the register. They remember a customer's face, her habits and her anniversaries, and they act on it without being asked (the off-menu drink at 11:179-11:181, the caffeine-free service at 00000801:8:145-8:146)
+- EN correlates: elaborate service English, no contractions, surname + honorific every time. It must be distinguishable in EN from 五島桃子's version of the same register (hers is a costume; this is a house style) -> Q075
+- THE TOKYO BRANCH, 00001124:8:91-8:93, twenty-odd years after the 00000801 scenes and in a different city: 「いらっしゃいませ、新村様。／よく元木町本店をご愛顧いただいていると承っております。／どうぞ、ごゆっくりおくつろぎ下さい」, delivered by a young waitress 「 恭 しく」. The register is unchanged — 最上級敬語, surname plus 様, no personal remark
+- the chain is now established as having a 元木町 main shop and at least one Tokyo branch, and the Tokyo prices are ten times a vending-machine coffee, with a 5,000-yen tier and a 9,000-yen tier. A 「ビギナーコーヒー」 is on the menu -> Q082
+- a second service voice in the same file, one line, brings the added dishes: 「お待たせいたしました。／ビーフカレーとチキンライスオムレツセットでございます」 (0000113D:8:69-8:70)
+- cross-reference: the shop's OWNER has his own block from 00001AA5 (「unnamed プリマベラのマスター」), and 五島桃子 is its 看板娘 from 000005C1. This block covers the waitresses of twenty years earlier only
+- the shop's creed is stated twice by the owner in two files and both halves belong to this block's register: 「どのようなお客様であれ、全力でおもてなしすること。それがプリマベラの心だ」 and 「お客様を平等におもてなしするのも、プリマベラの心だからね」
+- as-of: 00001AAE
+
+## unnamed 焼き芋 seller (00000818) — the old woman at the top of 元木山
+- first_appears: 00000818:11:131 (「あいよー」)
+- pronoun(s): うち ("うちの畑で作った芋だよ" 11:192)
+- speech level baseline: rough-warm タメ口 to customers; she refuses to be called おばちゃん and demands お姉さん, and gets it
+- sentence-final particles: ～だよ; ～かい; ～な (imperative, 「これ持って帰んな！」 11:207)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「あいよー」; 「だーれがおばちゃんだってー？」 (11:188); 「ほれほれ」; she comments on the customers instead of serving them (「あつあつな夫婦だねえ……。芋が焦げちゃうじゃないか」 11:204)
+- dialect: none marked; the register is market-stall, not regional
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW and completely unbothered. Eight lines, and she gives away five potatoes. Her line about the borrowed field (11:192-11:194) is the file's whole argument and she delivers it as small talk — do not weight it in EN
+- as-of: 00000818
+
+## unnamed doctor (00000801, 00000818)
+- first_appears: 00000801:8:121 (「おめでたですね」); the same or another doctor delivers 00000818:11:0-11:21
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (です・ます), hedged with pauses when the news is bad and unhedged when it is good
+- sentence-final particles: ～ですね; ～かと; ～のですが
+- copula: です
+- verbal tics / catchphrases / fillers: he breaks bad news by starting in the middle — 「その……こういうことは……／珍しくはないんです」 (00000818:11:0-11:1) — and never names the condition, here or at 11:17-11:21
+- EN correlates: contraction rate LOW; sentence length SHORT and broken by ellipses; formality MEDIUM-professional. Keep every ellipsis; the hesitation is the only characterisation he has, and he must not sound cold
+- known ambiguity / open questions: the diagnosis is never stated in either scene. EN must stay exactly as unspecific
+- as-of: 00000818
+
+## unnamed junior colleague (00000846, 0000088B) — 古郡良治's 後輩
+- first_appears: 00000846:11:55 (「古郡さん、そろそろ出る時間っすよ」)
+- pronoun(s): 僕 ("僕なんかじゃこんなカスタマイズ無理ですよ" 00000846:11:123)
+- speech level baseline: 丁寧 with ～っす throughout — his BASELINE, not a slip. Note that the same ～っす is a one-off eleven-cell gag for 五島 at 000006E0 (Q094); the two must not sound alike
+- sentence-final particles: ～っすよ／～っすね／～っすか; ～ますって (「経理に叱られますって！」 00000846:11:64)
+- copula: です／っす
+- verbal tics / catchphrases / fillers: he praises his senior three times in four exchanges (「やっぱり古郡さん、ほんとにすごいっすよ！」 00000846:11:121); he explains his own limits cheerfully; he panics at responsibility and then takes it (0000088B:35:4-35:8)
+- dialect: none; ～っす is register, not region
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM — deferential without being formal, the voice of a young employee who likes his boss. Never named
+- as-of: 0000088B
+
+## unnamed 外崎 grandparents (0000088B:35) — 古郡茜's parents
+- first_appears: 0000088B:35:42 (「良治さん、茜、お疲れ様。少し休んでいく？」)
+- pronoun(s): none observed
+- speech level baseline: the grandmother, warm 丁寧-casual with a smile in every line; the grandfather, a dialect the narrator states outright he cannot understand
+- sentence-final particles: grandmother ～ていく？／～でいって; grandfather unparsable
+- copula: grandmother だ／よ; grandfather unknown
+- verbal tics / catchphrases / fillers: 「さあさあ、ちょっとでも休んで、お茶でも飲んでいって」 (35:49); the grandfather's only line is 「ええがだええがだ。だっだどいぎゃ！」 (35:52) and 良治 says in the next cell that he still cannot follow it after all these years
+- dialect: the grandfather, heavy and unspecified; 津軽弁 is named elsewhere in the project but not here
+- EN correlates: grandmother — contraction rate MEDIUM, sentence length SHORT, warm; grandfather — must be UNINTELLIGIBLE on the page and still clearly welcoming. Do not substitute a recognisable English rural dialect wholesale and do not translate the line into sense
+- note: 茜's mother is also the person who introduced 茜 to 美冬 as a newborn (00000846:11:17-11:20), which 良治 is thinking about while she offers him tea (35:44-35:48). She is never told
+- 0000200D IS THEIR ONLY SCENE WITH THE CHILD and they speak a sustained northern dialect — 「じゃじゃじゃ、ごの絵本どだ？」, 「桜っこ咲いでるが？」, 「んが……」, and the grandfather is 「じっちゃん」 to her. The project's second dialect group after the 津軽弁 television chef, and STYLE.md has no dialect policy -> Q785, Q070
+- what they do: they offer a doll, a picture book and a bath and are refused with silence three times; they note that she is usually brighter; they manage her precognition condition without naming it (「風に当てなければ大丈夫って茜は言ってたし」); and they take her one question — why adults do not save the people they want to save — without an answer. The grandmother's closing cell is 「茜たち、何があったのかしら」 -> Q824, Q786
+- as-of: 0000200D
+
+## unnamed street men (000007BC, 000007D3) — two collectives, the same joke twice
+- first_appears: 000007BC:8:236 (「ねえねえ、そこのお姉さん。お買いものしてるの？」)
+- pronoun(s): 俺／俺たち
+- speech level baseline: タメ口, over-familiar, stretched vowels (「ああそうなんだあ」 000007D3:11:268)
+- sentence-final particles: ～ない？ (the invitation form, every time); ～わ (rough-emphatic, 11:279)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「お姉さん」 as an all-purpose address; they compliment her face in the first breath and insult her companion in the second (「ほら、こんなデブより俺たちの方が楽しいよ？」 000007D3:11:270); they leave the instant a crowd forms
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW-MILD; sentence length VERY SHORT; formality ZERO. The first pair (000007BC) are harmless and the second pair (000007D3) turn on 栄一郎 — keep the escalation, and keep both sets forgettable, because the scene is about the two people they are talking to
+- as-of: 000007D3
+
+## 新村茅萱 (にいむら ちがや, Chigaya Niimura) — 春花's cousin, 幸太郎's elder daughter, ~25, a university student
+- first_appears: 00000944:8:16 (silent on the train); first line 8:23 (「ん……春花ったら、やっと気づいてくれたのね。」); named at 8:41
+- pronoun(s): 私 ("私、自分で言うのもなんだけど、そこまで顔は悪くないと思うの" 00000944:8:201)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: soft feminine タメ口 to everyone, including adults; she refuses to be given or to give 敬語 (「私たち、先輩でも後輩でもないでしょ？」 8:173). SECOND REGISTER when drunk (00000972:11:79, 11:97, 11:134): every vowel stretched, volume up, 「あはははははは！」, and なつみ says her eyes are those of a different person (11:53, 11:58)
+- sentence-final particles: ～のよ／～の (constant); ～わよ; ～ね (soft, closing almost every line); ～かしら
+- copula: よ／わ, feminine
+- verbal tics / catchphrases / fillers: 「ん……」 opens nearly EVERY line she speaks, in both registers. It is her whole surface characterisation and it is the exact tic of the unnamed caller at 00000697:8:61-8:87. -> Q138, Q091. Also 「うふふ」; 「ダッセエ」 split across three cells (00000972:11:165-11:167); a wail 「ううう……！」 before she cries
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO in words and MEDIUM in content; sentence length SHORT and unhurried; formality LOW but never rude; vocabulary register plain, with drinking and socialising nouns (コンパ, 合コン, 連絡先, バイト)
+- the gap between how she looks and what she does IS the character: the narration spends six cells on her beauty (00000944:8:85-8:88 — pale skin, long straight hair, blue-and-green odd eyes, "beauty made into a shape") and then she flags down a train with her thumb, picks 山菜 off the track side, will not let go of a fourteen-year-old, weeps about men who stop answering her, and shows photographs of herself force-feeding one beer. なつみ lands on 「残念な美人」 (8:220). EN must let the first paragraph be sincere so the second can land
+- physical behaviour toward 五島 is constant and one-sided: she puts her face against a sleeping girl's, strokes her chin, holds her hand, shares a seatbelt with her, carries her off, and says 「今の私の生きがいは五島ちゃんだけ！」 (8:222). It is played as comedy and 五島 is genuinely distressed. Do not make it menacing and do not make it cute
+- known ambiguity / open questions: -> Q091 (whether she is the 00000697 caller — the tic matches and she is 夏菜's sister, but the text never says so), Q137, Q138
+- the STORYTELLER register, 00000A18:11:6-11:306 — her longest stretch by far, ~295 cells of first-person 丁寧 with no 「」. The 「ん……」 opener DISAPPEARS entirely inside the story and survives only where she quotes her own speech (11:90, 11:231, 11:276). Level, unhurried, one fact per line, no jokes: a third state after sober and drunk. The frame lines around it have the tic back.
+- her story's constraint: she meets herself on both sides of a one-day loop and the two of them exchange the same three utterances. 11:90 and 11:231, and 11:135-11:136 and 11:271, MUST be word-identical in EN.
+- a THIRD register, the 魔女 register, 00000B0F:11:0-11:12 and 00000A62:19:32-19:62: in 能面 and 赤装束 with a 鉈 and a メイス she says nothing at all, bows, destroys a gravestone with the mace and leaves without looking at anyone. Her silence in the costume is total, like the 死神's. Do not give her a sound.
+- in the 00000ADE branch she comes into a lit room covered in wounds, holding a bloodied 鉈, with 「死んだ目」 and none of the cheerfulness: 「みんな……ごめんね……／こうするしかないの……」 (11:123-11:124), and is cut down from behind before the blade lands. Two lines, the tic gone, and the file never explains it. Do not let the EN of the ghost story or the 帰省 scenes foreshadow it.
+- she cannot drive and travels by train, stated by her at 00000B0F:11:54 as part of her own alibi.
+- the LEADER register, 00000B57:11:158-11:201 and 00000B9F:11:52-11:56: the 「ん……」 tic survives and the softness does not. She gives orders (「叔母さん、早く車に！」, 「夏菜、手伝って！」, 「ん……私は車を追いながら援護する！」), names 幸太郎 as the 首謀者 to his niece's face, and says that she and her sister were put through 「殺人の訓練」.
+- her ONE line without the tic anywhere in the project is aimed at her father: 「お父さん！　もうやめて！／私は……／お父さんの操り人形じゃない！」 (00000B9F:11:108-11:110). The absence is the point; EN must find a way to show it.
+- SHE DIES at 00000B9F:11:289-11:297, stepping in front of her sister and catching a nata on a knife. Her last words keep her habit of putting the object last: 「春花お願い……！／　ぐ……！／　私が……／引き留めるから……！／　荒田のことは……／荒田の人間がけりをつけるから！」
+- in the 00000BD6 branch she is alive, sober and doting on 五島 from her first line (00000BED:11:118-11:129), and drunk again at 00000C68:11:5-11:9. New facts from that branch: four years in SWEDEN from this summer, studying social welfare because the settlement is old (00000C08:11:107-11:121); 「これが最後のチャンスなの……。／私が留学する前に、しなきゃいけないことが……」 muttered to herself (11:123-11:125); and she cracks under 五島's interrogation in twelve cells and admits she lied (00000C08:19:11-19:30).
+- SHE IS NOT CLEARED: 00000BB7:11:190-11:200, 五島 says the route from hunting weapons to 幸太郎 is too thin, that 茅萱 was hiding something, and that a case could be made for her as the true culprit. Raised in one cell and dropped. Do not let the EN of the warm scenes settle it.
+- in the 00000BD6 branch she BECOMES a 魔女: she walks out in 能面, 赤装束, 鉈 and メイス without explaining herself (00000D41:11:11-11:21), comes back sober, and serves at the 十三回忌 as one of the two 魔女 beside the 大魔女 (00000DE9:11:19-11:54). 春花 congratulates her with 「チガ姉、魔女デビューお疲れ」 (11:205) and she answers 「ん……思ってたよりも緊張するものね」 — tic intact, rite treated as a job.
+- she is the one who says the settlement must go to the police: 「ん……おばあちゃん、明日、十三回忌が終わったら警察に行きましょう？」 and 「ん……もう、終わらせないと」 (00000D59:11:79-11:81), and she indicts herself first, including the reason — she thought her own father might be the culprit (11:73-11:75).
+- the LEADER register at full extension, 00000E01: she assigns roles before anyone asks (11:26-11:29), rides the car roof down a mountain road, beats off a crowd under ドローガ single-handed, and gives the order to turn back (11:111). The 「ん……」 tic is intact in every line including the shouted ones (11:47, 11:77, 11:107, 11:120, 11:141) and the softness is gone. Same shape as 00000B57/00000B9F, in the branch where she lives.
+- she is unhurt, she gets off at the settlement entrance to hold it alone, and she wins there too — 「茅萱が集落の入り口で少しばかり足止めをしてくれたんだ。足を切って動きを鈍らせてね」 (00000E49:11:78). She never appears on screen again in the branch; her Sweden departure becomes a summer send-off party (00000E49:11:148).
+- A BRANCH IN WHICH SHE NEVER MEETS ANY OF THEM, 00000EAF: she is a competitive eater, 五島's rival and then her partner for the rest of both their lives, and they are introduced by a seating accident on a bus. She calls her 五島さん throughout, never 五島ちゃん. -> Q262
+- the 「ん……」 tic is at FULL strength here, in a branch with no shared history with anyone: 16:15, 16:17, 22:43, 28:165, 34:246, 40:84, 91:11, 97:326. It is a property of her and not of a relationship, which is the strongest evidence yet on Q138 and Q091.
+- she SIGNS: she opens with sign language before knowing anything about 五島 (40:92-40:93 「手話は分かりますか？」), and 五島's narration says she is the first person outside her family and the welfare service who can (40:94). Neither character ever explains where she learned it.
+- the COMPETITOR register: soft feminine タメ口 with the tic, used to give tactical advice to the person she intends to beat — 「明日の予選を全力で戦ってはダメ」 (34:272), 「不公平だから……。／私だけ五島さんの実力を見て、私は見せていない」 (34:275-34:276), and an おにぎり handed over with the physiology explained (91:43-91:45). She follows 五島 to a steak house to measure her and says so.
+- she is the one who knows: asked at 91:130 whether she knows a 新村春花 she answers 「ん……知っているわ。／私の従妹。4年前に亡くなったけど……」 (11:134-11:135), her eyes open wide, she recognises 元木町, and she postpones the conversation — 「ん……この話は、あとにしましょう」 (91:146). The thread is never picked up in the file. 五島 forgets to ask (28:178).
+- HER GUILT IS THE LAST THING IN THE FILE AND IT IS IN A LETTER SHE DOES NOT DELIVER IN PERSON (00000EAF:16:134-16:148, read aloud by 五島 at the Nobel ceremony): 「私が五島を苦しめた張本人でもあります」, 「私が間違いを犯さなければ、きっと彼女の大切な人たちも救われたでしょう」, and the broken-off 「私があの時、幼少期に父を告発していたなら――」. She calls the prize 「私にとっての罪であり、罰でもあります」. The father is not named and the sentence has no main clause.
+- her EN must be able to do a written formal register: the letter is 丁寧 throughout with none of the ～のよ／～わ softness of her speech, and it is performed by a second person in front of a hall.
+- in 00000EDF she is the one the whole apparatus was built to save, and she says so on the floor: 00000EDF:59:181-59:234. She kneels, puts her head to the floorboards, and reasons out loud — 「私の命って、たくさんの平等な命が積み重なって出来上がったものでしょ？」, 「命が重いということは、それだけ重い罪を背負っている」 — then dedicates her study abroad in welfare to strangers as restitution, calls it 「独りよがりの正義」 herself, and ends 「このたくさんの人の犠牲で成り立った命を、人生を……／決して無駄にしません」. The 「ん……」 tic is intact in every line including the ones spoken into the floor.
+- she still asks the question she asked in no other branch: 「ん……私、今でも考えるの。／あの時、お母さんを殺したいって衝動をどうしたら抑えられたのか」 (59:186-59:187), and is told by a fifteen-year-old who has just felt it that it cannot be done.
+- she addresses 五島 as 五島さん at the first meeting (71:31) and 五島ちゃん by the exposition scene (59:194); both in one file.
+- 00000F24: the 「ん……」 tic survives a beating she administers, a religious rite she presides over, and burning her own mother's corpse. Every line in the file has it, including the shouted and the ceremonial ones. It is now attested in seven branches and is conclusively a property of her and not of a relationship. -> Q138, Q091
+- the INSTRUCTOR register, new and the coldest she is anywhere, 00000F24:106:229-106:249 and 124:147-124:167: she wins fights and annotates them while winning. Magnesium carbonate for grip (106:235-106:236), a comment on the state of the knife edge (106:230), 「春花には振られたナイフをつかめるほどの技量はないものね」 (106:239), and 「足元すくわれるわよ？」 said one cell before she sweeps the narrator's feet. Twice she states 「私、暴力が嫌いなの」 / 「私、暴力は嫌いよ？」 while pinning a relative to the floor (106:247, 124:150), and she means it. EN must keep the softness and the tic and let the content do the damage
+- 「私にとって、春花は狩られる獣と同類なのよ？」 (124:157) and 「だから、私が今しているのは単なる弱い者いじめ」 (124:158) — the two flattest sentences she says anywhere, delivered with a knee in a cheek and the tic intact
+- the CELEBRANT register, 00000F24:106:78-106:139: she presides over her own mother's 一周忌 in public, announces the corpse as 「女神ブルーシャ」, tells the hall it produces no 『恵み』, calls it 「この出来そこないの女神」 and 「新村家の汚点」, and sets it on fire without hesitating. Her register does not rise once. Her earlier claim that the faith is 一神教 (124:213) is contradicted by her own two-goddess announcement and the narrator notices (106:95-106:97)
+- the EXPOSITION register, 124:189-124:231: she asks the narrator a question, waits, and then teaches — the settlement had no god, the 魔女 conduct rites, the dead are called 死神, and the hidden god is a four-hundred-year-old mummy who has now been killed a second time. Her only change of expression in 3,564 lines is 「少し目を細める程度」 (124:187)
+- she STRANGLES the narrator at the end (187:127-187:130) with the 荒田桜 in control, at a strength the narration calls 「人間の力とはとても思えない」, and she does not speak while doing it. Before that she is the first of the family to go: 88:225-88:244, walking out of the hall with no expression, not reacting to her sister pulling on her arm
+- 00000F9F and 00000FB7: the 「ん……」 tic is intact in every line of both files, at a funeral, on a train and while putting ritual gear away. Now attested in eight branches. -> Q138, Q091
+- her PHYSICAL HABIT with 五島 is intact and is aimed at a girl who is answering her flatly at a funeral: 「ん……こんにちは、五島ちゃん」 with her face pushed close (00000F9F:11:19-11:20), then 「ん……うふふ。第一印象の五島ちゃんも好きだけど、私、今の五島ちゃんも好きよ」 (11:24). She reads the change in her and says she likes both. EN must keep it warm and let it be unwelcome
+- SHE GIVES UP THE 留学, in two cells and without being asked: 「ん……夏菜を1人にはできないわ。／ここが無人になってしまうのも、よくないしね。／城崎さん1人っていうのも大変だろうし」 (00000FB7:11:19-11:21). In the 00000BD6 branch the Sweden place was 「これが最後のチャンスなの」 (00000C08:11:123); here she drops it in one breath for her sister and does not mention the cost
+- she closes the subject on a sixteen-year-old with the softest possible refusal: 「春花は、そんなことまで心配しなくていいの。こういうのは、魔女の仕事なんだから」 (00000FB7:11:25) and 「ん……春花、今はおばあちゃんの冥福を祈ってあげて」 (11:27). The tic is on both
+- SHE NARRATES EIGHT CONSECUTIVE FILES, orders 156-163 (0000110D, 00001124, 0000113D, 00001154, 0000116C, 00001184, 0000119C, 000011B4), in 私 — her first sustained narration anywhere. Her 00000A18 stretch was an inset ghost story; this is the frame itself
+- narration voice: soft, plain past, one thought per cell, with the same ～のよ／～かしら shape her speech has. It is self-aware and dry about her own failures (the losing streak, the storm drain, the 隅田川) and goes completely flat for the murders. She narrates 「私が殺したのは、全部で5人――」 in the same register as a hangover -> Q461
+- the 「ん……」 tic is attested at AGE TEN (000010F5:8:90, 0000110D:8:33, 8:76, 8:81, 24:106) in a file narrated by her mother and a file narrated by herself. It is now attested from ten to twenty-five across nine branches and is conclusively a property of her -> Q138, Q091
+- SHE IS THE 呪殺 KILLER, or believes she is: at eleven she overheard 城崎百合子 planning to take her father to the police, went in that night and put a knife through her throat; then killed one person each April for five years, 祀耀791-795, until her father's house arrest ended. Her stated motive is entirely protective — her father, her grandmother, and not leaving 夏菜 alone -> Q461, Q477
+- AND SHE IS WRONG, or is told she is: the 呪殺 corpses were all beaten to death with a blunt instrument, not stabbed (00001184:20:0). She has no explanation and neither does anyone else -> Q462
+- her ABILITY: the same seasonal cherry trigger as 古郡なつみ's, with none of her mother's dark-narrow-place condition, present since she was ten and told to nobody until 00001184:16:37, because at 荒田 the gift is now called 『魔女の力』 and blamed on her mother. She forecasts her own death at 荒田 on 四月八日 in three alternative forms and says no branch saves her -> Q478
+- her ODD EYES are one blue and one green, the blue inherited from her mother and the green from nowhere; 夏菜's are the same pair, and a friend in Tokyo told her no Japanese person is recorded with it (00001154:8:100-8:108)
+- the TOKYO LIFE, 00001124: bar work, mixers, a losing streak in three figures and a stated 0% win rate; she puts on a sweet act, out-drinks the men, and hates herself in the morning. She eats through challenge menus for the achievement. Her one friend, ハナちゃん, is being quietly dropped. This is the same appetite and the same physical competence the 00000EAF branch turns into a career
+- the CONFESSION, 0000116C:8:98-8:100, is three cells — 「ん……／私がやったの。／私が……」 — and her aunt answers 「そう……。／辛かったね……ずっと……」 without asking what. She then cries for an unmeasured length of time into her; the narration says the ten-year dam gives way
+- the 傀儡師, 0000116C:8:162-8:166: she feels 「ここにはいない、何者かの気配」 and lands on the image of a puppeteer, one cell before the file ends. It is her word, and 五島 independently reaches 「矛盾の支配者」 two files later -> Q466
+- the 天秤: she says she has carried an unfairly weighted set of scales for nine years, and at 00001184:24:2-24:22 the scales TALK to her in 僕 and 君 and mock her out of her own confession. Its verdict on her charge sheet is 「空。」 -> Q463
+- at the first meeting with 五島絵梨奈 (0000119C) she opens with a maximally formal 敬語 self-introduction, is talked straight past, loses her temper, and is told the whole act was to loosen her up. She grants 「チガ姉」 on request and slips into 「五島ちゃん」 herself six cells earlier -> Q464
+- SHE NARRATES 000012F5 AND 0000130D (orders 176 and 177) and they REWIND: both are set on 四月五日-六日, before everything in orders 164-175, and are narrated by the woman who is missing in all of them. The switch is a file boundary with no marker and no date line -> Q030, Q078
+- 000012F5 has NO DIALOGUE AT ALL — 186 lines of one woman reading in a storehouse — and it is the only such file she has. Her narration voice is unchanged: soft, plain past, one thought per cell, ～のよ／～かしら, and the 「ん……」 tic absent from narration as always and present in every spoken line of the next file
+- she works ALONE AND AGAINST HER OWN FAMILY, and states the rule: 「残念ながら、私が信用しているのは元木町に住んでいる人だけということになる。／この荒田集落の人間は、たとえ身内であっても信用できない」 (000012F5:8:36-8:37), because the method is a human method, so someone here has sold out to 『何者か』. She reaches the traitor hypothesis two files before 五島 does
+- she cannot answer 春花's objection to her and says so: why work to solve a case you believe you committed? Her own guess is that she may have known unconsciously she was not the culprit, and she asks what made her believe it in the first place (000012F5:8:24-8:33). Nothing answers it -> Q461, Q462
+- her RESEARCH register, new: she chooses books by title with two dictionaries, photographs what she cannot read, sorts her haul into three named kinds, and sets out a work split with 五島 to run two tasks in parallel (000012F5:8:10-8:55). She also reads the old language better by the second day 「受験の時の感覚を思い出し」 (0000130D:8:4) and stops needing help. Competence, not genius, and the file says so
+- her METHOD, named by her: 「歴史は繰り返す、2度あることは3度ある、という格言のように」 and 「私の温故知新は、この切り口からアプローチする」 (0000130D:8:10-8:11). It works — it produces the three 変異 and the 失踪 anomaly — and it is a different instrument from 五島's
+- SHE IDENTIFIES WITH トミ, in the flattest lines in either file: 「私にはトミの気持ちが分かる。／私もあの殺人欲求を経験したのだ。／あれはもう、我慢するとかそう言う次元ではない。手足が勝手に動いてしまうのだ」 (0000130D:8:41-8:43). The comparison is to her own mother and she does not name her
+- THE DEDUCTION THAT ENDS THE CHUNK, 0000130D:8:136-8:171: an electronic lock about ten years old on a centuries-old storehouse means her grandmother or her father knows what these books say, which means one of them has left her to work it out alone, which means one of them is hiding it. It is printed as three ellipsis-only cells, then 「え？」, then the reasoning. She hits the book with her fist — 「やられた……！／　騙された……！」 — the only violence she does anywhere in this branch
+- her physical and domestic habits survive the pressure intact and the file uses them for the only lightness in it: she has not eaten in a day, takes an おはぎ for an おにぎり and eats it off her hand anyway (0000130D:8:16-8:24), and is too short with 夏菜 and knows it (8:30)
+- ON SCREEN IN THE PRESENT SHE APPEARS TWICE AND BOTH TIMES SHE IS WRONG: at 0000127A:8:116-8:164, covered in blood with a nosebleed, she asks 春花 why she is there, throws her down, holds her mouth shut and gives her a correct instruction; at 000012DE:8:91-8:96 she calls the crowd off and then answers her own sister and 五島 with 「…………／誰？」. The 「ん……」 tic is intact in every one of those cells and is the only proof of identity the text gives -> Q138, Q478
+- SHE NARRATES EIGHT MORE FILES, orders 178-185 (00001325 through 000013CD), continuous out of 0000130D with no marker anywhere — eleven consecutive files in her voice counting 000012F5 and 0000130D, her longest run in the project and the second longest by anyone
+- the MOTHER-SUBSTITUTE register, new and comic, 00001325:8:128-8:141: she confiscates her sister's diary, orders her to read it aloud with her back straight, and justifies it — 「私たちのお母さんはもう10年前に亡くなったの。／だから姉である私は、母親の代わりもしないといけないの。／こういうことを監督するのは、母親の義務なのよ？」. She also notes that the apology she extracts felt good (8:141). ～なさい imperatives, the tic on every line, and the whole thing is play
+- HER ONE LINE WITHOUT THE TIC IN THIS RUN is 「は？」 (00001325:8:151), at being told her own name is hard to read. One syllable, no softness, and her sister backs down in the next cell -> Q530
+- the INTERIOR SCREAM, 00001325:8:200, 8:214-8:215: three bare cells of 「キエエエ……！！」, the first ~80 characters long, while her sister reads a love diary aloud. It is the only noise she makes that has no register at all -> Q527
+- she comforts the crying child and admits in the next cell that the advice was her aunt's (8:255-8:260), then cuts herself off — 「なんてことをして遊んでいる場合じゃない！」 (8:263). The same self-interruption as her おはぎ scene
+- SHE WORKS WITH 夏菜 AND TELLS HER THE TRUTH, 00001325:8:37-8:71, having spent 000012F5 stating that she trusts nobody in the settlement including family. The exception is her sister, and she makes it deliberately after weighing it for eight cells
+- her METHOD produces the books: she reasons her father would keep rather than destroy something important, and would want a place only he enters (8:82-8:84). 夏菜's nose does the rest
+- THE THREE BOOKS, 0000133D:8:143-8:157, and the order she reads them in is a decision she narrates: oldest first, translation outsourced to 五島, photographs taken as she goes
+- SHE IS THE ONE THE REPORT WAS WRITTEN FOR. 00001355:8:264-8:275 addresses 「これを読んでいるあなた」 — a precognitive reading it inside 荒田 — and predicts that the sound will sound and a corpse will kill them. She reads it anyway and the next file opens on the sound -> Q541
+- WRITING BLIND, 0000136D:8:15-8:61, and it is the cleverest thing she does anywhere: she reasons that the thing has her senses but not her thoughts (proof: the sound did not come until she finished reading), starts a voice recording, and writes a memo with her eyes deliberately turned away so that what she writes cannot be read through her. She then finds one sentence of it wrong and cannot correct it, because correcting it means looking -> Q542, Q543
+- the MEMO register: ~25 cells of です・ます addressed to a stranger, calm, numbered in effect, apologising for the handwriting. It is the only 敬語 she uses in the project and she uses it to an unknown reader
+- SHE IS TAKEN BY HER OWN MOTHER. 0000136D:8:104-8:156: she gives the corpse three cells of belief, refuses it on the ground that she watched the real one die, turns on it the same look she once turned on the living woman, and is knocked down from behind by 新村栄一郎. She keeps narrating through the blow
+- she asks to be killed rather than used — 「だったら、ここで殺しなさいよ！」 (0000136D:8:294) — for the stated reason that becoming one of them would make her harm everyone, and she would rather be destroyed beyond repair and harmless
+- THE BLOOD, and she finds it twice by accident: the dropped knife cuts her arm and both corpses convulse (0000136D:8:308-8:325), and 美冬's taunt about a bloodied blade makes her connect it to サクラ's parting warning (000013CD:8:81-8:111). She tests it by cutting her own face in front of twenty corpses (8:289)
+- the DECEPTION register, 0000139D through 000013CD, and it is three files long: she announces the performance in narration before she gives it, feeds the listening thing 「みんなで桜になろう！」 so that her father will hear and evacuate, escalates on a stated schedule, and notes that her vocabulary being poor made it more convincing. Twice she says the muttering began to become a habit -> Q549
+- she catches the corpse out on a single word: 「豊岳方面へ戻って」 against 「やっと、見つけたわ」 four cells earlier (000013B5:8:115, 8:57), and turns a rescue into an interrogation without changing her register -> Q551
+- she puts a knife to her own throat to pass a loyalty test (000013B5:8:179-8:183) and it is 栄一郎's laugh that stops her, not her own nerve. The narration says 「完全に作戦負けだ」
+- SHE FIGHTS HER AUNT AND LOSES ON PURPOSE, 000013CD:8:75-8:143: one blow to the solar plexus, then nothing but clinging, so that her own blood transfers. She takes a kick in the face and a roundhouse without countering and states the reason afterwards. With 春花 she uses a hip throw, a hand over the mouth and a nosebleed, and frightens her deliberately so that she will not wash -> Q555
+- she is OUTMANOEUVRED and the file says so in her own words: 「完全に……やられた……！」 (000013CD:8:342). Isolating the 元木町組 was what the thing wanted; the blood she spent two scenes transferring was inert within minutes; and 「本当はなつみちゃんだけが目的だった」
+- her last two cells before losing consciousness are printed with runs of blank space where the words do not reach her, and her last thought is 「みんな……／お願い……！」 (000013CD:8:359-8:363)
+- SEEN FROM OUTSIDE at 000013E6 and 000013FD: bloodied, unbothered by it, and read by 五島 as necessarily deceiving them in order to deceive the thing — 「チガ姉が死月妖花を欺くためには、私たちを欺くしかないのだ」 (000013E6:8:68). 五島 then doubts she is alive at all and turns back to check
+- SHE IS CONVERTED AND THEN IT IS AN ACT, and the two halves are eighteen files apart in reading order but four files apart in story time. 00001414: found unconscious in the cave, uninjured, BOTH EYES NOW BLUE, presenting the loss of the 翠眼 as good news. 0000142B: in the tunnel she turns on 五島 with 「邪魔しないで！」 and 「邪魔するなら……／死ぬ？」 and takes her to the summit. 000014D7:8:361-8:363: it was a performance throughout, on her father's written instruction, in order to get close enough to destroy the mummy
+- THE REGISTER DOES NOT CHANGE and that is the whole problem. The 「ん……」 opener is intact in the threatening cells (0000142B:8:79, 8:174, 8:221 of 00001414), the soft feminine ～のよ／～わ is intact, and 五島ちゃん and 叔父さん are intact. What changes is only the content — a hostage offered a choice of deaths, 「情けないわね、天才少女が……」 (8:133), 「この子、何の使い道もないでしょ？」 (8:203). EN must not cool the voice -> Q569
+- her tic is now attested through a fourth-generation conversion and back out of it again, which makes it the single most reliable identifier she has -> Q138, Q091
+- the DECEPTION register of 0000139D-000013CD is therefore FOUR files longer than that block records, and this stretch is the only part of it played to an audience that believes it. She apologises for it afterwards in two cells and gives the reason: 「ミイラを処分するために、どうしてもこの演技が必要だったの」 (000014D7:8:362)
+- HOW SHE DESTROYS IT: she takes the mummy out of 新村栄一郎's hands with 「叔父さん、甘いわよ、ミイラを貸して」 (000014D7:8:323), runs, and jumps into the hot-spring stream holding it. She comes out soaked and says 「ん……いつまでも……／いつまでも、やられっぱなしなわけじゃないわ……！」 (8:342-8:343). No announcement, no build-up, and the narration only understands it afterwards
+- SHE DEMONSTRATES THE WEAPON ON HER OWN SISTER: she cuts 夏菜's arm without warning, swings the bloodied knife at the two corpses, and only then explains that fresh 第三世代 blood does this (000014D7:8:364-8:375). The tic is on both instructions and she does not apologise for the cut
+- what 五島 and 新村エリカ believed about her in 00001414 — that she is no longer 翠眼 and is therefore safe to send toward the body — was the thing's plan, and the file that states it is the one where she is most trusted
+- 000014EE: she circles the antagonist with the rest and the 「ん……」 tic is on every line of it, including 「ん……もし、あなたが生者だと言うなら、あなたの頸動脈をこれで切り裂いたらどうなるのかしら？」 (16:73) and the one where she works out aloud how to remove limbs without killing (16:200-16:201)
+- and she is the first of the family to soften, in the same soft register with no transition: 「ん……許せないけど……。／でも、この子はどうしたら助かったのかしら？／　ごめん、私には分からないわ……」 (16:343-16:345). She does not forgive and she does not pretend to understand
+- SHE NARRATES 0000154E (order 201), her first narration attached to another character's run, taken at a file boundary with no marker and with no name for eight cells -> Q616, Q030, Q078
+- narration voice in it: the soft plain past with ～のよ／～かしら that her eight-file run had, now domestic — the memorial service, her sister asleep on her back, whether anyone's body clock will survive the night. The 「ん……」 tic is absent from narration and present in every spoken line, exactly as before
+- she has WORKED IT OUT ALREADY and says so in narration before 五島 arrives: 「呪殺事件は、まだ真の解決には至っていない」 (8:24). The two of them reach the same conclusion separately and neither is surprised
+- her PHYSICAL HABIT with 五島 is absent for the first time in a two-person scene, and what replaces it is an apology for the three files she spent frightening her (8:35, 8:45). 五島 refuses to take it and asks for dinner instead
+- SHE CONFRONTS HER FATHER and gets nothing for four cells running. Her three questions are the ones the branch never answered — why he was always treated as the culprit, why he occasionally has her mother's precognition, and how he knew where she had been taken (8:114-8:123) — and she asks them in the soft register with the tic on every one. 「ん……お父さん……。何か言ってよ……」 (8:127)
+- what she learns, and the file ends before she can react to it: her father has been meeting her dead mother under the 秘密基地 for ten years, knew who was killing people from the second year, said nothing to protect the meetings, and deliberately left her own 翠眼 untreated on the corpse's instruction, for a reason he was never given
+- SHE NARRATES 00001EFF (order 317), her only narration of a resolution and the only file in which she narrates her own family's ending. The voice is the soft plain past with ～のよ／～かしら, and the 「ん……」 tic is absent from narration and on every spoken line, as always
+- WHAT SHE ACTUALLY DID, and it undoes nine years: 00001EFF:8:21-8:68. A year after her mother died she dreamt of her; the dream set a condition — one killing a year, always with a knife, or the meetings stop; she killed 城崎百合子 IN THE DREAM, did not know it was a dream, and carried the guilt from then on. 「実際に、私が誰かを殺すことはなかった」 (8:64). She indicts herself anyway, for having been willing, and for having let her father go unquestioned — 「私が引き起こしたとも言えるのだ」 (8:68)
+- she names her own function: 「ん……私はスケープゴートにされていたのね。／その上、私が犯人として突き出したくない人――／お父さんをも利用していた」 (8:69-8:71)
+- the SCENE WITH HER FATHER, 8:100-8:153, and it is the warmest thing she does anywhere: she refuses his 被害者ぶる framing at full volume, then takes the 沈丁花 off the mummy's place, tells him this is not her mother's grave, makes him recite the 花言葉, and holds him while he sobs — the first time she has seen him break. Her stated model is her mother: 「ん……私じゃお母さんの代わりにはなれないけど、こんな時、お母さんだったらどうするか」, and 「だってお母さんは、私たちの本物の女神様だもん」
+- her closing dream and the farewell: her whole family under an ordinary cherry on 糸姫山, and 「もう私も、お母さんの幻影から卒業しないとね。／さよなら、お母さん」 (8:189-8:190)
+- 00001C5D: accused to her face by 五島絵梨奈 she holds a knife and then a second knife to her throat for sixty cells with 五島ちゃん and the tic intact, and then COLLAPSES — on hands and knees, sobbing in a voice 五島's narration calls 「下品で無邪気」 — and the tic DROPS for the whole collapse (11:150-11:169), the second time in the project it is absent. What she says is 「私は……生まれた時から……呪われた身体なの」 and 「この目が、人を殺す――／呪殺の証」, and then [15], one cell alone: 「私もお母さんを殺したかった」 -> Q806, Q138
+- THE NEW YEAR QUARREL, 00001BB4 and 00001BF7, and it is the origin of everything her sister reports elsewhere: she takes 夏菜 to the 秘密基地 at night, says their father is the culprit, is threatened with a knife, gives the file's definition of 呪殺 (mutual killing out of 疑心暗鬼), says 「分かった。私を殺しなさい」, disarms her in one cell and lectures her on wavering. Her stated ground for suspecting him, given to 新村美冬 the next morning, is the 鉈 and メイス — nobody else hunts with them, they are weapons for fighting invaders, and 「もしかしたら私たち、殺人の訓練をさせられているんじゃないか」 — and the extension, 「もしお父さんが夏菜を 唆 したら、思い通りに人を殺せるんじゃないか」
+- her DRUNK register gets its rudest address form: 「あっはははは城崎のおっさんロレツ回ってなーい！」 and 「こんなセクハラジジイには超絶美人の茅萱様が死ぬまでお酌してやる！」 (00001BCE:8:72-8:81), and she claims her looks from her mother rather than her father. She also lies about a knife cut on her own throat in front of the whole family and is not challenged (00001BC4:8:29-8:35)
+- AT ABOUT TEN, 0000202C: she trains with the 鉈 and メイス, explains April to a toddler as 「人をさらって行くお化け」, and answers 「ママ、お化けに連れて行かれたの？」 with 「そう……とも言えるわね」. Her father then tells both of them to 退治 the culprit, confirms it means killing, adds 「それに、サクラのかたきでもあるからな」, and goes silent when she asks 「それだと、お父さんが困らない？」. The file's last three cells are her not finishing the thought
+- HER AWAKENING SEEN FROM OUTSIDE, 000020F0: convulsing on the floor at about ten, she asks to be killed twice — 「早く、殺して……！」 then 「私でもお母さんでもいいから殺して！」 — and her grandmother refuses both. 新村エリカ's word for the pattern is 「覚醒と失神を繰り返す」. When it passes her line is 「お母さん……／よかった……。／でも……／もう……疲れた……」. The 殺人欲求 of 0000130D:8:41-8:43 and the 「私もお母さんを殺したかった」 of 00001C5D:15:0 are this scene -> Q806
+- THE DREAM THAT COSTS HER NINE YEARS, 00002102, shown in real time: her dead mother sets one killing a year with a knife as the price of continued meetings, she agrees, she wakes two cells later — 「ん……夢……？」 — and 城崎百合子 is found dead in the same file. Her two cells after waking are 「もし、お父さんがいなくなったら……。／そんなの……絶対にやだ……！」 and 「ナイフで……／ナイフで……！」 -> Q837, Q817
+- HER FAREWELL TO HER ONE FRIEND, 00002108, and it is her longest scene with ハナちゃん anywhere: she pays for dinner, says she is going home for a 十三回忌, says 「ん……私……／死ぬかもしれない」, and is asked only 「茅萱は、死にたいわけじゃないんだよね？」. The proof of strength she is given is 「100人以上の男に振られ続けてもへこたれないんだから！」, which makes her laugh. She promises to come back and the evening is renamed a 決意表明会
+- the 「ん……」 tic is on every line of 00002108, 000020D2, 000020DE and 0000202C, including the flat ones and the orders. Now attested from about five to twenty-five across eleven branches -> Q138, Q091
+- SEEN FROM THE MEN'S SIDE, 000020FC: in a drinking circle's group chat she is チガちゃん, 「一番の美人」, and a hazard — anyone who goes after her drinks until morning and runs. 「チガちゃん狙ったやつはみんなそうなるんだよｗ」. Her own account of a 0% win rate at 00001124 is corroborated by the men who are supposedly rejecting her, and the reason is that none of them survives the drinking
+- FLAT ABOUT THE THEFT, 000020D2: told the ファルシフィカソ has been stolen she answers with 「ん……別に来週の儀式で使う予定はないでしょ？」 and 「ん……でももうファルシフィカソなんて効果はないでしょ？」, which is either the conversion or ordinary indifference and the file does not say -> Q569
+- SHE NARRATES 00002433 (order 412), the last file of the chunk, in 私, with the 「ん……」 opener intact on every line she speaks.
+- she deputises for 新村美冬 in the 魔女 role at 新村栄一郎's 十三回忌 because the masks make an absent resident invisible but an absent 魔女 obvious; she carries the implements at the start and the end and watches -> Q917.
+- her worry, stated to her grandmother alone: she likes エリカ's rational disregard for the 掟 and is afraid that if the residents see it the 大魔女's 権威 and the settlement's 統率 will go. She calls it 杞憂 herself.
+- she accepts the reform argument in one cell and reframes it: 「法律だって、必要があれば変わるものね」 (11:123). This is the only time she is shown thinking about the settlement as an institution rather than as her family.
+- what she will not describe: 「ん……忘れるはずない。今でも夢で見るわ」 about whatever happened to her ten years earlier, which the file never names.
+- she is the one who notices that 美冬 missing a husband's 十三回忌 is not normal even by ordinary standards, and the file ends on her saying so.
+- SHE NARRATES 00002439 (order 413) in 私, with the 「ん……」 opener intact on every spoken line, and it is the only file in which she both kills and is killed
+- SHE SKIPS THE 継承の儀 at 新村美冬's request and sends a substitute in the full 能面 and 赤装束 while she keeps only a 鉈 (11:2-11:9). She never names the woman who asked her -> Q924
+- her DEDUCTION, and it is the same instrument as her 0000130D work: the 古郡 couple were the intended attendees, the daughters came instead, therefore なつみ has 危険予知能力, therefore おばさん could not say so to a 荒田 woman because 荒田 calls that power the 魔女's (11:20-11:32)
+- SHE IS STABBED THREE TIMES BY HER OWN SISTER — left arm, side through to the organs, and a knife driven through the palm of the hand she catches it with — and the soft register and the tic survive all of it: 「ん……何するの……！」, 「ん……夏菜は……家族を殺すの……！？」, 「ん……私は……！　犯人じゃない！」
+- SHE CONFESSES FALSELY to stop her, 11:166-11:168 — 「犯人は私。夏菜の言うように、お父さんを疑う人を殺した。／だから……もう、誰も傷つけないで……」 — and is SLAPPED for it and told it is 投げやり. She has made this confession truthfully in three other branches; here it is a lie and it is refused -> Q927, Q461
+- AND THEN SHE CUTS HER SISTER DOWN. Snared, bleeding internally and out of time, she swings the 鉈 into 夏菜's back to stop her going back to kill the residents and her father, and states the reasoning in three flat cells: 「本当は夏菜も守りたかった。／しかし、これ以上犠牲者を出さないためには、実の妹を止めるしかない」 (11:220-11:223). It is the only violence she does to family anywhere
+- the file ends with her still caught in the snare, dying, and her last narration is three unfinished worries about what 夏菜 will do when she reaches the house
+- SEEN FROM OUTSIDE ten minutes later, 0000243F:11:87-11:91: a thin figure staggering after her sister, holding a nata, covered in blood, and the settlement's reading of it is that she is the one who cut 夏菜. She is dead by 00002444:26:487, reported in one clause by the man who killed her
+- SHE NARRATES 00002478 (order 422), the LAST FILE OF THE PROJECT, in 私, taken from her father at a file boundary with no marker. The 「ん……」 tic is absent from narration and on every spoken line, as always -> Q983
+- narration voice: the soft plain past with ～のよ／～かしら, now used for procedure and inference — visiting rules, a lawyer's conditions, the officer's reactions, what a negative drug test must mean. She reasons continuously and never says what she feels
+- the DEDUCTION is the same instrument as 0000130D and 00002439: her father used ドローガ, the test found nothing, the mass arrests at 荒田 are unreported, therefore it is being buried (11:18-11:23). She reaches the outermost cover-up on her own, in a chair, in five cells -> Q988
+- SHE DELIVERS TWO DEATHS ACROSS AN ACRYLIC PANEL, in the tic and the soft register, and watches which one lands: 「ん……おばあちゃんが亡くなったわ」 gets almost nothing, and 「ん……それと……。／なつみちゃんも死んだ」 gets him out of his chair. From that she concludes he knows why 春花 killed her (11:50-11:51)
+- SHE IS LEASHED AND SHE NAMES IT: a government scholarship arrived out of nowhere, she is at university and going to mixers, and 「いや、このような生活を送らざるを得ないのだ」. She can feel the surveillance because she was raised at 荒田, she cannot use ファルシフィカソ or read the 蔵書 or contact 五島, and 「今まで通り普通に過ごすと言う、極めて不自由な生活を強いられている」 -> Q986
+- her one unanswered question about herself in the file is three cells long: 「私は……私には何ができるのだろうか」
+- she is the one who reports the diaspora, flatly and in one cell each: the settlement closed, 城崎 in 飯沢市, 夏菜 placed with her aunt, herself in Tokyo
+- as-of: 00002478
+
+
+## 新村夏菜 (にいむら かな, Kana Niimura) — 春花's cousin, 茅萱's younger sister, 幸太郎's second daughter, 10
+- first_appears: 0000095B:35:36 (「うわ！」); named by her father at 35:35, names herself at 35:39
+- pronoun(s): 私 ("私今日は五島ちゃんと一緒に寝るの！" 0000095B:35:103)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: over-familiar タメ口 with no distance at all, to adults and strangers alike. No 敬語 anywhere
+- sentence-final particles: ～じゃん; ～し; ～の！？ (stacked, her question-storm form); ～からね！; ～よねー
+- copula: だ
+- verbal tics / catchphrases / fillers: she introduces herself by full name five times in five cells, each with a different relationship attached (0000095B:35:66-35:70); she fires fifteen personal questions in fifteen cells with no pause (35:71-35:86); she ECHOES the last words of other people's lines, one echo per cell (00000989:11:43, 11:58, 11:63, 11:67, 11:76, 11:90) -> Q142; 「ほーかほーか！」; 「おもらししてない？」
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW-MEDIUM — she is ten and says 「ロリ巨乳」, 「まな板」, 「力ずくで脱がして縛って襲っちゃえ」 (00000972:11:50), and the shock is that a child says them; sentence length VERY SHORT; formality ZERO; vocabulary register a ten-year-old's, plus internet and adult words she has clearly picked up rather than understood
+- she is physically extraordinary and the text does not remark on it: she drops out of the top of a several-hundred-year-old cherry tree (0000095B:35:117-35:119) and out of the ceiling void of a house (000009A0:11:81-11:88), and 春花 explains it as 「あいつの運動神経おかしいからな」 and nothing more
+- she uses ちゃん on everyone she attacks — 春花ちゃん, 五島ちゃん, なつみちゃん. Keep the mismatch between the suffix and the content
+- structural job: she is the comic version of what 荒田集落 trains people to do, placed two files before the grandmother explains what that is. Do not let the EN foreshadow
+- known ambiguity / open questions: her mother died ten years ago falling from a cliff (00000972:11:16-11:17) and nobody connects it to anything. -> Q142
+- her mother is NAMED as of 00000A62:19:70 — 新村サクラ — and the fall was not what killed her. 夏菜 is not told any of it on screen.
+- THE QUIET REGISTER, her only one, 00000AF7:11:85-11:127. Lying on her back in a cave she inherited from her mother through her sister, she drops every ～じゃん, every stacked question and every adult word she has picked up, and says she does not remember her mother, that it feels as if she is being watched from the sky, that her sister is in Tokyo and her father and grandmother are adults, and that she is sorry they leave the day after tomorrow. Ten cells. なつみ's narration names the loneliness; 夏菜 never does. EN must not make her pitiable — the lines are cheerful on the surface and the sadness is in what she lists.
+- she coins 「エリ姉」 on the spot (11:137) and throws herself on the person she gives it to. Same kin-suffix shape as チガ姉, invented by a ten-year-old in one cell. -> Q171
+- the physical ability gets an on-screen showcase and an explanation: she goes through the trees 「まるでムササビのように」 with her eyes shut (11:18), says only she and her sister can do it because everyone else is old (11:29-11:30), and 五島 calls it parkour and says it is trainable (11:27). Still not remarked on by anyone in her family.
+- in the 00000ADE branch she walks into the room saying 「パパ……」, collapses with a 鉈 wound across her back, and says 「お姉ちゃんが……／裏切った……」 (11:99-11:108). Three cells. Do not let the EN of 00000AF7 foreshadow it.
+- HER ARC IS ORDERS 102-104 and it is the centre of the branch. At 00000B87:27:24-27:36 she is told her mother's death may be partly 古郡なつみ's doing and reasons her way to forgiving her in a child's grammar (「なつみちゃん、10年前に女ケ沢で何したの？　ママを殺そうとしたの？」 / 「だったらなつみちゃんは悪くないじゃない」). She does not cry, and she asks to be told everything. Her answer about the culprit is one indented cell: 「　　　絶対に殺す。」 (23:0)
+- she injects herself with ドローガ at 00000B9F:11:222, four cells after telling 五島 she is a counterfeit older sister (11:208-11:211). The text never says the rejection was a feint. She cuts down the whole crowd in one pass and stabs her father.
+- HER LONGEST SPEECH in the project, 00000B9F:11:231-11:278, is to her dying father and it is reasoning, not accusation: she asks herself who she could have borne the culprit to be and answers that he is the one she could not; then she claims to be the witch and the killer of everyone, so the survivors come at her instead of at the others. Every ～じゃん and every stacked question is gone.
+- SHE DIES at 00000BB7:11:119-11:124, and the last cells are one kana each — 「だ／い／す／き」 — cut off by the heart monitor under 春花's voice. -> Q182
+- her comic register is INTACT in the 00000BD6 branch, sexual jokes included (00000BED:11:19-11:23), and she coins 「エリ姉」 there independently at 00000BED:11:121. Do not let the EN of either branch foreshadow the other. -> Q171
+- she coins 「エリ姉」 a THIRD time, in a third branch with no shared history (00000D41:11:39; 00000D59:11:3). Three branches, three independent coinings, the same child. -> Q171
+- the QUIET REGISTER again, 00000D59:11:5 「本当に……パパが犯人なの……？」 — no ～じゃん, no stacked questions, asked of 五島 in the dark. 五島 answers 「違うよ」, the opposite of what she told her at the 秘密基地 (00000D41:11:102-11:103), and nothing explains the contradiction.
+- she puts two knives by her pillow after being told everything (00000D41:11:107), and the text leaves open whether they are for defending the others or for using on them (11:108-11:109).
+- the 秘密基地 was her mother's; it has a bolted mat over a shaft she never noticed, and she is visibly hurt to learn adults have been going in and out of it (00000D71:11:88-11:90, 00000D89:11:5). She is also the one who correctly identifies the thing on the far wall as a tree root (00000D89:11:137-11:138) after two older girls get it wrong.
+- she arms herself first and she is told not to fight: two knives out of a cupboard at 00000E01:11:22-11:24 with 「私、ちゃんとエリ姉たちを守ってみせるから！」, then 茅萱's 「夏菜は絶対に戦っちゃダメよ！」 (11:77). She obeys, breaks the one hunting rifle from behind without killing anyone (11:121), and reports it like a chore.
+- she asks her father the question directly and quotes his own instruction back at him — 「パパはいつも言ってた……。／ママを殺した犯人を見つけたら、同じ目に遭わせなさいって……！」 (00000E19:11:93-11:94) — and is stopped by a promise 五島 made her keep (11:97). In the 00000B9F branch nobody stopped her. She is put down in one movement four cells later and takes no further part.
+- her CLOSING register, 00000E49:11:156-11:179, is the comic one worn deliberately: 「ほれほれ！　この通り、検査でも問題なく元気元気！」 the day after her father tried to kill four people, with なつみ's narration flagging it (「ずいぶんと気丈だな……」 11:163). Underneath it she argues her father innocent from the 沈丁花 he picks for her mother's grave every year, and it is the one piece of evidence in the branch that nobody can refute.
+- 「はにゃ……？」 (00000E61:11:16) is her entire reaction to the adoption reveal — one nonsense syllable, placed where a reaction shot would be. -> Q224
+- SHE USES 敬語 FOR A WHOLE FILE. In 00000E7B she speaks です・ます to 五島桃子 from her first line (28:101 「桃子さん、来て下さいよ！」) to her last (88:128), 2637 lines, without one lapse. This block says she uses 敬語 nowhere; that holds for every other file and is broken completely here. She is 14 in this branch, turning 15 on 八月一日 (40:83), because the file is set four years later than everything else.
+- the 敬語 is what carries the horror: 「桃子さん、私、もうすぐママを殺すんです」 (48:10), 「だったら、今すぐ私をここで撃ち殺してください」 (48:168), 「ほら、撃ってください。こうしたかったんでしょ？」 (48:186). Do not let EN politeness soften any of them.
+- THE COMMAND REGISTER, 48:190-48:206, her only one: she turns her back, puts the muzzle to her own throat with the other woman's hand, and issues eleven imperatives in eleven cells — 「撃ちなさいよ……！」, 「何のためにここまで来たのか思い出しなさいよ」, 「早く撃て！」 — the only ～なさい and the only 命令形 she uses anywhere. It drops the moment the other woman's hands hit the ground.
+- she kills the bear cub with a nata without a word and hands the body over (34:178-34:189), and is cheerful again three cells later. Her explanation is four flat sentences of animal biology (34:152-34:157).
+- she reads people and says so: 「目を見たら、本当に殺したいのかどうかが」 (48:213), and the reading she gives is the cub's — 「親を殺された、小熊のような目」 (48:221). She smells gunpowder on a bag from across a clearing (34:141-34:142, 48:84-48:88).
+- her QUIET REGISTER again and at its longest: the secret-base scene 40:79-40:91 and 48:258-48:266, where she says she is frightened of herself and asks to be allowed to talk about it. Same shape as 00000AF7 — cheerful surface, the sadness in what she lists.
+- 「だったら、私を妹と思ってください。／本物のお姉ちゃんはいますけど、もう1人お姉ちゃんが増えるのも嬉しいです。」 (48:284-48:285) — she gives herself a second elder sister in this branch too, in 敬語 this time and without coining a nickname. -> Q171
+- 00000EDF is her largest comic role and her nickname habit is ABSENT: she calls 五島 「五島ちゃん」 for the whole file and never coins 「エリ姉」. Four branches, three independent coinings, and one where it does not happen. -> Q171
+- what she invents instead is a GAME: 怪盗団ゴトーズ, with herself as 副団長怪盗ニームラ, a costume, a stolen key ring and a torch, and she corrects anyone who uses her given name while the game is running (192:6, 192:16, 192:38). She sulks when it is dropped and revives instantly when it is picked up (192:45-192:52). The register is her ordinary over-familiar タメ口 with mock-military grammar on top — 「ゴトー団長！　こんなこともあろうかと！」
+- her sexual-joke register is at full strength and lands on adults: 「この後は、お風呂にする？／　それとも……／あ・／た・／し？」 (186:68-186:72), 「私のこと……／いやらしい目で見ないでね……」 (186:166-186:167), 「これが……／お・／と・／な」 (202:57-202:61), and 「Wow！　パパがロリ巨乳とご対面だあ！」 (202:258). She is ten and turns eleven in the epilogue.
+- THE QUIET REGISTER again, and it is the hinge of the file: 00000EDF:186:76-186:89 and 77:72-77:79. She tells a girl five years older than her that she always looks as though she is crying, compares her to an animal that has lost its mother, and then says 「だったら……／泣かなきゃいいじゃん……。無理して泣かなくたってさ……」 and suggests praying instead. Every ～じゃん is still there; the content is not a child's.
+- SHE IS THE ONE WHO STOPS THE KILLING, twice: she drags 五島 off her mother, shouts 「ママ！　ファルシフィカソを持ってきて！／　これって多分呪殺だよ！」 (83:228-83:229), and then knocks her out from behind with 「五島ちゃん、ごめん！」 (83:239). She has worked out what is happening before any adult in the house.
+- she FORCES THE RECONCILIATION, 00000EDF:202:121-202:213: she takes the phone, argues with a stranger twice her age, is told to shut up, and answers 「子供に怒られるくらい変なことを言ってるの、そっちでしょ！？」; then she reads the call correctly — 「今の人……泣いてたよ」, 「本当は五島ちゃんのこと好きなのに……／好きって言えなくて、泣いてた」 (202:203-202:211). The same face-reading as 00000E7B:48:213, used to fix something.
+- SHE NARRATES 00000F0D (order 138), ~2,300 of its 2,717 cells, in 私 — her first narration anywhere in the project. She is 14 in [8]-[74] (「じゃあ今14歳かあ！」 8:138, turning 15 on 八月一日) and 16 in [68]. The voice is NOT the ～じゃん question-storm of her dialogue: it is plain past, one thought per cell, heavy on self-interrogation and counting (money, times, kilometres, minutes), and it reasons in numbered options (179:86-179:93). Her ordinary spoken register survives inside it unchanged. EN must let the narration be level and the dialogue be over-familiar.
+- SHE USES 敬語 FOR ALMOST THE WHOLE FILE. This block says she uses no 敬語 anywhere; 00000E7B broke that for one addressee, and here です・ます is her baseline to every adult she meets — 伊勢 (14:46 「す、すみません！　実は私、佐波県の元木町から来ました！」, and unbroken through [14][20][26][32][38][44][50][74]), the plainclothes officer, the そば屋 old woman, the station staff, 古郡なつみ (68:127 「あの、初めまして！　新村夏菜と言います……」) and 五島絵梨奈. Her own explanation is given at 20:103: her mother told her at the start of middle school to use 敬語 to adults she does not know and to stop the crude talk, and she says she has kept to it. The two rules are stated together, which makes the politeness and the missing sexual-joke register one single change rather than two.
+- HER TAME口 RETURNS at [68], one year later, and only with 伊勢 (68:36 「うん！　ねえねえ、今日非番なんでしょ？」, 68:43, 68:47). She keeps 敬語 with 古郡なつみ at the same table three cells earlier. The drop is the relationship changing, not the character loosening. -> RELATIONS
+- the ADDRESS-FORM CAMPAIGN, and it is the file's spine: she objects to being called 「君」 (26:170-26:171 「私には新村夏菜っていう名前があるんですから！」), is refused (26:186 「必要がある時だけ呼べばいいだろう！」), raises it again at 74:104 and 74:160-74:164, and the file's last beat is her reading her own name off his mouth through a closing train door (74:166-74:174). Every 「君」 in the file is load-bearing and none of them may be translated as her name. -> Q354
+- the JOKE-TELLER register, [8]-[26]: she plays a naive runaway on purpose, narrates the performance as she gives it (8:117 「私は微笑みながらそのおっさんの話に乗ってみる」, 8:163 「元気に返事をする秋菜ちゃん（仮）」), and rates her own acting (8:164 「ここまで元気だと、ちょっとわざとらしいかな……」). The performed voice is bright, exclamatory and 敬語; the narration under it is dry. Two levels in the same paragraph, as with 五島's 作戦 staging.
+- the HUNTER register, flat and unhedged: she sizes a stranger up for a fight in one cell (8:113 「この人の骨格や身体の動かし方を見るに、明らかに私より弱い」), plans to live off hunting in a city of 400,000 (8:26-8:29), keeps two knives, and states her competence without boasting (50:58 「私は今まで何百頭もの獣を狩ってきたのだから、どこに気をつければいいかくらい分かっている」). Her ignorance of towns is played for comedy and she is the one who supplies the punchline (74:78-74:79).
+- the DELIBERATION register, 50:29-50:70 and 179:84-179:93, and it is the coldest thing in the file: she reasons toward killing a named person, sets out how to disguise it (50:59-50:61), and states the argument as a paradox — 「五島絵梨奈を殺さないために、五島絵梨奈を殺そうとしているのだ」 (50:53). The cells alternate between two voices arguing, both hers, with no tags and no quotation marks (50:35-50:47). EN must not resolve which voice is which.
+- HER ABILITY: the same 直感 as 古郡なつみ's, waking for the first time in this file. It fires as physical symptoms first (38:169-38:171 sweat, stopped time), then on ordinary conversational choices (44:54-44:71), then as a ~55-cell vision (44:187-44:242), then on an object (50:80-50:83, the listening device). Her father states the trigger as 桜 alone (32:98), where なつみ's needs 桜 and 風. She reads the absence of a warning as permission and says so (50:63, 179:63).
+- WHAT THE COMPULSION ACTUALLY IS, 179:150-179:156: not her mother, but anyone with her mother's ability. She works it out in the six cells before it happens and has no time to act on it. This is the file's central revelation and it is in the last printed block. -> Q351
+- the COLLAPSE register, [62]: in a phone box covered in another woman's blood, her narration goes second-person and addresses people who are not there (62:62-62:93 「でも……でもね、パパ……。／それって、間違いなんだよ。」), lists six abstract nouns one per cell (62:47-62:52), and argues herself out of atonement and into execution (62:100-62:107 「私の存在そのものが……／罪なんだよ。」). Twice she uses ～かしら (62:112, 62:114), which appears nowhere else in her speech. -> Q374
+- her ADULT-WORD register and her sexual-joke register are BOTH ABSENT from the whole file, and the text explains why (20:103-20:104). Set against 00000EDF and 00000E7B, where they are at full strength. Do not import them.
+- 敬語 to 五島絵梨奈 and fear of her: she is the only character in the project who meets 五島 from outside and reads her as a threat (38:176-38:186, 44:18-44:19, 50:23). Her interior name for her is the bare full name 五島絵梨奈, never 五島さん, and once 「このチビ」 (44:103). The aloud form is 五島さん throughout. Keep the split. -> RELATIONS
+- CONTENT NOTE for the translator, and it is a handling decision not a style one: across [26], [68] and [74] she makes repeated romantic advances to 伊勢大二郎, an officer roughly twice her age, and he refuses every one of them and states the rule he is keeping (26:49, 68:280-68:284). She is 14, 15 and 16 in those blocks. The JP is explicit about both the ages and the refusals. Translate the exchanges plainly, add nothing, remove nothing, and do not warm the wording. -> Q368 (owner)
+- 00000F24: she is TWELVE (「こいつ、まだ12歳だろ……？」 88:265) and she runs the full arc of her block in one file — the threat register, the comic one, the QUIET one, and a fourth that is new
+- the THREAT register, 118:54-118:87, and it is the only time she is frightening in her own ordinary voice: two knives at a cousin's throat at the top of a tree, 「あはは！　春花ちゃん、自分の立場分かってるよね？／私を怒らせたら、ここから落ちて死ぬよ？／ううん……万一死ななくても……とどめを刺すけどね」 (118:57-118:59), then the knives away and 「まあ、あの2人を知らないならいいよ」 inside one cell. Her ～じゃん and her ちゃん are intact through all of it
+- the QUIET register at its longest and least guarded, 88:154-88:262: she is the only person in the settlement still herself, she has been pretending for a year to fit in, and she says so — 「私……ずっと怖かった……」, 「みんな、ずっと前からおかしくなっちゃって……」, 「ママも……殺されちゃって……」 (88:195-88:197), 「私……本当にひとりぼっちになっちゃった……」 (88:260), 「いいの、私が1年間ずっと黙っていたからこんなことになったの」 (88:311). She answers eight questions by nodding or shaking her head, one per cell, with the narration reporting the gesture. -> Q142
+- she CHOOSES to go and die with her family (88:306-88:313) and apologises on the way out for the knife and the beating (88:315). She is refusing a rescue from the only person left who wants her
+- her nickname habit is ABSENT for the second time in five branches: 五島 is 五島ちゃん throughout and 「エリ姉」 is never coined. -> Q171
+- HER DEATH IS OFF SCREEN and what the reader sees is the aftermath: at 187:95 she arrives with her Achilles tendons cut and one arm gone, still walking, and at 193:8-193:19 crows strip her to the bone and the narration calls it 鳥葬. She is identifiable only by her clothes. Her last line is 「春花ちゃん、ごめん……止められなかった……」 (187:98)
+- AS AN INFANT, 0000110D and 0000113D: under a year old, crawling, strapped to her ten-year-old sister's chest through the discovery of their mother's body, and asleep for the beheading. Her only utterances are 「んまま？」 (0000110D:8:148), 「んまま！」 (0000113D:8:102) and 「うう……／うぎゅううう……」 (0000110D:24:102-24:103) -> Q475, Q114
+- she has the same blue-and-green odd eyes as her sister (00001154:8:103), and 新村サクラ lists her with 春花 and 美冬 as someone the settlement would turn on if the ドローガ breach became known (000010F5:8:336)
+- by 0000113D:8:133 her sister expects their father to 「使い出して」 her soon and does not say for what; by 00001184:16:68-16:71 she is the only person in the settlement who moves the way 茅萱 does, and 茅萱 rules her out because a six-year-old could not have started the killings
+- she is a 小学5年生 in this branch (000012AD:12:27, 000012C5:8:120) and roughly eleven; the 0000095B branch had her at ten
+- SHE PERFORMS CHEERFULNESS AND DROPS IT WHEN THE ROOM CHANGES, 00001247:8:0-8:15: the loud self-introduction to 五島 (「好きな男性のタイプは――」) is put on while 春花 is present, and the moment 春花 leaves she says only 「お姉ちゃん……」 twice and nothing else. 五島's narration reads it as done on purpose for 春花's face. It is the first time the text shows her choosing a register
+- her grief is stated once and it is about the adults, not the sister: 「大人たちは『お姉ちゃんは呪殺されたんじゃないか』って言うの。／だから、もうあきらめてるように見えて……。それを見るのも辛い……」 (00001247:8:28-8:29)
+- she ASKS FOR 「エリ姉」 instead of coining it, for the first time, and gives her reason — everyone calls her sister チガ姉 (00001247:8:46-8:49). Fourth branch, fourth coining, first permission. -> Q171, Q498
+- the MARRIAGE-ECONOMICS register, new and comic, 000012C5:8:142-8:174: she rejects 「fast runners」 as a standard for boys and delivers a level adult lecture on earning capacity, family planning, secret debts, how a man turns out being the woman's doing, and 傾国の美女 — sourced, she says, from web novels read with her grandmother. Not one childish marker in it, and 五島 loses. EN must not make it precocious-cute -> Q500
+- she is the one who is ARMED and who stands in front: she draws a knife in each hand, calls the masked residents out of the trees, and puts herself between them and the other two (000012DE:8:67-8:82). Nothing in the chunk explains the knives, and 春花's assessment is 「夏菜は普通の意味で強いからさ」 (0000122E:11:100)
+- she is the LEAK: she tells 五島 about the cave (0000122E:11:88), then tells 古郡なつみ where 春花 has gone (000012AD:12:62-12:63), and the horn sounds within a cell. She apologises for it 「ぼそぼそと……もじもじと」 (000012C5:8:66-8:68) and is told it was not her fault
+- she answers the menarche question sideways and without noticing what it is: 「ううん、そんな超能力はないよ？／　ママにはあったみたいだけどね！」 (0000122E:11:82-11:83)
+- THE EXCHANGE DIARY, 00001325:8:117-8:249, and it is her largest comic scene and her most exposed: the locked drawer holds a diary with a boy called 大翔 in which both handwritings are hers. She read it aloud under duress, stammering one syllable per cell for fourteen cells, and when it is exposed she collapses in tears with 「お姉ちゃんのバカ！　頭の中でくらい好きにしたっていいじゃない！」 (8:249). Her ～じゃん and stacked questions are intact throughout -> Q525, Q526
+- her STAMMER, new and different from every other stammer in the project: the whole mora repeats and multiplies — 「ままままま待ってよ！」 (8:94), 「バババババカ言わないでよ！」 (8:129), 「だだだだだだから読まないでって言ったの！」 (8:246). Unlike 新村栄一郎's it does not mangle the vowel and it is pure embarrassment, never panic
+- she GETS THERE FIRST, 00001325:8:57-8:64: told the hidden book would contain the method of ending the 呪殺, she works out in two cells that this makes her father guilty rather than innocent, states the inversion herself, and then promises not to hide it if they find it — 「いくらパパのことを犯人じゃないって思いたくても、事実は変わらないもんね」. The same reasoning-in-a-child's-grammar as 00000B87:27:24-27:36
+- she cites 新村美冬 as the person who explained the New Year quarrel to her, and says she has told nobody because she does not want to (8:66-8:71)
+- her SENSES do the file's work: she smells the storehouse on her sister's clothes from across a room, notices the same smell in a room her sister has left, finds one ceiling board that sounds wrong, punches through a replaced panel from inside an overhead cupboard, and goes into the roof space alone (0000133D:8:9-8:124). 茅萱's assessment is that her eyesight and animal instinct are more reliable than anything else available
+- SHE LEAVES HER SISTER WHERE SHE IS, 0000139D:8:55-8:124 — she enters the hut where 茅萱 is hiding, does not search it, and goes. 茅萱 deduces it was her (only person who would take the 豊岳 path on foot, and the one whose senses could not have missed her) and cannot decide whether it was protection or the New Year quarrel. Nothing in the chunk settles it
+- THE THING SHE DID THIS MORNING, and it is her worst act in any branch: she found 新村茅萱 alive in the 廃屋 at dawn, curled against a wall with her ears plugged, muttering that she cannot win and that everyone should become cherries, and she left her there and told nobody (0000148E:8:222-8:247)
+- her REASONS, given in order and both of them bad: she was frightened of a sister saying 「みんな私の代わりに死んでよ……！」, and — worse — if 茅萱 came back she might have their father and grandmother arrested (8:250-8:260). 「ごめんなさい！　私、昨日からお姉ちゃんが怖かったの！」 (8:258). Her ～じゃん, her stacked questions and her ちゃん are all intact through the confession
+- the QUIET REGISTER used for a confession for the first time: 「お姉ちゃんは、もうダメかもしれない」 (8:189) said with the strength going out of her whole body, and then a refusal to explain until she is asked directly. Same shape as 00000AF7 and 00000E7B:40:79 — the content is not a child's and the surface is
+- SHE BRINGS A STRANGER TO HER MOTHER'S GRAVE, 000014A5:8:5-8:49, and it is the warmest scene in the chunk: an unremarkable river bank, 沈丁花 her father lays there weekly ten years on, a mother she does not remember and whose photographs are almost all gone, and 「ママ、今日はたくさんお客さんが来てくれたよ！／　今は色々と大変だけど、きっとまた、ここは楽しくいい場所になるよ！」 (8:44-8:45). She calls her mother 「女神様みたいな人」 on the settlement's word for her, which is the word the antagonist uses for itself
+- she is ARMED FIRST again and stands in front again (0000148E:8:75-8:89), and she is put down first: 新村栄一郎 catches her one-handed in mid-charge and throws her about seven metres, and she lands, sprains an ankle and says 「へ、平気！」 (000014D7:8:72-8:91). She stabs his arm three or more times on the way up and he does not react
+- SHE IS THE WEAPON AND IS NOT TOLD, 000014D7:8:364-8:375: her sister cuts her arm without warning, says 「ん……夏菜、よく見てて」, and swings the bloodied knife at two corpses. Her whole line is 「いた！　何するの？　お姉ちゃん……！」 and she is never asked
+- 000014EE: she offers her own blood as a weapon in her ordinary bright over-familiar register, and states that she knows her own lethal volume — 「私の血、たっぷり浴びせるよ？／自分の致死量くらい分かってるから」 (16:24-16:25). She is refused on arithmetic and says 「でも！　それでも糸姫ちゃんを倒せるなら……！」 with the ちゃん on the person she is offering to bleed to death for
+- she uses ちゃん on the antagonist throughout and joins the beating anyway: 「人間を狩るのは初めてだね」 (16:217) and 「切腹くらいで済む話じゃないよね。こう見えても私史上1番の激おこだよ？」 (16:222). The suffix and the content never stop contradicting each other
+- and she makes the argument that turns the scene, out of her own trade: the animals she hunts have tried to kill her to avoid being killed, and she does not call that selfish; and 「死ぬのが怖くないのと、死んでもいいのは違うでしょ？」 (16:346-16:351). It is the cleanest reasoning anyone does in the file and it comes from the eleven-year-old
+- 00001505 and 0000151C: she is the weapon and she runs herself as one — she cuts her own arm, leg and face to keep four wounds open at once (00001505:8:36-8:37), flicks blood off a knife to drive the mycelium down, climbs ten metres up a living tree to reach なつみ, and piles petals underneath her first. Her ankle is already sprained and she says 「いたたた……足が……」 and nothing else about it
+- HER MOTHER, for four cells and then never: she is pushed forward by her sister, kneels, lets a rotting hand be laid on her face without flinching, is told 「小さい頃の……私に……よく似てる」, takes the hand back — and the hand comes off at the wrist (0000151C:8:385-8:403). Her last word to her is 「ママ……！」. She has no memory of her to compare it to
+- her EYES ARE BOTH BLUE at the end (0000151C:8:307), the green having been the thing all along, and her whole reaction is 「あは！　じゃあもう大丈夫だね！」
+- her 死生観 IS ARGUED OUT AT LENGTH for the only time, 00001B70:11:130-11:206: the rule against killing people is odd; she has been asked about it in a 道徳 class; her own hunting rule is that a parent and its young are taken together because the survivor is the one who suffers; therefore killing is wrong only because of the bereaved; therefore killing both is fine; therefore people nobody will mourn may be killed — 「だから死刑があるんじゃないの？」. Her ～じゃん and stacked questions are intact throughout and the reasoning is not a child's
+- she REFUSES TO BE A SUBSTITUTE, and it is the first time she refuses anyone anything: told 「姉妹でいてね」 she answers 「そんなこと言うなら、姉妹やめる」, says being wanted because a real elder sister is unsatisfactory is not being wanted, and orders 五島 to make it up with 五島桃子 (11:82-11:101). Then she gives the reason she has one herself: 「私ね、お姉ちゃんと喧嘩したの。この前のお正月に」 and 「お姉ちゃんも、苦しいんだろうなって……」
+- she takes the concession properly: she will not kill unless it is to protect 五島, and says 「エリ姉が嫌がることは、しない。エリ姉が悲しむことはしたくないから」 (11:196)
+- THE NEW YEAR QUARREL, 00001BB4 and 00001BCE, and it is the scene she reports in every other branch: told her father is the culprit she pulls a knife on her own sister, says 「お姉ちゃんがそうやってみんなを 唆 して呪殺を起こしたんじゃないの？」, is disarmed in one cell, and leaves on 「お姉ちゃんのうそつき！」. 新村美冬 then reframes it for her — telling only 夏菜 rather than an adult means 茅萱 wanted help proving him innocent — and she agrees to make it up
+- her rule for what is and is not 呪殺, stated at ten: 「これは呪殺じゃない。／だって、呪殺が起きるのは四月だもん」 (00001BB4:8:40-8:41)
+- 「ギシンアンキ？」 (00001BB4:8:36, 00001BCE:8:53) — she echoes 疑心暗鬼 back in katakana twice because she has heard a sound rather than a word -> Q776
+- AS AN INFANT SHE NARRATES A WHOLE FILE, 00001C34, in 私, present tense, stating that she has only just learned to crawl and has no words. She identifies her sister by feel, places herself by sound, sees whatever her sister is looking at at 8:30, and closes on 「やがて私は、泣き疲れ、眠り、すべてを忘れ――／ハイハイで探し続けるのだろう。／永遠に」. The project's only pre-verbal narrator and it is not framed as recollection -> Q768
+- AT ABOUT FIVE, 0000202C: she cannot lift the 鉈 and メイス, asks why her sister does not use a gun, and is told April brings 「人をさらって行くお化け」. She asks 「ママ、お化けに連れて行かれたの？」 and turns the answer into a vow — 「ママを連れて行ったお化けは私が退治する！」. Her physical ambition is entirely inherited from 茅萱 and the vow is planted by her father in the same scene
+- 00001C12: she gets a knife from 城崎 for her birthday, says she wants portable tools because 鉈 and メイス are not enough, and books him for a drink on her twentieth birthday. She is dead before that in most branches
+- 00002019: she rigs the ceiling-void prank of 000009A0:11:81-11:88 — a modified lavatory panel, the lavatory and washroom connected, and a 能面 hidden overhead — and names it 「新村夏菜のドッキリ☆歓迎計画」. Nobody is in danger in this file
+- SHE GUARDS A HOSTAGE, 000020DE: bright self-introduction, a name extracted in two broken cells, then a wall of silence. She asks why they are doing this and answers herself — 「実は私にも分からないんだ」 — and then offers an escape and a route out in exchange for telling the police what is happening here, with 「実はね、ここでおかしくなってないの、私だけなの」. When it is refused she flips inside one cell: 「あっははははは！　なんてね！　ちょっとでも逆らったら殺すからね！」 with a knife out. Whether the offer was real and the laugh was cover, or the reverse, the file will not say -> Q857
+- her ～じゃん, her stacked questions and her 五島ちゃん are intact through both halves, and the QUIET register (「ここでおかしくなってないの、私だけ」) is the same one as 00000F24:88:195
+- AT ABOUT TWELVE, 000020C6: she gives the closing greeting at her primary-school graduation, produces a mangled formula (「いつまでも、末永く、また会う日まで！」), is laughed at because everyone is going to the same building, and recovers. Her teacher then asks why neither parent has ever come to anything, and she answers 「パパもママも、忙しいですから……」 — です・ます to the teacher, and a mother who has been dead for years put in the present tense
+- 00002114 and 0000211A: she searches the cave for her sister, says 「お姉ちゃんの匂いしないよ」 and explains it with 「私、鼻がいいからさ」 only after being asked twice, goes silent twice without explaining, and then alone says 「お姉ちゃん……。／なんであんなことを……」 and 「嘘でもあんなこと――」, cut off by a sound. What 茅萱 did is never stated -> Q860
+- 00002433: three cells at the 十三回忌, aged about 10. She wants 春花 on the telephone specifically to try new material on her — 「春花ちゃん下ネタでいじると面白いし、色々と新ネタ仕入れたからねー！／いっちょズッコンバッコンとぶっこんでやろうって！」 — which is the earliest dated instance of the obscene-comedy register her block already records.
+- she calls her mother ママ here (11:25 「はーい、ママ！」), where later files have お母さん.
+- she is pulled away mid-joke by a chore and hands the call over with 「というわけでお姉ちゃん、春花ちゃんによろしく言っといてね！」.
+- 00002439 IS HER WORST ACT ANYWHERE AND IT IS DONE TO HER SISTER. She sets an animal snare on the route she knows 茅萱 will take, catches her, and then stabs her three times — left arm, side, and a knife driven through the palm — while calling her お姉ちゃん in every cell
+- her REASONING, and it is the 00000B87 shape again: her father was watched for years and people still died, so he cannot be the culprit, so the person who killed while he was watched is her sister (11:86-11:91). She states it and acts on it inside four cells -> Q925
+- her word for what she is doing is 成敗, used three times (11:105-11:106, 11:142, 11:201), and she gives the argument for it plainly: 「犯人はこれだけたくさん人を殺したんでしょ？　今さらもうやめてって言って、犯人は言うこと聞くの？」
+- SHE CRIES THROUGH ALL OF IT. 11:121-11:137: teeth grinding, shoulders shaking, 「誰が犯人ならいいの！？　ねえお姉ちゃん！　教えてよ！／誰が犯人なら納得するの！？」, and 「私……家族にこれ以上悪いことしてほしくないよ……」. The tears and the flat cruelty are in one continuous speech and EN must not resolve it -> Q926
+- 「ギシンアンキなんだよ！」 (11:146) — the katakana echo of 疑心暗鬼 she picked up at 00001BB4, now used about herself and correctly -> Q776
+- she OFFERS HERSELF, turning her back and saying 「じゃあ私を殺したらいいんじゃない？　ほら、その鉈で」 (11:184) and 「だから、いやなら私を切ってよ」 (11:189), which is the same move her sister makes at 00001BB4 with the positions reversed
+- her ONE CONCESSION: told the people in the store are なつみ's parents she accepts it at once — 「はは、それなら犯人なわけないよね……。／そっかーそっかー！　じゃあお姉ちゃんが正しくてパパが間違えてたんだ」 (11:197-11:198) — and immediately converts it into a plan to kill her father and everyone else suspicious
+- SHE IS CUT DOWN BY HER SISTER, takes a long wound across the back, gets up, and walks off toward the settlement saying 「死ぬ前にさ……私にできることをするよ……。／お姉ちゃん、裏切ったんだね」 (11:227-11:228). She dies off screen; the last anyone sees of her is 0000243F:11:77-11:86, blue-faced and bleeding, and her death is reported in one clause at 00002444:26:487
+- 00002473:11:59-11:64: she asks her father the two questions of 00000E19 from the other side of the room — 「パパ！　何言ってるの！？」 and 「パパがママを殺したの……？」 — and states the standing instruction she is acting on: 「パパはいつも言ってた……。／ママを殺した犯人を見つけたら、同じ目に遭わせなさいって……！」, which 0000202C shows him giving
+- she offers a distinction nobody else in the project offers: 「パパを殺さなくても、止めることはできるもん！」 (11:77). She is knocked out four cells later by the deer-stunning method, chosen so as not to injure her
+- 00002478:11:108: after the settlement is closed she is placed with her aunt, reported in one clause by her sister. It is the branch's last word on her
+- as-of: 00002478
+
+
+## 新村幸太郎 (にいむら こうたろう, Kotaro Niimura) — 栄一郎's twin brother, 春花's uncle, 茅萱 and 夏菜's father
+- first_appears: 0000095B:27:7 (seen, mistaken for a ghost); first line 35:15 (「はあ……／ああ、びっくりした……」); names himself at 35:21
+- pronoun(s): 俺 ("俺は新村幸太郎って言って、栄一郎の双子の兄だ" 0000095B:35:21) — and 僕 in the very next cell (35:22 「僕まで驚いちゃったよ」). 僕 was his twin's only pronoun. The slip is not remarked on
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: relaxed タメ口 to everyone, including his mother-in-law's guests; 丁寧-ish only when making a toast (00000972:11:156)
+- sentence-final particles: ～じゃないか; ～だろ; ～よ (soft)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「はっはっは！」 — he laughs instead of intervening, every single time (0000095B:35:98, 35:106; 00000972:11:145, 11:216). It must differ in EN from 「ははは」 and from 「ほほほ」. He announces a departure rather than making one (「さて、俺は部屋で寝るよ」 00000989:11:102)
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality LOW-warm; vocabulary register plain. 春花 calls him 「あのデブ」 behind his back (00000989:11:104) and the narration says he is the village's brain, its most trusted man and his mother's deputy (00000972:11:13, 11:31-11:32)
+- he looks like his twin and is his opposite: 春花 says 栄一郎 seemed nervous and unreliable while 幸太郎 is clever, composed and widely respected (00000972:11:12-11:13). The EN must not let him inherit 栄一郎's stammer, his 僕 or his apologies — except for the one unexplained 僕 at 0000095B:35:22
+- structural job: he is introduced by being mistaken for his dead brother's ghost, twice, by a girl who has never met either of them
+- known ambiguity / open questions: his wife died ten years ago falling from a mountain cliff (00000972:11:16-11:17), stated in one line and never returned to. He denies making the young woman's voice なつみ heard, and his face changes when she asks (0000095B:35:30-35:33), and nothing follows. -> Q117
+- his wife is NAMED as of 00000A62:19:70 — 新村サクラ, a 荒田 native, his childhood friend, married straight out of school — and she was decapitated after a fall nobody witnessed. He found the body. He is the obvious suspect and the settlement watched him through three consecutive Aprils to clear him (00000B0F:11:30-11:36).
+- the TEACHING register, new and his largest scene by far, 00000AC4:11:15-11:67. Woken from sleep and still smelling of drink, he sits down and runs a lesson: one question per turn, a pause, then the answer named out loud — 起承転結, which part matters, what happens if 起 is wrong, when did this case begin. 「はっはっは！」 does not appear once; he laughs once and it is a 苦笑い (11:82). He then invites them to treat him as the murderer and says he will not interrupt, and keeps to it for thirty cells. This is the 「荒田きっての切れ者」 the narration has been asserting since 00000972, shown rather than claimed. -> Q166
+- HE NARRATES 00000AC4:19:24-19:43 in 俺 — twenty cells inset inside なつみ's first person, with no 「」 — his own account of the cliff. Plain, sequential, no adjectives, and the only figurative phrase in it is 「まるで、見えない何かに引き寄せられるように」 (19:37). He never says what he felt.
+- his profanity ceiling is not tested; his strongest moment is a flat statement: 「俺だって誰がサクラの首をはねたのか知りたいよ」 (00000AC4:19:84).
+- he withholds. Asked why 荒田 never stopped fifty years of suicides he answers 「そ、それは……！」 and then says nothing (00000ADE:11:65-11:70), and なつみ's narration says outright that he is hiding something. It is 新村エリカ, not he, who eventually answers it (00000B0F:11:109).
+- the ANTAGONIST register, 00000B9F:11:101-11:334, and it is the TEACHING register with the warmth taken out. The narration calls it 「抑揚のない声で淡々と」 (11:105) and 「優しく諭すように穏やか」 (11:136) in the same scene. He never says 殺す or 死ね, never shouts, never threatens, and states demands as offers: 「なつみちゃんに直接聞くことにするよ……」 (11:144), 「君がこちらへ来てくれたら、2人はこのままそっちに返すよ」 (11:158). 五島 says at 00000BB7:11:220 that the absence of those two words is the thing she cannot place.
+- he calls 古郡なつみ 「本物の魔女」 (11:104) — the phrase なつみ quotes at 00000024:16:27 — and, crawling with one arm severed, 「この魔女……／神使は……！／　絶対に……／逃がさない……！」 (11:316-11:319). 神使 appears nowhere else in the project until 00000BB7:15:33. His last word is 「サクラ」, said twice across three cells. -> Q001, Q180
+- the DRUNK HOST register, 00000C68:11:8-11:85: relaxed, flushed, no 「はっはっは！」 at all, and he volunteers the most damaging personal fact about himself unasked — that サクラ preferred his twin, and that his own chance came only when 栄一郎 left (11:70-11:75). He is embarrassed, not evasive. Same man, same branch as the teacher; do not make him sinister here.
+- he is the ONLY source for what is known about サクラ's ability (00000C68:11:35-11:52): it began at middle-school age rather than at birth, spring made her ill, the trigger was dark and narrow places, she worked in a three-mat room upstairs, and the settlement queued to ask her about hunting routes.
+- UNDER INTERROGATION, 00000DB9:11:18-11:108, and it is the first time anyone presses him directly. He stammers on the first question (「あ、ああ、しし知っている……」 11:22), concedes that ドローガ exists and is still being made, gives the manufacturing method from a 50-year-old book in the storehouse in four clear sentences (11:74-11:84), accepts a theory that makes his dead friend a drug maker (11:61-11:63), and then stops answering altogether when asked who sent ドローガ to 女ケ沢 (11:90-11:96). His last word in the file is 「ごめんよ……」 (11:108).
+- 五島 notes afterwards that he was not used to being suspected bluntly, which does not fit a man the settlement suspected every year (00000DD1:11:113-11:120); her explanation is that he asked to be watched himself (11:139).
+- he calls his mother 母さん and expects to be told off like a boy (00000DB9:11:35-11:43); he is the one who has kept ドローガ from her, from 茅萱 and from 夏菜.
+- he sleeps through the night he is being watched, snores, gets up for the toilet and comes back in a normal amount of time, and jokes about it: 「もしかして、俺を呪殺の犯人だと思って見張っているとか？　ははは！」 (00000D41:11:89). The 「はっはっは！」 does not appear anywhere in this chunk; the laugh here is the smaller 「ははは」.
+- the ANTAGONIST register arrives in THIS branch too (00000E19:11:77-11:187), reached from the DRUNK HOST and TEACHING registers rather than from 00000B9F's. The markers are identical: never says 殺す of himself, never raises his voice, states demands as statements of need (「必要なんだよ、なつみちゃんがね」 11:84), and keeps every address form intact — 五島ちゃん, 春花ちゃん, なつみちゃん, 夏菜 — through two nata swings. New here: 「くっふふふ……」 (11:77) and the narration naming the drop ("声のトーンがぐっと低くなる" 11:79).
+- he gives THREE mutually exclusive accounts inside twenty cells — he killed them all alone (11:102-11:103), the residents were mind-controlled and he never had to act (11:119-11:120), and it does not matter which (11:122) — and refuses 五島's 「誰をかばっているんですか？」 outright. 新村栄一郎 says two files later that he is playing the villain on purpose to keep the 真相 buried (00000E31:11:92-11:98). Nothing on screen confirms either man.
+- he uses ドローガ ON HIMSELF, the first character to do so voluntarily: 「俺も……／これを使うのは……／初めてだ。／さあ……／どんな気分なんだろうな……」 (11:132-11:136), broken across five cells, and then 「はあ……本当にいい気分だよ！」 (11:151). He is delighted rather than enraged, and jokes about his own body (「俺みたいなデブでも夏菜より速く動けるぞ！」 11:141) while doing it.
+- he PULLS THE SWING. 五島 works it out afterwards: 「幸太郎さんは古郡先輩を殺したくなかったみたいですから、直前で力を緩めたんでしょうね」 (00000E49:11:120). The man who split the ceiling rock twice left a shallow cut.
+- HE BREAKS, 00000E49:11:108-11:117: pinned under his brother's tree, he says 「栄一郎が……栄一郎が……」 for a whole scene and then shouts at his dead wife — 「サクラ！　お前、裏切ったのか！／　俺はお前のために、ずっとずっとお前のために……！」. The register is gone entirely; the narration says his mind is no longer sound. His last two named referents in the branch are the same two as in 00000B9F.
+- IN THE 00000E7B BRANCH HE IS NOT THE ANTAGONIST AT ALL and nothing about him points that way. He meets the train, apologises for a broken buggy, cures his daughter with the injection he researched, and dies against a tree with the settlement's blood on him for shielding her (34:12-34:19, 68:182-68:183, 88:20-88:85). The TEACHING register, the DRUNK HOST register and the 「はっはっは！」 are all absent; what is left is a tired father giving instructions.
+- his profanity ceiling, previously untested, is tested here and it is ZERO-PLUS-ONE: 「くそ！　遅かったか！」 (54:312), and 「バカ野郎……」 (88:33) aimed at his wife for coming back for him. Nothing stronger anywhere.
+- HE EXPLAINS THE TWO SYRINGES, the only statement of the clear one's purpose anywhere in the project: 「ピンクのを筋肉注射すれば……／10分間だけ……人間の限界まで力を出せる……。」 and 「必ず透明な方も注射するんだ……。／それで……／呪殺から免れることができる」 (88:55-88:62).
+- his last words are an instruction to be kind, broken across five cells — 「夏菜……／ママと……／茅萱と……／仲良く……／な……」 (88:77-88:81) — followed by one cell containing 「」 and nothing else. -> Q237
+- IN 00000EDF HE IS NEITHER THE TEACHER NOR THE ANTAGONIST: he is the man who did it and says so. 「ドローガを送ったのは……／俺だ。／サクラに黙ってやった」 (59:111-59:113), with the reason given flat — he needed to know the antidote was safe before using it on his own daughter — and then 「なんとでも言えよ！　茅萱とサクラを助けるにはこれしか……！」 (59:120) when his mother calls him 「この大バカ者！」. No 「はっはっは！」 in the confession and no hedging.
+- the DOMESTIC register, new and his warmest anywhere, 00000EDF:47:28-47:78: caught in an accidental peeping incident, beaten for it, and being patched up by his wife while whining — 「いででで！」, 「そこが1番痛いんだ！」, 「夏菜や茅萱にこんなとこ見られたら……」, 「うう……やっぱり俺、五島ちゃんに嫌われたよな……。／俺なんて……」. His wife's verdict is 「へこみ方は栄一郎そっくりなのね」 — the twin's self-abasement surfacing in him for the first time. -> Q117
+- 「はっはっは！」 is absent from the whole file; his laugh here is 「ははは！」 (59:63) and a cough (53:44). The 五島 nickname 「怪盗さん」 (89:36) is his one joke.
+- 00000F0D: he is 「パパ」 and he is a TELEPHONE VOICE ONLY — 26:81-26:127, 32:41-32:114, 62:0-62:29, 62:177-62:184 — never on screen, never named, and the branch is four years after 祀耀800 with his wife alive (he calls 「おいサクラ！　テレビつけろ！」 at 62:11, the only evidence of it).
+- the NEGOTIATOR register, new and his coldest: asked directly whether his sister-in-law killed someone he answers 「お前がそれを知る必要はない」 (32:63), gets ahead of his daughter's threat before she makes it (32:73-32:74), and then trades — 「それはお前が集落に帰ってきてから教える。／知りたかったら、早く決心して戻って来ることだ。いいな？」 (32:81-32:82). His daughter's narration names the technique twice (32:83-32:84 「パパはこういう駆け引きがとてもうまい」). The 「はっはっは！」 does not appear in the file and neither does the TEACHING register.
+- the same man, four cells later, is ordinary: 「ちゃんとご飯は食べてるのか？」 (26:97), 「変なおじさんにつかまるんじゃないぞ？」 (26:102), 「パパもママも、お前のことが大好きだからな」 (32:114). The warmth and the withholding are in one call and neither is a mask.
+- HE MADE ファルシフィカソ and it is the antidote: 「この薬はパパが作ったもの」 (68:58), given to the six surviving converts, all of whom recovered (68:56-68:59). Set against 00000DB9, where he concedes the drug exists and gives the method, and 00000EDF, where he says he sent it to 女ケ沢. -> Q196
+- he told his daughter the compulsion would be aimed at her mother and that he could cure it (20:116-20:121); the file's last block establishes that he was wrong about the target (179:152-179:156). He is never on screen to answer for it, and she never accuses him — 「でも、パパがそんな嘘を言うなんて疑うことすらなかった。／今でも疑っていない」 (62:131-62:132).
+- he turns himself in on his daughter's instruction, in one cell, and the arrest is reported only as a consequence (62:183-62:184, 68:10, 68:82). He and his wife are back in 荒田 by the following autumn (74:3).
+- 00000F24: HE DOES NOT SPEAK ONE LINE in 3,564 cells, and that is the characterisation. He carries the ヴェルジ mummy out of the house (112:39-112:42), holds the rope on a tied-up fifteen-year-old (106:71), walks out of the hall with no expression, treads on his own daughter's foot without noticing and falls over (88:238-88:240), gets up 「生まれたての小鹿のように」 and follows, and at the end throws the narrator three metres and holds her while 茅萱 strangles her (187:118-187:120). His relaxed タメ口 and his 僕／俺 do not occur at all
+- 古郡なつみ names him as the source of the syringe — 「春花に渡すのはドローガだって幸太郎さんが言ってたから」 (94:159) — and 春花 reasons from it that なつみ must have talked to him (106:17-106:19). That is the only evidence of him acting with a will anywhere in the file
+- AT FOURTEEN, 000010DD:11:68-11:94: 俺, already organising. He destroys a bullying group from the inside rather than reporting it, warns his brother about the next gang, and hands him a job with 「俺は、俺にしかできないことをやる。／栄一郎は、栄一郎にしかできないことをやってくれ」. He also tries to tell him 新村サクラ loves him and then stops — 「まあ……いい。これはお前とサクラの問題だ。俺が口をはさむことじゃないな」
+- AT SEVENTEEN OR EIGHTEEN, 000010F5:8:67-8:82: he proposes on a 縁側 with rice balls, says 「俺はお前を幸せにできる」, and immediately corrects it to 「いや……／俺が幸せになりたいから……」, then scratches his head and walks into the house. The one place in the project where he says what he wants for himself -> Q454
+- during the 茅萱 crisis he is the one who reads the books, finds 翠眼呪殺 and ドローガ, identifies ファルシフィカソ as the cure, volunteers himself as the test subject, and is overruled. He then says he will get 「ドローガを使ってくれる人」 to run the test disguised as a physical-enhancement experiment, and refuses to name them — 「サクラ、お前はそこまで知る必要ない。後は俺に任せろ」 (000010F5:8:343) -> Q455
+- he asks his wife outright whether 栄一郎 made ドローガ and whether she touched his blood (8:323-8:325), gets no answer, and decides his mother must never be told
+- HE BEHEADS HIS WIFE'S BODY, 0000110D:24:55-24:87, with a nata, minutes after she falls, and explains it to his mother as protection: a severed head makes it look like an outside murder and clears her. 「もし助かる見込みがあれば、俺だってサクラの首を切ったりはしないさ」 and 「俺、誰にも言わないからさ」. The narration says he was expressionless throughout. This is the third account of the same thirty seconds in the project and the first from outside -> Q458, Q168
+- the thing the file cannot explain and does not try to: he arrives at the bottom of the cliff at exactly the right moment, asserts without hesitation that his mother pushed her, and could have shouted from below before the fall and did not -> Q458
+- TWO LINES IN THE CHUNK, 000012AD:12:30-12:35, and they are the ordinary relaxed タメ口 with one piece of new information in them: he introduces himself to 古郡なつみ as 「春花ちゃんの伯父の新村幸太郎です」 — 伯父, the ELDER-brother spelling, which matches him being 栄一郎's twin but which nothing else in the project states
+- he is otherwise offscreen for the whole chunk, out searching, and both his mother and his daughter report his movements rather than him. In 0000130D:8:147-8:165 his own elder daughter concludes that he or his mother is concealing the truth from her, and the chunk ends without testing it
+- HE DOES NOT APPEAR IN CHUNK 22 AND HE IS ITS TURNING POINT. He is suspected for two files — 五島's audit lands on him at 00001414:8:76-8:80 (「幸太郎さんは敢えてチガ姉を翠眼のままにしているのだ」), 茅萱 agrees at 8:253, 春花 and 新村エリカ circle him at 00001459 — and then 000014D7:8:346-8:359 reveals that he had already undone the conversion
+- his ONE WRITTEN REGISTER anywhere, 000014D7:8:353-8:357, printed as five bare cells with the signature alone on the last: plain タメ口, 俺, 茅萱 and お前, four short imperatives and 「頼むぞ。」 He tells her he has already cured her with ファルシフィカソ, instructs her to feign surrender and to destroy the ヴェルジ mummy by burning or soaking it, and signs it 幸太郎 -> Q593
+- his COVER, reported by 茅萱 at 8:358-8:359: he hid underground expecting exactly this, and explained his absence as going door to door to thank people for putting the 蔵 fire out
+- he is CLEARED BY THE ANTAGONIST, 000014D7:8:206-8:211: 新村栄一郎 says he has occasionally impersonated his twin for years to manage what the settlement believed, that 幸太郎 did nothing and knew nothing, and that being suspected of the 呪殺 on top of losing his wife was 「ちょっとかわいそうだったかな」
+- the flowers are his and they are the evidence nobody weighs: 沈丁花 at his wife's river bank roughly once a week for ten years (000014A5:8:24-8:28). Same device as 00000E49:11:156-11:179, where his younger daughter argued him innocent from the same habit
+- his stated plan for his younger daughter, reported by his mother: dose 夏菜 with ファルシフィカソ at menarche, and keep 茅萱 in Tokyo in the meantime so that the two meet only a few days a year (00001414:8:56-8:60). 五島 calls it grossly inefficient and cannot explain why he chose it
+- 0000151C: he arrives with the whole settlement in 能面 and 赤装束, having reached the blood plan independently and spent the time breaking the underground passage wide enough for people to walk, and he is the one who supplies the missing piece — the precognition needs sight or hearing of the person at risk, so if nobody speaks and nobody can be told apart the 翠眼呪殺 cannot start (8:110-8:128). He then recites the ancestral instruction from memory, five cells inside one 『』 -> Q619
+- his last words to his wife's corpse are four cells of the relaxed タメ口 he has always used on her: 「サクラ……心苦しいけど、もう、これで終わりにしよう。／俺が死んだら、向こうで待っててくれ」 (8:136-8:137)
+- HE NARRATES 0000154E:8:139-8:228 in 俺, handed the first person inside his daughter's with no frame at either end, and THE CHUNK ENDS INSIDE HIM -> Q617
+- narration voice: plain sequential past, no adjectives, no self-defence and no self-pity — the same voice as his 00000AC4 cliff account, now used to confess. The one figurative phrase in ninety cells is 「いや、目が覚めたというべきか」 (8:217)
+- WHAT HE HAS BEEN DOING FOR TEN YEARS: days after his wife died he laid her favourite flowers at the river bank, the 猛き音 sounded, and she spoke to him. She told him where they could meet — the innermost part of the 秘密基地, because there is a road to 女神様 there — and he went back regularly for a decade, telling nobody, including his own mother
+- WHAT HE KNEW, from 祀耀792 on: that the corpse was doing the killings; that the staged suicides of the old had been an eviction campaign and the annual killings were the next one; and that he was being asked to persuade the settlement to leave. He refused on two grounds, one of them 「それに俺までここを離れてしまったら、サクラに会えなくなるじゃないか！」 (8:198)
+- and the standing agreement he never questioned: 夏菜's 翠眼 may be cured, 茅萱's must be left, and he was refused a reason and stopped asking (8:204-8:209). Every consequence in chunk 21 and 22 runs through that one concession
+- HE SET THE 蔵 FIRE (8:216), having eight years earlier fitted the electronic lock under the pretext of keeping 翠眼呪殺 from the residents, because throwing the books away would have been noticed -> Q631
+- HIS OWN VERDICT, and it is the last line of the chunk: 「俺は弱かった」 (8:210) and 「俺は、ずっと死月妖花に騙され続けていた」 (8:228). What he says woke him was seeing the corpses walking openly — the thing had stopped bothering to hide what he had spent ten years hiding for it
+- his daughter's description of him from outside, one cell before he speaks: kneeling at the mouth of the passage with 沈丁花, hands together, praying (0000154E:8:116-8:117). Same flowers, same habit, eleventh year
+- 00002057 IS THE FILE IN WHICH HE IS THE MANIPULATOR AND IS CAUGHT AT IT. He has the 古郡 couple shut in the material store and says the 呪殺 ends with the 魔女 captured; 城崎 refuses the reasoning, names his own reason for having struck them (村八分, not grief), and puts the inversion — the girls came to help and the couple were supporting them from outside. 幸太郎 falls back on 「だって彼女は魔女の力を……！」 and then SLIPS: 「でも、俺は聞いたんですよ！　あの夫婦が犯人だって！」 / 「誰からだ？」. 城崎's follow-up is 「幸太郎君を 唆 すやつがいるんだろ？」 and 「黒幕は誰なんだ？」, and it is never answered -> Q800, Q788
+- he then coerces the man who caught him, in the register of an offer: 「もしここで俺たちに加わらなかったら……／どうなるか分かりますよね？　／村八分が怖いんでしたっけ？」, and hands him ドローガ. The ANTAGONIST register of 00000B9F is here without the drug and without the ability — never says 殺す, never raises his voice, states a threat as a question
+- 00001C1D: he comes to 城崎 at night offering 「魔女の力の秘密」 on the strength of his own wife's precognition, is refused, presses, and is asked one question instead — 「君は誰だ？」 — and does not answer it. Read against 000014D7:8:206-8:211 the question may be recognition -> Q799
+- 00001BBA: the third year of his own house arrest, and 城崎 puts the argument to him that proving him innocent REQUIRES somebody to die, so he is sacrificing others for himself, and quotes the settlement motto at him. His answer is cut off by the news of the killing
+- 00001C29: he is already working through 第一世代, 第二世代 and 第三世代 by lamplight, asks 新村サクラ whether she knows ドローガ and drops the question mid-sentence, and identifies the 法要 liquid ファルシフィカソ as the 特効薬. The TEACHING mode is absent; what is live is a frightened father with books
+- 0000202C: he tells both daughters to 退治 the culprit, confirms that it means killing, adds 「それに、サクラのかたきでもあるからな」, and goes silent for two cells when 茅萱 asks 「それだと、お父さんが困らない？」. This is the conversation that plants her suspicion of him
+- 00001BA2 is the origin scene 0000154E:8:141-8:160 narrates: he brings his dead wife's flowers to a place he does not expect her to be, says 「やっぱり、いないか。夢でも見ていたんだろうな……」, and is answered. Neither speaker is named on screen -> Q801
+- HE IS BROKEN IN PUBLIC, 00002072, and this is the pressure every later file runs on: an assembly establishes that 茅萱 was never in any hospital, names her eye colour, quotes the green-eye rule (「緑の目の子供は集落に災いをもたらす。／すぐに殺すようにって」), invokes the settlement motto, and then names 夏菜. His only raised line anywhere is 「ま、待って下さい！　夏菜を殺すなんて！」. He accepts terms — change 夏菜's eyes as 茅萱's were changed, and explain 茅萱 — with 「く……分かりました」, and what he then told them is not printed
+- 000020F6: his mother stops herself mid-sentence about him (「お前はもう……」), tells him the autopsy found a grip mark on his dead wife's right ankle, and buries it. His own guess is 「誰かが落ちそうになったサクラを引き上げようとしたとか？」, which is what happened
+- 000020D2: he searches for the stolen ファルシフィカソ saying 「ない……」 four times, and the thing that frightens him is not the rite — 「ファルシフィカソを薬として使うつもりのやつがいたらどうするんだ？」
+- AS AN ABDUCTOR, 000020D8: level, unhurried and entirely without hostility. 「正直、君はどちらでもいい。／用があるのはなつみちゃんの方だ」, 「春花ちゃんもきっと集落に戻ってくるはずだ」, and 「夏菜、どうも彼女は怖がっているようだ。夏菜が優しく面倒を見てやるんだぞ」. Every diminutive is intact while he does it. EN must keep him mild
+- 00002120: after a fire he proposes an お礼回り and says in the same breath that it is cover — 「すぐに聞き込みしたいこともあるからさ」
+- 00002444 IS HIS CASE MADE IN HIS ABSENCE and he never appears. 五島 proves he lied about 新村サクラ's precognition condition, identifies him as the man who informed 瀬 that 古郡なつみ is a 魔女, and reconstructs him as 新村サクラ's puppet — and then prints about 48 cells of dialogue she has invented for him -> Q937
+- 00002457 (order 417) ANSWERS IT FROM INSIDE. He narrates the night before the 十三回忌 in 俺, 45 lines, and it is his second sustained narration after 0000154E:8:139-8:228
+- narration voice: the plain sequential past of his 00000AC4 cliff account and his 0000154E confession, here used for planning rather than for either. No 「はっはっは！」, no TEACHING register, no hedging, and one exasperated exclamation — 「まったく、なんてことを……！　どうしてこうもみんな想像力に乏しいのか」 (11:4)
+- HE STATES THE 魔女の力 IN FULL, 11:7-11:13, the only complete account anywhere: it is the seasonal 危険予知能力, and it fires when a ドローガ 第二世代 is where there is cherry pollen AND the circumstances of having been bathed in 第一世代's blood are reproduced. He adds that he does not know why it came to be called the 魔女の力, that a resident started it off the rumour of dead サクラ's curse, and — flatly — 「サクラが生きていた頃は散々その力をあてにしていたくせに」 -> Q950
+- WHAT HE ACTUALLY DID AND WHY, and it corrects 五島 on the crucial point: he did incite the settlement and he did lie, but the object was CAPTURE ALIVE, because 「なつみちゃんに死なれるわけにはいかない。／彼女は貴重な生きた第二世代なのだから」 (11:19-11:20). The escalation to a whole-settlement hunt is his own idea, taken because 茅萱 and 夏菜 had become too protective of her for a quiet abduction and because inciting only part of the settlement risked exposing him
+- HIS DOCUMENT: a 回覧板 reading 『桜の枝を持った者が魔女だ。全員で生け捕りにするように』, left first at 城崎's house as the nearest neighbour, and expected to be obeyed not because it is credible but because refusing to join would make a resident's own position unsafe — 「実行しないと自分の立場が危うくなる」 (11:38) -> Q951
+- his PLAN AFTER THE CAPTURE: underground, 新村サクラ to talk her into becoming a 神使, a 元木町 hostage if persuasion fails, and 「適当な住人を生きた第一世代として使えば全て終わる」. He disposes of an unnamed neighbour in eleven syllables
+- HIS MOTIVE IS STATED TWICE AND IT IS NOT THE SETTLEMENT: 「でないと、サクラとは2度と……」 (11:24) and the file's last cell, 「これで、サクラとは永遠に……」 (11:44), both unfinished. Every consequence in the chunk runs out of a man trying to keep meeting his dead wife -> Q952
+- HE NARRATES FOUR CONSECUTIVE FILES, orders 418-421 (0000245F, 00002464, 0000246E, 00002473), in 俺, about 1,040 cells with no marker at any file boundary. It is his longest narration by a factor of ten and it is the inside of the 呪殺編 climax -> Q964
+- narration voice: the plain sequential past of his 00000AC4 cliff account and his 0000154E confession, now carrying the whole file. Short declaratives, one thought per cell, heavy ellipsis, and a question asked of himself every few cells (「俺は何をしているのだろうか」 0000245F:11:43). No 「はっはっは！」 in any of the four files except inside the villain performance
+- THE MOTIVE STATED PLAINLY AND REPEATEDLY: he protects the thing because stopping means never seeing his wife again (0000245F:11:41-11:45), and one resident's death a year buys another year of meetings (00002464:11:101). He also names the cost to himself — 「これまで犠牲になった人たちには申し訳ないと思っている」 — and does not claim it excuses anything
+- the thing he is considering and the thing he fears, 0000245F:11:51-11:55: to become a living 第一世代 and stay with her forever, against 「人間としての自我が埋没し、ただ意思のない死月妖花の器官に成り下がるのではないだろうか」. The whole chunk runs on that one hesitation
+- THE 沈丁花 ORIGIN SCENE, 0000245F:11:62-11:99, and it is the only tender flashback he gets anywhere: before the marriage she tells him the flower is the opposite of the cherry that carries her name, gives the 花言葉 as 不死、不滅、永遠, and asks him to offer it if she dies. He answers 「分かったよ、覚えておく」. Eleven years of flowers come out of one throwaway request -> Q966, Q192
+- the flowers at the 渓流 are stated to be COVER: 「でもそれはカムフラージュ。／俺はこれを持って、あの場所へ行くのだ」 (0000245F:11:105-11:106). 000014A5:8:24-8:28 read the same habit as grief
+- HE IS PUT DOWN BY HIS OWN WIFE, 00002464:11:37-11:56, and it is the hinge of the chunk: she glares at him for the first time in his life, calls him stupid, and tells him she has been meeting him because he is a LIVING HUMAN. He repeats the sentence back to himself in narration and works out that it was never about being her husband
+- what he does with it is nothing, at first: 「そう、サクラは死に、死月妖花の意思に従う神使。／それは初めから分かっていた」 (00002464:11:75-11:76). He then asks himself whether to stop, answers 「選択肢なんてあるはずがない」 twice, and closes both 0000245F and 00002464 on the same sentence — 「もう……後には退けない」
+- UNDER 城崎's INTERROGATION, 0000246E:11:49-11:228, ~180 cells and the longest two-hander he has anywhere. His register is です・ます with two 僕 slips and one 俺 in the same scene, he concedes every factual point and answers none of the four accusations, and his interior narration runs a parallel commentary on what he must not say -> Q995
+- he refuses the killing that his position requires, and gives practical reasons rather than moral ones (城崎 is a smith and stronger, there is a rifle in the house, ドローガ lasts ten minutes and infects). Then 「俺が無実なら城崎さんを殺す意味なんてない」, which is true only in the story he is telling
+- HIS MOTHER BREAKS HIM, 0000246E:11:315-11:391, with two slaps and one question — 「お前は本当にそれでいいのか？」 — and he says the only self-exculpating thing he says anywhere, 「俺はサクラに……あいつらにだまされていたんだ……」, and is struck for it. He names the slap afterwards as what woke him (00002473:11:109-11:111)
+- what he learns there: the man who told her ten years ago that he had pushed his wife and cut her head was not him. He says 「いや、初めて聞いた」 and both of them land on 栄一郎 -> Q968
+- THE DOUBLE GAME, 00002473, and it is the answer to the question his block has carried since 00000E19: the villain performance is deliberate and he narrates the staging of it. He announces it before he does it (「まずはここでサクラを騙す。／そのためにはここにいる全員を騙さなければならない」 11:50-11:51), knocks his own daughter out with the deer-stunning method so as not to injure her, pulls the nata into the ground, plans to break his own arm so that he cannot attack again, and reads 五島 swapping the key and gives her the opening. 新村栄一郎's claim at 00000E31:11:92-11:98 is confirmed from inside -> Q973
+- the performance reuses the 00000E19 lines word for word — 「くっふふふ……。さすが天才少女、ってとこかな？」, 「必要なんだよ、なつみちゃんがね」, the 養子 reveal, 「かわいい姪っ子よ！」 — and the EN of both printings must be identical
+- what he says to himself under it: asked 「誰をかばっているんですか？」 he answers in narration 「君たち全員ということになる」, and 「『すべては死月妖花の仕業だ』／なんてここで言えたらどれほど楽か」 (11:74-11:76)
+- HE BECOMES A 第四世代 ON SCREEN, 00002473:11:128-11:156: the thing's voice reaches him although the rule he states is that it reaches only 第二 and 第三世代, and he sees that the 封石 has been moved. He keeps going with 「人間としての理性を失うにはまだ何日もかかるはずだ」 -> Q974
+- 「人間様をなめるなキノコめ！」 (11:178) is the strongest thing he says anywhere and it is interior. His profanity ceiling is otherwise still ZERO-PLUS-ONE: 「だ、黙れこの化け物め！」 to his wife's corpse (11:251)
+- HE BREAKS AGAIN AND IT IS THE SAME BREAK as 00000E49:11:108-11:117, printed from inside: pinned under his brother's tree, fed his own happiest memories, he shouts 「サクラ！　裏切ったのか！」 and 「覚えてろ！　化け物どもめ……！」 and the narration says he no longer knows what he is saying
+- IN THE VISITING ROOM, 00002478, he has no register left at all: head down, eyes unfocused, swaying, muttering. His four coherent cells are 「母さんが……？」, 「春花ちゃんが……なつみちゃんを……？」, 「ファルシフィカソを……使え……」, and then shouted orders that contradict each other — 「女神を殺せ！」 and 「称えろ！」 in the same breath, with a stammer on one mora (「めめめ女神を……！」) -> Q984, Q985
+- the last anyone sees of him in the project is being carried out of a visiting room by three officers while shouting 「女神様は偉大だ……！」 through a closed door
+- as-of: 00002478
+
+
+## 新村エリカ (にいむら エリカ, Erika Niimura) — 春花's grandmother, ~70, 荒田集落's 長 and its 大魔女
+- first_appears: 0000095B:11:70 (running down the corridor); first line 11:71 (「お前ら！　遅いぞ！　待ちくたびれたぜ！」); names herself at 11:85
+- pronoun(s): 私 ("私はもともと外の人間でね" 000009A0:11:101) — in her own voice. In an impression she uses the pronoun of whoever she is doing
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: THREE things, and they must stay apart in EN:
+  1. the IMPRESSIONS. She greets every visitor dressed and speaking as somebody in the room: as 春花 (0000095B:11:71-11:98), as 茅萱 (11:124-11:145, with a wig and coloured contact lenses), and as 五島 (00000989:11:6-11:46, in a school uniform and twintails, learned from a video sent the week before). Each is one notch broader than the original — the 春花 impression uses 「クソして待ってな」, which the real 春花 never would. -> Q139, Q140
+  2. her OWN voice, first heard when she sets the game up and sustained through her whole story: unhurried plain 丁寧-casual, ～ね and ～よ and ～だね, no jokes, one fact per sentence (00000989:11:123-11:152; 000009A0:11:101-11:238)
+  3. the HOST voice: short, generous, entirely about the guests (「さあ、お客さん方、どんどん食べてくれ」 00000972:11:173; 「ちゃんとエンターテイメントってやつを提供しないとね！」 0000095B:11:133)
+- sentence-final particles: ～ね／～だね (her own voice); ～かね; ～な／～ぜ (borrowed from 春花); ～ですねえ／～ですか (borrowed from 五島)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「はっはっは！」 (0000095B:11:133) — she and her son-in-law's twin share it; 「よっしゃ！」; 「おうおう！」; 「むふ」 when a prank has landed. In her own voice she has no tics at all, which is the point
+- dialect: none
+- EN correlates: contraction rate MEDIUM in her own voice and whatever the target uses in an impression; profanity ceiling MEDIUM but only inside an impression; sentence length SHORT; formality LOW to guests, and quietly absolute to her own household — she gives 美冬 orders and gets 「は……／はい……」 (00000989:11:98-11:100)
+- what she is: 荒田集落's 長, who conducts the memorial herself and does the work of a priest (0000095B:11:52-11:56); an anime fan with a wardrobe of costumes (11:108-11:109); the person who made 春花 practise an impression of her as a child (11:111-11:112), which is where 00000779 comes from; and the holder of the title 大魔女, since 000009A0:11:109 calls the woman who tested her 「先代の大魔女」
+- her story (000009A0:11:101-11:238) is 130 cells of plain first person with no quotation marks, and it is the only place she is serious. She never says who killed the man. She ends on 「脅かす者は排除するという、恐怖心と闘争心がね」 and then says it was only a ghost story
+- known ambiguity / open questions: whether the story is true is refused outright at 11:242. Whether she is the 大魔女 of 00000779 and 000008A2 is never stated in this chunk. -> Q109, Q139, Q146
+- her OWN voice runs three whole files (00000A30, 00000B0F, 00000B27) with no impression anywhere in them, and it is the voice the project will be read in from here: unhurried plain タメ口, ～ね／～だね／～かね, one fact per sentence, no jokes, and a flat willingness to say the worst thing about herself. She recants the 怪談 frame at 00000A30:11:98 — 「50年前、本当にあったことだよ」 — and names what she wants: to change 荒田.
+- she grants her own given name and takes 敬語 away, twice in one scene (00000A30:11:176-11:191), and the wording is an order both times: 「この際だから敬語もなしだ！　私たち、これで友達だ！」 and 「なつみちゃんもいいね？」. She reads 五島's 呼び捨て complex off two lines of small talk (11:165-11:169), which なつみ names as a skill (11:171). Under the showman she is the most perceptive person in the room.
+- the 大魔女 register, heard for real at last (00000A94:11:129-11:130, inside 美冬's account): 丁寧 carrying the law — 「美冬さん……自分がしたこと、分かりますよね？／ 掟 を破ることは、処罰の対象です」 — and then dropped inside two cells for 「まあ……／いいんじゃないかね！」. That is the register 春花 performs at 00000779, in the original's mouth, and the DROP is what kills 新村サクラ, because she heard the first half and not the second. The EN of the two halves must be as far apart as the JP.
+- what she admits (00000B0F:11:109-11:137): she personally ordered that nobody in 荒田 was ever to be stopped from taking their own life, on instruction from the previous 大魔女, for fifty years. She says it plainly, with no defence, immediately after being asked. She also says she had avoided thinking about the reason because thinking was itself a breach of her promise (11:162-11:165).
+- her position on the curse, 00000A30:11:216-11:217: 「呪いなんてもの、ありゃしない。／あるとすれば、それは誰かが裏で手を引いている」. She is 71 (00000B0F:11:98), the oldest person in 荒田, and she married in 祀耀750 (00000A94:11:195).
+- she takes her son's arm off with a nata at 00000B9F:11:322-11:325, and her only words about it are 「幸太郎……。／まったく、お前たちってやつは……」 and 「やっぱり、10年前のことは間違いだったんだよ」 (11:326-11:330). Her own voice, unhurried, no defence, no grief word, standing over him. Do not let EN raise it.
+- in the 00000BD6 branch she is the showman at full strength and nothing else: a cosplay welcome that exhausts three already-exhausted girls (00000C50:11:0-11:2), an impression contest that nobody laughs at (00000C68:11:86-11:151), and a costume change into 五島 in one spin — 「お待たせしました！　自他ともに認める天才少女五島エリカ、参上です！」 (11:134). Her third impression target in the project and the second time she does 五島. -> Q139
+- her OWN voice for a whole scene in the 00000BD6 branch with the showman switched off (00000D59:11:19-11:127): there is no 真犯人, everyone is a victim and everyone a suspect, she never had the nerve to hand frightened neighbours to the police, and watching all year round is impossible. No defence and no grief word, exactly as at 00000B0F:11:109-11:137.
+- she agrees to go to the police after the 十三回忌 when her granddaughter's friend asks, in two cells (11:82 「ああ……そうだね。そうしようか……」), and 「やっとこれで終わる気がする……」 (11:115) is the closest she comes to relief anywhere in the project.
+- the showman returns for exactly two exchanges inside that scene — the week of mirror rehearsal, the Comiket invitation, 「これでなつみちゃんの若さを吸い取って、まだまだ元気に生きられそうだ！」 (11:142) — and なつみ's narration says her face was 「今までで1番柔和」 (11:126). Both registers in one conversation, and the softness is not a performance.
+- she grants her given name and bans 敬語 a second time, in a branch with no shared history with 00000A30, and gets the same corrected-mid-cell compliance (11:160-11:161).
+- she calls 城崎 by bare surname five times, and she is the person he brings the cherry branch to rather than hand it over himself (11:21-11:37).
+- she gives away the 大魔女の能面, 00000E01:11:35-11:41, in her own voice with no showman in it: 「これは歴代の大魔女が使っていたものだ。きっとお守りになる！」 and 「今の私にできることなんて、もうこれしかないのさ……。／それを私だと思って、連れて行ってやっておくれ」. It stops a nata four cells of story later and she is the one who finds it (00000E49:11:96-11:98), with 「少しは私も役に立てたみたいだ」 as her whole comment.
+- the COMMANDER, new: she takes a nata at 71 (「仕方ないね……久しぶりに運動するとしようか」 00000E01:11:159), holds the entrance with her daughter-in-law, orders her son below by bare given name while insulting his stomach (11:163-11:164), and puts ten people down without hitting a vital point on purpose (00000E49:11:90). She explains the restraint and the reason 夏菜 was sent underground in the same breath, flatly.
+- her own voice is the only one she uses in this chunk: no impression, no cosplay, no 「はっはっは！」 anywhere across two files.
+- in 00000EDF the showman and her own voice are BOTH live, in that order. The entrance is an impression of 五島 — 「自他ともに認める天才少女、五島エリカ参上！」 (47:82), twintails and all, done to cheer up her son-in-law's twin's family rather than to greet a guest; 五島's narration calls her 「コスプレババア」 and 「ハイスペックイタズラー」 (117:75). -> Q139, Q294
+- her own voice runs the exposition scene (59:3-59:172) with no impression in it: 「自己紹介がまだだったね。幸太郎の母親の新村エリカです」, the ten-year-old history given plainly, and then the anger — 「この大バカ者！」, 「女ケ沢市で6人死んで、元木町で3人、そして昨夜は何があった？／　それなら私1人の命を使った方がずっとマシだろうが！」 (59:136-59:138). Asked whether all life is equal she answers 「いや、思わない」 and says what she would have done instead: 「私が薬の実験台にでも何でもなってやるさ」 (59:130-59:134). Her complaint is not the act, it is not being asked.
+- she stops short of judging him — 「おばあさんはそれ以上責めようとしない」 (59:122) — and the narration says the choice he faced is not one anybody can rule on quickly.
+- SHE DIES BETWEEN FILES, off screen, of a 心筋梗塞 in May with no 事件性 (00000F87:11:48-11:49, 00000F9F:11:41-11:56). She has no living lines in the chunk. Only six people attend: her daughter-in-law, her two granddaughters, the three girls and 城崎; every other resident is in custody
+- HER LAST REGISTER IS HER OWN AND IT ARRIVES ON THE WIND, 00000FCF:15:0, 23:0-23:4, 31:0-31:4 — four indented one-to-five-cell blocks with no speaker tag, no 「」 and no narration inside them. The showman, the impressions and 「はっはっは！」 are all absent. What is left is the unhurried voice of 00000A30 and 00000B0F with two archaic imperatives on it: 「最後くらい黙って言うこと聞きな！」 and 「お前は元木町で、荒田のことを守っていておくれ」 (31:0, 31:4)
+- what she says is the reversal of everything she spent fifty years on: 「荒田は生まれ変わるんだよ。／集落の者だけに守られる時代は終わり。／外の世界からでも、荒田を守ることはできる。／春花が思っていてくれる限り、荒田はなくならない」 (23:0-23:3). It is the only time anyone in the project releases somebody from 荒田
+- 春花's answer is 「黙れこのコスプレババアーー！！！」 (39:0) and 「最後の最後で幽霊のモノマネかよ！」 (43:1) — her granddaughter accuses the voice of being one of her impressions, which does not settle what it was. Out-of-season flowers open on a dead cherry tree at the same moment and nothing explains them -> Q428, Q139
+- she speaks once more, unattributed, in the file's last block: 「さあ栄一郎、行こうか。もう心配いらないね。」 (47:0), answered by a 僕 voice. It is the first time she addresses her son anywhere, and he has been dead twelve years -> Q429
+- THE COVER-UP, 0000110D:24:13-24:87, seen by a hidden ten-year-old and never known to her: she tries to stop 新村サクラ jumping, catches her wrist, cannot hold her, and is then told by her own son 「母さん、俺は見てたよ。／サクラを突き落しただろ？」 — and instead of denying it answers 「私が殺したも同然だね……」 and tells him to hide the nata. She never corrects him in the ten years that follow -> Q458, Q459
+- her orders during the 茅萱 crisis (000010F5:8:287-8:306) are the clearest command voice she has anywhere: knock the child out at a pressure point, hide her in the 地下倉庫, put 幸太郎 on the books, and put サクラ back on stage — 「お前の役割は『いつも通りの新村家』を演じること」. Plain imperative, 私, no honorific, no softening, to a daughter-in-law who gives her です・ます
+- the SAME WOMAN four cells later, to the granddaughter who has just tried to commit a murder: 「どうだい茅萱、もう調子は大丈夫かい？」, 「大丈夫だよ、茅萱。何も心配しなくていい」, a hug, and carrying an eleven-year-old downstairs. 茅萱's narration says she would have died raving without her
+- as a MOTHER, 000010DD:11:346-11:360: her fifteen-year-old son asks to go to a high school out of the prefecture and then asks her not to tell 新村サクラ. She says 「まあ、いいんじゃないかね」 twice, asks nothing, and his own narration says she saw straight through him. The same flat permissiveness her granddaughter describes as ざっくばらん
+- HER LONGEST WARM SCENE ANYWHERE, 00001295:8:85-8:194, and the entire comic apparatus is absent: no impression, no モノマネ greeting, no costume, no 大魔女 register. She comes in behind a crying stranger, strokes her back without speaking, and says nothing until she is spoken to
+- the CONSOLING register, new: short, unhurried, no imperatives, and it works by naming the other person's position rather than by reassurance — 「怖くて当たり前だよ。怖いって気持ちがないと、無謀なことをして失敗するだけ」 (8:148), then 「春花だって美冬さんだって、なつみちゃんの本音くらい分かっているだろうね」 (8:152), then the one that lands: 「ちゃんと、無事に家に帰してあげるからね」 (8:128)
+- SHE NAMES HERSELF AN INCOMER for the second time in the project and it is the hinge of the scene: 「そうだよ、私は嫁入りの時にここに移り住んだんだ」 (8:140), and 「私はね、旦那と結婚する時に決めたんだよ。何があってもこの地を守り抜くって。／それは、この地に住む人はもちろん、ここを訪れたお客人も同じこと」 (8:143-8:144). The 000009A0 line 「私はもともと外の人間でね」 is the short form; this is the long one, and it is offered to a stranger as a reason to trust her
+- she OFFERS HER OWN GIVEN NAME unprompted for the third time in the project — 「何なら、私のことエリカちゃんって呼んだっていいんだよ？」 (000012AD:12:17) — and this time the 敬語 has already fallen off by itself, so there is nothing to ban. -> Q499
+- she is the one who has ALREADY WORKED IT OUT: 「ふふふ、やっぱり春花たちはこそこそと呪殺事件のことを調べてたんだね」 (00001295:8:181), extracted from a girl who did not mean to say it, and her response is to approve of it. Two files later she says 「気を付けていくんだよ」 to 美冬 and 春花 leaving for the cave (0000125E:8:10) and asks nothing
+- the 「コスプレババア」 gag survives even here: she quotes 春花's insult about herself, in 『』, to a girl she met an hour earlier, and promises a demonstration after dinner. Her eyes are described as lighting up (00001295:8:191-8:194). The demonstration never happens
+- 000013FD:8:120-8:302 is her FIRST MEETING with 五島絵梨奈 in this branch and the only substantial scene either of them has with the other here. The showman is entirely absent: no impression, no costume, no 「はっはっは！」, no 大魔女 register. What is live is the CONSOLING/own voice of 00001295 plus something new
+- the WITHHOLDING that is not a lie, 8:166-8:174: asked whether she knows of corpses walking, she does not answer; she looks down, tilts her head, says she has never heard of it, and then offers the same proposition back as a hypothetical — 「その様子だと、どうやらおかしなことが起きているようだね。／例えば、死体が動いているとか」. 五島's narration reads it as a signal that she is ready to hear it. It is the most skilful thing she does in the project and she does it in two cells
+- she is READ AS A READER: 「この人は、相手の意図を察するのが得意のようだ。／私のように論理的に考えるのではなく、相手の表情や間を見て、そう察している」 (8:161-8:162) — 五島 naming the perception 古郡なつみ named at 00000A30:11:171
+- SHE HOLDS TWO TRANSMISSIONS AND GIVES BOTH, 8:188-8:234: one is two lines of the classical instruction written by 新村桔梗 two 大魔女 ago; the other is oral only, in no book, drilled into every 大魔女 「掛け算九九のように」, and it names 死神, four 神使, アバドン and a sulphur volcano. Her gate on releasing them is purely practical — 「もしこれが役に立つなら、今絵梨奈ちゃんに知らせても構わない」 -> Q558
+- she admits the limits of her own office twice in one scene: she has never been to the end of the cave because going has been forbidden since before her time (8:215-8:216), and she has read almost nothing in the storehouse because it is in foreign languages and old script — 「恥ずかしながら、冠婚葬祭のしきたりとか、その辺くらいしか読んでないよ」 (8:223-8:224). No defence, same shape as 00000B0F:11:109-11:137
+- SHE GOES HERSELF, 8:289: 「私が行こう。幸太郎には置手紙をしておく」, at about seventy, rather than wait for her son. Then the only self-description she gives here: 「これでも私は、みんなと同じように接してほしいんだけどね。／大魔女なんて仰々しい役職のせいで、外から来た人はみんな最初はびっくりするね」 (8:294-8:295)
+- she offers her given name for the FOURTH time and is REFUSED for the first, and the offer is phrased through a third party — 「なつみちゃんだって、私のことをエリカちゃんって呼んでるし」 (8:297). She does not press -> Q561, Q499
+- 00001414 IS HER LAST SUBSTANTIAL SCENE IN THE CHUNK and the showman is absent from the whole of it: no impression, no costume, no 「はっはっは！」, no 大魔女 register. What is live is the own-voice of 00000A30 and 00000B0F plus the WITHHOLDING that is not a lie, carried straight over from 000013FD
+- SHE IS AUDITED AS A SUSPECT AND CLEARED ON THE SHAPE OF HER IGNORANCE, and she supplies the material herself: she answers the ファルシフィカソ question without hedging (the drug went to サクラ, who changed her own constitution), reports her son's plan flatly (dose 夏菜 at menarche, keep 茅萱 in Tokyo), and offers the social reason for the delay — a visible eye-colour change would make the settlement suspicious of 夏菜 next (8:26-8:94). 五島 tells her to her face it does not satisfy her and she does not defend it
+- she has a SECOND HALF of the transmission she did not give at 000013FD, and she gives it here: 「ただ翠眼のみが打ち勝つ。／翠眼となりし人々、妖花を枯らし死者を黄泉に返す。／子孫は必ず面と血色の装束をまとい抗うべし」 (00001414:8:212-8:214). Her gate is the same practical one as before — she releases it when it becomes useful -> Q567, Q558
+- the COMMANDER again at about seventy, and it is an override rather than an order: her granddaughter is halfway up the ladder when she says 「待ちな、茅萱！　お前には別のことをしてもらわないといけないんだ！」 and redirects her to 糸姫山 (8:173-8:176). She then goes alone through a forest of walking corpses for a child, with 「こんな危険なことは絵梨奈ちゃんにさせるわけにはいかないからね」 and 「これでも、そこら辺の男には負けやしないさ！」 (8:230-8:236)
+- SHE IS GIVEN THE GIVEN NAME, one file after offering it and being refused: 五島 says 「気を付けてください、エリカちゃん……」 unprompted at the parting, and her only reaction is 「ん……エリカちゃん……？」 (8:234-8:235) before the reassurance -> Q561
+- she goes down on the ladder first and faster than the girl she is escorting, and the narration counts the interval between the footsteps as twice hers (8:105-8:111)
+- her OWN VOICE for a whole scene at 00001459:8:99-8:255: she gives 春花 the ファルシフィカソ history, states that 幸太郎 believes she pushed 新村サクラ off the cliff, and says the flat thing without defending herself — 「私がサクラの亡骸を見た時には、もう首が切り落とされていた」 (8:146) and 「いや、結局私は助けられなかった。／私が殺したと言っても――」 (8:158-8:159). Same shape as 00000B0F:11:109-11:137 and 0000110D:24:82 -> Q459
+- she RETELLS the 三畳間 conversation in her own first person inside her granddaughter's narration (8:199-8:237), reproducing both halves — the 大魔女 register delivering the law and the pardon two cells later — and she still does not know that 新村サクラ heard only the first half -> Q575, Q576
+- her verdict on her own settlement, 00001459:8:174-8:176: 「この荒田集落は、10年前から――／サクラが死んだ時から……／いや、ずっと昔から得体の知れない者に乗っ取られていたのかもね」. No defence and no grief word, standing still on a forest path
+- 0000151C: she comes up the mountain at the head of the settlement in 能面 and 赤装束 and her entrance line is 「待たせたね」 (8:105), indistinguishable from anyone else in the crowd until she speaks. She had been sent back for people by 古郡なつみ two files earlier and did exactly what she was asked
+- her one moment of resistance is two cells long — 「なつみちゃん、急に何を――」 (8:116) — and she drops it the instant 春花 tells her なつみ's 直感 is back: 「分かった、急いだ方がいいね」 (8:119). The 大魔女 defers to a schoolgirl in one cell and does not comment on it
+- her HEALTH, reported secondhand at 00001533:8:59-8:60: a precautionary check-up found the vessels of her heart in a dangerous state, caught before an attack. She is alive and expected to stay so, in a branch where 00000F9F buried her in May
+- her HERBS, 00001533:8:11: the salve she made is closing five people's knife wounds faster than anyone expected. Her last function in the project is medical and domestic
+- 00001AE8 IS HER REFORMING PROGRAMME STATED TO AN OUTSIDER, in her own voice with no showman anywhere: too many secrets, too much suspicion of outsiders, and 「昔は妙な薬を作ったり、殺人をしたりしていたけど、そんなことは私が許さない。／そんなことをして人を守ったって、それは独りよがりの正義でしかない」 (8:30-8:31). It runs alongside the fifty-year suicide policy of 00000B0F and neither file acknowledges the other
+- HER ANSWER TO 「もし、私が殺人をしたら、どうしますか？」 is not about the asker at all: whatever policy she declares, she cannot see what moves below the surface of her own settlement, and if drug-making or killing were being arranged without her knowledge — and the sentence stops (8:37-8:38) -> Q750
+- SHE OFFERS REFUGE AND SETS ASIDE A 掟 TO DO IT: 「子供が16歳になるまでここに住めないという 掟 があるが、それはもう今の時代には合わない。／もし、美冬さんが変な気を起こしそうになったら、私に相談しなさい。栄一郎の代わりに、私が助けてあげるからね」 (8:42-8:43). She then walks away, and 美冬 says 「もう手遅れなの……！」 to nobody. The offer that would have prevented everything arrives one scene late
+- her family register here: 美冬さん, unhurried plain タメ口, 「私だって美冬さんの家族なんだ。／この集落はみんな、美冬さんの味方だよ」 (8:10-8:11), and a flat waving-off of a hospital visit to her own granddaughter — 「大したことじゃないから気にしなくていいさ」 (8:21)
+- she does not remember the stillborn child's name and says so: 「あやか……？　そんな名前だったか」 (8:7), which is how the reader learns the name was given afterwards, from a dream -> Q430
+- 00002026 IS THE SCENE SHE HAS BEEN CARRYING FOR FIFTY YEARS and it is her only appearance as a subordinate anywhere. Her mother-in-law, newly 75, names her 大魔女 on family and age, and gives her three things with the standing rule that none may be written down: never stop anyone who means to kill themselves; the classical passage about the dead coming out of 黄泉 as 妖花 and only 翠眼 prevailing; and the oral-only one naming 死神, four 神使, アバドン and a sulphur volcano. She repeats the third back word for word
+- SHE ASKS FOR THE REASON AND IS REFUSED TWICE — 「じゃあ、お義母さんはその理由を知っているのですか？」 answered with 「エリカさんはそこまで踏み込まなくていい」, and 「やっぱり、自殺したいって思うんですか？」 answered with 「エリカさんはそれは知らなくていい」. She starts 「確か、二代前の大魔女だった桔梗さんは――」 and is cut off with 「知らなくていい」 and apologises. This is the exact shape of her own refusals to 新村美冬 and 五島絵梨奈 decades later -> Q777, Q778
+- her register to her mother-in-law is です・ます throughout with 「心得ます」 and 「失礼致しました」 — the only person in the project she gives 敬語 to, and the same shape 新村美冬 gives her -> RELATIONS
+- and then the CODA, two cells after the suicide instruction: she is already an anime fan, she has watched the disc first, she praises the transformation sequence's animation and sound design, plans to sew the heroine's costume, quotes its catchphrase, and is told off for spoiling a line. The whole cosplay apparatus of 0000095B is here at its source and it was her mother-in-law's hobby before it was hers — 「お義母さんにこの道を教えてもらって、私の人生は変わりました！」 -> Q779, Q139
+- 00001B76: she comes home from the hunt with a シニガミウオ, calls 五島絵梨奈 「絵梨奈ちゃん」 unprompted, declares them 戦友, exchanges the ニカッと grin and a handshake, and says 「ようこそ荒田へ。絵梨奈ちゃんも、立派な戦士だね！」. 五島's narration says the point was not the frog but gaining a comrade fifty years younger -> Q811, Q561
+- 00001FFB: her son leaves 荒田 and she asks nothing, says 「まあ、お前が決めたことだ」, and observes that 新村サクラ wept and 「あの子、いつもお前の心配ばかりしていたからね」. The same flat permissiveness 000010DD:11:346-11:360 records from inside
+- 00001D17 and 00001BCE: she is the target of 新村サクラ's drunk 「コスプレババア」, twice, and answers 「サクラ、誰がコスプレババアだって？」 without heat. Ten years later 新村夏菜 uses the same sentence about her, minus one word, in a branch where she never knew her mother -> Q810
+- 000020F0: she holds a convulsing ten-year-old through the awakening, refuses both requests to kill (「ダメだよ、お母さんを殺したら――」, 「それもダメだ、茅萱、きっとよくなるから」), and names the pattern 「覚醒と失神を繰り返す」. Her register to 茅萱 is ばあちゃん-plain and does not rise
+- SHE BURIES THE ONE FORENSIC FACT ABOUT 新村サクラ, 000020F6: she runs a three-person examination for objectivity, reports the grip mark on the right ankle, starts 「お前はもう……」 at her son and abandons it, and closes the subject with 「集落の中に人殺しがいるなんてことになったら大変だ」. She is the person whose grip it was (0000110D:24:13-24:63) and she says nothing -> Q458, Q459, Q778
+- 00002127: shown a hole nobody has ever seen, she confirms she has never seen it either, points out that nobody could have dug it unnoticed, sends the searchers elsewhere, and says alone 「これはまさか……。／伝承にあった、アバドンへ続くと言う――」, cut off. The oral-only third transmission she received at 00002026:8:50 is being matched to a physical object for the first time -> Q858, Q777
+- 00002120: she lets her son go out at night with 「気をつけるんだよ。／長い夜になるかもしれない」, and does not ask what he is really doing
+- 00002433: her longest sustained argument anywhere, and it makes her a reformer rather than a traditionalist. 「私は71歳だ。私に残された時間はあと4年」 — she names her own death under the 75歳自殺 rule and treats it as a deadline -> Q914, Q802.
+- her case: 荒田's old temper survives because it cut itself off, and electricity, cars, phones and the internet now make that impossible; 「ただ伝統を守ることが善じゃない」; and the founder's own words are the proof text — 『ここにいるみんなが、そして子孫たちが未来永劫、穏やかに過ごせる場所を築き上げるのだ』 — so what the place needs is a peaceful life, not a 大魔女 -> Q916.
+- she takes the 掟 apart on screen: the rule keeping a married resident's child out until 16 exists because of what happened to 茅萱; almost nobody knew the green-eye killing rule until ten years ago; and the 16-year rule is a corrupted form of 『緑の目を持つ16歳の子供』 -> Q915, Q840.
+- the aside the EN must not soften, said flatly about her own granddaughters: 「もしここで生まれた子供なら、翠眼と分かった時点ですぐに殺せるけどね」 (11:84).
+- SHE OFFERED TO LEAVE THE SETTLEMENT. Ten years earlier she told 美冬 that she and 春花 could live at 荒田, and 「もしみんなが反対するなら――／その時は、私はこの集落を出るつもりだった」, because 「美冬さんも春花も私の家族なんだよ。栄一郎が残した大切な家族」 (11:92-11:100). Nothing else she says anywhere puts family above the settlement this plainly.
+- her last line in the file is about 美冬: 「美冬さんが素直に私を頼ってくれたらいいんだけど……」, spoken on the morning 美冬 is preparing to kill three people.
+- 0000246E:11:22-11:41 and 11:303-11:391 IS HER LAST SUBSTANTIAL SCENE IN READING ORDER and it is her own voice throughout: no impression, no costume, no 「はっはっは！」, no 大魔女 register
+- the WITHHOLDING that is not a lie, used on her own son: asked whether she remembers the night his wife's head was cut she answers 「いや、知らないね」 and then 「知らないね」, and the narration flags that she did not say she had forgotten -> Q969
+- and then she gives it up in one cell and it retracts a ten-year belief: the man who told her that night 『私がサクラを突き落した…首を切った』 was not her son, and she has been protecting the wrong person since -> Q968
+- SHE HITS HIM TWICE, which the narration says she did when he lied as a boy, and the second is 「手加減のない、渾身の平手打ち」 at about seventy-one. What she says is not accusation but a demand — 「お前は本当にそれでいいのか？」, 「悔しくないのかい！？」, 「サクラの姿に踊らされて情けないとは思わないのかい！？」 — and she indicts herself first: 「もちろん私にも責任がある」
+- she TAKES A WEAPON, and her son notes he has never seen her hold one outside a rite: 「母さんは岩壁に立てかけていた鉈を握る」 (11:383). Same age as the 00000E01 COMMANDER, in the branch where she does not survive
+- her last words to him, and the last she has in reading order: 「荒田の男なら落とし前はつけな。／命を賭してでもね」 and 「さあ幸太郎、正念場だよ。／1人はみんなのために、みんなは1人のために」 -> Q972, Q174
+- SHE DIES BETWEEN FILES in this branch too, of a 心筋梗塞, reported in two cells by her granddaughter at 00002478:11:28-11:30 while her son barely reacts. It is the same cause as 00000F87:11:48-11:49
+- as-of: 00002478
+
+
+## unnamed Chinese-restaurant waiter (000008B9:36) — one line
+- first_appears: 000008B9:36:13 (「ありゃーお嬢ちゃん！　中国語上手アルねー！」)
+- pronoun(s): none observed
+- speech level baseline: the ～アル pseudo-Chinese comic register, stretched vowels, one line only
+- copula: アル
+- EN correlates: the direct English equivalent of this register is far more offensive than the Japanese and would be the only moment of its kind in the project. Do not write broken "Engrish". The line's content is a compliment on a six-year-old's Chinese reading. -> Q149
+- as-of: 000008B9
+
+## 新村サクラ (にいむら サクラ, Sakura Niimura) — 幸太郎's wife, 茅萱 and 夏菜's mother, dead ten years
+- first_appears: named at 00000A62:19:70 (「サクラさんって言うんだけどさ」); ON SCREEN and speaking at 00000A7C:11:4 (「春花、こんにちは。頭の怪我はどう？」). She speaks in orders 91, 92 (inside 美冬's account) and 94 (inside 幸太郎's account) only
+- pronoun(s): 私 ("私…… 掟 を破ったの……" 00000AC4:19:26). Never observed switching
+- pronoun FREQUENCY: less often than typical; she drops subjects and speaks about the other person instead
+- speech level baseline: soft feminine タメ口 to everyone, including a seven-year-old and her own mother-in-law's guests. No 敬語 anywhere on screen, and no roughness either. Every one of her opening lines is a question about the listener
+- sentence-final particles: ～ね (soft, closing most lines, 00000A7C:11:13 「今よりももっと元気になれそうね」); ～の／～のよ; ～かしら (00000A7C:11:52 「荒田の山を誰よりも速く走れるようになるかしら？」); ～よ？ (gentle correction, 00000A94:11:101 「でも、それで殺人なんてダメよ？」)
+- copula: よ／わ, feminine
+- verbal tics / catchphrases / fillers: none, and that is the characterisation — she has no laugh, no filler and no catchphrase. Under strain the only thing she produces is 「ごめんなさい……」 twice in two cells (00000A7C:11:98-11:99) and then 「ああ……！／　うああ……！」 (11:103-11:104). Do not give her a verbal habit in EN
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality warm-informal; vocabulary register plain and domestic, with the settlement's words (掟) used without explanation. Everyone in the project describes her as gentle, self-effacing and too kind; the EN must let her be that without going saccharine, because the same voice says 「私……死をもって償うしかないの……」
+- SECOND REGISTER, the collapse (00000A7C:11:98-11:116, 00000AC4:19:26-19:32): short, broken across cells, repetitive, and entirely about her own guilt. She asks 幸太郎 「本当に……？／　本当に？」 twice and then goes limp. Keep the repetition and keep it quiet; she never raises her voice anywhere
+- WRITTEN register (00000A94:11:110-11:113): four narration cells with no 「」 — a name, three plain declaratives about quality and quantity, and 「どうかこれをうまく役立てて下さい」. No warmth, no warning, no signature. It is the only thing she writes and it is what kills her. -> Q071
+- what the text will not say: she refused the request to the end (00000A94:11:105) and then sent the weapons anyway; nobody in the story can reconcile the two, and なつみ notices at 00000B27:11:102-11:106 that whoever wrote the dosing instructions may not have been her. Do not resolve it
+- physical description (00000A62:19:104-19:111): near-blonde brown hair, sharply cut features, pearl-white skin, both eyes blue and NOT odd — the text says so explicitly against 茅萱 and 夏菜. Japanese; the settlement's Westerner ancestry. She disliked her own appearance and was bullied at school for it
+- she had 四月病, stated by 幸太郎 at 00000ADE:11:3-11:6 and used to explain the fall. That makes her the second person in the project with it. -> Q009
+- known ambiguity / open questions: whether she jumped, collapsed or was pushed is left as a simile (00000AC4:19:37); who took her head is unknown; 「知花の 仇 」 (00000B27:11:116) is shouted alongside 「サクラちゃんをよくも……！」 by two different attackers. -> Q168, Q173
+- SHE APPEARS, standing and speaking, four months after the branch ends: 00000BB7:15:30-15:44. Two lines, in her ordinary soft 丁寧-warm voice with the usual opening question about the listener replaced by a title — 「あなたが五島絵梨奈さんね。生前の夏菜がとてもお世話になったそうで」 and 「おめでとう五島絵梨奈さん。あなたには神使の資格があるの」. 五島's narration refuses to name what she is, and the identification is 五島's own, from a photograph, hedged as a question. -> Q181, Q180
+- the TRIGGER for her ability is stated for the first time, by two separate people in a second branch: dark, narrow places (00000BED:11:146-11:149 from 茅萱; 00000C68:11:44 from 幸太郎), the exact inverse of 古郡なつみ's wind. 幸太郎 dates the onset to middle school, says spring made her ill, and says she worked in a three-mat room upstairs (00000C68:11:36-11:49).
+- her favourite flower was 沈丁花, not 桜, and its 花言葉 are 不死、不滅、永遠 (00000BED:11:179-11:186). The narration points out the irony itself. -> Q192
+- SHE IS ALIVE IN THE STORY PRESENT of 祀耀804, four years later than any other appearance anywhere, and she is the 大魔女: the attackers address her 大魔女様 and ask her to hand her daughter over (00000E7B:88:120, 88:139, 180:67-180:71). 新村エリカ died of illness some years before (28:226). Nobody in the file remarks on the title having moved. -> Q249
+- her 丁寧: she uses です・ます to a guest for a whole file (「ご親切に、ありがとうございます」 28:57 onward) — the first 敬語 observed from her anywhere. The soft タメ口 stays for her family. Her opening lines are still questions about the listener.
+- SHE STATES HER OWN ABILITY'S CONDITIONS, for the first time from her own mouth: it predicts danger only, to people she has met or heard speak; it needs a dark, narrow place; fifteen minutes in one costs her her health; the range is anywhere from ten days to ten seconds (28:177-28:198, 54:114-54:119, 68:66-68:68). She will not say where it came from — 「これは誰にも言ってないの」 (54:186) — and the narrator infers 新村栄一郎's blood and drops it.
+- SHE TAKES THE BLAME OUTRIGHT: 「元木町で起きた事件の元凶は――／この私です」 (54:225-54:226), then explains 女ケ沢市事件 as the safety test of ファルシフィカソ she needed before dosing her own daughter, arranged by 幸太郎, with a subject she was not told the name of (60:74-60:93). She does not know the word ドローガ (60:27-60:29). -> Q243
+- THE MIMICRY, 180:108-180:116: in a burning house she puts on a high, bright voice and gives orders as a woman she watched being knocked out two minutes earlier, and scatters twenty armed people with it. 夏菜 calls it 「おばあちゃん仕込みのモノマネ」 — the same impersonation habit 新村エリカ has in every other branch. It is the only time she is heard doing anything but being gentle.
+- her last words are to her husband's body, while a nata is coming down behind her: 「幸太郎……／ありがとうね。／愛してるわ」 (88:249-88:251). It is the only 愛してる anywhere in the project.
+- SHE IS ALIVE AND ORDINARY IN 00000EDF, in the story present rather than four years later, and she gets the household scenes she never gets anywhere else: nursing her husband's cuts while teasing him (47:33-47:78), tapping his back at dinner (53:46), and her soft feminine タメ口 to everybody including a visiting schoolgirl. Her opening line is still a question about the listener.
+- HER ONE ARGUMENT, 00000EDF:59:144-59:170, and it contradicts both her husband and her mother-in-law to their faces: 「全ての命は……／平等です」, then the reasoning — other people and animals have families too; you cannot say to the bereaved that your family mattered more; a single life being unequal is understandable but nobody deserves to die; and the practical charge, 「幸太郎は、美冬ちゃんにドローガを送る以外の方法は考えたの？」. She ends on 「命は平等であり不平等。／だったら、できるだけ命を平等にできる方法を考えるべきだった」. It is the longest and firmest speech she makes anywhere in the project and she never raises her voice in it.
+- she is the target of the killing urge here and survives it: 五島 attacks her in the dark basement (83:224), she flees 「よたよた」 and calls for the antidote, and by the next morning 「怪我してないし、お前のことも怒ってないから」 (89:56). She never appears in the aftermath scene.
+- 00000F24: she is dead a year before the file opens and has ONE line, in a flashback to 祀耀800: 「春花、これ……」 (76:58), handing over a photograph taken off her sister-in-law's body. Her opening-question habit is absent because the line has no room for it
+- her ABILITY is attested a fourth time and a fourth way: 茅萱 reports it as 「桜が咲く時期だけに、予知能力が働くの」 (136:19), the same seasonal condition as 古郡なつみ's rather than the dark-narrow-place condition 幸太郎 gave at 00000C68. The prediction itself — a threat from outside destroys the settlement today — is what the whole file runs on, and 夏菜 attributes it instead to ヴェルジ (118:79). Neither attribution is settled. -> Q243
+- HER CORPSE IS THE FILE'S CENTREPIECE: mummified within a year of death, presented to the settlement as 「女神ブルーシャ」, declared a failure because it emits no 『恵み』, and burned by her own elder daughter in front of her own younger one. 春花's narration notes 「髪の生え方もまだ新しく生々しい」 (106:108). She is also, by 193:80-193:84, the likeliest first victim of the mummy — the person with precognition who told everyone to use ドローガ
+- SHE NARRATES A WHOLE FILE, 000010F5, in 私, her first narration anywhere. The first 88 cells are a dream of her high-school years and the wake-up is the only marker -> Q453
+- narration voice: short, soft, plain past, with the same habit her dialogue has of turning every thought toward another person. She describes her own feelings in the negative (「ううん、寂しいなんてきれいな気持ちじゃない。／単に、飢えているだけ」 8:46-8:47) and never once complains. The one sustained piece of reasoning she does alone is the 掟 argument (8:119-8:132) and it is faultless
+- AS A TEENAGER: she loved 新村栄一郎, said so only once and only when asked, and accepted 新村幸太郎's proposal after he corrected 「俺はお前を幸せにできる」 to 「俺が幸せになりたいから」. Her own account of the marriage is two clauses long (8:108) -> Q454
+- WHAT SHE HID: she covered up the ドローガ accident as a fall from a tree, at fifteen, on her own initiative, and hid the equipment. Her line to him is 「私、みんなには木から落ちたって伝えたから。／だから……私も木から落ちたって、思うようにするから……」 (000010DD:11:326-11:327)
+- the ABILITY'S ORIGIN, stated by her: it appeared 「私が高校生になった春」 (000010F5:8:233), the spring after 栄一郎 bled on her, and she calls it 「栄一郎を失った代わりに得られたこの力」 (8:234) while saying the cause is still unknown. 幸太郎 puts the blood theory to her directly at 8:325 and she does not answer -> Q243
+- how she performs it: nothing is required but a dark narrow place; the closed eyes and the deep breathing are theatre she admits to, done because it makes her feel better and because it makes the client believe her (8:220-8:226)
+- SHE INJECTS HERSELF. Told that ファルシフィカソ has never been put into a human, she volunteers, is refused, and then goes to the cave alone and does it — on the theory that if she loses her precognition her daughter's killing urge will stop, and 「仮にこれで私が死ぬとしても、茅萱が助かるのなら……」 (8:357). This is the last thing she is shown doing before her death five days later -> Q460
+- her register to her mother-in-law is です・ます upward and 「分かりました……」 to an order, the same as 新村美冬's. Her register to her ten-year-old daughter is the soft タメ口 she uses on everyone, with 「よしよし茅萱、怖かったね。もう大丈夫よ」 (0000110D:8:60) hours after that daughter came at her with a knife
+- her death is seen for the third time and from a third angle at 0000110D:24:13-24:63: she tries to jump, her mother-in-law catches her wrist, the grip fails, and her husband takes her head off with a nata while her ten-year-old watches from a tree line -> Q458
+- SHE SPEAKS TEN YEARS AFTER HER DEATH, on a recording, 00001214:8:227-8:247, and her register is COMPLETELY UNCHANGED: the same soft feminine タメ口, the same bare 栄一郎, the same 私-less apologising — 「茅萱……／ごめんね……／お母さん、やっと帰ってこられたの」 — and then, one cell after knocking her daughter unconscious, 「さあ、栄一郎、運びましょう」. Nothing in the delivery is wrong. EN must not add flatness, echo or eeriness -> Q496
+- she is identified only by her daughter naming her and by 春花's narration reasoning that there is exactly one person 茅萱 would call お母さん, 「いやあの世も含めて1人しかいない」 (8:235-8:236). The text never asserts it in its own voice
+- SHE WALKS AND SPEAKS AS A CORPSE, 0000136D and 000013B5, and it is the longest she is on screen anywhere: white robes, the face and hair of the living woman, no mark on the neck that was cut off her. Her opening line is an apology and her second is 「お母さん、やっと帰ってこれたの」 — nearly word for word the recording at 00001214:8:238-8:240
+- the REGISTER IS WHOLLY UNCHANGED and the text says why: 「しゃべり方や考え方はこの身体の元持ち主に由来するけど、今意識を支配しているのは女神様だ」 (0000136D:8:287). Speech, thought and memory are hers; the will is not. EN must add no flatness and no echo -> Q545
+- her ONE flat line as a corpse is the exception that proves it: 「ありえないことが起こるのが、呪殺事件なんです」 (0000136D:8:121), in です・ます, which she never uses to her own daughter
+- THE PLEADING SCENE, 000013B5:8:57-8:191, ~60 cells and her longest speech anywhere: she tells her daughter to run, explains that she and 栄一郎 are repaired periodically and cannot be watched while it is happening, says the settlement is the hostage, answers two probing questions reasonably, and then — when the escape is refused — requires her daughter to kill herself on the spot as proof of loyalty and turns her back so she can do it. It was a test throughout, and 栄一郎 says so afterwards
+- 「親ってね、例えどんなことが起きても、子供には元気で生きてほしいって願うものなの」 (000013B5:8:153) is the last thing she says before setting the condition. The text never resolves whether any of it is hers
+- she is the one who plants the chunk's central clue and does it as a mother's fussing: 「それと茅萱、くれぐれも、怪我には気を付けてね」 / 「そう、もう、血は流さないでね」 (000013B5:8:244-8:246), replayed verbatim two files later -> Q553
+- she collapses screaming when her daughter bleeds (0000136D:8:316-8:325) and is on her feet again the next morning; 栄一郎 later explains that fresh blood is what does it and that dried blood is inert
+- SHE WALKS AS A CORPSE FOR A SECOND CHUNK and this time she works alone, on 新村春花, and the whole scene is a con — 00001442:11:176-11:317
+- the REGISTER IS COMPLETELY UNCHANGED again: the soft feminine タメ口, the opening question about the listener (「春花、横、いいかしら？」 11:183), the 「ふふ」, the waving-off of 敬語 (「ふふ、敬語なんて使わなくていいのに」 11:197), and the physical habits of a living woman — she hugs her knees, takes a deep breath and sighs, and the narration says 「何から何まで、死人とは思えない行動だ」 (11:239-11:241) -> Q545
+- WHAT SHE GIVES AWAY IS TRUE AND IT IS THE READER'S FIRST FULL STATEMENT OF THE MECHANISM: 死月妖花 is ancient and local, a fungus with cherry-mimicking fruiting bodies that parasitises mammals; it manages her body; it can move the dead; the 呪殺 are people who learned too much; it wants only to be left alone; it has spent decades staging old people's suicides to empty the settlement. She accepts 「ネクロマンサー」 as a fair word for it and answers 「だとしたら、私はゾンビかしら？」 (11:216-11:221)
+- WHAT SHE ADDS IS THE LIE: that she is unobserved because the thing is busy repairing 栄一郎's body. She retracts it herself at 000014D7:8:226 — 「あ、でも栄一郎の身体の修復をするときは、女神様にはばれないってのは嘘だったわ。ごめんなさいね」 — and defends the rest with 「変な言いがかりはしないで。私は何も嘘は言っていないわ」 (8:225). The con is in the omission, not in the content -> Q574
+- SHE IS THE ONE WHO TURNED 新村春花 ROUND, and she says so to her face at the summit: 「何とか春花を集落にとどめようとしたけど……。／春花は相変わらず単純で、大して大変じゃなかったわね」 (000014D7:8:219-8:220), and 「何もできない春花が役に立つためにはどうすればいいか、それを教えてあげたじゃない」 (8:223). The kindest thing anyone does for 春花 in the chunk was an operation
+- she PLANTED THE REPORT: 「私が残した女神様の正体については、しっかり読んでくれたのよね？」 (000014D7:8:95). The 00001355 laboratory report that 茅萱 read, and that predicted its own reader's death, was left where it would be found -> Q541, Q537
+- THE RETRACTION THAT UNDOES TWO EARLIER FILES: she never injected herself with ファルシフィカソ. The thing showed her the sight and sound of doing it, in a hole where nobody could witness it, and her own lifelong honesty is what made the belief stick — 「私は自分にファルシフィカソを打った、と思い込んでいただけよ」 (000014D7:8:259). 000010F5:8:348-8:357 must therefore be translated as what she believed she was doing -> Q460
+- the same device is given as the explanation for her elder daughter's confessed murders: 「同じ要領で、茅萱には住人たちを殺したという幻影を見せていたのよ」 (8:270) -> Q461, Q462
+- she gives orders to 新村栄一郎 as a wife rather than as an accomplice and the affection is intact: 「さあ栄一郎、もう前置きはいいわ。／ほんと、栄一郎は本題に入るのが苦手よね。そう言うところ、死ぬ前とおんなじ」 (8:230-8:231)
+- her last audible line is a scream as a brown mass comes out of her body (8:392); like 栄一郎 she is not killed on screen
+- 0000154E:8:141-8:209 IS THE ORIGIN OF THE WHOLE 呪殺 SERIES and it is in her mouth, inside 新村幸太郎's inset narration. Days after her death she spoke to him at the river bank; she explained that she was revived but not alive, that she could meet only certain people in certain places, and she chose the meeting place herself because there is a road to 女神様 at the back of the 秘密基地
+- TWO YEARS LATER SHE TELLS HIM SHE IS THE KILLER, and she does it as a favour: she offers to have him watched while the next one happens so that he will be cleared. 「だったら、幸太郎が疑われないように協力するわ」 (8:178). The register is the warm practical ～のよ／～わ of a wife arranging something
+- her STATED REASONING is the organism's: it fears people, the staged suicides of the old did not empty the settlement, so one non-新村 resident a year, and would he please ask everyone to leave (8:183-8:188). She accepts his refusal without pressing and warns him it will be hard on him every year
+- SHE IS THE SOURCE OF THE 茅萱 CONCESSION: 夏菜 may be cured, 茅萱 may not, no reason given, and 「ごめん……」 when he asks (8:204-8:209). Her elder daughter's entire life runs out of that cell
+- 0000151C:8:380-8:411: the possession ends and she is herself for about thirty cells. She names all three of them in one cell before anything else — 「ちが……や……／夏菜……こうた……」 — lays a hand on the face of the daughter who does not remember her, says she looks like she did at that age, and her wrist comes off in the girl's hand
+- SHE REFUSES 新村美冬 TO HER FACE, 00001A85, and the file corroborates 00000A94:11:94-11:141 from the other side word for word. Her method is the settlement's own motto turned back on the asker: 「私に 掟 を破れということは、美冬ちゃんが 掟 を破ること。／その標語で解釈するなら、1人がみんなに迷惑をかけること。／考え直して」 (8:11-8:13), and then the flat question 「だから、2人の子供を殺すの？」 (8:17)
+- her ONE argument beyond the 掟 is historical and she rejects it: told that 荒田 has produced necessary victims before, she answers 「それに、今はそういう時代じゃないのよ。／荒田集落が隔絶された地域とは言え、外の世界に抗って生きているわけじゃないの」 (8:19-8:20)
+- the soft feminine タメ口 and the 美冬ちゃん address form are intact throughout, and her closing lines are an apology for being useless — 「ごめんね美冬ちゃん、私じゃ何の役にも立てない」 and 「ただ、話を聞いてあげることだけなの」 (8:22-8:26). The weapons arrive anyway and the project still does not reconcile it -> Q740, Q504
+- HER FOURTH POSTHUMOUS APPEARANCE, 00001D40 and 00001D6F, and it is the only one in which she recruits: she appears in a burning settlement, says everyone is dead (名 per cell — 幸太郎, 夏菜, 春花), thanks 五島桃子 because 「この集落には、たくさんの死体が必要だから」, and starts 「ねえ美冬ちゃん、／だから、／あなたも――」 before vanishing 「まるで煙のように」. In the longer file she then presents the ヴェルジ mummy and says 「あなたには神使の資格があるの。／生きた第一世代としてね」. The soft feminine タメ口, the 美冬ちゃん address form and the opening question about the listener are all unchanged -> Q545, Q767
+- 00001D17: DRUNK, and it is the only time she is loud anywhere. Every vowel stretched, 「あっはっはー！」, 「あげちゃえあげちゃえ！」, her mother-in-law called コスプレババア twice to her face, and she is the one who makes a small 春花 perform 『おひめの歌』. Her daughter's gloss is 「普段はあんなにおしとやかなのに、お酒が入るといつもこうなんだから」, and 新村エリカ's is 「サクラもずいぶんと酒癖悪かったね」. The EN must let the gentle register and this one be the same woman -> Q789
+- 00001C08: injured, being treated by 新村栄一郎 before either marriage. Her habit of turning every line toward the other person is fully formed — 「栄一郎が一緒にいてくれているんだもの。／それだけでも、嬉しいよ」 — and she asks the file's only question about herself and does not finish it: 「私がこんなだから、優しくしてくれるの？」 / 「私がこんなじゃなくなったら――」
+- 00001C29: asked whether she knows ドローガ she says no and then supplies 「ドローガって多分ポルトガル語よね？　薬とかって意味の」, starts 「えっと、それは――」 when pressed, and is cut off by 幸太郎 himself. She is the one who names ファルシフィカソ and the one who raises 副作用 -> Q803, Q243
+- 00001EFF:8:21-8:42: inside 新村茅萱's induced dream she is the one who sets the condition — one killing a year, always with a knife, or the meetings stop — in the ordinary soft register with 茅萱 bare and 「このことは、2人だけの秘密よ？」. Nothing distinguishes the dream version from the real one -> Q817, Q805
+- SHE MEETS 新村美冬 FOR THE SECOND TIME, 000020E4, and it is the earliest 荒田 scene she has: a drinking party, a baby 茅萱 on her arm, and a formal introduction from a woman about to marry in. She asks whether 美冬 wants children, and on being told 「私、家族が欲しかったので」 says 「そう、よかったわ。／ほんとに……／よかった……」 — and then volunteers, unasked, 「あ、でも私と栄一郎はそういう関係じゃなかったから」, which 000010F5:8:69-8:81 contradicts -> Q454
+- she gives the official version of 新村栄一郎's leg (「狩りの時に足を折って」), which is the lie she invented herself at fifteen, and 美冬 is the first person in twenty years not to believe it
+- SHE PACKS THE WEAPONS, 000020EA: 鉈, メイス, 能面 and 赤装束, two sets each, boxed for 美冬, with a letter. Her own words over them are 「何かしら……この胸騒ぎ……」 and 「美冬ちゃんがこれで人殺しなんてするはずが……」. 00001A85 has her refusing the request outright and 00000A94:11:110-11:113 has the note arriving with the boxes; this file shows the packing and not the decision, so it does not reconcile them -> Q504, Q740
+- SHE FINDS THE SEALED PASSAGE, 000020C0: hunting for the stolen pot and tripod the day before 美冬's 一周忌, she finds the forbidden door open, the lamp lit with fresh oil, and a stone set unnaturally in place, and decides to lever it with a 鉈. The file ends on 「よいしょっと！」. The stone is 新村桔梗's 封石 of 000021BD:8:16
+- HER DEATH'S ONE FORENSIC FACT, 000020F6: a three-person examination finds 「右の足首に、強く握られた痕があった」, and 新村エリカ — who caught that wrist and lost it (0000110D:24:13-24:63) — orders it kept quiet on the ground that a murderer in the settlement would be a disaster. She says nothing about whose grip it was -> Q458, Q459, Q778
+- 00002102:8:0-8:20: inside 新村茅萱's dream she sets the condition in her ordinary soft register with 「このことは、2人だけの秘密よ？／　必ず、ナイフでやるの」, and the waking is TWO CELLS LATER (「ん……夢……？」) with a real death in the same file. Nothing distinguishes the dream version from the corpse of 0000136D -> Q837, Q817, Q805
+- 00002433: four cells at the 十三回忌 — she calls her younger daughter in from another room (「夏菜ー！　ちょっと手伝ってくれるー？」), does most of the ritual work so her stand-in daughter has only to carry things, and praises her afterwards (「お疲れ様茅萱、上手にできてたわよ」). Warm 丁寧-タメ口, stretched vowels in the call, no ritual formality at all outside the rite itself.
+- she leaves the room when 茅萱 asks to speak to her mother-in-law alone, without asking why (「あら？　じゃあ私は先に戻るわね」).
+- 00002444: she is a VOICE ONLY, twice, and both times she is running the operation. At 26:336 onward she appears inside 五島's invented reconstruction, converting a dying 古郡なつみ with the soft register completely intact — 「さあなつみちゃん、死にたくないでしょ？　生きたいでしょ？」 and 「そうそう、そうやって願えばあなたは生きた第二世代として存在できるのよ」 — and at 32:210 she announces the deal from off screen with 「あらあら、交渉成立ね」 -> Q937
+- her precognition condition is given a THIRD incompatible account in this file, and it is the one that matters: 城崎 says dark and narrow places in the cherry season, where 幸太郎 said she waited on a clifftop for 四月病. 五島 uses the contradiction to identify 幸太郎 as the informer, and 00002457:11:9 gives the real trigger -> Q243, Q950
+- 五島's reconstruction has 新村栄一郎 beheading her because he alone could move unseen, as a staged crime to spread 不信 (26:299-26:302). It is a deduction rather than a confession and it matches 0000110D:24:55-24:87 exactly
+- 新島香織 remembers her as a child doing impressions of her to tease people (0000243F:11:127), which is the same mimicry habit she uses at 00000E7B:180:108
+- 00002464 IS THE ONE FILE IN WHICH HER REGISTER BREAKS, and nothing else in the project prepares it. The narration says he has never seen her glare (11:37-11:39) and has never heard her disparage anyone (11:42-11:43), and then she says 「幸太郎って、頭悪かったかしら？」, 「10年もかけたのに、そんなことで失敗されたらがっかりだわ」, and 「はあ……ほんと、幸太郎はこういうことが苦手なのね」 -> Q967
+- the GRAMMAR DOES NOT MOVE: the soft feminine ～のよ／～わ／～かしら, the bare 幸太郎, the opening question about the listener (「どうかしたの？」 11:22) are all intact. Only the content is contemptuous. EN must not cool the voice to carry it
+- SHE STATES WHY SHE HAS BEEN MEETING HIM FOR TEN YEARS and it is not affection: 「だからこうやって生きた人間である幸太郎に頼んできたんでしょ？」 (11:54). He repeats it back to himself and the rest of the chunk runs out of it
+- the 7-YEARS-EARLIER FLASHBACK, 00002464:11:79-11:100, is the same woman doing the opposite: she runs to him when his legs give way, holds him, and says 「大丈夫、私はずっとずっと幸太郎の味方だから」 — the 00001C08 promise in her mouth instead of 栄一郎's. The narration notes the cold, pulseless chest in the same cell
+- SHE RUNS THE OPERATION AND SAYS SO, 00002473 and 0000246E:11:240-11:296: she felled a tree across the road and released a little spore so that 古郡なつみ would have a premonition and turn back; she refuses to kill 城崎 because she wants なつみ led underground instead; and she states the objective flatly — 「これでもう女神様には弱点がなくなる。／後は堂々と荒田の滋養を吸収して繁栄するだけよ」, answering 「集落を滅ぼす気か！？」 with 「そうよ？」
+- the 神使 count in her mouth: 「私と栄一郎、そしてなつみちゃん。／これで神使が3人。／あと1人――／生きた第一世代がいればいいの」 (0000246E:11:278-11:281), the same closed set of four as 00002444:26:283-26:289 -> Q938
+- her last words to him are 「さようなら幸太郎、愛しているわ」 (00002473:11:316), said one cell after arranging his death and the settlement's. The only other 愛してる in the project is hers at 00000E7B:88:251
+- as-of: 00002473
+
+
+## モトキザクラ様 (000009FE) — the figure in 古郡なつみ's ghost story
+- first_appears: 000009FE:11:33 (seen); first line 11:48 (「ここで降ろしてくださいます？」)
+- pronoun(s): 私 ("あなたたちは私のお友達。" 31:1)
+- speech level baseline: 丁寧 request forms to people who have just done her a favour, then one flat declarative. Two lines and two registers
+- sentence-final particles: ～くださいます？ (11:48); plain statement with no particle at all (31:1)
+- copula: です (implied) / だ
+- verbal tics / catchphrases / fillers: none. She bows instead of thanking and nods instead of answering
+- dialect: none
+- EN correlates: contraction rate ZERO; sentence length VERY SHORT; formality HIGH then absent. The horror is entirely in the drop between her two lines — keep the first over-polite and the second bare
+- note: she is a figure inside a told story, so everything about her is なつみ's performance. Her prohibitions are quoted at 15:0, 23:0 and 31:0 as indented bare cells that are the notice board's words, not her speech. Do not tag them to her. -> Q158
+- as-of: 000009FE
+
+## A子 and her family (000009FE) — the four in the ghost story
+- first_appears: 000009FE:11:34 (the father, 「モトキザクラ様だ！」)
+- pronoun(s): none observed
+- speech level baseline: the father, excited 乱暴-warm タメ口 with imperatives (「お前たち、モトキザクラ様だ！　席を詰めろ！」 11:40) and instant service 敬語 to a stranger (「どうしましたか？　よければ乗せていきましょうか？」 11:38); the mother, calm 丁寧 leading a prayer; A子 and her sister, child タメ口
+- sentence-final particles: father ～だろ／～じゃないか; mother ～ましょうね; A子 ～よ／～ね
+- copula: だ (father) / です (mother)
+- verbal tics / catchphrases / fillers: the father answers every objection with enthusiasm — 「ほらお前たち、来てよかったじゃないか！」 (11:72) — and A子 answers with 「お父さんやるう！」 (11:73). They are a cheerful family and they are killed for being polite
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW inside the family and reflexively HIGH to the stranger. Nine lines between the four of them. Keep them ordinary; the story only works if nothing they do is stupid
+- as-of: 000009FE
+
+## unnamed 街角の占い師 (00000A18) — the street fortune-teller in 新村茅萱's ghost story
+- first_appears: 00000A18:11:14 (「ちょいと、そこのオッドアイのお姉さん」)
+- pronoun(s): 私 ("私の専門は人相占い" 11:31)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: rough-warm タメ口 to a stranger, no honorific, no service register. She takes no money and says so twice
+- sentence-final particles: ～だね (her commonest, 11:19 「おや、やっぱりオッドアイだね」); ～だろうか (never); ～よ; ～こと (the imperative form of her warning, 11:36 「決して安易な選択をしないこと」)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「おや」 as an opener; 「どれ」 before doing anything (11:23 「どれ、お姉さんを見てあげようか」); 「以上！」 to end the reading flat (11:42). She uses 「お姉さん」 as an all-purpose address, the same form the street men use at 000007BC, with none of the intent
+- dialect: none marked; the register is market-stall, the same family as the 焼き芋 seller at 00000818
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality LOW and completely unbothered. Ten lines, one of which is a death warning, and she delivers it in the same voice she uses to compliment a face. Do not make her ominous
+- note: she calls 茅萱 オッドアイ before looking at her eyes and 茅萱 notices (11:19-11:21), then says nothing about it again. Do not explain it
+- SHE PROBABLY REAPPEARS, 00000EC7:11:37-11:260, four years later in an open-air bath, reading 古郡なつみ. See the separate 露天風呂の占い師 block: same opening move, same ～かね, same method, same refusal of payment, and she volunteers that she once read a young person in Tokyo who did not look Japanese. The identity is never stated and this file is a story told inside a different branch. -> Q274
+- as-of: 00000EC7
+
+## unnamed 204号室の女 (00000A18) — the neighbour in 新村茅萱's ghost story
+- first_appears: 00000A18:11:84 (seen); first line 11:94 (「後で行きます……」)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (です), broken by physical failure rather than by register
+- sentence-final particles: ～ます (11:94); ～です (11:136)
+- copula: です
+- verbal tics / catchphrases / fillers: none. She has three utterances in the file, total: 「後で行きます……」, 「で……／出た……／やっと出た……！」 (11:129-11:131), and 「あ、あの……！／　お礼……です……！」 (11:135-11:136)
+- dialect: none
+- EN correlates: contraction rate ZERO; sentence length VERY SHORT and cut by ellipses; formality MEDIUM. Every word she says is polite and every word is an attack. Do not add effort noises, groans or breathing that the JP does not have
+- THE CONSTRAINT: 茅萱 says the same two utterances back, word for word, at 11:231 and 11:271, from the other side of the loop. The EN of 11:135-11:136 and 11:271 MUST be byte-identical, and so must 11:90 and 11:231. The loop is the story
+- physical description: about 茅萱's own age, matted hair, bloodshot eyes, blue-white face, emaciated; green-and-blue odd eyes and a face 茅萱 thinks resembles her own. Stated, hedged with 「気がする」, never explained
+- as-of: 00000A18
+
+## 城崎 and the unnamed 荒田 attackers (00000B27) — voices on a phone, never seen
+- first_appears: 00000B27:11:107 (as the noise 良治 shouts at); first words 11:116 (「知花の 仇 ……！」)
+- pronoun(s): none observed
+- speech level baseline: TWO layers, four cells apart, and that is the whole characterisation. To their victims, shouted タメ口 fragments with no verb of accusation — 「知花の 仇 ……！」, 「サクラちゃんをよくも……！」. To their 大魔女, flawless 敬語 reporting a completed job — 「大魔女様。呪殺事件の犯人を始末できました」 (11:137)
+- sentence-final particles: none in the shouted lines (both are noun phrases left hanging); ～ました in the report
+- copula: だ / です (by addressee)
+- verbal tics / catchphrases / fillers: none. Three lines in the project
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO — they kill two people without one coarse word; sentence length VERY SHORT; formality LOW then HIGH. The report line must sound like a subordinate pleased with himself, and it must not sound like a threat
+- 城崎: identified by 幸太郎 from the voice alone (11:148), and described at 00000B3F:11:21-11:22 as a fond-of-a-drink, likeable uncle and the last person anyone would expect. He is in the GLOSSARY as 城崎健吾 from an earlier file; the given name is NOT used here
+- known ambiguity / open questions: how many of them there are is never stated (五島 says several, 00000B3F:11:23-11:24); 知花 is a name that appears nowhere else in the project; the phone they are reporting into is なつみ's father's, and nobody asks why they answered it. -> Q173
+- 城崎 IS ON SCREEN in the 00000BD6 branch (00000C38:11:9-11:100) and he is the opposite of the phone voice: about fifty, widowed, from an old 荒田 family with no direct tie to the 新村, cheerful, loud, 俺, an exclamation mark on nearly every line, and self-deprecating about his own skill (「鉈でハエを切るだけじゃ、腹はふくれないよ！」 11:55). This file is why 00000B3F:11:21-11:22 calls him the last person anyone would suspect.
+- his TWO breaks, and they are both silences inside a shouted conversation: 11:33-11:34, where he begins 「でも、大魔女様――」 and substitutes 「えっと、ここの長老が」 in front of an outsider (-> Q191); and 11:80-11:94, where he brakes the buggy dead and tells なつみ never to tell anyone she has the ability, that 「その力はね、魔女の力なんだ……」, and that 「今のことは忘れた」. The second break has no exclamation mark in it at all.
+- he is neither hostile nor cleared in that branch: he is one of the three named suspects 五島 is left with at 00000C50:11:52.
+- HIS LONGEST RUN is 00000D11 and 00000D29, and it changes this block: he is alone on screen with 古郡なつみ for two whole files, drives her forty minutes out of the settlement and back, and is the only 荒田 resident who helps her. The exclamation-mark voice of 00000C38 is intact for the small talk and absent for everything else.
+- the KNIFE, 00000D11:11:23-11:40: he asks what she will do if he is the culprit, presses a sheathless knife on her, makes carrying it the condition of the ride, and says 「魔女の話は知らない」. 00000D59:11:39-11:41 supplies the reason from a third party — his wife was killed in the 呪殺, and if he let himself believe なつみ is a 魔女 he would want to kill her. The knife is him handing over the means against himself. He never says this; the old woman does.
+- the ENTRAPMENT, 00000D29:19:5-19:65: he states the 呪殺 mechanism (the 魔女 names a culprit, the settlement 「捧げる」 them, every resident is a killer, the real target is the 魔女), lets her take it as a threat and hold a knife to his throat, then tells her that what she is doing IS 呪殺 — 「今、まさに君がやろうとしていることだ」 (19:47) — and finally says the お告げ was a lie told so she would feel it from inside. The narrator cannot tell which layer is the lie, and 五島 later argues the retraction is itself the lie. -> Q200
+- the LAND speech, 00000D29:19:76-19:94: railway evictions, territorial disputes between states, indigenous refusal of civilisation, wars of expansion — four examples in four cells, no rhetoric, ending 「死んでも守らないといけない場所」. It is the only time anyone in the project explains why nobody leaves.
+- what he does off screen: he cuts a flowering cherry branch while she is inside the convenience store, hesitates for hours over whether helping a witch is allowed, and leaves it with the 長 instead of handing it over (00000D59:11:23-11:27). Then at 00000DE9:11:130-11:144 he leaves his seat at the 十三回忌 to strip the mask and vestments off two sick girls, names the liquid, and goes straight back. The chunk ends on なつみ working out that he is the only person who could have put 「スグニゲロ」 in her pocket (11:238-11:239), and no answer.
+- his address forms for her now number three: なつみちゃん, 君 (which arrives with the knife, 00000D11:11:32), and 「お姉ちゃん」 once (00000D29:19:113).
+- A FOURTH BRANCH, 00000E7B:34:12-34:218, four years later than any other: the loud 俺 exclamation-mark voice of 00000C38 intact, aimed at a stranger with a handgun in her bag. 「初めましてお客さん。／お客さんなんて、珍しいこともあるもんだな！」 (34:29-34:30), then 藤野さん for the rest of the file, and 「あいよ」 again at 34:189.
+- he is the one who shoots the mother bear, and the one who states the hunting rule in four flat cells with no exclamation mark in any of them: 「これはこの荒田の狩りのルールだ。何百年も前からの御先祖様の知恵なんだ。／母熊を殺したら、小熊も殺せと」 (34:204-34:205). It is the only 荒田 rule he explains without breaking off mid-sentence. Contrast 00000C38:11:33-11:34. -> Q191
+- THE ATTACKERS ARE ON SCREEN in this branch and their two layers are unchanged: 敬語 to their 大魔女 while asking for a child to kill (「さあ大魔女様、夏菜をお渡しください。／大魔女様とお客人に危害は加えません」 88:120-88:121), 敬語 to the outsider (「お客人、ご覚悟」 88:142), and then a shouted 「呪われた親子め……！　荒田のために死ね……！」 (88:252) and a chant of 「殺せ！」/「客人を殺せ！」 (104:20). The politeness and the chant come from the same mouths four cells apart.
+- A FIFTH BRANCH, 00000F9F:11:70-11:88, and it is the quietest he is anywhere: the exclamation-mark voice of 00000C38 is completely absent for the whole scene. 「なつみちゃん……」, 「そんな大したことじゃないさ……。／嫌な予感がしたから、何とか伝えようと思ったけど、間に合ってよかった」, 「そうだね、色々と疑問に思うことが残ってるだろう。／うちに寄っていくといい」, 「そうか、今日は疲れてるだろうしね。また気が向いたら来るといいよ」. Four lines, no exclamation mark in any of them, and he takes a refusal without pressing
+- he did not join the 襲撃 (11:42) and is not in custody; with 新村夏菜 he is one of only two people left living in 荒田集落, and 五島's worry about what becomes of the settlement is built on it
+- the 「嫌な予感」 at 11:74 is his own, unexplained, and it is the second time he acts on one; nobody in the scene asks about it
+- HE IS ON SCREEN NINE YEARS EARLIER, 00001154:8:18-8:27, in his own garden, arguing with his wife 城崎百合子 (her own CAST block). The exclamation-mark voice of 00000C38 is absent: 「百合子、落ち着くんだ。確かに幸太郎君は疑いがかかりやすい立場にある。／だからこそ、もうちょっと――」 and 「でも、幸太郎君がやった証拠はなかったじゃないか！」. He is the one defending 幸太郎 and refusing to bring outsiders in
+- his address form for 幸太郎 is 幸太郎君 — a -kun suffix on a man in his thirties, from a neighbour about twenty years older
+- WHAT HAPPENED TO HIS WIFE, and it is the only account anywhere: she intended to go to the police the next morning, and 新村茅萱 came into the house that night and put a knife through her throat. He appears in five later branches as a cheerful widower and never says how she died; the 00000D59 account says only that his wife was killed in the 呪殺 -> Q477
+- A SIXTH BRANCH, 000013FD:8:61-8:131, and it is the second scene in which the exclamation-mark voice is entirely absent (after 00000F9F). He taps a hiding girl on the shoulder, apologises for startling her, names himself, apologises for her having come at a bad time, offers to walk her home, sets off before she answers, and says he is frightened to walk alone himself — 「念のため、注意しながら歩いてね。俺もこんな状況じゃ1人で出歩くのは怖いし」 (8:77)
+- he uses 君 for her, which is the address form that arrived with the knife at 00000D11:11:32, and 大魔女様 to 新村エリカ in front of an outsider — where at 00000C38:11:33-11:34 he broke off and substituted 長老 in exactly that situation. The hesitation is gone in this branch -> Q191
+- his function here is EVIDENCE: 五島's narration uses his ordinariness to conclude that the residents are not directly involved (「城崎さんは何1つおかしな仕草を見せず、私を送り届けてくれた。／やっぱり、ここの住人たちは直接事件に関わっていないようだ」 8:131-8:132). He is used, for once, to clear the settlement rather than to be suspected
+- he reads an awkward silence and leaves without being asked (8:129-8:130). Four appearances in a row now in which he has no exclamation marks at all
+- 0000151C:8:334: one line, shouted, in the 能面 and 赤装束 crowd after the organism dies — 「大魔女様！　こっちに来て下さい！　大変です！」 — and it is him who finds the two corpses still moving. The exclamation-mark voice is back after four appearances without it, and 大魔女様 is used in front of outsiders with no hesitation
+- he is alive and present at the settlement's rescue in this branch, which no other branch has shown
+- 00002057 IS HIS BEST SCENE ANYWHERE and it makes him the only person in 荒田 who reasons against the settlement. He refuses 幸太郎's conclusion outright — 「ふざけないでくれ。俺は騙されない」 — states his own reason for having struck the couple and it is not grief (「俺がここで武器を振らなければ、俺は村八分になる。／当たり前だろ？」), grants that the circumstances look bad, and then puts the inversion: the schoolgirls came to help and the couple were hiding to support them. He raises the house-arrest years against 幸太郎, catches the slip (「誰からだ？」), and asks 「黒幕は誰なんだ？」. Then he is coerced with 村八分 and handed ドローガ, and his last line is 「くそ……！」 -> Q800
+- 00001BBA: he watches 幸太郎 through a whole night in the third year and makes the argument nobody else in the settlement makes — that proving a man innocent by watching him REQUIRES a death, so the watch is a man sacrificing others for himself — and closes it with the settlement motto. Then the news of a killing at the 墓地広場 takes him out of the room
+- 00001BA8: he is the 「」 voice trying to stop a killing already decided and he caves in one cell, naming his own leverage — 「サクラちゃんの次に呪殺されたの、誰だか分かっているよな？」 — and ends on 「ごめんよ、許してくれ」. The exclamation-mark voice is entirely absent
+- 00001C1D: he states the whole case as a social phenomenon — 「犯人なんていない。みんなが怖がって、魔女裁判のように疑わしい人間を殺しているだけ。／山奥の集落に相応しく、恐ろしく身勝手なことだよ」 — refuses to be told 「魔女の力の秘密」 on the ground that there is no need to know secrets for the sake of knowing, and asks 幸太郎 「君は誰だ？」. His last cell alone is 「明日、呪殺が起こる、か……」 -> Q799
+- 00001C12: the workshop, the exclamation-mark voice at full strength, a birthday knife for 夏菜, and the only account of 荒田's economy anywhere — his 鉈 and メイス are bought outside as 最高級品 and 「俺がこの荒田の財政を支えている」
+- 00001BC4: drunk at New Year, 絡み酒 on a minor, and the file's exposition is his: 荒田's food names are ugly on purpose to keep outsiders away, and 荒田 was nearly called 天田 -> Q773, Q418
+- HIS FATHER'S DEATH, 0000201F: at the bottom of a mountain in heavy rain, throat cut with a 鉈, and he refuses the verdict on the one physical objection that matters (a bad leg). An older man walks him through the times and distances and ends on 「ここに住んでいる以上、75歳以上になったら――」. He answers 「もういい！　俺は信じないぞ！」. He has been living with it since -> Q802
+- 00002340: three cells at 荒田 as an ordinary bystander in the converted route — he tells 春花 that 茅萱 was there a moment ago, works out that a killing is starting, and can only manage 「お、おい……！」 as 春花 takes なつみ's body away. No 俺, no exclamation-heavy register; he is out of his depth and the brevity is the characterisation.
+- HE NARRATES A WHOLE FILE, 0000243F (order 414, 165 lines), in 俺 — 城崎健吾's first narration anywhere in 414 files, and this block has carried no narration-voice line until now
+- narration voice: plain past, short declaratives, one thought per cell, and self-accusing without any self-pity — 「情けない話だ。俺はそれ以上、みんなを止める行動を起こせなかった」 (11:146). The exclamation-mark voice of 00000C38 is present in his SPOKEN lines and absent from every cell of narration, which is the same split 五島's and 伊勢's narrations have
+- HE SPEAKS TO HIS DEAD WIFE inside his own narration, in the second person: 「なあ百合子、俺は間違っているよな？　俺、こんなことしていいわけないよな？／最初に呪殺されたお前なら分かるだろう？」 (11:65-11:66). The only place anywhere he addresses her -> Q932
+- HE STATES THE FOUR 荒田 FAMILY LINES, 11:102-11:113, the only place they are listed: 新村 (head family, martial arts and hunting), 城崎 (weapons and tools), 新島 (farming and the natural world), 瀬 (water and irrigation). He adds that all four have branched so often that the same surname usually means no close kinship, 新村 most of all -> Q929
+- his ANALYSIS of the costume, and it is the only explanation of the 能面 and 赤装束 anywhere: guns would be easier, so the weapons are a show of resolve; the girl was invited by 新村本家, so killing her defies 新村本家, which is the settlement's will; therefore a rising by everyone else is a クーデター (11:45-11:53)
+- his OWN POSITION, stated without excuse: he objects twice, is told 「――裏切り者は魔女の手先」 and 「――城崎、お前も――」, and gives in because 「もしみんなに逆らえば、俺はあの子よりも先に自分の作品の錆になるのだ」 (11:36). He then names the thing that keeps him from becoming 瀬 — 「俺は妻が殺されたからこそ、俺は自制心を保てるのだ」 (11:122)
+- HIS LONGEST RUN ANYWHERE IS 00002444, ~900 cells as 五島絵梨奈's rescuer, and the exclamation-mark voice is completely absent for the whole of it. What replaces it is slow, level and gentle: 「落ち着いて。俺は君の味方だ」 (14:116), 「君を無事に元木町に帰すために来た」 (14:120), 「大丈夫、ちゃんと無事に帰してあげるから」 (14:355)
+- HE PUTS HIS KNIFE ON THE FLOOR AND TURNS HIS BACK, 14:156-14:165, offering his own throat to a fifteen-year-old who has just called him a murderer, and says 「もし君が俺を信用できないなら、もう俺は役に立たない。この場で俺の首を刺すといい」. It is the 00000D11 knife move again, from a man who has by then helped kill somebody
+- his stated motive is 罪滅ぼし and he says so twice (14:177, 14:266); his stated reason for defecting is not conscience but consequence — 「この先、もう今まで通りの荒田ってわけにもいかないだろう。／何しろ住人が直接人を殺しにかかったわけだから」 (14:248-14:249)
+- WHAT HE TELLS HER ABOUT HIS WIFE, 14:311-14:328, and it is the only account he gives anyone anywhere: 城崎百合子 had intended to bring the police in the day before she died; he does not claim to be free of hatred (「俺は仏でも菩薩でもないし、憎しみがないかと言われたら嘘になる」); and what stops him is her opinion of him — 「もし俺がめちゃくちゃな行動を取ったら、きっと百合子は悲しむだろう」
+- HE POINTS A HUNTING RIFLE AT THE ANTAGONIST AND DOES NOT KILL HER, 00002444:20:465-20:531: he identifies her from 糸姫山's etymology and a settlement 書簡, fires once, misses or is unable to hurt her, and then converts it into terms — 「ならば君には、生き残った人間を全力で守る義務がある」 and 「俺はこのまま、君を見張る。／ちょっとでもおかしな真似をしてみろ。今度は外さない」. It is the coldest he is anywhere and he is still the only person in the scene who bargains rather than kills -> Q936
+- his ONE です・ます register with an adult man: 旦那さん and 奥さん for the 古郡 couple (14:492-14:499), where every other adult in the project gets his 俺 タメ口
+- 五島's verdict on him, 14:329-14:334: 「この人はただ純粋にこの集落の平和を望んでいる。／そんな人が殺人なんてするはずがない」, written by the narrator who spent 200 cells refusing to trust him
+- in this branch he survives, goes back up the mountain with 古郡良治, and is one of the party released by the 女神様; he loses the memory of the night with everyone except 新村春花 (00002444:32:300-32:301)
+- 0000246E:11:45-11:228 IS THE LONGEST TWO-HANDER HE HAS ANYWHERE and it is him prosecuting 新村幸太郎 for ~180 cells without raising his voice once. The exclamation-mark voice of 00000C38 is completely absent, as in 00000F9F, 000013FD and 00002444
+- his METHOD is documentary: the 回覧板 said to pass it to the house to the south, only 新村本家 lies north of him, therefore the writer delivered it to his door first (11:58-11:61). He then walks the suspect through the alternatives one at a time and discards each
+- he raises the house-arrest years as the charge that matters: 「つまり君は住人の命を使って無実を証明した」, and 「監視するように言ったのは君自身だ」 (11:86-11:89)
+- HE SUSPECTS THE IMPERSONATION, which nobody else in the project does from outside: he asks the man to repeat a conversation they supposedly had the night before, says 「昨夜の君が、本当に君だったのかどうか、確認したい」, and answers 「そんなことをできる人なんて、他に誰が……」 with 「いるじゃないか、1人だけ」 (11:121-11:135). It is 新村栄一郎 he means and he never says the name -> Q799
+- his POSITION, stated without rhetoric: 「なつみちゃんが魔女？　ふざけたことだ」; the settlement has changed its theory three times and solved nothing; 「この集落はバカばかりなのか？」; and the reason he will not trust his neighbours — 「皮肉なことに、この集落の者よりもなつみちゃんたちの方が信用できる」
+- HE CALLS THE POLICE and gives the reason the settlement never has: 「国有地とは言え殺人事件があったんだ」, and 「国有地だからこそ国に入ってもらわないといけない」. He also names the 大魔女 as concealing something and is right
+- HE SHUTS HIMSELF IN and says why, with no defence: 「家にこもるなんて、卑怯だと思うかい？」 / 「俺は自分で卑怯だと思うけどな……」, followed by the only strategic reason anyone gives for surviving — 「必ず誰かが生き延びなければならない。／でないとここで起きたことを伝える者がいなくなる」
+- HE INVITES HIS OWN MURDER, 11:213-11:221, the same move as the sheathless knife at 00000D11: 「それとも、今ここで俺を殺すかい？」, then the timing of his wife's death nine years earlier as the precedent. His farewell is 「達者で」 -> Q971, Q477
+- he survives this branch too: 00002478:11:108 reports him moved in with a friend in 飯沢市 after the settlement is closed
+- as-of: 00002478
+
+## unnamed 女ケ沢市 bystanders, 久慈浩二 and 畑中ここな (00000CCA) — the first 女ケ沢 killings, seen from outside
+- first_appears: 00000CCA:39:0 (「だ、だれかー！　子供がしし、死んでるー！！」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 乱暴 タメ口 shouted in public — no 敬語 anywhere, no complete sentences after the first. 久慈浩二 alone has a warm father's register in his two pre-scream lines
+- sentence-final particles: ～ぞ (「2丁目でも子供が殺されたぞ！」 47:5, 「犯人まだ近くにいるぞ！」 47:8); ～だなあ (久慈, 47:0); ～もん (ここな, 47:1); ～よ (「誰がやったんだよ！」 47:6)
+- copula: だ
+- verbal tics / catchphrases / fillers: none. Fourteen lines between them, in a file of seventeen
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO — nobody swears; sentence length VERY SHORT, and every line after 47:2 is either a question with no answer or an imperative. Do not give the crowd a leader and do not attribute any line to a named speaker
+- 久慈浩二 and 畑中ここな are already in GLOSSARY from an earlier file; here they are a father-figure and a small girl on their usual walk to the プリガールショー, and the file exists to stop one cell before the reader is shown what he sees: 「こ、ここな！　何だ？　何なんだこれ？」 (47:3) then 「いやーーー！！」 (47:4). EN must not add an object to either line
+- the stammer at 39:0 is written by doubling kana (「子供がしし、死んでるー！！」), not by repeating the word. Keep it a broken-off syllable, not a stutter on the whole word
+- structural job: the event the whole project dates from, shown for the first time and only from the street, in two timestamped fragments one minute apart, closing on a narration cell that names it 「第一女ケ沢市事件」
+- known ambiguity / open questions: the two children are never named or described; nobody sees anybody; 「第一」 implies a second case that no file in the project has yet shown. -> Q012, Q021, Q027
+- as-of: 00000CCA
+
+## 近藤課長 (こんどう, Kondo) — 情報部の課長 at 古郡良治's company
+- first_appears: 00000CE3:11:69 (「どうしました？　古郡課長」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 丁寧 (です・ます) between equals — they hold the same rank, so it is collegial rather than deferential. He answers a technical question with a technical answer and a laugh, and never once asks why it was asked
+- sentence-final particles: ～ですな／～ですなあ (「またまた面白い企画ですな！」 11:74); ～でしょ (「名前を変えてリリースするだけでいいでしょ？」 11:77); ～ですよ (「1ヶ月じゃすまないですよ！」 11:78); ～ですよ！ with volume
+- copula: です
+- verbal tics / catchphrases / fillers: 「はっはっは！」 twice in five lines (11:74, 11:78) — the same written laugh as 新村幸太郎 and 新村エリカ, and it must differ in EN from 「ははは」 and 「ほほほ」; 「んん……なるほど……」 as a thinking noise (11:76)
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length MEDIUM, with one clause of specification per sentence; formality MEDIUM-collegial; vocabulary register software engineering (リリース, リアルタイム送信, 外部サーバー, テスト). He is the funniest thing in the file and does not know it: he cheerfully explains to a man building a bug for a blackmailer that the job would be trivial if he only wanted recording
+- structural job: the scene exists so that the reader learns what 古郡良治 cannot do, from someone with no idea what is being asked. Do not let EN hint that he suspects anything
+- as-of: 00000CE3
+
+## unnamed 捜索ヘリの搭乗員 and ground control (00000E7B:11:1-11:20)
+- first_appears: 00000E7B:11:1 (「こちら荒田地区上空に到達。」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a — no pronoun in twenty cells
+- speech level baseline: 丁寧 radio procedure from the airborne side (了解, 確認できません, 搬送します); PLAIN-FORM ORDERS from the ground side (確認せよ, どうだ、生きているか？, よし、すぐに……するように). The ground side is marked only by a 「――」 prefix and has no 「」 — the same device as the 000004F9 radio and the 000003AE interviewer -> Q047, Q064
+- sentence-final particles: none; every line is a report or a command
+- copula: です／ます (air) / だ (ground)
+- verbal tics / catchphrases / fillers: 「了解」 twice; 「応答願います」
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length VERY SHORT; formality HIGH one way, flat-imperative the other; vocabulary register procedural. The register must not crack — the only thing that cracks is the sentence: 「えっと……。／これは……／どう見ても……」 (11:18-11:20), which is where the file leaves them
+- structural job: twenty cells of pure procedure opening the file, four years ahead of everything else in it, describing a burnt settlement and one body. The reader does not learn who the body is for another 2600 lines
+- known ambiguity / open questions: how many voices are on the air side is not stated; the unfinished sentence at 11:20 is never completed
+- as-of: 00000E7B
+
+## unnamed 旅館の仲居 (00000E95:11:93-11:97)
+- first_appears: 00000E95:11:93 (「失礼します」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 最上級敬語 — 「本日は、当旅館にお越しくださいまして、まことにありがとうございます」, 「こちら、ご注文いただいたものです」 — delivered with a 三つ指 bow (「 恭 しく三つ指をつく」 11:96)
+- sentence-final particles: none
+- copula: でございます-family
+- verbal tics / catchphrases / fillers: none. Three lines in the project
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM; formality MAXIMUM; vocabulary register hospitality. It is the same surface form as the プリマベラ staff (000007EA), 五島桃子's waitress voice (000005C1) and the menu navigator (000000F2) — the fourth instance, and they must not all sound identical in EN -> Q075
+- structural job: one turn of flawless service in the middle of a family talking about a commissioned murder, and nobody's register changes around it
+- known ambiguity / open questions: -> Q075
+- as-of: 00000E95
+
+## 南崎しのり (なんざき しのり, Shinori Nanzaki) — the four-time 大食い champion, 00000EAF
+- first_appears: 00000EAF:46:58 (seen and heard giving up on the curry, unnamed); named at 46:96
+- pronoun(s): 私 ("私はこの4年間、あなたに勝つことだけを目標にチャンピオンを防衛し続けたの" 22:53)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: 丁寧 (です・ます) to everyone, level and unhurried, with feminine plain-form endings inside it (～の, ～わ). She never raises her voice and never boasts; the confidence is in the content, not the delivery
+- sentence-final particles: ～の (「後をつけてたの」-shape statements, 22:53); ～ね (「あら？　あなた、どこかで会いました？」 46:137); ～ですねえ (to the interviewer, 91:217)
+- copula: です / の
+- verbal tics / catchphrases / fillers: 「あら？」 as an opener; she states a number rather than an opinion when asked how she will do (「目標は7キロですね」 91:217); one belch on live television, which the narration says is proof she is serious (22:285-22:290)
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length MEDIUM and complete; formality MEDIUM-HIGH and constant; vocabulary register plain, with no technical eating vocabulary at all — she never explains a tactic, she only performs it and lets the narrator work it out
+- THE CHARACTER IS A FEINT, and it is the file's best-hidden one: she threw the 10kg curry challenge at 46:57-46:63 with 2kg left in order to make 五島 complacent, and 五島 only works it out at 97:70-97:79 with fifteen minutes of the final left. Her cheerful 「いやあ、これはすごいですよ！」 (46:97) must not sound like a tell
+- she has waited four years for a rematch with a girl she met once at a town festival (22:47-22:53, 97:179-97:180) and her last line is a straight concession: 「4年経っても私が追いつける相手じゃなかった。／私の、完敗……」 (97:322-97:323)
+- her surname is printed 「南 崎」 with ruby-residue spacing at 40:144, 40:146 and 46:96, and 「南崎」 everywhere else -> Q268, Q010
+- known ambiguity / open questions: -> Q268
+- SHE MEETS 五島絵梨奈 FOUR YEARS EARLIER, 0000191C, as a guest challenger at a small-town festival contest two months after winning 『大食祭800～冬の陣～』. The register is already what it is at 00000EAF: formal です・ます, 「初めまして、南崎しのりと申します。よろしくお願いします」, and a smile the narration calls 嫌みのない
+- WHAT SHE SEES is never explained: she watches 五島 through the middle of the contest with a 険しい顔 while 五島 grins back, wins on 18 plates against a forfeit, and then says three sentences to 五島's back that 五島 does not hear — 「五島絵梨奈さん……。彼女が本気を出したらどうなるか。／あなたが再び大食いのステージに上がってくるまで、私ももっと強くなっておくわ。／あなたとは、きっとまた出会えるはず」 (11:168-11:170) -> Q722
+- her address form is 五島絵梨奈さん, the full name plus さん, and あなた. It is more formal than anything she uses at 00000EAF and 五島 is fifteen
+- as-of: 0000191C
+
+## 新橋ゆき乃 (しんばし ゆきの, Yukino Shinbashi) — the ジャポニカテレビ announcer, 00000EAF
+- first_appears: 00000EAF:22:7 (「はい、こちら現場の新橋ゆき乃です。」)
+- pronoun(s): 私 ("司会は私、ジャポニカテレビアナウンサーの新橋ゆき乃です！" 91:165)
+- speech level baseline: 丁寧 broadcast register at maximum volume — です・ます throughout, exclamation marks on almost every cell, and a full-width space opening most continuation cells
+- sentence-final particles: ～です！／～ます！; ～でしょうか！？ (her question form, never answered); ～ますでしょうっか (stretched, 34:165 is the waiter's version of the same shape)
+- copula: です
+- verbal tics / catchphrases / fillers: 「さあ、」 and 「おおっと！」 and 「あーっと、」 as cell openers; she narrates numbers constantly (weights, minutes, ranks) and the narrator uses her as her only source of information about the other tables (97:90); she counts down; 「みなさん」 for the audience
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT and stacked; formality HIGH but shouted; vocabulary register sports commentary
+- her ONE break in register is a stammer at the moment 五島 speaks: 「ス、ススススス、スタッフさん！　五島さんに替えの箸を！」 (97:190). It is the only time she is not announcing
+- note: 「ゆきぴん」 is her public nickname and appears once, in narration (91:167), not in her own speech
+- SHE APPEARS FOUR YEARS EARLIER AND IN A DIFFERENT JOB, 00001A4E: a morning outside broadcast from 中央公園 in 元木町, reporting a cherry festival rather than an eating contest. The register is identical — bright broadcast です・ます, exclamation marks throughout, 「全国の皆さん！　おはようございます！」
+- she delivers the 御神木 and festival material as light local colour: the 70th festival, the tree under seventy years old, the 花見休暇 custom, and the ON-SCREEN admission that the first festival ever held was deliberately numbered 第15回 because residents doubted the tree's age -> Q728
+- she withholds the guest's name on purpose to make people come — 「気になる方は、ぜひ元木町に遊びに来て下さい！」 (8:30)
+- her relationship to the studio is a two-way: the host calls her ゆきちゃん and she gives him no address form at all
+- 00001D0E: a live outside broadcast for 『この道、我、達人！』 from 葛飾区, and it is the longest she is on screen anywhere. Broadcast-bright です・ます throughout, 「はーい！　私、新橋ゆき乃は引き続き――」, and a running commentary on a dim building she calls 不気味 before she goes in
+- SHE IS READ AND SHE ANSWERS HONESTLY ON AIR: the flat is untidy, she has no appetite as distinct from eating three meals, she lives on location bentos, and she takes the advice (use a knife and fork instead of chopsticks or a spoon) at face value. Her one general remark is 「ステラさんの占いって、人生相談みたいな感じですね」. The studio host's closing line is 「いやあ、ゆきちゃん、ちょっとお仕事の力を抜かないとね」
+- as-of: 00001D0E
+
+## 鵜飼 (うかい, Ukai) — the ジャポニカテレビ programme director, 00000EAF
+- first_appears: 00000EAF:46:77 (「あの、ジャポニカテレビの者ですが」); named at 46:127
+- pronoun(s): 私 ("私、番組ディレクターの鵜飼と申します" 46:127)
+- speech level baseline: 丁寧 (です・ます), brisk and practical, with 恐縮ですが hedges before anything inconvenient
+- sentence-final particles: ～ます！; ～でしょうか; ～ください
+- copula: です
+- verbal tics / catchphrases / fillers: 「ありがとうございます！」 to close every exchange; he asks three questions in one breath when he is excited (46:107-46:109); his written register is the same as his spoken one, only shorter (28:200-28:206)
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM-HIGH. He is the only person in the file who treats her silence as an administrative fact rather than a wound, and it is a kindness
+- as-of: 00000EAF
+
+## unnamed 謝肉館のウェイター (00000EAF) — the steak house waiter with the pompadour
+- first_appears: 00000EAF:34:23 (seen); first line 34:24 (「いぃぃぃぃぃぃぃぃぃぃぃらっしゃいますぇー！」)
+- pronoun(s): none observed
+- speech level baseline: 最上級敬語 (ございます, いたします, お待ちください) with the final syllable of nearly every sentence stretched over ten or more kana. Two registers on the surface, one underneath: the stretch does not change the grammar
+- sentence-final particles: ～ますぇー; ～でぇぇぇぇす; ～くださぁぁぁぁい; ～ましぃぃぃぃぃた
+- copula: です
+- verbal tics / catchphrases / fillers: the stretched final syllable, every time, with the vowel count varying; 「んー？／あれれー？」 while working something out (34:52-34:53); he calls the crowd レディース・エーンド・ジェントルメン (34:112) and announces the food like a ring announcer
+- dialect: none; the register is service-industry showmanship
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT with an enormous tail; formality HIGH. THE CONSTRAINT: EN must find one syllable per sentence to stretch and stretch it every time, and the stretch must sit on a polite word, not a rude one
+- he recognises her from her muteness, her order and her size (34:54-34:55), gets the kitchen to break the booking rule for her, and turns up in the crowd at the final as a fan, in exactly the same voice: 「五島さーん！　昨日の勢い、見せってくださぁぁぁぁぁぁぁぁぁぁい！」 (97:134) and 「ごっとうさーん！　勝てると信じてむぁぁぁぁぁぁぁぁぁしたー！」 (97:286)
+- as-of: 00000EAF
+
+## unnamed 食堂の店主 (00000EAF) — the owner of the neighbourhood diner in 元木町
+- first_appears: 00000EAF:52:77 (「お、絵梨奈ちゃんいらっしゃい！　仕事は順調かい？」)
+- pronoun(s): none observed
+- speech level baseline: rough-warm タメ口 to a regular, 丁寧-adjacent scolding to strangers
+- sentence-final particles: ～かい？; ～ぞ！; ～だねー！; ～もんじゃないぞ (the scolding form, 52:109)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「お、」 and 「あいよ！」 as openers; he serves her without an order being placed (52:80) and has a dessert ready she does not know about (52:121)
+- dialect: none marked; the register is the same market-stall family as the 焼き芋 seller (00000818) and the 街角の占い師 (00000A18)
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality LOW. He never once refers to her not speaking except to defend her, and the defence is two flat sentences with no sentiment in them (52:108-52:109)
+- he is the one who gives her a training menu when she enters the contest (40:13-40:15) and the one who notices the grin has come back (40:19)
+- as-of: 00000EAF
+
+## unnamed アルバイト先の社長 (00000EAF) — 五島's employer, text only, never on screen
+- first_appears: 00000EAF:52:32 (email)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (です・ます) with exclamation marks, warm and persistent; he writes the way a small-firm owner talks
+- sentence-final particles: ～ないか？ (the offer form, 52:33); ～でしょ？ (52:46); ～みて。 (52:48)
+- copula: です／だ mixed
+- verbal tics / catchphrases / fillers: 「五島さん、」 to open every message; he never takes the first no, and never the second either
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM. He is the only person in the file who values her for something other than eating, and the file's opening scene is her turning him down for the third time
+- note: his messages are typeset in straight double quotes, like every other written text in the file -> Q254, Q036
+- as-of: 00000EAF
+
+## unnamed 元木町民 (00000EAF) — the town as a collective voice
+- first_appears: 00000EAF:40:41 (「天才少女の復活だー！」)
+- pronoun(s): 俺 (28:303 「小遣いはたいて東京まで来た甲斐あったぜ！」)
+- speech level baseline: タメ口 shouted in public, with 丁寧 from the mayor's party (40:48)
+- sentence-final particles: ～だー！; ～からなー！; ～ぜ！; ～ですよー！ (28:308 「ごっとうさんなら、ずえーーったい優勝できますよー！」)
+- copula: だ
+- verbal tics / catchphrases / fillers: they call her 絵梨奈ちゃん, ごっとうさん, 五島さん and 天才少女 interchangeably in the same crowd; they carry placards with the town's name on them to Tokyo; five of their lines are set as bare cells prefixed 「――」 at moments she cannot be hearing them -> Q264
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW. The running joke is that the whole municipality — mayor, police, budget — mobilises for an eating contest, and the narrator calls them all idiots and then says she loves them (28:295-28:297)
+- as-of: 00000EAF
+
+## unnamed 露天風呂の占い師 (00000EC7) — the fortune-teller in the open-air bath, about fifty
+- first_appears: 00000EC7:11:37 (seen); first line 11:39 (「よいしょー！」)
+- pronoun(s): 私 ("私、これでも占いで食ってるんだ" 11:61)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: rough-warm タメ口 to a stranger, no honorific and no service register, with a smile in every line including the ones about death. She refuses to be paid and says so by not mentioning money at all
+- sentence-final particles: ～かい？ (11:44, 11:117 「防いでいいのかい？」); ～かね (11:58 「診てあげようかね」, 11:101, 11:251); ～さ (11:52 「気楽なもんさ」, 11:105); ～だね (11:67, 11:147); ～ごらん (11:219)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「どれ、」 before doing anything (11:58); 「おや、」 as an opener (11:228); 「そうかいそうかい」 (11:48); she repeats her own praise of the bath twice in three cells and the narration flags it (11:49); 「ああごめんごめん」 when she catches herself talking about the past (11:80)
+- dialect: none marked; market-stall register
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT, one idea each; formality LOW and completely unbothered. She delivers a death prediction, a statement that everyone alive is under sentence, and a good-luck wish in the same voice. Do not make her ominous and do not make her wise
+- SHE IS ALMOST CERTAINLY THE 街角の占い師 OF 00000A18: the same opening move (「どれ、お嬢ちゃんを診てあげようかね」 against 「どれ、お姉さんを見てあげようか」), the same ～かね, the same 人相占い method of looking only at the face, the same refusal of payment, and she volunteers that she once read a young person in Tokyo who did not look Japanese and warned them 「身近に騙す人がいるから気をつけなさい」. The text never states it, and 00000A18 is a story told inside a different branch. -> Q274
+- her address form is お嬢ちゃん throughout, one age-bracket below the お姉さん of 00000A18, because なつみ is sixteen
+- as-of: 00000EC7
+
+## the eyeless woman (00000EDF) — 五島絵梨奈's double, with her eyes cut out
+- first_appears: described at 00000EDF:37:42-37:49 (reported as a dream: 「私にそっくりな人」, 「目がない」, 「その人ね、私の目をえぐり出そうとするの」); first speaks at 41:2 (「お姉さんとの電話、楽しかった？」)
+- pronoun(s): 私 (「私はただあなたを助け出すためだけに生まれた存在よ？」 53:224). No switches
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: soft feminine plain form, level and unhurried, never raised once in five appearances. She gives instructions as invitations — 「じゃあ、私を刺してごらんなさい」 (53:129), 「ほら、何回も何回も刺さないと、苦しいままよ？」 (89:201), 「さあ、生まれ変わろうね！」 (89:322). The narration calls her voice at its worst 「今までで1番優しい耽美な声」 (53:249)
+- sentence-final particles: ～のよ／～の (constant); ～わよ？ and ～よ？ as her offer form; ～かしら (53:118, 53:145); ～ね (closing)
+- copula: よ／わ, feminine
+- verbal tics / catchphrases / fillers: 「サード・ジェネレーション」 used as her only address form, ~14 times, and twice ordered to stop (53:126, 53:189); 「かわいそう」 / 「かわいい」 applied to the same person in the same breath (53:143-53:144, 53:161-53:163, 89:302); 「あなたを助けられるのは私だけ」 and 「私はあなたの味方」, repeated verbatim at 41:9, 53:122, 89:282-89:308 and — out of a different mouth — at 117:150; 「痛いのは最初だけ」 (53:215, 89:314); 「うっふふふふ」 and 「あっはははは！」
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT and complete; formality MEDIUM — she is never polite and never rude; vocabulary register plain, with two exceptions where she produces exact pharmacology in the middle of a caress (53:150-53:153: 胞子, エフェドリン, メタンフェタミンの前駆物質). Do not make her hiss, do not make her grand. She sounds like somebody being kind
+- physical description, stated and never explained: the narrator's own height, hair, build and clothes (89:136-89:140), both eyes replaced by holes with fresh blood still running (89:149-89:153), and she says she took them herself and that the knife she hands over is the one she used (89:187-89:188)
+- THE CONSTRAINT: her identity is never asserted. 53:222-53:226 「あなたは誰なの？」 / 「私はただあなたを助け出すためだけに生まれた存在よ？　そろそろ誰だか分かるかと思ったんだけどね……」 / 「…………そう……」, and the narrator does not say what she worked out. At 117:141-117:154 the same two catchphrases come out of a voice the narrator finally names — 「古郡先輩……？」 — with a question mark, in the file's one moment of waking. EN must not settle it in either direction. -> Q288
+- what she wants is one thing and she asks for it five times: the narrator's eyes. She is refused, agreed with, obeyed to the point of the blade breaking the eyelid (53:239-53:252), and finally sits on her and does it herself (89:309-89:323)
+- known ambiguity / open questions: -> Q288, Q289, Q285. Whether any of her appearances happen at all is retracted at 117:162-169 along with the rest of the settlement sequence
+- as-of: 00000EDF
+## the imagined 新村春花 (00000EF6) — 古郡なつみ's hallucination of her comatose friend
+- first_appears: 00000EF6:8:5 (the dream); the unsignposted hallucination begins at 140:164-140:177 and runs through [134], [110], [67] and the replay in [61]
+- pronoun(s): 私 — exactly as the real 新村春花. No marker anywhere
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: タメ口, boyish/blunt — her everyday register 1, reproduced perfectly. ～ぞ, ～だろ, ～な, お前, 「バカかよ……」 (67:253), 「ったく」, and her exact sentence rhythm. Nothing in the JP distinguishes these lines from the real character's
+- sentence-final particles: ～ぞ (134:103 「おい、風に当たってしまうぞ？」); ～だろ (134:125 「普通の人間なら逃げ出すレベルだろ……」); ～な (134:161 「春、だな……」); ～よ (67:112)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「おいおい」 absent; 「バカかよ……。気づくの遅すぎだろ……」 (67:253); 「ん？」 as her whole answer (8:184, 8:208, 134:108, 134:119); くそ never appears in any of her hallucinated lines — her profanity ceiling holds even inside somebody else's head
+- dialect: none
+- EN correlates: identical to 新村春花's block. Contraction rate HIGH, profanity ceiling LOW-MILD, short imperative-heavy sentences
+- TWO MODES, and the text separates them:
+  1. the DREAM 春花 (8:5-8:97), signposted at 8:0 as a dream. Warm, teasing, and she says one thing that turns out to be literally true: 「私はこの手を、ずっとお前に当てたままだ。／だから、安心しろ」 (8:95-8:96). The narrator wakes with the hand on her cheek. -> Q332
+  2. the HALLUCINATION (140:178 onward, all of [134], [110]'s frame, [67], and the replay at 61:106-61:121), NOT signposted anywhere. It behaves like a real conversation for three whole blocks, gives the narrator advice, criticises her, and at 67:117-67:126 tells her she is a burden and to go and look at her own mask. 五島 cannot hear any of it
+- THE CONSTRAINT: 五島 states at 61:128-61:129 that 春花 has not woken once in two years. Every line in mode 2 is therefore the narrator's own voice. The EN must be indistinguishable from the real character's EN — no hedging, no italics, no dream diction — because the reveal depends on the reader having believed it. The sixteen cells at 67:236-67:269 are replayed verbatim at 61:106-61:121 to prove it; both must be word-identical in EN. -> Q318, Q319, Q333
+- note: the narration itself asserts the miracle at 140:171-140:177 (「奇跡は、起こるのだ。／奇跡が……／起きたのだ。」) and is never corrected. Do not soften it
+- known ambiguity / open questions: -> Q318, Q319, Q320, Q332, Q333
+- as-of: 00000EF6
+
+## 店長 (てんちょう) — the owner of the izakaya where 古郡なつみ works, 00000EF6
+- first_appears: 00000EF6:26:46 (「ああ、よかった。思ったより元気そうだ」)
+- pronoun(s): none observed
+- speech level baseline: rough-warm タメ口 to his staff and his regulars, with a business register underneath — he explains margins, poaching and a second branch in the same voice he uses to tease
+- sentence-final particles: ～ねえ／～なあ (110:287 「お客さんがたくさん来るからねえ！」); ～でしょ (110:287); ～よ (110:306 「これからも頼むよ！」); ～ちょうだいよ (110:303)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「なっちゃん」 in almost every line; 「ははは！」 (110:310); he asks a question and answers it himself
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length MEDIUM; formality LOW-warm; vocabulary register small-business plain — 時給, 利益, 引き抜き, 運営, 支店
+- he is the only adult in the branch who values her for something other than her friend: 「なっちゃんがたくさんのお客さんを呼び込んで利益を落としてくれる。／誰にでもできることじゃない」 (110:296-110:297), and he offers her a branch to manage. He also raises her wage unprompted (110:285) and drops the subject the moment she mentions the hospital (110:299-110:303)
+- he sees the 『エフェドリン』『血を浴びる』『首を絞める』 memo, frowns, and accepts 「小説でも書こうとしてるの？」 as the answer (26:52-26:57)
+- known ambiguity / open questions: -> Q330, Q337
+- as-of: 00000EF6
+
+## unnamed 居酒屋の常連 (00000EF6:110) — 長さん, 山さん and the counter regulars, collective
+- first_appears: 00000EF6:110:159 (「おお！　今日はなっちゃんがいる日か！」)
+- pronoun(s): 俺／俺たち (110:168 「俺たちの時代は、中学から飲み歩いてたもんだけどなあ」)
+- speech level baseline: タメ口, over-familiar, elderly-male, stretched vowels. They call her なっちゃん and never anything else
+- sentence-final particles: ～なあ／～もんねえ; ～だろ; ～か？ shouted across the room
+- copula: だ
+- verbal tics / catchphrases / fillers: 「おお！」 as a whole reaction; 「くそう」 twice in defeat (110:209, 110:217); 「謀ったな！？」 (110:212)
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling VERY LOW (くそう is the worst of it); sentence length SHORT; formality ZERO; vocabulary register old-man pub talk
+- 長さん gropes her, is caught out by which hand holds his chopsticks, and is handed a 「セクハラ20回記念」 free-beer voucher valid for one day that turns into an arrest warrant when it expires. He complains and comes back. The whole routine was 五島's idea and the owner plays along (110:218-110:221). The voucher pays off at 26:67, where she regrets never seeing it used. -> Q330
+- they are also the branch's rumour channel: they are the ones who say on screen that 伊勢 is a ロリコン (110:229-110:234), which 五島 confirms at 36:253
+- as-of: 00000EF6
+
+## unnamed 元木大学の学生集団 (00000EF6:110) — the second-round student party
+- first_appears: 00000EF6:110:244 (「ウェーイ！　2次会2次会！」⏎「ウェーイ！」⏎「ウェーイ！」)
+- pronoun(s): none observed
+- speech level baseline: no register at all — almost every line is 「ウェーイ」 at increasing length, with the 「ウ」「ェ」「ー」「イ」 stretched further each time (「ウウウェェェェーーーイイイ！！」 110:253)
+- sentence-final particles: none
+- copula: none
+- verbal tics / catchphrases / fillers: 「ウェーイ」 (5 cells); 「サバイバルウェーイ！」 (110:248); one ordinary line, 「お姉さんお姉さん！　辛いの我慢できたらセーフ！？」 (110:259); 「ぐあああ！！」⏎「やばいやばい！」 (110:271)
+- dialect: none
+- EN correlates: contraction rate irrelevant; profanity ceiling ZERO; sentence length ONE WORD; formality ZERO. EN needs ONE syllable that can be stretched the same way and repeated five times with no meaning attached
+- they address her as お姉さん, the only customers who do; the regulars use なっちゃん. -> Q331
+- as-of: 00000EF6
+
+## unnamed hospital doctor (00000EF6) — the neurology-ward physician, never named
+- first_appears: 00000EF6:36:103 (「すみません、今、面会謝絶中です」)
+- pronoun(s): 私 once in the plural (36:168 「我々から警察に通報はしませんので」)
+- speech level baseline: 丁寧 (です・ます) throughout, and the file's most carefully managed voice: he hedges before bad news with ellipses and abandoned sentences (「あの……その……」 36:106, 「正直申し上げて……／『分からない』と言うのが現状で……」 14:77-14:78) and drops the hedges entirely for good news (14:226)
+- sentence-final particles: ～ですね; ～かと (his refusal form — 「最良の対応だったかと」 14:92, 「難しいかと……」 20:272); ～ましょう (14:229, 20:289)
+- copula: です
+- verbal tics / catchphrases / fillers: 「こういう時なんではっきり申し上げると」 (26:173); he names the patients 古郡さん and 新村さん and never uses a given name; he asks for a decision and then takes it back and gives her more time (26:182-26:187)
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length MEDIUM-LONG and complete; formality HIGH; vocabulary register clinical and explained on the spot — 反射消失, 自発呼吸, 交換輸血, 稀血, シスAB型, ボンベイ型, 新生児黄疸, 鎌状赤血球症, アルカロイド
+- he accuses her of drug use to her face and offers not to report it (36:167-36:180), and never apologises for it; the narrator notes at 26:168 that she wanted him to and has no time for it
+- he is 五島's contact, not hers: she interviewed him for a paper on unapproved pharmaceuticals, and he hands 五島 the blood results and walks away without explaining (36:188-36:194)
+- known ambiguity / open questions: -> Q328
+- as-of: 00000EF6
+
+## unnamed hospital nurses (00000EF6) — collective, including the nurse-call voice
+- first_appears: 00000EF6:8:117 (「あ……／あああ！　に、新村さんが……！」)
+- pronoun(s): none observed
+- speech level baseline: 丁寧 to patients, warm and brisk, with the politeness burned off entirely by surprise
+- sentence-final particles: ～まーす (20:20 「はーい、すぐ行きまーす」), stretched; ～ますか
+- copula: です
+- verbal tics / catchphrases / fillers: 「はーい」 as the whole answer, three times (20:18, 20:20, 61:224); the nurse-call voice is set as two bare cells prefixed 「――」 with no quote marks (61:221 「――はい、どうしました？」, 61:224 「――はーい。」), the intercom convention of 000004F9
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM-warm
+- the waking nurse (8:117-8:120) loses her register completely: 「ほんとに、ほんとに起きてる……！／　新村さんが！　せ、先生！　せんせー！！」, the only stretched shout in the file, and the narrator says she recognises the feeling
+- as-of: 00000EF6
+## unnamed 佐波県警の私服警官 (00000F0D:8:96-8:201) — the plainclothes officer who takes the narrator in
+- first_appears: 00000F0D:8:96
+- pronoun(s): おっちゃん as a pronoun for himself (「おっちゃん、悪い人に見える……？」 8:168), never 俺 or 私
+- pronoun FREQUENCY: less often than typical; he prefers the self-name
+- speech level baseline: over-familiar タメ口 to a child he has just met, pitched deliberately to sound like a man on the make; it does not change one word when he turns out to be on duty (「そうだね。さあ、降りて」 8:190)
+- sentence-final particles: ～の？ ("大きな荷物持って何してるの？" 8:96); ～ねえ ("かわいい名前だねえ！" 8:134); ～だからね ("これでもおっちゃん、偉い人だからね！" 8:119)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「なるほどなるほど！」 — five times in four cells, twice doubled inside one cell (8:139-8:140, 8:148-8:149); 「ほっほー！」 (8:148); he repeats the personal details he has just been given back at the person who gave them (8:160), which the narration notices (8:162)
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT, exclamatory; formality LOW throughout, including the two cells where he identifies himself as police; vocabulary register plain, deliberately harmless
+- known ambiguity / open questions: the text never says whether the approach was a pretence from the first cell or whether he decided halfway; 8:172-8:173 (「だからおっちゃんの仕事はこういうのが合うんだろうねえ」) is the only hint and it is given before the reveal. Do not let the EN of 8:96-8:171 sound like a policeman. -> Q350
+- as-of: 00000F0D
+
+## unnamed そば屋のおばあさん (00000F0D:20:0-20:183) — the old woman at the roadside 食堂
+- first_appears: 00000F0D:20:0
+- pronoun(s): none observed
+- speech level baseline: rough-warm タメ口 to a regular and to a stranger alike, with no service register at all — she teases the customer instead of greeting him
+- sentence-final particles: ～ね？ ("大ちゃんはいつものでいいね？" 20:26); ～ねえ ("やることやってんだねえ" 20:31); ～よ
+- copula: だ
+- verbal tics / catchphrases / fillers: her greetings are slurred by age and the text spells the slurring out — 「あーら、いらっはーい、大ちゃん」 (20:0) for いらっしゃい and 「はーい、お待たせちゃーん」 (20:158) for お待たせしました. Both must be audibly slurred in EN and neither is a typo. -> Q366; 「ほいほい」 (20:30); 「カラカラと笑う」 is her narration tag (20:25)
+- dialect: none marked beyond the slurring
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW to everyone; vocabulary register plain and rural
+- address forms: 大ちゃん for 伊勢大二郎 — the only diminutive anyone uses on him anywhere in the project — and お嬢ちゃん for the girl
+- structural job: she is the only person in the file who reads the pair wrongly and says so, and her wrong reading is what the last two blocks are about. She has no name and no further scene.
+- as-of: 00000F0D
+
+## unnamed 園長先生 (00000F0D:68:12-68:17) — head of the 元木町 children's home
+- first_appears: 00000F0D:68:12
+- pronoun(s): none observed
+- speech level baseline: warm 丁寧-casual to a child in her care; two lines, both encouragement
+- sentence-final particles: ～わよ ("夏菜ちゃん、お迎え来たわよ" 68:12); ～ね ("しっかりね！　また遊びに来てね！" 68:17)
+- copula: だ (implied); no です except in the address
+- verbal tics / catchphrases / fillers: none observed in two lines
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM-warm; vocabulary register plain
+- note: 園長先生 is used as her name and as an address form; she is never given another. She is the only person who sees the narrator off, at the narrator's own request (68:19-68:20).
+- as-of: 00000F0D
+
+## unnamed 元木駅の駅員 (00000F0D:179:117-179:130, 56:206-56:213) — two station staff, one voice
+- first_appears: 00000F0D:179:117
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (です・ます) to a customer, unhurried and slightly bored ("退屈そうにあくびをしていた" 179:117); it survives being asked about a prefecture he has never heard of. The second staffer, questioned by a 警部補 four cells after a mass killing, keeps the same register and can only stammer ("は、はい！　見ました……！" 56:209)
+- sentence-final particles: ～かな (twice, hedging a fact he does know: 「そんな駅あったかな……」 179:119, 「100キロはあるかなあ……」 179:130); ～ね (「女ケ沢駅が終着駅ね」 179:127)
+- copula: だ / です mixed
+- verbal tics / catchphrases / fillers: 「えっと……」 before every answer
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM; vocabulary register plain, railway
+- note: the platform announcements (74:106, 74:122, 74:144, 74:153, 74:165 and 179:148) are set as bare cells prefixed 「――」 or with no marker at all and are NOT this voice. -> Q359
+- as-of: 00000F0D
+
+## unnamed ホテルのフロント (00000F0D:56:238-56:242) — the night desk
+- first_appears: 00000F0D:56:238
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (です・ます) service register, hedged on every fact he reports ("外出したきり戻ってはないみたいですが……", "確か、20:30頃だったかと……" 56:239-56:240)
+- sentence-final particles: ～ですかね ("新村夏菜さんですかね？" 56:238); ～かと
+- copula: です
+- verbal tics / catchphrases / fillers: 「あ、は、はい！」 twice, both times to a police ID (56:242)
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality HIGH; vocabulary register hotel service
+- note: he supplies the file's one independent timestamp (20:30) and the fact that the girl checked in under her real surname. -> Q359
+- as-of: 00000F0D
+## 白般若 (しろはんにゃ, the White Hannya) (00000F24) — the masked figure; 新村美冬 under the mask
+- first_appears: 00000F24:64:136 (reported: 「白般若に白装束――荒田集落でも、あんな格好見たことないぞ」); on screen at 88:47; unmasked at 142:138
+- pronoun(s): none — it never speaks a word while masked
+- pronoun FREQUENCY: n/a
+- speech level baseline: SILENCE, total and sustained for roughly five hundred cells. It is addressed, taunted, kicked, shoved and thanked and it answers nothing. Its only communications are physical: it puts a book on the ground and leaves (100:37-100:40), it looks at the narrator to tell her to run (106:292-106:294), it lowers its head under abuse (88:276), and it holds a knife to her throat to stop her (88:291-88:297)
+- sentence-final particles: none
+- copula: none
+- verbal tics / catchphrases / fillers: none. Two sounds only, and neither is speech: 「こもった息づかい」 behind the mask (88:296) and 「肩で息をし」 when it collapses (142:129)
+- dialect: none
+- EN correlates: n/a for speech. For the NARRATION about it: the JP uses 「やつ」「こいつ」「白般若」 and nothing else, and it is never gendered. 春花 calls it 「意気地なしの般若さんよ」 and 「イケメン」 and 「ブッサイクなご尊顔」 (88:99-88:101), all of which read as male-coded taunts in EN if handled carelessly. EN must stay genderless from 64:136 to 142:138 and must not reach for "he" or "she". -> Q379
+- THE CONSTRAINT: it is 新村美冬, dead two years, and the reveal is 五島 lifting the mask at 142:136-142:139. Nothing before that point may hint. It fights the narrator twice without hurting her, it has 鉈 and メイス (the 荒田 死神 kit, in white instead of red), and the narration keeps guessing wrong about it out loud — enemy, ally, faction, 「集落内にまだ正気な人がいる」 (64:140). Let the wrong guesses stand
+- what it actually did, stated only in retrospect at 193:62-193:90: it hung the ヴェルジ mummy from the ceiling, knocked the narrator out without injuring her, treated サクラ's mummy with ファルシフィカソ so the burning would go wrong, carried 古郡なつみ out of the hall and injected her with the antidote, and gave 五島 the book. All of it to make 荒田集落 look dangerous enough that her daughter would leave. The narrator infers this alone and the text never confirms it
+- CROSS-REFERENCE: 新村美冬's own CAST block covers the unmasked voice from 142:139. Do not merge the two — the silent figure and the speaking woman are two separate jobs for the translator, and about four hundred cells of narration depend on the reader not knowing they are one person
+- as-of: 00000F24
+
+## ヴェルジ／トミ (00000F24) — the girl in the book, dead about 450 years
+- first_appears: named as ヴェルジ at 64:89; her living name トミ at 100:81; her three speeches are quoted at 100:131-100:132, 100:136-100:138 and 100:141-100:143
+- pronoun(s): 私 (「私は誰も殺したくない、でも殺さないと私が死んでしまう」 100:131)
+- pronoun FREQUENCY: states 私 heavily inside three short speeches, because every one of them is about what is happening inside her
+- speech level baseline: plain form, no 敬語, no politeness of any kind. She is fourteen, in agony, and addressing a crowd that has come to kill her
+- sentence-final particles: none to speak of — the speeches are bare declaratives and one bare adjective. 「もう、ダメ」 (100:143) has no copula at all
+- copula: だ, mostly absent
+- verbal tics / catchphrases / fillers: none. What she has instead is REPETITION: 「まだ殺したい。／目を取っても、まだ殺したい。」 (100:141-100:142), and the three-beat 「ほら、見て……／目、取れた……／取れたよ」 (100:136-100:138)
+- dialect: none marked, and the book is 「昔の文体で書かれている」 (100:44) — but her quoted speech is NOT archaic. Only the frame around it is old. Keep the gap
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length VERY SHORT, several with no verb; formality ABSENT; vocabulary register a child's. Do not make her tragic on the page — the horror is that she reports her own symptoms like a fact and then acts on them
+- THE NESTING: every word of hers reaches the reader through four layers — 春花's narration, 五島 reading aloud in です・ます, the book's old-style prose, and then 『』 around the girl. The engine sets the whole reading as 「」 cells attributed to 五島. EN must keep the girl audibly younger and plainer than the reading voice around her. -> Q385
+- what the book says she did: born with one green eye to ordinary parents, kept as a marvel for twelve years after a grown woman with the same eye slaughtered half the settlement; at fourteen she ran out screaming, tore out her own green eye with her bare hand, showed it to the crowd, said the urge had not stopped, and pushed her hand through the empty socket into her brain. She was mummified, named ヴェルジ (Portuguese for green), and made the object of the settlement's only two laws
+- known ambiguity / open questions: the book dates her BIRTH to 祀耀352 while its own arithmetic dates her DEATH there. Do not reconcile. -> Q387, Q378
+- as-of: 00000F24
+
+## unnamed 荒田集落の住人 (00000F24) — collective, two eras, five lines
+- first_appears: 00000F24:76:53 (「おい！　死体が埋まってるぞ！　まだ腐敗途中の死体だ！」)
+- pronoun(s): none observed
+- speech level baseline: TWO groups, and they must not sound alike. The gravediggers of 祀耀800 are 乱暴 タメ口 shouted across a hole in the ground; the three voices in the 450-year-old book are formal, weighed, one clause each, set in 『』
+- sentence-final particles: gravediggers ～ぞ (76:53), ～ないぞ (76:54); the book voices ～のことだ (100:120), ～べきだ (100:122), ～ではないか (100:124)
+- copula: だ both groups
+- verbal tics / catchphrases / fillers: none. The book voices are introduced only as 「ある者」「またある者」「別の者」 — no names, no ages, no genders, and the EN must supply none
+- dialect: none
+- EN correlates: gravediggers — contraction rate HIGH, sentence length VERY SHORT, shouted; book voices — contraction rate ZERO, sentence length SHORT and complete, each a finished position in an argument about whether to kill a two-year-old
+- note: the three book voices are the whole moral content of the ヴェルジ account and they arrive as three consecutive cells with no scene around them. Keep them as three separate positions and do not let the third (「トミは呪いに打ち勝つ特別な存在なのではないか」) sound like the winner, even though it is
+- note: the converted residents of the story present have NO lines at all. They walk, they strangle, they die, and they never speak. Do not give them a sound
+- A THIRD GROUP, modern and armed, 000012DE:8:70-8:84: residents in 能面 and 赤装束, carrying 鉈 and メイス, standing out of sight behind trees and dead grass on the path to the cave. 五島 identifies the kit as the set 新村サクラ sent 新村美冬 ten years earlier, and notes that with ドローガ added it is the full 女ケ沢市 equipment
+- their register is ARCHAIC AND FLAT and matches no other modern voice in the project: 「夏菜、お客人、すぐに引き返すのだ。ここから先へ行ってはならない」 (8:78) — ～のだ and ～てはならない, a bare given name for the 長's granddaughter, and お客人 for the visitors, the same address form in which 00000E7B pronounces a death sentence
+- one line total, no threat and no explanation, and they do not move when a child with two knives shouts at them. 五島's reading is that the settlement is not of one mind, on the separate ground that burning the storehouse cannot have been a collective act (8:89-8:90)
+- A FOURTH GROUP, and it is the ordinary one: 000013FD:8:22-8:54, three households overheard at night by a hidden girl. Two men on a road, a couple indoors, and two voices in a third house. Register is plain domestic タメ口, 俺, unhurried, with no 敬語 and no menace — the exact opposite of the masked group four cells of story earlier
+- what they say is the chunk's decisive negative evidence: 茅萱 is probably dead, this year's 呪殺 has happened so they have another year, a strange noise today that one of them blames on a helicopter, the 大魔女 and 幸太郎 have a hard job of it, the settlement should perhaps disband, one man will not leave because he could not face his ancestors, and the 十三回忌 is tomorrow. NOT ONE of them knows 茅萱 reappeared an hour ago
+- the couple: a man with stiff muscles from searching all day and a wife applying a compress and teasing him. It is the only domestic warmth anywhere in 荒田集落 in the project, and it is placed immediately after twenty corpses in masks
+- the MASKED GROUP of 000012DE AND 000013CD ARE NOT RESIDENTS. They are the walking dead, and they break their archaic flat register exactly once, in fear: 「ち、茅萱ちゃん、やめろ……！」, 「や、やめろ！」, 「来るな！」 (000013CD:8:285, 8:291-8:292). EN must let the archaic register and the frightened one come from the same mouths -> Q557
+- THEY ARE CORPSES IN STOLEN COSTUME, and the chunk says so twice from two directions. 00001414:8:114-8:120: the cave store of 赤装束 and 能面 has been ransacked, about ten sets taken, 「だからここから装束や能面を盗み、住人に擬態したわけか」. 000013FD:8:55-8:60 had already established that no actual resident knew anything about it
+- the group that blocks the path at 0000148E:8:78-8:87 is therefore the same masked group of 000012DE and 000013CD and it is not the settlement: 「夏菜、お客人、すぐに引き返すのだ。ここから先へ行ってはならない」 in a plain archaic imperative, with 鉈 and メイス, and 古郡なつみ's narration mistakes them for the neighbours who had been putting out the fire an hour earlier -> Q581
+- they COLLAPSE ALL AT ONCE when 新村栄一郎 ends the test (000013CD:8:311-8:341) and they are never heard again; the living residents of 000013FD:8:22-8:54 speak in an entirely different register — ordinary, tired, gossiping about a muscle ache and a fire
+- the REAL residents' one collective act in the chunk is putting the 蔵 fire out and then being asked by 新村エリカ for masks and robes for everyone (000014BC:8:265); they never arrive on screen
+- as-of: 000014D7
+## unnamed 旅館の宿泊客とフロント (00000F40, 00000F57) — the seaside inn, collective
+- first_appears: 00000F40:11:118 (the front desk); 00000F57:11:53 (the next family bath)
+- pronoun(s): none observed
+- speech level baseline: TWO voices. The desk clerk is 丁寧 service register with 様 on the surname — 「はい、古郡様ですね。／古郡さまは――」 (00000F40:11:118-11:119), cut off mid-sentence. The guests in the neighbouring bath are タメ口 through a wall, three lines, all questions — 「今、すごい悲鳴が聞こえたよな？」 / 「痴漢かしら？」 / 「え！？　この旅館、痴漢が出るの！？」 (00000F57:11:53-11:55)
+- sentence-final particles: ～ですね (desk); ～よな／～かしら／～の！？ (guests)
+- copula: です / だ by voice
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate LOW then HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality HIGH then LOW; vocabulary register hotel service, then ordinary holiday chatter
+- known ambiguity / open questions: the desk clerk writes 古郡様 and then 古郡さま in consecutive cells — the same honorific in kanji and then in kana, in one speech. Typesetting inconsistency, logged -> Q446. The three bath voices are not sexed beyond 「かしら」 on the second.
+- as-of: 00000F57
+
+## unnamed 動画配信者 (00001039) — the 超炭酸ボンバー rocket presenter
+- first_appears: 00001039:19:0
+- pronoun(s): none observed
+- speech level baseline: 乱暴 タメ口 shouted at a camera, with an instructional layer under it. Opens 「――ようクソ野郎ども！」 and then explains the rig in flat declaratives: 「方法はペットボトルロケットと同じ！　ただし、空気は補充せずにボトルを振るだけだ。」 (19:7)
+- sentence-final particles: ～ぜ (「試すぜ！」 19:5, 「やってきたぜ！」 19:0); ～だ (every explanatory cell)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「クソ野郎ども」 as a greeting — the only word in the project above the くそ ceiling, and it belongs to a voice with no character attached
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling MEDIUM ("you bastards" once and nothing else); sentence length SHORT, exclamation-marked; formality ZERO; vocabulary register stunt-video patter with accurate hardware nouns (ボトル缶, 台, スイッチ)
+- narration voice: none — the file has no narrator and no 「」 anywhere. Alternate cells hold a single full-width space and nothing else -> Q413, Q046
+- known ambiguity / open questions: nothing frames the file, nobody is said to be watching it, and it is never referred to again. Sex, age and identity are unstated. -> Q413
+- HE IS NAMED: クレイジーカウボーイ, 0000181F:8:22 (「こいつがクレイジーカウボーイ仕様のクレイジーロケットだ！」) and confirmed by the Detroit gang at 00001A6B:22:69. He is American, films in America, and his episodes reach Japan
+- TWO MORE EPISODES, both built on Japanese products. 0000181F: sixty 超炭酸ボンバー bottles strapped to a board, a samurai-styled protector, state police and a river rescue team standing by, two abandoned countdowns while he admits he could not sleep for fear, and a 200-foot flight into the water. 00001A6B:22: BDDP takoyaki sauce loaded into 100 bottles as a 犯罪者殲滅スーツ, worn into the worst part of Detroit
+- his register is unchanged and fixed: 「ようクソ野郎ども！」 to open, 「あばよクソ野郎ども！」 to close, 俺 throughout, affectionate abuse, and a showman's rhythm of boast, countdown, disaster, apology
+- HIS ONE SERIOUS PASSAGE, 0000181F:8:31-8:40: 「少し深呼吸させてくれ。／昨夜この瞬間のことを想像して全然眠れなかったんだ。／ワクワクはしてるけど、内心、本当に怖いんだ……」, then a second abandoned countdown, then 「すまない、もう覚悟は決めたぜ」. EN must let the fear be real
+- he is popular enough that criminals ask him for photographs and their boss receives him as a guest; the episode ends with twelve of them arrested by his dropped remote and a police comment calling him a hero. His reaction is to apologise to his fans
+- both files end on ONE LINE from an unidentified viewer, in 「」, with no context: 「このおっさん、無茶苦茶すぎだろ……」 and 「かっこいい！」
+- as-of: 00001A6B
+
+## unnamed 朝番組の司会 (00001073) — the studio host, the 「――」 voice
+- first_appears: 00001073:8:1
+- pronoun(s): none observed
+- speech level baseline: 丁寧 broadcast register (です・ます, ～とのことです), brisk and cheerful, with a second mode: twice he tries to shut the guest up and the politeness thins — 「あ、あの先生、すみませんが朝の番組ですので……。」 (8:21) and 「あ、あ……／先生、どうもありがとうございました。」 (8:40-8:41)
+- sentence-final particles: ～ですね; ～でしょうね (「――だったら今夜はもう超満員でしょうね！」 8:1); ～か (his interview questions, one per cell)
+- copula: です
+- verbal tics / catchphrases / fillers: 「ほうほう」 (8:18); a nickname for the field reporter, 「ありがとう、ゆきちゃーん！」 (8:5)
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length MEDIUM, one question per turn; formality HIGH; vocabulary register broadcast filler
+- known ambiguity / open questions: his lines carry the 「――」 prefix and the field reporter's and the guest's carry 「」, the same two-system layout as 000003A8/000003AE and 00000E7B -> Q414, Q047. 「ゆきちゃん」 is the same nickname 新橋ゆき乃 carries at 00000EAF; the two are never linked and EN must not link them -> Q414. He is never named, never sexed and the medium (radio or television) is never stated.
+- as-of: 00001073
+
+## 秋野冬夫 (あきの ふゆお, Fuyuo Akino) — 日本園芸大学名誉教授, 00001073
+- first_appears: 00001073:8:11 (introduced); first line 8:13
+- pronoun(s): none observed
+- speech level baseline: a rambling elderly-expert タメ口 with ね on almost every clause, delivered over a 丁寧 host. His self-introduction is three ね in one breath: 「はいはいどうもね、よろしくね、秋野と言いますね、よろしくね」 (8:13)
+- sentence-final particles: ～のね／～でしょ／～だからね — ね ends nearly every unit of every sentence and the units run on without stopping. This is the whole surface characterisation and EN must find a repeatable verbal filler for it
+- copula: だ／の (「全部クローンなの、全部同じなの」 8:22)
+- verbal tics / catchphrases / fillers: 「そうそうね」; 「あのね」; 「だからね」; 「それでね」; the laugh 「はーっはっはっはっは！」 (8:37, 8:39)
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY LONG and unpunctuated-feeling; formality LOW inside a formal slot, which is the joke; vocabulary register real botany and real pharmacology delivered as gossip (エフェドリン, メタンフェタミン, 前駆物質, 自家不和合性, 挿し木, 接ぎ木, ソメイヨシノ, 寄生生物)
+- what he is for: he delivers the 荒田桜 exposition of 00000F24 as a comedy segment, four files early, to an audience of nobody in the story — cherry blossom contains a stimulant precursor, ソメイヨシノ is one clone line, it cannot seed with itself, it reproduces through another species and what results is not ソメイヨシノ. Every load-bearing fact of the project's central mechanism is in this one radio slot, and nothing marks it. -> Q415
+- known ambiguity / open questions: 8:19 names メタンフェタミン as the precursor and then names エフェドリン as 「その物質」, inverting the relationship the rest of the project uses; it may be the character being sloppy or it may be a source error -> Q415. His surname holds 秋 and his given name 冬, against the 春花／なつみ season-name joke of 00000801 -> Q416, Q123.
+- as-of: 00001073
+
+## 皇子 (the Prince) — the founder of 荒田集落, narrator of 0000107B
+- first_appears: named in the reference material from 000001E1; NARRATES 0000107B (order 150), set in the year before 祀耀元年
+- pronoun(s): 私 (「私と綱宗は西の都から逃れ」 11:17). Never 余, 麿 or any court pronoun, which is itself a statement — he has already stopped being a prince
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: plain form, level and unhurried, to everyone including the lowest-born servant. He gives instructions rather than orders (「今日はここまでにしよう」 11:27, 「誰か、雪を集めてくれ！」 11:58) and the narration states the reason: 「もはや身分がどうこうと言っている次元ではない」 (11:29)
+- sentence-final particles: ～だろうか (his commonest, and it is always a real question); ～のだ (his conclusions); ～ぞ (once, to a child, 11:104)
+- copula: だ／である (narration)
+- verbal tics / catchphrases / fillers: none. He is the only major voice in the project with no tic at all
+- dialect: none, but the register is deliberately archaic-plain: 者ども, 女子, 賤しい, 喜ばしい, 叶わず
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM, one clause per line; formality MEDIUM-archaic without being stiff; vocabulary register court-educated but plain — he explains hunger, cannibalism and geography in the same measured words
+- narration voice: past tense, 私, and the flattest in the project after 新村春花's autobiography mode. Two paragraphs of third-person chronicle open the file and hand over to him with no marker (11:0-11:12). He states that everyone alive has eaten human flesh and that those who refused were eaten, in two sentences, with no self-defence and no horror word (11:91-11:95). EN must not add either.
+- what he decides: to be dead, so that the eastern capital is not burdened and his retainers can rest (11:212-11:213); to name the valley 荒田 rather than 天田 so that nothing attractive draws attention (11:223-11:226); to give up the title and take another name (11:248). The closing narration says the man who abandoned his rank called himself 新村 and never says it is him -> Q418, Q445
+- he coins the settlement motto: 「1人はみんなのために、みんなは1人のために」 (11:258), in its origin scene, 800 years before every other use of it -> Q420, Q174
+- known ambiguity / open questions: -> Q014, Q417, Q418, Q419, Q420, Q421
+- HE HAS A WHOLE SCENE IN 00001505, seen from inside the servant girl's first person, roughly ten years after 0000107B, and it is the only time in the project he is shown as a man rather than as a founder
+- the register is unchanged: plain, level, instructions rather than orders, no 敬語 downward and no contempt, and the 「はっはっは！」 laugh belongs to his companion rather than to him. He works the fields in a peasant's clothes and the narration says so twice
+- he REFUSES THE TITLE on screen and names himself: 「もう皇子はやめてくれよ、私は身分を捨てたんだ。／名も新村とあらためたのだ」 (00001505:8:76-8:77). 0000107B closed by saying that the man who gave up his rank called himself 新村 and never said it was him; this file says it in his own mouth -> Q418, Q445
+- he then asks a ten-year-old servant what she would like to call him, is answered 「ニイ様」, hears it as 兄様, and accepts the correction. It is the only thing he is ever asked for -> Q606
+- WHAT HE LEAVES FOR, and he says it once, to one person: the country still has ruined land and hungry people on it, he wants to lay a 礎 before 聖守's age ends, and he goes without telling her because his rank makes him lethal to be near (00001505:8:153-8:177)
+- HIS ONE ADMISSION is dragged out of him by 湊綱宗 and is broken across three cells: 「もし……／こんな境遇でなければ……／私だって糸姫を……」 (8:201-8:203). He never finishes it and he never says it to her
+- the PROMISE, and it is the hinge of the whole project: within ten years the age will end, and 「私はまたここへ……／糸を迎えに来る」 (8:313-8:314), with a hairpin he carved himself put into her hair. He drops the 姫 for the only time -> Q607
+- HE DIES AT 元木, killed by the remnants of a defeated clan within those ten years, reported to her by the fungus in one line (8:491-8:492). He is buried under what 元木町 later calls its 御神木, and 800 years of killings are an attempt to reach him
+- he is not cruel and the file will not let him be innocent either: 糸姫's own word for him, four times over in her last cells alone on the road, is 卑怯者 — for leaving a decision with her and taking none himself (8:341-8:355)
+- as-of: 00001505
+
+## 湊綱宗 (みなと の つなむね, Minato no Tsunamune) — the Prince's companion, 0000107B
+- first_appears: named in the reference material from 000001E1; speaks at 0000107B:11:36
+- pronoun(s): none observed
+- speech level baseline: plain タメ口 to the Emperor's son, with no honorific of any kind and no address form. Nine lines, all of them either a report or a suggestion
+- sentence-final particles: ～ようだ (his report, 11:36); ～か (his questions, 11:159 「しかし、追手が……」, 11:163 「つまり……ここに根を下ろすことも考えると？」); ～のはどうだ (both of his proposals)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「はっはっは！」 once (11:227) — the same laugh 新村エリカ and 新村幸太郎 have, 800 years earlier, in the family they found
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality LOW — and the lowness is the characterisation, because of who he is talking to
+- what he does: proposes adding 姫 to the servant girl's name to lift her spirits (11:73, reported), proposes 天田 as the valley's name (11:218), and defers instantly when it is inverted to 荒田 (11:227-11:228)
+- known ambiguity / open questions: the glossary renders him Minato no Tsunamune from the 000001E1 reference material; the narration writes 宗綱 once at 11:83 -> Q436. Nothing says what becomes of him.
+- 00001505: he is present about ten years after 0000107B, his register is unchanged (plain タメ口 to the Emperor's son, no address form, 俺 in the argument), and the 「はっはっは！」 laugh is intact (8:84)
+- WHAT HE DOES IS THE SCENE. He calls the servant girl to a spot outside a hut where she will overhear the parting conversation, then forces the question she needs answered — 「お前の糸姫に対する気持ちだ！」 (8:192) — and will not let it be deflected twice. He says so afterwards to her face: 「綱宗がお前に聞かせるために、わざと仕組んだようだ……」 (8:267)
+- his verdict on his friend is one word and it is the file's: 「ずるいやつだ……」 (8:206), which 糸姫 then repeats in four variations about the same man
+- he is kind to her directly once and it lands badly: he asks whether she has hurt her leg while she is practising walking like a woman (8:131), which is what sends her to the man for reassurance
+- he is left in charge of the settlement — 「じゃあ、あとは頼んだぞ」 / 「…………／達者でな」 (8:213-8:215) — and that is the last of him anywhere
+- as-of: 00001505
+
+## 糸姫 (いとひめ, Ito-hime) — the servant child, about ten, 0000107B
+- first_appears: 0000107B:11:50 (called for); first line 11:60
+- pronoun(s): 私 (「私はいつも皇子様とともにありますから」 11:200)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: 最上級敬語 to one person and no other addressee anywhere. 申し訳ありません, ～です, ～ます, and she does not drop it once, including while feverish and while offering her own body as food
+- sentence-final particles: ～です／～ます only; ～か never — she does not ask him a question in the whole file except 「みんなのお腹、いっぱいになりますか？」 (11:101)
+- copula: です
+- verbal tics / catchphrases / fillers: none; two stammers under fever (「あ……暑い……」 11:79) and one under joy (「あの……あの……／すごく、嬉しいです……」 11:243-11:244)
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length VERY SHORT; formality HIGHEST in the file; vocabulary register a servant child's — she has no abstract nouns at all
+- what she is: born to the lowest-ranked family in the Emperor's household, orphaned in the escape when her parents died beside her, kept because she picked up a dropped short sword. The 姫 was added to her name as a kindness and the narration says she is very pleased with it (11:62-11:75)
+- her two load-bearing lines: 「皇子様……私、まだ小さいですけど……。／みんなのお腹、いっぱいになりますか？」 (11:100-11:101) — a ten-year-old volunteering to be eaten, in perfect politeness, with no fear word — and 「それなら、ここが私の居場所です。／私はいつも皇子様とともにありますから」 (11:199-11:200). EN must let the first be flat; the horror is that nobody in the scene is surprised
+- the mountain is named after her (11:239-11:241) and the name survives 800 years: 糸姫山 is where 新村春花 lives alone at the end of 00000F24
+- known ambiguity / open questions: 11:68 calls her 糸, five cells before the 姫 is granted at 11:73 -> Q445. Her relation to 糸 and 後白河糸織 in the reference material is never stated -> Q419. Nothing says what becomes of her.
+- SHE IS THE ANTAGONIST, 000014D7:8:451-8:461, and the identity is ASSERTED on screen rather than implied: 「古郡なつみさん、初めまして。／私は……／糸姫と申します」. 800 years after 0000107B, the servant child is 死月妖花 — the thing the whole project is named for. This block is not split; see the SECOND-FRAME note below -> Q597
+- her FIRST WORDS arrive one file earlier, unnamed, inside 古郡なつみ's head along with the 猛き音: 「私は、長い間あなたを待ち焦がれていました。／どうぞ、こちらへ来て下さい」 (000014BC:8:289-8:290), and the narration's only description is 「まるで少女のような声だった」. Its conclusion is the chunk's last three cells: 死月妖花 is not a fungus, it is a person -> Q591
+- THE REGISTER IS UNCHANGED FROM 0000107B and that is the point: 最上級敬語, ～です／～ます, no contraction, very short sentences, and the same unforced politeness she used while offering to be eaten. She is the only figure in the project whose surface survives eight centuries intact
+- she gives ORDERS in it, to two corpses who are begging her: 「殺しはダメだと言いましたよね？」 (000014D7:8:384), 「もういいです。／栄一郎、サクラ。あなたたちは下がっていなさい」 (8:387-8:388). No anger word anywhere and the ground shakes while she says it. The two answer 「め、女神様……！　ダメです……！」 and 「怒りをお鎮め下さい……！」
+- what she is called by everyone else before the reveal: 死月妖花, 女神様, ネクロ, アバドン, 彼女. Her own servants use 女神様 exclusively
+- SECOND-FRAME NOTE: the identity is asserted and the register is recognisable, so this stays ONE block rather than two (brief, additions after chunk 17). A translator meeting 000014D7 alone will have no idea that the name is 186 files old, that 糸姫山 — where this scene is set — is named after her, or that the 姫 in it was a kindness. -> Q597, Q419, Q445
+- nothing in the chunk explains how she became what she is, and 0000107B's last word on her is that the mountain took her name
+- SHE IS ALIVE AND ORDINARY, and the whole of order 197 is built on it. 「いいえ、私は生きた人間です」 (000014EE:8:58): a living human being who has borrowed the thing's power for several hundred years. When she is detached from it she is a fifteen-year-old with no strength at all — she runs at three people with a syringe and is dodged, slapped, kicked in the jaw, stamped on and reduced to 土下座, and the narration's word for her is 憐れ (16:205-16:225)
+- the REGISTER DOES NOT MOVE THROUGH ANY OF IT. 最上級敬語, ～です／～ます, no contraction, short sentences — while announcing that she will take every life in a town (12:0), while apologising to the women whose families she took (8:45-8:65), while begging on her face (16:155-16:157), and while being kicked. She never once raises her voice and never uses a rough form
+- WHAT SHE WANTS, stated in one cell after two hundred of evasion: 「大切な人のそばにいたいのです」 (000014EE:16:264). The person is dead and buried under 元木町's 御神木 (16:267-16:268). Everything the project has called 呪殺, 神隠し, 死神 and 死月妖花 is a fifteen-year-old trying to reach a grave
+- her ACCOUNTING for the killings is a quota she could not refuse: she chose the old and near death first, cut it to one person a year when that did not empty the settlement, and if she had ever refused to supply corpses the thing would have dropped her and she would have died at once (16:276-16:288). She refuses the excuse herself in the next cell — 「しかし、殺したことは事実です」 (16:290)
+- SHE NARRATES 00001505:8:69-8:521, ~450 cells, her own memory of 800 years ago, taken over in the middle of a row-block with no marker and never handed back -> Q605
+- narration voice: archaic-polite past, 私, one thought per cell, no irony and no self-defence. It is the only narration in the project with no modern noun in it. It goes almost wordless at the two peaks — the overheard conversation (8:195-8:200) and the fall (8:420-8:431) — and the last sixty cells drop into present-tense fragments as she bargains
+- AT ELEVEN AND AT FIFTEEN she is the 0000107B child grown up: still serving, still 最上級敬語, and the file's content is that she falls in love with the man she serves and cannot say so. Her one assertion in 800 years is 「でも私は、その家系である以前に1人の女です！」 (00001505:8:280)
+- the NAME SHE GIVES HIM, ニイ様, is coined by her on screen out of 新村 and misheard by him as 兄様 (8:89-8:92). She uses it in every cell of her own narration and in her last words in 0000151C -> Q606
+- HOW SHE DIED: she followed him at dawn, was caught on the way back by seven bandits, ran rather than lead them to the settlement, and went off the cliff by the 広場 rather than be taken (8:363-8:418). She lands alive and broken, hears them appraise her body and leave, and the thing arrives while she is still asking not to die -> Q633
+- THE BARGAIN, ~67 cells of one side of a conversation (8:455-8:521): it saves her, she gives it human intelligence, it wants corpses to grow from, it puts spores on him so that it can find him, it reports that he is dead at 元木, she asks it to reach 元木 and revive him and accepts that this will take centuries, it tells her she must kill, she refuses, it threatens to let her go, and she consents. The other side is never printed -> Q609
+- SHE WAS NEVER GOING TO GET HIM BACK and is told so by two schoolgirls: a skeleton cannot be revived, the thing has animated corpses for centuries so it knew, therefore it kept her for her intelligence and to stop her telling anyone it exists (000014EE:16:404-16:418). Her answer is 「私はただ、人を殺し続けていただけ……？」 (16:421)
+- HER LAST SCENE, 0000151C: she holds the thing off from inside long enough for the settlement to kill it, asks to be destroyed (「わ　　たし　を／こ／ろ／し　／て」 8:17-8:21), shares the burning with 古郡なつみ through the link, and spends her last hundred cells talking about him. Her one request is that the broken hairpin be buried at 元木町's 御神木 (8:205)
+- she uses パンドラの箱 as her image for what happened and credits it to 「ある人間の知性」 — a myth harvested out of somebody the thing killed (0000151C:8:263-8:268) -> Q629
+- her last words are 「では……その時まで、しばしの間――」 (8:293), answering an invitation to be born again in 元木町
+- WHAT SURVIVES HER: her bones, the snapped hairpin, and a girl with her face and no memory before that night -> Q630, and see the separate CAST block for 後白河糸織
+- 00001E41:11:16-11:28 IS THE LAST THING SHE SAYS IN THE PROJECT and it is 85 years after 0000156A. A drone broadcast about the sealed 旧元木市 turns into her private first person inside one row-block with no marker: a hairpin that broke and is treasured anyway, 「愛しいニイ様」, 「私、幸せです」, 「何千年も、何万年も、彼女がいる限り、私たちはずっと一緒です」, 神使 blessing them, and a 塔 that is never described -> Q770
+- the register is the 最上級敬語-adjacent です・ます of 000014EE and 00001505 with the pleading gone and nothing frightening left in it. She is not named anywhere in the file; the かんざし and ニイ様 are the only identification -> Q606, Q597
+- the 『おひめの歌』 of 00001D17 is her story sung as a children's rhyme in a house that has no idea what it is about, and it ends on a reunion that has not happened -> Q789
+- 00002444 IS HER LONGEST ON-SCREEN RUN AS A DEFECTOR AND IT IS IN A BRANCH WHERE NOBODY KNOWS HER. She appears to 新村春花 on a game trail in a red kimono with ONE GREEN EYE, gives her name as 「糸」 and not 糸姫, and the 姫 is supplied by 城崎健吾 out of 糸姫山's etymology and a settlement 書簡 — 『齢15ほどの赤い着物を着た少女。それが邪悪なる女神である』 -> Q935, Q419, Q445
+- THE REGISTER IS UNCHANGED for the ninth century running: です・ます, no contraction, very short sentences, no anger word anywhere. She keeps it while confessing to ten years of murders, while being told 「お前もめちゃくちゃ怪しい」, and while a hunting rifle is fired at her
+- what she can and cannot do without the organism: she lights a fire by friction and lived in the mountains for months, and she says 「私、今は普通の人間ですから」 and 「私は、ただの人間です」 — no strength, no tracking, no telepathy. The same detachment as 000014EE, one branch over
+- SHE DEFECTS BEFORE SHE IS ASKED TO, and the reason is a quota broken by somebody else: 「神使たちは、私の指示で年に1人だけ殺してきました」, then the residents killed なつみ, 茅萱 and 夏菜 in one night and 「もう……私の意思では制御しきれません」 (20:398-20:402). She refuses the excuse herself as she did at 000014EE:16:290
+- SHE IS NO LONGER THE 核 and says so, which is new: she was the first, she gave the fungus human intelligence, and 「今はある人物に核になっています」 — someone absorbed about twenty years ago, called アバドン in a Western language, whose identity she was deliberately not told because she had begun refusing to kill (26:386-26:400) -> Q940
+- SHE STATES THE 神使 ECONOMY as a closed set of four: living and dead 第一世代 and 第二世代; the dead two are 栄一郎 and サクラ; 茜 will be made the living 第一世代 out of her own ドローガ; and the definitions are 「ドローガを使った者が第一世代、第一世代の血を浴びた者が第二世代」 (26:283-26:289) -> Q938
+- SHE OFFERS HER LIFE TO THE WIDOWER OF ONE OF HER VICTIMS, in full 敬語 and by his full name: 「城崎健吾さん、おっしゃる通り、私が全ての元凶であり、あなたの奥さんを殺した張本人です」 (20:484), then 「構いません、撃ってください。／私はそれだけのことをしましたから」. She does not flinch and she does not argue -> Q936
+- her ONE piece of physical acting anywhere: she will not meet 城崎's eyes, grips 春花's hand harder when he speaks, and the narration reads it correctly before anyone says anything (20:446-20:451, 20:480)
+- the WARNING she gives and cannot explain: 「もし古郡なつみさんに出会っても、絶対に信用しないで下さい。／すぐに逃げてください」 (20:248-20:249), given to a girl who has just been told the same person is dead. 春花 calls it 「めちゃくちゃ」 and obeys anyway
+- her one visible failure of nerve: she says 「多分、私も春花さんも殺されます……」 and then runs for two hundred metres holding a stranger's hand, and both of them fall over
+- in this branch she is alive at the end, under 城崎's guard, and the file never says what becomes of her
+- as-of: 00002444
+
+## unnamed 従者たち (0000107B, 000010C3) — two collectives, 340 years apart
+- first_appears: 0000107B:11:49; the second group at 000010C3:11:80
+- pronoun(s): 俺 (000010C3:11:82 「俺は酒と肉だな！」); none observed in the first group
+- speech level baseline: TWO groups and they must not sound alike. The Prince's retainers are 敬語 upward and exhausted — 「皇子！　大変でございます！／　糸姫が……！」 (0000107B:11:49), 「皇子、お持ちしました！」 (11:76) — with one comic exception who drops into rough タメ口 with his own lord: 「皇子様！　こっちこっち！／　すげーもん発見しましたぜ！」 (11:132-11:133). The Daifu's ten hired men are 乱暴 タメ口 to a great lord with no 敬語 at all — 「おうおう、おえらい殿様よ！　ご褒美って何がもらえるんだ！？」 (000010C3:11:80)
+- sentence-final particles: ～でございます／～ました (group 1); ～だろ／～だぜ／～よ (group 2)
+- copula: です then だ
+- verbal tics / catchphrases / fillers: group 2 sings while digging — 「そーれ天下の桜をほーりまーしょおー」 and 「かーね！　おーんな！　さーけ！　にーく」 (000010C3:11:185-11:186), stretched one syllable at a time
+- dialect: none
+- EN correlates: contraction rate LOW then HIGH; profanity ceiling ZERO in both; sentence length SHORT; formality HIGH then ZERO; vocabulary register service, then money-women-drink-meat
+- what happens to them: group 1 founds a settlement that lasts 800 years. Group 2 is poisoned in their sleep nine days after being hired and burned as fertiliser for the trees they dug up, and the narration calls the painless death 「せめてもの配慮」 (000010C3:11:220)
+- known ambiguity / open questions: group 2's singing is the last thing they do and the cheerfulness is the point; EN must not make them sinister and must not make them pitiable before the poison.
+- as-of: 000010C3
+
+## 藤吉郎 (とうきちろう, Tokichiro) — 麻生田家's 台所奉行, narrator of 00001092 and 000010AA
+- first_appears: 00001092:11:0 (narrates); named by 豊吉 as 吉郎 at 11:27; gives his own name as 藤吉郎 at 000010AA:11:25
+- pronoun(s): オレ in katakana, in both narration and dialogue, throughout both files. The first オレ narrator anywhere in the project (古郡良治 is 俺)
+- pronoun FREQUENCY: states it MORE often than typical — it opens dozens of cells and is the engine of his self-assertion (「オレは台所奉行だ！」 00001092:11:79, 「オレが天下を治めるのだ」 000010AA:11:307). Do not delete the "I" in EN
+- speech level baseline: TWO registers by addressee. To a friend, loud タメ口 with a mirrored greeting. To anyone above him, self-lowering 敬語 with archaic humility formulas — 「ありがたきことで……」 (000010AA:11:19), 「もったいなきことで……」 (11:23), 「どうか……どうか、麻生田家を助けてほしいんです！」 (11:114) with both hands on the floor
+- sentence-final particles: ～だ／～のだ (narration, declarative and often triumphant); ～ぞ; ～か／～のか (his self-questioning); ～で (the humility formulas, always trailing)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「ガハハと笑いあう」 (00001092:11:29); the phrase 「出世」 used eleven times as the thing he wants; the repeated frame 「オレにできることは何だ！？」 (11:78, 11:80)
+- dialect: none, but the register is period-plain with peasant edges (雲をつかむような話, たかが知れている, 元も子もない)
+- EN correlates: contraction rate MEDIUM-HIGH; profanity ceiling ZERO — he never swears once in 500 cells; sentence length SHORT and driven, question-heavy when planning; formality LOW to equals and archaic-HIGH upward; vocabulary register practical and administrative (経費, 節約, 分国法, 一円知行, 年貢, 兵力), and it rises when he is reasoning
+- narration voice: past tense, オレ, energetic and entirely without self-pity or irony. He explains his own job's boundaries pedantically (「オレは台所奉行であって料理人ではない」 00001092:11:87), reasons in numbered consequences (11:56-11:58), and stages two internal voices against each other — 「こんなことをしても無駄だと言うオレ。／こうしなければ生き延びられないと言うオレ」 (11:102-11:103). The same two-voices device as 00000F6F:11:8-11:14 and neither file nods at the other
+- his one refusal: 「間川に戻るくらいなら、麻生田家と一緒に滅びる方がマシだ！」 (00001092:11:69), to the man who came to save him
+- what he takes and what he keeps: he is given ドローガ personally rather than for his house (000010AA:11:231), tells nobody, uses two crystals at 樽狭間 and keeps the other eight — 「これは、オレのためだけに使うことにする」 (11:269). His last thought in the chunk is who inherits after his lord and the answer he gives himself is himself (11:305-11:307)
+- known ambiguity / open questions: three name forms in two files — 吉郎, 藤吉郎, 藤殿 -> Q443. 11:186 of 00001092 is 「オレの記憶は、ここで終わっている」, a survivor's present perfect that never says when or to whom he is telling this. 000010AA:11:245 calls the drug 「何とかと言う薬」 eleven cells after using its name -> Q444. -> Q421, Q423
+- as-of: 000010AA
+
+## 豊吉 (とよきち, Toyokichi) — 藤吉郎's friend in the 間川 house, 00001092
+- first_appears: 00001092:11:23 (referred to); first line 11:27
+- pronoun(s): 俺 (「それを言ったら俺を麻生田領に入れたお前だってただじゃすまないだろ！？」 11:32)
+- speech level baseline: loud タメ口 that goes quiet. He arrives laughing and by 11:42 「陽気な豊吉の表情が曇り出し、口も重たくなる」; his last six lines are half-finished
+- sentence-final particles: ～だなあ (the mirrored greeting); ～だろ; ～か (「間川家に戻る気はないか？」 11:45); ～じゃないか
+- copula: だ
+- verbal tics / catchphrases / fillers: 「はは！」; the greeting 「よう吉郎！　久しぶりだなあ！」, repeated back at him word for word
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality ZERO; vocabulary register plain soldier's
+- what he is: he crosses into hostile territory at real risk to warn a man he no longer serves with, is refused, and says nothing after 「吉郎……」 (11:70). His last cell is 「…………」 (11:74)
+- known ambiguity / open questions: nothing says what becomes of him, and 間川 is destroyed six months later with his own side's whole army.
+- as-of: 00001092
+
+## 新村儀之助 (にいむら ぎのすけ, Ginosuke Niimura) — the Westerner who is 荒田's doctor, 000010AA
+- first_appears: 000010AA:11:7 (「おお、気がつきましたか」); names himself 11:26
+- pronoun(s): 私 ("私は、あなたがここへ来たことを――／とても警戒している" 11:135-11:136); 我々 for the Westerners collectively
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: level 丁寧 (です・ます) to a stranger, warm, and it does not change temperature for anything — not for the history lesson, not for the threat, not for handing over a weapon. That constancy IS the character. He also speaks Portuguese to a member of his household with no address form at all
+- sentence-final particles: ～ですな／～ますかな (「はっはっは！　やっぱり不思議に思われますかな！」 11:38, 「やっぱり驚かれるでしょうなあ！」 11:88) — an elderly-genial ending, and it is the only warmth marker he has; ～ですか (his two hard questions, 11:143 and 11:145)
+- copula: です
+- verbal tics / catchphrases / fillers: 「はっはっは！」 (11:21, 11:38, 11:88) — the same laugh as 新村エリカ, 新村幸太郎 and 湊綱宗, in the family whose surname he has taken
+- dialect: 「その話し方に違和感がある。／どうも、日の本の言葉にしては、抑揚に違和感が……」 (11:10-11:11) — the narration says his Japanese is accented and the JP text gives no accent at all. EN must NOT invent one; the observation is reported, not performed
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length MEDIUM to LONG, explanatory, one fact per clause; formality HIGH and unvarying; vocabulary register educated — medicine, ecology, political rumour, and a worked argument about why force loses to people (11:198-11:216)
+- what he gives and what he asks: the jar of ドローガ, with dose, method, duration and the warning to finish inside the hour (11:223-11:228), entrusted 「麻生田家ではなく、藤殿に」 (11:231); in exchange, absolute silence about the place, 「例えお館様相手であっても」 (11:238)
+- he quotes the founder's motto as the settlement's teaching and extends it to insects and animals (11:210-11:213) — the second of three uses of 「1人はみんなのために、みんなは1人のために」 in this chunk -> Q420, Q174
+- his two Latin-script lines: "Clientes para trazer uma refeicao." (11:29) and "Traga as drogas." (11:131), both ungrammatical, neither glossed -> Q422, Q162, Q195
+- known ambiguity / open questions: where he came from is given only as 「西洋の母国から遠く離れた植民地」 with an 「未曾有の災害」 (11:65-11:66); no country is ever named. Whether the settlement's 新村 surname is his by adoption or whether he is unrelated to the founding line is never stated. He is the origin of every Portuguese word in the project and nothing in the modern files knows his name.
+- as-of: 000010AA
+
+## unnamed 荒田の女 (000010AA) — the woman in 儀之助's household
+- first_appears: 000010AA:11:32
+- pronoun(s): none observed
+- speech level baseline: 丁寧 (です・ます), warm hostess register — 「まあ、気がつかれたのですね。一晩眠っていたんですよ？／　すぐにお食事の準備をしますね」 (11:33-11:34), 「藤様、お待たせしました。これを食べれば、たちどころに元気になれますよ」 (11:75)
+- sentence-final particles: ～ですね; ～ますよ; ～ですよ？ (the rising 「？」 on a statement, twice)
+- copula: です
+- verbal tics / catchphrases / fillers: none. Three lines in the project
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality HIGH; vocabulary register domestic
+- what she is: 「甲斐甲斐しく話しかけるこの女性は、どうみても日本人だ」 (11:35) — she is Japanese, she takes orders in Portuguese and answers them, and she is the one who fetches the drug. She is never named, never explained, and her relation to 儀之助 is never stated. 「失礼いたします」 (11:168) is the cell that breaks the file's most dangerous silence
+- known ambiguity / open questions: she understands two Portuguese commands and speaks no Portuguese on screen; do not let EN make her bilingual or make her a servant. -> Q422
+- as-of: 000010AA
+
+## 内府 (the Daifu) — narrator of 000010C3, 祀耀340
+- first_appears: named in the reference material from 000001E1; NARRATES 000010C3 (order 153)
+- pronoun(s): 私 (「私はこの時決めたのだ」 11:20)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: 最上級敬語 upward and nothing else on screen. He speaks to exactly one person in the whole file — 「これはこれは殿下、ご機嫌うるわしゅう」 (11:31), 「いかほどご入り用で……？」 (11:59), 「はい、心得ております」 (11:72), 「はい、有り難き幸せ」 (11:212) — and to his hired men in flat imperatives with no politeness at all (11:84-11:85, 11:194-11:195)
+- sentence-final particles: ～のだ／～のである (narration, his conclusions); ～で……？ (his careful questions, always trailing); ～だろうか (his private reasoning)
+- copula: だ／である
+- verbal tics / catchphrases / fillers: none
+- dialect: none; the register is court-formal archaic (薨去, 範疇, 大義, 些細, 茫然)
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM to LONG in narration, VERY SHORT in speech; formality HIGHEST in the project outside the menu navigator; vocabulary register political and military, with a strong analytical streak — he reconstructs the whole ドローガ history from two sentences and a memory (11:243-11:265)
+- narration voice: past tense, 私, cold, orderly and entirely without self-justification. He orders ten men killed, watches them sing, prices a party at 39億円 and describes a man walking on his hands, all in the same measured clauses. His only statement of feeling is 「こんな恐ろしいところ、少しでも早く去ってしまいたい」 (11:183). EN must not warm him and must not make him a villain; he is an administrator
+- his one moral sentence is quoted from someone else: 「今10人死ぬか、将来10万人死ぬか、どちらを選ぶか」 (11:223), attributed to 麻生田延永, and he does not endorse it or reject it
+- what he sees at 荒田: bodies split lengthwise through armour, a man with no arms and one leg hopping, a man with no lower half walking on his palms with his heart hanging out. He names it 「ただの虐殺だ……！」 (11:118) and never revises the word
+- his closing instruction is the chunk's last line and the project's oldest surviving document: 「だが、後世に伝えなくてはならない。／ドローガには――／決して手を出すな。」 (11:290-11:292) — the same sentence the dismembered man gave him at 11:161, in the opposite register. Both must land -> Q425
+- known ambiguity / open questions: he is never given a personal name and neither is his lord; both are offices throughout -> Q421. 11:235 「（現代の金額換算で39億円）」 is a modern parenthetical inside his narration with no frame -> Q424. 11:287 「桜の木にそっくりな妖花が生い茂っている」 is the project's title word said in-world for the first time and he does not explain it -> Q426
+- as-of: 000010C3
+
+## 殿下 (でんか, His Highness) — the ruler of the realm, 000010C3
+- first_appears: 000010C3:11:0 (referred to); first line 11:36
+- pronoun(s): わし (「ほう、わしに意見するか？」 11:54)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: plain imperative with archaic lordly endings, to a man who is giving him 最上級敬語. Short, absolute, and he never explains anything twice
+- sentence-final particles: ～じゃ (「うむ、花見じゃ」 11:41, 「桜の木が足りないのじゃ」 11:50); ～のだ (his orders); ～な (「内府よ、分かっておるな？」 11:69); ～がよい (11:211)
+- copula: じゃ
+- verbal tics / catchphrases / fillers: 「うむ」 opening an answer (11:41, 11:43); 「ほう」 as a warning (11:54)
+- dialect: none; ～じゃ here is the lordly-archaic copula, not a regional one — EN must not make him sound rural
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length VERY SHORT; formality lordly-archaic; vocabulary register minimal — he says fewer than 120 characters in the whole file and three of his sentences are orders to kill
+- the order, in full: 「桜の運搬には人手を使ってもよいが、用が済んだらその者たちは――」 (11:71), cut off and completed by his subordinate with 「はい、心得ております」. The sentence is never finished on screen
+- what he is: the realm's ruler, marked by 『桜の呪い』 in the mountains north-east of the eastern capital, the man who set the 理性寺の変 in motion through 蛙吉, and the man who used ドローガ at 樽狭間. Four months after his 花見 he sees the five 荒田 trees shrivelled 「さながら、干からびたキノコのように」, goes mad, does not leave his bedroom and dies -> Q426
+- known ambiguity / open questions: the file never names him, never says whether he IS 藤吉郎 grown old, and his house is called 藤家 exactly once (11:270) — the only link, and it is never drawn on screen. Do not let EN draw it. -> Q421, Q443
+- as-of: 000010C3
+
+## 上半身男 and 片足男 (000010C3) — the two dismembered fighters at 荒田
+- first_appears: 000010C3:11:120 (the sound); first words 11:126
+- pronoun(s): 俺 (「俺みたくなるぞ……」 11:162)
+- speech level baseline: 乱暴 タメ口, drawled, delivered without pain and without urgency by men who should be dead. 「あんたぁ……何者だ？」 (11:126), 「ああ、いた……／いたな……！」 (11:135-11:136), 「殺す……／殺す……！」 (11:142-11:143), 「死ね！／　死ね！」 (11:144-11:145)
+- sentence-final particles: ～ぞ (the warning); none on the rest — most of their lines are bare verbs repeated
+- copula: だ
+- verbal tics / catchphrases / fillers: stretched vowels on the vocative (「お侍さんよお……」 11:160, 「あんたぁ……」)
+- dialect: none, but the register is rough enough to sit at the opposite end of the file from the narrator's
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO — they never swear; sentence length ONE OR TWO WORDS; formality ZERO; vocabulary register almost none, until the last three cells
+- THE LINE: 「お侍さんよお……／ドローガにゃ手ぇ出すんじゃねえぞ……／俺みたくなるぞ……」 (11:160-11:162), delivered 「無表情のまま、声を張り」 by a man whose heart is hanging out of his chest, and then he dies. It is the file's thesis and the narrator repeats it in his own formal register as the chunk's last words -> Q425
+- known ambiguity / open questions: they are never named, never explained and never connected to anyone in the modern files. The text does not say whether they can feel pain, whether they know what has happened to them, or whether they are still the men they were. Do not resolve any of it. -> Q426
+- as-of: 000010C3
+
+## 城崎百合子 (きざき ゆりこ, Yuriko Kizaki) — 城崎's wife, killed at 00001154, named only there
+- first_appears: 00001154:8:13 (referred to as 城崎さんの奥さん); first line 8:20 (「あなた何言ってるの！？」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a — four utterances in the project
+- speech level baseline: タメ口, shouted, in a domestic argument overheard from a garden by a child. No 敬語 to her husband and no softening anywhere; every one of her four lines is either a question fired at him or a flat decision
+- sentence-final particles: ～の！？ (twice, accusatory — 「怪しいと思わないの！？」 8:21); ～のよ (giving an instruction, 「ちゃんと部外者に見てもらうのよ」 8:26); ～の？ (the closing challenge, 「人殺しと一緒の集落にあなたは居たいの？」 8:28)
+- copula: よ／の, feminine
+- verbal tics / catchphrases / fillers: none. Four lines in the project
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO — her hardest word is 人殺し; sentence length SHORT and every sentence is a demand; formality LOW; vocabulary register plain, with the settlement's words used without explanation (大魔女様, 部外者, よそ者)
+- what she does: she is the only resident who says out loud that the 新村 are shielding a murderer, that a 大魔女 settling a killing without police is suspicious, and that she will go to the police tomorrow. She uses 大魔女様 with the honorific while accusing her (8:21) and サクラちゃん for the dead woman (8:22). Her husband's counter is that there is no evidence and that 幸太郎 knows perfectly well he is suspected
+- structural job: she is the trigger for everything called 呪殺事件. An eleven-year-old hears these four lines from behind a hedge, decides a knife through the throat that night is the cheaper option, and starts a nine-year series -> Q477, Q461
+- known ambiguity / open questions: nothing about the killing is described; the narration gives the method in one clause and moves on. Her husband appears in five other branches as a cheerful widower and never says how she died. -> Q477
+- 00001C55 IS THE SAME ARGUMENT FROM INSIDE THE HOUSE, where 00001154:8:13-8:39 hears it from behind a hedge, and the wording is nearly identical. Her four lines are her four lines: the 大魔女 not calling the police is itself suspicious, the 新村 are shielding the man who killed サクラ, she will go to the police tomorrow, and 「これは私の責任でやる。あなたは何もしなくていいから」 -> Q477, Q025
+- her husband's counter is on the record for the first time: there was no evidence and 幸太郎 knows perfectly well he is suspected. He is defending the man his wife dies over
+- HER DEATH IS ON SCREEN AT 00002102:8:27-8:29, in three cells, from outside: 「おおい！　誰か来てくれ！　百合子が！」 / 「どうした城崎！？」 / 「百合子が……死んでる……！」. It happens in the same file as the dream that instructs 新村茅萱 to kill one person a year with a knife, two cells after she wakes from it
+- 00001EFF:8:21-8:68 establishes that the killing 茅萱 confessed to was itself inside the dream. This file prints the death and the dream side by side and does not join them -> Q817, Q837, Q477
+- as-of: 00002102
+
+## the 「あっちの方にいるよ」 voice (0000110D:12:0, 20:0; 00001184:12:0) — untagged, unattributed
+- first_appears: 0000110D:12:0, a one-cell row-block containing 「あっちの方にいるよ」 and nothing else
+- pronoun(s): none — it never refers to itself
+- pronoun FREQUENCY: n/a
+- speech level baseline: plain タメ口, gentle, two utterances and one replay. 「あっちの方にいるよ」 (12:0) and 「ほら、あっちの方だよ」 (20:0). Both are in 「」 with no speaker tag, no narration around them, and no reaction from anyone except the ten-year-old who hears them
+- sentence-final particles: ～よ (both lines); the second opens with 「ほら」, which is the only pressure it applies
+- copula: だ
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length VERY SHORT; formality NEUTRAL; vocabulary register plain and childlike. EN must not choose an age, a sex or a relationship for it, and must not make it sinister — the hearer is not frightened by it and does not remark on it at the time
+- what it does: it tells a ten-year-old carrying a baby which way her mother went, on a river kilometres long, and the narration says only 「なぜか、どの方向なのか分かるのだ」 (24:2). Ten years later the first cell is replayed VERBATIM at 00001184:12:0 as a recovered memory when her aunt asks how she found them
+- structural job: it is the first on-screen instance of the guiding voice that 五島 theorises about at 0000119C:8:221-8:236 and warns against at 000011B4:8:190-8:201 — 古郡なつみ hears the same thing as 新村栄一郎's voice, 新村サクラ describes it as a received signal, and this file shows one arriving with no identity attached at all
+- known ambiguity / open questions: never identified, never explained, never mentioned again in the chunk. Do not attribute it. -> Q456, Q087
+- as-of: 00001184
+
+## the 天秤 (00001184:24:2-24:22) — the scales the narrator says she carries
+- first_appears: 00001184:24:2 (「不正な自己裁判により偏った天秤を背負わされていた」); first line 24:5 (「ねえ、どうして君は、僕を背負っているの？」)
+- pronoun(s): 僕 for itself, 君 for the narrator. This is an OBJECT, not a person, and the pronouns must not gender it or personify it in EN
+- pronoun FREQUENCY: states 僕 once and 君 three times in three turns — high for the length
+- speech level baseline: plain タメ口, needling, in 「」 inside the narrator's own first person with no frame. Three turns: 「ねえ、どうして君は、僕を背負っているの？／　でも、ここまで来たんだから、ずっと背負っておきなよ」 (24:5-24:6); 「君は、ずっと自分が5人も殺してきたと思ってたよね？／　それ、本当に君が殺したの？　夢だったんじゃないの？」 (24:9-24:10); 「じゃあ、叔母さんは嘘をついてるの？／　君が殺したのが嘘なのか、叔母さんの証言が嘘なのか、どっちかな？」 (24:13-24:14)
+- sentence-final particles: ～の？ on every question; ～なよ (the one imperative); ～かな？ (the closing choice)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「ねえ」 as an opener; the narration gives it 「にやにやと臭い息で」 (24:8) and the image of a cuckoo's egg riding on her back (24:7)
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT, all questions; formality LOW; vocabulary register plain and juvenile, deliberately at odds with what it is asking about. EN must keep it an object with a voice and must not make it a devil, a conscience or an inner child by word choice
+- what it does: it argues her out of her own confession before her aunt finishes it, and the block ends with her verdict on her own charge sheet — 「その罪状とは――／空。」 (24:21-24:22), one word in a cell of its own
+- known ambiguity / open questions: it speaks once and never again; nothing says whether it is a figure of speech, a hallucination, or the same thing as the 「あっちの方にいるよ」 voice. Do not join them. -> Q463, Q456
+- as-of: 00001184
+
+## ハナちゃん (00001154:8:5, 0000119C:8:4-8:9) — 新村茅萱's closest friend in Tokyo
+- first_appears: mentioned 00001154:8:5; first line 0000119C:8:4 (「茅萱、今年の新入生、なかなかノリがいいよ！」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a — two utterances
+- speech level baseline: bright タメ口, no honorific and no suffix on the name. She is the only person anywhere in the project who calls 新村茅萱 「茅萱」 bare
+- sentence-final particles: ～よ！ (「なかなかノリがいいよ！」); ～よね！？ (「もちろん行くよね！？」); ～ねー (「また今度誘うねー！」)
+- copula: だ
+- verbal tics / catchphrases / fillers: none in two lines
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality LOW; vocabulary register student-social — 新入生, 歓迎コンパ, 誘う
+- what she does: she invites her to mixers and is turned down twice in two files, the second time with a visible reaction — 「ハナちゃんもちょっと誘いにくそうな顔をすることが多くなった」 (0000119C:8:11). She never appears on screen and is only ever heard on a phone or quoted
+- structural job: she is the measure of what 茅萱's Tokyo life costs her; the only friendship in it is being dropped in the same two files in which she confesses five murders
+- known ambiguity / open questions: the name is written in katakana and hiragana mixed (ハナちゃん) and no surname is ever given; whether ハナ is a given name or a shortening is not stated
+- HER LONGEST SCENE, 00002108, 65 lines, and she is on screen for the only time: she has noticed 茅萱's face has been dark and that she has stopped coming to mixers, and when told 「ん……私……／死ぬかもしれない」 she asks exactly one question — 「茅萱は、死にたいわけじゃないんだよね？」 — and then simply refuses the premise: 「だったら、茅萱は大丈夫だよ。だって茅萱はすごく強いもん」. Her evidence is comic and it is meant kindly: 「100人以上の男に振られ続けてもへこたれないんだから！」
+- she renames the evening in one cell — 「じゃあ今日は送別会じゃなくて、決意表明会だね！」 — and promises to line up men for the return, on the stated ground that 「楽しみがあれば、ここに帰って来ようって気持ちも強くなるでしょ？」
+- WHAT SHE SAYS ABOUT HERSELF, 8:59: 「性別の壁だって乗り越えて見せるよ！」, answered by 茅萱 with 「ハナちゃんくらいお淑やかな女なんてそうそういないもんね。／女以上に女らしいんだから」. 000020FC:8:44-8:46 has a man reporting that at the moment of a kiss she said 「私、／×／だけどいい？」, with the word censored, and 8:57-8:58 has him choosing 茅萱 over her because of 「××／の壁」. The text states it at one remove in both places and never plainly. EN must not resolve it -> Q832 (owner)
+- the bare 茅萱 is intact for all 65 lines, including the cells about dying
+- as-of: 00002108
+
+
+## unnamed 銀座の料亭の仲居 (0000116C, 0000119C) — the Ginza restaurant's attendant
+- first_appears: 0000116C:8:44 (「ようこそ、おいで下さいました」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 最上級敬語 throughout — ご予約のお名前はご存知ですか, お待ちしておりました, ご案内いたします, かしこまりました, お連れ様がお越しになってから, 失礼致します. Surname plus 様 (新村様) and, once, 御令姪様 for a guest's niece -> Q479
+- sentence-final particles: ～ます／～ございます only; every sentence is closed and none is left hanging
+- copula: です／ございます
+- verbal tics / catchphrases / fillers: none. She bows with 「膝を折って三つ指をつく」 (8:45), the same 三つ指 the 旅館の仲居 of 00000E95 uses
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length SHORT and complete; formality MAXIMUM; vocabulary register hospitality-formal. Identical in surface form to the プリマベラ staff and to 五島桃子's waitressing register -> Q075
+- what she does: she reads a nervous first-time guest instantly and replaces an open greeting with a question the guest can answer (「ご予約のお名前はご存知ですか？」, and the narration says so at 8:50). She brings a second tea, chilled water, extra hot towels and tissues without being asked, once the room has become a place where somebody is going to cry (8:87-8:89). She recognises the same guest a week later and greets her by the family name (0000119C:8:18)
+- structural job: the only unmixed kindness in three files, delivered entirely through service register and without one personal remark
+- known ambiguity / open questions: 「ご用致しますね」 at 8:61 is a source typo in an otherwise flawless register -> Q490
+- as-of: 0000119C
+
+## 金井桂子 (かない けいこ, Keiko Kanai) — 新村美冬's grandmother, 新村春花's great-grandmother
+- first_appears: 000011E3:8:61 (named in a newspaper article of 祀耀737年三月三〇日)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a — she has one sentence in the project
+- speech level baseline: plain, warm, spoken to a reporter — 「この日本に花を咲かせてくれる神様に違いない」 (8:63). No 敬語 and no hedge; she states it as fact
+- sentence-final particles: ～に違いない, once
+- copula: だ (implied)
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT, one clause; formality NEUTRAL; vocabulary register plain, with one religious noun
+- known ambiguity / open questions: she is the woman who FOUND the 御神木, sixty-three years before the story present, and 春花 works out the relationship on screen in the next three cells (8:65-8:67) and calls it 「すげー偶然」. The text offers no other reading and does not push it. The reading of 金井 follows Q110. The surrounding article is set as bare narration cells with no quotes and uses the period spelling 其の (8:62) -> Q071
+- SHE SPEAKS, 0000170A:8:6 — 「こんなところに桜の木なんてあったかしら……」 — her only line anywhere, in a reference document about the 御神木's appearance in 祀耀737
+- what the file establishes through her: she lived alone, walked the path to a well daily, and was the only person who used it, which is why nobody else could contradict her. She called the neighbours immediately and they decided to enshrine the tree rather than explain it
+- her register in the one line is ordinary feminine ～かしら, consistent with the 63-year-old newspaper quotation at 000011CC
+- as-of: 0000170A
+
+## unnamed 豊岳駅の駅員 (000011CC:8:183-8:192) — the station attendant with the megaphone
+- first_appears: 000011CC:8:183
+- pronoun(s): none observed
+- speech level baseline: TWO registers four cells apart. The public-address one is a fixed announcement delivered twice in identical words — 「えー豊岳線は線路トラブルのため、上下線ともに運転を見合わせています」 — and the face-to-face one falls apart: 「えっとですね……／それが、何と言えばいいのか……。／すぐそこで急に生えてきたんですよ。／桜の木が」
+- sentence-final particles: ～ています (announcement); ～んですよ (to a person)
+- copula: です
+- verbal tics / catchphrases / fillers: 「えー」 as the announcement opener; 「えっとですね……」 before the thing he cannot phrase
+- dialect: none
+- EN correlates: contraction rate LOW in the announcement and MEDIUM out of it; profanity ceiling ZERO; sentence length LONG and formulaic in the announcement, broken and short outside it; formality HIGH; vocabulary register railway-operational, then none at all
+- known ambiguity / open questions: the announcement blames 「線路トラブル」 and he then says what the trouble is, in the flattest possible way, with the subject held to the last cell (「すぐそこで急に生えてきたんですよ。／桜の木が」). The inversion is the joke and the horror at once; EN word order cannot hold the noun back the same way, and the cell break must not be closed -> Q179
+- as-of: 000011CC
+## 大翔 (ひろと, Hiroto) — the boy in 新村夏菜's exchange diary, who does not exist
+- first_appears: 00001325:8:144 (「今日から大翔君と交かん日記だね！」); named and read aloud in the same cell; exposed as fictional at 8:240-8:244
+- pronoun(s): おれ, in writing only (「おれも何て書いたらいいか分からないなあ」 8:168)
+- pronoun FREQUENCY: about as often as typical for a ten-year-old boy in a diary
+- speech level baseline: plain boys' タメ口 in writing, no 敬語, short sentences, ～なあ and ～よな
+- sentence-final particles: ～なあ (his commonest by far, on nearly every entry); ～よな; ～ぞ; ～な
+- copula: だ
+- verbal tics / catchphrases / fillers: none. He has seven diary entries and nothing else
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality ZERO; vocabulary register a fourth-grader's, with kana where kanji would go (交かん日記, ひなだん) -> Q525
+- THE POINT OF HIM: both halves of the diary are in the same handwriting, it runs every day including Sundays and the spring holiday, and the last entry says they spent yesterday together when 夏菜 was at home. He is 夏菜's invention and the file's punchline. His register is therefore a ten-year-old girl's idea of how a boy writes, and the EN must make it slightly too neat for a real boy without being obviously wrong
+- his entries do one thing: they escalate toward a confession, and the confession is the part 夏菜 cannot read aloud — one syllable per cell for fourteen cells -> Q526
+- his name is the file's second joke: 茅萱 cannot read the kanji and is told it is ひろと, and complains that modern children's names are unreadable; 夏菜's comeback is that her sister's own name is no better -> Q528
+- known ambiguity / open questions: whether a real 大翔 exists at 夏菜's school is never said, and 夏菜's 「彼氏じゃないし！」 (8:129) can be read either way. Do not settle it
+- as-of: 00001325
+
+## 新村桔梗 (にいむら ききょう, Kikyo Niimura) — 大魔女 two generations back, dead; a written voice only
+- first_appears: named in GLOSSARY from an earlier file; SPEAKS for the first time at 00001355:8:45-8:48, as a signed memo slipped into an old book
+- pronoun(s): 私 (「私はもう、長くはありません」 8:47); 我々 for the settlement in the translated text she is presenting (「我々は知恵を絞り、死月妖花を撃退することに成功した」 8:81)
+- pronoun FREQUENCY: less often than typical; the document is almost entirely subjectless
+- speech level baseline: TWO registers, four cells apart, and they must stay apart in EN:
+  1. the COVERING NOTE, 丁寧 (です・ます) to an unknown descendant — 「少しでも子孫たちが読みやすいよう、今の言葉に翻訳しています。どうか、これを役立ててください」
+  2. the DOCUMENT she is presenting, plain declarative 祀耀482 chronicle that hardens into classical imperative at the end — 「未来の荒田の者たちよ、子孫たちよ。／これから述べることをしかと後世へ伝えよ」 (8:89-8:90)
+- sentence-final particles: ～ます／～ません (note); ～だ／～のだ (chronicle); ～べし (the five-line instruction)
+- copula: です (note) / だ (chronicle)
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM in the note and SHORT in the chronicle; formality HIGH throughout; vocabulary register religious and administrative — 降臨, 転生, 分身, いけにえ, 撃退
+- what she does: she is the reason the modern characters can read anything at all. She translated a 祀耀482 account into the Japanese of her own day (祀耀735 or thereabouts, since a second addendum of hers is dated 祀耀735 at 0000136D:8:76) for descendants she would never meet, and signed it with her title above her name. 茅萱 answers her out loud — 「では桔梗さん、ありがたくあなたの文を読ませてもらいます」 (8:52)
+- she is also the only person in the project who says plainly that the thing may not be dead: 「しかし、本当に死月妖花が滅びたのか、その確証があるわけではない」 (8:85)
+- her document is where the five-line instruction comes from, and 新村エリカ recites two of its lines from memory 80 cells later without knowing whose words they are -> Q536, Q558
+- known ambiguity / open questions: how much of the 祀耀482 text is hers and how much is the original is never marked; the chronicle's 「我々」 may be 祀耀482's or hers -> Q534
+- SHE NARRATES TWENTY-FOUR CONSECUTIVE FILES, orders 366-389 (0000212D through 000021C9), in 私 — the longest single-narrator run in the project, and it covers her whole life from 16 to death. Until this chunk she was a signature on a document; she is now the project's fourth-longest narrating voice
+- narration voice: formal, essayistic, reasoning-first. Long sentences that set out a principle and then apply it, rhetorical questions aimed at the reader, and an almost total absence of self-pity. She states her feelings only after working out what they are (「これは――／後悔だ」 00002164:8:62-8:63), and she corrects herself out loud (「何を考えているの、私」)
+- THE FILE OPENS WITH NO FIRST PERSON AT ALL: 0000212D:8:0-8:14 is an essay addressed to the reader defining 才媛 and arguing that such a woman would not be recorded, and the switch into 私 is unmarked. She is not named until 8:16, by her father -> Q869, Q108
+- AS A SIXTEEN-YEAR-OLD, 祀耀678 東京: a merchant's daughter with no surname, locally known as a 才女, reading her father's books against his wishes and beating men at the abacus and at argument. Her ambition is not to travel but to see the country enriched by what the West brings
+- HER RUNNING JOKE and the only frivolous thing she does anywhere: 「私、／ものっっっっすごく／暇なんで！」 split across three cells, used four times across four files (00002137:8:20-8:22, 00002143:15:78-15:80, 0000214F:8:17-8:19, 0000217A:8:55-8:57), with a DIFFERENT number of っ each time. It is how she breaks a silence and it is the only thing her husband learns to anticipate -> Q842
+- 敬語 upward is absolute: です・ます to her father with 父上, to 新村晃 with 晃様 and then 晃さん, to her mother-in-law with お義母さん, and to 篠崎ハジメ with 篠崎さん. She never uses タメ口 to anyone on screen
+- HER METHOD, stated once and applied for sixty years: 「あらゆるものには因果律が存在する。……そこには必ず理屈があり、原因があり、結果がある」 (00002187:8:8-8:10). She is the first person in the project to refuse a supernatural explanation, and the only one who is right
+- her second principle, given to her husband before she has any evidence: a 戒め set up to survive a crisis decays into 伝承 and 神話 once the crisis passes, so the rule survives and the reason does not (0000218D:8:13-8:14). Every 大魔女 after her is an instance of it
+- HER DEFENCE OF THE 掟, which she gives while objecting to infanticide: 「 掟 とは人を縛るためのものではない。／人を守るために 掟 があるのだ」 (00002193:8:28-8:29). EN must let her hold both positions at once
+- SHE LIES, calmly and twice: to 篠崎ハジメ about ドローガ still being in use, with 「私も嘘をついた」 in her own narration one cell later (000021A5:8:69), and to the settlement about why the ban exists — deliberately, on the ground that a ban with a reason has been forgotten four times already (000021B7:8:50-8:52)
+- SHE CATCHES A LIE BY EAR: 篠崎 says he has never been to 飯沢県 and his accent is 飯沢県's, which she can hear because she was born in 東京. His lines are not written in dialect -> Q843
+- WHAT SHE BUILDS, and it is the whole machinery every modern file runs on: the ドローガ ban; the rewritten 法要 that makes ファルシフィカソ a ritual implement so that the antidote is manufactured forever; the ヴェルジ mummy sealed behind a 封石 in the underground store, barred with iron under a cover story of a cave-in; and the translated 蔵書 that 新村茅萱 reads 65 years later -> Q865, Q864
+- SHE ALSO GIVES THE RECIPE AWAY. 000021AB:8:15: she hands 篠崎 a ドローガ crystal and the written method. That is how セレジェイラ聖教 has it in the modern files -> Q452, Q450
+- HER MEMORY FAILS, on screen, and she narrates it: 000021B1 is 35 lines of an old woman who knows she is waiting for something and cannot remember what, standing in front of a mummy whose story she can no longer finish (「それは……／確か……」). Her own later reading is that the thing could not move while she suspected it, so the forgetting is not idle -> Q828
+- HER TWO-DATE SIGNATURE: the same covering note is printed twice in 000021BD, signed 「祀耀735年　大魔女　新村桔梗」 in block [8] and 「1942年　大魔女　新村桔梗」 in block [21]. The project's only real-calendar year -> Q827 (owner-blocking)
+- HER DEATH, 000021C3-000021C9: she works out that she has left the thing nothing to lose and therefore no reason to spare her, lists three regrets, and sees cherry petals in February. What comes for her wears her husband's body. She names it in her second line, refuses to be frightened, and is told the plan — to kill everyone in the settlement — and the reason she was wrong: it predates humans by thousands of years and any mammal will do
+- her last passage is an address to descendants she will never meet, the same audience as her covering note: the clues are in the 蔵書, she never wrote the 仕上げ, and 「どうか死月妖花を滅ぼしてくれ」. Twice on the way out she writes 「私の考えは――／甘かった」
+- as-of: 000021C9
+
+
+## unnamed 『失踪者共のなれの果て』の調査者たち (0000133D) — the 132-year-old investigators, a written 我々
+- first_appears: 0000133D:8:162 (「祀耀669年、集団失踪が起きた次の年の春……」)
+- pronoun(s): 我々 (「我々は調査のため、新しく生えた木の1本を根から掘り起こした」 8:167). No individual ever speaks
+- pronoun FREQUENCY: less often than typical; the document is mostly subjectless observation
+- speech level baseline: plain written declarative, 常体, first person plural. No 敬語 anywhere, no address to a reader until the last two paragraphs
+- sentence-final particles: ～のだ (their commonest, and it carries every conclusion); ～ではないだろうか (their only hedge); ～べきだろう (the closing resolution)
+- copula: だ／である
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM and complete; formality HIGH but not archaic — the narration calls it 古語 and then says it is close to modern, so EN should read as late-nineteenth-century plain prose, not as chronicle -> Q531
+- what they do, in ~12 cells: count about thirty new cherry trees against about thirty missing residents, dig one up, find clothing and a skeleton in the roots, conclude that the residents were the seedbed and the tree is not a cherry, report the name 死月妖花 as already traditional, and explain 死月 — 荒田 people die in April barring accident or illness
+- THEIR LAST TWO PARAGRAPHS ARE A DECISION, and they are the reason the modern plot exists: abandon 神話主義, send a representative to 東京市 with ドローガ, present it to whoever holds power, and study the thing with proper money and equipment — 「例え100年かかるとしても、世代を越えて解き明かすべきだろう」 (8:192). About sixty years later the cherry is taken by a research body
+- structural job: they are the only voice in the project that is unambiguously on the side of finding out, with no religion and no self-interest in it, and they are dead and anonymous. Do not make them sinister
+- known ambiguity / open questions: their number, their office and whether any of them was a 大魔女 are never stated; 東京市 dates them -> Q532
+- as-of: 0000133D
+
+## unnamed セレジェイラ聖教の研究者たち (00001355) — the report's 我々
+- first_appears: 00001355:8:109 (「これまで、我々セレジェイラ聖教は、教団の神具であるドローガを科学的に仕組みを解明しようとした」)
+- pronoun(s): 我々, always with the organisation attached the first time. No individual ever speaks
+- pronoun FREQUENCY: about as often as typical for a scientific report
+- speech level baseline: written 常体 laboratory register throughout, switching to 敬体 exactly twice — once to instruct a future reader (「充分に理解しておいてほしい」 8:221) and once in the last four cells, where the report addresses 「あなた」 directly -> Q541
+- sentence-final particles: ～である; ～と思われる／～と考えられる／～と推測される (their hedge, and it is on almost every conclusion); ～のではないか (hypothesis); ～だろう (the last line)
+- copula: である
+- verbal tics / catchphrases / fillers: none, and the absence is the characterisation — the report never once expresses an opinion about what it is doing
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length LONG and clause-heavy, the longest sentences in the project; formality HIGH; vocabulary register technical and consistent — 有性胞子, 接合, 子実体, 苗床, 菌糸, 生活史, 消化液胞, 検死, 解剖, ミクロン. EN must be able to read as a real paper
+- WHAT THEY DID: obtained three human subjects through the cult's leadership, one said to be a plea bargain with a condemned prisoner; infected them in sequence and labelled them 壱, 弐, 参; shot 参 when he became homicidal; housed the other two with the corpse for a week; performed autopsies and blood work; watched both die a year later with cherry trees growing out of their chests; and wrote it up in the same register throughout -> Q537
+- the MORAL FLATNESS is total and is never commented on, by them or by the narrator reading them. The only word of regret anywhere is 「やむを得ず射殺した」 (8:152). EN must not editorialise by word choice
+- the SPECULATIVE HALF, 8:220 onward, is explicitly flagged as speculation and is right about everything: the underground movement, the preservation of buried bodies, the empty 墓地広場, the coined term 『盗感』, and the taking of intelligence from dead brains -> Q540
+- THE LAST FOUR CELLS BREAK FRAME and address a reader who has ドローガ-given precognition, predicting that the sound will sound and a corpse will kill them. It is the only place in the document where the register moves, and it is immediately correct -> Q541
+- known ambiguity / open questions: the report is undated in itself and placed by 茅萱 at ~70 years old; who authorised the subjects, and what became of the cult, are not said. The 祀耀730年代 collapse of 女ケ沢市 as a religious town is the only hook -> Q451
+- as-of: 00001355
+
+## 後白河糸織 (ごしらかわ いとおり, Itoori Goshirakawa) — the transfer student, 00001533
+- first_appears: 00001533:8:74-8:76 (seen from a distance, unnamed, talking to 五島絵梨奈 at the 御神木 site); first line 8:171, which is her self-introduction
+- pronoun(s): 私 (「私、占いとか結構信じる方やねん」 27:16)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: 関西弁 タメ口 to everyone including the teacher and including a stranger she has known for one minute. No 敬語 anywhere except the formula 「よろしくお願いします」. She is the first character in the project with a sustained dialect -> Q611 (owner-blocking)
+- sentence-final particles: ～やねん; ～やな／～やなあ; ～んよな; ～へん／～ひん; ～かもな; ～たってな
+- copula: や (「変わった名字やなあ！」 8:217)
+- verbal tics / catchphrases / fillers: 「あははは！」 at her own expense; 「ほな」 as a goodbye (8:250, 27:61); 「ほんま」 as an intensifier; 「せやなあ」 as agreement; 「ええ」 for いい throughout
+- dialect: 関西弁 (Osaka), stated by her at 8:173 and used without exception. It is the only thing anyone in 元木町 can tell about her -> Q611
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT and fast; formality ZERO; vocabulary register plain and physical. Her English must not be a British or American regional dialect — see Q611
+- what she does in her first sixty seconds: gives her name, says she was born and raised in 大阪, starts to explain why the transfer is a week late, stops, and then delivers an absurd claim (500 km of rabbit hops) into a silent classroom, sweating, waiting for someone to answer it. 古郡なつみ stands up and shouts 「なんでやねん！」 and she lights up -> Q612 (owner)
+- she is PHYSICALLY GENTLE about the thing she cannot know: she crushes a hand that turns out to be bandaged, apologises, and then strokes the dressing and says 「この手、すごく大変なことがあったみたいやな。／大丈夫や、すぐによくなる」 (8:228-8:229). The narrator's word for her face here is 慈しみ, and it is the word she reaches for about 糸姫
+- SHE HAS NO MEMORY before 四月八日 of the previous week — not how she came to 元木町, not how she lived, only her name. The police are working on it and she is living in a 元木町 institution. She talked her way into the school rather than sit in the dark, and she says so cheerfully (27:44-27:55) -> Q630
+- she OFFERS TO BE THE DEAD GIRL, unprompted, having been told only that なつみ knew someone who resembles her and that the person is dead: 「ほなら、私、その子の生まれ変わりでええよ」 and 「今の私は、誰でもないわけやし」 (27:42, 27:55). She looks down at the schoolyard before she says it and then throws her head back
+- she was at the 御神木 site at dawn on the day she starts school, asked 五島 whether the cherry there was gone, and left without naming herself; 五島 cannot place her (8:74-8:82) -> Q615
+- known ambiguity / open questions: the file never asserts that she is 糸姫 returned and the narrator explicitly refuses to decide (「彼女が糸姫の生まれ変わりなのかどうか定かではない」 27:66). EN must leave both readings alive in every line -> Q630, Q614, Q611
+- SECOND-FRAME NOTE: this is a separate block from 糸姫 rather than an update to it, because the whole function of the character is that nobody in the text knows who she is. If a later file asserts the identity, cross-reference the two blocks then and do not merge them
+- as-of: 00001533
+
+## unnamed 山賊 (00001505) — the seven men at the cliff, 800 years ago
+- first_appears: 00001505:8:367 (「いたぞー！」); described at 8:369 as black with filth from head to foot; counted at 8:370
+- pronoun(s): 俺 (8:385 「お前らがガキって言うなら、俺がいただくぞ！」); 僕 once, mockingly (8:407)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: gutter タメ口 with a layer of mock-gentleness on top of it, switched on and off inside two cells. They give orders with ～な and ～ぜ and then coax with ～ましょうね and ～んだから
+- sentence-final particles: ～ぜ; ～な; ～だろ; ～ぞ; stacked ～の！？ when excited
+- copula: だ
+- verbal tics / catchphrases / fillers: 「ほほー！」; 「ははははは！」 printed twice inside one cell joined by ⏎ (8:373) -> Q620; 獲物 used three times in four cells for a person
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW in words and MAXIMUM in content — they never swear and what they say is worse for it; sentence length VERY SHORT; formality ZERO; vocabulary register a hunter's, applied to a girl
+- what they do: they surround a fifteen-year-old alone on a mountain path, tell her to leave her luggage, argue about whether she is too young, handle her to settle it, chase her at her own walking speed for sport, corner her against a cliff, and coax her back from the edge. After she goes over they climb down, appraise the body aloud, find nothing worth taking but a snapped hairpin, and leave -> Q633 (owner)
+- their EXIT LINE is the project's coldest: 「折れたかんざしだけだ。とんだ骨折り損だったな、行こうぜ」 (8:438). The hairpin they throw away is the object the last two files of the chunk are built on
+- structural job: they are the reason 死月妖花 exists. Nothing in the project mentions them again and no character ever learns of them
+- known ambiguity / open questions: none of them is named, distinguished or counted again after 8:370; the JP gives no way to tell which of the seven says which line. -> Q633
+- as-of: 00001505
+
+## unnamed 2年2組のクラスメイト (00001533) — the classroom, collective
+- first_appears: 00001533:8:135 (「おはようございまーす！」, in unison)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: one 丁寧 formula in chorus and then two bare タメ口 reactions
+- sentence-final particles: none observed
+- copula: none observed
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length ONE WORD; formality mixed
+- what they do: three utterances in the whole file — the morning greeting in unison (8:135), and 「おお……！」 / 「すげえ……！」 at the transfer student's face (8:158-8:159) — and then FOUR CONSECUTIVE CELLS CONTAINING ONLY 「…………」 (8:181-8:184), which is the room failing to answer a joke. Their silence is the scene, not their lines
+- the four silence cells are separate cells rather than one, which is the length of the pause; EN must keep four -> Q612
+- structural job: they are the audience the 関西弁 gag needs and the reason the narrator has to stand up
+- known ambiguity / open questions: -> Q612, Q611
+- as-of: 00001533
+## 山垣 (やまがき, Yamagaki) — the young prison officer on the transfer bus (0000156A)
+- first_appears: 0000156A:92:72 (unnamed, 「1番近くにいた若い刑務官」); named at 92:84 when a senior officer rebukes her
+- pronoun(s): 私 (「私、今日から元木刑務所勤務です」 92:89)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: 丁寧 (です・ます) to a convicted prisoner, which is the whole of the character. She answers a question she is not supposed to answer, looks round the bus first to see whether she may, and is shut down mid-sentence
+- sentence-final particles: ～ます／～です; ～ですよね (92:80, checking a fact she has read in a file)
+- copula: です
+- verbal tics / catchphrases / fillers: none; her longest line is one sentence
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality HIGH; vocabulary register plain administrative (移送, 勤務, 施設)
+- what she is for: she is the only person in the file who is kind to the narrator without wanting anything, and she does it in a whisper nobody else hears (92:89-92:91). 茜's narration says nobody has spoken to her like that in years, and then predicts that the woman will harden into the job and stop. Two hundred cells later 茜 shakes her by the shoulder, listens for a heartbeat, and finds none
+- known ambiguity / open questions: reading of the surname -> Q668
+- as-of: 0000156A
+
+## 中嶋長司 (なかじま ちょうじ, Choji Nakajima) — 官房長官, formerly mayor of 元木町 (0000156A)
+- first_appears: named in GLOSSARY from 00000EAF as 元木町's mayor; SPEAKS for the first time at 0000156A:34:174
+- pronoun(s): none observed — he speaks entirely in institutional plurals (「政府でも」, 「我々の方にも」)
+- pronoun FREQUENCY: less often than typical; he avoids first person
+- speech level baseline: 丁寧 (です・ます) throughout, official-podium register: passive constructions, hedges (「大方の予想は立てています」, 「現段階ではすべて調査中です」), and numbers given without sources
+- sentence-final particles: ～ます; ～ております; ～でしょう
+- verbal tics / catchphrases / fillers: 「えー……」 and 「ええ……」 as podium filler (34:179, 201:149)
+- dialect: none
+- EN correlates: contraction rate NONE; profanity ceiling ZERO; sentence length MEDIUM-LONG, clause-heavy; formality VERY HIGH; vocabulary register press-briefing (現地視察, 被災者, 生存率, 応援を派遣, 高解像度映像, 永続的立入禁止区域)
+- THE POINT OF HIM is that the register is deliberately bad. He says the special unit is going to look rather than rescue, puts survival at almost zero before any sample has been taken, and never once says that life comes first — and 五島 reads the whole performance as a coded instruction to any surviving 元木 resident not to be found tomorrow (14:136-14:161). Her evidence is that a politician who wants a poll rating always says the sentence he is not saying
+- he is the town's former mayor, credited with its growth and its crime figures and called 名君 (14:154-14:157), which is why 五島 thinks he is doing this for his birthplace and not for the government
+- EN must keep him boring. The effect depends entirely on a reader noticing an absence in flat official prose; do not let the EN hint, wink or shorten
+- known ambiguity / open questions: reading of the given name, and the rendering of 官房長官 -> Q669. Whether the coded warning is real is never confirmed
+- HE GETS TWO WHOLE FILES OF UNBROKEN SPEECH, 00002090 (44 lines) and 00002096 (21 lines), both printed as bare narration cells with no 「」, no narrator and no frame — the project's sixth unmarked text format -> Q833
+- 00002090, a stump speech for a sixth term: population up about eightfold in 20 years, an elderly ratio of about 13% claimed as the lowest in Japan, and then the admission that a 痛ましい事件 two months ago destroyed the town's 安心・安全神話 and that lax security was his own worst failure. Three pledges, numbered on screen: subsidies to make 元木町 the highest-income municipality in Japan; tourism built on the cherry, funding the subsidies; and 1,000 surveillance cameras plus a repairs committee against ブロークンウィンドウ理論. He closes by comparing himself, the town and the audience to the 中央公園の御神木
+- 00002096, a video retirement address: 24 years, started at 35, every pledge delivered, and a new ambition — to run for the 衆議院 next month and make Japan more like 元木町, with 「年齢的にもこれが最後のチャンスであると考えております」. He closes on 故郷に錦を飾る
+- the register is the same flat official prose 0000156A records, and the same technique works on it: the pledges are all measurable and the sentence he never says is what the two months' dead were for. The 監視カメラ every later 元木町 file takes for granted are his
+- his arithmetic does not close: 00002090 says five terms and 20 years, 00002096 says 24 years from age 35. EN must reproduce both figures
+- as-of: 00002096
+
+
+## unnamed 記者たち (0000156A) — the press-conference reporters, collective
+- first_appears: 0000156A:14:134
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 丁寧 but shouted; every line is a question and several are accusations
+- sentence-final particles: ～ではないんですか！？; ～でしょうか; ～んです！
+- copula: です
+- verbal tics / catchphrases / fillers: they open with the vocative 「官房長官！」 or 「官房長官すみません」
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT and pressing; formality HIGH-but-hostile; vocabulary register news (テロ活動, 放射性物質, 軍事攻撃, 災害対策, 人工衛星)
+- TYPOGRAPHY: every one of their lines is a bare cell prefixed 「――」 with no speaker and no closing bracket, against the spokesman's 「」. The same mark carries telepathy, radio static and unheard voices elsewhere in the project -> Q656
+- their function changes across the file: at 14:134 and 34:178 they are pressing a man who is stonewalling; by 201:143-201:153 they are asking whether it was radiation, a foreign attack or government incompetence, and the narrator — who by then is no longer human — dismisses the whole of it in one cell (201:154)
+- as-of: 0000156A
+
+## unnamed 刑務官たち (0000156A) — the officers on the 護送車, collective
+- first_appears: 0000156A:92:56
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: two lines only. A barked order to a prisoner — 「204番、移動！」 (92:23) — and a 丁寧 rebuke to a colleague, 「山垣さん、そこまでになさい」 (92:84). The gap between the two registers is the institution
+- sentence-final particles: ～なさい
+- copula: n/a
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate NONE; profanity ceiling ZERO; sentence length VERY SHORT; formality split — none toward the prisoner, high toward the colleague
+- 「204番、移動！」 is the line the whole file turns on: it is the order that puts 茜 on the bus, and block 20 reprints it word for word to open a dream that the reader takes for a return to prison -> Q660
+- every one of them is dead by 92:207, described only by the temperature of their faces
+- as-of: 0000156A
+
+## 市村 (いちむら, Ichimura) — 五島絵梨奈's primary-school homeroom teacher, always 市村先生
+- first_appears: 000016AE:11:37 (「こら、あなた！　何してるの！」); named at 11:43
+- pronoun(s): 私 ("私の知っている五島さんは何て言うか" 000016AE:11:51)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: teacherly 丁寧 over feminine タメ口 — ～わね, ～なさい, ～のよ. To the class she is fully です・ます (00001704:8:0-8:28)
+- sentence-final particles: ～わね ("五島さん、何か雰囲気変わったわね" 11:49); ～なさい ("ほらほら、五島さんも自宅待機なさい" 11:63); ～かしら
+- copula: よ／わ, feminine
+- verbal tics / catchphrases / fillers: 「ほらほら」; the teacher's standard opener 「はい、みなさんが静かになるまで3分かかりました」 (00001704:8:0); 「うーん、まあ……」 as a way of not denying something
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality warm-professional; vocabulary register ordinary primary-school teacher — 児童, 努力, 立派な中学生
+- WHAT SHE IS FOR: she is the only adult in the project who knew 五島絵梨奈 BEFORE the personality change, and the scene exists so that 五島 can supply her own old description and be believed — 「陰気で、根暗で、暗い児童でした？」 / 「うーん、まあ……」 (000016AE:11:52-11:53). Her remembered worry was never the ability: 「五島さんは昔から頭はいいのに、人間関係がとても心配な児童だったから……」 (11:57)
+- she mistakes the fifteen-year-old for a primary pupil on sight, which is the running joke about 五島's size, and she starts crying at how bright she has become (11:48, 11:69)
+- in 00001704 she runs the classroom that talks about 五島 rather than to her, and her closing instruction — 「みなさんも、五島さんに負けずに努力して、立派な中学生になってくださいね？」 — is the sentence the eleven-year-old answers with 「…………」 -> Q688
+- known ambiguity / open questions: -> Q688
+- as-of: 00001704
+
+## unnamed 小学校のクラスメイト (00001704) — 五島絵梨奈's primary-school class, collective
+- first_appears: 00001704:8:5 (「おお……！」)
+- pronoun(s): 俺 in one line (「お前には無理！」 8:20); otherwise none observed
+- speech level baseline: children's タメ口, warm, loud
+- sentence-final particles: ～かなあ; ～だろうけどなあ; ～でしょ
+- copula: だ
+- verbal tics: 「絵梨奈ちゃん」 in nearly every line; 「はーい！」 six times inside one cell joined by ⏎ (8:29)
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW; vocabulary register eleven-year-old — 博士, 宇宙, 天才, 算数
+- the characterisation is that every one of their fifteen lines is ABOUT her in the third person while she is standing in front of them: what she will become, how many languages she speaks, whether she can do high-school maths. They are entirely friendly and she answers none of it -> Q688
+- known ambiguity / open questions: -> Q688
+- as-of: 00001704
+
+## unnamed 供養の司祭とその相手 (00001729) — two unnamed voices at a セレジェイラ聖教 rite
+- first_appears: 00001729:8:0
+- pronoun(s): none observed on either side
+- speech level baseline: the officiant is plain タメ口 with a professional's gentleness (「まあ、急ぐことはない。／何度も話し合って、納得できる答えを探すといい」 8:10-8:11); the mourner is です・ます throughout (「お気遣い、ありがとうございます」 8:12)
+- sentence-final particles: ～といい, ～だろ？ (officiant); ～ます, ～ています (mourner)
+- copula: だ (officiant) / です (mourner)
+- verbal tics: the officiant says the two-line Portuguese-derived liturgy twice and closes with 「オブリガーダ」
+- dialect: none
+- EN correlates: officiant — contraction rate MEDIUM, sentence length SHORT, kindly and unhurried; mourner — four short answers totalling about twenty characters
+- NEITHER IS NAMED, the dead person is not named, and what the mourner is 「まだ迷っています」 about is never stated. The officiant knows the mourner has kind friends. Do not let EN gender or identify either -> Q692
+- known ambiguity / open questions: -> Q692, Q162, Q195
+- as-of: 00001729
+
+## unnamed 女ケ沢動物園の私服巡回員 (00001755) — the plain-clothes patrolman at the zoo
+- first_appears: 00001755:8:15 (「あ、あの、もしかして迷子かな？」)
+- pronoun(s): 僕
+- speech level baseline: careful 丁寧-タメ口 aimed at a small child; stammers when accused (「ちち違う！」 8:44)
+- sentence-final particles: ～かな？; ～ね; ～よ
+- copula: だ
+- verbal tics: 「えっと」 three times while trying to explain his job; 「ははは……」 nervous
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality LOW-warm; vocabulary register ordinary
+- his whole function is to be publicly accused of being a 誘拐犯 and a 凌辱魔 by a child too small to say her own name, and to take it politely. His closing verdict is the file's only outside view of her: 「賢い子なんだろうけど……。／やっぱり、子供だな……」 (8:54-8:55)
+- known ambiguity / open questions: -> Q697
+- as-of: 00001755
+
+## 亀田 (かめだ, Kameda) — ハヤブサ宅配サービス サービスセンター, one scene
+- first_appears: 000017D3:8:1
+- pronoun(s): none observed
+- speech level baseline: full call-centre 敬語 — ～と申します, ご記入いただいた, 承知いたしました, お届けに上がります
+- sentence-final particles: ～ます／～ましょうか／～でしょうか
+- copula: です
+- verbal tics: none; the register is entirely formulaic
+- dialect: none
+- EN correlates: contraction rate NONE; sentence length MEDIUM; formality HIGH; vocabulary register call-centre script. Keep it interchangeable with any other service voice in EN
+- he telephones to correct 新村春花's flat number — レボハイツ603 written for 306 — and confirms an 18:30 delivery. Four lines total
+- known ambiguity / open questions: none
+- as-of: 000017D3
+
+## 道畑 (みちはた, Michihata) — the 店長 of 五島桃子's three-day part-time job (00001807)
+- first_appears: 00001807:8:8 (「ちょっと桃ちゃん、もう休憩時間終わってるぞ」); named at 8:53, by her, as she destroys him
+- pronoun(s): 俺
+- speech level baseline: familiar タメ口 that curdles into contempt across twenty cells — starts at 「桃ちゃん」 and ends at 「お前みたいな不良娘」
+- sentence-final particles: ～ぞ; ～だろ; ～かな？ (while asking her out); ～んだぞ！？
+- copula: だ
+- verbal tics: 「いやいや」 and 「いやほら」 as softeners before a worse question; 「はは」 before an insult
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW (バカ, 落ちこぼれ, 不良娘 and nothing stronger); sentence length SHORT; formality LOW; vocabulary register small-business creep. EN must let him be pathetic rather than menacing — the scene is his humiliation
+- he is a self-described fan of the プリマベラ 看板娘 and does not recognise her when she is not doing the voice, which is the whole joke and also the strongest evidence that the professional register is a deliberate costume -> Q707, Q075
+- known ambiguity / open questions: the izakaya 店長 of 00000EF6 has his own CAST block under the same word; keep the two English handles apart -> Q706
+- as-of: 00001807
+
+## unnamed 新村春花のクラスメイト2人 (00001818, 00001A5C) — two girls in 3年1組, one in 「」 and one prefixed 「――」
+- first_appears: 00001818:8:1 (「ねえねえ、新村さん」)
+- pronoun(s): 私
+- speech level baseline: ordinary schoolgirl タメ口, friendly, a little teasing
+- sentence-final particles: ～よね; ～じゃない？; ～だって; ～でしょ
+- copula: だ／よ
+- verbal tics / catchphrases: 「新村さん」 as their address form every time; 「玲ちん」 for 谷崎 every time; 「よっしゃ！」 (00001A5C:8:67)
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality LOW; vocabulary register ordinary sixteen-year-old — 偏差値, 模試, 古典, ファンクラブ
+- THE TYPOGRAPHIC SPLIT IS THE BLOCK'S WHOLE PROBLEM: speaker A is in 「」 and speaker B is printed with a 「――」 prefix and no quotation marks, in both files, for the whole of both scenes. Both are audible, both are present, and the mark is not transmission, narration or thought. EN must keep them apart -> Q709
+- what they do: in 00001818 they get 春花's study method out of her (online maps and street view) and her verdict that asking 五島 for help would bankrupt her; in 00001A5C they wake her over a 古典 session, run the 谷崎 gossip, and are the ones who notice that she knows too much about anti-bullying procedure -> Q730
+- known ambiguity / open questions: neither is ever named; 8:37 of 00001A5C puts BOTH their reactions in one cell joined by ⏎ (「ええ！？」⏎――ええ！？), which is the only place they speak in unison -> Q511, Q620
+- as-of: 00001A5C
+
+## unnamed シャベッターを見る2人の元木高校生 (000017CB) — two students with a phone
+- first_appears: 000017CB:8:0 (「ねえねえ、これ見てよ！」)
+- pronoun(s): none observed
+- speech level baseline: schoolgirl タメ口
+- sentence-final particles: ～だよね？; ～じゃないの？; ～と思うわ
+- copula: だ
+- verbal tics: none
+- EN correlates: contraction rate HIGH; sentence length VERY SHORT; vocabulary register internet-fluent — 『ただしイケメンに限る』, シルエット, 「マジでやばいやつ」
+- fourteen lines that exist to plant a photograph: 五島絵梨奈 sitting at ザッハ with an unidentified sweating, handsome, frightening-eyed man. They decide to warn 新村 -> Q704
+- known ambiguity / open questions: -> Q704
+- as-of: 000017CB
+
+## unnamed 女医 (00001A52, 00001A6B) — the clinic doctor; treats 新村春花 and 谷崎
+- first_appears: 00001A52:8:0 (「んんー、できれば昨日のうちに来た方がよかったわねえ」)
+- pronoun(s): 私 ("そっちは私の専門外だから" 00001A52:8:33)
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: warm feminine 丁寧 over タメ口 — ～かしら, ～わね, ～のよね？, ～よ？ — with a doctor's imperatives (「今日は学校行くの？」, 「口開けてみて」)
+- sentence-final particles: ～わねえ (drawn out, 00001A52:8:0); ～かしら (8:23); ～よ？ (8:28); ～わよ (00001A6B:8:43)
+- copula: よ／わ, feminine
+- verbal tics / catchphrases / fillers: 「あら」 four times in 00001A6B; 「はいはい」 when she has heard enough; 「え？」 as a straight-man beat, four times in the same three-cell pattern
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality warm-professional; vocabulary register ordinary GP — 吐き気止め, 抗生物質, のど風邪, 個人差, 専門外
+- SHE IS THE ONE WHO NAMES 春花's CHARACTER FLAW and frames it as medical advice: 「春花ちゃんは、ちょっと周りの人を大切にし過ぎじゃないかしら？」 and 「体調悪い時くらいは、自分のことだけでも考えておいて。／これは、医者としてのアドバイスよ？」 (00001A52:8:23-8:28)
+- SHE IS THE ONE WHO WILL NOT NAME THE OTHER THING: 「それで……。／あっちの方はどうなの？」 and then 「そっちは私の専門外だから何とも言えないけど、こういうのは個人差のあることだから。／あまり焦り過ぎないようにね」 (8:30-8:34) -> Q729, Q693
+- in 00001A6B she is the 「――」 voice running a comic consultation with 谷崎, who answers every question in katakana with the same three cells; she takes the takoyaki, eats it, and the block ends on her scream (8:50-8:52) -> Q735
+- known ambiguity / open questions: the text never says the two files are the same doctor -> Q734
+- 00002066: she examines an eye that has turned 「ずいぶんとくっきりとした緑」, asks about a head injury, admits her own limits (「まあ眼科はちょっとだけかじってたけど」) and writes a referral to the 第一病院 eye department. Her register is the same warm plain タメ口 with ～ねえ she uses at 00001A52 and 00001A6B
+- her second matter is a very late menarche, two days before an eighteenth birthday, handled in five cells with no embarrassment on either side — 「ずいぶん遅かったけど、追いついたみたいでよかったわ。／こういうのはほんとに個人差が出るからね」 and 「これも個人差があるからね」
+- the patient is never named and is never addressed by name; the green eye, the knock on the head and the age fit 新村春花 and nothing in the file says so -> Q829
+- as-of: 00002066
+
+
+## unnamed プリマベラのマスター (00001AA5, 00001AAE) — the coffee house's owner, the 「――」 voice
+- first_appears: 00001AA5:8:1 (「――はいよ！」)
+- pronoun(s): 僕 ("僕たちができるのはこうやって、ちょっとでもサービスしてあげることなんだけどね" 00001AAE:8:3)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: warm タメ口 to his staff with a proprietor's authority under it; 君 as his address form
+- sentence-final particles: ～だからなあ; ～ておくれ (00001AAE:8:35); ～だろ？; ～よな
+- copula: だ
+- verbal tics / catchphrases / fillers: 「はいよ！」 as his working answer; 「はっはっは！」; 「まあ」 before a correction; the shop's creed stated twice with different content — 「どのようなお客様であれ、全力でおもてなしすること。それがプリマベラの心だ」 and 「お客様を平等におもてなしするのも、プリマベラの心だからね」
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length MEDIUM; formality LOW-warm; vocabulary register a proprietor who thinks about service as a discipline — おもてなし, サービス精神, 平等, 不謹慎
+- HE STOPS HER TWICE, both times gently and both times on the same principle: no private congratulation envelope for one customer, and no intervening when other customers stare. He tells her to keep the impulse and turn it into service instead
+- HE SAYS THE THING THAT HAPPENS, years early and as small talk: 「新村様って、ご両親を早くに亡くしてしまっただろ？　ずっと家族に憧れていたってさ。／もしまた家族を失ってしまったら、どうなってしまうんだろうな。／きっと、この店だけじゃフォローし切れないよな」 (00001AAE:8:19-8:23), then withdraws it as 不謹慎. The file makes nothing of it -> Q743
+- he corrects the pre-marriage surname mid-cell — 「――金井……いや、新村様が」 (8:17) -> Q744, Q110
+- cross-reference: the 「unnamed プリマベラ staff (000007EA, 00000801)」 block covers the waitresses of twenty years earlier. This is the owner and he is a separate voice
+- known ambiguity / open questions: -> Q743, Q709
+- 00001D1E: 五島桃子's last shift, and he is the one who cannot let her go — 「ねえ、桃子ちゃん、本当に――」, 「はあ……君以上の子なんて、もう……」, and then 「そうだね……いつまでも桃子ちゃんに頼るわけにもいかないよね。／今まで本当にありがとう」. Plain タメ口 with 桃子ちゃん, no 最上級敬語 anywhere, and he accepts a refusal without pressing
+- he is the same man as the 00001AA5 / 00001AAE master and the register matches; what is new is that he employs and loses the 看板娘 on screen
+- as-of: 00001D1E
+
+## unnamed 脳科学の研究者 (00001715) — the telepathy documentary's expert voice
+- first_appears: 00001715:8:6
+- pronoun(s): 我々 ("我々科学者の重要な任務なのです" 8:22)
+- speech level baseline: lecture です・ます throughout, in 「」, in five blocks with no name and no affiliation given
+- sentence-final particles: ～のです／～ました／～でしょう
+- copula: です
+- verbal tics: a rising three-beat structure — hypothesis, evidence, task — repeated in each block; 「はっはっは」 once, at the end, to dismiss his own opening exhibit
+- dialect: none
+- EN correlates: contraction rate NONE; sentence length MEDIUM to LONG; formality HIGH; vocabulary register real科学 — 脳波, 受精卵, 細胞分裂, 共鳴, インターフェース
+- his last line is the retraction: asked about the twins, 「残念ながら、現時点では何とも言えないのが現状です。／一卵性双生児にしかない未知の共感覚があるのか。／あるいは……／イカサマだったのかもしれませんね、はっはっは」 (8:44-8:47). Keep it unemphatic -> Q690
+- known ambiguity / open questions: -> Q690, Q727
+- as-of: 00001715
+
+## ケビン＝ホワイト (けびん＝ほわいと, Kevin White) — 宗教学者, 000019E9
+- first_appears: 000019E9:26:11
+- pronoun(s): none observed
+- speech level baseline: lecture です・ます in 「」, three blocks
+- sentence-final particles: ～のです／～ません／～でしょう
+- copula: です
+- verbal tics: a chain of 「なぜ～のか」 questions stacked one per cell (26:16-26:20), ending on the one that matters
+- dialect: none
+- EN correlates: contraction rate NONE; sentence length MEDIUM; formality HIGH; vocabulary register comparative religion — 文化の根幹, 集団的心理, 信憑性
+- his argument: religion and agriculture are the two roots of culture; religion exists to explain what cannot be explained; the アポカリプティックサウンド hypothesis is 2,000 years old for exactly that reason; and it will turn out to be a natural or perceptual phenomenon, after which 「あの動画も笑い話になるでしょうね」 (26:34) -> Q727
+- known ambiguity / open questions: -> Q727, Q533
+- as-of: 000019E9
+
+## マイケル・ノーマン (まいける・のーまん, Michael Norman) — アフリカ文化人類学者, 00001A8C
+- first_appears: 00001A8C:8:16
+- pronoun(s): 私 ("それが色々と形を変えてゾンビとなり…と、私は考えます" 8:23)
+- speech level baseline: lecture です・ます in 「」, four blocks
+- sentence-final particles: ～のです／～ます／～でしょう／～べきです
+- copula: です
+- verbal tics: 「例えば」 to open two of his four blocks; a closing maxim — 「すべての事象には必ず、原因と理由があるのです」 (8:37)
+- dialect: none
+- EN correlates: contraction rate NONE; sentence length MEDIUM to LONG; formality HIGH; vocabulary register anthropology plus parasitology — ンザンビ, 司祭職, 寄生, 胞子, 神経系
+- HE STATES THE PROJECT'S ENTIRE MECHANISM as ordinary popular science and does not know it: a fungus parasitising an ant takes the body over and moves it to where spores spread best; ロイコクロリディウム works a snail; ギニアワーム uses a human to reach water and lay eggs; 「人を操って子孫を残す生物も実在し、またそれが文明未発達の時代であれば、呪いや闇の力に見えても不思議ではありません」 (8:28) -> Q741
+- his closing argument is against the project's own vocabulary: concluding 未知の力 is easy, and courage means testing every possibility before calling a thing a curse (8:34-8:36)
+- known ambiguity / open questions: -> Q741, Q493
+- as-of: 00001A8C
+
+## unnamed 女ケ沢市民 (00001741) — three vox-pop interviewees on the 飯沢いいジャン♪ VTR
+- first_appears: 00001741:8:18
+- pronoun(s): 僕 (the salaryman, 8:22); 私 (the second woman, 8:26)
+- speech level baseline: ordinary 丁寧 to a camera
+- sentence-final particles: ～ですね; ～ました; ～んです; ～かなあって
+- copula: です
+- verbal tics: 「やっぱり」 three times across three different speakers — the file's one shared word
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM; vocabulary register ordinary townspeople
+- what they are for: a town that has stopped being surprised. A housewife who expected it because of the date, a salaryman who reasons that only school people are targeted so he is safe until his son starts school, and a woman who says the thing she saw ran inhumanly fast and 「少なくとも人間ではないですよ！」 and votes for 神隠し
+- known ambiguity / open questions: the third witness's account is the earliest outside description of the killer's movement anywhere and it is delivered on a light local programme -> Q695
+- as-of: 00001741
+
+## unnamed 弔問客 (00001A97) — the mourners at 金井美冬's father's funeral, collective, the 「――」 voices
+- first_appears: 00001A97:8:0
+- pronoun(s): 私 (8:11)
+- speech level baseline: adult タメ口, murmured, feminine in most lines
+- sentence-final particles: ～よね; ～だろ？; ～のね
+- copula: だ／よ
+- verbal tics: none
+- EN correlates: contraction rate MEDIUM; sentence length VERY SHORT; formality LOW; vocabulary register ordinary — 気の毒, けなげ, 喪主
+- six lines in two groups, all of them about the fifteen-year-old acting as 喪主 and the friend who is always with her. They are set with the 「――」 prefix while the two girls keep 「」 -> Q709
+- known ambiguity / open questions: -> Q709
+- as-of: 00001A97
+
+## unnamed 大食い大会の司会者と屋台の主人 (0000191C) — the compere and the squid-stall keeper
+- first_appears: 0000191C:11:15
+- pronoun(s): none observed
+- speech level baseline: the compere is broadcast です・ます at maximum volume with drawn-out vowels (「開催いたしまーーーーーす！」 11:16); the stall keeper is cheerful tradesman's タメ口 (「お！　絵梨奈ちゃん、久しぶりだね！　毎度ー！」 11:141)
+- sentence-final particles: ～ます！／～です！ (compere); ～ね／～よ (stall)
+- copula: です (compere) / だ (stall)
+- verbal tics: the compere's 「さあ」 opening nine of his twelve lines, and his running commentary on 五島's face while she is thinking about squid
+- dialect: none
+- EN correlates: compere — contraction rate LOW, sentence length SHORT, exclamation-heavy, fairground English; stall keeper — three lines, warm, knows her by name
+- the compere announces two different names for the same event fifteen cells apart and the narrator flags it -> Q723
+- known ambiguity / open questions: -> Q723
+- as-of: 0000191C
+
+## unnamed デトロイトのチンピラとそのボス (00001A6B:22) — the gang and their leader
+- first_appears: 00001A6B:22:47
+- pronoun(s): 俺 (the boss, 22:96)
+- speech level baseline: the gang are printed with the 「――」 prefix and speak rough タメ口 (お前, ああん？, 早いとこ殺そうぜ); the boss is in 「」 and speaks level, hospitable タメ口
+- sentence-final particles: ～ぜ; ～だろ; ～よな (gang); ～ぜ／～な (boss)
+- copula: だ
+- verbal tics: none
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW-MEDIUM (the JP has no swearing stronger than お前); sentence length VERY SHORT; formality LOW. They are speaking English in-world, printed in Japanese — do NOT give them a regional American voice the JP does not support
+- the joke is that they refuse to engage, recognise him as a celebrity, ask for photographs, and the boss receives him politely, says he watches every video, and sends men to escort him home safely — and they are then arrested by his dropped remote
+- known ambiguity / open questions: -> Q709, Q736
+- as-of: 00001A6B
+
+## unnamed 小学校の担任 and the class (00001B98) — the 元木町 primary-school teacher who takes 新村春花 back
+- first_appears: 00001B98:8:0 (「いたたたた……。みなさん、おはようございます」)
+- pronoun(s): 先生 (name-as-role-as-pronoun, 「先生は旦那と山菜取りに行って」)
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: 丁寧 to children throughout, feminine, with ～ですねえ and ～でしょ; a married woman who volunteers her own aches
+- sentence-final particles: ～ですねえ; ～でしょ; ～ね (closing, 「馴染めそうで何よりね」)
+- copula: です
+- verbal tics / catchphrases / fillers: 「いたたたた……」 twice, opening and closing the file; 「はいはい静かに」
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length MEDIUM; formality warm-polite to small children; vocabulary register ordinary staffroom
+- the CLASS is a collective and every one of its lines is prefixed 「――」 with no speaker: 「――転校生？」, 「――あー！　やっぱり新村春花さんだ！」, 「――前はもっと髪長かったよね？」, 「――新村さん、席ここ、空いてるよ！」. 8:19 is ONE cell holding five 「――はーい！」 joined by ⏎ -> Q709, Q794
+- what the file is: 新村春花 comes back to 元木町 after two years, is recognised by children who were in her nursery class, and is welcomed. Nothing in it is sinister and nothing in it is explained
+- known ambiguity / open questions: which return this is, and whether the two years are the 女ケ沢 years -> Q089
+- as-of: 00001B98
+
+## ステラ優子 (ステラゆうこ, Yuko Stella) — the masked 占い師 on television, 00001D0E
+- first_appears: 00001D0E:8:15 (seen); first line 8:17; names herself at 8:19
+- pronoun(s): none observed — she drops the subject throughout
+- pronoun FREQUENCY: far less often than typical
+- speech level baseline: plain タメ口 with an old woman's cast — ～かい, ～だよ, ～ね, ～だろう. No 敬語 to a television crew and no roughness either
+- sentence-final particles: ～かい (「どんなことを聞きたい？　恋愛、仕事、金運、何でもいいよ」); ～だろうけど; ～ね (closing almost every line); ～んだ (explaining)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「そうだねえ……」 as a pause before every reading; 「お姉さん」 as her address form for a woman in her twenties; 「はいはい」
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length MEDIUM, explanatory; formality LOW but never rude; vocabulary register plain, with one technical claim (統計学) and a food and health vocabulary
+- what she does: she reads 新橋ゆき乃's face on camera and the reading is entirely private life — the untidy flat, the absence of appetite as distinct from eating, the location bentos — and the prescription is behavioural: choose what you want to eat, and use a knife and fork specifically to break the habit of chopsticks and spoons. Her stated method is 「占いっていうのは統計学に沿ってアドバイスをするのであって、／未来はああなる、こうなるって言うだけじゃない」
+- she is MASKED (「仮面をかぶった女性」 8:15) and sits in a dim building near a park in 葛飾区; she deflects her own reputation twice (「ちょっと雑誌に出るくらいですよ」, 「適当に人の顔を見て適当に言ったことがたまたま当たっているだけです」)
+- known ambiguity / open questions: the 街角の占い師 of 00000A18 and the 露天風呂の占い師 of 00000EC7 share the mask, the register and the reading-by-face, and no file connects the three. Do not let EN link them -> Q772, Q274
+- as-of: 00001D0E
+
+## 三原 (みはら, Mihara) and the プリマベラ waitresses (00001D1E)
+- first_appears: 00001D1E:8:6 (named by 五島桃子); first line 8:10 (「――はあ！　はあ！　ああよかった！　間に合った！」)
+- pronoun(s): 私
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: です・ます to everyone, and it breaks into a wail without ever dropping — 「だってだって！　桃子さんがいなくなるなんて……！」
+- sentence-final particles: ～じゃないですか; ～ですよ！？; ～んです
+- copula: です
+- verbal tics / catchphrases / fillers: 「だって」 to open a protest, twice; 「絶対ですよ！？」 / 「約束ですよ！」 repeated until answered
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT and exclamatory; formality HIGH; vocabulary register ordinary
+- EVERY ONE OF HER LINES IS PREFIXED 「――」 while 五島桃子's are in 「」 in the same exchange — the sixth-job use of the mark, a speaker who is audible but not the focus -> Q709
+- what she does: she runs in on her day off because it is 桃子's last shift, says she started at プリマベラ because of her, cries in front of a customer, is corrected for it without being softened, and extracts a promise that 桃子 will come back as a customer
+- さやか is named in the same breath (8:6, 8:19) and never speaks
+- as-of: 00001D1E
+
+## 先代大魔女 (00002026) — 新村エリカ's mother-in-law, the 大魔女 before her, 75
+- first_appears: 00002026:8:1 (「ああ、エリカさん。遅くに呼び出してごめんね」)
+- pronoun(s): 私
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: unhurried plain タメ口 with flat imperatives and no softening — the exact register 新村エリカ uses on everyone fifty years later
+- sentence-final particles: ～ね (closing almost every line); ～かね; ～さ; ～だろ
+- copula: だ
+- verbal tics / catchphrases / fillers: 「ふふ」 and 「ふふふ……」 (twice, both at the anime); 「いいね？」 to close an instruction
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality LOW and quietly absolute; vocabulary register plain, with the settlement's ritual language used without explanation
+- WHAT SHE HANDS OVER, and it is the origin of the whole transmission chain: the office on family and age, and three things with a standing rule that none may be written down — never stop anyone who means to kill themselves; the classical passage about the dead coming out of 黄泉 as 妖花 and only 翠眼 prevailing; and the oral-only one naming 死神, four 神使, アバドン and a sulphur volcano. She says of both texts that she does not understand them either -> Q777
+- SHE REFUSES THREE TIMES and never explains a refusal: 「エリカさんはそこまで踏み込まなくていい」 on the reason for the suicide rule, 「エリカさんはそれは知らなくていい」 on whether she herself wants to die, and 「知らなくていい」 flat when 新村桔梗 is named. Her one concession is 「これは……／この荒田集落の悪しき部分だからね。／それももう、私の代で終わりにしないと」 — which is the sentence her successor spends fifty years failing to act on -> Q778
+- she has turned 75 this year and says 「そろそろだろうね」 about her own death in the same tone she uses about the weather
+- THE CODA: two cells after the suicide instruction she asks whether the disc she ordered has arrived, says she will watch it before bed, and invites her daughter-in-law to watch with her. The anime is hers before it is 新村エリカ's — 「お義母さんにこの道を教えてもらって、私の人生は変わりました！」 — and her last line is 「こらエリカさん！　セリフのネタバレはダメだろ！」 -> Q779
+- known ambiguity / open questions: she is never named. Whether she killed herself that April is not stated in this file
+- as-of: 00002026
+
+## unnamed 聞き込みの警察官2人 (00001FE9) — the two officers canvassing after the 女ケ沢 killings
+- first_appears: 00001FE9:8:0 (「次はこのアパートだな」)
+- pronoun(s): 僕 (the senior, to a child); none observed for the junior
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: the SENIOR uses plain タメ口 to his junior and a softened 丁寧 to a child and to a householder; the JUNIOR uses です・ます to him and every one of his lines is prefixed 「――」
+- sentence-final particles: ～かな (the senior, three times, to a child); ～もんね (the junior); ～ますね
+- copula: だ (senior) / です (junior)
+- verbal tics / catchphrases / fillers: 「なるほど」 (both); the senior's flat 「……………」 when a child says something impossible
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality LOW to each other and MEDIUM to the public; vocabulary register procedural
+- what they do: a small 新村春花 answers the door and says twice 「犯人は私です！」, then produces a 紙人形 and reads two victims' names off it. Her mother returns; the senior accepts the alibi and leaves a contact card. Outside he teaches: people sometimes claim a crime for attention because the victims' names have been broadcast, and with adults it means taking them in
+- the 「――」 prefix marks the junior throughout, in a file where the other three speakers are in 「」 -> Q709
+- known ambiguity / open questions: neither is named and neither is 伊勢; the force is 飯沢県警's area by 00001BAE's reckoning but the file does not say -> Q144
+- as-of: 00001FE9
+
+## unnamed 荒田の住人たち (00001BA8, 00001BBA:8:44-8:46) — the 「――」 voices who decide a killing
+- first_appears: 00001BA8:8:1 (「――今さらなことを言うな。もう決まっていることだろ？　怖気づいたのか？」)
+- pronoun(s): 俺たち (collective, 「俺たちの中に犯人はいない」)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: blunt タメ口, at least two distinct speakers alternating, no shouting and no coarse word anywhere
+- sentence-final particles: ～だろ; ～んだ; ～のか
+- copula: だ
+- verbal tics / catchphrases / fillers: none. Fourteen lines between them
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO — they arrange a killing without one coarse word; sentence length VERY SHORT; formality LOW; vocabulary register plain, with the settlement's terms used flatly (呪殺, 魔女の手先, 裏切り者)
+- THEIR ARGUMENT, and it is the settlement's whole logic in six lines: this is not 呪殺 because nobody present is the culprit; the culprit is 「今いるだろう？　だから殺すんだ」; a traitor is 「魔女の手先」; and 「すべてはみんなを守るためだ」. They then test 城崎's loyalty by name
+- at 00001BBA:8:44-8:46 the same channel carries the news of a killing at the 墓地広場 — 「――た、大変だ！　殺された！」 — three cells with no speaker
+- known ambiguity / open questions: how many there are is never stated and none is named; the target is never named. They are the same collective as the 00000B27 phone voices and the 00000E7B:88 crowd but nothing connects them -> Q801, Q709
+- as-of: 00001BBA
+
+## unnamed 荒田の年長者2人 (0000201F) — at 城崎's father's body
+- first_appears: 0000201F:8:0 (「おい！　見つけたぞ！」)
+- pronoun(s): 俺 (both)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: plain タメ口; the one in 「」 is the one who reasons and the one prefixed 「――」 answers
+- sentence-final particles: ～だろ; ～な; ～さ; ～かもな
+- copula: だ
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality LOW; vocabulary register plain and practical — times, distances, weather and a body
+- what they do: they walk a refusing son through the arithmetic — last seen at 5am, the whole settlement assembled at 7am, and nobody could carry a grown man that far in that rain and return — and then stop short of the word: 「何より、分かるだろ？　／ここに住んでいる以上、75歳以上になったら――」
+- THE FILE'S LAST TWO CELLS are theirs and they are the plainest statement of why nobody leaves 荒田: 「俺もいつか、こうなるのかな」 / 「かもな。／でも俺は逃げない。俺の居場所は生まれた時からここだ。／どんな死に方をするにしても、ご先祖さまからの地を捨てるなんてことはしない」. 8:30 is ONE cell holding a 「――」 utterance and a 「」 utterance joined by ⏎ -> Q808, Q511
+- known ambiguity / open questions: neither is named; one of them has lost his own father the same way -> Q802
+- as-of: 0000201F
+
+## unnamed woman with the lenses (00001BD4) — seven lines, alone
+- first_appears: 00001BD4:8:0 (「もうだいぶ貯まったし、そろそろ仕事先にも言わないとね」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a — seven utterances, all to herself
+- speech level baseline: feminine plain form, unhurried, talking herself through a task
+- sentence-final particles: ～ね; ～んだけどな; ～かな; ～し
+- copula: だ
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality LOW; vocabulary register domestic
+- what happens: she has saved enough and must give notice at work; she looks for disposable ones and finds a single one where two are wanted; she shrugs it off on the ground that people tell her it makes no difference; and then 「っていうか、1つだけなくなるって普通ありえない。／もしかして……／あの子……」
+- known ambiguity / open questions: the object is never named (the reading is a disposable contact lens), she is never named, and 「あの子」 is not identified. Do not name any of the three in EN -> Q791
+- as-of: 00001BD4
+
+## unnamed タクシー運転手と親子 (00001D2A) — three voices in a stopped taxi
+- first_appears: 00001D2A:8:0 (the driver, on the telephone)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: the DRIVER uses です・ます throughout, including the apology and the waived fare; the CHILD uses plain タメ口 to both adults and 「ママ」 for the mother; the MOTHER manages three short broken answers
+- sentence-final particles: ～ですから; ～でして (driver); ～よ; ～ね (child)
+- copula: です (driver) / だ (child)
+- verbal tics / catchphrases / fillers: 「はあ……はあ……」 (the mother, twice)
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality HIGH (driver) and LOW (child); vocabulary register service-trade and domestic
+- what happens: a flat tyre in an unlit tunnel, ten minutes with passengers aboard, the mother's breathing worsening, the child getting her out and supporting her, and the child's closing remark — 「これからは車でトンネルも気をつけないとね。／暗いトンネルに、狭い車内だし」
+- known ambiguity / open questions: nobody is named. The trigger described is 新村サクラ's stated precognition condition and the address form belongs to 新村夏菜, and the two cannot be the same person. Do not resolve it -> Q792
+- as-of: 00001D2A
+
+## unnamed 2人 at the quiet animals (00001D34) — six lines
+- first_appears: 00001D34:8:0 (「様子が変だな。／動物たちが静かだ」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: the 「」 voice is blunt masculine タメ口; the 「――」 voice is feminine plain form
+- sentence-final particles: ～な; ～か (the 「」 voice); ～ね; ～ましょう (the 「――」 voice)
+- copula: だ / ね
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length VERY SHORT; formality LOW; vocabulary register plain
+- what happens: the animals have gone quiet, which the 「――」 voice says has never happened before, and they decide to go and look on a bad feeling. That is the whole file
+- known ambiguity / open questions: no names, no place, no time, and no later file picks it up. Do not attribute -> Q793, Q709
+- as-of: 00001D34
+
+## 新村晃 (にいむら あきら, Akira Niimura) — 新村桔梗's husband, 荒田集落's representative to the 帝, 祀耀678
+- first_appears: named in GLOSSARY from 000014D7:8:165 as 新村桔梗's husband; ON SCREEN and speaking at 00002137:8:3, masked
+- pronoun(s): 俺 (「俺は新 村 晃といいます」 00002137:8:40). Never observed switching
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: です・ます to everyone, on top of 俺. The mismatch IS the character — a rough pronoun with unfailingly polite endings, from a man who has never left his village and does not know how much politeness a stranger expects
+- sentence-final particles: ～ます／～ません; ～でしょうか; ～のです (explaining); ～ぞ (only to his wife, 0000217A:8:50)
+- copula: です
+- verbal tics / catchphrases / fillers: none. What he has instead is a laugh — 「はははは！」, 「あっはははは！」 — which arrives four times and always at her joke
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length MEDIUM, one clause per thought; formality HIGH and consistent; vocabulary register plain, with two registers of abstraction he moves between easily — village practicalities and a sustained argument about nature and freedom (0000215E:8:2-8:25)
+- physically: blue eyes and brown hair from a Westerner four hundred years back, which is why he travels in a 能面 and 赤装束; 新村桔梗 is the one who suggests he keep the mask on in 東京 (0000213D:15:4). He is 16 at the first meeting, the same age as her
+- what he does: he asks the way to 帝の居城, presents ドローガ as tribute, is refused, and asks for a wife for 荒田 instead — which is how the marriage happens. Neither party is told who the other is, and they have already met
+- HIS ONE RAISED VOICE, 0000215E:8:38: 「でも、そんなのおかしいと思いませんか！？」, at arranged marriage, from a man who is in one himself and cannot say so. He apologises in the next cell
+- the line he cannot explain, 00002164:8:25: 「俺には分かるんですよ！」 — literally true, unprovable to her, and the reason she walks away. The EN must not tip it -> Q861
+- his argument, and it is the only philosophy anyone in the project states at length: a river cannot be resisted but it reaches the sea; nature is free and indifferent; people are fed by it and crushed by it; therefore 「自然とは、人間の師です」 and therefore a person should be free too. He uses it to tell a 16-year-old that her father is wrong
+- he is the settlement's argument for female authority, delivered to a girl in 祀耀678 東京: 「俺の故郷では、女性が集落全体を治めています」 and the motto (0000213D:15:24-15:26)
+- HIS DEATH is off screen and is reported in one cell: he and his mother threw themselves off the 墓地広場 cliff the day after 桔梗 asked why the 大魔女 permits ドローガ (0000219F:8:6). His wife believes to the end that 死月妖花 killed them both (000021C3:8:16-8:17) and nothing confirms it
+- REGISTER DIVERGENCE, 000021C3:8:44-000021C9:16:14, and the text asserts the identity itself: something wearing his body and his voice comes for her in February, unaged. Every marker of his goes — no です・ます, no 俺, no 桔梗殿, no laugh at her joke — and what is left is 私, plain タメ口, 「甘いな」, 「はっはっは！」 and the bare given name. 桔梗 names it herself in her second line (「晃さんの 躯 をかぶった女神様」). Do not split the two voices and do not let the EN of the 祀耀678 files sound like this one -> Q545, Q861, Q838
+- known ambiguity / open questions: reading of 晃 (Akira / Hikaru / Ko) -> Q595; whether the suicide was one -> Q861; whether anything of him is present in 000021C9
+- as-of: 000021C9
+
+## 篠崎ハジメ (しのざき ハジメ, Hajime Shinozaki) — the man who takes the 荒田 cherries, 祀耀729
+- first_appears: named in GLOSSARY from an earlier file; ON SCREEN and speaking at 000021A5:8:5 (「失礼します！」)
+- pronoun(s): 私 (「私は政府より派遣されました」 000021A5:8:13)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: maximal 敬語 with military edges — he salutes before speaking, uses 参上しました and 恐れ入ります, and shouts his self-introduction. He is in his mid-thirties at the first visit and old at the second
+- sentence-final particles: ～ます／～ません; ～ましょう; ～いたく (「いただきたく」, clipped official register)
+- copula: です
+- verbal tics / catchphrases / fillers: none; the register is the whole surface. Under pressure the only thing that moves is the volume — 「ま、まさか！　そんなつもりは毛頭ありません！」 (000021A5:8:78), 「ほ、本当ですか！？」 (8:88)
+- dialect: he is from 飯沢県 and his LINES ARE NOT WRITTEN IN DIALECT. 新村桔梗 hears it and the reader cannot: 「なぜなら、訛りが飯沢県の話し方だからだ」 (000021A5:8:63). This is a translation problem with no obvious solution -> Q843
+- EN correlates: contraction rate NONE; profanity ceiling ZERO; sentence length SHORT and clipped; formality VERY HIGH; vocabulary register bureaucratic-military — 派遣, 参上, 提供, 伐採から運搬まで
+- what he does: he claims to be a government envoy, produces 新村晃's 50-year-old letter, and asks for as many of the cherry trees as he can have. He builds a railway to take them. He comes back years later with the research finished and tells her the truth in two halves — the drug is beyond human handling, and he is not from the government. He is a member of セレジェイラ聖教, which is descended from the people who left 荒田 with the last of the ドローガ
+- he is the only outsider in the project who keeps a promise to 荒田: he was asked for the results in writing and he brings them, late, in person, and apologises for the delay
+- what he sets in motion: the ban, the ファルシフィカソ rite, the sealing of the mummy, 新村桔梗's death, and — through the report — the collapse of his own sect
+- known ambiguity / open questions: he lies twice (government, never been to 飯沢県) and she lies once (the drug is no longer used); neither is ever called on it. Why a religious sect could afford a railway is answered only by 「教団信者の中には政府関係者もおり」 (000021B7:8:34) -> Q451
+- HE NARRATES A WHOLE FILE, 000021CF (order 390, 489 lines), in 私, his first narration anywhere, picking the frame up from 新村桔梗 at a file boundary with no marker -> Q919. He is not named in it until somebody else says 「篠崎君」 at 8:58.
+- narration voice: measured, self-accusing, administrative. Short declaratives; he reasons in numbered steps and states his own guilt as fact without decorating it — 「実験体を志願した同胞たちは、モノ扱いだった」 (8:13), 「私の手によって多くの人々が命を落とした」 (8:333). He interrupts his own moral reckoning with body complaints (「しかし、寒いのはいやだ。／早く帰ろう」 8:45-8:46), which is the only humour he has.
+- HIS SECOND IDENTITY: the sect changes his 戸籍 and he becomes 『金崎 勉』 (8:69), a 飯沢県 official responsible for 荒田地区, which he asks for himself. The 荒田 residents shout him off the settlement after 新村桔梗's death (8:14-8:16) and he is never able to go back; his face is 割れている and plastic surgery is vetoed by his wife.
+- what he spends the rest of his life on: getting the supplementary report into the 荒田 蔵書. His own plan was to intercept a new bride doing the 山籠 -> Q918; what actually happens is a burglary staged behind a fake utilities briefing, and the settlement never learns the report arrived.
+- the 地上げ rumour attaches to both his names (8:307-8:308) and is the reason 荒田 closes further; it is groundless.
+- HIS LAST FIFTEEN YEARS are conspicuous goodness — volunteering, money to the homeless, thoughts of taking orders — and the narration names the motive: 「せめてもの罪滅ぼし」 (8:334). He is stabbed twice in an alley by a stranger on his grandson's birthday, works out on the way down who sent him there (8:459-8:460), and his last regret is that the report was never handed over in person.
+- as-of: 000021CF
+
+## 父上 (ちちうえ) — 新村桔梗's father, an 東京 merchant, unnamed
+- first_appears: 0000212D:8:16 (「桔梗、お前はまたそんなことをしているのか……」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: plain タメ口 to his daughter, exasperated on the surface and indulgent underneath
+- sentence-final particles: ～のか; ～ぞ (「結婚相手が決まったぞ」); ～ように (instruction, 00002143:15:22)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「お前なあ……」 (0000212D:8:19), the whole of his objection
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality LOW; vocabulary register a merchant's, plain
+- what he does: he disapproves of his daughter reading, fetches her the next volume anyway, and stops objecting. He arranges her marriage without telling her who to, under an order from the 帝 he may not disclose, and the narration eventually credits him: 「父上は父上で、本当に私に相応しい相手を選んでくれていた」 (0000217A:8:42). He lets her take a few books to her husband's house and she refuses them
+- structural job: he is the era, and the file is careful to make him kind inside it. EN must not make him a villain
+- known ambiguity / open questions: never named; the family has no surname (00002137:8:52)
+- as-of: 0000217A
+
+## 先代大魔女 (祀耀678頃) — 新村晃's mother, 新村桔梗's mother-in-law, unnamed. NOT the 00002026 woman
+- first_appears: referred to at 00002181:8:45 (「俺の母親である大魔女」); quoted in writing at 00002199:8:11-8:31; never speaks on screen
+- pronoun(s): 我々 in her written account (「我々は新しく生えた木の1本を切り」)
+- pronoun FREQUENCY: n/a — a written voice only
+- speech level baseline: plain declarative chronicle in 『』, observational and unhedged, with a stated policy at the end
+- sentence-final particles: ～のだ; ～だ; ～だろう (the one hedge, and it is about 100 years of work)
+- copula: だ
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length MEDIUM; formality HIGH; vocabulary register investigative — 生態, 苗床, 掘り起こし, 神話主義からの脱却
+- what she wrote: the account of the mass disappearance about ten years before 桔梗 arrived — thirty new cherry trees matching thirty missing residents, clothes and bones in the roots of the one they dug up, the name 『死月妖花』 and its etymology, and the instruction to stop calling it a curse. Her policy was to send a representative to 東京 with ドローガ and get it analysed, 「例え100年かかるとしても、世代を越えて解き明かすべきだろう」
+- she is the reason 新村晃 went to 東京 and therefore the reason the marriage happened
+- THE THING SHE DID NOT DO, and 桔梗 says so: she knew ドローガ was dangerous and permitted it anyway. 桔梗 refuses to suspect her and concludes 「おそらく、そうせざるを得ない理由があるのだ」 (00002199:8:48). The reason is never given anywhere
+- she dies with her son, off screen, off the 墓地広場 cliff, the day after 桔梗 raises the question (0000219F:8:6)
+- cross-reference: the 先代大魔女 of 00002026 is a different woman, 新村エリカ's mother-in-law, about 120 years later. Both are unnamed; do not merge them
+- known ambiguity / open questions: whether the joint suicide was one; whether she guessed what would happen to her son
+- as-of: 0000219F
+
+## unnamed 荒田の長老 (00002072) — the elder who questions 新村幸太郎 before the assembly
+- first_appears: 00002072:8:0 (「幸太郎君、君にこんなことを聞くのは忍びないが」)
+- pronoun(s): 我々 throughout; 俺 once, quoting his own great-grandfather (「俺のひい爺さんが言っていたよ」)
+- pronoun FREQUENCY: about as often as typical; he speaks for the settlement, not for himself
+- speech level baseline: unhurried plain タメ口 with the authority of a room behind it. Every sentence is reasonable and the sum of them is a threat
+- sentence-final particles: ～んだ (explaining); ～てほしい (the whole scene is four requests); ～だろ？ (closing an argument)
+- copula: だ
+- verbal tics / catchphrases / fillers: 「ふむ、確かにな」 — he concedes points, which is what makes him dangerous
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length MEDIUM; formality mid — courteous without being polite; vocabulary register communal — 我々, 協力, 信頼, and the settlement motto used as an instrument
+- what he does: he establishes that 新村茅萱 was never in any hospital, names her eye colour as the real question, quotes the green-eye rule from his great-grandfather, invokes 「1人はみんなのために、みんなは1人のために」, and then names the younger daughter. He then offers terms — change 夏菜's eyes as 茅萱's were changed, and explain 茅萱 — with 「それなら何も殺す必要はないだろ？」
+- structural job: he is the settlement as a functioning body rather than a mob, four files before the same settlement beats a couple to death. EN must keep him courteous throughout -> Q800
+- known ambiguity / open questions: never named; whether he is the same man as any later 荒田 speaker is not stated
+- as-of: 00002072
+
+## unnamed 病院スタッフ2人 (00002078) — two hospital staff in a corridor
+- first_appears: 00002078:8:0 (「そう言えば新村さん、入院してもう2年よね」)
+- pronoun(s): none observed; 私たち once (「私たちの仕事じゃないの？」)
+- speech level baseline: both タメ口, colleagues of the same rank. One is in 「」 and one is prefixed 「――」, the project's non-focus-speaker channel -> Q836, Q047
+- sentence-final particles: ～よね; ～じゃん; ～らしいよ (everything they have is hearsay); ～って
+- copula: だ
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality LOW; vocabulary register workplace-clinical mixed with gossip — 医療保険, 先進医療保証, 強制退院, 福利厚生
+- what they do: they lay out the whole outside view of 新村春花's two-year coma — who pays, why the town allows it, that her mother tried to kill her and then killed herself, and that at three years she will be discharged whatever her state. They know nobody has told 古郡なつみ. They then agree not to get involved: 「こっちは淡々と事務的にやった方がいいわよ。／あまりあの2人に深入りしないこと」
+- structural job: the only neutral account of the two girls anyone gives. EN must keep it unkind without making it cruel — they are being professional
+- known ambiguity / open questions: neither is named, given a rank or given a sex
+- as-of: 00002078
+
+## unnamed 生徒会長 (0000207E) — 元木高校 student council president, a new second-year
+- first_appears: 0000207E:8:1 (「はい、ありがとうございます！　五島先輩！」)
+- pronoun(s): 私
+- speech level baseline: bright です・ます with exclamation marks, and it does not stop when the subject turns awkward
+- sentence-final particles: ～です！; ～ですよ！; ～んですよねえ (the one that does the work); ～じゃないですか？
+- copula: です
+- verbal tics / catchphrases / fillers: 「五島先輩」 at the head or tail of most lines
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality HIGH; vocabulary register school-committee
+- what she does: she is preparing an 入学式 address, repeats the legend of 五島's own (she tore up her paper), and then asks the question nobody else in the branch asks — why a girl who does everything for everyone barely visits the 先輩 in hospital. She gets a straight answer and apologises for asking
+- structural job: an outsider's read of 五島絵梨奈, and the only route by which the reader learns why she keeps away from the ward
+- known ambiguity / open questions: never named; whether she is the same junior as any other 元木高校 speaker is not stated
+- as-of: 0000207E
+
+## unnamed 元木大学の指導教員 (0000209C, 000020AE) — 五島絵梨奈's teacher, then her professor
+- first_appears: 0000209C:8:26 (「あれ？　五島さん？」)
+- pronoun(s): 私 (000020AE:8:34 「詳しくは私も聞けてないけど」)
+- speech level baseline: plain タメ口 downward with occasional 丁寧, the register of an academic supervisor who likes the student
+- sentence-final particles: ～かな; ～ね; ～らしい (everything about the 御神木 is second-hand); ～だろうね
+- copula: だ
+- verbal tics / catchphrases / fillers: 「五島さん」 opening most lines; 「どう？　興味ある？」 said twice in one scene
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT; formality mid; vocabulary register academic-administrative — 教授陣, 治験, 推薦, 内定
+- what he does: in 0000209C he finds her in a café before a conference presentation, checks her material, twice asks whether she is all right, and watches her walk out. In 000020AE he hands her the 国際研究所 offer, explains why she was named, says the research is the 御神木 and that an earlier attempt 頓挫した, and cannot answer her one sharp question — 「そこまで国が投資するってことは、もう何か分かっているんじゃないですか？」
+- structural job: he is the only adult in the branch who takes her seriously as a scientist and he is also the channel through which the state reaches her
+- known ambiguity / open questions: never named; whether the 先生 of 0000209C and the 教授 of 000020AE are one man is not stated, though the register and the address form match
+- as-of: 000020AE
+
+## unnamed 元木刑務所の受付 (000020A2) — the reception voice at the new prison
+- first_appears: 000020A2:8:14 (「――身分証明証をご提示いただけますか？」)
+- pronoun(s): none observed
+- speech level baseline: です・ます, service-desk, prefixed 「――」 throughout -> Q047
+- sentence-final particles: ～ます; ～ますね; ～ください
+- copula: です
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate NONE; profanity ceiling ZERO; sentence length SHORT; formality HIGH; vocabulary register counter-service — ご提示, 収監手続き, 面会
+- what he does: checks a licence, explains the prisoner has not arrived and that visits start next week, agrees to pass a letter on once it has been opened and checked, and produces paper and a pen. 古郡なつみ's comment: 「やっぱり対応もすごくいいなあ……」
+- structural job: the file's only other voice, and the reason the earthquake lands on a woman standing alone in a lobby
+- as-of: 000020A2
+
+## unnamed 特殊部隊の2人 (000020BB) — the squad leader and the young man, in a vehicle
+- first_appears: 000020BB:8:0 (「よし、あと10分で到着だ」)
+- pronoun(s): 俺 (leader), 僕 (the young man, 「僕、今月末、結婚するんです……」)
+- speech level baseline: the leader タメ口 with 乱暴 edges; the young man です・ます with ～っす — and the young man's lines are the 「――」 channel throughout -> Q835, Q047
+- sentence-final particles: leader ～ぞ, ～だろ, ～な; subordinate ～んすか, ～ますよ, ～です
+- copula: だ (leader) / です (subordinate)
+- verbal tics / catchphrases / fillers: leader 「ビビってんのか？」 twice; 「フラグ立てんな……」 once
+- dialect: none
+- EN correlates: contraction rate HIGH both; profanity ceiling LOW; sentence length SHORT; formality split; vocabulary register military — 生存者, ターゲット, 殲滅, 潜入, 装備
+- what they do: they drive into a town buried in cherry blossom under orders to kill survivors and a 『神使』. The leader admits to being frightened, describes the target as something that dodges bullets, works out aloud that the mission is a survivability test and that failure will make the place a permanent exclusion zone, and tells the boy to run alone if it comes to it
+- structural job: the state's view of 荒田/元木 from outside, from men with no stake in it, and the last thing anyone says about the place before it becomes 立入禁止 -> Q771, Q826
+- known ambiguity / open questions: neither is named; whether either survives is never shown
+- as-of: 000020BB
+
+## unnamed 荒田の小学校の担任 (000020C6) — the teacher at the settlement's primary school, and her class
+- first_appears: 000020C6:8:0 (「それではみなさん、中学生になっても元気に、そして賢く、楽しく過ごしてくださいね！」)
+- pronoun(s): none observed
+- speech level baseline: teacher です・ます, warm and then careful; the class in 「――」, five voices per cell joined by ⏎ -> Q794, Q808
+- sentence-final particles: teacher ～ね, ～ましょう, ～の？ (the careful questions); class ～って, ～じゃん, ～もんな
+- copula: です (teacher) / だ (class)
+- verbal tics / catchphrases / fillers: 「新村さん」 for 夏菜 every time
+- dialect: none
+- EN correlates: teacher contraction rate LOW, formality HIGH; class contraction rate HIGH, formality ZERO; vocabulary register primary-school
+- what she does: she runs the closing of a graduation, lets 夏菜 be laughed at kindly, and then asks the question the file exists for — neither parent came today, and neither has ever come to a 参観日, a 運動会 or a 演劇会. She accepts 「パパもママも、忙しいですから……」 and her last line, alone, is 「新村さん、やっぱり変よね……」
+- structural job: the only person outside the family who notices that a child whose mother has been dead for years still says 「ママも忙しい」, and she does nothing about it
+- known ambiguity / open questions: never named
+- as-of: 000020C6
+
+## unnamed 荒田線の運転手2人 (000020CC) — the last two drivers on the 荒田駅 line, both over 70
+- first_appears: 000020CC:8:0 (「おい、起きろって、そろそろだぞ」)
+- pronoun(s): 俺 both
+- speech level baseline: old men's rough タメ口, affectionate. One in 「」 and one prefixed 「――」 -> Q047
+- sentence-final particles: ～だろ; ～もんなあ; ～よー (the drawn-out one, 「身体大事にしろよー」); ～んだわ
+- copula: だ
+- verbal tics / catchphrases / fillers: 「ったく」; 「なあなあ」
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling LOW; sentence length SHORT; formality ZERO; vocabulary register railway and old-man domestic — 現役, 隠居, 徹夜で麻雀, ヨボヨボ
+- what they do: they argue over whose turn it is to drive after a night of mahjong, establish that both retired and came back because driving trains is the only thing either enjoys, and that only two of them are left for the run. Then: the people at 荒田 have changed — not gloomier, they agree, but emptied — 「活気がなくてどんよりしているような……」 — and 「最近運転が怖いんだわ」
+- structural job: the settlement's conversion seen from outside by two men with no stake in it and no theory about it. EN must keep the tone entirely domestic
+- known ambiguity / open questions: neither is named
+- as-of: 000020CC
+
+## unnamed woman on the phone (0000206C) — four calls, four men, four days
+- first_appears: 0000206C:8:0 (「ただい――」, cut off, already laughing into a phone)
+- pronoun(s): 私 (「私が男と一緒にいた？」)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: FOUR registers in twenty-seven lines, one per man and switched without a seam — bright タメ口 to カズ君, admiring です・ます to マサシさん, soft タメ口 to シンジ君, deferential です・ます to タカヒロさん
+- sentence-final particles: ～よねえ (flattering); ～ですよ！; ～の？ (soft); ～ですか？ (deferential)
+- copula: だ / です, by addressee
+- verbal tics / catchphrases / fillers: she praises each man for something (「マサシさんって博学ですよねえ！」) and steers every call to the same question — when can they meet
+- dialect: none
+- EN correlates: contraction rate varies by register; profanity ceiling ZERO; sentence length SHORT; formality LOW to HIGH within one file; vocabulary register social-flattering
+- what she does: she keeps four men going on consecutive days, explains a man she was seen with as a customer from work, declines a visit on the ground that she lives with her parents, and takes a proposition from a man who says he has left his wife
+- structural job: twenty-seven lines of a woman being four different people, placed immediately after a file in which a girl watches her sister become someone else. The file asserts no connection
+- known ambiguity / open questions: SHE IS NEVER NAMED. Reading order and 00000F87:11:139-11:146 (五島桃子's own account of customers she could not refuse rudely) both point one way and nothing in the file says it -> Q830. Do not let the EN settle it
+- as-of: 0000206C
+
+## グループチャットの4人 — TT, けん, 佐藤さん, しま (000020FC) — 新村茅萱's Tokyo drinking circle, online
+- first_appears: 000020FC:8:0 (TT, 「おーい誰かおきてるかー？」)
+- pronoun(s): 俺 (TT, けん, 佐藤さん); none observed for しま
+- speech level baseline: chat タメ口 with no punctuation, no honorifics except on 佐藤さん's handle, and ｗ as the laugh. 佐藤さん alone uses ～っす upward (「うーきついっす……」)
+- sentence-final particles: ～だろ？; ～だろｗ; ～のか; ～よ; ～な
+- copula: だ, usually dropped
+- verbal tics / catchphrases / fillers: 「おはっす」 as a greeting all four use; 「写真はよ」 / 「写真写真！」 (しま, twice); 「どんまいやなｗ」; a three-handle chorus in one cell, three times
+- dialect: none
+- EN correlates: contraction rate MAXIMUM; profanity ceiling LOW; sentence length VERY SHORT, often one clause; formality ZERO; vocabulary register mixer-and-chat — コンパ, お持ち帰り, 口説く, 洗礼, リベンジ, 強制退会. EN must read as a real group chat and must NOT be tidied into sentences
+- FORMAT: every cell is `handle⏎message`; several handles are joined in one cell by ⏎⏎. The handle is part of the cell, not a speaker tag -> Q831
+- what they do: they debrief a mixer. 佐藤さん went after 新村茅萱 and fled; the others knew what would happen and let him. TT talked ハナちゃん round and she told him something at the moment of the kiss, printed across four cells with the word replaced by 「×」. They congratulate him, he backtracks, and they throw him out of the group as a joke. The three-handle chorus 「ハナちゃんかわいそ」 is the file's last judgement on her
+- structural job: the only view of 新村茅萱's Tokyo life from the outside, and it corroborates her own account of it exactly — a woman nobody can drink with twice, and a friend everybody laughs at
+- known ambiguity / open questions: the censored word is never supplied and the reader must carry it from 00002108:8:59 -> Q832 (owner). None of the four appears anywhere else
+- as-of: 000020FC
+
+## 教団本部長／土田 (ほんぶちょう／つちだ, the Chapter Head / Tsuchida) — セレジェイラ聖教's surviving officer, 000021CF
+- first_appears: referred to at 000021CF:8:57; speaks at 000021CF:8:59
+- pronoun(s): 私
+- pronoun FREQUENCY: less often than typical; he states almost nothing about himself
+- speech level baseline: a superior's タメ口 with 敬体 flourishes — 「～あるまい」, 「～たまえ」-adjacent, 「～かね？」. He never raises his voice anywhere in the file, including while arranging a murder
+- sentence-final particles: ～かね (「どうかな？　調子は」, 「どういうことかね？」); ～な; ～だろ？
+- copula: だ
+- verbal tics / catchphrases / fillers: long 「…………」 pauses before every consequential sentence; he lets silence do the pressure. He smokes while delivering bad news and the narration measures the conversation in mouthfuls of smoke (8:236, 8:242)
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT, declarative; formality MEDIUM-HIGH, the formality of rank rather than respect; vocabulary register administrative — 戸籍, 上層部, 機密性, 司法取引
+- what he does, in order: renames 篠崎 (「君の名前はもう決まっている。／『金崎 勉』だ」 8:68-8:69), places him in the 飯沢県 civil service, bows and apologises with both hands on the desk for ordering the ドローガ experiments to continue, warns him about the 地上げ rumour, proposes and executes the burglary that puts the supplementary report into the 荒田 蔵, and then has him stabbed to death in an alley
+- HIS LAST SCENE IS A TELEPHONE CALL, 8:461-8:488, one side only, reporting the killing to somebody never named: 「裏で司法取引をすることを約束し、彼を殺させました」; 荒田 to stay without 戸籍 so local police cannot enter; the 元木町 institute killings written off as 「操られた死体による犯行」; a second institute to be built there 「60年ほど先」; ドローガ to be suppressed because 「もしドローガが公になれば、世界の秩序が崩れてしまいます」. He signs off 「ええ、自分のことは自分でやります。／今まで、お世話になりました」 -> Q879, Q880, Q881
+- the register does not change between the apology and the murder; EN must not make the last scene colder than the first
+- known ambiguity / open questions: 土田 is stated to be an alias (8:199); his real name is never given; who he reports to is never identified; whether 「自分のことは自分でやります」 means his own suicide is left open -> Q878, Q879
+- as-of: 000021CF
+
+## unnamed 篠崎ハジメの妻 (000021CF) — a former sect member
+- first_appears: 000021CF:8:123
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 丁寧 with feminine endings — 「お考え直し下さいな」, 「何て言いますの？」
+- sentence-final particles: ～な (softening imperative); ～の (question)
+- copula: です
+- verbal tics / catchphrases / fillers: none
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM-HIGH; vocabulary register domestic and slightly old-fashioned
+- what she does: she is told nothing about his research by order of the sect leadership; she is warned only not to volunteer as a test subject (8:127); she stops him having his face surgically changed in two lines, and the narration says she likes both his face and his inside. She hands him the telephone that calls him out to be killed (8:401)
+- known ambiguity / open questions: she is never named; she is never told what her husband did; she is not shown learning of his death
+- as-of: 000021CF
+
+## unnamed 財布を落としたと言う若い女性 (000021CF:8:348-8:387)
+- first_appears: 000021CF:8:348
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: broken 丁寧, delivered in fragments across cells — 「あ……あの……／財布……落としちゃって……／帰れなくて……／電車代を……」
+- sentence-final particles: none; her sentences do not finish
+- copula: none observed
+- verbal tics / catchphrases / fillers: trailing 「……」 at the end of every cell until she confesses, at which point she speaks in whole sentences (8:380, 8:384)
+- dialect: none
+- EN correlates: contraction rate n/a; profanity ceiling ZERO; sentence length VERY SHORT, fragmentary; formality MEDIUM; the fluency arrives with the truth and the EN must mirror that
+- what she does: she runs a small confidence trick on him, takes 2,000 yen, comes after him to give it back, and admits 「本当は財布なんて、なくしてなくて――」. He tells her to pass it to the next person who really needs it. The file uses her to set up his self-image as a good man in the cells immediately before he is murdered
+- known ambiguity / open questions: whether she is connected to the killer waiting in the alley is never said and the narration explicitly contrasts her weak stare with the strong one behind him (8:432)
+- as-of: 000021CF
+
+## チャー坊 (チャーぼう, Cha-bo) — 篠崎ハジメ's grandson, 000021CF
+- first_appears: 000021CF:8:371
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: child タメ口
+- sentence-final particles: none observed
+- copula: none observed
+- verbal tics / catchphrases / fillers: none; he has two lines
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality NONE
+- what he does: he runs out to meet his grandfather on his own birthday and asks who the woman was. He is the last person 篠崎 speaks to before he is killed
+- known ambiguity / open questions: reading and rendering of the nickname -> Q882
+- as-of: 000021CF
+
+## さつき (Satsuki) — the author, 00002268. NOT a character
+- first_appears: 00002268:8:1
+- pronoun(s): 私
+- pronoun FREQUENCY: about as often as typical for a Japanese afterword
+- speech level baseline: です・ます throughout, conversational and self-deprecating
+- sentence-final particles: ～ですね; ～ました; ～かなあ; ～ですしね
+- copula: です
+- verbal tics / catchphrases / fillers: 「～なんですけどね」 and 「まあ、」 as hedges; he apologises for his own design decisions twice
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length MEDIUM; formality MEDIUM (polite but relaxed); vocabulary register amateur-creator, not literary — he says outright that he finds reading painful and made a novel game because it looked easy
+- narration voice: this is the only file in the project written from outside the fiction. It must not be given a character's voice, and it must not be smoothed into publisher's copy -> Q873 (owner-blocking)
+- what he states as fact about the work: the prototype 『四月八日の魔女』, February 2016; three and a half years of work; the first line he wrote was 『私は桜が嫌い』 and it no longer exists in the text; the original ending was the fifth 編, 『最後の声編』, rejected because ending on a dead person's voice contradicted the story's denial of the supernatural; four 編 and three設定 added afterwards; 死月妖花 as the thing behind everything was not planned until then; the title word came out of an IME misconversion of 四月八日 -> Q874
+- he leaves one contradiction unsolved on purpose and names it: 美冬 never received ファルシフィカソ, and the explanation involves a character who has a name and neither a sprite nor a line -> Q876
+- known ambiguity / open questions: -> Q873, Q874, Q875, Q876
+- as-of: 00002268
+
+## 亀田 (かめだ, Kameda) — receptionist at 株式会社IC, 古郡良治's employer (00002420). A DIFFERENT PERSON from the ハヤブサ宅配サービス 亀田
+- first_appears: 00002420:11:2
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: 最上級敬語 on a switchboard — 「お電話ありがとうございます」, 「少々お待ち下さい」, 「～でございますね」
+- sentence-final particles: ～ます; ～ございます
+- copula: でございます
+- verbal tics / catchphrases / fillers: 「えっと」 once, which is the only place the script shows under the register (11:4)
+- dialect: none
+- EN correlates: contraction rate NONE; profanity ceiling ZERO; sentence length SHORT; formality VERY HIGH; vocabulary register corporate telephone
+- what she does: she confirms that 古郡良治 is down for a direct client visit and not for a Hokkaido trip, which is the cell that turns a missing husband into a case
+- known ambiguity / open questions: the surname collides exactly with an existing CAST entry for a delivery company's call handler; both are one-scene telephone voices and the EN spelling must be identical -> Q905
+- as-of: 00002420
+
+## unnamed パーラー桜色の店長 (00002420) — 古郡茜's employer
+- first_appears: 00002420:11:18
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: a bright business greeting that drops instantly into familiar タメ口 once he knows who is calling
+- sentence-final particles: ～の？; ～よ; ～し
+- copula: だ
+- verbal tics / catchphrases / fillers: 「うーん……。／まあ分かったよ」 — he grants the day off in one breath after a show of thinking
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length SHORT; formality LOW after the greeting
+- what he does: gives her the day off without being asked twice, on the ground that trade will be slow after the morning's killing. He never learns why she needs it
+- known ambiguity / open questions: the shop name, 桜色, is the third cherry-derived business or place name in the project and 古郡茜's daughter cannot be near cherry blossom -> Q906
+- as-of: 00002420
+
+## unnamed 「東京に行く日」の眠り手 (0000234B) — an unidentified dreamer
+- first_appears: 0000234B:8:2
+- pronoun(s): 私 (8:6)
+- pronoun FREQUENCY: about as often as typical
+- speech level baseline: です・ます, polite to a voice she cannot place — 「えっと……／どなたでしょう？」, 「私、どうしたらいいですか？」
+- sentence-final particles: ～ですね; ～し
+- copula: です
+- verbal tics / catchphrases / fillers: 「んん……ふあ……。朝か……」 on waking; no 「ん……」 opener anywhere
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling ZERO; sentence length SHORT; formality MEDIUM-HIGH
+- what she does: she is polite to the 「――」 voice, tries to help, and wakes with no memory, saying 「さてと、今日は東京に行く日ですね」
+- known ambiguity / open questions: she is never named. 0000235A gives the three dreamers as 新村春花, 古郡なつみ and 五島絵梨奈, and none of them is going to Tokyo. 新村茅萱 lives in Tokyo but never drops her 「ん……」 opener anywhere else in 200 files -> Q920, Q897, Q138
+- as-of: 0000234B
+
+## unnamed 医師 (000021FE:11:0) — one line
+- first_appears: 000021FE:11:0
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: です・ます, the clinical formula
+- sentence-final particles: ～です
+- copula: です
+- verbal tics / catchphrases / fillers: none; the character has one cell, 「ご臨終です」
+- dialect: none
+- EN correlates: contraction rate NONE; profanity ceiling ZERO; sentence length VERY SHORT; formality HIGH; vocabulary register clinical
+- what he does: he pronounces 新村春花 dead in the first cell of a five-line file, and the other four cells are 五島絵梨奈 refusing it
+- known ambiguity / open questions: unnamed, ungendered in the JP, and there is no narration anywhere in the file to attribute either voice -> Q888
+- as-of: 000021FE
+## 瀬正照 (せ まさてる, Masateru Se) — 荒田集落, the 瀬 family line, a year younger than 城崎健吾
+- first_appears: 0000243F:11:13 (as an untagged 「――」 voice); named and identified at 11:111-11:112
+- pronoun(s): 俺 (「――俺は本気だ。邪魔する奴はみんな敵だ。」 0000243F:11:141)
+- pronoun FREQUENCY: less often than typical; most of his lines have no subject at all
+- speech level baseline: flat タメ口 to everyone, including a woman twenty years his senior. No 敬語 anywhere. Every line of his is in the bare 「――」 channel, never in 「」, so he is typographically part of the crowd until the narration pulls him out of it -> Q928
+- sentence-final particles: ～だ (declarative, closing almost every line); ～のか (challenge, 「――もしかして、裏切る気か？」 11:24); ～ろ／～な (imperative)
+- copula: だ
+- verbal tics / catchphrases / fillers: none. He has no laugh, no filler and no hesitation anywhere, and that is the characterisation — thirteen lines and not one of them wavers. The one sound he makes is 「――ふん、」 before 「呪われた女め。荒田のために死ね！」 (11:138)
+- dialect: none
+- EN correlates: contraction rate LOW; profanity ceiling LOW in words and absolute in content — 「呪われた女め」 and 「死ね」 are the strongest words he uses and he uses them while killing a neighbour; sentence length VERY SHORT; formality ZERO; vocabulary register plain, with the settlement's words (魔女, 呪殺, 荒田のために) used without explanation
+- what he is: the 瀬 family manage 荒田's water and irrigation. His much younger sister was killed in the second 呪殺事件, and 城崎's assessment is that the hatred has become the object — 「憎んでいるというよりも、こいつの場合は犯人を殺すこと自体が目的になっている気がする」 (11:116). Since 幸太郎's surveillance ended he has suspected every resident (11:117)
+- his function in the file is to carry the crowd: he supplies 「――裏切り者は魔女の手先」 and 「――すべてはみんなを守るためだ」, names 城崎 as the next suspect, and when 城崎 objects to killing two dying girls he answers 「――ああ、1番面倒な2人が死にかけているんだ。まとめて殺した方がいい」 (11:97) and cuts down the one person who agrees with 城崎
+- 五島's 00002444:14:217 reconstruction has 幸太郎's tip-off reaching the settlement through him by name — 「新村家の誰かが住人の1人、つまり瀬に垂れこんだと」 — which makes him the single point through which the whole massacre is triggered. He never learns it and he is dead within the hour (00002444:14:393)
+- known ambiguity / open questions: -> Q930 (reading of both names), Q928 (he never gets a 「」 line)
+- as-of: 00002444
+
+## 新島香織 (にいじま かおり, Kaori Niijima) — 荒田集落, the 新島 family line, nearly 60
+- first_appears: 0000243F:11:123 (「ねえ、ケンちゃんの言うとーりだよ！」); named at 11:125
+- pronoun(s): 私 (「私、死にはしないからさ……」 0000243F:11:160)
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: over-familiar タメ口 to everyone, in a high voice the narration calls 甲高い, with every other vowel stretched. No 敬語 anywhere. 城崎's gloss is the joke and the horror of her: 「こんなしゃべり方だが俺より年上で60歳近い」 (11:126)
+- sentence-final particles: ～よ; ～でしょー？; ～よー (stretched imperative, 「助けよーよ」 11:132); ～の？
+- copula: だ／だよ
+- verbal tics / catchphrases / fillers: the stretched vowel is the tic and it is on nearly every line — 「言うとーりだよ」, 「だーけーどー」, 「助けよーよ」, 「仲間でしょー？」. She coins a diminutive for everyone she names: ケンちゃん (城崎健吾), マーくん (瀬正照), チーちゃん (新村茅萱), カナカナ (新村夏菜), four in one scene -> Q931, Q171
+- dialect: none
+- EN correlates: contraction rate HIGH; profanity ceiling ZERO; sentence length VERY SHORT; formality ZERO; vocabulary register a small child's, aimed at an argument about whether to kill two girls. The EN must make her sound like a child WITHOUT making her sound simple, because she is the only person in the file with a moral position and she is right
+- what she does: she alone sides with 城崎 against finishing off the two wounded 新村 sisters, on the ground 「だって、集落の仲間でしょー？」 (11:133). Asked by 瀬 which of her family were 呪殺ed she answers cheerfully 「長男と次男だよ」 — she has lost two sons and still argues for mercy. He cuts her down for it with one vertical nata swing
+- her wound and her instruction, 11:149-11:162: the collarbone completely broken, no vital point hit, and she sends 城崎 away with 「元木町から来た子たちを……助けてあげて……」 and 「だってこのまま元木町の女の子を死なせたら……／呪殺された息子たちに怒られちゃうよ……」. Her reason for saving a stranger is her dead sons' opinion of her
+- 新村サクラ used to do impressions of her to tease people as a child (11:127), which is the same mimicry habit 新村エリカ and サクラ have elsewhere
+- SHE IS THE ONLY RESIDENT WHO SURVIVES THE NIGHT, 00002444:32:306-32:313: found hiding at the back of her house with the shoulder injury, hospitalised, shaking continuously, unable to hold a conversation so that nothing can be learned from her, and dead three months later of what the narration calls excess stress. She is 新村春花's only external proof that the night was real
+- known ambiguity / open questions: -> Q931 (reading and register), Q928
+- as-of: 00002444
+
+## the 核 / 女神様 (00002444:32) — the black mass at the top of 糸姫山
+- first_appears: 00002444:32:56 (seen as 「黒い塊」); first sound 32:98 (「――わり」); first whole line 32:105-32:106 (「代わり……／欲しい……」)
+- pronoun(s): 私 (「私……とても嬉しい」 32:231)
+- pronoun FREQUENCY: about as often as typical for how little she says
+- speech level baseline: none. No 敬語, no タメ口 in any recognisable adult form — two- and three-word fragments, most of them nouns with a verb missing, and almost no particles. The narration's own reading is 「声色とかではなく、話し方のぎこちなさが、妙に子供っぽかった」 (32:113). She is an adult woman of about 春花's age who has apparently never been taught to speak
+- sentence-final particles: ～の (「教えてくれないの」 32:173); ～よお (stretched, in the only line she raises, 「ママに会いたいよお……」 32:127)
+- copula: none observed
+- verbal tics / catchphrases / fillers: none, and she has no laugh. NINE of her turns are printed as a cell containing 「　　　　　　　　」 and nothing else — eight full-width spaces inside quote marks — while 春花 keeps talking into them -> Q939
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length VERY SHORT and often ungrammatical; formality NONE; vocabulary register pre-school — ママ, パパ, 会いたい, 嬉しい, 名前, and not one abstract noun. Her one polite form is 「ありがとう」
+- physical description, 32:56-32:82 and 32:177-32:187: a mass of black hair a person's width across, grown out until it covers her and spreads through the surrounding root system; white skin under it; no clothes; unmistakably a woman and older than 春花 expected, 「多分、私とそう変わらないくらい」. She sucks her fingers and hugs her knees like a foetus, 「まるでずっとここに監禁され、何の教育も受けずに育ったかのように」
+- WHAT SHE KNOWS AND DOES NOT: she does not know her own name, her father's name or her mother's name; she knows her father is dead and her mother is alive; and she wants ママ. Her entire negotiating position is 「あの子の……代わり……」 and then, offered a search for her mother instead, she accepts at once
+- SHE THANKS 春花 FOR THE PROMISE ALONE, before anything is done — 「ママに会わせてくれるって約束してくれたから」 (32:227) — and 春花's narration reads it as somebody who has never learned to doubt anyone
+- AND THEN SHE WITHDRAWS IT, in four cells and with no explanation: 「もういい。しなくていい。／私からあなたへのお願いは1つだけ／できるだけ長生きしてね？」 (32:287-32:291). The last block of the file reveals that this is a sentence rather than a kindness — 春花 is to live as long as possible in order to suffer longest -> Q940
+- 「私……とても嬉しい」 / 「ママを……／取り返せるから」 (32:231-32:234) is the one thing she says that 春花 cannot parse, and the file never explains it. 取り返す, not 会う
+- SHE IS NEVER IDENTIFIED. 糸姫 says the present 核 was absorbed about twenty years ago and that she herself was not told who it is (00002444:26:394, 26:400); 五島 asks 城崎 for anyone who died then and is told there is nobody; and 春花, seeing her face for the only time, thinks 「誰かに似ている気がした。／誰かに似ている目。／そしてその目つき、子供の頃、1度だけ見た気がする」 (32:293-32:295) and does not get further -> Q940
+- what she is called by everyone else: 核, 女神様, アバドン, 邪悪なる女神. 新村栄一郎 and 新村サクラ use 女神様 exclusively and speak of her being tired, resting and needing not to be disturbed
+- SECOND-FRAME NOTE: this is a separate block from 糸姫 rather than an update to it. 糸姫 is the FORMER core and says so on screen; this figure is the present one, is never named, and the whole function of the scene is that nobody knows who she is. Cross-reference the two blocks if a later file identifies her -> Q940, Q597
+- as-of: 00002444
+
+## unnamed young officer at 元木警察署 (00002450:18) — 伊勢大二郎's night-duty partner
+- first_appears: 00002450:18:1 (「伊勢警部補、眠そうですね。もう夜も遅いですし」)
+- pronoun(s): 僕 (「僕、元木町に住むのが怖くなってきましたよ……」 18:137)
+- pronoun FREQUENCY: less often than typical
+- speech level baseline: 敬語 (です・ます) to 伊勢 without one lapse across 217 cells, and the 僕 rather than 自分 makes him sound younger than the 000003B4 police collective does. He is 元木町-born (18:115)
+- sentence-final particles: ～ですよね (his commonest, and it is agreement-seeking); ～ますよ; ～ですか？; ～ですって (「いやいやそれでも危ないですって！」 18:171)
+- copula: です
+- verbal tics / catchphrases / fillers: 「ええっと……」 and 「はあ……」 as receipts; 「まさか……！」 twice at the two turns of the argument; 「じゃあ話を戻しますけど」 as his one structuring move
+- dialect: none
+- EN correlates: contraction rate MEDIUM; profanity ceiling ZERO; sentence length SHORT to MEDIUM; formality HIGH and it never relaxes; vocabulary register ordinary, with enough general knowledge to name 脳内物質 and 割れ窓理論 unprompted and enough ignorance to have to be told what エフェドリン is
+- structural job: he is the reason the file's exposition can be dialogue. He restates every step of 伊勢's argument back in plainer words (「えっと、話をまとめると……」 18:78), supplies the one counter-argument that makes 伊勢 sharpen it (18:120-18:121), and is the one who says 「警部補……／それ、妄想じゃないですよ……！」 (18:67-18:68), which is the file's whole point
+- he is also the brake: told that 伊勢 means to inject himself with the unidentified drug he objects four times in six cells, ending 「やめましょうよ。これを警察庁に出すんです」 (18:173), and is laughed at. Nothing in the file says whether the laugh was true
+- known ambiguity / open questions: he is never named, never described, and never appears elsewhere; the 000003B4 / 000003BC 元木警察署 collective is a different entity with a different register -> Q947, Q944
+- as-of: 00002450
+
+## unnamed 拘置所の係員 (00002478) — the duty officers in the visiting room, two or three of them
+- first_appears: 00002478:11:43 (「おい、やめなさい！　面会中止にするぞ！」)
+- pronoun(s): none observed
+- pronoun FREQUENCY: n/a
+- speech level baseline: TWO layers by addressee and they must stay apart in EN. To the detainee, flat shouted タメ口 with a bare surname — 「やめろ新村！　離れろ！」 (11:81), 「ほら、立て」 (11:74). To the visitor, unbroken です・ます with no softening and no apology — 「あと5分です」 (11:66), 「はい、そこまでです。面会時間終わりです」 (11:72), 「もう終わりです。ご退室下さい」 (11:89)
+- sentence-final particles: ～です／～ます to the visitor; bare imperatives to the detainee
+- copula: です / だ (by addressee)
+- verbal tics / catchphrases / fillers: none. Nine lines in the project
+- dialect: none
+- EN correlates: contraction rate ZERO; profanity ceiling ZERO; sentence length VERY SHORT; formality HIGH to the visitor and none to the detainee; vocabulary register procedural. The politeness must read as procedure rather than kindness — the same man cuts the visit a minute early, ignores her objection, and threatens her with custody
+- one of them is not hostile: he puts a hand on the detainee's back and asks 「おい、大丈夫か？」 (11:61), and steps quietly away when the swaying stops (11:64). The EN must let that one cell be ordinary care inside an otherwise flat function
+- the LAST line belongs to them and it is the branch's closing condition: 「新村茅萱さん、今日のことは決して口外しないで下さい。これは警察庁からの命令ですので」 (11:99), delivered with no explanation and no answer given to her question -> Q986
+- known ambiguity / open questions: how many there are is not stated (one in the room, two more come in at 11:88); none is named; whether the one who says 「今日はもう終わりです」 at 11:74 is the same man who said 「あと5分です」 eight cells earlier is not stated
+- as-of: 00002478

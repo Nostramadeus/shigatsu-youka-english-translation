@@ -1,0 +1,710 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1279, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=941, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=15, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1922, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=169, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=5, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・・・, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ま, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=16755370, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=してんし, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=さわけん, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=もときちょう, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=10, unk2=4294967295, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=ざんさつ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もときちょう, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さわ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=168, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5072, target=)
+; Links:
+;    0: TWdLink(count=4535, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Welcooome! The <STYLE ID="1">young lady with April sickness</STYLE>!"<PG>
+{MESOFF "500"}
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家廊下.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Auntie</STYLE><STYLE ID="3"> had only just been seen off, I suppose. In the entrance, </STYLE>Haruka<STYLE ID="3"> was already standing.</STYLE><PG>
+<STYLE ID="1">"Really, </STYLE>Haruka<STYLE ID="1">, don't drag me back to reality."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ahaha, sorry, sorry! But you seem to be doing pretty well today."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, today I'm fine!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家台所1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Sit anywhere, I'm brewing tea now. High-class stuff from La France, apparently."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ooh, so this is what they call hospitality. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And me, I brought this!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\ビニール.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Let's see, let's see, chocolate and sakiika. [TN: dried shredded squid, sold as a snack]
+{PAUSE ""}
+I see... so for high-class tea it has to be sakiika, doesn't it―
+{PAUSE ""}
+―as if it does! No chance!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That is one dead-straight play-along retort...!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\DVD.gal" "NORMAL" "#1" "600" "C" "600" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"And, look! The DVD!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ah! This is the one we went to see together last year! You bought it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah. Apparently the DVD has the parts that got cut from the film in it too."</STYLE>
+{PAUSE ""}
+<BR>
+"Oho, well now, well now. It has been a long time."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> turned to the DVD and made a deep bow.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Today </STYLE>Haruka<STYLE ID="3"> is in remarkably high spirits.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But I know this is </STYLE>Haruka<STYLE ID="3"> looking out for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In this season my mood tends to sink.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">To let me feel even a little cheerful, this is </STYLE>Haruka<STYLE ID="3">'s own hospitality, over and above the tea.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ah, <STYLE ID="1">Natsumi</STYLE>, could you get the teacups?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, yes!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\食器を動かす.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">I took teacups for the two of us and set them down beside the gas ring the kettle was on.</STYLE><PG>
+<STYLE ID="1">"Come to think of it, </STYLE>Haruka<STYLE ID="1">, what did your notice about the closure say?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"The email said it was a notification from the police."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Same as my class. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I've wondered for a while, but isn't this the kind of thing they email out to the whole school?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, that's what <STYLE ID="2">my mom</STYLE> was saying, but it's to spread out the contact points."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Spread-out-the-contact-points...? What's that?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"If they mailed the whole school at once, our side would all try to put questions to the sender, right?
+{PAUSE ""}
+　So then dealing with it gets rough, so they mail it class by class and have you contact your homeroom teacher direct."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Is that... efficient?"</STYLE>
+{PAUSE ""}
+<BR>
+"I dunno, myself..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"The wording probably differs from teacher to teacher, but is that all right...?"</STYLE><PG>
+"If it's running fine this way, isn't that good enough?
+{PAUSE ""}
+　Ah, right, the content of the email that came round to my class."<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hm, for safety, don't go outside, it said."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"For... safety?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Mom</STYLE><STYLE ID="3">'s email had no wording like </STYLE><STYLE ID="5" RUBY="・・・・・">for safety</STYLE><STYLE ID="3"> in it.</STYLE><PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"So that means 'outside is dangerous', doesn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I said that, </STYLE>Haruka<STYLE ID="3">'s hands stopped dead.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"That... does follow. So it's not an accident but an incident after all?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That keyed-up voice of </STYLE>Haruka<STYLE ID="3">'s dropped an octave.</STYLE><PG>
+<STYLE ID="1">"And on top of that, if the danger is still there, that means..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Naturally my own voice dropped too.</STYLE>
+{PAUSE ""}
+<BR>
+"Terrorism or something? <STYLE ID="6" RUBY="ま">Spread</STYLE>ing poison gas around."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"In a town of a measly 40,000 people? And even then they'd put out an evacuation order, surely... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Maybe a wanted criminal has fled in here?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Then maybe they've taken a hostage so they can get away?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The happy mood of a moment before was turning subtly hard.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Sorry, <STYLE ID="1">Natsumi</STYLE>, just to be sure, go and check the lock on the front door."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\新村家ドア閉.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">I went to the entrance, checked that the door was locked, and then, for extra safety,</STYLE>
+{PLAYSND "SE\カチカチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">put the chain on as well.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家台所1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"It was fine, the locks are all set."</STYLE>
+{PAUSE ""}
+<BR>
+"Thanks! <STYLE ID="1">Natsumi</STYLE>, did you lock up properly when you left your place?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, my place is fine."</STYLE>
+{PAUSE ""}
+<BR>
+"I see."<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Haruka<STYLE ID="3"> picked up the kettle, now hot, and poured the water into the teapot.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">How shall I put it, the atmosphere was odd.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I went out with the trash earlier, I felt a slightly tense air then too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What is happening in this town―</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Here! Take the tea over, would you!"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> put on a bright voice, as though trying to break this hardened air.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "SE\食器を動かす.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">I set the tea down on the living-room table and sat on the sofa.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\DVD.gal" "NORMAL" "#1" "500" "C" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Right, let's watch it!"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> had my DVD in her hand before I noticed.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Next to the TV was a laptop,</STYLE>
+{PLAYSND "SE\DVDドライブへ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">and the DVD was put into the disc drive.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It is set up so that the picture goes from the computer to the TV.</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3">'s house is always like this when we watch a DVD or go surfing the net, with the computer up on the big screen.</STYLE><PG>
+<STYLE ID="3">When I looked at the clock, 8:30 a.m.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Normally it is the time I get to school.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Haruka<STYLE ID="3">, once she had finished with the controls, sat well back on the sofa and pressed herself right up against me.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\映画.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\映画.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">While we watched the DVD, we did not talk at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was not that today's odd air had swallowed us up; we were purely absorbed in the DVD.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Though </STYLE>Haruka<STYLE ID="3"> did suck on the sakiika the whole way through...</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">―3 hours later, the end credits on the screen.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Right to the very end, both of us were able to soak in the world of the DVD.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Ahh, that was good! It really is the best!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Now I've seen the cut parts, it finally feels like it adds up!"</STYLE>
+{PAUSE ""}
+<BR>
+"I know, I know! Why did they cut it for the film?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\シナリオ\外廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"All the same, the heroine really was cute."</STYLE>
+{PAUSE ""}
+<BR>
+"Heh! She sure was!
+{PAUSE ""}
+　'Be reborn a pure demon! Devil Justice!'"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And with that, </STYLE>Haruka<STYLE ID="3"> did the heroine's impression and snapped into a pose.</STYLE><PG>
+<STYLE ID="1">"Ooh, </STYLE>Haruka<STYLE ID="1">, you're good! Have you been practicing, by any chance?"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="7">"Huh!?</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+　N-n-n-n-no way! Ahahahahaha!"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> is easy to read in this sort of way, or rather, simple.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Put kindly, she is very straightforward.</STYLE><PG>
+<STYLE ID="1">"Then, then, try doing an impression of the rival girl! Look, an impression of the Dark </STYLE><STYLE ID="8" RUBY="してんし">Seraph</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+"R-right, okay!
+{PAUSE ""}
+'My darkness... sleep in my breast... Look, it feels very good, doesn't it...?'"<PG>
+<STYLE ID="1">"Th-that's amazing, </STYLE>Haruka<STYLE ID="1">! It's just like her! Why have you been hiding a talent like that all this time!?"</STYLE>
+{PAUSE ""}
+<BR>
+"It's nothing much... one of my relatives just likes doing impressions, that's all."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Then my next request is..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Gah! That's enough already! N-never mind that, <STYLE ID="1">Natsumi</STYLE>, what do you want for lunch?"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\5000円.gal" "NORMAL" "#1" "400" "330" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Mom</STYLE> left money for us. Have lunch with <STYLE ID="1">Natsumi-chan</STYLE>, she said."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> waved the 5,000-yen bill about, fluttering it.</STYLE><PG>
+<STYLE ID="1">"5,000 yen's worth? That much?"</STYLE>
+{PAUSE ""}
+<BR>
+"Since we've got it, let's have a gorgeous pizza delivered! It'll go better with tea than sakiika does, I bet!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Haruka<STYLE ID="1"> really does love pizza... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Pizza, huh... I haven't had it in a while."</STYLE><PG>
+"Right, that's settled!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+Haruka<STYLE ID="3"> started up the internet on the computer.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">She seemed to mean to order the pizza online.</STYLE><PG>
+"Um...
+{PAUSE ""}
+Huh?"
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The hand </STYLE>Haruka<STYLE ID="3"> had on the mouse stopped moving, and her eyes with it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I looked at the screen and understood why at once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"H-hey, this, this is our town, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At the very top of the search service page, the headline of the top news story was written.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "30"}
+{CHANGECG "000" "グラフィック\背景\検索.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="9" RUBY="さわけん">Sawa Pref.</STYLE><STYLE ID="10" RUBY="もときちょう"> Motoki-cho</STYLE><STYLE ID="11">, Sex-Unknown </STYLE><STYLE ID="12" RUBY="ざんさつ">Brutalized</STYLE><STYLE ID="11"> Body Found</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="3">As though an icicle had been driven into my spine, a chill went through me and goosebumps covered my whole body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13" RUBY="もときちょう">Motoki-cho</STYLE><STYLE ID="3"> may exist in several places across the country, but inside </STYLE><STYLE ID="14" RUBY="さわ">Sawa</STYLE><STYLE ID="3"> Prefecture there is only here.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">Natsumi</STYLE>... I'm going to look at the news."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> moved the mouse pointer slowly to the link to the news and clicked it softly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\空撮.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">At the other end of the link, a run of text and a single photograph were posted.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The photograph showed a great many cherry trees, with the center covered by a blue tarpaulin.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This photograph seemed to have been taken from above, by helicopter or drone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I tried reading the body of the article...</STYLE><PG>
+<STYLE ID="15">At around 5 a.m. on April 8, a brutally slain body was found in Chuo Park, Motoki-cho, Sawa Prefecture.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">From the person who found the body,</STYLE><BR>
+<STYLE ID="15">"Someone is calling for help in Chuo Park"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">such a report came in, and when the ambulance and the police rushed to the scene, a person was lying there in cardiopulmonary arrest.</STYLE><PG>
+<STYLE ID="15">Because the damage to the body is severe, identification is expected to take time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">Further, the cause of death is not clear, but the possibility of suicide is seen as extremely low.</STYLE><PG>
+{STOPSND "SE" "5000" "PASS"}
+"A brutalized body called for help?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Before I noticed, </STYLE>Haruka<STYLE ID="3"> was gripping my hand tightly.</STYLE><PG>
+<STYLE ID="1">"So it means the injuries were terrible but they weren't dead yet, and they died about the time the police arrived?"</STYLE>
+{PAUSE ""}
+<BR>
+"It doesn't say the victim's sex either. Damage that severe, so severe you can't even tell the sex...?
+{PAUSE ""}
+<STYLE ID="16">　</STYLE>And still alive even so, it says..."<PG>
+<STYLE ID="3">―For a while, silence flowed between the two of us.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">An incident like this, close enough to walk to...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I was gripping </STYLE>Haruka<STYLE ID="3">'s hand tightly too.</STYLE><PG>
+"Can I have a second?"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> opened her bookmarks and went to a different page.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\掲示板.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">The title of the page was "Motoki High School Board".</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was our own school's board.</STYLE>
+{PAUSE ""}
+<BR>
+"Here we might get the latest information."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Wait, stop... I'm scared..."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? Oh, sorry."<PG>
+{STOPSND "BGM" "0" "PASS"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHGVOL "VOICE" "0" "10000" "PASS"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="17">"Eep!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At the smartphone ringtone that suddenly rang out, I gave a short scream.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">Natsumi</STYLE>, are you all right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤入.gal" "NORMAL" "#1" "500" "C" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">What rang was my smartphone. </STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="3"> was the caller.</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"Hello...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ah, hello, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4">? With </STYLE>Haruka-chan<STYLE ID="4">, are you getting along nicely?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Unlike the air on our end, a cheerful voice came back.</STYLE><PG>
+<STYLE ID="1">"Ah, yeah, at </STYLE>Haruka<STYLE ID="1">'s house we were watching a DVD together."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I see. Sorry, but I'll be home late today."</STYLE><PG>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "30"}
+<STYLE ID="1">"Huh...!? Why...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I felt a tremendous anxiety at being alone tonight.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">With such an alarming incident having happened, and to be alone tonight...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Reacting to my voice, </STYLE>Haruka<STYLE ID="3"> looked over at me anxiously.</STYLE><PG>
+<STYLE ID="4">"It's turned out I'm going for a drink with people from work. Sorry, but mind the house till tonight! Look forward to a souvenir!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah. But..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Is something the matter?"</STYLE><PG>
+<STYLE ID="1">"Don't you know about the incident?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"The incident?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Ah, this morning's business? Sorry, I'm on my feet all day at work, so I don't get any information at all. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Ah! The cell phone's charge is about to go!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A-all right... I'll mind the house."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\電話切れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "3000" "PASS"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤切.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">And the instant I finished saying it, the call cut off.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{MESON "500"}
+<STYLE ID="3">What I really wanted was for her to come home early.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I couldn't say, I'm scared, so come home.</STYLE><PG>
+"<STYLE ID="1">Natsumi</STYLE>... are you all right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I could not answer, and there was nothing to do but keep my head down.</STYLE><PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "30"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="1"> says she'll be home late..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I see. Well, adults have all sorts going on. You can stay here until she gets back."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, thanks..."</STYLE>
+{PAUSE ""}
+<BR>
+"There, there. Nothing to be scared of."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Haruka<STYLE ID="3"> gently hugged my head to her.</STYLE><PG>
+<STYLE ID="3">It is always like this. I am always leaning on </STYLE>Haruka<STYLE ID="3">, and I can give nothing back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At times like this, though it is only one year between us, I feel that </STYLE>Haruka<STYLE ID="3"> is the older sister.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm sorry, always, always."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't worry about it... when you're in trouble, it works both ways."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE><PG>
+<STYLE ID="3">A person nobody can identify was killed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That sort of thing runs on the news from time to time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But, does just having that incident happen nearby make one this anxious?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Is it just that because it is the cherry blossom season I become anxious easily?</STYLE><PG>
+<STYLE ID="3">If that is so, everyone else is living normally, and the only one this anxious is me.</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> is the one I am being a tremendous nuisance to, right now.</STYLE><PG>
+"<STYLE ID="1">Natsumi</STYLE>, you don't have to worry about anything.
+{PAUSE ""}
+I'm here, so it's all right."
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="3"> said it gently and stroked my head.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">With fear, and gladness, and wretchedness, I nearly cried.</STYLE><PG>
+"Look, <STYLE ID="1">Natsumi</STYLE>... lie down for a bit."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Still cradling my head, she laid me down on the sofa.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">Natsumi</STYLE>, can I watch that DVD one more time?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Yeah, go ahead."</STYLE>
+{PAUSE ""}
+<BR>
+"Yes! It really is good however many times you watch it."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Haruka<STYLE ID="3"> promptly closed the internet and started up the DVD.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ah, if you get bored, you can just sleep a bit like that. You're tired, right?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Ah, I see... she said she wanted to watch the DVD again so that I could rest properly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That way, I would not have to feel bad about </STYLE>Haruka<STYLE ID="3"> looking out for me, or so she must have thought.</STYLE><PG>
+<STYLE ID="1">"Yeah... thanks..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I followed </STYLE>Haruka<STYLE ID="3">'s words and closed my eyes at once.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

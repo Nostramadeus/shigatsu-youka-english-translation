@@ -1,0 +1,830 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1201, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=20, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=30, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=7164, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=19, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=つ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=こうこつ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=ききょう, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=162, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=はる, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=と, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=こうかつ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=つばき, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゅっぽん, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=たけ, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=とうかん, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=うの, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=つな, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=いしずえ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=9230, target=)
+; Links:
+;    0: TWdLink(count=8626, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The remaining item to look into: the ecology of <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+But before that...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In front of me is Arata's scripture, 'The Teachings of Cerejeira,' brought up from the basement.
+{PAUSE ""}
+<BR>
+I haven't looked at it since I was a child, but even rereading the passages that come to mind, I can't make much sense of it.<PG>
+In short, it describes the disaster Ginosuke Niimura lived through in his mother country.
+{PAUSE ""}
+<BR>
+A trumpet sounds and the dead rise, cataclysms strike and people and the world come to an end―that sort of story.
+{PAUSE ""}
+<BR>
+Of course, it's a story from ancient times, so I can't imagine all of it has to do with the curse-killings.<PG>
+But these days, it seems, it has been observed many times around the world, under the name of the apocalyptic sound.
+{PAUSE ""}
+<BR>
+Yet for all that ringing, far from humanity being wiped out, there's no sign of the dead coming back to life.
+{PAUSE ""}
+<BR>
+And yet, the fact that <STYLE ID="2">Goto-chan</STYLE> brought up the apocalyptic sound anyway―
+{PAUSE ""}
+does it mean she has something in mind?<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Come to think of it, I still haven't read the translation from <STYLE ID="2">Goto-chan</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱切.gal" "NORMAL" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Anyway, I'd better check this as well.<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\醍醐の花見絵画.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">'The Fierce Sound and the Green-Eye Curse-Killing'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In Shiyo 340, a grand cherry-blossom viewing was held by </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3">, they say.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But the purpose of that cherry-blossom viewing was not merely to show off his power to the most exalted people in the land.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The reason one can say so is that </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3"> carried off several of the Arata settlement's cherry trees.</STYLE><PG>
+<STYLE ID="3">The late Westerner Ginosuke Niimura, to test the effect of Droga, had given about ten doses of Droga to a certain traveling samurai, it is said.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\太閤殿下.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">That traveling samurai was none other than </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">He</STYLE><STYLE ID="3"> used the power of Droga to rule this realm.</STYLE><PG>
+<STYLE ID="3">But he was not blessed with heirs, and the heir he was at last granted was still young.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As things stood, the heir would be dragged into a fight over the succession.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">So </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3"> tried to bestow Droga on his heir and make </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3">'s regime unshakable.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That cherry-blossom viewing was a pretext for carrying off the cherry trees here.</STYLE><PG>
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">But </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3">'s scheme, it seems, failed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">His Highness</STYLE><STYLE ID="3"> died a few months after the cherry-blossom viewing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The Arata cherry must be, after all, a variety that cannot grow anywhere but here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Otherwise, there is no explaining why Droga exists only here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Well, whatever became of </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3">'s scheme, it is of no concern to us, the people of Arata.</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "山火事.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Right around the time the cherry-blossom viewing was being held, many of the residents died in the Green-Eye Curse-Killing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It will take time once more to build back the prosperity of former days.</STYLE><PG>
+<STYLE ID="3">However, after the war with those Westerners and the Green-Eye Curse-Killing, something even more inexplicable happened.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That war and the Green-Eye Curse-Killing had brought the residents from 100 down to about 50, but―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">After that, several more vanished.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">They vanished because of 'the Fierce Sound.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">On hearing that sound, all of them looked as though </STYLE><STYLE ID="5" RUBY="つ">possessed</STYLE><STYLE ID="3">, their expressions </STYLE><STYLE ID="6" RUBY="こうこつ">rapt</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">One after another, they all said it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That they are happy to have become part of the Goddess.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That was all of the mail from <STYLE ID="2">Goto-chan</STYLE>.
+{PAUSE ""}
+<BR>
+It hardly touched on 'the Fierce Sound,' but <STYLE ID="2">Goto-chan</STYLE> must have drawn on every phenomenon she could imagine and offered the apocalyptic sound as an example.<PG>
+But this alone still isn't enough material.
+{PAUSE ""}
+<BR>
+I'll send the next part to <STYLE ID="2">Goto-chan</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "BGM" "3000" "PASS"}
+Oh?
+{PAUSE ""}
+<BR>
+There was a sheet of paper tucked between the pages.
+{PAUSE ""}
+<BR>
+It looked like an old note, but what could it be?<PG>
+<STYLE ID="3">'From this point on, important matters are written down. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I have translated it into today's words so that our descendants can read it a little more easily. Please, put it to use. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I do not have long now. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Grand Witch　</STYLE><STYLE ID="7" RUBY="ききょう">Kikyo</STYLE><STYLE ID="3"> Niimura'</STYLE><PG>
+Kikyo Niimura...?
+{PAUSE ""}
+<BR>
+I've heard of her―the Grand Witch two generations back, I think.
+{PAUSE ""}
+<BR>
+With this, I won't need to trouble <STYLE ID="2">Goto-chan</STYLE>.<PG>
+Then, Kikyo-san, with thanks, I will read what you wrote.<PG>
+This text seems to have been written in Shiyo 482.
+{PAUSE ""}
+<BR>
+In time, that's a full 140 years after the cherry-blossom viewing, the infighting and the mass disappearance just now.
+{PAUSE ""}
+<BR>
+A description from this era is new to me.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">After the Fierce Sound, </STYLE><STYLE ID="8">she</STYLE><STYLE ID="3"> appeared.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYMOVIE "111.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n1000\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\BGM_212.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\エデン\トミの母.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">That was the true Goddess.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9" RUBY="はる">Long</STYLE><STYLE ID="3"> ago a girl had died, and yet she had become a bewitching flower and come again into this world.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Those who were </STYLE><STYLE ID="10" RUBY="と">possessed</STYLE><STYLE ID="3"> vanished then and there and became cherry trees.</STYLE><PG>
+<STYLE ID="3">A little way from the settlement, several cherry trees had sprung up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But these were no ordinary cherry trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Those who had vanished had simply become cherry trees and sprung up anew where the cherry trees stood.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As proof, their clothes were wound around the roots of the cherry trees.</STYLE><PG>
+<STYLE ID="3">The bewitching flower that descends in the month of death―</STYLE>
+{PAUSE ""}
+<STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> is filled with rage.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Having lost </STYLE><STYLE ID="8">her</STYLE><STYLE ID="3"> offshoot to </STYLE><STYLE ID="4">His Highness</STYLE><STYLE ID="3">, who carried it off, she means to replace it by reincarnating us as new cherry trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">We know who will vanish and become cherry trees.</STYLE><PG>
+<STYLE ID="3">Those who have used Droga.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Anyone who has ever used Droga, or their children, will be enthralled by </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Those so enthralled turn into cherry trees and become a part of </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="3">That was not all.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\サクラ乱立\昔.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">The Goddess</STYLE><STYLE ID="3">―along with her, countless giant cherry trees sprang up, big enough to swallow the mountains.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The earth grew barren, the water dried up, and this land of Arata died.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What was more, the dead overran that land.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Those clad in white robes tried to carry off the living.</STYLE><PG>
+<STYLE ID="3">Yes, it is the same calamity our ancestor, Lord Ginosuke, spoke of.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The hideous Fierce Sound, the earthquakes, the giant cherry trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And the </STYLE><STYLE ID="11" RUBY="こうかつ">cunning</STYLE><STYLE ID="3"> dead, clad in white robes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Lord Ginosuke's teachings are no fairy tale. They are all true.</STYLE><PG>
+<STYLE ID="3">We racked our brains and succeeded in driving off </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">We sent the dead back to the underworld, destroyed the giant cherry trees, and brought the earth back to life.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In doing so, we offered up as a sacrifice the young Grand Witch who had become green-eyed, </STYLE><STYLE ID="12" RUBY="つばき">Tsubaki</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Thanks to her sacrifice, we were able to destroy </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="8">the Goddess</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="3">However, there is no certainty that </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> was truly destroyed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Wielders of a mysterious power of curses, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="8">the Goddess</STYLE><STYLE ID="3">―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">as long as Droga goes on existing, the next cherry trees may yet spring up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">, and </STYLE><STYLE ID="8">the Goddess</STYLE><STYLE ID="3"> who controls </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">―unless they are utterly destroyed, there will be no peace here in Arata.</STYLE><PG>
+<STYLE ID="3">People of Arata yet to come, our descendants.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Hand down faithfully to the generations after you what we now set forth.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And when </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">, </STYLE><STYLE ID="8">the Goddess</STYLE><STYLE ID="3">, appears, you must destroy it without fail.</STYLE><PG>
+<STYLE ID="3">'The dead come forth from the underworld, and uncanny bewitching flowers rise in rows. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Those who have become corpses also become bewitching flowers and come forth from the underworld. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Only the green-eyed prevail. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Those who have become green-eyed wither the bewitching flowers and return the dead to the underworld. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The descendants shall without fail don blood-red garb, and resist.'</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Kikyo-san's note ends here.
+{PAUSE ""}
+<BR>
+Checking the original, it seems to end here too.<PG>
+It connects after all.
+{PAUSE ""}
+<BR>
+Is <STYLE ID="1">Shigatsu Youka</STYLE>, then, the main body of the fungus disguised as a cherry tree?
+{PAUSE ""}
+<BR>
+If so, then this ecology, far too abnormal to be called a cherry, makes a certain amount of sense.<PG>
+Corpses walking around, a green-eyed sacrifice to defeat <STYLE ID="1">Shigatsu Youka</STYLE>...
+{PAUSE ""}
+<BR>
+I can't tell whether it's a metaphor, but it's all vague and doesn't sit right.
+{PAUSE ""}
+<BR>
+Well, for now, taking in the information comes before working it out.<PG>
+A fungus that disguises itself as the cherry and <STYLE ID="13" RUBY="つ">possesses</STYLE> people, known as <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+What seems to contain all of it is this last book―
+{PAUSE ""}
+'The Ecology of <STYLE ID="1">Shigatsu Youka</STYLE>'
+{PAUSE ""}
+<BR>
+All of it is written in Japanese close to the modern language.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Until now, we of the Holy Cerejeira Church have tried to work out scientifically how Droga, the Church's sacred implement, works.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">However, we judged it unsuitable for use on the human body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The reason, needless to say, is that its side effects are severe.</STYLE><PG>
+The Holy Cerejeira Church...?
+{PAUSE ""}
+<BR>
+I know the scripture called 'The Teachings of Cerejeira,' but this is the first I've heard the name of the Church.
+{PAUSE ""}
+<BR>
+From the way this is written, a church called the Holy Cerejeira Church was carrying out research on Droga.
+{PAUSE ""}
+<BR>
+I looked up the Holy Cerejeira Church on my phone.<PG>
+Let's see... 
+{PAUSE ""}
+A local religion once practiced in Megasawa City, Iizawa Prefecture.
+{PAUSE ""}
+<BR>
+Megasawa City prospered as a religious city, but lost its following rapidly in the Shiyo 730s.
+{PAUSE ""}
+<BR>
+Today only a handful of families of the faith remain.<PG>
+I see―so there was a faith like that somewhere unconnected to Arata.
+{PAUSE ""}
+<BR>
+Maybe someone who <STYLE ID="14" RUBY="しゅっぽん">ran away</STYLE> from Arata founded it long ago.
+{PAUSE ""}
+<BR>
+It calls Droga a sacred implement, and the name Cerejeira connects too.
+{PAUSE ""}
+<BR>
+For now, let me read on.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "豊岳桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">However, our continued research into Droga has raised the possibility that the Arata cherry itself, the raw material of Droga, is an entity that brings disaster upon human beings.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As the earlier research has also made clear, Droga extends its reach through infection by blood.</STYLE><PG>
+<STYLE ID="3">What had long been the problem was the life cycle of the Arata cherry―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">that is, how it grows and how it reproduces.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Since it has the property of using human beings as a medium, the possibility that it is a threat to humans from a biological standpoint cannot be ruled out. We have therefore continued our research into Droga and the Arata cherry.</STYLE><PG>
+<STYLE ID="3">However, the fruiting bodies brought from the Arata settlement had almost entirely perished, and we had only about 100 ampules of Droga, so planned experiments were necessary.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\サード\世代説明.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">What was needed first was confirmation of the fourth generation.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The existence of every generation up to the third had been confirmed, but the third generation almost all died in a frenzy or were caught up in killings among the test subjects.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">However, since a researcher who tried to stop the killing at the time was splashed with their blood and showed no change whatever, we concluded that no fourth generation arises by the same route of infection.</STYLE><PG>
+<STYLE ID="3">Yet in that case the reproduction of the Arata cherry would come to a halt, and so a hypothesis was formed that the fourth generation might arise by some other route.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That is, infection not by third-generation blood but by some other means.</STYLE><PG>
+<STYLE ID="3">What drew attention here was the presence of the spores found in the first and second generations.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Since Arata cherries as small as fine particles have germinated inside their bodies, the hypothesis was put forward that by some means these sprouts could be made into cherry trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If that hypothesis is correct, the infected other than the third generation become seedbeds for fruiting bodies, and extremely efficient reproduction of fruiting bodies becomes possible.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">We went to the Arata settlement, consulted the old documents, and formed a further hypothesis.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In the past, an incident called 'the Green-Eye Curse-Killing' occurred, and on two occasions residents vanished and ended as cherry trees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Might it not be, then, that the Green-Eye Curse-Killing acts as some kind of trigger?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In that case, what can be called the trigger from a scientific standpoint is 'the presence of the corpse of a third-generation person who died at the end of the urge to kill.'</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">In our research up to now, too, there were corpses of third-generation subjects seized by the urge to kill, but they were promptly cremated.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What, then, if the first and second generations had the opportunity to touch such a corpse for a long time?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At a certain point, the Church's upper ranks arranged personnel usable as third generation for the experiment.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Whether it is true is unknown, but there was talk of a plea bargain with a condemned prisoner.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\赤い細胞イメージ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Two other test subjects were also provided; one was given Droga, and the others were made to touch the blood in turn, becoming second and third generation.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">First Generation (I)</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Second Generation (II)</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Third Generation (III)</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">―so we name them.</STYLE><PG>
+<STYLE ID="3">When (II) and (III) were made to inhale cherry pollen, the familiar precognition appeared in (II), and (III) went mad.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Having confirmed that (III) was seized by the urge to kill (II), we had no choice but to shoot it dead.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Afterward, (I) and (II) were housed together with Corpse (III).</STYLE><PG>
+<STYLE ID="3">As a result, changes were observed in (I) and (II).</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">One week into cohabitation―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">Once the decay of (III) had advanced somewhat, (I) and (II) (hereafter 'the mutated') began to show </STYLE><STYLE ID="6" RUBY="こうこつ">rapt</STYLE><STYLE ID="3"> expressions and increasing delusional talk.</STYLE><PG>
+<STYLE ID="3">When we listened to the mutated, they said:</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">'Soon we return to the earth.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">'Corpse (III) is waiting.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">―so they declared.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Even with cherry pollen withheld, the symptoms did not change, and they progressed regardless of the season.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\解剖セット.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Meanwhile, when Corpse (III) was autopsied, extremely fine sprouts were confirmed to have formed on the skin.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">These, too, were extremely small, but there were spores at the tips of the sprouts.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">However, since the spores that formed on the corpse were sexual spores, they cannot germinate on their own.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That is, other spores that combine with the sexual spores formed on the corpse are required.</STYLE><PG>
+<STYLE ID="3">When the blood of the mutated was sampled, the 10-micron sprouts had grown to about 100 microns, and at their tips sexual spores different from those of Corpse (III) were confirmed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Most of those spores had already conjugated with the corpse's spores, and here, for the first time, we were able to confirm the existence of the fourth generation.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The fourth generation is the life form that results when the first and second generations undergo further mutation.</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜散る.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">A year later, the two mutants died in spring, and from the left chest a cherry tree about 3 meters tall emerged (there was a ceiling, so growth is thought to have stopped at 3 meters).</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It had already flowered, and outwardly it closely resembled the Somei-yoshino cherry.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That cherry used not soil but the two mutants as its seedbed, and a week later both trees had withered and died.</STYLE><PG>
+<STYLE ID="3">As with ordinary fungi, unless the mutants die on organic matter such as soil, the fruiting bodies presumably cannot grow stably.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The site had a concrete floor, so it is thought they could not take root.</STYLE><PG>
+<STYLE ID="3">When they were found, most of the corpses' muscle, skin and internal organs had dissolved, and a colorless, transparent mucus had spread across the floor.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As in the earlier research, this is thought to be the effect of the petal-shaped digestive vacuoles, which occurred in order to use the seedbed corpses as a source of nutrients.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The traits of the fourth generation are summarized as follows.</STYLE><PG>
+<STYLE ID="3">・It forms when the spores in the bodies of the first and second generation combine with the spores that form on a third-generation corpse</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">・The spores conjugate inside the bodies of the first and second generation (the first and second generation transition into the fourth generation)</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">・</STYLE><STYLE ID="6" RUBY="こうこつ">Rapt</STYLE><STYLE ID="3"> expressions and delusional talk are observed</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">・The symptoms progress gradually, with a tendency to dote on Corpse (III)</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">・A year after spore conjugation, a cherry tree grows from the first- or second-generation person, who dies</STYLE><PG>
+<STYLE ID="3">The Arata cherry stores in its roots spores that produce a body-strengthening component, has mammals ingest them, and germinates inside the mammal's body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">These lie hidden in the body until the grandchildren's generation, in which they make the hosts kill one another and release sexual spores.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The first and second generation who absorb them become fruiting bodies, and the range of reproduction spreads.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This is the life cycle of the Arata cherry.</STYLE><PG>
+<STYLE ID="3">As stated in the earlier research as well, the Arata cherry is a fungus, and a single organism.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The reason it parasitizes mammals in this way to multiply its fruiting bodies is thought to be that the hosts' mobility makes it easier to extend its range of growth.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And its mimicry of the cherry is presumably meant to be the first to draw insects in early spring, when there are still few flowers.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Where insects come, small animals come. Where small animals come, larger animals come too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In this way, a small food chain arises around the fruiting bodies.</STYLE><PG>
+<STYLE ID="3">In the past, this fungus seems to have been called </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And in the Arata settlement, a third-generation girl preserved as a mummy is said to lie sleeping.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Should this come to light, anyone who has ever used Droga would at once be enthralled by the mummy, and a year later would die as a cherry tree.</STYLE><PG>
+<STYLE ID="3">However, there is still something we do not understand.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It concerns 'the </STYLE><STYLE ID="15" RUBY="たけ">Fierce</STYLE><STYLE ID="3"> Sound.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It is possible that the pulsing of the giant body of </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> underground opens small, deep fissures in the earth, and that air passing through them sounds like a brass instrument.</STYLE><PG>
+<STYLE ID="3">Furthermore, though this is a conjecture of ours―</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> appears to have the ability to move corpses.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\Brutal.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\死体目.gal" "NORMAL" "#1" "C" "B" "0" "20" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">When the aforementioned mutants (fourth generation) were dissected, hyphae had already spread throughout the brain, and its function as a brain had ceased completely.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Nevertheless, until the day before the trees grew, they had continued to act like living human beings.</STYLE><PG>
+<STYLE ID="3">From the dissection, it is surmised that the brains were invaded by hyphae at least a month before death.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">For a month, they moved about while dead.</STYLE><PG>
+<STYLE ID="3">The old documents contain an account that those infected with Droga who heard 'the Fierce Sound' vanished and became cherry trees, but this is thought to be mistaken.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">For when we conducted the experiment to create the fourth generation, no such sound was needed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The reason for becoming fourth generation is the sexual union of the spores released from a third-generation corpse with the spores remaining in the bodies of the first and second generation.</STYLE><PG>
+<STYLE ID="3">At the time the old documents were written, people went missing just as 'the Fierce Sound' rang out, so the writers presumably linked the two without scientific grounds.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Still, it is unlikely, at the least, that corpses and 'the Fierce Sound' have nothing to do with each other.</STYLE><PG>
+<STYLE ID="3">The Shiyo 482 document, too, records that corpses overran the land and giant cherry trees grew.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The descriptions in this part are vague on many points and nothing definite can be said, but 'corpses overrunning the land' also ties in with the experimental results above.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As for the giant cherry trees, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">, with its extremely large mycelial mat, may well be able to grow fruiting bodies larger than usual.</STYLE><PG>
+<STYLE ID="3">Yes―everything up to this point is exactly as recorded in 'The Teachings of Cerejeira,' left by the saint who is the ancestor of us of the Holy Cerejeira Church, Lord Ginosuke Niimura.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That is no scripture.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It is scientific data, a record of observations in the field.</STYLE><PG>
+<STYLE ID="3">To return to the subject, the mechanism by which </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> controls corpses is unknown.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But why does </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> need such an ability?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That too is probably a question bound up with the life cycle of </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But for experiments in moving corpses, our knowledge, our facilities and the times themselves have not yet caught up.</STYLE><PG>
+<STYLE ID="3">This study ends here, but the whole of the ecology of </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> has not been revealed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Something important still remains.</STYLE><PG>
+<STYLE ID="3">Let us say beforehand that from here on, more conjecture is mixed in.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Yet because it is important, we ask that whoever has been granted the authority to see this understand that fully.</STYLE><PG>
+<STYLE ID="3">If 'the </STYLE><STYLE ID="15" RUBY="たけ">Fierce</STYLE><STYLE ID="3"> Sound' is in truth the movement of </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> underground, it must be making quite large motions, not merely extending hyphae.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Though it is a fungus, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> is able to move.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It is presumably a slow, limited movement, on the order of a carnivorous plant's, but why does it move?</STYLE><PG>
+<STYLE ID="3">If the third generation were to die out at the end of their killing one another, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> would lose its chance to grow.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">For a living thing, culling the infected is a contradiction.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What we focused on, given that contradiction and the 'movement,' is the Arata settlement's custom of burial in the earth.</STYLE><PG>
+<STYLE ID="3">The idea is this: if it can move corpses, might it not preserve them by some means?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It preserves the buried corpses of the Droga-infected until the proper time, and revives them when fruiting bodies are needed.</STYLE><PG>
+<STYLE ID="3">However, wild dogs and other animals with a keen nose may dig up even buried corpses and eat them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It is therefore necessary to move the corpses to a depth from which they cannot ordinarily be dug up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At such times, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> must make quite a large movement.</STYLE><PG>
+<STYLE ID="3">By methods such as chemical preservation or freezing, it is possible to keep a dead body artificially for a long time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Likewise, if </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> has an enzyme that can preserve corpses, then 800 years' worth of corpses lie sleeping intact beneath the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In this way, when fruiting bodies are needed, it uses the bodies of the Droga-infected to grow cherry trees.</STYLE><PG>
+<STYLE ID="3">However, this alone is thin grounds for the claim that </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> moves and preserves corpses.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">One more reason for this conjecture is that cherry trees grow evenly throughout the Arata district.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The Arata settlement has a graveyard clearing, and the dead are buried there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That being so, many cherry trees ought to grow in the graveyard clearing. Yet only short grass grows there, and not a single tree, let alone a cherry.</STYLE><PG>
+<STYLE ID="3">If cherry trees grew only in the graveyard clearing, the Arata cherry's range of reproduction would be severely limited.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Of course, it is quite possible that it uses mammals other than humans as seedbeds, but that would explain its growing evenly throughout the Arata district, not why no cherry trees grow in the graveyard clearing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That is, it is surmised that </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> moves the corpses buried in the graveyard clearing and replants them in places suited to extending its range of reproduction.</STYLE><PG>
+<STYLE ID="3">These are the grounds for 'the Fierce Sound' ringing out.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Underground, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> stirs, preserves corpses below the ground, and makes them seedbeds for cherry trees in suitable places.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Shifts in the ground therefore occur below, and fissures may open at the surface.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">'The Fierce Sound,' then, can be said to ring out when </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> displays some kind of activity.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When that happens, what we must be most wary of is the presence of 'intelligence.'</STYLE><PG>
+<STYLE ID="3">The second and third generations possess precognition.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Why does </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> bring about such a mutation in the infected?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That is, it does not grant precognition; it shows visions and voices that look like precognition.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Looked at the other way, that is something it cannot do unless </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">, for its part, grasps the situation of the infected.</STYLE><PG>
+<STYLE ID="3">What may be considered its most terrifying trait is the theft of the senses.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Since no apt phrase comes to hand, here we name it '</STYLE><STYLE ID="16" RUBY="とうかん">sense-theft</STYLE><STYLE ID="3">.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Sense-theft is </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> perceiving the sight and hearing of those who have precognition.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It is a rather far-fetched idea, but otherwise there is no explaining precognition.</STYLE><PG>
+<STYLE ID="3">Since precognition is limited to 'danger sense,' those around a precognitive will readily take what the precognitive says </STYLE><STYLE ID="17" RUBY="うの">at face value</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That way, to some degree, the society of living things can be manipulated as </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> wishes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But fungi have no brains to begin with, and cannot think or make judgments.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This is where, at last, the control of corpses </STYLE><STYLE ID="18" RUBY="つな">ties in</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="3">When someone recently dead is buried, the </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> in the earth extends hyphae into the body and preserves it whole.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Then, by planting spores or hyphae in the brain, a faithful servant is born.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">These commandeered bodies, we surmise, are what </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3">'s intelligence is </STYLE><STYLE ID="19" RUBY="いしずえ">founded</STYLE><STYLE ID="3"> on, and the large 'movement' is what is needed to hide the bodies.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In other words, by using the brains of the dead, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> gains the ability to think.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">These are no more than conjectures.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">No, we know that this is too great a stretch.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But when we try to make sense of its ecology, it inevitably comes out this way.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At present there is only one way to test whether this account of its ecology is correct.</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="3">Have someone who has gained precognition through Droga read this report.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And do so inside the Arata settlement, with their safety fully secured.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Most likely, </STYLE><STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> will sense-steal it and regard the reader as a danger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Shigatsu Youka</STYLE><STYLE ID="3"> has hidden its own existence until now, so this report should be a threat to it.</STYLE><PG>
+<STYLE ID="3">If you who are reading this have precognition.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If our surmise is correct, then after this,</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\アポカリプティック2.ogg" "SE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3"><TXSPS>'the Fierce Sound' will ring out, controlled corpses will appear, </STYLE>
+{PAUSE ""}
+<STYLE ID="3">and they will kill you―</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

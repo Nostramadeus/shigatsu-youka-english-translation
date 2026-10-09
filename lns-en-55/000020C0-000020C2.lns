@@ -1,0 +1,125 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=365, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=118, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=3, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=5, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=23, unk2=4294967295, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=4, unk2=5265653, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=609, target=)
+; Links:
+;    0: TWdLink(count=524, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"That's strange... I'm sure it was right here..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Sakura<STYLE ID="1">, the falsificaso's ready. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Eiichiro's</STYLE><STYLE ID="1"> thirteenth-year memorial service batch still had some left."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... Thank you for your trouble."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong?"</STYLE><PG>
+"It's strange. I can't find the <STYLE ID="3" RUBY="つぼ">pot</STYLE> and the tripod for heating the falsificaso."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Haha, is there anybody in this settlement odd enough to steal those?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Kotaro</STYLE>, it's no laughing matter. Without them we can't use the falsificaso at the funeral. 
+{PAUSE ""}
+<STYLE ID="4">Mifuyu-chan's</STYLE> first-anniversary memorial is tomorrow!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ah, right... Sorry, sorry."</STYLE><PG>
+<STYLE ID="5">"Hey! </STYLE><STYLE ID="6">Kotaro-kun</STYLE><STYLE ID="5">, you there!? I could use a man's help!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="7">Shirozaki-san's</STYLE><STYLE ID="1"> calling. I'll head over for a bit."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay, I'll keep looking from here."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Got it. Then I'll leave the rest to you."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"............"<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Surely not, but..."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下扉あく.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"The door's open...?
+{PAUSE ""}
+　This place has been off limits all this time..."<PG>
+"If someone's in here, I'll have to tell them to come out. 
+{PAUSE ""}
+What could be past this point...?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"The lamp's lit...!?
+{PAUSE ""}
+　The lamp oil is still fresh, too. Someone's been in here. 
+{PAUSE ""}
+Maybe the <STYLE ID="3" RUBY="つぼ">pot</STYLE> and the tripod are in here...?
+{PAUSE ""}
+　Hey, is someone there? This place is off limits."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\0空洞静止.lcm" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"What is this stone? Set down here where it doesn't belong..."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\1空洞動く1人.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{MESON "500"}
+"It's heavy, but I can move it. Maybe they're hidden behind it?
+{PAUSE ""}
+　Um... 
+{PAUSE ""}
+Yes, this nata should do."<PG>
+"Hup!"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\3動かす.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,92 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=475, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=5, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=7, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=545, target=)
+; Links:
+;    0: TWdLink(count=488, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"All right, good work. Lead the way."<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\ワゴン発見.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"So this is the stolen white minivan. 
+{PAUSE ""}
+Dumped right by the road like this, looks like nobody even tried to hide it. 
+{PAUSE ""}
+Who was the first to find it?"<PG>
+"I see, a resident nearby thought the car looked strange and asked us to come take a look. 
+{PAUSE ""}
+All right, I'm opening it."<PG>
+{STOPSND "SE" "3000" "PASS"}
+{MESOFF "500"}
+{PLAYSND "SE\車ドア開く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\se_horror2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\ワゴン発見赤.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "リファレンス専用\se_fuon2.ogg" "BGM" "REPEAT" "1000" "0"}
+"Ugh! What is this?! Looks awful, and the smell's just as awful... 
+{PAUSE ""}
+The weapon and the tools left as they were, and on top of that, even the <STYLE ID="1" RUBY="は">stripped</STYLE>-off skin left lying here... 
+{PAUSE ""}
+Hey, close this area off right away. 
+{PAUSE ""}
+Send some of the Central Park squad over here!"<PG>
+"Damn... this is awful. 
+{PAUSE ""}
+Going by the method and the date, we can probably take this as a continuation of the Megasawa City case. 
+{PAUSE ""}
+The crime scene is inside this minivan. 
+{PAUSE ""}
+But leaving this much evidence behind... 
+{PAUSE ""}
+if anything, that means we can't be optimistic."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "4000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+"Hello? Yeah, it's me. 
+{PAUSE ""}
+You said <STYLE ID="2">Akane Kogori-san</STYLE> is at the station? Put her through."<PG>
+"Hello, this is Motoki Police Station, Inspector Ise. 
+{PAUSE ""}
+Uh... this was all so sudden today. I can only imagine how you feel. 
+{PAUSE ""}
+Yes... yes... 
+{PAUSE ""}
+As for the remains... 
+{PAUSE ""}
+Ah, you've seen them. 
+{PAUSE ""}
+Actually, about that, it does appear to be connected to that Megasawa City case after all. 
+{PAUSE ""}
+If that's so, we believe there will be more victims, so..."<PG>
+{STOPSND "BGM" "0" "PASS"}
+"Do you have any idea where your daughter, <STYLE ID="3">Natsumi Kogori-san</STYLE>, might have gone?"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

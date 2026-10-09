@@ -1,0 +1,609 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2317, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=320, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1140, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=783, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぜいたく, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゃば, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=7, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つか, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちゅうぼう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5019, target=)
+; Links:
+;    0: TWdLink(count=4578, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\ムスカリの花.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\プリズン\五島マンション寝室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―<STYLE ID="1">Natsumi</STYLE> was asleep in the guest bed.
+{PAUSE ""}
+<BR>
+Did she not get much sleep last night?
+{PAUSE ""}
+<BR>
+Or was she worn out, after all, by this tense, unfamiliar life?
+{PAUSE ""}
+<BR>
+Better to rest while she can.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+When I came out of <STYLE ID="1">Natsumi's</STYLE> room, the air in the room was faintly more humid than before.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島考える32.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Sorry, instant curry is about all I could manage, but..."</STYLE>
+{PAUSE ""}
+<BR>
+In the middle of the table sat a pot brought to a boil on a portable gas stove, and the instant curry.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, this is plenty."</STYLE>
+{PAUSE ""}
+<BR>
+A hot meal in a disaster like this is a <STYLE ID="4" RUBY="ぜいたく">luxury</STYLE> I could never have hoped for.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\カレー.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Oh, this curry is good!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Is it? It's just instant curry I got on special for 68 yen..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You never get to eat instant food like this in prison. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So it all feels very new."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I see..."</STYLE><PG>
+Yes, until yesterday morning―
+{PAUSE ""}
+not that I'd finished my term―
+{PAUSE ""}
+I was serving a prison sentence with no end in sight.
+{PAUSE ""}
+<BR>
+And today, on the top floor of this luxury apartment building, it was instant curry on special: a lopsided meal that could never happen in prison.
+{PAUSE ""}
+<BR>
+This, too, is the charm of the <STYLE ID="5" RUBY="しゃば">outside world</STYLE>.<PG>
+<STYLE ID="3">"How should I wash the plates when we're done eating..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Throwing them out or wiping them is probably best. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The water comes from the storage tank on the roof, but I'd like to conserve it. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Even the supermarket's water is going to run out eventually."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'll go get paper plates and paper cups later, then."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+Using the toilet and bathing were both severely restricted.
+{PAUSE ""}
+<BR>
+Electricity and gas were one thing, but living without water was pretty hard.<PG>
+<STYLE ID="3">"Come to think of it, </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3">, at the start you talked as if '</STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> let everyone die,' didn't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　What did you mean by that?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I just think, if my research had moved faster, maybe I could have come up with countermeasures. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Even failing that, if I'd made my results public, I should have been able to get the residents evacuated in advance."</STYLE><PG>
+<STYLE ID="3">"You don't have to force yourself to feel responsible like that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Research is only worth anything if it's useful to humanity. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I may not look it, but I'm feeling a little down."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then at least we have to keep things from getting any worse."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">―how is she doing?"</STYLE><PG>
+<STYLE ID="3">"She's asleep. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">More than seeing that grotesque sight earlier, it seems she'd built up a lot of fatigue. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Goto-chan</STYLE><STYLE ID="3">, aren't you tired?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I've been holed up here since yesterday, so I'm fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I've been taking breaks whenever I liked."</STYLE><PG>
+And how am I holding up?
+{PAUSE ""}
+<BR>
+Even if I seem fine now, fatigue may be building up without my noticing.
+{PAUSE ""}
+<BR>
+I think I slept well last night, but whether I really got any rest is another matter.<PG>
+<STYLE ID="2">"When are you going to Arata?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I still haven't heard why you came here, but you didn't come to take shelter, did you?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2"> is trying to break </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> out of prison, I could sort of tell that much, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"We came here to make sure </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> was safe. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Also, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3"> thought you might have information on the Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">We mean to head to Arata as soon as we can."</STYLE><PG>
+<STYLE ID="2">"Hmm, but I think the next few days will be difficult.</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　The Self-Defense Forces and the media are probably out in force around the edge of the no-entry zone."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It would cause an uproar if they found us after we'd escaped from Motoki City."</STYLE><PG>
+<STYLE ID="2">"Why not wait and see a little longer?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　It might sound awful, but it wouldn't be strange for people to think </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> is dead, so there's no need to rush..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"True. Unless I turn myself in or something, I don't think they'll catch me..."</STYLE><PG>
+<STYLE ID="2">"Besides, getting this situation under control will take the two of you as well. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And I can't go outside..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"All right. For now, </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="3"> will have to wait until this disaster business is settled. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="3"> would feel bad leaving </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> behind, too."</STYLE><PG>
+<STYLE ID="2">"............</STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+The last thing to come out of <STYLE ID="2">Goto-chan's</STYLE> mouth was thanks.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto-chan</STYLE> must have felt helpless, too, all alone this whole time, and <STYLE ID="7" RUBY="おび">afraid</STYLE> of the toxic gas getting in.
+{PAUSE ""}
+<BR>
+If this building's storage batteries ran out, the ventilation system would go down too, and <STYLE ID="2">Goto-chan</STYLE> would die from the toxic gas.<PG>
+So there are two ways―
+{PAUSE ""}
+hold out until a rescue team comes, or clear away this toxic gas (the spores).
+{PAUSE ""}
+<BR>
+Either way, as long as I keep <STYLE ID="2">Goto-chan</STYLE> alive to the end, my objective is met.
+{PAUSE ""}
+<BR>
+Going to Arata can wait until after that.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Huh? Something smells good..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Good morning. </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="2">, would you like some curry too?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... yeah... is that okay?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="2">Goto's</STYLE><STYLE ID="1"> precious food, though..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島あいさつ32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">You two</STYLE><STYLE ID="2"> brought lots of supplies, so it's fine! Please don't hold back!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Goto-chan</STYLE> lit the portable gas stove again.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"How long was I asleep?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"About an hour?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"For how scared I was, I slept like a log..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You must have been tired."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE><PG>
+<STYLE ID="3">"Also, I've decided to put off going to Arata for now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What happened? </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="1">, you need to get out of here soon..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"First, we have to get </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> out of here. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">At worst, I just get caught, but it's not that simple for </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3">, is it?"</STYLE><PG>
+<STYLE ID="1">"Yeah... you're right, I think that's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Thank you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're probably more worried about </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, really, but you thought about </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I owe </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3"> more than I can repay, too."</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "真明徴編.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Cherry petals, falling without end.
+{PAUSE ""}
+<BR>
+It was weaker than yesterday, but there was still no sign of this storm of cherry petals letting up.
+{PAUSE ""}
+<BR>
+Motoki City, cut off from the world.
+{PAUSE ""}
+<BR>
+A world where only the mammals had died out.
+{PAUSE ""}
+<BR>
+As if it were rejecting the advance of civilization―<PG>
+<STYLE ID="2">"Sorry to keep you waiting, </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">! It's Goto's special curry!"</STYLE>
+{PAUSE ""}
+<BR>
+That said, it was instant, of course.
+{PAUSE ""}
+<BR>
+Even the rice had been warmed in a pot of hot water.
+{PAUSE ""}
+<BR>
+In this world that rejected the advance of civilization, a meal you could call the crystallization of civilization's conveniences shone all the brighter.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n1000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="2">"Now then, I'm going to shut myself in my room and look some things up. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If you need anything, call me anytime."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Then once I've eaten, I'll head out for the second round of supply gathering. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">With three of us living here, we'll probably need more supplies."</STYLE><PG>
+<STYLE ID="3">"Then </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">, you gather the supplies. I'll look around this area a bit more, then meet up with you, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">, and carry the load."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Look around?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"We're staying here until we've rescued </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="3">, so we'd better look into this area too, right?</STYLE>
+{PAUSE ""}
+　<STYLE ID="3">I've got nothing else to do anyway... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Goto-chan</STYLE><STYLE ID="3">, is there anything I should be careful about while I look?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島考える32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Let's see... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Then, only if it's possible, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">um, uh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto-chan</STYLE> faltered a little.
+{PAUSE ""}
+<BR>
+Was it a job she found hard to ask for?<PG>
+<STYLE ID="2">"Um... only if you can... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If you find a body, could you sprinkle some of the cherry petals piled up outside over it?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　And maybe film what happens with this... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I know it's an unpleasant job, but..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Goto-chan</STYLE> handed me an old phone.
+{PAUSE ""}
+<BR>
+It was the phone <STYLE ID="8">Ryoji-kun</STYLE> had gotten ready 15 years ago.
+{PAUSE ""}
+<BR>
+Naturally, it didn't seem to be used as a phone anymore, but it looked usable as a video camera.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"All right. I've gotten used to seeing bodies by now anyway..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"That's a big help. Then please make sure you can meet back here in the living room in an hour."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1">, it'd be bad to use the elevator much, wouldn't it?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　To save power..."</STYLE><PG>
+<STYLE ID="2">"The elevator seems to run on its own dedicated storage battery, so it's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Even if the battery runs out, it shouldn't get in the way of daily life. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">We'd have to walk up and down the stairs, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That'd be rough... I'd better save power after all."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\ホラー.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYMOVIE "桜山頂.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\プリズン\市街地災害後3.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"If you find a body, could you sprinkle some of the cherry petals piled up outside over it?"</STYLE>
+{PAUSE ""}
+<BR>
+If someone told you to go looking for corpses, you'd hardly think they meant it in their right mind.<PG>
+But right now, I have no such doubts.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto-chan</STYLE> can't go outside, so I am to be <STYLE ID="2">her</STYLE> hands and feet.<PG>
+The bodies were mostly lying indoors.
+{PAUSE ""}
+<BR>
+The toxic gas seemed to get in through even the smallest gap.
+{PAUSE ""}
+<BR>
+Unless a place was fully sealed like <STYLE ID="2">Goto-chan's</STYLE> building, people died in no time.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto-chan</STYLE> said that was because of a parasite.<PG>
+Hm? This place...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\ザッハ外観.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This took me back. It was Zahha.
+{PAUSE ""}
+<BR>
+It looked hardly any different from 15 years ago.
+{PAUSE ""}
+<BR>
+Which meant the apartment building I used to live in was near here, too.
+{PAUSE ""}
+<BR>
+For a moment I was caught up in that nostalgia, but the reality right in front of me smashed it to pieces.
+{PAUSE ""}
+<BR>
+There would be lots of people inside Zahha.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n1000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+I forced Zahha's automatic door open with my hands.
+{PAUSE ""}
+<BR>
+With the entrance secured, I scooped a <STYLE ID="9" RUBY="つか">handful</STYLE> of cherry petals into my hand.<PG>
+{MESOFF "500"}
+{CREATECG "000" "$000000" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\ザッハ中思い出.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "222" "$000000" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n222\r\n11\r\n220\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n222\r\n11\r\n220\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Inside, there was a strong smell of burning.
+{PAUSE ""}
+<BR>
+Had food been left cooking and simply burned?
+{PAUSE ""}
+<BR>
+If they'd been using propane gas, the fire should have kept going even after the utilities were cut.
+{PAUSE ""}
+<BR>
+But there was only the burnt smell; I felt no heat.<PG>
+<EVENT VALUE="MOTION\r\n789\r\n222\r\n11\r\n0\r\n10000\r\nNORMAL\r\nPASS">
+The smoke was driven outside, wave after wave, through the entrance I'd left open.
+{PAUSE ""}
+<BR>
+The scene inside began to come clear.
+{PAUSE ""}
+<BR>
+There were no tables laid out with food.
+{PAUSE ""}
+<BR>
+Most of the food and glasses seemed to have fallen to the floor in the quake.
+{PAUSE ""}
+<BR>
+Likewise, I could see several bodies among the food and glasses.<PG>
+There weren't as many bodies as I'd expected.
+{PAUSE ""}
+<BR>
+The quake had hit around 10, if I remembered right.
+{PAUSE ""}
+<BR>
+It wasn't mealtime, so there must have been few customers.<PG>
+Now, which body should I sprinkle the petals on?
+{PAUSE ""}
+<BR>
+I'd rather not touch the bodies much, so a body in clothes that show a lot of skin would be best.
+{PAUSE ""}
+<BR>
+I made a round of the restaurant, checking the bodies one by one for one suited to the experiment.
+{PAUSE ""}
+<BR>
+Of these...<PG>
+{MESOFF "500"}
+{CHANGECG "111" "グラフィック\背景\プリズン\死体1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "222" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Yes, this young woman should do.
+{PAUSE ""}
+<BR>
+What looked like her coat was hung on a nearby chair, and she herself wore a miniskirt and a sleeveless top.
+{PAUSE ""}
+<BR>
+If she went outside dressed like that now, she'd freeze.<PG>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+Perhaps because a full day had passed since her death, her face had a corpse's color.
+{PAUSE ""}
+<BR>
+Not white or blue, but greenish; she looked almost artificial.
+{PAUSE ""}
+<BR>
+Had the rigor mortis already passed, and the decay set in?<PG>
+<STYLE ID="3">"I'm sorry. Just for a little while, help us out."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "111" "グラフィック\背景\プリズン\死体1桜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I sprinkled the petals on her arm.
+{PAUSE ""}
+<BR>
+Then I filmed it with the phone <STYLE ID="2">Goto-chan</STYLE> had handed me.
+{PAUSE ""}
+<BR>
+Now, what will happen?<PG>
+{STOPSND "BGM" "5000" "PASS"}
+............
+{PAUSE ""}
+............
+{PAUSE ""}
+<BR>
+A minute passed, then 2, and just as it was about to reach 3―<PG>
+―!?
+{PLAYSND "最後の声・真呪殺\SE追加\ぷちぷち.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "10000" "PASS"}
+{PAUSE ""}
+<BR>
+From the body came a fizzing sound, like carbonation popping.
+{PAUSE ""}
+<BR>
+And a clear, slimy fluid began to rise on the surface of her arm.
+{PAUSE ""}
+<BR>
+As if the body were sweating, liquid slowly seeped out.<PG>
+{CHANGECG "000" "グラフィック\背景\プリズン\死体1溶けてる.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n10000\r\nNORMAL\r\nPASS">
+{PLAYSND "最後の声・真呪殺\警笛とざわめき_2.ogg" "BGM" "REPEAT" "1000" "0"}
+No, the liquid wasn't seeping out.
+{PAUSE ""}
+<BR>
+The body was melting.
+{PAUSE ""}
+<BR>
+The answer to what I'd wondered about yesterday was right in front of my eyes.
+{PAUSE ""}
+<BR>
+A body touched by cherry petals melts like this.<PG>
+When things beyond common sense are happening, it's only natural to think beyond common sense―
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto-chan</STYLE> has been proven splendidly right.
+{PAUSE ""}
+<BR>
+Yes, what's in front of my eyes is the truth.
+{PAUSE ""}
+<BR>
+Assumptions and common sense only get in the way of seeing the truth correctly.<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+―After about 10 minutes, bone was exposed on the arm, the skin stayed as it was where the petals hadn't touched, and the melting stopped.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ザッハ中思い出.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The clear slime that had melted out spread across the floor.
+{PAUSE ""}
+<BR>
+But for some reason, nothing happened when I touched these petals.
+{PAUSE ""}
+<BR>
+Is it because I'm a Droga carrier, after all?<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "NORMAL" "#1" "650" "C" "200" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+For now, I'd done what <STYLE ID="2">Goto-chan</STYLE> asked of me.
+{PAUSE ""}
+<BR>
+All that was left was to take whatever looked useful from Zahha's <STYLE ID="10" RUBY="ちゅうぼう">kitchen</STYLE> and meet up with <STYLE ID="1">Natsumi</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Thank you for helping us."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+I laid her coat over her half-decayed remains and put my hands together.
+{PAUSE ""}
+<BR>
+At least let her sleep in peace in the next world.<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

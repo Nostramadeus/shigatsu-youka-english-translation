@@ -1,0 +1,584 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1158, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2117, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=605, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=742, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=42, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そろ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=6, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はかり, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=も, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=12, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あお, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くもん, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=も, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5109, target=)
+; Links:
+;    0: TWdLink(count=4695, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<TXSPN>Bugged...!?
+{PAUSE ""}
+<BR>
+Does all that baffling stuff <STYLE ID="1">Goto</STYLE> did have something to do with the bugging...?
+{PAUSE ""}
+<BR>
+But I can't talk about this in front of <STYLE ID="2">Natsumi</STYLE>. I'll wait for a chance at Zahha to have her explain, then...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "800" "0"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "2000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Zahha was busy with groups that looked like high school students.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">! The drink bar's all yours!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Oh, okay. </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">... cola like always?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's all yours! Oh, but don't forget the ice and the straw! </STYLE>
+{PAUSE ""}
+　<STYLE ID="1">Actually, maybe hot coffee would be better?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Got it! </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, what about you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Um, I'll have..."</STYLE>
+{PAUSE ""}
+<BR>
+I glanced over at <STYLE ID="1">Goto</STYLE>.<PG>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> grinned back at me.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'll have the same as </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Okay! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Wait... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, don't you hate coffee?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh? Oh, uh, then―"</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">, they started carrying matcha lattes this month! The hot one is Goto's personal pick!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Th-then I'll have that!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Okaaay! Wait for me!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Natsumi</STYLE> left the table.
+{PAUSE ""}
+<BR>
+Getting something hot from the drink bar would take a little while.
+{PAUSE ""}
+<BR>
+Did that mean she'd explain in the meantime?<PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3">! Explain this!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"First, we keep this case from </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1"> until the very last moment. You understand why, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Natsumi's dad</STYLE> might be dead.
+{PAUSE ""}
+<BR>
+We should keep anything that would shock <STYLE ID="2">Natsumi</STYLE> away from her.<PG>
+<STYLE ID="1">"Listen. The culprit needs to keep track of what we're doing at all times. Otherwise, they can't kill within today―April 8. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So I paid attention to the things that </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">, who found the paper dolls, had on her. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The culprit probably assumes that </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1"> will stick together."</STYLE>
+{PAUSE ""}
+<BR>
+I see. So that's why she suspected a bug.<PG>
+<STYLE ID="3">"But how'd you know it was the phone?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">, our phones are a </STYLE><STYLE ID="5" RUBY="そろ">matching</STYLE><STYLE ID="1"> set, but do you know how much they weigh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh? How would I know something like that..."</STYLE><PG>
+<STYLE ID="1">"150 grams. Earlier, I took </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">'s jacket off her and slipped out her phone. Then I weighed all three phones on a </STYLE><STYLE ID="6" RUBY="はかり">scale</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The result: only </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">'s phone came to 160 grams, even though it's the same model and has no strap. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A full 10 grams heavier can't be a margin of error. That's how I knew a bug had been planted only in </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">'s phone."</STYLE><PG>
+<STYLE ID="3">"Why'd you zero in on the phone? There wasn't any suspicious gadget on it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, not just the phone. I paid attention to everything </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1"> had on her. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Earlier I got your clothes and shoes dirty, </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="1">. That was how I got you, </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="1">, to take off the things you had on."</STYLE><PG>
+<STYLE ID="3">"I see... but if you put in an app or something, you could listen in without a device, right? Why go to the trouble of a bug..."</STYLE><PG>
+<STYLE ID="1">"With something invisible like an app, it's true you can't find it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So first, I checked the possibility that a listening device had been planted. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">For better or worse, at that stage I found out something was inside, so I figured this had to be it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In a phone, a bug gets a constant supply of power, and it can send audio anywhere over the internet."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\春花かばう.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Even on a mountain, </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\人質カラー.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">even on a rooftop. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">My phone holds a charge for about 2 days, but what about yours, </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"2 days? Mine barely makes it through one... By the time I go to bed, my phone's always almost out of charge. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Does that mean the bug was eating up the power? </STYLE>
+{PAUSE ""}
+　<STYLE ID="3">Maybe there are security cameras planted in my place too?"</STYLE><PG>
+<STYLE ID="1">"No, that's not very likely. A camera can only watch inside the house. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Rather than secretly having you, </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="1">, carry a camera around, a bug is simpler. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If this is the work of the culprit behind the Megasawa City case, they must have prepared very carefully. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So the culprit must know full well which is more effective."</STYLE><PG>
+<STYLE ID="1">"Plus, with the GPS function, they can pin down exactly where </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1"> is. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There should be an app called 'Friend GPS' that came preinstalled. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">GPS and a bug. With this much </STYLE><STYLE ID="5" RUBY="そろ">in place</STYLE><STYLE ID="1">, it's plenty to judge </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">'s situation. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But if that's all the culprit has to go on, then by turning it against them, we could even lure them into a </STYLE><STYLE ID="7" RUBY="わな">trap</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In other words, letting go of </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">'s phone is the safest defense against the shinigami."</STYLE><PG>
+<STYLE ID="3">"Hey, wait... Even if the bug's built only into my phone, with GPS, wouldn't </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3">'s and </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">'s phones be in danger too? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　And if they're using some special GPS app..."</STYLE><PG>
+<STYLE ID="1">"That's not very likely either. Installing a bugging app is way easier than building in a bug. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The fact that they went to the trouble of modifying the hardware means they wanted to modify the phone without us finding out. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If there's a rogue app on it, a scanner app might find it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">With hardware, you can't tell unless you take it apart."</STYLE><PG>
+<STYLE ID="1">"Well, I don't know what the culprit made of the 10-gram difference, but people hardly ever put a phone on a </STYLE><STYLE ID="6" RUBY="はかり">scale</STYLE><STYLE ID="1">, and you can't tell 10 grams just by holding it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So the culprit would make full use of the functions that were already there. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The GPS was there to begin with, but a listening function wasn't, so that part alone needed modifying. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Just in case, I turned off the GPS on my phone and </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">'s earlier, so no need to worry."</STYLE><PG>
+<STYLE ID="1">"In the first place, since the bug is built into </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">'s phone </STYLE><STYLE ID="8" RUBY="・・・">only</STYLE><STYLE ID="1">, I think it's unlikely that my phone and </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">'s have been modified."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's getting kinda complicated and I'm losing track, but basically, it's fine to say there was a bug planted in my phone, right?"</STYLE><PG>
+<STYLE ID="1">"Yes, that's plenty."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then who planted it, and when? I carry my phone around with me all the time..."</STYLE><PG>
+{STOPSND "BGM" "1000" "PASS"}
+<STYLE ID="1">"There's someone, isn't there... Just one person, close to us. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The three of us were given our phones as presents by </STYLE><STYLE ID="4">Kogori-senpai's father</STYLE><STYLE ID="1">, as a </STYLE><STYLE ID="5" RUBY="そろ">matching</STYLE><STYLE ID="1"> set, weren't we?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">　</STYLE><STYLE ID="4">Kogori-senpai's father</STYLE><STYLE ID="1"> is an engineer at a company that makes cell phones. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Which means it's safe to assume he has the knowledge and skill to put a bug in a phone."</STYLE><PG>
+In other words, <STYLE ID="4">Natsumi's dad</STYLE> planted a bug before he gave them to us?<PG>
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3">... isn't that a pretty big leap? Sure, </STYLE><STYLE ID="4">Natsumi's dad</STYLE><STYLE ID="3"> could probably do it. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But that's..."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">'s coming back."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Sorry for the wait! Hot drinks really do take a while."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+Steaming cups were set down in front of us.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"There sure are a lot of high schoolers here today. Can't be helped, with school closed... That case... I really hate it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE>'s spirits were low. I wanted to bring up something as cheerful as I could.<PG>
+<STYLE ID="3">"H-hey, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">, how's second year going?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? No, nothing much... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So far there's only been the opening ceremony and the entrance ceremony, so it hasn't really sunk in yet..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"W-well, yeah, I guess not... Um..."</STYLE><PG>
+<STYLE ID="2">"Haah... Actually, I was a little scared going to the convenience store alone earlier."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then why..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Because you wanted to talk with </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, just the two of you, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE><PG>
+I'm so bad at coming up with things to talk about.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> was staring at <STYLE ID="2">Natsumi</STYLE>'s face.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Hup!"</STYLE>
+{PLAYSND "SE\みょいん.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\みょいん.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島貼り付き.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+Suddenly, <STYLE ID="1">Goto</STYLE> grabbed a handful of my chest.
+{PAUSE ""}
+<BR>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Oho..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\みょいん.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Wh-wh-wh-what...!!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Ahn... </STYLE>
+{PAUSE ""}
+{PLAYSND "SE\みょいん.ogg" "VOICE2" "NORMAL" "1000" "0"}
+<STYLE ID="3">Hey... no, stop...!</STYLE>
+{PAUSE ""}
+{PLAYSND "SE\みょいん.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">　</STYLE><STYLE ID="9" RUBY="も">Don't squeeze</STYLE><STYLE ID="3"> them...!</STYLE>
+{PLAYSND "SE\みょいん.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<STYLE ID="3">　Nooo...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">... you've got quite something there. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">This is way beyond what I pictured... can't even fit them in my hand."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+I reflexively shook off <STYLE ID="1">Goto</STYLE>'s squeezing hands.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"What're you doing all of a sudden!? You </STYLE><STYLE ID="1">groping old perv</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ehh. After you changed, </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="1">, you were dressed kinda light, so I got curious how much was there. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Never knew you were this voluuuminous. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But your bra's obviously the wrong size, so you really oughta get measured properly. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It's crammed tight up top and baggy at the band."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> grinned.<PG>
+<STYLE ID="3">"E-e-e-e-even so, who just </STYLE><STYLE ID="9" RUBY="も">gropes</STYLE><STYLE ID="3"> somebody out of nowhere!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島貼り付き.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Naaah. It's not like they'll get any smaller."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> held her palms toward me, wriggling her fingers.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+And now she started staring hard at <STYLE ID="2">Natsumi</STYLE>.<PG>
+<STYLE ID="2">"Huh? What?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE>'s gaze was clearly aimed at <STYLE ID="2">Natsumi</STYLE>'s chest.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">probably just like she looks, doesn't even need a bra for support..."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="10">"Excuse me!?"</STYLE><PG>
+Uh-oh...! <STYLE ID="2">Natsumi</STYLE>'s eyes had gone sharp...!<PG>
+{MESOFF "500"}
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ腰に手バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"What's that all of a sudden!? For your information, I'm pretty slim!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE> put her hands on her hips and puffed out her chest.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Oh-ho? Then tell me your weight and measurements, and your cup size too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> grinned slyly at <STYLE ID="2">Natsumi</STYLE>, <STYLE ID="11" RUBY="あお">goading</STYLE> her.<PG>
+<STYLE ID="2">"A-are you an idiot!? I've never properly measured any of that!</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+　<STYLE ID="1">Goto</STYLE><STYLE ID="2">, what about you!? Some nerve, coming from a shorty with a little kid's body!"</STYLE>
+{PAUSE ""}
+<BR>
+Never thought I'd hear insults like that from <STYLE ID="2">Natsumi</STYLE>. She'd really lost her temper.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Oh my? Want to touch and find out? I bet you'll regret it, </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ腰に手バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Then let's do this! We order Russian-roulette takoyaki, and whoever gets a hit posts on the school message board </STYLE> [TN: takoyaki: fried batter balls with octopus inside] 
+{PAUSE ""}
+<STYLE ID="2">their measurements, </STYLE>
+{PAUSE ""}
+<STYLE ID="2">cup size, </STYLE>
+{PAUSE ""}
+<STYLE ID="2">and weight!"</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "57" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE>, <STYLE ID="2">you</STYLE>'re an idiot.
+{PAUSE ""}
+<BR>
+Or rather, was <STYLE ID="2">she</STYLE> always this much of a gambler?<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Wha...!?"</STYLE>
+{PAUSE ""}
+<BR>
+Even <STYLE ID="1">Goto</STYLE> seemed to lose her nerve at that.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Heh... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Heh-heh... Very well!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE>, <STYLE ID="1">you</STYLE>'re an idiot too.
+{PAUSE ""}
+<BR>
+Without missing a beat, <STYLE ID="2">Natsumi</STYLE> pressed the call button.
+{PAUSE ""}
+<BR>
+Besides, this was no time to be doing this kind of thing...!<PG>
+I whispered to <STYLE ID="1">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3">! We can't afford to be messing around...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Either way, we can't talk while </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">'s here, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　So we set off all kinds of events and wait for a chance! This is all part of the plan too!"</STYLE>
+{PAUSE ""}
+<BR>
+Even so, she didn't have to set off such a pointlessly spectacular event...!<PG>
+"Thank you for waiting. Would you like to add to your order?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Excuse me!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Russian-roulette takoyaki, 12 pieces, </STYLE>
+{PAUSE ""}
+<STYLE ID="2">with </STYLE><STYLE ID="10">two</STYLE><STYLE ID="2"> hits, please!"</STYLE>
+{PAUSE ""}
+<BR>
+Two? At this rate, both <STYLE ID="1">Goto</STYLE> and <STYLE ID="2">Natsumi</STYLE> could get hit, but...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Ho ho ho... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="1">, </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">... are you quite prepared?"</STYLE>
+{PAUSE ""}
+<BR>
+What?
+{PAUSE ""}
+　WHAT!?
+{PAUSE ""}
+<BR>
+Why my name too!?
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Of course, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">! Got it? Both of you!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　We stick to the promise, strictly, </STYLE>
+{PAUSE ""}
+<STYLE ID="10">strictly</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hold on a sec! I've got nothing to do with this...!"</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\呪いイメージ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESON "500"}
+Their pitch-black glares pierced me.
+{PAUSE ""}
+<BR>
+These two are definitely scarier than the shinigami.<PG>
+{PLAYSND "Attack.ogg" "BGM" "REPEAT" "1000" "0"}
+I clutched my head and hurled the full extent of my <STYLE ID="12" RUBY="くもん">anguish</STYLE> at my own heart.
+{PAUSE ""}
+<BR>
+Damn, how did it come to this...!
+{PAUSE ""}
+<BR>
+On top of having <STYLE ID="1">Goto</STYLE> <STYLE ID="13" RUBY="も">grope</STYLE> my chest and humiliate me, I was being forced into Russian-roulette takoyaki even though I can't handle spicy food.
+{PAUSE ""}
+<BR>
+And on top of that, if I lost, I'd be broadcasting my figure to the entire student body...!<PG>
+To begin with, I hadn't expected <STYLE ID="1">Goto</STYLE> to go this far just to get a chance to talk things over.<PG>
+This is the worst... Right now...!
+{PAUSE ""}
+<BR>
+Right now, I feel like I'd be forgiven for cursing these two!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The two of them had their eyes closed and were muttering something.
+{PAUSE ""}
+<BR>
+I strained my ears toward <STYLE ID="1">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島横顔.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"12 takoyaki, two hits. So the probability that at least someone gets a hit in the first round is 5 out of 11... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A hit at just under 1 in 2, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She</STYLE> was calculating probabilities in her head...!
+{PAUSE ""}
+<BR>
+And <STYLE ID="2">Natsumi</STYLE>...<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ横顔逆.gal" "NORMAL" "#1" "L" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Paramen Abiran Eriklan... Garaf Itoa Gidoax..."</STYLE>
+{PAUSE ""}
+<BR>
+What kind of spell is that!? Are you trying to summon a demon of fury or something!?
+{PAUSE ""}
+<BR>
+Seriously, what is with this table!
+{PAUSE ""}
+<BR>
+Everyone around us was chatting happily, but I was the only one clutching my head, and this was the only table where people were calculating probabilities and chanting spells!
+{PAUSE ""}
+<BR>
+Normally, nobody chants spells at a family restaurant!<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島横顔.gal" "WAIT" "#1" "R" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+No, calm down...! It isn't decided yet that I'll lose.
+{PAUSE ""}
+<BR>
+I couldn't care less about these two's measurements. As long as my dignity is protected, that's all that matters!
+{PAUSE ""}
+<BR>
+<BR>
+The survivors will be... 
+{PAUSE ""}
+just one!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

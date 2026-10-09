@@ -1,0 +1,247 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1040, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=104, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=72, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しけ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=42, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=8, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1458, target=)
+; Links:
+;    0: TWdLink(count=1276, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\パフェ.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\パフェ全体.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<TXSPN>"Thank you for waiting. The spring strawberry parfait."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> had a gigantic parfait set down right in front of her.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ohoo! Here it is, here it is! I feel a bit bad about this, </STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="1">!"</STYLE>
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> changed her expression in an instant and was admiring the parfait happily.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Huh? Ah, no, no... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">have as much as you like."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> started with the cookie on the very top.
+{PAUSE ""}
+<BR>
+Being able to switch her behavior in an instant, whatever the mood in the room: that is the amazing thing about <STYLE ID="1">Goto</STYLE>.<PG>
+{PLAYSND "環境音\ポリポリ食べる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+<STYLE ID="1">"Mmm! So crunchy, so crisp! The cookie on top of a parfait really does have to be eaten before it goes </STYLE><STYLE ID="3" RUBY="しけ">soggy</STYLE><STYLE ID="1">, I must say!"</STYLE>
+{PAUSE ""}
+<BR>
+With a sidelong glance at the two of us, frozen at hearing about a flayed body, <STYLE ID="1">Goto</STYLE> drove her long thin spoon all the way down to the bottom of the parfait.<PG>
+<STYLE ID="2">"H-haha... I'm glad you're pleased..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "人物1,000,人物2" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+But my head was occupied by something else.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\立ち絵\人物\赤人.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A bright red corpse, dying under a cherry tree.
+{PAUSE ""}
+<BR>
+That's exactly the dream I had just now...!
+{PAUSE ""}
+<BR>
+Could it be that that dream and this incident are connected somehow―
+{PAUSE ""}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "800" "0"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Senpai</STYLE><STYLE ID="1">, are you all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> took a bright red strawberry and
+{PLAYSND "SE\ガブリ.ogg" "VOICE" "NORMAL" "1000" "0"}
+ bit into it with a chomp.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE>'s mouth let out a thin trickle of red strawberry juice.<PG>
+<STYLE ID="4">"Sorry, just going to the restroom..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2">, are you all right? Shall I come with you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, I'm doing well today."</STYLE>
+{PAUSE ""}
+<BR>
+As I stood up, I forced a smile at her.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "6" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ファミレストイレ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I went into the restroom and let out a long breath.
+{PAUSE ""}
+<BR>
+A bright red corpse, and still conscious even so...<PG>
+<STYLE ID="1">Goto</STYLE> has an innocent, cheerful face, and a very good head on her.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> is a lump of curiosity and drive, but twice as considerate and kind as anyone.
+{PAUSE ""}
+<BR>
+And me...<PG>
+I probably have no outward individuality at all, apart from hating cherry trees.
+{PAUSE ""}
+<BR>
+My grades middle of the middle, my sports lower of the middle.
+{PAUSE ""}
+<BR>
+But, I do have one strange trait.<PG>
+{MESOFF "500"}
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\夢.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It is intuition.
+{PAUSE ""}
+<BR>
+I am abnormally strong in intuition.
+{PAUSE ""}
+<BR>
+To put it more concretely, my sensing of danger is good to an uncanny degree.
+{PAUSE ""}
+<BR>
+Enough, by now, to be called precognition.
+{PAUSE ""}
+<BR>
+Many times before now I have sensed some danger and escaped harm.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "650" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\草むら.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+For instance, last spring.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> was about to step into the long grass, and I stopped her.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\マムシ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+If <STYLE ID="2">Haruka</STYLE> had taken one more step then, she would have trodden on the pit viper that was there and been bitten.
+{PAUSE ""}
+<BR>
+There were others: <STYLE ID="5">Mom</STYLE>'s traffic accident, and <STYLE ID="6">Dad</STYLE>'s train accident away on a business trip.
+{PAUSE ""}
+<BR>
+There were several for myself as well.<PG>
+If you call it coincidence then coincidence settles it, and to call it a trait of mine is an exaggeration.
+{PAUSE ""}
+<BR>
+But, <STYLE ID="6">Dad</STYLE> and <STYLE ID="5">Mom</STYLE>, <STYLE ID="2">Haruka</STYLE> and <STYLE ID="1">Goto</STYLE> all know the power of my intuition.
+{PAUSE ""}
+<BR>
+So they take my warnings at face value.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夢桜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And one more strange thing: this intuition works only at this time of year, while the cherries are in bloom.
+{PAUSE ""}
+<BR>
+Only, the cherries being in bloom does not mean I can always sense danger.
+{PAUSE ""}
+<BR>
+There are times when I can sense it and cases when I cannot.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\夢の目.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And then that dream just now.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE>'s reasoning seemed to have something to do with it, somehow...
+{PAUSE ""}
+<BR>
+I tried to remember more of that dream.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夢桜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\赤人.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A bright red person was lying there, asking me for help.
+{PAUSE ""}
+<BR>
+And then a rain of blood began to fall from the cherry tree, and my ankle was seized.
+{PAUSE ""}
+<BR>
+At the end that person shouted at me, and the dream ended.<PG>
+............
+{PAUSE ""}
+<BR>
+No, that's wrong. I am misunderstanding something.
+{PAUSE ""}
+<BR>
+Something is not meshing properly.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\ファミレストイレ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Whew..."</STYLE>
+{PAUSE ""}
+<BR>
+I took one more big, deep breath.
+{PAUSE ""}
+<BR>
+I'll ask <STYLE ID="1">Goto</STYLE> about the dream.
+{PAUSE ""}
+<BR>
+She might be able to analyze it well.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

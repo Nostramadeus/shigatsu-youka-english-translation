@@ -1,0 +1,194 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=632, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さわけん, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もときちょう, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=482, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=8, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しよう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=9, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めがさわ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=し, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=6, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もときちょう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1284, target=)
+; Links:
+;    0: TWdLink(count=1149, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\pc_keyboard.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島パソコン.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\五島パソコン見る横.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\イラスト\呪殺編\始動\始動大.lcm" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "$210200" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "人物2" "CLICK"}
+{CHANGECG "人物2" "グラフィック\イラスト\呪殺編\始動\始動舌.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "人物2" "CLICK"}
+{CREATECG "人物1" "グラフィック\イラスト\呪殺編\始動\始動普通.lcm" "REPEAT" "#1" "R" "300" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n-100\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n-100\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The sensation of the adrenaline level rising.
+{PAUSE ""}
+<BR>
+The sensation of being filled with noradrenaline.
+{PAUSE ""}
+<BR>
+Abnormal brain waves. A rising heart rate. Curiosity that can't be held down.<PG>
+Incident, incident, incident, incident, incident, incident, incident, incident, incident, incident!
+{PAUSE ""}
+<BR>
+This is a huge incident, the kind that comes once in a lifetime, if that!
+{PAUSE ""}
+<BR>
+On a global scale, it probably isn't all that rare.
+{PAUSE ""}
+<BR>
+But, that happened right here in <STYLE ID="1" RUBY="さわけん">Sawa Prefecture</STYLE>, in <STYLE ID="2" RUBY="もときちょう">Motoki-cho</STYLE>!<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\呪殺編\始動\始動にか.lcm" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+The patrol cars this morning had me thinking, maybe...? But this went beyond what I expected!
+{PAUSE ""}
+<BR>
+A murder in this <STYLE ID="2" RUBY="もときちょう">Motoki-cho</STYLE>!
+{PAUSE ""}
+<BR>
+And what's more, it happened on this April 8!
+{PAUSE ""}
+<BR>
+There's no way I can keep quiet about this!
+{PAUSE ""}
+<BR>
+For me, greedy for new things, for worlds not yet seen, there is only one way to calm down!
+{PAUSE ""}
+<BR>
+Unravel the mystery!<PG>
+The method is simple.
+{PAUSE ""}
+<BR>
+Search every last bit of information that's up on the net right now!
+{PAUSE ""}
+<BR>
+The source can be anywhere! It can be anything!
+{PAUSE ""}
+<BR>
+Whether information is a lie or not, that much I can see through myself!<PG>
+There are people who say relying on the net is laziness, that it's unproductive, and so on.
+{PAUSE ""}
+<BR>
+Those people just don't know how to get useful information from the net.
+{PAUSE ""}
+<BR>
+Otherwise, there's no way the net would have spread through this world as far as it has.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島タイピング.gal" "NORMAL" "#1" "C" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "200" "PASS"}
+{WAIT "200" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\五島マウス.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\duble_clicks.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHANGECG "000" "グラフィック\背景\五島パソコン.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"April 8, just as I thought...!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Hmmm... I see, I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="4" RUBY="しよう">Shiyo</STYLE><STYLE ID="3"> 790... </STYLE>
+{PAUSE ""}
+<STYLE ID="4" RUBY="しよう">Shiyo</STYLE><STYLE ID="3"> 794... </STYLE>
+{PAUSE ""}
+<STYLE ID="4" RUBY="しよう">Shiyo</STYLE><STYLE ID="3"> 797... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And this year, </STYLE><STYLE ID="4" RUBY="しよう">Shiyo</STYLE><STYLE ID="3"> 800... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Three times in the past, similar incidents happened on April 8 as well! Could there be some kind of rule to it...?"</STYLE>
+{PAUSE ""}
+<BR>
+Not for anyone to hear, the talk to myself spills naturally from my mouth.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\writing_in_a_pen.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\五島メモ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "5000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "200" "PASS"}
+{MESON "500"}
+<STYLE ID="3">"Hmmmn... Information from the net has its limits... I guess I have to do door-to-door questioning after all... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Before the questioning, shall I check the school message board?"</STYLE>
+{PAUSE ""}
+<BR>
+High schoolers' information is fast.
+{PAUSE ""}
+<BR>
+But, for all that speed, there are lots of false rumors too.<PG>
+But, where there's no fire, there's no you-know-what.
+{PAUSE ""}
+<BR>
+Smoke out the truth mixed in among the lies.
+{PAUSE ""}
+<BR>
+For me, that sort of thing is easy.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島マウス.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\duble_clicks.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "NORMAL" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"The quick ones have already gotten hold of all kinds of information. In Central Park, a brutalized body too horrible to look at. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Dumped in the early morning... one victim, it says... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">One victim, that's quite different from the </STYLE><STYLE ID="5" RUBY="めがさわ">Megasawa</STYLE><STYLE ID="6" RUBY="し"> City</STYLE><STYLE ID="3"> murders. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Maybe the other one just hasn't been found yet..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\始動\始動2.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Even so, a murder here in </STYLE><STYLE ID="7" RUBY="もときちょう">Motoki-cho</STYLE><STYLE ID="3">, rare things do happen. The sky falling in would be far more realistic. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">This time, not the </STYLE><STYLE ID="5" RUBY="めがさわ">Megasawa</STYLE><STYLE ID="6" RUBY="し"> City</STYLE><STYLE ID="3"> murders, but the </STYLE><STYLE ID="7" RUBY="もときちょう">Motoki-cho</STYLE><STYLE ID="3"> murders, is that what we'd call it?"</STYLE><PG>
+<STYLE ID="3">"The </STYLE><STYLE ID="5" RUBY="めがさわ">Megasawa</STYLE><STYLE ID="6" RUBY="し"> City</STYLE><STYLE ID="3"> murders... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Every time one happens, all of Japan is in an uproar, after all. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And now this time, it happens in Motoki-cho... Did the killer move over here or something?"</STYLE><PG>
+<STYLE ID="3">"Hmm, now that my prep on the net is done, I suppose it's finally time to go do door-to-door questioning."</STYLE>
+{PAUSE ""}
+<BR>
+Oh, since I'm going anyway, maybe I should invite those two as well...
+{PAUSE ""}
+<BR>
+But, they're worn down at this time of year, and on top of that, they're bad with unsettling talk like this.
+{PAUSE ""}
+<BR>
+Probably, the two of them are together today.<PG>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\イラスト\呪殺編\始動\始動普通.lcm" "REPEAT" "#1" "R" "-100" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2,人物1,000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+This time, this genius girl, <STYLE ID="3">Erina Goto</STYLE>, shall charge into the scene alone!
+{PAUSE ""}
+<BR>
+{CHANGECG "人物3" "グラフィック\イラスト\呪殺編\始動\始動にか.lcm" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+Carrying out the Operation!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

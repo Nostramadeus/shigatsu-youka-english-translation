@@ -1,0 +1,1005 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4971, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=960, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=21, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=14, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しん, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=15, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=10, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=47, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=したた, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たんび, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほうじゅん, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=むし, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=461, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ししょうかぶ, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=へんとうたい, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7254, target=)
+; Links:
+;    0: TWdLink(count=6524, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田山道夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The lightning is all I have to go on.
+{PAUSE ""}
+<BR>
+The sun is long gone, and the storm clouds make the night even darker than usual.
+{PAUSE ""}
+<BR>
+The lightning that now and then rips through the air is the only light showing me the way.
+{PAUSE ""}
+<BR>
+By the time I reached the entrance to the Arata settlement, it was already around 8 or 9 p.m.<PG>
+I can't tell the exact time, but thanks to the mountain seclusion, my body clock should be pretty accurate.
+{PAUSE ""}
+<BR>
+If I allow for a range of 8 to 9 p.m., I can hardly be wrong.<PG>
+I tried to act as calmly as I could.
+{PAUSE ""}
+<BR>
+When I was about to act on my anger, the last of my self-control held me back.
+{PAUSE ""}
+<BR>
+The true face of that self-control―
+{PAUSE ""}
+was fear.<PG>
+If I let my anger drive me to rescue <STYLE ID="1">Natsumi</STYLE> and Goto, I'd only end up cut down by <STYLE ID="2">Chiga-nee</STYLE> or <STYLE ID="3">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+So that wouldn't happen, I made fear my ally.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\荒田駅外ノーマル.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Back then, the first thing I did was check every inch around Arata Station before it got dark.
+{PAUSE ""}
+<BR>
+Maybe <STYLE ID="1">Natsumi</STYLE> and Goto were somewhere near the station―
+{PAUSE ""}
+so I checked that possibility first: the station platform―
+{PAUSE ""}
+the roof of the train―
+{PAUSE ""}
+the storage shed―
+{PAUSE ""}
+the tops of the nearby trees―
+{PAUSE ""}
+I searched them all.
+{PAUSE ""}
+<BR>
+I searched until sunset, and concluded that <STYLE ID="1">Natsumi</STYLE> and Goto had been taken to the Arata settlement.
+{PAUSE ""}
+<BR>
+Even while walking the mountain path, I spared no effort feeling out the presences around me.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\dark_attack.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="STOPMOVIE">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱ナイフ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜ナイフ1.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "$0000FF" "NORMAL" "#1" "C" "B" "0" "33" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+I can never again let <STYLE ID="2">Chiga-nee</STYLE> or <STYLE ID="3">Kana</STYLE> get around behind me.
+{PAUSE ""}
+<BR>
+If they get behind me next time, there's no guarantee I'll live.
+{PAUSE ""}
+<BR>
+Those two will pick up my blatant bloodlust.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物2,人物1" "33" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Whenever I lost the path in the dark, I waited for the next flash of lightning and hurried on, scanning as far ahead as I could.
+{PAUSE ""}
+<BR>
+If not for the lightning, I'd never have made it to the settlement.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n150\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n150\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I hide behind a tree and keep a careful watch on the settlement.
+{PAUSE ""}
+<BR>
+Still no sign of anyone.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n10000\r\nNORMAL\r\nPASS">
+{STOPSND "SE" "10000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+At last the rain is letting up.
+{PAUSE ""}
+<BR>
+It's been coming down nonstop since morning, and my ears have gotten completely used to the sound of the rain.
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\z50逆.ogg" "BGM" "REPEAT" "1000" "0"}
+With the sound of the rain gone, now the 'sound of silence' starts to fill my ears.
+{PAUSE ""}
+<BR>
+The sound of a silence that the sound-word "<STYLE ID="4" RUBY="しん">forest</STYLE>" fits perfectly.<PG>
+As the sound of the rain fades, my five senses grow sharper too.
+{PAUSE ""}
+<BR>
+Little by little, I can sense the human presences the rain had been blocking out.
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+There's someone.
+{PAUSE ""}
+<BR>
+Right now, there are people in this settlement.
+{PAUSE ""}
+<BR>
+Lots of them.<PG>
+Hm? That's―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n798\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Kotaro-san</STYLE> and <STYLE ID="2">Chiga-nee</STYLE> have come out of the Niimura house.
+{PAUSE ""}
+<BR>
+And,
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "$0000FF" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ能面.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+between the two of them, they're carrying out a person dressed in a Noh mask and old, worn red robes.
+{PAUSE ""}
+<BR>
+It looks awfully light for a human, so it must be the Verde mummy.
+{PAUSE ""}
+<BR>
+Where are they taking it...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The two of them went off not toward me, but in the exact opposite direction.
+{PAUSE ""}
+<BR>
+That way is toward the graveyard clearing, or the meeting hall.
+{PAUSE ""}
+<BR>
+They don't seem to have noticed me.<PG>
+First, what I do next.
+{PAUSE ""}
+<BR>
+I'll sneak into the Niimura house now and check whether <STYLE ID="1">Natsumi</STYLE> and Goto are there.
+{PAUSE ""}
+<BR>
+While I'm at it, I'll eat something, even a little, and change out of these <STYLE ID="6" RUBY="ぬ">wet</STYLE> clothes.<PG>
+I don't feel that tired right now, but all I've eaten is some rabbit meat this morning.
+{PAUSE ""}
+<BR>
+Once the tension breaks, the exhaustion is sure to hit my body all at once.
+{PAUSE ""}
+<BR>
+I'll decide right now, in detail, when I rest and how.<PG>
+But what bothers me here is <STYLE ID="7">Sakura-san</STYLE> and <STYLE ID="3">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Sakura-san</STYLE> and <STYLE ID="3">Kana</STYLE> didn't come out of the Niimura house.
+{PAUSE ""}
+<BR>
+Which means those two are acting separately―doing something else.
+{PAUSE ""}
+<BR>
+If anything, could they be standing guard over <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="8">Goto</STYLE>?
+{PAUSE ""}
+<BR>
+They've surely guessed I'd come to rescue <STYLE ID="1">Natsumi</STYLE> and Goto.<PG>
+So does that mean I've been lured here?
+{PAUSE ""}
+<BR>
+Using <STYLE ID="1">Natsumi</STYLE> and Goto as bait, to draw me in here...?
+{PAUSE ""}
+<BR>
+In that case, they could've just attacked me on the train.
+{PAUSE ""}
+<BR>
+Is there some purpose behind it?
+{PAUSE ""}
+<BR>
+There's no way I'll figure it out by thinking about it, though...<PG>
+First, I'll sneak into the Niimura house as planned.
+{PAUSE ""}
+<BR>
+Taking more care than ever not to run into <STYLE ID="3">Kana</STYLE>, of all people, I'll track down <STYLE ID="1">Natsumi</STYLE> and Goto.
+{PAUSE ""}
+<BR>
+When I'm in the kitchen I'll eat something, even a single bite, and once I'm upstairs I'll change clothes fast.
+{PAUSE ""}
+<BR>
+If <STYLE ID="1">Natsumi</STYLE> and Goto aren't there, I'll finish all this within 5 minutes, get out of the Niimura house right away, and search the next place.<PG>
+If <STYLE ID="1">Natsumi</STYLE> and Goto are there, we get out of the settlement fast.
+{PAUSE ""}
+<BR>
+Though moving on foot, the three of us, is a pretty big risk...<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "800" "0"}
+{MESON "500"}
+I go in not by the road but through the trees that surround the settlement.
+{PAUSE ""}
+<BR>
+The rain stopping has made presences easier to sense, and that goes for the other side too.<PG>
+{STOPSND "VOICE" "500" "PASS"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家庭夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Getting onto the Niimura property was relatively easy.
+{PAUSE ""}
+<BR>
+Rather than easy, should I say it was a letdown?
+{PAUSE ""}
+<BR>
+But going in through the front door or the veranda here is dangerous.
+{PAUSE ""}
+<BR>
+Because the lights in the house are on.
+{PAUSE ""}
+<BR>
+I decide to get in through the window of my room on the second floor.
+{PAUSE ""}
+<BR>
+I hope it's unlocked...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Once again, getting in was easy.
+{PAUSE ""}
+<BR>
+I need to hurry and get out of these <STYLE ID="6" RUBY="ぬ">wet</STYLE> clothes.<PG>
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+The only thing in the room that's different from this afternoon is that the Verde mummy is gone.
+{PAUSE ""}
+<BR>
+So what <STYLE ID="5">Kotaro-san</STYLE> and company carried out a moment ago must've been the Verde mummy after all.
+{PAUSE ""}
+<BR>
+The blood that was <STYLE ID="9" RUBY="したた">dripping</STYLE> from the mummy and my blood-<STYLE ID="6" RUBY="ぬ">soaked</STYLE> phone are just as they were this afternoon.
+{PAUSE ""}
+<BR>
+My things don't look like they've been touched either.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I change quickly and search the second floor.
+{PAUSE ""}
+<BR>
+It's just a matter of <STYLE ID="10" RUBY="のぞ">peeking</STYLE> into each room.
+{PAUSE ""}
+<BR>
+I didn't mean to let my guard down, but the search of the second floor was over in 30 seconds.
+{PAUSE ""}
+<BR>
+For some reason there was no sense of anyone, so I lost any urge to be careful.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―No sign of anyone on the first floor, either.
+{PAUSE ""}
+<BR>
+But a certain smell is hanging in the living room.
+{PAUSE ""}
+<BR>
+It's the kind of smell I'd been worried about: one that loosens your tension.<PG>
+Normally, while a person feels tension, all their instinctive drives are cut off.
+{PAUSE ""}
+<BR>
+Say you take a fatal wound on a battlefield: appetite, the urge to sleep, and sex drive are all suppressed to the limit, and instinct demands nothing but staying alive.<PG>
+At such times the human body seeks survival so hard that it forgets not only its instinctive drives but, in some cases, even serious injuries like broken bones.
+{PAUSE ""}
+<BR>
+If pain gets in the way and you can't walk, that's nothing but an obstacle to survival.
+{PAUSE ""}
+<BR>
+So the body shuts out those obstacles―pain and instinctive drives alike.<PG>
+That's exactly the state I'm in right now.
+{PAUSE ""}
+<BR>
+No... to be exact, I was in that state until a moment ago.
+{PAUSE ""}
+<BR>
+There are ways to force instinctive drives to kick in.
+{PAUSE ""}
+<BR>
+For sex drive, show someone an erotic scene; for sleep, put a soft bed right in front of them, or have them breathe in an aroma, and the tension eases.<PG>
+And for appetite, you get the same effect just by smelling a <STYLE ID="11" RUBY="たんび">ravishing</STYLE> aroma that whets the appetite and stimulates the salivary glands.
+{PAUSE ""}
+<BR>
+I never expected the living room to be filled with the smell of food this fragrant and <STYLE ID="12" RUBY="ほうじゅん">rich</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\煮る.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\女神\煮物.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+On the living-room table sit a portable gas burner and a big pot, with hot steam rising from it.
+{PAUSE ""}
+<BR>
+It looks like a stew of meat, eggs and vegetables.
+{PAUSE ""}
+<BR>
+It's a simple dish, but it's tempting to someone like me, who hasn't eaten anything since this morning, has run all over and been pelted by rain, and is out of strength.<PG>
+More than anything, I haven't had a properly cooked meal in a whole 2 years.
+{PAUSE ""}
+<BR>
+Let alone a dish that smells of soy sauce and sugar like this―
+{PAUSE ""}
+<BR>
+My mouth fills with saliva, and my stomach starts screaming.
+{PAUSE ""}
+<BR>
+But the feeling that's kept me acting carefully holds it in check.<PG>
+The feeling that held me back was, sure enough, fear.
+{PAUSE ""}
+<BR>
+Fear suppresses the instinct ordering me to tear into this food.
+{PAUSE ""}
+<BR>
+Because no matter how you look at it, this is wrong.
+{PAUSE ""}
+<BR>
+A scene so surreal I could almost burst out laughing.
+{PAUSE ""}
+<BR>
+Why is there a piping-hot stew sitting in the living room of this house when nobody's here...?
+{PAUSE ""}
+<BR>
+No matter how I look at it, it's a <STYLE ID="13" RUBY="わな">trap</STYLE> to snare me...<PG>
+That's it, this is a <STYLE ID="13" RUBY="わな">trap</STYLE>!
+{PAUSE ""}
+<BR>
+No matter how starved you are, nobody's dumb enough to eat poison.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYMOVIE "毒々しい霧.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\女神\煮物毒.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The moment I recognized this stew as a <STYLE ID="13" RUBY="わな">trap</STYLE>, it instantly looked to me like nothing but a pot full of poison.
+{PAUSE ""}
+<BR>
+The pot gives off a stench like soy sauce that reeks of <STYLE ID="14" RUBY="むし">vermin</STYLE>, and grotesque ingredients like scraps of dead animal flesh and single cells that failed to become fetuses peek out of it.
+{PAUSE ""}
+<BR>
+Thinking that way, I can't touch any of the food in this house either.<PG>
+It's a shame, but I'll have to give up on eating.
+{PAUSE ""}
+<BR>
+Ah well, a day or two without food won't kill me, and if it comes to it, I can just catch some wild plants or small animals around here.
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+And then...<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+I hear footsteps padding along the hallway.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+On reflex I raise my knife and turn toward the living room's sliding door.
+{PAUSE ""}
+<BR>
+Keeping watch above and behind me as well, I brace for whoever's coming.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE>? Or someone else?
+{PAUSE ""}
+<BR>
+A fight might start any second.
+{PAUSE ""}
+<BR>
+There's no longer any guarantee I'll be alive a minute from now.<PG>
+But I can't sense any bloodlust from whoever's making those footsteps.
+{PAUSE ""}
+<BR>
+Unlike <STYLE ID="2">Chiga-nee</STYLE> or <STYLE ID="3">Kana</STYLE>, it's something more... like... 
+{PAUSE ""}
+an ordinary presence.
+{PAUSE ""}
+<BR>
+It's probably not a very strong opponent.
+{PAUSE ""}
+<BR>
+But if they've got a hunting rifle, I'm done for.
+{PAUSE ""}
+<BR>
+I don't let my guard down.<PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "BGM" "3000" "PASS"}
+............
+{PAUSE ""}
+............
+{PAUSE ""}
+Huh?
+{PAUSE ""}
+<BR>
+What...?
+{PAUSE ""}
+<BR>
+This scene...<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Someone who looks exactly like <STYLE ID="1">Natsumi</STYLE>―
+{PAUSE ""}
+no, even the clothes are exactly the same as <STYLE ID="1">Natsumi's</STYLE>.
+{PAUSE ""}
+<BR>
+Could it be the real...?
+{PAUSE ""}
+<BR>
+If so, why is <STYLE ID="1">Natsumi</STYLE> walking around freely?
+{PAUSE ""}
+<BR>
+What the hell is this...<PG>
+<STYLE ID="1">"I knew you'd come too, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+Her voice is calm and bright, with no hint of <STYLE ID="16" RUBY="おび">fear</STYLE>.
+{PAUSE ""}
+<BR>
+Have I... gotten something wrong?
+{PAUSE ""}
+<BR>
+I was sure <STYLE ID="1">Natsumi</STYLE> and Goto had been taken, but they weren't...?<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, you're hungry, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Today you came back from the mountain seclusion and ran around all over the place, and you haven't had a proper meal, have you? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I can totally tell!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> shows no sign of being wary of me.
+{PAUSE ""}
+<BR>
+Is she actually seeing my face, or my knife?<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE> sits down at the table and dishes the stew out onto a small plate.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Here, sit down. It's good, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\女神\煮物小皿.gal" "NORMAL" "#1" "R" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">Natsumi</STYLE> holds out a deep dish of stew and a pair of chopsticks to me.
+{PAUSE ""}
+<BR>
+I... don't know what's going on anymore.
+{PAUSE ""}
+<BR>
+Is she... being forced to do this under threat?<PG>
+<STYLE ID="15">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="15">... is that safe to eat...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">... there's no poison in it or anything."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "最後の声・真呪殺\SE\食べる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+Then <STYLE ID="1">Natsumi</STYLE> puts some stew in <STYLE ID="1">her own</STYLE> mouth to show me.
+{PAUSE ""}
+<BR>
+If this stew really is safe and good―
+{PAUSE ""}
+<BR>
+As I watch <STYLE ID="1">Natsumi</STYLE> eat it with such relish, my fear begins to crack.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"See, it's fine. A lot has happened, so you're just tense, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If I'm by your side, you'll be fine, right?"</STYLE>
+{PAUSE ""}
+<BR>
+I try not to let go of my fear, but my instincts start craving rest, and orders come down from my <STYLE ID="17" RUBY="ししょうかぶ">hypothalamus</STYLE> too: dig into the food.
+{PAUSE ""}
+<BR>
+But my <STYLE ID="18" RUBY="へんとうたい">amygdala</STYLE> and frontal lobe are still working desperately to hold that back.
+{PAUSE ""}
+<BR>
+Because... all of this is weird...!
+{PAUSE ""}
+<BR>
+Besides, there's one more thing nagging at me―
+{PAUSE ""}
+something important...!<PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="15">"G-</STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15">... what about..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"What happened to </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">who?"</STYLE>
+{PAUSE ""}
+<BR>
+The light goes out of <STYLE ID="1">Natsumi's</STYLE> eyes, until now so full of affection.<PG>
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+The gentle light that shone from <STYLE ID="1">Natsumi's</STYLE> eyes is cut off by half-closed lids.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi's</STYLE> gaze―a black gaze―pierces me.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hmm... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Goto</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">huh. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Goto</STYLE><STYLE ID="1">―what about her?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Don't tell me... </STYLE><STYLE ID="1">you</STYLE><STYLE ID="15"> too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="1"> was different. Apparently she's going against Lady Verde."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Huh!? What's happened to </STYLE><STYLE ID="1">you</STYLE><STYLE ID="15"> too...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"The only goddess of this settlement is Lady Verde. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Come here, and you follow Lady Verde. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">When in a village, do as the villagers do, right?"</STYLE><PG>
+<STYLE ID="15">"Cut it out! Wake up, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="15">! Where did </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15"> go!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Is it okay to shout that loud? </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　Haruka</STYLE><STYLE ID="1">, you don't want anyone to find you, do you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Dammit...! </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="15">! I swear... I swear I'll save you...!"</STYLE><PG>
+<STYLE ID="1">"I'm very happy right now. I got to see you, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, and Lady Verde is here too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"What about </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15">!? </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　</STYLE><STYLE ID="1">You</STYLE><STYLE ID="15">, aren't you worried about </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's okay. Soon </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="1"> will get along with everyone too."</STYLE><PG>
+It's the first time <STYLE ID="1">Natsumi</STYLE> and I have ever talked this far past each other.
+{PAUSE ""}
+<BR>
+No, this is way beyond talking past each other! Our beliefs are clearly polar opposites!
+{PAUSE ""}
+<BR>
+Has even <STYLE ID="1">Natsumi</STYLE> gone crazy like <STYLE ID="2">Chiga-nee</STYLE> and the others...!?
+{PAUSE ""}
+<BR>
+Now I'm even more worried about whether <STYLE ID="8">Goto</STYLE> is safe!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "$00002F" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\なつみ度アップ.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, you're my best friend. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That's why you can get along with everyone too, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">. Okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"What are you... planning to do with me...!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hee hee... </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, are you scared? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　It's okay, you're just tense, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> brings her face so close to mine I can even hear her blink.<PG>
+<STYLE ID="1">"Here, look, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\なつみ度アップぼかし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE> takes something long and thin out of her pocket and holds it up for me to see.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "540" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In a syringe, a pink liquid―
+{PAUSE ""}
+<BR>
+What is that... what are you gonna do with it...!?<PG>
+<STYLE ID="1">"This? I got it from </STYLE><STYLE ID="5">Kotaro-san</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Apparently it's the Goddess's blood. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If you receive it, you can become one of us too, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"S-stop it! I don't want that!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why not? Look, then there'd be nothing to be scared of anymore."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"No way... </STYLE><STYLE ID="1">you, </STYLE><STYLE ID="15">did they inject you with that...!?"</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n3000\r\nINC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n0\r\nINC\r\nPASS">
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Hee hee hee hee, that's not it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Me... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">they say I get to become a part of the Goddess!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Stop talking nonsense! </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　Come on, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="15">! I'm begging you, wake up! Hey!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, listen. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm going to be a divine messenger. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm going to be someone special."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Shut up!"</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ビンタ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "20" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ座り込み.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE> lands on her backside and slumps on the floor.
+{PAUSE ""}
+<BR>
+My hand stings faintly.
+{PAUSE ""}
+<BR>
+She must have cut the inside of her mouth. A thin thread of blood trickles from <STYLE ID="1">Natsumi's</STYLE> lips.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We're best friends, aren't we? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Aren't we? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Hey, aren't we!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"The way </STYLE><STYLE ID="1">you</STYLE><STYLE ID="15"> are now... </STYLE>
+{PAUSE ""}
+<STYLE ID="15">you're no best friend of mine...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">no... </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, you hating me... I don't want that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Then wake up already! </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　We're going back to Motoki-cho together, right!? The three of us, with </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15">, back to Motoki-cho...!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE> rises unsteadily to her feet.
+{PAUSE ""}
+<BR>
+Another drop of blood runs down from her mouth.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, do you think you can escape from here? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Find </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="1">, take me with you... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">do you think you can get away from everyone?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Even so... I've got no choice but to do it...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's impossible. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The trains aren't running, the roads are all mud, and they'd catch up with you in no time. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So... you have no choice but to live by the rules here. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Otherwise... you can't survive, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">."</STYLE><PG>
+Could <STYLE ID="1">Natsumi</STYLE> be deliberately trying to blend into this settlement, to save me?
+{PAUSE ""}
+<BR>
+Right, even at this very moment, there's no knowing who's watching, or from where.
+{PAUSE ""}
+<BR>
+Threaten <STYLE ID="1">Natsumi</STYLE>, make her bring me back, and keep the secrets here from leaking out.
+{PAUSE ""}
+<BR>
+So the threat to the Arata settlement, its destruction―
+{PAUSE ""}
+is it the secret here, Droga in other words, being found out by the police...?<PG>
+If <STYLE ID="1">Natsumi</STYLE> tried to escape with me, the lookouts would surely get her.
+{PAUSE ""}
+<BR>
+And even if we did get away, we'd be abandoning <STYLE ID="8">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Is this... the end of the line...?
+{PAUSE ""}
+<BR>
+If I do as <STYLE ID="1">Natsumi</STYLE> says and become just like the people here...<PG>
+<STYLE ID="1">"So, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, you understand, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Even if you come to hate me, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">, I won't ever hate </STYLE><STYLE ID="15">you</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">so..."</STYLE>
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "R" "B" "100" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+And <STYLE ID="1">Natsumi</STYLE> holds the syringe out to me once more.
+{PAUSE ""}
+<BR>
+She's trying to make me inject it of my own will.
+{PAUSE ""}
+<BR>
+In other words, my will is being tested.<PG>
+If I inject this, will I become like <STYLE ID="2">Chiga-nee</STYLE> and the others?
+{PAUSE ""}
+<BR>
+Worshipping Verde, showing no mercy to anyone who threatens their existence―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\女神\電車運転席.gal" "NORMAL" "#1" "C" "B" "200" "14" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Suddenly I remember the train driver who was killed.
+{PAUSE ""}
+<BR>
+That would make me one of the culprit's people...
+{PAUSE ""}
+<BR>
+Normally I'd rather die than do that, but...<PG>
+{MESOFF "500"}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But <STYLE ID="1">Natsumi</STYLE> chose to survive.
+{PAUSE ""}
+<BR>
+Even if it meant something like selling her soul, she chose to save us.
+{PAUSE ""}
+<BR>
+And <STYLE ID="1">Natsumi</STYLE> wants me to do the same...?<PG>
+Don't think about any of that anymore...!
+{PAUSE ""}
+<BR>
+If I use this, <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="8">Goto</STYLE> should both be saved.
+{PAUSE ""}
+<BR>
+Seeing that train driver's body, I was certain the people of this settlement mean business.
+{PAUSE ""}
+<BR>
+Anyone in the way gets erased like that.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "$00002F" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I press the syringe's needle against the skin of my arm.
+{PAUSE ""}
+<BR>
+If I stick this in and press the plunger, I'll be...
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+............
+{PAUSE ""}
+<BR>
+No... 
+{PAUSE ""}
+wait a minute...
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+Something... 
+{PAUSE ""}
+something's nagging at me.
+{PAUSE ""}
+<BR>
+What <STYLE ID="1">Natsumi</STYLE> is saying... 
+{PAUSE ""}
+is off somehow.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{PLAYSND "最後の声・真呪殺\Ghost長い.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"What's wrong, </STYLE><STYLE ID="15">Haruka</STYLE><STYLE ID="1">? Hurry up and do it."</STYLE>
+{PAUSE ""}
+<BR>
+But I can't pin down what it is that's nagging at me.
+{PAUSE ""}
+<BR>
+Something doesn't add up.
+{PAUSE ""}
+<BR>
+Am I being <STYLE ID="19" RUBY="だま">tricked</STYLE> after all?<PG>
+<STYLE ID="15">"Hey, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="15">, from the way you put it earlier, </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15"> hasn't joined you yet, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, not yet."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Then let's have </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15"> watch me give myself the shot too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Well, it'd be better to show her me joining of my own free will, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="15">　Then </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="15"> would surely―"</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">"We don't need </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+―!!
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\SE\E3839BE383A9E383BC3.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+I knew it! This isn't her acting like she's joined them!
+{PAUSE ""}
+<BR>
+She's really just gone crazy like <STYLE ID="2">Chiga-nee</STYLE> and the others!
+{PAUSE ""}
+<BR>
+She hasn't the slightest intention of saving us!
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE>, grit your teeth one more time...!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "20" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ倒れる.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I knock <STYLE ID="1">Natsumi</STYLE> down with a leg sweep, then hit the back of her head and knock her out.
+{PAUSE ""}
+<BR>
+Now <STYLE ID="1">Natsumi</STYLE> can't raise her voice.
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+Then I hurry out of the living room and climb onto the roof of the Niimura house.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\女神\集落全景夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I have to find <STYLE ID="8">Goto</STYLE>...!
+{PAUSE ""}
+<BR>
+From the way <STYLE ID="1">Natsumi</STYLE> put it, <STYLE ID="8">she</STYLE> should still be alive and sane!
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Goto</STYLE> is somewhere in this settlement...!
+{PAUSE ""}
+<BR>
+I'll find her, no matter what... 
+{PAUSE ""}
+bring <STYLE ID="1">Natsumi</STYLE> back to her senses too... 
+{PAUSE ""}
+and get out of here!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,873 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3130, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=30, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1107, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=38, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1175, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちゃわん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6165, target=)
+; Links:
+;    0: TWdLink(count=5494, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "My_life_Without_Your_Love.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The clock passed 20:00.
+{PAUSE ""}
+<BR>
+Right about now, are <STYLE ID="1">Dad</STYLE> and <STYLE ID="2">Mom</STYLE> worried?
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Zzz... zzz..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE> must have been tired; she fell asleep after dinner.
+{PAUSE ""}
+<BR>
+If we can make it to morning like this, <STYLE ID="3">Haruka</STYLE> will probably be able to relax too.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Goto</STYLE> had gone down to the first floor.
+{PAUSE ""}
+<BR>
+Apparently her <STYLE ID="5">sister</STYLE> had just come home, and she hadn't come back for about 10 minutes.<PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "700" "1000" "PASS"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "500" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just then, <STYLE ID="4">Goto</STYLE> came back.
+{PAUSE ""}
+<BR>
+She looked somehow gloomy.<PG>
+<STYLE ID="6">"What's wrong? Did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, it's nothing... It's just that I don't get along with </STYLE><STYLE ID="5">Sis</STYLE><STYLE ID="4"> very well."</STYLE><PG>
+<STYLE ID="6">"Did something happen with your </STYLE><STYLE ID="5">sister</STYLE><STYLE ID="6">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Hmm, we were close sisters until I was in elementary school... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Probably because people make such a fuss over me as a genius girl, it got hard for </STYLE><STYLE ID="5">Sis</STYLE><STYLE ID="4"> to be around me, I think..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Goto</STYLE> didn't usually let this kind of thing show, but she kept looking sad.<PG>
+<STYLE ID="4">Goto</STYLE> must love her <STYLE ID="5">sister</STYLE>.
+{PAUSE ""}
+<BR>
+But the more <STYLE ID="4">Goto</STYLE> tries to get close to her <STYLE ID="5">sister</STYLE>, the further away she drifts.
+{PAUSE ""}
+<BR>
+At the cafe this afternoon too, I'd sensed a strange distance.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Oh, but please don't worry about it! </STYLE><STYLE ID="5">Sis</STYLE><STYLE ID="4"> went out again anyway."</STYLE>
+{PAUSE ""}
+<BR>
+An emptiness seeped through the big grin <STYLE ID="4">Goto</STYLE> flashed.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "312" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+―I turned my eyes toward <STYLE ID="3">Haruka</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I recalled <STYLE ID="3">Haruka</STYLE>'s confession from this afternoon.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE>'s father has already passed away.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE> must have gone through painful things too, things I can't understand.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="4"> must be worn out after everything that's happened."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Seeing </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="7"> like this, what does </STYLE><STYLE ID="4">Goto</STYLE> think of her?<PG>
+<STYLE ID="6">"Hey, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">... will you come downstairs with me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Understood. I don't understand all of it, but I'll tell you what I do understand."</STYLE>
+{PAUSE ""}
+<BR>
+We turned off the light and quietly left the room so as not to wake <STYLE ID="3">Haruka</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島家リビング.gal" "WAIT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+There was a faint smell of perfume in the living room.
+{PAUSE ""}
+<BR>
+It was the same scent as the waitress I'd smelled at the cafe.
+{PAUSE ""}
+<BR>
+It must have belonged to <STYLE ID="5">Goto's sister</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"I'll make some tea. Please have a seat on the sofa."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Goto</STYLE> went into the kitchen next to the living room.<PG>
+Apart from the sounds <STYLE ID="4">Goto</STYLE> was making, I couldn't hear a thing.
+{PAUSE ""}
+<BR>
+The living room lights were on, but it was a hazy orange indirect light, a little dark.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">"Here you go."</STYLE>
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\スチル\五島家お茶.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+The tea <STYLE ID="4">Goto</STYLE> served came in an expensive-looking <STYLE ID="8" RUBY="ちゃわん">teacup</STYLE>.
+{PAUSE ""}
+<BR>
+The tea had a lovely aroma, too, like nothing I'd ever smelled.
+{PAUSE ""}
+<BR>
+Could the Goto family be rich?<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, do you remember? The first time we talked..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE> spoke with a gentle, slightly grown-up smile.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">"It was May, right after I'd started middle school. </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, you were a second-year in middle school back then."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\なつみ→五島.lcm" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "環境音\体育館.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\部活.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">Senpai</STYLE> was in the volleyball club in middle school.
+{PAUSE ""}
+<BR>
+I'm short, so I never meant to take it seriously, but I joined the same volleyball club because my parents used to play.
+{PAUSE ""}
+<BR>
+And because I just wanted some chance to do a sport.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ部活.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"What's wrong, <STYLE ID="6">Kogori</STYLE>! You can't even do that?!"
+{PAUSE ""}
+<BR>
+The coach was hurling abuse at <STYLE ID="6">Senpai</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"N-not yet!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　One more!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> refused to let the coach's grueling drills beat her, and chased the ball desperately.
+{PAUSE ""}
+<BR>
+But even to be kind, you couldn't call <STYLE ID="6">Senpai</STYLE>'s performance good.<PG>
+"That's enough, <STYLE ID="6">Kogori</STYLE>. Okay, next!"
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Please wait...!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Until I get it... please let me keep going...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> could barely stand anymore, but she was still trying to hang on.
+{PAUSE ""}
+<BR>
+Maybe the coach gave in to her persistence too; one more ball came, hit easier than before.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="6">"I did it...! I finally did it...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> had finally managed to touch the ball.
+{PAUSE ""}
+<BR>
+The other upperclassmen let out a sigh too.
+{PAUSE ""}
+<BR>
+But I wondered why <STYLE ID="6">this senpai</STYLE> was trying so hard.<PG>
+I had never made any real effort before.
+{PAUSE ""}
+<BR>
+I hadn't done anything special for studying, either. I'd always done well on tests.
+{PAUSE ""}
+<BR>
+So I didn't really understand the concept of effort, and what <STYLE ID="6">Senpai</STYLE> was doing was something I couldn't comprehend.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+I became interested in <STYLE ID="6">Senpai</STYLE>, who tried twice as hard as anyone.
+{PAUSE ""}
+<BR>
+It was rare for me to take an interest in another person.<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\体育館裏.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After practice, <STYLE ID="6">Senpai</STYLE>, changed into her uniform, was leaning alone against the gym wall.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Um... good work today..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+When I worked up the nerve to speak to her, <STYLE ID="6">Senpai</STYLE> turned to me, looking surprised.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Oh... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Um... who... were you... again...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> looked a little troubled.
+{PAUSE ""}
+<BR>
+No wonder. I'd hardly talked to anyone in the club.<PG>
+<STYLE ID="4">"Um... I'm Erina Goto... A first-year in the same volleyball club..."</STYLE>
+{PAUSE ""}
+<BR>
+Without meeting <STYLE ID="6">Senpai</STYLE>'s eyes, I mumbled my answer.
+{PAUSE ""}
+<BR>
+Back then, I was a gloomy person who couldn't even look people in the eye.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Oh, right, you were there. Sorry I didn't remember you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, it's fine..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> answered with a smile, but I, the one who'd spoken first, was the distant one.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Um... I think I heard your grades are amazing. You're really smart, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> seemed to be desperately searching for something to talk about.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, it's not a big deal..."</STYLE>
+{PAUSE ""}
+<BR>
+The moment I said it, I realized I'd put <STYLE ID="6">Senpai</STYLE> on the spot after she'd gone to the trouble of finding a topic.<PG>
+<STYLE ID="6">"So, um... did you need something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No... um... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Good work at practice today."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Um... didn't you just say that?"</STYLE>
+{PAUSE ""}
+<BR>
+Two troubled faces, facing each other.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"You saw me looking pretty uncool back there... I'm not athletic at all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> kept the conversation going with a smile.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh...?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　That was... uncool?"</STYLE><PG>
+<STYLE ID="6">"Well, I mean, I couldn't even do it, and I still pushed the coach into practicing with me..."</STYLE>
+{PAUSE ""}
+<BR>
+I didn't really understand, but isn't that what effort is?
+{PAUSE ""}
+<BR>
+I didn't understand what <STYLE ID="6">Senpai</STYLE> meant.<PG>
+<STYLE ID="4">"Why... why is effort uncool?!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">How do I put it... It's hard to explain..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Isn't making an effort a really cool thing?!</STYLE>
+{PAUSE ""}
+　<STYLE ID="4">I don't really get it, but </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, you were the coolest of anyone!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I see... </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">, you're kind of unusual..."</STYLE><PG>
+That one remark surprised me.
+{PAUSE ""}
+<BR>
+Until then, no one but teachers had ever called me by my surname.
+{PAUSE ""}
+<BR>
+And even they called me Goto-'san'...
+{PAUSE ""}
+<BR>
+I hate my own name.
+{PAUSE ""}
+<BR>
+Until then, everyone had called me 'Erina-chan.'<PG>
+I think the name Erina is too cute for me.
+{PAUSE ""}
+<BR>
+On top of that, when people put -chan on it, I feel a kind of wall.<PG>
+So being called 'Goto' felt incredibly fresh.
+{PAUSE ""}
+<BR>
+I was happy.<PG>
+<STYLE ID="4">"U-um... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Senpai</STYLE><STYLE ID="4">, you were cool! Keep it up!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I ran off without hearing <STYLE ID="6">Senpai</STYLE>'s reply or seeing her reaction.
+{PAUSE ""}
+<BR>
+It was a strange feeling. Like I wasn't myself.
+{PAUSE ""}
+<BR>
+In front of <STYLE ID="6">Kogori-senpai</STYLE>, I felt like I'd glimpsed a different me.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\体育館.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\部活.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ部活.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+From the next day on too, <STYLE ID="6">Senpai</STYLE> showed me how cool she was at practice.
+{PAUSE ""}
+<BR>
+But the harder <STYLE ID="6">Senpai</STYLE> tried, the more awkward everyone around her seemed.
+{PAUSE ""}
+<BR>
+"<STYLE ID="6">Kogori</STYLE>... that's enough already..."
+{PAUSE ""}
+<BR>
+"I can't watch this anymore..."
+{PAUSE ""}
+<BR>
+"Even the coach looks worn out..."
+{PAUSE ""}
+<BR>
+The others muttered things like that.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\体育館裏.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After practice, <STYLE ID="6">Senpai</STYLE> was leaning against the gym wall again.
+{PAUSE ""}
+<BR>
+I ran right over to <STYLE ID="6">Senpai</STYLE>.<PG>
+<STYLE ID="4">"Um, good work today."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Oh, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">. Good work."</STYLE>
+{PAUSE ""}
+<BR>
+It was our first conversation since we'd talked here a few days before.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> still called me by my surname with nothing attached, just like before.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, why do you make so much effort?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Huh? Um... effort, I mean... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I don't really think I'm making that much effort..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Then why are you trying so hard?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Well... I mean... I don't really think I'm trying that hard either..."</STYLE>
+{PAUSE ""}
+<BR>
+Again we faced each other with troubled looks.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"I'm just doing what I can toward something I decided to do. I guess?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Something you decided to do...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ腰に手バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"I'll be a starter by next year's tournament!"</STYLE>
+{PAUSE ""}
+<BR>
+It was the first bright smile <STYLE ID="6">Senpai</STYLE> had shown me.<PG>
+<STYLE ID="4">"A starter?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah! A starter!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　But... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">I guess it's impossible after all, hahaha."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Th-that's not true! I think the one making the most effort, </STYLE><STYLE ID="6">Kogori-senpai</STYLE><STYLE ID="4">, should be a starter!"</STYLE>
+{PAUSE ""}
+<BR>
+At that moment, I thought:
+{PAUSE ""}
+<BR>
+She's trying this hard, so I want to be the one supporting <STYLE ID="6">Senpai</STYLE>.
+{PAUSE ""}
+<BR>
+For <STYLE ID="6">Senpai</STYLE>, who called me "Goto" and accepted me as an equal.<PG>
+<STYLE ID="4">"Um, how do you become a starter?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh? That's... I don't know either. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Goto</STYLE><STYLE ID="6">, do you want to be a starter too?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No... I was just wondering what it'd take for </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4"> to become a starter."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> gazed at me, puzzled.<PG>
+<STYLE ID="4">"I'll help you, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">! People call me a genius girl, believe it or not, so I'm sure I can be of some use!"</STYLE>
+{PAUSE ""}
+<BR>
+I clenched my fists and pleaded with <STYLE ID="6">Senpai</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">, you're a good kid. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">But it's okay. You don't have to do that for me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That's not it! Let me help for my sake too!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　I want you, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, to become a starter!"</STYLE>
+{PAUSE ""}
+<BR>
+I didn't back down and kept trying to persuade her.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> looked at my face for a while, but―<PG>
+<STYLE ID="6">"Thank you. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Then I'll leave it to you. To the genius girl, </STYLE><STYLE ID="4">Erina Goto</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> gave me the loveliest smile I'd seen from her yet.
+{PAUSE ""}
+<BR>
+And for the first time, I was able to smile back at <STYLE ID="6">Senpai</STYLE>.<PG>
+<STYLE ID="6">"Aha! </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">, you can smile after all!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ehe! Well, I'm human!"</STYLE>
+{PAUSE ""}
+<BR>
+I flashed her a big grin.<PG>
+<STYLE ID="6">"Ahaha! I like that smile! Why, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">, you're a super cheerful kid!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Y-you think so...? It's probably because it's you, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島パソコン.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Every day, I desperately researched the right training regimen, taking into account <STYLE ID="6">Senpai</STYLE>'s age, build, and athletic ability.
+{PAUSE ""}
+<BR>
+Every day, I thought up ways for <STYLE ID="6">Senpai</STYLE> to become a starter, and had <STYLE ID="6">Senpai</STYLE> carry them out.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "25" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{CHGVOL "BGM" "700" "2000" "PASS"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\駅前夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, 100 meters to go!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Hah... hah..."</STYLE>
+{PAUSE ""}
+<BR>
+I followed <STYLE ID="6">Senpai</STYLE> on my bike, cheering her on.<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "0" "PASS"}
+{STOPSND "VOICE2" "0" "PASS"}
+{PLAYSND "SE\自転車ブレーキ.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="6">"I did it...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"You did it, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　You finally ran 3 km without stopping!"</STYLE>
+{PAUSE ""}
+<BR>
+As <STYLE ID="6">Senpai</STYLE> sank to the ground, I couldn't help throwing my arms around her.<PG>
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "700" "0"}
+{MESOFF "500"}
+{PLAYSND "環境音\体育館.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{CHANGECG "000" "グラフィック\背景\部活.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ部活.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Nights and days off alike, <STYLE ID="6">Senpai</STYLE> let me keep her company in her training.
+{PAUSE ""}
+<BR>
+As we kept at it for months, <STYLE ID="6">Senpai</STYLE> improved by leaps and bounds.<PG>
+"Okay, good, <STYLE ID="6">Kogori</STYLE>! Keep it up!"
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> was moving well today too.<PG>
+The coach and everyone else were amazed at how much she'd improved.
+{PAUSE ""}
+<BR>
+At this rate, she's sure to make it through the tryouts for the starting lineup next month, on April 6!<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+{STOPSND "SE" "3000" "PASS"}
+"All right, everyone gather around!"
+{PAUSE ""}
+<BR>
+The coach called everyone together.
+{PAUSE ""}
+<BR>
+"Next month, on April 6, we'll hold tryouts for the starting lineup. 
+{PAUSE ""}
+Well, the lineup's mostly decided already, but nobody give up until the very end!"
+{PAUSE ""}
+<BR>
+At last, next month, <STYLE ID="6">Senpai</STYLE>'s goal will be achieved. With her skill now, without a doubt!
+{PAUSE ""}
+<BR>
+When I looked over at <STYLE ID="6">Senpai</STYLE>―<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+For some reason, she looked gloomy.
+{PAUSE ""}
+<BR>
+With her skill now, she could definitely become a starter...<PG>
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+At the time, I didn't know about the April sickness.<PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―April 6　Day of the starting-lineup tryouts<PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\sliding_wooden_door_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\保健室.gal" "NORMAL" "#1" "C" "B" "0" "4" "500" "960" "1" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">!"</STYLE>
+{PAUSE ""}
+<BR>
+I'd heard <STYLE ID="6">Senpai</STYLE> collapsed during class.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Curled up on a bed in the nurse's office: <STYLE ID="6">Senpai</STYLE>.
+{PAUSE ""}
+<BR>
+A warm spring breeze was blowing in through the open window.<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> responded in a voice weaker than I'd ever heard.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What happened, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">?! Today is...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I kn... know, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">When it's time for practice... I'll go... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">More importantly, when you go back to class... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">the second-floor stairs... be... careful..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"The second-floor stairs...?"</STYLE><PG>
+I knew <STYLE ID="6">Senpai</STYLE> hadn't been feeling well lately.
+{PAUSE ""}
+<BR>
+Though I found <STYLE ID="6">Senpai</STYLE>'s warning strange, I decided to be careful just in case.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\学校階段.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "SE\倒れる.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{QUAKESTOP "1000"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+As I was climbing the stairs to the second floor, a shelf that was being moved fell from the open stairwell above.
+{PAUSE ""}
+<BR>
+If not for <STYLE ID="6">Senpai</STYLE>'s warning, I would have been badly hurt without ever seeing it coming.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE>'s April sickness, and that strange prediction. Just who is <STYLE ID="6">Kogori-senpai</STYLE>...?<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "900" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\体育館裏.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―The tryouts were over, and the sun had already set; it was getting dark.
+{PAUSE ""}
+<BR>
+I headed for the side of the gym where I'd first talked with <STYLE ID="6">Senpai</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+There, <STYLE ID="6">Senpai</STYLE> stood with her head down.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Senpai</STYLE> noticed me and gave me a smile that looked like it would vanish if you blew on it.<PG>
+<STYLE ID="4">"Are you... feeling better now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah... a little better..."</STYLE>
+{PAUSE ""}
+<BR>
+After just a few words, a few seconds of silence followed.<PG>
+<STYLE ID="6">"I let you see me... looking uncool again today..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "900" "0"}
+{CHANGECG "000" "グラフィック\背景\部活.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ部活.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="6">Kogori</STYLE>, stop already. You can't even stand up straight..."
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I'm... fine... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I can</STYLE>
+{PAUSE ""}
+<STYLE ID="6"> do it..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+With that, <STYLE ID="6">Senpai</STYLE> swayed and collapsed.
+{PAUSE ""}
+<BR>
+"Hey, hang in there!"
+{PAUSE ""}
+<BR>
+The coach carried <STYLE ID="6">Senpai</STYLE> to the nurse's office.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\体育館裏.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, I'm so frustrated...! The way </STYLE><STYLE ID="6">you</STYLE><STYLE ID="4"> are now, you could even be the ace!"</STYLE>
+{PAUSE ""}
+<BR>
+In front of <STYLE ID="6">Kogori-senpai</STYLE>, I couldn't hold back my tears.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Come on, why are you the one crying, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">? The coach said so too, right? That keeping yourself healthy is part of your skill."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"But this is way too unfair...! No amount of looking after yourself could do anything about it. It's your illness, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">...!"</STYLE><PG>
+<STYLE ID="6">"There, there, no crying, no crying. Thank you, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">."</STYLE>
+{PAUSE ""}
+<BR>
+The one hurting most should have been <STYLE ID="6">Senpai</STYLE>, but I clung to <STYLE ID="6">Senpai</STYLE> and bawled.
+{PAUSE ""}
+<BR>
+I had never cried that hard before.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">, I'm satisfied. Thanks to </STYLE><STYLE ID="4">you</STYLE><STYLE ID="6">, I made it this far. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Next time, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">, you go for a starting spot!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, the tournament's in July, right?! By then, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">, your health is sure to...!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　I'll go ask the coach."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "エデンの桜\SE\人をつかむ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+As I started to run off, <STYLE ID="6">Senpai</STYLE> grabbed my arm.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ腰に手バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"It's okay now!</STYLE>　<STYLE ID="6">I did everything I could!</STYLE>　<STYLE ID="6">So I have no regrets!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+In the cried-out eyes of <STYLE ID="6">Senpai</STYLE>, there was not a single tear.
+{PAUSE ""}
+<BR>
+There was no regret or hesitation in them; they were clear and serene.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Thank you, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="6">. </STYLE><STYLE ID="4">My cute junior</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\なつみ五島抱き着く.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With that, <STYLE ID="6">Senpai</STYLE> hugged me way harder than necessary.<PG>
+<STYLE ID="4">"Ggh-ggh-ggh, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="4">...! Can't breathe...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Ahahaha! Nope! I'm not letting go of my </STYLE><STYLE ID="4">cute junior</STYLE><STYLE ID="6">!"</STYLE><PG>
+Until I met <STYLE ID="6">Senpai</STYLE>, I couldn't truly trust anyone.
+{PAUSE ""}
+<BR>
+If I'd never met <STYLE ID="6">Senpai</STYLE>, I think I'd still be a gloomy person shut up in my shell.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kogori-senpai</STYLE> is the person who led me out into a new world I'd never known.<PG>
+With a strong heart that never gives in, however hard things get: that is <STYLE ID="6">Senpai</STYLE>.
+{PAUSE ""}
+<BR>
+She looks frail, but she's not a weak person.
+{PAUSE ""}
+<BR>
+I'm truly glad I got to help <STYLE ID="6">Senpai</STYLE>.<PG>
+I hold <STYLE ID="6">Senpai</STYLE>... 
+{PAUSE ""}
+<STYLE ID="6">you</STYLE> in respect, from the bottom of my heart.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

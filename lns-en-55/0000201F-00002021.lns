@@ -1,0 +1,130 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=621, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんご, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=710, target=)
+; Links:
+;    0: TWdLink(count=623, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hey! I found him!"<PG>
+{MESOFF "500"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\エデン\山1夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―So he cut his own throat with a nata...
+{PAUSE ""}
+<BR>
+"<STYLE ID="1" RUBY="けんご">Kengo</STYLE>-kun?"
+{PAUSE ""}
+<BR>
+―He's on his way here now.
+{PAUSE ""}
+<BR>
+"I see..."<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\hito_ge_run_kusa01.ogg" "VOICE" "REPEAT" "500" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+"Dad! Hey, Dad!"
+{STOPSND "VOICE" "500" "PASS"}
+{PAUSE ""}
+<BR>
+"Kengo-kun, don't touch him!"
+{PAUSE ""}
+<BR>
+"But Dad...!
+{PAUSE ""}
+　Damn it...! Why'd you have to die...!
+{PAUSE ""}
+　Why..."
+{PAUSE ""}
+<BR>
+"Kengo-kun..."<PG>
+"I know! I know this is that kind of place... 
+{PAUSE ""}
+But why Dad... 
+{PAUSE ""}
+Hey! Was it really suicide!? Isn't there a chance he was killed...!"
+{PAUSE ""}
+<BR>
+"He cut his throat this deep in the mountains. 
+{PAUSE ""}
+Even if someone killed him and then dumped him here, no human could carry a grown man all the way up here in this downpour..."<PG>
+"But Dad had a bad leg!?
+{PAUSE ""}
+　You're saying he walked all the way up here on his own!?"
+{PAUSE ""}
+<BR>
+"Listen, Kengo-kun..."
+{PAUSE ""}
+<BR>
+"What..."
+{PAUSE ""}
+<BR>
+"When did you last see your father?"
+{PAUSE ""}
+<BR>
+"This morning... 
+{PAUSE ""}
+Around 5 in the morning, he said he was going to check on the fields..."<PG>
+"If someone called your father out at 5, killed him, carried him up here, and then went back to the settlement in this weather, how many hours would that take?
+{PAUSE ""}
+　Everyone gathered at 7 in the morning and set out to search."
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+"More than anything, you understand, don't you?
+{PAUSE ""}
+　As long as you live here, once you turn 75―"
+{PAUSE ""}
+<BR>
+"That's enough! I won't believe it! That Dad killed himself!"<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\hito_ge_run_kusa01.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "5000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Kengo-kun..."
+{PAUSE ""}
+<BR>
+―It can't be helped... I couldn't believe it either when my dad died.<BR>
+"Will I end up like this someday too?"
+{PAUSE ""}
+<BR>
+―Maybe. 
+{PAUSE ""}
+But I'm not running. My place has been here since the day I was born. 
+{PAUSE ""}
+However I die, I'm not going to abandon the land handed down from my ancestors.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

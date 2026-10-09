@@ -1,0 +1,8 @@
+# UI lane 2026-09-26, BUG: tutorial caption advance.
+# PR_FONTBORDER=1 on a MesNew makes LiveMaker lay that box out on a FULL-WIDTH advance per glyph,
+# so English is letter-spaced and takes ~2x the width. index<TAB>PROPERTY<TAB>old<TAB>new.
+1123	PR_FONTBORDER	1	0
+3859	PR_FONTBORDER	1	0
+# FIX1 2026-09-26 (F6, F15): tutorial body. PR_FONTCHANGEABLED unset = full-width advance for Latin; 0 = proportional
+# (in-game A/B test work/_fix1/shots/compare_ABCD.png; face and border are not the lever on this box).
+1123	PR_FONTCHANGEABLED	-	0

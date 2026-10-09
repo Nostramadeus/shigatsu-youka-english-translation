@@ -1,0 +1,154 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=907, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=せんめつ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1008, target=)
+; Links:
+;    0: TWdLink(count=911, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\車内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\特別部隊運転席.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"All right, we'll be there in 10 minutes."
+{PAUSE ""}
+<BR>
+―What is that thing? That ridiculously huge cherry tree...
+{PAUSE ""}
+<BR>
+"I haven't been told the details either. All we have to do is follow orders."
+{PAUSE ""}
+<BR>
+―And if we find survivors, we're to kill them...<PG>
+"What? You scared?"
+{PAUSE ""}
+<BR>
+―N-no, it's not that!
+{PAUSE ""}
+<BR>
+"Is that so. Honestly, I'm scared, though."
+{PAUSE ""}
+<BR>
+―Well, sure, it means killing ordinary people who don't know anything...<PG>
+"That's not it. I mean the target."
+{PAUSE ""}
+<BR>
+―The target?
+{PAUSE ""}
+　If I recall, the CO said '<STYLE ID="1" RUBY="しんし">divine messenger</STYLE>,' right?
+{PAUSE ""}
+<BR>
+"This 'divine messenger' is supposedly something like the culprit of the Megasawa City case."
+{PAUSE ""}
+<BR>
+―The Megasawa City case?
+{PAUSE ""}
+　Now that you mention it, I think there was a case like that when I was a kid...<PG>
+"Yeah, you young guys wouldn't know about it. 
+{PAUSE ""}
+Supposedly they kill with movements you'd never think were human. 
+{PAUSE ""}
+Word is they can even dodge bullets."
+{PAUSE ""}
+<BR>
+―That's what we're up against!? Nobody told us that!
+{PAUSE ""}
+<BR>
+"That's why a specially trained unit like ours is being sent in."
+{PAUSE ""}
+<BR>
+―............<PG>
+"So you are scared?"
+{PAUSE ""}
+<BR>
+―N-no! I'm fine!
+{PAUSE ""}
+　Besides...
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+―I'm getting married at the end of this month...<PG>
+"Don't go jinxing yourself..."
+{PAUSE ""}
+<BR>
+―B-but that's exactly why I want to complete the mission and get back home!
+{PAUSE ""}
+<BR>
+"You really think you'll make it back safe?"
+{PAUSE ""}
+<BR>
+―Huh?<PG>
+"Monsters like that running around, us sneaking into a city buried in cherry blossoms. 
+{PAUSE ""}
+You think they'd just send us home free and clear, after we've learned something that big?"
+{PAUSE ""}
+<BR>
+―Wait a minute...!
+{PAUSE ""}
+<BR>
+"Don't take it seriously. I'm joking. 
+{PAUSE ""}
+The government's real aim is probably to test whether we can make it back safely."
+{PAUSE ""}
+<BR>
+―A test...?<PG>
+"Whether it's a place people with full gear and training can come back from alive. 
+{PAUSE ""}
+If we don't come back, this place will probably become a no-entry zone forever."
+{PAUSE ""}
+<BR>
+―............
+{PAUSE ""}
+<BR>
+"Listen, if it comes down to it, you get out of there, even if you're the only one."
+{PAUSE ""}
+<BR>
+―B-but running away by myself...<PG>
+{PLAYSND "SE\パトカー通話ノイズ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+"All vehicles, do you read? This is Car 1. We're nearly at the center of Motoki City. 
+{PAUSE ""}
+The mission is the <STYLE ID="2" RUBY="せんめつ">elimination</STYLE> of survivors and the 'divine messengers'. 
+{PAUSE ""}
+However, if you sense you're in danger, get out immediately. 
+{PAUSE ""}
+Running is part of your orders too. Out."
+{PAUSE ""}
+<BR>
+―............
+{PAUSE ""}
+<BR>
+"Well, your odds of getting married just went up."
+{PAUSE ""}
+<BR>
+―Y-yes!<PG>
+"Right, we're getting out. First we search the city center, then move out toward the outskirts. 
+{PAUSE ""}
+Stay on your guard!"
+{PAUSE ""}
+<BR>
+―Yes!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

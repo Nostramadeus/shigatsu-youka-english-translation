@@ -1,0 +1,629 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1188, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1939, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=512, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=427, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あんど, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=83, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くもん, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=38, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てんいむほう, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てんしんらんまん, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふしょくふ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あんのん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わび, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いた, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=403, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=なかじま, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5063, target=)
+; Links:
+;    0: TWdLink(count=4615, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\クリスタルコア.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\プリズン\五島マンション玄関.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Welcome back! You were gone so long. Are you all right!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Flying out to the entrance to greet us came </STYLE>Goto-chan<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But she seemed to grasp the situation right away.</STYLE><PG>
+"Can you both walk?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Don't worry about me. Please, take care of </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+"Y-yes! <STYLE ID="3">Senpai</STYLE>, hold on to my shoulder!"
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> leaned on the petite </STYLE>Goto-chan<STYLE ID="1"> and went on into the apartment.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I sat down in the entryway too, and at last I could let out a sigh of </STYLE><STYLE ID="4" RUBY="あんど">relief</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="1">Who could that woman be?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Judging by her voice, she doesn't seem to be </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was she really with a rescue team, or is she the dangerous presence </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> talked about?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Almost certainly the latter, but what kind of danger would she bring?</STYLE><PG>
+<STYLE ID="1">A thrill killer who survived for some reason and is taking advantage of the disaster to go around killing survivors?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right now I can't even guess...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I really should hear what </STYLE>Goto-chan<STYLE ID="1"> thinks as well.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I put <STYLE ID="3">Senpai</STYLE> back to bed. Are you all right, <STYLE ID="2">Mom</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes, I'm fine."</STYLE>
+{PAUSE ""}
+<BR>
+"I'm glad to hear that. 
+{PAUSE ""}
+Um, <STYLE ID="3">Kogori-senpai</STYLE> handed me this..."
+{PAUSE ""}
+<BR>
+Goto-chan<STYLE ID="1"> was holding a phone in her hand.</STYLE><PG>
+"This is <STYLE ID="3">Kogori-senpai's</STYLE>. 
+{PAUSE ""}
+She says she was filming a video at the convenience store earlier. 
+{PAUSE ""}
+Danger was closing in, so she did it on the sly when you hid."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">We'd been hiding low, so we couldn't see the woman.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1">, in the middle of all that, had apparently acted as calmly as she could, trying to be of even a little use.</STYLE><PG>
+<STYLE ID="2">"So the woman who was looking for us is in it."</STYLE>
+{PAUSE ""}
+<BR>
+"A woman? You mean someone other than <STYLE ID="5">Niimura-senpai</STYLE>?
+{PAUSE ""}
+　Anyway, I'll analyze the video in detail, so please wait a little."<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE追加\強風屋内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―The wind was awful.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The windows were shut, but the sound of the wind echoed through the room.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\プリズン\五島マンション寝室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3"><TXSPS>"Uuh... </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPN>"It's all right. The wind can't get in here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This room was sealed off from the outside air and had a nano-level ventilation system.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Apparently even the sound alone was enough to set off </STYLE><STYLE ID="3">Natsumi's</STYLE><STYLE ID="1"> April sickness.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> kept moaning in her sleep the whole time, in pain.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Mom</STYLE>, I've finished the analysis..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> wore a look of </STYLE><STYLE ID="6" RUBY="くもん">anguish</STYLE><STYLE ID="1"> that caught my eye and </STYLE>Goto-chan's<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Talking about it here felt like it would be too much for </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1">.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ横顔32.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3"><TXSPS>"M-</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">, go and listen. I'm... fine..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPN>"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPS>"Come on... hurry..."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>"<STYLE ID="2">Mom</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"If anything happens, call me right away, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> nodded weakly.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The laptop was already set out on the living-room table.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島バストアップ32.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "最後の声・真呪殺\渦巻くシナプス.ogg" "BGM" "REPEAT" "1000" "0"}
+"About the woman earlier: right before you hid, <STYLE ID="3">Senpai</STYLE> apparently set her phone on a shelf and filmed the entrance. 
+{PAUSE ""}
+Take a look."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On the laptop screen, the woman was shown large.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The moment I saw it, I caught my breath.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\美冬白装束.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Dressed in a white robe, with a face and hairstyle I knew.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">However you looked at it, it was </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="2">"Is this really the real </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+"I can't tell that much... 
+{PAUSE ""}
+If someone who seems to be <STYLE ID="5">Niimura-senpai</STYLE> is here, it wouldn't be strange for <STYLE ID="7">Mifuyu-san</STYLE> to be here too."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I know, but..."</STYLE><PG>
+"The other thing to notice is these white robes."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This is the thing to notice...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">............?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I've seen this somewhere...</STYLE><PG>
+<STYLE ID="1">―!!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's it! It looks just like the red robes that went with that Noh mask!</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神\死神手ぶら.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Make it red and put a hood on it, and it would be almost the same as the red robes!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Could these clothes be from Arata's...</STYLE><PG>
+"I analyzed the images of <STYLE ID="5">Niimura-senpai</STYLE> from earlier and of the person who seems to be <STYLE ID="7">Mifuyu-san</STYLE> in more detail."<PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE追加\解析音.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\プリズン\2人解析1.gal" "NORMAL" "#1" "C" "B" "0" "5" "5000" "540" "1" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "0" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE追加\解析音.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\プリズン\2人解析2.gal" "NORMAL" "5" "5000" "540" "1" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "0" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"The same robe...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, exactly the same robe. 
+{PAUSE ""}
+But what's really strange is that this robe has no buttons or zipper, and not even a single seam."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What do you mean...?"</STYLE><PG>
+"You know the idiom <STYLE ID="8" RUBY="てんいむほう">ten'i-muhou</STYLE>, right?
+{PAUSE ""}
+　It's a four-character phrase for a flawless work, or an <STYLE ID="9" RUBY="てんしんらんまん">innocent, unaffected</STYLE> nature. 
+{PAUSE ""}
+It's said to come from the robes of the celestial maidens having no seams. 
+{PAUSE ""}
+In other words, it's <STYLE ID="10" RUBY="ふしょくふ">nonwoven fabric</STYLE>."<PG>
+<STYLE ID="1">Clothes with no seams...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It doesn't quite click for me, but apparently that's the sticking point.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Well, true, if someone told me to make clothes without sewing, I wouldn't know what to do...</STYLE><PG>
+<STYLE ID="1">Of course. There are no buttons, no zipper, and no sash either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Unless the fabric is extremely stretchy, you couldn't even put it on.</STYLE><PG>
+"Earlier, I had a look at the shoes <STYLE ID="2">you, Mom,</STYLE> and <STYLE ID="3">Senpai</STYLE> were wearing."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Shoes?"</STYLE>
+{PAUSE ""}
+<BR>
+"I thought fibers from these clothes might have stuck to the soles. 
+{PAUSE ""}
+But unfortunately, there were no such fibers on them. 
+{PAUSE ""}
+Well, it was a long shot anyway, so that's fine."<PG>
+"So I tried thinking about it the other way around. 
+{PAUSE ""}
+Instead of working out the material from the fibers, could I guess the material and make the fibers?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You can do that?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜吹雪風船なし.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\元木市遠景.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"In this case, I figured those cherries have a lot to do with it. 
+{PAUSE ""}
+In other words, maybe it's made of those cherries―of the fibers of a giant fungus."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It can't be..."</STYLE><PG>
+"There's no way to prove it right now, and it's only one guess among many. 
+{PAUSE ""}
+Either way, what I think is that <STYLE ID="5">Niimura-senpai</STYLE> and <STYLE ID="7">Mifuyu-san</STYLE> may be deeply involved with those cherries."<PG>
+<STYLE ID="2">"What ties </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="2"> to the cherries... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh, that reminds me, </STYLE>Goto-chan<STYLE ID="2">, this robe looks a lot like the one </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="2"> handed me in Megasawa."</STYLE>
+{PAUSE ""}
+<BR>
+"Similar in what way?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The one I got from </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="2"> had seams, but if you just changed the color, I think it would look similar."</STYLE><PG>
+"Hmm. So there is a connection to the Arata settlement after all...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What we knew was that two people who seemed to be </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="1"> were in Motoki City.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That the two of them were dressed the same.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">How the seams and Arata fit into it wasn't clear, though.</STYLE><PG>
+"The sun's starting to go down a little."
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n200\r\n10000\r\nNORMAL\r\nPASS">
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The sun was hidden by the cherries, so I couldn't tell exactly where it was.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But it had clearly gotten darker than before.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Searching outside any more today would be difficult.</STYLE><PG>
+{PLAYSND "環境音\静かな雨屋内.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "5000" "PASS"}
+<STYLE ID="1">Then something started pattering against the window.</STYLE><PG>
+"It's rain..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="2"> and the others are outside in this heavy rain, aren't they..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Whether those two are the </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="1"> I know, I can't tell.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But when I think of </STYLE><STYLE ID="5">my own daughter</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="7">my best friend</STYLE><STYLE ID="1"> out in the freezing rain, I can hardly bear it.</STYLE><PG>
+<STYLE ID="1">No. What am I thinking, after all this time?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Over these 15 years, </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1"> and the others must have suffered far worse than this, again and again.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I, on the other hand, ate my meals in </STYLE><STYLE ID="11" RUBY="あんのん">peace and quiet</STYLE><STYLE ID="1">, did work under safety supervision, and was given plenty of time to sleep.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What right do I have to worry...</STYLE><PG>
+"<STYLE ID="2">Mom</STYLE>, I'm sure they're both all right."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You're right... My children are all strong... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But </STYLE><STYLE ID="7">Mifuyu</STYLE><STYLE ID="2"> has a bit of a weak side..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Needless to say, everyone knows about me and </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> was 20 when I told her.</STYLE><PG>
+<STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> wasn't all that surprised at the time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Being so closely related by blood to her best friend seemed to make her both happy and </STYLE><STYLE ID="12" RUBY="わび">wistful</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If she'd known they were sisters, she'd have liked to be with her not only as a best friend but as a sister too, she said.</STYLE><PG>
+<STYLE ID="1">And </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> said this, too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That if I was going to tell her, she wished I'd told her sooner.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Haruka-chan's</STYLE><STYLE ID="1"> disappearance―she'd wanted to know before that.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "244" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, are you all right now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah. Sorry for causing you trouble..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just as she said, </STYLE><STYLE ID="3">Natsumi's</STYLE><STYLE ID="1"> color was somewhat better.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ横顔32.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Huh, this image..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The laptop was showing the analyzed images of the two.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Come to think of it, I hadn't told </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> about </STYLE><STYLE ID="5">Haruka-chan</STYLE><STYLE ID="1"> yet, had I?</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―Making good use of the supplies, I set about preparing dinner.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Meanwhile, </STYLE>Goto-chan<STYLE ID="1"> explained the situation to </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="1">Standing in a kitchen, actually, wasn't something I'd been away from for long.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In prison, there was a fixed rotation for kitchen duty.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The menu, the ingredients, even the seasoning and how to cut things were all specified, but thanks to that I had no trouble here either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Only, working while conserving gas and water was a bit of a challenge.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\ムスカリの花.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{STOPSND "SE2" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\焼きそば.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Tonight's menu: yakisoba.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Though I call it yakisoba, it was Chinese noodles sold already </STYLE><STYLE ID="13" RUBY="ゆ">boiled</STYLE><STYLE ID="1">, heated bag and all in the water I'd reused from warming the curry.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then I </STYLE><STYLE ID="13" RUBY="ゆ">boiled</STYLE><STYLE ID="1"> the vegetables in the same water, sprinkled on the powdered sauce with some chopped ham, and mixed. That was all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No sizzle, no savor―not yakisoba, fried noodles, but </STYLE><STYLE ID="13" RUBY="ゆ">boiled</STYLE><STYLE ID="1"> noodles.</STYLE><PG>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It tasted awful.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The vegetables had soaked up more of the </STYLE><STYLE ID="13" RUBY="ゆ">boiling</STYLE><STYLE ID="1"> water than I'd expected, so the powdered sauce turned soggy and the flavor was weak.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On top of that, since nothing was </STYLE><STYLE ID="14" RUBY="いた">stir-fried</STYLE><STYLE ID="1">, the oil coating the noodles never blended in.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="3">, that's amazing. You saved so much and still made something this good."</STYLE>
+{PAUSE ""}
+<BR>
+"If it were me, it'd be a disaster..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, I'm glad of the flattery. I feel like I've been some small help.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="7">Obasan</STYLE><STYLE ID="3"> are in this town, huh."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So it seems..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm thinking of going to look for them tomorrow."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="3">Senpai</STYLE>, that's dangerous..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Why?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's... 
+{PAUSE ""}
+That's because earlier today, <STYLE ID="3">Senpai</STYLE>, you sensed danger from <STYLE ID="7">Mifuyu-san</STYLE>. 
+{PAUSE ""}
+So <STYLE ID="5">Niimura-senpai</STYLE>, wearing the same clothes, too..."<PG>
+<STYLE ID="3">"</STYLE>Goto<STYLE ID="3">, say </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3"> really is dangerous. Do you think that's what </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3"> truly wants?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Do you think </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3"> would hurt us of her own free will?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's..."<PG>
+<STYLE ID="3">"If </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3"> is dangerous, I want to know why. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And this time, I want to save </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, but your April sickness..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's fine. I'm sure there won't be any wind tomorrow."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A weather forecast with nothing to back it up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Either way, tomorrow </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="1"> is going to go regardless.</STYLE><PG>
+"It's almost time for the 6 o'clock news. I'll turn on the radio."
+{PAUSE ""}
+<BR>
+{PLAYSND "環境音\テレビの声.ogg" "SE" "REPEAT" "1000" "0"}
+Goto-chan<STYLE ID="1"> turned on the radio, as if to cut off </STYLE><STYLE ID="3">Natsumi's</STYLE><STYLE ID="1"> resolve.</STYLE>
+{PAUSE ""}
+<BR>
+Goto-chan<STYLE ID="1"> seemed just as worried about </STYLE><STYLE ID="3">Natsumi's</STYLE><STYLE ID="1"> safety as I was.</STYLE><PG>
+<STYLE ID="15">"Good evening. It is time for the 6 o'clock news. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">A short while ago, Chief Cabinet Secretary </STYLE><STYLE ID="16" RUBY="なかじま">Nakajima's</STYLE><STYLE ID="15"> regular press conference began. We bring it to you live."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\ラジオ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="15">"Early tomorrow morning, as planned, we will dispatch the special unit to Motoki City. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">Further, as the survival of the disaster victims is considered all but hopeless, the special unit's objective will not be rescue operations but an on-site inspection."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's quite a bold thing to say.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If the victims' families heard that, they would surely protest to the government.</STYLE><PG>
+<STYLE ID="15">―Chief Cabinet Secretary, does that mean that even if survivors are found, they will not be rescued?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"Er, considering the lethal dose of the toxic gas from this disaster, the survival rate is nearly zero percent. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">Therefore, even if there are survivors, they are expected to be very few in number. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">In that case, we will have them evacuate together with the special unit."</STYLE><PG>
+<STYLE ID="15">―Then what measures will you take if, for example, there is a shelter and a large number of people have survived in it?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"In that case, the special unit will contact us from the site, and we will dispatch reinforcements."</STYLE><PG>
+<STYLE ID="15">―When you say the lethal dose of the toxic gas, does that mean you've identified its components?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"We have not yet been able to obtain gas samples, but we have a general idea."</STYLE><PG>
+"That's a strange way of putting it, somehow..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Strange?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes. The lethal dose of the toxic gas sounds slapdash... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And... it's like they don't want to save the survivors..."</STYLE>
+{PAUSE ""}
+<BR>
+"That's how it sounds to me too."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But they're saying they'll help if there are survivors, right?"</STYLE><PG>
+"<STYLE ID="3">Kogori-senpai</STYLE>, that's not right. 
+{PAUSE ""}
+They'll save survivors in the case where the special unit has found them."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"What do you mean?"</STYLE>
+{PAUSE ""}
+<BR>
+"Even if the special unit finds us, they may leave us to die."
+{PLAYSND "最後の声・真呪殺\ホラー.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE><PG>
+<STYLE ID="2">"I thought that to get out of here, we'd either have to be saved by a rescue team or clear the gas. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If we won't be rescued..."</STYLE>
+{PAUSE ""}
+<BR>
+"Then we have to think of a way to clear the gas."<PG>
+<STYLE ID="3">"Then all the more reason to look for </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="3">, isn't it!? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　She might know something..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">True, she has a point...</STYLE>
+{PAUSE ""}
+<BR>
+Goto-chan<STYLE ID="1"> was the one I turned to look at.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\五島マンションリビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\五島うつむき32.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I see... 
+{PAUSE ""}
+So that's what it was."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

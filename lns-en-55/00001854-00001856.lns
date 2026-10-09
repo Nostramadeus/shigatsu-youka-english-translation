@@ -1,0 +1,65 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=155, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=88, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=287, target=)
+; Links:
+;    0: TWdLink(count=247, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\五島家からの外.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Nasty wind...! It's like a typhoon."<PG>
+<STYLE ID="1">"</STYLE>Lieutenant<STYLE ID="1">, there's been no scheduled check-in from the unit posted around the Kogori home!"</STYLE>
+{PAUSE ""}
+<BR>
+"What!? Damn it, did they show up over there!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But could they really go out of contact without any warning at all...? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We contacted them from our end too, but there's no answer."</STYLE><PG>
+"You're right, that is strange... 
+{PAUSE ""}
+If anything at all seemed off, they'd try to contact us. 
+{PAUSE ""}
+If they haven't even done that... 
+{PAUSE ""}
+All right, send just two from our unit to check around the Kogori home. 
+{PAUSE ""}
+Everyone else keeps watching the Goto home."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Understood!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+"So you finally showed your face, <STYLE ID="2">Mifuyu Niimura</STYLE>...!"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,580 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1208, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1250, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=149, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1529, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あき, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きき, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=10, unk2=13531600, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くぎ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さば, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=5, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひととせ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=129, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4703, target=)
+; Links:
+;    0: TWdLink(count=4296, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"A p-proposal!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah... he asked me yesterday... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I finally found someone I can become a family with."</STYLE>
+{PAUSE ""}
+<BR>
+"Haaah. The day after you met him...? 
+{PAUSE ""}
+<STYLE ID="1">You</STYLE> really are extreme... 
+{PAUSE ""}
+Then again, <STYLE ID="2">Eiichiro-san</STYLE>'s pretty extreme too, or something..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At this sudden turn of events, </STYLE>Akane<STYLE ID="3"> looked </STYLE><STYLE ID="4" RUBY="あき">exasperated</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But that face, too, gradually brightened into one of </STYLE><STYLE ID="5" RUBY="きき">glee</STYLE><STYLE ID="3">.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Well, isn't that great, finding a good man! Congratulations, <STYLE ID="1">Mifuyu</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah! It's all thanks to you, </STYLE>Akane<STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+"No, no... even so, I never expected things to move this fast... 
+{PAUSE ""}
+In that case, you'll be going to <STYLE ID="2">Eiichiro-san</STYLE>'s family home to pay your respects soon, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, I'm going next week. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I won't be back for about a year, though."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Huh!? Wh-what's that supposed to mean...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">'s family home is a small settlement out in the countryside, and apparently it has some pretty unusual customs. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Anyone who wants to marry in gets tested there for a year, or something."</STYLE>
+{PAUSE ""}
+<BR>
+"Ehh... Are <STYLE ID="1">you</STYLE> really going to be okay? 
+{PAUSE ""}
+　A year!? A settlement like that sounds pretty shady..."<PG>
+<STYLE ID="1">"But if that's what it takes to be with </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">, I don't think it's that big a deal... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And it looks like they'll approve my leave from work."</STYLE>
+{PAUSE ""}
+<BR>
+"Haaah. You really are extreme... 
+{PAUSE ""}
+But if you really are going, you absolutely can't push yourself too hard, okay? 
+{PAUSE ""}
+　<STYLE ID="1">Mifuyu</STYLE>, you may be timid, but you tend to push yourself way too hard..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I know. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But I'll be fine. Even so, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1"> and I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Having said that much, I noticed I was grinning.</STYLE><PG>
+"You're the very picture of a girl in love... 
+{PAUSE ""}
+Well, it's a good chance, so why not let them whip you into shape, body and soul? However it turns out, you'll probably grow from it, <STYLE ID="1">Mifuyu</STYLE>. 
+{PAUSE ""}
+But don't you dare push yourself too hard, okay? If anything happens, get in touch with me right away!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay! Thank you!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"In that case, I'll have to postpone my wedding..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh!? Why, why!?"</STYLE><PG>
+"<STYLE ID="1">Mifuyu</STYLE> not coming to my wedding? That's out of the question. I absolutely want <STYLE ID="1">Mifuyu</STYLE> there!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh no, I can't let you do that..."</STYLE>
+{PAUSE ""}
+<BR>
+"It's fine, it's fine! We're not at the point where there's a cancellation fee yet, and it's not like we're in a hurry."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... I'm sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+"This is me and <STYLE ID="1">Mifuyu</STYLE> we're talking about, isn't it? Don't be so weirdly reserved!"<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{MESON "500"}
+<STYLE ID="3">―The following week, I headed for the Arata settlement, where </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s family home was.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">The settlement itself was a little insular, and sure enough, it had a lot of unusual customs.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But the one called the Grand Witch, </STYLE><STYLE ID="6">Eiichiro-san's mother</STYLE><STYLE ID="3">, was a very friendly and kind person, and everyone else there was nice too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But the tests themselves were harsh, and several times I felt my life was in danger.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\獣.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Apparently, since the Arata settlement is so rich in nature that meat and plants can be had in abundance, over several hundred years tyrannical daimyo and bandits had set their sights on the land of Arata and come to attack it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That was why a custom of keeping everyone ready to fight at all times, and able to survive any situation, still remains today.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\雪山.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Now, in modern times with no more raids like that, the main intent seems to be testing whether you truly mean to become one of the people of the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I was </STYLE><STYLE ID="7" RUBY="くぎ">warned</STYLE><STYLE ID="3"> in no uncertain terms never to speak of what the tests involve, so I will probably never tell even </STYLE>Akane<STYLE ID="3"> about this.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\荒田集落イメージ.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Not once did I think of giving up or running away.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If I got through all this, I could be with </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That alone was enough to spur me on.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "239" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">―And so four seasons passed, and then―</STYLE><PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Akane<STYLE ID="1">, I'm home!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Mifuyu</STYLE>...! W-welcome back!"
+{PAUSE ""}
+<BR>
+Akane<STYLE ID="3"> and I were reunited after a year.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I had passed every test and come back to Motoki-cho.</STYLE><PG>
+<STYLE ID="1">"It's been a while, </STYLE>Akane<STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">You</STYLE>... are you really <STYLE ID="1">Mifuyu</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"Your face looks totally different... 
+{PAUSE ""}
+<STYLE ID="1">Mifuyu</STYLE> was more, I don't know, helpless, or clingy... 
+{PAUSE ""}
+The way you carry yourself has gotten really tough!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You think so...? I don't feel like I've changed..."</STYLE><PG>
+"It's like you've lost what made you <STYLE ID="1">Mifuyu</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... that's mean..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"............ 
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+Pfft-heh!
+{QUAKESTOP "500"}
+　With that verbal tic, it's <STYLE ID="1">Mifuyu</STYLE>, all right!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... that's even meaner..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I don't think I've changed all that much myself.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It's not as if I've gotten strong enough to trade punches with a man, or so enlightened I could found a religion.</STYLE><PG>
+"<STYLE ID="1">Mifuyu</STYLE>, are you going to live in the Arata settlement after all?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, we're going to live in Motoki-cho. For me and for </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1"> both, this is where we belong right now!"</STYLE>
+{PAUSE ""}
+<BR>
+"I see... Thank goodness... I was so lonely..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">Mifuyu</STYLE>! I really missed you, and I was so worried! 
+{PAUSE ""}
+　Did you really not push yourself too hard!? No lasting after-effects anywhere!? Nobody bullied you!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"W-wait, </STYLE>Akane<STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm fine. The tests were tough, but the people in the settlement were all really nice. And the food was so good! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Oh, right, right! I've got a present for you, </STYLE>Akane<STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\putting_a_box.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\箱.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">I set a box big enough to fill my arms on the table.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"............?"
+{PAUSE ""}
+<BR>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"This is a giant bullfrog you can only get in Arata! I caught it and </STYLE><STYLE ID="8" RUBY="さば">butchered</STYLE><STYLE ID="1"> it myself! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　It's a nice fat one from right before hibernation, so it's in season now!"</STYLE>
+{PAUSE ""}
+<BR>
+"A-a frog...!? 
+{PAUSE ""}
+　Ah, ahaha... Th-thank you..."<PG>
+<STYLE ID="1">"I was surprised too when I first heard it was a frog, but when I ate it, I was surprised all over again! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　If you eat it when you're feeling unwell, you get your energy back right away! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　In Arata, people catch animals by hunting and so on, and then they kill them, skin them and </STYLE><STYLE ID="8" RUBY="さば">butcher</STYLE><STYLE ID="1"> them all themselves. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh, but maybe you don't know how to eat this, </STYLE>Akane<STYLE ID="1">? Want me to open it up a little and explain?"</STYLE><PG>
+"Nonono, it's fine! You don't have to open it! 
+{PAUSE ""}
+　Putting raw meat on a restaurant table isn't sanitary, is it!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, I guess so... You're right."</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"You really have gotten strong, <STYLE ID="1">Mifuyu</STYLE>. 
+{PAUSE ""}
+<STYLE ID="1">Mifuyu</STYLE>, it looks like you've already broken free of depending on me."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's not true... Even with </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">, if it weren't for you, </STYLE>Akane<STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"But you thought you could stand on your own once you found a family, didn't you? Right now, <STYLE ID="1">Mifuyu</STYLE>, you're already standing on your own two feet just fine."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... I'm not as admirable as all that... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">From now on too, if anything happens, I might go running straight to you for help, </STYLE>Akane<STYLE ID="1">..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Well, I don't mind you relying on me. 
+{PAUSE ""}
+But don't hold back, okay? If you're ever in trouble, <STYLE ID="1">Mifuyu</STYLE>, I'll help you, no matter what. Absolutely."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay, thank you... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh, but if you're ever in trouble, </STYLE>Akane<STYLE ID="1">, I'll help you too! Just tell me, anything!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Mifuyu</STYLE> saying something like that... 
+{PAUSE ""}
+Heh, you really have gotten tough..."<PG>
+<STYLE ID="1">"But there are still things I'm anxious about... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I really do want </STYLE><STYLE ID="9">Eiichiro-san</STYLE><STYLE ID="1">'s child, and whether I can be a proper mother..."</STYLE>
+{PAUSE ""}
+<BR>
+"Everybody's a beginner at that kind of thing at first, so why not just get used to it a little at a time?"<PG>
+<STYLE ID="1">"Well... I guess that's true. Now that it's come this far, it's better to look forward to it than to worry, right? </STYLE>
+{PAUSE ""}
+Akane<STYLE ID="1">, what about you and kids?"</STYLE>
+{PAUSE ""}
+<BR>
+"Kids, huh... 
+{PAUSE ""}
+While I'm at it, wouldn't it be fun if mine were the same age as yours, <STYLE ID="1">Mifuyu</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, that's a great idea! If they were friends from birth like us, I'd be happy too!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">After that, we got really excited talking about kids.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If we had a boy and a girl, should we have them marry?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What should we name them?</STYLE><PG>
+<STYLE ID="3">Back then, we joked around about how a girl born in spring would be 'Haruka,' </STYLE>
+{PAUSE ""}
+<STYLE ID="3">a girl born in summer would be 'Natsumi,' </STYLE>
+{PAUSE ""}
+<STYLE ID="3">and so on.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And then, with </STYLE>Akane<STYLE ID="3"> as autumn and me as winter, we'd have spring, summer, autumn and winter all together.</STYLE> [TN: Haru means spring, natsu summer, fuyu winter.]
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And how, if that happened, parents and kids together could form a comedy quartet called </STYLE><STYLE ID="10" RUBY="ひととせ">Four Seasons</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="3">Having kids means your family grows.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">We talked about plenty of things half in jest, but even so, it was more than enough to make our dreams for the future swell.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">―A few months later, we got married at almost the same time.</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "アサガオと始まり.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\診察室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"You're expecting."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A few months after we married, the doctor told me so.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really...! Is my family really going to grow!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, so please take good care of yourself. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Your body isn't only </STYLE><STYLE ID="1">yours</STYLE><STYLE ID="3"> anymore."</STYLE><PG>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s child was growing inside me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Even though I was in front of the doctor, I wept with joy.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村家新居.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Is it true!? We did it, </STYLE><STYLE ID="1">Mifuyu-chan</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm so happy! When I think your baby's in here, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh, I'm so happy I think I'm going to lose my mind!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Then </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> knelt on the floor and gently </STYLE><STYLE ID="11" RUBY="な">stroked</STYLE><STYLE ID="3"> my belly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\栄一郎横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hello there, how are you doing? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Dad and </STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="2"> are both looking forward to you being born!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... I'm going to be a mom..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\栄一郎うつむき.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Mifuyu-chan</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I... I... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Nnngh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> let out a groaning sob.</STYLE><PG>
+<STYLE ID="1">"Oh my, oh my, </STYLE><STYLE ID="2">Daddy</STYLE><STYLE ID="1">'s a widdle cwybaby, isn't he! Who's gonna cwy more, him or you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The shape of family I had pictured was steadily becoming real.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Really!? Congratulations!"
+{PAUSE ""}
+<BR>
+Akane<STYLE ID="3"> was just as happy for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">She was the one who knew better than anyone how much I had longed for a family.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Just then, the usual server came to take our order.</STYLE><PG>
+<STYLE ID="3">"</STYLE>Kogori-sama<STYLE ID="3">, </STYLE><STYLE ID="1">Niimura-sama</STYLE><STYLE ID="3">, congratulations on your happy news. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Today we've prepared caffeine-free drinks for you. These are on the house."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The server set the drinks and a lavish afternoon tea set on the table.</STYLE>
+{PLAYSND "SE\皿を置く.ogg" "VOICE2" "NORMAL" "1000" "0"}
+<PG>
+<STYLE ID="1">"Huh? </STYLE>Akane<STYLE ID="1">, you got the same drink as me?"</STYLE>
+{PAUSE ""}
+<BR>
+Akane<STYLE ID="3"> had a caffeine-free drink set in front of her too.</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... this is kind of awkward to bring up right now, but... 
+{PAUSE ""}
+the truth is..."
+{PAUSE ""}
+<BR>
+Akane<STYLE ID="3"> said that and </STYLE><STYLE ID="11" RUBY="な">stroked</STYLE><STYLE ID="3"> her belly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't tell me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Then </STYLE>Akane<STYLE ID="3"> gave me a big smile.</STYLE><PG>
+"Yeah... me too."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"What!? R-r-really!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Can you believe it! </STYLE>Akane<STYLE ID="3">'s family was getting one more member too.</STYLE><PG>
+<STYLE ID="1">"Ah, ahaha! Oh, come on...! What is this... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I don't even know what's going on anymore...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　So things like this actually happen!"</STYLE>
+{PAUSE ""}
+<BR>
+"Now our kids will be in the same grade. I hope they'll be as close as we are..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">Just then, a woman who seemed to be a mother came in with a little girl.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="12">"Mommy! Baby sister, wan' one! </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Momoko wan' a baby sister!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The girl was still toddling, maybe around one or two years old.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">She talked awfully well for how little she looked.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="12">Momoko</STYLE><STYLE ID="3">, we'll talk about that later, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"No! Baby sister, wan' one! </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Picked a name! </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Name's Erina! </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Cute name!"</STYLE><PG>
+<STYLE ID="3">"All right, all right... Later, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Really!? Baby sister, coming!? </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Yaaay! Erina's coming!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="12">Momoko</STYLE><STYLE ID="3">...! Don't say that so loud...! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　If you stay quiet in this shop, I'm sure she'll come."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Okaaay! Momoko be quiet!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The mother and daughter headed to a table in the back.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"She can talk like that when she's still so little... She must be a smart kid."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ehehe... What kind of kids will ours turn out to be?"</STYLE>
+{PAUSE ""}
+<BR>
+Akane<STYLE ID="3"> was there for me, and that was how I was able to grab hold of happiness.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Being able to share that happiness made me happier than anything.</STYLE><PG>
+<STYLE ID="3">And, together with </STYLE>Akane<STYLE ID="3">, the one who brought me together with </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">: </STYLE><STYLE ID="13">Ryoji-san</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">, too, I could never thank enough.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I had found the best people, and the greatest happiness.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

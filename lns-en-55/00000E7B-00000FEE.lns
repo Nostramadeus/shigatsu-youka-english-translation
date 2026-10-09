@@ -1,0 +1,717 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3683, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=16, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=23, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=6, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふくしゅう, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=439, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=447, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たお, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=300, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=6, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=せんめつ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=10, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=りょうしん, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かたき, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=サプレッサー, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=4, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=12, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=5, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=6, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5479, target=)
+; Links:
+;    0: TWdLink(count=4974, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\電車ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\豊岳駅ホーム.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>―The train arrived at <STYLE ID="1" RUBY="とよたけ">Toyotake</STYLE> Station.
+{PAUSE ""}
+<BR>
+One last transfer. The next train would take me to Arata Station.
+{PAUSE ""}
+<BR>
+From there, a walk of about 2 hours along a mountain road would bring me to the Arata settlement.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\豊岳駅外.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I decided to spend the 20 minutes until the next train on a bench outside the station.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "281" "C" "C" "REPEAT" "FALSE" "600" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\豊岳.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Beautiful cherry blossoms were dancing in the air.
+{PAUSE ""}
+<BR>
+Live in this Japan of ours, and there are cherry blossoms everywhere you look.
+{PAUSE ""}
+<BR>
+It must be a hard season for people with cherry-blossom allergies.<PG>
+Cherry-blossom allergies...
+{PAUSE ""}
+<BR>
+Come to think of it, I remember <STYLE ID="2">Erina</STYLE> saying something like this in a conversation with our mother.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Erina's senpai</STYLE> hated cherry blossoms.
+{PAUSE ""}
+<BR>
+Apparently, whenever cherry blossom season came, she would fall ill and spend days in bed.<PG>
+I've looked into that as well.
+{PAUSE ""}
+<BR>
+Though half of it is guesswork...<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Natsumi Kogori</STYLE>, <STYLE ID="2">Erina's</STYLE> senpai.
+{PAUSE ""}
+<BR>
+As a little girl, <STYLE ID="3">she</STYLE> had been drenched in the blood of <STYLE ID="4">Eiichiro Niimura</STYLE>.
+{PAUSE ""}
+<BR>
+At some point, <STYLE ID="4">he</STYLE> must have used a drug called Droga, which that Arata settlement had created.<PG>
+Those who have used this Droga are called the first generation.
+{PAUSE ""}
+<BR>
+The term was apparently used by some cult when it carried out repeated human experiments.
+{PAUSE ""}
+<BR>
+Even after Droga wears off, its components remain in the body.<PG>
+If the mucous membranes of the head（eyeballs, lips and so on）come into contact with first-generation blood, the circumstances of touching that blood are re-created, and this brings on illness.
+{PAUSE ""}
+<BR>
+People with this constitution are apparently called the second generation.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\血しぶき背景.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供血.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But in exchange, they are said to have danger sense.
+{PAUSE ""}
+<BR>
+That <STYLE ID="3">Natsumi Kogori</STYLE> apparently had a similar ability as well.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\壺点火.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Droga is made from the roots of cherry trees that grow wild in the Arata district.
+{PAUSE ""}
+<BR>
+The cherry trees of the Arata settlement had produced that devil's drug, Droga.
+{PAUSE ""}
+<BR>
+I understand the urge to admire cherry blossoms, but to me now they're nothing but a hateful plant.
+{PAUSE ""}
+<BR>
+If only there were no cherry trees, <STYLE ID="2">Erina</STYLE> might not have had to die...<PG>
+The Arata cherry―
+{PAUSE ""}
+<BR>
+If I go to the Arata settlement, will I end up seeing it with my own eyes too?
+{PAUSE ""}
+<BR>
+Droga's effects are said to be beyond imagination.
+{PAUSE ""}
+<BR>
+It supposedly lets you run 100 meters in 3-something seconds, leap 3 meters, and even dodge bullets.
+{PAUSE ""}
+<BR>
+If the people of Arata used Droga and came at me, my <STYLE ID="5" RUBY="ふくしゅう">revenge</STYLE> play would end as a failed attempt.<PG>
+I see, so this is what the Megasawa City case really was.
+{PAUSE ""}
+<BR>
+So if you take the limiter off your muscle strength, it isn't impossible.
+{PAUSE ""}
+<BR>
+Even so, why did the state keep the truth of this Megasawa City case hidden?
+{PAUSE ""}
+<BR>
+Something like this, you'd think anyone could figure out with a little digging.
+{PAUSE ""}
+<BR>
+Could it be that they deliberately―<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\豊岳駅外.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hang in there, Mama! We're almost at the bench!"
+{PAUSE ""}
+<BR>
+As I sat lost in thought, a girl's voice reached my ears.
+{PAUSE ""}
+<BR>
+There were two people who looked like a parent and child.
+{PAUSE ""}
+<BR>
+One was a girl of about middle-school age, and the other was probably her mother.
+{PAUSE ""}
+<BR>
+But both of them looked a little unusual.<PG>
+Their hair was tinged with brown, and their eyes were blue.
+{PAUSE ""}
+<BR>
+No, green?<PG>
+Then, 
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+the arm that had been around the girl's shoulders slid away, and the woman who seemed to be the mother collapsed.
+{PAUSE ""}
+<BR>
+"Mama! Stay with me!"
+{PAUSE ""}
+<BR>
+Without thinking, I ran over to the fallen woman.
+{PAUSE ""}
+<BR>
+It can't hurt to do a good deed this small, here at the very end.<PG>
+<STYLE ID="6">"Let's get her to the bench."</STYLE>
+{PAUSE ""}
+<BR>
+"Y-yes!"
+{PAUSE ""}
+<BR>
+The girl and I held up her mother and sat her down on the bench.
+{PAUSE ""}
+<BR>
+"S-sorry..."
+{PAUSE ""}
+<BR>
+The mother <STYLE ID="7" RUBY="わ">apologized</STYLE> in a feeble voice.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\昼の月.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.lcm" "REPEAT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I saw her face up close.
+{PAUSE ""}
+<BR>
+Two blue eyes that called to mind a clear sky and a beautiful sea.
+{PAUSE ""}
+<BR>
+Her features, too, were a little different from a Japanese person's. Was she a foreigner after all?<PG>
+<STYLE ID="8">"Thank you for your kindness."</STYLE>
+{PAUSE ""}
+<BR>
+It was the moment our eyes first met.
+{PAUSE ""}
+<BR>
+I felt as if I'd been flung into another dimension.
+{PAUSE ""}
+<BR>
+Eyes as clear as a celestial maiden's, and <STYLE ID="9" RUBY="たお">graceful</STYLE> movements.
+{PAUSE ""}
+<BR>
+And a gentle way of speaking.
+{PAUSE ""}
+<BR>
+I could hardly believe she was a woman, the same as me.
+{PAUSE ""}
+<BR>
+If I had to compare her to something―
+{PAUSE ""}
+a goddess.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Uh, thank you very much!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">The girl</STYLE> thanked me as she wiped the sweat from <STYLE ID="8">her mother's</STYLE> forehead.
+{PAUSE ""}
+<BR>
+<STYLE ID="10">This girl</STYLE> had odd eyes, one blue and one green.
+{PAUSE ""}
+<BR>
+When she grew up, would she become a beautiful woman like <STYLE ID="8">her mother</STYLE>?<PG>
+<STYLE ID="6">"Uh... if you'd like, shall I go with you as far as your house?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　I'm just drifting around these parts on a solo trip, so..."</STYLE>
+{PAUSE ""}
+<BR>
+It would only be a follow-up to my small good deed.
+{PAUSE ""}
+<BR>
+If they were here, they were probably taking the same train.
+{PAUSE ""}
+<BR>
+Oh, but if they're going the opposite way, that'd be a pain...<PG>
+<STYLE ID="10">"No, the station we're getting off at, Arata Station, is far, so..."</STYLE>
+{PAUSE ""}
+<BR>
+Arata Station was where I planned to get off too.
+{PAUSE ""}
+<BR>
+Then it wouldn't be out of my way.<PG>
+<STYLE ID="6">"I'm getting off at Arata Station too. It's fine."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="10">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="6">You</STYLE><STYLE ID="8"> have business in the Arata settlement... with us?"</STYLE><PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+Could these people be from Arata...!?
+{PAUSE ""}
+<BR>
+Is Arata Station used only by people from the Arata settlement?
+{PAUSE ""}
+<BR>
+With almost no savings left by the time of the <STYLE ID="5" RUBY="ふくしゅう">revenge</STYLE>, I hadn't been able to afford to scout this area.<PG>
+<STYLE ID="10">"Uh, is something wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+I had frozen for a while, and <STYLE ID="10">the girl</STYLE> spoke to me.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh? No, it's nothing..."</STYLE>
+{PAUSE ""}
+<BR>
+It felt as if the tumor called conscience had grown even larger.
+{PAUSE ""}
+<BR>
+Should I shoot this mother and daughter dead right here, before it grew any bigger?
+{PAUSE ""}
+<BR>
+I unzipped my bag and touched the gun.
+{PAUSE ""}
+<BR>
+But I stopped myself right away.<PG>
+Because if I did something like that, there would be an uproar, and the trains would probably stop running.
+{PAUSE ""}
+<BR>
+That was the only reason.
+{PAUSE ""}
+<BR>
+That was the only reason―so I told myself.
+{PAUSE ""}
+<BR>
+Yes, because I'm a selfish person.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "148" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\豊岳駅ホーム.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I waited for the train together with the mother and daughter.
+{PAUSE ""}
+<BR>
+The mother's name was <STYLE ID="8">Sakura Niimura</STYLE>.
+{PAUSE ""}
+<BR>
+The daughter's name was <STYLE ID="10">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+Niimura was the same surname as that of someone <STYLE ID="2">Erina</STYLE> was often with, her <STYLE ID="11">senpai</STYLE>.
+{PAUSE ""}
+<BR>
+Since they were from the same settlement, it was no wonder they shared a surname.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.lcm" "REPEAT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="8">, would you like to come to our house?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　If you are traveling alone and have not decided where to stay..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学手バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"Ha! That's a great idea! </STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="10">, please come!</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　There are lots of rare, delicious things in Arata!</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　</STYLE><STYLE ID="8">Mama's</STYLE><STYLE ID="10"> cooking is really delicious!"</STYLE>
+{PAUSE ""}
+<BR>
+I couldn't answer the invitation right away.<PG>
+If they put me up, I might be able to <STYLE ID="12" RUBY="せんめつ">wipe out</STYLE> the residents in one go.
+{PAUSE ""}
+<BR>
+That would be more efficient.
+{PAUSE ""}
+<BR>
+But my biggest worry is―the growth of the <STYLE ID="13" RUBY="りょうしん">tumor</STYLE>.
+{PAUSE ""}
+<BR>
+The <STYLE ID="13" RUBY="りょうしん">tumor</STYLE> keeps growing, slowly and surely.
+{PAUSE ""}
+<BR>
+Kindness is a nasty additive that makes the <STYLE ID="13" RUBY="りょうしん">tumor</STYLE> grow.<PG>
+I really hadn't expected people from Arata to show me kindness.
+{PAUSE ""}
+<BR>
+It seems my <STYLE ID="13" RUBY="りょうしん">tumor</STYLE> is malignant.<PG>
+But I won't lose.
+{PAUSE ""}
+<BR>
+I'm not about to be swayed by kindness or sympathy.
+{PAUSE ""}
+<BR>
+I'll strike down <STYLE ID="2">my sister's</STYLE> <STYLE ID="14" RUBY="かたき">enemy</STYLE>. That one conviction, I have no intention of bending.
+{PAUSE ""}
+<BR>
+All right, I'll go along with this mother and daughter.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\電車昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "5000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Before long the train arrived, and we boarded a train with no one else on it.<PG>
+<STYLE ID="8">Sakura-san</STYLE> lay down on the side-facing bench seat as soon as she got on.
+{PAUSE ""}
+<BR>
+She really did seem quite unwell.<PG>
+When is the best time to kill this mother and daughter?
+{PAUSE ""}
+<BR>
+Should I kill them as soon as we get off the train?
+{PAUSE ""}
+<BR>
+This far out in the country, there probably won't be anyone at the station either.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="10">"</STYLE><STYLE ID="8">Mama</STYLE><STYLE ID="10"> hasn't been feeling well lately..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Kana-chan</STYLE> gave <STYLE ID="8">Sakura-san's</STYLE> head a gentle <STYLE ID="15" RUBY="な">stroke</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Does she have a chronic illness or something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"No... it's not a chronic illness, exactly. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">She always gets like this around this time of year..."</STYLE>
+{PAUSE ""}
+<BR>
+At that moment, the hypothesis
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> = the second generation
+{PAUSE ""}
+<BR>
+took shape in my mind.<PG>
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+At the same time, a tremendous unease―
+{PAUSE ""}
+<BR>
+I'm someone who brings danger to the Arata settlement.
+{PAUSE ""}
+<BR>
+In that case, <STYLE ID="8">Sakura-san</STYLE> might foresee my plan.
+{PAUSE ""}
+<BR>
+No... if that were so, she would already have sensed it at the station earlier.<PG>
+What am I afraid of?
+{PAUSE ""}
+<BR>
+I'll admit I'm very nervous, but...<PG>
+Still, even if <STYLE ID="8">Sakura-san</STYLE> isn't second generation, there may be other second-generation people in the Arata settlement.
+{PAUSE ""}
+<BR>
+Maybe I'll do a little probing.<PG>
+<STYLE ID="6">"Someone my sister knew used to say she always got sick around this time of year too. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">But that girl was a bit odd. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">She'd say things like 'I have psychic powers!' She was the type who told tall tales..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"You mean... like precognition, maybe...?"</STYLE>
+{PAUSE ""}
+<BR>
+............!
+{PAUSE ""}
+<BR>
+All I had said was 'psychic powers,' yet <STYLE ID="10">Kana-chan</STYLE> had narrowed it down to precognition.<PG>
+<STYLE ID="10">"</STYLE><STYLE ID="8">Mama</STYLE><STYLE ID="10"> has precognition too, around this time of year. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Oh, it's not a lie or a tall tale. It's really true..."</STYLE>
+{PAUSE ""}
+<BR>
+It seemed certain that <STYLE ID="8">Sakura-san</STYLE> was second generation.
+{PAUSE ""}
+<BR>
+And yet she doesn't sense any danger from me?
+{PAUSE ""}
+<BR>
+Or has she noticed, and is ignoring it?<PG>
+<STYLE ID="6">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+If I take the bait too eagerly here, they'll get suspicious.
+{PAUSE ""}
+<BR>
+My cover story is that I'm just drifting around on a trip by myself.
+{PAUSE ""}
+<BR>
+I'll steer things a little more naturally, so I can hear about it from <STYLE ID="8">Sakura-san</STYLE> herself.
+{PAUSE ""}
+<BR>
+There's still plenty of time before we reach Arata Station.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Phew..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> slowly sat up.
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Feeling better?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yes... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I am sorry, </STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="8">, that you had to see me like this..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"No, no. Your health comes first."</STYLE><PG>
+<STYLE ID="8">"And... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Precognition, of all things. </STYLE><STYLE ID="10">Kana</STYLE><STYLE ID="8"> said something so strange..."</STYLE>
+{PAUSE ""}
+<BR>
+All right, here's my chance!
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"But you're surely not the kind of person who tells lies, are you, </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="6">?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Somehow, I can tell."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="8">... you are kind."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> smiled sweetly, though a crease still lingered between her brows.
+{PAUSE ""}
+<BR>
+Even though we were both women, her smile was so captivating it hurt to meet her eyes.<PG>
+<STYLE ID="6">"If you don't mind, could you tell me about that precognition?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　I'm traveling alone, so I want to learn all kinds of things about the people I meet."</STYLE>
+{PAUSE ""}
+<BR>
+That was surely a natural, sensible excuse.<PG>
+<STYLE ID="8">"</STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="8">, do you really believe in precognition?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"How should I put it... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">It's not about believing or not believing. I just thought I'd like to hear what you have to say, </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="6">."</STYLE>
+{PAUSE ""}
+<BR>
+Saying 'I believe you!' to someone I've only just met would be too simple-minded.
+{PAUSE ""}
+<BR>
+I tried keeping my answer a little vague.<PG>
+<STYLE ID="8">"All right. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">My precognition is an ability to foresee danger."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Danger sense... So could you tell about things like that big earthquake the other day?"</STYLE><PG>
+<STYLE ID="8">"No, it is not that kind of thing... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I can foresee danger to people I have met in person, or whose voices I have heard. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Foresee may not be the word... what kind of danger it will be, sometimes I can tell and sometimes I cannot... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">At the very least, I can tell that the person is in danger if things go on as they are."</STYLE><PG>
+I see. This was the first I'd heard of it.
+{PAUSE ""}
+<BR>
+I'd known about the second generation's danger sense, but I hadn't been able to research the details of the ability.
+{PAUSE ""}
+<BR>
+In other words, <STYLE ID="3">Natsumi Kogori</STYLE> only had a vague danger sense, so she couldn't avert the tragedy 4 years ago.
+{PAUSE ""}
+<BR>
+So this is all the second generation's precognition amounts to.<PG>
+<STYLE ID="8">"Also, the precognition does not work unless I am somewhere dark and narrow..."</STYLE>
+{PAUSE ""}
+<BR>
+If that's true, the ability is more limited than I expected.
+{PAUSE ""}
+<BR>
+She has to be somewhere dark and narrow in cherry blossom season, and on top of that, together with someone who is about to meet with danger.
+{PAUSE ""}
+<BR>
+With conditions this brutally strict, a person with sharp intuition in the ordinary sense would probably be far better at precognition.<PG>
+But if 'a dark, narrow place' is a necessary condition, she won't judge me to be a dangerous person right now.
+{PAUSE ""}
+<BR>
+No, could this train count as 'narrow' in <STYLE ID="8">Sakura-san's</STYLE> sense?
+{PAUSE ""}
+<BR>
+If we go into a tunnel, that'll be trouble.<PG>
+...It's probably fine.
+{PAUSE ""}
+<BR>
+The conditions for danger sense = the conditions for falling ill.
+{PAUSE ""}
+<BR>
+If she could sense danger in a tunnel, <STYLE ID="8">Sakura-san</STYLE> would wait until she'd recovered before getting on a train.
+{PAUSE ""}
+<BR>
+Otherwise, she'd only get even sicker.
+{PAUSE ""}
+<BR>
+So she shouldn't sense any danger from me on this train.<PG>
+The problem is when night falls.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> is one of my targets too, so <STYLE ID="8">Sakura-san</STYLE> will probably foresee that she herself is in danger.
+{PAUSE ""}
+<BR>
+If I'm going to kill <STYLE ID="8">Sakura-san</STYLE>, sunset is the time limit.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I looked at my watch. It was exactly noon.
+{PAUSE ""}
+<BR>
+That leaves a little over 6 hours until the time limit.
+{PAUSE ""}
+<BR>
+Now, what should I do?
+{PAUSE ""}
+<BR>
+Kill this mother and daughter first―
+{PAUSE ""}
+no, these two will guide me from the station to the Arata settlement.
+{PAUSE ""}
+<BR>
+In that case, the best plan is to kill them right before we reach the settlement.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\拳銃.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I've also brought a <STYLE ID="16" RUBY="サプレッサー">silencer</STYLE> for the handgun, so the other residents won't find out from the gunshots.
+{PAUSE ""}
+<BR>
+I'll let these two live a little longer.<PG>
+All right, it's perfect!
+{PAUSE ""}
+<BR>
+I don't know how we'll get to the settlement, but even if someone picks us up by car, I can just kill the driver along with them.<PG>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{CHANGECG "000" "グラフィック\背景\電車昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\夏菜中学バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="10">"Uh, </STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="10">...?"</STYLE>
+{PAUSE ""}
+<BR>
+Oh no. I'd been so lost in thought that I'd let the conversation drop.
+{PAUSE ""}
+<BR>
+They must have seen my expression too.<PG>
+<STYLE ID="10">"</STYLE><STYLE ID="6">Momoko-san</STYLE><STYLE ID="10">, are you all right?</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　You had such a sad look on your face?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Oh, it's nothing. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Nothing..."</STYLE>
+{PAUSE ""}
+<BR>
+A sad face...?
+{PAUSE ""}
+<BR>
+I'd thought I was making a frightening face, or a nasty one.
+{PAUSE ""}
+<BR>
+Could it be that the <STYLE ID="13" RUBY="りょうしん">tumor</STYLE> in my heart...<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―After that, we passed the time chatting about this and that.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> had one more <STYLE ID="17">daughter</STYLE>, and <STYLE ID="17">she</STYLE> was studying abroad.
+{PAUSE ""}
+<BR>
+At home it was the three of them, with <STYLE ID="18">her husband Kotaro-san</STYLE> and <STYLE ID="10">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="18">Kotaro-san's</STYLE> birth mother, a woman named <STYLE ID="19">Erika Niimura</STYLE>, had apparently died of illness a few years ago.
+{PAUSE ""}
+<BR>
+But there's someone else whose whereabouts I want to know.<PG>
+{MESOFF "500"}
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="20">Mifuyu Niimura</STYLE>―
+{PAUSE ""}
+<BR>
+The very person who killed <STYLE ID="2">Erina</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="20">She</STYLE> should be holed up in the Arata settlement with <STYLE ID="11">her daughter Haruka</STYLE>.
+{PAUSE ""}
+<BR>
+While we were on the train, I couldn't get as far as finding out where they were.
+{PAUSE ""}
+<BR>
+Oh well. There's no doubt they're in Arata.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

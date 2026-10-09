@@ -1,0 +1,828 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=332, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=963, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=992, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2971, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=12, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=9, unk2=16776960, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=5, unk2=7531958, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そろ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あんど, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=8, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かりょく, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5900, target=)
+; Links:
+;    0: TWdLink(count=5297, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Mifuyu</STYLE>... what happened after that? I heard <STYLE ID="2">Eiichiro-san</STYLE> took to his bed."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> and I had met the day before, and now I was meeting </STYLE>Akane<STYLE ID="3"> at the usual cafe.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In the end, I couldn't ask for </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s contact info, and I couldn't go after him either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Right away I set up a meeting with </STYLE>Akane<STYLE ID="3">.</STYLE><PG>
+"So... <STYLE ID="2">Eiichiro-san</STYLE>'s a no after all?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"N-no, that's not it! </STYLE><STYLE ID="2">He</STYLE><STYLE ID="1">'s just like me... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So I understand how </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1"> feels way too well, so much it hurts..."</STYLE>
+{PAUSE ""}
+<BR>
+"And that's why he took to his bed... what's that supposed to mean?"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">―I told </STYLE>Akane<STYLE ID="3"> what </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> and I had talked about in Central Park.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I see... Two of a kind, so you'd think you'd get along, but you're too much alike, so neither of you can make a move..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... what should I do..."</STYLE>
+{PAUSE ""}
+<BR>
+"What are you talking about? You charge in! 
+{PAUSE ""}
+　Ch-
+{WAIT "500" "CLICK" "SKIP"}
+ar-
+{WAIT "500" "CLICK" "SKIP"}
+g-
+{WAIT "500" "CLICK" "SKIP"}
+e!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's that..."</STYLE>
+{PAUSE ""}
+<BR>
+"Go see <STYLE ID="2">Eiichiro-san</STYLE>, who's laid up in bed, right now!"<PG>
+<STYLE ID="1">"What?!"</STYLE>
+{PAUSE ""}
+<BR>
+"He took to his bed out of self-loathing, because he thinks he's no match for you, <STYLE ID="1">Mifuyu</STYLE>, right? 
+{PAUSE ""}
+　Then go there yourself and talk to <STYLE ID="2">Eiichiro-san</STYLE> properly. 
+{PAUSE ""}
+Or do you have some complaint about <STYLE ID="4">Eiichiro-san</STYLE>?"<PG>
+<STYLE ID="1">"Uugh... no complaints... if anything, I thought he was really nice... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But what should I even talk about..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">You</STYLE>, honestly..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Would he really like someone like me..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ugh, enough! Come on! We're going!"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">―Dragged along by </STYLE>Akane<STYLE ID="3"> against my will, I headed to the apartment building where </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> lived.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "900" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\栄一郎マンション.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="2">Eiichiro-san</STYLE> lives in 502, apparently."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... </STYLE>Akane<STYLE ID="1">, come with me..."</STYLE>
+{PAUSE ""}
+<BR>
+"Haah... Only as far as the door, okay?"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\エレベーター.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHGVOL "SE" "500" "1000" "PASS"}
+{MESON "500"}
+Akane<STYLE ID="3"> brought me as far as the door of room 502, and </STYLE>
+{PAUSE ""}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "800" "0"}
+<STYLE ID="3">without even waiting for me to get ready, she rang the intercom.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\栄一郎マンション外廊下.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"No answer..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"He must be out! Come on, let's go home, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Oh, it's open..."
+{PAUSE ""}
+<BR>
+Akane<STYLE ID="3"> had opened the door without asking anyone.</STYLE><PG>
+"Well then, good luck in there!"
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "WAIT" "1000" "0"}
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<BR>
+<STYLE ID="1">"Whoa!"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "1000" "PASS"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+Akane<STYLE ID="3"> shoved me into the room by force.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uugh... what do I do..."</STYLE><PG>
+<STYLE ID="3">Inside, the curtains were closed and it was dim.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="6">Eiichiro-san</STYLE><STYLE ID="5">, are you here?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I tried calling in a small voice he surely couldn't hear.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Of course, there was no answer.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I took off my shoes and slowly went inside.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\栄一郎布団暗い.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Inside, it was tidy, with a little of a lived-in feel left.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A futon was laid out, and I could see someone sleeping under the comforter.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I went up to the futon and called to him.</STYLE><PG>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">'s voice... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm finally hearing things... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It's terminal..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That voice was definitely </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s nonsensical words reached my ears.</STYLE><PG>
+<STYLE ID="1">"Um... </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">? It's Mifuyu..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The moment I called to him again, </STYLE>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">the comforter flew up so high it nearly hit the ceiling.</STYLE><PG>
+<STYLE ID="1">"Whoa!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"M-M-M-</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">?!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\栄一郎布団.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">In his startled jump he hit the light switch with his back, revealing </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> in nothing but his underwear.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎足.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, why?! Ah, the way I'm dressed, this is, um...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"U-um, uh...! I heard you were sick in bed, so I was worried...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The light's pull cord swung as if it were laughing at this whole exchange.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">We were both so flustered that it took a while for </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> to get his clothes on.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\栄一郎布団.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I-I-I'm sorry for barging in all of a sudden! A-a-are you all right?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Uh-uh-uh-um, I-I-I'm all right!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">We were both so jittery that we couldn't hold a conversation.</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">, h-h-have you eaten properly?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"N-n-not yet today...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Th-then I'll m-make something!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">Carried by the momentum, I headed for the kitchen.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\栄一郎台所.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Uugh... </STYLE>Akane<STYLE ID="1">, what do I do..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I'd ended up making him a meal, but could I make anything that would suit </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s taste...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I cleared the sink as best I could and checked inside the fridge.</STYLE><PG>
+<STYLE ID="3">There were a fair number of ingredients, but I didn't want to keep him waiting long, so I couldn't make anything that took time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I stole a glance at </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\栄一郎布団.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">He was kneeling formally with his head down, looking restless.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Like this, the silence would be too much for him, so something quick to make and filling...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That meant...</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\千切り.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\鉄板で焼く.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "2000" "WAIT"}
+{MESON "500"}
+<STYLE ID="3">15 minutes later, I brought the finished dish over to </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "WAIT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\お好み焼き.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Um, I hope it suits your taste..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What I'd made was okonomiyaki. [TN: A savory pan-fried pancake of batter and cabbage.]</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Making something quickly with whatever was on hand, this was about all I could manage.</STYLE><PG>
+<STYLE ID="2">"It looks... so delicious... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I-is it really okay for me to eat this?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Y-yes! I took the liberty of making it for you, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Um, I don't think it tastes bad, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> slowly brought his chopsticks to the okonomiyaki and put a bite of it in his mouth.</STYLE><PG>
+<STYLE ID="1">"How is it...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> stayed silent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Then, still silent, he put another bite in his mouth.</STYLE><PG>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s movements were slow, yet the okonomiyaki was vanishing at an amazing speed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I watched him, heart pounding, like a student waiting for exam results.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Eventually, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> finished the okonomiyaki and stared at the empty plate for a while.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\栄一郎布団.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Um... did it suit your taste...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Uh... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">ungh... hic..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> suddenly let out that groaning cry of his.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I had never expected him to cry.</STYLE><PG>
+<STYLE ID="2">"For me... </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It's really delicious... I'm so happy I could die..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really?! I'm so glad...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Uuuh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> started crying again.</STYLE><PG>
+<STYLE ID="3">What should I do in a case like this?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> thinks the same way I do.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In that case, maybe I should do for him what I'd want done for me.</STYLE><PG>
+<STYLE ID="1">"U-um! I heard you'd been in bed all day, so would you like to go for a walk? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I'm sure walking around outside will make you feel better!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That line was something </STYLE>Akane<STYLE ID="3"> would say to me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> frowned.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\栄一郎頭かく.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"But... wouldn't you be embarrassed, walking with a guy like me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I mean... look at me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Pff! Ahahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was just like a conversation between me and </STYLE>Akane<STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Now I understood well how </STYLE>Akane<STYLE ID="3"> had felt, dealing with me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s feelings when he said something like that, I understood well too.</STYLE><PG>
+<STYLE ID="1">"I want to walk with you, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If I'm good enough for you... together..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s face turned as red as coal.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Y-yes! I'll go! If I'll do, I'll be your attendant!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Heh... 'attendant'... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">ahahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ha... hahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was the first moment that </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> and I laughed together.</STYLE><PG>
+<STYLE ID="3">Just as I'd thought, if I got cheerful, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> could get cheerful too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s smile made me happy as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At that moment, I felt it clearly:</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> had my heartfelt affection.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夕焼け.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "5000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Today again, a November wind was blowing that made you feel winter.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Side by side, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> and I walked through the early-winter sunset.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s face was bright red, as always.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">He seemed to be searching desperately for something to talk about, with a face that was shaky but earnest.</STYLE><PG>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> was dragging one leg as he walked, just like when we'd parted yesterday.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Surely the alcohol was out of his system by now, so it really was because of an old injury.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\手をつなぐ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Then, without warning, our hands bumped for an instant.</STYLE><PG>
+<STYLE ID="2">"Whoa-whoa! I'm sorry!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, I'm the one who did something improper...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">With frozen faces, we stared at each other for a while.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Heh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hahaha..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s hand had been warm.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Maybe because of that, the winter wind suddenly began to feel cold.</STYLE><PG>
+<STYLE ID="1">"It's a little chilly... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There's a cafe I always go to with </STYLE>Akane<STYLE ID="1">. Would you like to stop by?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Y-yes! As long as I'm with you, </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, anywhere!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\喫茶店夕方.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Come to think of it, this was the first time I'd come into this cafe with anyone besides </STYLE>Akane<STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Maybe because today was especially cold, it was more crowded than when I'd come in with </STYLE>Akane<STYLE ID="3"> earlier.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I could hear people around us whispering.</STYLE><PG>
+<STYLE ID="3">"Are they a couple, you think..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's like </STYLE><STYLE ID="1">Beauty</STYLE><STYLE ID="3"> and the </STYLE><STYLE ID="2">Beast</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Maybe the </STYLE><STYLE ID="2">guy</STYLE><STYLE ID="3">'s super rich or something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Even if he was rich, those looks would be a bit much for me... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Yeah, he must be that good of a person."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎うつむき.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Uuuh... I knew it, I'm..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> hunched his back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm happy to be with you, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I gave </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> a big smile.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\栄一郎頭かく.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Um... me too, being with you, </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">makes me happy!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Until a moment ago I'd been nervous too, but that feeling was completely gone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">More than that, I was happy just to be with </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="3">Oh no! The only drink this place had was coffee!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> had said he couldn't do coffee either, hadn't he...</STYLE><PG>
+<STYLE ID="3">"Welcome, </STYLE><STYLE ID="1">Kanai-sama</STYLE><STYLE ID="3">. What would you like to order?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The usual server came to take our order.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Then </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> raised his voice louder than ever.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ex-excushe me! Me and </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, we're both no good with coffee! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Do you have anyshing even we can drink?!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The moment he shouted that, the customers around us all burst out laughing at once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Pfffff...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"D-don't! You can't laugh!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I'd meant not to let it bother me, but even I got annoyed at the people around us.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But it's fine. As long as I know </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s charms, that's enough.</STYLE><PG>
+<STYLE ID="3">"Yes, we do. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The owner here was originally someone who disliked coffee as well, so we have put </STYLE><STYLE ID="7" RUBY="そろ">together</STYLE><STYLE ID="3"> a menu that even such guests can enjoy. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I shall prepare that for you, then."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What?! There was some kind of secret menu?!</STYLE><PG>
+<STYLE ID="2">"Phew, thank goodness..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> looked </STYLE><STYLE ID="8" RUBY="あんど">relieved</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Embarrassed, and still able to be this bold...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Between what happened yesterday and this, </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> really does seem like someone I can rely on when it counts.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">My affection for </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> grew bigger and bigger.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\皿を置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\コーヒーとクッキー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Kanai-sama</STYLE><STYLE ID="3">, thank you for bringing </STYLE><STYLE ID="2">your companion</STYLE><STYLE ID="3"> to us today. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Kanai-sama</STYLE><STYLE ID="3">, we are truly grateful for your patronage ever since we opened. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">To your companion</STYLE><STYLE ID="3"> as well, we humbly look forward to your continued patronage."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店夕方.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, you've been a regular here that long?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Yes, back when it had just opened, </STYLE>Akane<STYLE ID="1"> invited me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And I had a feeling the eyes around us were turned our way again.</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="1">She</STYLE><STYLE ID="3">'s been a regular since it opened, they said."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">That girlfriend</STYLE><STYLE ID="3"> must have a good eye, then."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then the </STYLE><STYLE ID="4">boyfriend</STYLE><STYLE ID="3"> must be someone amazing."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was a strange kind of praise, but if it made people think better of </STYLE><STYLE ID="4">Eiichiro-san</STYLE><STYLE ID="3">, I didn't mind.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\コーヒーとクッキー.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">―The coffee they brought us kept that distinctive aroma, but its sweetness and creaminess matched perfectly, and even I found it delicious.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"This is delicious! Amazing, and coffee was always a total no for me before...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">, thanks to you, for the first time I could feel that coffee tastes good. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I sent him a dreamy look.</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"Haah... </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I like you..."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\鼻をかむ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> sprayed his coffee everywhere.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The next moment, I realized I had unconsciously said something outrageous.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\喫茶店夕方.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="2">"Cough! </STYLE>
+{QUAKESTOP "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="2">　Cough!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I-I-I-I'm sorry! I said something weird out of nowhere!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Both </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> and I frantically wiped the table, but our hands kept fumbling and we couldn't clean it up properly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I-b-b-b-I, um...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I-I-I'm really sorry! Saying something so improper...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">By this point even the people around us were laughing in spite of themselves.</STYLE><PG>
+<STYLE ID="3">"Maybe they're a good match in their own way?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah... I'm starting to think so. Like, two of a kind?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I heard talk like that, but I was desperately trying to get the situation under control.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In the end we couldn't bear it anymore, so we hurried to drink our coffee and decided to leave the cafe.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "82" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">―We walked through the cold wind again.</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\夕焼け.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">We were more silent than we had ever been.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I'd said something so improper that my face felt like it was on fire.</STYLE><PG>
+<STYLE ID="3">The wind outside was as cold as ever.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But the faint sunlight still lingering was gently warm.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">More than anything, because of the outrageous thing I'd said, my heart was racing and my whole body was burning hot.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Afraid </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> might hear my heartbeat, I walked with my hand pressed to my chest.</STYLE><PG>
+<STYLE ID="2">"Um... </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The first to break the silence was </STYLE><STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="2">"Are we... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">alike after all, do you think..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"We... are. I think so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Laughing together when we laugh. Troubled together when we're troubled.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Embarrassed together when we're embarrassed.</STYLE><PG>
+<STYLE ID="2">"You might not like hearing this, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, when I look at you, it's like I'm looking at myself... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I feel like I'm looking in a mirror."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">He said exactly what I had been thinking yesterday.</STYLE><PG>
+<STYLE ID="2">"So...! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, to make you smile, first I have to be smiling...! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　If you're ever sad, </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="2">, I'll smile! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　So...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3"> turned toward me, his face redder than the sunset.</STYLE><PG>
+<STYLE ID="2">"So... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">please become a </STYLE><STYLE ID="10" RUBY="かりょく">family</STYLE><STYLE ID="2"> with m-me!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............!!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was a proposal I never would have imagined, the day after we first met.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Y... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">y... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yes! If a hopeless, good-for-nothing woman like me will do...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Please make me your family!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Normally, people would think a proposal the next day was absurd.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But that's fine. It seems I really am extreme.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\手をつなぐ.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">'s straight, earnest gaze was, to me, kind and warm beyond compare.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">You</STYLE><STYLE ID="3"> are my mirror.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I am </STYLE><STYLE ID="2">your</STYLE><STYLE ID="3"> mirror.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Not the outside, but my very self, reflecting the heart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Eiichiro-san</STYLE><STYLE ID="3">... with him, I felt I could make the face reflected in that mirror shine forever.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\手つなぐ2.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------
