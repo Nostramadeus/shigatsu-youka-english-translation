@@ -46,7 +46,7 @@ Fix a line, add a glossary term, extend the translation. Pull requests and issue
 | `work/グラフィック/`, `work/images/out/` | the English pictures: shipped `.gal` files and the English PNGs they were built from | through `tools/images/` |
 | `notes/` | the translation rules (`v2/METHOD.md`, `v2/STYLE.md`, `v2/CORE-RULES.md`, `v2/OWNER-RULINGS.md`), glossary (`v2/GLOSSARY.tsv`), character voice sheets (`v2/CAST.md`), read-through summary (`v2/SUMMARY.md`), decisions log, open questions | read first; add a glossary row when you coin a term |
 | `review/` | proofreading pages, Japanese left, English right, one per script | regenerate with `tools/render_review.py` |
-| `tools/` | build scripts (pylivemaker): compile scripts, build tables, typeset pictures, assemble the patch; `render_status.py` redraws `status.svg` above | if you build |
+| `tools/` | build scripts (pylivemaker): compile scripts, build tables, typeset pictures, assemble the patch | if you build |
 | `research/` | what the author said about fan translations (the license) | no |
 
 **Rules in four lines**
