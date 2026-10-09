@@ -1,0 +1,494 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1764, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=163, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=187, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぼうぜん, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=499, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=184, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=10, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=5, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3182, target=)
+; Links:
+;    0: TWdLink(count=2820, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "環境音\walk-snow2早い.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYMOVIE "桜山頂.wmv" "256" "C" "C" "REPEAT" "FALSE" "600" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\プリズン\タイヤの跡2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―I'd run only about 200 meters.
+{STOPSND "VOICE" "500" "PASS"}
+{PAUSE ""}
+<BR>
+But running 200 meters up a slope that hard to walk, at my age, hit my body harder than I'd imagined.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\タイヤの跡2朦朧.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It wasn't enough to make me collapse, but my mind grew a little hazy.
+{PAUSE ""}
+<BR>
+My vision blurred a little.
+{PAUSE ""}
+<BR>
+I put my hands on my knees and caught my breath.
+{PAUSE ""}
+<BR>
+It would probably pass if I rested a little, though.<PG>
+And then―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\プリズン\装甲車朦朧.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Before my eyes spread a scene that proved where the gunshots had come from.
+{PAUSE ""}
+<BR>
+My vision was still blurry, but this had to be the place.
+{PAUSE ""}
+<BR>
+The shooting had happened right around here, no doubt about it.<PG>
+All the while, my eyes were clearly taking in what lay before me.
+{PAUSE ""}
+<BR>
+Hazy as my mind was, I could perceive what the scene meant.
+{PAUSE ""}
+<BR>
+Only, though I could perceive it and recognize it, I could not understand it.<PG>
+{STOPSND "SE" "5000" "PASS"}
+That was how hard the scene was to comprehend.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\ホラーインダストリアル.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\プリズン\装甲車.gal" "NORMAL" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The cherry blossoms piled on the ground were stained with fresh blood.
+{PAUSE ""}
+<BR>
+The spattered blood gathered and flowed as a red river across the pink earth.<PG>
+10 people... no, maybe about 15.
+{PAUSE ""}
+<BR>
+People in gear like spacesuits lay collapsed on the piled cherry blossoms.
+{PAUSE ""}
+<BR>
+But had the protective suits been of no use?
+{PAUSE ""}
+<BR>
+They didn't move a muscle, lying face down on the carpet of cherry blossoms.
+{PAUSE ""}
+<BR>
+The protective suits had meant nothing against this air.<PG>
+No, that was wrong.
+{PAUSE ""}
+<BR>
+If blood was flowing, then these protective suits had been torn open.
+{PAUSE ""}
+<BR>
+And lying beside them were firearms, machine guns or automatic rifles, I couldn't tell which.
+{PAUSE ""}
+<BR>
+In other words... 
+{PAUSE ""}
+in other words...
+{PAUSE ""}
+<BR>
+They had fought someone and been killed.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+A familiar voice, right behind me.
+{PAUSE ""}
+<BR>
+But a voice with all the strength drained out of it.
+{PAUSE ""}
+<BR>
+A voice with no spirit, no energy.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32血まみれ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> was covered in blood all over, standing there <STYLE ID="3" RUBY="ぼうぜん">dazed</STYLE>.
+{PAUSE ""}
+<BR>
+Was this blood <STYLE ID="1">Natsumi's</STYLE> own, or spatter from them?<PG>
+<STYLE ID="2">"You're not... hurt...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">yeah."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> wasn't hurt.
+{PAUSE ""}
+<BR>
+Then it was their blood.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> must have seen what happened here.<PG>
+<STYLE ID="2">"What happened...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hey..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2">?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ32血まみれバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"The things I don't want to say... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I don't have to say them, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So it was... </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">I don't want to die..."</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\SE追加\心臓取り出す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{MESOFF "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\なつみ心臓.gal" "NORMAL" "#1" "R" "T" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\プリズン\心臓.lcm" "REPEAT" "#1" "R" "580" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Natsumi's</STYLE> body swayed, and then came a low sound, like someone hitting a broken drum.
+{PAUSE ""}
+<BR>
+Right after that, from <STYLE ID="1">Natsumi's</STYLE> body, a slithering sound of liquid rubbing against liquid.
+{PAUSE ""}
+<BR>
+Liquid can't rub against liquid, but if I had to describe it, it was the sound of liquid rubbing against liquid.
+{PAUSE ""}
+<BR>
+And with that sound―<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n-256\r\n5000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n4\r\n324\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n-256\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n4\r\n324\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+From <STYLE ID="1">Natsumi's</STYLE> chest, a hand clutching a twitching organ.<PG>
+<STYLE ID="1"><TXSPS>"I don't... want to... die..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n3\r\n960\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n3\r\n960\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<TXSPN>When the hand holding the organ went back into <STYLE ID="1">Natsumi's</STYLE> body, <STYLE ID="1">Natsumi</STYLE> collapsed to the ground just like that.
+{PAUSE ""}
+<BR>
+And behind her―<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\ホラー.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\プリズン\装甲車.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\春花心臓持つ.lcm" "REPEAT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\イラスト\真呪殺編\パラサイト\パラサイト普通.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"I know it's bad. But if I do this..."</STYLE>
+{PAUSE ""}
+<BR>
+The one who said it, drenched in as much blood as <STYLE ID="1">Natsumi</STYLE>, was <STYLE ID="4">Haruka-chan</STYLE>.
+{PAUSE ""}
+<BR>
+The heart gripped in <STYLE ID="4">Haruka-chan's</STYLE> hand.
+{PAUSE ""}
+<BR>
+Its pulse grew weaker and weaker.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> was dying...<PG>
+<STYLE ID="2">"What... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">What is this? This... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2">... what are you going to do to her...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="5">My mom</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">The mom who raised me</STYLE><STYLE ID="4">, I told you she died, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Back then―"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\美冬車.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "14" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="4">"Mm... where am I...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬うつむき.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"Haah...! Haah...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>I'd been put in a car, and beside me <STYLE ID="5">Mom</STYLE> was driving, clutching her chest in pain.<PG>
+<STYLE ID="4">"Wait, what is this! </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="4">, what're you doing!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPS>"H-</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="5">...! </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Just a little more... just a little more...! We're almost there...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>At that point, I'd completely forgotten being carried off to the roof, and jumping off the roof.
+{PAUSE ""}
+<BR>
+All I knew for sure was that <STYLE ID="5">Mom</STYLE> was suffering right in front of me.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="4">! I dunno what's going on, but we're going to the hospital, right now!"</STYLE>
+{PAUSE ""}
+<BR>
+I grabbed <STYLE ID="5">Mom's</STYLE> hand, yanked the parking brake, and forced the car to stop.
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPS>"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="5">...! Just keep quiet...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4"><TXSPN>"Please, just stop! You're gonna die!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+When I threw my arms around <STYLE ID="5">Mom</STYLE> to stop her―<PG>
+{MESOFF "500"}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\詫言編　夢から\手直し・追加\血のイメージ.gal" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"Ngh... haah...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5"><TXSPN>Mom</STYLE> even started vomiting blood.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Haah... haah..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\プリズン\美冬吐血.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"We're going... hurry, before I die...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>Overwhelmed by the desperate, fearsome look on her face, I couldn't do a thing anymore.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mom</STYLE> kept the car moving on willpower alone.
+{PAUSE ""}
+<BR>
+I had no idea what was making <STYLE ID="5">Mom</STYLE> suffer like this.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And somehow we made it all the way to Arata, but...<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="6">, I'm sorry, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mom</STYLE> breathed her last the moment she got me to Arata.<PG>
+I found out later, but <STYLE ID="5">Mom</STYLE> had used Droga to jump off the roof and to slip past people and get away.
+{PAUSE ""}
+<BR>
+She'd pulled moves that crazy while carrying me, so her body was screaming.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I... cried.
+{PAUSE ""}
+<BR>
+Even though I still didn't know why <STYLE ID="5">Mom</STYLE> did this, or why she died.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Dad</STYLE>, <STYLE ID="5">Mom</STYLE>, the guys who bullied me in Megasawa, they all died.
+{PAUSE ""}
+<BR>
+Everyone who gets involved with me ends up unhappy.
+{PAUSE ""}
+<BR>
+I really hated my own weakness.<PG>
+I wanted to toughen myself up all over again, so I went into the mountain seclusion, the rite of passage.
+{PAUSE ""}
+<BR>
+And on April 8 of Shiyo 802, 2 years after the Motoki-cho case―<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Stopping by the settlement for the first time in a while, I came into contact with the Goddess's 'Blessing.'
+{PAUSE ""}
+<BR>
+The 'Blessing' had been released for me.
+{PAUSE ""}
+<BR>
+Thanks to that 'Blessing,' I was able to become the Goddess's <STYLE ID="8" RUBY="しんし">divine messenger</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜山頂.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\プリズン\装甲車.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\イラスト\真呪殺編\パラサイト\パラサイト普通.lcm" "REPEAT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The goddess, the 'Blessing,' divine messengers.
+{PAUSE ""}
+<BR>
+Line up words that make no sense, and there's no way I can understand them.
+{PAUSE ""}
+<BR>
+All I do understand is that this <STYLE ID="4">Haruka-chan</STYLE> was nothing but a threat after all.<PG>
+<STYLE ID="4">"But... after all, I don't just need </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="4">. I need </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> qualifies to become a divine messenger. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Because Arata and Motoki-cho got connected... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">that's why I came to get her."</STYLE>
+{PAUSE ""}
+<BR>
+She was probably talking about whatever caused this great disaster, but there hadn't been a scrap of anything like it in the information from <STYLE ID="9">Goto-chan</STYLE>.<PG>
+<STYLE ID="4">"All that's left is for </STYLE><STYLE ID="2">Auntie</STYLE><STYLE ID="4"> to become a divine messenger, and the Goddess's wish is fulfilled. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Then it's me and </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4">, together for eternity."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka-chan's</STYLE> one-sided talk, and <STYLE ID="1">Natsumi's</STYLE> remains, had left me speechless, but now I finally came back to myself.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">... us... what are you going to do with us...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Like I said, with this, me and </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4"> are together for eternity. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Of course, </STYLE><STYLE ID="2">Auntie</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">No―</STYLE><STYLE ID="2">my real mom</STYLE><STYLE ID="4">, too. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Mom</STYLE><STYLE ID="4">, because you qualify to be a divine messenger too."</STYLE>
+{PAUSE ""}
+<BR>
+For some reason, I couldn't read <STYLE ID="4">Haruka-chan's</STYLE> expression well.
+{PAUSE ""}
+<BR>
+Was she crying, or smiling?
+{PAUSE ""}
+<BR>
+I couldn't tell what she was thinking as she spoke to me now.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\真呪殺編\パラサイト\パラサイト横目.lcm" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Haruka-chan</STYLE> glanced over at the 15 or so in protective suits.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"These guys would be trouble if the Goddess's secret got out, so I decided to have them return to the earth."</STYLE>
+{PAUSE ""}
+<BR>
+Did <STYLE ID="4">Haruka-chan</STYLE> do all of this?
+{PAUSE ""}
+<BR>
+Against 15 people with guns?<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="2">... tell me, what happened...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\真呪殺編\パラサイト\パラサイト.lcm" "REPEAT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"I'm being kept alive. By the Goddess."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What is this Goddess...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"The Goddess brought </STYLE><STYLE ID="5">my mom who died</STYLE><STYLE ID="4"> back to life as a divine messenger. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">And then me, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="4">, and you, </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">That makes all four of us. The living and the dead of the first and second generations."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What... what are you saying...?"</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="4">, you qualify to be a divine messenger too. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'll ask the Goddess myself, so let's become one. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Part of the Goddess―"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "500" "PASS"}
+{CHANGECG "000" "グラフィック\イラスト\真呪殺編\パラサイト\パラサイトラスト閉じ.gal" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "15" "500" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

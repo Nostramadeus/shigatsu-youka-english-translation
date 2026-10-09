@@ -1,0 +1,717 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=287, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4913, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=90, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=37, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=69, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=388, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=45, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=12, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらたしゅうらく, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ななみそう, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みこがみ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みこがみ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=としゃぶつ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ばりぞうごん, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はらわた, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おきて, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おうと, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=5, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にいむらえいいちろう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6404, target=)
+; Links:
+;    0: TWdLink(count=5878, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Still, I can't say it..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">When I was in kindergarten, my family and </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">'s went to Central Park to view the cherry blossoms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I ran around with </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">, both of us holding balloons, while our </STYLE><STYLE ID="3">dads</STYLE><STYLE ID="1">, drinks in hand, enjoyed their day off.</STYLE><PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">And then that strong wind blew―</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{PLAYSND "escapescape.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\罅（ひび）\桜3.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Central Park had been calm and sunny with spring, when all of a sudden a gale tore through it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1">'s balloon was carried off by that wind and got caught in Central Park's goshinboku, and―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> burst into tears.</STYLE><PG>
+"<STYLE ID="2">Natsumi</STYLE>, don't cry. You can have my balloon."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> didn't stop crying.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Seeing all that, </STYLE><STYLE ID="3">my dad</STYLE><STYLE ID="1"> climbed the goshinboku, and―</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\柵尖り.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">My dad</STYLE><STYLE ID="1"> fell from the tree trying to get the balloon caught in the goshinboku, and died.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The scene was gruesome. As he fell, </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1"> had his neck run through by the park fence.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Dad</STYLE><STYLE ID="1">'s spraying blood drenched </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">, who was below, from head to toe, and from that time on, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> was afraid of cherry blossoms.</STYLE><PG>
+<STYLE ID="1">She was 4 at the time, and </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> doesn't seem to remember it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I remember it, faintly.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\柵尖り血.gal" "WAIT" "4!" "300" "1" "1" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The wound in his neck couldn't hold his weight and kept tearing wider, until at last the blood sprayed out.</STYLE><PG>
+<STYLE ID="3">My dad</STYLE><STYLE ID="1"> being dead is something </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> still doesn't know, either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The story is that he was transferred overseas and went alone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">My mom</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">'s parents apparently decided to hide it that way, but...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just how long do they plan to keep it hidden?</STYLE><PG>
+<STYLE ID="4">Dad</STYLE><STYLE ID="1"> had only just died when </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> and I left Motoki-cho and moved to Megasawa City in Iizawa Prefecture.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Losing Dad</STYLE><STYLE ID="6"> had made </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> ill, and it was so she could recuperate.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There's a hospital there that specializes in mental illness, and </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="1">'s hometown, </STYLE><STYLE ID="7" RUBY="あらたしゅうらく">the Arata settlement</STYLE><STYLE ID="1">, is nearer from there than from Motoki-cho.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\児童養護施設.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> was hospitalized, and I went into a children's home near the hospital.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A lot of the kids at the home were in situations like mine, and I fit in right away.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But sleeping away from </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> was hard on me, a child not yet in school.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\病院思い出.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\美冬アラサー横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> spent all her time gazing out of her hospital room at the cherry trees in leaf.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Dad</STYLE><STYLE ID="1">'s death seemed to have been a terrible shock to her.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I wanted to be some help to </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> somehow.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I wanted her to get well soon, so we could go back to Motoki-cho―</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "50" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+<STYLE ID="1">To cheer </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> up, I cast charms on her that I'd read about in picture books.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Only at those times would </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> turn to me with a smile.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That alone made me happy.</STYLE><PG>
+<STYLE ID="1">I looked through all kinds of picture books at the home, searching for charms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was around then that I came to know.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That among charms, there are "curses" that make trouble for people.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">By the time I was starting elementary school, </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">'s illness had gotten a lot better.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> was discharged, and we moved into a run-down apartment building called </STYLE><STYLE ID="8" RUBY="ななみそう">Nanami-so</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Old apartment or not, this would bring our old life back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Once </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> was properly well, we'd go back to Motoki-cho, and I'd be able to play with </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That was the hope that filled my heart, but...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\教室.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="9" RUBY="みこがみ">Mikogami</STYLE><STYLE ID="1">! You pray to some weird god, don't you!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What! This one's family is in that evil cult!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ugh... we'd better not get involved..."</STYLE>
+{PAUSE ""}
+<BR>
+"H-hey. You shouldn't bully <STYLE ID="10" RUBY="みこがみ">Mikogami</STYLE>-san..."<PG>
+<STYLE ID="1">I stood up for a kid in my new class who was being bullied.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Because of that, before long I became the target of the bullying.</STYLE><PG>
+<STYLE ID="1">Kids bully where adults can't see.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On top of that, even if I alone went to the teacher, if the great majority of the others said "That's not true," the teacher would also decide I was imagining things.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To make matters worse―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">this I only found out later―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">the parent of a kid who was bullying me was apparently a PTA officer.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The kind of parent people call a monster parent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Things never took a turn for the better.</STYLE><PG>
+<STYLE ID="1">In front of </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">, I tried to act cheerful.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> had to get well soon, that was why.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">One day, just before I started second grade.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hey, hey, <STYLE ID="5">Mom</STYLE>!<STYLE ID="1"> </STYLE><STYLE ID="2">Natsumi</STYLE>'s gonna be in elementary school soon too, right!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even after we parted in Motoki-cho, my best friend was still </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But whenever I talked about </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">, </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">'s face would always go blank.</STYLE><PG>
+<STYLE ID="5">"I see... </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="5">-chan's starting elementary school already. </STYLE>Haruka<STYLE ID="5">, is school fun?"</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Yeah, it's fun!"<PG>
+<STYLE ID="5">"Really... is it really fun?"</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Yeah... it's fun..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> was looking at me as if she could see right through me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Those eyes of </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">'s, always so gentle, scared me a little.</STYLE><PG>
+<STYLE ID="5">"</STYLE>Haruka<STYLE ID="5">, if you're having fun, then that's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But if anything hurts, make sure you tell me."</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Yeah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">With that one word, my smile turned into tears.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right now, the only one I could really rely on was </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I told </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> about the bullying.</STYLE><PG>
+<STYLE ID="5">"I see. </STYLE>Haruka<STYLE ID="5">, you're a kind girl. Helping a child who's being bullied is a very good thing to do. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">If that kind of thing is happening, cast a charm. </STYLE>Haruka<STYLE ID="5">, you're good at charms, aren't you?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> gave me a book a few days later.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\のろいのせかい.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">It was a children's book called 'The World of Curses,' yet it was a strangely stark, rugged book.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">When I flipped through it, I found ways of summoning demons and cursing people to death written in it, at a children's-book level, but there.</STYLE><PG>
+"Thank you, <STYLE ID="5">Mom</STYLE>. 
+{PAUSE ""}
+But charms are for helping you, <STYLE ID="5">Mom</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see. What a good girl you are, </STYLE>Haruka<STYLE ID="5">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's what I said, but inside I was very interested.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If curses could make the bullying go away and help </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> get better―</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{CHANGECG "000" "グラフィック\背景\呪いイメージ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形白紙.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―A few days later, my patience reached its limit.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, for me, with the weapon of curses in my hands, maybe it was just the natural course of things.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The method was simple. Write the person's name on a paper doll, and spit on it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then </STYLE><STYLE ID="11" RUBY="ささ">offer</STYLE><STYLE ID="1"> a prayer to your departed ancestors.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">With that, the two who bullied me worst would disappear from in front of me.</STYLE><PG>
+"<STYLE ID="5">Mom</STYLE>, where's some plain white paper and scissors?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Plain white paper and scissors? Are you doing a charm?"</STYLE>
+{PAUSE ""}
+<BR>
+"Uh-uh, no. My charms are for making you better, <STYLE ID="5">Mom</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That time too, </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> looked at me as if she could see right through me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I played dumb about the paper dolls to the very end.</STYLE><PG>
+<STYLE ID="1">It was true that I used charms to help </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Only, that was the goal, and as for what the means were―there was no way I could tell her that.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Dad</STYLE><STYLE ID="1"> had been dead exactly 2 years. Shiyo 790, April 8.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That day, </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> and I had gone to the Arata settlement, where the Niimura main family is, for </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1">'s third-year memorial service. [TN: Buddhist memorials count the year of death as the first year.]</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There, I prayed to </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1"> with all my heart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Please make those two disappear.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Dad</STYLE><STYLE ID="1"> was too close to be called an ancestor, but back then I didn't understand that.</STYLE><PG>
+<STYLE ID="1">No, curses aside, I was asking </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="1"> for help.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That the bullying would stop, that </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> would get well, that we could go back to Motoki-cho soon.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The next day, word came that school was closed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That was how I learned of the deaths of the two I had cursed. Someone had killed them, apparently.</STYLE><PG>
+<STYLE ID="1">I trembled with joy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I never thought those two would really disappear. Curses... curses really exist...!</STYLE><PG>
+<STYLE ID="1">The police came to our home too, but naturally we weren't suspected.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Because </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> and I had an alibi: we'd been at the memorial service.</STYLE><PG>
+<STYLE ID="1">From around then, I started looking into curses in earnest.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Again, it was only children's-book-level stuff from the school library, but even so, the people around me found me creepy, and the bullying stopped just like that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That's right, get rid of anyone who threatens my happiness or </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">'s!</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\呪いイメージ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形白紙.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">After looking into all sorts of things, I learned that the method from before was a way to summon a shinigami.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To summon the shinigami more reliably, instead of spitting on the paper doll, you smear it with </STYLE><STYLE ID="12" RUBY="としゃぶつ">vomit</STYLE><STYLE ID="1">, in other words, what you've thrown up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And you cast the curse on a day close to a relative's memorial service.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That way, on the day of the service, you can be sure to get rid of the person you want gone.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "54" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+<STYLE ID="1">The next time I carried out a curse was right after I'd started sixth grade.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At 11, the kids around me could explain to their parents and teachers, in a fairly logical way, that I was "creepy."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I learned around this time that Megasawa City had once been a religious city dominated by a cult, and as a backlash, kids who played around with charms and curses were shunned.</STYLE><PG>
+<STYLE ID="1">The ones I cursed were the PTA president and my homeroom teacher.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Those two did whatever the kids and parents told them to, and bullied me in roundabout ways.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This time, it wasn't just kids. Even adults had joined in.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\教室.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Being made out to be the one who stole the school lunch money was a given.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That I'd broken into a classmate's house to steal, that I'd smashed the windows of teachers' cars: accusations no 11-year-old could realistically have pulled off.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Each time, </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> went to the parents and teachers to apologize.</STYLE><PG>
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> must have known too, and yet her days were spent going around bowing her head over and over.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">But </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> never once blamed me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Far from it,</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"If anything hurts, I'll help you, no matter what it is."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">she would always tell me with a smile.</STYLE><PG>
+<STYLE ID="1">We didn't have the money to move, and </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">'s strength was running out.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At this rate, </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> would end up back in the hospital.</STYLE><PG>
+<STYLE ID="1">Then life in Motoki-cho would slip further away again.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Before that happened, I had to get rid of the PTA president and my homeroom teacher.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> suffering because of me too... I couldn't stand it anymore.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Shinigami... lend me your power one more time...!</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―On the day of </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1">'s seventh-year memorial service, it happened.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\呪いイメージ.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The results were beyond what I'd expected.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The PTA president had every tooth smashed with a blunt weapon, then was stabbed to death with a knife.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Not one stab hit anywhere that would kill instantly. The president must have suffered, waiting to bleed out, and died.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The homeroom teacher had all four limbs crushed with a blunt weapon and, unable to move, was killed by a toxic chemical poured into the mouth.</STYLE><PG>
+<STYLE ID="1">But once it had come this far, even I got scared.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was the same as killing four people with my own hands.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This time too I explained the paper dolls to the police, but they didn't seem to take me seriously at all.</STYLE><PG>
+<STYLE ID="1">After that, the adults started avoiding me too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even though the bullying stopped, my mother and I were cut off from the kids and from the teachers.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was this... what I had wanted...?</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―Still holding that question, I went on to a public middle school in Megasawa City.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\教室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The middle school I went to was in a district that also took in graduates of another elementary school.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So a lot of them didn't know about my curses, and I started getting bullied again.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In middle school the methods were nastier, and even when they found out about my curses, many of them didn't believe it.</STYLE><PG>
+<STYLE ID="1">"</STYLE>Niimura<STYLE ID="1">, </STYLE>you<STYLE ID="1">'re one of those cultists, I heard!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Seriously gross! Cultists should just die."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I got hit with senseless </STYLE><STYLE ID="13" RUBY="ばりぞうごん">abuse</STYLE><STYLE ID="1"> like that, but I wasn't going to curse anyone anymore.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Even someone like me had something that kept me going.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\手紙.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1">'s letters always cheered me up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I didn't want to bring my everyday life into my one joy, so I never told </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> a thing about the bullying or the curses.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="1">But those guys, even </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">...!</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\教室.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"What's this letter? </STYLE>You<STYLE ID="2"> actually had a friend</STYLE><STYLE ID="1">? Is </STYLE><STYLE ID="2">this one</STYLE><STYLE ID="1"> a cultist </STYLE><STYLE ID="6">too</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+"Give it back! That's my...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I bet </STYLE><STYLE ID="2">this one</STYLE><STYLE ID="1">'s a cultist too!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>You<STYLE ID="1">'re gross, but </STYLE><STYLE ID="2">this one</STYLE><STYLE ID="1">'s gross too."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\tearing_papers1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Okay, cult disbaaanded!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Let me have a go too!"</STYLE>
+{PLAYSND "SE\tearing_papers1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\tearing_papers1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Insulting me was one thing, but </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="6">'s letters getting torn up was something I just </STYLE><STYLE ID="1">couldn't forgive.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神選択.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Dad</STYLE><STYLE ID="1">'s tenth-year memorial service was 10 days away.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This is the last time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Shinigami―</STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="1">, those guys...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">One more time... just one more time...!</STYLE><PG>
+<STYLE ID="1">That night, I made the last paper doll.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And yet the next day, I was suddenly terrified.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No matter what, there was no need to kill them. There must have been some other curse.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, first I had to lift this curse.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">But on the morning of April 9, two bodies were found, more gruesome than ever before.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\呪いイメージ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形白紙.gal" "WAIT" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">One had the arms and legs cut off and the belly slit open, the </STYLE><STYLE ID="14" RUBY="はらわた">guts</STYLE><STYLE ID="1"> exposed, and crows were eating them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The other had every bone in the body crushed and had been left in the mountains, where wild dogs had torn into it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The shinigami no longer killed right away. It had begun making them suffer more before they died.</STYLE><PG>
+<STYLE ID="1">This time too the police didn't treat me as the culprit, but the school, the students, everyone came to fear me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, not just the people connected to the school. The residents nearby came to be afraid of me too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And maybe it was because the municipality feared the old cult. In the end, a recommendation to change schools was issued to my mother and me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Saying we should leave Megasawa City.</STYLE><PG>
+<STYLE ID="1">In the end, once you cast a curse, you can't stop.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I am a witch.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The witch of April 8, who summons the demon called the shinigami.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Whatever my reasons, I can only ever be something loathed.</STYLE><PG>
+<STYLE ID="1">As a result, we were able to go back to Motoki-cho, but the way it came about was nothing I would have wanted.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But there was nowhere else we could live.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7" RUBY="あらたしゅうらく">The Arata settlement</STYLE><STYLE ID="1"> had some sort of </STYLE><STYLE ID="15" RUBY="おきて">rule</STYLE><STYLE ID="1">, and apparently we weren't allowed to move there until I turned 16.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Though I'm already 17 now, life in Motoki-cho is stable, so there are no plans to move to </STYLE><STYLE ID="7" RUBY="あらたしゅうらく">the Arata settlement</STYLE><STYLE ID="1">.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">―Three years have passed since then.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Tomorrow is Shiyo 800, April 8. </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1">'s thirteenth-year memorial service.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I asked </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1">, and I'm skipping the thirteenth-year memorial service.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Because if I go to the service, a Megasawa City case will happen.</STYLE><PG>
+<STYLE ID="5">Mom</STYLE><STYLE ID="1"> agreed without any fuss. She must have understood how I felt.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even without a paper doll, wouldn't a Megasawa City case happen anyway?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That fear has clung to me ever since I came to Motoki-cho.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島挨拶.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I won't curse anyone anymore.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Since coming back to Motoki-cho, I've thrown away the witch I was, and I've made lots of friends.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Who knew just that much could let me live so brightly and happily.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Above all, by my side there's </STYLE><STYLE ID="2">Natsumi, </STYLE><STYLE ID="6">and my cute junior, </STYLE><STYLE ID="16">Goto</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I had one worry.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\トイレ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">The day before yesterday, I got an upset stomach and threw up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Maybe because food spoils easily once it gets warm, I'd come down with an upset stomach pretty much every year.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That was my only worry.</STYLE><PG>
+<STYLE ID="1">To cast a curse, I need my own </STYLE><STYLE ID="12" RUBY="としゃぶつ">vomit</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Except for the very first time, I'd gotten an upset stomach and </STYLE><STYLE ID="17" RUBY="おうと">vomited</STYLE><STYLE ID="1"> a few days before each curse.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, it's fine. The shinigami won't appear this year.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There's no one I want to kill. The witch I was is gone now.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I opened the cabinet in the living room and looked at the memorial photo inside.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\棚開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\栄一郎遺影.gal" "WAIT" "#1" "650" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">This is my </STYLE><STYLE ID="4">dad</STYLE><STYLE ID="6">, </STYLE><STYLE ID="18" RUBY="にいむらえいいちろう">Eiichiro</STYLE><STYLE ID="4"> Niimura</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Dad</STYLE><STYLE ID="1"> died at 30.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">He wasn't especially good-looking, and not even flattery could call his build average.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Because he went and forced himself up a tree with a body like that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> really were a close couple, and they doted on me.</STYLE><PG>
+"<STYLE ID="4">Dad</STYLE>, I'm sorry I can't come this year. I'm always thinking of you, <STYLE ID="4">Dad</STYLE>. 
+{PAUSE ""}
+My life here is a lot of fun. <STYLE ID="2">Natsumi</STYLE> and <STYLE ID="16">Goto</STYLE> and my other friends are all kind, and―"<PG>
+<STYLE ID="1">Not having </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1"> here is very lonely.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, I have never once felt hatred toward </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Far from it, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> is what keeps me going.</STYLE><PG>
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> is better off not knowing. </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> did nothing wrong.</STYLE><PG>
+<STYLE ID="1">That was... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">yes, that was... an accident...</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

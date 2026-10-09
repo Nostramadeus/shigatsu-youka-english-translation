@@ -1,0 +1,29 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=161, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=175, target=)
+; Links:
+;    0: TWdLink(count=161, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{STOPSND "BGM" "10000" "PASS"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPD TIME="4294967246">Listen! In general, a beautiful girl is a thing to be admired, and laying a hand on one must never, under any circumstances, be permitted! This is the founding principle of the Motoki Bishojo Appreciation Society! Much more so, a sexual offense against a beautiful girl is beyond all words! Our activities aim at admiring beautiful girls and at the same time at the healthy upbringing of beautiful girls! Even should one meet a beautiful girl, photographing or filming her without permission is never allowed!
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "0000,人物1" "1" "0" "0" "0" "" "0"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MENUENABLED">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

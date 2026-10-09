@@ -1,0 +1,356 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1391, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=704, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=58, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1030, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=44, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=28, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=8, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=43, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3552, target=)
+; Links:
+;    0: TWdLink(count=3310, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Senpai</STYLE>, sorry to interrupt while you're drunk on victory, but <STYLE ID="2">Kogori-senpai</STYLE> happens to be away right now. 
+{PAUSE ""}
+From the look of it, she won't be back for quite a while."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uh, yeah... Right."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">So one way or another, we'd smoothly gotten </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3"> out of the way.</STYLE><PG>
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Um, where were we?"</STYLE>
+{PAUSE ""}
+<BR>
+"About your phone being bugged, <STYLE ID="1">Senpai</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right, right. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So you think </STYLE><STYLE ID="4">Natsumi's dad</STYLE><STYLE ID="1"> planted a bug in my phone?"</STYLE>
+{PAUSE ""}
+<BR>
+"It's a possibility. I don't have proof yet, though..."<PG>
+<STYLE ID="4">Natsumi's dad</STYLE><STYLE ID="3"> doing something like that? I couldn't see why.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">After all, it would mean </STYLE><STYLE ID="4">Natsumi's dad</STYLE><STYLE ID="3"> had been helping the shinigami.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And though it wasn't confirmed yet, the one who'd been murdered was </STYLE><STYLE ID="4">Natsumi's dad</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="1">"Then shouldn't we go to the police after all..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"That's true... But something's nagging at me."<PG>
+"Going to the police might mean letting <STYLE ID="2">Kogori-senpai</STYLE> know about her <STYLE ID="4">dad</STYLE>'s death. 
+{PAUSE ""}
+Then the police would hold <STYLE ID="2">Senpai</STYLE> for a while. The shinigami must have predicted that much, too."<PG>
+"So I think going to the police might be going exactly according to the shinigami's plan. 
+{PAUSE ""}
+If that happens, I have a feeling <STYLE ID="2">Senpai</STYLE> would be in real danger..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Then the shinigami's a police officer!?"</STYLE>
+{PAUSE ""}
+<BR>
+"No, I don't think it's that..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm, I don't really get it... Let me sort this out for a sec."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Got it. Then I'll explain it in order, starting from 12 years ago."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, go ahead."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+Goto<STYLE ID="3"> took out her notes and flipped through them.</STYLE><PG>
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+"April 8, 12 years ago: <STYLE ID="5">Niimura-senpai's father</STYLE> died. 
+{PAUSE ""}
+Then April 8, 10 years ago. The first Megasawa City case, where two second-graders who had been bullying you, <STYLE ID="1">Senpai</STYLE>, were killed by someone. 
+{PAUSE ""}
+I think your 'curse,' <STYLE ID="1">Senpai</STYLE>, was probably what triggered it."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're not denying the curse?"</STYLE><PG>
+"Only as a trigger. 
+{PAUSE ""}
+Other than their bullying you, <STYLE ID="1">Senpai</STYLE>, can you think of any reason second-graders would get murdered?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A 7-year-old being killed because some adult held a grudge was hard to imagine.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I still couldn't see it as anything but my curse coming true, though.</STYLE><PG>
+<STYLE ID="1">"No, I can't think of any..."</STYLE>
+{PAUSE ""}
+<BR>
+"Right, it wasn't murder out of a grudge. Strictly speaking, the person who killed them held no grudge."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Something about the way you said that bothers me..."</STYLE><PG>
+"Listen. Everything started with the case 10 years ago. 
+{PAUSE ""}
+I don't think <STYLE ID="5">your dad</STYLE>'s accident has much to do with it. 
+{PAUSE ""}
+It doesn't have <STYLE ID="6" RUBY="・・・">much</STYLE> to do with it, that's all. I'm not saying it's unrelated."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">True, the first two to die were two kids with no connection to </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The four killed after that shouldn't have had any connection to </STYLE><STYLE ID="7">Dad</STYLE><STYLE ID="3"> either.</STYLE><PG>
+"And then the Megasawa City cases 3 years ago and 6 years ago. Those were simply imitations of the case 10 years ago, or just the same method used again."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So that means we can treat the three Megasawa City cases as a set."</STYLE><PG>
+"Yes. And today's case is the only one where the victim isn't someone you cursed on purpose, <STYLE ID="1">Senpai</STYLE>. 
+{PAUSE ""}
+There were paper dolls, but if someone else prepared them..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, wait a sec. The only one who could do that is..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\能面背景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Nobody but </STYLE><STYLE ID="8">my mom</STYLE><STYLE ID="3"> could. </STYLE>Goto<STYLE ID="3"> suspects </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="3">?</STYLE><PG>
+"<STYLE ID="1">Senpai</STYLE>, you want to save <STYLE ID="2">Kogori-senpai</STYLE>, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Of course I do..."</STYLE>
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="3"> was pressing me on something that hardly needed asking by now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This was a warning from </STYLE>Goto<STYLE ID="3">: "Face the facts."</STYLE><PG>
+"If that's who the shinigami really is, everything links up into one line. Don't you think so?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I couldn't say anything back, but I didn't want to think </STYLE><STYLE ID="8">my own mom</STYLE><STYLE ID="3"> was the shinigami.</STYLE><PG>
+"Do you think it would've been better if the shinigami were someone else? 
+{PAUSE ""}
+　Someone appeared three times because you wished for it, <STYLE ID="1">Senpai</STYLE>, and did it for you. And you'd rather that had been someone else?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I know. It's way too selfish. I really was grateful to the shinigami. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But for it to be </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="1">..."</STYLE><PG>
+<STYLE ID="3">They say parents will do anything for their child's happiness.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Doting on me as truly as she does... </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="3"> would...</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="3">But...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "見えない光_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But we have alibis...! Me, and </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="1"> too...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Exactly. So let's try a different angle. Why do the crimes only ever happen on April 8? 
+{PAUSE ""}
+Leaving the curse out of it, what logic does the culprit use to pick this day?"<PG>
+<STYLE ID="1">"Only the culprit would know that... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I think </STYLE><STYLE ID="7">Dad</STYLE><STYLE ID="1">'s the shinigami, so isn't it timed to the anniversary of his death..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Apparently psychopaths and thrill killers will deliberately leave things at the scene, or commit their crimes by a set rule, to leave a trace of what they've done.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If it isn't a curse, that's what I'd think it is...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Think about it more simply. They targeted only the days of the memorial services for <STYLE ID="5">your dad</STYLE>. 
+{PAUSE ""}
+This is deliberately manufacturing an alibi!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So after all, </STYLE>Goto<STYLE ID="1">, you're flat-out saying </STYLE><STYLE ID="8">my mom</STYLE><STYLE ID="1">'s the shinigami. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Say it straight...!"</STYLE>
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="3"> had been choosing words with no edge to them, but that started to get on my </STYLE><STYLE ID="9" RUBY="かん">nerves</STYLE><STYLE ID="3">.</STYLE><PG>
+"Yes."
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="3"> gave only that one-word answer.</STYLE>
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="3">'s reasoning was something I wanted to push back against somehow.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But </STYLE>Goto<STYLE ID="3">'s words, </STYLE>"<STYLE ID="1">Senpai</STYLE>, you want to save <STYLE ID="2">Kogori-senpai</STYLE>, right?"<STYLE ID="3"> came back to me.</STYLE><PG>
+<STYLE ID="1">"Fine. Let's assume </STYLE><STYLE ID="8">Mom</STYLE><STYLE ID="1">'s the culprit. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Then how did she kill six people?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I swallowed my anger and raised it as calmly as I could.</STYLE>
+{PAUSE ""}
+<BR>
+"I'd like to try one more different angle. 
+{PAUSE ""}
+<STYLE ID="1">Senpai</STYLE>, do you want to save <STYLE ID="2">Kogori-senpai</STYLE> no matter what?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Why does she keep repeating this stuff?</STYLE><PG>
+<STYLE ID="1">"Don't make me say it over and over...! Of course I do!"</STYLE>
+{PAUSE ""}
+<BR>
+"Even if it means killing someone?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What kind of question is this? Wanting to save </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3"> even if I have to kill someone?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I'd never thought about it, but if killing someone meant </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3"> would be saved...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">No, but...</STYLE><PG>
+<STYLE ID="1">"I don't know... I've never thought about it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Do I have to kill somebody today to save </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"No, that's not it. I just figured the culprit probably felt the same way. 
+{PAUSE ""}
+Say <STYLE ID="2">Kogori-senpai</STYLE> is about to be killed by a murderer right in front of you, and you, <STYLE ID="1">Niimura-senpai</STYLE>, are holding a knife. 
+{PAUSE ""}
+What do you do?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, obviously...! I'd want to save her, even if I died taking the killer with me..."</STYLE><PG>
+"I'm sure <STYLE ID="2">Kogori-senpai</STYLE> would say the same thing."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Goto<STYLE ID="1">, that's enough. You don't need to tiptoe around my feelings. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We're short on time, so keep going."</STYLE>
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="3"> was being careful of my feelings as she talked, in her own way, but by now that only got in the way.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "5000" "PASS"}
+"You still don't get it? 
+{PAUSE ""}
+　Each time, two people were killed at almost the same time. 
+{PAUSE ""}
+That means the Megasawa City case had at least two people doing the killing. 
+{PAUSE ""}
+A pair willing to commit murder for you, <STYLE ID="1">Senpai</STYLE>, and for <STYLE ID="8">your mom</STYLE>... there's no one it could be but them!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No way...!"</STYLE><PG>
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+"The ones who did the killing in the Megasawa City case are <STYLE ID="2">Kogori-senpai</STYLE>'s parents."
+{PAUSE ""}
+<BR>
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\能面背景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\良治バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">It can't be...! Those two, for my sake?</STYLE><PG>
+"You said your two moms have been childhood friends and best friends since they were born, right, <STYLE ID="1">Senpai</STYLE>? 
+{PAUSE ""}
+<STYLE ID="2">Her own daughter</STYLE> was the reason her best friend's <STYLE ID="5">husband</STYLE> died―
+{PAUSE ""}
+I don't think it's that much of a leap to exploit a weakness like that and make them commit murder by proxy."<PG>
+<STYLE ID="1">"That's going way too far...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Then what about the bug in your phone, <STYLE ID="1">Niimura-senpai</STYLE>? How do you explain that?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ngh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was galling, but thinking of it that way, it did explain the curse.</STYLE><PG>
+<STYLE ID="4">Natsumi's dad</STYLE><STYLE ID="3">―if he'd lent a hand in the Megasawa City case, it wouldn't be strange for him to be involved in today's case somehow.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Even planting a bug, maybe―</STYLE><PG>
+<STYLE ID="3">The bug and </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">'s parents having been the shinigami: it was just one assumption being used to prove another.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But if it wasn't a curse, it was entirely possible.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If it was for our alibi that </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">'s parents carried it out, they could fool the police without any curse at all.</STYLE><PG>
+<STYLE ID="3">To begin with, Megasawa City itself had once been a city built on some so-called evil cult, and now, the other way around, people there loathe anything like a curse.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That might be exactly why rumors of a curse spread so easily, why residents' testimony lost its sense of reality, and why the police investigation ran into trouble.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At last, I too was convinced the curse was a sham.</STYLE><PG>
+<STYLE ID="1">"</STYLE>Goto<STYLE ID="1">, I get it... I've finally woken up too. Done your way, </STYLE>Goto<STYLE ID="1">, nobody needs a curse. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If anything, all that crazy talk about a curse would help fool the people around them."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But those crimes were said to be physically impossible for any human. Could that be explained, too?</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

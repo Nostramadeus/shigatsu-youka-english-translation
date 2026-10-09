@@ -1,0 +1,612 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1068, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1010, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1117, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2223, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=6, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=じかふわごうせい, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はい, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=35, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もうろう, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=た, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5894, target=)
+; Links:
+;    0: TWdLink(count=5482, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hey, <STYLE ID="1">Natsumi</STYLE>! You're awake!?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Mm... Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I make an effort to sound bright as I greet her awake.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2">―it's not like I've let my guard down around her.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It's just that I don't know how else to talk to her.</STYLE><PG>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> sits up, looks around, checks my face and </STYLE><STYLE ID="3">Goto's</STYLE><STYLE ID="2">, then touches her own body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It looks like </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> doesn't understand what's happening right now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It might be an act, though...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Without letting it show, I brace myself so I can pull my knife at any moment.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3">, are you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE><STYLE ID="2"> looks even more on guard than I am.</STYLE><PG>
+<STYLE ID="1">"Yeah, I'm okay, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Huh? I was in the meeting hall just now..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Hearing that, I put my hand on my knife and feel out the area for any presence.</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">Goto</STYLE><STYLE ID="2"> quickly hides behind me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If she remembers the meeting hall, there's a chance </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> still isn't right.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Maybe she's picked up on how openly wary we are―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> is staring straight at us.</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">And then―</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔頭かかえる.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Ah, aah! Wait! Wait a second!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Why did I, all this time, why...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="2">Suddenly </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> clutches her head and throws herself facedown on the ground.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, no, it's not like that, </STYLE>Haruka<STYLE ID="1">!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　That wasn't me!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Me, doing something like that...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then, as if begging for her life, in a </STYLE><STYLE ID="4" RUBY="おび">frightened</STYLE><STYLE ID="2"> voice, she starts making excuses no one asked for.</STYLE><PG>
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "bittersweet.ogg" "BGM" "REPEAT" "1000" "0"}
+"H-hey, <STYLE ID="1">Natsumi</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">With her like this, I don't know how to deal with her either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE><STYLE ID="2"> is still hiding behind me, too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">No choice. </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> probably doesn't have the strength to hurt me badly anyway―</STYLE><PG>
+"Hey, <STYLE ID="1">Natsumi</STYLE>! Get a grip!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2">―I haul her up by force and make her face me.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"H-H-</STYLE>Haruka<STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Breathing hard, tears welling up in her eyes, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2">―could she ever pull off an act like this?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This one</STYLE><STYLE ID="2"> is honest to a fault and bad at </STYLE><STYLE ID="5" RUBY="だま">fooling</STYLE><STYLE ID="2"> people―that much I know.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">So...</STYLE><PG>
+"<STYLE ID="1">Natsumi</STYLE>, calm down. Both me and <STYLE ID="3">Goto</STYLE> are on your side, <STYLE ID="1">Natsumi</STYLE>, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then I grip </STYLE><STYLE ID="1">Natsumi's</STYLE><STYLE ID="2"> shoulders firmly and make her straighten up.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> lays her own hands over mine on her shoulders.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Has she calmed down at least a little...?</STYLE><PG>
+<STYLE ID="1">"</STYLE>Haruka<STYLE ID="1">... I'm sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+"You're sane again, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> slowly nods.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Seeing that, I wrap my arms around </STYLE><STYLE ID="1">Natsumi's</STYLE><STYLE ID="2"> shoulders.</STYLE><PG>
+"You were scared too, right, <STYLE ID="1">Natsumi</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really, I'm sorry... That wasn't me."</STYLE>
+{PAUSE ""}
+<BR>
+"I know already. 
+{PAUSE ""}
+Come on, <STYLE ID="3">Goto</STYLE>, it's all right now."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "#1" "-350" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Having refused all along to meet </STYLE><STYLE ID="1">Natsumi's</STYLE><STYLE ID="2"> eyes, </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2"> too seems to have finally settled down a little.</STYLE><PG>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But something's strangely off between the two of them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Did something happen between them that I don't know about?</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="1">, I'm really sorry about before."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3">, if you're back to your old self, there's no need to apologize."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi's</STYLE><STYLE ID="2"> apology seems to be accepted readily enough, but Goto still looks glum.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "247" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+"<STYLE ID="1">Natsumi</STYLE>, help's supposed to come tomorrow morning, so relax. 
+{PAUSE ""}
+How to save everyone else, we can just figure that out later."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+"Also, you remember what happened up till now, right?
+{PAUSE ""}
+　Are we safe here?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"Um... I think tonight's probably fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I think it's already time for everyone to hole up in the meeting hall."</STYLE>
+{PAUSE ""}
+<BR>
+"Hole up in the meeting hall? What do you mean?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... I don't know all of it either, but..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> then starts talking, bit by bit.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\z50逆.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神首つり.lcm" "REPEAT" "#1" "R" "T" "0" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"They said tonight everyone stays together with that Verde mummy the whole time, until morning. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And then 'the Rite of Prosperity' is over, or something..."</STYLE>
+{PAUSE ""}
+<BR>
+"What's this Rite of Prosperity supposed to be..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What I felt back then was that it's 'an honor.' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Being able to </STYLE><STYLE ID="6" RUBY="ささ">offer up</STYLE><STYLE ID="1"> my life for the Goddess made me happy."</STYLE><PG>
+"The Goddess, you mean Verde?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, I don't think so. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Verde is only treasured like that because the 'Blessing' comes out of her. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I think the Goddess is probably something else entirely."</STYLE><PG>
+<STYLE ID="2">What does that mean?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">We kept being told over and over that the goddess is Verde, and the old book actually says so too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Something just doesn't fit...</STYLE><PG>
+<STYLE ID="1">"And so, once 'the Rite of Prosperity' is over, everyone dies... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">maybe..."</STYLE>
+{PAUSE ""}
+<BR>
+"So it's that kind of thing after all...! The time limit is morning!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah... I think once it's morning, everyone will be in a state like they're half dead. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Everyone receives a new life as a part of the Goddess. That much I sort of understood."</STYLE><PG>
+"Maybe it's just like <STYLE ID="3">Goto</STYLE> was saying?
+{PAUSE ""}
+　How it multiplies by using human bodies..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That may be so. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Cherry trees are plants that increase not by seed but by human hands, through </STYLE><STYLE ID="7" RUBY="さ">cuttings</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="8" RUBY="つ">grafting</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You could even say that every cherry tree, the Somei-yoshino especially, is a clone of the original. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, without human hands, it's a variety that would eventually perish."</STYLE><PG>
+"Huh? Cherry trees are that feeble?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's a trait called </STYLE><STYLE ID="9" RUBY="じかふわごうせい">self-incompatibility</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It means they can only reproduce by pollinating other plants, not plants of their own kind. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, a plant where, in nature, no two of the same variety can exist―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">the cherry is one of them."</STYLE><PG>
+<STYLE ID="3">"So for cherry trees to rely on other living things to reproduce is perfectly normal in nature. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But the Arata cherry is a plant that no one could get to reproduce, no matter what―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">The Arata cherry is presumably self-incompatible too, just like the Somei-yoshino. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So the Arata cherry, too, must reproduce by way of some other 'living thing of some kind.'"</STYLE><PG>
+"And that's... humans?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Kogori-senpai's</STYLE><STYLE ID="3"> account adds up with it too, when you factor it in. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, the Arata cherry's ecology goes like this―"</STYLE><PG>
+{MESOFF "500"}
+{PLAYMOVIE "111.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\女神\集落全景.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"The Somei-yoshino has a trait called self-incompatibility, so it can't leave pure offspring through seeds. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">However, the Arata cherry never produced more offspring, whether by seeds, cuttings or grafting. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, it isn't a variety that multiplies if left alone. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">This closely resembles the Somei-yoshino."</STYLE><PG>
+<STYLE ID="3">"What it needs for that is humans. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Droga, which boosts physical ability, is attractive to humans. With it, they can win the struggle for survival. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But Droga is nothing more than bait, and by way of blood, the number of people it parasitizes keeps growing."</STYLE><PG>
+<STYLE ID="3">"And at a certain generation, 'reproduction' takes place. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The means of reproduction is a substance given off by a third-generation corpse, called 'Blessing,' probably something like pollen in plant terms. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Anyone of the first or second generation who inhales it becomes </STYLE><STYLE ID="10" RUBY="はい">an embryo</STYLE><STYLE ID="3"> for sprouting the next Arata cherry―a seedbed, in other words."</STYLE><PG>
+<STYLE ID="3">"As a result, applied to this case: through the 'Blessing' released by the Verde mummy, a third generation, by tomorrow morning the next generation of the Arata cherry will sprout inside their bodies, and eventually they'll die. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And the Arata cherry will once again become something that covers the mountains of this Arata district."</STYLE><PG>
+<STYLE ID="3">"I still don't know why the third generation wants to kill people when they reach puberty, but I think it's probably necessary to create some kind of environment suited to the Arata cherry's reproduction. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And precognition is a fake ability the Arata cherry gave to the infected."</STYLE><PG>
+<STYLE ID="1">"My danger sense is fake...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3">, when you came to this settlement, you said, 'It's safe here.' </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In other words, when you received the Arata cherry's 'Blessing,' the nature of your precognition changed. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Which means that, through the Arata cherry's influence, </STYLE><STYLE ID="1">Kogori-senpai's</STYLE><STYLE ID="3"> intuition changes too."</STYLE><PG>
+<STYLE ID="3">"Something like telepathy, for example. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If you take Droga and receive the 'Blessing,' you end up acting strangely, like the residents earlier. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In the same way, people of the second generation hear the Arata cherry's voice―</STYLE>
+{PAUSE ""}
+<STYLE ID="3">in other words, something that seems like danger sense. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If someone had that kind of precognition, they'd be valued in that society, and everyone would end up following their warnings."</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="3">, who became a mummy, received Verde's 'Blessing' for some reason. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="3">, having received the 'Blessing,' said </STYLE><STYLE ID="11">'It's dangerous, so everyone use Droga,'</STYLE><STYLE ID="3"> what would happen?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　If it came from </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="3">, who's been the settlement's lifeline all this time, wouldn't they just do as she says?"</STYLE><PG>
+"So precognition is a way of <STYLE ID="12" RUBY="だま">fooling</STYLE> humans―"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, that's why it's a fake ability. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I don't know what mechanism made the danger sense possible, but you can come up with various hypotheses."</STYLE><PG>
+<STYLE ID="3">"Telepathy is scientifically possible if there's a pipe to carry human brain waves. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">After all, experiments like that have apparently succeeded in reality, using the internet and electrodes. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">For example, it might work with Arata cherry pollen in the air, or maybe even ordinary cherry pollen, but relaying through that pollen to send telepathy from the Arata cherry to second-generation people should be achievable in principle too."</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Droga, I think, wasn't an invention that could boost human abilities, but a </STYLE><STYLE ID="13" RUBY="わな">trap</STYLE><STYLE ID="3"> for the Arata cherry to reproduce."</STYLE>
+{PAUSE ""}
+<BR>
+"No, but Droga's only been around for 500 years since it was invented, right?
+{PAUSE ""}
+　What about the cherries before that..."<PG>
+<STYLE ID="3">"Hosts aren't necessarily limited to humans. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">There are wild boars that devour plant roots, and bears that gnaw on bark. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If they had a habit of eating parts of the Arata cherry and actively taking in Droga's components that way, there would've been plenty of chances to reproduce."</STYLE><PG>
+<STYLE ID="3">"Unfortunately, though, ever since humans moved in, the animals were no match for the humans who kept the Arata cherry all to themselves, and so humans ended up the only hosts left, I suppose."</STYLE><PG>
+"Then if we want to save everyone, we've gotta burn the Verde mummy or hide it, like <STYLE ID="3">Goto</STYLE> says... 
+{PAUSE ""}
+And if possible, wipe out the cherry tree at the Niimura main house completely..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But to do that, I'd have to steal the Verde mummy without </STYLE><STYLE ID="14">Chiga-nee</STYLE><STYLE ID="2"> or </STYLE><STYLE ID="15">Kana</STYLE><STYLE ID="2"> and the others finding out.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It'll be a high-difficulty phantom-thief caper.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, if that's true, then what about me?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I seem to be cured, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> puts a hand to her chin, as if lost in thought.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"That's right! When my head was all </STYLE><STYLE ID="16" RUBY="もうろう">foggy</STYLE><STYLE ID="1"> in the meeting hall, someone got me out!"</STYLE>
+{PAUSE ""}
+<BR>
+"Maybe it was the White Hannya!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm not sure... I don't really remember, but I couldn't make out a face... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">After I was carried to the entrance of this cave, um..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ横顔逆.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">And with that, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2"> starts rolling up her right sleeve.</STYLE><PG>
+<STYLE ID="1">"I knew it... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was given an injection. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I don't really know what it was, but I think it was a clear liquid..."</STYLE>
+{PAUSE ""}
+<BR>
+"Clear... So that means it's different from what you held out to me, <STYLE ID="1">Natsumi</STYLE>, right?
+{PAUSE ""}
+　That one was pink."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah. </STYLE>Haruka<STYLE ID="1">, the one for you was Droga, </STYLE><STYLE ID="17">Kotaro-san</STYLE><STYLE ID="1"> said."</STYLE>
+{PAUSE ""}
+<BR>
+"So it was Droga... 
+{PAUSE ""}
+So anyone who uses Droga ends up parasitized."<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I thought it was a pretty delusional theory, if I say so myself, but it looks like it's not that far off."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay... So we've pretty much cracked most of the mystery?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's all guesswork, though..."</STYLE>
+{PAUSE ""}
+<BR>
+"Guesswork or not, it's got some basis, and it makes sense, right?
+{PAUSE ""}
+　In that case... 
+{PAUSE ""}
+you two stay here. I'll go steal the Verde mummy."<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hold on, </STYLE>Haruka<STYLE ID="1">! Going alone is dangerous!"</STYLE>
+{PAUSE ""}
+<BR>
+"Sorry, but you guys would just slow me down. 
+{PAUSE ""}
+From here on, it's tough unless you can move pretty well."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Senpai<STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Still, my own fatigue has </STYLE><STYLE ID="18" RUBY="た">built up</STYLE><STYLE ID="2"> quite a bit.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I probably can't move as well as usual, but the two of them are just as tired.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">All the more reason I can't take them.</STYLE><PG>
+<STYLE ID="1">"</STYLE>Haruka<STYLE ID="1">... I don't want you to go... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I get that you don't want to leave everyone to die, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Let's stay here..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I agree with </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="3">, too. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Going to steal the mummy without a proper plan... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">You'd literally end up the mummy hunter who becomes a mummy..."</STYLE><PG>
+<STYLE ID="2">As expected, they won't agree.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I understand how they feel, and their reasoning, but...</STYLE><PG>
+"A proper plan, huh... 
+{PAUSE ""}
+So say I did go. Isn't there some plan we could put together right away?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Another impossible request..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hmm..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">They won't agree to me going, but it seems they'll at least help think up a plan...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I know I'm asking the impossible.</STYLE><PG>
+<STYLE ID="1">"Hey, </STYLE>Haruka<STYLE ID="1">, what about that White Hannya you mentioned?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Wouldn't it take our side?"</STYLE>
+{PAUSE ""}
+<BR>
+"That one helped us out, but I still can't figure out what it really is, or whether it'll work with us..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Maybe it only helped us because our interests happened to line up?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　One slip and it could even turn against us."</STYLE><PG>
+"Sure, it'd be great if the White Hannya lent us a hand, but... 
+{PAUSE ""}
+I don't know where it is, and like <STYLE ID="3">Goto</STYLE> says, I don't know what it's after either."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Come to think of it, </STYLE>Niimura-senpai<STYLE ID="3">, the White Hannya gave you this book, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Doesn't that mean you should read this book carefully and leave things outside to the White Hannya?"</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm..."<PG>
+<STYLE ID="2">The White Hannya did give me a book about Verde.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Was it because the information would help us, or is there some other intent...</STYLE><PG>
+"I'm going anyway. 
+{PAUSE ""}
+But I'll just keep watch outside the meeting hall for a while. 
+{PAUSE ""}
+If the White Hannya hasn't made a move by the time dawn's close, I'll come back here once. 
+{PAUSE ""}
+That's okay, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm, if you're just keeping watch..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE>Niimura-senpai<STYLE ID="3">, even if the White Hannya shows up, promise me you'll never go into the meeting hall, </STYLE>Niimura-senpai<STYLE ID="3">, and that you'll leave Verde to the White Hannya!"</STYLE><PG>
+"Hey now, it's not like the White Hannya's definitely gonna steal the Verde mummy..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh, that doesn't matter either way!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Anyway, </STYLE>Niimura-senpai<STYLE ID="3">, don't do anything that puts you in danger!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　If you absolutely have to go in, come back here before you do, no matter what!"</STYLE><PG>
+"Really... all right. 
+{PAUSE ""}
+I'm just going to keep watch now. I won't do anything dangerous."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Please, I'm serious, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"We came to take </STYLE>Haruka<STYLE ID="1"> back with us, </STYLE><STYLE ID="19" RUBY="・・">only</STYLE><STYLE ID="1"> for that, okay?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Don't you ever forget that, okay!?"</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

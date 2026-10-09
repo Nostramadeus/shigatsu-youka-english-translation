@@ -1,0 +1,27 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=90, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=102, target=)
+; Links:
+;    0: TWdLink(count=90, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "システム音\The_Lampe.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日2.gal" "NORMAL" "#1" "C" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "プレート" "グラフィック\システム\立木三日プレート.gal" "NORMAL" "#1" "180" "380" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Thank you for your hard work, <VAR NAME="プレイヤー名" unk3="50">-sama. You have reached the fifth demise.<PG>
+The culprit is Mifuyu Niimura, and it seems Akane Kogori is fated to be arrested.<PG>
+How is it: can <VAR NAME="プレイヤー名" unk3="50">-sama see what lies behind this incident?
+{PAUSE ""}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

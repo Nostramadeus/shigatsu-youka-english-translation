@@ -1,0 +1,167 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1219, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=43, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=18, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1399, target=)
+; Links:
+;    0: TWdLink(count=1285, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "HIRAHIRA.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\桜1.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\桜2.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "111" "グラフィック\背景\詫言編　夢から\体育館.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n-331\r\n60000\r\nNORMAL\r\nPASS">
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Shiyo 800, April 7
+{PAUSE ""}
+<BR>
+<BR>
+Thank you very much for holding such a grand entrance ceremony today for us, the new students of Motoki Prefectural High School. 
+{PAUSE ""}
+To the principal, to all the teachers, and to our honored guests, I offer my heartfelt thanks.<PG>
+Here in Motoki-cho, famous for its cherry blossoms, the petals are dancing everywhere today as well.
+{PAUSE ""}
+<BR>
+The scenery surrounding us seemed almost to shine, and on the way to this hall, walking with my mother, 
+{PAUSE ""}
+each time I found cherry blossoms or other spring flowers, I felt as though every one of them was celebrating us new students.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\体育館.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "2000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n-201\r\n60000\r\nNORMAL\r\nPASS">
+{MESON "500"}
+The goshinboku that symbolizes Motoki-cho also seems to be celebrating and encouraging our new lives with its flurry of petals, and I once again feel the joy of being able to go on to a school in Motoki-cho, Sawa Prefecture.
+{PAUSE ""}
+<BR>
+Having received such warm words from the principal, our honored guests, and the upper-year students, I am truly deeply moved.<PG>
+Until now, I have followed the rails my parents laid for me without a single question.
+{PAUSE ""}
+<BR>
+However, upon entering this school and receiving words from all of you, I have come to wish to gain independence and learning at this school, and to find, without fail, what I myself... 
+{PAUSE ""}
+want to become in the future. So strongly... 
+{PAUSE ""}
+Pff... 
+{PAUSE ""}
+have I come to feel.<PG>
+We have... 
+{PAUSE ""}
+infinite possibilities...
+{STOPSND "BGM" "5000" "PASS"}
+{PAUSE ""}
+<BR>
+What lets us... 
+{PAUSE ""}
+believe so... 
+{PAUSE ""}
+is flexibility...
+{PAUSE ""}
+<BR>
+<BR>
+Pfft...
+{PAUSE ""}
+<BR>
+Um...
+{PAUSE ""}
+<BR>
+Pffhehe...!
+{PLAYSND "環境音\eventhall1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{STOPSND "SE" "5000" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Everyone, I'm sorry! A greeting like this just isn't me after all!"</STYLE>
+{PAUSE ""}
+<BR>
+With that, the new student up on the stage tore up the paper with her speech on it.
+{PLAYSND "SE\tearing_papers響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\五島檀上.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\五島檀上手.gal" "NORMAL" "#1" "R" "-520" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n300\r\nNORMAL\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\突き飛ばす.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000,人物1" "QUAKE" "1" "15" "15" "0" "30"}
+{QUAKESTOP "1000"}
+{MESON "500"}
+The new student slammed both hands down on the lectern, and the sound boomed through the microphone.<PG>
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+"I love Motoki-cho!
+{PAUSE ""}
+　The cherry blossoms are pretty, and the people are all kind. And I'm happy I got into a school in Motoki-cho again!
+{PAUSE ""}
+　All of you feel the same, right?
+{PAUSE ""}
+　We've entered a wonderful high school in this wonderful town. The teachers, the parents, the upper-year students, and our honored guests. I'm sure all of these people must be wonderful people too!
+{PAUSE ""}
+　I'm sorry the new students' representative is someone this off-the-wall, but I want to say it my own way after all, in my own honest words!"<PG>
+"I don't know what hardships there will be. I don't know what tough things there will be. 
+{PAUSE ""}
+But that's exactly why I think it'll be interesting!
+{PAUSE ""}
+　The only reason I'm standing here is that my entrance exam score was good. 
+{PAUSE ""}
+I have an amazing senpai who I truly respect, who took me out into a world I didn't know."<PG>
+"Let's find our new selves! Let's find new possibilities!
+{PAUSE ""}
+　Let's find a new world we don't know yet, one test scores alone can't measure!
+{PAUSE ""}
+　Here, there must be wonderful people who will make that happen!"<PG>
+"I'm a troublemaker like this, but please, look after me!
+{PAUSE ""}
+<BR>
+　Representative of the new students, <STYLE ID="1">Erina Goto</STYLE>!"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\拍手.ogg" "SE" "NORMAL" "1000" "0"}
+The hall was filled with loud applause.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\体育館.gal" "WAIT" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤ストラップ入.gal" "WAIT" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Just then, a message arrived on my phone.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> had sent it.<PG>
+<STYLE ID="3">“That amazing senpai? Bet that means </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="3">.”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> was grinning at me when I looked her way.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE>'s a high school student now too, starting today.
+{PAUSE ""}
+<BR>
+She was as tiny as ever, but since the first time we talked, <STYLE ID="1">Goto</STYLE> had changed a lot too.<PG>
+When we first talked, I thought she seemed like a gloomy girl who mumbled and couldn't speak clearly, but now she could express herself this openly.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

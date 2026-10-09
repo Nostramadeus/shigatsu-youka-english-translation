@@ -1,0 +1,41 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=40, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=24, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=86, target=)
+; Links:
+;    0: TWdLink(count=64, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "900" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Say, <STYLE ID="1">Natsumi</STYLE>, why don't we go to the meet-up?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, no, that's a bit..."</STYLE>
+{PAUSE ""}
+<BR>
+"Just a peek! Once we get a feel for it we'll come straight home."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ehhh..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

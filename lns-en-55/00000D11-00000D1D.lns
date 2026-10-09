@@ -1,0 +1,496 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1990, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=421, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さや, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=116, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささや, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=71, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=170, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=34, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3185, target=)
+; Links:
+;    0: TWdLink(count=2814, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\すきま風の声.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田桜2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>When I went outside, a wind was blowing, cold yet strangely lukewarm, the way it is only in spring.
+{PAUSE ""}
+<BR>
+This great old cherry tree, found only at the Niimura main house.
+{PAUSE ""}
+<BR>
+To my eyes, it seemed to be blooming in full with countless blossoms, as if to show them off.
+{PAUSE ""}
+<BR>
+But this cherry tree too was near the end of its life, and no longer had the vitality left to carry a voice to me.<PG>
+To hear the voice, I would have to leave Arata once and go somewhere with cherry trees.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\城崎家.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Following what <STYLE ID="1">Chiga-nee</STYLE> had told me, I stood in front of Shirozaki-san's house.
+{PAUSE ""}
+<BR>
+My first impression of Shirozaki-san was... a very ordinary middle-aged man.
+{PAUSE ""}
+<BR>
+Even if I asked and he turned me down, there was nothing to lose by asking.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+I knocked on Shirozaki-san's door.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸古い.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Shirozaki-san came out right away.
+{PAUSE ""}
+<BR>
+"Huh? <STYLE ID="2">Natsumi-chan</STYLE>, what's up?"
+{PAUSE ""}
+<BR>
+Apart from Shirozaki-san, there was no sign of anyone else in the house.<PG>
+<STYLE ID="2">"Sorry to bother you so late. Um, I have a favor to ask..."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+Shirozaki-san's brow creased as if in refusal.
+{PAUSE ""}
+<BR>
+He must have thought it was some awful favor to do with the curse-killings.<PG>
+<STYLE ID="2">"Um... I've got something I need to do at the convenience store, but everyone's busy... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">so if you wouldn't mind..."</STYLE>
+{PAUSE ""}
+<BR>
+I avoided saying it outright.
+{PAUSE ""}
+<BR>
+Shirozaki-san would probably see the real meaning of my request right away.<PG>
+"If the buggy from earlier is okay with you, I can give you a ride. Strictly speaking, riding double on a public road is illegal, though. 
+{PAUSE ""}
+It's about 40 minutes one way. That all right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Y-yes! That would help a lot!"</STYLE><PG>
+"But <STYLE ID="2">Natsumi-chan</STYLE>... 
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+what would you do if I were the one behind the curse-killings?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh...?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　But..."</STYLE>
+{PAUSE ""}
+<BR>
+It was true that I couldn't say for sure Shirozaki-san wasn't the culprit.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+"Still, I'm one of the residents who wants to stop this incident too. 
+{PAUSE ""}
+If I do anything strange, you stab me with this."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "700" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Shirozaki-san pressed a knife on me.<PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Wh-wait a second...! A thing like this...!"</STYLE>
+{PAUSE ""}
+<BR>
+"That's my condition for giving <STYLE ID="2">you</STYLE> a ride to the 'convenience store.' If you can't do it, go on home."
+{PAUSE ""}
+<BR>
+What a drastic thing to do...<PG>
+<STYLE ID="2">"Um... what if I were a witch..."</STYLE>
+{PAUSE ""}
+<BR>
+"I don't know anything about the witch story."
+{PAUSE ""}
+<BR>
+The trust between Shirozaki-san and me lay in never bringing up the witch.
+{PAUSE ""}
+<BR>
+And it was built on this knife.<PG>
+A truly dangerous, strange kind of trust, but...
+{PAUSE ""}
+<BR>
+If Shirozaki-san was going this far to help, it meant he wanted the curse-killings solved even more than I did.
+{PAUSE ""}
+<BR>
+To put it bluntly, I was an outsider with no connection to the curse-killings.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "131" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\バギー運転中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道夜バギー.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Shirozaki-san chose a fairly wide road, in a different direction from the one we had come up the mountain by earlier.
+{PAUSE ""}
+<BR>
+Two shallow ruts were worn into the ground, clearly showing where cars had passed.
+{PAUSE ""}
+<BR>
+We were probably supposed to take this road from Arata Station to the Arata settlement in the first place.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "700" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In my hand, the knife―
+{PAUSE ""}
+<BR>
+I hadn't even been given the <STYLE ID="3" RUBY="さや">sheath</STYLE>, so I had to be very careful.
+{PAUSE ""}
+<BR>
+Shirozaki-san was driving the buggy very safely.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤ストラップ入.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Still holding the knife in place, I took out my phone.
+{PAUSE ""}
+<BR>
+The internet connection seemed to work, a little.
+{PAUSE ""}
+<BR>
+This, too, was reaching <STYLE ID="4">Dad</STYLE> and the others in Motoki-cho.
+{PAUSE ""}
+<BR>
+If anything happened, <STYLE ID="4">Dad</STYLE> would contact me.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―38 minutes later, we arrived at the nearest convenience store.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田コンビによる.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+While we rode the buggy, Shirozaki-san and I didn't talk.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\城崎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Well... I'll wait here."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{PLAYSND "SE\タバコ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Still straddling the buggy, Shirozaki-san lit a cigarette.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "700" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Um, could you hold on to this for me? It's hard to walk into a convenience store with a knife..."</STYLE>
+{PAUSE ""}
+<BR>
+"All right."<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Looking around, I saw there were a few cherry trees.
+{PAUSE ""}
+<BR>
+But there was no wind, so I couldn't hear the voice right now.
+{PAUSE ""}
+<BR>
+I had felt wind while riding the buggy too, but even so, I hadn't heard the voice.<PG>
+Wind felt on a moving vehicle, and wind felt while standing still―
+{PAUSE ""}
+<BR>
+Could I only hear the voice when I was standing still?
+{PAUSE ""}
+<BR>
+Come to think of it, I had never tested it that far.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+I went into the store once and bought a towel, some drink or other, and snacks.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ビニール.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+I wanted a bag to put the knife in, so I got a plastic bag too.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田コンビによる.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I stepped outside, a very faint wind <STYLE ID="5" RUBY="な">brushed</STYLE> my face.
+{PAUSE ""}
+<BR>
+Shirozaki-san was still straddling the buggy, gazing blankly at a nearby cherry tree.
+{PAUSE ""}
+<BR>
+He must have noticed I had come out, but he didn't try to meet my eyes.
+{PAUSE ""}
+<BR>
+This had to be Shirozaki-san's signal: 'If you're going to do it, now's the time.'<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\chilly_hell.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "3000" "PASS"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+I closed my eyes and took a big, deep breath.
+{PAUSE ""}
+<BR>
+I focused my mind and listened closely for the voice in the wind.
+{PAUSE ""}
+<BR>
+I had never once tried to concentrate on the voice before.
+{PAUSE ""}
+<BR>
+Until now, whenever the wind blew, it would <STYLE ID="6" RUBY="ささや">whisper</STYLE> to me on its own.
+{PAUSE ""}
+<BR>
+But now it was different.
+{PAUSE ""}
+<BR>
+I couldn't let the cherry trees' voice slip past me, hidden in this faint wind.<PG>
+The faint wind stirring my hair brushed lightly against the eardrums deep in my ears.
+{PAUSE ""}
+<BR>
+............ 
+{PAUSE ""}
+............ 
+{PAUSE ""}
+But I couldn't hear anything like it.
+{PAUSE ""}
+<BR>
+The old tree in Arata had been vaguely trying to speak to me, but here I couldn't even feel that.<PG>
+Come to think of it, my intuition only worked when I was in contact with someone who was going to be in danger.
+{PAUSE ""}
+<BR>
+So I, and Shirozaki-san too, were probably all right.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田コンビによる.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤ストラップ入.gal" "NORMAL" "#1" "650" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+My phone rang―
+{PAUSE ""}
+it was <STYLE ID="4">Dad</STYLE>.<PG>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "WAIT" "1000" "0"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Hello? Did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, nothing's happened, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You</STYLE><STYLE ID="4">'re outside Arata now, right? How is it? Can you tell anything?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, the wind's too weak..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+Even hearing <STYLE ID="4">Dad</STYLE>'s voice, I got no intuition at all.<PG>
+<STYLE ID="2">"Hey, how are </STYLE><STYLE ID="7">Haruka</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="2"> doing?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="7">Haruka-chan</STYLE><STYLE ID="4"> seems to be doing the dishes at home with </STYLE><STYLE ID="9">Mifuyu-san</STYLE><STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Goto-chan</STYLE><STYLE ID="4">'s cutting in and out a bit. She must be right in the middle of the hunt."</STYLE><PG>
+<STYLE ID="2">"Okay. I'll try calling </STYLE><STYLE ID="7">Haruka</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="2">. If I hear their voices directly, I might be able to tell something."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Right, that's a good idea."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "WAIT" "1000" "0"}
+I hung up and immediately called <STYLE ID="7">Haruka</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="7">! Well!? Did you feel anything!?"</STYLE>
+{PAUSE ""}
+<BR>
+I listened not just to <STYLE ID="7">Haruka</STYLE>'s voice but to the faint wind too.
+{PAUSE ""}
+<BR>
+............ 
+{PAUSE ""}
+But there was no reaction at all.<PG>
+<STYLE ID="2">"No, nothing... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Haruka</STYLE><STYLE ID="2">, it doesn't look like anything's going to happen to you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Then call </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="7"> too. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Right now it's </STYLE><STYLE ID="8">her</STYLE><STYLE ID="7"> who looks to be in danger. In more ways than one..."</STYLE><PG>
+Right now <STYLE ID="8">Goto</STYLE> was out hunting with <STYLE ID="10">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+But the time limit was about up, so if nothing had happened, they would be heading for the Niimura main house.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="2">"Hello, </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Ah―</STYLE>
+{PAUSE ""}
+<STYLE ID="8">Ko―</STYLE>
+{PAUSE ""}
+<STYLE ID="8">Senpai?"</STYLE>
+{PAUSE ""}
+<BR>
+Maybe the signal was bad. Her voice kept cutting out.<PG>
+<STYLE ID="8">"―Hup. </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="8">, how about here? Can you hear me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, I can hear you fine."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Ah, I knew it!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Right now, um... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">we've come to a secret place."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"A secret...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yes, </STYLE><STYLE ID="10">Kana-chan</STYLE><STYLE ID="8">'s secret base."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000,アイテム1" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\詫言編　夢から\dark_attack.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "NORMAL" "SKIP"}
+{QUAKE "000,人物1,人物2" "QUAKE" "1" "5" "5" "0" "30"}
+{PLAYSND "環境音\3_kikai2.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "環境音\サビついたカギ.ogg" "SE2" "REPEAT" "1000" "0"}
+{PLAYMOVIE "盗視.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "150"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地入口.gal" "NORMAL" "#1" "C" "B" "0" "20" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎幽霊バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "20" "500" "0" "0" "" "0"}
+{QUAKE "000,人物1,人物2" "QUAKE" "1" "5" "5" "0" "30"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\スチル\壺幻影.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "20" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ白.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "20" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "WAIT" "1000" "0"}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ白血.gal" "NORMAL" "3" "100" "540" "1" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "SE2" "0" "PASS"}
+{QUAKESTOP "0"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "600" "20" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{PLAYMOVIE "桜.wmv" "281" "C" "C" "REPEAT" "FALSE" "200" "50"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田コンビによる.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤ストラップ入.gal" "NORMAL" "#1" "650" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,111" "14" "200" "0" "0" "" "0"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "SE\haa1長い.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Hah...! Hah...!"</STYLE>
+{PAUSE ""}
+<BR>
+Before I knew it, a stronger wind had started blowing.
+{PAUSE ""}
+<BR>
+And at the same moment, an intuition more intense than any before...
+{PAUSE ""}
+<BR>
+It always came to me as a voice, but this was the first time I had sensed it through sight.<PG>
+{PLAYSND "BGM死月編\bgm_semarikuru.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"</STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="2">, get away from there, right now!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"What...?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="8">, where are you right now!? Outside Arata!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes! I just got a really strange feeling! Get away from there right now!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Understood! </STYLE><STYLE ID="10">Kana-chan</STYLE><STYLE ID="8">! We're going home!"</STYLE><PG>
+<STYLE ID="10">"Aww? Let's hang out longer!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Just hurry!</STYLE>
+{PAUSE ""}
+　<STYLE ID="8">Should we go straight back to the house!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yes! Get away from there right now!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+And then the intuition I had felt so vividly a moment ago receded as if it had never been.
+{PAUSE ""}
+<BR>
+The wind suddenly died down too.<PG>
+The secret place where <STYLE ID="8">Goto</STYLE> had been...
+{PAUSE ""}
+<BR>
+Something is hidden there...!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

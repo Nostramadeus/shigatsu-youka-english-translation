@@ -1,0 +1,166 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=741, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=375, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=せいえい, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=よろ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しまづゆうさく, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=がい, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1231, target=)
+; Links:
+;    0: TWdLink(count=1125, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\pc_keyboard.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\大学研究室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Come in."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―</STYLE>Goto-san<STYLE ID="1">, good morning.</STYLE>
+{STOPSND "SE" "500" "PASS"}
+{PAUSE ""}
+<BR>
+"Good morning, Professor. 
+{PAUSE ""}
+It's rare to see you this early."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... are you by yourself right now, </STYLE>Goto-san<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes."<PG>
+<STYLE ID="1">"That's good timing. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Actually, I have some news for you, </STYLE>Goto-san<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"For me?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'd like you to look at this."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\手紙.gal" "NORMAL" "#1" "620" "C" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Letter of Recommendation. 
+{PAUSE ""}
+Motoki University, Erina Goto-sama. 
+{PAUSE ""}
+We trust this finds you in <STYLE ID="2" RUBY="せいえい">good health</STYLE>, and offer our <STYLE ID="3" RUBY="よろ">felicitations</STYLE>. 
+{PAUSE ""}
+Now, the Ministry of Education has decided to establish the International Research Institute in Motoki City. 
+{PAUSE ""}
+We are currently seeking researchers who would be willing to work at the International Research Institute. 
+{PAUSE ""}
+Erina Goto-san's academic record and eager attitude are held in very high regard, and we are contacting you to ask whether you would be willing to work at the International Research Institute."<PG>
+"Completion and start of operations of the International Research Institute are scheduled for April, Shiyo 809. 
+{PAUSE ""}
+Should you, Erina Goto-san, be so inclined, we intend to welcome you on the terms below. 
+{PAUSE ""}
+We humbly ask that you give this your consideration. 
+{PAUSE ""}
+We apologize for the imposition, but kindly reply by July 31, Shiyo 806. Minister of Education, <STYLE ID="4" RUBY="しまづゆうさく">Yusaku Shimazu</STYLE>"<PG>
+"Terms―
+{PAUSE ""}
+Position: Director of the International Research Institute. An annual salary of 54 million yen. 
+{PAUSE ""}
+However, the form of employment shall be equivalent to that of a national civil servant. 
+{PAUSE ""}
+Condition: obtain a doctorate in bioengineering at Motoki University's graduate school by March, Shiyo 809 (tuition fully subsidized)."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What do you think? Interested?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\大学研究室.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"Well, the terms are amazing, and to be made director of a place like that right off... 
+{PAUSE ""}
+But why me?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Apparently they want someone from Motoki City who lives in Motoki City, and who's the most outstanding fourth-year university student right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">With those conditions, I'd certainly say you're the best fit, </STYLE>Goto-san<STYLE ID="1">."</STYLE><PG>
+"I see... Is there some reason they're so set on Motoki City?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, I've only heard a little myself, but apparently the main research is on the goshinboku."</STYLE>
+{PAUSE ""}
+<BR>
+"The goshinboku?"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\渦巻くシナプス.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Actually, that cherry tree seems to have quite a dark history. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It was apparently studied decades ago too, but they say it fell through for various reasons. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I haven't been able to hear the details myself, though."</STYLE><PG>
+"Hmm... The goshinboku..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What do you think? Interested?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, I'll consider it favorably. 
+{PAUSE ""}
+Actually, I'll talk it over with my parents first, and if they're okay with it, I think I'll accept."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see. Well, that's good. </STYLE>Goto-san<STYLE ID="1">, you're a student I'd be proud to send anywhere."</STYLE><PG>
+"It's just..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+"Honestly, it's fishy, isn't it? 
+{PAUSE ""}
+Is the goshinboku really so <STYLE ID="5" RUBY="がい">worth</STYLE> researching?
+{PAUSE ""}
+　If the state's investing that much, don't they already know something?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hard to say. I don't know that either."</STYLE><PG>
+"I see... Well, my parents probably won't say no, so."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then I'll plan on that too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well, I have a class, so I'll be going. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh, don't tell anyone else about this until the offer is official."</STYLE>
+{PAUSE ""}
+<BR>
+"Understood. Thank you, Professor."<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

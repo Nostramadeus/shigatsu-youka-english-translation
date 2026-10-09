@@ -1,0 +1,128 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=202, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=261, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=10, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=564, target=)
+; Links:
+;    0: TWdLink(count=478, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\グレーチング開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地穴.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"There's a cave under here?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"That's right. We keep the ritual implements and such here."</STYLE>
+{PAUSE ""}
+<BR>
+"Boo! Someone's been using my secret base without asking!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"This was a storeroom to begin with. We needed someone who would always know if anything was amiss. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That's why the children of every generation have used it as their secret base."</STYLE>
+{PAUSE ""}
+<BR>
+"Booo! So I was being used!"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\ハシゴ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{STOPSND "VOICE" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Whoa... amazing!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, this is about the only place we haven't searched yet..."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?
+{PAUSE ""}
+　No, <STYLE ID="2">Sis</STYLE> probably isn't here..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You can tell?"</STYLE><PG>
+"Um, um... 
+{PAUSE ""}
+Yeah, I've got a good nose."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see. But let's look, just to be safe."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下3.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Just as I thought. We've searched this far, and she isn't here..."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Kana-chan<STYLE ID="1">, what's wrong, really?"</STYLE>
+{PAUSE ""}
+<BR>
+"I knew it. <STYLE ID="2">Sis's</STYLE> smell isn't here."<PG>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You need the key to get through here, and there was a cave-in once, so it's dangerous. </STYLE>
+{PAUSE ""}
+Your<STYLE ID="1"> nose can't even tell? Then she isn't here... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Let's head back for now."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Kana-chan<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?
+{PAUSE ""}
+　Oh, yeah! Let's go, let's go! <STYLE ID="3">Haruka-chan's</STYLE> already here, right!?"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

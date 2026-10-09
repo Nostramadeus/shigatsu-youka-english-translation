@@ -1,0 +1,56 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=126, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=166, target=)
+; Links:
+;    0: TWdLink(count=130, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "500" "CLICK" "SKIP"}
+{CHGVOL "VOICE" "1000" "2000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島血が飛ぶ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "WAIT"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ首なし横.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "2000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\スチル\なつみ首なし.gal" "NORMAL" "#1" "C" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>It happened in just an instant.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kogori-senpai</STYLE>'s head, as if carried off by a strong wind, disappeared.<PG>
+At the same time, something like blood stuck to me in a thick smear.
+{PAUSE ""}
+<BR>
+Something like blood, or rather, real blood?
+{PAUSE ""}
+<BR>
+Did the person from before do it?
+{PAUSE ""}
+<BR>
+No way... they were at least 100 meters away; there's no way they could have gotten close in that one instant.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "環境音\fear1.ogg" "SE" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

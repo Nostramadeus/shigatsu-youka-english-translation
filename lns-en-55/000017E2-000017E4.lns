@@ -1,0 +1,69 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=151, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=47, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=243, target=)
+; Links:
+;    0: TWdLink(count=200, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "My_life_Without_Your_Love.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\元木町夕方の道.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Class until this late again today... 
+{PAUSE ""}
+Was Motoki High really that smart a school?
+{PAUSE ""}
+　Well, someone like <STYLE ID="1">Goto</STYLE> wants to go there too, so the smart ones are probably really smart. 
+{PAUSE ""}
+Huh?"<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Harukaaa</STYLE>! Going out at this hour?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"N-</STYLE>Natsumi<STYLE ID="2">!?"</STYLE>
+{PAUSE ""}
+<BR>
+"What's wrong? Why so surprised..."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">"N-no, see, I'm on my way back from the hospital. It was closed yesterday, so."</STYLE>
+{PAUSE ""}
+<BR>
+"I see..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"S-see you!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHGVOL "VOICE" "0" "10000" "PASS"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{MESON "500"}
+"She ran off home again... 
+{PAUSE ""}
+Is she avoiding me?"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

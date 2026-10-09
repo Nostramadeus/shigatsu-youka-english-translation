@@ -1,0 +1,46 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=144, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=174, target=)
+; Links:
+;    0: TWdLink(count=147, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\サード\五島家洗面所.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"I've saved up a good amount by now, so I should tell the people at work soon."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"Huh? I was sure I still had some disposable ones left."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"Oh, there's just one. It's no use unless there are two, though... 
+{PAUSE ""}
+Well, whatever. People say wearing them doesn't make much difference anyway."<PG>
+"I mean, it's not normal for just one to go missing. 
+{PAUSE ""}
+Could it be... 
+{PAUSE ""}
+<STYLE ID="1">that girl</STYLE>..."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "人物1,000,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

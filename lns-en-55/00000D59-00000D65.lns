@@ -1,0 +1,698 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2428, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=764, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=52, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=122, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=36, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=227, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1016, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1239, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=32, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=133, unk2=13464752, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=47, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=3, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おきて, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=38, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そろ, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんぴょうせい, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たた, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6631, target=)
+; Links:
+;    0: TWdLink(count=6152, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家布団.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Before I knew it, <STYLE ID="1">Haruka</STYLE> was breathing softly in her sleep.
+{PAUSE ""}
+<BR>
+No wonder, after today's hard schedule.
+{PAUSE ""}
+<BR>
+If I let my guard down, I'd fall asleep too.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Eri-nee</STYLE><STYLE ID="2">... are you there?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm right here. What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Really... is </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="2"> the culprit...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"...No, he isn't. So don't worry."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE> was lying beside <STYLE ID="2">Kana-chan</STYLE>.<PG>
+Just now, <STYLE ID="3">Goto</STYLE> had clearly said 'No.'
+{PAUSE ""}
+<BR>
+Even though, as far as I knew, she had told <STYLE ID="2">Kana-chan</STYLE> earlier that <STYLE ID="4">Kotaro-san</STYLE> was the culprit.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="5">"Mm... I'm coming in."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Mm... So </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="5"> and </STYLE><STYLE ID="2">Kana</STYLE><STYLE ID="5"> fell asleep."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Chiga-nee</STYLE> seemed to have sobered up completely.
+{PAUSE ""}
+<BR>
+The succession rite, or whatever it was, must have put her in a serious frame of mind as well.<PG>
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="5">, do you have a moment?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Me?"</STYLE>
+{PAUSE ""}
+<BR>
+When I glanced over at <STYLE ID="3">Goto</STYLE>―
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="3">, go ahead. I'll stay with </STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="3"> a little longer."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I went down to the living room, <STYLE ID="7">Obaasan</STYLE> was there too.<PG>
+<STYLE ID="7">"Sorry, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">. Were you asleep?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"No, I've been thinking things over this whole time..."</STYLE><PG>
+<STYLE ID="7">"Hmm... Sounds like you heard a lot from </STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7">. A little while ago, </STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7"> came by here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="8">Shirozaki-san</STYLE><STYLE ID="6"> did?"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="7">"He asked me to give this to you, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\桜の枝.gal" "NORMAL" "#1" "600" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Set on the table was a cherry branch bearing many blossoms.<PG>
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="7">"Apparently he helped himself to a cherry tree nearby while you were shopping at the convenience store, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">But he went back and forth a long time over handing it to you, he said, wondering if it would mean lending a hand to a witch. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">But </STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7"> made up his mind. That he'd trust you, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">..."</STYLE><PG>
+I picked up the cherry branch.
+{PAUSE ""}
+<BR>
+It wasn't an imitation. It was a real cherry branch.
+{PAUSE ""}
+<BR>
+I felt the warmth particular to wood, and a scent of cherry blossoms that the human sense of smell normally can't detect drifted faintly through my nose.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7">, too... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">lost his wife to the curse-killings..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"To the curse-killings...?"</STYLE><PG>
+<STYLE ID="7">"</STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7"> hates the culprit more than anyone else in this settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">No... he must hate himself too. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Maybe he's grown sick of a life where he alone goes on living without a care. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">That's why </STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7"> must want to catch them no matter what."</STYLE>
+{PAUSE ""}
+<BR>
+So that was it.
+{PAUSE ""}
+<BR>
+If he once accepted me as a witch, Shirozaki-san would hate me, and then, sooner or later, the intent to kill.<PG>
+So that he wouldn't be driven by that impulse, he had been refusing to listen to any talk of witches.
+{PAUSE ""}
+<BR>
+And then, to hold himself back, Shirozaki-san had left a knife with me...
+{PAUSE ""}
+<BR>
+At last, all of Shirozaki-san's actions <STYLE ID="9" RUBY="ふ">made sense</STYLE>.<PG>
+I had words that <STYLE ID="3">Goto</STYLE> had entrusted to me.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">'The culprit being unknown is the background,'</STYLE> she had said.
+{PAUSE ""}
+<BR>
+In my own reading, this means not a single person knows the truth.
+{PAUSE ""}
+<BR>
+In other words, there is no culprit.<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="6"> told me! </STYLE><STYLE ID="3">'The culprit being unknown is the background,'</STYLE><STYLE ID="6"> she said!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　What does that mean?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then <STYLE ID="7">Obaasan</STYLE> looked down and fell silent.
+{PAUSE ""}
+<BR>
+If she had only gone silent, it would probably have meant 'What is this nonsense?'...
+{PAUSE ""}
+<BR>
+But looking down meant something must have come to her mind.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"In this incident... there's no such thing as a 'true culprit.' </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Everyone's a victim, and everyone's a suspect. That's all. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Suspicion feeds on itself, and people kill their neighbors. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">That's all..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Wait a minute! Then you're saying you've turned a blind eye to it all this time!?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　The head of the settlement</STYLE><STYLE ID="6">, forgiven for something like that? Is that what you think!?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"That's right, it's nothing that can be forgiven... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">No one knows who did the killing. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">That leaves only one conclusion: I can only think that, with suspicion feeding on itself, people lay hands on whoever seems suspicious. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Everyone comes up with reasons and hunts for the culprit, but deep down they must know. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">'This time, I might be the one who kills.' </STYLE>
+{PAUSE ""}
+<STYLE ID="7">I didn't have the nerve to hand the ones who got scared and lashed out over to the police."</STYLE><PG>
+<STYLE ID="6">"Then...! If everyone kept watching each other the whole time...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Then it would have to be all year, not just April, or there'd be no point. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Keeping watch on everyone 24 hours a day, 365 days a year... that's asking too much."</STYLE><BR>
+<STYLE ID="6">"Then... the only thing left is to break up the settlement..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Yes, I've said that too, at times. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">But nobody will leave this place. To the people of Arata, this land weighs more than their lives."</STYLE><PG>
+I remembered what Shirozaki-san had said.
+{PAUSE ""}
+<BR>
+For people rooted in a place like this, the place where they were born and raised matters more than their lives.
+{PAUSE ""}
+<BR>
+Depending on the country or region, it's even an asset that starts wars and gets fought over.
+{PAUSE ""}
+<BR>
+If everyone is staying on this land because they want to, then isn't it impossible to solve the curse-killings in the first place?<PG>
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="5">, if you're going to blame </STYLE><STYLE ID="7">Grandma</STYLE><STYLE ID="5">, then I'm just as guilty. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I haven't been able to do anything either. I should have just reported it to the police in secret or something... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But I thought </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="5"> might be the culprit... so I just couldn't..."</STYLE><PG>
+I admit that, because it's such a small settlement, its people have lived like one family, and that under the motto 'One for all, all for one,' it has lasted for hundreds of years until now.
+{PAUSE ""}
+<BR>
+But that's wrong...!
+{PAUSE ""}
+<BR>
+They must have known that leaving it alone would only lead to something even more horrible...!<PG>
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="7">Grandma</STYLE><STYLE ID="5">, tomorrow, once the thirteenth-year memorial service is over, let's go to the police. All right?" [TN: Buddhist memorials count the year of death as the first year.]</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Mm... It has to end now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Yes... You're right. Let's do that..."</STYLE><PG>
+<STYLE ID="6">"But there must have been something that set it off, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　The first person killed in the curse-killings was </STYLE><STYLE ID="8">Shirozaki-san</STYLE><STYLE ID="6">'s wife. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">What on earth happened? Was it because </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="6"> died?"</STYLE><PG>
+<STYLE ID="7">"If I had to say, </STYLE><STYLE ID="11">Sakura</STYLE><STYLE ID="7"> was as good as killed by </STYLE><STYLE ID="12" RUBY="おきて">the rule</STYLE><STYLE ID="7">. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Maybe there was someone who tried to change such a behind-the-times settlement in a ruinous way. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">That person cut off </STYLE><STYLE ID="11">Sakura</STYLE><STYLE ID="7">'s head and set off the next year's curse-killings. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">The rest, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">, is what you heard from </STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7">. Distrust breeds distrust, and people get killed as if by </STYLE><STYLE ID="11">Sakura</STYLE><STYLE ID="7">'s curse. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Sakura</STYLE><STYLE ID="7">'s head was cut off by someone who may already have been curse-killed, though..."</STYLE><PG>
+That's ridiculous! All it would take is avoiding the curse-killing just once...!
+{PAUSE ""}
+<BR>
+To begin with, does distrust really chain together so conveniently that someone gets killed every year?
+{PAUSE ""}
+<BR>
+Residents <STYLE ID="13" RUBY="つ">possessed</STYLE> by the 'cursed thinking' Shirozaki-san talked about might think so.
+{PAUSE ""}
+<BR>
+But to me, a chain of murders that neat doesn't feel real.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"For that, I need your power, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">You can hear the voices of the cherry trees, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">. If you could just hear how to avoid the curse-killings... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">But what I didn't count on is that the cherry tree in the garden can't get its voice to you. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">That's why </STYLE><STYLE ID="8">Shirozaki</STYLE><STYLE ID="7">... this."</STYLE><PG>
+The cherry branch Shirozaki-san had delivered―
+{PAUSE ""}
+<BR>
+Everything depends on this and my intuition.
+{PAUSE ""}
+<BR>
+If I can find a way for everyone to avoid danger, there won't be any more curse-killings.<PG>
+Even the culprits who did the curse-killings don't know who the culprits of the other years were.
+{PAUSE ""}
+<BR>
+No one knows who will be the next culprit.<PG>
+Caught in suspicion feeding on itself, killing others to protect your own life―
+{PAUSE ""}
+<BR>
+The curse-killing: through cursed thinking, peace can come only from killing someone else.
+{PAUSE ""}
+<BR>
+And the curse called attachment to this land is one of its causes too.<PG>
+―When I looked at the clock, it had already gone past midnight.
+{PAUSE ""}
+<BR>
+April 8―the anniversary of <STYLE ID="14">Ojisan</STYLE>'s death.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Bring that cherry branch to the memorial service tomorrow. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Everyone should be </STYLE><STYLE ID="15" RUBY="そろ">gathered</STYLE><STYLE ID="7"> there, so you should be able to tell who'll be in danger next."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"All right... I hope the wind blows just right, though..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="7">"Haah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Obaasan</STYLE>'s shoulders slumped heavily.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="7">Grandma</STYLE><STYLE ID="5">, are you all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Ah... I feel like it's finally going to end... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Finally, with this..."</STYLE>
+{PAUSE ""}
+<BR>
+I sat down beside <STYLE ID="7">Obaasan</STYLE> and rubbed her back.<PG>
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="6">"I'm... not sure I can really be any help, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I'll do my best. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="6">'s </STYLE><STYLE ID="7">grandma</STYLE><STYLE ID="6"> is in trouble, so I really can't just stay quiet."</STYLE>
+{PAUSE ""}
+<BR>
+This person is <STYLE ID="1">Haruka</STYLE>'s <STYLE ID="7">grandma</STYLE>.
+{PAUSE ""}
+<BR>
+If <STYLE ID="7">Obaasan</STYLE> is in trouble, <STYLE ID="1">Haruka</STYLE> is in trouble too.
+{PAUSE ""}
+<BR>
+I can't just leave that alone.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Heh... </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">, you're so kind. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="7"> has a good friend. I wanted a friend like </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7"> too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Obaasan</STYLE>'s face was the gentlest and kindest it had ever been.
+{PAUSE ""}
+<BR>
+I couldn't believe <STYLE ID="7">she</STYLE> was lying.
+{PAUSE ""}
+<BR>
+I had no grounds for it.
+{PAUSE ""}
+<BR>
+Needing grounds to trust someone is exactly what's ridiculous.<PG>
+<STYLE ID="6">"Even starting now... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">let's be friends?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Nheh-heh-heh-heh! Are you sure about that? Having a cosplay hag like me for a friend will be all kinds of trouble."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Ahahaha! That impression of </STYLE><STYLE ID="16">Obasan</STYLE><STYLE ID="6"> was pretty close!</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Did you practice a lot after all?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ指さしバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"For this day, I practiced that pose in front of the mirror for a week. Sure enough, it got to my back."</STYLE>
+{PAUSE ""}
+<BR>
+I imagined <STYLE ID="7">Obaasan</STYLE> practicing poses in front of the mirror.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Uheh-heh-heh! Ahahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+The picture was so surreal that I burst out laughing.
+{PAUSE ""}
+<BR>
+Had she practiced <STYLE ID="3">Goto</STYLE>'s pose the same way, too?
+{PAUSE ""}
+<BR>
+That's not something I really want to picture...<PG>
+<STYLE ID="5">"Mm... </STYLE><STYLE ID="7">Grandma</STYLE><STYLE ID="5">, how nice for you. You've made a young friend."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Ha ha ha! Now I'll suck up </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">'s youth and stay lively for a long while yet!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　</STYLE><STYLE ID="5">Chigaya</STYLE><STYLE ID="7">! I'm going to the next Comiket too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Whaat!? I have to go again too!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Of course! You'd make an old woman walk through a jam-packed place like that alone?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Oh, how about you, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">!? It's fun!"</STYLE><PG>
+<STYLE ID="6">"Huh!? Um, well... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Go-go-go-</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="6"> might like that kind of thing more... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Ahahaha...!"</STYLE><PG>
+If there were no curse-killings, everyone in the settlement could live happily.
+{PAUSE ""}
+<BR>
+Whether that comes true or not depends on me.
+{PAUSE ""}
+<BR>
+Can I really hear any voice with just a branch like this?<PG>
+Besides... there are definitely people in this settlement who have committed murder.
+{PAUSE ""}
+<BR>
+However much suspicion fed on itself...<PG>
+But <STYLE ID="7">Obaasan</STYLE> probably has no intention of catching them.
+{PAUSE ""}
+<BR>
+Rather, how to rebuild this settlement―
+{PAUSE ""}
+<BR>
+That must matter to her more than anything.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE> would surely never forgive the culprit and would hand them over to the police, but...<PG>
+<STYLE ID="7">"Well then, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="7">, it starts at 10 a.m. tomorrow, so don't be late."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yes. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">No... Got it! </STYLE><STYLE ID="7">Erika-chan</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+When I answered the way I'd talk to someone my own age, <STYLE ID="7">Obaasan</STYLE>'s expression grew even gentler.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Chiga-nee</STYLE> looked very happy too.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―I headed for the room on the second floor.
+{PAUSE ""}
+<BR>
+Come to think of it... I hadn't taken a bath yet...<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In the second-floor hallway, <STYLE ID="1">Haruka</STYLE> was standing there.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"You were awake..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Yeah, since you left the room, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">thanks."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Were you watching?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, just listening. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Grandma</STYLE><STYLE ID="1">'s usually like that, but she must've been tormented by the curse-killings for years... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, I bet you coming here makes her feel a whole lot stronger."</STYLE><PG>
+<STYLE ID="6">"I hope I can be even a little help..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Just getting </STYLE><STYLE ID="7">Grandma</STYLE><STYLE ID="1"> to feel that way made it worth coming."</STYLE>
+{PAUSE ""}
+<BR>
+If just my coming had encouraged her, then of course that made me happy.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, wanna go take a bath? You haven't yet, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah, I'll go, I'll go!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"After the bath, let's just go to sleep. Way too much stuff wore me out today..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Really... </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="6">'s new-student speech this morning feels like it was ages ago."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Haha, I forgot all about it too!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\風呂.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家風呂.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\風呂潜る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{MESON "500"}
+<STYLE ID="6">"Haah... We moved around so much today, the bath feels great."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Seriously. It's the best!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE> and I let our tired bodies go limp in the hot water.<PG>
+Nothing seemed about to happen so far, but we hadn't analyzed that vision I'd seen at the convenience store.
+{PAUSE ""}
+<BR>
+Even without <STYLE ID="3">Goto</STYLE>, could <STYLE ID="1">Haruka</STYLE> and I manage it, just the two of us?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="1"> ended up crashing without a bath, huh."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"She even got sent out hunting, so of course..."</STYLE>
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+Hunting...?
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+Now that I thought about it, <STYLE ID="7">Erika-chan</STYLE> sending <STYLE ID="3">Goto</STYLE> out hunting felt a little off...<PG>
+The mood at the time was that we were heading out hunting on impulse, but once I calmed down and thought about it, sending a complete amateur like <STYLE ID="3">Goto</STYLE> out hunting was a little strange.
+{PAUSE ""}
+<BR>
+Was there some other purpose...?<PG>
+No... I'll stop thinking like this on my own...
+{PAUSE ""}
+<BR>
+I have to let this bath wash away my cursed thinking too.<PG>
+<STYLE ID="6">"Hey, we still haven't gone over the thing I saw at the convenience store, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right, right. More than whatever </STYLE><STYLE ID="8">Shirozaki-san</STYLE><STYLE ID="1"> said, that's what I'm curious about. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, your intuition beats </STYLE><STYLE ID="8">Shirozaki-san</STYLE><STYLE ID="1">'s story when it comes to </STYLE><STYLE ID="17" RUBY="しんぴょうせい">credibility</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\風呂潜る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花風呂.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "VOICE" "1000" "PASS"}
+With that, <STYLE ID="1">Haruka</STYLE> turned her face toward me.<PG>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, were the people you saw really </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh?"</STYLE><PG>
+<STYLE ID="1">"It's just, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, you've probably never met </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1">'s who you thought it was, but it could actually be </STYLE><STYLE ID="14">my dad</STYLE><STYLE ID="1">, right?"</STYLE>
+{PAUSE ""}
+<BR>
+I see. They were identical twins, so if it wasn't <STYLE ID="4">Kotaro-san</STYLE> but <STYLE ID="14">Ojisan</STYLE>...<PG>
+<STYLE ID="1">"If </STYLE><STYLE ID="14">my dad</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="1"> were in that cave... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">what were they doing with that </STYLE><STYLE ID="18" RUBY="つぼ">pot</STYLE><STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I guess what bothers me is that the person who looked like </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="6"> ended up covered in blood... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">If </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="6"> and </STYLE><STYLE ID="14">Ojisan</STYLE><STYLE ID="6"> were together..."</STYLE><PG>
+<STYLE ID="1">"That's it! You mean that's what gave </STYLE><STYLE ID="11">Sakura-san</STYLE><STYLE ID="1"> that intuition!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Even if that's so... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">why would being splashed with </STYLE><STYLE ID="14">Ojisan</STYLE><STYLE ID="6">'s blood give someone that kind of power...?"</STYLE><PG>
+<STYLE ID="1">"I don't know about that... </STYLE>
+{PAUSE ""}
+<STYLE ID="14">My dad</STYLE><STYLE ID="1"> might've had, like... some kind of special power... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But I've never heard that </STYLE><STYLE ID="14">Dad</STYLE><STYLE ID="1"> had intuition like yours, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Hey, the </STYLE><STYLE ID="19" RUBY="つぼ">pot</STYLE><STYLE ID="6"> gets used at the memorial service too, right?"</STYLE><PG>
+<STYLE ID="1">"It's true, like you said, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, we do use a tool like a pot set on a tripod. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But as for it meaning anything special..."</STYLE>
+{PAUSE ""}
+<BR>
+I feel like our deductions have gotten pretty close.
+{PAUSE ""}
+<BR>
+But at this point, we can't state the cause and effect for certain.<PG>
+<STYLE ID="1">"Wait a sec... Then does that mean </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1"> isn't really that involved in the curse-killings after all?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, you thought the person in that vision was </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1">, so that's why you figured he's still tied to the curse-killings, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Hmm... yeah, but..."</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">, after the memorial service tomorrow, wanna go check out that place?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"The cave </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="6"> and </STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="6"> were in today?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah. If we look into it, we might find something out."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Hmm, but in the end, the curse-killings were caused by the residents' suspicion feeding on itself, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　There's no need to dig any further..."</STYLE><PG>
+<STYLE ID="1">"That's just what </STYLE><STYLE ID="10">Grandma</STYLE><STYLE ID="1"> thinks, isn't it?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Something about it just doesn't sit right with me."</STYLE>
+{PAUSE ""}
+<BR>
+It's true that it's unnatural for it to go on every year, so conveniently one person at a time, and with the culprit unknown.
+{PAUSE ""}
+<BR>
+Under that theory, I can't imagine the residents would tell the truth even if they were questioned.<PG>
+The culprit is different every year, and as long as nobody knows who was the culprit in which year, they can talk their way out of anything.
+{PAUSE ""}
+<BR>
+Even <STYLE ID="10">Erika-chan</STYLE> must have done at least that much questioning.<PG>
+But on the other hand, if nobody is the culprit, then nobody will come forward and say they're the culprit.
+{PAUSE ""}
+<BR>
+So either way, there's no getting testimony from the residents.
+{PAUSE ""}
+<BR>
+I can't accept 'the theory that everyone killed each other out of suspicion feeding on itself' either...<PG>
+Like <STYLE ID="1">Haruka</STYLE> said, let's look into that cave.
+{PAUSE ""}
+<BR>
+We'll set the suspicion theory aside and gather the information all over again.<PG>
+<STYLE ID="6">"Okay. Let's look into the cave."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right. Instead of after the memorial service, let's check it out first thing in the morning."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah, the sooner the better. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">The memorial service starts at 10 a.m., so... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">if we leave the house at 6 a.m., we'll make it in time for the thirteenth-year memorial service, right?"</STYLE><PG>
+<STYLE ID="1">"Okay, let's get </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="1"> </STYLE><STYLE ID="20" RUBY="たた">dragged out of bed</STYLE><STYLE ID="1"> before 6 a.m. too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"What about </STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="6">? She's been glued to </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="6"> the whole time..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">She</STYLE><STYLE ID="1"> can come or not, doesn't matter. If she wants to come, fine."</STYLE><PG>
+{STOPSND "SE" "500" "PASS"}
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\風呂潜る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+Even the idea that the residents are killing each other makes sense to a degree.
+{PAUSE ""}
+<BR>
+But we decided to look for a conclusion different from <STYLE ID="10">Erika-chan</STYLE>'s.
+{PAUSE ""}
+<BR>
+What was in that cave―
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

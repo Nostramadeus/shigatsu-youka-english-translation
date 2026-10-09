@@ -1,0 +1,234 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1077, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=19, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1275, target=)
+; Links:
+;    0: TWdLink(count=1096, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "リファレンス専用\Good_bye.ogg" "BGM" "REPEAT" "900" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\超炭酸0.gal" "NORMAL" "#1" "C" "T" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\超炭酸ボンバー川.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\カウボーイ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Hey, you bastards! The day has finally come when a human flies through the sky on a convenience-store drink! 
+{PAUSE ""}
+　
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\超炭酸.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What I've got here is Super Soda Bomber, which just went on sale in Japan the other day! 
+{PAUSE ""}
+　<BR>
+The bottle can alone weighs 1 kilogram!<PG>
+Okay, first let's test how far one bottle flies!
+{PAUSE ""}
+　The method is the same as a bottle rocket! Except we don't pump in any air, we just shake the bottle. 
+{PAUSE ""}
+Set it on the bottle-rocket stand, press this switch, and the cap opens automatically.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\SE\muci_fan_10.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\超炭酸ボンバー1本.gal" "NORMAL" "#1" "C" "T" "0" "14" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "エデンの桜\No_Escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+This is Super Soda Bomber No. 1, rigged up bottle-rocket style!
+{PAUSE ""}
+<BR>
+Okay, first we test its power with this!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\超炭酸ボンバー川.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\リファレンス用\アイテム\超炭酸飛ばす前.gal" "NORMAL" "#1" "C" "540" "100" "14" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-300\r\n5000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n284\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-300\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n284\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+Now, how far will it fly?
+{PAUSE ""}
+<BR>
+Here comes the countdown!
+{PAUSE ""}
+<BR>
+3, 
+{PAUSE ""}
+2, 
+{PAUSE ""}
+1, 
+{PAUSE ""}
+Fire!<PG>
+{MESOFF "500"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "アイテム1" "14" "100" "0" "0" "" "0"}
+{QUAKESTOP "1000"}
+{CREATECG "アイテム1" "グラフィック\リファレンス用\アイテム\超炭酸小.gal" "NORMAL" "#1" "C" "-15" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n2000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n200\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{MESON "500"}
+Amazing! It flew right over a 300-foot-wide river!
+{PAUSE ""}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<BR>
+Sending a 1.5 kg object flying 300 feet isn't ordinary power!
+{PAUSE ""}
+<BR>
+With this... 
+{PAUSE ""}
+my dream might come true!<PG>
+I weigh 60 kilos.
+{PAUSE ""}
+<BR>
+What happens if I strap on 60 Super Soda Bombers?
+{PAUSE ""}
+<BR>
+I've got to do it!<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\SE\muci_fan_10.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\超炭酸60本.gal" "NORMAL" "#1" "C" "B" "0" "14" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+This is the Crazy Rocket, Crazy Cowboy spec!
+{PAUSE ""}
+<BR>
+I put a board over the top of it and ride on it.
+{PAUSE ""}
+<BR>
+And then, I wonder what'll happen when I open the caps all at once!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\超炭酸ボンバー川.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\カウボーイ鎧.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Since Super Soda Bomber is made in Japan, this time I went samurai style with my protective gear!
+{PAUSE ""}
+<BR>
+By my calculations, it should keep plenty of power even with the weight of this gear!
+{PAUSE ""}
+<BR>
+Plus, the state police are helping out, and we've got a rescue team stationed on the river!
+{PAUSE ""}
+<BR>
+All that's left... 
+{PAUSE ""}
+all that's left is for me to get mentally ready, and we're good...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\カウボーイ鎧反転.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Okay, it's finally the moment a human becomes a bird on a convenience-store drink!
+{PAUSE ""}
+<BR>
+Wait a second...
+{PAUSE ""}
+<BR>
+Let me take a few deep breaths.
+{PAUSE ""}
+<BR>
+I couldn't sleep at all last night imagining this moment.
+{PAUSE ""}
+<BR>
+I'm excited, but inside, I'm really scared...<PG>
+Okay... here I go...<PG>
+3, 
+{PAUSE ""}
+2, 
+{PAUSE ""}
+1...<PG>
+Ah, wait a second! Let me take one more deep breath!
+{PAUSE ""}
+<BR>
+Sorry, I've made up my mind now.<PG>
+Okay, I'm gonna be a bird! I'm gonna flap into the sky! The first samurai in the world to fly, that's what I'm gonna be!<PG>
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+3, 
+{WAITPLAY "VOICE" "CLICK"}
+{PAUSE ""}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+2, 
+{WAITPLAY "VOICE" "CLICK"}
+{PAUSE ""}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+1, 
+{WAITPLAY "VOICE" "CLICK"}
+Go!
+{PAUSE ""}
+{PLAYSND "SE\詫言編　夢から\爆発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "0" "30"}
+{DELETECG "000,人物1" "14" "3000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{QUAKESTOP "0"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\風呂飛込み.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Heeey! Help me, quick!
+{PAUSE ""}
+<BR>
+The gear's heavy, I'm sinking...!<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\Good_bye.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\超炭酸ボンバー川.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\カウボーイ鎧.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Hah... hah... somehow I made it back alive.
+{PAUSE ""}
+<BR>
+Everyone, I'm really sorry. Looks like the force of the blast knocked the camera over.
+{PAUSE ""}
+<BR>
+To report the result: as expected, I couldn't go the full 300 feet, but I should've flown 200 feet.<PG>
+If I'd made it to the far bank with that momentum, I'd have been smashed to smithereens.
+{PAUSE ""}
+<BR>
+I was very lucky to fly only 200 feet.
+{PAUSE ""}
+<BR>
+It's probably only a matter of time before Super Soda Bomber is regulated by law in Japan.<PG>
+Before that happens, all you with heart! Take up where I left off and fly off into space!
+{PAUSE ""}
+<BR>
+The day humans become birds is near!<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\超炭酸0.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"This old guy is way too reckless..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

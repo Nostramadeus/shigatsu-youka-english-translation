@@ -1,0 +1,239 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=442, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=692, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=19, unk2=11195903, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=23, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1339, target=)
+; Links:
+;    0: TWdLink(count=1176, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\cicadas.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\商店街.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Phew... Arata was cool, but Motoki-cho really is hot..."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\追加手直し\茜横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+"Oh? <STYLE ID="1">Akane</STYLE>?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"Fwah!?</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="1">　M-</STYLE>Mifuyu<STYLE ID="1">!?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+"What a coincidence! What's wrong? You're in such a rush..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"N-no... It's, um..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\パチンコ店.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Oh, pachinko. 
+{PAUSE ""}
+<STYLE ID="1">Akane</STYLE>, were you into pachinko?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Please, </STYLE>Mifuyu<STYLE ID="1">! Don't tell </STYLE><STYLE ID="3">Ryoji-kun</STYLE><STYLE ID="1"> about just now!"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It's hot, let's go to Primavera! My treat!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\喫茶店中1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"I see, so <STYLE ID="3">Ryoji-san</STYLE>'s gone back home for Obon. 
+{PAUSE ""}
+Why didn't <STYLE ID="1">you</STYLE> go with him?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"???"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm quitting pachinko!"</STYLE>
+{PAUSE ""}
+<BR>
+"What's wrong? So serious all of a sudden..."<PG>
+<STYLE ID="1">"The truth is... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Ryoji-kun</STYLE><STYLE ID="1"> hates women who gamble, like on pachinko or horse racing..."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So please! Keep today a secret!"</STYLE>
+{PAUSE ""}
+<BR>
+"I don't mind keeping it a secret, but... 
+{PAUSE ""}
+still, I'm impressed you managed to hide it all this time..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"When I graduated high school, I tried pachinko with my friends, half for fun... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">At first I only meant to do a little, okay!? I only meant to do just a tiny bit!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　But listen, listen! Out of nowhere, 3,000 yen turned into 30,000 yen, you know!?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Isn't that amazing!?"</STYLE>
+{PAUSE ""}
+<BR>
+"O-okay..."<PG>
+<STYLE ID="1">"I really did only mean to do a little... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But only as much as doesn't squeeze my wallet, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"If you hid it even from me, it must be pretty bad..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1"> and </STYLE><STYLE ID="3">Ryoji-kun</STYLE><STYLE ID="1"> know each other, so I just had to..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"This Obon, the newest machine came out in the series I got hooked on 2 years ago... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I knew I shouldn't, but..."</STYLE>
+{PAUSE ""}
+<BR>
+"Could it be... 
+{PAUSE ""}
+the reason you didn't go home with <STYLE ID="3">Ryoji-san</STYLE> is..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, yes, that's right! I wanted to play Lucy Doll 3!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Lucy's a little doll with odd eyes, one green and one blue... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">She's sooo cute, I'm telling you..."</STYLE><PG>
+"N-now, now, calm down... 
+{PAUSE ""}
+But you can't keep playing pachinko forever, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's why... I'm quitting... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The guilt I feel right now is seriously no joke..."</STYLE>
+{PAUSE ""}
+<BR>
+"Getting so into it you won't even go along when your <STYLE ID="3">husband</STYLE> visits home, that really is a bit much..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's not it! I didn't get into pachinko, I wanted to see Lucy!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　This one was really amazing! She's sooo cute!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"So, </STYLE>Mifuyu<STYLE ID="1">! I promise! I'm quitting pachinko!"</STYLE>
+{PAUSE ""}
+<BR>
+"Sh-shouldn't you be promising <STYLE ID="3">Ryoji-san</STYLE> instead of me..."
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"Like I could tell him!!</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="1">　If he found out... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">we'd be facing divorce right after getting married... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ugh, honestly... I'm such a hopeless woman..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, <STYLE ID="1">Akane</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What..."</STYLE><PG>
+"I'll keep your secret, so..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............?"</STYLE>
+{PAUSE ""}
+<BR>
+"Why don't you say 'Uugh...'?"
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"Huh!?"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+"I want to hear <STYLE ID="1">your</STYLE> 'Uugh...'!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You've got a mean streak..."</STYLE><PG>
+"Ahahaha! Kidding, kidding!
+{PAUSE ""}
+　It's just that you're saying stuff like I would!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I can't go against </STYLE>you<STYLE ID="1"> right now... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">At least, when we have a kid, I hope this gambling streak doesn't get passed down..."</STYLE>
+{PAUSE ""}
+<BR>
+"Well, it'll be fine. 
+{PAUSE ""}
+There, you're quitting pachinko, so no more worrying!
+{PAUSE ""}
+　Okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're right... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ah, goodbye, my Lucy..."</STYLE><BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

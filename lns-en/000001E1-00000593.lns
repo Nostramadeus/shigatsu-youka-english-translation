@@ -1,0 +1,649 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1565, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=208, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=188, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=20, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にぎ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こうごう, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まがまが, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひまつ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=しよう, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1219, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さくそう, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=43, unk2=4294967295, unk3=4294967295, unk4=32, unk5=3, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3765, target=)
+; Links:
+;    0: TWdLink(count=3254, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\夢.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>How long had I slept?
+{PAUSE ""}
+<BR>
+The room was already pitch dark.
+{PAUSE ""}
+<BR>
+Had I been asleep that long?<PG>
+<STYLE ID="1">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+I looked around me, and could see nothing at all.
+{PAUSE ""}
+<BR>
+The faint lamps on the computer and the TV, at least, ought to have been visible.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE>, where is she? What time is it now? Huh?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夢桜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And then, before my eyes, floating in pitch darkness, a cherry tree in full bloom.
+{PAUSE ""}
+<BR>
+There was no wind, and the petals were falling fluttering straight down.<PG>
+{PLAYSND "SE\うめき声.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Nn... nngh..."</STYLE>
+{PAUSE ""}
+<BR>
+A moan coming from somewhere, impossible to tell as a man's or a woman's.
+{PAUSE ""}
+<BR>
+Where on earth was this place?
+{PAUSE ""}
+<BR>
+It was familiar.
+{PAUSE ""}
+<BR>
+This place is Chuo Park, in Motoki-cho.
+{PAUSE ""}
+<BR>
+The scene where that incident earlier is said to have happened...
+{PAUSE ""}
+<BR>
+When spring comes, a great many cherries burst into bloom and the place <STYLE ID="4" RUBY="にぎ">bustles</STYLE> with crowds of people.
+{STOPSND "VOICE" "500" "PASS"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\中央公園素材\御神木.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The great cherry tree towering there is what is called the goshinboku of Chuo Park. [TN: the sacred tree of a shrine, held to house a god]
+{PAUSE ""}
+<BR>
+Even in Motoki-cho, with all its cherries, it is a particularly big tree, and the blossom it puts out is deeply <STYLE ID="5" RUBY="こうごう">divine</STYLE> and <STYLE ID="6" RUBY="まがまが">baleful</STYLE>.<PG>
+Despite its being this season, there was next to no sign of anyone.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\うめき声.ogg" "VOICE" "NORMAL" "1000" "0"}
+Except, that is, for the moan coming from somewhere―
+{PAUSE ""}
+<BR>
+Where was this voice coming from?
+{STOPSND "VOICE" "500" "PASS"}
+<PG>
+When I looked at the foot of the goshinboku, something in the shape of a person was lying there.
+{PAUSE ""}
+<BR>
+Looking closely, it was faintly writhing.
+{PAUSE ""}
+<BR>
+No mistake about it, the moan is that person's.
+{PAUSE ""}
+<BR>
+The voice sounded in great pain, but there was nobody around to call on for help.
+{PAUSE ""}
+<BR>
+I hurried, running up close.<PG>
+{PLAYSND "SE\走る.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "2000" "PASS"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\夢桜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\赤人.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+―!!
+{PAUSE ""}
+<BR>
+I lost my words for a moment at the strange state of that person.
+{PAUSE ""}
+<BR>
+That person's form is bright red.
+{PAUSE ""}
+<BR>
+A bright red human being is lying there.
+{PAUSE ""}
+<BR>
+Neither the features nor the age, not even the sex, can be told.
+{PAUSE ""}
+<BR>
+But alive! Still alive!<PG>
+<STYLE ID="1">"Are you all right!? I'll call an ambulance right away!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\うめき声2.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Nnngh... aahh..."</STYLE>
+{PAUSE ""}
+<BR>
+The red person, moving their body in response to my voice.
+{PAUSE ""}
+<BR>
+This is a state where every moment counts.
+{STOPSND "VOICE" "500" "PASS"}
+<PG>
+{PLAYSND "強風.ogg" "SE" "NORMAL" "0" "0"}
+{CHGVOL "SE" "1000" "2000" "PASS"}
+Just then, a strong wind blew through between us and the goshinboku.
+{PAUSE ""}
+<BR>
+Bright red cherry blossoms poured down from the goshinboku and flew about me.
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+<PG>
+But what touched my skin was not the feel of petals, which should have been a light brush.
+{PAUSE ""}
+<BR>
+Sticky, faintly cold, an unpleasant <STYLE ID="7" RUBY="ひまつ">spatter</STYLE>.
+{PAUSE ""}
+<BR>
+<TXSPS>No... this is not blossom!<PG>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "赤い雨.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+<TXSPN>It is blood.
+{PAUSE ""}
+<BR>
+Blood is pouring down like rain.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What? This..."</STYLE>
+{PAUSE ""}
+<BR>
+My whole body was being painted over, before my eyes, in a dark, murky red.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\夢の目.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\背景\手直し・追加\夢の目1.gal" "NORMAL" "#1" "669" "262" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "人物2" "QUAKE" "1" "5" "5" "0" "1"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Keeping my face turned up, I slowly turned only my eyes downward.
+{PAUSE ""}
+<BR>
+For the first time I saw the red person's face clearly.
+{PAUSE ""}
+<BR>
+The bright red human being was looking back at me too.
+{PAUSE ""}
+<BR>
+Bloodshot eyes wide open, as though, unable to speak, they were trying to plead something by the sheer force of that stare―
+{PAUSE ""}
+<BR>
+As though I had been bound in iron, I could not move.<PG>
+<STYLE ID="1">"Right away... I'll call for help."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物2" "1" "3000" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{MESON "500"}
+My legs finally moved, and I drew one step back.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{CREATECG "000" "グラフィック\立ち絵\人物\つかもう.gal" "NORMAL" "#1" "-900" "C" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\nつかむ手\r\n000\r\n3\r\n0\r\n200\r\nDEC\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\nつかむ手\r\n000\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{CHANGECG "000" "グラフィック\立ち絵\人物\つかむ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Suddenly, the bright red human being seized my ankle.
+{PAUSE ""}
+<BR>
+The grip is terribly strong...!
+{PAUSE ""}
+<BR>
+{QUAKE "000" "QUAKE" "1" "0" "15" "0" "30"}
+{PLAYSND "SE\bakibaki.ogg" "VOICE" "NORMAL" "1000" "0"}
+I wanted to shake it off, but my strength was not enough.
+{PAUSE ""}
+<BR>
+I felt a cold sweat running down my back.<PG>
+{QUAKESTOP "0"}
+<STYLE ID="1">"Stop...!"</STYLE>
+{PAUSE ""}
+<BR>
+When I said that―<PG>
+<EVENT VALUE="STOPMOVIE">
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\雑魚.ogg" "VOICE" "NORMAL" "1000" "300"}
+{CHANGECG "000" "グラフィック\背景\赤顔.lmt" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{CHANGECG "000" "グラフィック\背景\新村家時計0時0000.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\時計の時報.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "SE\シナリオ\000過去へ馳せる夢\時計11回.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Huh...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+When I opened my eyes, I was on the sofa at <STYLE ID="2">Haruka</STYLE>'s house.
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "3000" "PASS"}
+A dream...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "#1" "R" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Haruka</STYLE> seemed to be on the internet.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> showed no particular sign of minding me.
+{PAUSE ""}
+<BR>
+So even after a dream like that, I had been sleeping soundly.<PG>
+There was no feel of the cold sweat I thought had run down my back, either.
+{PAUSE ""}
+<BR>
+The sensation of my ankle being seized remained.
+{PAUSE ""}
+<BR>
+But, that must be because I had my ankles crossed.
+{PAUSE ""}
+<BR>
+When I recrossed them the gripped feeling went away at once.<PG>
+It seemed to have been entirely a dream.
+{PAUSE ""}
+<BR>
+I looked at the TV.
+{PAUSE ""}
+<BR>
+It seemed to be that high-school board I had objected to.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> had not noticed that I had woken.
+{PAUSE ""}
+<BR>
+The board was, as expected, buried in talk of this morning's incident.<PG>
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{DELETECG "人物1,000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\掲示板.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "SE\pc_keyboard.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="8" RUBY="しよう">Shiyo</STYLE><STYLE ID="9"> 800, April 8　6:32　Anonymous</STYLE><BR>
+<STYLE ID="9">this is bad this is bad! there's a body in chuo park!</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:00　Anonymous</STYLE><BR>
+<STYLE ID="9">seems like it's real. patrol cars were flying past</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:01　Anonymous</STYLE><BR>
+<STYLE ID="9">it'll be some hanami drunk [TN: hanami = cherry-blossom viewing]</STYLE><BR>
+<STYLE ID="9">adults are idiots</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:33　Anonymous</STYLE><BR>
+<STYLE ID="9">no, looks like murder</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:40　Anonymous</STYLE><BR>
+<STYLE ID="9">got the closure email</STYLE><BR>
+<STYLE ID="9">no school</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:41　Anonymous</STYLE><BR>
+<STYLE ID="9">huh? seriously, an incident?</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:45　Anonymous</STYLE><BR>
+<STYLE ID="9">my grandpa says he saw the body.</STYLE><BR>
+<STYLE ID="9">crows were swarming on it, sounds like the body was in a really bad state</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:46　Anonymous</STYLE><BR>
+<STYLE ID="9">bad how?</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:46　Anonymous</STYLE><BR>
+<STYLE ID="9">they say it was bright red all over.</STYLE><BR>
+<STYLE ID="9">covered in blood, i guess</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　7:50　Anonymous</STYLE><BR>
+<STYLE ID="9">bad, i'm starting to feel sick.</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<BR>
+<BR>
+<STYLE ID="9">-----(snip)-----</STYLE><PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:50　Anonymous</STYLE><BR>
+<STYLE ID="9">the press were swarming chuo park</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:52　Anonymous</STYLE><BR>
+<STYLE ID="9">pics of the body are going round, hands up who wants to see</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:52　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE><BR>
+<BR>
+<STYLE ID="9">Shiyo 800, April 8　10:52　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:52　Anonymous</STYLE><BR>
+<STYLE ID="9">seriously stop it, really, please stop</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:55　Anonymous</STYLE><BR>
+<STYLE ID="9">the body pics are already going round on Shabetter. i looked and this is really bad.</STYLE><BR>
+<STYLE ID="9">don't look. i was fine with gore pics but i've never seen a body like this</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:56　Anonymous</STYLE><BR>
+<STYLE ID="9">details pls</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:56　Anonymous</STYLE><BR>
+<STYLE ID="9">too scared to look so draw it</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　10:58　Anonymous</STYLE><BR>
+<STYLE ID="9">went and looked at the pic</STYLE><BR>
+<STYLE ID="9">no, seriously, don't look.</STYLE><BR>
+<STYLE ID="9">it'll be reported sooner or later, but</STYLE><BR>
+<STYLE ID="9">i've never heard of a body like this</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:00　Anonymous</STYLE><BR>
+<STYLE ID="9">never mind that, somebody tell us the details already</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:01　Anonymous</STYLE><BR>
+<STYLE ID="9">look for yourself</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ah, morning."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly <STYLE ID="2">Haruka</STYLE> spoke to me, and my body gave a jolt.<PG>
+<STYLE ID="1">"Ah, yeah... I fell asleep."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ah, er, sorry!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> hurriedly closed the board.<PG>
+<STYLE ID="1">"You were looking at the board?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ah, yeah. I couldn't help wondering..."</STYLE><PG>
+<STYLE ID="1">"Did you find out anything new?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The information all seems rather </STYLE><STYLE ID="10" RUBY="さくそう">tangled</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+The clock was pointing at noon.
+{PAUSE ""}
+<BR>
+It seemed I had slept only about 30 minutes.
+{PAUSE ""}
+<BR>
+Probably <STYLE ID="2">Haruka</STYLE> checked that I was asleep and stopped watching the DVD right away.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ahh, this is boring. Can't even go outside..."</STYLE>
+{PAUSE ""}
+<BR>
+I remembered... <STYLE ID="2">Haruka</STYLE> liked this sort of horror thing.
+{PAUSE ""}
+<BR>
+She might quietly be enjoying this situation.
+{PAUSE ""}
+<BR>
+Even though she is more frightened than anyone when it comes to scary stories.<PG>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">, you can look at the board."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"No, no, it's fine, don't worry about it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But the truth of the matter will come out sooner or later. It's whether we know now or know later, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Well, yeah..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+She made a show of hesitating a little, but <STYLE ID="2">Haruka</STYLE> brought the board straight back up.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\掲示板.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:02　Anonymous</STYLE><BR>
+<STYLE ID="9">anyway hands up if you're stuck at home with nothing to do</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:02　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE><BR>
+<BR>
+<STYLE ID="9">Shiyo 800, April 8　11:02　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:02　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE><BR>
+<BR>
+<STYLE ID="9">Shiyo 800, April 8　11:02　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE><BR>
+<BR>
+<STYLE ID="9">Shiyo 800, April 8　11:03　Anonymous</STYLE><BR>
+<STYLE ID="9">o/</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:04　Anonymous</STYLE><BR>
+<STYLE ID="9">well we can't go out so everyone's bored</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="11">Shiyo 800, April 8　11:05　Anonymous</STYLE><BR>
+{PLAYSND "リファレンス専用\SE\muci_fan_10.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="11">【 E M E R G E N C Y  E V E N T 】</STYLE><BR>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="11">C H U O  P A R K  M E E T - U P</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:05　Anonymous</STYLE><BR>
+<STYLE ID="9">no no we'd get in trouble</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:05　Anonymous</STYLE><BR>
+<STYLE ID="9">the teachers are definitely watching</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:06　Anonymous</STYLE><BR>
+<STYLE ID="9">suspension if we get caught?</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:06　Anonymous</STYLE><BR>
+<STYLE ID="9">no suspension. a verbal warning</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:06　Anonymous</STYLE><BR>
+<STYLE ID="9">i might go</STYLE><BR>
+<STYLE ID="9">i'm bored and if we get in trouble we just go home</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:07　Anonymous</STYLE><BR>
+<STYLE ID="9">i'm going too!</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+<PG>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:07　Anonymous</STYLE><BR>
+<STYLE ID="9">loads of lurkers on this board, maybe 100 people will turn up?</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:07　Anonymous</STYLE><BR>
+<STYLE ID="9">what do you even do at a meet-up?</STYLE>
+{CHGVOL "SE" "0" "300" "PASS"}
+{PAUSE ""}
+<BR>
+<BR>
+{CHGVOL "SE" "1000" "0" "PASS"}
+<STYLE ID="9">Shiyo 800, April 8　11:08　Anonymous</STYLE><BR>
+<STYLE ID="9">obviously nothing but waving at the press cameras to prove we exist lol</STYLE>
+{STOPSND "SE" "300" "PASS"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Whoa... it's embarrassing just watching..."</STYLE>
+{PAUSE ""}
+<BR>
+They may be my own generation, but my mouth hung open all the same.
+{PAUSE ""}
+<BR>
+It is like a festival riding on the back of this incident.<PG>
+<STYLE ID="2">"Well, I do get wanting to go... I suppose?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh??"</STYLE>
+{PAUSE ""}
+<BR>
+I was a little put off by <STYLE ID="2">Haruka</STYLE> showing that much interest.
+{PAUSE ""}
+<BR>
+My age = the length of our friendship, and yet there is still plenty I do not know.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Say, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, why don't we go to the meet-up?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, no, that's a bit..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Just a peek! Once we get a feel for it we'll come straight home."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ehhh..."</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "73" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

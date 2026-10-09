@@ -1,0 +1,724 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3246, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=650, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=41, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=18, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=606, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たた, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てんぶくろ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=30, unk2=11271932, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・・・・, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たけ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=45, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=669, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=71, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5927, target=)
+; Links:
+;    0: TWdLink(count=5404, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\幸太郎の部屋.gal" "NORMAL" "#1" "L" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Fifteen minutes into the search.
+{PAUSE ""}
+<BR>
+Plenty of time for the two of us to go through everything.
+{PAUSE ""}
+<BR>
+I went through <STYLE ID="1">Kana's</STYLE> desk, and <STYLE ID="1">Kana</STYLE> through the closet, but...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hmm, not even </STYLE><STYLE ID="2">Daddy's</STYLE><STYLE ID="1"> dirty magazines or dirty DVDs are turning up... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I guess it's all online these days."</STYLE>
+{PAUSE ""}
+<BR>
+Are <STYLE ID="2">Dad</STYLE> and <STYLE ID="3">Grandma</STYLE> innocent after all?
+{PAUSE ""}
+<BR>
+That would be good news, but it doesn't mean they're cleared of suspicion yet.
+{PAUSE ""}
+<BR>
+All we know is it isn't in this room, and there are plenty of other places to search.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">, why don't you take a bath?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Your clothes really stink of the storehouse."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Do I smell?"</STYLE>
+{PAUSE ""}
+<BR>
+I held my sleeve to my nose.
+{PAUSE ""}
+<BR>
+I caught a faint smell, something like mold, something like dust.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana</STYLE>, with her keen eyes, nose, and ears, can probably pick up the smell even from a little way off.<PG>
+<STYLE ID="4">"Mm... Maybe I'll change. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Sorry, but </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, could you tidy up the closet?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Aww? That's a pain..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... The one who searched the closet was </STYLE><STYLE ID="1">you</STYLE><STYLE ID="4">, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Everything has to go back where it was. I'm counting on you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okaaay..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\キオク\夏菜の部屋.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This was the room I used when I lived in Arata.
+{PAUSE ""}
+<BR>
+It's still kept as my room, but <STYLE ID="1">Kana</STYLE> will end up using it before long.<PG>
+I pulled some clothes, whatever came to hand, out of a cardboard box.
+{PAUSE ""}
+<BR>
+I'd like a bath, but I might get dirty again, so that can wait.
+{PAUSE ""}
+<BR>
+Huh? In that case... is there any point in changing?
+{PAUSE ""}
+<BR>
+Once I'm back in the storehouse, the fresh clothes will pick up the smell too.<PG>
+I put the clothes I'd pulled out back in the box.
+{PAUSE ""}
+<BR>
+I don't like being dirty, but given what I'm doing right now, I'll have to put up with a little.
+{PAUSE ""}
+<BR>
+Tonight I'll surely be told to eat dinner at home, so I'll take care of the bath and changing then.
+{PAUSE ""}
+<BR>
+Besides, I don't want to sit down to dinner in front of everyone looking grubby.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\幸太郎の部屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I got back to the room, <STYLE ID="1">Kana</STYLE> was glancing restlessly around.
+{PAUSE ""}
+<BR>
+The things she'd taken out of the closet still hadn't been put away.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, all this stuff―"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "200" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Shh! Quiet!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\夏菜見上げる.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+A curt reply that cut me off, then a fixed <STYLE ID="5" RUBY="にら">glare</STYLE> at the ceiling from <STYLE ID="1">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+As if chasing a mosquito in midair, her eyes even seemed to be following something I couldn't see.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">it still smells..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... I haven't changed yet. My clothes might just get dirty again..."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"No! Even after you left the room, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">, it kept smelling of the storehouse!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's in this room―the thing you're looking for, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+Don't tell me <STYLE ID="1">Kana</STYLE> sniffed out the smell of the books?<PG>
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"It's been weird since yesterday. This room smelled a little moldy. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I figured it was because </STYLE><STYLE ID="2">Daddy</STYLE><STYLE ID="1"> went all over the place getting ready for the thirteenth-year memorial service, but this smell is the same as that storehouse."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\夏菜見上げる.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">Kana</STYLE> kept staring at the ceiling.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... The space above the ceiling...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Probably..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, get on my shoulders."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\幸太郎の部屋天井.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I put <STYLE ID="1">Kana</STYLE> on my shoulders and had her feel around the ceiling.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">Kana</STYLE> sniffed and sniffed, and knocked on the ceiling, tap, tap.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+To look at, they were perfectly ordinary ceiling boards, but...<PG>
+{PLAYSND "エデンの桜\SE\ノック重い.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"Mm!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　The sound's different only here. See, there's something up there."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\ノック重い.ogg" "VOICE" "NORMAL" "1000" "0"}
+Only where <STYLE ID="1">Kana</STYLE> <STYLE ID="6" RUBY="たた">knocked</STYLE> was the sound a little heavier.<PG>
+<STYLE ID="4">"Mm... Is there a seam in the board? Can it be opened?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm... No seam at all. I don't think it opens."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Then maybe you can get above the ceiling from somewhere else?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Maybe there's a secret window in the roof?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\幸太郎の部屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... With </STYLE><STYLE ID="2">Dad's</STYLE><STYLE ID="4"> build, climbing onto the second-floor roof is out of the question. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Somewhere in the second-floor rooms, there must be a space that leads above this ceiling."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Okay! Now this is turning into a real investigation!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana</STYLE> was delighted, but has she forgotten that the one being investigated is <STYLE ID="2">her own father</STYLE>...?<PG>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, you check here and the guest room. I'll check the hallway and the other rooms."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay, okaaay!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Before that, though, put the closet back in order."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Tch..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+First, the second-floor hallway.
+{PAUSE ""}
+<BR>
+Everyone passes through here all the time, so if anything big were off, someone would notice.
+{PAUSE ""}
+<BR>
+And yet...
+{PAUSE ""}
+<BR>
+The ceiling was old and darkened, so if anyone had cut into it, the marks would stand out.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+I poked at it with a broom, but these weren't boards that would come loose easily.<PG>
+Let me try the next room.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\三畳間昼.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This room usually sits empty.
+{PAUSE ""}
+<BR>
+It's a cramped little three-mat room, where <STYLE ID="7">Mom</STYLE> used to do her foreseeing long ago.
+{PAUSE ""}
+<BR>
+How many years has it been since I came in here?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\三畳間押入れ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A closet built into the cramped room―
+{PAUSE ""}
+<BR>
+I opened it, but there was nothing inside.
+{PAUSE ""}
+<BR>
+Above it was the <STYLE ID="8" RUBY="てんぶくろ">top cupboard</STYLE>.
+{PAUSE ""}
+<BR>
+That should be empty too, but...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "BGM" "2000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\三畳間天袋.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "強風.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+The moment I opened it, I felt the faintest breath of air.
+{PAUSE ""}
+<BR>
+In this sealed room, a draft from a top cupboard that should have been just as sealed...
+{PAUSE ""}
+<BR>
+Don't tell me... back in there...!?
+{PAUSE ""}
+<BR>
+At my height, I couldn't see all the way to the back of the top cupboard.<PG>
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\三畳間昼.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, come here a sec!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"I'm not done tidying yet!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... That can wait!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Jeez, you're such a slave driver..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Yes, yes, what can I do for you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Shine this phone into the back of the top cupboard for me. There was a draft coming from in here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yeah... it smells..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\三畳間天袋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Kana</STYLE> took my phone and climbed into the top cupboard without even needing my shoulders.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Well? Can you get above the ceiling?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No way, no way! This is all one solid board too!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　But this board's really new!? Did someone replace it?"</STYLE><PG>
+<STYLE ID="4">"Mm... Can you break it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm allowed to break it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Go ahead. I'll take responsibility."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Got it!"</STYLE><PG>
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "800" "0"}
+From the top cupboard came the echo of the ceiling being pounded hard.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "800" "0"}
+With <STYLE ID="1">Kana's</STYLE> fists, a few blows should be enough.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE2" "NORMAL" "800" "0"}
+{PLAYSND "強風.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "1000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Then, once again, air blew into the room.
+{PAUSE ""}
+<BR>
+Stronger than before.<PG>
+<STYLE ID="1">"Whoa! It stinks!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I'm going in for a bit!"</STYLE>
+{PAUSE ""}
+<BR>
+It seemed she'd made a hole.
+{PAUSE ""}
+<BR>
+It was a real help that <STYLE ID="1">Kana</STYLE> was small and athletic.
+{PAUSE ""}
+<BR>
+If I went up above the ceiling with my weight, the ceiling boards would surely give way.
+{PAUSE ""}
+<BR>
+While she's at it, let me tidy up <STYLE ID="2">Dad's</STYLE> room.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\幸太郎の部屋.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I tried to put everything back where it had been, but since <STYLE ID="1">Kana</STYLE> was the one who took it all out, I couldn't help guessing.
+{PAUSE ""}
+<BR>
+But come to think of it, maybe there had been no need to sneak around at all.
+{PAUSE ""}
+<BR>
+If <STYLE ID="2">Dad</STYLE> is innocent, an explanation will settle it, and if he's guilty, I just have to confront him right away.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">, you there?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\幸太郎の部屋天井.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was <STYLE ID="1">Kana's</STYLE> voice, from above the ceiling.
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\ノック重い.ogg" "VOICE" "NORMAL" "1000" "0"}
+I knocked on the spot <STYLE ID="1">Kana</STYLE> had said was suspicious earlier.<PG>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, this is the spot you said sounded heavy."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hang on a sec... </STYLE>
+{PAUSE ""}
+{CHGVOL "BGM" "0" "3000" "PASS"}
+<STYLE ID="1">Let's see..."</STYLE>
+{PAUSE ""}
+<BR>
+Now... 
+{PAUSE ""}
+Is <STYLE ID="2">Dad</STYLE> guilty... 
+{PAUSE ""}
+or is he innocent...<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">they're here. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Books that smell like the storehouse―several of them."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... Okay, bring them back down."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Dad</STYLE>, or else <STYLE ID="3">Grandma</STYLE>, 
+{PAUSE ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{WAIT "500" "CLICK" "SKIP"}
+is guilty after all, it seems.<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵2階.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"So you're reading them out here after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... At home, it'd be a pain to hide them when </STYLE><STYLE ID="2">Dad</STYLE><STYLE ID="4"> and Grandma get back. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Kana</STYLE><STYLE ID="4">, are you going to read them too?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, of course I'm curious! You'll tell me, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... I don't mind, but it's bound to be difficult.</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　I'm not sure even I'll understand it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hnng... if it's hard even for you, </STYLE><STYLE ID="4">Sis</STYLE><STYLE ID="1">, it'd be hard for me too..."</STYLE><PG>
+<STYLE ID="4">"Mm... Then, </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="4">, you go back to the house. If we're both shut up in the storehouse, people will think it's strange."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'll do that... But tell me all about it later, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+She seemed to accept it, if reluctantly.
+{PAUSE ""}
+<BR>
+I don't mind <STYLE ID="1">Kana</STYLE> knowing what's in them, but if I explain every little thing, I'll run out of time.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now, there are three books here.
+{PAUSE ""}
+<BR>
+The books hidden in the attic―in look and in smell, they certainly seem the same as the ones in the storehouse basement.
+{PAUSE ""}
+<BR>
+But only these were deliberately hidden in the attic.
+{PAUSE ""}
+<BR>
+Whether <STYLE ID="2">Dad</STYLE> hid them, or <STYLE ID="3">Grandma</STYLE> hid them, or the two of them hid them together, I can't say for sure.<PG>
+The first―
+{PAUSE ""}
+The title: 'The Ecology of Shigatsu Youka.'
+{PAUSE ""}
+<BR>
+What on earth is this... 
+{PAUSE ""}
+Is it read '<STYLE ID="10" RUBY="・・・・・・">Shigatsu Youka</STYLE>,' I wonder?<PG>
+The second―
+{PAUSE ""}
+'The <STYLE ID="11" RUBY="たけ">Fierce</STYLE> Sound and the Green-Eye Curse-Killing'―this one looks like an old text.
+{PAUSE ""}
+<BR>
+I understand 'Green-Eye Curse-Killing,' but what is 'the <STYLE ID="11" RUBY="たけ">Fierce</STYLE> Sound'...<PG>
+The third―
+{PAUSE ""}
+'What Became of the Vanished'―this looks like classical Japanese, but close to modern too.<PG>
+Right, the second one, 'The <STYLE ID="11" RUBY="たけ">Fierce</STYLE> Sound and the Green-Eye Curse-Killing,' I'll send to <STYLE ID="12">Goto-chan</STYLE> to translate.
+{PAUSE ""}
+<BR>
+It doesn't have many pages, so photographing and sending it is no great trouble.
+{PAUSE ""}
+<BR>
+Taking the photos, I decided which book I should read.
+{PAUSE ""}
+<BR>
+'The Ecology of Shigatsu Youka,' or 'What Became of the Vanished'?<PG>
+The former about 70 years ago, the latter about 130.
+{PAUSE ""}
+<BR>
+The latter seems to have been written first, so maybe I'll start with that one.
+{PAUSE ""}
+<BR>
+The classical Japanese of this era isn't all that hard.<PG>
+What Became of the Vanished―
+{PAUSE ""}
+In Shiyo 668, 132 years ago, there was a mass disappearance in the Arata settlement, and the residents who remained seem to have looked into it.
+{PAUSE ""}
+<BR>
+According to them...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="13">'In Shiyo 669, the spring after the mass disappearance, we noticed that several dozen unfamiliar cherry trees had appeared around the Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">They had suddenly appeared in places where, until the year before, there had been no sign of any tree at all. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">As if they had bloomed in full every year, the great cherry trees proudly flaunted their blossoms.'</STYLE><PG>
+<STYLE ID="13">'The number of cherry trees that suddenly appeared was about 30. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">Strangely, it is almost the same as the number of residents who vanished last year.'</STYLE><PG>
+<STYLE ID="13">'For our inquiry, we dug up one of the newly grown trees by the roots. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">As we did so, clothing and a skeleton came up, tangled in the roots. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">So it is true. These cherry trees grew suddenly, using the residents as a seedbed. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">These trees are no cherry trees. They are something else, something that looks exactly like a cherry.'</STYLE><PG>
+<STYLE ID="13">'Since ancient times, it is said, these cherry-tree-like things that suddenly appear have been called '</STYLE><STYLE ID="14">Shigatsu Youka</STYLE><STYLE ID="13">.' </STYLE>
+{PAUSE ""}
+<STYLE ID="13">An eerie flower blooms in the month of death. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">Those of the Arata settlement, barring accident or illness, die almost without fail in April―shigatsu. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">That is why it is the month of death.'</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+So what this means is, when residents of the Arata settlement vanish, they turn into cherry trees?
+{PAUSE ""}
+<BR>
+And not only that―the trees spring up all at once and grow big enough to bloom in full.
+{PAUSE ""}
+<BR>
+Put this together with the experiment report I read earlier...<PG>
+The cherry trees that suddenly appear are not trees but mushrooms.
+{PAUSE ""}
+<BR>
+And the spores get inside the human body, spreading the infection while changing their nature.
+{PAUSE ""}
+<BR>
+Spores are something like seeds, so once a certain generation comes, the cherry blooms using humans as its seedbed―is that it?
+{PAUSE ""}
+<BR>
+I see. It adds up.<PG>
+Besides, as the residents' register showed, the people of the Arata settlement really do all die in April.
+{PAUSE ""}
+<BR>
+Worse, before the curse-killings of these last 10 years, the old people used to kill themselves in April, as if to keep up the record of April deaths.
+{PAUSE ""}
+<BR>
+So from that era on, there was this bizarre endemic disease of dying in April.<PG>
+There's more to 'What Became of the Vanished.'<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="13">'Indeed, if we think of it this way, can we not solve nearly all the mysterious phenomena surrounding this Arata settlement? </STYLE>
+{PAUSE ""}
+<STYLE ID="13">Until now this inexplicable phenomenon has been dismissed as curses and yokai, but we live in an age when all Japan is expected to Westernize. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">It is time we broke free of this myth-mindedness and unraveled the mysteries of the Arata settlement realistically.'</STYLE><PG>
+<STYLE ID="13">'As one part of this, we will send a representative from the Arata settlement to Tokyo City. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">We will have him carry Droga and present it to those who hold power. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">If the right person can be found, research with ample funds and facilities should be possible, but there is no knowing when the mystery of Droga will be solved―</STYLE>
+{PAUSE ""}
+<STYLE ID="13">Even if it takes 100 years, it ought to be unraveled across the generations.'</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What can be inferred from this is that the residents of Arata somehow got close to the powerful of the day.
+{PAUSE ""}
+<BR>
+About 60 years after this era, Arata's cherry trees were taken away by some research group or other.
+{PAUSE ""}
+<BR>
+So it took a full 60 years for serious research to finally begin.<PG>
+Thus a scientific analysis of Droga was carried out in an age when science had advanced to some degree.
+{PAUSE ""}
+<BR>
+It's guesswork, but the story does connect, more or less.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+―Mail from <STYLE ID="12">Goto-chan</STYLE>―the translation of 'The <STYLE ID="11" RUBY="たけ">Fierce</STYLE> Sound and the Green-Eye Curse-Killing' I sent her just now.
+{PAUSE ""}
+<BR>
+That's <STYLE ID="12">Goto-chan</STYLE> for you―fast work.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="4">"Mm...?"</STYLE>
+{PAUSE ""}
+<BR>
+Before the translation, there was a comment from <STYLE ID="12">Goto-chan</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="12">Goto-chan's</STYLE> translation mails usually came with comments that had almost nothing subjective in them, but this time <STYLE ID="12">Goto-chan's</STYLE> own opinion seemed to be mixed in.<PG>
+<STYLE ID="15">'</STYLE><STYLE ID="16">Chiga-nee</STYLE><STYLE ID="15">, do you know about the apocalyptic sound?</STYLE>
+{PAUSE ""}
+<STYLE ID="15">　What this book describes is most likely that. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">I'm sending a link to a video, so please watch it.'</STYLE>
+{PAUSE ""}
+<BR>
+Pasted in were these words from <STYLE ID="12">Goto-chan</STYLE> and the URL of a video site.
+{PAUSE ""}
+<BR>
+First, let me watch the video.<PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYMOVIE "アポカリ.wmv" "256" "C" "C" "NORMAL" "FALSE" "0" "255"}
+{WAITPLAY "ムービー" "CLICK"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "#1" "C" "T" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "#1" "650" "C" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just a video of an ordinary night scene, with some great sound ringing out over it.
+{PAUSE ""}
+<BR>
+Like a big machine running inside a factory, like a giant old iron door moving.
+{PAUSE ""}
+<BR>
+A sound hard to describe, but at the very least not a pleasant one.
+{PAUSE ""}
+<BR>
+If this is unedited footage, you could call it a very strange sound indeed.<PG>
+If <STYLE ID="12">Goto-chan</STYLE> went to the trouble of sending this, she must mean that, in 'The <STYLE ID="11" RUBY="たけ">Fierce</STYLE> Sound and the Green-Eye Curse-Killing,' 'the <STYLE ID="11" RUBY="たけ">Fierce</STYLE> Sound' refers to this.
+{PAUSE ""}
+<BR>
+Apocalyptic sound―let me try a quick search on the net with that.<PG>
+―About 100,000 hits.
+{PAUSE ""}
+<BR>
+Known to those who know it―about that level of fame, I suppose.
+{PAUSE ""}
+<BR>
+Still, if there are even aggregator sites and analysis sites, I should be able to get fairly objective information.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "悪天候.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "255"}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A phenomenon of strange sounds, like sirens or scraping metal, observed around the world in recent years.
+{PAUSE ""}
+<BR>
+The cause is unknown, but the deeply unpleasant sound, the kind that stirs people's anxiety, became a topic.
+{PAUSE ""}
+<BR>
+That sound is called the apocalyptic sound.
+{PAUSE ""}
+<BR>
+Supposedly, it is a sound that announces the ruin of the world.<PG>
+Ridiculous... that's the kind of interpretation you get in an occult gossip piece.
+{PAUSE ""}
+<BR>
+No... <STYLE ID="12">Goto-chan</STYLE> warned me that kind of thinking is dangerous.
+{PAUSE ""}
+<BR>
+Even if it seems ridiculous, it's not information I can ignore.
+{PAUSE ""}
+<BR>
+This is really starting to sound like religion.
+{PAUSE ""}
+<BR>
+Speaking of religion...<PG>
+The ancestors of this Arata settlement included Westerners, who had a faith of their own, they say.
+{PAUSE ""}
+<BR>
+Traces of it remain even now, and every house has at least one copy of its scripture.
+{PAUSE ""}
+<BR>
+Come to think of it, there was one down in the basement here too.
+{PAUSE ""}
+<BR>
+There might be a hint in it―let me go get it.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

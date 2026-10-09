@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Questions for the owner, 2026-09-26</title>
+<style>
+:root{--bg:#fbf8f2;--ink:#222;--mute:#777;--rule:#e2dccf;--head:#2b2b2b;--card:#fff;--sug:#2f6b3a;--pick:#e8f1e4}
+*{box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;font-size:1.08em;line-height:1.55;margin:0;background:var(--bg);color:var(--ink)}
+header{position:sticky;top:0;background:var(--head);color:#fff;padding:.6em 1.2em;display:flex;flex-wrap:wrap;gap:.4em 1.2em;align-items:center;z-index:3}
+header h1{font-size:1.02em;margin:0;font-weight:normal}
+header button{font:inherit;font-size:.9em;padding:.25em .9em;border:0;border-radius:.25em;background:#f0d9a8;color:#222;cursor:pointer}
+header .count{font-size:.85em;opacity:.8}
+header .msg{font-size:.85em;color:#bfe3b5}
+main{max-width:58em;margin:0 auto;padding:1em 1.2em 4em}
+h2{font-size:1.25em;margin:2em 0 .3em;border-bottom:2px solid var(--rule);padding-bottom:.2em}
+.toc{font-size:.95em;background:#f3eee3;padding:.6em 1em;border-radius:.3em}
+.toc a{color:#6b3d12}
+.intro p{margin:.4em 0}
+.gnote{font-size:.93em;color:#444;margin:.3em 0 .8em}
+.q{background:var(--card);border:1px solid var(--rule);border-radius:.35em;padding:.7em 1em;margin:.8em 0}
+.q.done{border-color:#9cc28f}
+.qh{display:flex;gap:.7em;align-items:baseline}
+.qh input{transform:scale(1.2)}
+.qid{font-family:Consolas,monospace;font-size:.85em;background:#efe8da;padding:.05em .45em;border-radius:.2em}
+.qt{font-weight:bold}
+.ref{font-family:Consolas,monospace;font-size:.72em;color:var(--mute);margin-left:auto;white-space:nowrap}
+.body{margin:.35em 0 .3em 2.1em}
+.lines{border-collapse:collapse;width:100%;margin:.4em 0;font-size:.95em}
+.lines td{vertical-align:top;padding:.3em .5em;border-top:1px solid var(--rule)}
+.lines td:first-child{color:var(--mute);font-size:.8em;white-space:nowrap;width:7em}
+.jp{font-family:'Yu Mincho','MS Mincho',serif}
+.withheld{color:var(--mute);font-style:italic}
+.opts{list-style:none;padding:0;margin:.4em 0}
+.opts li{margin:.15em 0}
+.opts label{display:block;padding:.2em .5em;border-radius:.25em;cursor:pointer}
+.opts label:hover{background:#f3eee3}
+.opts input:checked+span{font-weight:bold}
+.opts label:has(input:checked){background:var(--pick)}
+.sug{color:var(--sug);font-style:italic}
+.why{font-size:.9em;color:#444;margin:.3em 0}
+.why b{font-weight:normal;color:var(--mute)}
+.note{width:100%;font:inherit;font-size:.9em;padding:.25em .4em;border:1px solid var(--rule);border-radius:.25em;margin-top:.2em}
+.omit{background:#f3eee3;border-left:4px solid #6b3d12;padding:.5em .9em;margin:1em 0}
+</style></head><body>
+<header><h1>Questions for the owner, 2026-09-26</h1><p class="meta">Unofficial fan translation (非公式・二次創作). Not affiliated with New++. Private review page: never publish (shows the Japanese script).</p>
+<button id="copy" type="button">copy my answers</button>
+<span class="count" id="count"></span><span class="msg" id="msg"></span></header>
+<main>
+<div class="intro">
+<p>Pick one option per question. The box next to each id ticks itself when you pick; untick it to leave a question out of the copy.
+The note field is optional. "copy my answers" puts one line per ticked question on the clipboard, shaped <code>id: chosen option</code>. Paste it into chat.</p>
+<p>Spoiler care: Japanese and English lines are quoted only from scene 1. Lines from later scenes are shown as their grammar shape,
+with [brackets] standing in for names and content.</p>
+</div>
+<div class="toc" id="toc"></div>
+<div id="groups"></div>
+<div class="omit"><b>7 questions omitted as spoilers; ask in chat.</b> They cannot be asked without naming later events, relationships or secrets.</div>
+</main>
+<script>
+const G = [
+ {id:"style", title:"Style rules", note:"From the rule-book remake (the new rule books written on Opus 5.5). Each rule applies to every line in the game.", qs:[
+  {id:"S1", q:"Translator notes: when may the English add a short note in [TN: ...] brackets?",
+   body:"The rule books now use your rule: any point that cannot be translated and is not a spoiler gets a note, at most 12 words, once per file. The old books had a closed list of five allowed cases.",
+   opts:["Keep your open rule","Restore a closed list of five cases"], sug:0,
+   why:"Decides how many notes the reader sees."},
+  {id:"S2", q:"Set phrases: English idiom or literal image?",
+   body:"Some Japanese set phrases read stiff when translated word by word. Example from scene 1: 顔を上げた. Literal: \"raised her face\". English idiom: \"lifted her head\" (what scene 1 ships now, row 15).",
+   opts:["English idiom (\"lifted her head\")","Literal image (\"raised her face\")"], sug:0,
+   why:"Hundreds of small phrases follow this choice."},
+  {id:"S3", q:"Clause order inside one sentence.",
+   body:"Current rule: keep the Japanese clause order wherever English can hold it. Example, scene 1 row 15: 眠りが浅かったのだろうか、春花はすぐに、そしてゆっくりと顔を上げた。 → \"Had she been sleeping lightly? Haruka lifted her head right away, and slowly.\"",
+   opts:["Keep the Japanese order where English can hold it (current)","Let drafters reorder freely for natural English"], sug:0,
+   why:"This is the main cause of lines that read slightly stiff."},
+  {id:"S4", q:"Sentence endings のだろう / かな (\"I wonder\" feeling).",
+   body:"Current rule: a question mark carries it. Example, scene 1 row 7: いつの間に眠ってしまったのだろう。 → \"When had I fallen asleep?\" The alternative adds \", I wonder\".",
+   opts:["Question mark carries it (current)","Allow \", I wonder\""], sug:0,
+   why:"These endings are very common in the narration."},
+  {id:"S5", q:"Tense of feelings inside past-tense narration.",
+   body:"Japanese narration often says a feeling in the present tense. Current rule: English past. Example, scene 1 row 8: 少し身体が痛い → \"my body ached a little\".",
+   opts:["Confirm: English past (current)","Change: keep the present tense"], sug:0,
+   why:"Sets the tense of every narrated feeling."},
+  {id:"S6", q:"The greeting よう.",
+   body:"Current: \"Hey\". \"Yo\" is banned because it is slang that places the speaker in one English-speaking culture.",
+   opts:["\"Hey\" (current)","Allow \"Yo\""], sug:0,
+   why:"A recurring casual greeting; sets one character voice detail."},
+  {id:"S7", q:"Lines that are only dots.",
+   body:"Current rule: one English \"...\" per Japanese …, so eight … become 24 dots.",
+   opts:["Confirm: one \"...\" per … (current)","Shorten to a single \"...\""], sug:0,
+   why:"Long silences keep their length on screen, or all look the same."}
+ ]},
+ {id:"rend", title:"Renderings", note:"How one Japanese word or device becomes English. Later-scene questions are described without story content.", qs:[
+  {id:"R1", q:"A girl addresses her friend's mother with a kinship word (おばさん). What English?",
+   body:"The rule table says Mrs. + surname. The pass-2 notes suggest \"Auntie\". The surname form also names the family a few lines before the Japanese does.",
+   opts:["Mrs. + surname (current)","\"Auntie\"","\"ma'am\" or no address word (neutral)"], sug:1,
+   why:"It recurs often and sets how warm the relationship sounds.", ref:"V007, QB55-2-03"},
+  {id:"R2", q:"A later line uses 四月八日, the date in the game's subtitle (死月妖花～四月八日～). Should the English there match the English subtitle?",
+   body:"",
+   opts:["Match whatever the English subtitle becomes","Translate that line on its own"], sug:0,
+   why:"Title-level wording should read the same everywhere.", ref:"V125"},
+  {id:"R3", q:"Two jokes in later scenes turn on Japanese name order (family name first).",
+   body:"The project puts English names given name first. That erases both jokes.",
+   opts:["In those lines only, keep the Japanese order and add a short note: [TN: In Japanese the family name comes first.]","Use English order everywhere and lose the jokes"], sug:0,
+   why:"Two jokes survive or vanish.", ref:"V136"},
+  {id:"R4", q:"Someone in a later scene speaks a heavy regional dialect. The narration says it cannot be made out, but it sounds welcoming.",
+   body:"The dialect rule bans fake-accent spelling in English.",
+   opts:["Plain English meaning plus a note: [TN: a heavy regional dialect]","Keep it unintelligible (romanized sounds)"], sug:0,
+   why:"The narration comments on it, so the reader must feel it is hard to follow.", ref:"V147"},
+  {id:"R5", q:"A comic line compares someone's sprawled posture to the 卍 sign.",
+   body:"In English that sign is called a swastika, which carries a meaning the Japanese does not.",
+   opts:["\"sprawled like a pinwheel\", no note","\"like the manji sign\" plus a short note","\"swastika\""], sug:0,
+   why:"Avoids a loaded English word in a comic moment.", ref:"V161"},
+  {id:"R6", q:"In a list of rapid joke questions, one quotes 『月がきれいですね』 (\"The moon is beautiful, isn't it?\"), a phrase Japanese readers know as a coded \"I love you\".",
+   body:"No character explains it, so the note rule does not require a note.",
+   opts:["Literal, in single quotes, no note","Literal plus a short note on the coded meaning","Replace with the meaning"], sug:1,
+   why:"Without help, English readers miss the joke.", ref:"V166"},
+  {id:"R7", q:"A family member named by a kinship word in narration.",
+   body:"In dialogue the kinship word becomes a short spoken form. The current rule reuses that spoken form as a noun in narration too, shape: \"[short form] was out again\". It reads oddly in English. It occurs in 20+ narration lines.",
+   opts:["Keep the short form in narration too (current)","\"my [relative]\" in narration, short form only in speech"], sug:1,
+   why:"Very frequent; sets the tone of those scenes.", ref:"V055, QP22-01"},
+  {id:"R8", q:"A greeting with its polite ending doubled: 「お疲れ様でございますでございます！」",
+   body:"Either the character stumbles on purpose (a fluster gag) or the source has a copy error.",
+   opts:["Keep a doubled English ending (the stumble)","Say it once (treat as a copy error)"], sug:0,
+   why:"A gag kept or dropped.", ref:"V039"},
+  {id:"R9", q:"The police rank 警部補.",
+   body:"It is used as a title and as a form of address, and other ranks must use the same system.",
+   opts:["\"Lieutenant\" (US equivalent, current)","\"Assistant Inspector\" (literal)"], sug:0,
+   why:"Recurs as a way of addressing someone.", ref:"V048"}
+ ]},
+ {id:"stiff", title:"Stiff candidates", note:"Lines the 5.5 reviewers found readable but stiff and left for you. Keep = ship as is. Rewrite = a later pass finds a natural sentence with the same meaning. Seven of these (ST2-ST5, ST8-ST10) have one cause: the name carries a formatting code that must stay at the start of the line, so the English has to begin with the name. A rewrite still has to begin with the name unless that code can move.", qs:[
+  {id:"ST1", q:"\"... was there? Surely.\"", scene1:true, jp:"ううん、でもどうしようもなかったんだよね、きっと。",
+   en:"No, but there was nothing they could do, was there? Surely.",
+   hes:"The lone \"Surely.\" after a question reads abrupt. Kept because きっと sits at the end in the Japanese. (Opus 5 had \"..., I'm sure.\")",
+   opts:["Keep","Rewrite"], sug:1, why:"Scene 1, row 46.", ref:"00000024 line16:179"},
+  {id:"ST2", q:"Name-first sentence, contorted middle.", en:"[Name]'s face, once I had seen it, seemed to have made me [feel a certain way].",
+   hes:"The name must open the line, which forces \"once I had seen it\". Hard to read on first pass.",
+   opts:["Keep","Rewrite"], sug:1, why:"Reviewer called it hard to read.", ref:"000001DB line15:237"},
+  {id:"ST3", q:"Name at the front, then a comma.", en:"[Name], I'm causing her [something] right now.",
+   hes:"The name is forced to the front. It can read as if the speaker is talking to that person.",
+   opts:["Keep","Rewrite"], sug:1, why:"Can be misread as direct address.", ref:"000001DF 3E0:658"},
+  {id:"ST4", q:"Object moved to the front.", en:"[Name]'s [something] I didn't [do] as I gave that answer.",
+   hes:"Object fronted to keep the name at the start. Readable but inverted.",
+   opts:["Keep","Rewrite"], sug:1, why:"Inverted word order.", ref:"000001E1 590:23"},
+  {id:"ST5", q:"\"I and [name]\".", en:"[Name]'s example guiding us, I and [another name] both [did something] in [a place].",
+   hes:"\"I and [name]\" copies the Japanese order, which the formatting codes force. The opening phrase is awkward.",
+   opts:["Keep","Rewrite"], sug:1, why:"Two awkward spots in one line.", ref:"000001E7 3EC:56"},
+  {id:"ST6", q:"\"can feel that I want\".", en:"That's why I can feel that I want to [do something].",
+   hes:"\"can feel that I want\" is heavy. Not caused by a formatting code.",
+   opts:["Keep","Rewrite"], sug:1, why:"Heavy phrasing with no technical cause.", ref:"0000020B 2D4:53"},
+  {id:"ST7", q:"Name after a comma, late in the sentence.", en:"With the help of [a long description of a person], [Name], I would feel very reassured.",
+   hes:"The name after a comma briefly reads as if the speaker is talking to that person.",
+   opts:["Keep","Rewrite"], sug:1, why:"Can be misread as direct address. The line appears twice.", ref:"0000020B 2F4:39, 31E:46"},
+  {id:"ST8", q:"\"[Name] I'm not, but ...\".", en:"[Name] I'm not, but [a feeling] after all.\"",
+   hes:"Object-fronted order forced by the name code at the start. Readable but marked.",
+   opts:["Keep","Rewrite"], sug:0, why:"Reads as a spoken quirk; may pass in dialogue.", ref:"000002FA 336:123"},
+  {id:"ST9", q:"\"[Name] I [verbed] along.\"", en:"[Name] I [verbed] along [somehow].",
+   hes:"Object-fronted order forced by the name at the start of the line.",
+   opts:["Keep","Rewrite"], sug:1, why:"Inverted word order in narration.", ref:"0000034C 353:151"},
+  {id:"ST10", q:"\"[Name] I [verbed] as I ...\" (the same line appears 3 times).", en:"[Name] I [verbed] as I [did something].",
+   hes:"Same cause as ST9.",
+   opts:["Keep","Rewrite"], sug:1, why:"Decides 3 copies of the line at once.", ref:"0000034C 353:160, 242C:155, 24C8:153"},
+  {id:"ST11", q:"Two fragments before a spoken line.", jp:"そう言うと、／受話器を置いて、",
+   en:"\"With that,\" / \"and setting down the receiver,\"",
+   hes:"The two pieces before the spoken line read as a broken chain. The Japanese order is kept.",
+   opts:["Keep","Rewrite"], sug:0, why:"The pieces sit in separate text boxes, as in the Japanese.", ref:"00000488 493:62-64"}
+ ]},
+ {id:"plan", title:"Plan", note:"", qs:[
+  {id:"P1", q:"Parts 2 and 3: retranslate on Opus 5.5, or only re-review the Opus 5 text?",
+   body:"Retranslating on Opus 5.5 has already started. In the scene 1 test, the raw Opus 5.5 draft had 1.8 errors per 100 lines; the shipped Opus 5 text had 8.4.",
+   opts:["Retranslate on Opus 5.5, then review every line (started)","Keep the Opus 5 text and re-review it only"], sug:0,
+   why:"Decides the quality of everything after part 1, and the cost.", ref:"compare-00000024.html"},
+  {id:"P2", q:"Some drafting packets carried notes from much later in the story.",
+   body:"The drafter says it used them for character voice only. A reviewer then checked every line against the Japanese. A new rule now blocks such notes from packets.",
+   opts:["Accept the drafted text as reviewed","Redraft the affected scenes with clean packets"], sug:0,
+   why:"A drafter who knows later events can colour word choices; this keeps the translation blind.", ref:"QB55-2-01"}
+ ]},
+ {id:"art", title:"Art", note:"", qs:[
+  {id:"A1", q:"Logo images with Japanese lettering (drawn art, not text).",
+   body:"Current plan: leave them untouched.",
+   opts:["Leave the Japanese lettering as art (current)","Re-letter them in English"], sug:0,
+   why:"Re-lettering is image work per logo; the Japanese keeps the original look.", ref:"F5"}
+ ]}
+];
+
+const el = (t, cls, txt) => { const e = document.createElement(t); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const toc = document.getElementById("toc"), root = document.getElementById("groups");
+toc.appendChild(el("b", null, "Groups")); toc.appendChild(document.createElement("br"));
+G.forEach((g, gi) => {
+  const a = el("a", null, `${g.title} (${g.qs.length})`); a.href = "#" + g.id;
+  toc.appendChild(a); if (gi < G.length - 1) toc.appendChild(document.createTextNode(" · "));
+  const h = el("h2", null, g.title); h.id = g.id; root.appendChild(h);
+  if (g.note) root.appendChild(el("p", "gnote", g.note));
+  g.qs.forEach(q => {
+    const card = el("div", "q"); card.dataset.id = q.id;
+    const head = el("div", "qh");
+    const cb = document.createElement("input"); cb.type = "checkbox"; cb.className = "inc"; cb.title = "include in copy";
+    head.append(cb, el("span", "qid", q.id), el("span", "qt", q.q));
+    if (q.ref) head.appendChild(el("span", "ref", q.ref));
+    card.appendChild(head);
+    const body = el("div", "body");
+    if (q.body) body.appendChild(el("p", null, q.body));
+    if (q.en) {
+      const t = el("table", "lines");
+      const r1 = t.insertRow(); r1.insertCell().textContent = "Japanese";
+      const c1 = r1.insertCell();
+      if (q.jp) { c1.className = "jp"; c1.textContent = q.jp; } else { c1.className = "withheld"; c1.textContent = "withheld (later scene)"; }
+      const r2 = t.insertRow(); r2.insertCell().textContent = q.jp ? "current EN" : "current EN (shape)"; r2.insertCell().textContent = q.en;
+      const r3 = t.insertRow(); r3.insertCell().textContent = "why flagged"; r3.insertCell().textContent = q.hes;
+      body.appendChild(t);
+    }
+    const ul = el("ul", "opts");
+    q.opts.forEach((o, i) => {
+      const li = el("li"), lab = el("label"), r = document.createElement("input");
+      r.type = "radio"; r.name = "o_" + q.id; r.value = o;
+      r.addEventListener("change", () => { cb.checked = true; card.classList.add("done"); upd(); });
+      lab.append(r, el("span", null, " " + o));
+      if (i === q.sug) lab.appendChild(el("span", "sug", " (suggested)"));
+      li.appendChild(lab); ul.appendChild(li);
+    });
+    body.appendChild(ul);
+    const why = el("p", "why"); why.append(el("b", null, "Why it matters: "), document.createTextNode(q.why));
+    body.appendChild(why);
+    const note = document.createElement("input"); note.type = "text"; note.className = "note"; note.placeholder = "optional note";
+    note.addEventListener("input", () => { if (note.value.trim()) { cb.checked = true; card.classList.add("done"); } upd(); });
+    body.appendChild(note);
+    cb.addEventListener("change", () => { card.classList.toggle("done", cb.checked); upd(); });
+    card.appendChild(body); root.appendChild(card);
+  });
+});
+const total = G.reduce((n, g) => n + g.qs.length, 0);
+function answers() {
+  const out = [];
+  document.querySelectorAll(".q").forEach(c => {
+    if (!c.querySelector(".inc").checked) return;
+    const r = c.querySelector("input[type=radio]:checked");
+    const n = c.querySelector(".note").value.trim();
+    let line = c.dataset.id + ": " + (r ? r.value : "(no option picked)");
+    if (n) line += " | note: " + n;
+    out.push(line);
+  });
+  return out.join("\n");
+}
+function upd() {
+  const n = document.querySelectorAll(".inc:checked").length;
+  document.getElementById("count").textContent = `${n} of ${total} answered`;
+}
+upd();
+document.getElementById("copy").addEventListener("click", async () => {
+  const txt = answers(), msg = document.getElementById("msg");
+  if (!txt) { msg.textContent = "nothing ticked yet"; return; }
+  let ok = false;
+  try { await navigator.clipboard.writeText(txt); ok = true; } catch (e) {}
+  if (!ok) {
+    const ta = document.createElement("textarea"); ta.value = txt; ta.style.position = "fixed"; ta.style.left = "-9999px";
+    document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    ta.remove();
+  }
+  msg.textContent = ok ? `copied ${txt.split("\n").length} lines` : "copy blocked by the browser";
+  setTimeout(() => msg.textContent = "", 3000);
+});
+</script>
+</body></html>

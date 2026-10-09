@@ -1,0 +1,733 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=940, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2531, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=10, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=11, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=51, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=720, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=32, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=18, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=145, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=11, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こんしん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほふく, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=7, unk2=16776960, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=8, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=10, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5048, target=)
+; Links:
+;    0: TWdLink(count=4502, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Mom<STYLE ID="1"> and </STYLE><STYLE ID="2">Kotaro-san</STYLE><STYLE ID="1"> were both back at the house.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana</STYLE><STYLE ID="1"> was right. Today's search had apparently been called off.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">By rights </STYLE><STYLE ID="4">Chiga-nee's</STYLE><STYLE ID="1"> succession rite would be happening too, but with </STYLE><STYLE ID="4">her</STYLE><STYLE ID="1"> gone there's nothing to be done.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"―So that's how it is. I'd like you to take me to </STYLE><STYLE ID="3">Kana's</STYLE><STYLE ID="5"> secret base."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was a bit late to start now, but I dodged </STYLE><STYLE ID="6">Grandma's</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="2">Kotaro-san's</STYLE><STYLE ID="1"> eyes and talked it over with </STYLE>Mom<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It'd be especially bad for </STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="1"> to hear.</STYLE><PG>
+"All right. We'd better hurry."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Sorry. I know you must be tired."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家玄関.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="6">Mother</STYLE>, I'm sorry, but I'm going out with <STYLE ID="5">Haruka</STYLE> for a little while."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE>Mifuyu-san<STYLE ID="6">... </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">You be careful out there."</STYLE>
+{PAUSE ""}
+<BR>
+"Yes..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I know." </STYLE><PG>
+<STYLE ID="1">It seemed </STYLE><STYLE ID="6">Grandma</STYLE><STYLE ID="1"> had a pretty good idea of what was going on.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Of course, like this, it's totally obvious we're going out to look for </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="1">.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "800" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, any results from the search earlier... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Well, probably not, but did you find out anything new?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"How should I put it? 
+{PAUSE ""}
+Apart from the Niimura family, nobody really seemed to be searching in earnest."<PG>
+<STYLE ID="5">"Is that because they figure </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="5"> has already been curse-killed?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's probably part of it, but if it's true, it means there won't be another curse-killing this year, right?
+{PAUSE ""}
+　Somewhere in their hearts, they might be hoping <STYLE ID="4">Chigaya-chan</STYLE> has been curse-killed."<PG>
+<STYLE ID="1">So much for 'one for all, all for one.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Open the lid and it's every man for himself, huh...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I guess that's normal, but it's a little disappointing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But in that case, there might be more room to redo the search than I'd thought.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地入口.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{STOPSND "VOICE" "500" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地穴.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"It's dark, so be careful."
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="1">First </STYLE>Mom<STYLE ID="1"> climbed down, and I waited for her signal.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ハシゴ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ハシゴ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "5000" "CLICK" "SKIP"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{STOPSND "VOICE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">So this was the underground space.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Goto</STYLE><STYLE ID="1"> was right: no wind, no sunlight, and it didn't look like any other creatures could get in.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A channel had been dug along the edge, and water welling up from somewhere ran through it.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"But <STYLE ID="5">Haruka</STYLE>, <STYLE ID="3">Kana-chan</STYLE> and I already searched here a little while ago."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, what you two were looking for was </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="5">, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　</STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="5"> is talking about Tomi's mummy. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">If there's a secret space where you could hide a mummy, </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="5"> might be there too."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't go too far in, okay? It's dangerous."<PG>
+<STYLE ID="5">"Dangerous?"</STYLE>
+{PAUSE ""}
+<BR>
+"Apparently there was a cave-in farther in, decades ago."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Which means nobody's searched around there, right?</STYLE><PG>
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, I want to check around where that cave-in happened."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="5">Haruka</STYLE>... were you even listening?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"That's exactly why. </STYLE>
+{PAUSE ""}
+You<STYLE ID="5"> and </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="5"> won't even go near it, so it's the perfect place to hide something, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"But..."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Besides, the cave-in happened decades ago."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't spend too long looking, okay?"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The lamp oil had only been set out around the ladder, and it gradually got darker.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I went on by the light of my phone, but water started getting into my shoes, and it felt gross.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The icy-cold water made me walk faster without thinking.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "1000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "環境音\滝1.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+{PLAYMOVIE "洞窟の滝.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">An incredible waterfall, inside the cave.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">You could practically turn it into a tourist spot.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To think there was this much water under Arata.</STYLE><PG>
+"Amazing. Could this be the water source for that fungus you mentioned earlier?
+{PAUSE ""}
+　An organism that big must need plenty of water."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see. So if we mixed poison or something into this, could we take down </STYLE><STYLE ID="9">Shigatsu Youka</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+"Maybe, but then it would poison people too."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Right..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE2" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下3.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="5">"What's this..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"The cave-in happened past this point, they say. As you can see, it's closed off now."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\8_gacyagacya.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "2000" "PASS"}
+<STYLE ID="1">An old iron grate, but firmly locked.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A lock...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Come to think of it...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\鍵束.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\サード\鍵束.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I'd been carrying the bunch of keys, storehouse key and all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Goto</STYLE><STYLE ID="1"> should have gotten them, and I'd completely forgotten to hand them over.</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="1">I picked a key at random, jammed it in, then switched to the next one.</STYLE><PG>
+"Hold on, <STYLE ID="5">Haruka</STYLE>, it's really dangerous past here."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I'm not turning back after coming this far! What if </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="5"> is past here!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Honestly... 
+{PAUSE ""}
+<STYLE ID="5">Haruka</STYLE>, I'd have liked you to have a little of <STYLE ID="7">Natsumi-chan's</STYLE> ladylike grace."<PG>
+<STYLE ID="5">"Haha... The girl who's always putting </STYLE>you<STYLE ID="5"> through hell with Russian-roulette takoyaki, </STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="5">―ladylike?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　That reckless girl with nerves of steel?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　When it comes to something like this, </STYLE><STYLE ID="7">she</STYLE><STYLE ID="5">'s more trouble than I am, you know?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\鍵をかける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<STYLE ID="1">A satisfying click came from the keyhole.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\鉄格子開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下扉あく.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="5">Haruka</STYLE>, don't go touching everything, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I know. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Hm...?"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="1">Just now, in the light of my phone, I'd caught a glimpse of something brown.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It definitely wasn't rock. Something long and thin was clinging to the rock face.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下4.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"What's this..."</STYLE>
+{PAUSE ""}
+<BR>
+"Looks like a tree root. 
+{PAUSE ""}
+If its roots reach all the way down here... could it be the Niimura house's cherry tree?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Of course. The Niimura house is probably right about directly above here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Without thinking much of it, I touched the root.</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">............!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A squelchy feel.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Definitely not like a tree root.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was slimy, like touching sludge.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was so gross that I washed my hand right away in the water at my feet.</STYLE><PG>
+"So the roots really are rotting..."
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\Ghost長い.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="5">"Come to think of it, </STYLE><STYLE ID="7">Natsumi</STYLE><STYLE ID="5"> said this cherry tree was dying. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So the roots rotted too, and ended up like this?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That would explain it, but something feels off.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Chiga-nee's</STYLE><STYLE ID="1"> memo said something about this, I think.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Well, I've left figuring that out to </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="1">, so we should keep going.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Huh? It ends here?"</STYLE>
+{PAUSE ""}
+<BR>
+"So it seems..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just past the tree root, a wider space greeted us.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But there was no space beyond it that looked like it led anywhere.</STYLE><PG>
+"There's oil on the walls. I'll light it."
+{PAUSE ""}
+<BR>
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+<STYLE ID="1">As they were lit one after another, it got bright enough to clearly make out </STYLE>Mom's<STYLE ID="1"> face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I put my phone away and looked around at the ceiling.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Nothing seemed especially off, but...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Still, in the corners of the room were </STYLE><STYLE ID="10" RUBY="つぼ">pots</STYLE><STYLE ID="1"> and some fairly big nata.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And they didn't look all that old.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="5">Haruka</STYLE>, this room is strange. The oil is too new. Someone's been in here recently."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"The stuff in here is all pretty new too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Clearly, something was fishy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">You couldn't tell at a glance, but a closer look might turn something up.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Me and </STYLE>Mom<STYLE ID="1"> started doing the same thing without exchanging a word.</STYLE>
+{PAUSE ""}
+<BR>
+Mom<STYLE ID="1"> seemed to have a hunch there was something in this room too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10" RUBY="つぼ">Pots</STYLE><STYLE ID="1"> and what was in them, the nata, even the faint shadows among the rocks: we went over all of it, every inch.</STYLE><PG>
+<STYLE ID="5">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\0空洞静止.lcm" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">A big stone about 70 centimeters across, more than an armful, sat in the corner.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Maybe it could be moved?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I gave it a light touch, and―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\1空洞動く1人.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">It shifted with a heavy rumble.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It moved a little, but there was no way I could shift it on my own.</STYLE><PG>
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, give me a hand!"</STYLE>
+{PAUSE ""}
+<BR>
+"This stone... 
+{PAUSE ""}
+<STYLE ID="5">Haruka</STYLE>, on 'heave,' we push it to the right."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Okay."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Together, we put our hands on the left side of the stone.</STYLE><PG>
+"Heave!"<BR>
+<STYLE ID="5">"Heave!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On the call, we pushed the stone with </STYLE><STYLE ID="11" RUBY="こんしん">all our might</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\2空洞動く2人.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">The stone rumbled the same way as before.</STYLE><PG>
+<STYLE ID="1">It moved a little, but it didn't feel anywhere near ready to roll over.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"This one's pretty stubborn..."</STYLE>
+{PAUSE ""}
+<BR>
+"I see..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">With that, </STYLE>Mom<STYLE ID="1"> took up one of the nata lying in the corner of the room.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A nata noticeably bigger than the rest.</STYLE><PG>
+"<STYLE ID="5">Haruka</STYLE>, stand back."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\空洞\3動かす.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+{MESON "500"}
+Mom<STYLE ID="1"> wedged the nata into a gap under the stone and tipped it hard like a lever, and the stone rolled over with a thud.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right―leverage, that's what this is.</STYLE><PG>
+<STYLE ID="5">"What is this..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What appeared there was a hole just a little smaller than the stone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was about 60 centimeters across; a child or a woman could </STYLE><STYLE ID="12" RUBY="ほふく">crawl</STYLE><STYLE ID="1"> in easily.</STYLE><PG>
+"<STYLE ID="5">Haruka</STYLE>, I'll go in. When I give the signal, pull me out by the legs."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+Mom<STYLE ID="1"> started into the hole headfirst without even waiting for my answer.</STYLE>
+{PAUSE ""}
+<BR>
+Mom's<STYLE ID="1"> upper body slid smoothly into the hole, until she was in up to about her knees.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Hopefully she doesn't get dragged in by someone in that hole...</STYLE><PG>
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm fine! Just a little longer!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This time, a white artificial light leaked out from deep in the hole.</STYLE>
+{PAUSE ""}
+<BR>
+Mom<STYLE ID="1"> seemed to have turned on a light.</STYLE><PG>
+"This is...!
+{PAUSE ""}
+　<STYLE ID="5">Haruka</STYLE>, okay, pull me out!"
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+Mom's<STYLE ID="1"> signal came, and I grabbed her ankles and slowly pulled.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Pulling her out without leaving her with scrapes was no easy job.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Phew..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Once her hips were out, </STYLE>Mom<STYLE ID="1"> came out of the hole on her own.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Was there anything?"</STYLE>
+{PAUSE ""}
+<BR>
+"There was. Trust <STYLE ID="8">Goto-chan</STYLE>."
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="1">Then </STYLE>Mom<STYLE ID="1"> thrust one arm into the hole and pulled out what looked like red cloth.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Whoa..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ能面.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Out came something in old, rotted red robes, wearing an old Noh mask to match.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It seemed to be in human shape, but...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A dead body? No way...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even if it was a body, </STYLE>Mom<STYLE ID="1"> seemed to have pulled it out with no effort at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Which means―</STYLE><PG>
+<STYLE ID="5">"Is this... Tomi's mummy?"</STYLE>
+{PAUSE ""}
+<BR>
+"Let's see for ourselves, right now."
+{PAUSE ""}
+<BR>
+Mom<STYLE ID="1"> slowly put her hand to the Noh mask.</STYLE><PG>
+<STYLE ID="1">So we're about to come face to face with a mummy...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No time now to whine that mummies are gross and I don't want to look.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\dvd-case-takeout1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Ugh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What appeared from under the Noh mask was a dried-up human being that looked like a prop―a mummy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Goto</STYLE><STYLE ID="1">, </STYLE><STYLE ID="8">you</STYLE><STYLE ID="1"> really are something...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I don't know if this is Tomi or not, but I do know now that there's still a lot we don't know.</STYLE><PG>
+<STYLE ID="1">But there was no sign of </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="1">. And if we can't find </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="1">, the one who actually matters...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, about </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="5">―"</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="13">"</STYLE><STYLE ID="14">Haruka</STYLE><STYLE ID="13">, quiet!"</STYLE>
+{PAUSE ""}
+<BR>
+Mom's<STYLE ID="1"> loud voice made me flinch.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At that moment, a sound came from the direction of the exit.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\アポカリプティック2.ogg" "SE" "NORMAL" "700" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">This sound―that weird sound we heard at Toyotake.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Goto</STYLE><STYLE ID="1"> called it something-or-other, the sound that announces the end, didn't she?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It sure picks a creepy time to ring...</STYLE><PG>
+<STYLE ID="5">"</STYLE>Mom<STYLE ID="5">, what do we do?"</STYLE>
+{PAUSE ""}
+<BR>
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"We'll leave the mummy here for now. 
+{PAUSE ""}
+<STYLE ID="4">Chigaya-chan</STYLE> isn't in the hole, and bringing the mummy out would only stir up everyone's fears. 
+{PAUSE ""}
+We'd better let <STYLE ID="8">Goto-chan</STYLE> know first."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yeah. Let's get out of this creepy place, fast."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="5">Haruka</STYLE>, take some pictures of the mummy. <STYLE ID="8">Goto-chan</STYLE> needs to see it."<PG>
+<STYLE ID="1">Ugh... so my phone's going to have a real photo of a mummy on it...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Not a nice feeling, but it can't be helped...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I've got to solve this case fast so I can delete the data.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">I took a few pictures, put the Noh mask back on the mummy, and pushed it back to a shallow spot in the hole.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then we hurried up toward the surface.</STYLE><PG>
+<STYLE ID="5">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\空洞\秘密基地地下根なし.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The tree root that had been here a moment ago was gone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Can tree roots just move like that?</STYLE><PG>
+"<STYLE ID="5">Haruka</STYLE>, hurry!"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Oh, y-yeah, okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'll keep this in the back of my mind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Seriously, nothing but stuff outside common sense keeps happening...</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">We climbed the ladder and went back up to the surface.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Part of me had thought we might run into the ones who took </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="1">: </STYLE><STYLE ID="15">Dad</STYLE><STYLE ID="1"> or </STYLE><STYLE ID="16">Sakura-san</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But maybe you could say things had gone smoothly so far.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No. In the end, </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="1"> wasn't here either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">Dad</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="16">Sakura-san</STYLE><STYLE ID="1">: are they still at </STYLE><STYLE ID="4">Chiga-nee's</STYLE><STYLE ID="1"> side even now?</STYLE><PG>
+<STYLE ID="1">When we came out of the hole, I noticed it was strangely bright all around.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\登山月.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The moon tonight was big, like a full moon.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">You could see a fair way even without a light, but that wasn't the only reason it looked bright.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\竹林黒霧.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The trees in the forest had withered...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Why? Just a while ago every one of them had been a fine, healthy tree, and now so many were dropping the leaves they'd only just put out.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Goto's</STYLE><STYLE ID="1"> words came back to me.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "12" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"The other trait: it grows by drawing nutrients from the plants around it, killing them as it goes. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">This kind of nature is called 'plant-parasitic fungi.' </STYLE>
+{PAUSE ""}
+<STYLE ID="8">A plant parasitized by the honey fungus withers with nothing to be done, and it is called a great enemy of forestry. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">This is called Armillaria root rot."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Arata is being swallowed by </STYLE><STYLE ID="9">Necro</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">by Shigatsu Youka</STYLE><STYLE ID="1">...?</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

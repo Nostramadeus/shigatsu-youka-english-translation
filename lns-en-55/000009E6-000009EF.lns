@@ -1,0 +1,288 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=46, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1383, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=145, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=5, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そろ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1804, target=)
+; Links:
+;    0: TWdLink(count=1586, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\スチル\ろうそく.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"At last, the second half. Quite a rich variety so far, but how will things go from here?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The ones left were me, </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, and </STYLE><STYLE ID="3">Obasan</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+Obaasan<STYLE ID="1"> drew the doll in the middle.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\立ち絵\アイテム\ろうそくフィルター.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\怪談テーブル.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形\紙人形新村美冬.gal" "WAIT" "#1" "550" "540" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="3">Mifuyu Niimura</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="3">Obasan</STYLE><STYLE ID="1">'s turn.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Oh my, I'm next! Everyone's stories were so interesting, it's a little bit of pressure!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obasan</STYLE><STYLE ID="1">'s voice was as high-energy as always―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">or so I thought, but she looked around at everyone with a sharp, serious gaze.</STYLE><PG>
+<STYLE ID="3">"As </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="3"> said, we came back to Motoki-cho 10 years ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">When we came back to Motoki-cho, my health got better too, and I worked as hard as I could, enough for </STYLE><STYLE ID="5">Eiichiro-san</STYLE><STYLE ID="3">'s share as well. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">A few years later, I was given a good opportunity, and I ended up founding a company.</STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\summer-night-country1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\駅前夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム2,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―Motoki-cho has just about every facility you need </STYLE><STYLE ID="6" RUBY="そろ">right there</STYLE><STYLE ID="1">, so not many people take the train out of town.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But back then... it would have been midsummer, about 5 years ago.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I had a trip planned out of town, so I decided to go by train.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\元木駅ホーム夜.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The meeting with the client was at 10 the next morning.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was an overnight business trip.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Another matter had run late, so it was around 21:00 at night when I got to the station.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was a late train, so there was hardly anyone at the station.</STYLE><PG>
+{CHGVOL "SE" "500" "5000" "PASS"}
+<STYLE ID="1">But the train seemed to be delayed, and when I asked the station staff why...</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\和の廃墟.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">It seemed someone had gone onto the tracks at this platform.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But even though both the driver and the conductor had seen someone go onto the tracks, there was no one there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Not hit by the train, and not having gotten out of its way either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">They said it would take a little time to find out what had happened to that person.</STYLE><PG>
+<STYLE ID="1">Actually, there was something on my mind.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\電車女子高生2.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Unusually for Motoki-cho, someone had been hit by a train at the station the night before.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\電車汽笛.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\電車はねられる響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\電車女子高生1.gal" "WAIT" "2!" "200" "960" "1" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">A girl from Motoki High had been hit by the train, and her body was torn to pieces, I heard.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\立ち絵\アイテム\なくした手.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">And I had heard that the girl's hands hadn't been found.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And now, right after that, the train was stopped for such an inexplicable reason, so the air didn't feel pleasant at all.</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "500" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\元木駅ホーム夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">It was a midsummer night.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I remember it was hot even at night.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And Motoki Station doesn't have anything like an air-conditioned waiting room...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\自販機1.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I went to buy something cold from the vending machine on the platform.</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\小銭.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">It happened when I put my money in and went to buy what I wanted.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\自販機2.gal" "WAIT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "100" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\自販機売り切れ.gal" "WAIT" "#1" "0" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Suddenly the vending machine's lights went out, and every button lit up with 'Not Available.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But my money didn't come back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I thought about calling the station staff, but at some point, everyone had gone from the platform.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">While I was thinking I'd lost a little money, I noticed something odd.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\自販機売り切れ2.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Looking closely, I saw that just one button didn't have the 'Not Available' light on.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Well, if I pressed it and something came out, that'd be a </STYLE><STYLE ID="7" RUBY="もう">lucky break</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">just as I went to press that button... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I noticed.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\自販機しみ.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">There was a small red stain on that button.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Looking closely, I saw it was a bloodstain.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A bloodstain as if a single drop of blood had spattered there from a little way off.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And it still had a sheen... it wasn't completely dry.</STYLE><PG>
+<STYLE ID="1">The day before, a high-school girl had been hit by a train here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If this bloodstain was from then...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But it was too fresh for that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I hesitated to press the button.</STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That was when...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\恐怖BGM2.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "2000" "PASS"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\自販機指紋.gal" "NORMAL" "11" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The bloodstain slowly spread, and a pattern rose to the surface.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That pattern was, unmistakably... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">a human fingerprint.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was someone invisible pressing the button?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My legs started to shake.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I wanted to cry out, but I was too scared to make a sound.</STYLE><PG>
+{PLAYSND "SE\詫言編　夢から\自販機ボタン.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">And then, suddenly, I heard the sound of a vending machine button being pressed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But there was something strange about that sound too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Like the buzzer when a train departs...</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\自販機取り出し口.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">And then, into the slot, something unidentifiable came falling, </STYLE>
+{PAUSE ""}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">splat, </STYLE>
+{PAUSE ""}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">splat.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Two of them, for some reason.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">As if lumps of meat had dropped down...</STYLE><PG>
+<STYLE ID="1">I didn't have the courage to take that unidentifiable thing out.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬うつむき.gal" "WAIT" "#1" "R" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">I stood frozen there for a while, but finally my feet began to move, and just as I tried to turn them toward where the station staff were...</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\詫言編　夢から\吐息.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\女子高生幽霊.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n700\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n700\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="1">I felt someone's breath from behind me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A smell that reeked of blood and made me want to throw up.</STYLE><PG>
+{DELETECG "000,人物1,人物2" "1" "100" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

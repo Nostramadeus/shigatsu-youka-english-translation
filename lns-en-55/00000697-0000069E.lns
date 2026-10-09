@@ -1,0 +1,653 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2464, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=862, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=775, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=としゃぶつ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=5, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=12, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=104, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=どうき, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=46, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=111, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=250, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=11, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=6, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かな, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=183, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぶおとこ, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そ, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほ, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=8, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5325, target=)
+; Links:
+;    0: TWdLink(count=4854, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "700" "0"}
+{PLAYSND "SE\パトカー.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "VOICE" "0" "10000" "PASS"}
+<TXSPN>I woke up to the blare of sirens.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What is it, this early..."</STYLE>
+{PAUSE ""}
+<BR>
+The time was 6:30.
+{PAUSE ""}
+<BR>
+Huh? I'd fallen asleep on the living-room sofa...<PG>
+There was a blanket over me.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Mom</STYLE> must have gotten home late last night and thought to cover me.
+{PAUSE ""}
+<BR>
+Another 30 minutes. I'll go back to sleep in my room...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\春花寝室.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Oh, I didn't charge my phone.
+{PAUSE ""}
+<BR>
+Oh, and I haven't had my bath yet either.
+{PAUSE ""}
+<BR>
+Oh! I didn't do my homework!
+{PAUSE ""}
+<BR>
+Homework, right from the day of the entrance ceremony...<PG>
+Sadly, it looked like going back to sleep would have to wait.
+{PAUSE ""}
+<BR>
+I turned toward the desk to get the homework handout out of my bag.<PG>
+{STOPSND "SE" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="1">"............!</STYLE>
+{PAUSE ""}
+　<STYLE ID="1">No way...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\古郡茜紙人形.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\古郡良治紙人形.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム3" "グラフィック\立ち絵\アイテム\古郡なつみ紙人形.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Three sheets of paper had been left on the desk.
+{PAUSE ""}
+<BR>
+These were paper dolls, no mistake.
+{PAUSE ""}
+<BR>
+Their surfaces were smeared with something like <STYLE ID="3" RUBY="としゃぶつ">vomit</STYLE>.
+{PAUSE ""}
+<BR>
+And there was writing on them...<PG>
+<STYLE ID="4">Ryoji Kogori　</STYLE><STYLE ID="5">Akane Kogori　</STYLE>and, <STYLE ID="6">Natsumi Kogori</STYLE>.<PG>
+The strength drained from my body, and I sank to the floor.
+{PAUSE ""}
+<BR>
+My <STYLE ID="7" RUBY="どうき">heart</STYLE> pounded wildly, and my breathing quickened.
+{PAUSE ""}
+<BR>
+That's impossible...! I didn't do anything last night!<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\春花寝室.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,アイテム2,アイテム3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Did the "witch" personality inside me make me do this...!?
+{PAUSE ""}
+<BR>
+Is there no escaping the curse on the anniversary of <STYLE ID="8">Dad</STYLE>'s death!?
+{PAUSE ""}
+<BR>
+Even so, why the Kogori family's names...<PG>
+If there's anything I can think of, it's the cause of my <STYLE ID="8">dad</STYLE>'s death.
+{PAUSE ""}
+<BR>
+No, no! I don't hold a grudge over <STYLE ID="8">Dad</STYLE>, not at all! I don't hate them either!<PG>
+No...! At this rate <STYLE ID="6">Natsumi</STYLE> will...! The life I finally got...!
+{PAUSE ""}
+<BR>
+This would send me right back again! I absolutely have to stop the shinigami!<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">aa!</STYLE> <STYLE ID="2">You're finally up, so no going back to sleep!"</STYLE>
+{PAUSE ""}
+<BR>
+It was <STYLE ID="2">Mom</STYLE>'s cheerful voice, first thing in the morning.
+{PAUSE ""}
+<BR>
+Maybe the air in Motoki-cho suits her. She's livelier than she was in Megasawa.<PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Uh... yeah! I'm up! </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">, you're heading to Arata now, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\棚開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+I hurriedly shoved the dolls into my desk.
+{PAUSE ""}
+<BR>
+If <STYLE ID="2">Mom</STYLE> found something like this, who knew what would happen...!<PG>
+<STYLE ID="2">"About that, a job came up that I just can't get out of. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I explained things to the Niimura main family, so Mom's going to work today."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"O-oh, I see... Got it..."</STYLE>
+{PAUSE ""}
+<BR>
+So in the end, <STYLE ID="2">Mom</STYLE> wasn't going either.
+{PAUSE ""}
+<BR>
+But a job more important than the thirteenth-year memorial service... [TN: Buddhist memorials count the year of death as the first year.]<PG>
+<STYLE ID="2">"Also, they say there's no school today. I'll forward you the email too, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"G-got it...!"</STYLE>
+{PAUSE ""}
+<BR>
+I'd never been this tense talking to <STYLE ID="2">Mom</STYLE>.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "800" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+My phone rang. Probably the email <STYLE ID="2">Mom</STYLE> forwarded.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "WAIT" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">Subject: No School Today.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Body:</STYLE><BR>
+<STYLE ID="9">Good morning, everyone in Class 3-1! This is your homeroom teacher, Tanizaki!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">School is closed today.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">For safety, the police says you should refrain from going outside, is what they sayed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">I will post the details in detail on the homepage.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Well then, everyone, have a nice holiday!</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Tanizaki-sensei's Japanese is as weird as ever.
+{PAUSE ""}
+<BR>
+And wishing us a nice holiday, of all things...
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "56" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PAUSE ""}
+<BR>
+Never mind that. Right now, the question is what to do about this curse.
+{PAUSE ""}
+<BR>
+The shinigami will come for the three of them, no doubt about it.
+{PAUSE ""}
+<BR>
+I can't undo this curse, and even if I could, I don't have time to look into how now.<PG>
+<STYLE ID="1">"Damn...!"</STYLE>
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+I slammed my fist down on the desk as hard as I could.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "3000" "PASS"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "WAIT" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+A call? This early in the morning.
+{PAUSE ""}
+<BR>
+Who could it be? It was from a number I didn't know.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"Yes... hello?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="10">, it's been a while."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That voice... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Geez, I was wondering who it was..."</STYLE><PG>
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="10">"Mm... you didn't save my number?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Nah, I just got a new phone, and the transfer didn't go right."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So, what's up?"</STYLE><PG>
+<STYLE ID="10">"Mm... I heard neither of you is coming today?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Oh, yeah. </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1"> says a job came up out of nowhere."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="10">, I heard you weren't feeling well?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I got food poisoning the day before yesterday. I'm taking a sick day today to be safe, but I'm fine now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Hey... is </STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="1"> mad?"</STYLE><PG>
+<STYLE ID="10">"Mm... don't worry. </STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="10"> seems to understand."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay... good, then... That all you wanted?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... well, yes."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... </STYLE><STYLE ID="12" RUBY="かな">Kana</STYLE><STYLE ID="10"> was let down, that's all. Seemed to be looking forward to seeing you, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="10">."</STYLE><PG>
+<STYLE ID="1">"Ah, </STYLE><STYLE ID="13">that one</STYLE><STYLE ID="1">? Probably wanted to hassle me with more stupid dirty jokes."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... heh. </STYLE><STYLE ID="12" RUBY="かな">Kana</STYLE><STYLE ID="10"> adores you, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="10">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Feels more like I'm a toy, though. So, where's </STYLE><STYLE ID="12" RUBY="かな">Kana</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... the moment I called you, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="10">, Kana got called away by </STYLE><STYLE ID="14">Mom</STYLE><STYLE ID="10">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Aw, bad timing."</STYLE><PG>
+<STYLE ID="10">"Mm... </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="10">, are you really feeling better? You don't sound very lively."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"R-really? Oh, no... see, I just woke up."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mm... sorry, calling so early. I was a little worried."</STYLE><PG>
+<STYLE ID="1">"Okay, sorry you went to the trouble. Say hi to everyone for me. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yeah, bye."</STYLE>
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青切.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PAUSE ""}
+<BR>
+And right then, my phone's battery died.<PG>
+Maybe it was the ordinary conversation, but I felt I'd calmed down a little.
+{PAUSE ""}
+<BR>
+But that alone doesn't solve anything. I have to come up with a plan against the shinigami.<PG>
+If I think it over in the shower, I'll probably come up with a slightly better idea.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\蛇口.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\シャワー.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\シャワー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+I braced both hands on the shower wall and let the hot water pour over my head.
+{PAUSE ""}
+<BR>
+Facing straight down so the water wouldn't get in my mouth, I breathed slowly and deeply through it.
+{PAUSE ""}
+<BR>
+Okay, think hard about what I can do right now!
+{PAUSE ""}
+<BR>
+There's a limit to what I can do alone.
+{PAUSE ""}
+<BR>
+If possible, with someone's help...<PG>
+Someone who'd help me with something like this would be... Maybe I should talk to <STYLE ID="15">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="15">She</STYLE> can read the room, so she probably won't flat-out deny the curse...<PG>
+But even while I'm talking to her, I'll be worried about <STYLE ID="6">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+Right now, what I can do is stay by <STYLE ID="6">Natsumi</STYLE>'s side the whole day, even if it's just today.
+{PAUSE ""}
+<BR>
+If the shinigami appears, I'll talk it into stopping.
+{PAUSE ""}
+<BR>
+There's no way I can stick with <STYLE ID="6">Natsumi</STYLE>'s parents too...<PG>
+No, wait.
+{PAUSE ""}
+<BR>
+Then I'd be talking to <STYLE ID="15">Goto</STYLE> about the curse in front of <STYLE ID="6">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+I can never tell <STYLE ID="6">Natsumi</STYLE> something like this!
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi</STYLE> right in front of me, and still able to talk with <STYLE ID="15">Goto</STYLE>...
+{PAUSE ""}
+<BR>
+My head can't come up with a situation that convenient.
+{PAUSE ""}
+<BR>
+Besides, <STYLE ID="6">Natsumi</STYLE> might be laid up with April sickness today too.<PG>
+In that case, how about spending the day at <STYLE ID="6">Natsumi</STYLE>'s place, the three of us with <STYLE ID="15">Goto</STYLE>?
+{PAUSE ""}
+<BR>
+If I could talk to <STYLE ID="15">Goto</STYLE> while <STYLE ID="6">Natsumi</STYLE> is resting...
+{PAUSE ""}
+<BR>
+But would the two of them act that conveniently...?<PG>
+At times like this, how should I think it through?
+{PAUSE ""}
+<BR>
+Okay... at times like this, I'll think about what <STYLE ID="15">Goto</STYLE> would say.
+{PAUSE ""}
+<BR>
+If <STYLE ID="15">she</STYLE> were in my position―<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "5000" "PASS"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="15">"Hmm, a situation where there's so much to do that you get confused..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Exactly, and I don't have much time either!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="15">, do you really need to do everything you're thinking about right now?</STYLE>
+{PAUSE ""}
+　<STYLE ID="15">You'd be surprised how many things people try to do that aren't even necessary."</STYLE><PG>
+<STYLE ID="1">"I-is that so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">"So you decide on the things you absolutely can't drop―in other words, your priorities. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">Rank things, and let's think about the important ones first."</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "700" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\シャワー.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Or so <STYLE ID="15">she</STYLE> would probably say.
+{PAUSE ""}
+<BR>
+Okay, it's only in my imagination, but I'll try doing what <STYLE ID="15">Goto</STYLE> says.
+{PAUSE ""}
+<BR>
+First, decide on priorities.
+{PAUSE ""}
+<BR>
+The top priority is being by <STYLE ID="6">Natsumi</STYLE>'s side.
+{PAUSE ""}
+<BR>
+Talking to <STYLE ID="15">Goto</STYLE> won't stop the shinigami from coming.
+{PAUSE ""}
+<BR>
+Once I've made sure I can stay with <STYLE ID="6">Natsumi</STYLE>, then I talk to <STYLE ID="15">Goto</STYLE>.<PG>
+Maybe I'll get in touch with <STYLE ID="6">Natsumi</STYLE> as soon as I'm out of the shower.
+{PAUSE ""}
+<BR>
+No... if <STYLE ID="6">Natsumi</STYLE> tells me "My April sickness is wearing me out," it'll be hard to say I'm coming over.<PG>
+Damn...! My head can't go any further than this...!
+{PAUSE ""}
+<BR>
+Maybe I should make <STYLE ID="15">Goto</STYLE> the top priority after all―
+{PAUSE ""}
+<BR>
+No, this is just going in circles!<PG>
+Then I'll have to force one of them through...
+{PAUSE ""}
+<BR>
+The most realistic is to camp out at <STYLE ID="6">Natsumi</STYLE>'s place, saying I'm there to look after <STYLE ID="6">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+It'll probably still make <STYLE ID="6">her</STYLE> feel she has to look after me, but it can't be helped this time.<PG>
+<STYLE ID="5">Natsumi's mom</STYLE> should be leaving for work around 8.
+{PAUSE ""}
+<BR>
+But showing up out of nowhere first thing in the morning to look after her would be weird.
+{PAUSE ""}
+<BR>
+For now, I'll wait for a time when <STYLE ID="6">Natsumi</STYLE> is alone, and go then.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\蛇口.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Hmm, how about like this!? Or is this one better!?"</STYLE>
+{PAUSE ""}
+<BR>
+Today, as usual, <STYLE ID="2">Mom</STYLE> was devoting herself to looking young.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My mom</STYLE> does look young for her age, but once you're past 40, it gets a little painful to watch...<PG>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">... isn't it about time you dressed your age?</STYLE> <STYLE ID="1">You're way past 40 already..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh my, no way!</STYLE> <STYLE ID="8">Dad</STYLE><STYLE ID="2"> died young, so wouldn't I feel awful if I were the only one who turned into a middle-aged lady?</STYLE>
+{PAUSE ""}
+　<STYLE ID="8">For Dad's sake</STYLE><STYLE ID="2"> too, I have to stay young forever!"</STYLE><PG>
+<STYLE ID="8">My dad</STYLE>, just as I'd seen in the memorial photo yesterday, was <STYLE ID="16" RUBY="ぶおとこ">an ugly man</STYLE>.
+{PAUSE ""}
+<BR>
+Once, <STYLE ID="2">Mom</STYLE> told me how she and <STYLE ID="8">Dad</STYLE> <STYLE ID="17" RUBY="な">got</STYLE> <STYLE ID="18" RUBY="そ">together</STYLE>.
+{PAUSE ""}
+<BR>
+Surprisingly, it was <STYLE ID="2">Mom</STYLE> who went after <STYLE ID="8">Dad</STYLE>, and hard, apparently.
+{PAUSE ""}
+<BR>
+Back then, lots of men were drawn to <STYLE ID="2">Mom</STYLE> by her looks, but <STYLE ID="8">Dad</STYLE> was, above all, a warm and kind person.<PG>
+And since <STYLE ID="8">Dad</STYLE> looked at what was on the inside, <STYLE ID="2">Mom</STYLE> fell completely <STYLE ID="19" RUBY="ほ">in love</STYLE> with him, apparently.
+{PAUSE ""}
+<BR>
+Even so, <STYLE ID="2">Mom</STYLE> didn't slack on her looks either, and always kept herself pretty so that <STYLE ID="8">Dad</STYLE> would be pleased.<PG>
+<STYLE ID="2">Mom</STYLE> always says this lately.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's what's inside a person that counts! Don't be the kind of woman who only dresses up on the outside!"</STYLE>
+{PAUSE ""}
+<BR>
+So she says, but what <STYLE ID="2">Mom</STYLE> is doing now is...
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Mom</STYLE>'s dressing young is the very symbol of who <STYLE ID="2">Mom</STYLE> is now.
+{PAUSE ""}
+<BR>
+In <STYLE ID="2">Mom</STYLE>'s heart, time has stood still for 12 years.<PG>
+Forever dressing young like this, she keeps chasing an illusion of <STYLE ID="20">Dad</STYLE>, who's gone.
+{PAUSE ""}
+<BR>
+For my part, I'd like her to find someone nice soon.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Oh, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, really! It's about time you learned to carry yourself like a woman!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　For a 17-year-old girl to walk around after her bath without even a towel on is so unladylike!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Oh, yeah... I'll be careful..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―It was 8 o'clock. A good time to head over to <STYLE ID="6">Natsumi</STYLE>'s place.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">aa! Why don't you hang out with </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="2"> today?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Mom</STYLE>, back from taking out the trash, was shouting from the front door.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Oh, yeah... I'll go over in a bit."</STYLE><PG>
+<STYLE ID="2">"Just now, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="2"> was out taking out the trash too. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Actually, I already invited her! She said she'll come over in a little while!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+I'd been worried about how <STYLE ID="6">Natsumi</STYLE> was feeling, but <STYLE ID="2">Mom</STYLE> was being a bit pushy.<PG>
+<STYLE ID="2">"She seems to be feeling good today! She said she'll come right over once she's changed!"</STYLE>
+{PAUSE ""}
+<BR>
+Well, if she's feeling good, I guess it's fine.
+{PAUSE ""}
+<BR>
+Actually, now that I think about it, with how close <STYLE ID="6">Natsumi</STYLE> and I are, maybe I didn't need to hold back that much...
+{PAUSE ""}
+<BR>
+I seem to be pretty on edge today.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家ドア閉.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Have a good day."</STYLE>
+{PAUSE ""}
+<BR>
+I stood at the front door to see <STYLE ID="2">Mom</STYLE> off.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh, that's right, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, use this to have lunch with </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\5000円.gal" "NORMAL" "#1" "R" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">Mom</STYLE> handed me a 5,000-yen bill.<PG>
+<STYLE ID="1">"5,000 yen for lunch... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We can't really afford that, can we? </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">, you never even get a day off..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The trip to Arata is off, so that much is freed up. It's fine once in a while, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Haah... Okay, then I'll take it, thanks. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">But can't you take a little more time off? </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">, at this rate you're gonna collapse again, right?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, you don't need to worry about that. This sort of thing is a parent's duty."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I looked into it, and it seems there are a few places in Motoki-cho that'll hire you on full-time from a part-time job. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'll work part-time, and once I graduate high school, at one of those―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What about college?"</STYLE><PG>
+<STYLE ID="1">"There's no way we've got money like that!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You're still in high school, so you mustn't worry about money. Didn't I just say so? This is a parent's duty."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Still, come on... there's a limit, isn't there?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Besides, if I can't do even this much for you, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, I'd never be able to face </STYLE><STYLE ID="20">Dad</STYLE><STYLE ID="2">."</STYLE><PG>
+<STYLE ID="1">"Hey, hold on. </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1">, you're obviously working too much. C'mon, cut back on work a little."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, let's talk about that later. Don't go deciding on your own yet."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"...Yeah, okay."</STYLE><PG>
+<STYLE ID="2">"Say... </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="2">"Today, you and </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">get along."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="2">Mom</STYLE> left.
+{PAUSE ""}
+<BR>
+When <STYLE ID="2">Mom</STYLE> said those last words, I couldn't feel any expression in her eyes or her voice.
+{PAUSE ""}
+<BR>
+Like when I'd talk about <STYLE ID="6">Natsumi</STYLE> back when we lived in Megasawa City.<PG>
+Well, maybe I'm overthinking it...
+{PAUSE ""}
+<BR>
+More importantly, today I stay with <STYLE ID="6">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+When there's a chance, I invite <STYLE ID="15">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Mom</STYLE> and <STYLE ID="6">Natsumi</STYLE> seemed to be talking on the outside walkway. <STYLE ID="6">Natsumi</STYLE> would be here soon.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,348 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1771, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんばし, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆうこ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2030, target=)
+; Links:
+;    0: TWdLink(count=1775, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "最後の声・真呪殺\青い目の猫.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス\リファレンス詳細\rrr1\0.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―All right, thank you very much!
+{PAUSE ""}
+　And now, our next segment. At this time on Tuesdays, it's 'This Path, I, Master!' 
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\0.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+Now, what sort of master will be making an appearance today? 
+{PAUSE ""}
+This time we've left the studio, and we're bringing it to you live. 
+{PAUSE ""}
+Yuki-chan, at the scene!?
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<PG>
+{STOPSND "BGM" "3000" "PASS"}
+{MESOFF "500"}
+{PLAYSND "BGM死月編\TALK_and_WALK.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\葛飾区公園.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Yes! I, Yukino <STYLE ID="1" RUBY="しんばし">Shinbashi</STYLE>, am continuing to report from this park in Katsushika Ward!
+{PAUSE ""}
+　Today I'd like to introduce this week's master!
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\1.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\2.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+　We're told today's master is in a building right by the park, inside this one, but―"
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n3\r\n960\r\n200\r\nDEC\r\nPASS">
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1,アイテム2" "1" "0" "0" "0" "" "0"}
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\3.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\4.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+―It's kind of a creepy building...
+{PAUSE ""}
+<BR>
+"Who is this week's master, here inside this suspicious building? 
+{PAUSE ""}
+I'd like to go in and pay a visit."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム3" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\5.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n123\r\nアイテム3\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n3\r\n960\r\n200\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\すきま風の声.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\占いの館.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Um... good morning. 
+{PAUSE ""}
+Where could they be?
+{PAUSE ""}
+　My name is Yukino Shinbashi, from Japonica TV."
+<EVENT VALUE="MOTION\r\n123\r\nアイテム3\r\n3\r\n960\r\n200\r\nDEC\r\nPASS">
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1,アイテム2,アイテム3" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+―It's dim in there. Could it be a medium or something...?
+{PAUSE ""}
+<BR>
+"Oh, take a look, there's a woman in a mask sitting over there."<PG>
+"Good morning. Are you this week's master!?"
+{PAUSE ""}
+<BR>
+"Good morning. 
+{PAUSE ""}
+Yes, I'm this week's master... 
+{PAUSE ""}
+not that I'm anything so grand, but I'm a fortune-teller by the name of <STYLE ID="2" RUBY="ゆうこ">Yuko</STYLE> Stella."
+{PAUSE ""}
+<BR>
+"A fortune-teller!"<BR>
+―A fortune-teller!
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\7.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\7.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"Yuko Stella-san, aren't you a celebrity!?"
+{PAUSE ""}
+<BR>
+"No, no, I only show up in a magazine now and then."
+{PAUSE ""}
+<BR>
+"I've seen you in a magazine!
+{PAUSE ""}
+　If I remember right, they call you an authority on physiognomy."
+<EVENT VALUE="MOTION\r\n123\r\nアイテム1\r\n3\r\n960\r\n200\r\nDEC\r\nPASS">
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1,アイテム2,アイテム3" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"Oh, that's overstating it. 
+{PAUSE ""}
+I just look at people's faces any old way, say any old thing, and it happens to be right, that's all."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\8.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"No, no, you don't become a fortune-teller this renowned any old way.
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\9.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+Today, I understand you'll be reading my face, but―"
+{PAUSE ""}
+<BR>
+"Yes, yes. Well then, have a seat here, please. 
+{PAUSE ""}
+What do you want to ask about, miss? Love, work, luck with money, anything's fine."
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"Um, well then... 
+{PAUSE ""}
+How do things look for my work from here on?"
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\10.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"Work, all right. Then look this way."
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"Okay."
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+―............
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\11.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"The world probably knows your work is going well, but that's only the world's assessment. 
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+There's a lot you yourself aren't happy with, isn't there?"
+{PAUSE ""}
+<BR>
+"Things I'm not happy with?"
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\12.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+"The work you want to do... 
+{PAUSE ""}
+Mm, let's see... 
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+It looks like you're content with the work itself, but there seems to be some problem in your private life. 
+{PAUSE ""}
+What you're not happy with is the private life your work is squeezing."
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<PG>
+"My private life..."
+{PAUSE ""}
+<BR>
+"It's a bit much to say on TV, but your work keeps you so busy, your room's gotten pretty messy, hasn't it?"
+{PAUSE ""}
+<BR>
+"Huh!?
+{PAUSE ""}
+　Um... I guess so... 
+{PAUSE ""}
+I might not be keeping it very tidy..."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\13.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\14.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+"You need to take a little more care with your meals, too. 
+{PAUSE ""}
+You're still young, so it's fine, but right now you seem to have no appetite at all."<PG>
+"I eat three square meals a day, though..."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム3" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\15.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n123\r\nアイテム3\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n3\r\n960\r\n200\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"Appetite is the urge that says I want to eat that, I want to eat this. 
+{PAUSE ""}
+Thinking you have to take in the nutrition you need to live is different from appetite. 
+{PAUSE ""}
+I'm sure you don't think like that."
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"Hmm... 
+{PAUSE ""}
+Yes, I guess... 
+{PAUSE ""}
+Mostly I just eat the boxed lunches they hand out on location..."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\16.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム3\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"Human beings die without food and sleep. 
+{MOTION "789" "アイテム3" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム3" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+It's probably a busy job, but first you should try thinking about enjoying your meals. 
+{PAUSE ""}
+If your appetite's satisfied, you ought to put just the right amount of effort into your work too."
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"I see..."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\17.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+"First, instead of just eating whatever food you're given, try thinking about what you want to eat. 
+{PAUSE ""}
+How your work turns out depends on that."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\18.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n340\r\n200\r\nDEC\r\nPASS">
+{MOTION "123" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"Is there any particular kind of food that would be good?"
+{PAUSE ""}
+<BR>
+"Let's see... 
+{PAUSE ""}
+Meals you eat with a knife and fork would be good. 
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+If you usually eat boxed lunches, you're probably using nothing but chopsticks or a spoon. 
+{PAUSE ""}
+So, to get away from that all at once, you make a point of trying a knife and fork."
+{MOTION "789" "アイテム2" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"Ooh...! I understand! Thank you so much!
+{PAUSE ""}
+　Stella-san, your fortune-telling is like life counseling."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\19.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+"That's right. Fortune-telling means giving advice based on statistics, 
+{PAUSE ""}
+not just saying the future will go this way or that way. 
+{PAUSE ""}
+With all that foreseen, you need to advise the person on what will do them good."
+{MOTION "789" "アイテム1" "3" "960" "200" "DEC" "WAIT"}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+"I'm so glad I got to meet you today, Stella-san!
+{PAUSE ""}
+　Thank you very much!"
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr145\シャベッター\20.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+{STOPSND "BGM" "3000" "PASS"}
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\青い目の猫.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス\リファレンス詳細\rrr1\0.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Well, Yuki-chan, you'll have to put a little less effort into your work. 
+{PAUSE ""}
+Now for the next master! The winner of the 90-year-old division at the national sumo tournament the other day―
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Every translation rule, with who made it</title>
+<style>
+:root{--bg:#fbf8f2;--ink:#222;--mute:#6d6a63;--rule:#e2dccf;--head:#2b2b2b;--card:#fff;
+--own:#2f6b3a;--fab:#2c5a8a;--mod:#a2471b;--qry:#6b4d8a}
+*{box-sizing:border-box}
+body{font-family:Georgia,'Iowan Old Style','Times New Roman',serif;font-size:1.05em;line-height:1.55;margin:0;background:var(--bg);color:var(--ink)}
+.jp{font-family:'Yu Mincho','YuMincho','MS Mincho','Hiragino Mincho ProN',serif}
+header{position:sticky;top:0;background:var(--head);color:#fff;padding:.55em 1.2em;z-index:5;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+header .in{max-width:62em;margin:0 auto;display:flex;flex-wrap:wrap;gap:.4em 1.1em;align-items:center}
+header h1{font-size:1em;margin:0;font-weight:normal;flex-basis:100%}
+header label{font-size:.88em;white-space:nowrap;cursor:pointer}
+header input[type=search]{font:inherit;font-size:.88em;padding:.2em .5em;border:0;border-radius:.2em;width:14em}
+header select{font:inherit;font-size:.85em}
+header button{font:inherit;font-size:.86em;padding:.22em .8em;border:0;border-radius:.25em;background:#f0d9a8;color:#222;cursor:pointer}
+header .msg{font-size:.82em;color:#bfe3b5}
+header .shown{font-size:.82em;opacity:.8}
+.sw{display:inline-block;width:.7em;height:.7em;border-radius:50%;margin-right:.25em;vertical-align:baseline}
+main{max-width:62em;margin:0 auto;padding:1em 1.2em 5em}
+h2{font-size:1.2em;margin:1.8em 0 .4em;border-bottom:2px solid var(--rule);padding-bottom:.15em}
+.intro p{margin:.4em 0}
+table.counts{border-collapse:collapse;margin:.6em 0;font-size:.95em}
+table.counts td,table.counts th{border:1px solid var(--rule);padding:.25em .8em;text-align:left;background:#fff}
+table.counts td.n{text-align:right;font-variant-numeric:tabular-nums}
+.toc{font-size:.92em;background:#f3eee3;padding:.5em 1em;border-radius:.3em;line-height:1.9}
+.toc a{color:#6b3d12;margin-right:.9em;white-space:nowrap}
+table.rules{border-collapse:collapse;width:100%;font-size:.93em;background:#fff}
+table.rules th{text-align:left;font-weight:normal;font-size:.82em;color:var(--mute);border-bottom:1px solid var(--rule);padding:.3em .4em}
+table.rules td{vertical-align:top;border-bottom:1px solid var(--rule);padding:.5em .4em}
+td.f{width:1.6em}td.f input{transform:scale(1.15);cursor:pointer}
+td.id{width:5.2em;font-family:Consolas,monospace;font-size:.82em;white-space:nowrap}
+td.ex{width:30%;font-size:.92em}
+td.ex .e{color:#444;display:block;margin-top:.15em}
+td.o{width:9.5em;font-size:.85em}
+td.s{width:8.5em;font-size:.85em}
+.badge{display:inline-block;font-size:.78em;letter-spacing:.04em;color:#fff;border-radius:.2em;padding:.02em .4em;margin-bottom:.15em}
+.OWNER{background:var(--own)}.FABLE{background:var(--fab)}.MODEL{background:var(--mod)}.QUERY{background:var(--qry)}
+.st{font-weight:bold}
+.st.dropped{color:#888}.st.changed{color:#8a5a00}.st.added{color:#2c5a8a}
+.ov{display:inline-block;margin-top:.2em;font-size:.8em;background:#f7d4c8;color:#7a1f00;border-radius:.2em;padding:0 .35em}
+.cf{display:inline-block;margin-top:.2em;font-size:.8em;background:#dcebd6;color:#234d2b;border-radius:.2em;padding:0 .35em}
+tr.isdropped td.r{color:#777;text-decoration:line-through;text-decoration-color:#bbb}
+tr.isover{background:#fff6f2}
+tr.flagged{background:#fffbe0}
+.sn{display:block;color:var(--mute);font-size:.92em;margin-top:.15em}
+.none{color:#aaa}
+.legend td{padding:.25em .6em;vertical-align:top}
+.flow{font-family:Consolas,monospace;font-size:.85em;background:#fff;border:1px solid var(--rule);padding:.6em 1em;border-radius:.3em;white-space:pre;overflow-x:auto;line-height:1.45}
+</style></head><body>
+<header><div class="in">
+<h1>Every translation rule, with who made it (Shigatsu Youka EN, rule books as of the 2026-09-26 remake)</h1><p class="meta">Unofficial fan translation (非公式・二次創作). Not affiliated with New++. Private review page: never publish (shows the Japanese script).</p>
+<label><input type="checkbox" class="of" value="OWNER" checked><span class="sw" style="background:var(--own)"></span>OWNER</label>
+<label><input type="checkbox" class="of" value="FABLE" checked><span class="sw" style="background:var(--fab)"></span>FABLE</label>
+<label><input type="checkbox" class="of" value="MODEL" checked><span class="sw" style="background:var(--mod)"></span>MODEL</label>
+<label><input type="checkbox" class="of" value="QUERY" checked><span class="sw" style="background:var(--qry)"></span>QUERY</label>
+<select id="stf" title="status filter"><option value="">any status</option><option>kept</option><option>changed</option><option>added</option><option>dropped</option><option value="ov">overruled by the owner</option><option value="fl">flagged by me</option></select>
+<input type="search" id="q" placeholder="search rules and examples">
+<button id="copy">copy flagged ids</button>
+<button id="clear">clear flags</button>
+<span class="shown" id="shown"></span>
+<span class="msg" id="msg"></span>
+</div></header>
+<main>
+<div class="intro">
+<p>One row per rule. A rule is one instruction a drafter (the agent who writes the English) or a reviewer (the agent who checks it) must obey. Pure tool mechanics (block sizes, file paths, log formats) are left out.</p>
+<p>Where each rule comes from:</p>
+<div class="flow">you (OWNER, O-xx)  ──►  OWNER-RULINGS.md  ──┐
+Fable (FABLE, F)  ──►  FABLE-RULINGS.md, [F] tags  ──┼──►  the rule books  ──►  drafters + reviewers
+pass-1 questions (QUERY, Q####) ─► Fable's answer ──┤    (METHOD, STYLE,
+an agent model wrote it (MODEL, M) ─────────────────┘     CORE-RULES, CHIPS, BRIEF)</div>
+<table class="legend">
+<tr><td><span class="badge OWNER">OWNER</span></td><td>You ruled it. Binding. Cited by O-id and date.</td></tr>
+<tr><td><span class="badge FABLE">FABLE</span></td><td>The orchestrator decided it. You can reverse it.</td></tr>
+<tr><td><span class="badge MODEL">MODEL</span></td><td>An agent model wrote it into a rule book and nobody asked for it. These are the ones to audit. The book it lives in is named.</td></tr>
+<tr><td><span class="badge QUERY">QUERY</span></td><td>A translating agent in the first pass (pass 1) asked a question (a "Q" row); Fable answered it; the answer became a rule.</td></tr>
+</table>
+<p>Status says what the 2026-09-26 remake of the rule books did to the rule: <b>kept</b>, <b>changed</b>, <b>added</b>, or <b>dropped</b>. A red <span class="ov">overruled by O-xx</span> tag means a later ruling of yours replaced it, and the books still say the old thing. A green <span class="cf">confirmed O-xx</span> tag means you approved it on the questions page.</p>
+<p>Examples: Japanese (JP) and English (EN) lines come from scene 1 (file 00000024) or are everyday lines that reveal nothing. Rules with no safe example have none.</p>
+<p>Terms used below. <b>Cell</b>: one piece of text the game engine shows at a time. <b>TN</b>: a translator note, written as [TN: ...] inside the line. <b>CAST card</b>: the notes file entry describing one speaker's voice. <b>GLOSSARY</b>: the locked term list. <b>QUERY row</b>: a logged question for Fable. <b>STIFF-CANDIDATE</b>: a list of hard-to-read lines for you to judge.</p>
+<h2 style="margin-top:1em">Counts</h2>
+<table class="counts" id="counts"></table>
+<p class="sn" id="modelnote"></p>
+<div class="toc" id="toc"></div>
+</div>
+<div id="groups"></div>
+</main>
+<script>
+// [id, group, origin, origin cite, status, rule, jp, en, status note, mark]
+// mark: "ov:O-xx" = overruled by owner ruling; "cf:O-xx" = owner confirmed
+const G=["Doctrine","Names and address","Honorifics and kinship","Speech level and voice","Punctuation and typography","Tense","Notes [TN]","Set phrases and idioms","Dialect and register","Jokes","Layout devices","Review coverage"];
+const R=[
+// ---------------- Doctrine
+["DOC-01","Doctrine","OWNER","O-01, 2026-09-22","kept",`TRANSLATION, ZERO LOCALIZATION. Faithful and line for line, in the register of Lattimore's Iliad translation: keep the source's images and order; no smoothing, no cut or softened lines, no replaced references. A slightly foreign surface is fine. Never a Treehouse / 8-4 style rewrite.`,`時刻は深夜0時を回っていた。`,`"The time had gone past midnight."`,``,``],
+["DOC-02","Doctrine","MODEL","M, METHOD §0","kept",`"Supporting position" quoted under your doctrine: Nabokov (the clumsiest literal translation beats the prettiest paraphrase) and Schleiermacher (move the reader toward the author). The Nabokov line is stronger than your own O-04 wording.`,``,``,``,``],
+["DOC-03","Doctrine","OWNER","O-02, 2026-09-24","kept",`Two failure modes, both banned. ADDITION: jokes, quips, interjections, personality or AI-isms the JP does not have. FLATTENING: the facts kept but the register, density, rhythm or joke lost (padding, hedging, explaining, softened insults).`,`俺は三十四歳住所不定無職。人生を後悔している真っ最中の小太りブサメンのナイスガイだ。 (Mushoku Tensei)`,`"Me: thirty-four, no fixed address, unemployed. A chubby, ugly nice guy in the middle of regretting his whole life." (not the official "I was a nice guy, but I was on the heavy side...")`,``,``],
+["DOC-04","Doctrine","OWNER","O-02, 2026-09-24","kept",`Sentence-level test: for each JP line note (a) its register sequence, (b) which words carry weight, (c) where the punch lands. The English matches all three.`,``,``,``,``],
+["DOC-05","Doctrine","MODEL","M, METHOD §1","kept",`Padding test per word: ask which JP word each English word comes from. No source and no grammar job = padding. Only a prompt to re-check, never a reason to cut a word that carries weight.`,``,``,``,``],
+["DOC-06","Doctrine","OWNER","O-04, 2026-09-26","kept",`JP ORDER AND FEEL OVER NATURAL ENGLISH. A calque (English that copies the JP sentence structure, e.g. "the time" as subject) stays. A "no subject calques" rule was rejected. Only a clearly unreadable line is an error.`,`目を開けると、時刻は深夜0時を回っていた。`,`"When I opened my eyes, the time had gone past midnight."`,``,``],
+["DOC-07","Doctrine","OWNER","O-04, 2026-09-26","kept",`Agents do not fix hard-to-read lines themselves: they log them as STIFF-CANDIDATE rows for you. Nothing is enforced per line. Agents add no new stiffness rules.`,``,``,``,``],
+["DOC-08","Doctrine","MODEL","M, METHOD §2","changed",`Cells and clause order. Never split or merge cells. Inside one cell the English may break a long stacked JP sentence into two sentences, but keeps the JP clause order wherever English can hold it; reorder only where English grammar forces it.`,`眠りが浅かったのだろうか、春花はすぐに、そしてゆっくりと顔を上げた。`,`"Maybe her sleep had been shallow. Haruka lifted her head right away, and slowly."`,`Old rule let English grammar set the clause order (remake C1). You confirmed the new one as a lean, not a hard rule.`,`cf:O-52`],
+["DOC-09","Doctrine","MODEL","M, METHOD §2","kept",`Same shape for lines whose shape is the point (jokes, lists, one-word cells, refrains): a four-noun line stays four nouns; a one-sentence punch stays one sentence.`,`たまに子供の声、／たまに自動車の音、／たまに風の音。`,`"Sometimes a child's voice," / "sometimes the sound of a car," / "sometimes the sound of the wind."`,``,``],
+["DOC-10","Doctrine","OWNER","O-10, 2026-09-25","kept",`DO NOT DECIDE WHAT THE AUTHOR LEFT UNDECIDED. Fill a gap any native reader fills without noticing. Keep a deliberately withheld gap open. Otherwise flag the line.`,`「春花、起きて。寝るなら、部屋に行こう」 / でも、あの人は死んだ。`,`"Haruka, wake up. If you're going to sleep, let's go to your room." (gap filled) / "But, that person died." (kept open: not "he", not a name)`,``,``],
+["DOC-11","Doctrine","MODEL","M, METHOD §3 (wording built on O-10)","kept",`GRAMMAR vs WITHHELD test. A gap is GRAMMAR if two first-time Japanese readers would fill it the same way: fill it, no flag. It is WITHHELD if they could fill it differently, or the text later turns on it: keep it open, or take the best-supported reading and flag it "needs-tlc". "Subject/gender/number guessed" flags are for withheld gaps only.`,``,``,`The ledger lists this test's wording as model-made and open to rewrite.`,``],
+["DOC-12","Doctrine","MODEL","M, METHOD §3","kept",`Knowledge fence. Translate each file as its first-time Japanese reader reads it. Later knowledge may only pick between two equally natural English forms. It never adds a hedge, a vaguer noun, a passive, a dropped pronoun or a "they".`,`「だったら家宅捜索のときに伊勢さんが持っていってるはずだよね？」`,`A surname + さん is a specific adult to that reader, so the English may use the pronoun that reader assumes.`,``,``],
+["DOC-13","Doctrine","MODEL","M, METHOD §5","kept",`Near-duplicate variants: where one scene is printed in several versions, compare them first. A shared line gets the same English in every version; a JP difference is carried; no version is "improved".`,`「ダメだな……。新生活の初日から、こんなだらけてたら……」 vs 「くそ、ダメだな……。…」`,`The two English lines differ by the one added word only.`,``,``],
+["DOC-14","Doctrine","MODEL","M, CORE-RULES §6","kept",`Things not to fix: contradictions the text shows on screen are reproduced, not corrected.`,``,``,``,``],
+["DOC-15","Doctrine","MODEL","M, CORE-RULES §6","kept",`A sentence that breaks off stays broken off: no supplied verb, no supplied object.`,`私は明かりのついてない自室のドアを開け――。`,`"I opened the door to my unlit room―"`,``,``],
+["DOC-16","Doctrine","QUERY","Q285, Q453","kept",`Dreams and visions are translated straight: no hedge, no italics, no early signal, no added scene break. They read like waking narration.`,``,``,``,``],
+["DOC-17","Doctrine","QUERY","Q030, Q640","kept",`A change of narrator at a file, block or cell boundary is marked with nothing in English: no name or gender before the JP gives one. Only the JP's own signals (pronoun, speech level, tics, address forms, tense, content) carry it.`,``,``,``,``],
+["DOC-18","Doctrine","QUERY","Q146","kept",`An embedded first-person passage with no frame stays unframed; the register shift is the only seam.`,``,``,``,``],
+["DOC-19","Doctrine","MODEL","M, CORE-RULES §6","kept",`A passage that imitates another voice or frame is written indistinguishable from what it imitates: no hedging, nothing cooled, nothing made eerie.`,``,``,``,``],
+["DOC-20","Doctrine","MODEL","M, CORE-RULES §7","kept",`A grammar distinction the text turns on (a negation pair, a verb choice the narration remarks on) is kept by word choice and word order.`,``,``,``,``],
+["DOC-21","Doctrine","MODEL","M, CORE-RULES §1","kept",`Rank of the books: STYLE beats CORE-RULES, which beats CORE best guesses, which beats GLOBAL. Where CORE or GLOBAL says a point is open, stop and file a QUERY.`,``,``,``,``],
+["DOC-22","Doctrine","MODEL","M, METHOD §9","kept",`Never invent a heuristic. If the books are silent, write a QUERY row and move on. Never guess silently: guess, flag, log.`,``,``,``,``],
+["DOC-23","Doctrine","OWNER","O-71, 2026-09-26 (relayed by Fable, not yet in OWNER-RULINGS.md)","added",`A hanging counterfactual (a もし "if" clause left unfinished) carries a wish; "If only" is the mechanism of that line, not an addition.`,`もし、あの2人にもう少し勇気があれば……。`,`"If only those two had had a little more courage..."`,``,``],
+["DOC-24","Doctrine","OWNER","O-73, 2026-09-26 (relayed by Fable, not yet in OWNER-RULINGS.md)","added",`A concrete everyday verb that any native speaker would use for the JP action is not an addition.`,`「あの、これ、押入れの裏に貼り付けられてたんだけど……」`,`"Uh, this was taped to the back of the closet..." ("taped", not "stuck")`,``,``],
+// ---------------- Names and address
+["NAM-01","Names and address","OWNER","O-09, 2026-09-24","kept",`Given name first (Haruka Niimura). Historical names with の and titles stay as they are. Address by surname only is unaffected.`,`春花`,`"Haruka"`,``,``],
+["NAM-02","Names and address","FABLE","F, STYLE","kept",`Romanization: modified Hepburn (the standard romaji system), no macrons (the font cannot print them), long vowels dropped (Goto, Kotaro), ん before a vowel = n' (Shin'ichi), づ = zu, ぢ = ji.`,``,``,``,``],
+["NAM-03","Names and address","FABLE","FR-01, 2026-09-26 (FABLE-RULINGS.md)","added",`A quote drawn in a character's text color counts as that character's line, even where the words alone leave the speaker open, because the JP player sees the color. An uncolored quote stays open.`,``,``,`A fact ruling about the source, made after the remake report.`,``],
+["NAM-04","Names and address","OWNER","O-66, 2026-09-26","kept",`A name does not have to open the English line. When English word order moves a colored name, its style tags move with it; never leave an empty tag pair.`,`「春花、起きて」`,`"Haruka, wake up." (the color tag stays on "Haruka")`,`The tag-moving instruction was already in TRANSLATOR-BRIEF §3; you struck down the "name must open the line" premise.`,``],
+["NAM-05","Names and address","MODEL","M, CORE-RULES §9","kept",`One person under two JP forms = one English referent. Two people = two referents (check GLOSSARY).`,``,``,``,``],
+// ---------------- Honorifics and kinship
+["HON-01","Honorifics and kinship","OWNER","O-05, 2026-09-22","kept",`Honorifics (-san, -kun, -chan, -senpai, -sensei, -sama, -nee, -nii) stay as suffixes on names. A dropped or changed suffix is an event: flag it.`,`伊勢さん`,`"Ise-san"`,``,``],
+["HON-02","Honorifics and kinship","MODEL","M, STYLE §Names","kept",`Suffix scope: the suffix stays on a personal name, a nickname, or a title used as a name. On a common noun the suffix disappears and the politeness goes into the noun. A lone 先生 (teacher/doctor) = "Sensei" when addressed, the job word when referred to.`,`お客さん / 皆さん / 神様 / お巡りさん`,`"the customer" / "everyone" / "God" / "the officer"`,``,``],
+["HON-03","Honorifics and kinship","QUERY","Q1485","kept",`Names inside documents keep their suffix like speech; no invented Mr. or Ms.`,``,``,``,``],
+["HON-04","Honorifics and kinship","QUERY","Q1561 (+ Fable review ruling)","kept",`Kinship words for the speaker's OWN relatives: お母さん / 母さん = Mom, お父さん = Dad, also as "my mom", "(name)'s dad"; the formal 父 / 母 = "my father" / "my mother". Narration uses the same word. After a title ("Senpai's"), use father / mother.`,`お母さんはいつも私を起こしてくれていた。`,`"Mom always used to wake me up."`,`You kept "Mom" / "Dad" for the narrator's own parents.`,`cf:O-57`],
+["HON-05","Honorifics and kinship","QUERY","Q1561","kept",`Provisional table for other relatives: aunt word = Aunt, uncle word = Uncle, grandmother word = Grandma, the familiar older-sister word = "Sis". The polite and familiar older-sister words never merge.`,``,``,`Marked provisional in STYLE.`,``],
+["HON-06","Honorifics and kinship","MODEL","M, STYLE §Names","kept",`Kinship words said to NON-relatives become what an English speaker says: おじさん to a shopkeeper = "sir", お姉さん to a stranger = "miss", an old woman = "ma'am" / "the old lady".`,``,``,`STYLE still says this. You ruled the opposite.`,`ov:O-57`],
+["HON-07","Honorifics and kinship","OWNER","O-57, 2026-09-26","added",`Kinship words for NON-relatives stay Japanese, untouched: Obasan, Ojisan, Onee-san, in speech and narration. Readers can handle it.`,``,``,`After the remake; not yet written into STYLE. O-70 (relayed later) says: no TN for these.`,``],
+["HON-08","Honorifics and kinship","MODEL","M, STYLE §Names","changed",`Spouses calling each other お父さん / お母さん = "Dad" / "Mom" as said. If the English would read as the speaker's own parent, file a QUERY.`,``,``,`Old rule said "else use the name" (remake C5: that supplied a word the JP does not say).`,``],
+// ---------------- Speech level and voice
+["SPK-01","Speech level and voice","OWNER","O-05, 2026-09-22","kept",`Pronoun and speech-level nuance is carried by English diction or a short TN, never by warping English (no fake dialect, no odd grammar, no tense trick).`,``,``,`The "no fake dialect" part is softened by O-60 (slight accent allowed).`,``],
+["SPK-02","Speech level and voice","OWNER","O-05 + O-06 (METHOD §4)","kept",`A switch of pronoun, name form or speech level that the scene uses gets a TN at that line; the line itself is translated plainly.`,``,``,``,``],
+["SPK-03","Speech level and voice","MODEL","M, STYLE §Speech level","kept",`Default speech-level mapping when a speaker has no CAST card: rough speech = heavy contractions, blunt words; casual speech (タメ口) = normal contractions; polite です/ます = normal contractions plus please / would you; full honorific or humble speech (敬語) = few contractions, formal words. A CAST card's rate wins.`,`「おはよう……」`,`"Morning..."`,``,``],
+["SPK-04","Speech level and voice","QUERY","Q1722","kept",`A drop from steady polite speech to plain speech is an event: the English drops too, for that cell only.`,``,``,``,``],
+["SPK-05","Speech level and voice","OWNER","O-07, 2026-09-21","kept",`No AI-isms in dialogue: "Well," / "I mean," / "Look," / "honestly" / "kind of" / wry asides / "It's not X, it's Y" where the JP has one clause.`,``,``,``,``],
+["SPK-06","Speech level and voice","MODEL","M, STYLE §Speech level","kept",`The AI-ism ban covers only English with no JP counterpart. A GLOSSARY row that prescribes "Well" for まあ is not an AI-ism.`,``,``,``,``],
+["SPK-07","Speech level and voice","OWNER","O-65, 2026-09-26","added",`Character voice is a universal rule: reviewers judge every line against the speaker's CAST card. A meek line must not come out bold and clinical. ", I'm sure" is better than "Surely."`,``,``,`After the remake; not yet in the books.`,``],
+["SPK-08","Speech level and voice","MODEL","M, STYLE §Speech level","kept",`Sentence-ending particles (ね, よ, さ, な, かな, だろう, のだろうか, のだ, っけ: small words that add mood) are carried by mood, word order and punctuation, not by a tacked-on ", I wonder" / ", you know" / ", I'm sure", unless the CAST card fixes that tag. Test: cover the tail; if the sentence says the same thing, it was a particle.`,`いつの間に眠ってしまったのだろう。`,`"When had I fallen asleep?"`,`You allowed ", I wonder" (O-53) and preferred ", I'm sure" over "Surely." (O-65).`,`ov:O-53`],
+["SPK-09","Speech level and voice","OWNER","O-53, 2026-09-26","added",`のだろう / かな may become ", I wonder": it keeps the period ending, and a question mark feels different. Vary it when three land in a row.`,``,``,`After the remake; STYLE still says the opposite (SPK-08).`,``],
+["SPK-10","Speech level and voice","MODEL","M, STYLE §Speech level","kept",`Favor endings (てくれる / てもらう / てあげる: "someone does me a favor by...") are dropped in English unless the favor is the point.`,`春花は1か月前からいつもそう言ってくれる。`,`"Haruka has said that every time, for a month now."`,``,``],
+["SPK-11","Speech level and voice","MODEL","M, METHOD §5","kept",`Interjections are locked per JOB, not per spelling. The GLOSSARY row names the job; if the word does another job here, translate that job and add a row.`,`「おい、なつみ」`,`"Hey, Natsumi." (よう and おい both take "Hey"; the roughness rides on what follows)`,``,``],
+["SPK-12","Speech level and voice","OWNER","O-55, 2026-09-26","kept",`The greeting よう = "Hey" (not "Yo").`,`「よう！　調子はどうだ？」`,`"Hey! How're you doing?"`,`Was Fable's current rule; you confirmed it.`,``],
+["SPK-13","Speech level and voice","MODEL","M, CORE-RULES §9","kept",`Formality is carried by diction, not by adding or dropping a name suffix.`,``,``,``,``],
+["SPK-14","Speech level and voice","MODEL","M, CORE-RULES §9","kept",`One JP cell with an explicit 私 ("I") = one English sentence with "I" as its subject. Never fold two such cells into one sentence with a participle or "and"; never add "myself" or "as for me".`,`私にできることなんて、何もなかった。`,`"There was nothing I could have done."`,`The book's own example does not have "I" as its subject.`,``],
+["SPK-15","Speech level and voice","OWNER","O-63, 2026-09-26","added",`A doubled polite ending: context decides. If unclear, keep the stumble (doubled English) and mark a note so it can be fixed later.`,``,``,`After the remake; not yet in the books.`,``],
+// ---------------- Punctuation and typography
+["PUN-01","Punctuation and typography","OWNER","O-24, 2026-09-26","kept",`No agent may claim a "convention" for Japanese punctuation without a MODERN source (the 2022 government council guide 「公用文作成の考え方」, not the 1946 rules).`,``,``,``,``],
+["PUN-02","Punctuation and typography","FABLE","F, STYLE + CORE-RULES §2","kept",`Quote marks: 「」 = "..."; 『』 = '...'; straight "..." in the source (text nobody present is speaking: phone messages, broadcasts, documents, writing) = curly “...”; a bare cell (letter, memo, notice) stays bare. A line break inside a quote is kept.`,`「春花、起きて。…」`,`"Haruka, wake up. ..."`,``,``],
+["PUN-03","Punctuation and typography","FABLE","F, STYLE","kept",`Ellipsis inside a sentence: …… (or longer) = "..." once. A leading ellipsis is kept ("...I see").`,``,``,``,``],
+["PUN-04","Punctuation and typography","QUERY","Q1322","kept",`A cell that is ONLY ellipsis = one "..." per JP … (…… = "......"); a mark after it follows. It stays distinct from an empty "" cell.`,`「…………？」`,`"............?"`,``,`cf:O-56`],
+["PUN-05","Punctuation and typography","FABLE","F, STYLE","kept",`Dash: ―― = one ― (the horizontal bar U+2015) at the JP position; never the em dash (the game's character set lacks it). A run of 3+ hyphens is a drawn line: copy it.`,`――夢の中に響く、時計の音。`,`"―Echoing inside a dream, the sound of a clock."`,``,``],
+["PUN-06","Punctuation and typography","MODEL","M, STYLE","kept",`No extra stop: ……。 = "..." and ――。 at the end of a cell = "―".`,`私は明かりのついてない自室のドアを開け――。`,`"I opened the door to my unlit room―"`,``,``],
+["PUN-07","Punctuation and typography","QUERY","Q2120 + Q2281 + part-3 follow-up","changed",`An English dash where the JP has none is allowed only (a) across a cell break inside one speech where nothing else can show the self-interruption, (b) where a comma would make a comma splice and the JP is one sentence, (c) where a comma would misread. Otherwise JP and English dash counts match.`,`でも春花は何か知っているような――そんな気がする。`,`(the JP has the dash, so the English keeps exactly one)`,`Three layered rulings merged into one (remake C6); same substance.`,``],
+["PUN-08","Punctuation and typography","MODEL","M, STYLE","kept",`Punctuation follows English grammar in every printing: a question gets a question mark even where the JP has none; two printings that differ only in optional ？、。 get identical English.`,`「食べたものはどこへ行ってるんだろ」 / 「…んだろ？」`,`"Where does all that food go?" (both)`,``,``],
+["PUN-09","Punctuation and typography","FABLE","F, STYLE","kept",`！？ = "!?"; ？！ = "?!"; ！！ = "!!".`,``,``,``,``],
+["PUN-10","Punctuation and typography","OWNER","O-30, 2026-09-26 (CHIP-01)","kept",`A JP comma (読点) is a pause the reader feels: keep it as an English comma wherever English can hold one, including after a sentence-opening "But". Drop it where English grammar cannot take one. SOFT: overruled whenever the English would sound absurd; never applied mechanically.`,`でも、あの人は死んだ。`,`"But, that person died."`,``,``],
+["PUN-11","Punctuation and typography","OWNER","O-33, 2026-09-26 (CHIP-02)","kept",`Image order carries information: where the JP orders its images to carry sequence or logic, the English keeps that order, even with a fronted phrase, if it still reads on first pass. Soft; shipped lines are not re-edited for it.`,`――夢の中に響く、時計の音。`,`"―Echoing inside a dream, the sound of a clock." (not "The sound of a clock, echoing inside a dream.")`,``,``],
+["PUN-12","Punctuation and typography","OWNER","O-31, 2026-09-26","kept",`When a pause command splits one text box into two cells and the first cell ends in sentence punctuation or a closing quote, the English first cell ends with one space (the engine joins the cells).`,``,``,``,``],
+["PUN-13","Punctuation and typography","MODEL","M, STYLE §Numbers","kept",`Digits for clock times, dates, ages, money, measurements, room and page numbers, and anything read off a display. Words for counts under ten in prose and speech. Whether the JP used Arabic or kanji numerals is not carried.`,`「今は、私たち2人しかいないからね……」 / 0時を回ったということは今日は五月六日。`,`"It's just the two of us now..." / "Past midnight means today is May 6."`,``,``],
+["PUN-14","Punctuation and typography","QUERY","Q1560, Q1563","kept",`A time keeps the source's form (a 24-hour display stays "23:50"). A duration of 2 or more units takes digits ("3 days"); one unit takes the word.`,`1か月前`,`"a month ago"`,``,``],
+["PUN-15","Punctuation and typography","FABLE","F, STYLE","kept",`Calendar dates stay as written; an era year keeps its era name romanized; no conversion, no TN equating them.`,``,``,``,``],
+["PUN-16","Punctuation and typography","OWNER","O-58, 2026-09-26","added",`四月八日 in the text is just a date: "April 8th". The subtitle, if translated, uses the same words.`,`四月八日`,`"April 8th"`,`After the remake. Note the numbers rule (PUN-13) writes "May 6" without "th".`,``],
+["PUN-17","Punctuation and typography","FABLE","F, STYLE (font test 2026-09-25)","kept",`Character set: only characters the game's Japanese Windows encoding (CP932) can show. Allowed: plain ASCII plus “ ” ‘ ’ … ― − ～. Not allowed: em dash, macrons, accented letters.`,``,``,``,``],
+["PUN-18","Punctuation and typography","OWNER","O-34, 2026-09-25","kept",`【】 and ～ are allowed. The full-width space and full-width （） are used only where a layout device needs them; the device wins over the checker.`,``,``,``,``],
+["PUN-19","Punctuation and typography","FABLE","F, STYLE","kept",`Plain text only: no italics, no bold (the message font is the proportional MS P Mincho).`,``,``,``,``],
+// ---------------- Tense
+["TEN-01","Tense","QUERY","Q1087 (+ M, changed)","changed",`English narration has one base tense. Do not follow the JP tense cell by cell, and do not put a whole block in the present.`,``,``,`Remake C4 reworded the tense rules.`,``],
+["TEN-02","Tense","MODEL","M, STYLE §Tense","changed",`The base is PAST for anything perceived or happening at the story moment, sensations included.`,`ソファで座ったまま眠ったせいか、少し身体が痛い。`,`"Maybe because I had fallen asleep sitting up on the sofa, my body ached a little."`,`You had no preference; Fable kept it.`,`cf:O-54`],
+["TEN-03","Tense","MODEL","M, STYLE §Tense","changed",`PRESENT is allowed for the narrator's own thought at that moment (a judgment, a resolution, a question to herself). Check: put "I thought:" in front; if it still reads as her words then, present stands. Also for a general fact still true.`,`分かっている。後悔したってどうにかなるものではない。`,`"I know. Regretting it won't change anything."`,`You had no preference; Fable kept it.`,`cf:O-54`],
+["TEN-04","Tense","MODEL","M, STYLE §Tense","kept",`A block the source sets wholly in the present as a device stays present, with a DECISION row in the log.`,``,``,``,``],
+["TEN-05","Tense","MODEL","M, STYLE / CORE B4 (old)","dropped",`At most one tense flip per text box.`,`そして暗い部屋で、1人考える。／分かっている。`,`(past, then present thought in one box: normal)`,`Dropped (remake D2): a cap with no JP basis.`,``],
+// ---------------- Notes [TN]
+["TN-01","Notes [TN]","OWNER","O-06, 2026-09-22; O-50, 2026-09-26","changed",`A TN is allowed where a point is untranslatable and the note is not a spoiler. Your example: the first time a character speaks with 僕 (boku, a boyish "I"). Open rule, not a closed list.`,``,``,`Remake C3 replaced a closed five-case list (model-made) with your test; you kept the open rule (O-50). Narrowed by O-70: no notes for culture nouns people can look up.`,`cf:O-50`],
+["TN-02","Notes [TN]","OWNER","O-70, 2026-09-26 (relayed by Fable, not yet in OWNER-RULINGS.md)","added",`NO translator notes for culture nouns people can look up. KEEP notes that explain a wordplay mechanism or a number the reader would otherwise misparse. When a note is removed, the space before it goes too.`,``,``,`Also cancels the Obasan note and the police-rank note.`,``],
+["TN-03","Notes [TN]","QUERY","Q1482-Q1486","kept",`Listed TN cases: the first use of a romanized term; a speaker's first dialect line; a pun kept at surface meaning (state the mechanism in one clause, never the punchline); a fact every JP reader gets from a word, when a character's reasoning turns on it.`,``,``,`"First use of a romanized term" is replaced by O-70 for look-up-able culture nouns.`,`ov:O-70`],
+["TN-04","Notes [TN]","MODEL","M, STYLE §TN","changed",`Never explain inside the line itself; an explanation goes in a TN or nowhere.`,``,``,`Tag added in the remake (C3).`,``],
+["TN-05","Notes [TN]","MODEL","M, STYLE §TN","kept",`A TN is 12 words maximum (it prints inside the text box).`,``,``,`A length cap; O-11 says nothing is shortened to fit a box.`,``],
+["TN-06","Notes [TN]","QUERY","Q1320","kept",`Position: end of the line, after the closing quote. When the term sits in the first of two cells of one speech, at the end of THAT cell.`,``,``,``,``],
+["TN-07","Notes [TN]","QUERY","Q1490, Q1126","kept",`Once per FILE per term (scenes are played separately), and in every version of the scene that has the line.`,``,``,``,``],
+["TN-08","Notes [TN]","QUERY","Q2121","kept",`One wording per note term project-wide, reused byte for byte.`,``,``,`The book's example (a festival-word note) is a culture noun: O-70 removes that note.`,``],
+["TN-09","Notes [TN]","QUERY","Q2280","kept",`If the first line already carries a note, the second note goes on the term's next occurrence in the file.`,``,``,``,``],
+["TN-10","Notes [TN]","QUERY","Q231","kept",`Latin letters inside the JP text are kept exactly, with any on-screen gloss, plus ONE TN at first use saying the word is foreign in the source.`,``,``,``,``],
+// ---------------- Set phrases and idioms
+["SET-01","Set phrases and idioms","MODEL","M, STYLE §Speech level","changed",`A word inside a set phrase takes the set phrase's MEANING (弁を吐く = "deliver words", not "spit"; 口にする = "say"). A literal rendering is not an error if the meaning survives and reads. Reviewers do not replace a readable literal image; a hard-to-read one goes to STIFF-CANDIDATE.`,`私の力の及ばないところで事件は動いていたのだ。`,`"The incident had been moving somewhere beyond my power." ("beyond the reach of my strength" = STIFF-CANDIDATE, not an edit)`,`Remake C2. You later said lean strongly idiomatic (O-51).`,`ov:O-51`],
+["SET-02","Set phrases and idioms","OWNER","O-51, 2026-09-26","added",`Set phrases: lean strongly idiomatic, as long as no layer or subtext is lost.`,``,``,`After the remake; STYLE still leans literal (SET-01).`,``],
+["SET-03","Set phrases and idioms","OWNER","O-61, 2026-09-26","added",`Unfamiliar Japanese terms (manji, torii and the like) stay as they are; readers can look them up. No localization of culture nouns. 卍 = "manji", no note.`,`卍`,`"manji"`,`O-70 extends this: no TN for such nouns.`,``],
+["SET-04","Set phrases and idioms","OWNER","O-62, 2026-09-26","added",`The phrase 『月がきれいですね』 ("The moon is beautiful, isn't it") is translated literally plus a short note on its coded meaning.`,``,``,`O-70 keeps this note (it explains a mechanism).`,``],
+["SET-05","Set phrases and idioms","OWNER","O-64, 2026-09-26","added",`Police ranks are LITERAL ("Assistant Inspector"). Non-US readers do not know US rank names either.`,``,``,`O-64 allowed a one-time TN; O-70 cancels it.`,``],
+["SET-06","Set phrases and idioms","MODEL","M, STYLE §Sounds","kept",`A sound is rendered by an English sound-word a reader can hear. Romanize only a sound the text quotes AS a sound, once, with a gloss. No asterisks.`,`ゲホッ`,`"Cough!" (not "Geho!")`,``,``],
+["SET-07","Set phrases and idioms","QUERY","Q1484","kept",`A stretched content word stretches in English ("amaaazing"); a stretch on a grammar ending is dropped.`,``,``,``,``],
+["SET-08","Set phrases and idioms","MODEL","M, METHOD §5","kept",`One rendering per term. GLOSSARY is binding. Drift (same JP, different English) and collision (different JP, same English) are both errors. A locked term changes only by marking the row superseded and sweeping every finished file.`,``,``,``,``],
+["SET-09","Set phrases and idioms","MODEL","M, CORE-RULES §10","kept",`Two different JP terms may not share one English rendering unless GLOSSARY marks them as the same thing. Interjections sharing "Hey" by job (おい / よう / ねえ) are not a collision.`,``,``,``,``],
+["SET-10","Set phrases and idioms","MODEL","M, METHOD §5","kept",`Translation memory: identical JP gets identical English for replays, refrains, and lines of about eight characters or more with the same speaker, listener and job. Shorter strings match by job.`,``,``,``,``],
+["SET-11","Set phrases and idioms","MODEL","M, CORE-RULES §7","kept",`A replay (the same cells printed again later) is frozen to the earliest English. A refrain keeps ONE English wording, fixed in GLOSSARY before drafting; it bends only for grammar in its slot.`,`もし、あの2人にもっと勇気があったら。／もし、あの人に耐える勇気があったなら。`,`"If those two had had more courage." / "If that person had had the courage to endure."`,``,``],
+// ---------------- Dialect and register
+["DIA-01","Dialect and register","MODEL","STYLE §Dialect (the book tags it [F]; you say it was model-made)","kept",`Dialect ban: never an English regional or class dialect, never eye-dialect (spelling that shows an accent, like "nothin'"), never "Engrish". Dialect is carried only by rhythm, word choice, contraction rate, plus one TN at the speaker's first dialect line.`,``,``,`The one you found. STYLE still carries it.`,`ov:O-60`],
+["DIA-02","Dialect and register","MODEL","M, STYLE §Dialect","kept",`Dialect test: if a reader could place a word or spelling on a map or in a class, it is banned ("Oi", "Yo", "eh", "y'all", "innit", "aye", "lass"). Allowed: gonna, wanna, gotta, c'mon, dunno, 'cause. Banned spellings: ya, yer, nothin', wot.`,``,``,`Part of the same ban.`,`ov:O-60`],
+["DIA-03","Dialect and register","OWNER","O-60, 2026-09-26","added",`Dialect: a SLIGHT accent in English is allowed, plus a TN saying it is a heavy one in the original.`,``,``,`After the remake; not yet in the books.`,``],
+["DIA-04","Dialect and register","FABLE","F, STYLE §Dialect","kept",`A dialect the narration names but does not write out stays unwritten in English.`,``,``,``,``],
+["DIA-05","Dialect and register","FABLE","F, STYLE §Dialect","kept",`Stock character-speech endings: a pidgin ending = plain English + TN; an over-posh ending = over-formal English with no contractions.`,``,``,`Check against O-60.`,``],
+["DIA-06","Dialect and register","MODEL","M, CORE-RULES §6","kept",`Deliberately broken Japanese is a device, carried by clipped or dropped letters, never by phonetic dialect spelling. Test: if a character or the narrator NOTICES the oddity, it is a device; if nobody does, it is a typo.`,``,``,`"Never phonetic dialect spelling" comes from the same thinking as the dialect ban.`,``],
+["DIA-07","Dialect and register","FABLE","F, STYLE §Source errors (+ Q872)","kept",`Typos in the JP: translate the intended text, never copy the typo, log a QUERY. Garbled-character cells: translate the decoded Japanese.`,``,``,``,``],
+["DIA-08","Dialect and register","OWNER","O-02, 2026-09-24","kept",`Insults keep their weight: ブサメン is "ugly", not "not conventionally attractive". Crude stays crude.`,``,``,``,``],
+["DIA-09","Dialect and register","MODEL","M, CORE-RULES §9","changed",`Profanity carries the JP word's own weight and is never escalated: くそ = "damn" / "crap".`,`「くそ……もうちょっとでいいシーンだったのになあ」`,`"Damn... it was just about to get to a good part."`,`Old rule was a ceiling: no one above damn/crap (remake C7: a ceiling can flatten a harder word).`,``],
+["DIA-10","Dialect and register","OWNER","O-08, 2026-09-25","kept",`AMERICAN English project-wide: elevator, apartment, first floor for 1階, trash, intercom, color, -ize. Crude words are American too.`,`その時、インターホン。`,`"Just then, the intercom."`,``,``],
+["DIA-11","Dialect and register","QUERY","Q2122","kept",`One kind of in-story written text uses one register everywhere: all lowercase, mirrored exactly.`,``,``,``,``],
+// ---------------- Jokes
+["JOK-01","Jokes","OWNER","O-03, 2026-09-24","kept",`The register SEQUENCE inside a phrase is the joke (小太り soft -> ブサメン crude net slang -> ナイスガイ ironic English loanword). The English keeps the sequence, not only the three meanings.`,``,``,``,``],
+["JOK-02","Jokes","OWNER","O-03, 2026-09-24","kept",`Density is a diagnostic, not a rule: 20 English words for 5 characters can be right. What must match is where the weight sits and where the punch lands.`,``,``,``,``],
+["JOK-03","Jokes","OWNER","O-02, 2026-09-24","kept",`Jokes by mechanism, not by meaning: rebuild the mechanism (stacking, inversion, register clash, anticlimax) from the JP's own material. Never add a "but", never wink.`,`春花は頭をかきながら、反省の弁を吐く。`,`"Haruka scratched her head as she delivered a statement of remorse." (the joke is a newsroom formula used on a teenager; "spat out words of self-reproach" adds anger)`,``,``],
+["JOK-04","Jokes","MODEL","M, CORE-RULES §8 (cites O-02)","kept",`Never invent a replacement pun. Keep the surface meaning, file a QUERY, and add a TN only if the TN test passes.`,``,``,`Check against O-02 "rebuild the mechanism".`,``],
+["JOK-05","Jokes","MODEL","M, CORE-RULES §8","kept",`Two spellings of one sound that the text makes a point of stay one sound in English (or get a TN).`,``,``,``,``],
+["JOK-06","Jokes","OWNER","O-59, 2026-09-26","added",`Name-order jokes: keep the JP name order in those lines, plus [TN: In Japanese the family name comes first.]`,``,``,`After the remake; not yet in the books.`,``],
+["JOK-07","Jokes","FABLE","F, CORE-RULES §5","kept",`A stretched sound repeated as a gag with different lengths stretches an English vowel with matching counts.`,``,``,``,``],
+// ---------------- Layout devices
+["LAY-01","Layout devices","OWNER","O-11, 2026-09-26","kept",`Never shorten a translation to fit a box; the engine pages long boxes. Do not wrap lines by hand.`,``,``,`First written into a book in the remake.`,``],
+["LAY-02","Layout devices","MODEL","M, METHOD §5 (old)","dropped",`Line length must stay within the box's character and pixel ceiling and line-break count.`,``,``,`Dropped (remake D1): contradicts O-11.`,``],
+["LAY-03","Layout devices","QUERY","Q179","kept",`Never split or merge a cell. A reveal split across cells keeps its split, and the English orders its clause so the withheld part still lands last.`,``,``,``,``],
+["LAY-04","Layout devices","QUERY","Q1084","kept",`A word spelled one sound per cell and completed in the same file: same number of cells, one or two letters each; the English word is chosen for the cell count and register; log a DECISION.`,`「お／と／う／さ／ん？」 (five cells)`,`five cells, one or two letters each`,``,``],
+["LAY-05","Layout devices","QUERY","Q1123","kept",`A word spelled one sound per cell and NOT completed in the file: romanize sound by sound, one TN on the first cell; the English must not resolve into a word.`,``,``,`O-70 keeps the note for unfinished single syllables.`,``],
+["LAY-06","Layout devices","QUERY","Q1083","kept",`A label read aloud one character per cell keeps the cells and the GLOSSARY spelling.`,`『ド／ロ／ー／ガ』？`,`'D / r / o / ga'?`,``,``],
+["LAY-07","Layout devices","QUERY","Q641","kept",`Translate in the order the script prints the lines.`,``,``,``,``],
+["LAY-08","Layout devices","QUERY","Q831, Q733","kept",`Two sentences in one cell stay in one cell; two voices in one cell stay in one cell.`,``,``,``,``],
+["LAY-09","Layout devices","FABLE","F, CORE-RULES §2","kept",`A line-opening 「―― becomes ― at the same position, one mark for every use; attribute nothing, add no "I imagined" or "it said". A cell that is only 「――」 = a lone ―.`,``,``,``,``],
+["LAY-10","Layout devices","FABLE","F, CORE-RULES §2","kept",`An empty 「」 = "" (never an ellipsis). Two quoted turns joined in one cell keep both sets of quotes in that cell.`,`「あ……」⏎「あ……」`,`"Ah..."⏎"Ah..."`,``,``],
+["LAY-11","Layout devices","MODEL","M, CORE-RULES §4 + STYLE","kept",`A layout full-width space (indent, gap, blank turn, column alignment) is copied byte for byte, never replaced by plain spaces (a plain space is about a third as wide, so the device vanishes). The device wins over the checker.`,``,``,``,``],
+["LAY-12","Layout devices","OWNER","O-35, 2026-09-25","kept",`Earlier rows that swapped full-width spaces for plain ones are re-check candidates (no silent flattening of layout spaces).`,``,``,``,``],
+["LAY-13","Layout devices","QUERY","Q1801","kept",`A leading full-width space that indents a continued cell inside one quoted turn is kept.`,`「よう！／　調子はどうだ？」`,`"Hey!" / "　How're you doing?"`,``,``],
+["LAY-14","Layout devices","MODEL","M, CORE-RULES §4","kept",`A cell that holds only spaces keeps them; nothing is added.`,``,``,``,``],
+["LAY-15","Layout devices","MODEL","M, CORE-RULES §4","kept",`Kaomoji (Japanese text faces) and text emotes stay exactly as printed; no Western emoticon.`,``,``,``,``],
+["LAY-16","Layout devices","MODEL","M, CORE-RULES §4","kept",`×, ○, △ masks and deliberate blanks keep their symbols, counts and cell splits; a masked person stays unnamed and ungendered.`,`「××」`,`"XX"`,``,``],
+["LAY-17","Layout devices","MODEL","M, CORE-RULES §4","kept",`Game-UI instructions written as narration keep the full-width parentheses and the UI register.`,`「（次のページは…）」`,`(kept in （）)`,``,``],
+["LAY-18","Layout devices","MODEL","M, CORE-RULES §4","kept",`Kanji numerals follow the numbers rule in running text; old-style numerals used as LABELS stay.`,``,``,``,``],
+["LAY-19","Layout devices","MODEL","M, CORE-RULES §4","kept",`Equation lines keep the equals sign and the cell split; they are not turned into sentences.`,``,``,``,``],
+["LAY-20","Layout devices","MODEL","M, CORE-RULES §4 (+ F, STYLE)","kept",`Bullet lists with ・ keep the bullets, the title cell and one item per cell.`,``,``,``,``],
+["LAY-21","Layout devices","QUERY","Q622, Q240","kept",`Walls of a repeated character keep the same syllable count; never reduce to one; different lengths stay different.`,``,``,``,``],
+["LAY-22","Layout devices","OWNER","O-32, 2026-09-25","kept",`Ruby (small reading text above kanji): reading-aid rubies are dropped. Meaning-carrying rubies (a double reading, a pun, emphasis dots 圏点, a gloss) are kept above the English words that carry them.`,``,``,``,``],
+["LAY-23","Layout devices","QUERY","Q1321","kept",`A meaning-carrying ruby too long to fit becomes a TN instead. Every ruby tag stays byte-identical.`,``,``,``,``],
+["LAY-24","Layout devices","FABLE","F, STYLE §Ruby","kept",`Stray spaces left around a word by ruby are stripped; translate the word normally.`,``,``,``,``],
+["LAY-25","Layout devices","QUERY","Q1562","kept",`English words may move across a colored-span boundary so that only the keyword sits in the colored span; the tag sequence stays the same.`,``,``,``,``],
+["LAY-26","Layout devices","OWNER","O-69, 2026-09-26","added",`Logo lettering is left as art; the small English reading line above the logo stays.`,``,``,`After the remake.`,``],
+// ---------------- Review coverage
+["REV-01","Review coverage","OWNER","O-20, 2026-09-26","kept",`Review EVERY line, always. No sampling, ever. Cost is not a reason to skip lines.`,``,``,``,``],
+["REV-02","Review coverage","OWNER","O-21, 2026-09-26","kept",`Reviewers read contiguous windows, never isolated lines; multi-line units (lists, split sentences) are read whole; every short or elliptical cell is checked for what it refers to.`,`どれか1つでも……。`,`"Even just one of those..." (not "Even any one of them")`,``,``],
+["REV-03","Review coverage","OWNER","O-22, 2026-09-26","kept",`A drafter reads the whole script and packet before the first block, and at each later block re-reads its last five English lines so a beat across the boundary is carried on purpose.`,``,``,``,``],
+["REV-04","Review coverage","OWNER","O-23, 2026-09-26","kept",`You proofread about 100 lines per chunk yourself; the review page shows only the path actually played (no looping variants).`,``,``,``,``],
+["REV-05","Review coverage","OWNER","O-66, 2026-09-26","added",`Lines that could be MISREAD get fixed; mere slight awkwardness is fine.`,``,``,`After the remake.`,``],
+["REV-06","Review coverage","MODEL","M, METHOD §9","kept",`A reviewer never re-translates a judgment call between two faithful renderings.`,``,``,``,``],
+["REV-07","Review coverage","OWNER","O-43, 2026-09-26","kept",`Retranslation is blind: drafters never open the earlier model's English, its logs or its review notes.`,``,``,``,``],
+["REV-08","Review coverage","MODEL","M, remake A2 (TRANSLATOR-BRIEF §0)","added",`Question rows in a packet that quote the earlier English are skipped by drafters and reviewers, and the skip is logged.`,``,``,`Added by the remake to enforce O-43.`,``],
+["REV-09","Review coverage","MODEL","M, remake A1 (METHOD §3)","added",`Every cast or relations note a read-through agent writes carries the file id it is true as of. A note without an id is treated as unfenced: not evidence; the JP decides.`,``,``,`Added by the remake after a fence leak was found.`,``],
+["REV-10","Review coverage","OWNER","O-68, 2026-09-26","added",`Notes from later files in a packet are tolerable for voice only, never for events, hints or callbacks.`,``,``,`After the remake.`,``],
+["REV-11","Review coverage","MODEL","M, METHOD §7","kept",`Read-through first: the notes are built before drafting starts.`,``,``,``,``],
+["REV-12","Review coverage","FABLE","F, CORE-RULES §1","kept",`A question marked owner-blocking stops that file until answered; a non-blocking one: translate around it and file the question.`,``,``,``,``],
+["REV-13","Review coverage","FABLE","F, CORE-RULES §1","kept",`A name whose reading is disputed between GLOSSARY and CAST blocks the file until Fable picks.`,``,``,``,``],
+["REV-14","Review coverage","MODEL","M, CORE-RULES §1","kept",`An answer that would change an earlier file's English is not written into that earlier file by its translator (the knowledge fence applies).`,``,``,``,``],
+["REV-15","Review coverage","OWNER","O-30, 2026-09-26 (CHIPS.md)","kept",`Soft polish rules ("chips") added later reach old parts only when you say so, and a sweep worker decides each line; never applied mechanically.`,``,``,``,``],
+["REV-16","Review coverage","OWNER","O-41, 2026-09-27","kept",`Nothing goes to friends until a full on-screen mouse run shows zero Japanese and zero layout defects.`,``,``,``,``],
+["REV-17","Review coverage","OWNER","O-25, 2026-09-21..26","kept",`Reports to you: file ids, line counts, tokens, minutes, done/next ONLY. No plot, structure, mechanics, screen descriptions, note counts, or words about where things sit.`,``,``,``,``],
+["REV-18","Review coverage","MODEL","M, METHOD §5 (old)","dropped",`Linguistic findings tagged by MQM severity (Major / Minor).`,``,``,`Dropped (remake D4): unused; reviewer categories replace it.`,``],
+["REV-19","Review coverage","MODEL","M, METHOD §1, §7 (old)","dropped",`Separate translation-check, edit and check passes, each by a different agent.`,``,``,`Dropped (remake D5): the pipeline is draft, one every-line review, your proofread, on-screen run.`,``],
+["REV-20","Review coverage","MODEL","M, REVIEWER-BRIEF (old)","dropped",`Reviewer reports an error rate per 100 lines and counts of lines read in full vs sampled.`,``,``,`Dropped (remake D6): sampling residue; contradicts O-20.`,``],
+];
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const hasJP=s=>/[　-ヿ一-鿿＀-￯]/.test(s);
+const OR=["OWNER","FABLE","MODEL","QUERY"];
+const LS="sy-rules-audit-flags";
+let flags=new Set(JSON.parse(localStorage.getItem(LS)||"[]"));
+// counts
+const ct={};OR.forEach(o=>ct[o]={all:0,kept:0,changed:0,added:0,dropped:0,ov:0});
+R.forEach(r=>{const c=ct[r[2]];c.all++;c[r[4]]++;if(r[9].startsWith("ov:"))c.ov++;});
+let h="<tr><th>origin</th><th>rules</th><th>kept</th><th>changed</th><th>added</th><th>dropped</th><th>overruled by you later</th></tr>";
+OR.forEach(o=>{const c=ct[o];h+=`<tr><td><span class="badge ${o}">${o}</span></td><td class="n"><b>${c.all}</b></td><td class="n">${c.kept}</td><td class="n">${c.changed}</td><td class="n">${c.added}</td><td class="n">${c.dropped}</td><td class="n">${c.ov}</td></tr>`;});
+h+=`<tr><td>total</td><td class="n"><b>${R.length}</b></td><td colspan="5"></td></tr>`;
+document.getElementById("counts").innerHTML=h;
+const liveModel=R.filter(r=>r[2]==="MODEL"&&r[4]!=="dropped").length;
+document.getElementById("modelnote").textContent=`${liveModel} MODEL rules are still live in the books (not dropped). Untick OWNER, FABLE and QUERY in the bar above to see only those.`;
+// render
+let toc="",out="";
+G.forEach((g,i)=>{
+ const rows=R.filter(r=>r[1]===g);
+ toc+=`<a href="#g${i}">${esc(g)} (${rows.length})</a>`;
+ out+=`<section id="g${i}" class="grp"><h2>${esc(g)}</h2><table class="rules"><tr><th></th><th>id</th><th>rule in plain words</th><th>example (JP / EN)</th><th>origin</th><th>status</th></tr>`;
+ rows.forEach(r=>{
+  const [id,,o,oc,st,rule,jp,en,sn,mk]=r;
+  let ex=jp||en?`${jp?`<span class="jp">${esc(jp)}</span>`:""}${en?`<span class="e${hasJP(en)?" jp":""}">${esc(en)}</span>`:""}`:`<span class="none">none</span>`;
+  let tag="";if(mk.startsWith("ov:"))tag=`<br><span class="ov">overruled by ${mk.slice(3)}</span>`;else if(mk.startsWith("cf:"))tag=`<br><span class="cf">confirmed ${mk.slice(3)}</span>`;
+  const cls=[st==="dropped"?"isdropped":"",mk.startsWith("ov:")?"isover":"",flags.has(id)?"flagged":""].join(" ");
+  out+=`<tr class="${cls}" data-o="${o}" data-s="${st}" data-ov="${mk.startsWith("ov:")?1:0}" data-id="${id}"><td class="f"><input type="checkbox" class="fl" title="flag this rule" ${flags.has(id)?"checked":""}></td><td class="id">${id}</td><td class="r">${esc(rule)}</td><td class="ex">${ex}</td><td class="o"><span class="badge ${o}">${o}</span><br>${esc(oc)}</td><td class="s"><span class="st ${st}">${st}</span>${tag}${sn?`<span class="sn">${esc(sn)}</span>`:""}</td></tr>`;
+ });
+ out+="</table></section>";
+});
+document.getElementById("toc").innerHTML=toc;
+document.getElementById("groups").innerHTML=out;
+// filters
+const q=document.getElementById("q"),stf=document.getElementById("stf");
+function apply(){
+ const on=new Set([...document.querySelectorAll(".of:checked")].map(x=>x.value));
+ const t=q.value.trim().toLowerCase(),sv=stf.value;let n=0;
+ document.querySelectorAll("tr[data-id]").forEach(tr=>{
+  let ok=on.has(tr.dataset.o);
+  if(ok&&sv){ok=sv==="ov"?tr.dataset.ov==="1":sv==="fl"?flags.has(tr.dataset.id):tr.dataset.s===sv;}
+  if(ok&&t)ok=tr.textContent.toLowerCase().includes(t);
+  tr.style.display=ok?"":"none";if(ok)n++;
+ });
+ document.querySelectorAll("section.grp").forEach(s=>{s.style.display=s.querySelector("tr[data-id]:not([style*='none'])")?"":"none";});
+ document.getElementById("shown").textContent=`${n} of ${R.length} shown, ${flags.size} flagged`;
+}
+document.querySelectorAll(".of").forEach(x=>x.addEventListener("change",apply));
+q.addEventListener("input",apply);stf.addEventListener("change",apply);
+document.getElementById("groups").addEventListener("change",e=>{
+ if(!e.target.classList.contains("fl"))return;
+ const tr=e.target.closest("tr"),id=tr.dataset.id;
+ if(e.target.checked)flags.add(id);else flags.delete(id);
+ tr.classList.toggle("flagged",e.target.checked);
+ localStorage.setItem(LS,JSON.stringify([...flags]));apply();
+});
+function say(m){const el=document.getElementById("msg");el.textContent=m;setTimeout(()=>el.textContent="",4000);}
+document.getElementById("copy").addEventListener("click",()=>{
+ const lines=R.filter(r=>flags.has(r[0])).map(r=>`${r[0]}: ${r[5]}`);
+ if(!lines.length){say("nothing flagged");return;}
+ const txt=lines.join("\n");
+ const fallback=()=>{const ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();say(`copied ${lines.length}`);};
+ if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(()=>say(`copied ${lines.length}`),fallback);else fallback();
+});
+document.getElementById("clear").addEventListener("click",()=>{
+ if(!flags.size||!confirm("Clear all flags?"))return;
+ flags.clear();localStorage.setItem(LS,"[]");
+ document.querySelectorAll(".fl").forEach(x=>{x.checked=false;x.closest("tr").classList.remove("flagged");});apply();
+});
+apply();
+</script>
+</body></html>

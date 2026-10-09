@@ -1,0 +1,831 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3939, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2062, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1016, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さんはんきかん, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=18, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほお, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=すみだがわ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=7, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=28, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=10, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=うやうや, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=15, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=29, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=15, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7731, target=)
+; Links:
+;    0: TWdLink(count=7150, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯バイブ.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\茅萱の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "500" "5000" "PASS"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―My head hurt...
+{PAUSE ""}
+<BR>
+The buzzing of the alarm was so loud.
+{PAUSE ""}
+<BR>
+Why is my phone alarm even going off...?
+{PAUSE ""}
+<BR>
+College is still on spring break, isn't it?<PG>
+{STOPSND "SE" "0" "PASS"}
+Then the alarm on my phone stopped by itself.
+{PAUSE ""}
+<BR>
+Haah, a little more sleep...
+{PAUSE ""}
+<BR>
+I was a little hung over...<PG>
+Just as I tried to go back to sleep, I realized the buzzing hadn't been the alarm but an incoming call.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+I sluggishly reached for my phone.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "#1" "650" "C" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+From <STYLE ID="1">Aunt Mifuyu</STYLE>?
+{PAUSE ""}
+<BR>
+What could she possibly want?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "4000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Why, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Morning, morning!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "日曜日の朝.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">Auntie's</STYLE> shrill voice, far more cheerful than it needed to be, hit my <STYLE ID="3" RUBY="さんはんきかん">inner ear</STYLE> head-on.
+{PAUSE ""}
+<BR>
+That was pretty rough on a hangover... I held the phone a little away from my ear.<PG>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="2">, what is it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm in Tokyo on business today! I thought we might have lunch together!"</STYLE>
+{PAUSE ""}
+<BR>
+I looked at the clock: 11 a.m.
+{PAUSE ""}
+<BR>
+My memory was hazy, but I'd probably gotten five hours of sleep.
+{PAUSE ""}
+<BR>
+I wanted to sleep a little longer, but I didn't feel right turning down an invitation from <STYLE ID="1">Auntie</STYLE> when she'd come all the way to Tokyo.<PG>
+<STYLE ID="2">"Mm... Where should we meet?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, there's a cafe called 'Primavera' near your place. Do you know it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... I think there is one. That place, maybe...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then I'll be there a little after 12!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... All right..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie's</STYLE> voice the moment I woke up, and a meal with <STYLE ID="1">Auntie</STYLE> on top of that: my stomach already felt heavy.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1,000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\蛇口.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\シャワー.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\シャワー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I let a shower pour over my head, as hot as I could just barely stand.
+{PAUSE ""}
+<BR>
+I'd have liked a long soak in the tub, but there was no time to fill it.
+{PAUSE ""}
+<BR>
+And I looked back on last night.<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+Last night... 
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\宴会.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+we'd gathered at 7 p.m. at a party bar for students.
+{PAUSE ""}
+<BR>
+Through a friend's introduction, I'd been let in on a drinking party with a tennis club of 30 or so.
+{PAUSE ""}
+<BR>
+The ratio of men to women was a perfect one to one, and every guy there was quite the clean-cut type.<PG>
+My losing streak has hit triple digits.
+{PAUSE ""}
+<BR>
+All right, all right... today I'm going to catch at least one gentleman I can stay in touch with!
+{PAUSE ""}
+<BR>
+Putting on my good-girl act, I made my approach, making full use of the looks I'd inherited from <STYLE ID="4">Mom</STYLE>.<PG>
+But gradually the guys got into the college mood and grew rowdy with chugging and drinking chants.
+{PAUSE ""}
+<BR>
+When I see that kind of thing, my Arata settlement blood stirs.
+{PAUSE ""}
+<BR>
+As if I'd lose to these city-bred beansprouts!
+{PAUSE ""}
+<BR>
+I'm a 100% natural mountain girl!<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Even the guys who'd been fawning over me gradually began to stiffen their <STYLE ID="5" RUBY="ほお">cheek</STYLE> muscles at my wild streak.
+{PAUSE ""}
+<BR>
+That is irresistibly irresistible.
+{PAUSE ""}
+<BR>
+I don't know how to put it, but it's irresistibly irresistible.
+{PAUSE ""}
+<BR>
+After that I leave the rest to the alcohol, drag the men around until morning, and drink the night away.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\東京の夜明け.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And when I come to, sometimes I'm asleep in my own bed like today, and sometimes I'm asleep in a roadside gutter.
+{PAUSE ""}
+<BR>
+Last summer I even found myself floating in the middle of the <STYLE ID="6" RUBY="すみだがわ">Sumida River</STYLE>.
+{PAUSE ""}
+<BR>
+Anyone other than me would definitely have died.<PG>
+The one thing I never get used to is the moment this morning arrives.
+{PAUSE ""}
+<BR>
+When morning comes, I'm hit by fierce self-loathing and regret.
+{PAUSE ""}
+<BR>
+If I kept up my good-girl act the way I started, one or two of the men would probably see me as a woman.<PG>
+But partway through I start having fun, and fooling around with everyone suits me better than sneaking out of the party with a guy.
+{PAUSE ""}
+<BR>
+That's what I think at the time, but come morning it's always like this.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\シャワー.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\シャワー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Because of all this, not one man so far has even asked me out a second time, let alone pushed me down.
+{PAUSE ""}
+<BR>
+Truly, not a single one.
+{PAUSE ""}
+<BR>
+The most physical contact I've had with the opposite sex was probably putting a certain man in a figure-four leglock during the King Game.<PG>
+Just to be clear, my face shouldn't be all that bad.
+{PAUSE ""}
+<BR>
+I take care of my figure, too.
+{PAUSE ""}
+<BR>
+At this point, I'm almost tempted to suspect the men just have no eye for women.<PG>
+Well, I'm getting to see <STYLE ID="1">Auntie</STYLE>, after all.
+{PAUSE ""}
+<BR>
+She can at least listen to me grumble.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "256" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\蛇口.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I threw on whatever clothes, dried my hair any old way, and ran a comb through it any old way.
+{PAUSE ""}
+<BR>
+Then, after brushing my teeth and nothing else, I left home.
+{PAUSE ""}
+<BR>
+As for makeup, I probably haven't put any on since Coming-of-Age Day.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\喫茶店外観.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The place <STYLE ID="1">Auntie</STYLE> had picked was a cafe I walked past almost every day but had never once gone into.
+{PAUSE ""}
+<BR>
+It looked very expensive.
+{PAUSE ""}
+<BR>
+I go to red-lantern bars a lot more than places like this.
+{PAUSE ""}
+<BR>
+If I'm going to polish myself as a woman, maybe I ought to know places like this too...<PG>
+Just in case, I checked what was in my wallet once more.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie</STYLE> would probably treat me, but I didn't want to be the kind of woman who always expected that.
+{PAUSE ""}
+<BR>
+Yes, this was where polishing myself as a woman began.
+{PAUSE ""}
+<BR>
+Just then, I felt a hand land on my shoulder with a pat.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-660\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-660\r\n0\r\nDEC\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Long time no see, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="2">, you seem as full of energy as ever today."</STYLE>
+{PAUSE ""}
+<BR>
+It had been about three and a half months since I'd last seen <STYLE ID="1">Auntie</STYLE>.
+{PAUSE ""}
+<BR>
+Not since we met in Arata this past New Year's.<PG>
+<STYLE ID="1">"Oh my!? </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, did you stay up late, by any chance? You look sleepy, and you've got dark circles under your eyes!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? Um..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Being young is no excuse to be so mean to your skin and your insides!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　They say aging starts in your teens!"</STYLE>
+{PAUSE ""}
+<BR>
+Hearing <STYLE ID="1">Auntie's</STYLE> shrill voice in person was rough on a hangover, as I'd thought...<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\喫茶店中2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Inside, fine ladies with an unmistakably wealthy air were enjoying their lunch.
+{PAUSE ""}
+<BR>
+This place must be expensive after all...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Come on, come on, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">! Order whatever you like! Everything at this place is delicious!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="2">, have you been here before?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Their main shop is in Motoki-cho! Back in the day, I used to go there with </STYLE><STYLE ID="7">Akane</STYLE><STYLE ID="1"> all the time!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="7">Akane</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, you wouldn't know her! She's been my best friend since the day I was born!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　She still lives in the apartment next door!"</STYLE><PG>
+Come to think of it, I'd heard from <STYLE ID="8">Haruka</STYLE> that her <STYLE ID="9">best friend since birth</STYLE> lived next door.
+{PAUSE ""}
+<BR>
+Could it be that two generations, parent and child, have built that kind of friendship?
+{PAUSE ""}
+<BR>
+There's nobody around my age in the Arata settlement, so I'm a little jealous...<PG>
+"Welcome, <STYLE ID="1">Niimura-sama</STYLE>. 
+{PAUSE ""}
+We hear you are a valued patron of our Motoki-cho main branch. 
+{PAUSE ""}
+Please, take your time and relax."
+{PAUSE ""}
+<BR>
+A young, pretty waitress greeted us <STYLE ID="10" RUBY="うやうや">respectfully</STYLE>.
+{PAUSE ""}
+<BR>
+I looked over the menu the waitress handed me.<PG>
+<STYLE ID="2">"Ugh..."</STYLE>
+{PAUSE ""}
+<BR>
+Even with <STYLE ID="1">Auntie</STYLE> saying she'll treat me, there's one more zero than I imagined.
+{PAUSE ""}
+<BR>
+Canned coffee sells for 100 yen or so, and even the cheapest thing here is more than 10 times that.
+{PAUSE ""}
+<BR>
+The lunch menu costs about as much as the first round of a drinking party.<PG>
+Whoa... this one with the cakes and sandwiches stacked into a tower costs 5,000 yen.
+{PAUSE ""}
+<BR>
+Whoa, whoa...!! This even more amazing tower one is 9,000 yen...!
+{PAUSE ""}
+<BR>
+Something cheaper is fine!
+{PAUSE ""}
+<BR>
+This... the 3,000-yen beef curry set will do.
+{PAUSE ""}
+<BR>
+Though 3,000 yen for curry is pretty steep, too...<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, you don't have to hold back!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Relatives only treat you while you're a student!?"</STYLE>
+{PAUSE ""}
+<BR>
+I know there isn't the slightest ulterior motive in <STYLE ID="1">Auntie's</STYLE> urging.
+{PAUSE ""}
+<BR>
+But I was thrown by a world where that much money changed hands for bread and curry, not even a kaiseki course.
+{PAUSE ""}
+<BR>
+A cold sweat trickled down me on its own.<PG>
+<STYLE ID="1">"Then, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, let's get this! One of these is enough for two!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie</STYLE> pointed without hesitation at the giant tower one.<PG>
+<STYLE ID="2">"O-okay..."</STYLE>
+{PAUSE ""}
+<BR>
+Even if it was for two, that was 4,500 yen a head.
+{PAUSE ""}
+<BR>
+Apparently you could order any drink you liked, with refills.
+{PAUSE ""}
+<BR>
+But for 4,500 yen, I could get all-you-can-drink at the ryotei-style izakaya I went to last month.
+{PAUSE ""}
+<BR>
+As long as I'm thinking things like that, my girliness is at middle-aged-man level.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, don't you go to places like this?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... I've hardly ever been to one..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, really? I'd think a beauty like </STYLE><STYLE ID="2">you, Chigaya-chan,</STYLE><STYLE ID="1"> would look right at home in a place like this!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Would I suit it...?"</STYLE><PG>
+<STYLE ID="1">"But maybe you still prefer the Arata way of having fun?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Red-lantern bars, places with all-you-can-drink."</STYLE>
+{PAUSE ""}
+<BR>
+It seemed <STYLE ID="1">Auntie</STYLE> had seen right through me.
+{PAUSE ""}
+<BR>
+Right, I'd meant to ask her advice about that today too.<PG>
+<STYLE ID="2">"U-uh, </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="2">! Can I ask you for advice about something that's bothering me!?"</STYLE>
+{PAUSE ""}
+<BR>
+I took a sip of water and lightly clenched my fists.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie</STYLE> met my serious eyes without losing her smile.<PG>
+<STYLE ID="1">"Hmm? What is it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Uh... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Well... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Um..."</STYLE>
+{PAUSE ""}
+<BR>
+My serious gaze was shot down by <STYLE ID="1">Auntie's</STYLE> and sank lower and lower.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong? If something's troubling you, you can tell me anything."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">Auntie</STYLE> had switched to a voice as warm and accepting as a mother's.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie</STYLE> and <STYLE ID="4">my mom</STYLE> are completely different types, but even so, I felt a warmth that put me at ease.<PG>
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Mm... Am I... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">a failure as a woman...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie's</STYLE> reply was serious, but mixed into it, just barely, was a snort like she was holding back a laugh.
+{PAUSE ""}
+<BR>
+I'm being fairly serious here...<PG>
+<STYLE ID="1">"I see. Everyone worries about that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">When I was about </STYLE><STYLE ID="2">your age, Chigaya-chan</STYLE><STYLE ID="1">, I often went to </STYLE><STYLE ID="7">Akane</STYLE><STYLE ID="1"> with the same kind of worries too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh!? </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="2">, you had drinking disasters too!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Drinking...??"</STYLE>
+{PAUSE ""}
+<BR>
+This time she seemed to genuinely have no idea what I was talking about.
+{PAUSE ""}
+<BR>
+But she quickly seemed to catch on to something and gave me a composed smile.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, do you want to be popular with guys?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Or do you want a boyfriend?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Which is it, I wonder..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">Pfft!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Is that so weird...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hee hee... sorry, sorry. It's like looking at myself back then."</STYLE><PG>
+<STYLE ID="2">"Mm... You used to talk to this </STYLE><STYLE ID="7">Akane-san</STYLE><STYLE ID="2"> about things like that?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's right. If anything, I was much worse than </STYLE><STYLE ID="2">you, Chigaya-chan</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Far from deciding what to do myself, I'd even ask </STYLE><STYLE ID="7">Akane</STYLE><STYLE ID="1"> what I was thinking."</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="1">Auntie</STYLE> clasped her hands in front of her face and lowered her voice a little.<PG>
+<STYLE ID="1">"If you want to be popular, take a good look at yourself as you are now and start doing things men like. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But if you want a boyfriend, you're fine just as you are. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Whether or not someone shows up who accepts </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> just as you are, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">and whether that happens sooner or later: that's all it comes down to."</STYLE><PG>
+I couldn't tell whether that was agreeing with me or disagreeing, or even whether it was advice at all.
+{PAUSE ""}
+<BR>
+For that matter, I don't even really know what I'm after: being popular, or a boyfriend.<PG>
+<STYLE ID="1">"Actually, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, why are you so worried about </STYLE><STYLE ID="8">your own</STYLE><STYLE ID="1"> flaws?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... I can't really put it into words, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I want to fall in love... maybe..."</STYLE>
+{PAUSE ""}
+<BR>
+I didn't know if that was the right answer, but it felt the most fitting.
+{PAUSE ""}
+<BR>
+Rather than being popular or getting a boyfriend, it's feeling my heart flutter and race through romance.
+{PAUSE ""}
+<BR>
+I've never had that kind of experience, so maybe I just long for it.<PG>
+Ahh, somehow, having come this far, I was starting to feel embarrassed.
+{PAUSE ""}
+<BR>
+To think I'd lay bare worries like a grade-schooler's to a relative.
+{PAUSE ""}
+<BR>
+I'll be 21 soon. Am I a little too starry-eyed about romance?<PG>
+<STYLE ID="2">"Mm... Ah... it's no good after all, is it... Asking for such childish advice..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Age has nothing to do with things like that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">No, it's a very good thing to have worries like that."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... It's a good thing?"</STYLE><PG>
+<STYLE ID="1">"People grow by piling up worries and failures. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A life with no worries or failures would be surprisingly boring, I think."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Failures... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I seem to be the type whose flaws stand out... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So if I want to fall in love, I have to fix those things..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"My, my, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, you really are a maiden at heart. Is it that you're in love with love?"</STYLE><PG>
+<STYLE ID="2">"Mm... I don't really know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right. With things like that, sometimes you only understand them when you look back later."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\カップ置く音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+Just then, the tower in question was brought to us.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\アフタヌーンティー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Beside the fragrant coffee, a tower as lively as an amusement park.
+{PAUSE ""}
+<BR>
+So this kind of thing is called an afternoon tea set.<PG>
+<STYLE ID="1">"Oh, come to think of it, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, you eat quite a lot, don't you? Maybe this won't be enough?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... It's fine, it's fine. I don't usually eat much..."</STYLE>
+{PAUSE ""}
+<BR>
+I couldn't bring myself to really eat in a place like this.
+{PAUSE ""}
+<BR>
+But it's true that I normally eat little.
+{PAUSE ""}
+<BR>
+It's just that I can eat as much as I want if I set my mind to it. A normal amount is enough to satisfy me.<PG>
+Once, when a friend talked me into trying the eating-challenge menu at a ramen shop, I polished the whole thing off with more than half the time limit to spare.
+{PAUSE ""}
+<BR>
+That was the moment I realized my stomach was beyond the range of ordinary people.
+{PAUSE ""}
+<BR>
+I couldn't forget that sense of accomplishment, and ever since, I've ended up taking on the challenge at every place that has an eating-challenge menu.<PG>
+Ugh... a mean drunk and a big eater...
+{PAUSE ""}
+<BR>
+On top of that, arm strength to put a man to shame, built from growing up in the mountains.
+{PAUSE ""}
+<BR>
+I'm a far cry from the woman I'm aiming to be...
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Mom</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+You left me such good looks, and I end up being a contrast of the bad kind.<PG>
+<STYLE ID="1">"Now, eat up first. Trying things you're not used to is good experience too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Well then, itadakimasu."</STYLE>
+{PAUSE ""}
+<BR>
+I reached for a cake on the top plate, which looked easy to grab.<PG>
+<STYLE ID="1">"Oh my, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">! With these, you start from the sandwiches on the bottom!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　The top is the dessert plate, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... I see..."</STYLE>
+{PAUSE ""}
+<BR>
+Thrown by the mystery rule, I nonetheless picked up a sandwich from the bottom and put it in my mouth.<PG>
+............
+{PAUSE ""}
+............?
+{PAUSE ""}
+<BR>
+It didn't strike me as especially good.
+{PAUSE ""}
+<BR>
+I think the food in Arata is much better, though.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hee hee hee. Maybe you can't really taste it until you're used to it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... No, it's really good."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But it's no match for the food in Arata, is it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Auntie</STYLE> saw right through what I was thinking.
+{PAUSE ""}
+<BR>
+I put the sandwich down on my plate and sighed.<PG>
+<STYLE ID="2">"Mm... I really do need to start polishing myself with things like this. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Popular or not, if I don't know at least basic table manners like this, I'll embarrass the man I'm with..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I don't know about that!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　If you're interested and want to learn, that's fine, but if not, it'll just tire you out, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Finding someone who shares the values </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> have now is much faster, and easier from here on, too."</STYLE><PG>
+<STYLE ID="2">"Haah... is there even a man out there who'd suit a woman like me...?"</STYLE>
+{PAUSE ""}
+<BR>
+After all, my losing streak is in triple digits, with a 0% win rate.
+{PAUSE ""}
+<BR>
+I'm not mentally tough enough to stay upbeat after that, and I'm even tempted to suspect I'm actually ugly.
+{PAUSE ""}
+<BR>
+Then <STYLE ID="1">Auntie</STYLE> gazed at me with a sly little grin.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, looking at you reminds me of when I met </STYLE><STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Me and </STYLE><STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="1">, we were both like </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">no, even more pessimistic, or rather, we had no confidence in ourselves."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... You said that earlier too. I can't picture you like that at all, </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="2">..."</STYLE><PG>
+<STYLE ID="1">"When you meet the person you're meant to meet, you'll change naturally. There's no need to force yourself to change.</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, what is it about yourself that you're so unhappy with?"</STYLE><PG>
+<STYLE ID="2">"............</STYLE>
+{PAUSE ""}
+<STYLE ID="2">How I get when I drink..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">W-well... that part may need a little work... Hohoho..."</STYLE>
+{PAUSE ""}
+<BR>
+For a moment, <STYLE ID="1">Auntie's</STYLE> face seemed to freeze.
+{PAUSE ""}
+<BR>
+Then, as if to cover it up, <STYLE ID="1">Auntie</STYLE> sipped something called a Beginner Coffee and hid her face behind the cup.<PG>
+<STYLE ID="2">"Mm... Maybe I should quit drinking... It's not like I can't get by without it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Now, now, don't be so tense about it. You're still young, so take your time thinking it over."</STYLE><PG>
+<STYLE ID="2">"Mm... You think so...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Sure, if you're attractive, you'll have more chances to get to know men, and your odds of meeting someone you click with will go up. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, aren't you forgetting the most important thing?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... What would that be...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, results aside, are you enjoying meeting people?"</STYLE><PG>
+<STYLE ID="2">"Mm... Meeting people?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I don't know... Once the drinks get me going it's fun, but when morning comes, it's more like self-loathing..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Self-loathing isn't fun, is it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Well, no..."</STYLE><PG>
+<STYLE ID="1">"It's fine to go looking for someone with everything you've got, but while you're young, above all, don't forget to enjoy yourself. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Good memories and bad memories are both life experience. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If you can't enjoy it, it all turns into bad experience, and there's no way you can stay positive, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... If I can't enjoy it, I can't be positive..."</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, you're probably just trying too hard. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">People naturally gather around someone who can enjoy anything, even with a few flaws."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... You're right, I try way too hard every time. Okay, I'll try to take it a little easier."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Good! Come on, come on, eat up!"</STYLE><PG>
+Nothing in particular had come of the talk, but getting it off my chest made me feel a little lighter.
+{PAUSE ""}
+<BR>
+And with that, my appetite welled up on its own.
+{PAUSE ""}
+<BR>
+When I tasted the sandwich again, the bread was fluffy, the vegetables crisp, and the meat juicy. It was delicious.
+{PAUSE ""}
+<BR>
+My complaint about the taste must have been down to my state of mind.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, the curry and the omelette rice here are really good too!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Eat as much as you like!"</STYLE>
+{PAUSE ""}
+<BR>
+Curry and omelette rice.
+{PAUSE ""}
+<BR>
+Hm, just hearing the lineup made me want to eat.
+{PAUSE ""}
+<BR>
+At a place that serves sandwiches this good, I can expect a lot.<PG>
+<STYLE ID="2">"Mm... Then, both!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hee hee hee hee! That's it, that's it! You're young, so you have to eat lots!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　There are more men than you'd think who like girls who eat a lot!"</STYLE><PG>
+Yeah, I'll get the bad stuff off my chest to someone who'll listen, eat lots of good food, and forget it all in one go!
+{PAUSE ""}
+<BR>
+A little reflection and a lot of positive thinking.
+{PAUSE ""}
+<BR>
+This must be how people grow.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, watching you eat reminds me of </STYLE><STYLE ID="8">Haruka's</STYLE><STYLE ID="1"> junior, </STYLE><STYLE ID="12">Goto-chan</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="12">Goto-chan</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Here, this is </STYLE><STYLE ID="12">Goto-chan</STYLE><STYLE ID="1">. </STYLE><STYLE ID="12">She</STYLE><STYLE ID="1"> eats a ton too!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Auntie</STYLE> showed me a photo on her phone.
+{PAUSE ""}
+<BR>
+She was very petite, with big round eyes, like a doll.
+{PAUSE ""}
+<BR>
+Cute... so cute...
+{PAUSE ""}
+<BR>
+She was a girl so delicious-look... no, so cute that I was jealous of <STYLE ID="8">Haruka</STYLE>.<PG>
+<STYLE ID="1">"This </STYLE><STYLE ID="12">Goto-chan</STYLE><STYLE ID="1"> is really smart. People call her a genius girl.</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="12">She's</STYLE><STYLE ID="1"> going to come to </STYLE><STYLE ID="11">Eiichiro-san's</STYLE><STYLE ID="1"> upcoming thirteenth-year memorial service."</STYLE>
+{PAUSE ""}
+<BR>
+In that instant, the air around me and <STYLE ID="1">Auntie</STYLE> froze.
+{PAUSE ""}
+<BR>
+The way <STYLE ID="1">Auntie</STYLE> had just put it―
+{PAUSE ""}
+was the same as saying <STYLE ID="13">'a smart kid is coming to the Arata settlement.'</STYLE>
+{PAUSE ""}
+<BR>
+In other words―<PG>
+<STYLE ID="2">"Mm... So it means the curse-killings might be solved..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="1">, the reason I asked you here today is that I wanted to talk about that."</STYLE>
+{PAUSE ""}
+<BR>
+It seemed this was where the real subject began.
+{PAUSE ""}
+<BR>
+This year makes 10 years since <STYLE ID="4">Mom</STYLE> died.
+{PAUSE ""}
+<BR>
+A curse-killing is expected this year, too.
+{PAUSE ""}
+<BR>
+Which means <STYLE ID="12">this girl</STYLE> is going to help solve it.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

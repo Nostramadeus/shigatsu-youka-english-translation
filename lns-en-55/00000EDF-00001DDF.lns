@@ -1,0 +1,856 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1053, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=913, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=960, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1285, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たいじ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=19, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=4, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かいがい, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=77, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=429, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんか, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちゅうちょ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆが, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=た, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=3, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きずな, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=9, unk2=65535, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5372, target=)
+; Links:
+;    0: TWdLink(count=4767, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hey, <STYLE ID="1">Goto</STYLE>! Wake up!"<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, hang in there...!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">From outside, the light of the midday sun.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A dream...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Was it a dream...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kana-chan</STYLE><STYLE ID="3"> is alive, so... a dream...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">No, it's not...!</STYLE><PG>
+"You're soaked in sweat... 
+{PAUSE ""}
+<STYLE ID="2">Kana</STYLE>, go heat up the bath!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Got it!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+"<STYLE ID="1">Goto</STYLE>, you okay? You were moaning in your sleep like crazy."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uuu... </STYLE>Senpai<STYLE ID="1">... please don't hate me..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Senpai<STYLE ID="3">―I clung to her tight.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And </STYLE>Senpai<STYLE ID="3"> gently hugged me back.</STYLE><PG>
+"There, there. You had a scary dream. It's okay, it was all a dream."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It wasn't a dream... It wasn't a dream..."</STYLE>
+{PAUSE ""}
+<BR>
+"It was all just a dream...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But look, this!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What was clutched in my hand―</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\サード\花びら血.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">it was a cherry petal with blood on it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The one I'd picked up in the dark hallway a little while ago.</STYLE><PG>
+"This is... 
+{PAUSE ""}
+Yesterday, <STYLE ID="1">Goto</STYLE>, with <STYLE ID="2">Kana</STYLE> riding on you, you went <STYLE ID="4" RUBY="は">crawling</STYLE> all over the basement room, right? 
+{PAUSE ""}
+　You got scraped up then, and while we were carrying <STYLE ID="1">you</STYLE> here, a cherry petal―"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Senpai<STYLE ID="3"> hadn't finished talking when I </STYLE><STYLE ID="5" RUBY="のぞ">peered</STYLE><STYLE ID="3"> into the mirror.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Unblinking, I </STYLE><STYLE ID="6" RUBY="たいじ">faced off</STYLE><STYLE ID="3"> with my own face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Gazing... hard into my eyes―</STYLE>
+{PAUSE ""}
+{PLAYSND "SE\tumbling1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">I sank to the floor where I stood.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"See? They're all better."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The eyes reflected in the mirror were both black.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">They really... had healed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">All the strength went out of me.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Honestly, what am I gonna do with you..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家布団.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Senpai<STYLE ID="3"> changed the sheets that were </STYLE><STYLE ID="7" RUBY="ぬ">soaked</STYLE><STYLE ID="3"> with my night sweat, and laid me down on them.</STYLE>
+{PAUSE ""}
+<BR>
+"The bath's gonna take a while to heat up, so let's wipe off your sweat. You'll catch a cold, sweating like this."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Drained of strength, I couldn't move, and I was at </STYLE>Senpai's<STYLE ID="3"> mercy as she undressed me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As if I were being nursed, I simply left myself in </STYLE>Senpai's<STYLE ID="3"> hands.</STYLE><PG>
+<STYLE ID="1">"...</STYLE>Senpai<STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I killed </STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="1"> and the others, what would you do?"</STYLE>
+{PAUSE ""}
+<BR>
+"It'd mean you were hurting so bad you had to kill, <STYLE ID="1">Goto</STYLE>, right?"
+{PAUSE ""}
+<BR>
+Senpai<STYLE ID="3"> answered without missing a beat, still wiping my body.</STYLE><PG>
+<STYLE ID="1">"What if it was me who killed </STYLE><STYLE ID="8">Kogori-senpai</STYLE><STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">You</STYLE>... 
+{PAUSE ""}
+Then you'd have had a good enough reason, right? 
+{PAUSE ""}
+　I'm not gonna abandon <STYLE ID="1">you</STYLE> without hearing the reason."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"...Ehe..."</STYLE><PG>
+"What is it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, because you're so kind..."</STYLE>
+{PAUSE ""}
+<BR>
+"You idiot. Turn around."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Turning me facedown, </STYLE>Senpai<STYLE ID="3"> wiped the sweat from my back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">So it really... was all a dream.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The bath's 30 more minutes... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Oh-ho!? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Well, well... </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> in her birthday suit, and her </STYLE><STYLE ID="9" RUBY="かいがい">devoted</STYLE><STYLE ID="2"> caretaker, </STYLE>Haruka-chan<STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So this is... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">a-</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">dult-</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">hood."</STYLE>
+{PAUSE ""}
+<BR>
+"...Hey, you idiot over there, grab me another towel."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Yes, ma'aaam!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Kana-chan</STYLE><STYLE ID="3"> was really alive, too.</STYLE><PG>
+<STYLE ID="1">"...Ehehe..."</STYLE>
+{PAUSE ""}
+<BR>
+"Why're you laughing again...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Because </STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="1"> is kind too..."</STYLE>
+{PAUSE ""}
+<BR>
+"Good for you. Everyone's kind."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家布団.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hey, <STYLE ID="1">Goto</STYLE>... what kind of dream did you have?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I killed everyone... </STYLE>
+{PAUSE ""}
+Niimura-senpai<STYLE ID="1"> found me and blamed me... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">and a stranger gouged out my eyes. That was the dream."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... Yeah, that'd be scary..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes... very..."</STYLE>
+{PAUSE ""}
+<BR>
+"...Here, face up."<PG>
+<STYLE ID="1">"I wish </STYLE><STYLE ID="8">Kogori-senpai</STYLE><STYLE ID="1"> dying had been a dream too..."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... it would have."<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">―Once she'd wiped off my sweat, I wrapped myself up in the futon just as I was.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I pulled the futon tight around me and, as if seeking the feeling of my mother's womb, bound my body tightly in it.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="1">Goto</STYLE>, I'm here... So don't be scared anymore, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, you're going through a hard time right now too, with your </STYLE><STYLE ID="10">mother</STYLE><STYLE ID="1">, aren't you? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　And for someone like me..."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't worry about it. Doing this takes my mind off things too."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">My head was sticking out of the futon, and </STYLE>Senpai<STYLE ID="3"> gently stroked it.</STYLE><PG>
+<STYLE ID="1">"Come to think of it, </STYLE><STYLE ID="11">Kotaro-san</STYLE><STYLE ID="1"> said he'd tell us everything... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Should I hurry and go downstairs?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="11">Papa</STYLE><STYLE ID="2"> was snoring away in the living room just now. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Looks like he was up all night, so maybe later's better?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah. You should rest a little longer too, <STYLE ID="1">Goto</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Everyone, for my sake, staying up all night, staying by my side like this...</STYLE><PG>
+<STYLE ID="1">"Hey, </STYLE>Senpai<STYLE ID="1">... we only met because </STYLE><STYLE ID="8">Kogori-senpai</STYLE><STYLE ID="1"> was there, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Even with </STYLE><STYLE ID="8">Kogori-senpai</STYLE><STYLE ID="1"> gone, we won't drift apart, will we?"</STYLE>
+{PAUSE ""}
+<BR>
+"You idiot... obviously, right? 
+{PAUSE ""}
+　Are <STYLE ID="1">you</STYLE> gonna leave me just 'cause <STYLE ID="8">Natsumi</STYLE> isn't around?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That... I'd absolutely hate that..."</STYLE>
+{PAUSE ""}
+<BR>
+"Right?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Ehe, you two are such good buddies!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Got any idea how much allowance I've spent on <STYLE ID="1">Goto</STYLE> up to now? 
+{PAUSE ""}
+　Until she pays it back a million times over, I'm sticking to <STYLE ID="1">her</STYLE> forever!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ha! </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> sure is a big eater! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Yesterday she went back for five bowls of rice!"</STYLE>
+{PAUSE ""}
+<BR>
+"F-five bowls!? 
+{PAUSE ""}
+　<STYLE ID="1">Goto</STYLE>, five bowls!? 
+{PAUSE ""}
+　Is that all she ate!?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Huh!? </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> really does eat more than that!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"If <STYLE ID="1">this one</STYLE> gets serious, the animals'll vanish from the Arata mountains in no time..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, that's awesome... So it was true you ate up all of </STYLE>Haruka-chan's<STYLE ID="2"> allowance. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Come to think of it, yesterday </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> read hard old books like nothing, too."</STYLE><PG>
+"<STYLE ID="1">This one</STYLE>'s head isn't normal either..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Hey, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">! How come you're so smart!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Even if you ask me how come... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ever since I was little, </STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1"> would show me her school textbooks, and I think I learned from that."</STYLE><PG>
+<STYLE ID="2">"Gifted education, huh! I see, there's a reason geniuses become geniuses! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　She must be a good </STYLE><STYLE ID="12">big sister</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yeah... she was."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I answered that, the air in the room froze.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Probably because I'd put 'a good big sister' in the past tense.</STYLE><PG>
+<STYLE ID="2">"Okay! </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, let's make up with your </STYLE><STYLE ID="12">sister</STYLE><STYLE ID="2"> right now!"</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, <STYLE ID="2">Kana</STYLE>, you shouldn't stick your nose in that far!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Why not? If you </STYLE><STYLE ID="13" RUBY="けんか">fight</STYLE><STYLE ID="2">, you have to make up, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Even a 10-year-old knows that."</STYLE>
+{PAUSE ""}
+<BR>
+"When you're a grown-up, it gets way more complicated!"<PG>
+<STYLE ID="2">"But </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> and me are only 5 years apart. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Come on, come on! Call your </STYLE><STYLE ID="12">sister</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+"Knock it off... 
+{PAUSE ""}
+<STYLE ID="1">Goto's</STYLE> worn out right now, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hmph! Then I'll talk to your </STYLE><STYLE ID="12">sister</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+"What kind of meddling old bag are <STYLE ID="2">you</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But... if they could make up... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> might cheer up a little, I thought..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ugh, geez... if they can't, it'll just make things worse..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, it's okay. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'll try... calling her."</STYLE>
+{PAUSE ""}
+<BR>
+"Hey now... are you really okay with this?"<PG>
+<STYLE ID="3">If that dream had been real, there'd be no going back to my old life.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was far too real, and leaving the bad blood between us as it is scares me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If that dream had been real... </STYLE>
+{PAUSE ""}
+<STYLE ID="12">Sis</STYLE><STYLE ID="3"> and I would never get to make up, not as long as I lived.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "NORMAL" "#1" "C" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Here you go! This is </STYLE><STYLE ID="1">Goto-chan's</STYLE><STYLE ID="2"> phone!"</STYLE>
+{PAUSE ""}
+<BR>
+"Haah... so you really mean right now. Whatever happens, it's not on me..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">! Is this 'Big Sister' your </STYLE><STYLE ID="12">sister</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't go messing with her phone without asking..."<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+<STYLE ID="12">"...Yes?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh, hello? Is this </STYLE><STYLE ID="12">Goto-chan's sister</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Um... who is this?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">From the phone on speakerphone came </STYLE><STYLE ID="12">Sis's</STYLE><STYLE ID="3"> standoffish voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I really wanted to cover my ears, but I just squeezed the futon wrapped around me.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\雲わすれの夏.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Um... </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> is... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">really suffering right now. Could you please cheer her up?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Huh? Like I said, who are </STYLE><STYLE ID="2">you</STYLE><STYLE ID="12">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'm </STYLE><STYLE ID="1">Goto-chan's</STYLE><STYLE ID="2">... friend. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Last night she went through something really scary, and just now she was having nightmares too... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"...Put my </STYLE><STYLE ID="1">sister</STYLE><STYLE ID="12"> on."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kana-chan</STYLE><STYLE ID="3"> set the phone down beside me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I </STYLE><STYLE ID="14" RUBY="ちゅうちょ">hesitated</STYLE><STYLE ID="3"> to speak.</STYLE><PG>
+<STYLE ID="12">"...</STYLE><STYLE ID="1">You</STYLE><STYLE ID="12">... </STYLE>
+{PAUSE ""}
+<STYLE ID="12">what's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Hey? Can you hear me? What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"What..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I was scared..."</STYLE><PG>
+<STYLE ID="12">"What happened? </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　I'm on break at my part-time job right now, so I can't talk long."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I've... gone crazy... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I might be done for..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Huh!? Hey! Explain properly!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I...! I want to be close to you, </STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Geez, I don't know what happened, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="12">what's that head of yours for...?"</STYLE><PG>
+<STYLE ID="1">"But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you're the one who made my head like this, </STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"You're blaming me!? Are you stupid?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But it's because I was with you, </STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Geez, I don't get what you're saying."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Please... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">just for now... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">be close to me like we used to..."</STYLE><PG>
+<STYLE ID="12">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="12">My break's almost over."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Why are </STYLE><STYLE ID="1">you</STYLE><STYLE ID="12"> the one begging! </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Why are </STYLE><STYLE ID="1">you</STYLE><STYLE ID="12"> the one groveling! </STYLE>
+{PAUSE ""}
+<STYLE ID="12">　Why... are </STYLE><STYLE ID="1">you</STYLE><STYLE ID="12">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">For a few seconds after that, silence hung between us.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死ぬ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Then </STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="3"> leaned toward the phone.</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"Hey! Why are you being so cold!? </STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> is suffering this much, so why would you say that!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Like I said, who are </STYLE><STYLE ID="2">you</STYLE><STYLE ID="12">!? That voice, you're a kid, aren't you!? Keep quiet!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You're the one saying stuff so weird a kid has to scold you, aren't you!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Ugh, you're so annoying...!"</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="1">, that's enough... it's... fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Sorry, </STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="1">, I'm hanging up."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">Unable to take any more, I hung up.</STYLE><PG>
+"See, <STYLE ID="2">Kana</STYLE>, I told you to drop it..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="12">That lady just now</STYLE><STYLE ID="2">... was crying."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"She really loves </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">she couldn't tell her she loves her, and she was crying."</STYLE>
+{PAUSE ""}
+<BR>
+"Uh-huh..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"But it's okay. You two will make up soon. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">She's really worried, but when </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> leaned on her, she just didn't know how to answer. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Goto-chan</STYLE><STYLE ID="2"> is who she wants to help, but she can't be any help... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">and I bet she's frustrated about that..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "900" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Just then, a message arrived on the phone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="12">Sis</STYLE><STYLE ID="3"> sent it?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I nervously opened the message...</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="12">“　　　　　　　　　　”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">............?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It seemed there was no text, only a photo.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">When I tapped the photo's thumbnail―</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\サード\桃子の手紙.gal" "NORMAL" "#1" "C" "B" "0" "24" "3000" "1" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\雲わすれの夏高.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="12">“Sorry for being useless. Cheer up. From your big sister”</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was a message handwritten on paper.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\桃子の手紙ぼやけ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Little by little my vision blurred, and the message </STYLE><STYLE ID="15" RUBY="ゆが">warped</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Tears </STYLE><STYLE ID="16" RUBY="た">welled up</STYLE><STYLE ID="3"> in my eyes.</STYLE><PG>
+<STYLE ID="3">Then I burrowed under the futon, head and all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kana-chan</STYLE><STYLE ID="3"> had it right. </STYLE><STYLE ID="12">Sis</STYLE><STYLE ID="3"> had been frustrated that she couldn't help.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">And she'd been really worried about me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Above all, I was happy that she'd called herself my </STYLE><STYLE ID="12">big sister</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="3">Little by little, the events in the dream lost their sense of reality.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That really was a dream.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">―Eventually my tears dried up, and I poked my head out of the futon.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Good for you, <STYLE ID="1">Goto</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I'd left the phone outside the futon, so </STYLE>Senpai<STYLE ID="3"> and the others must have seen that picture too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Thank you..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Save your thanks for <STYLE ID="2">Kana</STYLE>, right?"<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Heh heh! The </STYLE><STYLE ID="17" RUBY="きずな">bond</STYLE><STYLE ID="2"> of the Gotos Phantom Thieves is mighty strong indeed!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Kana-chan</STYLE><STYLE ID="1">... thank you..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ha! Nothing to it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I had been saved by this </STYLE><STYLE ID="2">weird kid</STYLE><STYLE ID="3"> I'd known for less than a day.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">She'd untangled years of bad feelings in just an instant.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Honestly... what a weird kid...</STYLE><PG>
+"<STYLE ID="1">Goto</STYLE>, isn't the bath about ready by now? 
+{PAUSE ""}
+　Go wash off the sweat and the tears and the scary dreams, all of it!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Hearing that voice, I came out of the futon and stood up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">My body was so light there was no comparing it to before.</STYLE><PG>
+<STYLE ID="1">"Well then, I'm off for a quick bath!"</STYLE>
+{PAUSE ""}
+<BR>
+Senpai<STYLE ID="3">―I flashed her a big grin and put my hand on the door.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"H-hey! Put clothes on! At least put underwear on!"<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "4" "2000" "960" "1" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="11">"Haah, sleepy... think I'll sleep in a futon..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">............"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="11">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="11">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Fwuh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Frozen on the other side of the door I'd opened: </STYLE><STYLE ID="11">Kotaro-san</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Genius or not, in a situation this new to me, not a single plan came to mind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">For once, I regretted having lost my danger sense.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "BGM死月編\Bad_Luck.ogg" "BGM" "REPEAT" "900" "0"}
+<STYLE ID="2">"Wow! </STYLE><STYLE ID="11">Papa</STYLE><STYLE ID="2"> is coming face-to-face with a busty loli!"</STYLE>
+{PAUSE ""}
+<BR>
+"Wh-wh-wh-wh-wha, isn't this way too bad!?"<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="18"><TXSPS>"Aaaagh!!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{PLAYSND "環境音\戦争1.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="3"><TXSPN>I hurled whatever I could get my hands on in the room at </STYLE><STYLE ID="11">Kotaro-san</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"H-hey, wait! It's a misunderstanding! Or not a misunderstanding, an accident!"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+<STYLE ID="1">"Eek! Eek! Lecher! Pervert! Groper! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Sex offender! Lolicon! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Little-girl fetishist! Pedophilia! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Hikaru Genji（the hero of The Tale of Genji）! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Lewis Carroll（the author of Alice in Wonderland）!"</STYLE><PG>
+{QUAKESTOP "0"}
+"Good to see <STYLE ID="1">Goto's</STYLE> got her energy back... 
+{PAUSE ""}
+though if you're gonna throw stuff, at least cover what needs covering first..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Damn... they're going boing-boing..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

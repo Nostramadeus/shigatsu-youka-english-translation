@@ -1,0 +1,94 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=60, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=177, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=8, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=58, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=365, target=)
+; Links:
+;    0: TWdLink(count=304, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\静かな雨屋内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\シナリオ\古郡玄関閉.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\春花子供.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Mommy</STYLE>, I'm home!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh my, you're both </STYLE><STYLE ID="2" RUBY="ぬ">soaking</STYLE><STYLE ID="1"> wet..."</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+"<STYLE ID="3">Haruka-chan's mommy</STYLE> isn't home, I think. So―"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="1">, you're welcome to wait here too. She's working, after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Thank you, </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="4">."</STYLE><PG>
+<STYLE ID="1">"But first, we have to get you dried off. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Here, </STYLE>Natsumi<STYLE ID="1">, I'll dry you. </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">Oh dear, you're chilled through..."</STYLE><PG>
+"Hey, <STYLE ID="1">Mommy</STYLE>...
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+Aren't you going to dry <STYLE ID="4">Haruka-chan</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"W-well, </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="1"> is older than </STYLE>Natsumi<STYLE ID="1">, so she can dry herself, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Y-yeah... </STYLE>
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="4">Achoo!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+"<STYLE ID="4">Haruka-chan</STYLE> looks cold..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I-I'll run a bath right away, so you two get in together, okay?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　And I'll make some hot cocoa, too."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+"Okaaay!"<BR>
+<STYLE ID="4">"Okaaay!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"I'm sorry, </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="1">..."</STYLE><BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

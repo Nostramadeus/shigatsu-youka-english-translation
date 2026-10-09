@@ -1,0 +1,276 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=306, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=52, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=533, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=47, unk2=8453888, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=16, unk2=65535, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1153, target=)
+; Links:
+;    0: TWdLink(count=954, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Okay. That should about do it for packing."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Oh, </STYLE>Erina<STYLE ID="1">, I've left the gift over there."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, thanks."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're back on the ninth, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... that's the plan."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"They're putting you up, so mind you greet them properly, all right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, I will."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\五島家二階廊下.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\追加分\室内ドア開.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Hey."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\五島家二階廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+"............ 
+{PAUSE ""}
+What...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You're going away tomorrow?"</STYLE>
+{PAUSE ""}
+<BR>
+"To an acquaintance's... thirteenth-year memorial service."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Is that really all?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"None of our relatives have anything like that, so it's weird that only </STYLE>you<STYLE ID="2"> would be going."</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Besides, a thirteenth-year memorial means a memorial service for someone who died a long time ago, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Why go now, after all this time?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>You<STYLE ID="2">'re hiding something, aren't you?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"You've been on the phone with someone nonstop since yesterday, and you were saying things like 'murder' and 'catch the culprit.'"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I was wrong to eavesdrop. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But... isn't this dangerous?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So I hit the mark... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Have you told Mom and Dad?"</STYLE>
+{PAUSE ""}
+<BR>
+"I haven't..."<PG>
+<STYLE ID="2">"</STYLE>You<STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">will you actually make it home okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You're going somewhere people get murdered, and you're trying to catch the culprit, aren't you?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Do you actually understand that it's dangerous?"</STYLE>
+{PAUSE ""}
+<BR>
+"I know..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">"Don't be ridiculous!</STYLE>
+{QUAKESTOP "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<STYLE ID="2">　There's no need for </STYLE>you<STYLE ID="2"> to go for someone who isn't even a relative!"</STYLE>
+{PAUSE ""}
+<BR>
+"But..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I bet it's because </STYLE>you<STYLE ID="2">'re smart that they asked you to help solve the case or something."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Unbelievable. Risking danger out of curiosity."</STYLE><PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="4">"It's not just curiosity!</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+　It's not just..."
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\雲わすれの夏.ogg" "BGM" "REPEAT" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">"Then what is it!?</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">　Why do </STYLE><STYLE ID="4">you</STYLE><STYLE ID="3"> have to get dragged into it too!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+"Because...!
+{PAUSE ""}
+　Because..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Knowing all that and going anyway is just plain stupid. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The people around you are no better. They know it's dangerous, and they still ask, just because they want </STYLE>your<STYLE ID="2"> brains."</STYLE>
+{PAUSE ""}
+<BR>
+"What are you trying to say..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">"I'm telling you not to go!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+"Huh...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"There's no way I can let my </STYLE>little sister<STYLE ID="2"> go to a place like that!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Sis</STYLE>..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"It's a bit late for me to be saying this..."</STYLE>
+{PAUSE ""}
+<BR>
+"No... You're worried about me, aren't you..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You're going no matter what?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah. I've already made up my mind about that."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Is there anything... I can do to help?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Can I be of any use?"</STYLE>
+{PAUSE ""}
+<BR>
+"If I come back safe... 
+{PAUSE ""}
+then... I want the two of us to go out for a meal."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's all?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">Okay. I'll remember that."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHGVOL "VOICE" "500" "3000" "PASS"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"<STYLE ID="2">Sis</STYLE>, thank you."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

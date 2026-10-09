@@ -1,0 +1,37 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=26, unk2=255, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=49, target=)
+; Links:
+;    0: TWdLink(count=26, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\詫言編　夢から\dark_attack.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<BR>
+<BR>
+<TXSPN>　　　　Never pray to<BR>
+{WAIT "2500" "CLICK" "SKIP"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{MESOFF "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\モトキザクラ様目2.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKESTOP "0"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+<BR>
+<BR>
+　<TXSPF>You are my friends.<PG>
+{MESOFF "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

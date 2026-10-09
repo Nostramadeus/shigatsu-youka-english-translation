@@ -1,0 +1,102 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=616, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=294, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=974, target=)
+; Links:
+;    0: TWdLink(count=910, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "900" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "0000" "グラフィック\リファレンス\リファレンス詳細\rrr51\少年犯罪.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Now then, please look at the materials in your hands.
+{PAUSE ""}
+This town, Motoki-cho, is an area whose crime rate is by far the lowest in the entire country.
+{PAUSE ""}
+The number of juvenile offenses that occurred last year was 5 in total.
+{PAUSE ""}
+All 5 were minor offenses such as shoplifting or graffiti, and in every case a settlement was reached with the injured party."<PG>
+"The reoffending rate among juveniles is also extremely low. Over the past 10 years the reoffending rate is 3%, and these offenses too are minor.
+{PAUSE ""}
+This is considered to be due in large part to the character of the area and to the residents working as one at the raising of young people."<PG>
+"There are, however, two concerns arising from this.
+{PAUSE ""}
+One is that, because of the low crime rate, very few places are at present equipped with security cameras or other crime-prevention facilities.
+{PAUSE ""}
+The number of security cameras installed in the town by this station also remains at 12 at present, all of them on this station's own grounds.
+{PAUSE ""}
+Since a scarcity of video material in the event of a future crime could make an investigation difficult, we will not rest content with the low crime rate, and within this year we will file an application for the purchase of crime-prevention equipment."<PG>
+"The other is that, because the number of juvenile offenses is low, there is a conspicuous tendency for young people to be out at night.
+{PAUSE ""}
+A major factor in this is the low crime-prevention awareness of guardians, and it is not rare for young people to be seen at night at convenience stores or in the entertainment district."<PG>
+"For the time being, this station will confine itself to asking young people, whenever they are found, to refrain from going out at night, and within this year we will adopt the measure of having the head teachers of the town's schools urge young people to refrain from going out at night.
+{PAUSE ""}
+That concludes the report."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "0000,人物1" "1" "2000" "0" "0" "" "0"}
+{STOPSND "BGM" "2000" "WAIT"}
+{CREATECG "0000" "グラフィック\背景\警察署廊下.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "NORMAL" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Assistant Inspector Ise<STYLE ID="1"> was really putting his heart into that report, wasn't he..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―That's because the </STYLE>Assistant Inspector<STYLE ID="1"> is the number one connoisseur of beautiful girls in Motoki-cho.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Seriously!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―You didn't know? They're famous, </STYLE>Assistant Inspector Ise<STYLE ID="1">'s lolicon tastes.</STYLE> [TN: lolicon: a taste for very young girls]
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ehhh... but I had my sights on the </STYLE>Assistant Inspector<STYLE ID="1">... what a shock..."</STYLE><PG>
+<STYLE ID="1">―The </STYLE>Assistant Inspector<STYLE ID="1">, though... he has the looks, he can do the job, and he's young... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If only his tastes were normal, he would be perfect...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ahh, come on, once you've heard the story behind that juvenile crime report it really is a letdown..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―Now, now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Isn't it a good thing that the </STYLE>Assistant Inspector<STYLE ID="1"> works that hard at deterring juvenile crime?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's true, but... still, if it ever came down to it, wouldn't the </STYLE>Assistant Inspector<STYLE ID="1"> do something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A connoisseur of beautiful girls, huh... I'd rather have an older woman..."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "伊勢.ogg" "BGM" "REPEAT" "1000" "250"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"You like older women, do you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I-it's </STYLE>Assistant Inspector Ise<STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―Thank you for your hard work, sir, for your hard work, sir!</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

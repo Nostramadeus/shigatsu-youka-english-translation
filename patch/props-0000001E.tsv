@@ -1,0 +1,15 @@
+# UI lane 2026-09-26, BUG: tutorial caption advance (same flag, reference node comments).
+1556	PR_FONTBORDER	1	0
+# FIX1 2026-09-26 (F27): reference summary / node comment / gimmick boxes, same cure as 0000001C 1123.
+528	PR_FONTCHANGEABLED	-	0
+1556	PR_FONTCHANGEABLED	-	0
+4498	PR_FONTCHANGEABLED	-	0
+# FIX1 2026-09-26 (F25): the references-list info captions print the whole summary on one line from x=200;
+# 11 English summaries were wider than the 760 px left (e.g. No.95 cut at "Prefectural Hi"). 18 -> 15 px leaves 1.
+829	PR_FONTHEIGHT	18	15
+838	PR_FONTHEIGHT	18	15
+840	PR_FONTHEIGHT	18	15
+842	PR_FONTHEIGHT	18	15
+# FIX2 2026-09-26 (F27): the detail box now gets the full summary (DB width fix); 20 of 360 rows wrap one line
+# more (max one). Box raised by one 18 px line pitch so the node checkboxes stay clear of the "Left:" bar.
+528	PR_TOP	410	390

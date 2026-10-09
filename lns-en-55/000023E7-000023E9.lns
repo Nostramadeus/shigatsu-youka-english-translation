@@ -1,0 +1,123 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=196, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=214, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=493, target=)
+; Links:
+;    0: TWdLink(count=410, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\テレビの声.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"The sound of the TV...?"<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="1">Sis</STYLE>, you were home..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"Um... I've brought some friends over, so..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">"Saying hi."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Should I go say hi?"</STYLE>
+{PAUSE ""}
+<BR>
+"No... you don't really have to..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't tell me it's the two who came to the shop today?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah..."<PG>
+<STYLE ID="1">"Then all the more reason I shouldn't show my face. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If they met me now, the shop's rating would drop."</STYLE>
+{PAUSE ""}
+<BR>
+"That's not... 
+{PAUSE ""}
+Oh, um, they both said you were amazing, <STYLE ID="1">Sis</STYLE>. That you're really beautiful and sophisticated."<PG>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"Um..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Are those two staying over tonight?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... Um, sorry for deciding on my own..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't care either way... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Guess I'm better off not being here after all."</STYLE>
+{PAUSE ""}
+<BR>
+"Um, um, that's..."<PG>
+<STYLE ID="1">"Can I ask just one thing?"</STYLE>
+{PAUSE ""}
+<BR>
+"What...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why weren't their shoes in the entryway?"</STYLE>
+{PAUSE ""}
+<BR>
+"Um, that's..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It'd be bad if somebody found them, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Yeah, I'm better off not being here. </STYLE>You<STYLE ID="1">'d prefer that too, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+"W-wait...!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "800" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="1">Sis</STYLE>..."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

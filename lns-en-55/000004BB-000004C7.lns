@@ -1,0 +1,214 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=789, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=257, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=109, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=2960895, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くぎ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=160, unk2=2960895, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1478, target=)
+; Links:
+;    0: TWdLink(count=1322, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\車走行中.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\ファミレス.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\車エンジン切る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "700" "0"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "800" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The place we arrived at was Zahha.
+{PAUSE ""}
+<BR>
+So he meant to let us talk here at our leisure.<PG>
+"Welcome. A party of two?"
+{PAUSE ""}
+<BR>
+As always, there were a lot of groups that looked like high-school students.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\喫煙席.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+We took our seats in the smoking section we were shown to.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Oh, shoot. Um, sorry, out of my usual habit I went and picked the smoking section, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? Oh, that's fine, a little thing like that."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> scratched his head, looking awkward, but I flashed him a grin in reply.<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\手直し・追加\喫煙席.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Besides, since the customers were almost all high-school students, there was no one in this smoking booth.
+{PAUSE ""}
+<BR>
+It was perfect for talking about the incident.<PG>
+"Welcome. Here is our new spring menu."
+{PAUSE ""}
+<BR>
+Just as the waitress was about to set down the menu,<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">"Y-you!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> suddenly stood up and, like fireworks, made his cheeks bloom bright red.<PG>
+"Wh-what is it, <STYLE ID="1">sir</STYLE>..."
+{PAUSE ""}
+<BR>
+The waitress opened her eyes perfectly round.
+{PAUSE ""}
+<BR>
+My eyes too went to <STYLE ID="1">Ise-san</STYLE> and were <STYLE ID="4" RUBY="くぎ">nailed</STYLE> there.<PG>
+{MESOFF "500"}
+{PLAYSND "伊勢.ogg" "BGM" "REPEAT" "1000" "30"}
+{CREATECG "111" "グラフィック\背景\手直し・追加\喫煙席.gal" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+And then, <STYLE ID="1">Ise-san</STYLE> thrust his police badge at the waitress.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I-I-I am a police officer! I am by no means a shady individual! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Just because I have </STYLE><STYLE ID="2">a pretty girl like this</STYLE><STYLE ID="1"> with me... by no means... by no means!"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"<BR>
+<STYLE ID="2">"Whaa?"</STYLE>
+{PAUSE ""}
+<BR>
+The waitress and I tilted our heads at the same moment, voicing question marks that came out of who knows which hole.<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="5"><TXSPD TIME="4294967256">"Listen! Pretty girls, as a rule, are to be admired, and laying a hand on them must never, ever happen! This is the fundamental principle of the Motoki Pretty Girl Appreciation Society! Sexual crimes against pretty girls, all the more so, are beyond outrageous!</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<STYLE ID="5">　Our activities aim at admiring pretty girls and, at the same time, at the healthy upbringing of pretty girls! Even if you happen to meet a pretty girl, taking photos or videos without permission is never allo</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{QUAKESTOP "0"}
+<TXSPN>"U-um, <STYLE ID="1">sir</STYLE>, I understand, so, your order..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh... yeah... my apologies... I just..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Ise-san</STYLE> quieted down and took his seat.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "78" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESON "500"}
+<STYLE ID="1">"Um, have you had lunch already? If not, order whatever you like."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, I've already eaten! Thank you very much!"</STYLE>
+{PAUSE ""}
+<BR>
+Truthfully, I wanted to eat the steak set from earlier and the spring parfait, but I had to hold back at least a little.
+{PAUSE ""}
+<BR>
+Here, like a proper high-school girl, I'd go with the drink bar and a strawberry mille-feuille.<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\手直し・追加\喫煙席.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―When I had finished ordering and come back from the drink bar, <STYLE ID="1">Ise-san</STYLE> heaved a big sigh.
+{PAUSE ""}
+<BR>
+And then <STYLE ID="1">Ise-san</STYLE>, meaning to drink his coffee, put his lips to the cup.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"But, </STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">, you're pretty much one of those, aren't you? What they call a... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">hunk?"</STYLE>
+{PAUSE ""}
+<BR>
+When I complimented him with a grin, 
+{PLAYSND "SE\鼻をかむ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">Ise-san</STYLE> spewed out his coffee spectacularly.<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">"Cough! Cough!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">, you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"M-my nose..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> wiped his mouth and nose with a paper napkin, and I wiped up the coffee spattered over the table.
+{PAUSE ""}
+<BR>
+It was the first time I'd seen someone spray it out in a mist, like in a manga.<PG>
+<STYLE ID="1">"G-</STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="1">... Don't go saying strange things all of a sudden..."</STYLE>
+{PAUSE ""}
+<BR>
+It seemed <STYLE ID="1">Ise-san</STYLE>'s way of calling me had become "<STYLE ID="2">Goto-chan</STYLE>."
+{PAUSE ""}
+<BR>
+If he sprayed coffee next time, there was a chance it would land on me.
+{PAUSE ""}
+<BR>
+Maybe I should be careful about what I say and do too.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "death_sound1.ogg" "BGM2" "REPEAT" "1000" "0"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But, there was one thing that bothered me.
+{PAUSE ""}
+<BR>
+Ever since we met, I had intuitively held a doubt about <STYLE ID="1">Ise-san</STYLE>.
+{PAUSE ""}
+<BR>
+Whether it was all right to check it or not, I didn't know.
+{PAUSE ""}
+<BR>
+But for the talk we were about to have, I absolutely had to make sure.<PG>
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="1">Ise-san</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> took another mouthful of coffee.
+{PAUSE ""}
+<BR>
+And then, I flashed <STYLE ID="1">Ise-san</STYLE> a grin.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\喫煙席.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "BGM2" "0" "PASS"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\喫煙所反転.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

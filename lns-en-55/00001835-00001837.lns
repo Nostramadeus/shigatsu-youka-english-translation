@@ -1,0 +1,185 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=427, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=85, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=9, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=399, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1045, target=)
+; Links:
+;    0: TWdLink(count=921, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\シナリオ\外廊下.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "800" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Morning, <STYLE ID="1">Haruka</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Natsumi<STYLE ID="1">? What's up? This early in the morning."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Mom</STYLE> asked me to give something to <STYLE ID="3">Auntie</STYLE>. Is she home?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, she's here. I'll give it to her."</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, no, she said she wants it handed to <STYLE ID="3">Auntie</STYLE> directly."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That so? She was up late last night, so she just woke up, but I'll go get her."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"Up late last night...? Did she stay up too late?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\新村家ドア.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\新村家ドア美冬.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Coming..."</STYLE>
+{PAUSE ""}
+<BR>
+"Morning, <STYLE ID="3">Auntie</STYLE>!
+{PAUSE ""}
+　Wait, why are you <STYLE ID="4" RUBY="のぞ">peeking</STYLE> out through the gap in the door like that..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I don't have my makeup on..."</STYLE>
+{PAUSE ""}
+<BR>
+"I-I see... hahaha. 
+{PAUSE ""}
+Oh, here, this is from <STYLE ID="2">Mom</STYLE>. She made too much simmered stew, so she's sharing some."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh my, thank you."</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"So, what do you want?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"<PG>
+{CHGVOL "SE" "0" "3000" "PASS"}
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"If that was all, you could have just given it to </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="3">, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　You went out of your way to call me, so there must be something else, isn't there?"</STYLE>
+{PAUSE ""}
+<BR>
+"You're sharp, <STYLE ID="3">Auntie</STYLE>... 
+{PAUSE ""}
+Actually, it's about <STYLE ID="1">Haruka</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"What is it?"</STYLE>
+{PAUSE ""}
+<BR>
+"It's kind of hard to say... 
+{PAUSE ""}
+The day before yesterday and yesterday, I ran into <STYLE ID="1">Haruka</STYLE> on my way home from school. 
+{PAUSE ""}
+She said she was on her way back from the hospital."<PG>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"But she seems fine, and she won't tell me anything... 
+{PAUSE ""}
+So I got a little worried..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"So, um... I was wondering if you could tell me..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm glad you're worried about her. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But sneaking over here to ask about something </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="3"> doesn't want to talk about isn't very admirable, is it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ugh..."<PG>
+<STYLE ID="3">"I understand how you feel, but as long as </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="3"> doesn't want to talk about it, I can't tell you either."</STYLE>
+{PAUSE ""}
+<BR>
+"Ugh... But I'm worried... 
+{PAUSE ""}
+Um... It's not something weird, right...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Something weird?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, no, never mind..."<PG>
+<STYLE ID="3">"Hehehe, don't worry. It's nothing that's going to change her life. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="3"> just has a little problem. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">A delicate problem that's hard to talk about even with </STYLE>Natsumi-chan<STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+"A problem, huh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"So what </STYLE>Natsumi-chan<STYLE ID="3"> can do is treat </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="3"> the same as always. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Beyond that, please wait, without rushing her, until </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="3"> wants to talk about it."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay... 
+{PAUSE ""}
+Sorry for coming so early in the morning."<PG>
+<STYLE ID="3">"I'm sorry too. </STYLE><STYLE ID="1">That girl</STYLE><STYLE ID="3">'s already 16, so I can't go blabbing about her. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Tell </STYLE><STYLE ID="2">Akane</STYLE><STYLE ID="3"> thanks for me."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay."<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\新村家ドア.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"<STYLE ID="3">Auntie</STYLE>'s energy is really low without makeup, huh..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\新村家ドア美冬.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Did you say something?"</STYLE>
+{PAUSE ""}
+<BR>
+"N-no, nothing!"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

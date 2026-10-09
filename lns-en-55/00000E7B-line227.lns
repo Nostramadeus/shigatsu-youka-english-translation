@@ -1,0 +1,121 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=82, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=7, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=50, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=210, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=95, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=538, target=)
+; Links:
+;    0: TWdLink(count=448, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>"<STYLE ID="1">Senpai's father</STYLE>'s killer... I want to find them."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hey now... I get how you feel, but..."</STYLE>
+{PAUSE ""}
+<BR>
+"The <STYLE ID="3">Senpai</STYLE> I love so much is suffering. I want to help her, even just a little."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"............ Okay. If </STYLE>Goto<STYLE ID="2">'s gonna go that far, I've got no choice. I'll help!"</STYLE>
+{PAUSE ""}
+<BR>
+"Thank you!
+{PAUSE ""}
+　That's so reassuring."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\道1夜ブラー.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "33" "300" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">I let go of my flat-tired bike and ran for the police station as fast as I could.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I didn't know how many minutes it would take to get there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Gasping for breath, I ran as far as I could run.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "VOICE2" "500" "PASS"}
+{CHANGECG "000" "グラフィック\背景\道1夜.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hah! Hah!"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I put my hands on my knees and stopped.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "500" "30"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\道1夜倒れる.gal" "NORMAL" "14" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">What happened...?</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神横倒し.gal" "NORMAL" "#1" "R" "T" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\手直し・追加\脳挫滅.lcm" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Am I going to die in a place like this...?</STYLE>
+{PAUSE ""}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Senpai</STYLE><STYLE ID="4">, get out of this town, quickly...</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\掲示板.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,人物1" "14" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Shiyo 800, April 8　23:50　Anonymous</STYLE><BR>
+<STYLE ID="5">hey now, word is there's been another murder!</STYLE><PG>
+<STYLE ID="5">Shiyo 800, April 9　0:05　Anonymous</STYLE><BR>
+<STYLE ID="5">erina goto (15)</STYLE><BR>
+<STYLE ID="5">cause of death: crushed brain from a heavy blow to the head, they say</STYLE><BR>
+<STYLE ID="5">crushed brain means the head got all smashed up, huh</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The Erina Goto<STYLE ID="4"> beating case―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Shaking Motoki-cho and then all of Japan, the April 8 Motoki-cho case.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">But it was only the trigger for a still greater tragedy that would come 4 years later.</STYLE><PG>
+<STYLE ID="4">There was a woman whose heart was deeply wounded by this case.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">It is she who is the protagonist of this tragedy.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+{MESOFF "3000"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

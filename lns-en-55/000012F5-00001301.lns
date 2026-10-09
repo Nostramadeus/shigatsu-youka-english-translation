@@ -1,0 +1,534 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3186, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=12, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=17, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=12, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にっぽ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=55, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おきて, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=9, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=6, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2337, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=8, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=8, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=じかふわごうせい, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=きんしょう, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=まれ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6041, target=)
+; Links:
+;    0: TWdLink(count=5672, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\サード\蔵地下扉.gal" "NORMAL" "#1" "L" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵地下扉番号.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\カチカチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\カチカチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\カチカチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\カチカチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\鍵をかける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\サード\蔵地下扉.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵地下扉開く.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The code―0723, which reads 'na-tsu-mi'.
+{PAUSE ""}
+<BR>
+To think the number <STYLE ID="1">Grandma</STYLE> gave me spelled out <STYLE ID="2">Natsumi Kogori's</STYLE> name.
+{PAUSE ""}
+<BR>
+Only a handful of people, even within the Niimura family, know it.
+{PAUSE ""}
+<BR>
+To hit on it by guesswork, you'd have to know both the Niimura family and the Kogori family, and be very lucky besides.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚暗い.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚明るい.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚真横.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+All of the Arata settlement is here.
+{PAUSE ""}
+<BR>
+Our ancestor, <STYLE ID="3">the Emperor's son</STYLE> (not by direct blood, apparently), took the name Niimura, and the history from then on is written down here, they say.<PG>
+I have to dig the promising ones out of all these books.
+{PAUSE ""}
+<BR>
+Most of them were written in classical Japanese or foreign languages.<PG>
+I'd brought dictionaries for translating, too, borrowed from the university library.
+{PAUSE ""}
+<BR>
+I don't know the grammar well, but if I follow along word by word, I should at least be able to make out the titles... in theory.<PG>
+I checked the title of every book, one by one.
+{PAUSE ""}
+<BR>
+Flipping back and forth between the <STYLE ID="4" RUBY="にっぽ">Japanese-Portuguese</STYLE> dictionary and the classical Japanese dictionary, I picked out anything that looked even roughly useful.
+{PAUSE ""}
+<BR>
+This one was... how to cook Arata's wild plants.
+{PAUSE ""}
+<BR>
+That one was how to make a nata.
+{PAUSE ""}
+<BR>
+Stuff like this is no use, surely.
+{PAUSE ""}
+<BR>
+Even if something important is written in them, I don't have time to weigh it.
+{PAUSE ""}
+<BR>
+I have to be ruthless about what to keep and what to cut.<PG>
+If it comes to that, it seems <STYLE ID="5">Goto-chan</STYLE> will lend me a hand.
+{PAUSE ""}
+<BR>
+I'll send <STYLE ID="5">Goto-chan</STYLE> photos of the books and have her decipher them.
+{PAUSE ""}
+<BR>
+Since this would mean leaking Arata's secrets outside, it probably goes against the <STYLE ID="6" RUBY="おきて">rule</STYLE>.
+{PAUSE ""}
+<BR>
+That's why I haven't told <STYLE ID="1">Grandma</STYLE> or <STYLE ID="7">Dad</STYLE> about it.<PG>
+The only ones who know are <STYLE ID="5">Goto-chan</STYLE>, <STYLE ID="8">Auntie,</STYLE><STYLE ID="9"> and </STYLE><STYLE ID="3">Haruka</STYLE>.
+{PAUSE ""}
+<BR>
+Earlier, I'd told <STYLE ID="3">Haruka</STYLE> over the phone what was going on.
+{PAUSE ""}
+<BR>
+As I'd expected, <STYLE ID="3">Haruka</STYLE> couldn't believe it either, but with <STYLE ID="8">Auntie</STYLE> and even <STYLE ID="5">Goto-chan</STYLE> taking action, she must have had no choice but to accept it.<PG>
+When I talked to <STYLE ID="3">Haruka</STYLE>, she pointed out something odd.
+{PAUSE ""}
+<BR>
+That it made no sense for me to have been working toward solving the curse-killings all along, while believing I was the culprit.
+{PAUSE ""}
+<BR>
+True, that's a contradictory way to act.<PG>
+What bothers me is what came after the curse-killings by my own hand stopped.
+{PAUSE ""}
+<BR>
+Killings I had been carrying out with my own hands, taken over by someone else without my ever intending it... that's nothing but creepy.
+{PAUSE ""}
+<BR>
+And yet catching that real culprit means that sooner or later I'll come under suspicion too.<PG>
+Why was I acting in such a contradictory way?
+{PAUSE ""}
+<BR>
+Could it be that, without realizing it, I knew I wasn't the culprit?
+{PAUSE ""}
+<BR>
+And why had I been so convinced I was the culprit in the first place?
+{PAUSE ""}
+<BR>
+Wasn't there something that set it off...?<PG>
+Well, for now, gathering information comes before deduction.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Goto-chan</STYLE> will probably explain things to <STYLE ID="2">Natsumi-chan</STYLE>, but when that happens, she'll have to be sworn to strict silence.
+{PAUSE ""}
+<BR>
+Sadly, that means the only people I trust are the ones who live in Motoki-cho.
+{PAUSE ""}
+<BR>
+I can't trust the people of this Arata settlement, not even my own family.<PG>
+This is only a hunch of mine, but I can't believe these curse-killings are solely the work of the 'someone' <STYLE ID="5">Goto-chan</STYLE> talked about.
+{PAUSE ""}
+<BR>
+Human hands must be involved somewhere.
+{PAUSE ""}
+<BR>
+Because the method is exactly the way a human would do it.<PG>
+In other words, there is someone who has sold their soul to the 'someone'.
+{PAUSE ""}
+<BR>
+There is definitely a traitor inside this settlement.
+{PAUSE ""}
+<BR>
+That's why I won't trust anyone, not even my family.
+{PAUSE ""}
+<BR>
+After all, relying on the people close to me has never solved anything up to now.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Well, that should do it. I've just about finished picking out the books.
+{PAUSE ""}
+<BR>
+I'll move to the work space on the second floor.
+{PAUSE ""}
+<BR>
+If I open the window, the air's better there than down here.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵階段明るい.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The books I chose fall into three broad kinds.
+{PAUSE ""}
+<BR>
+・Writings on the Green-Eye Curse-Killing
+{PAUSE ""}
+<BR>
+・The history of this land
+{PAUSE ""}
+<BR>
+・The Droga research report<PG>
+I'd like to read the Droga research report first, but I'll start with the writings on the Green-Eye Curse-Killing.
+{PAUSE ""}
+<BR>
+I'll pick out the parts of those writings that are hard for me to read and send photos to <STYLE ID="5">Goto-chan</STYLE>.
+{PAUSE ""}
+<BR>
+While <STYLE ID="5">Goto-chan</STYLE> deciphers them, I'll read the research report written in modern Japanese.
+{PAUSE ""}
+<BR>
+That way the two of us work on separate tasks at the same time, which is efficient.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵2階.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">"Phew..."</STYLE>
+{PAUSE ""}
+<BR>
+At last I'd carried all the books in, and I took a breather.
+{PAUSE ""}
+<BR>
+I hadn't made any progress on the investigation yet, but I already felt like I'd accomplished something.
+{PAUSE ""}
+<BR>
+It was 10 p.m.
+{PAUSE ""}
+<BR>
+Picking out the books and hauling them alone had eaten up two hours.<PG>
+There isn't much time left before the thirteenth-year memorial service.
+{PAUSE ""}
+<BR>
+By April 8 I will finish the research, report to <STYLE ID="5">Goto-chan</STYLE>, and uncover the truth of the curse-killings.
+{PAUSE ""}
+<BR>
+This is about the only time outsiders can come into the settlement openly.
+{PAUSE ""}
+<BR>
+Especially lately, the curse-killings have put the people of the settlement even more on their guard.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵本乱雑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now then, the book on the Green-Eye Curse-Killing...
+{PAUSE ""}
+<BR>
+I studied classical Japanese plenty for my entrance exams, but as I expected, I've forgotten almost all of it.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+It's not fair to dump it all on <STYLE ID="5">Goto-chan</STYLE>, so I'll photograph the parts that look important.
+{PAUSE ""}
+<BR>
+If that's not enough, <STYLE ID="5">Goto-chan</STYLE> should ask for the pages before and after.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Okay, once I've sent all the photos, it's on to the research report.
+{PAUSE ""}
+<BR>
+Actually, there's something I've wondered about since before I even read this report.
+{PAUSE ""}
+<BR>
+The organization doing the research took the Arata settlement's cherry trees away.
+{PAUSE ""}
+<BR>
+In exchange, the Grand Witch of the time negotiated for them to hand over the report.
+{PAUSE ""}
+<BR>
+I'm amazed she managed a negotiation like that.<PG>
+You'd think they'd refuse to hand over a report like that. Did she have something on them?
+{PAUSE ""}
+<BR>
+Or was there something that would go badly for them if they didn't do what the people of the Arata settlement said...?
+{PAUSE ""}
+<BR>
+And how did outsiders learn about Droga in the first place?<PG>
+Well, there's no point imagining things like that.
+{PAUSE ""}
+<BR>
+Let me take a look inside right away.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\レポート1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It seemed to be more thorough research than I'd expected.
+{PAUSE ""}
+<BR>
+It was a horrible thing, but it set out the results of the Droga human experiments.<PG>
+<STYLE ID="11">Descriptions of the first through fourth generations―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The first generation: those who used Droga directly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The second generation: those whose head mucous membranes came into contact with a certain amount of a first-generation person's blood right after bleeding.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The third generation: those whose head mucous membranes came into contact with a certain amount of a second-generation person's blood right after bleeding.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The fourth generation: thought to exist, but its traits unknown.</STYLE><PG>
+<STYLE ID="11">The first generation: gains extraordinary strength and dynamic vision, for a short time only.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The second generation: gains precognition under certain conditions.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The third generation: gains precognition where there are cherry trees, and one eye turns green.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">In addition, girls who have had their first period, and boys as well when bleeding beyond a certain amount, feel an unbearable urge to kill the second and third generations.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The fourth generation and beyond: unknown.</STYLE><PG>
+Going by this, <STYLE ID="12">Mom</STYLE> was second generation, and <STYLE ID="13">Kana</STYLE> and I are third generation.
+{PAUSE ""}
+<BR>
+Which means that once <STYLE ID="13">Kana</STYLE> has her first period, we...
+{PAUSE ""}
+<BR>
+Knowing that much alone makes it useful information.
+{PAUSE ""}
+<BR>
+And I'm the proof that there's a way to cure that urge to kill.<PG>
+<STYLE ID="13">Kana</STYLE> and I probably became third generation because we touched <STYLE ID="12">Mom's</STYLE> blood when we were born.
+{PAUSE ""}
+<BR>
+Then who on earth is the first generation...
+{PAUSE ""}
+<BR>
+I'll leave off working that out.
+{PAUSE ""}
+<BR>
+For now, gathering information comes before thinking.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵2階.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―The report was split into several volumes, and nearly all of it was results of human experiments.
+{PAUSE ""}
+<BR>
+Detailed measurements of the physical abilities Droga gives, the range of the precognition.
+{PAUSE ""}
+<BR>
+And the process by which the third generation comes to feel the urge to kill, among other things, all written up in minute detail.
+{PAUSE ""}
+<BR>
+In the end, because of its side effects and how hard it made controlling one's strength, Droga was apparently never put to practical use.<PG>
+There was one report left―
+{PAUSE ""}
+before I knew it, it was already 1 a.m.
+{PAUSE ""}
+<BR>
+Once I've looked this one over, maybe I'll go to bed...
+{PAUSE ""}
+<BR>
+The information so far gives me no clue for preventing the curse-killings.
+{PAUSE ""}
+<BR>
+The investigation has only just begun.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+The last volume was...
+{PAUSE ""}
+<BR>
+............?
+{PAUSE ""}
+<BR>
+'On the Ecology of the Arata Cherry'
+{PAUSE ""}
+<BR>
+Everything so far had been about how to use Droga and the results of testing it, and suddenly it was botany.
+{PAUSE ""}
+<BR>
+I'll look it over anyway.<PG>
+<STYLE ID="11">Research had apparently also been done on the Arata cherry, the raw material of Droga.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">According to it... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">There is no such cherry as the Arata cherry.</STYLE>
+{PAUSE ""}
+<BR>
+What is it talking about? Of course there is.<PG>
+{MESOFF "500"}
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\レポート1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="11">'What the people of the Arata settlement called cherry trees―it is the fruiting body of a fungus. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">A certain substance was found in common in the bodies of the subjects. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">It closely resembles ephedrine, a raw material of stimulants. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">At first, the research team believed Droga to be a drug of this ephedrine type, but the reality was otherwise.'</STYLE><PG>
+<STYLE ID="11">'What Droga contained was a large quantity of spores. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">They are heat-resistant, able to withstand a flame of 1,000 degrees Celsius for one minute. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">When Droga is heated for use, the spores are dispersed into the air on the rising current of heat.'</STYLE>
+{PAUSE ""}
+<BR>
+Spores are, if I remember right, something like the seeds of mold and ferns and such?
+{PAUSE ""}
+<BR>
+Really fine, like smoke.<PG>
+<STYLE ID="11">'The spores found in the bodies of the subjects measure 3 microns (0.003 millimeters). </STYLE>
+{PAUSE ""}
+<STYLE ID="11">They are extremely small spores, but once they enter the body, they germinate immediately. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Once germinated, they measure just under 10 microns, larger than red blood cells, but they are highly flexible and are therefore able to enter even capillaries. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Sprouts were also found in the blood vessels of the cerebrum, so they are thought to pass the blood-brain barrier as well. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Note that in this state they lose their resistance to changes in temperature, and cooling or heating renders them ineffective.'</STYLE><PG>
+<STYLE ID="11">'Sprouts that reach the brain take up permanent residence in the blood vessels of the brain. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">They become active when cherry pollen enters the body, at which point the precognition and the urge to kill of the second and third generations become most pronounced. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Conversely, in other seasons they are almost entirely inactive. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Furthermore, no sprouts were found in the brains of the first generation; there, they circulate exclusively through the body below the neck. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">It is therefore inferred that the nature of the sprouts changes with each generation.'</STYLE><PG>
+<STYLE ID="11">'In the first generation, the sprouts secrete a substance similar to ephedrine, which contributes to enhanced physical ability. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">In other words, Droga itself is not the drug; the drug is released by the spores that Droga contains.'</STYLE><PG>
+<STYLE ID="11">'In the second generation, sprouts altered from those of the first generation emit weak electromagnetic waves. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Through the patterns of these electromagnetic waves, the second generation perceives something. That is to say, these electromagnetic waves can be called the source of the precognition. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Under what conditions the precognition is triggered is unknown, but it is thought that these sprouts, by obtaining information from outside, send electromagnetic waves of a specific pattern, that is, a signal perceived as precognition.'</STYLE><PG>
+<STYLE ID="11">'In the third generation, the mechanism is almost the same as in the second, but the eyeball changes color―the iris in particular. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">These sprouts maintain a fixed quantity of levodopa, the precursor of noradrenaline, or of melanin, a substance converted from levodopa. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">For this reason, the irises of the third generation turn green (in every subject, one eye only). </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Much also remains unclear about the mechanism of the urge to kill, but like the danger sense, it is thought to be a command from the spores.'</STYLE><PG>
+<STYLE ID="11">'However, while these mechanisms could be explained, what these spores mean in terms of the behavior of a living thing remained unclear. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">We therefore resolve to concentrate our efforts on identifying the fungus to which these spores belong.'</STYLE><PG>
+I see. They had mostly managed to verify the effects of Droga.
+{PAUSE ""}
+<BR>
+But why the Arata cherry, ecologically, has a life cycle like this is still a mystery.
+{PAUSE ""}
+<BR>
+Normally, spores attach to suitable soil or wood or something and germinate from there.
+{PAUSE ""}
+<BR>
+What germinates becomes a mushroom or mold―that should be the basic life cycle of a fungus.<PG>
+But as far as this report goes, for some reason it's all about them germinating inside the human body.
+{PAUSE ""}
+<BR>
+Does that mean these spores grow inside human bodies?
+{PAUSE ""}
+<BR>
+Which means in my brain and eyes too...?
+{PAUSE ""}
+<BR>
+It's not a nice feeling, thinking of fungal spores and sprouts overrunning my insides.<PG>
+Well, I can't worry about that now. Let me read on.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\レポート2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="11">'From the above, the Arata cherry is thought to be not a flowering plant but a fungus. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">The cherry trees collected from the Arata settlement are outwardly indistinguishable from ordinary cherries, but an analysis of the components of their pollen revealed that it is not pollen but, as expected, spores. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Moreover, the spores of the Arata cherry are produced in large quantities not only in the flowers but also in the roots. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">In other words, the Arata cherry itself is not the main body of the fungus but is thought to be the part corresponding to the fruiting body (the mushroom).'</STYLE><PG>
+<STYLE ID="11">'Although the Arata cherry is not strictly a cherry, its ecology bears an extremely close resemblance to that of the Somei-yoshino cherry. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">The components of its scent, its blooming season and so on are nearly identical to those of the Somei-yoshino, and the blooming of all its flowers at once is likewise a shared trait.'</STYLE><PG>
+<STYLE ID="11">'To begin with, the Somei-yoshino is a cherry developed 200 to 300 years ago, whereas the Arata cherry has existed for at least 800 years. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">It is therefore chronologically contradictory for the Arata cherry to mimic the Somei-yoshino. However, given the peculiar ecology of the Arata cherry, it need not have resembled the Somei-yoshino from the beginning. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">It may be altering its form as needed to suit its surroundings.'</STYLE><PG>
+<STYLE ID="11">'The Somei-yoshino is less a variety than the name of a single tree called Somei-yoshino, whose numbers have been increased through cuttings and grafting. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Therefore, every Somei-yoshino is originally a copy derived from the same tree (owing to </STYLE><STYLE ID="14" RUBY="じかふわごうせい">self-incompatibility</STYLE><STYLE ID="11">). </STYLE>
+{PAUSE ""}
+<STYLE ID="11">There is no way to verify this, but reasoning on the same principle, every Arata cherry is presumed to grow from one and the same fungal main body.'</STYLE><PG>
+I see. Back then there was no such thing as DNA testing, so they could only guess whether the Arata cherries were all one and the same.<PG>
+<STYLE ID="11">'If, however, all of these cherries are one and the same, it follows that this is a giant organism beyond our imagination. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">The area where the Arata cherries grew would be the habitat of the main body, meaning that hyphae are spread in a dense network beneath the Arata district. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Its </STYLE><STYLE ID="15" RUBY="きんしょう">mycelial mat</STYLE><STYLE ID="11"> would then stretch from horizon to horizon, </STYLE>
+{PAUSE ""}
+<STYLE ID="11">but since the honey fungus family can, on </STYLE><STYLE ID="16" RUBY="まれ">rare</STYLE><STYLE ID="11"> occasions, grow large enough to swallow a whole mountain, it is not an impossible notion.'</STYLE><PG>
+<STYLE ID="11">'Furthermore, since the honey fungus has the property of parasitizing other plants, a life cycle of entering the human body and germinating there is, to some extent, a reasonable supposition. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">In that case, the first through third generations are, after all, no more than stages in the reproduction of the Arata cherry, and the life cycle of the fourth generation and beyond must also be studied. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">At the very least, since using Droga is synonymous with having the body taken over by the Arata cherry, it has no practical value whatsoever as a drug.'</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\蔵2階.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+So that's where the report ends.
+{PAUSE ""}
+<BR>
+In the end, this volume says nothing about research on the fourth generation and beyond.
+{PAUSE ""}
+<BR>
+From the standpoint of the Arata cherry's ecology, too, Droga is useless.
+{PAUSE ""}
+<BR>
+To sum up the report...<PG>
+・The spores of the Arata cherry remain in my body, <STYLE ID="13">Kana's</STYLE>, and <STYLE ID="2">Natsumi-chan's</STYLE>
+{PAUSE ""}
+<BR>
+・The Arata cherry is a mushroom, and its main body is a fungus covering this whole area
+{PAUSE ""}
+<BR>
+・The Arata cherry uses humans as a medium for some purpose (reproduction?)
+{PAUSE ""}
+<BR>
+What can I draw from this...?<PG>
+No, rather than think, I have to read through the other materials.
+{PAUSE ""}
+<BR>
+Tomorrow I'll read the books in classical Japanese and the foreign languages.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

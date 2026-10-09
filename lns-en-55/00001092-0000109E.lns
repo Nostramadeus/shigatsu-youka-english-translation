@@ -1,0 +1,595 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3843, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=30, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おうだ, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=12, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まがわもとよし, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=26, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まがわ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もとよし, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たきぎ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=よしろう, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=492, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほうきち, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=9, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おうだ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=4, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まがわ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くぼち, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たるはざま, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こだち, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひも, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たぐい, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごちそう, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぶんこくほう, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いちえんちぎょう, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たけだ, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なんじょう, unk10=4294967295, unk11=4294967295)
+;   22: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しらかば, unk10=4294967295, unk11=4294967295)
+;   23: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ろっこつ, unk10=4294967295, unk11=4294967295)
+;   24: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4884, target=)
+; Links:
+;    0: TWdLink(count=4469, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\流るる時.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\清州城.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>As kitchen steward, I'd managed to show even my lord what I could do.
+{PAUSE ""}
+<BR>
+With this, my rise in the world was sure to pick up more and more speed.<PG>
+A farmer's son, and my old man a foot soldier.
+{PAUSE ""}
+<BR>
+For a guy like me to rise, I needed a master who looked at ability, not pedigree.
+{PAUSE ""}
+<BR>
+Before I entered the service of the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house, things were truly awful.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\駿府城.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I used to serve <STYLE ID="2" RUBY="まがわもとよし">Motoyoshi Magawa</STYLE>-dono.
+{PAUSE ""}
+<BR>
+Called the finest warlord in the land, <STYLE ID="2" RUBY="まがわもとよし">Motoyoshi Magawa</STYLE>-dono―
+{PAUSE ""}
+the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house was an old-line noble family descended from the <STYLE ID="4" RUBY="そう">Minato</STYLE> clan.
+{PAUSE ""}
+<BR>
+With a pedigree like that, the retainers and everyone else were all hung up on pedigree.
+{PAUSE ""}
+<BR>
+Not ability but which house you were born into decided your fate from then on.<PG>
+Even so, I didn't let it get me down, and I worked like mad to be useful to the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house.
+{PAUSE ""}
+<BR>
+Well, to be exact, I wasn't serving the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house itself, but as a retainer of a retainer of a retainer of <STYLE ID="5" RUBY="もとよし">Motoyoshi</STYLE>-dono.
+{PAUSE ""}
+<BR>
+Still, no matter how hard I fought on my own, there was no way they'd recognize it―
+{PAUSE ""}
+and I quietly left the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\清州城.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I think I was around 18 then.
+{PAUSE ""}
+<BR>
+My lord was good enough to take me on as a servant, and I worked harder than ever, set on proving useful here if nowhere else.
+{PAUSE ""}
+<BR>
+My lord was just the man I'd thought he was.
+{PAUSE ""}
+<BR>
+He didn't care about rank. He judged purely on ability, and was good enough to give each man a fitting post.
+{PAUSE ""}
+<BR>
+Kitchen steward or whatever else, I pushed through and did everything I could.<PG>
+Having saved on <STYLE ID="6" RUBY="たきぎ">firewood</STYLE>, water, everything, and succeeded in slashing the kitchen's expenses, I was honored with words of praise from my lord.
+{PAUSE ""}
+<BR>
+But this wasn't all I had, not by a long shot.
+{PAUSE ""}
+<BR>
+More, much more, I was going to show them what I could do.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+Then one day, in December of Shiyo 309.
+{PAUSE ""}
+<BR>
+I had a chance to meet up with a friend from my days serving Magawa-dono.
+{PAUSE ""}
+<BR>
+Of course, I couldn't tell my lord anything like that.
+{PAUSE ""}
+<BR>
+The Magawa house was growing powerful enough to swallow the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house, and there was no telling what next year might bring.
+{PAUSE ""}
+<BR>
+Being taken for a Magawa spy was the last thing I needed.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{CREATECG "000" "グラフィック\背景\エデン\囲炉裏.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hey, <STYLE ID="7" RUBY="よしろう">Yoshiro</STYLE>! Long time no see!"
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Hey, </STYLE><STYLE ID="9" RUBY="ほうきち">Hokichi</STYLE><STYLE ID="8">! Long time no see!"</STYLE>
+{PAUSE ""}
+<BR>
+We traded the same greeting back, parrot-fashion, and laughed together, gahaha.<PG>
+<STYLE ID="8">"What's going on? A retainer of Magawa-dono going out of his way to come into the </STYLE><STYLE ID="10" RUBY="おうだ">Ouda</STYLE><STYLE ID="8"> domain, of all things. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">What do you think'll happen if you're found?"</STYLE>
+{PAUSE ""}
+<BR>
+"Haha! Say that, and <STYLE ID="8">you</STYLE> won't get off easy either, letting me into the Ouda domain!?"
+{PAUSE ""}
+<BR>
+Hokichi laughed cheerfully, but he'd come to see me knowing the danger.
+{PAUSE ""}
+<BR>
+I knew he hadn't just come by for fun.<PG>
+"<STYLE ID="7" RUBY="よしろう">Yoshiro</STYLE>... how's the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house?"
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"How is it, huh... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">My lord is a strict man. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">But for that very reason, he keeps a sharp eye on how you work. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">He looks at your work, not your rank. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">It's the perfect place for me to rise."</STYLE>
+{PAUSE ""}
+<BR>
+"I see..."
+{PAUSE ""}
+<BR>
+Hokichi's cheerful face began to cloud over, and his words came slower.
+{PAUSE ""}
+<BR>
+Just as I thought, this was no small matter.<PG>
+"Say, <STYLE ID="7" RUBY="よしろう">Yoshiro</STYLE>... 
+{PAUSE ""}
+would you think about coming back to the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house?"
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"Quit the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house and come back to the Magawa house."
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"So that's it... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">The Ouda house is going to fall soon, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah..."<PG>
+{PLAYSND "エデンの桜\和ぴあの２.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="8">"When will that be?"</STYLE>
+{PAUSE ""}
+<BR>
+"Probably around early summer next year. 
+{PAUSE ""}
+Lord <STYLE ID="5" RUBY="もとよし">Motoyoshi</STYLE> means to go to the Western Capital, where the Emperor's castle stands. 
+{PAUSE ""}
+On the way, he's bound to pass through this <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> domain."<PG>
+<STYLE ID="8">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="10" RUBY="おうだ">Ouda's</STYLE><STYLE ID="8"> domain―enter it without leave, and </STYLE><STYLE ID="11" RUBY="まがわ">Magawa</STYLE><STYLE ID="8"> has invaded Ouda. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">And if Ouda lets that go by without lifting a hand, it's surrendered to Magawa in all but name. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">If Ouda is to go on being Ouda, it has to attack Magawa when that happens."</STYLE><PG>
+"Exactly. 
+{PAUSE ""}
+So... 
+{PAUSE ""}
+come back. There's no way <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> can beat <STYLE ID="3" RUBY="まがわ">Magawa</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"I...! I'm a farmer's son, and my old man's a foot soldier...! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　You know a guy like me can't make a name for himself at Magawa! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　The Ouda house is the only place I can make my mark!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="7" RUBY="よしろう">Yoshiro</STYLE>... I know how you feel. 
+{PAUSE ""}
+But... so what if you never rise? 
+{PAUSE ""}
+With the Magawa house you'd be secure for good―"<PG>
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">"Don't talk nonsense! I entered the service of the </STYLE><STYLE ID="10" RUBY="おうだ">Ouda</STYLE><STYLE ID="8"> house to become someone big in this country! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　</STYLE><STYLE ID="11" RUBY="まがわ">Magawa</STYLE><STYLE ID="8">―before I'd go back there, I'd sooner fall along with the Ouda house!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="8">Yoshiro</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Sorry, Hokichi... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I know you came all this way because you're worried about me. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">But..."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+Our conversation went no further than that.
+{PAUSE ""}
+<BR>
+The <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house was fated to fall in half a year or so.
+{PAUSE ""}
+<BR>
+I'd finally found my place to belong. Like I was going to just sit there and keep quiet...!
+{PAUSE ""}
+<BR>
+What could I... what could I do!? What was it!?<PG>
+I'm the kitchen steward!
+{PAUSE ""}
+<BR>
+What I can do, as kitchen steward, is―
+{PAUSE ""}
+what, exactly...?<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Shiyo 310, early spring.
+{PAUSE ""}
+<BR>
+The cold had only just begun to ease, ever so slightly, and the buds on the trees were swelling.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\清州城.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I went straight to my lord with a plea.
+{PAUSE ""}
+<BR>
+I wanted to find a food that would make the soldiers strong, and help the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house expand its power.
+{PAUSE ""}
+<BR>
+Food is the very source of human strength, something no one can do without.<PG>
+Don't get me wrong, though: I'm the kitchen steward, not a cook.
+{PAUSE ""}
+<BR>
+Managing the kitchen is my job, and making meals and getting in ingredients is the cooks' job.
+{PAUSE ""}
+<BR>
+So searching for a food that makes men strong is a little outside my duties.
+{PAUSE ""}
+<BR>
+But if things stay like this―<PG>
+My lord recognized what I'd achieved so far and was good enough to grant me leave to travel the provinces for a month, and no more.
+{PAUSE ""}
+<BR>
+I could hardly tell him that <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> was going to attack, so I stuck to the pretext that I wanted to find something to give the soldiers vigor.
+{PAUSE ""}
+<BR>
+I had no attendants. I'd be doing it all on my own.<PG>
+I choose my road by gut feeling.
+{PAUSE ""}
+<BR>
+If I'm going anywhere, it's uncharted land where hardly anyone has ever set foot.
+{PAUSE ""}
+<BR>
+Otherwise I'll never find anything that could overturn the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house.
+{PAUSE ""}
+<BR>
+Whatever you can find where people live won't amount to much.
+{PAUSE ""}
+<BR>
+A food that builds strength the instant you eat it, and turns men into soldiers like demon warriors.<PG>
+Something that convenient can't possibly exist. I know that much.
+{PAUSE ""}
+<BR>
+It's like trying to grab a cloud, but if I don't grab that cloud, it's all over.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I won't say I had no doubts as I took the first step.
+{PAUSE ""}
+<BR>
+The me that said this was all pointless.
+{PAUSE ""}
+<BR>
+The me that said I'd never survive unless I did it.
+{PAUSE ""}
+<BR>
+Those two opposing thoughts had slowed my feet, just a little.
+{PAUSE ""}
+<BR>
+But turning back was out of the question.
+{PAUSE ""}
+<BR>
+Coming back with nothing at all would drag the name of my lord, who'd allowed my selfish request, through the mud.<PG>
+............
+{PAUSE ""}
+............
+{PAUSE ""}
+This is...
+{STOPSND "VOICE" "1000" "PASS"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\桶狭間1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A little way out from the castle, I come to a big <STYLE ID="12" RUBY="くぼち">hollow</STYLE>.
+{PAUSE ""}
+<BR>
+Ringed by high ground, and then an inlet―
+{PAUSE ""}
+<BR>
+<STYLE ID="3" RUBY="まがわ">Magawa</STYLE> is sure to pass through here on the way to the Western Capital.
+{PAUSE ""}
+<BR>
+If only we could launch a surprise attack here...<PG>
+Just then, a clever idea comes to me.
+{PAUSE ""}
+<BR>
+What if I hired merchants here and had them serve up good food?
+{PAUSE ""}
+<BR>
+Magawa would surely stop to rest, too.<PG>
+All right, I'll remember this place.
+{PAUSE ""}
+<BR>
+If I remember right, this place is―
+{PAUSE ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="13" RUBY="たるはざま">Taruhazama</STYLE>.<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\エデン\桶狭間の山夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―All I have with me is a bare minimum of money and a <STYLE ID="14" RUBY="こだち">short sword</STYLE>.
+{PAUSE ""}
+<BR>
+I'll wash my clothes in whatever river I come across, and if the <STYLE ID="15" RUBY="ひも">cords</STYLE> of my straw sandals snap, I'll fix them myself.
+{PAUSE ""}
+<BR>
+If bandits find me, I run for all I'm worth.
+{PAUSE ""}
+<BR>
+At a glance it's a reckless journey, but doing nothing at all would be far more reckless, no doubt about it.<PG>
+My lord must have sensed that somehow, too.
+{PAUSE ""}
+<BR>
+But if he let me prepare no more than this, it's to see whether I truly have the will to die as a servant of the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house.
+{PAUSE ""}
+<BR>
+And whether I can pull off a big job with preparations short of even the bare minimum.<PG>
+My lord means to test me, too.
+{PAUSE ""}
+<BR>
+This is a rare chance to rise.<PG>
+{STOPSND "VOICE" "1000" "PASS"}
+My first night finds me in the mountains past <STYLE ID="13" RUBY="たるはざま">Taruhazama</STYLE>.
+{PAUSE ""}
+<BR>
+I'm a bit tired, as you'd expect, so I'll spend the night here.
+{PAUSE ""}
+<BR>
+Still, I figured bandits would jump me, but these mountains are awfully peaceful.
+{PAUSE ""}
+<BR>
+They were supposed to be a lot more lawless before, though.<PG>
+Of course. My lord is seeing to the upkeep of this land too, without missing a thing, and his idea is to make it a lively land where merchants come and go freely.
+{PAUSE ""}
+<BR>
+For that, having bandits and their <STYLE ID="16" RUBY="たぐい">like</STYLE> around would defeat the whole purpose.
+{PAUSE ""}
+<BR>
+Starting with work like this on the roads, my lord seems to be pushing steadily toward his dream.
+{PAUSE ""}
+<BR>
+My dreams are big too! When it comes to the size of my dreams, I won't lose even to my lord!<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\和ぴあの２.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\山村.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I passed through <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> lands, I deliberately took the long way round and visited poor fishing villages and mountain villages.
+{PAUSE ""}
+<BR>
+It was to find some food the world didn't know about, food brimming with power.
+{PAUSE ""}
+<BR>
+But all the villagers served me was humble stuff, small fry and wild greens and the like.
+{PAUSE ""}
+<BR>
+No, to them it was a <STYLE ID="17" RUBY="ごちそう">feast</STYLE>, and I was grateful for the food too, but it wasn't what I was looking for.
+{PAUSE ""}
+<BR>
+Just tasting good wasn't enough.<PG>
+The food has to fill the soldiers with power.
+{PAUSE ""}
+<BR>
+Pit vipers or bear paws would do, but there aren't nearly enough to supply the <STYLE ID="1" RUBY="おうだ">Ouda</STYLE> house's 2,000 soldiers.
+{PAUSE ""}
+<BR>
+It's a lot to ask, but something that fills you with power, and that I can get enough of for 2,000 men―
+{PAUSE ""}
+<BR>
+I wander around in search of something that dreamlike.<PG>
+All of a sudden, I look up at a cherry tree.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\桜の木花なし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Soon it'll be the season when the cherries bloom.
+{PAUSE ""}
+<BR>
+The buds are swelling, and the sun feels just a little hot.
+{PAUSE ""}
+<BR>
+<STYLE ID="2" RUBY="まがわもとよし">Motoyoshi Magawa's</STYLE> attack is about three months away, I'd say.<PG>
+After going around a number of fishing and mountain villages in the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> domain, I notice something.
+{PAUSE ""}
+<BR>
+Within the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house's lands, a <STYLE ID="18" RUBY="ぶんこくほう">domain law</STYLE> has been laid down.
+{PAUSE ""}
+<BR>
+In other words, a law issued for inside the Magawa domain.
+{PAUSE ""}
+<BR>
+A house as powerful as Magawa would have <STYLE ID="19" RUBY="いちえんちぎょう">full control of the lands</STYLE> well in place, and the rice tax and other dues would be getting paid too.<PG>
+So everything you can get around here is also delivered to the <STYLE ID="3" RUBY="まがわ">Magawa</STYLE> house as tax.
+{PAUSE ""}
+<BR>
+And it isn't just Magawa.
+{PAUSE ""}
+<BR>
+The provinces I'm about to head into are ruled by warlords like <STYLE ID="20" RUBY="たけだ">Takeda</STYLE> and <STYLE ID="21" RUBY="なんじょう">Nanjo</STYLE>.
+{PAUSE ""}
+<BR>
+There's no point in bringing back something another daimyo owns.<PG>
+Should I search around the borders between domains, where their eyes reach least?
+{PAUSE ""}
+<BR>
+The road will literally be a steep one, though.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\雪山.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I changed course to the north side of the range and trekked through the steep mountains.
+{PAUSE ""}
+<BR>
+Crossing a range that had to be a ri high was no ordinary feat.
+{PAUSE ""}
+<BR>
+In early spring there were still few wild greens, and bears that had woken from hibernation hungry were roaming around.
+{PAUSE ""}
+<BR>
+Frogs and snakes gone thin from hibernation filled my belly, but I couldn't keep living like this for long.
+{PAUSE ""}
+<BR>
+I had to find what I was after, and get back soon.<PG>
+{STOPSND "VOICE" "1000" "PASS"}
+<STYLE ID="8">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+From under the melting snow, a tree branch, white as the snow itself, is peeking out.
+{PAUSE ""}
+<BR>
+White branches are rare.
+{PAUSE ""}
+<BR>
+I've hardly seen any around here, but could it be a <STYLE ID="22" RUBY="しらかば">white birch</STYLE>?
+{PAUSE ""}
+<BR>
+I grab the branch, stuck fast in the snow and dirt, and give it a hard yank.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\骨.gal" "NORMAL" "#1" "650" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n0\r\n3000\r\nDEC\r\nPASS">
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="8">"Wh-what on earth is this...!"</STYLE>
+{PAUSE ""}
+<BR>
+It took me a good long while to realize it was an animal's bone.
+{PAUSE ""}
+<BR>
+After all, it was a bone as huge as a monster's.
+{PAUSE ""}
+<BR>
+Was this from around a deer's <STYLE ID="23" RUBY="ろっこつ">ribs</STYLE>?
+{PAUSE ""}
+<BR>
+It was a lot sturdier than my leg.<PG>
+If these mountains are crawling with monsters like this, there might be some incredible food here.
+{PAUSE ""}
+<BR>
+All right, I'll search this area a little more carefully.
+{PAUSE ""}
+<BR>
+This deep in the mountains, not even bandits will live here, and I can hope to find things nobody knows about yet.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "エデンの桜\SE\草むらがさがさ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESOFF "500"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Then, a rustling of <STYLE ID="24" RUBY="ささ">bamboo grass</STYLE> leaves being pushed aside.
+{PAUSE ""}
+<BR>
+Could it be prey already!?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\イノシシ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "200" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "エデンの桜\箱からの脱出.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+What burst out was a huge black shape, so big I took it for a house.
+{PAUSE ""}
+<BR>
+But I couldn't make sense of it as a boar.
+{PAUSE ""}
+<BR>
+Next to the boars I knew, it was the difference between a cat and a tiger.<PG>
+And it robbed me, a man out looking for prey, of even the thought of hunting this prey.
+{PAUSE ""}
+<BR>
+Ah, there had to be some wonderful, strength-giving food here after all.
+{PAUSE ""}
+<BR>
+Seeing this boar, which you could only call monstrous, made me sure of it.<PG>
+{MESOFF "500"}
+{DELETECG "000" "33" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+My memory ends here.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

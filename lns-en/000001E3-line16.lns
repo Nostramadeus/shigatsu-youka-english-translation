@@ -1,0 +1,59 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=7, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=73, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=197, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=70, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=381, target=)
+; Links:
+;    0: TWdLink(count=349, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>"The skin...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I stopped the glass of tomato juice I had been about to drink from.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A </STYLE><STYLE ID="2" RUBY="は">flayed</STYLE><STYLE ID="1"> body? The whole body at that?</STYLE><PG>
+<STYLE ID="3">"That's right. Not a figure of speech of any kind. Literally, the skin was </STYLE><STYLE ID="4" RUBY="は">flayed</STYLE><STYLE ID="3"> off and the victim lay dying. That is what I think."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Hey now... 'bad' doesn't cover that."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Haruka</STYLE><STYLE ID="1">'s face twitched.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Something this ghastly was beyond what she had expected, I suppose.</STYLE><PG>
+<STYLE ID="3">"I examined the other lines too, death by burning and dissolution by acid, but in the end I think this possibility is the strongest. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It is a way of killing cruel enough to stand alongside the past Megasawa City murders. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">After all, it means the skin of the whole body was gouged away with a blade while the victim was alive and conscious."</STYLE><PG>
+<STYLE ID="5">"Whoa... I have heard of dismembered bodies and terrible lynching cases, but the skin flayed off a whole body..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"And as if to back that up, the witnesses said this with one voice."</STYLE><PG>
+{MESOFF "0"}
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

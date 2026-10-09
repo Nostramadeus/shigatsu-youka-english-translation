@@ -1,0 +1,134 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=319, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=306, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=12, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=5, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=47, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=784, target=)
+; Links:
+;    0: TWdLink(count=700, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\すきま風の声.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田駅外.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬腰に手.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Chigaya-chan</STYLE>, over here!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... Thank you, </STYLE>Auntie<STYLE ID="1">. It's been ten days. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So it's just me getting a ride?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's right! <STYLE ID="2">Haruka</STYLE> and the others say they're walking over from <STYLE ID="3" RUBY="とよたけ">Toyotake</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... </STYLE><STYLE ID="4" RUBY="とよたけ">Toyotake</STYLE><STYLE ID="1">...? Don't tell me this is </STYLE><STYLE ID="5">Kana</STYLE><STYLE ID="1">'s doing?"</STYLE>
+{PAUSE ""}
+<BR>
+"Sharp as ever, <STYLE ID="1">Chigaya-chan</STYLE>! Just as you guessed!"<PG>
+<STYLE ID="1">"Mm... Honestly, </STYLE><STYLE ID="5">that girl</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"I'm sure she just couldn't wait for everyone to get here! Young visitors are rare in Arata!
+{PAUSE ""}
+　Come on, come on, get in!"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "環境音\車内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ワゴン昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Mm... </STYLE>Auntie<STYLE ID="1">, when we get to Arata, I'll go and meet everyone."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Are you sure? Aren't you tired?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... This much is nothing. I'm more worried about everyone else. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Erina Goto</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="7">Natsumi Kogori</STYLE><STYLE ID="1">, those girls are with them too, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">"Mm... Don't worry, I won't say anything I shouldn't."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="8">My mother-in-law</STYLE> has a message for <STYLE ID="1">you</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... For me?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="8">'</STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="8"> will probably say she'll go and meet them,'</STYLE> she said."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... That's </STYLE><STYLE ID="8">Grandma</STYLE><STYLE ID="1"> for you."</STYLE><PG>
+"<STYLE ID="8">'I want her to tell them about that matter ahead of time,'</STYLE> she said."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... Me, tell them about the curse-killings?"</STYLE>
+{PAUSE ""}
+<BR>
+"If you take the Motoki-cho group along the mountain path, there's no telling when you'll be back home, right?
+{PAUSE ""}
+　So she thought it'd be better to tell the Motoki-cho group early on, too."<PG>
+<STYLE ID="1">"Mm... Honestly, if only </STYLE><STYLE ID="5">Kana</STYLE><STYLE ID="1"> hadn't pushed them into it..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Chigaya-chan</STYLE>, that's not what I mean. It isn't because <STYLE ID="5">Kana-chan</STYLE> made them walk the mountain path."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... What do you mean?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Never mind..."</STYLE><PG>
+"Well, it's not something to hide, either. You'll find out soon enough."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Chigaya-chan</STYLE>, is there something you want to say?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... No, nothing. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">More importantly, is the swap between me and </STYLE>Auntie<STYLE ID="1"> still happening?"</STYLE>
+{PAUSE ""}
+<BR>
+"No, that plan's off too. We heard they're not coming."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "人物1,000,人物2,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

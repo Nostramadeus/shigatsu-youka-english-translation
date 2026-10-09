@@ -1,0 +1,167 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=485, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=7, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=146, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=5, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=767, target=)
+; Links:
+;    0: TWdLink(count=645, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\なつみの部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"I guess that'll do for now. Working from home isn't easy either. 
+{PAUSE ""}
+Now, I'd better check the mail."<PG>
+"Huh? A letter from Sawa Prison?
+{PAUSE ""}
+　Um... <STYLE ID="1">Mom</STYLE> is being transferred... 
+{PAUSE ""}
+To Motoki Prison?
+{PAUSE ""}
+　Oh, so she'll be closer. 
+{PAUSE ""}
+The location is... 
+{PAUSE ""}
+It's a bit far from home, but a lot easier to get to than Sawa Prison. 
+{PAUSE ""}
+So the transfer is scheduled for this morning."<PG>
+"I've got some time, so maybe I'll head over there now."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"Let's see, about 30 minutes from here by car. Yeah, way closer than before!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\車室内エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\刑務所受付.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Wow...! Even the front desk looks like a hotel!
+{PAUSE ""}
+　Prison or not, that's a brand-new building for you."<PG>
+"Um, excuse me, I'm family of <STYLE ID="1">Akane Kogori</STYLE>, who's due to be transferred here today..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">―May I see some identification?</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, my driver's license."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">―Yes, thank you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm afraid she has not yet arrived here. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">There are intake procedures and so on to complete here, so visits will begin from early next week.</STYLE><PG>
+"Oh, I see. Well, I suppose that makes sense... 
+{PAUSE ""}
+Sorry, thank you. 
+{PAUSE ""}
+Oh, could I have a letter passed on to her?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">―It will be opened and checked here first. Is that all right?</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, I was thinking of writing it here, now..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">―Then please use this paper and pen.</STYLE><PG>
+"Oh, thank you... 
+{PAUSE ""}
+The service really is great, too... 
+{PAUSE ""}
+Let's see...
+{PAUSE ""}
+{PLAYSND "SE\writing_in_a_pen.ogg" "SE" "REPEAT" "1000" "0"}
+'It must be hard starting in a new place today. 
+{PAUSE ""}
+I'll come again next week.'
+{PAUSE ""}
+{STOPSND "SE" "500" "PASS"}
+There. 
+{PAUSE ""}
+This, please."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">―Certainly.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\車内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\プリズン\路駐運転席メイン.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Now, what should I do? 
+{PAUSE ""}
+I've got time. Maybe I'll go over to <STYLE ID="3">Goto's</STYLE> place―"<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\地響き.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "800" "5000" "PASS"}
+{QUAKE "000" "QUAKE" "1" "3" "3" "0" "30"}
+{WAIT "3000" "CLICK" "SKIP"}
+{QUAKE "000" "QUAKE" "1" "10" "10" "0" "30"}
+{MESON "500"}
+"Huh!? An earthquake!?"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\爆発.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "SE2" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "30" "30" "0" "30"}
+<STYLE ID="4">"Eek!"</STYLE>
+{QUAKESTOP "1000"}
+<PG>
+{MESOFF "500"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"Has it stopped...?"<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYMOVIE "真明徴編.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"What is this...?"<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,607 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=421, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=982, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひとけ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1532, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=345, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=41, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=423, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=15, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=57, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=432, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=514, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=23, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=5, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=39, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5262, target=)
+; Links:
+;    0: TWdLink(count=4831, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{PLAYMOVIE "桜.wmv" "281" "C" "C" "REPEAT" "FALSE" "100" "50"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "WAIT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Mom</STYLE>, where'd you go!?"
+{STOPSND "VOICE" "500" "PASS"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2" RUBY="ひとけ">In the deserted</STYLE><STYLE ID="3"> settlement, only my voice echoed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Cherry blossoms blown over from the Niimura main house scattered and danced, catching the dull moonlight and blocking my view.</STYLE><PG>
+"Damn...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Then, beyond the cherry-blossom-patterned darkness, I saw a figure.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mom</STYLE><STYLE ID="3">!?</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... </STYLE>Haruka<STYLE ID="4">...?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">Chiga-nee</STYLE>, didn't you go back home!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="5">Grandma</STYLE><STYLE ID="4"> told me to patrol around here for a while."</STYLE><PG>
+"Then did you see <STYLE ID="1">Mom</STYLE>!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="4">...?"</STYLE><PG>
+"<STYLE ID="1">Mom</STYLE>... said it's her fault <STYLE ID="6">Natsumi</STYLE>'s parents are dead..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... she must be there..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">She seemed to have somewhere in mind.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "REPEAT" "800" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">We walked through the forest toward the graveyard from earlier.</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Chiga-nee</STYLE>, where are we going?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... a secret place..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What's that supposed to mean...</STYLE><PG>
+{STOPSND "VOICE" "500" "PASS"}
+<STYLE ID="3">―</STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="3"> came to a stop near the secret base that </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="3"> had told me about earlier.</STYLE>
+{PAUSE ""}
+<BR>
+"Could it be... <STYLE ID="7">Kana</STYLE>'s secret base?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... so </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="4"> opened up to both </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="4"> and </STYLE><STYLE ID="8">Goto-chan</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Chiga-nee</STYLE><STYLE ID="3"> said that and left the path, going into the dark bushes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Sure enough, it was </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="3">'s secret base.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地入口.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Just as before, the cave gaped wide open.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Earlier the moonlight had lit up the inside, but the moon had moved since then, so it was bound to be dark now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Slowly, we stepped into the cave.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">The back of the cave, which I'd thought would be dark, was lit by moonlight, the same as before.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The moonlight seemed to be shining in through a different crack in the rock.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬うつむき逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">In that moonlight, </STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="3"> sat with her head bowed.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Haruka<STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+"So this is where you were."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬うつむき逆.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">I crouched down with </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="3"> in front of </STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Gradually my eyes adjusted, and I noticed </STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="3"> was holding a photo.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">In the photo were two little girls.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\黒塗り.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\写真茜美冬.gal" "NORMAL" "#1" "R" "C" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Is this... <STYLE ID="1">you, Mom</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Me and... </STYLE><STYLE ID="9">Akane</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The photo had to be nearly 40 years old.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mom</STYLE><STYLE ID="3"> having it with her now meant she must have always carried it around.</STYLE><PG>
+<STYLE ID="1">"The oldest photo of me and </STYLE><STYLE ID="9">Akane</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">My dad took it on the day of our elementary school entrance ceremony, back when he was still healthy. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It's one of the most precious things I have. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Uugh... </STYLE><STYLE ID="9">Akane</STYLE><STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mom</STYLE><STYLE ID="3"> hid her face and broke down crying.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "118" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+"<STYLE ID="1">Mom</STYLE>, talk to me... 
+{PAUSE ""}
+We can't solve this unless everyone works together, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You're right... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If things stay like this, </STYLE><STYLE ID="9">Akane</STYLE><STYLE ID="1"> can't rest in peace either..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mom</STYLE><STYLE ID="3"> lifted her head, her tears not yet dry.</STYLE><PG>
+<STYLE ID="1">"I'm the one who asked </STYLE><STYLE ID="9">Akane</STYLE><STYLE ID="1"> and the others to come to Arata..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2,111,アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">―10 days ago.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It was when the cherry blossoms had just begun to open.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\ザッハ中思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\良治バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Sorry for calling you out here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"What's going on? Something to talk over with </STYLE><STYLE ID="10">Ryoji-kun</STYLE><STYLE ID="9"> too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"The truth is..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\すきま風の声.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "3000" "PASS"}
+<STYLE ID="3">I told them that ever since that business in Megasawa, strange murders had been happening in the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">My mother-in-law</STYLE><STYLE ID="3"> had said to settle it within Arata alone, but we had reached our limit.</STYLE><PG>
+<STYLE ID="9">"Once a year, someone gets killed... The killer is unknown... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">And there are even people convinced it's a curse..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="10">, couldn't we attend the upcoming thirteenth-year memorial service?"</STYLE> [TN: Buddhist memorials count the year of death as the first year.]
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"You're right... If we go, we might be able to find some kind of lead."</STYLE><PG>
+<STYLE ID="1">"I'm grateful you'd say that, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If anything were to happen, you two would be in danger too."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="1">Mifuyu</STYLE><STYLE ID="9">, what are you saying, after all this time... You're in trouble, </STYLE><STYLE ID="1">Mifuyu</STYLE><STYLE ID="9">. I can't just stay quiet. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Let us help. Ask the people in the settlement so we can attend the thirteenth-year memorial service."</STYLE><PG>
+<STYLE ID="1">"All right... I'll ask </STYLE><STYLE ID="5">my mother-in-law</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"No, wait, </STYLE><STYLE ID="9">Akane</STYLE><STYLE ID="10">. In that case, we'd better bring </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> along too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="10">Ryoji-kun</STYLE><STYLE ID="9">!? Dragging </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="9"> into this too...!"</STYLE><PG>
+<STYLE ID="10">"You haven't forgotten what happened in Megasawa, have you?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　</STYLE><STYLE ID="10">At this time of year, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> is bound to be a help to us!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"But...! Things are way too different from last time!</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　This time it won't just be us. </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="9"> will be in danger too!"</STYLE><PG>
+<STYLE ID="10">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="10">You're right... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Mifuyu</STYLE><STYLE ID="10">-san, just the two of us will go to the thirteenth-year memorial service. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">No... first, let's ask </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> who should go. If </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> hears some voice, we'll follow it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"All right... We can't take </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="9">'s hunches lightly... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Let's do that."</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="8">"Huh? They really are here!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"See? I heard a voice telling me to come here!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "50" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物4" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="8">Goto-chan</STYLE><STYLE ID="3"> showed up together.</STYLE><PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="10">"</STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10">... what a coincidence... Isn't </STYLE>Haruka-chan<STYLE ID="10"> with you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"It's not a coincidence! I heard </STYLE><STYLE ID="11">Ojisan</STYLE><STYLE ID="6">'s voice. When </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="6"> and I were talking about going somewhere, it told me to come here. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="6"> is still at school studying on her own, since there's a practice exam tomorrow."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"I see... </STYLE>Haruka-chan<STYLE ID="10">'s taking entrance exams this year, after all..."</STYLE><PG>
+<STYLE ID="6">"So, what were you talking about? It's probably about us, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"That's... um..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3"> being told to come here meant... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3"> had to go to Arata as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="3"> was asking </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3"> for help.</STYLE><PG>
+<STYLE ID="1">"Uh... for the upcoming thirteenth-year memorial service for </STYLE><STYLE ID="12">Eiichiro-san</STYLE><STYLE ID="1">, I was wondering if </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="1"> might come along too..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物3" "グラフィック\立ち絵\人物\なつみ考える.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"I can go to </STYLE><STYLE ID="11">Ojisan</STYLE><STYLE ID="6">'s thirteenth-year memorial service!?</STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Then I'd love to!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物4" "グラフィック\立ち絵\人物\五島挨拶.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"That sounds great! I'd like to go too!"</STYLE><PG>
+<STYLE ID="6">"</STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="6"> doesn't really have much to do with it... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">But... I was told to come here while I was with </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="6">, so </STYLE><STYLE ID="8">Goto</STYLE><STYLE ID="6"> should probably come too, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3"> having said so, there was nothing to do but go along with it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3">'s coming meant some kind of danger could be avoided.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2,人物3,人物4" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">But this time, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3">'s warning was a little strange.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Hadn't she come to warn of danger?</STYLE><PG>
+<STYLE ID="3">And on the way back―</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\マンション前思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"Hey, </STYLE><STYLE ID="10">Dad</STYLE><STYLE ID="6">, </STYLE><STYLE ID="9">Mom</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I think it's better if you don't go to Arata."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? Why..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I just get that feeling. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I can't explain it well, but... it feels a little dangerous."</STYLE><PG>
+<STYLE ID="3">It was a vague answer.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3"> wasn't one to lie, so this too was probably a voice from </STYLE><STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="3">.</STYLE><PG>
+<STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3">'s danger sense works through contact with the person who will be in danger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">She hadn't come to Zahha to sense danger, I'd thought earlier. But at last I had heard something like a warning.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But... somehow it didn't sit right with me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It felt a little different from her danger sense up to then.</STYLE><PG>
+<STYLE ID="3">In the end, </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="3">, </STYLE><STYLE ID="8">Goto-chan</STYLE><STYLE ID="3">, and then </STYLE>Haruka<STYLE ID="3"> and I would attend the thirteenth-year memorial service from Motoki-cho―I reported as much to </STYLE><STYLE ID="5">my mother-in-law</STYLE><STYLE ID="3">.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">And then, that night―</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\居間セピア.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\良治バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Is </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="1"> asleep already?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Yeah. We'd better not tell </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> about the murders. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> didn't seem to have caught on to that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"But... I'm still worried... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Isn't there some way to keep </STYLE><STYLE ID="6">Natsumi and the others</STYLE><STYLE ID="9"> even a little safer?"</STYLE><PG>
+<STYLE ID="10">"All right. My company's about to release its latest smartphone model. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">We'll give them each one with a bugging app built in, as a gift for moving up a year or for starting school or whatever. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="10">, is there anywhere near Arata where we could stay hidden?</STYLE>
+{PAUSE ""}
+<STYLE ID="10">　Somewhere right at the edge, without going into the Arata settlement. It doesn't have to be a place to stay overnight."</STYLE><PG>
+<STYLE ID="1">"In that case... there should be a storage shed beside Arata Station. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Arata Station is unstaffed, so I think hiding there for one night would be fine, and I don't think it was locked either. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But you'd better take the train there. A car parked at Arata Station overnight would really stand out..."</STYLE><PG>
+<STYLE ID="10">"Then we'll go one train after </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="10"> and the others. We should just make it there the same day. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Akane</STYLE><STYLE ID="10">, is that all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"But... are you really going to let </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="9"> go to Arata?</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　Hey, </STYLE><STYLE ID="1">Mifuyu</STYLE><STYLE ID="9">! Can't you at least keep </STYLE>Haruka-chan<STYLE ID="9"> from attending!?"</STYLE><PG>
+<STYLE ID="1">"Sorry, I can't do that... In the Arata settlement, not attending your parent's memorial service is unforgivable. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Besides, if we make such a conspicuous move, the killer might catch on. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The killer seems to be a very sharp person."</STYLE><PG>
+<STYLE ID="9">"Then </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="9"> and the others going to Arata stands out even more!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Outsiders take part in memorial services every so often. </STYLE>
+{PAUSE ""}
+Haruka<STYLE ID="1"> being absent would raise far more suspicion."</STYLE><PG>
+<STYLE ID="10">"I see... </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="10">, do you still have that drug? Just being near the settlement, we can't do anything. </STYLE>
+{PAUSE ""}
+<STYLE ID="10">With that, we should be able to be of use too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I do. I didn't know how to get rid of it, so I've still got it stored away. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It should still be within its expiration date. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But... don't use it if you can help it. The risk is too great."</STYLE><PG>
+<STYLE ID="9">"</STYLE><STYLE ID="1">Mifuyu</STYLE><STYLE ID="9">... you'll protect all three of them, no matter what, won't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　I'm trusting you..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I know. I'll protect them to the very end..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青ストラップ切.gal" "NORMAL" "#1" "650" "C" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">I stared at my phone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This was a gift they gave us to protect us.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But instead, </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="3">'s parents were the ones who got killed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Was it because they didn't listen to what </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="3"> said?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If they had done as </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="3"> said, kept away from Arata and stayed in Motoki-cho...</STYLE><PG>
+<STYLE ID="3">But Shirozaki-san, who seemed to be one of the killers, had acted as if he knew the two of them were hiding in the storage shed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Could someone have seen them going into the storage shed?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">If you saw two people sneaking into a shed, I could understand finding it suspicious.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But killing them over just that was far too rash.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Did they distrust anyone who came near this settlement that much?</STYLE><PG>
+<STYLE ID="3">No, Shirozaki-san had said 'I've dealt with the culprits behind the curse-killings.'</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">As if he were certain </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="3">'s parents were the culprits, without a doubt.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Had he had some kind of proof of that?</STYLE><PG>
+"Hey, <STYLE ID="4">Chiga-nee</STYLE>... Are there going to be more curse-killings? Are Shirozaki-san and the others hiding somewhere?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">"Mm... probably somewhere around the storage shed. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">As long as all the residents are there, I think it's safe here."</STYLE><PG>
+"What are <STYLE ID="5">Grandma</STYLE> and <STYLE ID="13">Kotaro-san</STYLE> doing right now?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... I don't know about </STYLE><STYLE ID="13">Dad</STYLE><STYLE ID="4">, but </STYLE><STYLE ID="5">Grandma</STYLE><STYLE ID="4"> isn't back yet. She said she'd go to the station and see how things are. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I told her to come back with me, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">she said she'd stay to the end and see what they do."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Chiga-nee</STYLE><STYLE ID="3"> said that much, then hung her head, her shoulders trembling.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I thought she was scared, but she was clenching her fists hard.</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="4">! Let's catch them after all! If we leave this alone any longer...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Chigaya-chan</STYLE><STYLE ID="1">... are you sure?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What are they talking about?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It's as if they know who the killer is...</STYLE><PG>
+{PLAYSND "BGM死月編\bgm_semarikuru.ogg" "BGM" "REPEAT" "1000" "0"}
+"You know who the killer is!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Mm... </STYLE><STYLE ID="1">Auntie</STYLE><STYLE ID="4">... let's stop keeping quiet any longer..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're right... But we have to be careful... One wrong move, and we'll all be killed."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">So they did know who the killer was.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But letting it slip seemed to be very dangerous.</STYLE><PG>
+<STYLE ID="4">"Mm... </STYLE>Haruka<STYLE ID="4">... actually, at today's succession rite... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Auntie</STYLE><STYLE ID="4"> and I were supposed to switch places."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">At the succession rite earlier, where the gravestone got smashed?</STYLE><PG>
+<STYLE ID="1">"Compared to me, </STYLE><STYLE ID="4">Chigaya-chan</STYLE><STYLE ID="1"> is much faster on her feet. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">She can surely run through the mountains about as fast as </STYLE><STYLE ID="7">Kana-chan</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What are they talking about...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What does the two of them switching places have to do with </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="3"> being able to run fast?</STYLE><PG>
+<STYLE ID="1">"</STYLE>Haruka<STYLE ID="1">, listen carefully. The mastermind behind these curse-killings is... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="13">Kotaro-san</STYLE><STYLE ID="1">, without a doubt."</STYLE>
+{PAUSE ""}
+<BR>
+"............!?
+{PAUSE ""}
+　But...! Wasn't that checked out years ago...!"<PG>
+{PLAYSND "BGM死月編\竹林黒霧.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Don't underestimate </STYLE><STYLE ID="13">Kotaro-san</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Something on that level... for a person who knows the mind of the Arata settlement as thoroughly as </STYLE><STYLE ID="13">Kotaro-san</STYLE><STYLE ID="1">, moving everyone around however he likes isn't difficult at all."</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, then hold on! Don't tell me you told <STYLE ID="13">Kotaro-san</STYLE> too that <STYLE ID="6">Natsumi</STYLE>'s parents were in the storage shed!?"<PG>
+<STYLE ID="1">"I did no such thing! I didn't even tell </STYLE><STYLE ID="5">my mother-in-law</STYLE><STYLE ID="1">!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　All I told </STYLE><STYLE ID="5">my mother-in-law</STYLE><STYLE ID="1"> was that </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="1"> has a strange power to hear </STYLE><STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="1">'s voice, so she'd surely be a help!"</STYLE>
+{PAUSE ""}
+<BR>
+"Then why did Shirozaki-san and the others attack the storage shed without any hesitation!?"<PG>
+<STYLE ID="1">"That's... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I don't know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">How could anyone have found out where </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="3">'s parents were!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi</STYLE><STYLE ID="3">'s parents had no connection to </STYLE><STYLE ID="13">Kotaro-san</STYLE><STYLE ID="3">, and even we hadn't been told about it!</STYLE><PG>
+"But why do you two think <STYLE ID="13">Kotaro-san</STYLE> is the killer?
+{PAUSE ""}
+　Besides, what were you trying to do by switching places..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... </STYLE>Haruka<STYLE ID="4">. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Me and </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="4">...</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{CREATECG "111" "グラフィック\背景\黒塗り.gal" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

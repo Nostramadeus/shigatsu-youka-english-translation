@@ -1,0 +1,365 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1081, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=483, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こうこう, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=477, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=10, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひょうへん, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひょうへん, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しよう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2345, target=)
+; Links:
+;    0: TWdLink(count=2082, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE" "REPEAT" "0" "30"}
+{CHGVOL "VOICE" "900" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\桜道夜ブラー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>How many years has it been since I rode a bicycle this hard, standing on the pedals?
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "3000" "PASS"}
+If <STYLE ID="1">Senpai</STYLE> really is heading for the police station, then if I go to the police station first and turn from there toward <STYLE ID="1">Senpai</STYLE>'s house, I should meet her without fail.<PG>
+There was still no wind, and the moonlight lit the avenue of cherry trees <STYLE ID="2" RUBY="こうこう">brilliantly</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\警察署外観夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I reached the police station in 10 minutes. I must have got there before <STYLE ID="1">Senpai</STYLE> did.
+{PAUSE ""}
+<BR>
+From there I changed direction toward <STYLE ID="1">Senpai</STYLE>'s house and rode on, watching carefully so as not to pass her.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The lights of a convenience store came into view in the distance.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Senpai</STYLE><STYLE ID="3"> will without fail</STYLE> come along this route.
+{PAUSE ""}
+<BR>
+Let me lie in wait in front of this convenience store.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\コンビニ夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "SE\自転車ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="4">"Oh..."</STYLE>
+{PAUSE ""}
+<BR>
+The figure of someone sitting on the bench in front of the store.
+{PAUSE ""}
+<BR>
+A girl with short hair.
+{PAUSE ""}
+<BR>
+There is no mistaking her!
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "51" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">!"</STYLE>
+{PAUSE ""}
+<BR>
+I threw the bicycle down and ran over to <STYLE ID="1">Senpai</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+I held the head of <STYLE ID="1">Senpai</STYLE>, who was looking at me in surprise, against me.
+{PAUSE ""}
+<BR>
+No words came out.<PG>
+<STYLE ID="1">"Haha... what did you come here for... It's too early for a visit, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Senpai</STYLE>'s feeble voice―hearing that voice, I drew my body back from <STYLE ID="1">Senpai</STYLE>.
+{PAUSE ""}
+<BR>
+Swollen and blotched from crying, <STYLE ID="1">Senpai</STYLE> was not even wearing a coat.
+{PAUSE ""}
+<BR>
+I took off the coat I had on and put it over <STYLE ID="1">Senpai</STYLE>'s shoulders.<PG>
+<STYLE ID="4">"Let's go home, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">. It is going to be all right."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Home, you say, but where to. Even </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="1"> wouldn't want to look at a murderer's face, daughter or not."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Then let's go home to my house."</STYLE>
+{PAUSE ""}
+<BR>
+I put it to her without taking my eyes off <STYLE ID="1">Senpai</STYLE>'s face, but...<PG>
+<STYLE ID="1">"Are you an idiot? I might end up killing you!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"But..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+There seemed no way to keep the conversation going properly any further.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "800" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I slowly moved away from <STYLE ID="1">Senpai</STYLE> and went into the convenience store alone.
+{PAUSE ""}
+<BR>
+I bought warm drinks for the two of us and went back to the bench.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\コンビニ夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Drink this and calm down, please. It's my thanks for lunch."</STYLE>
+{PAUSE ""}
+<BR>
+I grinned from ear to ear at <STYLE ID="1">Senpai</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Senpai</STYLE> looked blankly at my face and took the piping-hot bottle.
+{PAUSE ""}
+<BR>
+I sat down beside <STYLE ID="1">Senpai</STYLE> and warmed both hands, gone cold from the ride, on the bottle.<PG>
+<STYLE ID="4">"Why would </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4"> be a murderer?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+A great cloud of white breath came out of <STYLE ID="1">Senpai</STYLE>'s mouth.
+{PAUSE ""}
+<BR>
+She did not seem to have calmed down yet.<PG>
+<STYLE ID="4">"Why didn't you go to the police?"</STYLE>
+{PAUSE ""}
+<BR>
+I tried changing the question. Would she answer something?<PG>
+<STYLE ID="1">"I was thinking about how to tell the police. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And she's still at the police station, isn't she? </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">. I mustn't go near </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+Was she trying to say that <STYLE ID="1">Niimura-senpai</STYLE> <STYLE ID="7" RUBY="ひょうへん">changes utterly</STYLE> on April 8?
+{PAUSE ""}
+<BR>
+I took the bottle <STYLE ID="1">Senpai</STYLE> was holding and opened the cap for her.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="1">Senpai</STYLE> put her mouth to the bottle.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"That's hot!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Senpai</STYLE> let out a small yelp.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That's because I picked the one that looked hottest."</STYLE>
+{PAUSE ""}
+<BR>
+I gave her a small smile.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Senpai</STYLE> had dropped her head again. She would not readily try to talk.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">, go home on your own. You'll catch a cold!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I am not leaving </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">'s side until morning comes."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Are you an idiot...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Senpai</STYLE> lifted her head a little.<PG>
+<STYLE ID="4">"I am not an idiot! I'm the genius girl, by my own account and everyone else's!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Heh, are you an idiot...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Senpai</STYLE> showed a laughing face for just an instant.
+{PAUSE ""}
+<BR>
+Matching her, I made a smile too.
+{PAUSE ""}
+<BR>
+Not a grin from ear to ear, only enough to lift the corners of my mouth.<PG>
+<STYLE ID="4">"That's enough, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">, we're going!"</STYLE>
+{PAUSE ""}
+<BR>
+I stood up and gave <STYLE ID="1">Senpai</STYLE>'s arm a hard tug.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Idiot, what are you doing!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"You call me an idiot, idiot, far too much! I said I'm the genius girl!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Stop it! Are you an idiot!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Senpai</STYLE> was resisting desperately.
+{PAUSE ""}
+<BR>
+Not to be outdone, I pulled at her arm.<PG>
+<STYLE ID="4">"What sort of murderer are you! Does a dithering coward like this have the courage to kill a person!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Senpai</STYLE>'s backside lifted off the bench, and her shoes scraped along with a rasp.<PG>
+<STYLE ID="1">"Idiot! You don't know anything!"</STYLE>
+{PAUSE ""}
+<BR>
+When <STYLE ID="1">Senpai</STYLE> put more force into it, her backside, which had lifted, came back down onto the bench.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"It's because I don't know anything that I'm telling you to talk to me!"</STYLE>
+{PAUSE ""}
+<BR>
+I pulled at her arm without giving up.<PG>
+<STYLE ID="1">"And what are you going to do once you know!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What do you mean, what for: you want to save </STYLE><STYLE ID="6">Kogori-senpai</STYLE><STYLE ID="4">, don't you!? You need my help, don't you!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But...! Even if I leaned on </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1">...</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">that's..."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly <STYLE ID="1">Senpai</STYLE>'s resistance stopped.
+{PAUSE ""}
+<BR>
+Matching her, I let the strength out of my arm too.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"But... I can't go to </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">'s house. There's nobody home, is there?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"There is. Just as I was leaving the house, </STYLE><STYLE ID="8">Sis</STYLE><STYLE ID="4"> came home."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+There was nothing left but to see the lie through.
+{PAUSE ""}
+<BR>
+But, this is a permitted lie. Not a lie for my own sake, a lie for <STYLE ID="1">Senpai</STYLE>'s sake.<PG>
+<STYLE ID="4">"Come on, </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+I pulled at <STYLE ID="1">Senpai</STYLE>'s arm once more.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There was no sign of resistance any more.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... aren't </STYLE><STYLE ID="4">you</STYLE><STYLE ID="1"> afraid of me? I... </STYLE><STYLE ID="9">Natsumi's dad</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="4">, do you want to kill me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Th-that's not it! I... I don't want to kill anyone...!"</STYLE><PG>
+<STYLE ID="4">"Then I'm not afraid. Why would I have to be afraid of </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　Is April 8 the day </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">, like a werewolf, </STYLE><STYLE ID="10" RUBY="ひょうへん">changes utterly</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">not how it is, but..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山月.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A great moon hanging in the sky―today, <STYLE ID="11" RUBY="しよう">Shiyo</STYLE> 800, April 8, is a full moon.
+{PAUSE ""}
+<BR>
+Somewhere in a Western country a werewolf may be out, but here in Motoki-cho nothing of the sort is happening.<PG>
+{PLAYSND "SE\自転車開始.ogg" "VOICE" "NORMAL" "1000" "0"}
+We each got onto our own bicycle.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">, please go first."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Because I have to keep watch so you don't run off."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Niimura-senpai</STYLE> started her bicycle off without a word.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,949 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4293, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=279, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=51, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1146, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=685, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ろうばい, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てい, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=82, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=11, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=313, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=12, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さいぎしん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てきがいしん, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かつ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=24, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=11, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=すみ, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=31, unk2=16757864, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひきょう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7641, target=)
+; Links:
+;    0: TWdLink(count=6952, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\蔵火事後.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The storehouse fire burned only the second floor and didn't spread anywhere else.
+{PAUSE ""}
+<BR>
+The stench of water-soaked embers hangs over the whole settlement.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I was sent back to my room again.
+{PAUSE ""}
+<BR>
+Right now, <STYLE ID="1">Goto</STYLE> and the others should be investigating the storehouse.
+{PAUSE ""}
+<BR>
+Now that I know why I'm being isolated like this, I have no particular complaint.
+{PAUSE ""}
+<BR>
+This is the best method, and my way of actively cooperating.<PG>
+Even so, <STYLE ID="2">Haruka</STYLE> and the others are late getting back.
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤ストラップ入.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+Still no reply from <STYLE ID="2">Haruka</STYLE> to my message―it isn't even marked read.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE>, you're safe, right? You're okay, right?
+{PAUSE ""}
+<BR>
+I kept staring at the unchanging message screen.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">"Um, </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">?"</STYLE>
+{PAUSE ""}
+<BR>
+A knock from the hallway, and <STYLE ID="3">Kana-chan's</STYLE> voice.
+{PAUSE ""}
+<BR>
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="4">"Come in."</STYLE>
+{PAUSE ""}
+<BR>
+Maybe because my heart was calmer than before, I managed to raise my voice more than I'd expected.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Good, you look well."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Do I?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah... </STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3"> doesn't like keeping you shut up in here all the time either, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Hey, why am I being kept shut up in here?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Th-that's, um, well, um..."</STYLE><PG>
+<STYLE ID="3">Kana-chan</STYLE> is openly <STYLE ID="5" RUBY="ろうばい">flustered</STYLE> by my question.
+{PAUSE ""}
+<BR>
+A slightly mean question, but I have to keep up the <STYLE ID="6" RUBY="てい">pose</STYLE> of not knowing why I'm shut in.
+{PAUSE ""}
+<BR>
+Keep it up toward <STYLE ID="3">Kana-chan</STYLE>, and toward <STYLE ID="7">Necro</STYLE>.
+{PAUSE ""}
+<BR>
+That said, keeping up this stance is anything but pleasant.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"U-um, </STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">'s going to look for </STYLE><STYLE ID="2">Haruka-chan</STYLE><STYLE ID="3">, and she wants you to come too, </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What!? Really!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah, can you leave right away?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Um... yeah, I'm fine!"</STYLE>
+{PAUSE ""}
+<BR>
+That was unexpected.
+{PAUSE ""}
+<BR>
+Will it be all right for me to go with them?<PG>
+But I'm just as worried about <STYLE ID="2">Haruka</STYLE>. There's no reason to refuse to go.
+{PAUSE ""}
+<BR>
+Even if going out is scary, <STYLE ID="2">Haruka</STYLE> not coming back is scarier.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">! I brought her!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">, you're letting me help too!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes! We're going to search for </STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+Here's one place I'd better make sure <STYLE ID="1">Goto</STYLE>, too, sees my <STYLE ID="6" RUBY="てい">pose</STYLE> of not knowing.<PG>
+<STYLE ID="4">"Then just </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="4"> and I will go there!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">, shouldn't you be looking into the storehouse!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> must not want to leave <STYLE ID="3">Kana-chan</STYLE> and me alone together.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE> might let something slip again.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"No! We have to go, all three of us...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">! Right now you should do what </STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3"> says!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"O-okay..."</STYLE>
+{PAUSE ""}
+<BR>
+That settles it. The rest is going along with whatever <STYLE ID="1">Goto</STYLE> says and stating my own thoughts.
+{PAUSE ""}
+<BR>
+All of it to keep <STYLE ID="7">Necro</STYLE> <STYLE ID="8" RUBY="だま">deceived</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+Still, it really doesn't feel good...
+{PAUSE ""}
+<BR>
+Is keeping <STYLE ID="7">Necro</STYLE> <STYLE ID="8" RUBY="だま">deceived</STYLE> really the right thing?
+{PAUSE ""}
+<BR>
+Keeping <STYLE ID="7">Necro</STYLE> <STYLE ID="8" RUBY="だま">deceived</STYLE> means keeping everyone <STYLE ID="8" RUBY="だま">deceived</STYLE>.
+{PAUSE ""}
+<BR>
+Does that really lead to a solution?<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"It's about 10 minutes into this forest."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"You call it a forest, but the trees are almost all dead..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah, they weren't like this a little while ago..."</STYLE>
+{PAUSE ""}
+<BR>
+The trees around here were almost all dead where they stood.
+{PAUSE ""}
+<BR>
+The trees inside the settlement had been the same way.
+{PAUSE ""}
+<BR>
+What on earth has happened...?<PG>
+I'm sure that when I saw them this evening, the trees were sturdy and putting out new buds.
+{PAUSE ""}
+<BR>
+At first I thought they only looked different because it had gotten dark, but that doesn't seem to be it after all.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1">, this is apparently the work of </STYLE><STYLE ID="7">Necro</STYLE><STYLE ID="1">―or </STYLE><STYLE ID="7">Shigatsu Youka</STYLE><STYLE ID="1">, as it's called, a fungus that covers this whole area. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It seems to strip this mountain of its nutrients, root and all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="7">Shigatsu Youka</STYLE><STYLE ID="4">...?"</STYLE>
+{PAUSE ""}
+<BR>
+But <STYLE ID="1">Goto</STYLE> fell silent at that point.
+{PAUSE ""}
+<BR>
+I see. So she can't say any more than that.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> referred to <STYLE ID="7">Necro</STYLE> as <STYLE ID="7">Shigatsu Youka</STYLE>, but is that something she learned from the books in the storehouse?<PG>
+<STYLE ID="7">Shigatsu Youka</STYLE> is a fungus breeding around here―
+{PAUSE ""}
+and a fungus means something in the mold-and-mushroom family, right?
+{PAUSE ""}
+<BR>
+And <STYLE ID="7">Shigatsu Youka</STYLE> sucked up these trees' nutrients, so they withered.
+{PAUSE ""}
+<BR>
+Beyond <STYLE ID="7">Shigatsu Youka</STYLE> being a fungus that steals other plants' nutrients, I don't know.
+{PAUSE ""}
+<BR>
+That's all the information I can get from <STYLE ID="1">Goto</STYLE>.<PG>
+The rest is for me to keep deceiving <STYLE ID="7">Shigatsu Youka</STYLE> by pretending to know nothing.
+{PAUSE ""}
+<BR>
+I'd like <STYLE ID="1">Goto</STYLE> to notice how much I know, if she can, but with my gift for talk that's a tall order...<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Wait."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly <STYLE ID="3">Kana-chan</STYLE> stepped in front of us.
+{PAUSE ""}
+<BR>
+Turning her back to us, she watched our surroundings intently.<PG>
+<STYLE ID="4">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Quiet... someone's there."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Could it be </STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="3">Kana-chan</STYLE> took a knife in each hand.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜ナイフ1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "BGM死月編\竹林黒霧.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="3">"Who's there!? You're there, aren't you!? Come out!"</STYLE>
+{PAUSE ""}
+<BR>
+When <STYLE ID="3">Kana-chan</STYLE>, knives raised, shouted at the top of her voice―<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神\死神軍団武器.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+From behind trees and out of the dead grass, people in Noh masks and red robes crept into view.
+{PAUSE ""}
+<BR>
+The big moon in the sky lit the nata and maces in their hands.<PG>
+<STYLE ID="1">"What? These people..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Probably people from the settlement..."</STYLE>
+{PAUSE ""}
+<BR>
+Residents of the Arata settlement!?
+{PAUSE ""}
+<BR>
+The people who were helping put out the fire until just now―why would they dress so menacingly...<PG>
+"<STYLE ID="3">Kana</STYLE>. Our guests. Turn back at once. You must not go beyond this point."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Move! I have to find </STYLE><STYLE ID="2">Haruka-chan</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+Are they blocking us from looking for <STYLE ID="2">Haruka</STYLE>?
+{PAUSE ""}
+<BR>
+Dressed like this, with weapons, even.
+{PAUSE ""}
+<BR>
+Something must have happened to <STYLE ID="2">Haruka</STYLE>.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">! </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">! Get behind me!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> pulled me by the arm, and we stepped back behind <STYLE ID="3">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+A girl as small as <STYLE ID="3">Kana-chan</STYLE> taking on a crowd of adults―that's reckless!
+{PAUSE ""}
+<BR>
+Isn't there some way to slip past them and get to <STYLE ID="2">Haruka</STYLE>?<PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="9">"Mm... Everyone, wait!"</STYLE>
+{PAUSE ""}
+<BR>
+Just then, a woman's shout came from beyond the residents.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE>? <STYLE ID="10">Obasan</STYLE>?
+{PAUSE ""}
+<BR>
+No, it's neither of their voices.
+{PAUSE ""}
+<BR>
+Who could it be?<PG>
+{MESOFF "500"}
+{PLAYSND "escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\茅萱ナイフ血.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3">...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "200" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="9">Chiga-nee</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ Who's that?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物2,人物3" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The one who appeared there was a woman in a dirty dress, wrapped in a mud-caked poncho blanket, her hair a mess.
+{PAUSE ""}
+<BR>
+What's more, her face was bleeding and there was blood on her clothes.
+{PAUSE ""}
+<BR>
+From her air and the shape of her face she must be a beauty by nature, but the mismatch between that beautiful air and her state was eerie.<PG>
+And above all, <STYLE ID="9">she</STYLE> was gripping a bloodstained knife.
+{PAUSE ""}
+<BR>
+There's no doubt she's <STYLE ID="9">Kana-chan's missing sister</STYLE>.
+{PAUSE ""}
+<BR>
+But part of me can't simply be glad <STYLE ID="9">Chiga-nee</STYLE> has been found.
+{PAUSE ""}
+<BR>
+It's not that intuition, but I feel something ominous.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Mm... </STYLE><STYLE ID="10">Auntie</STYLE><STYLE ID="9"> and </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="9"> went to the abandoned hut out toward Toyotake!</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　All of you, take shelter there too!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3">, but that place is..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="9">! Take care of those two! There's no time! Leave this to me!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"G-got it! </STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">! </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">! Hurry!"</STYLE>
+{PAUSE ""}
+<BR>
+As if ignoring my <STYLE ID="11" RUBY="さいぎしん">suspicion</STYLE>, <STYLE ID="3">Kana-chan</STYLE> grabbed my hand and tried to force her way through.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神鉈振り上げ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"W-wait!"
+{PAUSE ""}
+<BR>
+The resident standing at the very front raised a nata high.
+{PAUSE ""}
+<BR>
+But <STYLE ID="9">Chiga-nee</STYLE> at once planted herself in front of that resident.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\エデン\茅萱ナイフ血.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Mm... Don't get in my way. I mean it. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">If you lay a hand on those girls... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">I'll kill you!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">! Hurry!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Worried, perhaps, <STYLE ID="1">Goto</STYLE> kept looking only toward <STYLE ID="9">Chiga-nee</STYLE>, and her feet were slow.
+{PAUSE ""}
+<BR>
+For a moment what I felt toward <STYLE ID="9">Chiga-nee</STYLE> was <STYLE ID="12" RUBY="てきがいしん">hostility</STYLE>, but there's no doubt she came here to protect us.
+{PAUSE ""}
+<BR>
+Better not be caught by first impressions; better to trust <STYLE ID="9">Chiga-nee</STYLE>.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">! Pull yourself together!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+To keep her out of <STYLE ID="9">Chiga-nee's</STYLE> way as much as I could, I made <STYLE ID="1">Goto</STYLE> face forward and <STYLE ID="13" RUBY="かつ">barked</STYLE> at her.
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\砂利を走る2人.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000,人物1,人物2" "1" "500" "0" "0" "" "0"}
+<STYLE ID="3">Kana-chan</STYLE> and <STYLE ID="9">Chiga-nee</STYLE> both―do they really mean to face them alone?
+{PAUSE ""}
+<BR>
+Reckless sisters, or confidence backed by real ability?<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{STOPSND "VOICE" "5000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\渓流.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "700" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Hah... hah..."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly my field of vision opened up, and we came out into a clearing with a commanding view.
+{PAUSE ""}
+<BR>
+Sprinting 200 meters down a gravel road I wasn't used to had been pretty hard work.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> and I stopped here to catch our breath.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\夏菜見上げる.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE>, without the slightest sign of being out of breath, was looking at the sky.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Chiga-nee</STYLE> told us to go to the abandoned hut, and <STYLE ID="3">Kana-chan</STYLE> seems to be obeying without question.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Haruka</STYLE> and <STYLE ID="10">Obasan</STYLE> are both there, she says.<PG>
+That saves us the trouble of searching, but why do we have to head there too?
+{PAUSE ""}
+<BR>
+Rather than us going to the abandoned hut, wouldn't it be better for <STYLE ID="2">Haruka</STYLE> and the others to come back to the settlement?<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="1">, how much farther to the abandoned hut?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"About 15 minutes on foot, I guess. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But it was pouring around there this evening, so the path is probably a muddy mess. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It's easy to get lost, so don't leave my side, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Hmm... Going back to the settlement now―better not even think about it, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"If everyone's acting like that, it's probably dangerous."</STYLE><PG>
+Hasn't <STYLE ID="1">Goto</STYLE> noticed the danger of going to the abandoned hut?
+{PAUSE ""}
+<BR>
+Or is she saying to go to the abandoned hut with that already in mind?
+{PAUSE ""}
+<BR>
+It's a hard call, but I'm worried about <STYLE ID="2">Haruka</STYLE> and the others after all.
+{PAUSE ""}
+<BR>
+Should I put joining up with <STYLE ID="2">Haruka</STYLE> and the others first?<PG>
+<STYLE ID="4">"For now, all we can do is go to that abandoned hut, right..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Chiga-nee</STYLE> seemed to know more about what was going on.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> and I understand 'what causes the curse-killings,' but not much of 'what is happening right now.'
+{PAUSE ""}
+<BR>
+After all, from that angle too, there's nothing for it but the abandoned hut...<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">, we're going, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, right..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "REPEAT" "900" "0"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "VOICE" "700" "3000" "PASS"}
+{MESON "500"}
+<STYLE ID="1">Goto</STYLE> started walking, her head bowed a little.
+{PAUSE ""}
+<BR>
+She seemed to be racking her brains.<PG>
+That clearing was a graveyard, apparently. From there, the route went by the path along the cliff to the mountain stream, then the road toward Toyotake, and on to the abandoned hut.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\崖沿いの道.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Did <STYLE ID="2">Haruka</STYLE> and the others take this path to the abandoned hut too?
+{PAUSE ""}
+<BR>
+What happened with the search for the mummy underground?
+{PAUSE ""}
+<BR>
+And to begin with, how does <STYLE ID="9">Chiga-nee</STYLE> know where <STYLE ID="2">Haruka</STYLE> and the others went?
+{PAUSE ""}
+<BR>
+What's the point of going to the abandoned hut?
+{PAUSE ""}
+<BR>
+At this point, all sorts of questions are welling up.<PG>
+Is it enough for just us to go to the abandoned hut, or should we bring <STYLE ID="14">Erika-chan</STYLE> and <STYLE ID="15">Kotaro-san</STYLE> too?
+{PAUSE ""}
+<BR>
+I'd like to think it through in my own way, but I can't exchange views with <STYLE ID="1">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Will I have to settle it inside my own head first, and when the time is right, compare notes?
+{PAUSE ""}
+<BR>
+Or rather, how long am I supposed to go on pretending not to know...<PG>
+If we can't even communicate like normal, it'll be hard for everyone to unite.
+{PAUSE ""}
+<BR>
+Keeping <STYLE ID="7">Shigatsu Youka</STYLE> <STYLE ID="8" RUBY="だま">deceived</STYLE> by keeping everyone <STYLE ID="8" RUBY="だま">deceived</STYLE>―is that really right?
+{PAUSE ""}
+<BR>
+Is my judgment right?
+{PAUSE ""}
+<BR>
+In the end, even <STYLE ID="1">Goto</STYLE> never noticed.
+{PAUSE ""}
+<BR>
+If so―<PG>
+{STOPSND "VOICE" "0" "PASS"}
+Just then, <STYLE ID="1">Goto</STYLE>, who had been walking with her head down, suddenly stopped.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">, what's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1">, </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="1">, go on to the abandoned hut, just the two of you. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I still have something I have to do!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">"Wait―</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> turned 180 degrees and ran off toward the graveyard clearing.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">, wait here! I'll go catch </STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+<STYLE ID="4">"Wait!"</STYLE>
+{PLAYSND "エデンの桜\SE\人をつかむ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+I grabbed <STYLE ID="3">Kana-chan's</STYLE> arm as she started to run.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Wait, </STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="4">. </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4"> decided she couldn't go on like this. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So, right now..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But! If </STYLE><STYLE ID="1">Eri-nee</STYLE><STYLE ID="3"> gets attacked by those guys...!"</STYLE><PG>
+<STYLE ID="4">"It's okay. If that happens, </STYLE><STYLE ID="9">Chiga-nee</STYLE><STYLE ID="4"> will protect her, won't she?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"............"</STYLE>
+{PAUSE ""}
+<BR>
+At that, the strength drained from <STYLE ID="3">Kana-chan's</STYLE> arm.
+{PAUSE ""}
+<BR>
+No, not just her arm―from her shoulders, from her whole body.<PG>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sis</STYLE><STYLE ID="3"> might be done for."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="4">, it's okay. </STYLE><STYLE ID="9">Chiga-nee</STYLE><STYLE ID="4"> looked hurt, but she won't go down that easily―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No! I don't mean everyone's going to get her... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It's not that... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">Never mind, let's just hurry to the abandoned hut."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "REPEAT" "900" "0"}
+{CHGVOL "VOICE" "700" "5000" "PASS"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Kana-chan</STYLE> took my hand and started walking.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan's</STYLE> grip was strong.
+{PAUSE ""}
+<BR>
+Is she holding on tight so I don't run off too?
+{PAUSE ""}
+<BR>
+Or is she, after all, a little scared?<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "500" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">, I... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">actually, this morning... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Ah!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"N-nothing! Nothing! It's nothing!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE>, breaking off so suddenly.
+{PAUSE ""}
+<BR>
+She started to say something and shut her mouth as if in a hurry―could it be...<PG>
+<STYLE ID="4">"If you tell me, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4"> will be angry with you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"U-um, um, well, um..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Because what I hear gets out to </STYLE><STYLE ID="7">Shigatsu Youka</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"You knew...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, more or less."</STYLE><PG>
+What I just said also tells <STYLE ID="7">Shigatsu Youka</STYLE> what I've realized.
+{PAUSE ""}
+<BR>
+At first I meant to keep silent the whole time.
+{PAUSE ""}
+<BR>
+I'd hoped to mix in lies and keep <STYLE ID="7">Shigatsu Youka</STYLE> <STYLE ID="8" RUBY="だま">deceived</STYLE> to put us at an advantage, but that means <STYLE ID="8" RUBY="だま">deceiving</STYLE> everyone too.
+{PAUSE ""}
+<BR>
+Yet I thought that would make our actions and thoughts fall out of step and only invite needless confusion.<PG>
+Even now we don't know what everyone is doing or thinking; stirring that up further is dangerous.
+{PAUSE ""}
+<BR>
+Unify our will properly and band together to face it, and a thread toward a solution might show―
+{PAUSE ""}
+that's what I thought.
+{PAUSE ""}
+<BR>
+It may be a selfish judgment, but I can't see us standing up to something as big as <STYLE ID="7">Shigatsu Youka</STYLE> in this state.<PG>
+Try to face it alone and you end up missing like <STYLE ID="9">Chiga-nee</STYLE>, or fighting covered in blood.
+{PAUSE ""}
+<BR>
+Everyone told me―"Trust everyone."<PG>
+<STYLE ID="3">"Then I'll tell you... um..."</STYLE>
+{PAUSE ""}
+<BR>
+Is this the rest of what <STYLE ID="3">Kana-chan</STYLE> started to say and broke off?<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"This morning, I... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sis</STYLE><STYLE ID="3">―I'd found her."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3"> was at the abandoned hut."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Chiga-nee</STYLE> was at the abandoned hut this morning?
+{PAUSE ""}
+<BR>
+What is <STYLE ID="3">this girl</STYLE> saying...<PG>
+<STYLE ID="4">"Then when you said she was missing...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'd found her. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But </STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3"> kept saying weird things."</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE2" "0" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "12" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This morning, when I was searching around the abandoned hut by myself, I smelled blood.
+{PAUSE ""}
+<BR>
+Fresh blood, from inside the hut.
+{PAUSE ""}
+<BR>
+I thought maybe <STYLE ID="9">Sis</STYLE> was there...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\door_old1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\廃屋昼内部.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I went in, and sure enough, <STYLE ID="9">Sis</STYLE> was there.
+{PAUSE ""}
+<BR>
+But she was lying curled up in a <STYLE ID="16" RUBY="すみ">corner</STYLE>, facing the wall, with her hands over her ears...
+{PAUSE ""}
+<BR>
+When I listened closely, she kept muttering weird things.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\茅萱頭抱える.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="9">"I don't want to die... I don't want to die...! There's no way we can win!</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　We should just surrender...! Everyone should just become cherry trees!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Um, </STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3">―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">"Everyone, die instead of me...!</STYLE>
+{PAUSE ""}
+<STYLE ID="17">　At least save me...!"</STYLE><PG>
+She kept muttering things like that with her hands over her ears.
+{PAUSE ""}
+<BR>
+I got a little scared...<PG>
+{MESOFF "500"}
+{CHGVOL "SE2" "800" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\エデン\崖沿いの道.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "12" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Don't tell me you left </STYLE><STYLE ID="9">Chiga-nee</STYLE><STYLE ID="4"> there..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I didn't know what to do. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sis</STYLE><STYLE ID="3">―I thought I should bring her along, but..."</STYLE>
+{PAUSE ""}
+<BR>
+She couldn't bring herself to speak to her, and left her there in the abandoned hut, she said.
+{PAUSE ""}
+<BR>
+Even if it's your sister, seeing someone trembling and muttering <STYLE ID="9">"everyone die"</STYLE> would be a little creepy, sure.
+{PAUSE ""}
+<BR>
+And for a little kid like <STYLE ID="3">Kana-chan</STYLE>, all the more...<PG>
+<STYLE ID="3">"But... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">but to tell the truth... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sis</STYLE><STYLE ID="3"> coming home scared me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Because she was saying scary things?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That too, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sis</STYLE><STYLE ID="3"> thinks </STYLE><STYLE ID="15">Daddy</STYLE><STYLE ID="3"> or </STYLE><STYLE ID="14">Grandma</STYLE><STYLE ID="3"> is doing something bad. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If </STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3"> came back, </STYLE><STYLE ID="15">Daddy</STYLE><STYLE ID="3"> and the others might get arrested, so..."</STYLE><PG>
+<STYLE ID="4">"So that's how it was..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm sorry! I've been scared of </STYLE><STYLE ID="9">Sis</STYLE><STYLE ID="3"> since yesterday!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　She kept saying </STYLE><STYLE ID="15">Daddy</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="14">Grandma</STYLE><STYLE ID="3"> were the culprits and poking around, and this morning she was saying everyone should die... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sis</STYLE><STYLE ID="3"> had gone strange, I thought...!"</STYLE><PG>
+Suspecting her family, and muttering to herself that she wished everyone dead.
+{PAUSE ""}
+<BR>
+How frightening it would be to have someone like that in the family―
+{PAUSE ""}
+asking a grade-schooler for a calm judgment was too cruel, it seems.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kana-chan</STYLE> seems to regret it, but even now she probably doesn't know what she should do.<PG>
+<STYLE ID="4">"For now, </STYLE><STYLE ID="9">Chiga-nee</STYLE><STYLE ID="4"> was alive, so that's good. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">More important, let's think about what we do from here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yeah... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">I won't do anything </STYLE><STYLE ID="18" RUBY="ひきょう">cowardly</STYLE><STYLE ID="3"> anymore!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　I won't lie anymore...!"</STYLE>
+{PAUSE ""}
+<BR>
+Everyone's hearts, it seems, were more scattered than I'd thought.
+{PAUSE ""}
+<BR>
+Like this, nothing that could be solved gets solved.
+{PAUSE ""}
+<BR>
+All the more so, since the curse-killings have the people of this settlement distrusting each other.<PG>
+Maybe we have a huge misunderstanding about the people of the settlement.
+{PAUSE ""}
+<BR>
+Just now they looked like they were attacking us, but it can't be ruled out that they had an entirely different intent.
+{PAUSE ""}
+<BR>
+Going to the trouble of dressing like that and telling us to go back to the settlement.
+{PAUSE ""}
+<BR>
+It could be read as concern for our safety.<PG>
+If we, <STYLE ID="9">Chiga-nee</STYLE> included, had misread that―
+{PAUSE ""}
+<BR>
+Fearing <STYLE ID="7">Shigatsu Youka</STYLE>'s shadow and <STYLE ID="8" RUBY="だま">deceiving</STYLE> each other is wrong, after all!
+{PAUSE ""}
+<BR>
+Secrets, <STYLE ID="8" RUBY="だま">deceptions</STYLE>―as ways to solve this case they're utter nonsense.
+{PAUSE ""}
+<BR>
+If anything, couldn't you say the curse-killings so far were fed by mutual distrust?
+{PAUSE ""}
+<BR>
+That negative chain has to be cut, here and now.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="3">Kana-chan</STYLE><STYLE ID="4">, what we have to do is hold everyone's hearts together. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'm sure everyone's misunderstanding each other. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If we talk it through properly, I'm sure we can stop the curse-killings too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">You really are amazing, </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Everyone said you never give up, </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">!"</STYLE><PG>
+<STYLE ID="4">"That's not true. I'm not that strong at all..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Then you have something important that nobody else has, </STYLE><STYLE ID="4">Natsumi-chan</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">That's why everyone loves </STYLE><STYLE ID="4">you</STYLE><STYLE ID="3"> so much!"</STYLE><PG>
+People often say my strong point is my mental strength.
+{PAUSE ""}
+<BR>
+But as when I cried on <STYLE ID="14">Erika-chan's</STYLE> chest just now, I'm not that strong.
+{PAUSE ""}
+<BR>
+Still, I feel <STYLE ID="3">Kana-chan's</STYLE> one remark gave me an answer that fits.<PG>
+When everyone is about to fall apart, I can hold them together.
+{PAUSE ""}
+<BR>
+I'm not doing it consciously; maybe I just hate seeing everyone face different ways and fall apart.
+{PAUSE ""}
+<BR>
+At times like that, I work to hold everyone together, even a little.<PG>
+What I can do isn't keeping <STYLE ID="7">Shigatsu Youka</STYLE> <STYLE ID="8" RUBY="だま">deceived</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Shigatsu Youka</STYLE> has surely planned ahead for something like that.
+{PAUSE ""}
+<BR>
+Uniting everyone's minds to face it―that is the best plan for taking <STYLE ID="7">Shigatsu Youka</STYLE> by surprise.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

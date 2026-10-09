@@ -1,0 +1,86 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=190, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=33, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=32, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=5, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=8, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=325, target=)
+; Links:
+;    0: TWdLink(count=268, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CHGVOL "SE" "1000" "0" "PASS"}
+<TXSPN>Huh...?
+{PAUSE ""}
+<BR>
+Just now, someone's voice...<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階暗い.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">... did you hear something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, I heard it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That just now... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Grandma's</STYLE><STYLE ID="1"> voice, that was..."</STYLE>
+{PAUSE ""}
+<BR>
+It seemed <STYLE ID="1">Haruka</STYLE> had heard it too.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Goto</STYLE> and I stood at the window beside <STYLE ID="1">Haruka</STYLE>.
+{PAUSE ""}
+<BR>
+One bright thing rode in on the wind and came fluttering down, as if it were being drawn inside.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\花びら.gal" "NORMAL" "#1" "650" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Is this... 
+{PAUSE ""}
+a cherry petal...?<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="4">, look at that!"</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "500" "10000" "PASS"}
+{PLAYMOVIE "最後の声編実装用.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+On a branch of the withered cherry, I could see something shining brightly in the moonlight.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\最後の声から\桜の新芽2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A brand-new little branch had grown on the cherry tree, and out-of-season blossoms were blooming on it.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"How can a withered tree have blossoms...?"</STYLE>
+{PAUSE ""}
+<BR>
+Just a few blossoms, shining dazzlingly.
+{PAUSE ""}
+<BR>
+They were what was carrying the voice to us.
+{PAUSE ""}
+<BR>
+{CHGVOL "SE" "1000" "3000" "PASS"}
+Once again, the wind blew into the room.<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

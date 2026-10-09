@@ -1,0 +1,84 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=262, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=173, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=485, target=)
+; Links:
+;    0: TWdLink(count=435, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\昼の月.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\診察室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hmm, strange things do happen..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes. Is it an illness after all...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Well, I did dabble in ophthalmology a little, but I can't say anything for sure without a proper detailed exam. 
+{PAUSE ""}
+Did you get hurt at all? Hit your face hard, anything like that?"<PG>
+<STYLE ID="1">"Well, I guess I hit my head. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But all I did was scrape my forehead a little?"</STYLE>
+{PAUSE ""}
+<BR>
+"It's such a vivid green. 
+{PAUSE ""}
+If you're worried, I can write you a referral letter to the eye department at Daiichi Hospital. What do you want to do?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Let's see, I'll try going sometime after Golden Week."</STYLE>
+{PAUSE ""}
+<BR>
+"Everything else okay?"<PG>
+<STYLE ID="1">"Um... well..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I've got one less worry now."</STYLE>
+{PAUSE ""}
+<BR>
+"A worry?
+{PAUSE ""}
+　Ah, about that."<PG>
+<STYLE ID="1">"Yes, the day before yesterday, just before I turned 18."</STYLE>
+{PAUSE ""}
+<BR>
+"It was pretty late, but I'm glad it seems to have caught up. 
+{PAUSE ""}
+With this kind of thing, it really varies from person to person. 
+{PAUSE ""}
+Isn't it inconvenient?"<PG>
+<STYLE ID="1">"Well, it's annoying if you want to call it annoying, but it doesn't hurt much, so."</STYLE>
+{PAUSE ""}
+<BR>
+"I see. That varies from person to person too. 
+{PAUSE ""}
+Well then, wait in the waiting room. The referral letter will be ready right away."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay. Thank you."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

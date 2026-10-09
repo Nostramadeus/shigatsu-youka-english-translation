@@ -1,0 +1,300 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=707, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=568, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=47, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=310, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=61, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=11, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=18, unk2=16776960, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんか, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=83, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にょ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しろざき, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=14, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にゃ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きょ, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=りゃ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆりこ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2037, target=)
+; Links:
+;    0: TWdLink(count=1833, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Kana-chan</STYLE>, are you there?"<PG>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+"Hey, you're in there, aren't you? I saw you go up the stairs a minute ago."<PG>
+"I'm coming in, okay?"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\夏菜の机.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "2" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="1">Kana-chan</STYLE>, aren't you going to eat? It's the New Year's feast, you know?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"My, your face is cold. Here, put on another layer."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE>Auntie<STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"<PG>
+<STYLE ID="1">"Why don't the people in this settlement run away?"</STYLE>
+{PAUSE ""}
+<BR>
+"Run away...?"
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"They might die next April... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Why don't they run away?"</STYLE>
+{PAUSE ""}
+<BR>
+"Everyone feels scared, you know. But they're trying to stand up to it without being afraid. 
+{PAUSE ""}
+As long as <STYLE ID="2">Grandma</STYLE> feels that way, no one will run away."<PG>
+<STYLE ID="1">"Then did </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1"> run away?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="3">Chigaya-chan</STYLE>...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Didn't </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1"> run away to Tokyo because she was scared of the curse-killings?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's not true. <STYLE ID="3">Chigaya-chan</STYLE> went away to study so she can make this settlement better."<PG>
+<STYLE ID="1">"I heard, you know. </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1"> might go study abroad."</STYLE>
+{PAUSE ""}
+<BR>
+"Study abroad? That's the first I've heard of it..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Studying abroad means going to another country and not coming back for even longer, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Isn't it so she can run away from this settlement?"</STYLE>
+{PAUSE ""}
+<BR>
+"What did you and <STYLE ID="3">Chigaya-chan</STYLE> talk about?"<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1">... said </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1">'s the culprit..."</STYLE>
+{PAUSE ""}
+<BR>
+"I see..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What do you think, </STYLE>Auntie<STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm, let me see... I don't know. 
+{PAUSE ""}
+But this must be hard on <STYLE ID="3">Chigaya-chan</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hard...?"</STYLE><PG>
+"I think it's very hard to believe <STYLE ID="4">your own father</STYLE> is the culprit. 
+{PAUSE ""}
+I'm sure she didn't want to admit it either, just like <STYLE ID="1">you</STYLE>, and I think telling <STYLE ID="1">you</STYLE> about it took a lot of courage, too."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But... </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1"> being the culprit... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">I really can't forgive </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1">...!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\リファレンス用\背景\ナイフ.gal" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"What are you going to do?!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="5">Mommy</STYLE><STYLE ID="1">'s gone, so I don't want </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1"> getting caught and going away too!"</STYLE>
+{PAUSE ""}
+<BR>
+"Isn't <STYLE ID="3">Chigaya-chan</STYLE> your family?!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Anyone who says </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1">'s the culprit isn't family!"</STYLE><PG>
+"<STYLE ID="1">Kana-chan</STYLE>, I understand how you feel, but you mustn't say things like that. 
+{PAUSE ""}
+Is that knife for cutting your family?
+{PAUSE ""}
+　Put it away."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Once I find out who the culprit is, I'll kill them with this knife."</STYLE>
+{PAUSE ""}
+<BR>
+"Put the knife away."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'll protect </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1">...!"</STYLE><PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="6">"I told you to put it away!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Uuu... </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1"> being the culprit...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　No...! Nooo...!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Kana-chan</STYLE>, listen carefully. 
+{PAUSE ""}
+I'm sure <STYLE ID="3">Chigaya-chan</STYLE> hasn't told anyone yet that <STYLE ID="4">your father</STYLE> is the culprit. She told <STYLE ID="1">you</STYLE> first. 
+{PAUSE ""}
+Do you know why?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"............? Sniff."</STYLE><PG>
+"If she really thought he was the culprit, she'd tell a grown-up first, wouldn't she? 
+{PAUSE ""}
+But if she told only <STYLE ID="1">you</STYLE>, then: <STYLE ID="3">'The way things are now, </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="3">'s going to be made the culprit. So let's prove he's innocent together.' </STYLE>
+{PAUSE ""}
+Wasn't that what she wanted to say?"<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1">... said everyone's fallen into paranoia."</STYLE>
+{PAUSE ""}
+<BR>
+"That's right. At a time like that, if <STYLE ID="3">Chigaya-chan</STYLE> and <STYLE ID="1">you</STYLE> <STYLE ID="7" RUBY="けんか">fought</STYLE>, it would be even worse, wouldn't it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1">'s definitely mad at me..."</STYLE><PG>
+"It's all right. <STYLE ID="3">Chigaya-chan</STYLE> knows it's only natural that <STYLE ID="1">you</STYLE> got angry. 
+{PAUSE ""}
+So let's go downstairs together, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But... I still can never forgive the culprit. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Because the culprit killed </STYLE><STYLE ID="5">Mommy</STYLE><STYLE ID="1">, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"That may be so. But there's something you need to do before you hate the culprit, isn't there?
+{PAUSE ""}
+　Making up with your precious family."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Okay... I'll make up with </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1">. Because I do love </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1"> after all."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm-hm, that's my good girl. Now, let's go together."<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "2" "2000" "960" "1" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家玄関.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "2" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Um, </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "人物1" "QUAKE" "1" "50" "0" "0" "2000"}
+{MESON "500"}
+<STYLE ID="3">"Ah, </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="3">aa! Where'd you go, leaving all this great food sitting here?!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　I'm gonna eat it all myself-f!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Bad_Luck.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="8">"Nice, nice! </STYLE><STYLE ID="3">Chigaya-chan</STYLE><STYLE ID="8">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Chigaya-tan</STYLE><STYLE ID="8"> can </STYLE><STYLE ID="9" RUBY="にょ">dwink</STYLE><STYLE ID="8"> this much!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ahahahaha! </STYLE><STYLE ID="10" RUBY="しろざき">Shirozaki</STYLE><STYLE ID="11">, you old guy</STYLE><STYLE ID="3">, you're slurring your wooords!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Snorrrk! Snorrrk! Mnyaa..."</STYLE><PG>
+<STYLE ID="3">"C'mon, </STYLE><STYLE ID="2">Grandma</STYLE><STYLE ID="3">, you too! Drink, drink, drink!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Honestly... who does she take after... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Come to think of it, </STYLE><STYLE ID="5">Sakura</STYLE><STYLE ID="2"> was a pretty bad drunk too."</STYLE><PG>
+<STYLE ID="3">"Ahahahaha! See, I'm not like </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="3">, I'm a total knockout who takes after </STYLE><STYLE ID="5">Mom</STYLE><STYLE ID="3">, looks and all, right?!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Of course I'm like her!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"That's it, that's it! At New Year's there's </STYLE><STYLE ID="12" RUBY="にゃ">nuffin'</STYLE><STYLE ID="8"> to do but drink! Havin' a beauty like </STYLE><STYLE ID="13" RUBY="きょ">dish</STYLE><STYLE ID="8"> pour for me... I'm </STYLE><STYLE ID="14" RUBY="りゃ">sho</STYLE><STYLE ID="8"> glad I'm al</STYLE><STYLE ID="15" RUBY="は">iii</STYLE><STYLE ID="8">ve!"</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="10" RUBY="しろざき">Shirozaki</STYLE><STYLE ID="11">-san</STYLE><STYLE ID="3">, that's sexual harassment! The late </STYLE><STYLE ID="16" RUBY="ゆりこ">Yuriko</STYLE><STYLE ID="3">-san's gonna be mad at you!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　For a </STYLE><STYLE ID="11">lecherous old geezer</STYLE><STYLE ID="3"> like you, the total knockout Chigaya-sama will keep pouring till you drop dead!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Oh-ho! This is paradise! Paradise!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{MESON "500"}
+"Ah, ahahaha... <STYLE ID="1">Kana-chan</STYLE>, good for you... It looks like she isn't mad."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Y-yeah... Alcohol sure is something..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Snorrrk! Snorrrk!"</STYLE><PG>
+<STYLE ID="1">"Yeah, it'll be okay. There's no way </STYLE><STYLE ID="4">Daddy</STYLE><STYLE ID="1">'s the culprit."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "人物1,000,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

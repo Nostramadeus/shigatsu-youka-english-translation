@@ -1,0 +1,275 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=99, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=907, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=5, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=390, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=244, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=12, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あお, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こうむ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1853, target=)
+; Links:
+;    0: TWdLink(count=1666, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "escapescape.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\七海荘思い出.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬アラサーバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"You came, so that means you're ready for this, right?"
+{PAUSE ""}
+<BR>
+Mifuyu-san<STYLE ID="1"> briefed us on tomorrow.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A Noh mask and red robes, a nata and a mace, and a strange drug.</STYLE>
+{PAUSE ""}
+<BR>
+Mifuyu-san<STYLE ID="1"> apparently really meant to have us commit murder.</STYLE><PG>
+"I'm going to the Arata settlement tomorrow. It's <STYLE ID="2">Eiichiro-san</STYLE>'s third-year memorial service. I'm going to bed now." [TN: Buddhist memorials count the year of death as the first year.]
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">In the end, we couldn't talk </STYLE>Mifuyu-san<STYLE ID="1"> out of it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On top of that, if we betrayed her, the 'someone I can trust' in the Arata settlement would put our lives in danger too.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "WAIT"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">When I woke up in the morning, </STYLE>Mifuyu-san<STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="1"> were already gone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Had they already left for the Arata settlement?</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Mm... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Oh? Where are </STYLE>Mifuyu<STYLE ID="4"> and the others...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I just woke up myself..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I see... So </STYLE>Mifuyu<STYLE ID="4"> really means it..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\paper-round1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="4">Akane</STYLE><STYLE ID="1"> started going over the instructions </STYLE>Mifuyu-san<STYLE ID="1"> had left behind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It had been too dark last night to check what they said.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Did she really intend to do it?</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"</STYLE><STYLE ID="5">Ryoji-kun</STYLE><STYLE ID="4">, stay here. I'll handle it on my own."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"D-don't be stupid!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"There's no other choice anymore... </STYLE>
+{PAUSE ""}
+Mifuyu<STYLE ID="4"> and the others... if we abandon them and go home, it won't just be us. Even </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="4"> will be in danger...!"</STYLE><PG>
+<STYLE ID="5">"There's still time! We have to think of another way!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That's why this is the best way. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Only one person gets killed. The fewer victims, the better."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Then you'll just get </STYLE>Mifuyu-san<STYLE ID="5">'s distrust all </STYLE><STYLE ID="7" RUBY="あお">fired up</STYLE><STYLE ID="5">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"This is between me and </STYLE>Mifuyu<STYLE ID="4">. So, </STYLE><STYLE ID="5">Ryoji-kun</STYLE><STYLE ID="4">, stay here."</STYLE><PG>
+<STYLE ID="5">"It's not just between the two of you! It concerns everyone in the Kogori and Niimura families!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'll go try the drug. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">It said to practice with half the dose. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'll scout the location too."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+{PLAYSND "SE\屋上ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+<STYLE ID="5">"Hey, </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="5">!"</STYLE><PG>
+<STYLE ID="1">―</STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1"> didn't answer my call, and left.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Damn...! I can't let </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1"> carry the guilt all by herself!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Akane</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If it's come this far, I'm going down with you...</STYLE><PG>
+Mifuyu-san<STYLE ID="1">'s instructions, if we followed them, would let us live peaceful days in Motoki-cho again.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But that guilt would weigh on us forever.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was there really no other choice...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Some other way, where we wouldn't have to kill two children...</STYLE><PG>
+<STYLE ID="1">I caught myself thinking: if only we had brought </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1"> along again...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, but we couldn't contact </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1">'s family home.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Talking by phone was off-limits, </STYLE>Mifuyu-san<STYLE ID="1"> had warned us.</STYLE><PG>
+<STYLE ID="1">Or else, going back to </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1">'s family home and bringing </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1"> here...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A round trip would just barely make it in time, but there was no guarantee she'd be home, and if we got caught in traffic, that would be the end of it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The risk was too great...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Was this... the end of the line...?</STYLE><PG>
+<STYLE ID="1">This all started because of </STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="1">'s balloon.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The responsibility for that lies with us, her parents.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The misfortune </STYLE><STYLE ID="8" RUBY="こうむ">suffered</STYLE><STYLE ID="1"> through the loss of a life, repaid with a life...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Something like this... can't possibly be forgiven.</STYLE><PG>
+<STYLE ID="1">No, who would I even be asking forgiveness from?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">God? The police? The victims' parents?</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">―No matter how many times I went back and forth with myself, I couldn't reach a conclusion I could accept.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Akane</STYLE><STYLE ID="1"> showed no sign of coming back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I started to get a little worried.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\屋上ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "VOICE" "2000" "PASS"}
+<STYLE ID="4">"I'm back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Akane</STYLE><STYLE ID="1"> came back as if nothing had happened.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"This drug... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">It's really amazing. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">It's only for 10 minutes, but you can move so fast you'd hardly think you were human, and jump too. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But if you don't hold back, it feels like your body would break down fast... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Even though I thought I was going easy, my body hurts a little."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I could no longer sense any hesitation in </STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="1">'s eyes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Whatever we did now, there was no time left.</STYLE><PG>
+<STYLE ID="5">"</STYLE><STYLE ID="4">Akane</STYLE><STYLE ID="5">... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I'll go try the drug too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Just me is enough. </STYLE><STYLE ID="5">Ryoji-kun</STYLE><STYLE ID="4">, you don't need to do this too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I can't let </STYLE><STYLE ID="4">you</STYLE><STYLE ID="5"> carry the guilt alone. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">If we're doing this, I'm in it with you..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Are you really sure...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"It's... all right now... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">All we can do now is protect ourselves. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">If it comes down to choosing between my family and the lives of kids I don't know, there's nothing to hesitate over."</STYLE><PG>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I'll take the girl. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Ryoji-kun</STYLE><STYLE ID="4">, you take the other one."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Got it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I know it's the worst possible decision.</STYLE><PG>
+<STYLE ID="1">The reason murders never disappear from the world―I finally understood it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Not everyone commits murder out of greed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It's just that―some murders are committed only to protect oneself...</STYLE><PG>
+<STYLE ID="1">Yes, in a sense, you could call this self-defense.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If I don't think of it that way, I feel like I'll lose my mind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I've probably lost it already...</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

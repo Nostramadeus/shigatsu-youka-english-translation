@@ -1,0 +1,785 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2538, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1054, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=10, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たいじ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=もんめ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=つぼ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=ろか, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ききょう, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=733, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=367, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゅんが, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=5, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=さいな, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=ていまい, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=14, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=71, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かいこう, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さいな, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=22, unk2=65535, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ろうごく, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5410, target=)
+; Links:
+;    0: TWdLink(count=4848, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>“The Droga Refining Method”
+{PAUSE ""}
+<BR>
+This book was written in Shiyo 342. About 460 years ago, then.<PG>
+Let's see... Precautions―
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Droga shall not be made heedlessly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Droga shall not be abused heedlessly.</STYLE><PG>
+When <STYLE ID="2">Mifuyu Niimura</STYLE> and I <STYLE ID="3" RUBY="たいじ">faced off</STYLE>, I read the keyword 'drugs' off <STYLE ID="2">her</STYLE> by intuition.
+{PAUSE ""}
+<BR>
+My deduction is that <STYLE ID="2">Mifuyu Niimura</STYLE> used some kind of drug and gained physical abilities beyond any normal person's.
+{PAUSE ""}
+<BR>
+Could this Droga be what makes that possible?<PG>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">Ingredients: Arata cherry roots, 100 </STYLE><STYLE ID="4" RUBY="もんめ">monme</STYLE><STYLE ID="1">（about 375 grams）, and water.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The water should preferably be reasonably clean, such as groundwater.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Tools to prepare: a </STYLE><STYLE ID="5" RUBY="つぼ">pot</STYLE><STYLE ID="1">, a fire, and an iron plate.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+It doesn't seem to need anything very difficult.<PG>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+To summarize the method―
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="1">Crush the Arata cherry roots to the size of beans, put them in a </STYLE><STYLE ID="5" RUBY="つぼ">pot</STYLE><STYLE ID="1">, and add enough water to submerge all the roots.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then heat the </STYLE><STYLE ID="5" RUBY="つぼ">pot</STYLE><STYLE ID="1">, stirring, for about 3 days.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Take care not to scorch it, and when the water runs low, add water as needed.</STYLE><PG>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">When a pungent smell arises, stop, and leave it as it is for one day.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The source of this pungent smell is falsificaso, so take care not to inhale it, by covering the face or the like.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+―There it is, falsificaso.
+{PAUSE ""}
+<BR>
+Falsificaso, produced in the process of making Droga.
+{PAUSE ""}
+<BR>
+I see, so falsificaso means a fake of Droga.<PG>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">After one day, the liquid in the </STYLE><STYLE ID="5" RUBY="つぼ">pot</STYLE><STYLE ID="1"> separates into four layers.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At the very top, impurities that float on water, such as root residue.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The second layer, a clear liquid: falsificaso.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The third layer, a pink liquid: Droga.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At the very bottom, impurities that have settled.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The tree roots, the falsificaso and the impurities are not needed, so discard them.</STYLE><PG>
+Discard the falsificaso?
+{PAUSE ""}
+<BR>
+Right now it's being made in a big hurry as a ritual implement.
+{PAUSE ""}
+<BR>
+Discard that?<PG>
+So at the time this was written, there was no tradition of using falsificaso as a ritual implement.
+{PAUSE ""}
+<BR>
+Which means that, for some reason, falsificaso came to be used as a ritual implement.
+{PAUSE ""}
+<BR>
+The reason falsificaso came to be used...
+{PAUSE ""}
+<BR>
+Well, none of that matters now.
+{PAUSE ""}
+<BR>
+The finishing steps seem to start on the next page.<PG>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">Run the pink Droga solution through a </STYLE><STYLE ID="6" RUBY="ろか">filter</STYLE><STYLE ID="1">, then drip it onto a heated iron plate to drive off the water.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Before long, pink crystals form.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This is Droga.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">By dripping more Droga solution onto the crystal, it can be made larger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A piece the size of a walnut can be used on about 1000 people.</STYLE><PG>
+I see. It takes time, but there doesn't seem to be any difficult work.
+{PAUSE ""}
+<BR>
+On the next page, how to use Droga.<PG>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">When using Droga, heat it directly over a flame and inhale the smoke.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">One is then granted the strength of a demon god for about an hour.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">However, take care, as one unaccustomed to it may become overexcited and turn violent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Also, if there are those present who are not using it, take ample care in its handling.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To inhale the smoke efficiently, it is best used in an enclosed space where possible, or upwind of the subject.</STYLE><PG>
+This is just straight-up a stimulant...
+{PAUSE ""}
+<BR>
+If someone with that kind of strength got overexcited and turned violent, it would be a disaster.<PG>
+So it ends on the next page.
+{PAUSE ""}
+<BR>
+Nothing about green eyes, and no detailed explanation of falsificaso either.
+{PAUSE ""}
+<BR>
+For now, I'll take a look at the last page.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+............?
+{PAUSE ""}
+<BR>
+Only the last page was written in a clearly different style.
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+<PG>
+<STYLE ID="1">If Droga is dissolved in distilled water and given by intramuscular injection, the effect lasts a shorter time, but an excessive state of agitation can be prevented.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The amount is about 10～30cc.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If falsificaso is administered to one of the third generation who harbors murderous intent, the signs of curse-killing can be suppressed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Addendum, Shiyo 735</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="7" RUBY="ききょう">Kikyo</STYLE> Niimura<PG>
+Curse-killing, the third generation, falsificaso―
+{PAUSE ""}
+<BR>
+Unless I know what curse-killing even means in the first place...
+{PAUSE ""}
+<BR>
+And this person called <STYLE ID="7" RUBY="ききょう">Kikyo</STYLE> Niimura―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Just then, the half-open door slowly opened.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\サード\蔵本棚真横.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Ah! </STYLE><STYLE ID="9">Captain Goto</STYLE><STYLE ID="8">! Have you at last found the room we sought!? </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Actually, this room's crammed tight..."</STYLE>
+{PAUSE ""}
+<BR>
+Sure enough, a narrow room with lots of books, a table and chairs―
+{PAUSE ""}
+even the two of us, small as we were, found it cramped.<PG>
+<STYLE ID="9">"You were upstairs a really long time. Did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"There was tons of interesting-looking stuff! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Like weird masks, and white robes that aren't red! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　And also... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">this!</STYLE>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="8">　This here's a real find, </STYLE><STYLE ID="9">Captain</STYLE><STYLE ID="8">!"</STYLE>
+{PAUSE ""}
+<BR>
+What <STYLE ID="8">Kana-chan</STYLE> was holding was a single old book.
+{PAUSE ""}
+<BR>
+The book's title was―
+{PAUSE ""}
+“When Boys and Girls Become Adults in Body”...<PG>
+<STYLE ID="9">"</STYLE><STYLE ID="8">Kana-chan</STYLE><STYLE ID="9">, did you read this?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"There were all manner of nude pictures in it! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Boy, smut really is the same in every age and every land! </STYLE>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<STYLE ID="8">　This is a dirty book from the old days! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　They call it </STYLE><STYLE ID="10" RUBY="しゅんが">shunga</STYLE><STYLE ID="8">, right!?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\春画.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Shunga.
+{PAUSE ""}
+<BR>
+Its history goes back a full 5000 years.
+{PAUSE ""}
+<BR>
+In Japan, it was called ensokuzu（ensokuzu, osokuzu）, 
+{PAUSE ""}
+or osokuzu no e（osokuzu no we）.<PG>
+About 200 years ago, the government of the day tried to crack down on shunga. As a countermeasure, it's said, the authors, artists and publishers marked the pictures with hidden signatures, so no one could tell who they were.
+{PAUSE ""}
+<BR>
+Most of the famous artists worked on them, and it is said that even artists of famous schools drew them.<PG>
+In other words, shunga made full use of the highest-ranking techniques of the ukiyo-e of the time.
+{PAUSE ""}
+<BR>
+Just as <STYLE ID="8">Kana-chan</STYLE> said, such things can be called universal in every age and every land.<PG>
+...Wait, none of that matters!
+{PAUSE ""}
+<BR>
+Still, why would something like that be on the floor above...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚真横.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Geez, </STYLE><STYLE ID="8">Kana-chan</STYLE><STYLE ID="9">! This kind of thing is for grown-ups to read... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Hand it over here, now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Oh my! </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, you're just saying that so you can snatch my dirty book, aren't you!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Kana-chan</STYLE> complained, but held out the book anyway.
+{PAUSE ""}
+<BR>
+And as a formality, 
+{PAUSE ""}
+<STYLE ID="11" RUBY="・">just</STYLE> 
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="11" RUBY="・">to</STYLE> 
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="11" RUBY="・">be</STYLE> 
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="11" RUBY="・">sure,</STYLE> 
+{PAUSE ""}
+for safety's sake, I flip through the book myself.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Ah, this isn't shunga, it's more like a health-and-PE textbook.
+{PAUSE ""}
+<BR>
+It describes, in pointlessly fine detail, how to deal with the children of this settlement as they grow up.<PG>
+<STYLE ID="8">"Hey, hey, </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">! I can't read this writing, so read it to me at bedtime! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　You know, one of those bedtime stories for kids?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"What idiot reads a kid a dirty book at bedtime!?"</STYLE><PG>
+<STYLE ID="8">"Ahahaha! That comeback just now was just like </STYLE><STYLE ID="12">Haruka-chan's</STYLE><STYLE ID="8">! </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, you're so cute! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　And it's not a dirty book, it's shunga. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, you have no class!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Grrr...!"</STYLE>
+{PAUSE ""}
+<BR>
+In a vulgar debate with <STYLE ID="8">Kana-chan</STYLE>, I'm at a disadvantage...! This genius girl's blunder of a lifetime...!<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Huh?
+{PAUSE ""}
+<BR>
+Just now, for an instant, I saw something.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+I flipped back through the pages I'd riffled past.<PG>
+<STYLE ID="8">"Oh! </STYLE><STYLE ID="9">Captain Goto</STYLE><STYLE ID="8">, it appears you've found yourself a page of interest! So you're human after all!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="8">Kana-chan</STYLE><STYLE ID="9">, sorry, be quiet a sec."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Huh? Oh, okay..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Just now, there was definitely... 
+{PAUSE ""}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Definitely...!
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+............ 
+{PAUSE ""}
+............ 
+{PAUSE ""}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+This is it!<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\歪むカオ.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\サード\翠眼呪殺.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">“Green-Eye Curse-Killing”</STYLE>
+{PAUSE ""}
+<BR>
+Read 'suigan jusatsu,' I suppose?
+{PAUSE ""}
+<BR>
+Why would a book teaching about growing up have something like this...?
+{PAUSE ""}
+<BR>
+And at the very start―<PG>
+<STYLE ID="1">A green-eyed boy, raise as he is.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A green-eyed girl, kill as soon as she is born.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚真横.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, what's wrong...? Are you okay?"</STYLE>
+{PAUSE ""}
+<BR>
+I looked into <STYLE ID="8">Kana-chan's</STYLE> eyes.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Kana-chan</STYLE> looked into my eyes too.
+{PAUSE ""}
+<BR>
+We are green-eyed―<PG>
+<STYLE ID="9">"</STYLE><STYLE ID="8">Kana-chan</STYLE><STYLE ID="9">, thank you. This is what I was looking for. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">It looks like this talks about green eyes."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"R-really!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死ぬ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">Kana-chan</STYLE> stared hard at the book too.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, can you read this?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Yeah, this much is a piece of cake. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">But..."</STYLE>
+{PAUSE ""}
+<BR>
+Letting <STYLE ID="8">Kana-chan</STYLE> hear this opening...
+{PAUSE ""}
+<BR>
+After all, it says to kill a green-eyed girl when she's born...<PG>
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, make sure you let me hear it too. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Goto-chan</STYLE><STYLE ID="8"> being the only one who knows, and me not knowing? I'd hate that!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Okay. But I think there's something really scary written in it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Got it!"</STYLE>
+{PAUSE ""}
+<BR>
+I read the rest aloud, translating it so <STYLE ID="8">Kana-chan</STYLE> could understand too.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">When a green-eyed girl has her first period, within a few days she is </STYLE><STYLE ID="13" RUBY="さいな">tormented</STYLE><STYLE ID="1"> by unbearable murderous intent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There is only one way to cure it: the death of the person who is the object of that murderous intent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">When the target dies, the green-eyed child is enveloped in supreme happiness and pleasure, and the murderous intent swiftly vanishes as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Green-eyed children are cursed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Hence, a killing by a cursed child is called curse-killing.</STYLE><PG>
+Green-eyed girls... killing people...?
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, I haven't gotten mine yet, and I haven't killed anybody, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Yeah, it's okay."</STYLE>
+{PAUSE ""}
+<BR>
+I gripped the hand of an uneasy-looking <STYLE ID="8">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+But at her age, it wouldn't be strange if <STYLE ID="8">Kana-chan</STYLE> had her first period any day now.<PG>
+The mechanism of the murderous intent, and who becomes the target of the killing.
+{PAUSE ""}
+<BR>
+Unless I figure this out, I'll only end up frightening <STYLE ID="8">Kana-chan</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚明るい.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Green-eyed children, both boys and girls, are born once every few years.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Furthermore, if a child is born green-eyed, its </STYLE><STYLE ID="14" RUBY="ていまい">younger siblings</STYLE><STYLE ID="1"> will without exception be green-eyed as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The mother possesses the ability to sense danger under limited conditions―</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+Sensing danger... does that mean intuition like <STYLE ID="15">Kogori-senpai's</STYLE> and mine...?
+{PAUSE ""}
+<BR>
+If I remember right, <STYLE ID="16">Kana-chan's mother</STYLE>...<PG>
+<STYLE ID="9">"You said </STYLE><STYLE ID="16">your mom</STYLE><STYLE ID="9"> has that kind of power too, didn't you...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="16">Mama</STYLE><STYLE ID="8">... has that kind of power too."</STYLE>
+{PAUSE ""}
+<BR>
+What on earth... This book is simply stating facts, nothing more.
+{PAUSE ""}
+<BR>
+I read on further.<PG>
+<STYLE ID="1">Those whom a green-eyed child targets for killing are―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">green-eyed girls who have likewise had their first period, and those who possess the ability to sense danger.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+Huh? So women with green eyes kill each other?
+{PAUSE ""}
+<BR>
+And on top of that, they even kill those who can sense danger...
+{PAUSE ""}
+<BR>
+Driven by an unbearable desire to kill, they end up killing...<PG>
+My hand, holding <STYLE ID="8">Kana-chan's</STYLE>, went sweaty and began to tremble.
+{PAUSE ""}
+<BR>
+I'll come to want to kill <STYLE ID="8">Kana-chan</STYLE>...?
+{PAUSE ""}
+<BR>
+And once <STYLE ID="8">Kana-chan</STYLE> grows up a bit more, <STYLE ID="8">Kana-chan</STYLE> will... me, too...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\蔵本棚真横.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死ぬ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, my hand, it hurts...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Ah, sorry!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+I quickly let go of <STYLE ID="8">Kana-chan's</STYLE> hand.
+{PAUSE ""}
+<BR>
+Without thinking, I'd squeezed too hard.<PG>
+At last, I understood why I couldn't grieve over <STYLE ID="15">Kogori-senpai's</STYLE> death.
+{PAUSE ""}
+<BR>
+I'm glad that <STYLE ID="15">Kogori-senpai</STYLE> died.
+{PAUSE ""}
+<BR>
+Because of these eyes, the death of someone with the danger-sense ability―
+{PAUSE ""}
+<STYLE ID="15">Senpai's</STYLE> death is something I can't mourn or grieve.<PG>
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, it's okay... There's nothing to be afraid of..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Kana-chan</STYLE> rubbed my back.
+{PAUSE ""}
+<BR>
+No... 
+{PAUSE ""}
+No, no, no...!
+{PAUSE ""}
+<BR>
+I don't want to kill...!
+{PAUSE ""}
+<BR>
+Rather than do something like that, I'd even gouge out these eyes...!<PG>
+That's it! It said that giving falsificaso would calm that urge, didn't it!
+{PAUSE ""}
+<BR>
+They're making it right now, for tomorrow's funeral.
+{PAUSE ""}
+<BR>
+I don't know how much is needed, but if they'd share some with me...<PG>
+<STYLE ID="9">"</STYLE><STYLE ID="8">Kana-chan</STYLE><STYLE ID="9">, where are they making the falsificaso!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"That's... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Sorry, I don't know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Isn't there some secret place or something!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"A secret place...? </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　There is one... but... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">But that's my secret base―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Take me there right now!"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "200" "0" "0" "" "0"}
+Without even putting the book away, I switched off the desk lamp.<PG>
+The room―
+{PAUSE ""}
+was swallowed in darkness.
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+At the same time, I heard footsteps.
+{PAUSE ""}
+<BR>
+I heard footsteps heading for this basement room.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="16">"Is someone there?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\竹林黒霧.ogg" "BGM" "REPEAT" "1000" "0"}
+Floating in the pitch-black darkness, two blue eyes.
+{PAUSE ""}
+<BR>
+The eyes of <STYLE ID="16">that person</STYLE>, who spoke in a voice as gentle as a goddess's, were blue.
+{PAUSE ""}
+<BR>
+In this cramped, dark place―
+{PAUSE ""}
+<STYLE ID="16">that person</STYLE> and I <STYLE ID="17" RUBY="かいこう">came face to face</STYLE>.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I once looked into the withdrawal symptoms of drugs.
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+No particular reason. Just curiosity.
+{PAUSE ""}
+<BR>
+Apparently, the worst withdrawal symptoms of all come from heroin.<PG>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+Is what I'm feeling now something even more terrifying than that―?
+{PAUSE ""}
+<BR>
+Above all, my heart was in pain.
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+The moment I met <STYLE ID="16">that person</STYLE>, the switch that makes my heart beat was turned off, and I was <STYLE ID="18" RUBY="さいな">tormented</STYLE> by violent agony.
+{PAUSE ""}
+<BR>
+I have to hurry and press the switch again...!<PG>
+But that switch can't be seen.
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+Because that switch is inside that person's heart.
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+And so, for me to survive, I cut open that person's chest, crush the heart, and press the switch.
+{PAUSE ""}
+<BR>
+That was a figure of speech.
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\サード\ヘロイン.gal" "NORMAL" "14" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "0"}
+But―
+{PAUSE ""}
+{DELETECG "000" "14" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+I can't live unless I do it.<PG>
+{MESOFF "0"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\サード\五島サクラ攻撃2.gal" "NORMAL" "20" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000" "QUAKE" "1" "5" "5" "0" "30"}
+{PLAYSND "SE\タイトル鼓動.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "SE\bakibaki.ogg" "SE2" "REPEAT" "700" "0"}
+{MESON "500"}
+<STYLE ID="19"><TXSPS>"Aaaaagh!! Die! Diiiiie!!"</STYLE>
+{PLAYSND "BGM死月編\Slippery_Slope.ogg" "BGM" "REPEAT" "1000" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "100" "PASS"}
+{STOPSND "SE2" "100" "PASS"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8"><TXSPN>"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, stop! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　</STYLE><STYLE ID="16">Mama</STYLE><STYLE ID="8">! Run, hurry!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Kana-chan</STYLE> pulled me away from <STYLE ID="16">that person</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="16">Mama</STYLE><STYLE ID="8">! Bring the falsificaso! </STYLE>
+{PAUSE ""}
+<STYLE ID="8">　This is probably curse-killing!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="16"><TXSPS>"Hah! Hah! O-okay...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="16"><TXSPN>That person</STYLE> staggered out of the basement room.<PG>
+Wait...! Just die...!
+{PAUSE ""}
+<BR>
+Die for me...!<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\サード\五島夏菜亀のり.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With <STYLE ID="8">Kana-chan</STYLE> still on my back holding me down, chasing <STYLE ID="16">that person</STYLE>, I <STYLE ID="20" RUBY="は">crawled</STYLE> across the floor.
+{PAUSE ""}
+<BR>
+My head's splitting...! My head's shorting out...!
+{PAUSE ""}
+<BR>
+This is no murder―it's an act of necessity.
+{PAUSE ""}
+<BR>
+Sacrificing another person to avert a danger to one's own life.
+{PAUSE ""}
+<BR>
+This is the right to survive, recognized by law...!<PG>
+{QUAKESTOP "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="8">, sorry!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "14" "1000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+At that voice of <STYLE ID="8">hers</STYLE>, I lost consciousness.
+{PAUSE ""}
+<BR>
+Apparently I'd been struck on the back of the head.<PG>
+<TXSPS>Ah... this might be a bit of a relief...
+{PAUSE ""}
+<BR>
+My consciousness, too, was released from the <STYLE ID="21" RUBY="ろうごく">prison</STYLE> of the flesh.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,23 @@
+;pylm
+; Font styles:
+; Display conditions:
+;    0: TWdCondition(count=11, target=)
+; Links:
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\イラスト\呪殺編\感染1.gal" "REPEAT" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\イラスト\呪殺編\感染.lcm" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "000" "CLICK"}
+<EVENT VALUE="STOPMOVIE">
+{CHANGECG "000" "グラフィック\背景\lcm\ルートエンド.lcm" "WAIT" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

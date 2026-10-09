@@ -1,0 +1,875 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2542, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3602, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1054, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=395, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=22, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たお, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しと, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=11, unk2=16757864, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そうせきちんりゅう, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほおば, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふくしゅう, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=26, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=18, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=21, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・・, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=そろ, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=8330, target=)
+; Links:
+;    0: TWdLink(count=7714, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Shiyo 800, April 1―
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\大学.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+One week to the thirteenth-year memorial.
+{PAUSE ""}
+<BR>
+Spring break had ended yesterday, and school today was morning only.
+{PAUSE ""}
+<BR>
+Apparently a girl named <STYLE ID="1">Goto</STYLE> was coming to Tokyo today.<PG>
+"<STYLE ID="2">Chigaya</STYLE>, this year's freshmen are a lot of fun!
+{PAUSE ""}
+　There's a welcome party tonight―you're coming, right!?"
+{PAUSE ""}
+<BR>
+An invitation from Hana-chan, my best friend in Tokyo.
+{PAUSE ""}
+<BR>
+Normally I'd have said yes on the spot, but...<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="2">"Mm... Sorry, Hana-chan! I've got relatives coming today..."</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, I see... Well, the freshmen aren't going anywhere, so I'll ask you again next time!"
+{PAUSE ""}
+<BR>
+Lately I'd been turning down a lot of party invitations.
+{PAUSE ""}
+<BR>
+And more and more often, Hana-chan looked a little awkward about asking me.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\茅萱の部屋.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―I went home, washed my face, did my makeup, and put on that going-out outfit again.
+{PAUSE ""}
+<BR>
+The place <STYLE ID="3">Auntie</STYLE> had named was that ryotei in Ginza.
+{PAUSE ""}
+<BR>
+Apparently all it took to hook this <STYLE ID="1">Goto</STYLE> girl was to dangle some food in front of her, but was a girl like that really going to be all right?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭外観.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The place had the same air of luxury as ever.
+{PAUSE ""}
+<BR>
+It was only my second time, and just opening the door made me nervous.
+{PAUSE ""}
+<BR>
+I was running a little past the time we'd agreed on. Were the two of them here already?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭玄関.gal" "NORMAL" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Welcome, <STYLE ID="2">Niimura-sama</STYLE>."
+{PAUSE ""}
+<BR>
+The same attendant as the other day came out to greet me.
+{PAUSE ""}
+<BR>
+I regretted, just a little, wearing the same clothes.<PG>
+"Allow me to show you the way. Your <STYLE ID="3">companions</STYLE> are waiting for you."
+{PAUSE ""}
+<BR>
+So they were already here after all.
+{PAUSE ""}
+<BR>
+We're asking <STYLE ID="1">Goto-san</STYLE> to help with a case this serious.
+{PAUSE ""}
+<BR>
+She may be younger than me, but I have to treat her with every courtesy.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\SE\3回ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+"Excuse me. Your <STYLE ID="2">companion</STYLE> has arrived."<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Munch munch... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Mm-hm! This flounder sashimi is really delicious!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ohohohoho, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="3">! That's sea bream sashimi!"</STYLE>
+{PLAYSND "ごろごろゲームする日_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hm! And this fugu shabu-shabu here is thick and has a good bite to it. Most delectable!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="3">! This is octopus shabu-shabu!"</STYLE>
+{PAUSE ""}
+<BR>
+When I opened the door, the two of them had already started feasting.<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\エデン\料亭料理.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Auntie</STYLE> only seemed to be drinking tea, but in front of the girl who had to be <STYLE ID="1">Goto-san</STYLE>, expensive dishes were crammed in with no room to spare.
+{PAUSE ""}
+<BR>
+What is this? Not a shred of tension...<PG>
+{MESOFF "500"}
+{DELETECG "111" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Oh, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="3">, you're here!? Come on, come on, sit down!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Oh! So this is </STYLE><STYLE ID="4">Niimura-senpai's</STYLE><STYLE ID="1"> cousin, </STYLE><STYLE ID="2">Chigaya-san</STYLE><STYLE ID="1">!?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Pleased to meet you! Motoki-cho's genius girl Erina Goto has descended upon Tokyo!"</STYLE>
+{PAUSE ""}
+<BR>
+Th-<STYLE ID="1">this girl</STYLE> is really a genius girl...?
+{PAUSE ""}
+<BR>
+Feasting on the food without a care, and a greeting as breezy as could be...
+{PAUSE ""}
+<BR>
+It threw me completely off...<PG>
+<STYLE ID="2">"Mm... I'm Chigaya Niimura. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thank you so much for coming all this way."</STYLE>
+{PAUSE ""}
+<BR>
+Just as planned, I greeted her with the utmost courtesy.<PG>
+<STYLE ID="1">"Ooh! So </STYLE><STYLE ID="5" RUBY="たお">graceful</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="6" RUBY="しと">ladylike</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Niimura-senpai</STYLE><STYLE ID="1"> is a whole other story."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Really! I wish </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="3"> would learn to carry herself a little more like a lady!"</STYLE><PG>
+<STYLE ID="1">"Ahahaha! But I like </STYLE><STYLE ID="4">Niimura-senpai</STYLE><STYLE ID="1"> just the way she is!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Oh! And this is beef nigiri!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Ohohoho, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="3">! That's pickled red turnip!"</STYLE>
+{PAUSE ""}
+<BR>
+Somehow... didn't my greeting just get skipped right over?
+{PAUSE ""}
+<BR>
+Not ignored, exactly, but it feels like I'm being skipped over.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="3">, how long are you going to stand there? Sit, sit!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+Still thrown off, I sat down next to <STYLE ID="3">Auntie</STYLE>.<PG>
+Even so, <STYLE ID="1">this girl</STYLE> really eats a lot.
+{PAUSE ""}
+<BR>
+Maybe she even eats more than I do.<PG>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Aren't you two going to eat anything?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　You're here, so please eat. Don't be shy!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That's right! What'll you have, </STYLE><STYLE ID="2">Chigaya-chan</STYLE><STYLE ID="3">?"</STYLE>
+{PAUSE ""}
+<BR>
+What is with <STYLE ID="1">this girl</STYLE>! <STYLE ID="3">Auntie</STYLE> is the one paying, isn't she!?
+{PAUSE ""}
+<BR>
+We may be relying on her, but the nerve of her...
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Auntie</STYLE>, not looking the least bit bothered by it, handed me the menu.<PG>
+Ugh... as expected, every set was expensive...
+{PAUSE ""}
+<BR>
+How much is just the food on the table already costing?<PG>
+<STYLE ID="2">"Mm... I'll have this, the seasonal set..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh? Oh? That's the cheapest set, isn't it?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Could it be, </STYLE><STYLE ID="2">Chigaya-san</STYLE><STYLE ID="1">, that you're a light eater?"</STYLE>
+{PAUSE ""}
+<BR>
+What a nervy girl...! Even I was starting to get a little irritated...<PG>
+<STYLE ID="2">"I can eat plenty too, if I put my mind to it...!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I've beaten most of the eating-challenge menus I've tried!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ooh!? A rival for this genius girl has appeared, I see!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Oh my, that sounds fun!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Then how about a contest to see who can eat more of the sushi here!?"</STYLE>
+{PAUSE ""}
+<BR>
+No, no, wait, wait―what is this <STYLE ID="3">old bat</STYLE> saying...!?
+{PAUSE ""}
+<BR>
+Does she know it would run to hundreds of thousands of yen if I really ate in a place like this...!?<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="7">"That's enough!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+The mood was all wrong for what we'd come to discuss, and before I knew it, my fist had come down on the table.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"A-</STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="2">! Save that for later and let's start talking!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, you know perfectly well what you came here for today, don't you!?"</STYLE><PG>
+Calling her <STYLE ID="1">Goto-chan</STYLE> and lecturing her had slipped out without my meaning to, but it was rare for me to get this angry.
+{PAUSE ""}
+<BR>
+Somehow, it felt like I was being made fun of.
+{PAUSE ""}
+<BR>
+Then <STYLE ID="1">Goto-chan</STYLE> flashed a big grin.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Ehehe! At last, </STYLE><STYLE ID="2">Chigaya-san</STYLE><STYLE ID="1">, you're talking normally with me!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　You seemed so nervous that I got a little worried."</STYLE>
+{PAUSE ""}
+<BR>
+Huh? What does that mean...?
+{PAUSE ""}
+<BR>
+Did she do it on purpose, to ease my nerves?
+{PAUSE ""}
+<BR>
+No, no―that's just <STYLE ID="8" RUBY="そうせきちんりゅう">a sore loser's sophistry</STYLE>!<PG>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="2">! I'll have this fugu and wagyu special set!"</STYLE>
+{PAUSE ""}
+<BR>
+I pointed at the pricey 39,800-yen (before tax and service charge, drinks not included) set.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Okay, okaaay! Then I'll have the same!"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+And <STYLE ID="3">Auntie</STYLE> picked up the room's phone.<PG>
+<STYLE ID="1">"Hey, hey, </STYLE><STYLE ID="2">Chigaya-san</STYLE><STYLE ID="1">! What does </STYLE><STYLE ID="4">Niimura-senpai</STYLE><STYLE ID="1"> call you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="2">, you mean? </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="2"> calls me Chiga-nee."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then can I call you </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1"> too?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto-chan</STYLE> sipped the bamboo-shoot soup and flashed a big grin again.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This girl</STYLE> is even more childish than she looks...<PG>
+<STYLE ID="2">"Mm... Chiga-nee is fine."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then, </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">! I look forward to working with you!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+And <STYLE ID="1">Goto-chan</STYLE> held out a hand with a grain of rice stuck to it.
+{PAUSE ""}
+<BR>
+I wasn't quite convinced, but I held out my hand too and took <STYLE ID="1">Goto-chan's</STYLE> hand.
+{PAUSE ""}
+<BR>
+Such a small hand...
+{PAUSE ""}
+<BR>
+She was supposed to be smart, but there weren't any study calluses on it.<PG>
+<STYLE ID="2">"Mm... Likewise."</STYLE>
+{PAUSE ""}
+<BR>
+A beat late, I shook on it.
+{PAUSE ""}
+<BR>
+But <STYLE ID="1">Goto-chan</STYLE> kept looking me in the eye and wouldn't let go of my hand.
+{PAUSE ""}
+<BR>
+Still smiling, she was staring steadily into my eyes.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+No... 
+{PAUSE ""}
+That's not it.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This girl</STYLE> isn't smiling.
+{PAUSE ""}
+<BR>
+Only her mouth was smiling; behind her eyes was a glare sharp enough to curse someone dead.<PG>
+<STYLE ID="1">"What's wrong? Do I look that scary?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... No, it's nothing..."</STYLE>
+{PAUSE ""}
+<BR>
+At last <STYLE ID="1">Goto-chan</STYLE> let go of my hand.
+{PAUSE ""}
+<BR>
+It wasn't that <STYLE ID="1">this girl</STYLE> had been fooling around from the start.
+{PAUSE ""}
+<BR>
+The whole time, she'd kept up a smile while observing my every move.
+{PAUSE ""}
+<BR>
+Without meaning to, I looked down.<PG>
+<STYLE ID="1">"Well, </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, what do you want to do?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">Goto-chan's</STYLE> tone of voice dropped drastically.
+{PAUSE ""}
+<BR>
+Before I knew it, the big grin had vanished as well.<PG>
+<STYLE ID="1">"There's time before your food arrives. Should we talk until then?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　It probably won't take very long."</STYLE>
+{PAUSE ""}
+<BR>
+Won't take long? That couldn't be.
+{PAUSE ""}
+<BR>
+Not even if she'd already heard the story from <STYLE ID="3">Auntie</STYLE> beforehand.<PG>
+<STYLE ID="2">"Mm... Let's wait until after we've eaten. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If we talk while we eat, </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, your food will get cold."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're right. Let's do that."</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="1">Goto-chan</STYLE> tossed a few slices of octopus into the shabu-shabu pot.<PG>
+<STYLE ID="1">"With octopus shabu-shabu, rather than pulling it out of the water right away, I like it </STYLE><STYLE ID="9" RUBY="ゆ">boiled</STYLE><STYLE ID="1"> a little longer."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Octopuses come in all sorts of colors while they're alive, but do you know why they turn red when you </STYLE><STYLE ID="9" RUBY="ゆ">boil</STYLE><STYLE ID="1"> them?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\タコ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"They contain a substance called astaxanthin, and when it is heated, it changes into carotenoprotein and goes from a blackish color to a vivid red. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It is also found in shrimp and crab. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Astaxanthin is a kind of carotenoid with an antioxidant effect, and apparently it is good for your health."</STYLE>
+{PAUSE ""}
+<BR>
+And here <STYLE ID="1">Goto-chan</STYLE> lifted the octopus slices out of the pot.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島たこ焼き.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\エデン\たこしゃぶ.gal" "NORMAL" "#1" "L" "540" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n100\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n100\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"See, if you </STYLE><STYLE ID="9" RUBY="ゆ">boil</STYLE><STYLE ID="1"> it properly, it turns red. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Some things only become visible once they've been cooked through."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Goto-chan</STYLE> <STYLE ID="10" RUBY="ほおば">crammed</STYLE> three slices of octopus into her mouth at once.<PG>
+If you <STYLE ID="11" RUBY="ゆ">boil</STYLE> it properly, it turns red. Things that only become visible once they're cooked.
+{PAUSE ""}
+<BR>
+Is that a hint for solving the case?
+{PAUSE ""}
+<BR>
+Things that can't be seen now come into view when something sets them off.
+{PAUSE ""}
+<BR>
+Can <STYLE ID="1">Goto-chan</STYLE> already see it...?<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\タコ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"An octopus's body is almost all muscle. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But they are not all brawn and no brain. They are said to be the most intelligent of all invertebrates. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">They recognize objects, and they even show learned behavior like taking food out of a container with a lid. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But an octopus only lives about 2 years. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If octopuses lived as long as humans do, they might have become humanity's natural enemy."</STYLE><PG>
+I have no idea what <STYLE ID="1">this girl</STYLE> is getting at.
+{PAUSE ""}
+<BR>
+Is she saying talk about octopuses can prevent a curse-killing?
+{PAUSE ""}
+<BR>
+No, rather than trying to feel her out, I'd better just ask her straight.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, does what you just said lead anywhere toward solving the curse-killings?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, I was just showing off what I know a little. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We agreed that talk would wait until after the meal."</STYLE>
+{PAUSE ""}
+<BR>
+What's that supposed to mean...<PG>
+<STYLE ID="1">"But I suppose my head keeps drifting toward the curse-killings without my realizing it."</STYLE>
+{PAUSE ""}
+<BR>
+And <STYLE ID="1">Goto-chan</STYLE> slowly put the last of the octopus into the pot.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\タコ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"This octopus can only live 2 years, so it gets eaten by humans. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But if it lived many more years, it might have learned ways to kill humans and ended up ruling even the land. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">They say an octopus can stay active on land for a good 30 minutes. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It is fascinating to think how much a 20-year-old octopus and a 20-year-old human would differ in physical ability and intelligence."</STYLE>
+{PAUSE ""}
+<BR>
+Then she brought the last of the octopus to her mouth and finally set down her chopsticks.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hmm, this isn't really the mood for enjoying a meal anymore. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well then, shall we begin the operation?"</STYLE>
+{PAUSE ""}
+<BR>
+It looked like she meant to get into the curse-killings in earnest now.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "258" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+<STYLE ID="1">"What I think is this: we must not consider either the method or the culprit within the bounds of common sense. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">―setting aside whether you really killed five people, your murderous intent had already sprouted by the time you were 11. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Even if the chance is not zero, no one would normally imagine an 11-year-old child killing an adult. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">―the theory that you were the culprit was a little outside common sense, so you were never suspected."</STYLE><PG>
+<STYLE ID="1">"In this case, it would not be strange to think that a bear cub whose parent was killed by the people of Arata had come to take </STYLE><STYLE ID="12" RUBY="ふくしゅう">revenge</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Bears are said to be tenacious and cautious, and to have intelligence on a par with primates. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Nor is there any contradiction in a bear that has learned how frightening humans are attacking the settlement's people to protect its own peace."</STYLE><PG>
+A bear as the curse-killer...
+{PAUSE ""}
+<BR>
+Besides, that doesn't explain why it was someone else and not me who killed the five, or why they were killed with a blunt instrument.
+{PAUSE ""}
+<BR>
+That's contradictory enough as it is...<PG>
+<STYLE ID="1">"I know what </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> are getting at. That if a bear were the culprit, there would be too many contradictions. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But right now, every theory produces a contradiction. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Impossible for a human, impossible for an animal, and to begin with, </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> were not the culprit. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Since it is a case, there has to be a correct answer. And yet contradictions arise. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Do you understand what that means?"</STYLE><PG>
+A case where contradictions always arise...?
+{PAUSE ""}
+<BR>
+Even though there must be a correct answer...?
+{PAUSE ""}
+<BR>
+That's a contradictory idea in itself...
+{PAUSE ""}
+<BR>
+A correct answer that exists even while contradicting itself―something like that...
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+Contradiction... 
+{PAUSE ""}
+and the answer...?<PG>
+<STYLE ID="2">"A contradiction is... the answer?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Exactly. Every deduction and every investigation runs straight into a contradiction."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Then does that mean there's absolutely no way to ever reach the truth...?"</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\z50逆.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, you know what happened in Megasawa City in the past, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... I know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If </STYLE><STYLE ID="3">Obasan</STYLE><STYLE ID="1"> had committed the crimes, the drug called Droga might have turned them into an unsolved case. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">A case full of contradictions ends up buried in the dark."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"That's right. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">Akane</STYLE><STYLE ID="3"> and the others―I'd even planned a faked alibi using them, and with movements no human could make, I think it would at least have become a baffling case."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... But in that case, there was still a truth with no contradictions, wasn't there?"</STYLE><PG>
+<STYLE ID="1">"That's right. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">To us right now, the curse-killings look riddled with contradictions. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It is only when something common sense cannot conceive of, like Droga, enters the picture that the contradictions are cleared away. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That is what the octopus and bear examples I gave earlier were about. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If the culprit is 'human,' there's a contradiction. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Not that the curse-killer is an octopus or a bear."</STYLE><PG>
+<STYLE ID="2">"Mm... So you mean something impossible by common sense, like Droga, has gotten into the curse-killings too, and it's getting in the way of uncovering the truth?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Precisely. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And it is happening inside the Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What this means is―"</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+At this point, <STYLE ID="1">Goto-chan</STYLE> took a sip of water.
+{PAUSE ""}
+<BR>
+The only sound in the room was the cloudy water simmering, bubbling away.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "111.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\女神\集落全景.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"What it means is this: 'the Arata settlement must have a secret that none of its residents knows.' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And there is 'someone with a definite will' whose existence nobody knows of."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... You mean someone we don't know has slipped in among us?"</STYLE><PG>
+<STYLE ID="1">"In a broad sense, yes. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, don't you know of anything strange like that?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　For example, a creature capable of telepathy, or a creature that shares strange powers with others."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... There's no way anything like that exists..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Are you really sure?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... I wouldn't lie to you here..."</STYLE><PG>
+<STYLE ID="1">"No, what I'm saying is that maybe </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> have already come into contact with it and just haven't noticed. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Whether or not there is 'someone' disguised as something, mixed in among the Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'll give my grounds later, but it is very likely that a creature like that has slipped into the settlement."</STYLE>
+{PAUSE ""}
+<BR>
+Even if she says that, I haven't the faintest idea.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, listen carefully. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYMOVIE "桜散る.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "L" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">You</STYLE><STYLE ID="1"> have, like </STYLE><STYLE ID="14">Kogori-senpai</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="15">Sakura Niimura-san</STYLE><STYLE ID="1">, the ability to foresee danger. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What </STYLE><STYLE ID="14">Kogori-senpai</STYLE><STYLE ID="1"> describes as </STYLE><STYLE ID="14">'</STYLE><STYLE ID="16">Eiichiro Niimura-san</STYLE><STYLE ID="14">'s voice'</STYLE><STYLE ID="1"> is exactly that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In other words, you could also say that someone is warning </STYLE><STYLE ID="14">Kogori-senpai</STYLE><STYLE ID="1"> of danger. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That is, 'someone.'"</STYLE><PG>
+<STYLE ID="1">"These are my grounds for saying someone has very likely slipped into the settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">To make someone sense danger,</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">・telepathy</STYLE><BR>
+<STYLE ID="1">・the ability to share its power</STYLE><BR>
+<STYLE ID="1">are both required."</STYLE><PG>
+It was getting complicated, and I was having trouble keeping up.
+{PAUSE ""}
+<BR>
+It's true: my danger sense feels like suddenly picking up a signal sent out by something.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who on earth is it? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Surely the curse-killer is that very 'one who warns of danger.'"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\栄一郎バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="14">Kogori-senpai</STYLE><STYLE ID="1"> says it is </STYLE><STYLE ID="16">Eiichiro Niimura-san's</STYLE><STYLE ID="1"> voice, but that would mean the dead are speaking. </STYLE>
+{PAUSE ""}
+<STYLE ID="14">Senpai</STYLE><STYLE ID="1"> is not someone I could say this in front of, but the dead speaking is an absurd idea. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But </STYLE><STYLE ID="14">Kogori-senpai</STYLE><STYLE ID="1"> is definitely receiving the voice of 'someone.' </STYLE>
+{PAUSE ""}
+<STYLE ID="16">Eiichiro Niimura-san's </STYLE><STYLE ID="17" RUBY="・・・・">perfect double</STYLE><STYLE ID="1">―that is the 'someone' it comes from. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">On top of that, the danger sense is extremely reliable. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">At this point, common-sense thinking no longer applies."</STYLE><PG>
+<STYLE ID="2">"Mm... But is that reasoning really sound...? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I understand that common-sense thinking won't work, but then aren't there far too many possibilities?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's certainly so. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But I think the elements for tracing the story are already in place. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Droga, precognition, curse-killing. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You won't find a place where this much </STYLE><STYLE ID="18" RUBY="そろ">comes together</STYLE><STYLE ID="1"> anywhere in the world, will you?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　So using those as our way in is the shortest route."</STYLE><PG>
+<STYLE ID="2">"Mm... You're right..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"So how can the curse-killings be prevented? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">For that, we have to reach this master of contradictions."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... The master of contradictions..."</STYLE><PG>
+<STYLE ID="1">"Unfortunately, though, this is as far as we can go with what we know now. Let's think about it again once we have more detailed information."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... What about </STYLE><STYLE ID="15">Mom's</STYLE><STYLE ID="2"> curse, or that kind of paranormal angle―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"99% impossible."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... How can you be so sure?"</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\クリスタルコア.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"If it were, someone like me showing up wouldn't be of any use. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Even if there is a 1% chance it is that angle, the standard approach is to test every practical possibility we can think of, and only switch over to that one if they all fail."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE><PG>
+<STYLE ID="1">"To begin with, I hear the people of Arata believe the curse-killings are </STYLE><STYLE ID="15">Sakura Niimura-san's</STYLE><STYLE ID="1"> curse, but has that led to solving anything?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... Nothing."</STYLE><PG>
+<STYLE ID="1">"Right? </STYLE><STYLE ID="19" RUBY="・・・">Escaping</STYLE><STYLE ID="1"> into the paranormal is no different from giving up.</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　That being so, unless we rule out that angle, we will make no progress at all. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There must be something. Something that looks paranormal but, like Droga, is a scientific element no one could have imagined with the common sense we had until now."</STYLE><PG>
+<STYLE ID="2">"Mm... So something our common sense said was impossible is tied up in the curse-killings. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It isn't anything spiritual. There are bound to be scientific grounds for it. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And the mastermind behind it is giving us our precognition. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But the moment you say precognition, it doesn't sound scientific to me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why is that?"</STYLE><PG>
+<STYLE ID="2">"Mm... Why, you ask... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Isn't precognition paranormal?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I define the paranormal as things that cannot be explained by the common sense we have had so far or by human senses. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\コウモリ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Bats and dolphins communicate with ultrasound, but humans can neither see it nor hear it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Is that paranormal?"</STYLE><PG>
+<STYLE ID="2">"Mm... That's been proven scientifically, so it isn't paranormal."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But in an age with no concept of ultrasound, communication by ultrasound would have been telepathy―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">in other words, a paranormal phenomenon. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You</STYLE><STYLE ID="1"> and the others―if your precognition is likewise a sense of receiving some kind of signal, it can't really be called paranormal either, can it?"</STYLE><PG>
+<STYLE ID="2">"Mm... That's true..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I understand the urge to call mysterious things paranormal. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But that would mean humanity's defeat. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">As long as we think that way, the curse-killings will never be solved. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We already have hints like Droga and precognition right in front of us as pieces of the solution, so there is no need to be pessimistic anymore."</STYLE><PG>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Just then, there was a knock at the door.
+{PAUSE ""}
+<BR>
+It seemed the meals for me and <STYLE ID="3">Auntie</STYLE> had arrived.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Let's continue after we've eaten. Food doesn't taste good if you eat it while talking about this kind of thing!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">, you really switch gears fast."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's sad when a meal this nice doesn't taste good. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Hey, hey, </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="1">, what's your college life usually like?"</STYLE><PG>
+<STYLE ID="2">"Huh? Mm... Um, at college―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Obasan</STYLE><STYLE ID="1"> told me you're a seriously mean drunk?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm... </STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="2">!? What did you tell </STYLE><STYLE ID="1">Goto-chan</STYLE><STYLE ID="2">!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Huh!?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Oh, ohohohoho! I just thought I should fill her in on what </STYLE><STYLE ID="2">you</STYLE><STYLE ID="3"> are like as well!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭料理.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After that, we were able to enjoy our meal, chatting and laughing.
+{PAUSE ""}
+<BR>
+Honestly, I had underestimated <STYLE ID="1">Goto-chan</STYLE>.
+{PAUSE ""}
+<BR>
+Somewhere in my heart, I'd thought there couldn't be anyone who could solve a case this baffling.<PG>
+But when I actually talked to her, what happened? I got all these hints.
+{PAUSE ""}
+<BR>
+Thinking with common sense and thinking in terms of the paranormal had both been nonsense.<PG>
+Something outside common sense is happening, so thinking about it with common sense can't possibly solve it.
+{PAUSE ""}
+<BR>
+To solve it, we have to start from the elements that are outside common sense.
+{PAUSE ""}
+<BR>
+And behind them, 'the master of contradictions.'<PG>
+We already have hold of several pieces of information that are outside common sense.
+{PAUSE ""}
+<BR>
+As long as we don't pick the wrong way in, we should be able to head toward the truth.<PG>
+I had a feeling the day I'd learn its true identity was not far off either.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

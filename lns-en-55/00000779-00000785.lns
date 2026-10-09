@@ -1,0 +1,560 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1393, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=574, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=279, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=239, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=149, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=465, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こおもて, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ろうじょ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=11484851, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おおまじょ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=うやうや, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=6, unk2=7531958, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらたしゅうらく, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらた, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=22, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=3, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=2, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらた, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=7, unk2=13464750, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=267, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   22: TDecorate(count=2, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きょうさ, unk10=4294967295, unk11=4294967295)
+;   23: TDecorate(count=21, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   24: TDecorate(count=8, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3871, target=)
+; Links:
+;    0: TWdLink(count=3463, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\mike_noise.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\美冬車.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The time had gone past 17:00.
+{PAUSE ""}
+<BR>
+A light car was parked beside the apartment building where the Kogori and Niimura families lived―Revo Heights.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬横顔.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+In the driver's seat was <STYLE ID="1">Mifuyu Niimura</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She</STYLE> was wearing earphones connected to a brand-new smartphone.
+{PAUSE ""}
+<BR>
+The sounds of the Niimura home―were coming to her through the bugged smartphone of <STYLE ID="2">Haruka Niimura</STYLE>.<PG>
+<STYLE ID="1">"Almost time..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "C" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+On the passenger seat lay a syringe filled with a pink drug. <STYLE ID="1">Mifuyu</STYLE> picked it up.<PG>
+<STYLE ID="1">"Whew..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mifuyu</STYLE> took a shallow deep breath.
+{PAUSE ""}
+<BR>
+That sigh just now had not been nerves.
+{PAUSE ""}
+<BR>
+She had gone over once more, in her head, what she had to do next.
+{PAUSE ""}
+<BR>
+It happened just as <STYLE ID="1">Mifuyu</STYLE> was about to stick the needle into her arm.<PG>
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="3">"Who is this!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Run! It's the shinigami!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Senpai! Help me!"</STYLE><PG>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Dying screams, and the sounds of flesh being cut and bones being crushed.<PG>
+<STYLE ID="1">"What's going on...!?"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "2000" "PASS"}
+<STYLE ID="1">Mifuyu</STYLE> flung the syringe onto the passenger seat before it went in.
+{PAUSE ""}
+<BR>
+Then she put on the red robes and the Noh mask, and took up the nata and the mace.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "アイテム1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+Taking the stairs so as not to be seen, she came to stand in front of the Niimura apartment.
+{PAUSE ""}
+<BR>
+It would be bad to be spotted, so this time <STYLE ID="1">Mifuyu</STYLE> took no deep breath and opened the door quickly.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+From inside, she could sense neither sound nor presence.<PG>
+<STYLE ID="1">"The smell of blood...!?"</STYLE>
+{PAUSE ""}
+<BR>
+Earlier she had concentrated on her hearing, but this time she relied on her sense of smell to search out the state of the room.
+{PAUSE ""}
+<BR>
+Even had she tried to rely on her eyes, it was dim inside.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\スチル\ドッキリ.gal" "NORMAL" "#1" "C" "B" "0" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+A movie was playing without sound on the room's TV, and thick curtains were drawn over the windows.
+{PAUSE ""}
+<BR>
+And on the floor lay the brutally murdered bodies of the girls.
+{PAUSE ""}
+<BR>
+Their clothes and white skin were stained with blood, and they lay in cramped positions clearly unlike sleep.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\能面横顔右.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Who on earth..."</STYLE>
+{PAUSE ""}
+<BR>
+She had used her hearing, used her sense of smell, and then used her sight, yet she could neither grasp nor understand what was happening.
+{PAUSE ""}
+<BR>
+Did she mean to touch their skin next, and confirm the situation by touch?<PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="5">"I have been waiting for you, </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="5">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who!?"</STYLE>
+{PAUSE ""}
+<BR>
+Without warning, a hoarse voice reached <STYLE ID="1">Mifuyu</STYLE>'s ears―
+{PAUSE ""}
+<BR>
+Yet <STYLE ID="1">Mifuyu</STYLE> froze at that voice, one she knew.
+{PAUSE ""}
+<BR>
+She had said 'Who?' because she doubted who the voice belonged to.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "太古の暗い鳴動.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\大魔女能面大.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "$000080" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n50\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n50\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\スチル\ドッキリ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+When <STYLE ID="1">Mifuyu</STYLE> turned around, there stood one more shinigami, dressed just like her.
+{PAUSE ""}
+<BR>
+Unlike <STYLE ID="1">Mifuyu</STYLE>'s <STYLE ID="6" RUBY="こおもて">young woman's mask</STYLE>, this shinigami's was the Noh mask of an <STYLE ID="7" RUBY="ろうじょ">old woman</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mifuyu</STYLE> knew well what this Noh mask meant.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\大魔女能面横.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\能面横顔左.gal" "NORMAL" "#1" "L" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="5">... I have waited a very long time..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I knew it. That voice...!"</STYLE>
+{PAUSE ""}
+<BR>
+The voice was muffled by the Noh mask, but on hearing it <STYLE ID="1">Mifuyu</STYLE> stepped back one step, and then another.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\能面土下座.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Then she laid the nata and the mace on the floor, and put her knees and hands down on the bloodied floor.<PG>
+<STYLE ID="1">"It has been a long time, </STYLE><STYLE ID="9" RUBY="おおまじょ">Grand Witch</STYLE><STYLE ID="5">-sama</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mifuyu</STYLE>, still kneeling, gave a <STYLE ID="10" RUBY="うやうや">respectful</STYLE> greeting and went on speaking.<PG>
+<STYLE ID="1">"For my absence, and that of </STYLE><STYLE ID="2">my daughter Haruka</STYLE><STYLE ID="1">―from my </STYLE><STYLE ID="11">husband</STYLE><STYLE ID="1">'s memorial service, I offer my deepest </STYLE><STYLE ID="12" RUBY="わ">apologies</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You have come all the way from </STYLE><STYLE ID="13" RUBY="あらたしゅうらく">the Arata settlement</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But why? Why would </STYLE><STYLE ID="5">you</STYLE><STYLE ID="1">... these girls..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mifuyu</STYLE>, her head still lowered, asked the <STYLE ID="5">Grand Witch</STYLE>.<PG>
+<STYLE ID="5">"One for all, all for one. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">It is the slogan of the Arata settlement; even elementary school children understand it. Have you forgotten?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, that is not so. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But </STYLE><STYLE ID="5">Grand Witch-sama</STYLE><STYLE ID="1">...! I do not recall asking </STYLE><STYLE ID="14" RUBY="あらた">Arata</STYLE><STYLE ID="1"> to do anything like this! </STYLE>
+{PAUSE ""}
+　<STYLE ID="1">This is... a matter between me and </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Why? Why </STYLE><STYLE ID="15">Ryoji Kogori</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That is... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But how is it that you know </STYLE><STYLE ID="15">his</STYLE><STYLE ID="1"> name?"</STYLE><PG>
+<STYLE ID="5">"About 20 years ago, </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="5">, for your wedding ceremony with </STYLE><STYLE ID="16">Eiichiro</STYLE><STYLE ID="5">, you said you wished to invite the Kogori couple to </STYLE><STYLE ID="17" RUBY="あらた">Arata</STYLE><STYLE ID="5">, did you not? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　We could not permit an outsider to attend, but I remember the name. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Besides, </STYLE><STYLE ID="15">his</STYLE><STYLE ID="5"> name is now famous all over Japan as that of a pitiful man who was horribly murdered."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That is true..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Lift your head, </STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="5">."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\能面横顔左.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Mifuyu</STYLE> lifted her head.
+{PAUSE ""}
+<BR>
+But her hands, resting on the floor, moved as if hesitating over doing something.<PG>
+<STYLE ID="5">"What are you doing? When I tell you to lift your head, I am telling you to show me your face."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬横顔逆.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Mifuyu</STYLE> did as she was told, took off the mask, and set it on the floor.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="5">... you are crying, are you not..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬土下座.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Because... </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">...!"</STYLE><PG>
+<STYLE ID="5">"I heard that in this town where </STYLE><STYLE ID="1">you</STYLE><STYLE ID="5"> live, a brutally murdered body had turned up. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">The thirteenth-year memorial service, on April 8. How could I not know?" [TN: Buddhist memorials count the year of death as the first year.]</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I am so very sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\大魔女能面バストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+The <STYLE ID="5">Grand Witch</STYLE> turned her face toward the bodies lying on the floor.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Natsumi Kogori</STYLE><STYLE ID="5">. </STYLE><STYLE ID="4">Erina Goto</STYLE><STYLE ID="5">. And </STYLE><STYLE ID="2">my granddaughter Haruka</STYLE><STYLE ID="5">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I did it in your place, but was this all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mifuyu</STYLE> fell silent.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\大魔女能面横.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{QUAKE "メッセージボックス,000" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="18">"Answer me, </STYLE><STYLE ID="19">Mifuyu-san</STYLE><STYLE ID="18">."</STYLE>
+{QUAKESTOP "0"}
+{PAUSE ""}
+<BR>
+The <STYLE ID="5">Grand Witch</STYLE> shouted and struck the table with the mace, and <STYLE ID="1">Mifuyu</STYLE>'s body gave a jolt.<PG>
+<STYLE ID="1">"A... at least... I never planned to kill E-</STYLE><STYLE ID="4">Erina Goto</STYLE><STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see. Then that was a pitiful thing I did."</STYLE>
+{PAUSE ""}
+<BR>
+The <STYLE ID="5">Grand Witch</STYLE> stroked <STYLE ID="4">Erina Goto</STYLE>'s head <STYLE ID="20" RUBY="な">gently</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Why </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+The <STYLE ID="5">Grand Witch</STYLE> began stroking <STYLE ID="3">Natsumi Kogori</STYLE>'s head <STYLE ID="20" RUBY="な">as well</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Because I do not want to let </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">... go. </STYLE>
+{PAUSE ""}
+<STYLE ID="15">Ryoji Kogori</STYLE><STYLE ID="1"> told me. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That he could no longer... leave </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1"> in my care..."</STYLE><PG>
+<STYLE ID="5">"What do you mean by that?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Well... very well. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But why even </STYLE><STYLE ID="3">Natsumi Kogori</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mifuyu</STYLE> clenched her hands where they rested on the floor.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">She</STYLE><STYLE ID="1"> is a real witch...!</STYLE>　<STYLE ID="1">Only in this season, when the cherry blossoms bloom, can she foresee the future. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And... she can also curse people to death."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"A curse, meaning what?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"She can kill people not by summoning a shinigami, but with a curse in the true sense of the word. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Eiichiro-san</STYLE><STYLE ID="1">, that is how...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　And... </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1"> is my daughter!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬横顔逆.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+When <STYLE ID="1">Mifuyu</STYLE> lifted her head―<PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="1">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+The <STYLE ID="5">Grand Witch</STYLE> had taken off the <STYLE ID="7" RUBY="ろうじょ">old woman's</STYLE> Noh mask.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花大魔女.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n50\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n50\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="2">, sorry... My </STYLE><STYLE ID="5">Grandma</STYLE><STYLE ID="2"> impression got better than last time, right?"</STYLE><PG>
+{MESOFF "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\室内ドア早い開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{CREATECG "000" "グラフィック\背景\スチル\ドッキリ.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"Grab her!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "300" "CLICK" "SKIP"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE2" "NORMAL" "1000" "0"}
+Police officers came stomping in from the other rooms and pinned down <STYLE ID="1">Mom</STYLE>, still on her knees, without any trouble.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"</STYLE><STYLE ID="1">Mifuyu Niimura</STYLE><STYLE ID="21">! You're under arrest on suspicion of murder and abandoning a body, and </STYLE><STYLE ID="22" RUBY="きょうさ">incitement</STYLE><STYLE ID="21"> to murder!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\手錠.ogg" "VOICE" "NORMAL" "1000" "0"}
+In no time at all, <STYLE ID="1">Mom</STYLE> was in handcuffs.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Then the policewomen who had been posing as us wriggled and got up.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Operation success... right..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="23">The two who had been hiding in another room also appeared in front of me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE> wasn't smiling. <STYLE ID="3">Natsumi</STYLE> didn't say anything.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬土下座.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"I figured if I put on a Noh mask and did </STYLE><STYLE ID="5">Grandma</STYLE><STYLE ID="2">, we could catch you before you did anything weird..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="21">"All right, take her away!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "300" "CLICK" "SKIP"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="1">Mom</STYLE> was taken away before she even had time to answer.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="2">...!"</STYLE>
+{PAUSE ""}
+<BR>
+I couldn't stay on my feet, and sank down onto the floor.<PG>
+{PLAYSND "悲しみに包まれて.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+<STYLE ID="2">"What is this... My plan actually worked... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Hey, tell me. This is all a prank, isn't it? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　You all tricked me so you could laugh at me, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Natsumi</STYLE> and <STYLE ID="4">Goto</STYLE> both had their lips pressed tight.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE> wrapped her arms around me where I knelt.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'm sorry. Maybe it's me who's the witch after all... If I hadn't let the balloon go, this...!"</STYLE>
+{PAUSE ""}
+<BR>
+Why is <STYLE ID="3">Natsumi</STYLE> the one apologizing... <STYLE ID="3">Natsumi</STYLE>'s the one who's always held me up.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"</STYLE><STYLE ID="1">Mifuyu-san</STYLE><STYLE ID="21">'s been transferred. Thank you for cooperating with the investigation."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Hey, </STYLE><STYLE ID="21">Ojisan</STYLE><STYLE ID="4">! What's going to happen to the Senpais!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"O-Ojisan...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"The Senpais won't get driven out of Motoki-cho just because their parents are like this, will they!?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"Well, don't worry about that part. They worked themselves to the bone to get this case solved. </STYLE>
+{PAUSE ""}
+<STYLE ID="21">The school and the local authorities should look after them properly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I can believe you, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE> gazed at <STYLE ID="21">Ise-san</STYLE> with teary eyes.<PG>
+<STYLE ID="21">"Nn-nn-nnohh! O-of course! D-D-Daijiro Ise! Even if I must sacrifice myself!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Thank you, </STYLE><STYLE ID="21">Ojisan</STYLE><STYLE ID="4">! Want me to give you a smooch on the cheek!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Goto</STYLE> flashed him a big grin.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚きバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"Ab-ab-ab-absolutely not! </STYLE>
+{PAUSE ""}
+<STYLE ID="21">　Pretty girls are to be cherished, and one must never, ever lay a hand on them!"</STYLE>
+{PAUSE ""}
+<BR>
+He was saying things I couldn't follow, but <STYLE ID="4">Goto</STYLE> was also trying to act even a little cheerful.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="21">"Ahem! Also, </STYLE><STYLE ID="2">Niimura-san</STYLE><STYLE ID="21">, </STYLE><STYLE ID="3">Kogori-san</STYLE><STYLE ID="21">, I know this is all hard on you both, but I'd like to hear from you. Can you come with us?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Come on, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE> pulled me to my feet, my legs still too weak to stand.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Natsumi</STYLE>'s <STYLE ID="15">dad</STYLE> is dead too, so where is this strength coming from?<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Why are </STYLE><STYLE ID="3">you</STYLE><STYLE ID="2"> so... so strong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Not really... I'm just doing what I can right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Haruka</STYLE><STYLE ID="3"> said she was absolutely going to save everyone, so I can't be the one losing heart, can I? </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Because if I lose heart, I won't be able to save everyone..."</STYLE><PG>
+<STYLE ID="2">"Geez... </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="2">, and </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="2"> too... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I've really been leaning on you two the whole time, haven't I... Even though I'm the oldest..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"One for all, all for one. That's the Niimura family motto, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hahaha... At a time like this... Are you an idiot...?"</STYLE><PG>
+Because those two were there, nobody had to die.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mom</STYLE> was arrested, and it was probably only a matter of time before <STYLE ID="24">Natsumi's mom</STYLE> got caught too.
+{PAUSE ""}
+<BR>
+More than anything, I had done something truly inexcusable to <STYLE ID="15">Natsumi's dad</STYLE>.
+{PAUSE ""}
+<BR>
+But even if I can't call it the best, this is the most decent ending there could be right now...
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

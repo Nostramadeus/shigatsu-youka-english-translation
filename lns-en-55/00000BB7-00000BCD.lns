@@ -1,0 +1,733 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3747, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=428, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=43, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=35, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=36, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=60, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=368, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=206, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=13, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=30, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はかな, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=30, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ささい, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5537, target=)
+; Links:
+;    0: TWdLink(count=5011, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\心電図.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "5000" "CLICK" "SKIP"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{PLAYSND "BGM死月編\Code_of_Honor_#2.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\病室夏菜朝.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―April 8, 6 a.m.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\死月編\会いに来たよ閉じ.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I was at the side of <STYLE ID="1">Kana-chan</STYLE>, asleep under anesthesia.
+{PAUSE ""}
+<BR>
+The morning sun of April 8 crept faintly into the hospital room.<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+―5 hours earlier, April 8, 1 a.m.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田駅夜外.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Right after that, <STYLE ID="1">Kana-chan</STYLE> was rushed to the hospital in <STYLE ID="2">Niimura-senpai's mother</STYLE>'s car, and the police and ambulances raced to the scene.
+{PAUSE ""}
+<BR>
+The residents, in the middle of fighting back against <STYLE ID="1">Kana-chan</STYLE>, collapsed and stopped moving.<PG>
+<STYLE ID="3">Kotaro-san</STYLE> and <STYLE ID="4">Chiga-nee</STYLE> died at the scene.
+{PAUSE ""}
+<BR>
+Every one of the residents had a deep gash in the neck, and that was the fatal wound that killed them.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">In other words, </STYLE><STYLE ID="1">Kana-chan</STYLE> had finished off every one of them.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kogori-senpai</STYLE>'s parents were badly hurt, but neither had a fatal wound.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ワゴン後部座席夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"It hurts! It hurts! </STYLE><STYLE ID="7">Eri-nee</STYLE><STYLE ID="1">...!"</STYLE>
+{PAUSE ""}
+<BR>
+On the way to the hospital, <STYLE ID="1">Kana-chan</STYLE> screamed from the agony and thrashed around.
+{PAUSE ""}
+<BR>
+Little by little the drug's painkilling effect wore off, and unbearable pain tormented the 10-year-old girl.
+{PAUSE ""}
+<BR>
+I held <STYLE ID="1">Kana-chan</STYLE> tight, desperately.
+{PAUSE ""}
+<BR>
+It's okay―there's nothing to be scared of.
+{PAUSE ""}
+<BR>
+I'm right here with you.<PG>
+The fresh blood pouring from <STYLE ID="1">Kana-chan</STYLE>'s side dyed my clothes deeper and deeper in the color of death.
+{PAUSE ""}
+<BR>
+I knew.
+{PAUSE ""}
+<BR>
+With bleeding like this, there was no hope of her surviving.<PG>
+Her breathing grew shallower and shallower, and by the time we reached the hospital, <STYLE ID="1">Kana-chan</STYLE> was no longer thrashing, no longer screaming.
+{PAUSE ""}
+<BR>
+Still breathing weakly, she was wheeled into the operating room.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手術ランプ暗い.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―April 8, 1:30 a.m.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手術ランプ明るい.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The red light of the operating room came on.
+{PAUSE ""}
+<BR>
+I sat motionless in a chair where I could see the light.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana-chan</STYLE>, trying to protect us―
+{PAUSE ""}
+to save us by sacrificing <STYLE ID="1">herself</STYLE>―
+{PAUSE ""}
+had plunged the Droga into <STYLE ID="1">her own</STYLE> arm without a moment's hesitation.<PG>
+Had she been confident she could save us without a scratch?
+{PAUSE ""}
+<BR>
+Or had she already meant, back then, to make <STYLE ID="1">herself</STYLE> the sacrifice?
+{PAUSE ""}
+<BR>
+I want to believe it was the former.
+{PAUSE ""}
+<BR>
+If <STYLE ID="1">Kana-chan</STYLE> used the Droga out of self-sacrifice―that's just too painful.<PG>
+Until the surgery was over, sleep never once came for me, and I simply prayed for a miracle to happen.
+{PAUSE ""}
+<BR>
+I'm someone who doesn't believe in God, or ghosts, or the next life.
+{PAUSE ""}
+<BR>
+But this time, of all times, I wanted to believe God existed.
+{PAUSE ""}
+<BR>
+No... 
+{PAUSE ""}
+it's the opposite.
+{PAUSE ""}
+<BR>
+I wanted, with all my heart, to deny that God existed.<PG>
+As a trial given to <STYLE ID="1">Kana-chan</STYLE>, it's far too unfair.
+{PAUSE ""}
+<BR>
+If God is the one giving it... it's far too unfair.
+{PAUSE ""}
+<BR>
+And yet, in my heart, I kept on praying.
+{PAUSE ""}
+<BR>
+If it's a trial... if it's a trial, then it can be overcome, can't it?
+{PAUSE ""}
+<BR>
+Please, save <STYLE ID="1">Kana-chan</STYLE>...!<PG>
+Inside my heart, those contradictory prayers and denials swirled together.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―April 8, 5 a.m.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\手術ランプ明るい.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "100" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\手術ランプ暗い.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The operating room light went out, and <STYLE ID="1">Kana-chan</STYLE> was brought out.
+{PAUSE ""}
+<BR>
+They had operated, but the wound in her belly was deep, and there was no hope she would survive, they said...
+{PAUSE ""}
+<BR>
+Instead of being moved to the ICU, she was moved to a private room.
+{PAUSE ""}
+<BR>
+So that we could be at <STYLE ID="1">Kana-chan</STYLE>'s side at the end...<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\病室夏菜朝.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="7">Goto</STYLE><STYLE ID="8">, here..."</STYLE>
+{PAUSE ""}
+<BR>
+What <STYLE ID="8">Niimura-senpai</STYLE> handed me was a handkerchief <STYLE ID="9" RUBY="ぬ">dampened</STYLE> with water.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Wipe your face."</STYLE>
+{PAUSE ""}
+<BR>
+When I did as I was told and ran the handkerchief over my face, a red smear came off on it.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana-chan</STYLE>'s blood had gotten on my face, it seemed.
+{PAUSE ""}
+<BR>
+I'd been holding <STYLE ID="1">Kana-chan</STYLE> in the car, so my clothes were covered in blood too.<PG>
+Such terrible bleeding.
+{PAUSE ""}
+<BR>
+My clothes were so <STYLE ID="9" RUBY="ぬ">soaked</STYLE> with blood that it made me wonder how this small body could have held so much.
+{PAUSE ""}
+<BR>
+Even so, <STYLE ID="1">Kana-chan</STYLE> was still holding on.<PG>
+<STYLE ID="8">"</STYLE><STYLE ID="7">Goto</STYLE><STYLE ID="8">... get a little rest... You haven't slept at all, right?"</STYLE>
+{PAUSE ""}
+<BR>
+During <STYLE ID="1">Kana-chan</STYLE>'s surgery, <STYLE ID="8">Niimura-senpai</STYLE> had stayed with <STYLE ID="6">Kogori-senpai</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kogori-senpai</STYLE>'s injuries were apparently nothing serious, so <STYLE ID="8">Niimura-senpai</STYLE> had come over here as well.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kogori-senpai</STYLE> was now in the same hospital room as <STYLE ID="10">her parents</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Erika-chan</STYLE> and <STYLE ID="2">Senpai's mother</STYLE> were being questioned by the police.<PG>
+<STYLE ID="7">"</STYLE><STYLE ID="8">Niimura-senpai</STYLE><STYLE ID="7">, you're the one who should rest. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">I... want to stay by </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">'s side to the very end..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Just then, <STYLE ID="8">Niimura-senpai</STYLE>'s phone rang.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"It's the police. I'll go take it."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="8">Niimura-senpai</STYLE> left the hospital room.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\死月編\会いに来たよ閉じ.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I stroked <STYLE ID="1">Kana-chan</STYLE>'s pale face.
+{PAUSE ""}
+<BR>
+At first, I thought she was a bit of a pest.
+{PAUSE ""}
+<BR>
+But that was because of the sadness of not having <STYLE ID="12">her mother</STYLE>, and the loneliness of there being no other kids her age in the Arata settlement―
+{PAUSE ""}
+<BR>
+Being without <STYLE ID="12">her mother</STYLE>, whom everyone had loved, ever since she was born, is probably loneliest at about <STYLE ID="1">Kana-chan</STYLE>'s age.<PG>
+<STYLE ID="1"><TXSPS>"Mo... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Mo..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPN>Kana-chan</STYLE> spoke...!?
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"</STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">, can you hear me!?"</STYLE>
+{PAUSE ""}
+<BR>
+I took <STYLE ID="1">Kana-chan</STYLE>'s hand.
+{PAUSE ""}
+<BR>
+And she squeezed back, weakly.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\死月編\会いに来たよ半閉じ.gal" "REPEAT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\イラスト\死月編\会いに来たよ.lcm" "REPEAT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="7">Eri... nee</STYLE><STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"That's right! </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">, you made it!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="7">Eri-nee</STYLE><STYLE ID="1">... were you... by my side the whole time?"</STYLE><PG>
+<STYLE ID="7">"That's right! I mean, I'm </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">'s older sister, aren't I!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Thank you... </STYLE>
+{PAUSE ""}
+<STYLE ID="12">Mommy</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was dreaming she was by my side the whole time... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Eri-nee</STYLE><STYLE ID="1">... you're kind like </STYLE><STYLE ID="12">Mommy</STYLE><STYLE ID="1">, so... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">that's how I got to have a dream like that."</STYLE><PG>
+Did this mean the trial had been overcome?
+{PAUSE ""}
+<BR>
+Or was it a mercy God had granted at the very last moment?
+{PAUSE ""}
+<BR>
+No, right now it doesn't matter which!
+{PAUSE ""}
+<BR>
+Because I'd thought I would never hear <STYLE ID="1">Kana-chan</STYLE>'s voice again.
+{PAUSE ""}
+<BR>
+Even if it was a final mercy, I quietly thanked God.<PG>
+<STYLE ID="7">"</STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">... I'm sorry. For being such an unreliable big sister..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana-chan</STYLE> tried to make some expression in answer to my words, but she didn't seem to have even that much strength left.
+{PAUSE ""}
+<BR>
+How was she taking my words, in that hazy state of mind?<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="7">Eri-nee</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">to the very end... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">was lonely... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But... now... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Eri-nee</STYLE><STYLE ID="1">'s with me... so I'm not lonely..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Listen! There are so many places I want to go with you, </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Motoki-cho has lots of cherry trees, and it's a really beautiful place!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　When you're better... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">when you're better...!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Together... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">okay?"</STYLE><PG>
+Even as I encouraged her, the tears wouldn't stop falling from my eyes.
+{PAUSE ""}
+<BR>
+I'm the one encouraging her... 
+{PAUSE ""}
+so what am I doing crying...!
+{PAUSE ""}
+<BR>
+To cover it up, I talked to <STYLE ID="1">Kana-chan</STYLE> a lot.
+{PAUSE ""}
+<BR>
+When <STYLE ID="1">Kana-chan</STYLE> gets better... 
+{PAUSE ""}
+I told her those <STYLE ID="13" RUBY="はかな">fleeting</STYLE> dreams, whatever came into my head.
+{CREATECG "222" "グラフィック\イラスト\死月編\夏菜涙.gal" "NORMAL" "#1" "C" "B" "100" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+But maybe my feelings had only spun their wheels, because a drop trickled down from <STYLE ID="1">Kana-chan</STYLE>'s eye.
+{PAUSE ""}
+<BR>
+Why... why is <STYLE ID="1">Kana-chan</STYLE> crying too?
+{PAUSE ""}
+<BR>
+Because I'm crying?
+{PAUSE ""}
+<BR>
+Then I won't cry! I won't cry, so...!
+{PAUSE ""}
+<BR>
+So just once more... show me a smile...!<PG>
+{STOPSND "BGM" "5000" "PASS"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+<STYLE ID="1">"</STYLE><STYLE ID="7">Eri... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">nee</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\死月編\会いに来たよ半閉じ.gal" "REPEAT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "$000000" "NORMAL" "#1" "960" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n123\r\n111\r\n3\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="1"><TXSPS>"I...</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="1">lo...</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="1">ve...</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="1">you..."</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "人物1,000,111,222" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8"><TXSPN>"</STYLE><STYLE ID="7">Goto</STYLE><STYLE ID="8">, any minute now </STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="8">'s―"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "環境音\心電図死亡.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">Niimura-senpai</STYLE>'s voice was drowned out by the flat tone of the heart monitor.
+{PAUSE ""}
+<BR>
+Even after the strength had gone from <STYLE ID="1">Kana-chan</STYLE>'s hand, I kept holding it.
+{PAUSE ""}
+<BR>
+I didn't want to let go.
+{PAUSE ""}
+<BR>
+While there was still warmth in her, I wanted to keep feeling <STYLE ID="1">Kana-chan</STYLE>'s life until the very, very last.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\夢見る憧憬.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\病室夏菜朝.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="8">Niimura-senpai</STYLE><STYLE ID="7">... did I... manage to be a proper big sister...?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">"</STYLE><STYLE ID="7">Goto</STYLE><STYLE ID="8">...!"</STYLE>
+{PAUSE ""}
+<BR>
+As I kept holding <STYLE ID="1">Kana-chan</STYLE>'s hand, <STYLE ID="8">Niimura-senpai</STYLE> hugged me from behind.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="7">You</STYLE><STYLE ID="8"> and </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="8"> both... you were the best older sisters </STYLE><STYLE ID="1">Kana</STYLE><STYLE ID="8"> could've had..."</STYLE><PG>
+<STYLE ID="7">"Being a big sister... is hard, isn't it... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">I said I'd be her big sister just on a whim... and I couldn't do a single thing a big sister should."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="7">You</STYLE><STYLE ID="8">... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">There's something more important than that... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Kana</STYLE><STYLE ID="8">'s face, look at it. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">She doesn't look like she's suffering, or lonely, does she... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">You</STYLE><STYLE ID="8"> stayed by her side, that's why, right? </STYLE><STYLE ID="7">You</STYLE><STYLE ID="8"> were the only one who could've done that, right...?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\死月編\会いに来たよ死亡.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Kana-chan</STYLE>'s face was as peaceful as the Goddess's.
+{PAUSE ""}
+<BR>
+Was it because I was by her side?
+{PAUSE ""}
+<BR>
+There's no way of knowing―<PG>
+But if <STYLE ID="8">Niimura-senpai</STYLE> was right... then I'm glad I got to meet <STYLE ID="1">Kana-chan</STYLE>.
+{PAUSE ""}
+<BR>
+I'm glad I got to be a big sister.
+{PAUSE ""}
+<BR>
+I gently let go of <STYLE ID="1">Kana-chan</STYLE>'s hand.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "BGM" "5000" "PASS"}
+Bye-bye.
+{PAUSE ""}
+<BR>
+Me too... I love you, <STYLE ID="1">Kana-chan</STYLE>.<PG>
+{MESOFF "500"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\summer-mountain2.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "WAIT"}
+{MESON "500"}
+―Shiyo 800, August 1
+{PAUSE ""}
+<BR>
+I had come alone to the Arata settlement, now deserted.
+{PAUSE ""}
+<BR>
+Without telling <STYLE ID="6">Kogori-senpai</STYLE> or <STYLE ID="8">Niimura-senpai</STYLE>, I visited this place by myself.
+{PAUSE ""}
+<BR>
+I climbed that long mountain path alone―
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+and came to that place.<PG>
+Maybe planning to make the round trip in one day was too much after all...
+{PAUSE ""}
+<BR>
+It was still only 15:00, but the evening cicadas had already started singing.
+{PAUSE ""}
+<BR>
+If it came to that, I was thinking I'd clean up the Niimura main house or something and stay there just the one night.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地昼中.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "3000" "PASS"}
+{MESON "500"}
+The midsummer sun shone dazzlingly into <STYLE ID="1">Kana-chan</STYLE>'s secret base.
+{PAUSE ""}
+<BR>
+In a corner of the secret base, empty juice cans and empty snack boxes were still lying where they'd been left that day.
+{PAUSE ""}
+<BR>
+I laid sunflowers beside them and put my hands together.<PG>
+<STYLE ID="7">"</STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">happy 11th birthday."</STYLE>
+{PAUSE ""}
+<BR>
+And beside them, I laid the cogongrass flowers I had picked in May.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"</STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="7">... if </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="7">'s my little sister, then you're my older sister too, </STYLE><STYLE ID="4">Chiga-nee</STYLE><STYLE ID="7">, right?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\五島秘密基地.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I lay down spread-eagled like I had that day and gazed at the sunlight streaming in through the crack in the rock.
+{PAUSE ""}
+<BR>
+On the empty mountains of Arata, the cries of the early evening cicadas echoed shrilly.
+{PAUSE ""}
+<BR>
+It was very cool here.<PG>
+<STYLE ID="1">Kana-chan</STYLE> had said that when something bad happened, she came here alone.
+{PAUSE ""}
+<BR>
+That she could see <STYLE ID="12">her mother</STYLE> here.
+{PAUSE ""}
+<BR>
+Are <STYLE ID="1">Kana-chan</STYLE> and <STYLE ID="4">Chiga-nee</STYLE> watching me from over there?
+{PAUSE ""}
+<BR>
+I closed my eyes and thought back on that day.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地日光.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With so many mysteries left unsolved, the Arata settlement had perished.
+{PAUSE ""}
+<BR>
+But a certain hypothesis had come to me.<PG>
+The blood of <STYLE ID="14">Niimura-senpai's father</STYLE>, and the danger sense <STYLE ID="6">Kogori-senpai</STYLE> gained from being drenched in it.
+{PAUSE ""}
+<BR>
+An unknown drug called Droga, found only in the Arata settlement.
+{PAUSE ""}
+<BR>
+The cherry trees native to Arata, most of which were said to have been carried off by some group or other.
+{PAUSE ""}
+<BR>
+The dying cherry tree at the Niimura main house.
+{PAUSE ""}
+<BR>
+And―the beheaded <STYLE ID="12">Sakura-san</STYLE>.<PG>
+Thinking about it that way: the reason everyone in the Arata settlement dies in April.
+{PAUSE ""}
+<BR>
+The reason Kikyo-san didn't die in April.
+{PAUSE ""}
+<BR>
+The reason there were so many suicides.
+{PAUSE ""}
+<BR>
+Everything connects, even those.<PG>
+But even if I form a hypothesis and solve the mystery... neither <STYLE ID="1">Kana-chan</STYLE> nor <STYLE ID="4">Chiga-nee</STYLE> is coming back.
+{PAUSE ""}
+<BR>
+For just a few hours, I had <STYLE ID="1">a little sister not related by blood</STYLE>.
+{PAUSE ""}
+<BR>
+I made a <STYLE ID="11">friend</STYLE> as far apart from me in age as a grandmother and her grandchild.
+{PAUSE ""}
+<BR>
+My memories of the Arata settlement... that alone is enough.
+{PAUSE ""}
+<BR>
+It should be enough...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\五島秘密基地.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But... I can't help thinking about it.
+{PAUSE ""}
+<BR>
+How that tragedy could have been avoided.
+{PAUSE ""}
+<BR>
+There was no way to stand up to <STYLE ID="3">Kotaro-san</STYLE>, with his 'unknown ability' to think ahead of everything―none at all, in that situation.<PG>
+If the same kind of intuition as <STYLE ID="6">Kogori-senpai</STYLE>'s really was in <STYLE ID="3">Kotaro-san</STYLE> too, avoiding it would have been impossible.<PG>
+And one more thing.
+{PAUSE ""}
+<BR>
+How <STYLE ID="4">Chiga-nee</STYLE> and <STYLE ID="2">Niimura-senpai's mother</STYLE> had both come to suspect <STYLE ID="3">Kotaro-san</STYLE> as the culprit just didn't sit right with me.
+{PAUSE ""}
+<BR>
+The reason was that it started with him having them hunt with a nata and a mace.
+{PAUSE ""}
+<BR>
+From that, they realized <STYLE ID="4">Chiga-nee</STYLE> and <STYLE ID="1">Kana-chan</STYLE> were being drilled in killing techniques, apparently.
+{PAUSE ""}
+<BR>
+But to conclude from that that <STYLE ID="3">Kotaro-san</STYLE> was the culprit seems like a bit of a stretch, doesn't it?<PG>
+In other words, I suspect that <STYLE ID="4">Chiga-nee</STYLE> and <STYLE ID="2">Niimura-senpai's mother</STYLE> were hiding something.
+{PAUSE ""}
+<BR>
+With <STYLE ID="4">Chiga-nee</STYLE> dead now, the only one left to ask is <STYLE ID="2">Niimura-senpai's mother</STYLE>, but...
+{PAUSE ""}
+<BR>
+Still, even if I asked, it's not as if anything could be done about it now.<PG>
+<STYLE ID="4">Chiga-nee</STYLE> must have known something more.
+{PAUSE ""}
+<BR>
+She must have been hiding something.
+{PAUSE ""}
+<BR>
+No, maybe it wasn't only that.
+{PAUSE ""}
+<BR>
+If I wanted to, I could even form the hypothesis that <STYLE ID="4">Chiga-nee</STYLE> was the real culprit―
+{PAUSE ""}
+<BR>
+That too is nothing more than a fruitless thought now.<PG>
+This is going all the way back to the start, but the moment we set foot in the Arata settlement, it was decided that things would turn out like this.
+{PAUSE ""}
+<BR>
+But <STYLE ID="6">Kogori-senpai</STYLE> had made the prediction that we had to go to the Arata settlement.
+{PAUSE ""}
+<BR>
+Something must have gone wrong somewhere.<PG>
+The cause was probably <STYLE ID="6">Kogori-senpai</STYLE>'s parents getting close to the Arata settlement.
+{PAUSE ""}
+<BR>
+If that could have been avoided, the ending might have been very different.
+{PAUSE ""}
+<BR>
+No... the ending would definitely have been different.
+{PAUSE ""}
+<BR>
+I just can't believe <STYLE ID="6">Kogori-senpai</STYLE> led us to a tragedy like this.<PG>
+The murder that was about to happen in Megasawa City.
+{PAUSE ""}
+<BR>
+That was where it all started.
+{PAUSE ""}
+<BR>
+―No... the reason <STYLE ID="6">Kogori-senpai</STYLE> developed the peculiar condition called April sickness.
+{PAUSE ""}
+<BR>
+That was being drenched in <STYLE ID="14">Eiichiro Niimura</STYLE>-san's blood.
+{PAUSE ""}
+<BR>
+No... not this either...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地日光.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Further back.
+{PAUSE ""}
+<BR>
+Something must have happened long ago to <STYLE ID="14">Niimura-senpai's father</STYLE>―<STYLE ID="14">Eiichiro Niimura-san</STYLE>.
+{PAUSE ""}
+<BR>
+How <STYLE ID="6">Kogori-senpai</STYLE> came to have that ability must be hidden there too.
+{PAUSE ""}
+<BR>
+And surely the same thing―just as with <STYLE ID="6">Kogori-senpai</STYLE>, it must have happened to <STYLE ID="12">Sakura-san</STYLE> too.
+{PAUSE ""}
+<BR>
+This isn't a hypothesis, it's a hunch...<PG>
+And there was one more thing bothering me.
+{PAUSE ""}
+<BR>
+In front of Arata Station, <STYLE ID="3">Kotaro-san</STYLE> never once said anything like 'I'll kill you' or 'Die.'
+{PAUSE ""}
+<BR>
+What's more, he had been trying not to let <STYLE ID="6">Kogori-senpai</STYLE> get away.
+{PAUSE ""}
+<BR>
+Fixated on <STYLE ID="6">Kogori-senpai</STYLE> to an abnormal degree as he was, what on earth was <STYLE ID="3">Kotaro-san</STYLE>'s aim?<PG>
+In the end, the 'conclusion' I'd been chasing was still in the dark.
+{PAUSE ""}
+<BR>
+With the 'conclusion' vague, there's no way the 'setup' could come into view either.
+{PAUSE ""}
+<BR>
+What should I have done?<PG>
+At the very least, to avoid this tragedy, something would have had to be done 10 years ago.
+{PAUSE ""}
+<BR>
+Even something <STYLE ID="15" RUBY="ささい">tiny</STYLE> would do.
+{PAUSE ""}
+<BR>
+Even just the smallest thing...
+{PAUSE ""}
+<BR>
+Then―<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="12">"―"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "環境音\アポカリプティック大.ogg" "SE" "NORMAL" "1000" "0"}
+{MESOFF "500"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

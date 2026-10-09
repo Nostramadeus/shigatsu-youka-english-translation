@@ -1,0 +1,236 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=62, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=79, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=68, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1117, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ポイント, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=16, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=15, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1532, target=)
+; Links:
+;    0: TWdLink(count=1369, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "0" "0"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家庭夜2.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>"<STYLE ID="1">Chiga-nee</STYLE>e! Still not done!?"<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Mm... H-</STYLE>Haruka<STYLE ID="1">...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Sorry, I was just talking with </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="1"> for a bit..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Hey, hey, everyone's busy, so hurry it up. 
+{PAUSE ""}
+We can't start the work without fire, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... All right, I'm coming right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well then, </STYLE><STYLE ID="2">Goto-chan</STYLE><STYLE ID="1">, let's pick that talk up again tomorrow."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Chiga-nee</STYLE><STYLE ID="3"> took the matches without even hearing my reply and went back to the meeting hall with </STYLE>Niimura-senpai<STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+Niimura-senpai<STYLE ID="3"> came and went, and the whole time, my body was frozen stiff.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\Brutal.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">I punch the tatami again and again.</STYLE>
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Dammit!</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<STYLE ID="2">　Dammit </STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<STYLE ID="2">Dammit </STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<STYLE ID="2">Dammit </STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<STYLE ID="2">Dammit!"</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Simply giving in to my anger, I ignore the pain in my fists and keep punching the tatami.</STYLE>
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\追加分\畳を殴る.ogg" "VOICE" "REPEAT" "1000" "0"}
+<STYLE ID="2"><TXSPS>"Dammit! Dammit! Dammit! Dammit! Dammit! Dammit!"</STYLE>
+{STOPSND "VOICE" "100" "PASS"}
+{QUAKESTOP "500"}
+<PG>
+<STYLE ID="3"><TXSPN>I've never known humiliation like this...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I press my fists harder into the tatami and grind them, twisting my wrists.</STYLE><PG>
+<STYLE ID="3">I've been had.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Completely had.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">To think someone would go to such thorough lengths.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It seems my thinking was more naive than I imagined.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I've been </STYLE><STYLE ID="4" RUBY="だま">deceived</STYLE><STYLE ID="3"> all along.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">My hypothesis has been spectacularly overturned.</STYLE><PG>
+<STYLE ID="3">Wherever we went, wherever our thinking led, a cunning misdirection had been laid, and the tracks leading to the truth had been warped and lured off toward fiction.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Come to think of it, there's still far too much I don't know.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">This case is so deep and so dark that I can't even sort those things out.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">I looked up at the cherry tree once more.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">The road to the truth still seems a long, long way off.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That road is probably being twisted by misdirections called countless </STYLE><STYLE ID="5" RUBY="ポイント">forks</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Someone is trying to </STYLE><STYLE ID="4" RUBY="だま">deceive</STYLE><STYLE ID="3"> me.</STYLE><PG>
+<STYLE ID="3">It isn't </STYLE><STYLE ID="6">Kotaro-san</STYLE><STYLE ID="3">, and it isn't </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="3"> either.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A completely different will.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">A devil-like presence lurking in this Arata settlement keeps </STYLE><STYLE ID="4" RUBY="だま">deceiving</STYLE><STYLE ID="3"> the entire settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">We were only dancing in the palm of that one's hand.</STYLE><PG>
+<STYLE ID="3">You mustn't learn the truth?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That's just someone using </STYLE><STYLE ID="7">Kogori-senpai's</STYLE><STYLE ID="3"> intuition to block the road to the truth.</STYLE><PG>
+<STYLE ID="1">Chiga-nee's</STYLE><STYLE ID="3"> eyes are the proof of the curse-killing?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That's just some coincidences piling up and making it look that way.</STYLE><PG>
+<STYLE ID="7">Kogori-senpai's</STYLE><STYLE ID="3"> precognition, and </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="3">, supposedly cursed since birth.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Those too must be mysteries I can solve, as long as I get hold of a clue.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">But at this point, it's starting to look like the realm of the supernatural.</STYLE><PG>
+<STYLE ID="3">In the first place, the moment </STYLE><STYLE ID="7">Kogori-senpai</STYLE><STYLE ID="3"> has danger sense, it's already supernatural.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kogori-senpai's</STYLE><STYLE ID="3"> precognition... what is it?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It looks like I need to rethink things from there.</STYLE><PG>
+<STYLE ID="3">But there can't be anything like the occult or the supernatural in this world.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">That's nothing more than putting on a label named the occult or the supernatural.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">What I want to see isn't the label.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">It's what's inside.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Someone is using the label of the supernatural and pulling the strings from inside.</STYLE><PG>
+<STYLE ID="3">What I call the supernatural is a cunning trick dressed up as an inexplicable phenomenon.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">There must always be causality there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I won't give in to the temptation to write it off as the supernatural.</STYLE><PG>
+<STYLE ID="3">Besides, </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="3"> is still hiding far more than I imagined.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I won't be </STYLE><STYLE ID="4" RUBY="だま">deceived</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I will reach the truth, without fail.</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="3">But right now, it's hard to think calmly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I need time to cool my head.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Enough―that's it for today.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">For today, I'll put the curse-killings out of my head.</STYLE><PG>
+<STYLE ID="3">Yes, there's one more thing I should think about.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Kana-chan</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Kana-chan</STYLE><STYLE ID="3"> has no family left but </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="3">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Rather than chase the truth, first I want to put </STYLE><STYLE ID="8">Kana-chan's</STYLE><STYLE ID="3"> mind at ease.</STYLE><PG>
+<STYLE ID="3">That's right, I mustn't give in to my anger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">There are things more important than the truth.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">After all, if nothing else, we acknowledged each other as sisters.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

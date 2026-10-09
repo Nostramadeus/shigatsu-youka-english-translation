@@ -1,0 +1,163 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=119, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=219, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=262, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=367, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1084, target=)
+; Links:
+;    0: TWdLink(count=967, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"A warning from <STYLE ID="1">Senpai</STYLE> at this time of year, Goto takes it with all sincerity! I'll hold off on cram school today!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Unexpectedly, </STYLE>Goto<STYLE ID="2"> went along with it without a fuss.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">'s intuition. </STYLE>Goto<STYLE ID="3">, you'd better do that."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE><STYLE ID="2"> put in a word too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Either way, </STYLE>Goto<STYLE ID="2"> wouldn't be going to cram school.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Well, I'll be off!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">With that, </STYLE>Goto<STYLE ID="2"> got on her bike.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Wait, </STYLE>Goto<STYLE ID="3">! What are </STYLE>you<STYLE ID="3"> gonna do now? Want to come over to my place, if you like?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島考える.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"No! I'm going to gather more information! Look forward to it!"
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="2"> snapped off a salute.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Oh, right... If </STYLE>Goto<STYLE ID="3"> gathers new info for us, we'll probably get the good dirt faster than anyone!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Well then, I'll take my leave!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\自転車開始.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHGVOL "VOICE" "0" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+Goto<STYLE ID="2"> headed off toward the park.</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, was that okay with you? Didn't you want to investigate with </STYLE>Goto<STYLE ID="1">?"</STYLE><PG>
+<STYLE ID="3">"No, we promised from the start the rubbernecking would only be for a bit. I'm satisfied! Sorry for dragging you along."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, I felt good today, so it's fine! I got to see </STYLE>Goto<STYLE ID="1"> too, and like always, when I go somewhere with </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, I run into fun things!"</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"So, uh... </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE><STYLE ID="2"> was fidgeting for some reason, rubbing her index fingers together.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong? Bathroom? Is your stomach acting up again?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, no... it's not that. It's just, since we're out anyway... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Natsumi</STYLE><STYLE ID="3">'s feeling good... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">school's closed... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">and the weather's not bad..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Seeing </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2"> like that, I couldn't help giggling.</STYLE><PG>
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "30"}
+<STYLE ID="1">"Heh... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, where do you want to go?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">When I said that, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2"> scratched her head sheepishly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Well, actually... today by the station there's this special pizza fair with an Italian chef... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It's just... I was thinking I'd like to go..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I see, so that was why </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2"> had pushed delivery pizza for lunch.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Since going out was hard with me along, she'd been trying to make do with delivery pizza.</STYLE><PG>
+<STYLE ID="1">"Heh heh, just what I'd expect from the woman who loves pizza most in the world!</STYLE><STYLE ID="2"> </STYLE><STYLE ID="1">Sure, let's go!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE><STYLE ID="2"> being selfish with me like this makes me happy.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Ohh, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">! </STYLE><STYLE ID="1">You</STYLE><STYLE ID="3">'re seriously my angel!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE><STYLE ID="2"> threw her arms tight around me.</STYLE><PG>
+<STYLE ID="1">"Geez, you're overdoing it. But </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, you just ate, didn't you? Aren't you full?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"No, I was thinking of getting takeout. Pizza for dinner too sounds good."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"All riiight! In that case, we sortie at once!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I, too, caught </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">'s mood and started pedaling my bike.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

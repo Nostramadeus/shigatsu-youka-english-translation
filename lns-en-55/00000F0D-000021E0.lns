@@ -1,0 +1,643 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3531, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=417, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=212, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=73, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=74, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=40, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=18, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=16, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=90, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみし, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とよたけ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4940, target=)
+; Links:
+;    0: TWdLink(count=4476, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\バース\ホテルロビー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>We enter the hotel and get through the check-in procedure.
+{PAUSE ""}
+<BR>
+All the necessary paperwork is being handled by <STYLE ID="1">Ise-san</STYLE>, so I just wait in a chair in the lobby.
+{PAUSE ""}
+<BR>
+Is he writing down some made-up address too?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"All right, let's go."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Um... the bill for this hotel..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't worry about it. I had online points saved up, so it didn't cost a single yen."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Thank you..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+I'm the only one staying here tonight.
+{PAUSE ""}
+<BR>
+But <STYLE ID="1">Ise-san</STYLE> seems to mean to come up to my room.
+{PAUSE ""}
+<BR>
+What is he going to talk about?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\バース\ホテル部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I sit on the edge of the bed, and <STYLE ID="1">Ise-san</STYLE> sits in the chair.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Sorry, but... what I'm about to say may be a little close to an interrogation."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE> seems to find it a little hard to talk too, but he doesn't look like he means to stop.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">You</STYLE><STYLE ID="1">... how much do you know?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What I'm thinking, and what </STYLE><STYLE ID="3">Goto-chan</STYLE><STYLE ID="1"> is thinking, how much of that do you know?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Um... what do you mean?"</STYLE>
+{PAUSE ""}
+<BR>
+I can't see what the question is getting at. It's a question with a lot of words left out.
+{PAUSE ""}
+<BR>
+Though it seems to involve <STYLE ID="3">Goto-san</STYLE>, at least.<PG>
+<STYLE ID="1">"Hmm... how should I put it, in this case... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Yeah, let's see. Let me tell you a bit about </STYLE><STYLE ID="4">Natsumi Kogori-san</STYLE><STYLE ID="1">."</STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+Speaking of <STYLE ID="4">Natsumi Kogori</STYLE>, she's the real younger sister who's been trying to trace <STYLE ID="5">Haruka-chan's</STYLE> whereabouts.
+{PAUSE ""}
+<BR>
+Come to think of it, apart from their being sisters and best friends, I hadn't heard anything in particular.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">You</STYLE><STYLE ID="1">... do you believe in psychic powers?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\歪むカオ.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Psychic powers...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's right. Precognition, for example."</STYLE>
+{PAUSE ""}
+<BR>
+The intuition I have, and <STYLE ID="6">Mommy</STYLE> has, could be called precognition too.
+{PAUSE ""}
+<BR>
+I'd never thought of it in a category as grand as psychic powers in the first place, but true, it could be grouped that way.<PG>
+<STYLE ID="1">"The truth is, </STYLE><STYLE ID="4">Natsumi Kogori-san</STYLE><STYLE ID="1"> has a strange intuition she can only use at this time of year. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">When she sees or talks with someone who's likely to run into danger, she can sense that person's danger ahead of time."</STYLE>
+{PAUSE ""}
+<BR>
+There are people besides me and <STYLE ID="6">Mommy</STYLE> who can do that...?
+{PAUSE ""}
+<BR>
+And someone with no connection to the Arata settlement at all.<PG>
+<STYLE ID="1">"So... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">before we left Zahha earlier, I said this to </STYLE><STYLE ID="3">Goto-chan</STYLE><STYLE ID="1">: </STYLE>
+{PAUSE ""}
+<STYLE ID="1">call </STYLE><STYLE ID="4">Natsumi Kogori-san</STYLE><STYLE ID="1"> right away."</STYLE>
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+.............
+{PAUSE ""}
+<BR>
+It took me a few seconds to read <STYLE ID="1">Ise-san's</STYLE> intent.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Natsumi Kogori</STYLE> has danger sense, and having <STYLE ID="3">Goto-san</STYLE> talk with her means <STYLE ID="1">'have </STYLE><STYLE ID="4">Natsumi Kogori</STYLE><STYLE ID="1"> foresee the danger.'</STYLE><PG>
+In other words, <STYLE ID="1">Ise-san</STYLE> must have thought <STYLE ID="3">Goto-san</STYLE> might be in danger.
+{PAUSE ""}
+<BR>
+Reaching that thought wasn't very hard for me.
+{PAUSE ""}
+<BR>
+Because it was exactly me who was going to kill <STYLE ID="3">Erina Goto</STYLE> tonight.<PG>
+<STYLE ID="1">"Don't you have something to say?"</STYLE>
+{PAUSE ""}
+<BR>
+Huh? Do I need to say anything?
+{PAUSE ""}
+<BR>
+After all, <STYLE ID="1">Ise-san</STYLE> suspects I'll put <STYLE ID="3">Goto-san</STYLE> in danger, doesn't he?
+{PAUSE ""}
+<BR>
+He's probably already heard that I'm planning to kill <STYLE ID="3">Goto-san</STYLE> too, hasn't he?
+{PAUSE ""}
+<BR>
+There's nothing I can say, is there?<PG>
+<STYLE ID="2">"Not really... nothing..."</STYLE>
+{PAUSE ""}
+<BR>
+Without looking at <STYLE ID="1">Ise-san</STYLE>, I spat the words at the floor.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see. Then that's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well then, I'll come pick you up here 30 minutes before the first train tomorrow."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+<STYLE ID="1">Ise-san</STYLE> left the room without even saying good night.<PG>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+I collapse onto the bed just as I am.
+{PAUSE ""}
+<BR>
+I didn't want to know anything.
+{PAUSE ""}
+<BR>
+Not what <STYLE ID="7">Auntie</STYLE> did, not that there are people searching for <STYLE ID="5">Haruka-chan</STYLE>―
+{PAUSE ""}
+and not what will happen once everyone reaches <STYLE ID="5">Haruka-chan</STYLE>.
+{PAUSE ""}
+<BR>
+If I knew nothing, all I'd have to do is go back to the Arata settlement and have <STYLE ID="8">Daddy</STYLE> cure my green eyes.<PG>
+If I do nothing here in Motoki-cho―
+{PAUSE ""}
+<BR>
+Sooner or later <STYLE ID="1">Ise-san</STYLE> and <STYLE ID="3">Goto-san</STYLE> will use me as a foothold to reach the Arata settlement.
+{PAUSE ""}
+<BR>
+And <STYLE ID="8">Daddy</STYLE> and <STYLE ID="6">Mommy</STYLE> will be arrested, and <STYLE ID="5">Haruka-chan</STYLE> will reject everyone.
+{PAUSE ""}
+<BR>
+What comes after that, I don't even want to know.<PG>
+If I'm going to avoid that, I have to take some kind of action after all.
+{PAUSE ""}
+<BR>
+At first I meant to kill <STYLE ID="3">Erina Goto</STYLE>, but if <STYLE ID="4">Natsumi Kogori</STYLE> really has precognition like mine, <STYLE ID="3">Erina Goto</STYLE> will be on her guard more than usual, and eliminating her will become harder.<PG>
+Why did <STYLE ID="1">Ise-san</STYLE> tell me that in the first place?
+{PAUSE ""}
+<BR>
+That's simple. He was telling me to think better of it.
+{PAUSE ""}
+<BR>
+But that's not what matters.
+{PAUSE ""}
+<BR>
+How did he figure out I'm trying to kill <STYLE ID="3">Erina Goto</STYLE>?
+{PAUSE ""}
+<BR>
+Did I let something slip without meaning to...?<PG>
+Rather than me carelessly telling <STYLE ID="1">Ise-san</STYLE>, was there something in my conversation with <STYLE ID="8">Daddy</STYLE>?
+{PAUSE ""}
+<BR>
+The smartphone I borrowed apparently has a bug built into it.
+{PAUSE ""}
+<BR>
+What did I say back then?
+{PAUSE ""}
+<BR>
+I'll try to remember my conversation with <STYLE ID="8">Daddy</STYLE> properly.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\警察署外観夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\バース\携帯クリ入.gal" "NORMAL" "#1" "650" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="2">You</STYLE><STYLE ID="8"> should have precognition like </STYLE><STYLE ID="6">Mommy's</STYLE><STYLE ID="8">. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Probably, anywhere there are cherry trees, you can foresee danger wherever you are. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Use it and stay safe, you hear?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\ホテル部屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+That's it! <STYLE ID="8">Daddy</STYLE> said my precognition had awakened!
+{PAUSE ""}
+<BR>
+If <STYLE ID="1">Ise-san</STYLE> heard it too, it's no wonder he told me about <STYLE ID="4">Natsumi Kogori's</STYLE> precognition, and it's easy to predict that sooner or later <STYLE ID="1">Ise-san</STYLE> and the others will come to the Arata settlement.
+{PAUSE ""}
+<BR>
+And that I'd kill <STYLE ID="3">Erina Goto</STYLE> to prevent it is, in the worst case, entirely possible.<PG>
+Up against a bug and a police officer, it's hard to move, no matter how much precognition I have.
+{PAUSE ""}
+<BR>
+On top of that, both <STYLE ID="3">Erina Goto</STYLE> and <STYLE ID="4">Natsumi Kogori</STYLE> have probably found out about me.
+{PAUSE ""}
+<BR>
+I have far too many enemies.
+{PAUSE ""}
+<BR>
+Even <STYLE ID="1">Ise-san</STYLE>, who I thought I might be able to trust, is moving to stop me in the end.
+{PAUSE ""}
+<BR>
+In the first place, the moment he handed me a smartphone with a bug in it, he didn't trust me at all.<PG>
+Now... what should I do from here?
+{PAUSE ""}
+<BR>
+First, I mustn't lose sight of my goal.
+{PAUSE ""}
+<BR>
+There are two things I must do―
+{PAUSE ""}
+keep <STYLE ID="8">Daddy</STYLE> and <STYLE ID="6">Mommy</STYLE> from being arrested, and keep <STYLE ID="5">Haruka-chan</STYLE> and <STYLE ID="7">Auntie</STYLE> from meeting the police.
+{PAUSE ""}
+<BR>
+If I can do that, I should at least be able to avoid the tragic ending I foresaw earlier.<PG>
+That's why I meant to kill <STYLE ID="3">Erina Goto</STYLE>, but I'd definitely be suspected as the culprit.
+{PAUSE ""}
+<BR>
+So I need a more fundamental solution.<PG>
+All it takes is for <STYLE ID="5">Haruka-chan</STYLE> and <STYLE ID="7">Auntie</STYLE> not to meet the police.
+{PAUSE ""}
+<BR>
+Then <STYLE ID="8">Daddy</STYLE> and <STYLE ID="6">Mommy</STYLE> won't be arrested either.
+{PAUSE ""}
+<BR>
+In other words, if I can just move <STYLE ID="5">Haruka-chan</STYLE> and <STYLE ID="7">Auntie</STYLE> out of Arata, that's enough.<PG>
+I hurry up off the bed and start getting ready to leave the room right away.
+{PAUSE ""}
+<BR>
+There's no time to hesitate anymore. I have to get back to the Arata settlement as soon as I possibly can...!
+{PAUSE ""}
+<BR>
+The time now is 20:30.
+{PAUSE ""}
+<BR>
+I don't know how far I can get from here...
+{PAUSE ""}
+<BR>
+Once I reach the last stop, I'll just have to run all night toward the Arata settlement.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+I set the borrowed smartphone gently on the bed, careful not to make a sound.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Ise-san</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+For me, after all... 
+{PAUSE ""}
+there are people I want to protect, even if it means making a mistake.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "Shadows_creeping.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\バース\ホテルロビー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I go to the front desk and, holding down my impatience, ask where the nearest station is.
+{PAUSE ""}
+<BR>
+10 minutes from here by taxi―
+{PAUSE ""}
+which means if I run, I can get there within 20 minutes.
+{PAUSE ""}
+<BR>
+I decided to run to Motoki Station.
+{PAUSE ""}
+<BR>
+Getting caught in a traffic jam like the one I saw in <STYLE ID="9" RUBY="みなかみし">Minakami City</STYLE> is the last thing I need.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\バース\夜桜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As I was told, I keep going straight down the bigger road.
+{PAUSE ""}
+<BR>
+On the way there were traffic lights, and several lines of about 10 cars.
+{PAUSE ""}
+<BR>
+Just as I thought, whether I run or take a taxi, the time probably wouldn't be much different.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\駅前夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Arrival time, 20:40.
+{PAUSE ""}
+<BR>
+This must be the area in front of Motoki Station.
+{PAUSE ""}
+<BR>
+I'll catch a train toward Iizawa Prefecture now. How far will it take me?
+{PAUSE ""}
+<BR>
+I'll ask the station attendant.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\改札.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "1000" "PASS"}
+{MESON "500"}
+<STYLE ID="2">"Excuse me, from here... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">um... which train gets to </STYLE><STYLE ID="10" RUBY="とよたけ">Toyotake</STYLE><STYLE ID="2"> Station the soonest!?"</STYLE>
+{PAUSE ""}
+<BR>
+I call out loudly to the station attendant at the ticket gate, who'd been yawning, bored.
+{PAUSE ""}
+<BR>
+"Toyotake Station...?
+{PAUSE ""}
+　Um, was there a station like that..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Toyotake Station in Iizawa Prefecture!"</STYLE>
+{PAUSE ""}
+<BR>
+"Iizawa Prefecture...?
+{PAUSE ""}
+　Ah, that's quite far. 
+{PAUSE ""}
+You won't get there today, you know?"<PG>
+<STYLE ID="2">"That's fine! Which train gets me even a little closer to Toyotake Station!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Um... with today's trains... 
+{PAUSE ""}
+there's an express train bound for Megasawa Station coming in 10 minutes, I think. 
+{PAUSE ""}
+Megasawa Station is the last stop."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"From Megasawa Station to Toyotake Station... about how many kilometers is it...?"</STYLE>
+{PAUSE ""}
+<BR>
+"How many kilometers?
+{PAUSE ""}
+　Must be 100 kilometers, at least..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Understood! Thank you!"</STYLE><PG>
+―My plan has more or less taken shape.
+{PAUSE ""}
+<BR>
+I'll take the express train to Megasawa now, and from there run on my own two feet along the tracks toward Toyotake, without stopping.
+{PAUSE ""}
+<BR>
+Since I'll be running nonstop until the sun comes up, even I will probably use up a lot of stamina.
+{PAUSE ""}
+<BR>
+Or should I have <STYLE ID="8">Daddy</STYLE> come get me now?
+{PAUSE ""}
+<BR>
+But in the buggy, that would be pretty rough.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\駅ホーム.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\元木駅ホーム夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I'll call <STYLE ID="8">Daddy</STYLE> once I get to Megasawa.
+{PAUSE ""}
+<BR>
+Unusually for someone my age, I'm used to using public phones.
+{PAUSE ""}
+<BR>
+I even have a phone card, a relic of the past these days.<PG>
+Come to think of it, <STYLE ID="3">Goto-san</STYLE> mentioned it.
+{PAUSE ""}
+<BR>
+Today, <STYLE ID="5">Haruka-chan's</STYLE> real younger sister, <STYLE ID="4">Natsumi Kogori-san</STYLE>, is coming.
+{PAUSE ""}
+<BR>
+She's supposed to arrive at Motoki Station around 9 p.m., so maybe we'll pass each other.
+{PAUSE ""}
+<BR>
+Not that we'd even notice, since neither of us knows the other's face.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\電車停止.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "1000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+The train has arrived.
+{PAUSE ""}
+<BR>
+There's a short line of people waiting to board the same express as me.
+{PAUSE ""}
+<BR>
+Inside the train, through the windows, I can see a few people here and there.
+{PAUSE ""}
+<BR>
+It doesn't look too crowded, so I should be able to rest up plenty for the all-night run.<PG>
+"Last stop, Motoki, Motoki. This train will turn around and run as the express train bound for Megasawa."
+{PAUSE ""}
+<BR>
+The doors open, and the people getting off at Motoki Station are spat out.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "500" "PASS"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "SE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\人ごみ.gal" "NORMAL" "#1" "R" "B" "100" "19" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I've never regretted anything as much as I did in this moment.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\電車ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "500" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+I should have asked properly about the urge to want to kill <STYLE ID="6">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+It's not that I want to kill <STYLE ID="6">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+I want to kill people who have the same kind of intuition as <STYLE ID="6">Mommy</STYLE>.
+{PAUSE ""}
+<BR>
+In other words―
+{PAUSE ""}
+if I meet <STYLE ID="4">Natsumi Kogori</STYLE>―
+{PAUSE ""}
+I'll be driven by an unbearable urge to kill.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "2000" "PASS"}
+{MESON "500"}
+Whether it was desire or reflex, I didn't even have time to perceive it.
+{PAUSE ""}
+<BR>
+The instant a strong wind blew―
+{PAUSE ""}
+{CREATECG "000" "$0000FF" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\サード\殺人フィルター.gal" "NORMAL" "#1" "C" "B" "100" "20" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "環境音\鼓動1.ogg" "VOICE" "NORMAL" "1000" "0"}
+through my body―
+{PAUSE ""}
+from the crown of my head to the tips of my toes―
+{PAUSE ""}
+a sensation I'd never felt before shot straight through.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,111,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ横.gal" "NORMAL" "#1" "-300" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n250\r\n500\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n0\r\n500\r\nDEC\r\nPASS">
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Without realizing it, I took out my knife,
+{PAUSE ""}
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{DELETECG "アイテム1" "20" "0" "0" "0" "" "0"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\なつみナイフ.lcm" "WAIT" "#1" "C" "B" "0" "1" "50" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "$0000FF" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{CREATECG "111" "グラフィック\背景\肉付き\吐血1.gal" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物2,人物1" "20" "500" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "bittersweet.ogg" "BGM" "REPEAT" "1000" "0"}
+and slashed the neck of a woman whose name and face I didn't know.
+{PAUSE ""}
+<BR>
+Why did I do it?
+{PAUSE ""}
+<BR>
+There's no way I can explain that.
+{PAUSE ""}
+<BR>
+Because I couldn't even perceive the sensation, let alone a reason.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\なつみ切られる.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+From there, a fountain of vivid blood wells up.
+{PAUSE ""}
+<BR>
+The fountain becomes a geyser and shoots up high.
+{PAUSE ""}
+<BR>
+But <STYLE ID="4">this person</STYLE> seems to have the same ability as me.
+{PAUSE ""}
+<BR>
+She dodged my attack at the last second and seems to have escaped instant death.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\人ごみ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\肉付き\吐血1.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+But the carnage doesn't end there.
+{PAUSE ""}
+<BR>
+The hot geyser traces an arc through the air and rains down on the people around.
+{PAUSE ""}
+<BR>
+When <STYLE ID="4">this person's</STYLE> blood touches them―<PG>
+And the next instant―
+{PAUSE ""}
+Comrades are made.
+{PAUSE ""}
+<BR>
+The women drenched in the blood―
+{PAUSE ""}
+turn green-eyed―
+{PAUSE ""}
+gain the same precognition―
+{PAUSE ""}
+and then―
+{PAUSE ""}
+<BR>
+<BR>
+It begins.<PG>
+{MESOFF "500"}
+{CHANGECG "111" "グラフィック\背景\バース\地獄絵.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Like the dead fallen into the Hell of Revival, the women kill one another.
+{PAUSE ""}
+<BR>
+Roars and screams, and the sounds of punching, of kicking, of slashing with small knives.
+{PAUSE ""}
+<BR>
+The green-eyed dead take one another's lives, kill one another―
+{PAUSE ""}
+<BR>
+This station platform literally becomes hell.<PG>
+But I knew by intuition.
+{PAUSE ""}
+<BR>
+The urge to kill was definitely still there.
+{PAUSE ""}
+<BR>
+I wanted to kill the other green-eyed women too.
+{PAUSE ""}
+<BR>
+But my instinct chose surviving over killing.
+{PAUSE ""}
+<BR>
+Being near my comrades means I'm in danger too.
+{PAUSE ""}
+<BR>
+I―had no choice but to run.<PG>
+Taking on so many comrades here, I'd be outnumbered―
+{PAUSE ""}
+maybe my instinct is a little cowardly.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,111" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+I slipped through the people's roars and screams, climbed over the platform fence, and escaped the station.
+{PAUSE ""}
+<BR>
+At Motoki Station right now, green-eyed women are killing one another.
+{PAUSE ""}
+<BR>
+The women drenched in <STYLE ID="4">Natsumi Kogori's</STYLE> blood―are killing one another.
+{PAUSE ""}
+<BR>
+I'm running from that killing.
+{PAUSE ""}
+<BR>
+Where... am I supposed to go?
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

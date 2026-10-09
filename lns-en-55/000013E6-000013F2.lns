@@ -1,0 +1,422 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2705, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=238, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=159, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=91, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=128, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てい, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=げき, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まつよいづき, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=56, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=4, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=3, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=きびす, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=10, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みつどもえ, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3725, target=)
+; Links:
+;    0: TWdLink(count=3425, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\茅萱ナイフ血.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>The one who appeared there was the missing <STYLE ID="1">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+Maybe she had been watching our exchange. Gripping a knife, she cut in between us.
+{PAUSE ""}
+<BR>
+But what was going on? <STYLE ID="1">Chiga-nee</STYLE> was covered in blood, and the bleeding from her face was especially bad.
+{PAUSE ""}
+<BR>
+Maybe her wounds weren't as bad as they looked. <STYLE ID="1">Chiga-nee</STYLE> showed no sign of minding the bleeding, but...<PG>
+<STYLE ID="1">"Mm... </STYLE><STYLE ID="2">Auntie</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1"> went to the abandoned hut out toward Toyotake! All of you, take shelter there too!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="4">, but that place is..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Kana</STYLE><STYLE ID="1">! Show them the way! There's no time! Leave this to me!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"G-got it! </STYLE><STYLE ID="5">Eri-nee</STYLE><STYLE ID="4">! </STYLE><STYLE ID="6">Natsumi-chan</STYLE><STYLE ID="4">! Hurry!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+The abandoned hut out toward Toyotake―according to <STYLE ID="1">Chiga-nee</STYLE>, the two of them are there.
+{PAUSE ""}
+<BR>
+What's more, we're being asked to go there too.
+{PAUSE ""}
+<BR>
+Apparently it's important enough for <STYLE ID="1">Chiga-nee</STYLE> to be <STYLE ID="7" RUBY="てい">putting herself</STYLE> on the line, resolved to see this through.<PG>
+I have a mountain of things to ask <STYLE ID="1">Chiga-nee</STYLE>, but our safety comes first.
+{PAUSE ""}
+<BR>
+With <STYLE ID="4">Kana-chan</STYLE> leading the way, we'll try to break through.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神鉈振り上げ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"W-wait!"
+{PAUSE ""}
+<BR>
+The resident standing at the very front raised a nata high.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\エデン\茅萱ナイフ血.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+But <STYLE ID="1">Chiga-nee</STYLE> at once planted herself in front of that resident.<PG>
+<STYLE ID="1">"Mm... Don't get in my way. I mean it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If you lay a hand on those girls... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'll kill you!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Eri-nee</STYLE><STYLE ID="4">! Hurry!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\SE\砂利を走る2人.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000,人物1,人物2" "1" "500" "0" "0" "" "0"}
+I cast a glance toward <STYLE ID="1">Chiga-nee</STYLE>, and <STYLE ID="4">Kana-chan</STYLE> forcibly pulled me away.
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "10000" "PASS"}
+<STYLE ID="1">Chiga-nee</STYLE>, are you really all right?
+{PAUSE ""}
+<BR>
+Did you really do that just to protect us?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="5">Goto</STYLE><STYLE ID="6">! Pull yourself together!"</STYLE>
+{PAUSE ""}
+<BR>
+The one who <STYLE ID="8" RUBY="げき">barked</STYLE> at me, my steps slowed by hesitation, was <STYLE ID="6">Kogori-senpai</STYLE>.
+{PAUSE ""}
+<BR>
+As if her voice had woken me up, my feet started moving too.
+{PAUSE ""}
+<BR>
+I looked back toward <STYLE ID="1">Chiga-nee</STYLE> once more.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\茅萱ナイフ血.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Chiga-nee</STYLE>, her knife leveled at that group―
+{PAUSE ""}
+<BR>
+Is she going to fight them after all?
+{PAUSE ""}
+<BR>
+Things beyond my understanding are already happening in this Arata settlement.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Hah... hah..."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly my field of vision opened up, and we came out into a clearing with a commanding view.
+{PAUSE ""}
+<BR>
+Sprinting 200 meters down a gravel road I wasn't used to had been pretty hard work.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kogori-senpai</STYLE> and I stopped here to catch our breath.<PG>
+{MESOFF "500"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山月.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Kana-chan</STYLE>, without the slightest sign of being out of breath, was looking at the sky.
+{PAUSE ""}
+<BR>
+And carefully, as if feeling out our surroundings, she gazed quietly up at the sky.
+{PAUSE ""}
+<BR>
+In the sky hung the big <STYLE ID="9" RUBY="まつよいづき">moon</STYLE>, one night short of full.
+{PAUSE ""}
+<BR>
+From that moon, what do we look like?<PG>
+Something like a boss mushroom called <STYLE ID="10">Shigatsu Youka</STYLE> has taken over this whole area, parasitized human beings, and caused all this.
+{PAUSE ""}
+<BR>
+No... maybe the ones who took over this land were the humans.
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Shigatsu Youka</STYLE> had been rooted here since long ago, blended into the natural world, and yet one day humans suddenly came along―<PG>
+But if I'm asked whose side I'm on, it goes without saying.
+{PAUSE ""}
+<BR>
+If <STYLE ID="6">Kogori-senpai's</STYLE> premonition is right, going back to Motoki-cho as we are will not end the calamity.
+{PAUSE ""}
+<BR>
+This has to be settled one way or another, here.
+{PAUSE ""}
+<BR>
+Then again, there's also a chance that <STYLE ID="6">Kogori-senpai's</STYLE> premonition itself is a deception by <STYLE ID="10">Shigatsu Youka</STYLE>...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="4">Kana-chan</STYLE><STYLE ID="5">, how much farther to the abandoned hut?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"About 15 minutes on foot, I guess. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But it was pouring around there this evening, so the path is probably a muddy mess. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">It's easy to get lost, so don't leave my side, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Hmm... Going back to the settlement now―better not even think about it, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"With everyone acting like that? It's probably dangerous."</STYLE><PG>
+Just as the residents said, wouldn't it have been safer to go straight back to the settlement?
+{PAUSE ""}
+<BR>
+We, at least, might have been safe.
+{PAUSE ""}
+<BR>
+But we left the settlement to look for <STYLE ID="3">Niimura-senpai</STYLE> and the others.
+{PAUSE ""}
+<BR>
+Since that goal hasn't been achieved, going back to the settlement now is questionable too.<PG>
+<STYLE ID="6">"For now, all we can do is go to that abandoned hut, right..."</STYLE>
+{PAUSE ""}
+<BR>
+True, there seems to be no room for choice.
+{PAUSE ""}
+<BR>
+Since <STYLE ID="1">Chiga-nee</STYLE> said it like that, doing as she says is―
+{PAUSE ""}
+<BR>
+No, but...<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="5">Eri-nee</STYLE><STYLE ID="4">, we're going, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Oh, right..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This clearing was a graveyard, apparently. From here, the path along the cliff led down to the mountain stream, and going on past that would bring us to the mountain path where the abandoned hut was.
+{PAUSE ""}
+<BR>
+I walked on, lost in thought.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\崖沿いの道.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Chiga-nee</STYLE> knew that <STYLE ID="1">she herself</STYLE> was being sense-hijacked.
+{PAUSE ""}
+<BR>
+On top of that, if she survived despite being carried off, <STYLE ID="1">Chiga-nee's</STYLE> survival skills are formidable.
+{PAUSE ""}
+<BR>
+Maybe <STYLE ID="1">Chiga-nee</STYLE> has come up with some kind of plan, I thought.
+{PAUSE ""}
+<BR>
+But as long as she's being sense-hijacked, she can't say it out loud, and we have no way of knowing her true intentions.<PG>
+Yes―if, just as I'm keeping <STYLE ID="6">Kogori-senpai</STYLE> <STYLE ID="11" RUBY="だま">deceived</STYLE> so that <STYLE ID="10">Shigatsu Youka</STYLE> is <STYLE ID="11" RUBY="だま">deceived</STYLE>, <STYLE ID="1">Chiga-nee</STYLE> is keeping us <STYLE ID="11" RUBY="だま">deceived</STYLE> so that <STYLE ID="10">Shigatsu Youka</STYLE> is <STYLE ID="11" RUBY="だま">deceived</STYLE>...
+{PAUSE ""}
+<BR>
+For <STYLE ID="1">Chiga-nee</STYLE> to fool <STYLE ID="10">Shigatsu Youka</STYLE>, she has no choice but to fool us.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="5">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+Wait a minute... something's nagging at me.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="5">Goto</STYLE><STYLE ID="6">, what's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="5">Eri-nee</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+Without thinking, I stopped walking.
+{PAUSE ""}
+<BR>
+I remembered―how <STYLE ID="1">Chiga-nee</STYLE> had disappeared from that storehouse.<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\Dark_Energy.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\録音.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The corpses had been moving.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee</STYLE> had clearly said <STYLE ID="1">"</STYLE><STYLE ID="12">Mom</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+And the name <STYLE ID="13">Eiichiro</STYLE>―two corpses had been moving.
+{PAUSE ""}
+<BR>
+What matters is how <STYLE ID="1">Chiga-nee</STYLE> dealt with that situation afterward.<PG>
+In other words, either <STYLE ID="1">Chiga-nee</STYLE> was kidnapped but escaped on her own, or, unfortunately, <STYLE ID="1">Chiga-nee</STYLE> has betrayed us.
+{PAUSE ""}
+<BR>
+But from <STYLE ID="1">Chiga-nee's</STYLE> position, either way, she'll at least act in ways that betray us.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee</STYLE> is being watched by <STYLE ID="10">Shigatsu Youka</STYLE> at all times, so she can't help us openly.<PG>
+So if she does do something, she'll pretend to betray us and act in a way that helps us.
+{PAUSE ""}
+<BR>
+Of course, there's also a chance that <STYLE ID="1">Chiga-nee</STYLE> has betrayed us, pure and simple...
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee</STYLE> would think that far ahead before acting, but now that things have gotten this complicated, I'd better assume nothing will go according to plan.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\崖沿いの道.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="6">Kogori-senpai</STYLE><STYLE ID="5">, </STYLE><STYLE ID="4">Kana-chan</STYLE><STYLE ID="5">, go on to the abandoned hut, just the two of you. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">I still have something I have to do!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Wait―</STYLE><STYLE ID="5">Goto</STYLE><STYLE ID="6">!?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "人物1,人物2,000" "1" "500" "0" "0" "" "0"}
+Without checking how the two of them reacted, I turned on my <STYLE ID="14" RUBY="きびす">heel</STYLE> toward the graveyard clearing.
+{PAUSE ""}
+<BR>
+I need to get far enough away that <STYLE ID="6">Kogori-senpai</STYLE> can no longer perceive me.
+{STOPSND "VOICE" "5000" "PASS"}
+<PG>
+Because I have to give support from the shadows so that <STYLE ID="1">Chiga-nee's</STYLE> plan succeeds 100 percent.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee's</STYLE> intentions, our intentions, and the residents' intentions are all at odds.
+{PAUSE ""}
+<BR>
+I don't know <STYLE ID="1">Chiga-nee's</STYLE> plan, but uniting everyone's intentions in a situation like this is impossible―in other words, the chance of <STYLE ID="1">Chiga-nee's</STYLE> plan succeeding is vanishingly low.<PG>
+At this point, I can ignore the possibility that <STYLE ID="1">Chiga-nee</STYLE> has really betrayed us.
+{PAUSE ""}
+<BR>
+If <STYLE ID="1">Chiga-nee</STYLE> has betrayed us, there's no saving us, however we struggle.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I know full well that walking through a settlement like this alone is far too dangerous.
+{PAUSE ""}
+<BR>
+And I might end up getting in <STYLE ID="1">Chiga-nee's</STYLE> way.
+{PAUSE ""}
+<BR>
+But I can't just silently go along with <STYLE ID="1">Chiga-nee's</STYLE> 'betrayal.'<PG>
+For some reason, the residents blocked our way.
+{PAUSE ""}
+<BR>
+I can think of only one such reason.<PG>
+Someone among the residents has realized that if we head to the abandoned hut, things will go exactly as <STYLE ID="10">Shigatsu Youka</STYLE> wants.
+{PAUSE ""}
+<BR>
+My grounds for saying so: far from being glad that <STYLE ID="1">Chiga-nee</STYLE> had been found, not one of the residents was even surprised.
+{PAUSE ""}
+<BR>
+In other words, the residents already know both that <STYLE ID="10">Shigatsu Youka</STYLE> exists and that corpses move.<PG>
+Now that it's gone beyond the curse-killings and the mastermind has come out into the open, the residents too will resist desperately.
+{PAUSE ""}
+<BR>
+Even as outsiders, we could still become the residents' targets.<PG>
+How on earth did the residents find out that <STYLE ID="10">Shigatsu Youka</STYLE> exists?
+{PAUSE ""}
+<BR>
+Was it thanks to the wisdom of <STYLE ID="15">Kotaro-san</STYLE> or <STYLE ID="16">Niimura-senpai's grandmother</STYLE>?
+{PAUSE ""}
+<BR>
+If things turn into a <STYLE ID="17" RUBY="みつどもえ">three-way standoff</STYLE> at a time like this, even what could be resolved won't be.<PG>
+I see. Thinking of it that way... here is my hypothesis.
+{PAUSE ""}
+<BR>
+The residents somehow managed to learn that <STYLE ID="10">Shigatsu Youka</STYLE> exists, but they believe the kidnapped <STYLE ID="1">Chiga-nee</STYLE> has already been killed.
+{PAUSE ""}
+<BR>
+They're convinced that <STYLE ID="1">Chiga-nee</STYLE> has become a corpse controlled by <STYLE ID="10">Shigatsu Youka</STYLE>, and is acting to lead us astray.
+{PAUSE ""}
+<BR>
+To prevent that, the residents are doing the opposite of <STYLE ID="1">Chiga-nee's</STYLE> aim―
+{PAUSE ""}
+in other words, keeping us from going to the abandoned hut.<PG>
+That's why I have to make sure.
+{PAUSE ""}
+<BR>
+Whether <STYLE ID="1">Chiga-nee</STYLE> is really dead or not.
+{PAUSE ""}
+<BR>
+If she's alive, this three-way standoff has to be resolved as soon as possible.
+{PAUSE ""}
+<BR>
+After all, <STYLE ID="1">Chiga-nee</STYLE> and the residents have the same goal.<PG>
+Which means...
+{PAUSE ""}
+<BR>
+Damn! Sending <STYLE ID="6">Kogori-senpai</STYLE> and the others to the abandoned hut was a mistake!
+{PAUSE ""}
+<BR>
+If <STYLE ID="1">Chiga-nee</STYLE> is a corpse, it means we've walked right into <STYLE ID="10">Shigatsu Youka</STYLE>'s <STYLE ID="18" RUBY="わな">trap</STYLE>!
+{PAUSE ""}
+<BR>
+I'll go back to <STYLE ID="6">Senpai</STYLE> and the others right now and―<PG>
+No good. Without <STYLE ID="4">Kana-chan</STYLE> guiding me, there's no guarantee I can reach the abandoned hut.
+{PAUSE ""}
+<BR>
+Besides, if I let <STYLE ID="6">Kogori-senpai</STYLE> hear that <STYLE ID="1">Chiga-nee</STYLE> might be a corpse, I have no idea how <STYLE ID="10">Shigatsu Youka</STYLE> will move.<PG>
+Damn it! For me to make a mistake like this―what a blunder!
+{PAUSE ""}
+<BR>
+I have to quickly confirm what <STYLE ID="1">Chiga-nee</STYLE> and the others really intend, and rejoin <STYLE ID="6">Senpai</STYLE> and the others!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

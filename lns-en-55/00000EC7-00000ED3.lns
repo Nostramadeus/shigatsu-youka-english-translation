@@ -1,0 +1,752 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4938, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=12, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=27, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=224, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=25, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=782, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=6, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かっぷく, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひん, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=30, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=19, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゅうえん, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はっけ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6595, target=)
+; Links:
+;    0: TWdLink(count=6081, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\Days.ogg" "BGM" "REPEAT" "900" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\旅館部屋夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―The time had gone past 9 p.m.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Dad</STYLE> had gotten drunk and fallen asleep without even getting into the hot spring we'd come all this way for.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Mom</STYLE> and <STYLE ID="3">Haruka</STYLE> were having a lively talk about the old days of <STYLE ID="4">Haruka's mom</STYLE>.
+{PAUSE ""}
+<BR>
+This was a chance for <STYLE ID="3">Haruka</STYLE> and <STYLE ID="2">Mom</STYLE> to open up to each other in a new way, so I decided to head to the big bath by myself.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\旅館大浴場.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There was no one in the big bath.
+{PAUSE ""}
+<BR>
+It's not often you get the big bath of a luxury inn all to yourself.
+{PAUSE ""}
+<BR>
+For a second I thought about calling <STYLE ID="3">Haruka</STYLE>, but right now was an important time for <STYLE ID="3">Haruka</STYLE> too.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\風呂飛込み.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "最後の声・真呪殺\SE\泳ぐ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+I went for it and tried swimming in the wide tub.
+{PAUSE ""}
+<BR>
+Swimming as hard as I liked in a space all my own, not worrying about anything, felt wonderful.
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "1000" "PASS"}
+<STYLE ID="5">"Haah..."</STYLE>
+{PAUSE ""}
+<BR>
+After swimming for a while, I noticed a big sign.<PG>
+Open-air bath―
+{PAUSE ""}
+<BR>
+I see. An open-air bath.
+{PAUSE ""}
+<BR>
+Coming all the way here and not going would be rude to this inn!
+{PAUSE ""}
+<BR>
+Rude to <STYLE ID="4">Haruka's mom</STYLE>!
+{PAUSE ""}
+<BR>
+Rude to the open-air bath!
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+I eagerly headed for the entrance to the open-air bath.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYSND "環境音\wave1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "600" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\旅館露天風呂.gal" "NORMAL" "4" "3000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I could hear the sea, and there were few lights.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\星空.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A sky full of stars, and a slightly plump half moon.
+{PAUSE ""}
+<BR>
+The location was perfect.
+{PAUSE ""}
+<BR>
+There was no one here either.
+{PAUSE ""}
+<BR>
+It wasn't big enough to swim in, but it was just right for a leisurely soak.<PG>
+First, without a stitch on, I spread-eagled and caught the wind blowing in off the sea with my whole body.
+{PAUSE ""}
+<BR>
+My flushed body cooled down, nice and refreshing.
+{PAUSE ""}
+<BR>
+A ridiculous pose like this was something I could only pull off now, because no one was watching.
+{PAUSE ""}
+<BR>
+Satisfied with my ridiculous pose, I next jumped, hugged my knees in the same moment, and dove into the tub like an armadillo.
+{PLAYSND "SE\風呂飛込み.ogg" "VOICE" "NORMAL" "1000" "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\旅館露天風呂.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Haah..."</STYLE>
+{PAUSE ""}
+<BR>
+Once in the tub, I sighed again.
+{PAUSE ""}
+<BR>
+The sea wind on my face was just a little cold, but that was nice too.
+{PAUSE ""}
+<BR>
+I spread-eagled again, floating in the water, and turned my eyes to the sky straight above.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\星空.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This might be the first time I've seen a sky like this since Arata.
+{PAUSE ""}
+<BR>
+Back then the cherry blossoms were still in bloom, and the moon and stars and a storm of cherry petals colored the black sky.<PG>
+Are <STYLE ID="6">Goto</STYLE>, <STYLE ID="7">Erika-chan</STYLE> and <STYLE ID="8">Kana-chan</STYLE>, and Shirozaki-san looking at the same starry sky too?
+{PAUSE ""}
+<BR>
+Is everyone doing well?
+{PAUSE ""}
+<BR>
+What became of the incident after that?<PG>
+Then, 
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\旅館露天風呂.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+someone seemed to have come in.
+{PAUSE ""}
+<BR>
+It was a <STYLE ID="9" RUBY="かっぷく">portly</STYLE> woman of about 50.
+{PAUSE ""}
+<BR>
+I quickly stopped spread-eagling and sank into the water up to my chin.<PG>
+"Heave-hooo!"
+{PLAYSND "SE\風呂飛込み.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+Shouting as she went, the woman plunged in once with a splash, all the way over her head, then slowly rose back up.
+{PAUSE ""}
+<BR>
+Big waves rose on the surface, and the water surged up to my eyes.<PG>
+"Ahh, this place is always great, no matter when I come!"
+{PAUSE ""}
+<BR>
+The woman smelled faintly of alcohol.<PG>
+"Who did <STYLE ID="5">you</STYLE> come here with?"
+{PAUSE ""}
+<BR>
+The woman was all smiles as she spoke to me.<PG>
+<STYLE ID="5">"With my family. </STYLE><STYLE ID="1">My dad</STYLE><STYLE ID="5"> got drunk and fell asleep... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">My mom</STYLE><STYLE ID="5"> and, um, </STYLE><STYLE ID="3">my big sister</STYLE><STYLE ID="5"> are chatting."</STYLE>
+{PAUSE ""}
+<BR>
+"I see, I see. This place is nice no matter when you come."
+{PAUSE ""}
+<BR>
+The woman praised the hot spring once again.<PG>
+<STYLE ID="5">"Who did you come with, ma'am?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm by myself. Every year when Golden Week comes around, I come here. 
+{PAUSE ""}
+I'm on my own, so life's easy."
+{PAUSE ""}
+<BR>
+Staying at an inn like this every year... was she a company president or something, like <STYLE ID="4">Haruka's mom</STYLE>?<PG>
+"Hm...?"
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+The woman's eyes went to my shoulder.
+{PAUSE ""}
+<BR>
+A scar still ran from my shoulder down to my chest.
+{PAUSE ""}
+<BR>
+Supposedly it'll fade over time, though.<PG>
+"Let's see, how about I do a reading for <STYLE ID="5">you</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"A reading...?"</STYLE>
+{PAUSE ""}
+<BR>
+The woman turned to face me squarely.<PG>
+"I may not look it, but I make my living telling fortunes. 
+{PAUSE ""}
+People say I'm right a lot."
+{PAUSE ""}
+<BR>
+A fortune-teller...
+{PAUSE ""}
+<BR>
+To make a living from that alone, no, to come here every year, she must be pretty popular.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+The woman studied my face intently.
+{PAUSE ""}
+<BR>
+Not asking me anything in particular, not reading my palm. Just studying my face, intently.<PG>
+"<STYLE ID="5">Miss</STYLE>, you've got quite a lot of good luck. 
+{PAUSE ""}
+You've been blessed with the people around you, and you've lived a happy life up to now, wanting for nothing. 
+{PAUSE ""}
+Your family, your friends, they all just love <STYLE ID="5">you</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Oh... yes. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Ehe, I guess so."</STYLE>
+{PAUSE ""}
+<BR>
+Being told that made me plainly happy.<PG>
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+"But that's a happiness you got by a miracle, from out of life's many branch points. 
+{PAUSE ""}
+Supported by all kinds of people, and supporting all kinds of people yourself. 
+{PAUSE ""}
+Rather than a miracle, I suppose you'd call it a happiness you won for yourselves."
+{PAUSE ""}
+<BR>
+Is she talking about 10 years ago, and Arata?
+{PAUSE ""}
+<BR>
+If so, she's pretty much right.
+{PAUSE ""}
+<BR>
+I am who I am today thanks to everyone.
+{PAUSE ""}
+<BR>
+If even one thing had gone wrong...<PG>
+"Oh, sorry, sorry, no use talking about the past. I ought to tell you about the future. 
+{PAUSE ""}
+Let's see... <STYLE ID="5">your</STYLE> future is... 
+{PAUSE ""}
+Oh, do you want to hear it? Some people don't like hearing this kind of thing."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Please. I'd like to hear it."</STYLE><PG>
+{STOPSND "BGM" "5000" "PASS"}
+"Hmm... 
+{PAUSE ""}
+Before that, let me tell you a little about my work."
+{PAUSE ""}
+<BR>
+The woman, who had been staring at my face, slowly turned her gaze to the sky.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Code_of_Honor_#2.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\星空.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"People... all die sooner or later. 
+{PAUSE ""}
+Sometimes people facing death come to me for advice. 
+{PAUSE ""}
+They've gotten sick, so how can they be saved? 
+{PAUSE ""}
+They're about to go bankrupt and suicide's the only way out, so what should they do? 
+{PAUSE ""}
+To put it plainly, fortune-telling can't save anyone."<PG>
+"If they'd come to me sooner, maybe there would've been a chance of saving them, but... 
+{PAUSE ""}
+People like that all come once it's too late."
+{PAUSE ""}
+<BR>
+It isn't only curious people who visit a fortune-teller. People who truly want to be saved come too.
+{PAUSE ""}
+<BR>
+So that meant this woman had seen plenty of people <STYLE ID="10" RUBY="ひん">on the brink</STYLE> of crises in their lives like that.<PG>
+"So here's what I tell people like that. 
+{PAUSE ""}
+People die sooner or later. 
+{PAUSE ""}
+Human beings have all been sentenced to death by God. 
+{PAUSE ""}
+But God does let us choose one thing: what kind of end we meet. 
+{PAUSE ""}
+How do you face up to that? 
+{PAUSE ""}
+By this point, it's less fortune-telling than life counseling."<PG>
+"'It wasn't a bad life. So that you'll be able to think that, please do the best you can with what you can do now.' 
+{PAUSE ""}
+That's really all I can tell them. 
+{PAUSE ""}
+Not that I think many people are saved by it. 
+{PAUSE ""}
+I can give advice with fortune-telling, but whether life itself changes is up to the person."
+{PAUSE ""}
+<BR>
+The woman, who had been gazing up at the heavens, looked into my eyes with a serious face.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\旅館露天風呂.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="5">Miss</STYLE>, listen carefully. 
+{PAUSE ""}
+In the near future, you'll lose one of the people important to you. 
+{PAUSE ""}
+Maybe even today or tomorrow."
+{PAUSE ""}
+<BR>
+My heart skipped a beat.
+{PAUSE ""}
+<BR>
+With what had just happened in Arata, my anxiety swelled more than usual.<PG>
+"But it's not all that unhappy a story. 
+{PAUSE ""}
+It's what's bound to happen. People all die sooner or later. That's all it is. 
+{PAUSE ""}
+And it's something that could happen to anyone, at any time."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Is there... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">no way to prevent it?"</STYLE><PG>
+"Should you prevent it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh...?"</STYLE><PG>
+"Say it's the best end that person could wish for. Would you still prevent it?"
+{PAUSE ""}
+<BR>
+This was getting too philosophical for me to really follow.
+{PAUSE ""}
+<BR>
+It was the first time I'd heard a way of thinking that affirmed death.<PG>
+<STYLE ID="5">"I don't know... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But I don't want to lose people who are important to me."</STYLE>
+{PAUSE ""}
+<BR>
+I know people die someday.
+{PAUSE ""}
+<BR>
+But...<PG>
+"At <STYLE ID="5">your</STYLE> age, it'd be hard. 
+{PAUSE ""}
+No, it's hard for anyone, even me. 
+{PAUSE ""}
+But there are things you only understand once you're facing death. 
+{PAUSE ""}
+My parents are gone now, and my husband passed on when he was young too. 
+{PAUSE ""}
+But what kind of end you get is different for everyone. 
+{PAUSE ""}
+Some people say they lived without regrets, and some people can't even tell that they've died."<PG>
+I remembered <STYLE ID="11">Haruka's dad</STYLE>, who died protecting me.
+{PAUSE ""}
+<BR>
+I can't even imagine what he felt at the very end.<PG>
+<STYLE ID="11">Haruka's dad</STYLE>...?
+{PAUSE ""}
+<BR>
+I feel like I met him somewhere recently.
+{PAUSE ""}
+<BR>
+He died more than 12 years ago, and yet just recently, somewhere...<PG>
+<STYLE ID="5">"Um, excuse me... I feel like I'm forgetting something really important. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Can you tell anything...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Now that's a vague question. 
+{PAUSE ""}
+Well, all right, since I'm at it, let me do a little reading."<PG>
+The woman stared into my eyes again.
+{PAUSE ""}
+<BR>
+I stared into the woman's eyes too.<PG>
+"Huh? <STYLE ID="5">Miss</STYLE>, have we met somewhere...?
+{PAUSE ""}
+　Ever been to Tokyo?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Tokyo...?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　No, not even once..."</STYLE><PG>
+"Then I've got the wrong person. 
+{PAUSE ""}
+Well, sure, the face is completely different... 
+{PAUSE ""}
+It's just, I once saw someone who had an aura like <STYLE ID="5">yours</STYLE>, or something along those lines. 
+{PAUSE ""}
+A young person, Japanese but somehow not very Japanese-looking."
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+Someone in Tokyo who didn't look Japanese...
+{PAUSE ""}
+<BR>
+Could it be...
+{STOPSND "SE" "1000" "PASS"}
+<PG>
+Why was that?
+{PAUSE ""}
+<BR>
+The sound of the waves, which had been filling my ears until then, grew farther and farther away.<PG>
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+"See, I gave that person some advice once. 
+{PAUSE ""}
+'There's someone close to you who'll <STYLE ID="12" RUBY="だま">deceive</STYLE> you, so be careful.' That's what I told them."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"By any chance, did that person... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\オッドアイ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">have odd eyes, one blue and one green?"</STYLE><PG>
+"Hmm, now that you mention it, I think so. 
+{PAUSE ""}
+Huh? So you know that person?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yes, there's someone I have in mind. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But that person's face is nothing like mine, and I don't think we have a similar aura either..."</STYLE>
+{PAUSE ""}
+<BR>
+When I'd said that much, the woman looked into my eyes even harder.<PG>
+"Hmmm... 
+{PAUSE ""}
+<STYLE ID="5">Miss</STYLE>, it may be a good thing you met me. 
+{PAUSE ""}
+What <STYLE ID="5">you've</STYLE> forgotten is deeply tied to that <STYLE ID="13">odd-eyed woman</STYLE>. 
+{PAUSE ""}
+<STYLE ID="13">That person</STYLE> and <STYLE ID="5">you</STYLE> are very much alike. 
+{PAUSE ""}
+How should I put it... 
+{PAUSE ""}
+Your constitution, I guess you'd call it. 
+{PAUSE ""}
+Like 'constitutions that cannot coexist.'"
+{PAUSE ""}
+<BR>
+She said we were very much alike, and then 'constitutions that cannot coexist'? That was clearly saying the opposite.
+{PAUSE ""}
+<BR>
+What she was saying just didn't sit right with me.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\旅館露天風呂.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="5">You</STYLE> have two choices. 
+{PAUSE ""}
+Learn the truth and be unhappy, or turn your eyes away from the truth and be happy. 
+{PAUSE ""}
+That <STYLE ID="13">odd-eyed woman</STYLE> is deeply involved in it too. 
+{PAUSE ""}
+What <STYLE ID="5">you've</STYLE> forgotten is a defensive instinct that worked without you knowing―
+{PAUSE ""}
+it's not something you're meant to remember. 
+{PAUSE ""}
+No, to be precise, it's all right to remember what you've forgotten. The question is what <STYLE ID="5">you</STYLE> decide once you have. 
+{PAUSE ""}
+Depending on that, the fates of <STYLE ID="5">you</STYLE> and those around you will change a great deal."<PG>
+<STYLE ID="5">"So remembering itself is okay, then?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's right. What <STYLE ID="5">you've</STYLE> forgotten is this: 'You must not learn the truth about a certain thing.' 
+{PAUSE ""}
+So if <STYLE ID="5">you</STYLE> want happiness, then even if a great mystery stands in your way, you mustn't pursue it any further. 
+{PAUSE ""}
+But whether you do is up to <STYLE ID="5">you</STYLE>."<PG>
+The first thing that came to mind was the truth of the Arata curse-killings.
+{PAUSE ""}
+<BR>
+In the end, that incident had come to its <STYLE ID="14" RUBY="しゅうえん">close</STYLE> with many mysteries left unsolved.
+{PAUSE ""}
+<BR>
+It's already in the past, and yet knowing the truth of it means unhappiness...?<PG>
+By now, I could clearly remember meeting <STYLE ID="11">Ojisan</STYLE> in a dream.
+{PAUSE ""}
+<BR>
+The promise I made with <STYLE ID="11">Ojisan</STYLE>. That I must not uncover the truth of the curse-killings―
+{PAUSE ""}
+<BR>
+And the reason: knowing the truth means unhappiness.<PG>
+<STYLE ID="5">"I... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">No, I understand. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">It's better not to know the truth, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, that's best. You're a good, honest girl."
+{PAUSE ""}
+<BR>
+The woman gave a gentle smile.<PG>
+I made a promise to <STYLE ID="11">Ojisan</STYLE>.
+{PAUSE ""}
+<BR>
+I have no intention of disregarding the promise <STYLE ID="11">Ojisan</STYLE> entrusted to me.
+{PAUSE ""}
+<BR>
+All the more now that this woman has told me so too.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\wave1.ogg" "SE" "REPEAT" "600" "0"}
+"And another thing... This isn't a very nice story either, but... 
+{PAUSE ""}
+Mind if I tell you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yes..."</STYLE><PG>
+"There are a few people important to <STYLE ID="5">you</STYLE>, I think. 
+{PAUSE ""}
+One of them will lose something important."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Someone important to me will lose something important...?</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　When someone might die as soon as today or tomorrow, there's even more...?"</STYLE><PG>
+"For example, you said you had an <STYLE ID="3">older sister</STYLE>, didn't you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yes."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\夢見る憧憬.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+"I mean that <STYLE ID="3">older sister</STYLE> might lose something important. 
+{PAUSE ""}
+Oh, the <STYLE ID="3">older sister</STYLE> is just an example. I mean someone that close and important to you."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Something important... What could it be...?"</STYLE><PG>
+"What that person will lose is far too big. 
+{PAUSE ""}
+So big that they may lose themselves and never be able to come back."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"That much...!?"</STYLE><PG>
+"What they'll lose, and why, that much I can't tell."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Can't I be a support for them after they lose it...?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's the thing... 
+{PAUSE ""}
+<STYLE ID="5">You</STYLE> can't help that person."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Why not? I want to help in any way I can..."</STYLE><PG>
+"............
+{PAUSE ""}
+<STYLE ID="5">Miss</STYLE>. Look up at the sky."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"The sky...?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\星空.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+In the sky, the same countless stars as before.
+{PAUSE ""}
+<BR>
+They shone so brightly that no word but 'mysterious' could be found for them, showing themselves off against the pitch-black darkness to us in the world below.<PG>
+"Beyond that sky are the people who have died until now. They're watching us from the other world. 
+{PAUSE ""}
+Do <STYLE ID="5">you</STYLE> know how many human beings have died up to now?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"How many people have died up to now...?"</STYLE><PG>
+"106 billion, they say."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"That many...!?"</STYLE><PG>
+"Oh, you think that's a lot?
+{PAUSE ""}
+　People split two ways on this, the ones who think it's a lot and the ones who think it's few. 
+{PAUSE ""}
+That many people are watching us from beyond the sky. 
+{PAUSE ""}
+Among them are plenty of <STYLE ID="5">your</STYLE> ancestors too. 
+{PAUSE ""}
+But not a single one of them will help <STYLE ID="5">you</STYLE>. 
+{PAUSE ""}
+There are things that feelings alone can't help."<PG>
+I didn't really understand what she meant.
+{PAUSE ""}
+<BR>
+Could helping someone important to me really be blocked by an idea that grand?<PG>
+"Someone important to <STYLE ID="5">you</STYLE> loses something important, loses their reason to live, loses themselves. 
+{PAUSE ""}
+Then they shut themselves away in a world of their own and can never come out again. 
+{PAUSE ""}
+Fates like that exist too."
+{PAUSE ""}
+<BR>
+In other words, someone who's shut themselves away in their own world might as well be living in a different world.
+{PAUSE ""}
+<BR>
+So was she trying to say I couldn't possibly help them?<PG>
+"If that person had even a little courage... 
+{PAUSE ""}
+then they might be able to come out, but for that, they need someone who can give them courage. 
+{PAUSE ""}
+That might be someone who lives in a world different from ours. 
+{PAUSE ""}
+Someone that far away."
+{PAUSE ""}
+<BR>
+The talk had gotten so big that I was starting to lose track.<PG>
+"Sorry, <STYLE ID="5">miss</STYLE>. Beyond this, even I can't tell. 
+{PAUSE ""}
+But you might want to at least brace yourself."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"That fortune... will it be right?"</STYLE><PG>
+"Some <STYLE ID="15" RUBY="はっけ">fortunes</STYLE> are right, some <STYLE ID="15" RUBY="はっけ">fortunes</STYLE> are wrong. If nothing happens, there's no need to worry about it. 
+{PAUSE ""}
+If something does happen, my words might be of some use. 
+{PAUSE ""}
+I'd say it's best to keep them in mind just about that much."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Under...</STYLE>
+{PAUSE ""}
+<STYLE ID="5">stood..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\旅館露天風呂.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Then my head started to go fuzzy.
+{PAUSE ""}
+<BR>
+I'd gotten so caught up talking that I'd stayed in the bath too long.<PG>
+<STYLE ID="5">"I'm going to get out now. Thank you for everything."</STYLE>
+{PAUSE ""}
+<BR>
+"Mm-hm. I hope it turns out to be a good life."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yes."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+"<STYLE ID="5">Miss</STYLE>... 
+{PAUSE ""}
+Have a good life."
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "145" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{WAIT "1500" "CLICK" "SKIP"}
+{WAIT "1500" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\春の兆し.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\最後の声から\旅館部屋夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―When I got back to the room, it was already 10:30 p.m.
+{PAUSE ""}
+<BR>
+Maybe I stayed in the bath a little too long...<PG>
+<STYLE ID="3">"Welcome back. You sure took a while."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE> was lying down, watching TV.<PG>
+<STYLE ID="5">"Yeah, I got to talking with someone who was in there with me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh. Staying in that long, you must've had a really interesting talk."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Sort of..."</STYLE>
+{PAUSE ""}
+<BR>
+Interesting? I wasn't so sure. It was so difficult I didn't understand even half of it.<PG>
+<STYLE ID="1">Dad</STYLE> was fast asleep.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Mom</STYLE> seemed to have fallen asleep watching TV too.<PG>
+<STYLE ID="3">"I talked with </STYLE><STYLE ID="2">Obasan</STYLE><STYLE ID="3">, and we decided we'd stay the way we've always been."</STYLE>
+{PAUSE ""}
+<BR>
+Saying that, <STYLE ID="3">Haruka</STYLE> turned her eyes to <STYLE ID="2">Mom's</STYLE> face.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">This person</STYLE><STYLE ID="3"> is the one who gave birth to me, huh... It still doesn't really feel real, though. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But having two moms... I don't really get it, but it's kinda nice."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then <STYLE ID="3">Haruka's</STYLE> phone rang.<PG>
+<STYLE ID="3">"Who's that? At this hour..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき電話.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Haruka</STYLE> picked up her phone.<PG>
+<STYLE ID="3">"It's </STYLE><STYLE ID="4">my mom</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Hello? What's up?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Uh-huh... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Uh-huh... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="3">What!?"</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

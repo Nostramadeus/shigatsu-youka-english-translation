@@ -1,0 +1,952 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=2343, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3089, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1168, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=104, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=27, unk2=65535, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=24, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あいづち, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=12, unk2=8453888, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=7, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7446, target=)
+; Links:
+;    0: TWdLink(count=6781, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\遊園地ホテル.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―The time had reached 10:30 p.m.
+{PAUSE ""}
+<BR>
+After the haunted house, we rode things that were as tame as possible, like the merry-go-round and the teacups.
+{PAUSE ""}
+<BR>
+They were run-of-the-mill attractions, so it was nice that the waits weren't that long, but today's lineup was way too unbalanced...<PG>
+The two of us sisters were in the same room.
+{PAUSE ""}
+<BR>
+Even after we got into the hotel, we didn't really talk.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I'm going to bed. Don't make any noise."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+That was the only conversation we had in the room.
+{PAUSE ""}
+<BR>
+No, she burrowed into bed before I could even answer, so it wasn't even a conversation.<PG>
+How many years' worth of talking did we do in the haunted house today?
+{PAUSE ""}
+<BR>
+It really had been a long time since I'd had an actual conversation with <STYLE ID="1">Sis</STYLE>.
+{PAUSE ""}
+<BR>
+Maybe we'll never talk like that again...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "NORMAL" "900" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+My phone rang.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I told you not to make any noise, didn't I?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Sorry, just for a bit..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄ストラップ入.gal" "NORMAL" "#1" "650" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was an incoming call from <STYLE ID="3">Niimura-senpai</STYLE>.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+I pulled the covers over my head so my voice wouldn't carry.<PG>
+<STYLE ID="4">"Helloooo, Goto heeere."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"H-hello! </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="3">...!?"</STYLE>
+{PAUSE ""}
+<BR>
+Even though I'd answered in a whisper, I heard <STYLE ID="3">Niimura-senpai's</STYLE> loud voice.<PG>
+<STYLE ID="4">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Sorry to call so late. I need you to stay calm and hear me out..."</STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+<PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="2">"</STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="2">, what's wrong!? </STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="2">, you're the one who needs to calm down!"</STYLE>
+{PAUSE ""}
+<BR>
+I sat bolt upright and answered, forgetting to whisper.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Sorry, it sounds like something serious."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Geez..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\布団.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Sis</STYLE> turned away and pulled the covers over her head.<PG>
+<STYLE ID="3">"Sorry for being loud..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, it's fine. What happened?"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+When I said that, <STYLE ID="3">Niimura-senpai</STYLE> took a big, deep breath.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="5">Grandma</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">passed away."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "0" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\車走行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\最後の声から\夜の高速.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+―I was sitting in the passenger seat of the car, heading home.
+{PAUSE ""}
+<BR>
+This was no time to be having fun at the amusement park anymore.
+{PAUSE ""}
+<BR>
+As soon as tomorrow, I would meet up with my senpai and head to Arata.
+{PAUSE ""}
+<BR>
+To attend the funeral being held in the Arata settlement.<PG>
+Dad and Mom had been drinking, so they couldn't drive.
+{PAUSE ""}
+<BR>
+And at that hour, there were no trains either.
+{PAUSE ""}
+<BR>
+So the one who drove was...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\美冬ワゴン運転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, I didn't know you had a license... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thanks."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Not like I had to tell </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+Dad and Mom stayed behind at the hotel, and the two of us set out on our own.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> kept driving in silence.
+{PAUSE ""}
+<BR>
+Was the air going to stay like this for the whole 2 hours until we got home?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\夜の高速.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The expressway's streetlights lit up the inside of the car on and off.
+{PAUSE ""}
+<BR>
+Golden Week or not, at that hour it was nothing but trucks on the road.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> drove neither fast nor slow, keeping pace with the flow of traffic, matter-of-fact.<PG>
+According to <STYLE ID="3">Niimura-senpai</STYLE>, <STYLE ID="5">Erika-chan</STYLE> had passed away a little while ago.
+{PAUSE ""}
+<BR>
+I suspected it was connected to that incident, but according to <STYLE ID="3">Niimura-senpai</STYLE>, the cause of death was apparently a heart attack, with no sign of foul play.
+{PAUSE ""}
+<BR>
+I found myself thinking back on what happened at Arata.<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The only friend I ever allowed to call me 'Erina.'
+{PAUSE ""}
+<BR>
+A friend more than 50 years older than me.
+{PAUSE ""}
+<BR>
+A cute friend with a bit of a love for mischief.
+{PAUSE ""}
+<BR>
+A friend who risked her life to save us.
+{PAUSE ""}
+<BR>
+The person who called me her last friend.<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\最後の声から\夜の高速.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Uuu..."</STYLE>
+{PAUSE ""}
+<BR>
+Tears spilled over.
+{PAUSE ""}
+<BR>
+At her age, maybe a sudden death like this couldn't be helped.
+{PAUSE ""}
+<BR>
+We'd been planning to all go see her this summer vacation...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\美冬ワゴン運転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"How'd </STYLE><STYLE ID="5">that friend</STYLE><STYLE ID="1"> die? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　An accident?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"A heart attack, they think..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A heart attack!? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Just how old is this friend of </STYLE><STYLE ID="2">yours</STYLE><STYLE ID="1">, anyway...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Around 70... I guess."</STYLE><PG>
+<STYLE ID="1">"Haah... </STYLE><STYLE ID="2">You</STYLE><STYLE ID="1">'re seriously a mystery when it comes to stuff like that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis's</STYLE> exasperated voice, and a sigh.<PG>
+<STYLE ID="1">"Why'd you become friends with </STYLE><STYLE ID="5">that person</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Why...? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Just 'cause it seemed like we'd get along..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+For a while, <STYLE ID="1">Sis</STYLE> stayed quiet, her face still sullen.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\夜の高速.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Hey... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Sorry to be selfish, but can I talk about myself?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Talk about yourself...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Just a little... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">just a little, to anyone, doesn't matter who... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">there's something I need to get off my chest..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> wanted to tell me about herself...?
+{PAUSE ""}
+<BR>
+She said anyone would do, but she'd gone out of her way to pick me...<PG>
+<STYLE ID="2">"Okay... I'll listen."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Thanks... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Sorry. I know </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">'ve got a lot going on inside right now..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE>, thanking me and apologizing to me...?
+{PAUSE ""}
+<BR>
+For the past few years, we'd barely even said hello.<PG>
+<STYLE ID="1">"I... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">got my first boyfriend 5 years ago, in my first year of high school... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">and less than a month after we started going out, he died in an accident."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh...?"</STYLE><PG>
+<STYLE ID="1">"He was sweet, but a seriously rigid, straitlaced guy... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">You</STYLE><STYLE ID="1">'re smarter, but he was smart too, and his grades were good. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And yet, even though we were going out, he couldn't ask me on a date himself, couldn't even hold my hand."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+It was all so delicate that I couldn't even <STYLE ID="6" RUBY="あいづち">nod along</STYLE>.<PG>
+<STYLE ID="1">"After the accident, I went to his funeral, and his relatives took one look at my hair color and made a face. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That whole family was a highly educated bunch, all of them even more rigid than he was, and it was so uncomfortable I couldn't even pay my respects properly. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Geez... back then that color was my natural hair color."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So that happened... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I didn't know..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Whatever... I never meant to talk about it anyway."</STYLE><PG>
+These days <STYLE ID="1">Sis's</STYLE> hair was obviously dyed, but it had been a little light from birth.
+{PAUSE ""}
+<BR>
+So she'd gone through all that because of it...<PG>
+<STYLE ID="1">"So, like, after that, studying hard and going to school just started to seem stupid... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I didn't want to become the kind of person who looks at someone like that just because their hair's a little different. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I got sick of living smart and proper. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So I dropped out of high school. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I just... I don't really know, I got sick of it."</STYLE><PG>
+Why was she telling me this?
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> had always been smart, and her grades were always near the top.
+{PAUSE ""}
+<BR>
+It was true my test scores and deviation scores were higher, though.
+{PAUSE ""}
+<BR>
+Even so, Dad and Mom always praised <STYLE ID="1">Sis</STYLE>.
+{PAUSE ""}
+<BR>
+My parents aren't the kind of people who compare sisters.<PG>
+<STYLE ID="1">"So... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I figured even </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">, the so-called genius girl, would end up a rigid, prejudiced person too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Surely Dad and Mom too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So... that's how it was..."</STYLE><PG>
+<STYLE ID="1">"I wanted to get out of a house like that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm a dropout, so there aren't many good jobs, but I figured I'd work part-time, save up money, and stand on my own feet soon... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I worked my part-time jobs every day."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So you were never home because you were working... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I was sure you were out playing around with guys."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\美冬ワゴン運転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Guys?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, you're always on the phone with some different guy."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Heh"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"?"</STYLE><PG>
+<STYLE ID="1">"Heh heh heh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ahahahahaha! Guys...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Me, playing around with guys!? Ahahahahaha"</STYLE><PG>
+<STYLE ID="1">"Hahahahaha... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh, my stomach hurts... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Guys? As if! I don't have time to play around with guys! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Forget guys, do you have any idea how much I held off even hanging out with friends so I could work!?"</STYLE>
+{PAUSE ""}
+<BR>
+It was the first time in years I'd seen <STYLE ID="1">Sis</STYLE> smile.
+{PAUSE ""}
+<BR>
+But somewhere in it, there was an air of sorrow.<PG>
+<STYLE ID="2">"Sometimes, </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, I'd hear you on the phone with men, so I just assumed. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And it seemed like it was someone different every time."</STYLE><PG>
+<STYLE ID="1">"Ah... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I do customer-service work too, so there were quite a few people coming at me with 'give me your number' and 'let's go out sometime.' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">They're customers, so I have to be careful not to be rude, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="2">You</STYLE><STYLE ID="1"> probably heard me talking to them."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Aren't you supposed to say no when people ask for your number?"</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">You</STYLE><STYLE ID="1"> probably don't know this, but it gets pretty complicated. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Some were friends of regulars, and some even had my number and I don't know where they got it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I finally finished turning them all down the other day. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And I've saved up a good amount of money, so I came today thinking of it as our last family trip, but..."</STYLE><PG>
+<STYLE ID="2">"Last trip... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So you're leaving home soon?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's the plan. That's why I've worked these 5 years without having any fun."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE><PG>
+<STYLE ID="1">"Now I can finally get away from the family. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Like I said before, I don't get along with smart people."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's..."</STYLE><PG>
+<STYLE ID="1">"But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">but, </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">'ve changed, huh. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In elementary school you were gloomy the whole time, and I figured you'd turn into a rigid person. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">To be honest, part of me was relieved. That I'd guessed right. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">once you got to middle school, you suddenly got cheerful, and you had more friends... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And on top of that, you were still the genius girl, same as ever. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And now, </STYLE><STYLE ID="5">a 70-year-old friend</STYLE><STYLE ID="1">? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Makes me laugh..."</STYLE><PG>
+<STYLE ID="1">"I thought smart people were more biased... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">but like today, even your senpai rely on you, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you're always cheerful, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">everyone likes you, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">you cheer up everyone around you..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> got that far and then, still gripping the wheel, started crying, tears streaming down.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"I... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">what have I been doing all this time... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">the one who's prejudiced and rigid... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">is me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">Sis</STYLE> turned off toward the rest area we had been about to pass.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\百日草_-絆-.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\サービスエリア.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "0" "0" "PASS"}
+{PLAYSND "SE\車エンジン切る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Then she picked a spot with few cars around it and parked.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\美冬ワゴン運転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Uu... uu..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> was slumped over the wheel, crying.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"This might sound bad, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Sis</STYLE><STYLE ID="2">, I thought the way you turned out was because of an inferiority complex about me. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So I thought you hated me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If I hated you, I wouldn't be driving you home in the middle of the night!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Sorry I never noticed till now..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Whatever... I didn't want you to notice anyway..."</STYLE><PG>
+So that was why <STYLE ID="1">Sis</STYLE> had been avoiding me.
+{PAUSE ""}
+<BR>
+Worried that I'd become a rigid person, and that <STYLE ID="1">Sis</STYLE> and I would have a real falling out.<PG>
+It was just like <STYLE ID="7">Kana-chan</STYLE> said.
+{PAUSE ""}
+<BR>
+We'd only been a little out of step, yet I'd been afraid to make the first move, and avoided her.
+{PAUSE ""}
+<BR>
+But I've never once looked down on <STYLE ID="1">Sis</STYLE> or made fun of her.<PG>
+I'd just thought she seemed like a delinquent, and that she lived in a different world from me.
+{PAUSE ""}
+<BR>
+I should have noticed.<PG>
+<STYLE ID="1">"I'm... not being fair, am I? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Blaming other people for how I turned out. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Blaming my dead boyfriend's family, trying to convince myself it's not my fault. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But... no, that's not it... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">His family had nothing to do with it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was scared </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">'d abandon me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Abandon...? What are you talking about..."</STYLE><PG>
+<STYLE ID="1">"Back when we were little, I thought </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> were so cute. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Except for school, I was glued to you the whole time, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, I remember."</STYLE><PG>
+<STYLE ID="1">"But... </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> got smarter than me, little by little. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was supposed to be the one teaching, and that started to flip around. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">We're a whole 5 years apart, and it got to where you were even teaching me my schoolwork... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I stopped knowing what my reason to exist as your big sister even was... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That maybe </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Erina</STYLE><STYLE ID="1"> didn't need me anymore..."</STYLE><PG>
+<STYLE ID="2">"Nothing like that...! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I've never once thought anything like that!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I know that...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I know, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was scared. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Of being abandoned... of not being needed, I was scared..."</STYLE><PG>
+So my idea that an inferiority complex toward me was the cause had apparently been half right.
+{PAUSE ""}
+<BR>
+I'd thought it was a question of who was smarter, but that was where I was wrong.<PG>
+<STYLE ID="1">Sis</STYLE> had been afraid that I would reject her very existence.
+{PAUSE ""}
+<BR>
+At her dead boyfriend's funeral, it all blew up. A rift opened between us.<PG>
+And I'd convinced myself that <STYLE ID="1">Sis</STYLE>, feeling all that, was a badly behaved person who lived in a different world.
+{PAUSE ""}
+<BR>
+This is the 'prejudice' I held against <STYLE ID="1">Sis</STYLE>.
+{PAUSE ""}
+<BR>
+A blunder of mine, one I have to admit.
+{PAUSE ""}
+<BR>
+In that case, the rest is up to me.
+{PAUSE ""}
+<BR>
+I have to let her know that I'm not her enemy, that I'll always be <STYLE ID="1">Sis's</STYLE> little sister.<PG>
+<STYLE ID="2">"I'd never, ever abandon you, </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The bond between sisters isn't something that can be cut, no matter what. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">No, even if it comes close to being cut, I'll protect it to the very end."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+<STYLE ID="2">"It's not too late, even now. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Dad and Mom are always worried about you too, </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's a lie...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　They're both always going '</STYLE><STYLE ID="2">Erina, Erina</STYLE><STYLE ID="1">'... doting on nobody but </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">..."</STYLE><PG>
+<STYLE ID="2">"That's because, </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, after you quit school, they didn't know how to act around you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So once they knew you were coming today, </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, they were both really looking forward to this day."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uu, uuu...!"</STYLE>
+{PAUSE ""}
+<BR>
+I'd meant to comfort her, but <STYLE ID="1">Sis</STYLE> only started crying harder.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Sorry, at a time like this... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">when the one who wants to cry right now is </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1">..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\車室内エンジン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Sis</STYLE> got the car moving again, even though she hadn't even stopped crying yet.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\高速道路.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="1">, you hate me, don't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? </STYLE>
+{PAUSE ""}
+　<STYLE ID="2">Um..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You don't have to hide it. I can tell that much."</STYLE>
+{PAUSE ""}
+<BR>
+It wasn't so much that I hated her; I found her hard to deal with.<PG>
+No, I'd thought <STYLE ID="1">Sis</STYLE> had an inferiority complex about me, and hated me because of it.
+{PAUSE ""}
+<BR>
+That was why I'd found her hard to approach.<PG>
+<STYLE ID="1">"The haunted house was a little bit fun. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It reminded me of when we were kids. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The two of us used to go to Zahha all the time and eat Russian takoyaki... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I was always the one who lost, though."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> seemed to have calmed down a little.<PG>
+Like <STYLE ID="1">Sis</STYLE> said, we were really close when we were kids.
+{PAUSE ""}
+<BR>
+Maybe things started changing little by little around when <STYLE ID="1">Sis</STYLE> started high school.<PG>
+<STYLE ID="1">"Do you know why you were born, </STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The reason I was born...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">when I was little, I pestered Mom. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I told her I wanted a little sister."</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, you did?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It was back when I was little, right around when I was turning 2. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But I remember it clearly. I saw a baby that belonged to one of Mom's friends. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It was super cute."</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\喫茶店中2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―It was on the way home that day.
+{PAUSE ""}
+<BR>
+At a cafe we stopped in at―<PG>
+<STYLE ID="1">"Hey, hey, Mama! I wan' a baby sister!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Momoko</STYLE>, we'll talk about that later, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No! Wan' a baby sister! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I picked a name! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="1">, that's her name! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Isn't it cute!?"</STYLE><PG>
+"All right, all right... Later, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really!? I'm getting a baby sister!? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Yaaay! </STYLE><STYLE ID="2">Erina-chan</STYLE><STYLE ID="1">'s comiiing!"</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, <STYLE ID="1">Momoko</STYLE>...! Don't say it so loud...!"<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\最後の声から\高速道路.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"So this name... </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, you're the one who gave it to me..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, yeah. I guess technically that makes me the one who named you."</STYLE>
+{PAUSE ""}
+<BR>
+I hate my own name.
+{PAUSE ""}
+<BR>
+Erina: a name way too cute for me.<PG>
+Knowing that <STYLE ID="1">Sis</STYLE> thought it up when she was little, maybe I can come to like it a bit.
+{PAUSE ""}
+<BR>
+A name <STYLE ID="1">Sis</STYLE> thought up for me when she was small.
+{PAUSE ""}
+<BR>
+A name she gave me because she wanted me to come.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">me coming along... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">did it make you happy...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You expect me to say something like that, the way I am right now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, never mind!"</STYLE>
+{PAUSE ""}
+<BR>
+I flashed <STYLE ID="1">Sis</STYLE> a big grin.<PG>
+<STYLE ID="1">"Been a while since I saw that face. You always looked away whenever you saw me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Well... of course I looked away..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, figures..."</STYLE><PG>
+<STYLE ID="2">"Hey, I won't look away anymore. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">so stay with me. Don't run away from home."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm already 20, so it's not like it matters if I leave..."</STYLE><PG>
+<STYLE ID="2">"I want to get back all that time. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The 5 years we spent apart, I want them back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, you. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You're just after my savings, aren't you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No way...!"</STYLE><PG>
+<STYLE ID="1">"I'm kidding. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Aw, man, if I quit running away from home, I'll just be a rich girl."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You've got that much saved?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ah, if you're curious, then you really are after my savings."</STYLE><PG>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I said I'm kidding..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Come on... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">, you don't have any reason to run away from home now, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hey, stay with me a while longer, please."</STYLE><PG>
+<STYLE ID="1">"Ugh, fine, fine, I get it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I thought I'd get to live as a NEET for a while, and instead I end up spending my money on my </STYLE><STYLE ID="2">little sister</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Was that a joke too...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Half serious. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I mean... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">You</STYLE><STYLE ID="8">―if I can spend it on you..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? What'd you say?"</STYLE><PG>
+<STYLE ID="1">"Ugh, forget it! It's nothing! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　More importantly, I'm stopping at the next rest area again. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You can't go to a funeral empty-handed, and you won't have time to buy anything tomorrow, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Anything's fine, just get a gift to bring..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah... thanks, </STYLE><STYLE ID="1">Sis</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Whatever..."</STYLE><PG>
+Tomorrow I had to work out a time with my <STYLE ID="3">senpai</STYLE> and go to Arata.
+{PAUSE ""}
+<BR>
+There was hardly any time to prepare, and I still didn't really know the schedule.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Before long, we reached Motoki-cho, where our house was.
+{PAUSE ""}
+<BR>
+It was already past midnight.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\五島家夜月なし.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Thanks. Be careful going back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Whatever..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE> said she was heading straight back to the hotel.
+{PAUSE ""}
+<BR>
+She was as prickly as ever, but I had a feeling we'd soon be back to how we used to be.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Erina</STYLE><STYLE ID="1">, don't cry too much tomorrow. Your senpai are counting on you, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　If </STYLE><STYLE ID="2">you</STYLE><STYLE ID="1"> go to pieces, everyone goes to pieces."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah... I'll do my best."</STYLE><PG>
+<STYLE ID="1">"Also, grab me a Super Soda Bomber from the fridge, would you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Okay."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\超炭酸.gal" "NORMAL" "#1" "C" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I took a bottle of Super Soda Bomber out of the fridge.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Niimura-senpai</STYLE> had said she might hit it off with <STYLE ID="1">Sis</STYLE> over this.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島家夜月なし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Here."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, bring it more carefully. The way you're carrying it, the soda's gonna spray out."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh? You can tell? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="2"> always falls for this prank..."</STYLE><PG>
+<STYLE ID="1">"The color on the bottom of the bottle tells you what's going on inside. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Blue if the pressure's normal, yellow if it's a little risky, red if it's dangerous. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That </STYLE><STYLE ID="3">senpai</STYLE><STYLE ID="1"> of yours is still a total beginner when it comes to Super Soda Bomber. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'll have to give her a thorough lecture. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"So... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">introduce me to that </STYLE><STYLE ID="3">senpai</STYLE><STYLE ID="1"> later. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">The other senpai</STYLE><STYLE ID="1"> too. I want to meet them."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\自動車エンジン.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+With that, <STYLE ID="1">Sis</STYLE> drove off before hearing my answer.
+{STOPSND "SE" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+I watched <STYLE ID="1">Sis</STYLE> go until the car was out of sight.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

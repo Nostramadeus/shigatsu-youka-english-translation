@@ -1,0 +1,325 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=922, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=179, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=192, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=430, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=40, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=6, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=13, unk2=16755370, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=15, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つぐ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2044, target=)
+; Links:
+;    0: TWdLink(count=1803, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\すきま風の声.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "WAIT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Moonlight lit up the settlement.
+{PAUSE ""}
+<BR>
+There were no streetlights, but I could see all the way past the mountains.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Tomorrow, Shiyo 800, April 8, is a full moon. Tonight is just as bright."</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-410\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-410\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+But something about this view bothered me.
+{PAUSE ""}
+<BR>
+Something that should have been in this settlement wasn't there.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">. Why aren't there any cherry trees except at the Niimura main house?"</STYLE>
+{PAUSE ""}
+<BR>
+That's right: there was only one cherry tree in this settlement.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Why was that again... I think somebody took almost all of them about 70 years ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Some kind of group, apparently."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"70 years ago... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But a group that wants cherry trees..."</STYLE><PG>
+<STYLE ID="3">"Apparently the cherry trees here were a rare variety."</STYLE>
+{PAUSE ""}
+<BR>
+So there was a reason there were no cherry trees.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"C'mon, never mind that, let's go. We're going into the forest, so don't get separated from me."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を歩く2人.ogg" "VOICE" "REPEAT" "800" "0"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "NORMAL" "SKIP"}
+{MESON "500"}
+Following <STYLE ID="3">Haruka</STYLE>, we gradually made our way deep into the forest.
+{PAUSE ""}
+<BR>
+It seemed to be the opposite direction from the road we'd taken to get here―from Arata Station.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "WAIT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"You two, don't you dare get separated from me. There's a cliff a little further on. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">One slip and you're a goner in a second."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "環境音\渓流.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "600" "10000" "PASS"}
+{MESON "500"}
+―Gradually, I began to hear the sound of water.
+{PAUSE ""}
+<BR>
+There was probably a mountain stream down there, with the cliff above it.
+{PAUSE ""}
+<BR>
+Come to think of it, I'd been told that <STYLE ID="4">Kotaro-san</STYLE>'s wife died falling from a cliff...<PG>
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, did </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="2">'s wife fall from that cliff?"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+When I said that, <STYLE ID="3">Haruka</STYLE> stopped walking.
+{STOPSND "VOICE" "500" "PASS"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">, what's wrong?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"You two... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">do you believe in curses?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Curses?"</STYLE><BR>
+<STYLE ID="1">"Curses?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+Could <STYLE ID="4">Kotaro-san</STYLE>'s wife's accident have something to do with a curse?
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Erika-chan</STYLE> had said something similar too.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Then <STYLE ID="3">Haruka</STYLE> silently started walking again.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+We followed her in silence too.
+{PAUSE ""}
+<BR>
+Something was off about <STYLE ID="3">Haruka</STYLE>.
+{PAUSE ""}
+<BR>
+Was <STYLE ID="4">Kotaro-san</STYLE>'s wife something I shouldn't have brought up?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="1">, what do you think?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> asked in a low mutter, so <STYLE ID="3">Haruka</STYLE> wouldn't hear.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="2">'s wife's death... could it have something to do with a curse...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's way too unscientific, though... But in a settlement like this, I don't think it'd be strange for there to be stories like that."</STYLE><PG>
+<STYLE ID="2">"But even </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2"> is saying it. </STYLE>
+{PAUSE ""}
+　<STYLE ID="2">I bet </STYLE><STYLE ID="6">Obasan</STYLE><STYLE ID="2"> too..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It is a little eerie..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE>, not noticing our conversation, walked slowly on.
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+The sound of the stream gradually grew louder.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Coming out of the forest, we reached a large clearing.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Okay, we wait here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE> sat down on one of the large rocks.<PG>
+Even though the stream couldn't be seen from here, the sound of the river echoed through the clearing.
+{PAUSE ""}
+<BR>
+It seemed the steep edge of the clearing dropped off into the cliff.
+{PAUSE ""}
+<BR>
+I quietly went over toward the edge―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\崖夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just as I thought. Right beside the clearing was a cliff, and I could hear water from below.
+{PAUSE ""}
+<BR>
+It looked like quite a drop.
+{PAUSE ""}
+<BR>
+I leaned out just a little and <STYLE ID="7" RUBY="のぞ">peered</STYLE> over.<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\人をつかむ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "#1" "R" "B" "0" "6" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"What do you think you're doing, you idiot!"</STYLE><PG>
+Suddenly my arm was yanked, and there was <STYLE ID="3">Haruka</STYLE>, with a frightening look on her face.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Um... sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You know what happens if you slip, right?"</STYLE>
+{PAUSE ""}
+<BR>
+I'd only gone a little close to the cliff, and she was this angry.<PG>
+<STYLE ID="2">"So this cliff really is where </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="2">'s wife―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Well... I'll tell you later. C'mon, come over here."</STYLE>
+{PAUSE ""}
+<BR>
+Completely different from a moment ago, <STYLE ID="3">Haruka</STYLE> urged me on in a gentle voice.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+I did as <STYLE ID="3">Haruka</STYLE> said and moved away from the cliff.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\墓場夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\墓石.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In the clearing stood a single stone pillar that looked like a gravestone.
+{PAUSE ""}
+<BR>
+All around it lay countless stones that looked like pieces of smashed gravestones.
+{PAUSE ""}
+<BR>
+Even the gravestone itself was far too crude to be called one―
+{PAUSE ""}
+just a single stone about 1 meter tall, standing there.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, this is a graveyard, right? Why is there only one gravestone?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Well, you'll see if you watch. Since you're here anyway, it's more fun going in without knowing anything."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">, that curse you mentioned earlier...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> finally brought it up.
+{PAUSE ""}
+<BR>
+I'd been wondering too, but seeing how <STYLE ID="3">Haruka</STYLE> was, it had been hard to ask.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="3">'s wife―</STYLE>
+{PAUSE ""}
+<STYLE ID="9">Sakura-san</STYLE><STYLE ID="3"> was her name. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">It looks like somebody killed her..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What...!?"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+Not an accident... she was killed?<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="9">Sakura-san</STYLE><STYLE ID="3"> was from here in Arata. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Kotaro-san</STYLE><STYLE ID="3"> was her childhood friend, and they got married right after high school. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">She was super kind, the kind of person who cared about others more than herself. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">She wasn't someone people would hold a grudge against."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE>'s expression was very dark.
+{PAUSE ""}
+<BR>
+She seemed less afraid of the death than saddened by it.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE> must have been treated kindly by <STYLE ID="9">Sakura-san</STYLE> too.<PG>
+<STYLE ID="2">"But how do you know she was murdered?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花うつむき.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+But <STYLE ID="3">Haruka</STYLE> <STYLE ID="10" RUBY="つぐ">clammed up</STYLE>.
+{PAUSE ""}
+<BR>
+Was it something hard to talk about?<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+―Eventually, <STYLE ID="3">Haruka</STYLE> lifted her head.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

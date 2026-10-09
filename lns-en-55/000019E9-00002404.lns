@@ -1,0 +1,135 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1138, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごうおん, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=16, unk2=255, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんぴょうせい, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1253, target=)
+; Links:
+;    0: TWdLink(count=1161, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n1000\r\nNORMAL\r\nPASS">
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>The video you just saw is nighttime footage shot in a certain city in Japan.
+{PAUSE ""}
+<BR>
+The video contains footage of a residential area, a man's voice, and a strange <STYLE ID="1" RUBY="ごうおん">roar</STYLE> echoing through it all.
+{PAUSE ""}
+<BR>
+According to the poster, there was nothing near them that could have been the source of this sound.<PG>
+In fact, this sound is not limited to Japan.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\世界地図.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In recent years, around the world, there has been one report after another of a <STYLE ID="1" RUBY="ごうおん">roar</STYLE> like grinding metal, or like a low trumpet blast, ringing out over a whole area.
+{PAUSE ""}
+<BR>
+Air currents in underground caverns, the sound of meteors, air currents high in the sky: many causes have been suggested, but no clear cause is known.
+{PAUSE ""}
+<BR>
+This sound has been given a name.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">―The Apocalyptic Sound.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\BGM_212.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "悪天候.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The apocalyptic sound is also said to be a prophecy of destruction.
+{PAUSE ""}
+<BR>
+Each time the trumpet sounds, cataclysms occur, driving humanity toward extinction.
+{PAUSE ""}
+<BR>
+The concept of the apocalyptic sound has been documented since about 2,000 years ago, and it has a religious aspect.
+{PAUSE ""}
+<BR>
+Religious scholar Kevin White puts it this way.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\リファレンス用\背景\ケビンホワイト.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+"Religion, along with agriculture, is an element at the very root of human culture. In other words, it's no exaggeration to say culture equals religion. 
+{PAUSE ""}
+Why could religion become such an element? Because in the past, science was not as developed as it is today. 
+{PAUSE ""}
+When people encountered something mysterious whose cause they didn't understand, they couldn't help feeling uneasy. 
+{PAUSE ""}
+Religion was needed to explain it."<PG>
+"What happens to people when they die? 
+{PAUSE ""}
+Why does the sun rise? 
+{PAUSE ""}
+Why does night come? 
+{PAUSE ""}
+Why do storms happen? 
+{PAUSE ""}
+And why do sounds like the apocalyptic sound ring out? 
+{PAUSE ""}
+From familiar things like these to the very rare, people explained them through religion. 
+{PAUSE ""}
+And when many people believe in that religion, group psychology increases the <STYLE ID="3" RUBY="しんぴょうせい">credibility</STYLE> of the explanation. 
+{PAUSE ""}
+This is one of the reasons a particular religion spreads widely."<PG>
+"In other words, this gives us a hypothesis. 
+{PAUSE ""}
+That is: 'The occurrence of the apocalyptic sound will bring about the destruction of humanity' 
+{PAUSE ""}
+―the apocalyptic sound was being observed as long as 2,000 years ago. 
+{PAUSE ""}
+We can say that people, seeking to explain that eerie, inexplicable sound, turned to religion for salvation."<PG>
+{MESOFF "500"}
+{PLAYMOVIE "悪天候.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+According to Kevin White, the apocalyptic sound is not something observed only recently; its existence has been recognized for as long as 2,000 years.
+{PAUSE ""}
+<BR>
+Today we live in an information society, where information from all over the world is instantly available.
+{PAUSE ""}
+<BR>
+Phenomena like the apocalyptic sound can also be recorded as video and shared with people around the world.
+{PAUSE ""}
+<BR>
+That is why people all over the world today can know of the apocalyptic sound's existence.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+"Until now, science has explained many mysterious phenomena. 
+{PAUSE ""}
+Surely the apocalyptic sound, too, will turn out to be caused by some natural phenomenon or by a phenomenon of human perception. 
+{PAUSE ""}
+Once the apocalyptic sound is explained, that video will probably become something people laugh about."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

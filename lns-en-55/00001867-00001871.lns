@@ -1,0 +1,36 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=10, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4, unk2=255, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=33, target=)
+; Links:
+;    0: TWdLink(count=14, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "$000080" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬土下座逆.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPD TIME="4294967246">"It has been a long time.
+{WAIT "3000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\大魔女能面バストアップ.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "人物1,000" "1" "100" "0" "0" "" "0"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="1">Grand Witch-sama</STYLE>."
+{WAIT "3000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

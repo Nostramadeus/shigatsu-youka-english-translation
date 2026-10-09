@@ -1,0 +1,30 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=180, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=195, target=)
+; Links:
+;    0: TWdLink(count=180, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "システム音\The_Lampe.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日2.gal" "NORMAL" "#1" "C" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "プレート" "グラフィック\システム\立木三日プレート.gal" "NORMAL" "#1" "180" "380" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Thank you for your hard work, <VAR NAME="プレイヤー名" unk3="50">-sama. You have reached the second demise.<PG>
+More victims came about than in the first ending, and it seems it arrived at an even more tragic ending.<PG>
+Like this, following a different branch does not necessarily mean arriving at a good ending.<PG>
+However, I think you were able to obtain more information.<PG>
+How would it be, trying to guess the culprit here?<PG>
+A vague guess is fine. Who does <VAR NAME="プレイヤー名" unk3="50">-sama think the culprit is?
+{PAUSE ""}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

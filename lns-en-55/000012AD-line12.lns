@@ -1,0 +1,296 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=404, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=392, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=20, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=19, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=66, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=156, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=132, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しゃれ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1417, target=)
+; Links:
+;    0: TWdLink(count=1195, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "1000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "999" "グラフィック\背景\エデン\ノイズ\盗視ノイズ.lcm" "REPEAT" "#1" "C" "B" "600" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYMOVIE "盗視.wmv" "256" "C" "C" "REPEAT" "FALSE" "300" "150"}
+{CREATECG "000" "グラフィック\背景\エデン\新村家台所.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Obaasan</STYLE>, what should I do with this?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Let that cool first, then dish it out onto plates."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき逆.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Um... so how many servings is that in all...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Let's see, </STYLE>Natsumi-chan<STYLE ID="1">, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">, </STYLE><STYLE ID="3">Goto-chan</STYLE><STYLE ID="1">, </STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">plus </STYLE><STYLE ID="5">Kotaro</STYLE><STYLE ID="1">, </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="1">, and </STYLE><STYLE ID="7">Chigaya</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Seven servings in all!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Obaasan</STYLE>, <STYLE ID="1">you</STYLE> forgot your own!"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Oops? Silly me!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Honestly, getting old is no fun."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Ah, <STYLE ID="1">Obaasan</STYLE>, sorry, could you pass me the ladle?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Here you go!"</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Thanks..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hm? What's the matter?"</STYLE>
+{PAUSE ""}
+<BR>
+"No, um... 
+{PAUSE ""}
+Sorry, I just... forgot to talk politely without noticing."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ指さしバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Oh, I don't mind!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　If you like, you can even call me Erika-chan, you know?"</STYLE>
+{PAUSE ""}
+<BR>
+"Erika...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's my first name. Pretty </STYLE><STYLE ID="8" RUBY="しゃれ">stylish</STYLE><STYLE ID="1"> for someone my age, don't you think?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, it's a really cute name!"<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "-3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Right, that's about done. The search party should be back any time now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Thank you for helping, when you're tired from the long trip."</STYLE>
+{PAUSE ""}
+<BR>
+"No, cooking with you was so much fun, <STYLE ID="1">Erika-chan</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I had fun too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Usually </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="1"> helps me, but </STYLE>you<STYLE ID="1"> seem to have quite a talent for cooking yourself."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="6">Kana</STYLE>...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="7">Chigaya's</STYLE><STYLE ID="1"> little sister, in fifth grade. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">She's out searching right now, so you'll meet her soon enough."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Nice to meet you. I'm Natsumi Kogori."
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hey, welcome. I'm Kotaro Niimura, </STYLE><STYLE ID="2">Haruka-chan's</STYLE><STYLE ID="5"> uncle. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Thanks for coming all this way."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Oh? </STYLE><STYLE ID="5">Kotaro-san</STYLE><STYLE ID="4">, where's </STYLE><STYLE ID="6">Kana-chan</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="5">"Now that you mention it, she's not here... wandering around somewhere again, I guess..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Even if it's </STYLE><STYLE ID="6">Kana-chan</STYLE><STYLE ID="4">, I'm worried, at a time like this."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Right, I'll go take a look outside."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111,人物2" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">, </STYLE><STYLE ID="3">Goto-chan</STYLE><STYLE ID="1">, and </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="1"> aren't back yet, but let's go ahead and eat."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Did you find </STYLE><STYLE ID="6">Kana-chan</STYLE><STYLE ID="4">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Probably in the storehouse. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">The light was on, so maybe she's searching the storehouse again."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111,人物2,人物1" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Gochisosama. That was delicious!
+{PAUSE ""}
+　Oh, I'll go wash the dishes!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE>Natsumi-chan<STYLE ID="4">, aren't you tired? I can do that."</STYLE>
+{PAUSE ""}
+<BR>
+"I'm fine! The food was so good, it gave me my energy back!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Arata food isn't just tasty―it's where the energy comes from!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\エデン\新村家台所.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,人物2,人物1" "1" "0" "0" "0" "" "0"}
+{STOPSND "VOICE2" "0" "PASS"}
+{PLAYSND "最後の声・真呪殺\SE\皿洗い.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hm-hm-hm-hmm. Hm-hm-hm-hmm."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\蛇口.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Phew... all done!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Thank you, </STYLE>Natsumi-chan<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"Come to think of it... are <STYLE ID="2">Haruka</STYLE> and <STYLE ID="3">Goto</STYLE> still in the storehouse...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Haruka</STYLE><STYLE ID="1"> came back a little while ago and went out for a short walk with </STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"A walk?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"She said she wanted a little fresh air."</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm..."<PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ホワイトノイズ.ogg" "VOICE2" "REPEAT" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "0" "PASS"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"Oh, nice to meet you! So you're </STYLE>Natsumi-chan<STYLE ID="6">!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Um, so you must be <STYLE ID="6">Kana-chan</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yup! I'm Kana Niimura, always peppy and full of life!"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="6">Kana-chan</STYLE>, you've got so much energy!
+{PAUSE ""}
+　Come to think of it, is <STYLE ID="3">Goto</STYLE> still in the storehouse? <STYLE ID="6">Kana-chan</STYLE>, I heard you were there..."
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah, yeah, I came to get </STYLE><STYLE ID="3">Goto-chan's</STYLE><STYLE ID="6"> dinner. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">She says she's going to keep reading."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... <STYLE ID="2">Haruka</STYLE> seems to have gone off somewhere with <STYLE ID="4">Obasan</STYLE> too..."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="2">Haruka-chan</STYLE><STYLE ID="6">, you know―</STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="6">she went looking for the mummy, in the cave underground."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "999,000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{STOPSND "BGM" "0" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

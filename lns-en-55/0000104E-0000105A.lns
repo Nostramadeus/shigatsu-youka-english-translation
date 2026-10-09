@@ -1,0 +1,213 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=413, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=20, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=20, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あれ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=656, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1264, target=)
+; Links:
+;    0: TWdLink(count=1114, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "最後の声・真呪殺\序章.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYMOVIE "最後の声編実装用.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\最後の声から\桜の新芽2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "REPEAT" "700" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島横顔.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階暗い.gal" "NORMAL" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみメッタざし.gal" "NORMAL" "#1" "R" "B" "100" "20" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "15" "15" "500" "30"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "15" "15" "500" "30"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花メッタざし.gal" "NORMAL" "20" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MOTION "789" "人物1" "4" "540" "100" "NORMAL" "WAIT"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "WAIT" "1000" "0"}
+{MOTION "789" "人物1" "4" "0" "2000" "DEC" "WAIT"}
+{WAIT "500" "CLICK" "SKIP"}
+{MOTION "789" "人物1" "4" "540" "100" "NORMAL" "WAIT"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "WAIT" "1000" "0"}
+{MOTION "789" "人物1" "4" "0" "2000" "DEC" "WAIT"}
+{WAIT "500" "CLICK" "SKIP"}
+{MOTION "789" "人物1" "4" "540" "100" "NORMAL" "WAIT"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "WAIT" "1000" "0"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>There's no way to explain it.
+{PAUSE ""}
+<BR>
+There's no way I could explain it.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花うつむき血.gal" "NORMAL" "#1" "R" "200" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Stop <STYLE ID="1">Niimura-senpai</STYLE>?
+{PAUSE ""}
+<BR>
+Why would I need to do that?
+{PAUSE ""}
+<BR>
+There's no point panicking over something that happens in a dream.<PG>
+Maybe this is real?
+{PAUSE ""}
+<BR>
+A reality where <STYLE ID="1">Niimura-senpai</STYLE> stabs <STYLE ID="2">Kogori-senpai</STYLE> with a knife over and over can't exist.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n4\r\n90\r\n3000\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n4\r\n90\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Honestly, it's just that my body won't move.
+{PAUSE ""}
+<BR>
+It isn't as simple as being horrified, or being scared.
+{PAUSE ""}
+<BR>
+If I don't deny what's happening in front of me―
+{PAUSE ""}
+my sense of self will surely collapse.
+{PAUSE ""}
+<BR>
+But... there's one thing I've figured out.
+{PAUSE ""}
+<BR>
+There's a hint that this might be the <STYLE ID="3" RUBY="あれ">curse-killing</STYLE>.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n4\r\n200\r\n100\r\nNORMAL\r\nPASS">
+{MOTION "789" "人物1" "4" "540" "100" "NORMAL" "WAIT"}
+{PLAYSND "SE\hit_axe1.ogg" "VOICE" "WAIT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花うつむき血緑.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Niimura-senpai's</STYLE> eyes were green.
+{PAUSE ""}
+<BR>
+The cursed eyes <STYLE ID="4">Chiga-nee</STYLE> talked about.<PG>
+Hey... why <STYLE ID="2">Kogori-senpai</STYLE>?
+{PAUSE ""}
+<BR>
+Ha... 
+{PAUSE ""}
+Hahaha... 
+{PAUSE ""}
+Hahaha...
+{PAUSE ""}
+<BR>
+What a strange dream...
+{PAUSE ""}
+<BR>
+A dream―
+{PAUSE ""}
+A dream―
+{PAUSE ""}
+A dream―
+{PAUSE ""}
+Hey―
+{PAUSE ""}
+Tell me it's a dream!<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\最後の声から\桜の新芽2.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The last thing I heard of <STYLE ID="2">Kogori-senpai's</STYLE> voice was―
+{PAUSE ""}
+a perfectly ordinary―
+{PAUSE ""}
+death scream.<PG>
+Stabbing <STYLE ID="2">Kogori-senpai</STYLE> over and over, <STYLE ID="1">Niimura-senpai</STYLE> was―
+{PAUSE ""}
+smiling happily.
+{PAUSE ""}
+<BR>
+Seeing that smile, I... 
+{PAUSE ""}
+smiled along with her.
+{PAUSE ""}
+<BR>
+When <STYLE ID="1">Niimura-senpai</STYLE> moved away from <STYLE ID="2">Kogori-senpai</STYLE> and smiled at me... 
+{PAUSE ""}
+I smiled too.
+{PAUSE ""}
+<BR>
+Because... 
+{PAUSE ""}
+all I can do is laugh.
+{PAUSE ""}
+<BR>
+Haha... 
+{PAUSE ""}
+Hahaha...!
+{PAUSE ""}
+<BR>
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE>
+{PAUSE ""}
+<STYLE ID="5">ha</STYLE><PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5"><TXSPD TIME="4294967246">hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha</STYLE><PG>
+<STYLE ID="5"><TXSPD TIME="4294967286">hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha</STYLE>
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+<STYLE ID="5">hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

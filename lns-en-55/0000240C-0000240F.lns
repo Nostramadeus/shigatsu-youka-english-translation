@@ -1,0 +1,501 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1725, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=297, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=640, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=104, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=21, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こわいろ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=10, unk2=16755370, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=198, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=203, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=16, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3580, target=)
+; Links:
+;    0: TWdLink(count=3228, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\ザッハ夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "650" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>We left Zahha behind and got on our bikes.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\自転車開始.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"Well then, I'll be going."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, see you!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I waved and saw <STYLE ID="1">Goto</STYLE> off.<PG>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+Now, what should I do from here?
+{PAUSE ""}
+<BR>
+This is <STYLE ID="1">Goto</STYLE>. Whatever she said, she'll probably look into the incident on the sly.
+{PAUSE ""}
+<BR>
+It's only a matter of time before she gets to my dad.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">Mom</STYLE>, huh.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">"Hello?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hello, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="3">? Are you okay over there?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You know, there was an incident, wasn't there?"</STYLE><PG>
+<STYLE ID="2">"Oh, well... I'm fine..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Nothing. It looks like I'll be late from work today. Will you be all right?"</STYLE><PG>
+<STYLE ID="2">"I told you, I can look after the house fine. I'll lock up properly, too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Make sure you do, okay? And don't stay out walking around too long, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I know already. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Yeah, bye."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Locking up, huh...
+{PAUSE ""}
+<BR>
+It's a shinigami I summoned myself, so there's no worry about me being attacked.
+{PAUSE ""}
+<BR>
+So I have to think about how to keep <STYLE ID="4">Natsumi</STYLE> and <STYLE ID="5">Obasan</STYLE> safe, but it's not as if a bright idea for that is coming to me right now.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\新村家リビング夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+I went into the house and sat on the sofa.
+{PAUSE ""}
+<BR>
+I had also thought about going straight back to the police station and telling them about the curse.
+{PAUSE ""}
+<BR>
+But I can't imagine a story like that getting through to the police.
+{PAUSE ""}
+<BR>
+Besides, those two are at the police station right now.
+{PAUSE ""}
+<BR>
+Shinigami or not, going on a rampage inside a police station... 
+{PAUSE ""}
+can I really say it wouldn't happen?<PG>
+Even as I sat there, time kept slipping by.
+{PAUSE ""}
+<BR>
+Was it a mistake after all, taking <STYLE ID="4">Natsumi</STYLE> to the park that time?
+{PAUSE ""}
+<BR>
+Did I make the wrong choice?<PG>
+............
+{PAUSE ""}
+<STYLE ID="1">Goto</STYLE>...
+{PAUSE ""}
+<BR>
+What is <STYLE ID="1">she</STYLE> up to right now?
+{PAUSE ""}
+<BR>
+She's probably investigating the incident after all.
+{PAUSE ""}
+<BR>
+Hasn't she gotten hold of some information that could lead to solving it?<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\携帯着信1.ogg" "VOICE" "REPEAT" "1000" "0"}
+<STYLE ID="2">"............!"</STYLE>
+{PAUSE ""}
+<BR>
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+It's <STYLE ID="1">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+{CHGVOL "VOICE" "700" "1000" "PASS"}
+Did she find something out?
+{PAUSE ""}
+<BR>
+But even so, what should I say?
+{PAUSE ""}
+<BR>
+Even if I told her about the curse, there's no way she'd believe it so easily.<PG>
+{STOPSND "VOICE" "0" "PASS"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青切.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+While I hesitated, the phone went quiet.
+{PAUSE ""}
+<BR>
+Once the phone actually stopped ringing, I realized that like this, I'd get nowhere.
+{PAUSE ""}
+<BR>
+{PLAYSND "見えない光_2.ogg" "BGM" "REPEAT" "1000" "0"}
+That's right, whether she believes it or not doesn't matter.
+{PAUSE ""}
+<BR>
+If I first tell her I'm involved in the incident, <STYLE ID="1">Goto</STYLE> should understand a little.
+{PAUSE ""}
+<BR>
+I'll have to confess that I'm the culprit of the Megasawa City case, but the one thing I absolutely can't stand is <STYLE ID="4">Natsumi</STYLE> dying...!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="1">"Hi-iii, it's Goto!"</STYLE>
+{PAUSE ""}
+<BR>
+An awfully cheerful voice from <STYLE ID="1">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+After all that dark talk earlier, something about it was unnatural.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Oh, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">. What's up? Find out anything?"</STYLE>
+{PAUSE ""}
+<BR>
+I tried to keep my <STYLE ID="6" RUBY="こわいろ">tone of voice</STYLE> as normal as I could, too.<PG>
+<STYLE ID="1">"No, it's not exactly that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But, being alone, I'm scared after all..."</STYLE>
+{PAUSE ""}
+<BR>
+Come to think of it, I'd heard before that <STYLE ID="1">Goto</STYLE>'s parents were going to a class reunion.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Huh... So </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, you're home alone right now. You did say before that your parents had a class reunion. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm alone right now, too. </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2">'s coming home late today. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Aren't your parents worried? On a day when an incident like that happened, their </STYLE><STYLE ID="1">daughter</STYLE><STYLE ID="2"> alone at home?"</STYLE><PG>
+<STYLE ID="1">"Oh... no, I called them just now, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hmm. Well, make sure you lock up tight."</STYLE>
+{PAUSE ""}
+<BR>
+I'd just been warned about locking up by <STYLE ID="3">Mom</STYLE>, but it's <STYLE ID="1">Goto</STYLE>, more than me, who should be careful to lock up.<PG>
+<STYLE ID="1">"Yes... but it's scary after all, isn't it, when something like this happens so close by."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah, actually, I was wondering whether to call you, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, too. And then I got a call from </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2">, so. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> I'm not, but being alone does make me feel uneasy after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE> wasn't getting around to talking about the heart of the incident.
+{PAUSE ""}
+<BR>
+And I can't imagine <STYLE ID="1">Goto</STYLE> calling over something that's just small talk...<PG>
+Yeah, that has to be it. At the very least, she must have figured out about my dad.
+{PAUSE ""}
+<BR>
+A little searching online is enough to find out that 12 years ago, a man named Eiichiro Niimura died in Central Park.
+{PAUSE ""}
+<BR>
+So I should probably be the one to move the conversation forward.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+I was nervous.
+{PAUSE ""}
+<BR>
+I wanted to just blurt it out on momentum, but when it came to actually saying it, I didn't know how to explain.
+{PAUSE ""}
+<BR>
+I have to say it in a way that's as easy as possible for <STYLE ID="1">Goto</STYLE> to hear.<PG>
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Can I ask you one weird question?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What is it...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Why... did you call me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+This should make it easier to bring it up.<PG>
+<STYLE ID="2">"Feeling uneasy alone, that's not like </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2">, is it?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Even though earlier you were so fired up, saying you wanted to solve the incident."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Ah... ah... do you think so..."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>............?
+{PAUSE ""}
+<BR>
+What's wrong, <STYLE ID="1">Goto</STYLE>? Why is your voice shaking so much?<PG>
+Could it be she really is feeling uneasy being alone?
+{PAUSE ""}
+<BR>
+Should I make a bit more small talk and let some time pass?<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="1">... did something happen?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Something?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Something, like... what?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Ah... um... uh..."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>Something was definitely off with <STYLE ID="1">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Her voice shaking like this, talking to me...
+{PAUSE ""}
+<BR>
+Which means she's figured out not just about my dad, but that the culprit is me!?<PG>
+Damn...! Stop chickening out already, me!
+{PAUSE ""}
+<BR>
+What's the point of being scared of getting found out as the culprit now!?
+{PAUSE ""}
+<BR>
+Come on, <STYLE ID="1">Goto</STYLE>, suspect me!
+{PAUSE ""}
+<BR>
+I'm the culprit! I'm a murderer!
+{PAUSE ""}
+<BR>
+You know that, don't you!?<PG>
+<STYLE ID="2">"What's with </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2">? Could it be, you're scared of me?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">You</STYLE><STYLE ID="2"> being this scared means... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">could it be, you found something out?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+No doubt about it, <STYLE ID="1">Goto</STYLE> has realized I'm the culprit.
+{PAUSE ""}
+<BR>
+So all that's left is to wait for <STYLE ID="1">Goto</STYLE> to say it.
+{PAUSE ""}
+<BR>
+Leaving it to <STYLE ID="1">Goto</STYLE> should be faster.<PG>
+<STYLE ID="2">"What, no answer at all?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Se... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Se..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPN>"Hmm?"</STYLE>
+{PAUSE ""}
+<BR>
+Hurry up and say it...! <STYLE ID="1">You</STYLE> have to be the one to take charge!<PG>
+<STYLE ID="1">"Uh... I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="2">"Sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh?"</STYLE><PG>
+<STYLE ID="2">"N-no, sorry! For once </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2"> were scared, so I thought I'd tease you, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Doing that at a time like this was too insensitive, I guess! Ahahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+I couldn't bear it anymore.
+{PAUSE ""}
+<BR>
+It was a mistake to begin with, relying on <STYLE ID="1">Goto</STYLE> and trying to make her do the talking.
+{PAUSE ""}
+<BR>
+Come to think of it, talking with me, the culprit, would take a lot of courage.<PG>
+<STYLE ID="2">"It's nothing! Nothing... Don't worry about it, okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"U-uh-huh..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Sorry! Really, sorry, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">! I'm gonna hang up. The mood got weird somehow. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Tomorrow, let's go see how </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2">'s doing! Good night!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"............"</STYLE><PG>
+{PLAYSND "エデンの桜\SE\テーブル叩く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="7">"Dammit...!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+This leaves me with no moves at all!
+{PAUSE ""}
+<BR>
+There's no time, I can't rely on the police, and I can't tell <STYLE ID="1">Goto</STYLE> either!
+{PAUSE ""}
+<BR>
+What am I supposed to do all by myself...!<PG>
+Tears spilled out on their own, stirring up my frustration even more.
+{PAUSE ""}
+<BR>
+I don't care anymore! <STYLE ID="1">Goto</STYLE>, help me...!<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ青入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="8">“</STYLE><STYLE ID="9">Goto</STYLE><STYLE ID="8">, help me”</STYLE>
+{PAUSE ""}
+<BR>
+Sending a message like this was all I could do now.
+{PAUSE ""}
+<BR>
+If you're scared to get involved with me, then just save <STYLE ID="4">Natsumi</STYLE>, even if it's <STYLE ID="1">you</STYLE> alone!
+{PAUSE ""}
+<BR>
+A reply came from <STYLE ID="1">Goto</STYLE> right away.<PG>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“What's the matter? Are you all right?”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“At this rate, I'm going to end up killing </STYLE><STYLE ID="10">Natsumi</STYLE><STYLE ID="8">. Help me. Help </STYLE><STYLE ID="10">Natsumi</STYLE><STYLE ID="8">. I don't want to kill </STYLE><STYLE ID="10">Natsumi</STYLE><STYLE ID="8">. Help me.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“</STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">, please calm down. It's all right.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“</STYLE><STYLE ID="9">Goto</STYLE><STYLE ID="8">, knowing you, you've already figured it out, right? About my dad.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“I'm sorry. I lied. I looked into </STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">'s father.”</STYLE><PG>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“I figured you'd do that, </STYLE><STYLE ID="9">Goto</STYLE><STYLE ID="8">. That's why I wanted to talk to </STYLE><STYLE ID="9">you</STYLE><STYLE ID="8">.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“But, why by message?”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“It's pathetic, but right now I'm crying so hard I can't talk. It doesn't mean anything more than that.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“It's all right, so please take a deep breath. I'm on your side.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“Because I, killed </STYLE><STYLE ID="11">Natsumi's dad</STYLE><STYLE ID="8">”</STYLE><PG>
+I know well enough myself that I'm acting out of desperation.
+{PAUSE ""}
+<BR>
+But, even wanting to save <STYLE ID="4">Natsumi</STYLE>, there's nothing more I can do.
+{PAUSE ""}
+<BR>
+In that case, even knowing it's useless, all I can do is go to the police and refuse to back down.<PG>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“</STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">, calm down. It's all right.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“I'm going to turn myself in.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“Wait! You've got it wrong! </STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">!”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="8">“But probably, </STYLE><STYLE ID="10">Natsumi</STYLE><STYLE ID="8"> can't be saved anymore.”</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="9">“</STYLE><STYLE ID="8">Senpai</STYLE><STYLE ID="9">, it's hard, isn't it? It hurts, doesn't it? Talk to me. I'll listen to all of it. I'm on your side. </STYLE><STYLE ID="10">Kogori-senpai</STYLE><STYLE ID="9">'s on your side too.”</STYLE><PG>
+<STYLE ID="1">Goto</STYLE>, I'm sorry.
+{PAUSE ""}
+<BR>
+I'm glad you care this much about me.
+{PAUSE ""}
+<BR>
+But that alone won't solve anything.<PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+I shoved the three paper dolls into my pocket and left the house.
+{PAUSE ""}
+<BR>
+If it's proven that I'm the culprit of the Megasawa City case, will that let me escape the shinigami's clutches even a little?
+{PAUSE ""}
+<BR>
+What am I thinking... There's no way to escape that shinigami.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

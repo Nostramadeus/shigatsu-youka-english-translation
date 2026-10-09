@@ -1,0 +1,81 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=58, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=13, unk2=255, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=7, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=29, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=7, unk2=255, unk3=4294967295, unk4=44, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=53, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=224, target=)
+; Links:
+;    0: TWdLink(count=167, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\シャワー.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\シャワー.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+<TXSPD TIME="4294967246">Right now, what <STYLE ID="1">I can do</STYLE> is stay by <STYLE ID="2">Natsumi</STYLE>'s side the whole day, even if it's just today.
+{WAIT "2000" "NORMAL" "NORMAL"}
+<BR>
+If the <STYLE ID="1">shinigami</STYLE> shows up, I'll persuade it to stop.
+{WAIT "2000" "NORMAL" "NORMAL"}
+{MESOFF "0"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{WAIT "2000" "NORMAL" "NORMAL"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+<STYLE ID="3">"Don't worry. With this, we can save </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">, and we can </STYLE><STYLE ID="4">catch the shinigami too</STYLE><STYLE ID="3">."</STYLE>
+{WAIT "3000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\立ち絵\アイテム\ロシアンたこ焼き\ロシアンたこ焼き箱.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+What the heck is this...?
+{WAIT "3000" "CLICK" "SKIP"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\能面背景.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+<STYLE ID="5">"Stopping a crime this big is </STYLE><STYLE ID="1">impossible</STYLE><STYLE ID="5">...!"</STYLE><BR>
+{WAIT "3000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+<STYLE ID="5">"It's okay! I came up with a way that'll </STYLE><STYLE ID="1">definitely</STYLE><STYLE ID="5"> save everyone!"</STYLE>
+{WAIT "3000" "NORMAL" "NORMAL"}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

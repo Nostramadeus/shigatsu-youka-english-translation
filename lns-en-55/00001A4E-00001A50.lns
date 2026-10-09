@@ -1,0 +1,248 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1562, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1747, target=)
+; Links:
+;    0: TWdLink(count=1562, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\ThinkingTime.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス\リファレンス詳細\rrr1\0.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "BGM" "2000" "PASS"}
+<TXSPN>―And now, the segment you've all been waiting for.
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\0.gal" "NORMAL" "#1" "960" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr47\1.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "456" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\中央公園素材\中央公園前.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "BGM死月編\TALK_and_WALK.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n460\r\n100\r\nNORMAL\r\nPASS">
+{MOTION "789" "アイテム1" "4" "540" "100" "NORMAL" "WAIT"}
+{CREATECG "111" "グラフィック\リファレンス用\アイテム\電撃雷訪.lcm" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "111" "CLICK"}
+{MOTION "789" "111" "3" "960" "200" "NORMAL" "WAIT"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-760\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-760\r\n0\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "540" "100" "NORMAL" "WAIT"}
+{MESON "500"}
+"Everyone across the country! Good morning!
+{CREATECG "111" "グラフィック\リファレンス\リファレンス詳細\rrr47\ユキピン.lcm" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PAUSE ""}
+　Yukino Shinbashi here, and today I'm paying a visit to this place!"
+{PAUSE ""}
+<BR>
+―Yuki-chan, that's a park with an awful lot of cherry trees.
+{PAUSE ""}
+<BR>
+"That's right! Actually, we're broadcasting from Central Park in Motoki-cho, Sawa Prefecture. 
+{PAUSE ""}
+Today we're bringing you the show from Motoki-cho, Sawa Prefecture, famous nationwide for its cherry blossoms!"
+{PAUSE ""}
+<BR>
+―Oh, the crowd's really fired up too!
+{WAITPLAY "111" "CLICK"}
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n4\r\n540\r\n100\r\nNORMAL\r\nPASS">
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "111" "1" "0" "0" "0" "" "0"}
+<PG>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\3.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+"Yes! Here in Central Park, the Motoki Cherry Blossom Festival is held for about a month every year, and this year it's reaching its 70th!"
+{PAUSE ""}
+<BR>
+―So that means the festival has been going on since Shiyo 730!?
+{PAUSE ""}
+　That's quite a long history for a festival.
+{PAUSE ""}
+<BR>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nNORMAL\r\nPASS">
+"About that, actually, the very first festival ever held was already the 15th!"
+{PAUSE ""}
+<BR>
+―Hm? What do you mean?
+{PAUSE ""}
+<BR>
+"Please take a look at this!"<PG>
+{MESOFF "500"}
+{CREATECG "222" "グラフィック\背景\中央公園素材\中央公園背景1gal.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\中央公園素材\御神木.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Oh, that's a magnificent cherry tree!
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\4.gal" "NORMAL" "#1" "960" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PAUSE ""}
+<BR>
+"Yes, this is the big cherry tree that's said to be the goshinboku, the symbol of Motoki-cho, you could say."
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr47\5.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "456" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+―It looks like it's about 1,000 years old or something.
+{PAUSE ""}
+<BR>
+"Actually, this tree apparently hasn't even been growing for 70 years yet."
+{PAUSE ""}
+<BR>
+―What!? It's that young!?
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム1" "4" "540" "100" "DEC" "WAIT"}
+<PG>
+"That's right. 
+{PAUSE ""}
+The cherry-blossom festival originally started as a way to worship this goshinboku, but the residents back then had a question: 'Wasn't this cherry tree here much longer ago?' 
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\6.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PAUSE ""}
+So, to make it a festival that had been held since much earlier, they deliberately called even the very first one the 15th."
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "540" "100" "DEC" "WAIT"}
+<PG>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr47\7.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+―Even so, if it's been going on for more than 50 years, that means the people of Motoki-cho really do love their cherry tree.
+{PAUSE ""}
+<BR>
+"Yes, among Motoki-cho residents, there are even companies with a system called cherry-blossom leave, rather than paid leave. 
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム1" "4" "540" "100" "DEC" "WAIT"}
+{PAUSE ""}
+So at this time of year, even on weekdays, it's as lively as a weekend."
+{PAUSE ""}
+<BR>
+―I see! Are there any fun events?
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\8.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<PG>
+"Actually, today is the spring eating contest, the main event of the Motoki Cherry Blossom Festival!
+{PAUSE ""}
+　And we've received word that a super-big-name special guest will be competing!"
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "540" "100" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+―A special guest competing means... 
+{PAUSE ""}
+someone who can really eat, right?
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr47\9.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<PG>
+"Yes! The winner of the recent national tournament... 
+{PAUSE ""}
+If you're curious, please come visit Motoki-cho!"
+{PAUSE ""}
+<BR>
+―Motoki-cho's a long way to go from here right now!
+{PAUSE ""}
+　What dish will they be competing with?
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム1" "4" "540" "100" "DEC" "WAIT"}
+<PG>
+"That would be... 
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\焼きそば.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,222" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+this! A food-stall classic, sauce yakisoba!
+{PAUSE ""}
+　The contestant who eats the most of this sauce yakisoba in 15 minutes wins!"
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\10.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PAUSE ""}
+<BR>
+―Oh, that looks delicious! For me, sauce yakisoba and grilled squid are must-haves!<PG>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "540" "100" "DEC" "WAIT"}
+"Of course, there's a grilled-squid stall too!
+{PAUSE ""}
+　Now, I'd like to try some of this yakisoba right away!"
+{PAUSE ""}
+<BR>
+―Ah, that's the classic style, the kind that makes you want a beer. 
+{PAUSE ""}
+Personally, I'd want mayonnaise on it.<PG>
+"Mmm! Delicious!
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr47\11.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{PAUSE ""}
+　Yep, that slightly charred touch you only get at a stall, and the smell of the sauce hitting you hard, piping hot and fresh off the griddle, are the best!
+{PAUSE ""}
+　Actually, the winner of this contest since the year before last is said to be a little girl!"
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム1" "4" "540" "100" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+―A little girl?
+{PAUSE ""}
+<BR>
+"Yes, last year she apparently polished off 150 takoyaki in 15 minutes!"
+{PAUSE ""}
+<BR>
+―150!? I couldn't do that even if I had a week...
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr47\12.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\中央公園素材\中央公園前.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"She's entering again this year, apparently, so will it be a one-on-one showdown with the special guest, or will a third force come storming in!? It's going to be a very exciting battle!
+{PAUSE ""}
+　Neighbors, people of Sawa Prefecture, please come out to Central Park in Motoki-cho today!
+{PAUSE ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "540" "100" "DEC" "WAIT"}
+　That's all from the scene!"
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+―Thank you, Yuki-chaaan!<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス\リファレンス詳細\rrr1\0.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "最後の声・真呪殺\青い目の猫.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr47\13.gal" "NORMAL" "#1" "960" "380" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+―Well, it's now 7:00. At this time on Tuesdays, it's 'This Path, I, Master!' 
+{PAUSE ""}
+Today, a master of origami-shuriken throwing, a sixth grader in elementary school―
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1,アイテム2" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

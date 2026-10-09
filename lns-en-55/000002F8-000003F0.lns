@@ -1,0 +1,340 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1984, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=12, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=65, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみし, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=9, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しよう, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=えいいちろう, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=28, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=188, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=えいいちろう, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=けいぶ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=8, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=7, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2566, target=)
+; Links:
+;    0: TWdLink(count=2314, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\自転車こぐ.ogg" "VOICE" "NORMAL" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島家夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\自転車ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\自転車止める.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\五島家玄関夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Inside the house, it was pitch dark.
+{PAUSE ""}
+<BR>
+Dad and Mom were at a class reunion and wouldn't be home today.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sis</STYLE>, no doubt, was out running around with guys again.<PG>
+<STYLE ID="1">Sis</STYLE> had probably never thought well of me, fawned over by everyone around me as a genius girl.
+{PAUSE ""}
+<BR>
+Even though my parents, for their part, had never treated us sisters differently because of it.
+{PAUSE ""}
+<BR>
+Before I knew it, a wall had formed between us sisters.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "32" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\五島の部屋.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "WAIT" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I went into my room on the second floor and picked up my smartphone.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "NORMAL" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "700" "0"}
+{MESON "500"}
+<STYLE ID="2">"Oh, hello, Mom? Enjoying the reunion?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Erinaaa</STYLE>! How are youuu?"
+{PAUSE ""}
+<BR>
+From her voice, Mom seemed to be pretty drunk.
+{PAUSE ""}
+<BR>
+Behind her, I could also hear drunks making a racket.
+{PAUSE ""}
+<BR>
+The class reunion, or whatever it was, looked to be in full swing.<PG>
+<STYLE ID="2">"Yeah, I'm fine. What about Dad?"</STYLE>
+{PAUSE ""}
+<BR>
+"Wait just a second!"<PG>
+―Shortly, I heard a familiar voice.
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Erina-chaaan</STYLE>? It's Daaad!"
+{PAUSE ""}
+<BR>
+He seemed even drunker than Mom.<PG>
+"Listen, <STYLE ID="2">Erina</STYLE>! <STYLE ID="2">You</STYLE>'re a chosen child! You're a genius! Do your studying riiight and grow up to be a fine adult! <STYLE ID="2">You</STYLE> and <STYLE ID="1">Momoko</STYLE> both, you're smart daughters!"<PG>
+After that, I kept making agreeing noises at his long, rambling drunk talk, and hung up at a suitable point.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "WAIT" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄切.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Good, my parents seemed to be fine.
+{PAUSE ""}
+<BR>
+Where the two of them had gone today was <STYLE ID="3" RUBY="みなかみし">Minakami City</STYLE>, the prefectural capital of Sawa Prefecture.
+{PAUSE ""}
+<BR>
+Actually, it had overlapped in my mind with the business trip of <STYLE ID="4">Kogori-senpai's father</STYLE>, and I'd been a little scared.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "48" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\五島パソコン.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Now then, first I'll sort out what I'm going to do from here, and plan the Operation.<PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+First, an investigation of the accident that happened in Central Park long ago.
+{PAUSE ""}
+<BR>
+Next, look into the Megasawa City case in more detail.
+{PAUSE ""}
+<BR>
+How that links up with this incident: I'll force a connection even if it's a stretch, and test it as a hypothesis.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\検索.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I went online,<BR>
+<BR>
+“Motoki-cho Central Park accident”<BR>
+<BR>
+and when I searched with that...<PG>
+In the list, there was nothing lined up but the incident from this morning.
+{PAUSE ""}
+<BR>
+I set the period to yesterday and before, and tried searching again.<PG>
+............ 
+{PAUSE ""}
+This is it...!
+{PAUSE ""}
+<BR>
+Hanami visitor dies in accident in Motoki-cho, Sawa Prefecture.
+{PAUSE ""}
+<BR>
+When I clicked it, it was a very small article.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島パソコン.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5" RUBY="しよう">Shiyo</STYLE> 788―exactly 12 years ago today, a hanami visitor died in an accident in Central Park.
+{PAUSE ""}
+<BR>
+Fell from a cherry tree.
+{PAUSE ""}
+<BR>
+Got drunk and went tree climbing or something, maybe?
+{PAUSE ""}
+<BR>
+The one who died was...
+{PAUSE ""}
+<BR>
+Motoki-cho resident <STYLE ID="6" RUBY="えいいちろう">Eiichiro</STYLE> Niimura-san (30)
+{STOPSND "BGM" "3000" "PASS"}
+{WAITPLAY "BGM" "CLICK"}
+<PG>
+Niimura...?
+{PAUSE ""}
+<BR>
+Niimura, as in...!
+{PAUSE ""}
+<BR>
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+In an instant, I was seized by the feeling of goosebumps rising all over my body.<PG>
+<STYLE ID="2">"You're kidding...?"</STYLE>
+{PAUSE ""}
+<BR>
+Niimura, as in... <STYLE ID="7">Niimura-senpai</STYLE>'s, father...?
+{PAUSE ""}
+<BR>
+Age-wise, too, there's nothing that off about it.<PG>
+No, it could very well be someone with the same surname, or a distant relative, too.
+{PAUSE ""}
+<BR>
+It's not that rare a surname, after all.<PG>
+If I remember right, a local paper is published in Motoki-cho, too.
+{PAUSE ""}
+<BR>
+If I can find that, I should be able to learn more detailed information.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\検索.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+“Motoki Daily Central Park accidental death hanami”<BR>
+<BR>
+I searched again with that.
+{PAUSE ""}
+<BR>
+There was just one hit.
+{PAUSE ""}
+<BR>
+I took one breath, and when I timidly clicked it―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新聞.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">Just after noon today, Motoki-cho resident </STYLE><STYLE ID="9" RUBY="えいいちろう">Eiichiro</STYLE><STYLE ID="8"> Niimura-san (30) accidentally fell from a tree, violently struck his </STYLE><STYLE ID="10" RUBY="けいぶ">neck</STYLE><STYLE ID="8"> on the park's fence, and died.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Niimura-san had come for hanami with his family, and is believed to have climbed a cherry tree.</STYLE><PG>
+<STYLE ID="8">According to eyewitness testimony, Niimura-san climbed the tree to retrieve a balloon that a hanami visitor's child had caught in the tree.</STYLE><PG>
+<STYLE ID="8">Niimura-san had been drinking together with a friend's family, and it is highly likely that his hand slipped.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島パソコン.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+The article ended there.
+{PAUSE ""}
+<BR>
+With just this, there's no proof that he's <STYLE ID="7">Niimura-senpai</STYLE>'s father, but
+{PAUSE ""}
+<BR>
+・came with his family
+{PAUSE ""}
+<BR>
+・a hanami visitor's child who had a balloon
+{PAUSE ""}
+<BR>
+from those points, it narrows things down a lot.<PG>
+But, 'a child who had a balloon,' then.
+{PAUSE ""}
+<BR>
+Letting a balloon fly off by mistake means it probably wasn't that big a child.
+{PAUSE ""}
+<BR>
+Say, a kindergartner back then; about high-school age now, maybe?<PG>
+And,<BR>
+<STYLE ID="8">“to retrieve a balloon that a hanami visitor's child had caught in the tree”</STYLE>
+{PAUSE ""}
+<BR>
+Judging by this wording, it probably wasn't Niimura-san's child.<PG>
+But, Niimura-san went out of his way to try to get the balloon back for someone else's child.
+{PAUSE ""}
+<BR>
+A "someone else's child" close enough to him for that.
+{PAUSE ""}
+<BR>
+Which means.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "650" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I can't shake the feeling that this victim is <STYLE ID="7">Niimura-senpai</STYLE>'s father.
+{PAUSE ""}
+<BR>
+And, the child who let this balloon fly away, could it possibly be.<PG>
+With a hypothesis, you assume it and push ahead, and if it's wrong, you just correct it.
+{PAUSE ""}
+<BR>
+But in this case, if I push ahead like this, everything will probably end up beyond repair.
+{PAUSE ""}
+<BR>
+Because there's someone I have to work up the nerve to ask.<PG>
+Having come this far, there's only one thing I can do. Ask <STYLE ID="7">Niimura-senpai</STYLE> about it.
+{PAUSE ""}
+<BR>
+If <STYLE ID="7">Senpai</STYLE> is this Niimura-san's daughter, I can't rule out the possibility that she's involved in this morning's incident, either.<PG>
+If it comes out that I lied to <STYLE ID="7">Senpai</STYLE>, that can't be helped at this point.
+{PAUSE ""}
+<BR>
+But there's still something bothering me.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\法事イメージ.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The accident happened 12 years ago today, on April 8. Today is the anniversary of this Niimura-san's death.
+{PAUSE ""}
+<BR>
+If the two are parent and child, then that means the thirteenth-year memorial service was never held. [TN: A Buddhist memorial held 12 years after a death.]
+{PAUSE ""}
+<BR>
+There are probably times the date gets moved to fit a weekend, but <STYLE ID="7">Niimura-senpai</STYLE>'s manner had been too normal, in a bad way.
+{PAUSE ""}
+<BR>
+What's more, she'd hidden it, going as far as lying about a transfer overseas.<PG>
+If, with the anniversary of Niimura-san's death in mind, this morning's incident was brought about―
+{PAUSE ""}
+<BR>
+Besides, in that Megasawa City case, two people were killed every time.
+{PAUSE ""}
+<BR>
+If two are killed this time too, another incident will happen before today is over.<PG>
+The more I think about it, the more I feel <STYLE ID="7">Niimura-senpai</STYLE> is deeply involved, but I know there are more factors that deny it.
+{PAUSE ""}
+<BR>
+But contrary to that, a feeling of urgency wells up, too.
+{PAUSE ""}
+<BR>
+Because before today is over, one more person may be killed.
+{PAUSE ""}
+<BR>
+I don't like thinking about things with intuition or feelings, but...
+{PAUSE ""}
+<BR>
+Speaking of intuition―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ファミレス.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At noon, when the three of us were about to leave Zahha, <STYLE ID="11">Kogori-senpai</STYLE> said to me, <STYLE ID="12">"Stay with me."</STYLE>
+{PAUSE ""}
+<BR>
+Did that mean there was some kind of danger?
+{PAUSE ""}
+<BR>
+If danger is closing in on <STYLE ID="11">Kogori-senpai</STYLE>...<PG>
+This is no good... I really need to sort things out a little...
+{PAUSE ""}
+<BR>
+It's not so much that it's complicated; the things I have to think through are just too close to me, and I can't sort out my feelings.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島の部屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{MESON "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

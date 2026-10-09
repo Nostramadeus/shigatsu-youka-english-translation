@@ -1,0 +1,665 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3295, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=351, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=935, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみし, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=90, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=43, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=16, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=11, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=24, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=294, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こじ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=14, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=16, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・・, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いんとく, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=5, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=4, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふるむらあきな, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=4, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あきな, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5591, target=)
+; Links:
+;    0: TWdLink(count=5115, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "700" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Lots of cars are parked in the family restaurant's parking lot.
+{PAUSE ""}
+<BR>
+A stylish exterior and a lively atmosphere.
+{PAUSE ""}
+<BR>
+It's a place a country girl like me isn't used to.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "900" "0"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "800" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="1">"Wow... so many people...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"This is it being on the empty side. When it's crowded, you have to wait a good 30 minutes."</STYLE>
+{PAUSE ""}
+<BR>
+Prompted by the waitress, we sit down at an empty corner table.
+{PAUSE ""}
+<BR>
+Motoki-cho isn't as big a town as <STYLE ID="3" RUBY="みなかみし">Minakami City</STYLE>, but even this restaurant has such a big-city air that I can't settle down.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Just so you know, people I know come here pretty often. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If you run into one of them, use a false name, to be safe."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A false name?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"She's been searching all this time for </STYLE><STYLE ID="4">the child of the suspect in the Motoki-cho case</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If it got out that </STYLE><STYLE ID="1">your</STYLE><STYLE ID="2"> surname is 'Niimura,' it'd be a hassle, wouldn't it?"</STYLE><PG>
+<STYLE ID="1">"That's... true. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But is that all right? </STYLE><STYLE ID="2">Ise-san</STYLE><STYLE ID="1">, you want to know about the case too, don't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"For now, that matter can wait until </STYLE><STYLE ID="1">your</STYLE><STYLE ID="2"> running away is settled."</STYLE>
+{PAUSE ""}
+<BR>
+I'm in the middle of a great conflict over whether I should tell him this.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> is probably torn the same way, over whether to draw it out of me.<PG>
+<STYLE ID="2">Ise-san</STYLE> is chasing the culprit while being considerate of me, but at the same time he must think there's a connection between me and <STYLE ID="5">Auntie</STYLE>.
+{PAUSE ""}
+<BR>
+But for now, he isn't trying to push in any further than this.
+{PAUSE ""}
+<BR>
+For now, that is.<PG>
+<STYLE ID="1">"Uh, could you tell me about the people who are looking for </STYLE><STYLE ID="4">the culprit's child</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Let's see... I may as well have </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2"> hear it too. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Ah, but before that, let's order. Here."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> hands me the menu.
+{PAUSE ""}
+<BR>
+It's a colorful, very stylish menu.<PG>
+Normally I eat at Arata or have school lunch, so I'm not really used to things like this.
+{PAUSE ""}
+<BR>
+Steak... pizza... spaghetti...
+{PAUSE ""}
+<BR>
+Russian-roulette takoyaki?
+{PAUSE ""}
+<BR>
+The color's pretty, but it seems to be some kind of punishment game, so I don't need this one.<PG>
+For now, I'll play it safe and just pick something from the spaghetti.
+{PAUSE ""}
+<BR>
+Um... peperoncino...?
+{PAUSE ""}
+<BR>
+An oily, simple spaghetti with garlic and chili...
+{PAUSE ""}
+<BR>
+Well, I guess this'll do.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ドリンクバー.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I order this so-called peperoncino, order the mysterious system called a drink bar too, and take my seat again.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">"Now then... it was about </STYLE><STYLE ID="4">the suspect's child</STYLE><STYLE ID="2"> and the friends looking for </STYLE><STYLE ID="4">that child</STYLE><STYLE ID="2">, wasn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san's</STYLE> expression grows more serious, and the air freezes at this table alone.
+{PAUSE ""}
+<BR>
+The voices of the other lively tables drift farther and farther away.<PG>
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"The child the suspect took away is </STYLE><STYLE ID="4">Haruka Niimura-san</STYLE><STYLE ID="2">. She'd be 21 now, if she's alive."</STYLE>
+{PAUSE ""}
+<BR>
+I knew it! The name and the age match exactly.
+{PAUSE ""}
+<BR>
+But what does he mean, took her away?
+{PAUSE ""}
+<BR>
+A <STYLE ID="5">mother</STYLE> taking away <STYLE ID="4">her own daughter</STYLE>...<PG>
+<STYLE ID="2">"And the suspect is </STYLE><STYLE ID="5">Mifuyu Niimura</STYLE><STYLE ID="2">, </STYLE><STYLE ID="4">Haruka-san's</STYLE><STYLE ID="2"> mother. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Though I say mother, they're parent and child by adoption, with no blood tie."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Adopted!?"</STYLE>
+{PAUSE ""}
+<BR>
+I reacted to that word way too openly.
+{PAUSE ""}
+<BR>
+But <STYLE ID="2">Ise-san</STYLE> doesn't seem to take any notice of it.
+{PAUSE ""}
+<BR>
+To think those two weren't really mother and daughter...<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="4">Haruka Niimura-san's</STYLE><STYLE ID="2"> real parents are the </STYLE><STYLE ID="6">man</STYLE><STYLE ID="2"> killed in the Motoki-cho case, </STYLE>
+{PAUSE ""}
+<STYLE ID="2">and </STYLE><STYLE ID="7">his wife</STYLE><STYLE ID="2">, who was arrested and is now serving time. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Haruka-san</STYLE><STYLE ID="2"> is being looked for by </STYLE><STYLE ID="8">her real younger sister</STYLE><STYLE ID="2"> and her friend―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">or rather than a friend, I guess she'd count as </STYLE><STYLE ID="9">a junior from school</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"W-wait a moment, sorry... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There's so much packed into this information, and sorting it out..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ah, sorry. Shall I explain a little more carefully?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―The one killed in the Motoki-cho case was 
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\良治.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Haruka-chan's</STYLE> real father, <STYLE ID="6">Ryoji Kogori-san</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\茜.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+And her real mother is <STYLE ID="7">Akane Kogori-san</STYLE>.
+{PAUSE ""}
+<BR>
+The reason <STYLE ID="7">Akane-san</STYLE> was arrested, apparently, is that she was the one who actually carried out that Megasawa City case.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka-chan's</STYLE> real parents had been negotiating with <STYLE ID="5">Auntie</STYLE>, who was blackmailing the Kogori family, to get <STYLE ID="4">Haruka-chan</STYLE> back, but things got <STYLE ID="10" RUBY="こじ">tangled</STYLE>, and her <STYLE ID="6">father</STYLE> was killed.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+And <STYLE ID="4">Haruka-chan's</STYLE> younger sister, <STYLE ID="8">Natsumi Kogori-san</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">She</STYLE> lives at her grandparents' house now, a little way from here, apparently.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">Natsumi-san's</STYLE> junior, <STYLE ID="9">Erina Goto-san</STYLE>, was very close to <STYLE ID="4">Haruka-chan</STYLE>, it seems, and she's apparently still tracking her down even now, together with <STYLE ID="8">Natsumi-san</STYLE>.<PG>
+<STYLE ID="9">Goto-san</STYLE> sometimes comes to <STYLE ID="2">Ise-san</STYLE> too, to exchange information and talk things over, or so I hear.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Goto-san</STYLE> is apparently sharp enough to exchange information with the police, but even so, she still hasn't managed to reach <STYLE ID="5">Auntie</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Well, that's about it for the people involved. Does anything come to mind?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+Not a word comes out of me.
+{PAUSE ""}
+<BR>
+It's not that I can't say it; the facts about the people involved are so far from what I know that I'm shaken.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\能面背景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\赤人.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+That cheerful <STYLE ID="5">Auntie</STYLE> was the mastermind of the Megasawa City case, and on top of that she killed <STYLE ID="6">Ryoji Kogori-san</STYLE>, who had helped her, by <STYLE ID="11" RUBY="は">flaying</STYLE>, a method cruel beyond measure, and then fled to the Arata settlement with <STYLE ID="4">Haruka-chan</STYLE>.
+{PAUSE ""}
+<BR>
+Even a country girl like me can tell that makes her a violent criminal of a kind rarely seen in history.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And what's more, <STYLE ID="12">Daddy</STYLE> and <STYLE ID="13">Mommy</STYLE> are covering for her.<PG>
+Why would <STYLE ID="12">Daddy</STYLE> and <STYLE ID="13">Mommy</STYLE>―no, why would the Arata settlement hide <STYLE ID="5">Auntie</STYLE>?
+{PAUSE ""}
+<BR>
+There seems to be some deeper reason, more than just the slogan of one for all, all for one, but...
+{PAUSE ""}
+<BR>
+<STYLE ID="12">Daddy</STYLE> probably wouldn't answer even if I asked him.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2,人物3" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Well? If it's hard to talk about, it can wait till later, all right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, I really don't think it has anything to do with me, so..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> must have figured out that I'm involved.
+{PAUSE ""}
+<BR>
+Otherwise, there's no way he'd tell me all this in such detail when I'm <STYLE ID="14" RUBY="・・・・">unrelated</STYLE>.<PG>
+<STYLE ID="1">"If I knew something... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">and kept quiet about it, what would you do?"</STYLE>
+{PAUSE ""}
+<BR>
+This is a hint that I've realized '<STYLE ID="2">Ise-san</STYLE> has realized I'm involved.'
+{PAUSE ""}
+<BR>
+Right now, a delicate game of bargaining is going on between <STYLE ID="2">Ise-san</STYLE> and me.<PG>
+<STYLE ID="2">"Even if </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2"> keep quiet, you're not the type who can keep quiet forever, are you?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">You</STYLE><STYLE ID="2">―once you're home, you probably won't be able to deal with the people around you the way you always have."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, I suppose..."</STYLE>
+{PAUSE ""}
+<BR>
+I've heard the suspect's name outright.
+{PAUSE ""}
+<BR>
+Knowing that, to deal with <STYLE ID="12">Daddy</STYLE> and <STYLE ID="13">Mommy</STYLE> the way I always have...<PG>
+{STOPSND "BGM" "0" "PASS"}
+Huh!? Wait a second...!
+{PAUSE ""}
+<BR>
+Doesn't that mean I lose the place I've belonged until now?
+{PLAYSND "残滓念.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+My heart will drift more than a little away from <STYLE ID="12">Daddy</STYLE> and <STYLE ID="13">Mommy</STYLE>―no, from the settlement itself, and then I'll lose my place to belong.
+{PAUSE ""}
+<BR>
+I remember the words <STYLE ID="2">Ise-san</STYLE> said, 'kids who go astray do it because they have no place to belong.'<PG>
+Was my choice a mistake?
+{PAUSE ""}
+<BR>
+If I hadn't run away from facing <STYLE ID="13">Mommy</STYLE> and had stayed in the settlement, I'd never have learned anything like this.
+{PAUSE ""}
+<BR>
+I could have lifted the curse on my eyes without knowing, and gone back to the life I had until yesterday.
+{PAUSE ""}
+<BR>
+I could have gotten by without knowing the things better left unknown...<PG>
+<STYLE ID="2">"That's why I... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">You</STYLE><STYLE ID="2">―I know the risk in drawing the story out of you, too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You</STYLE><STYLE ID="2">―the more you know, the more </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2"> lose your place to belong. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">That's not the kind of investigation I want."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Then why did you tell me </STYLE><STYLE ID="5">the culprit's</STYLE><STYLE ID="1"> name!?"</STYLE><PG>
+Honestly, I'm just taking it out on him.
+{PAUSE ""}
+<BR>
+Knowing that risk, <STYLE ID="2">Ise-san</STYLE> deliberately gave me information that shakes my place to belong.
+{PAUSE ""}
+<BR>
+Even though I'm the one who asked him to tell me...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"You've already realized, haven't you?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　If </STYLE><STYLE ID="1">you</STYLE><STYLE ID="2"> had nothing to do with it, hearing a story like this wouldn't mean anything to you. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But if you're involved, then even if you go home, in the end you'll be feeling, 'Isn't </STYLE><STYLE ID="5">that person</STYLE><STYLE ID="2"> the culprit?'"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> is probably right.
+{PAUSE ""}
+<BR>
+Even if I hadn't heard the culprit's name, I was already suspicious of <STYLE ID="5">Auntie</STYLE>.<PG>
+At last I understand why <STYLE ID="2">Ise-san</STYLE> is telling me all this.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> isn't trying to gather information from me.
+{PAUSE ""}
+<BR>
+He's doing what he can not to break my place to belong, which is already breaking.
+{PAUSE ""}
+<BR>
+He's telling me to face my place to belong knowing the truth, instead of going home with eyes full of suspicion.<PG>
+My real name, which I revealed to <STYLE ID="2">Ise-san</STYLE> on the way to Motoki-cho, and the surname 'Niimura' that it leads to―
+{PAUSE ""}
+<BR>
+At that point, even <STYLE ID="2">Ise-san</STYLE> probably didn't think the story would connect this far.
+{PAUSE ""}
+<BR>
+But it's gradually closing in on the truth, and now even I'm no longer unrelated.
+{PAUSE ""}
+<BR>
+Because right now the one closest to the truth is me, and the one being driven furthest into a corner is also me.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"</STYLE><STYLE ID="2">Ise-san</STYLE><STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Ise-san</STYLE><STYLE ID="1">, I'm grateful for your kindness."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\伊勢うつむくバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">"Wh... what are you saying... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I have no idea what you're talking about..."</STYLE>
+{PLAYSND "BGM死月編\The_Covert.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> makes a slightly embarrassed gesture.<PG>
+"Sorry to keep you waiting."
+{PAUSE ""}
+<BR>
+The waitress brought over the food we'd ordered.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\ペペロンチーノ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Well, that's enough grim talk for now. It'll spoil the meal."</STYLE><PG>
+But the taste of this so-called peperoncino, which I'm eating for the first time, is already lost on me.
+{PAUSE ""}
+<BR>
+I understand that in my usual state of mind, it would surely taste delicious.
+{PAUSE ""}
+<BR>
+But... what should I do from here on?
+{PAUSE ""}
+<BR>
+If I could cure the curse on my eyes right now and make it all as if it never happened, I'd face <STYLE ID="13">Mommy</STYLE> this very minute.<PG>
+But it's not on that level anymore.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Auntie</STYLE> is a vicious murderer, and the Arata settlement is <STYLE ID="15" RUBY="いんとく">concealing</STYLE> it.
+{PAUSE ""}
+<BR>
+For a place like that to be my place to belong...<PG>
+At first I thought it was my duty to keep it hidden the same way.
+{PAUSE ""}
+<BR>
+But is that really all right?
+{PAUSE ""}
+<BR>
+Is that really justice?<PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="9">"Well, well? Isn't that </STYLE><STYLE ID="2">Ise-san</STYLE><STYLE ID="9">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+And the one who's appeared is a very cute woman, petite and childlike in looks.
+{PAUSE ""}
+<BR>
+This person... I've seen her somewhere...<PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"Ah, </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="2">. What a coincidence. Are you here with someone?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"No, I'm meeting someone here today! </STYLE><STYLE ID="16">Sis</STYLE><STYLE ID="9"> is coming a little later."</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="9">the woman called Goto-chan</STYLE> turns her eyes toward me.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Well, well, well? </STYLE><STYLE ID="2">Ise-san</STYLE><STYLE ID="9">! You finally laid a hand on another girl?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\伊勢うつむくバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">"D-don't be stupid! </STYLE><STYLE ID="1">This girl</STYLE><STYLE ID="2"> is, er... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">a distant relative of mine!</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">　Right? Right?"</STYLE>
+{PAUSE ""}
+<BR>
+He sends me the same look begging for agreement that he gave me at that soba shop.<PG>
+<STYLE ID="1">"Ah, yes! My name's </STYLE><STYLE ID="17" RUBY="ふるむらあきな">Akina Furumura</STYLE><STYLE ID="1">!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I'm staying at </STYLE><STYLE ID="2">Dai-chan's</STYLE><STYLE ID="1"> place today!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Ohh? I see, I see!</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　I'm Erina Goto!</STYLE>
+{PAUSE ""}
+　<STYLE ID="9">Honestly, </STYLE><STYLE ID="2">Ise-san</STYLE><STYLE ID="9">, just because I turn 20 this year, taking such </STYLE><STYLE ID="1">a young little pretty girl</STYLE><STYLE ID="9"> out to dinner..."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\伊勢うつむくバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">"</STYLE><STYLE ID="9">You</STYLE><STYLE ID="2"> and I don't have that kind of relationship!"</STYLE><PG>
+So <STYLE ID="9">Goto-san</STYLE> turns 20 this year. She looks even younger than her real age.
+{PAUSE ""}
+<BR>
+But it seems <STYLE ID="9">Goto-san</STYLE> is trying to pin down <STYLE ID="4">Haruka-chan's</STYLE> whereabouts.
+{PAUSE ""}
+<BR>
+I can't afford a careless conversation.<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"Hey, hey, </STYLE><STYLE ID="18" RUBY="あきな">Akina</STYLE><STYLE ID="1">-chan</STYLE><STYLE ID="9">, where are you from?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Goto-san</STYLE> flashes a big grin and talks to me <STYLE ID="19" RUBY="な">over</STYLE>-<STYLE ID="19" RUBY="な">familiarly</STYLE>.
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="9">Goto-chan</STYLE><STYLE ID="2">, leave it... </STYLE><STYLE ID="1">She</STYLE><STYLE ID="2"> has been through a lot, and she's heartbroken right now."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="9">"Whoops, my mistake..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Goto-san</STYLE> quickly pulls back from where she'd started to lean in.<PG>
+But even after that, she keeps staring at me with great interest.
+{PAUSE ""}
+<BR>
+Looking the way I do, I get looked at like this all the time.
+{PAUSE ""}
+<BR>
+I'm used to it by now.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\バース\ペペロンチーノ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="9">"Oh, </STYLE><STYLE ID="18" RUBY="あきな">Akina</STYLE><STYLE ID="1">-chan</STYLE><STYLE ID="9">, you ordered the peperoncino! It's cheap and tasty, right!"</STYLE>
+{PAUSE ""}
+<BR>
+Now she turns her eyes to my food.
+{PAUSE ""}
+<BR>
+Unfortunately, the way I feel, I can't really taste it.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">This person</STYLE>... 
+{PAUSE ""}
+is a little dangerous...?<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\バース\ペペロンチーノ反転.gal" "NORMAL" "20" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "環境音\鼓動1.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\overdose.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+That moment, a sensation I've never felt before comes over me.
+{PAUSE ""}
+<BR>
+For an instant time stops, and instinctively I feel a violent discomfort at being here.
+{PAUSE ""}
+<BR>
+Then my sweat glands begin to open, trying to break out in a cold sweat.
+{PAUSE ""}
+<BR>
+This situation... is dangerous...!<PG>
+Is this the danger sense <STYLE ID="12">Daddy</STYLE> was talking about?
+{PAUSE ""}
+<BR>
+If so, then danger from what, exactly...?
+{PAUSE ""}
+<BR>
+The question crosses my mind, but what it really is becomes clear right away.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Erina Goto</STYLE>, right in front of me.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">This person</STYLE> is my threat.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Sorry! I'm just going to the restroom!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Not just because I think it's dangerous, but flustered by this first-ever sensation too, I get up from my seat.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ファミレストイレ反転.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "SE\haa1長い.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"Haah...! Haah...!"</STYLE>
+{PAUSE ""}
+<BR>
+I gasp for breath in a restroom stall.
+{PAUSE ""}
+<BR>
+Then I wipe away the single drop of sweat that's run down my forehead.
+{PAUSE ""}
+<BR>
+So that just now was sensing danger... the intuition <STYLE ID="13">Mommy</STYLE> has too, only at this time of year.<PG>
+I have to be careful of <STYLE ID="9">that person</STYLE>.
+{PAUSE ""}
+<BR>
+Getting involved with <STYLE ID="9">that person</STYLE> is extremely dangerous.
+{PAUSE ""}
+<BR>
+She'll see through who I really am in no time and reach the Arata settlement.
+{PAUSE ""}
+<BR>
+And then <STYLE ID="12">Daddy</STYLE> and <STYLE ID="13">Mommy</STYLE> will be arrested―
+{PAUSE ""}
+and I'll lose my place to belong.
+{PAUSE ""}
+<BR>
+My instinct warned me so.<PG>
+Calm down. Calm down.
+{PAUSE ""}
+<BR>
+I can just slip away from here quietly.
+{PAUSE ""}
+<BR>
+Being with <STYLE ID="2">Ise-san</STYLE> means being with <STYLE ID="9">Erina Goto</STYLE>.
+{PAUSE ""}
+<BR>
+I can't have anything more to do with <STYLE ID="9">that person</STYLE>!<PG>
+But my bag is in <STYLE ID="2">Ise-san's</STYLE> car.
+{PAUSE ""}
+<BR>
+There's a change of clothes in it, and two knives.
+{PAUSE ""}
+<BR>
+At worst, I could ditch the bag and run, but...<PG>
+Calm down, once more.
+{PAUSE ""}
+<BR>
+I sensed <STYLE ID="9">Erina Goto</STYLE> as dangerous because she'd probe me and try to get <STYLE ID="5">Auntie's</STYLE> and <STYLE ID="4">Haruka-chan's</STYLE> whereabouts out of me.
+{PAUSE ""}
+<BR>
+So I just need to keep my answers to the bare minimum.
+{PAUSE ""}
+<BR>
+If I'm about to give a bad answer, my danger sense should kick in again like just now.<PG>
+{STOPSND "BGM" "10000" "PASS"}
+{CREATECG "111" "グラフィック\背景\ファミレストイレ.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n0\r\n10000\r\nNORMAL\r\nPASS">
+That's right―I have a weapon stronger than a knife: danger sense...!
+{PAUSE ""}
+<BR>
+With this, I shouldn't have to give any answers that give me away.
+{PAUSE ""}
+<BR>
+Okay... one more deep breath, and I'll go back to my seat.
+{PAUSE ""}
+<BR>
+Do not panic, no matter what.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ise-san</STYLE> is on my side right now, too.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

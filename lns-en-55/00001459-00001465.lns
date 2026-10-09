@@ -1,0 +1,770 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3963, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=112, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=75, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=26, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=323, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=559, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=45, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=34, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=250, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひさし, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=19, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1066, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さくそう, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=29, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ゆが, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=3, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おきて, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ざんげ, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7056, target=)
+; Links:
+;    0: TWdLink(count=6519, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\バギー正面停止.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>My resolve is different from before.
+{PAUSE ""}
+<BR>
+I have something I must do.
+{PAUSE ""}
+<BR>
+I have to tell them.
+{PAUSE ""}
+<BR>
+What <STYLE ID="1">Shigatsu Youka</STYLE> is thinking―<PG>
+{PLAYSND "Shadows_creeping.ogg" "BGM" "REPEAT" "1000" "0"}
+If this keeps up, we're going to fall prey to <STYLE ID="1">Shigatsu Youka</STYLE> for sure.
+{PAUSE ""}
+<BR>
+Knowing what <STYLE ID="1">Shigatsu Youka</STYLE> really is puts the Motoki-cho group, <STYLE ID="2">Chiga-nee</STYLE> and <STYLE ID="3">Kana</STYLE> in particular danger.
+{PAUSE ""}
+<BR>
+I know full well how dangerous it is to head back down this path.
+{PAUSE ""}
+<BR>
+But I don't want a single one of them to die...!
+{PAUSE ""}
+<BR>
+If I'm the only one who survives, then I...!<PG>
+Will <STYLE ID="4">Mom</STYLE> yell at me when I get back?
+{PAUSE ""}
+<BR>
+I'm not scared of that one bit.
+{PAUSE ""}
+<BR>
+Everyone vanishing is way scarier.
+{PAUSE ""}
+<BR>
+If I get yelled at, I'll just yell right back at <STYLE ID="4">Mom</STYLE>.
+{PAUSE ""}
+<BR>
+What I'm doing is right―my selfish justice is surely right.<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+When I reached the spot where the landslide had been, I could see figures far off ahead.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\土砂崩れ除去.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just in case, I ducked out of sight.
+{PAUSE ""}
+<BR>
+If it's <STYLE ID="2">Chiga-nee</STYLE>, I'll just cause her trouble again.
+{PAUSE ""}
+<BR>
+Besides, I don't want to get thrown again...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\美冬全身血.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That's <STYLE ID="4">Mom</STYLE>, <STYLE ID="6">Natsumi</STYLE>, and <STYLE ID="3">Kana</STYLE>, is it...
+{PAUSE ""}
+<BR>
+What happened to <STYLE ID="7">Goto</STYLE>? Isn't she with them?
+{PAUSE ""}
+<BR>
+Is she still reading books in the storehouse?
+{PAUSE ""}
+<BR>
+From the look of it, <STYLE ID="2">Chiga-nee</STYLE> must have steered <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="3">Kana</STYLE> this way.
+{PAUSE ""}
+<BR>
+Then <STYLE ID="7">Goto</STYLE> should be coming this way soon too.<PG>
+If things go well, maybe all of us can escape down this mountain path.
+{PAUSE ""}
+<BR>
+I'd have to force a blindfold and earplugs on <STYLE ID="6">Natsumi</STYLE>, though...
+{PAUSE ""}
+<BR>
+At times like this, <STYLE ID="6">Natsumi</STYLE> being watched by <STYLE ID="1">Shigatsu Youka</STYLE> really is the sticking point.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2,人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+As I'd expected, the three of them took the fork toward the abandoned hut.
+{PAUSE ""}
+<BR>
+Now, what should I do?
+{PAUSE ""}
+<BR>
+If what <STYLE ID="8">Sakura-san</STYLE> said earlier is right, there are corpses wandering around.
+{PAUSE ""}
+<BR>
+On top of that, <STYLE ID="8">Sakura-san</STYLE> said that next time she'd be our enemy too.<PG>
+We in the Motoki-cho group, plus <STYLE ID="2">Chiga-nee</STYLE> and <STYLE ID="3">Kana</STYLE>, will be <STYLE ID="1">Shigatsu Youka</STYLE>'s first targets.
+{PAUSE ""}
+<BR>
+If corpses really are wandering around, I absolutely can't let them find me.
+{PAUSE ""}
+<BR>
+Being found by a corpse is the same as being found by <STYLE ID="1">Shigatsu Youka</STYLE>.<PG>
+What happens if I do get found?
+{PAUSE ""}
+<BR>
+Will the corpses come after me?
+{PAUSE ""}
+<BR>
+Or does it pull some physical attack, like suddenly sprouting a cherry tree under your feet?<PG>
+Well, either way, nothing good's going to come of it.
+{PAUSE ""}
+<BR>
+At the very least, this is a thing that kills one person a year without anyone catching on.
+{PAUSE ""}
+<BR>
+Killing us would be no trouble at all.
+{PAUSE ""}
+<BR>
+So there's no way I can let <STYLE ID="6">Natsumi</STYLE> hear what <STYLE ID="8">Sakura-san</STYLE> said.<PG>
+Two points in <STYLE ID="8">Sakura-san's</STYLE> words matter:
+{PAUSE ""}
+<BR>
+・The Motoki-cho group, <STYLE ID="2">Chiga-nee</STYLE> and <STYLE ID="3">Kana</STYLE> are the top-priority targets
+{PAUSE ""}
+<BR>
+・<STYLE ID="1">Shigatsu Youka</STYLE> shows an opening when it repairs the corpses
+{PAUSE ""}
+<BR>
+In other words, we have to wait for an opening from <STYLE ID="1">Shigatsu Youka</STYLE> and get out of Arata fast.<PG>
+But there are two problems.
+{PAUSE ""}
+<BR>
+We don't know when <STYLE ID="1">Shigatsu Youka</STYLE> will show an opening.
+{PAUSE ""}
+<BR>
+And how to get <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Chiga-nee</STYLE> out.
+{PAUSE ""}
+<BR>
+No matter how far those two run, they'll never get clear.<PG>
+Because <STYLE ID="6">Natsumi's</STYLE> and <STYLE ID="2">Chiga-nee's</STYLE> danger sense works even in Motoki-cho, even in Tokyo.
+{PAUSE ""}
+<BR>
+In other words, wherever there are cherry trees, <STYLE ID="1">Shigatsu Youka</STYLE>'s eyes can reach.
+{PAUSE ""}
+<BR>
+Fleeing the Arata settlement isn't enough―until they reach somewhere with no cherry trees, the two of them aren't safe.
+{PAUSE ""}
+<BR>
+But if it's going to kill us, Arata, with so few people around to see, has to be easier.<PG>
+Isn't there some way to neutralize <STYLE ID="6">Natsumi's</STYLE> and <STYLE ID="2">Chiga-nee's</STYLE> intuition?
+{PAUSE ""}
+<BR>
+If <STYLE ID="7">Goto</STYLE>'s still in the storehouse, she might've found a way by now, but...<PG>
+No... wait a second...?
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Chiga-nee</STYLE> said, I'm sure, that 10 years ago she had a symptom of wanting to kill <STYLE ID="8">Sakura-san</STYLE>.
+{PAUSE ""}
+<BR>
+From <STYLE ID="7">Goto's</STYLE> story, that's the thing called the Green-Eye Curse-Killing...
+{PAUSE ""}
+<BR>
+Why did that get cured?<PG>
+The Green-Eye Curse-Killing, I'm sure, means that when a green-eyed woman has her first period, she wants to kill anyone with precognition.
+{PAUSE ""}
+<BR>
+But <STYLE ID="2">Chiga-nee's</STYLE> precognition and her green eyes never went away.
+{PAUSE ""}
+<BR>
+Which means...<PG>
+Damn it! I never asked <STYLE ID="8">Sakura-san</STYLE> the thing that matters most!
+{PAUSE ""}
+<BR>
+Why <STYLE ID="2">Chiga-nee's</STYLE> murderous intent disappeared, <STYLE ID="8">Sakura-san</STYLE> has to know for sure!
+{PAUSE ""}
+<BR>
+Because it's possible that it wasn't <STYLE ID="2">Chiga-nee</STYLE> they treated―they erased <STYLE ID="8">Sakura-san's</STYLE> precognition and so erased <STYLE ID="2">Chiga-nee's</STYLE> murderous intent!<PG>
+Is <STYLE ID="8">Sakura-san</STYLE> still under that rock <STYLE ID="9" RUBY="ひさし">overhang</STYLE> from before?
+{PAUSE ""}
+<BR>
+Is she still on my side?
+{PAUSE ""}
+<BR>
+If she's an enemy, I might get killed.
+{PAUSE ""}
+<BR>
+But if I don't find that out, <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Chiga-nee</STYLE> will never get out of here again...!<PG>
+Do I go back to <STYLE ID="8">Sakura-san</STYLE>, or bet that <STYLE ID="7">Goto</STYLE> already knows a way to neutralize precognition―
+{PAUSE ""}
+<BR>
+The one who's sure to know the answer is <STYLE ID="8">Sakura-san</STYLE>.
+{PAUSE ""}
+<BR>
+But the one that's sure to keep me safe is <STYLE ID="7">Goto</STYLE>...
+{PAUSE ""}
+<BR>
+Going back to <STYLE ID="8">Sakura-san</STYLE> is way too dangerous.
+{PAUSE ""}
+<BR>
+Not much of a choice here...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\崖沿いの道.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "VOICE" "5000" "PASS"}
+I hurried toward the settlement.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Sakura-san</STYLE> said that being found by <STYLE ID="1">Shigatsu Youka</STYLE> was only a matter of time.
+{PAUSE ""}
+<BR>
+Meeting <STYLE ID="8">Sakura-san</STYLE> again = being found by <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+Which means being killed by <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+And that's not all. I don't even know how many corpses are walking around here.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I climbed the cliff along the mountain stream and stepped into the graveyard clearing.
+{PAUSE ""}
+<BR>
+At the very least, besides <STYLE ID="8">Sakura-san</STYLE>, <STYLE ID="10">Dad's</STYLE> corpse is apparently out there.
+{PAUSE ""}
+<BR>
+There's no saying there are only two of them.
+{PAUSE ""}
+<BR>
+Maybe it's just these two, or maybe there are 100 walking around.<PG>
+No, but hold on...?
+{PAUSE ""}
+<BR>
+I reined in my legs, which had been running flat out, and slowed to a walk right away.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\荒田枯れ木.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Those trees that should have been so lush still bare their exposed trunks, as if ashamed.<PG>
+If getting spotted by a corpse―
+{PAUSE ""}
+getting spotted by <STYLE ID="1">Shigatsu Youka</STYLE> means being killed on the spot, then the three who went to the abandoned hut just now should already have been killed too.
+{PAUSE ""}
+<BR>
+Because <STYLE ID="6">Natsumi</STYLE> is always being watched.
+{PAUSE ""}
+<BR>
+But they headed off to the abandoned hut like nothing had happened.
+{PAUSE ""}
+<BR>
+It seems finding us doesn't mean it kills us right away.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="5">"Hm!?"</STYLE>
+{PAUSE ""}
+<BR>
+I could see a figure straight ahead.
+{PAUSE ""}
+<BR>
+I hid behind a withered tree.
+{PAUSE ""}
+<BR>
+If it's a corpse, my life's in danger, no question.
+{PAUSE ""}
+<BR>
+But can I really stay hidden like this?
+{PAUSE ""}
+<BR>
+In moonlight this bright, it's a sloppy game of hide-and-seek that even I, no mountain hand, could win at once.<PG>
+But maybe there was no need to hide so desperately.
+{PAUSE ""}
+<BR>
+I know that figure.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="11">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="11">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I knew it―</STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Grandma</STYLE>, walking this forest alone.
+{PAUSE ""}
+<BR>
+No one with her...?<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Ghost.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="11">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="11">, what happened to </STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="11">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">! Never mind that, it's bad! If we don't hurry, we're...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="11">, I know what's going on. I talked with </STYLE><STYLE ID="7">Erina-chan</STYLE><STYLE ID="11"> just now, and I finally understood what's happening. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">We have to bring </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="11">, quickly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="5">...?"</STYLE><PG>
+<STYLE ID="11">"</STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="11"> is the one human being with the power to destroy </STYLE><STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Only a woman with green eyes has the power to destroy </STYLE><STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Then what about </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="5">!? Better to have </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="5"> along too, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"</STYLE><STYLE ID="2">Chigaya</STYLE><STYLE ID="11"> isn't green-eyed anymore..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh...?"</STYLE><PG>
+What happened while I was away from the settlement?
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Chiga-nee</STYLE> no longer green-eyed, and <STYLE ID="3">Kana</STYLE> the one who destroys <STYLE ID="1">Shigatsu Youka</STYLE>...?
+{PAUSE ""}
+<BR>
+New events and information I can barely grasp are all <STYLE ID="12" RUBY="さくそう">tangled</STYLE> together, but <STYLE ID="11">Grandma</STYLE> has no reason to lie.
+{PAUSE ""}
+<BR>
+It sounds like <STYLE ID="7">Goto</STYLE> was in on the talk too.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">, what are you doing out here?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"I heard </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="11"> is at the abandoned hut. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Erina-chan</STYLE><STYLE ID="11">―I sent her back to the settlement, and </STYLE><STYLE ID="2">Chigaya</STYLE><STYLE ID="11"> is heading for </STYLE><STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">There's a path in the underground cave that leads to </STYLE><STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">She should be checking that path as she goes, so those following behind can get through smoothly."</STYLE>
+{PAUSE ""}
+<BR>
+I see. There are two ways for us to survive.<PG>
+One is to neutralize <STYLE ID="6">Natsumi's</STYLE> and <STYLE ID="2">Chiga-nee's</STYLE> intuition and escape when we see an opening.
+{PAUSE ""}
+<BR>
+The other is to defeat <STYLE ID="1">Shigatsu Youka</STYLE> itself.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Grandma</STYLE> seems to have chosen defeating <STYLE ID="1">Shigatsu Youka</STYLE>.
+{PAUSE ""}
+<BR>
+And <STYLE ID="2">Chiga-nee</STYLE> is heading for <STYLE ID="1">Shigatsu Youka</STYLE> to prepare for it.<PG>
+<STYLE ID="5">"Hey, then can't you fix </STYLE><STYLE ID="6">Natsumi's</STYLE><STYLE ID="5"> precognition too!? How did you cure </STYLE><STYLE ID="2">Chiga-nee</STYLE><STYLE ID="5">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Ah, I hadn't told you yet, </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="11">. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">But it isn't that simple, you know. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Well, let's talk as we walk. </STYLE><STYLE ID="3">Kana</STYLE><STYLE ID="11">'s at the abandoned hut, isn't she?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\壺点火.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I went back the way I'd come and headed for the abandoned hut.<PG>
+What <STYLE ID="11">Grandma</STYLE> told me was about the effect of falsificaso.
+{PAUSE ""}
+<BR>
+It neutralizes Droga, apparently, and 10 years ago, giving it to <STYLE ID="8">Sakura-san</STYLE> ended <STYLE ID="2">Chiga-nee's</STYLE> madness.
+{PAUSE ""}
+<BR>
+Right around then, <STYLE ID="4">Mom</STYLE> was trying to kill a classmate who'd been bullying me in Megasawa.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\ドローガ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+She was threatening <STYLE ID="6">Natsumi's</STYLE> parents into manufacturing an alibi and plotting the perfect crime with Droga.
+{PAUSE ""}
+<BR>
+But the Droga was only bait to make <STYLE ID="4">Mom</STYLE> act; what <STYLE ID="8">Sakura-san</STYLE> and the others really wanted was for her to use the falsificaso.
+{PAUSE ""}
+<BR>
+In the end, the Kogori family talked her out of it, and no murder was done.
+{PAUSE ""}
+<BR>
+So <STYLE ID="8">Sakura-san</STYLE> took a gamble and used the falsificaso on herself, and as a result <STYLE ID="2">Chiga-nee's</STYLE> madness ended without any treatment done to her.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"Hey, </STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">, you can tell me now, right? About </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="5"> killing herself..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Grandma's</STYLE> and <STYLE ID="13">Kotaro-san's</STYLE> behavior really is baffling.
+{PAUSE ""}
+<BR>
+I can still understand why <STYLE ID="8">Sakura-san</STYLE> killed herself.
+{PAUSE ""}
+<BR>
+Why did <STYLE ID="13">Kotaro-san</STYLE> cut off <STYLE ID="8">Sakura-san's</STYLE> head...?<PG>
+<STYLE ID="11">"</STYLE><STYLE ID="13">Kotaro</STYLE><STYLE ID="11"> believes I pushed </STYLE><STYLE ID="8">Sakura</STYLE><STYLE ID="11"> off. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">The rest... you can work out, can't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">, that was to keep everyone from thinking you killed her, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"</STYLE><STYLE ID="13">Kotaro</STYLE><STYLE ID="11"> said as much. By the time I saw </STYLE><STYLE ID="8">Sakura's</STYLE><STYLE ID="11"> body, her head had already been cut off."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山雨宿り.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束横顔.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The <STYLE ID="8">Sakura-san</STYLE> I met just now―
+{PAUSE ""}
+<STYLE ID="8">Sakura-san</STYLE> made no attempt to hide her presence, or that she was a corpse.
+{PAUSE ""}
+<BR>
+A look no different from the living, and the air and gestures she had in life.
+{PAUSE ""}
+<BR>
+Of course, there was no trace of a severed head.
+{PAUSE ""}
+<BR>
+And yet she fell from the cliff and then had her head cut off...<PG>
+But... it really is a little strange.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Grandma</STYLE> caught <STYLE ID="8">Sakura-san's</STYLE> arm at the very edge of the cliff and was trying her best to pull her up.
+{PAUSE ""}
+<BR>
+How could that look like pushing her off?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ横顔.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Hey, </STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">, you didn't push </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="5"> off, did you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"............ </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="11">No. In the end, I couldn't save her. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Even if I say I killed her―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"No, I mean, you tried to save her, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Well, yes. I tried with everything I had, but..."</STYLE><PG>
+It really is strange.
+{PAUSE ""}
+<BR>
+Unless <STYLE ID="11">Grandma</STYLE> shook off a <STYLE ID="8">Sakura-san</STYLE> clinging to her arm, you can't call it a deliberate push.
+{PAUSE ""}
+<BR>
+Or rather, the very phrase '<STYLE ID="14" RUBY="・・">pushed</STYLE> her off' is strange.
+{PAUSE ""}
+<BR>
+And <STYLE ID="11">Grandma</STYLE> pushing <STYLE ID="8">Sakura-san</STYLE> off is strange as a motive in the first place.
+{PAUSE ""}
+<BR>
+I can't put it well, but all sorts of things are strange.<PG>
+But there's one thing I can think of.
+{PAUSE ""}
+<BR>
+Something only I would understand―
+{PAUSE ""}
+something I understand because of the impossible experience of meeting <STYLE ID="8">Sakura-san</STYLE> just now.<PG>
+<STYLE ID="11">"Grandma, don't tell me the one who cut off </STYLE><STYLE ID="8">Sakura-san's</STYLE><STYLE ID="11"> head was..."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+At that, <STYLE ID="11">Grandma</STYLE> stopped walking.
+{PAUSE ""}
+<BR>
+Head down, as if she'd sensed something, her mouth <STYLE ID="15" RUBY="ゆが">twisted</STYLE> hard.<PG>
+<STYLE ID="11">"</STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="11">... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">This Arata settlement has been, for 10 years now―</STYLE>
+{PAUSE ""}
+<STYLE ID="8">Sakura</STYLE><STYLE ID="11"> died, and ever since... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">no, perhaps since long, long ago, taken over by something we can't identify."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I knew it. The one who cut off </STYLE><STYLE ID="8">Sakura-san's</STYLE><STYLE ID="5"> head was..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"It must have been... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Eiichiro</STYLE><STYLE ID="11">. </STYLE>
+{PLAYSND "最後の声・真呪殺\z50逆.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">'s will―following it, to spread the rumor of a curse through this settlement."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"So that's it... </STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">, you'd figured it out?"</STYLE><PG>
+<STYLE ID="11">"I realized it just now, when I talked with </STYLE><STYLE ID="7">Erina-chan</STYLE><STYLE ID="11">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">'s existence, and </STYLE><STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="11">'s purpose―when I learned them, it finally came together."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"I see. No wonder we never found any evidence, however hard we looked into </STYLE><STYLE ID="13">Kotaro-san</STYLE><STYLE ID="5">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Hey, what did </STYLE><STYLE ID="10">Dad</STYLE><STYLE ID="5"> look like, back then?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="11">"He looked exactly like </STYLE><STYLE ID="13">Kotaro</STYLE><STYLE ID="11"> always does. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">I can't remember his clothes, of course, but nothing felt off."</STYLE>
+{PAUSE ""}
+<BR>
+The <STYLE ID="8">Sakura-san</STYLE> I'd just met was barefoot, in something like white robes.
+{PAUSE ""}
+<BR>
+If the walking corpses dress in the same white robes as <STYLE ID="8">Sakura-san</STYLE>, then the one who cut off <STYLE ID="8">Sakura-san's</STYLE> head, <STYLE ID="10">Dad</STYLE>, must have worn the same.
+{PAUSE ""}
+<BR>
+Then even <STYLE ID="11">Grandma</STYLE> would surely have felt something off.<PG>
+Which means... <STYLE ID="10">Dad's</STYLE> corpse got into the Niimura house to steal <STYLE ID="13">Kotaro-san's</STYLE> clothes?
+{PAUSE ""}
+<BR>
+When <STYLE ID="8">Sakura-san</STYLE> died, there was no one at home, so if he meant to, that was possible too...<PG>
+<STYLE ID="5">"So cutting off </STYLE><STYLE ID="8">Sakura-san's</STYLE><STYLE ID="5"> head was to make a mess of the settlement's relationships, and it used </STYLE><STYLE ID="8">Sakura-san's</STYLE><STYLE ID="5"> suicide?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"I'd been careful, I thought, so that no one would overhear </STYLE><STYLE ID="4">Mifuyu-san's</STYLE><STYLE ID="11"> confession about Megasawa."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Well, with something that delicate... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Grandma</STYLE><STYLE ID="5">, can you tell me that conversation in detail?"</STYLE><PG>
+<STYLE ID="11">"</STYLE><STYLE ID="4">Mifuyu-san's</STYLE><STYLE ID="11"> confession?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"I don't remember it word for word, but―"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\エデン\三畳間昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That day, <STYLE ID="4">Mifuyu-san</STYLE> and I were in the little three-mat room on the second floor.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="5"> did her precognition in that room, right?"</STYLE>
+{PAUSE ""}
+<BR>
+Yes. <STYLE ID="4">Mifuyu-san</STYLE> said she had something to tell me.<PG>
+<STYLE ID="4">"</STYLE><STYLE ID="11">Mother</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">No―</STYLE><STYLE ID="11">Grand Witch-sama</STYLE><STYLE ID="4">. I have come today to receive judgment."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Judgment? Isn't this about telling me you're moving from Megasawa to Motoki-cho?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"There is that too... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I have broken a taboo."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Let's hear it."</STYLE><PG>
+<STYLE ID="4">"</STYLE><STYLE ID="11">Grand Witch-sama</STYLE><STYLE ID="4">, you know of Droga, do you not?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Droga, is it... It's been a long time since I heard that name."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\注射器置く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\エデン\ドローガファルシフィカソ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Mifuyu-san</STYLE> held out several syringes to me.
+{PAUSE ""}
+<BR>
+Syringes filled with a cherry-pink liquid.<PG>
+<STYLE ID="4">"For certain reasons, there was someone I absolutely had to kill. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">With these, I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Did you kill them?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"No, I stopped myself. </STYLE>
+{PAUSE ""}
+<STYLE ID="16">My best friend</STYLE><STYLE ID="4"> and her family, and </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="4">, talked me out of it... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But it does not change the fact that I broke a taboo. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">That is why I have come today to receive judgment."</STYLE><PG>
+<STYLE ID="11">"Which means the one who gave you these, </STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="11">, was―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="4">...!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="4"> only took pity on me!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　So </STYLE><STYLE ID="8">Sakura-san's</STYLE><STYLE ID="4"> sin―"</STYLE><PG>
+<STYLE ID="11">"</STYLE><STYLE ID="4">Mifuyu-san</STYLE><STYLE ID="11">... you do understand what you have done, do you not? </STYLE>
+{PAUSE ""}
+<STYLE ID="11">　Breaking the </STYLE><STYLE ID="17" RUBY="おきて">rule</STYLE><STYLE ID="11"> is subject to punishment."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes. I will take all the punishment upon myself... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So, as for </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="4">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Well... I'd say that's fine! </STYLE>
+{PAUSE ""}
+<STYLE ID="11">　Nothing happened, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What? Oh, yes..."</STYLE><PG>
+Making Droga and sending it to <STYLE ID="4">Mifuyu-san</STYLE> was certainly not a good thing.
+{PAUSE ""}
+<BR>
+But, you see, after she had stopped herself and <STYLE ID="18" RUBY="ざんげ">confessed</STYLE> honestly, I couldn't bring myself to blame <STYLE ID="4">Mifuyu-san</STYLE>.
+{PAUSE ""}
+<BR>
+Soft of me, for a Grand Witch, you might think.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\墓地広場山側.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="5"> and you didn't talk about anything else?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Hmm... it should have gone about like that. It didn't even take 5 minutes."</STYLE>
+{PAUSE ""}
+<BR>
+It really is strange that this alone would convince <STYLE ID="8">Sakura-san</STYLE> she'd be "blamed."
+{PAUSE ""}
+<BR>
+Most likely, <STYLE ID="8">Sakura-san</STYLE> was in the closet of the three-mat room.
+{PAUSE ""}
+<BR>
+It was daytime then, so was she in the closet to do her precognition?<PG>
+Then the two of them came in with that grim air, and she couldn't come out...
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Shigatsu Youka</STYLE> set its sights on that, made <STYLE ID="8">Sakura-san</STYLE> hear voices, and tricked her into believing a harsh punishment would come down.<PG>
+<STYLE ID="5">"</STYLE><STYLE ID="11">Grandma</STYLE><STYLE ID="5">, </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="5">―I'm sure </STYLE><STYLE ID="1">Shigatsu Youka</STYLE><STYLE ID="5"> pulled a </STYLE><STYLE ID="19" RUBY="だま">trick</STYLE><STYLE ID="5"> on her!</STYLE>
+{PAUSE ""}
+<STYLE ID="5">　If it made her hear voices right then, she'd think she was the one being blamed, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"No, that's not it. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Chigaya's</STYLE><STYLE ID="11"> madness stopped because </STYLE><STYLE ID="8">Sakura</STYLE><STYLE ID="11"> gave herself the falsificaso. </STYLE>
+{PAUSE ""}
+<STYLE ID="11">By then, </STYLE><STYLE ID="8">Sakura</STYLE><STYLE ID="11"> no longer had any precognition."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Oh, right... My head wasn't working for a second..."</STYLE><PG>
+So the theory that <STYLE ID="8">Sakura-san</STYLE> was hiding in the closet of the three-mat room is out.
+{PAUSE ""}
+<BR>
+Was she eavesdropping outside the three-mat room?
+{PAUSE ""}
+<BR>
+That day <STYLE ID="4">Mom</STYLE> and I had come to Arata out of the blue, so <STYLE ID="8">Sakura-san</STYLE> must have wondered what we'd say to <STYLE ID="11">Grandma</STYLE>.<PG>
+But something, somehow, still doesn't fit.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Mom</STYLE> was sent not just Droga but falsificaso too, wasn't she?
+{PAUSE ""}
+<BR>
+Where did the falsificaso sent to Megasawa go?<PG>
+<STYLE ID="11">"Come on, hurry. No time to dawdle."</STYLE>
+{PAUSE ""}
+<BR>
+I was full of regret.
+{PAUSE ""}
+<BR>
+Instead of sneaking around searching the storehouse, instead of keeping <STYLE ID="6">Natsumi</STYLE> in the dark again―
+{PAUSE ""}
+<BR>
+Maybe we should all have sat down face to face, pooled what we knew and talked it over.<PG>
+Put together what everyone knows like this, and the mystery comes apart, bit by bit.
+{PAUSE ""}
+<BR>
+Maybe we were too afraid of <STYLE ID="1">Shigatsu Youka</STYLE> watching.
+{PAUSE ""}
+<BR>
+It's too late to say that now, though...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\登山廃屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Beyond the muddy path, the abandoned hut came into view.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi</STYLE>, <STYLE ID="4">Mom</STYLE> and <STYLE ID="3">Kana</STYLE> are here.
+{PAUSE ""}
+<BR>
+I have to take <STYLE ID="3">Kana</STYLE> and go after <STYLE ID="7">Goto</STYLE> and <STYLE ID="2">Chiga-nee</STYLE>.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

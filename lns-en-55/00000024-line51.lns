@@ -1,0 +1,224 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=360, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=148, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=166, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=6, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=4, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=11, unk2=16755455, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=11, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=876, target=)
+; Links:
+;    0: TWdLink(count=708, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{MESON "500"}
+<TXSPN>Just then, the door of <STYLE ID="1">Natsumi</STYLE>'s room opened again.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What's up? Bathroom?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Uh, this was taped to the back of the closet..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"The back of the closet?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, I found it when I went to put my stuff in."</STYLE>
+{PAUSE ""}
+<BR>
+What <STYLE ID="1">Natsumi</STYLE> had found―it was...<PG>
+{MESOFF "500"}
+{PLAYSND "death_sound1.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\注射器.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was a syringe with a pink liquid in it.
+{PAUSE ""}
+<BR>
+Where it had been: the closet in <STYLE ID="1">Natsumi</STYLE>'s room.
+{PAUSE ""}
+<BR>
+In other words, the closet <STYLE ID="3">my mom</STYLE> used to use.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"What is this thing...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It sure looks suspicious, but is it connected to the incident...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If it were, then during the house search, </STYLE><STYLE ID="4">Ise-san</STYLE><STYLE ID="1"> would have taken it away, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Right. Even if it was behind the closet, I can't see the police missing it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"There's some kind of label stuck on it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Um... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">'D</STYLE>
+{PAUSE ""}
+<STYLE ID="2">r</STYLE>
+{PAUSE ""}
+<STYLE ID="2">o</STYLE>
+{PAUSE ""}
+<STYLE ID="2">ga'?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "環境音\アポカリプティック.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "5000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"What is that noise...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's really close...!"</STYLE>
+{PAUSE ""}
+<BR>
+What we heard then was a strange noise, ringing out as if to burst our eardrums.
+{PAUSE ""}
+<BR>
+An unpleasant sound, as if a huge iron door were slowly opening.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\新村家リビング.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, you okay!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah... But, this sound..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "1000" "PASS"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just then, the intercom.
+{PAUSE ""}
+<BR>
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+A visitor in the dead of night, when it was already past midnight.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's okay. Somebody from one of the apartments probably just came running out because of that noise."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\新村家ドア閉.gal" "NORMAL" "#1" "R" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A visitor in the dead of night like this is creepy too.
+{PAUSE ""}
+<BR>
+Checking outside before opening up is a must.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループドアスコープ背景.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+I looked through the peephole, but nobody was there. A prank...?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\ドア開ける前.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Might as well open it, just in case. Without taking off the chain.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\ドア開けた.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+{MESON "500"}
+Then, suddenly, a strong wind blew in from outside.<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+<STYLE ID="5">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="5">! Don't open it!"</STYLE>
+{PAUSE ""}
+<BR>
+What was that, what <STYLE ID="1">Natsumi</STYLE> just said?
+{PAUSE ""}
+<BR>
+Could it be, her danger sense...?
+{PAUSE ""}
+<BR>
+That's ridiculous. The cherry blossoms aren't even blooming anymore.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\花びら.gal" "NORMAL" "#1" "600" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As if to sneer at that common sense, a single cherry blossom petal rode the wind in.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\栄一郎白装束.gal" "NORMAL" "#1" "960" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\手直し・追加\ドア開けた.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Beyond the door, the presence of someone.
+{PAUSE ""}
+<BR>
+Who? Who's there?<PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\イラスト\明徴編\過去へ馳せる夢新ルート2.gal" "NORMAL" "#1" "R" "540" "200" "1" "0" "0" "0" "" "0" "0" "0" "0" ""}
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n0\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n5000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n123\r\n111\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n255\r\n2000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n0\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\n111\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7"><TXSPS>"Hi, </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="7">, it's been a while."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPN>"D</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">a</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">d</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">d</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+<STYLE ID="2">y?"</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "111" "グラフィック\イラスト\明徴編\過去へ馳せる夢新ルート.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,000" "1" "100" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{DELETECG "000,人物1,111" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\明徴編完.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

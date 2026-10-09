@@ -1,0 +1,268 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=8, unk2=65535, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=338, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しよう, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=429, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=252, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=98, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1337, target=)
+; Links:
+;    0: TWdLink(count=1127, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\明徴編最初\桜アップ.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\明徴編最初\桜.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "2500" "0" "0" "" "0"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\イラスト\五島\五島一部.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\明徴編最初\屋台.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1500" "0" "0" "" "0"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\明徴編最初\トウモロコシ.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\明徴編最初\お好み焼き.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\明徴編最初\魚.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Atteeention, everyone!
+{WAIT "1000" "NORMAL" "SKIP"}
+<BR>
+{MESOFF "500"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "600" "50"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島万歳.gal" "NORMAL" "#1" "R" "960" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n500\r\nDEC\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{PLAYSND "SE\drum-japanese2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物3" "グラフィック\イラスト\五島\五島絵梨奈煽り.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "新村春花画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "C" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "五島絵梨奈画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "C" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"</STYLE><STYLE ID="2" RUBY="しよう">Shiyo</STYLE><STYLE ID="1"> 800, April 7!</STYLE>
+{WAIT "1000" "NORMAL" "SKIP"}
+<BR>
+<STYLE ID="1">The genius girl acknowledged by herself and everyone else, Erina Goto, has enrolled at Motoki High School as of today!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "五島.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\イラスト\五島\見下ろし1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物3" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Who exactly are you asking for attention in Central Park..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\イラスト\五島\見下ろし2.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\明徴編最初\屋台.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="1">"Look, </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">! Cherry blossoms in riotous bloom, a high blue sky! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　And on top of that! All these stalls livening up our cherry-blossom viewing! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　The reason so many of the stalls are orange is that it's a color that stimulates the appetite!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I feel like the saying 'dumplings over flowers' exists just for </STYLE><STYLE ID="1">you</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Come on, come on! There's nothing for it but to tour the stalls! Operation start!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, hey, mister!</STYLE><STYLE ID="4">　</STYLE><STYLE ID="1">As of today, I'm a high schooler!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="1">So-</STYLE>
+{PAUSE ""}
+<STYLE ID="1">o-</STYLE>
+{PAUSE ""}
+<STYLE ID="1">ooo!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Haggling right off the bat!?"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">! As of today, I'm a high schooler!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I know!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So-</STYLE>
+{PAUSE ""}
+<STYLE ID="1">o-</STYLE>
+{PAUSE ""}
+<STYLE ID="1">ooo!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"O-okay, fine! Which one do you want!?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\草むら.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Huh? </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="1">, aren't you eating?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"My stomach's off today, so I'll just take mine to go. I still feel a little sick..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Then have some of Goto's half-eaten stuff! You can eat a little, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Don't call it half-eaten! And besides, I'm the one who paid for it!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\明徴編最初\桜アップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Aww, I wish </STYLE><STYLE ID="5">Kogori-senpai</STYLE><STYLE ID="1"> could've come too. But at this time of year, it can't be helped."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Not with this many cherry blossoms out. I'll bring </STYLE><STYLE ID="5">her</STYLE><STYLE ID="3"> a souvenir."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\明徴編最初\桜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\自転車開始.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">"Well, take care! Don't go to middle school by mistake starting tomorrow!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Senpai</STYLE><STYLE ID="1">, thanks for the treat! Please give my regards to </STYLE><STYLE ID="5">Kogori-senpai</STYLE><STYLE ID="1">!"</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "47" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{DELETECG "五島絵梨奈画像" "1" "0" "0" "0" "" "0"}
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "700" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\シナリオ\外廊下.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">Natsumi</STYLE><STYLE ID="4"> was probably laid up at home today too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">I stood in front of </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="4">'s door holding the bag of takoyaki.</STYLE> [TN: takoyaki: fried batter balls with octopus inside]<PG>
+{MESOFF "500"}
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "500" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="4">I pressed the intercom twice and waited for </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="4"> to come out.</STYLE>
+{PLAYSND "SE\インターホン.ogg" "VOICE" "NORMAL" "500" "0"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="4">Before long, the door opened.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\新村家廊下.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "古郡なつみ画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "C" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="3">"Hey! How's it going?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Yeah... so-so."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Natsumi</STYLE><STYLE ID="4"> put on a polite smile.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">She was still in her school uniform, and her color wasn't very good.</STYLE><PG>
+<STYLE ID="3">"Hmm... So your April sickness still isn't any better this year."</STYLE> [TN: A pun on gogatsu-byo, 'May sickness,' Japan's term for the May blues.]
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Well, it happens every year, so I'm used to it by now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">She may say she's used to it, but it's still painful.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">A lot of it's probably in her head, so I'll try to tell her something fun.</STYLE><PG>
+<STYLE ID="3">"Over on our end, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="3"> went around stuffing her face at one food stall after another, and it was rough. Going 'Operation start' again and all that. What does she think my wallet is..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考える.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Ha! </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="5"> may be tiny, but she's a big eater. Where does all that food go?"</STYLE><PG>
+<STYLE ID="3">"My stomach's been off since yesterday too, so I only snacked a little, though. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So, here. Souvenir!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ビニール.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="4">I handed her the bag of takoyaki.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">Natsumi</STYLE><STYLE ID="4"> took it with a puzzled look.</STYLE><PG>
+<STYLE ID="3">"It's takoyaki, so eat it while it's hot. See you!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\シナリオ\外廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+{DELETECG "古郡なつみ画像" "1" "0" "0" "0" "" "0"}
+<STYLE ID="4">I closed the door without waiting for </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="4"> to thank me. Once your business is done, there's no need to hang around.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "000" "グラフィック\背景\新村家リビング.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">I went into my house and sat down on the living-room sofa.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Phew..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">In the empty room, I let out a big sigh.</STYLE><PG>
+<STYLE ID="3">"I knew it... I can't say it..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

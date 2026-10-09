@@ -1,0 +1,176 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=405, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=227, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=31, unk2=8453888, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=115, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんか, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=900, target=)
+; Links:
+;    0: TWdLink(count=780, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Oh, <STYLE ID="1">Sis</STYLE>, welcome home!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\五島家玄関.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\桃子.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"I'm home, </STYLE>Erina<STYLE ID="1">. Were you good, staying home by yourself?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... </STYLE>You<STYLE ID="1">'re such a smart, good girl."</STYLE>
+{PAUSE ""}
+<BR>
+"Hehehe! But where did you go?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\桃子横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Just... to a friend's place."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... You were just gone all of a sudden. You surprised me... 
+{PAUSE ""}
+Hey, hey! I finally mastered Indian mathematics!
+{PAUSE ""}
+　Apparently the number zero was invented in India!
+{PAUSE ""}
+　And so―"<PG>
+<STYLE ID="1">"Sorry, I want to be alone today."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh...?
+{PAUSE ""}
+　O-oh, okay... For <STYLE ID="1">you</STYLE> to say that, it must be really bad... 
+{PAUSE ""}
+Oh, but next time you go out, tell me too, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But... today was for someone who died."</STYLE><PG>
+"Someone died...? Was it a funeral?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+"H-hey, <STYLE ID="1">Sis</STYLE>!"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\五島家二階廊下.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+"<STYLE ID="1">Sis</STYLE>, what's wrong? You're acting weird today.
+{PAUSE ""}
+　Hey, you can talk to me about anything, okay?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+"Hey..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I told you I want to be alone, didn't I?"</STYLE>
+{PAUSE ""}
+<BR>
+"But..."<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"Shut up! Don't ever talk to me again!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+"Eek...!"
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"Hey, <STYLE ID="1">Sis</STYLE>... 
+{PAUSE ""}
+Did I do something wrong...?"<PG>
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"I said shut up!</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<STYLE ID="1">　Shut it, you've got nothing going for you but your brain!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>Your<STYLE ID="1"> face is the last thing I want to see!"</STYLE><PG>
+"Uu... uuu..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Sis</STYLE>... 
+{PAUSE ""}
+Have you turned into a delinquent...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Just get lost already..."</STYLE>
+{PAUSE ""}
+<BR>
+"Uu... I'm sorry..."<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\五島家リビング.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Say, </STYLE>Erina<STYLE ID="3">, are you and </STYLE><STYLE ID="1">your sister</STYLE><STYLE ID="3"> still </STYLE><STYLE ID="4" RUBY="けんか">fighting</STYLE><STYLE ID="3">?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　You two haven't talked in over a month now, have you?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah... I think she hates me now..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I think I should tell </STYLE>you<STYLE ID="3"> this too, just so you know... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Your sister</STYLE><STYLE ID="3"> says she's quitting school."</STYLE>
+{PAUSE ""}
+<BR>
+"What!? Why!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"She says she's had enough..."</STYLE><PG>
+"<STYLE ID="1">Sis</STYLE>... did she turn into a delinquent because of me...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Erina<STYLE ID="3">, </STYLE>you<STYLE ID="3"> aren't to blame for anything. </STYLE><STYLE ID="1">Your sister</STYLE><STYLE ID="3"> isn't to blame either. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Let's leave her alone for now, all right?"</STYLE>
+{PAUSE ""}
+<BR>
+"There's nothing I can do for <STYLE ID="1">Sis</STYLE> anymore, is there..."<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

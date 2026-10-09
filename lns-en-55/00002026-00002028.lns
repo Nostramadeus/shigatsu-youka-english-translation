@@ -1,0 +1,245 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=566, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=836, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=よみ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=すいがん, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちいろ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あらが, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いおう, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いおう, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ききょう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1573, target=)
+; Links:
+;    0: TWdLink(count=1421, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\SE\3回ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Excuse me."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\エリカの部屋.gal" "NORMAL" "#1" "C" "B" "0" "2" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Ah, </STYLE>Erika-san<STYLE ID="1">. Sorry for calling you so late."</STYLE>
+{PAUSE ""}
+<BR>
+"Not at all... 
+{PAUSE ""}
+But this is unusual, isn't it? You being up at such an hour."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I've had a lot on my mind."</STYLE>
+{PAUSE ""}
+<BR>
+"Mother..."<PG>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Now, don't make such a gloomy face."</STYLE>
+{PAUSE ""}
+<BR>
+"But... Mother, this year you..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, I turned 75. It'll be soon now, I expect."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">"</STYLE>Erika-san<STYLE ID="1">, I want </STYLE>you<STYLE ID="1"> to succeed me as Grand Witch. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Considering family line and age, there's no one but </STYLE>you<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"Yes..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No particular ritual is needed to become Grand Witch, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">there are a few things I want you to remember. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You aren't allowed to write them down, though, so make absolutely sure you don't forget them until you hand them on to the next one."</STYLE>
+{PAUSE ""}
+<BR>
+"I will keep that in mind."<PG>
+<STYLE ID="1">"One: you must not stop anyone who is trying to kill themselves."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Erika-san<STYLE ID="1">, this matter runs deep, you see. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Those who try to die have reason enough for it. </STYLE>
+{PAUSE ""}
+You<STYLE ID="1"> need only keep that in mind. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Understood?"</STYLE>
+{PAUSE ""}
+<BR>
+"Then, Mother, do you know what that reason is?"<PG>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1"> needn't go that far. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">This is... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">the wicked side of this Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And I have to bring it to an end with my generation."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">"Now, the next one. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">'The dead come forth from </STYLE><STYLE ID="2" RUBY="よみ">the underworld</STYLE><STYLE ID="1">, and uncanny bewitching flowers rise in rows. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Those who have become corpses also become bewitching flowers and come forth from the underworld. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Only </STYLE><STYLE ID="3" RUBY="すいがん">the green-eyed</STYLE><STYLE ID="1"> prevail. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Those who have become green-eyed wither the bewitching flowers and return the dead to the underworld. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The descendants shall without fail don masks and </STYLE><STYLE ID="4" RUBY="ちいろ">blood-red</STYLE><STYLE ID="1"> garb, and </STYLE><STYLE ID="5" RUBY="あらが">resist</STYLE><STYLE ID="1">.'"</STYLE>
+{PAUSE ""}
+<BR>
+"What is that...?"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス用\アイテム\妖花の図.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"It's written in here, but I don't really understand it myself. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Still, every Grand Witch has been told to be sure to memorize it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'm entrusting this to </STYLE>you<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"Understood..."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"And the last one. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">'The shinigami are the four </STYLE><STYLE ID="6" RUBY="しんし">divine messengers</STYLE><STYLE ID="1"> who serve Abaddon. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Abaddon appears from a volcano of </STYLE><STYLE ID="7" RUBY="いおう">sulfur</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What the Grand Witch must do―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">is to keep Abaddon and the four divine messengers sealed away.' </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Well, I don't know what this one is talking about either. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There's no note of it written down anywhere, so be sure to memorize it and pass it on to the next generation."</STYLE><PG>
+"'The shinigami are the four <STYLE ID="8" RUBY="しんし">divine messengers</STYLE> who serve Abaddon. 
+{PAUSE ""}
+Abaddon appears from a volcano of <STYLE ID="9" RUBY="いおう">sulfur</STYLE>. 
+{PAUSE ""}
+What the Grand Witch must do―
+{PAUSE ""}
+is to keep Abaddon and the four divine messengers sealed away.'"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Heh, </STYLE>you<STYLE ID="1">'re quick to memorize things. That's a great help. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That concludes the Grand Witch handover. I'll announce it to everyone in the settlement tomorrow."</STYLE>
+{PAUSE ""}
+<BR>
+"Yes... 
+{PAUSE ""}
+Um, Mother..."<PG>
+<STYLE ID="1">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+"Do you really want to kill yourself after all?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Erika-san<STYLE ID="1">, you don't need to know that."</STYLE>
+{PAUSE ""}
+<BR>
+"If I remember correctly, <STYLE ID="10" RUBY="ききょう">Kikyo</STYLE>-san, the Grand Witch two generations back, was―"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You don't need to know."</STYLE>
+{PAUSE ""}
+<BR>
+"Forgive me."<PG>
+<STYLE ID="1">"Right, well, I'll turn in now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh, yes, that's right. Did you bring the thing I asked for?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, yes, here it is."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CREATECG "アイテム1" "グラフィック\リファレンス用\アイテム\ビデオテープ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Heh heh heh... </STYLE>
+{PAUSE ""}
+You<STYLE ID="1">'ve already watched it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, I took the liberty of watching it first."<PG>
+<STYLE ID="1">"So, how was it?"</STYLE>
+{PAUSE ""}
+<BR>
+"It was so cute!
+{PAUSE ""}
+　Especially the scene where she transforms from her little form into a grown woman!
+{PAUSE ""}
+{PLAYSND "BGM死月編\Bad_Luck.ogg" "BGM" "REPEAT" "1000" "0"}
+　The direction and the sound effects, all the latest animation techniques packed in, every bit of it is perfect!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hmm, I think I'll watch this before bed after all. </STYLE>
+{PAUSE ""}
+Erika-san<STYLE ID="1">, will you watch it with me?"</STYLE>
+{PAUSE ""}
+<BR>
+"Y-yes! It's really, truly the best!
+{PAUSE ""}
+　You introduced me to this path, Mother, and it changed my life!"<PG>
+<STYLE ID="1">"Though I never thought you'd get even more hooked than me..."</STYLE>
+{PAUSE ""}
+<BR>
+"Next I'm thinking of making the heroine's costume!
+{PAUSE ""}
+　And then I'll wear it... 
+{PAUSE ""}
+{PLAYSND "SE\棒を振る.ogg" "VOICE2" "NORMAL" "1000" "0"}
+'Warrior of love, Infinity Love!
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+　Now, I'll wrap the whole world in love!' 
+{PLAYSND "SE\きらーん.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{PAUSE ""}
+That's what I want to do!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Now now, </STYLE>Erika-san<STYLE ID="1">! No spoiling the lines!"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, I'm sorry!"<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

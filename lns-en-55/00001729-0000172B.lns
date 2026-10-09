@@ -1,0 +1,78 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=191, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=50, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=294, target=)
+; Links:
+;    0: TWdLink(count=241, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "堕ちる.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+{CREATECG "000" "グラフィック\背景\スチル\壺点火.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\集会場.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬土下座逆.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\リファレンス用\アイテム\能面からの見た目.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Criancas da alma volta para o ceu. [TN: Portuguese in the source.] 
+{PAUSE ""}
+Danben daun tempo de descanso em criancas."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+"Criancas da alma volta para o ceu. 
+{PAUSE ""}
+Danben daun tempo de descanso em criancas."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Obrigada."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n0\r\nDEC\r\nPASS">
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"With this, the memorial service is over. Try not to be too disheartened."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+"You have kind friends, don't you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"But, I'm still undecided."</STYLE><PG>
+"Well, there's no need to hurry. 
+{PAUSE ""}
+Talk it over many times, and look for an answer you can accept."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Thank you for your concern."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

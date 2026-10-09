@@ -1,0 +1,824 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=4503, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=33, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=10, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=692, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=14, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=10, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=30, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1150, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=せきがん, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほお, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=やおよろず, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7044, target=)
+; Links:
+;    0: TWdLink(count=6462, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―It's past noon.
+{PAUSE ""}
+<BR>
+The thunder has eased off somewhat, but this rain probably won't stop for a while.
+{PAUSE ""}
+<BR>
+The road between here and Arata Station must be in pretty bad shape by now too.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\女神\スマフォ青切血.gal" "NORMAL" "#1" "650" "C" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+My bloodstained phone.
+{PAUSE ""}
+<BR>
+It reacts a little, but it won't work well enough for me to contact <STYLE ID="1">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+The blood must have gotten all the way into the machinery inside.
+{PAUSE ""}
+<BR>
+I don't exactly have <STYLE ID="1">Natsumi's</STYLE> and <STYLE ID="2">Goto's</STYLE> numbers memorized, so I can't call from the house's landline either.<PG>
+Here, it's just the two of us.
+{PAUSE ""}
+<BR>
+In front of me,
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+that mummy.
+{PAUSE ""}
+<BR>
+It looks like it's been dead a long time.<PG>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+<EVENT VALUE="STOPMOVIE">
+<STYLE ID="3">"Hey... who are you... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Why are you in a place like this?"</STYLE>
+{PAUSE ""}
+<BR>
+But of course it can't answer.
+{PAUSE ""}
+<BR>
+I can't even tell from its face whether it died in agony or had a peaceful end.<PG>
+Will <STYLE ID="1">Natsumi</STYLE> and the others get to Arata Station around 4 p.m.?
+{PAUSE ""}
+<BR>
+The mountain road's probably a muddy torrent by now, so they'll likely turn right back around.
+{PAUSE ""}
+<BR>
+No, this is <STYLE ID="1">Natsumi</STYLE> we're talking about.
+{PAUSE ""}
+<BR>
+She might stay in the storage shed at Arata Station or something and wait for the road to firm up.
+{PAUSE ""}
+<BR>
+Either way, I'd better go meet them.
+{PAUSE ""}
+<BR>
+With my legs, I can manage even on a sloppy road.<PG>
+Before then, I have to figure out what happened in this settlement.
+{PAUSE ""}
+<BR>
+I'd like to borrow <STYLE ID="2">Goto's</STYLE> powers of deduction too, but I can't have her come to a place like this.
+{PAUSE ""}
+<BR>
+That's right, this is the Arata settlement's problem and nobody else's.
+{PAUSE ""}
+<BR>
+There's no need to drag those two into a mess like this.<PG>
+Where should I start?
+{PAUSE ""}
+<BR>
+Maybe the quickest way is the mummy right in front of me, and finding the culprit who attacked me?
+{PAUSE ""}
+<BR>
+The culprit can't have been trying to make it look like the mummy did it.
+{PAUSE ""}
+<BR>
+That's the kind of idea a child would have.<PG>
+A child...?
+{PAUSE ""}
+<BR>
+The youngest child in this settlement is
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\血しぶき背景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Kana</STYLE>, who starts middle school this year, might still be at the prank-loving age.
+{PAUSE ""}
+<BR>
+If so, it could be <STYLE ID="4">Kana's</STYLE> doing, but...<PG>
+In the 2 years I haven't seen her, has <STYLE ID="4">Kana</STYLE> turned into that much of a rotten little brat?
+{PAUSE ""}
+<BR>
+No, probably not.
+{PAUSE ""}
+<BR>
+There's no way a kid could get hold of a mummy like this.
+{PAUSE ""}
+<BR>
+The quality's way too high for a kid's prank.<PG>
+So it's an adult's doing after all?
+{PAUSE ""}
+<BR>
+To varying degrees, but if we're talking about someone who loves pranks,
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ指さしバストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+it's <STYLE ID="5">Grandma</STYLE>, who passed away.
+{PAUSE ""}
+<BR>
+Maybe <STYLE ID="5">Grandma</STYLE> became a ghost and gave me a rough welcome...?
+{PAUSE ""}
+<BR>
+Well, that'd be fun in its own way, but I need reasoning that's a little more realistic...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then that would make <STYLE ID="6">Sakura-san</STYLE>, <STYLE ID="7">Kotaro-san</STYLE>, or <STYLE ID="8">Chiga-nee</STYLE> suspicious.
+{PAUSE ""}
+<BR>
+No, wait, there was something that bugged me.
+{PAUSE ""}
+<BR>
+The leap in interpretation about the settlement perishing―the part about 'being destroyed by people from outside.'
+{PAUSE ""}
+<BR>
+I'd been thinking that was strange.
+{PAUSE ""}
+<BR>
+Okay, I'll try sorting it out again from around there.<PG>
+First, let me think through what <STYLE ID="6">Sakura-san</STYLE> did, in order.
+{PAUSE ""}
+<BR>
+And let me assume <STYLE ID="6">Sakura-san's</STYLE> intuition and <STYLE ID="1">Natsumi's</STYLE> are the same thing.
+{PAUSE ""}
+<BR>
+In that case, a few days ago <STYLE ID="6">Sakura-san</STYLE> must have realized that someone in this settlement would be in danger.<PG>
+If she foresaw that everyone in the settlement would be in danger, then the settlement perishes.
+{PAUSE ""}
+<BR>
+Yeah, I can follow that much. Maybe every resident had the look of death on them.
+{PAUSE ""}
+<BR>
+But how do you get from there to the idea that 'people from outside will destroy the settlement'?<PG>
+In <STYLE ID="1">Natsumi's</STYLE> case, she only judged whether what came next was dangerous or not.
+{PAUSE ""}
+<BR>
+In other words, she couldn't tell 'why it was dangerous' or 'how it was dangerous.'<PG>
+Maybe <STYLE ID="6">Sakura-san's</STYLE> intuition is better than <STYLE ID="1">Natsumi's</STYLE>, but...
+{PAUSE ""}
+<BR>
+If so, I should've gotten the whole story on that from <STYLE ID="8">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+I also need to think about the difference between <STYLE ID="6">Sakura-san's</STYLE> intuition and <STYLE ID="1">Natsumi's</STYLE> intuition, but...
+{PAUSE ""}
+<BR>
+Dammit... no matter what, I always hit a wall right around here.<PG>
+If I can't use my head, I'll just have to use my legs.
+{PAUSE ""}
+<BR>
+I'll check whether everyone really has vanished.
+{PAUSE ""}
+<BR>
+Is there anywhere all of them could hide?
+{PAUSE ""}
+<BR>
+That's it... that's it! If danger's coming, it wouldn't be weird for them to have evacuated somewhere!
+{PAUSE ""}
+<BR>
+There's gotta be a hideout somewhere!<PG>
+And in this rain, too. There aren't many places where all 30 people could hide.
+{PAUSE ""}
+<BR>
+They weren't in the meeting hall, so maybe some big rocky spot, or a secret cave.
+{PAUSE ""}
+<BR>
+Anyway, somewhere out of the rain.<PG>
+Okay, there's time before <STYLE ID="1">Natsumi</STYLE> and the others get here, so I'll search every corner of this settlement starting now.
+{PAUSE ""}
+<BR>
+No... 
+{PAUSE ""}
+before that...<PG>
+<STYLE ID="3">"Hey... who are you? Why did you suddenly show up in a place like this?"</STYLE>
+{PAUSE ""}
+<BR>
+Whoever hit me <STYLE ID="9" RUBY="つ">hung</STYLE> this mummy up and made my phone useless.
+{PAUSE ""}
+<BR>
+What was the culprit trying to tell me?
+{PAUSE ""}
+<BR>
+For just a scare stunt, it's, how do I put it... 
+{PAUSE ""}
+like it has too strong a message, or something...
+{PAUSE ""}
+<BR>
+I don't really want to, but I guess I'll take a proper look at this mummy too.<PG>
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+Earlier I pulled the red robes off it in the heat of the moment, but this dried-up mummy is so light that one wrong move could make it crumble.
+{PAUSE ""}
+<BR>
+Touching it gives me a gut-level revulsion, but I've got plenty of experience butchering mountain animals, so it doesn't bother me that much.
+{PAUSE ""}
+<BR>
+I see, <STYLE ID="10">Mom</STYLE> went through the mountain seclusion too, so that's how she could do something like <STYLE ID="11" RUBY="は">skin</STYLE> a human being...<PG>
+<STYLE ID="3">"Hm...?"</STYLE>
+{PAUSE ""}
+<BR>
+This body's missing an eye.
+{PAUSE ""}
+<BR>
+In one socket the eyeball has dried and sunk in, but in the other, there's no eyeball at all.
+{PAUSE ""}
+<BR>
+So it's a <STYLE ID="12" RUBY="せきがん">one-eyed</STYLE> corpse...?
+{PAUSE ""}
+<BR>
+Its sex... 
+{PAUSE ""}
+yeah, this body is definitely female.
+{PAUSE ""}
+<BR>
+As for age, maybe around puberty?
+{PAUSE ""}
+<BR>
+For her height, her chest and lower belly still look childish.<PG>
+The mummy of a girl missing one eye.
+{PAUSE ""}
+<BR>
+And this body was probably resting somewhere in the Arata settlement.
+{PAUSE ""}
+<BR>
+In exchange for this one suddenly showing up, the residents vanished.<PG>
+If she was around puberty, was the cause of death an accident or murder rather than illness?
+{PAUSE ""}
+<BR>
+Did this one die with her eye gouged out?
+{PAUSE ""}
+<BR>
+Or were her eyes like this since long before she died?
+{PAUSE ""}
+<BR>
+Either way, this isn't a mummy that looks like it lived a happy life.
+{PAUSE ""}
+<BR>
+A body that was never cremated or buried, just preserved all this time, suddenly showed up in a place like this.<PG>
+Somehow, when I think of it like that... I feel sorry for this mummy.
+{PAUSE ""}
+<BR>
+A girl at puberty lost her eye and died young.
+{PAUSE ""}
+<BR>
+If she ended up a mummy, she must be from a pretty long time ago.
+{PAUSE ""}
+<BR>
+Made into a mummy for some purpose, and on top of that, dragged out in front of me in the present day.
+{PAUSE ""}
+<BR>
+A mummy treated so arbitrarily... like she's done nothing but be used.<PG>
+<STYLE ID="3">"Hey... are you maybe from hundreds of years ago?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Why were you made into a mummy and dragged out to a place like this?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Why... are you missing an eye?"</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="8">"Mm... Want to know?"</STYLE>
+{PAUSE ""}
+<BR>
+My heart leaps with a start.
+{PAUSE ""}
+<BR>
+Out of nowhere, from directly behind―right at my back, a person's voice.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="8">Chiga-nee</STYLE><STYLE ID="3">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... So you came back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="8">Chiga-nee</STYLE><STYLE ID="3">! Where've you been! And what is this!"</STYLE>
+{PAUSE ""}
+<BR>
+I grab <STYLE ID="8">Chiga-nee</STYLE> by both shoulders and shake her.
+{PAUSE ""}
+<BR>
+But <STYLE ID="8">Chiga-nee's</STYLE> expression doesn't change.<PG>
+<STYLE ID="8">"Mm... What happened to watching Arata Station?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That's not important right now! Where'd everybody go!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　What's with this mummy!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">... Everyone will hear you if you shout, you know?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Answer the question!"</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "20" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">"Ugh... gaah...!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\ホラーサウンド.ogg" "BGM" "REPEAT" "1000" "0"}
+An unbearable pain shoots through my solar plexus.
+{PAUSE ""}
+<BR>
+With that pain, my legs buckle and give way.
+{PAUSE ""}
+<BR>
+Did <STYLE ID="8">Chiga-nee</STYLE> just... hit me...!?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, I told you, didn't I?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Danger is closing in on this settlement. Don't make a fuss over trivial things."</STYLE>
+{PAUSE ""}
+<BR>
+This one...! Is she really <STYLE ID="8">Chiga-nee</STYLE>...!?
+{PAUSE ""}
+<BR>
+She sees the mummy right in front of her and feels nothing...!?<PG>
+<STYLE ID="3">"Y-</STYLE><STYLE ID="8">you</STYLE><STYLE ID="3">...!"</STYLE>
+{PAUSE ""}
+<BR>
+Then <STYLE ID="8">Chiga-nee</STYLE> crouches in front of me as I double over―
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\茅萱春花髪.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+and grabs my bangs and yanks them up hard enough to tear them out.<PG>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, short hair really does suit you better."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPS>"Let... go...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>Between the searing pain in my solar plexus and my bangs being yanked up, I can't move freely.
+{PAUSE ""}
+<BR>
+The pain in my solar plexus makes me want to curl up, but having my face forced up makes it really hard to breathe.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Chiga-nee</STYLE> is doing this on purpose.
+{PAUSE ""}
+<BR>
+She's deliberately putting me in a painful position, plotting something.<PG>
+<STYLE ID="3">"So that's it...! The one who hit me earlier was you too, </STYLE><STYLE ID="8">Chiga-nee</STYLE><STYLE ID="3">, right...!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... What are you talking about?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Don't play dumb!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "20" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+From where I'm lying face-down, I clench my fist and drive it up at <STYLE ID="8">Chiga-nee's</STYLE> face.
+{PAUSE ""}
+<BR>
+But my fist hits nothing and turns into a breeze.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\茅萱背後.lcm" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "5000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, with that, did you really train in the mountain seclusion?"</STYLE>
+{PAUSE ""}
+<BR>
+What...!? Was that sarcasm!?
+{PAUSE ""}
+<BR>
+This time, so she can't dodge, I throw a spinning back kick with my left leg.
+{PAUSE ""}
+<BR>
+And it's a roundhouse aimed low, at her feet.
+{PAUSE ""}
+<BR>
+I'll make her jump to dodge it and get <STYLE ID="8">Chiga-nee's</STYLE> body up in the air.
+{PAUSE ""}
+<BR>
+That way she can't dodge my next attack.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "20" "100" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "NORMAL"}
+{PLAYSND "SE\tackle1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "0" "30"}
+{QUAKESTOP "1000"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000,人物1" "QUAKE" "1" "15" "15" "0" "30"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\茅萱春花押さえつけ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "7!" "200" "0" "0" "" "0"}
+{QUAKESTOP "1000"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{QUAKE "人物1" "QUAKE" "1" "3" "3" "0" "30"}
+<STYLE ID="3">"Ugh... ggh...!"</STYLE>
+{PAUSE ""}
+<BR>
+I'd meant to use the momentum of the left-leg roundhouse to throw a right front kick.
+{PAUSE ""}
+<BR>
+But my body was pinned flat to the tatami like a spider in a specimen case.
+{PAUSE ""}
+<BR>
+Face-down, with both shoulders and my head held down, I can't move.
+{PAUSE ""}
+<BR>
+The strain on my joints is more than I'd expect from someone as light as <STYLE ID="8">Chiga-nee</STYLE>.<PG>
+{MESOFF "500"}
+{QUAKESTOP "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱うつむき.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, settle down. I don't like violence, you know?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Much less do I want to pick on the weak."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Who...! Who are you calling weak...!?"</STYLE><PG>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, you were alone on the mountain, so you have no experience at all fighting people. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">We played at fighting almost every day ever since </STYLE><STYLE ID="4">Kana</STYLE><STYLE ID="8"> started carrying weapons, and even after I went to Tokyo, I never once missed sparring with </STYLE><STYLE ID="4">Kana</STYLE><STYLE ID="8"> when I came home."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Dammit...!"</STYLE><PG>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, all you've done is face beasts. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">To me, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, you're the same as a beast to be hunted, you know?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　So what I'm doing now is just picking on the weak."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Sh... shut up!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... So, be quiet."</STYLE><PG>
+{QUAKE "人物1" "QUAKE" "1" "3" "3" "0" "30"}
+{PLAYSND "SE\bakibaki.ogg" "VOICE" "REPEAT" "900" "0"}
+My face is forced sideways, and my <STYLE ID="13" RUBY="ほお">cheek</STYLE> has <STYLE ID="8">Chiga-nee's</STYLE> knee grinding into it.
+{PAUSE ""}
+<BR>
+My mouth is forced open, so I can't even talk.
+{PAUSE ""}
+<BR>
+Drool leaks sloppily out of my mouth.<PG>
+{STOPSND "VOICE" "5000" "PASS"}
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, I'll say it one more time. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Haruka</STYLE><STYLE ID="8">, everyone may be wary of you. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">So you mustn't make </STYLE><STYLE ID="3">your</STYLE><STYLE ID="8"> presence known. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Watch Arata Station, go back to the mountain, or stay here quietly. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">What will you do? If you'll help, I'd welcome it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPS>"Egh... gegh...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>I wanted to keep complaining, but with my mouth forced open like a suffocating fish, I can't get a proper word out.<PG>
+Dammit...! Okay, I get it, I get it...!
+{PAUSE ""}
+<BR>
+I'll talk calmly...!
+{PAUSE ""}
+<BR>
+It's true I was doing nothing but laying into <STYLE ID="8">Chiga-nee</STYLE>, and I wasn't making it a mood where we could actually talk.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{MESON "500"}
+As if she heard that inner voice, <STYLE ID="8">Chiga-nee</STYLE> slowly got off me.<PG>
+<STYLE ID="3">"Dammit, that hurt..."</STYLE>
+{PAUSE ""}
+<BR>
+I get up, wiping off my drool.
+{PAUSE ""}
+<BR>
+I thought I'd gotten stronger in the mountain seclusion, but in front of <STYLE ID="8">Chiga-nee</STYLE> I'm no better than a baby.
+{PAUSE ""}
+<BR>
+And that's <STYLE ID="8">Chiga-nee</STYLE>, who moved to Tokyo. <STYLE ID="4">Kana</STYLE> might be even stronger.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, what will you do?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Arata Station? The mountain? Here?"</STYLE>
+{PAUSE ""}
+<BR>
+I was hoping she'd apologize at least a little for what she did to me, but there's no sign of it.
+{PAUSE ""}
+<BR>
+Her tone and expression, exactly the same as always, are what's creepy.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="8">Chiga-nee</STYLE><STYLE ID="3">, hold on... If I can't understand the situation at least a little, I don't know what to do. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Can't you tell me anything...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"............"</STYLE>
+{PAUSE ""}
+<BR>
+For the first time, <STYLE ID="8">Chiga-nee's</STYLE> expression changed.
+{PAUSE ""}
+<BR>
+Though only to the point of narrowing her eyes a little.
+{PAUSE ""}
+<BR>
+Her two blue eyes fall into the shadow of her narrowed lids and look dark.<PG>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, what do you... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "5000" "PASS"}
+<STYLE ID="8">think of the customs here?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"The customs...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... In the Arata settlement, Japanese and Westerners have lived side by side since long ago. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Now, both the blood and the culture are completely mixed."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I know that much..."</STYLE><PG>
+<STYLE ID="8">"Mm... The religion of this Arata settlement is a little unusual. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Witches conduct the memorial services, the dead are called shinigami― </STYLE>
+{PAUSE ""}
+<STYLE ID="8">But don't you think it's strange? The most important thing is missing."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"What? Don't keep me hanging..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, who do you always pray to?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Pray?"</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\Ghost長い.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="8">"Mm... In this Arata religion, there's no god to pray to. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">This settlement has no god to be an object of worship."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No... god...?"</STYLE><PG>
+The logic that it's weird to have no object of worship doesn't really click for me, but...
+{PAUSE ""}
+<BR>
+I never cared about that kind of thing; at memorial services I always just thought of the person who'd died and prayed for their soul.
+{PAUSE ""}
+<BR>
+So the idea of who to pray to, or who to worship, never occurred to me.<PG>
+So what <STYLE ID="8">Chiga-nee</STYLE> means is that there's a religious culture, but no clear object of worship.
+{PAUSE ""}
+<BR>
+In Shinto, people worship the <STYLE ID="14" RUBY="やおよろず">eight million</STYLE> gods, or there's animism, or all of creation, but is that no good?
+{PAUSE ""}
+<BR>
+Before I moved here, I heard from <STYLE ID="2">Goto</STYLE> that the tenth-year memorial in the Arata settlement is something unique to Shinto that Buddhism doesn't have.<PG>
+<STYLE ID="3">"The way Shinto sees it, gods live in everything, so isn't it fine not to have one particular god?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　That's normal for polytheism, right?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, that's a big mistake. The faith of Arata is monotheistic. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">We simply didn't know. There really was a god."</STYLE>
+{PAUSE ""}
+<BR>
+With that, <STYLE ID="8">Chiga-nee</STYLE> turned her eyes to the mummy lying on the floor.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "$000080" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Mm... She is this settlement's god, the one who was called 'Verde.' </STYLE>
+{PAUSE ""}
+<STYLE ID="8">A 14-year-old girl who died more than 400 years ago, apparently."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Verde...?"</STYLE>
+{PAUSE ""}
+<BR>
+Clearly not a Japanese name.
+{PAUSE ""}
+<BR>
+Even so, where did a god like this spring up from?
+{PAUSE ""}
+<BR>
+Does it have to do with the destruction of the settlement?<PG>
+<STYLE ID="8">"Mm... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="8">, the god is dead. The one who protected this settlement is gone now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"A mummy's dead to begin with..."</STYLE>
+{PAUSE ""}
+<BR>
+At that, <STYLE ID="8">Chiga-nee</STYLE> looks at the rope still hanging there, and the loop the mummy's neck had been through.<PG>
+<STYLE ID="8">"Mm... From the look of this, Lady Verde was </STYLE><STYLE ID="15" RUBY="つ">hanging</STYLE><STYLE ID="8"> by the neck a little while ago, wasn't she?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Which means Lady Verde has died twice. The first time as a human, the second time as a god."</STYLE>
+{PAUSE ""}
+<BR>
+What <STYLE ID="8">Chiga-nee</STYLE> is saying is gradually losing touch with reality.
+{PAUSE ""}
+<BR>
+To begin with, this violent <STYLE ID="8">Chiga-nee</STYLE> herself doesn't feel real, and what she's saying sounds way too much like delusional ravings.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"A threat has already gotten into this settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">A threat that kills the Goddess and drives this settlement to destruction. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">A goddess-killing threat."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9" RUBY="つ">Hanging</STYLE> the mummy should be nothing more than a performance.
+{PAUSE ""}
+<BR>
+But to <STYLE ID="8">Chiga-nee</STYLE>, it's a threat, and she seems to take it as a declaration of war on the settlement.<PG>
+<STYLE ID="8">"Mm... Now, what will you do?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　The station? The mountain? Here?"</STYLE>
+{PAUSE ""}
+<BR>
+That's all the explanation I get...!? Now I'm even more confused...
+{PAUSE ""}
+<BR>
+But asking this <STYLE ID="8">Chiga-nee</STYLE> anything is probably pointless.
+{PAUSE ""}
+<BR>
+The person in front of me who looks like <STYLE ID="8">Chiga-nee</STYLE> isn't the person I know.<PG>
+I don't believe the settlement is going wrong because this god Verde died.
+{PAUSE ""}
+<BR>
+Because ever since I came to this settlement this morning―
+{PAUSE ""}
+before Verde ever <STYLE ID="9" RUBY="つ">hanged</STYLE> herself, things were already off.
+{PAUSE ""}
+<BR>
+There's got to be something weird going on, done by human hands.
+{PAUSE ""}
+<BR>
+I don't believe in curses anymore...!<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="8">Chiga-nee</STYLE><STYLE ID="3">, I'm going back to the station. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'll probably be harder for everyone to find there than here, and I can be useful too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... All right."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">Chiga-nee</STYLE> starts to leave the room just like that.<PG>
+<STYLE ID="3">"Hey, </STYLE><STYLE ID="8">Chiga-nee</STYLE><STYLE ID="3">, wait. Where did everyone else go?</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　I searched all over the settlement just now, and nobody was there?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Mm... What are you talking about? Everyone is inside their houses."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Huh?"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At <STYLE ID="8">Chiga-nee's</STYLE> words, which flatly denied everything I'd said, I couldn't even get out a word to stop her.
+{PAUSE ""}
+<BR>
+Could it be that what <STYLE ID="8">Chiga-nee</STYLE> and I are seeing... are different things?
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Chiga-nee</STYLE> can see things I can't...?<PG>
+But...
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">Chiga-nee</STYLE> could see this Verde mummy.
+{PAUSE ""}
+<BR>
+This is the Arata settlement's object of faith, dead more than 400 years?
+{PAUSE ""}
+<BR>
+A religion that worships a mummy, or rather a corpse...<PG>
+No, I can't say for sure that's strange.
+{PAUSE ""}
+<BR>
+The custom of calling the dead shinigami is still deeply rooted, and they're dressed in Noh masks and big overgarments.
+{PAUSE ""}
+<BR>
+Verde's getup is exactly a shinigami's too, so you could say Verde herself is a shinigami.
+{PAUSE ""}
+<BR>
+So does that mean they worship a shinigami...?<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\E3839BE383A9E383BC3.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "1000" "PASS"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n150\r\n1000\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+This is nothing but devil worship...!
+{PAUSE ""}
+<BR>
+To begin with, why did this Verde become an object of faith?
+{PAUSE ""}
+<BR>
+It can't be that this one put a curse on the settlement.<PG>
+Besides, if she was kept outside the settlement, couldn't you call this one an outsider too?
+{PAUSE ""}
+<BR>
+And if she showed up today, April 8...<PG>
+Unfortunately, this is as far as I can get on my own.
+{PAUSE ""}
+<BR>
+There's nobody in this settlement except <STYLE ID="8">Chiga-nee</STYLE>, and <STYLE ID="8">Chiga-nee</STYLE> herself doesn't seem like someone I can rely on.
+{PAUSE ""}
+<BR>
+In that case...
+{PAUSE ""}
+<BR>
+All I can do is borrow the strength of <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>...<PG>
+No, there's no way I could drag them into something like this...!
+{PAUSE ""}
+<BR>
+But... I could at least have them hear me out.
+{PAUSE ""}
+<BR>
+I can't bring them here, but I want any clue I can get.
+{PAUSE ""}
+<BR>
+With <STYLE ID="1">Natsumi's</STYLE> intuition and <STYLE ID="2">Goto's</STYLE> brains...
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000,人物1,111" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

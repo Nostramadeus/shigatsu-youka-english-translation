@@ -1,0 +1,1125 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=5807, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=404, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=12, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=12, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しりんかん, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はいきょ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=16, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けいれん, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=31, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かしゃく, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんそう, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=39, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7204, target=)
+; Links:
+;    0: TWdLink(count=6336, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\スチル\ろうそく.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>So the last one is <STYLE ID="1">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+Going last looks like it'll be a bit tough, though...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\立ち絵\アイテム\ろうそくフィルター.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\怪談テーブル.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形\紙人形新村茅萱.gal" "WAIT" "#1" "550" "540" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="2">"Well, naturally, the last one is </STYLE><STYLE ID="1">Chigaya</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Chiga-nee</STYLE>'s handwriting is so messy.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mm... So I'm last, then."</STYLE>
+{PAUSE ""}
+<BR>
+Maybe some of the alcohol had worn off. Her way of talking was back to normal.<PG>
+<STYLE ID="1">"Mm... I live alone now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">This is a story from after I started university in Tokyo, until I moved from my first room to the next one..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\東京.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループ東京.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1,人物1,アイテム2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―That day, I had come to Tokyo alone to look for a room to rent.
+{PAUSE ""}
+<BR>
+What kind of place would become my castle?
+{PAUSE ""}
+<BR>
+Living alone for the first time, I was excited.<PG>
+A convenient place close to the station and the university.
+{PAUSE ""}
+<BR>
+And, as cheap as possible.
+{PAUSE ""}
+<BR>
+I was walking all over, looking for the next real-estate agency, when...<PG>
+"Say, you there, <STYLE ID="1">miss with the odd eyes</STYLE>."
+{PAUSE ""}
+<BR>
+Suddenly I heard a middle-aged woman's voice.
+{PAUSE ""}
+<BR>
+When I turned toward the voice, there she was, sitting on a chair at a little table set up by the roadside.
+{PAUSE ""}
+<BR>
+She was a street-corner fortune-teller, the kind you might see on TV.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループ占い.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mm... Do you mean me?"</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, odd eyes, just as I thought."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+Hadn't she called me odd-eyed because she'd seen my eyes?<PG>
+"And a stunning beauty on top of it!
+{PAUSE ""}
+　Let's see, how about I take a look at <STYLE ID="1">you, miss</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... But I..."</STYLE>
+{PAUSE ""}
+<BR>
+"I don't want any money. I'm not out to push anything strange on you, either. I just got curious about <STYLE ID="1">you, miss</STYLE>. 
+{PAUSE ""}
+Anyway, it'll only take about 10 minutes."
+{PAUSE ""}
+<BR>
+Not knowing Tokyo well and not very wary, I sat down across from her as she told me to.<PG>
+"Hmm..."
+{PAUSE ""}
+<BR>
+I thought she'd use the cards on the table, but instead she was staring at my face.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... You don't use the cards?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, I meant to practice card reading, but my specialty is face reading. 
+{PAUSE ""}
+With <STYLE ID="1">you, miss</STYLE>, I'd better look properly..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... Do I interest you that much?"</STYLE>
+{PAUSE ""}
+<BR>
+But the fortune-teller didn't open her mouth for a good minute.<PG>
+"―I see. 
+{PAUSE ""}
+<STYLE ID="1">Miss</STYLE>... never make the easy choice. 
+{PAUSE ""}
+And close to <STYLE ID="1">you</STYLE>, there's someone who tells lies. Someone who <STYLE ID="3" RUBY="だま">deceives</STYLE> everyone with clever manipulation. 
+{PAUSE ""}
+It might even put your life at stake."
+{PAUSE ""}
+<BR>
+That's quite a frightening thing to say...<PG>
+"<STYLE ID="1">You</STYLE>'re an honest, straightforward person, miss, for better or worse. 
+{PAUSE ""}
+Whatever you do, don't let someone close to you <STYLE ID="3" RUBY="だま">deceive</STYLE> you... 
+{PAUSE ""}
+That's all!"
+{PAUSE ""}
+<BR>
+The fortune-teller really did finish without taking any money.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループ東京.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3" RUBY="だま">Deceived</STYLE> by someone close to me...
+{PAUSE ""}
+<BR>
+But I had come to Tokyo alone, so there was no one close to me.
+{PAUSE ""}
+<BR>
+Still, it was only fortune-telling. I just thought I'd be careful about the people I'd meet from now on.<PG>
+And I kept looking for a new place to live, and―at last I found one.
+{STOPSND "SE" "5000" "PASS"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\春の兆し.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループ不動産屋.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A 10-minute walk from the university, a 10-minute walk from the station, a 5-minute walk from the supermarket.
+{PAUSE ""}
+<BR>
+And the rent was 20,000 yen.
+{PAUSE ""}
+<BR>
+I did think it was a little suspicious, but when I asked the real-estate agent,<PG>
+"It's cheap because the building is 80 years old. Students these days don't want places that are too old, either... 
+{PAUSE ""}
+But it was renovated a little while ago, so there's heating and air conditioning, and a bathroom unit, and I don't think there's any problem living there."
+{PAUSE ""}
+<BR>
+the woman helping me answered with a smile.<PG>
+<STYLE ID="1">"Mm... Then could I take a look at it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, certainly."<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外観.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The apartment building she took me to did look old from the outside.
+{PAUSE ""}
+<BR>
+But I was used to old houses from Arata, so I didn't mind much.
+{PAUSE ""}
+<BR>
+Cockroaches or centipedes showing up don't rattle me, anyway.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋1.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Yes, I could live here without any problem.
+{PAUSE ""}
+<BR>
+Unlike the outside, the inside of the room was very clean.
+{PAUSE ""}
+<BR>
+She'd said it was renovated recently, too. Hadn't I come across a pretty good place?
+{PAUSE ""}
+<BR>
+But there was one thing that bothered me.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外廊下.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I couldn't see anyone who lived there.
+{PAUSE ""}
+<BR>
+How should I put it... there was no sign of anyone living there.
+{PAUSE ""}
+<BR>
+Having grown up in the mountains like this, I'm very sensitive to the presence of living things.<PG>
+But at the time, I didn't think much of it.
+{PAUSE ""}
+<BR>
+Walking through the crowds of Tokyo had probably dulled that sense too, I figured.<PG>
+I decided on this room.
+{PAUSE ""}
+<BR>
+The room I'd move into was Room 205.
+{PAUSE ""}
+<BR>
+On either side were 204 and 206, and 206 next door was the end room on that floor.
+{PAUSE ""}
+<BR>
+The building's name was... 
+{PAUSE ""}
+'<STYLE ID="4" RUBY="しりんかん">Shirinkan</STYLE>'.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―And then, on moving day...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋3.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With most of my things carried in, I thought I'd go greet the neighbors, and I left my room with a gift.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外廊下.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I knocked on the door next to mine.
+{PAUSE ""}
+<BR>
+Just because there had happened to be no sign of anyone that time didn't mean no one lived there.
+{PAUSE ""}
+<BR>
+206 was vacant, so the one I knocked on was 204.
+{PAUSE ""}
+<BR>
+But the door didn't open, 
+{PAUSE ""}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+and instead a knock came back.<PG>
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"Mm...?"</STYLE>
+{PAUSE ""}
+<BR>
+It's not as if this were a toilet. Was she telling me to open it?
+{PAUSE ""}
+<BR>
+Was that how things were in Tokyo?
+{PAUSE ""}
+<BR>
+Puzzled, I opened the door myself.
+{PAUSE ""}
+<BR>
+The one who came out was―<PG>
+{MESOFF "500"}
+{PLAYSND "SE\屋上ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\黒茅萱.gal" "WAIT" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A woman about my age, perhaps.
+{PAUSE ""}
+<BR>
+But her hair was a mess, her eyes were bloodshot, her face was pale, and she was terribly thin.
+{PAUSE ""}
+<BR>
+Just seeing her took me aback.
+{PAUSE ""}
+<BR>
+But what surprised me even more was...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋2.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+that the room inside had not been renovated, and was as run-down as a <STYLE ID="5" RUBY="はいきょ">ruin</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... I-I'm Chigaya Niimura. I've just moved in next door..."</STYLE>
+{PAUSE ""}
+<BR>
+I greeted her, trying to look calm, but she just kept staring at my face.
+{PAUSE ""}
+<BR>
+When I handed her the manju I'd brought as a gift, she took them quickly.
+{PAUSE ""}
+<BR>
+And then...<PG>
+"I'll come by later..."
+{PAUSE ""}
+<BR>
+was all she said, and she slammed the door shut.
+{PLAYSND "SE\詫言編　夢から\ドア激しく閉める.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "300" "0" "0" "" "0"}
+{PAUSE ""}
+<BR>
+I was stunned, but I figured Tokyo really did have strange people, and went back to my own room.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋3夜.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The resident of Room 204 was strange too, but what bothered me more was the inside of that room.
+{PAUSE ""}
+<BR>
+It was so dilapidated you'd never think anyone lived there.
+{PAUSE ""}
+<BR>
+The woman was bad enough, but I couldn't stop thinking about the inside of that room.
+{PAUSE ""}
+<BR>
+Besides... 
+{PAUSE ""}
+there really were almost no residents.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱切.gal" "WAIT" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Maybe this was a property with a dark history.
+{PAUSE ""}
+<BR>
+Its name was '<STYLE ID="4" RUBY="しりんかん">Shirinkan</STYLE>'.
+{PAUSE ""}
+<BR>
+I searched for it on my phone...<PG>
+<STYLE ID="6">No results found for “Shirinkan”.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+That's strange. Could that happen with a building's name these days?
+{PAUSE ""}
+<BR>
+I decided to look into it a little more tomorrow.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―That night.<PG>
+{MESOFF "0"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">"Mm..."</STYLE>
+{PAUSE ""}
+<BR>
+I woke to a sound like someone knocking on a door.
+{PAUSE ""}
+<BR>
+What on earth was that sound?
+{PAUSE ""}
+<BR>
+Was the neighbor doing something?
+{PAUSE ""}
+<BR>
+{MESOFF "0"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+It wasn't a sound like knocking. It was, unmistakably, the sound of knocking.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋3夜.gal" "WAIT" "#1" "C" "B" "0" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I turned on the light and looked at the clock. It was 3 in the morning.
+{PAUSE ""}
+<BR>
+Did people come by even at this hour in Tokyo?<PG>
+<STYLE ID="1">"Mm... Coming."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+Uneasy as I was, I <STYLE ID="7" RUBY="のぞ">peeked</STYLE> through the peephole.
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE" "500" "PASS"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループドアスコープ背景.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"............?"</STYLE>
+{PAUSE ""}
+<BR>
+I couldn't see anyone.
+{PAUSE ""}
+<BR>
+No, but I could still sense someone there.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\黒茅萱スコープ.gal" "NORMAL" "#1" "C" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n150\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n150\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Eek...!?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\bgm_semarikuru.ogg" "BGM" "REPEAT" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "3" "3" "0" "30"}
+All of a sudden she was there: from the other side of the peephole, the woman next door was <STYLE ID="7" RUBY="のぞ">peering</STYLE> in at me.
+{PAUSE ""}
+<BR>
+And her whole body was <STYLE ID="8" RUBY="けいれん">convulsing</STYLE>. She could barely stay on her feet.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\連続ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+With eyes even more bloodshot than in the daytime, she was twisting the doorknob violently and knocking again and again.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\連続ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+I was too scared to open it, but... 
+{PAUSE ""}
+in those bloodshot eyes was a look, desperate and pleading, that made me feel her loneliness.
+{PAUSE ""}
+<BR>
+As if she were asking me for help...
+{PAUSE ""}
+<BR>
+I made up my mind and decided to open the door.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\黒茅萱.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{QUAKE "人物2" "QUAKE" "1" "3" "3" "0" "30"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPS>"Y... 
+{PAUSE ""}
+You came out... 
+{PAUSE ""}
+You finally came out...!"
+{PAUSE ""}
+<BR>
+<TXSPN>When I opened the door, she forced a twitching smile on a face as gaunt as a dead woman's.
+{PAUSE ""}
+<BR>
+But even making a smile seemed to drain her strength.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\まんじゅう.gal" "NORMAL" "#1" "R" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+She was holding something that looked like the manju box I'd given her as a greeting.<PG>
+<TXSPS>"U-Um...!
+{PAUSE ""}
+　This is... to thank you...!"
+{PAUSE ""}
+<BR>
+<TXSPN>The woman pushed the box she was holding at me, almost forcing it into my hands.<PG>
+<STYLE ID="1">"Mm... Thank you..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Pressed to take it, I accepted the box.
+{PAUSE ""}
+<BR>
+If it was a thank-you for the manju, she could have come in the daytime...
+{PAUSE ""}
+<BR>
+The woman was trembling and staring at me.
+{PAUSE ""}
+<BR>
+At that moment, I noticed.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\オッドアイ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+She had vivid odd eyes, green and blue.
+{PAUSE ""}
+<BR>
+Just like me.
+{PAUSE ""}
+<BR>
+Looking closely, I felt her face somehow resembled mine, too.<PG>
+<STYLE ID="1">"Mm... Um... So you have odd eyes too."</STYLE>
+{PAUSE ""}
+<BR>
+When I said that, 
+{PAUSE ""}
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外廊下.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+{MESON "500"}
+she hurried back to her own room.
+{PLAYSND "SE\詫言編　夢から\ドア激しく閉める.ogg" "VOICE" "NORMAL" "1000" "0"}
+<PG>
+Creepy...
+{PAUSE ""}
+<BR>
+Even if this is Tokyo, this is just too much...<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\まんじゅう.gal" "NORMAL" "#1" "C" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I looked closely at the box I'd received, it was exactly the same as the manju box I'd given her.
+{PAUSE ""}
+<BR>
+I thought she'd returned it, but from the feel of it, the contents had clearly changed.
+{PAUSE ""}
+<BR>
+It was really... 
+{PAUSE ""}
+creepy...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door1_C.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋3夜.gal" "WAIT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+That exchange had left me wide awake.
+{PAUSE ""}
+<BR>
+What on earth was in this box...
+{PAUSE ""}
+<BR>
+A dead rat, or a box full of grotesque bugs...<PG>
+When I shook the box, 
+{PAUSE ""}
+{MESOFF "500"}
+{QUAKE "アイテム1" "QUAKE" "1" "15" "15" "0" "200"}
+{PLAYSND "SE\詫言編　夢から\箱を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{QUAKESTOP "100"}
+{MESON "500"}
+there seemed to be just one hard thing inside.
+{PAUSE ""}
+<BR>
+I steeled myself and decided to open the box.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "2000" "0" "0" "" "0"}
+{PLAYSND "SE\dvd-case-takeout1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mm...? What's this..."</STYLE>
+{PAUSE ""}
+<BR>
+Inside was an old wooden board.
+{PAUSE ""}
+<BR>
+And on that board...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\死隣館.gal" "NORMAL" "#1" "650" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<BR>
+Shirinkan [TN: Written here 'death-next-door hall', not 'poem-grove hall'.]
+{PAUSE ""}
+<BR>
+had been written with a brush.<PG>
+What is this...! That's even creepier...!
+{PAUSE ""}
+<BR>
+Bugs or dead animals would at least make sense, since you'd know it was harassment.
+{PAUSE ""}
+<BR>
+Was this a pun on this building's '<STYLE ID="4" RUBY="しりんかん">Shirinkan</STYLE>' (poem grove) and '<STYLE ID="4" RUBY="しりんかん">Shirinkan</STYLE>' (death next door)?<PG>
+<STYLE ID="1">"Ugh...!"</STYLE>
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "$FFFFFF" "NORMAL" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋3夜.gal" "NORMAL" "15" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PAUSE ""}
+<BR>
+For a moment, I was hit by dizziness and nausea.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\haa1.ogg" "VOICE" "NORMAL" "1000" "0"}
+Maybe because I'd seen something like this, I felt quite unwell.
+{PAUSE ""}
+<BR>
+I decided to rest right away.
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+I didn't know what the neighbor meant by it, but I'd throw this sign away tomorrow.
+{PAUSE ""}
+<BR>
+I crawled into bed.
+{PAUSE ""}
+<BR>
+My very first day of life in Tokyo, and it's a disaster...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "200" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "WAIT"}
+{MESON "500"}
+―I woke to the sound of a thunderstorm.
+{PAUSE ""}
+<BR>
+{PLAYSND "環境音\風呂.ogg" "SE2" "REPEAT" "1000" "0"}
+Something was dripping onto my face, drop by drop.
+{PAUSE ""}
+<BR>
+Was the roof leaking!?
+{PAUSE ""}
+<BR>
+I sat up in surprise, and...<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "SE2" "0" "PASS"}
+{PLAYSND "SE\ドーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋2.gal" "WAIT" "#1" "C" "B" "0" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{PLAYSND "BGM死月編\恐怖BGM2.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+The room looked completely different.
+{PAUSE ""}
+<BR>
+It was ruined and falling apart, and the belongings I'd brought had decayed as if decades had passed.
+{PAUSE ""}
+<BR>
+What on earth was going on!? It was just like the room next door...!
+{PAUSE ""}
+<BR>
+When I looked at the floor, 
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\死隣館.gal" "NORMAL" "#1" "650" "C" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+there was that wooden board I'd received.<PG>
+―Shirinkan
+{PAUSE ""}
+<BR>
+Frightened, I tried to leave the room.
+{PAUSE ""}
+<BR>
+But...
+{PAUSE ""}
+{MESOFF "500"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKESTOP "1000"}
+{MESON "500"}
+I staggered and collapsed.
+{PAUSE ""}
+<BR>
+There was no strength left anywhere in my body...
+{PAUSE ""}
+<BR>
+It felt as if I hadn't eaten in days.
+{PAUSE ""}
+<BR>
+When I looked at my hand...
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱痩せた手.gal" "NORMAL" "#1" "650" "540" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "人物1" "QUAKE" "1" "3" "3" "0" "100"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n45\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n45\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+it was so thin it didn't seem like mine, nothing but skin and bone.<PG>
+This is the same as that room next door, and the woman next door...!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{QUAKESTOP "100"}
+{MESON "500"}
+I had felt unwell ever since I received this sign last night.
+{PAUSE ""}
+<BR>
+Could this be happening because of the sign...
+{PAUSE ""}
+<BR>
+Which would mean that woman gave it to me knowing what it would do?<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+Leaning on the wall, I made my way to the door on my own and tried to open it.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+But it wouldn't budge, as if something were holding it shut with great force.
+{PAUSE ""}
+<BR>
+This is bad...!
+{PAUSE ""}
+<BR>
+With this sign here, won't I rot away just like this room...!
+{PAUSE ""}
+<BR>
+Thinking that, I tried to throw it out the window, but the window was shut tight and wouldn't open either.
+{PAUSE ""}
+<BR>
+I didn't even have the strength to make a hole in the wall.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱切.gal" "WAIT" "#1" "650" "C" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I have to call somewhere for help...!
+{PAUSE ""}
+<BR>
+When I picked up my phone, 
+{PAUSE ""}
+{MESOFF "500"}
+{DELETECG "アイテム1" "11" "4000" "0" "0" "" "1"}
+{MESON "500"}
+it crumbled away like sand.<PG>
+There was no way out of this room.
+{PAUSE ""}
+<BR>
+I didn't have the strength to shout.
+{PAUSE ""}
+<BR>
+I didn't have the stamina to search this room.
+{PAUSE ""}
+<BR>
+Unless someone came... I wouldn't be saved...<PG>
+I lay down on the bed, <STYLE ID="9" RUBY="ぬ">wet</STYLE> from the leak and covered in stains.
+{PAUSE ""}
+<BR>
+I thought it was a good property, and it had a <STYLE ID="10" RUBY="わな">trap</STYLE> like this...
+{PAUSE ""}
+<BR>
+There's no such thing as a deal that good in this world.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\朽ちる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋4.gal" "WAIT" "1" "6000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+As if I could see time itself, the ceiling boards peeled away and the wallpaper grew older and older.
+{PAUSE ""}
+<BR>
+The room decayed even more than before.
+{PAUSE ""}
+<BR>
+When I looked at my hand again...
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱痩せた手.gal" "NORMAL" "#1" "650" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\bakibaki.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱痩せた手2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+it was so wasted it was a wonder I was alive.
+{STOPSND "VOICE" "500" "PASS"}
+<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "2000" "0" "0" "" "0"}
+{MESON "500"}
+It felt as if only this room and I were moving through time faster and faster, heading straight for death.
+{PAUSE ""}
+<BR>
+Along with that passing time, extreme hunger came over me.
+{PAUSE ""}
+<BR>
+But all the food had rotted.
+{PAUSE ""}
+<BR>
+Unless someone brought me food, I would probably starve to death...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\ノック響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+A knock...?
+{PAUSE ""}
+<BR>
+Someone knocking on the door...!
+{PAUSE ""}
+<BR>
+Someone came!
+{PAUSE ""}
+<BR>
+I summoned the last of my strength and went to the door.
+{PAUSE ""}
+<BR>
+But the door couldn't be opened from my side.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+Instead, I knocked from my side.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\屋上ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+Then, with help from the other side, it opened easily.
+{PAUSE ""}
+<BR>
+Now... now I'm saved!
+{PAUSE ""}
+<BR>
+But when I saw the person on the other side, I was shocked.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\まんじゅう.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was me, the very me who had come with a gift just yesterday.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Mm... Um... I'm </STYLE><STYLE ID="1">Chigaya Niimura</STYLE><STYLE ID="11">. I've just moved in next door..."</STYLE><PG>
+My head couldn't keep up. On instinct, I snatched the gift she held out and shut the door.
+{DELETECG "人物1,アイテム1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\ドア激しく閉める.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+I couldn't bear the hunger any longer.<PG>
+{PLAYSND "SE\詫言編　夢から\貪り食う.ogg" "VOICE" "REPEAT" "1000" "0"}
+Like a ghoul devouring a corpse, I devoured the 20 manju.
+{PAUSE ""}
+<BR>
+So happy I could hardly stand it, with tears, drool, and snot streaming down...<PG>
+But even as I stuffed the manju into my mouth, I was seized by fierce regret.
+{PAUSE ""}
+<BR>
+However blinded by food I'd been, why hadn't I just run out of the room then?<PG>
+But now, the sweet, soft texture of the manju and the way they slid down my throat were irresistible.
+{PAUSE ""}
+<BR>
+At that moment, I was a mindless zombie devouring whatever caught my eye.<PG>
+{STOPSND "VOICE" "500" "PASS"}
+{STOPSND "BGM" "5000" "PASS"}
+Once I had eaten all the manju and calmed down a little, I thought about what to do next.
+{PAUSE ""}
+<BR>
+This time, no mistakes. I'll think only about escaping.
+{PAUSE ""}
+<BR>
+Yesterday's me should be able to open the door in the middle of the night.
+{PAUSE ""}
+<BR>
+And if I hand over this sign...!<PG>
+No... if I did that, the me in the next room would go through the same thing.
+{PAUSE ""}
+<BR>
+But if this went on, I would certainly die.
+{PAUSE ""}
+<BR>
+I had no choice left.
+{PAUSE ""}
+<BR>
+But I didn't know what to do after handing over the sign.
+{PAUSE ""}
+<BR>
+I didn't even know whether the me in Room 204 had been saved after that.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―When I came to, it was already the middle of the night.
+{PAUSE ""}
+<BR>
+I'd been so exhausted that I must have fallen asleep without realizing.
+{PAUSE ""}
+<BR>
+And I was terribly hungry again.
+{PAUSE ""}
+<BR>
+My body was badly weakened, and the room smelled of nothing but nasty mold.<PG>
+What time was it?
+{PAUSE ""}
+<BR>
+If it was 3 in the morning, the door might open.
+{PAUSE ""}
+<BR>
+Feeling my way, I put the sign in the box and took hold of the doorknob.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\屋上ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外廊下.gal" "WAIT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+And the door opened easily.
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\bgm_semarikuru.ogg" "BGM" "REPEAT" "1000" "0"}
+I couldn't let this chance slip by!
+{PAUSE ""}
+<BR>
+Middle of the night or not, I couldn't care about that.
+{PAUSE ""}
+<BR>
+I would push this onto the me next door.<PG>
+Fighting not to collapse, 
+{PLAYSND "SE\ノック響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+I knocked on the next room's door.
+{PAUSE ""}
+<BR>
+The room I'd come out of was 205, and the room I knocked on was 206.
+{PAUSE ""}
+<BR>
+This was the end room.<PG>
+{PLAYSND "SE\ノック響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+Ngh...! Wake up already, me!
+{PAUSE ""}
+{PLAYSND "SE\ノック響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+<BR>
+That terrible hunger came at me again, as if it would crush me!
+{PLAYSND "SE\ドアがちゃがちゃ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PAUSE ""}
+<BR>
+Hurry... hurry...!
+{PAUSE ""}
+<BR>
+I nearly blacked out and slumped against the door, but desperately pulled myself upright.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then out came someone exactly like yesterday's me.
+{PAUSE ""}
+<BR>
+Yes...! Now I'll be saved...!
+{PAUSE ""}
+<BR>
+A smile rose up in me for the first time in a long while.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\まんじゅう.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1"><TXSPS>"U-Um...! This is... to thank you...!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>I pushed the sign at her, almost forcing it into her hands.<PG>
+But at that instant, the baton of death passed to the other me.
+{PAUSE ""}
+<BR>
+To live, I was trying to kill this person.
+{PAUSE ""}
+<BR>
+She thanked me with a puzzled look, but
+{PAUSE ""}
+<BR>
+"So <STYLE ID="1">you</STYLE> have odd eyes too..."
+{PAUSE ""}
+<BR>
+when she had said that much, I couldn't bear the faint <STYLE ID="12" RUBY="かしゃく">pangs</STYLE> of conscience that welled up in me.<PG>
+I tried to run away instead of going back to my room, but I could barely even stand anymore.
+{PAUSE ""}
+<BR>
+At this rate, even if I didn't go back to the room, I would die.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ドア激しく閉める.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,アイテム1,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+With the last of my strength, I went back to my room.<PG>
+If this saves me... then that's fine...
+{PAUSE ""}
+<BR>
+If I die, then it can't be helped.
+{PAUSE ""}
+<BR>
+<TXSPS>I did... all... that... I... could.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "BGM" "REPEAT" "700" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>―From outside, I could hear a faint <STYLE ID="13" RUBY="けんそう">hubbub</STYLE>...
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ループアパート部屋3.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I came to, I was lying on the floor of my room, back the way it had been.
+{PAUSE ""}
+<BR>
+When I looked at my hands, they weren't thin, and my body felt fine.
+{PAUSE ""}
+<BR>
+I was saved...
+{PAUSE ""}
+<BR>
+What on earth had that sign been?
+{PAUSE ""}
+<BR>
+What was... Shirinkan?
+{PAUSE ""}
+<BR>
+Terrified, I moved out of the room right away.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ループアパート外観.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+After that, I passed in front of Shirinkan just once.
+{PAUSE ""}
+<BR>
+The outside was as old as ever.
+{PAUSE ""}
+<BR>
+But the rooms were renovated, out of keeping with it.
+{PAUSE ""}
+<BR>
+And the baton of death.
+{PAUSE ""}
+<BR>
+Shirinkan, where neighbor brings death to neighbor.<PG>
+The other me I had given the sign to had no one left to pass it on to.
+{PAUSE ""}
+<BR>
+What became of her?
+{PAUSE ""}
+<BR>
+Is she alive, or has she rotted away?<PG>
+Is she still searching for food, like a zombie that has lost its mind?
+{PAUSE ""}
+<BR>
+Maybe... 
+{PAUSE ""}
+even now...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\death_sound3.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"That's the end of my story."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="14">"Wow... So it's a time-loop story, in a way... </STYLE>
+{PAUSE ""}
+<STYLE ID="14">What happened to the </STYLE><STYLE ID="1">Chiga-nee</STYLE><STYLE ID="14"> in 206...?"</STYLE><PG>
+<STYLE ID="1">"Mm... It's just a ghost story, after all. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Maybe I made it up, maybe it was a dream..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

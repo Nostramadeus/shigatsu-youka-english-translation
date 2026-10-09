@@ -1,0 +1,32 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=105, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=119, target=)
+; Links:
+;    0: TWdLink(count=105, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "システム音\The_Lampe.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日2.gal" "NORMAL" "#1" "C" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "プレート" "グラフィック\システム\立木三日プレート.gal" "NORMAL" "#1" "180" "380" "600" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "立木三日" "グラフィック\立ち絵\人物\イラスト\立木三日.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>Thank you for all your hard work. 
+{PAUSE ""}
+It seems they have finally reached a happy ending. 
+{PAUSE ""}
+I am truly delighted that you have stayed with me this far.<PG>
+This is as far as I am able to guide you. 
+{PAUSE ""}
+Has this world been to your satisfaction?
+{PAUSE ""}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

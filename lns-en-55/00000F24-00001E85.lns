@@ -1,0 +1,264 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=125, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=88, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=385, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=102, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=106, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=36, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=19, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=54, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=8, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1138, target=)
+; Links:
+;    0: TWdLink(count=923, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\五島家からの外.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神ハンマー上げる.gal" "NORMAL" "#1" "R" "960" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n50\r\n1000\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n50\r\n1000\r\nDEC\r\nPASS">
+{PLAYSND "SE\ガラス割る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\ガラス割れる.gal" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神ハンマー振りおろし.gal" "NORMAL" "1" "50" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000,人物1,111" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "300" "50"}
+{CREATECG "000" "グラフィック\立ち絵\人物\死神しゃがみ.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "1000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\五島の部屋月.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Wh-who...?"<PG>
+{MESOFF "500"}
+{QUAKE "000,人物1" "QUAKE" "1" "5" "5" "0" "30"}
+{PLAYSND "SE\spo_ge_ringmat_taoreru01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKESTOP "500"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢銃.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Don't move! Drop your weapons!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\能面横顔3.gal" "NORMAL" "#1" "L" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Dammiiit!!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\lcm\死神かわす.lcm" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物3,人物2" "1" "100" "0" "0" "" "0"}
+{WAITPLAY "人物1" "CLICK"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢全身.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Damn...! So it's no good after all...! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE>Kogori-san<STYLE ID="1">, what are you doing!?</STYLE><STYLE ID="2">　</STYLE><STYLE ID="1">Hurry, get out through the window!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\五島家夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">An opponent who dodges bullets. I can't imagine I'd get away.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "700" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "700" "0"}
+{MESON "500"}
+<STYLE ID="3">Goto</STYLE><STYLE ID="2">'s house echoed with gunshots.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">, what's going to happen to them?</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "BGM死月編\夢見る憧憬.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYSND "環境音\アポカリプティック2.ogg" "SE2" "NORMAL" "0" "0"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+{CHGVOL "SE2" "600" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\中央公園素材\中央公園内部夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\中央公園素材\御神木夜.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">This place is... Central Park?</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\nムービー\r\n11\r\n100\r\n5000\r\nNORMAL\r\nPASS">
+{PLAYMOVIE "桜吹雪風船なし.wmv" "256" "C" "C" "REPEAT" "FALSE" "300" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\赤い人バストアップ.gal" "NORMAL" "#1" "R" "B" "200" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"</STYLE>Natsumi<STYLE ID="5">... Trust... in... </STYLE><STYLE ID="4">Haruka-chan</STYLE><STYLE ID="5">..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">Haruka</STYLE>... trust her...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"In everyone... everyone is... on your side."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="6">Dad</STYLE>...!"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2,111" "1" "1000" "0" "0" "" "0"}
+{PLAYMOVIE "赤い人消える.wmv" "256" "C" "C" "NORMAL" "TRUE" "0" "255"}
+{WAITPLAY "ムービー" "CLICK"}
+<EVENT VALUE="STOPMOVIE">
+{CREATECG "000" "グラフィック\背景\中央公園素材\中央公園内部夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"You're the one who killed <STYLE ID="6">Dad</STYLE>, aren't you..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"That's far enough! The park is completely surrounded! There's nowhere to run!"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "1000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{STOPSND "SE" "1000" "WAIT"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神茜大.gal" "WAIT" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n100\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n100\r\n0\r\nINC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "700" "1000" "PASS"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "NORMAL" "FALSE" "100" "50"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神茜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\中央公園素材\中央公園内部夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"</STYLE>Natsumi<STYLE ID="7">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Ryoji-kun</STYLE><STYLE ID="7">... </STYLE><STYLE ID="6">Dad</STYLE><STYLE ID="7">... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">tried to protect us right up to the very end. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">At least, </STYLE>you<STYLE ID="7"> tw― </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Ugh!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬鉈.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">Mom</STYLE><STYLE ID="2"> was rushed to the hospital, but she died in the ambulance before it arrived.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Auntie</STYLE><STYLE ID="2">'s whereabouts were apparently unknown.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Mom</STYLE><STYLE ID="2">'s nata and red robes were apparently thought to have been taken from </STYLE><STYLE ID="8">Auntie</STYLE><STYLE ID="2">.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n1000\r\nNORMAL\r\nPASS">
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYSND "環境音\駅ホーム.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\元木駅.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Senpai, are you both really going away...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Well, can't be helped, right? After what our parents did, it's hard to stay in this town. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Besides, there's no home or family left for us here anyway."</STYLE>
+{PAUSE ""}
+<BR>
+"I'll come back. My grandma's house is an hour away by train, so we can see each other anytime."<PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="4">"Oh! Looks like my train's here."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "僕らの日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\春花電車見送り.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">"See you! Let's meet again!"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah! See you!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="4">Senpai</STYLE><STYLE ID="3">! I seriously love you!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{DELETECG "000,人物2" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">But I never heard from </STYLE><STYLE ID="4">Haruka</STYLE><STYLE ID="2"> again.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">No matter how many times I reached out.</STYLE><BR>
+<STYLE ID="2">Even after waiting a week.</STYLE><BR>
+<STYLE ID="2">Even after waiting a month.</STYLE><BR>
+<STYLE ID="2">Even after waiting a year...</STYLE><PG>
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+<STYLE ID="2">―2 years later　Shiyo 802, April 8</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\電車昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">With the third-year memorial service for </STYLE><STYLE ID="6">Dad</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="7">Mom</STYLE><STYLE ID="2"> behind me, I was riding a train.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I looked into all sorts of things. About the Niimura family... And you're still going. To that Arata settlement... </STYLE>
+{PAUSE ""}
+Senpai<STYLE ID="3">, how is it? Do you sense any danger?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm not sure... I can't really tell..."<PG>
+<STYLE ID="2">Now I'm going to the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Haruka</STYLE><STYLE ID="2">... the real witch... and the shinigami. I'm going to meet them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The incident 2 years ago was only the tip of the iceberg.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The incident still isn't over.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">The reason I never got in touch with </STYLE>Natsumi<STYLE ID="2"> or </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">was to forge my weak self into something stronger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Everyone who gets involved with me ends up unhappy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">That's why I've spent 2 years in the mountain seclusion.</STYLE><PG>
+<STYLE ID="2">Soon it'll be 2 years since I left Motoki-cho―</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+{MESOFF "3000"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

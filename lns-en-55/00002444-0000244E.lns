@@ -1,0 +1,964 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=976, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=3981, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=544, unk2=6413008, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=9, unk2=16755370, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=15, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=41, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=5, unk2=16776960, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=18, unk2=8421504, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=18, unk2=16755455, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=2, unk2=255, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=480, unk2=8421504, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=72, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こわいろ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=90, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=9, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=187, unk2=8388863, unk3=4294967295, unk4=0, unk5=3, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=5, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=146, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=7280, target=)
+; Links:
+;    0: TWdLink(count=6608, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\たたら場.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\裏\奈落1.lcm" "REPEAT" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>"Where... is this...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was strangely warm.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I should have been on a mountain path in Arata until just now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So it had been an April night, with a slightly chilly wind blowing.</STYLE><PG>
+<STYLE ID="1">But what about here? It was very warm, and there was no wind.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And yet the air felt damp somehow.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n7000\r\nDEC\r\nPASS">
+{WAIT "7000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\裏\奈落2.lcm" "REPEAT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">The moon that had been shining until a moment ago was gone too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Because there was a ceiling above me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I couldn't really tell if it was rock or wood, but something on the ceiling was writhing, as if it were pulsing.</STYLE><PG>
+<STYLE ID="1">No, not just the ceiling.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The walls and the floor were covered too, with long, thin things like tree roots running everywhere, and they were squirming like worms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I slowly stood up.</STYLE><PG>
+<STYLE ID="1">That's weird.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'd been running all over the mountain until a moment ago, but I was hardly tired at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And my head felt clear, too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The more I breathed, the fresher I felt, and the tiredness in my body faded even more.</STYLE><PG>
+<STYLE ID="1">Huh? Where is everyone?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In this space, about the size of a school classroom, there was no one but me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Wait, did I die?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Is this that afterlife thing?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Is that why my whole body feels so clear?</STYLE><PG>
+<STYLE ID="1">I put a hand on my chest.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">My heart seemed to be pumping blood through my body the same as always.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I tried holding my breath.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then I started to feel short of breath, and my lungs moved right away, wanting fresh air.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Looks like I'm still alive.</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, so you're awake."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Is that </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1">'s voice...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1"> calls me Haruka-'chan'.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So this is... </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="1">, then.</STYLE><PG>
+"<STYLE ID="5">Dad</STYLE>, where is this?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Looking around above me, I called out to no one in particular.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's no use. Look around all you want, there's no one there. You can only hear my voice."</STYLE>
+{PAUSE ""}
+<BR>
+"I'm asking you where this is!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ha ha, that's an awful way to talk to your father. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Mifuyu-chan</STYLE><STYLE ID="2">―what kind of upbringing was she giving you?"</STYLE><PG>
+"Father? Yeah, right! My <STYLE ID="5">real dad</STYLE> would never do something like this!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Well, it's true my mind isn't the same as it was when I was alive. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh, right, right, you asked where this is. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">This is underground, beneath the summit of Mount Itohime."</STYLE>
+{PAUSE ""}
+<BR>
+"The summit of Mount Itohime...?"<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="7">The Goddess</STYLE><STYLE ID="2"> is taking her rest at the moment. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The residents suddenly went on a rampage, so she had to put us to work in a hurry. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">On top of that, she treated </STYLE><STYLE ID="8">Natsumi-chan</STYLE><STYLE ID="2"> so she wouldn't die, so </STYLE><STYLE ID="7">the Goddess</STYLE><STYLE ID="2"> is very tired indeed."</STYLE><PG>
+<STYLE ID="2">"With all that going on, we let our guard down in front of </STYLE><STYLE ID="9">Itohime</STYLE><STYLE ID="2"> and she got away, but, well, it's no big problem. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">So rather than summoning </STYLE><STYLE ID="7">the Goddess</STYLE><STYLE ID="2">, I thought it would be better to bring </STYLE><STYLE ID="3">you</STYLE><STYLE ID="2"> all here, that's all."</STYLE><PG>
+"'You all'... So the others are here too?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Of course. We're keeping the others over here with us. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Oh, they're safe, so you don't need to worry."</STYLE><PG>
+"Why's it just me... Why am I the only one here all alone?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="7">The Goddess</STYLE><STYLE ID="2"> surely wishes to talk with </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, just the two of them, you see."</STYLE>
+{PAUSE ""}
+<BR>
+"So where is she, this <STYLE ID="10">Goddess</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Look, take a good look. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">She's been right in front of </STYLE><STYLE ID="3">you</STYLE><STYLE ID="2"> this whole time, hasn't she?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-1385\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-1385\r\n0\r\nDEC\r\nPASS">
+{PLAYSND "SE\surprising_shock1.ogg" "VOICE" "NORMAL" "900" "0"}
+{MESON "500"}
+<STYLE ID="1">I brought my eyes, which had stayed fixed upward, back down level and looked around.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And there, over in the corner, was a black mass.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That was clearly different from the tree roots.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Like a clump of hair, long fibers, black and thin, were wound around something about an armful in size.</STYLE><PG>
+<STYLE ID="1">No way. Is that </STYLE><STYLE ID="10">the Goddess</STYLE><STYLE ID="1">―the thing they call the core, or Abaddon?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Is it safe to go near it?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It won't grab me and eat me, will it?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Is that thing even alive in the first place?</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I walked toward the black mass.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Dad</STYLE><STYLE ID="1"> had said it―she wanted to talk with me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">So she probably wouldn't turn to violence all of a sudden.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\イラスト\死月編\裏\あやか1.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\裏\奈落3.lcm" "REPEAT" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Ugh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A low scream slipped out of me before I could stop it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What I'd taken for a black, hairlike mass was, without a doubt, hair.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">How many years would hair have to be left alone to get this long?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The hair covered something, and it spread out all around it, too.</STYLE><PG>
+"<STYLE ID="10">You</STYLE>'re... 
+{PAUSE ""}
+the core...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="10">You</STYLE>'re a person, right...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="10">You</STYLE>... who are you...?"<PG>
+<STYLE ID="1">When I'd said that much, the mass moved faintly.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">As if in answer, my feet took a step back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then some of the hair that had covered the mass slipped down and fell away.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\あやか2.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Something white peeked out through the gap.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It took me three blinks to realize it was skin.</STYLE><PG>
+"So it is <STYLE ID="10">you</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE>
+{PAUSE ""}
+<BR>
+"I don't know if you can understand me, but hear me out. 
+{PAUSE ""}
+I want you to turn <STYLE ID="11">Natsumi</STYLE> back to normal."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE>
+{PAUSE ""}
+<BR>
+"I want you to make <STYLE ID="11">Natsumi</STYLE> the human she was before."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE><PG>
+"<STYLE ID="11">Natsumi</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE>
+{PAUSE ""}
+<BR>
+"Hey..."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"　　　　　　　　"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The mass kept up its sullen silence, same as before.</STYLE><PG>
+<STYLE ID="1">Either it didn't understand words, or it was speaking too quietly for me to hear.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Either way, it looked like talking with me was impossible for it.</STYLE><PG>
+"Sorry, looks like I had the wrong person."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"―placement"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I thought I'd heard a voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Faintly, from the black mass, a voice...</STYLE><PG>
+"Did you... say something...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I tried to make my voice as gentle as I could, like I was talking to a little kid.</STYLE>
+{PAUSE ""}
+<BR>
+"Can you say that one more time?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Replacement... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">want..."</STYLE>
+{PAUSE ""}
+<BR>
+"Replacement...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"That girl's... replacement..."</STYLE><PG>
+<STYLE ID="1">When it said that girl, did it mean </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1">?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">From the sound of it, it meant that in exchange for freeing </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1">, someone else should become a divine messenger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But of course, there was no way I could do that.</STYLE><PG>
+<STYLE ID="1">It had only been a little conversation, but whoever was inside this mass seemed like a young child.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12" RUBY="こわいろ">Not the voice</STYLE><STYLE ID="1"> or anything. It was the stiffness in the way it talked that seemed weirdly childish.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If this was a child who died 20 years ago, showing up like this just as it was, should I appeal to its feelings instead of to reason?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I crouched down in front of </STYLE><STYLE ID="10">the kid</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just as I thought, it didn't seem like it was going to jump at me out of nowhere.</STYLE><PG>
+"Hey, <STYLE ID="11">Natsumi</STYLE>'s someone really important to us."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"So, I want you to give her back. 
+{PAUSE ""}
+Didn't your mom or dad ever tell you it's wrong to take other people's things?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Mom...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah."<PG>
+<STYLE ID="10">"Mommy..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"I want to see Mommy..."</STYLE>
+{PAUSE ""}
+<BR>
+"Your mommy, huh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"I want to see Mommyyy..."</STYLE><PG>
+<STYLE ID="10">This kid</STYLE><STYLE ID="1"> seemed even younger than I'd thought.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I didn't hate kids, but I had no idea how to talk to someone that logic just didn't work on.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Years and years ago, </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1"> used to say it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Why is there no </STYLE><STYLE ID="14">Mommy</STYLE><STYLE ID="1"> at our house, she'd ask.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\背景\詫言編　夢から\荒田集落1.gal" "NORMAL" "#1" "C" "B" "300" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Back when she was only four or five, </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1"> seemed to ask that question of everyone she met.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">One person said―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">she's watching over you from up in the sky.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Another person said―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">she's always there in </STYLE><STYLE ID="13">Kana-chan</STYLE><STYLE ID="1">'s heart.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I said―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">it's because she died.</STYLE><PG>
+<STYLE ID="1">Back then, I couldn't give an answer as thoughtful as the grown-ups'.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Looking back now, I think it was a really cold answer.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1"> said this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"I saw it in a picture book. All living things die. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">But 'cause they die, their souls get born again and turn into new lives,"</STYLE><STYLE ID="1"> she said.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Kana</STYLE><STYLE ID="1"> was way too young for an idea that hard.</STYLE><PG>
+<STYLE ID="1">But </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1"> knew.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The people of Arata hunt the animals of the mountain, kill them, and eat them.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The bones of the animals they eat are buried in graves.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Then they make offerings for them and pray for their happiness in the next life.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Kana</STYLE><STYLE ID="1"> had lived closer to that view of life and death than people out in the world ever do.</STYLE><PG>
+<STYLE ID="1">And </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1"> said something else.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="13">"</STYLE><STYLE ID="14">Mommy</STYLE><STYLE ID="13"> must be happy somewhere else now, right?"</STYLE><STYLE ID="1"> she said.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Her view of life and death was so far from mine that I couldn't answer her at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="15">Little </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1">'s words still come back to me clearly, even now.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Hey, I don't know <STYLE ID="10">your</STYLE> mommy, but... 
+{PAUSE ""}
+I bet your mommy wants to see <STYLE ID="10">you</STYLE> too. 
+{PAUSE ""}
+And she's gotta be thinking about <STYLE ID="10">you</STYLE> all the time, always."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It didn't feel like I'd said it well at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That kind of thing only sounds convincing because it's </STYLE><STYLE ID="13">Kana</STYLE><STYLE ID="1"> saying it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">From someone like me, who's blended right into modern society, words like that would sound empty, even to a kid.</STYLE><PG>
+<STYLE ID="10">"I... want to be with Daddy and Mommy..."</STYLE>
+{PAUSE ""}
+<BR>
+"Daddy...?
+{PAUSE ""}
+　You've got a Daddy?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If there was a father, he was probably dead already, same as </STYLE><STYLE ID="10">this one</STYLE><STYLE ID="1">.</STYLE><PG>
+"So your Daddy's someone who died?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="10">Your</STYLE>... 
+{PAUSE ""}
+What's <STYLE ID="10">your</STYLE> name...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"I do not know..."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... 
+{PAUSE ""}
+What's your Daddy's name?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Will not tell me."</STYLE><PG>
+"Then what's your Mommy's name?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At that, it shook its head with a soft rustle.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The hair on its head slid away, and more of its body came into view.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\あやか3.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">She had no clothes on, but she was definitely a woman.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And she looked more grown-up than I'd expected.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Probably not much different from me in age.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And yet she sucked on her fingers like a toddler and hugged her legs like a fetus.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">As if she'd been locked up here the whole time and grown up without any education at all.</STYLE><PG>
+"I see... It's hard not knowing the name of the person you want to see, huh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Right then, I felt close to </STYLE><STYLE ID="10">this kid</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I lost my </STYLE><STYLE ID="5">father</STYLE><STYLE ID="1"> too, so I get a little of how </STYLE><STYLE ID="10">this kid</STYLE><STYLE ID="1"> feels.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Besides, back then </STYLE><STYLE ID="16">Mom</STYLE><STYLE ID="1"> wasn't in her right mind, and I had no parent I could lean on as much as I wanted.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'd ended up seeing a bit of my old self in her.</STYLE><PG>
+<STYLE ID="1">So if I talk this through right, I might get </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1"> back without any sacrifice at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Listen to her more closely, and find out what </STYLE><STYLE ID="10">this kid</STYLE><STYLE ID="1"> really wants.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The way </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1"> did for me in Megasawa.</STYLE><PG>
+"Hey, if <STYLE ID="10">your</STYLE> mommy isn't here, does that mean she's still alive?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She nodded lightly.</STYLE><PG>
+"If you could see your mommy... 
+{PAUSE ""}
+If you could, would you give <STYLE ID="11">Natsumi</STYLE> back?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"I can't exactly let your mommy die, but if she came to see <STYLE ID="10">you</STYLE>, even just once in a while... 
+{PAUSE ""}
+How about it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I asked twice, but this time she showed no movement at all.</STYLE><PG>
+"If you give <STYLE ID="11">Natsumi</STYLE> back, I'll help you look for your mommy."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">At that, </STYLE><STYLE ID="10">the kid</STYLE><STYLE ID="1">'s body twitched.</STYLE>
+{PAUSE ""}
+<BR>
+"How about it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"You will really look for Mommy?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, I promise. 
+{PAUSE ""}
+If I get <STYLE ID="11">Natsumi</STYLE> back, that's no big deal."<PG>
+<STYLE ID="10">"Okay... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">Then I will give </STYLE><STYLE ID="11">that girl</STYLE><STYLE ID="10"> back."</STYLE>
+{PAUSE ""}
+<BR>
+"Thanks."<PG>
+<STYLE ID="17">"Oh my, so we have a deal."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This time, </STYLE><STYLE ID="14">Sakura-san</STYLE><STYLE ID="1">'s voice rang out.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">"Then, as promised, we will give </STYLE><STYLE ID="8">Natsumi-chan</STYLE><STYLE ID="17"> back."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\産道1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n0\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Then part of the wall suddenly began to pulse, and before long it swelled up like a boil as tall as a person.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\skin1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\裏\産道2.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Then a crack ran through the swelling―</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\産道3.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\dressing.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\裏\産道4.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">From inside, a white figure slid out with a gush of clear slime and collapsed.</STYLE><PG>
+"<STYLE ID="11">Natsumi</STYLE>! Hey! <STYLE ID="11">Natsumi</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I called out to her, but far from answering, she didn't move a muscle.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Her chest was moving faintly, so it seemed she was breathing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I took off my clothes and put them over </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1">.</STYLE><PG>
+<STYLE ID="10">"Hey."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I turned toward the voice, and―</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\裏\奈落3.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\イラスト\死月編\裏\あやか立つ1.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The mass that had been curled up like a fetus had quietly stood up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even so, her long hair reached the ground and crawled along it, like the tree roots all around this place.</STYLE><PG>
+<STYLE ID="10">"Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Out of nowhere, she thanked me.</STYLE>
+{PAUSE ""}
+<BR>
+"Wh-what... I haven't done anything yet..."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Because you promised to let me see Mommy."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">Thanking me just for a promise... doesn't </STYLE><STYLE ID="10">this one</STYLE><STYLE ID="1"> know how to doubt people?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No, of course I mean to look for her mother, to repay this one's good faith.</STYLE><PG>
+<STYLE ID="10">"I... am very happy."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Because Mommy... </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="10">I can take her back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What is she talking about?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Happy? Take back?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Seems there's a lot more going on here than I thought.</STYLE><PG>
+<STYLE ID="1">Then </STYLE><STYLE ID="10">she</STYLE><STYLE ID="1"> pointed straight at the crack </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1"> had come out of.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\真実.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\あやか立つ2.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">"You can get outside through that hole."</STYLE>
+{PAUSE ""}
+<BR>
+"R-right... So I can go home now?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">She</STYLE><STYLE ID="1"> nodded lightly.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\あやか立つ1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">For all that this was a creepy, baffling place, and a creepy, baffling exchange, the negotiation had been settled more easily than I'd expected.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Or could </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="1"> be lying in wait outside, ready to jump me...</STYLE><PG>
+<STYLE ID="2">"Hah hah hah! Amazing, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">! It's a complete win for </STYLE><STYLE ID="3">you</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="17">"Don't worry. We will send everyone here back unharmed. </STYLE>
+{PAUSE ""}
+<STYLE ID="17">But only for now."</STYLE>
+{PAUSE ""}
+<BR>
+"Only for now...?"<PG>
+<STYLE ID="2">"Let's see, in about 15 more years, </STYLE><STYLE ID="7">the Goddess</STYLE><STYLE ID="2"> will be taking up residence in Motoki-cho. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">When that happens, Motoki-cho will probably become a ghost town where no one can live."</STYLE>
+{PAUSE ""}
+<BR>
+"I've got no idea what you're talking about..."<PG>
+<STYLE ID="17">"Well, it's all right if you don't understand for now. </STYLE>
+{PAUSE ""}
+<STYLE ID="17">Around April, 15 years from now, Motoki-cho will fall. </STYLE>
+{PAUSE ""}
+<STYLE ID="17">If you don't want to die, you'd better leave Motoki-cho before then."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Now, you've got no more business here, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Like I said before, </STYLE><STYLE ID="7">the Goddess</STYLE><STYLE ID="2"> is tired. Take </STYLE><STYLE ID="8">Natsumi-chan</STYLE><STYLE ID="2"> and go."</STYLE><PG>
+<STYLE ID="17">"Oh, right, I forgot to tell you something important. </STYLE>
+{PAUSE ""}
+<STYLE ID="17">If you tell anyone about what happened here, or about what happens 15 years from now... </STYLE>
+{PAUSE ""}
+<STYLE ID="17">then just know that none of you will live."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"In other words, all you have to do is leave us alone."</STYLE><PG>
+<STYLE ID="1">The two of them kept spouting whatever they pleased, one thing after another.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Keeping quiet about what happened here, I can still understand, but what's this about 15 years from now?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Leave Motoki-cho before then?</STYLE><PG>
+<STYLE ID="1">Even I can tell. These guys are up to something.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If they wanted to shut us up, killing everyone right here would be the surer way.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Even if they'll kill us when we let slip what happened here, going out of their way to let us go unharmed now...</STYLE><PG>
+<STYLE ID="1">I put the clothes on </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1"> and stood up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just as I'd thought, my body felt strangely light in here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Natsumi</STYLE><STYLE ID="1"> was still a struggle to carry, but it looked like I could manage.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I staggered toward the crack.</STYLE><PG>
+"Hey, I'll at least say thanks. Thank you for saving <STYLE ID="11">Natsumi</STYLE>. 
+{PAUSE ""}
+If <STYLE ID="10">you</STYLE> hadn't done anything, <STYLE ID="11">Natsumi</STYLE> would've been killed by the residents."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Hey..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"</STYLE>Your<STYLE ID="10"> name... </STYLE>
+{PAUSE ""}
+<STYLE ID="10">is it Haruka?"</STYLE><PG>
+"Yeah, Haruka Niimura. 
+{PAUSE ""}
+I'm the daughter of the <STYLE ID="5">man</STYLE> who's been doing all the talking."
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"I see..."</STYLE>
+{PAUSE ""}
+<BR>
+"Something wrong?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Nothing."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay... 
+{PAUSE ""}
+Uh... 
+{PAUSE ""}
+I'll keep my promise, for real. That I'll look for <STYLE ID="10">your</STYLE> mom."<PG>
+<STYLE ID="10">"............ </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="10">No need."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"No need now. You do not have to."</STYLE>
+{PAUSE ""}
+<BR>
+"What?"
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"From me to </STYLE>you<STYLE ID="10">, there is only one request."</STYLE>
+{PAUSE ""}
+<BR>
+"A request...?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "$111111" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\あやか顔実装用.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">"Live as long as you can, okay?"</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\たたら場.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">That was the first time I saw </STYLE><STYLE ID="10">her</STYLE><STYLE ID="1"> face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I felt like she looked like someone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Eyes like someone's.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And that look in them―I felt like I'd seen it just once, when I was a kid, but―</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">I escaped together with </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I only realized it once we were outside, but somehow a full 5 days had passed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">On the morning of April 13, we were rescued.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Everyone else was safe too.</STYLE><PG>
+<STYLE ID="1">What made even less sense was that everyone but me had lost their memory of what happened.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="18">Grandma</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="4">Kotaro-san</STYLE><STYLE ID="1"> were found too, but they'd lost their memories of that night as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">All that was left were the residents' bodies, lying all over the settlement.</STYLE><PG>
+<STYLE ID="1">Maybe what happened was a dream.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sometimes I thought so, but then why were all the residents dead?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There's no explaining it unless it really happened.</STYLE><PG>
+<STYLE ID="1">Actually, there was one more survivor.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\病院思い出.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Kaori Niijima-san, one of the residents.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Apparently she'd been hiding deep inside her house, shaking.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She'd apparently been badly injured around the shoulder, and she was taken straight to the hospital.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I went to visit Kaori-san before April was out.</STYLE><PG>
+<STYLE ID="1">But Kaori-san kept shaking the whole time and couldn't even hold a proper conversation.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Apparently she'd been like that since they found her, so they couldn't even look into what had happened.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">3 months later, Kaori-san wasted away, maybe from too much stress, and died quietly in the hospital.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The state Kaori-san was in convinced me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">That really hadn't been a dream.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Things must have happened exactly the way I remember them.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "環境音\テレビの声.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\裏\テレビ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="19">"Uh, we now bring you the latest information. </STYLE>
+{PAUSE ""}
+<STYLE ID="19">Regarding last week's earthquake in Motoki City, according to a government announcement, the existence of any survivors is now considered hopeless, due, as feared, to the effects of the toxic gas released. </STYLE>
+{PAUSE ""}
+<STYLE ID="19">In addition, large plant-like growths and thick fog have made it difficult to learn details of the situation in Motoki City, and the special unit dispatched there has still not returned, now 5 days past schedule."</STYLE><PG>
+<STYLE ID="1">With one excuse or another, I'd gotten </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1">, </STYLE><STYLE ID="20">Goto</STYLE><STYLE ID="1">, and the others to move away from Motoki-cho.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Thanks to that, they weren't caught up in this disaster.</STYLE><PG>
+<STYLE ID="1">I knew what would happen in Shiyo 815.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Only I―I alone knew.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I never told anyone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Because that was what I'd promised.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\ホラー.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+<STYLE ID="1">But because of that, nearly 200,000 people died.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">If I'd made it public, maybe it never would have gotten this horrible.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">This past week, I've been crushed by that guilt.</STYLE><PG>
+<STYLE ID="1">It's been 15 years since then, and I've finally understood what they meant.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What that </STYLE><STYLE ID="10">Goddess</STYLE><STYLE ID="1"> thing was after―</STYLE>
+{PAUSE ""}
+<STYLE ID="1">it was to make me suffer like this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">To live as long as I can, and keep tasting that suffering the whole time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'll probably go on living crushed by this guilt until the day I die.</STYLE><PG>
+<STYLE ID="1">Back then, </STYLE><STYLE ID="5">Dad</STYLE><STYLE ID="1"> said </STYLE><STYLE ID="5">"It's a complete win for </STYLE>you<STYLE ID="5">,"</STYLE><STYLE ID="1"> or something like that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">No. It was a complete loss for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">Natsumi</STYLE><STYLE ID="1">'s rescue, sure, is something nothing could ever replace.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But to them, it doesn't matter whether the one who becomes a divine messenger is </STYLE><STYLE ID="11">Natsumi</STYLE><STYLE ID="1"> or anyone else.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Anyone infected with that drug will do.</STYLE><PG>
+<STYLE ID="1">And above all, the reason I thought it was a complete loss for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It's―</STYLE><PG>
+{MESOFF "0"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Ever since then, that person has never been found.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

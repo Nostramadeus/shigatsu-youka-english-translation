@@ -1,0 +1,77 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=100, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=181, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=24, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=355, target=)
+; Links:
+;    0: TWdLink(count=305, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Did I somehow give it away? There's no cram school starting at this hour, is there!<STYLE ID="1"> </STYLE>Operation failed..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Now that she mentioned it, cram school from 2 p.m. is far too early for a high school student.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"The cram school was a lie! So I'm staying with you, all right?"
+{PAUSE ""}
+<BR>
+Goto<STYLE ID="1"> was looking straight at me with a bright, clear face.</STYLE>
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "70" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="2">Niimura-senpai</STYLE>, may I intrude on your home as well?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"Yeah! </STYLE>You<STYLE ID="2">, I was thinking of calling you if you were free."</STYLE>
+{PAUSE ""}
+<BR>
+"Ehehe, yes!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Goto<STYLE ID="1"> climbed happily onto her bicycle.</STYLE><PG>
+<STYLE ID="1">Somehow, I was hugely relieved.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It felt as though this would let me avoid a great danger.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Only a feeling, that was all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Whether the danger could really be avoided, or whether any danger had been about to happen at all, there was no proof of it anywhere.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "人物1,人物3,人物2" "1" "0" "0" "0" "" "0"}
+{CHANGECG "000" "グラフィック\背景\能面フラッシュ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">But, what was it that I had seen just now?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">A mask... maybe?</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

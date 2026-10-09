@@ -1,0 +1,1182 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3867, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=551, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2510, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=43, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=551, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1435, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=12, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おえつ, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=4, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひよく, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しのざき, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごうおん, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いと, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=9858, target=)
+; Links:
+;    0: TWdLink(count=8995, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\雷雨.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "WAIT"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\女神\枝.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―It must be past 3 p.m. by now.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\駅見下ろし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I've been watching Arata Station from up in a tree the whole time.
+{PAUSE ""}
+<BR>
+Any time now, <STYLE ID="1">Natsumi</STYLE> and Goto could show up.<PG>
+The rain keeps falling, same as before.
+{PAUSE ""}
+<BR>
+Earlier I thought the thunder had died down, but now it's a thunderstorm again.
+{PAUSE ""}
+<BR>
+No sign of it ever letting up.
+{PAUSE ""}
+<BR>
+Don't thunderclouds usually clear up after a while?
+{PAUSE ""}
+<BR>
+The rain keeps falling, as if time has stopped in this one place alone.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Then I see a one-car train in the distance.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> should be on this train or the next one, the 5 p.m. arrival.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\キオク\荒田駅昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There they are...!
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHGVOL "SE" "500" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+It really, really is <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>...!
+{PAUSE ""}
+<BR>
+Okay, I have to get down this tree, fast...!
+{PAUSE ""}
+<BR>
+I have to tell them what's going on in the settlement right now, and once we've talked, get them out of here right away...!<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{CHGVOL "SE" "1000" "0" "PASS"}
+{PLAYSND "エデンの桜\SE\人をつかむ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+Just then, someone has me by the scruff of the neck.
+{PAUSE ""}
+<BR>
+I should have been alone up this tall tree the whole time.
+{PAUSE ""}
+<BR>
+The only one who could do this is <STYLE ID="3">Chiga-nee</STYLE>...!
+{PAUSE ""}
+<BR>
+Is she trying to keep me from meeting <STYLE ID="1">Natsumi</STYLE> and Goto this time...!?
+{PAUSE ""}
+<BR>
+I shoot a sharp <STYLE ID="4" RUBY="にら">glare</STYLE> behind me.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\女神\枝.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, long time no see!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"K-</STYLE><STYLE ID="5">Kana</STYLE><STYLE ID="6">...?"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+The one standing there was unmistakably <STYLE ID="5">Kana</STYLE>.
+{PAUSE ""}
+<BR>
+It's been 2 years since we last met, but apart from maybe being a little taller, she hasn't changed as much as I'd expected.
+{PAUSE ""}
+<BR>
+Still, just like <STYLE ID="3">Chiga-nee</STYLE>, she crept up behind me without giving off any presence at all.
+{PAUSE ""}
+<BR>
+Up a tree, no less!<PG>
+<STYLE ID="6">"Why are </STYLE><STYLE ID="5">you</STYLE><STYLE ID="6"> here...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Long story, but I was watching Toyotake Station, and there was this pair of strangers heading for Arata Station. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So I came on ahead of them."</STYLE>
+{PAUSE ""}
+<BR>
+I see... <STYLE ID="5">Kana</STYLE> is watching Toyotake Station, <STYLE ID="3">Chiga-nee</STYLE> said.
+{PAUSE ""}
+<BR>
+Anyone heading to Arata Station has to pass through Toyotake Station, so it's easy to know ahead of time who's coming.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"So, </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, why are you here? Is the mountain seclusion over?"</STYLE>
+{PAUSE ""}
+<BR>
+From the look of it, she doesn't know I met <STYLE ID="3">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+I'd better avoid bringing up the settlement's destruction as much as I can.
+{PAUSE ""}
+<BR>
+Otherwise, things will probably just get complicated again...<PG>
+<STYLE ID="6">"Huh? Oh, y-yeah, that's right, the mountain seclusion's over. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">So I was just looking at the view from up here, first time in ages."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hmm... In all this rain, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Kana</STYLE> stares at me suspiciously.<PG>
+<STYLE ID="5">"But your clothes are new, so you went back to the settlement once, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Didn't you meet anyone?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+Oh no. Sure enough, the way I'm dressed doesn't look like I came here straight from the mountain seclusion.<PG>
+<STYLE ID="6">"U-um... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I stopped by the settlement for a bit and changed, but there was nobody around... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Where'd everybody go... hahaha..."</STYLE>
+{PAUSE ""}
+<BR>
+I look away and try a wry smile, but the look in <STYLE ID="5">Kana's</STYLE> eyes doesn't change.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="5">"Didn't you meet </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="5">?"</STYLE>
+{PAUSE ""}
+<BR>
+The sharp gleam in <STYLE ID="5">Kana's</STYLE> eyes, as if it sees through everything.
+{PAUSE ""}
+<BR>
+Unlike <STYLE ID="3">Chiga-nee</STYLE>, she openly changes her expression and <STYLE ID="4" RUBY="にら">glares</STYLE> at me.<PG>
+<STYLE ID="6">"Ah... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Come to think of it, I did meet her... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Yeah, just for a bit..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5"><TXSPS>"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="5">You met her..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜ナイフ1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>With that, <STYLE ID="5">Kana</STYLE> took up a knife.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\E3839BE383A9E383BC3.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "1000" "PASS"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n500\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+Why pull out a weapon at a time like this...!
+{PAUSE ""}
+<BR>
+Does this mean she's hostile toward me after all...?<PG>
+<STYLE ID="5">"Ahaha! </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, you do know your position, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　If you make me mad, you'll fall from up here and die. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　No, wait... even if by some chance you don't die... I'll finish you off anyway."</STYLE>
+{PAUSE ""}
+<BR>
+What is <STYLE ID="5">this one</STYLE> talking about...!?
+{PAUSE ""}
+<BR>
+I haven't said anything to make <STYLE ID="5">Kana</STYLE> mad!<PG>
+I glance down out of the corner of my eye―
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\荒田駅外ノーマル.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考える.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考える.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> are coming out of Arata Station.
+{PAUSE ""}
+<BR>
+They look a little thrown by the muddy, unpaved road.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\枝.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死にかけ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="5">"</STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, are you curious about those people?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Didn't </STYLE><STYLE ID="3">Sis</STYLE><STYLE ID="5"> tell you? Bad people are coming to the settlement today."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"W-wait a sec..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"So we don't have to go easy on anyone who comes to the settlement, </STYLE><STYLE ID="7">Mommy</STYLE><STYLE ID="5"> said."</STYLE><PG>
+<STYLE ID="6">"Stop it, </STYLE><STYLE ID="5">Kana</STYLE><STYLE ID="6">... Don't lay a hand on those two...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh? So those two are people you know, </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　Hmm... Maybe they came here to see you, </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\血しぶき背景.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\春花ナイフ突きつけられる.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="5">Kana</STYLE> holds two knives to my throat.
+{PAUSE ""}
+<BR>
+If I try anything funny at all, all my blood will drain out in 5 seconds.<PG>
+<STYLE ID="5">"Hey, hey, maybe... </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, did you call those two here? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　</STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, are you the thing that's going to destroy the settlement?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"N-no...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"No? </STYLE>
+{PAUSE ""}
+<STYLE ID="5">　But Lady Verde said to kill the three outsiders..."</STYLE>
+{PAUSE ""}
+<BR>
+Lady Verde!? Does she mean that mummy...?<PG>
+So the one who made the prophecy that the settlement would perish wasn't <STYLE ID="7">Sakura-san</STYLE>, but Verde...?
+{PAUSE ""}
+<BR>
+So that mummy does have something to do with this...!
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Kana</STYLE> and <STYLE ID="3">Chiga-nee</STYLE> must both have gone strange because of that mummy...!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\枝.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Then <STYLE ID="5">Kana</STYLE> put the knives back in their sheaths.<PG>
+{STOPSND "BGM" "5000" "PASS"}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Well, if you don't know those two, that's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">So </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="5">, you keep watch on those two. I'm gonna go tell everyone right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">As long as you keep them out of the settlement, that's all you have to do!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Suddenly back to the innocent face I know, <STYLE ID="5">Kana</STYLE> took off toward the settlement like a flying squirrel.<PG>
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+I sit straddling a thick branch and lean my back against the trunk.
+{PAUSE ""}
+<BR>
+My legs have no strength in them.
+{PAUSE ""}
+<BR>
+If I let my guard down even a little, I feel like I'll fall off the branch.
+{PAUSE ""}
+<BR>
+Unlike <STYLE ID="3">Chiga-nee</STYLE>, <STYLE ID="5">Kana</STYLE> was aiming clear murderous intent at me.
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "186" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+No, more importantly, right now I have to stop <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>...!
+{PAUSE ""}
+<BR>
+The settlement's way too dangerous right now! Move, my legs...!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I hurry down the 20-meter tree, sliding to the ground.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\女神\荒田駅外ノーマル.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"N-</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="6">, </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+The moment my feet touch the ground, I shout at their backs.
+{PAUSE ""}
+<BR>
+At my shout, the two of them flinched, but they must have known whose voice it was right away.
+{PAUSE ""}
+<BR>
+Without any sign of wariness, they turned to face me right away.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">!"</STYLE><BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="2">!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\傘.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The two of them let go of their umbrellas and ran over to me.
+{PAUSE ""}
+<BR>
+And both of them throw their arms around me at once.<PG>
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">... I'm so glad!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="2">, I missed you...!"</STYLE>
+{PAUSE ""}
+<BR>
+I feel like I've finally met someone I know.<PG>
+But the next moment, an unwanted doubt wells up: are <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> really the two I know?
+{PAUSE ""}
+<BR>
+Maybe these two will start talking about Verde and destruction too, like <STYLE ID="3">Chiga-nee</STYLE> and the others.
+{PAUSE ""}
+<BR>
+I couldn't hug back the two of them clinging to me.<PG>
+<STYLE ID="6">"You two... are you really </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="6"> and </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="6">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Of course we are! Let's go back to Motoki-cho together. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">There's... nothing to be scared of anymore...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2"> must have been through a hard time here. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Come on, let's let her rest on a bench at the station."</STYLE>
+{PAUSE ""}
+<BR>
+The two of them are worried about me...?
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Chiga-nee</STYLE> and <STYLE ID="5">Kana</STYLE> didn't do anything like that.
+{PAUSE ""}
+<BR>
+Which means...<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, can you walk? Want me to carry you on my back?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Here, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="2">, please lean on us. You must be tired."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Uuuh... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Uuh..."</STYLE>
+{PAUSE ""}
+<BR>
+As a <STYLE ID="8" RUBY="おえつ">sob</STYLE> escaped me, all the strength drained right out of my body.
+{PAUSE ""}
+<BR>
+I put my whole weight on the two of them, and they hold me up.
+{PAUSE ""}
+<BR>
+I'd finally met people I could feel safe with, and I found rest for the first time in 2 years.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, it was hard, wasn't it? It's okay now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="2">, we're right here with you."</STYLE>
+{PAUSE ""}
+<BR>
+The things they say haven't changed from 2 years ago.
+{PAUSE ""}
+<BR>
+Really, I'd like to stay like this and lose myself in the feeling, but... 
+{PAUSE ""}
+I have to explain the situation to the two of them as well.
+{PAUSE ""}
+<BR>
+I gather the strength that drained away into my legs and get up on my own.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\駅見下ろし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"Sorry I never got in touch with you two all this time. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">But right now, something terrible's happening in the Arata settlement..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"O-okay! Then why don't we take the train somewhere safe right away?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"That's a good idea! </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Now that we've found you, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="2">, there's no need to go to the Arata settlement at all!"</STYLE>
+{PAUSE ""}
+<BR>
+Before I could answer, <STYLE ID="1">Natsumi</STYLE><STYLE ID="9"> and Goto</STYLE> were holding me up and walking, heading back to the station.<PG>
+Honestly, I had misgivings about leaving the settlement behind like this.
+{PAUSE ""}
+<BR>
+But <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> were a little pushy, as if determined not to be separated from me any longer.
+{PAUSE ""}
+<BR>
+And yet, that felt good.
+{PAUSE ""}
+<BR>
+Here are two people who need me, and they're taking me somewhere I can feel safe.<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "0" "5000" "PASS"}
+{PLAYSND "環境音\静かな雨屋内.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\女神\運転席下地.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "111" "グラフィック\背景\女神\運転席上地.gal" "NORMAL" "#1" "C" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―At the platform sits the train that brought <STYLE ID="1">Natsumi</STYLE> and Goto.
+{PAUSE ""}
+<BR>
+It waits here until its scheduled time, and in about 10 more minutes it'll head back toward Toyotake.
+{PAUSE ""}
+<BR>
+We take numbered tickets at the door and sit down on the seats of the empty car.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The feel of a soft cushion, for the first time in years.
+{PAUSE ""}
+<BR>
+All at once, the place I'm in began to feel real.
+{PAUSE ""}
+<BR>
+Ah... I really did come down from the mountain and leave Arata...
+{CREATECG "リファレンス解禁画像" "グラフィック\システム\リファレンス解禁画像.gal" "NORMAL" "#1" "187" "600" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+<STYLE ID="6">"Sorry, you two... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">You rode the train all that way, and now again..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"What are you saying, </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">! As long as you come back safe, </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, that's all that matters!"</STYLE>
+{PAUSE ""}
+<BR>
+Then <STYLE ID="1">Natsumi</STYLE> hugs me tight.
+{PAUSE ""}
+<BR>
+The warmth and feel of another person's skin, so dearly familiar.
+{PAUSE ""}
+<BR>
+Unable to hold back, I hug <STYLE ID="1">Natsumi</STYLE> back.<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="6">... I'm sorry...! All this time..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"A lot happened, didn't it? But it's okay now. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">You don't... have to be scared anymore."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> was the same as ever, still <STYLE ID="1">Natsumi</STYLE>.
+{PAUSE ""}
+<BR>
+I'd thought that after years apart, she'd be at least a little distant.<PG>
+But the moment we met, we held each other, made sure the other was safe, comforted each other―
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> really is my best friend.
+{PAUSE ""}
+<BR>
+And <STYLE ID="2">Goto</STYLE>, who came with her, is my cute junior too.
+{PAUSE ""}
+<BR>
+After feeling each other's warmth, we slowly pull apart.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, you're hardly </STYLE><STYLE ID="10" RUBY="ぬ">wet</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah, I was up a tree the whole time. The big leaves kept me from getting </STYLE><STYLE ID="11" RUBY="ぬ">wet</STYLE><STYLE ID="6">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"You were up a tree? Why would you do that...?"</STYLE>
+{PAUSE ""}
+<BR>
+I'd better explain what's happening in the Arata settlement, and fast.
+{PAUSE ""}
+<BR>
+Not that I understand much of what's going on...<PG>
+{MESOFF "500"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHGVOL "SE2" "0" "5000" "PASS"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\女神\駅見下ろし.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Explaining everything took time, as I'd expected.
+{PAUSE ""}
+<BR>
+<STYLE ID="12">Mom's</STYLE> body―
+{PAUSE ""}
+the mountain seclusion―
+{PAUSE ""}
+today's memorial service―
+{PAUSE ""}
+the foretold destruction―
+{PAUSE ""}
+<STYLE ID="3">Chiga-nee</STYLE> and <STYLE ID="5">Kana</STYLE>―
+{PAUSE ""}
+Verde―
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> doesn't even try to doubt my story.
+{PAUSE ""}
+<BR>
+As for <STYLE ID="2">Goto</STYLE>, she keeps taking notes so as not to miss a single word I say.<PG>
+<STYLE ID="1">"I see... You went through a hard time for 2 whole years. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But, </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, I'm glad you didn't forget about us..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"As if I'd ever forget... I wanted to see you two so much, too..."</STYLE><PG>
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">, come back to Motoki-cho. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Haruka</STYLE><STYLE ID="1">, you're turning 20 soon too, right? You can decide for yourself where you want to live your life, can't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"But... the Arata settlement is one of the places that matter to me too. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Wherever I end up living, I can't just leave the settlement the way it is."</STYLE><PG>
+<STYLE ID="1">"I see... But there don't seem to be many cherry trees around here, so my intuition isn't working at all... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Goto</STYLE><STYLE ID="1">, what do you think? Can you tell anything?"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Goto</STYLE> keeps staring at her notepad as if to bore a hole through it.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto's</STYLE> deduction and analysis are about to begin.<PG>
+{PLAYSND "最後の声・真呪殺\Ghost長い.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">"</STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">... before we look into what's happening now, please let me make sure of something. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Are you really going to save the settlement? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　I think abandoning it and running is a very good choice too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Does that mean it's that bad...?"</STYLE><PG>
+<STYLE ID="2">"It seems the Arata settlement has changed beyond recognition into a very dangerous place."</STYLE>
+{PAUSE ""}
+<BR>
+So my sense of things was right after all.
+{PAUSE ""}
+<BR>
+I'm not the strange one. <STYLE ID="3">Chiga-nee</STYLE> and <STYLE ID="5">Kana</STYLE> are.
+{PAUSE ""}
+<BR>
+And <STYLE ID="7">Sakura-san's</STYLE>―no, Verde's prophecy, read far too broadly.
+{PAUSE ""}
+<BR>
+In the first place, calling it Verde's prophecy is already wrong.
+{PAUSE ""}
+<BR>
+A corpse prophesying, something like that...<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="6">, sorry for the trouble, but tell me what </STYLE><STYLE ID="2">you</STYLE><STYLE ID="6"> think. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Whether we have no choice but to run, or whether we can do something about it, I want to decide after I hear what </STYLE><STYLE ID="2">you</STYLE><STYLE ID="6"> have to say."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"All right. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Then... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Um, where should I start..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE> scratches her head with her pen, looking at her notes.
+{PAUSE ""}
+<BR>
+Of course: with everything strange from top to bottom, not even <STYLE ID="2">Goto</STYLE> can explain it easily.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The thing is... I've been researching the Arata settlement these past 2 years too. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I probably know a lot of things even you don't, </STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Things I don't know? Why'd you do that?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">, it was to find you, obviously. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But the more I learned, the stranger the Arata settlement turned out to be, and it took me 2 whole years to decide to come here with </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+With that, <STYLE ID="2">Goto</STYLE> took out a different notepad.
+{PAUSE ""}
+<BR>
+It looks like a notebook where she's put together everything about the Arata settlement.<PG>
+{MESOFF "500"}
+{STOPSND "SE2" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\荒田集落イメージ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"The Arata settlement―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">or more precisely, the Arata district, which belongs to no city, town or village: what's known as 'land with undetermined boundaries.' </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Well, for convenience's sake, maps seem to show it as being inside Iizawa Prefecture. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And it's the middle of nowhere, where hardly anyone ever sets foot."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Well, I won't deny it's the middle of nowhere..."</STYLE><PG>
+<STYLE ID="2">"But the Arata district is a vast area, and apparently there are parts that still haven't been explored."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"There are a lot of mountains, sure, and where I did my mountain seclusion, there was nothing but mountains..."</STYLE><PG>
+<STYLE ID="2">"In other words, the Arata settlement is only a tiny part of the whole Arata district. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Put the other way around, you could say most of it is a realm of mystery."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"'Mystery' is kind of an overstatement..."</STYLE><PG>
+<STYLE ID="2">"No, it's no overstatement. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　The soil around the Arata settlement is quite </STYLE><STYLE ID="13" RUBY="ひよく">fertile</STYLE><STYLE ID="2">, and apparently there are lots of big, unusual animals."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Oh, that rings a bell. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Still, you really did your homework. How'd you find all this out?"</STYLE><PG>
+<STYLE ID="2">"I looked things up at libraries and asked university professors. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Information like this isn't on the internet, after all."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"University professors?"</STYLE><PG>
+<STYLE ID="2">"I got to talk with professors all over the country who are experts in cultural anthropology and biology. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">My name seems to be fairly well known, so if I said I was interested in their field, most professors would meet with me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh, so the 'genius girl' title really does carry weight..."</STYLE><PG>
+<STYLE ID="2">"But it wasn't all such peaceful stories. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">For all that the land is so </STYLE><STYLE ID="13" RUBY="ひよく">fertile</STYLE><STYLE ID="2"> and full of unusual plants and animals, almost nothing is known about what they really are. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Do you know why?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh? Why...? It's just that nobody's looked into it, right?"</STYLE><PG>
+<STYLE ID="2">"Then why do you think nobody's looked into it? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　A place this worth studying, do you think researchers would just leave it alone?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Jeez, enough with the quiz... Just tell me already."</STYLE><PG>
+This side of <STYLE ID="2">Goto</STYLE> hasn't changed.
+{PAUSE ""}
+<BR>
+Talking in quiz form probably helps me understand better, but this time of all times, there's no room to take it slow.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"All right. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The truth is... </STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<STYLE ID="2">the Japanese government bans entry into the Arata district to everyone but its residents."</STYLE><PG>
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+―From there, <STYLE ID="2">Goto</STYLE> began to talk about Droga.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\スチル\ドローガ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Droga hasn't been made public, but apparently among historians and cultural anthropologists, there are rumors like that about the Arata settlement.
+{PAUSE ""}
+<BR>
+But this research had always been treated as taboo.
+{PAUSE ""}
+<BR>
+Because if Droga were misused, it could upset the balance of the world.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"And then, about the culture of the Arata settlement. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The Arata settlement's shinigami and witches I'll skip, since I think you know about those, </STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">, do you know about the religion unique to the Arata settlement?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"You don't mean the shinigami and witch stuff?"</STYLE><PG>
+<STYLE ID="2">"No. Of course that's related too, but I mean what lies underneath it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Could it be... Verde?"</STYLE><PG>
+<STYLE ID="2">"That's right. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">In the Arata settlement, Japan and the West mixed into a unique culture that has lasted to the present day. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Well, let's provisionally call it the Verde faith. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The chief deity of the Verde faith is the Goddess Verde―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">said to be a girl who died about 450 years ago."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Hey now... How do you know so much...? </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Even I only heard the name Verde for the first time today..."</STYLE><PG>
+<STYLE ID="2">"Actually, until about 70 years ago, there was a religion practiced mainly around Megasawa City."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"A religion in Megasawa City...? </STYLE>
+{PAUSE ""}
+<STYLE ID="6">　You don't mean, um, what was it... the Holy Cerejeira Church?"</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">, so you knew about it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Yeah, that's the thing that got me bullied in Megasawa City. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Back in elementary school, I didn't really know much about that religion. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">There was a kid in my class from a Holy Cerejeira Church family, and that kid was getting bullied. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">When I stood up for that kid..."</STYLE><PG>
+<STYLE ID="2">"So that's how, </STYLE><STYLE ID="6">Senpai</STYLE><STYLE ID="2">, you became the target of the bullying... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Actually, that Holy Cerejeira Church originated in the Arata settlement."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh!?"</STYLE><PG>
+<STYLE ID="2">"The Holy Cerejeira Church was founded in Megasawa City several hundred years ago by people who left the Arata settlement, and it revered Droga as a sacred treasure. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But in the modern era, there was a movement to study Droga scientifically. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The one researching Droga in that religious group was a person named Hajime </STYLE><STYLE ID="14" RUBY="しのざき">Shinozaki</STYLE><STYLE ID="2">."</STYLE><PG>
+<STYLE ID="2">"But the experiments seem to have been pretty inhumane, and about 70 years ago the Holy Cerejeira Church collapsed. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Because of that, former believers turned hostile toward the Holy Cerejeira Church instead, and families that still follow it even today seem to have a hard time of it. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The classmate you helped, </STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">, was probably one of them."</STYLE><PG>
+<STYLE ID="2">"Shinozaki died some 50 years ago already, but apparently he tried as hard as he could to leave his research to later generations. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thanks to that, there were still a few people who remembered some of his findings. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">That person is very old too and only remembers fragments, but I was able to meet with them and hear what they had to say."</STYLE><PG>
+<STYLE ID="2">"But this Hajime </STYLE><STYLE ID="14" RUBY="しのざき">Shinozaki</STYLE><STYLE ID="2"> apparently changed his name."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"What's that about?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"They carried out inhumane experiments again and again, and there's a list of the researchers. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If you're someone whose name is on that list..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Ah, then life gets hard in a lot of ways."</STYLE><PG>
+<STYLE ID="2">"So who Hajime Shinozaki really was has stayed unknown all along. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The researchers of that time are all dead, so even the person I met never knew Hajime Shinozaki directly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"I see..."</STYLE><PG>
+<STYLE ID="2">"Getting back to the subject, the Goddess Verde died at 14. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">And this is what's said: </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\サード\翠眼呪殺.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">'The Green-Eye Curse-Killing has been severed. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">To the girl who saved Arata with her life we give a holy name, and worship her as a goddess.'"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"This is starting to sound... kind of occult... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">What even is a Green-Eye Curse-Killing...?"</STYLE><PG>
+<STYLE ID="2">"In the Arata settlement, very rarely, a girl is apparently born with just one green eye. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">When such a girl reached puberty, it seems she would try to kill every last person in the settlement."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Kill every last person...!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Kana</STYLE> has just one green eye.
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Kana</STYLE>... would kill every last person in the settlement...?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"The Goddess Verde succeeded, by some means, in severing the Green-Eye Curse-Killing. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But it seems it was an act that cost her her life. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Ever since, Verde has been worshipped as a god. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Apparently even the Westerners gradually came to accept Verde, who saved the settlement, as a god."</STYLE><PG>
+<STYLE ID="6">"So that's why they made Verde into a mummy? </STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Why would anyone turn her into a mummy...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"It's a common story with religions: they probably needed some kind of idol. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">They had the remains of the goddess who saved the settlement right in front of them, so mummifying her and worshipping that isn't, well, all that unnatural."</STYLE>
+{PAUSE ""}
+<BR>
+I see. If <STYLE ID="2">Goto's</STYLE> analysis is right, it ties in with the 'god to pray to' that <STYLE ID="6">Chiga-nee</STYLE> talked about earlier.<PG>
+<STYLE ID="6">"So, do you know why everyone's gone strange?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, I can't really say anything about that... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But the basic principle of Droga is something like a stimulant drug. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">If Droga is what made everyone go strange, I can't say for certain there's no connection."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Isn't that overthinking it a bit...?"</STYLE><PG>
+<STYLE ID="2">"It is overthinking it, sure. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But as long as what's happening now is divorced from reality, we need guesses that are divorced from reality too."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hey, </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE>, who'd kept quiet until now, cut into the conversation.<PG>
+<STYLE ID="1">"I don't really get what you're talking about, but... I still think we should go home together, right now... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I hate the idea of you being somewhere with stimulants and stuff like that going around, </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"But still... just abandoning everyone like this... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">They're definitely not in their right minds, so I want to get everyone back to normal."</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="6">Niimura-senpai</STYLE><STYLE ID="2">, I agree with </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="2">. We should call the police first."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> are against getting any more involved in what's going on in the Arata settlement.
+{PAUSE ""}
+<BR>
+Sure, I'm scared of sticking my nose in any further too, but...<PG>
+No, I'd better listen to what the two of them say here.
+{PAUSE ""}
+<BR>
+They should be able to think about this more calmly and objectively than me.<PG>
+<STYLE ID="6">"All right. Let's do that. If we say the people of the settlement have vanished, the police should take action."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, that's the best way! You've got me and </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="1"> right here with you."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Uh, that reminds me... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">When is this train going to leave? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Its departure time should have passed ages ago."</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\雷雨屋内.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+Now that she mentions it, it's been at least 10 minutes since we got on the train.
+{PAUSE ""}
+<BR>
+Not just 10 minutes. More than 30 have passed.
+{PAUSE ""}
+<BR>
+And yet there's no sign at all of it leaving.<PG>
+No... 
+{PAUSE ""}
+before I knew it, I'd been swallowed by a strange discomfort that <STYLE ID="1">Natsumi</STYLE> and Goto probably can't sense.
+{PAUSE ""}
+<BR>
+What this discomfort really is―
+{PAUSE ""}
+a foul smell.
+{PLAYSND "BGM死月編\恐怖BGM2.ogg" "BGM" "REPEAT" "1000" "0"}
+{PAUSE ""}
+<BR>
+A faint stench an ordinary person wouldn't notice is drifting all the way in here, mixed with the nasty damp of the rain.<PG>
+There's no mistaking this smell―
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "222" "$0000FF" "NORMAL" "#1" "C" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+it's the smell of blood.
+{PAUSE ""}
+<BR>
+No way!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\運転席下地.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "111" "グラフィック\背景\女神\運転席上地.gal" "NORMAL" "#1" "C" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "222" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+I go up to the driver's cab and try to look inside.
+{PAUSE ""}
+<BR>
+But a blind blocks the driver's cab, and I can't see what's going on inside.
+{PAUSE ""}
+<BR>
+I jump out of the train and <STYLE ID="15" RUBY="のぞ">peer</STYLE> into it through the glass.
+{PAUSE ""}
+<BR>
+The heavy rain has fogged the windows, and it's dim to begin with, so with the light scattering off the water drops, it's hard to see inside.<PG>
+But I can tell something red is splattered in there.
+{PAUSE ""}
+<BR>
+Yes, the stench is drifting out from in there.<PG>
+I get back on the train and head for the driver's cab.
+{PAUSE ""}
+<BR>
+I can't hold back anymore!<PG>
+{MESOFF "500"}
+<EVENT VALUE="STOPMOVIE">
+{DELETECG "000,111,222" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\ガラス割る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I take a good-sized rock from nearby and slam it into the cab's glass as hard as I can.
+{PAUSE ""}
+<BR>
+Then I kick out the badly cracked glass and slash the blind open with my knife.<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\E3839BE383A9E383BC3.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "1000" "WAIT"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\女神\電車運転席.gal" "NORMAL" "#1" "C" "B" "0" "17" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="6">"Ngh...!"</STYLE>
+{PAUSE ""}
+<BR>
+The driver sits in the seat, head tilted an unnatural 90 degrees.
+{PAUSE ""}
+<BR>
+The neck has been cut through, leaving only a few layers of skin, and the esophagus, windpipe and aorta gape open toward the ceiling.
+{PAUSE ""}
+<BR>
+Only a handful of people could cut a throat this cleanly.<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="6">! </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="6">! We're getting out of here, now! </STYLE>
+{PAUSE ""}
+<STYLE ID="6">　Even if we have to walk, we've gotta get out of here fast!"</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\雷雨屋内.ogg" "SE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+Who was I shouting at―
+{PAUSE ""}
+if anyone had been watching, that's what they would have wondered.
+{PAUSE ""}
+<BR>
+There's no one on this train but me.
+{PAUSE ""}
+<BR>
+As if <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> had only been an illusion, nothing but the <STYLE ID="16" RUBY="ごうおん">roar</STYLE> of the rain echoes all around.<PG>
+{PLAYSND "忍び寄る影.ogg" "BGM" "REPEAT" "1000" "0"}
+No, no way―!
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "NORMAL" "1000" "0"}
+I rush over to where <STYLE ID="1">Natsumi</STYLE> and Goto were sitting.
+{STOPSND "VOICE" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+The spots where the two of them sat are <STYLE ID="17" RUBY="ぬ">wet</STYLE>.
+{PAUSE ""}
+<BR>
+Because we hadn't had umbrellas up until we got on the train.
+{PAUSE ""}
+<BR>
+The two of them were definitely here until a moment ago; this confirms it.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "環境音\雷雨.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "1000" "PASS"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\女神\荒田駅外ノーマル.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+<STYLE ID="6">"Hey! </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="6">! </STYLE><STYLE ID="2">Goto</STYLE><STYLE ID="6">!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\駅見下ろし.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Where are you!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\枝.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Answer me!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\傘.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Those people... 
+{PAUSE ""}
+Those people...!
+{PAUSE ""}
+<BR>
+If...
+{PAUSE ""}
+if they've done anything to <STYLE ID="1">Natsumi</STYLE> and Goto... 
+{PAUSE ""}
+no matter who they are, even if they're family... I will never forgive them...!
+{PAUSE ""}
+<BR>
+I'll get them back, no matter what...!
+{PAUSE ""}
+<BR>
+To save them...
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "650" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+I won't even <STYLE ID="18" RUBY="いと">shrink</STYLE> from letting this knife drink blood...!<PG>
+I was certain of it.
+{PAUSE ""}
+<BR>
+I absolutely need <STYLE ID="1">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Whatever it takes... 
+{PAUSE ""}
+even if I have to kill every last person in the settlement...!
+{PAUSE ""}
+<BR>
+Brace yourselves...!
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE2" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

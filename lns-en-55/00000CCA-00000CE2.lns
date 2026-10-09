@@ -1,0 +1,34 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=23, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=43, target=)
+; Links:
+;    0: TWdLink(count=23, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CHANGECG "000" "グラフィック\背景\スチル\子供自転車斬.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "200" "CLICK" "SKIP"}
+{PLAYSND "SE\dressing.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\子供自転車斬2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\lcm\屋根1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\背景\lcm\死神屋根2.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"S-somebodyyy! A kid's d-d-dead!!"<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "11" "100" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

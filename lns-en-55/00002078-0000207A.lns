@@ -1,0 +1,112 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=614, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=20, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=11, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=20, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=5, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=737, target=)
+; Links:
+;    0: TWdLink(count=671, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\VSQSE_0591_library_1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "3000" "PASS"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\ナースステーション.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"By the way, it's already been 2 years since <STYLE ID="1">Niimura-san</STYLE> was admitted, hasn't it?"
+{PAUSE ""}
+<BR>
+―Right, right. How is she paying for her hospital stay?
+{PAUSE ""}
+<BR>
+"Medical insurance, apparently."
+{PAUSE ""}
+<BR>
+―Medical insurance? She was only in high school back then. Medical insurance?<PG>
+"Her <STYLE ID="2">late mother</STYLE> was overprotective, apparently. 
+{PAUSE ""}
+She'd taken out a policy that covered advanced medical care, so she'd be ready for anything."
+{PAUSE ""}
+<BR>
+―But apparently <STYLE ID="2">that mother</STYLE> tried to run <STYLE ID="1">Niimura-san</STYLE> over?
+{PAUSE ""}
+<BR>
+"What!? Seriously!?
+{PAUSE ""}
+　Was she after the insurance money?"
+{PAUSE ""}
+<BR>
+―But they say the <STYLE ID="2">mother</STYLE> killed herself right after the accident.<PG>
+"Ugh... That reminds me of the Motoki-cho case. 
+{PAUSE ""}
+<STYLE ID="1">Niimura-san</STYLE> was connected to the <STYLE ID="3" RUBY="は">flayed</STYLE>-corpse case, wasn't she?"
+{PAUSE ""}
+<BR>
+―Yeah, and <STYLE ID="4">Kogori-san</STYLE>, the one who comes every day, is the daughter of <STYLE ID="5">that victim</STYLE>, they say.
+{PAUSE ""}
+<BR>
+"So <STYLE ID="1">Niimura-san</STYLE> and <STYLE ID="4">Kogori-san</STYLE> both got dragged into their parents' mess."
+{PAUSE ""}
+<BR>
+―Even so, 2 years in the hospital is a lot.<PG>
+"That's because it's Motoki-cho, and this hospital. 
+{PAUSE ""}
+Normally she'd have been discharged or transferred. 
+{PAUSE ""}
+This town's benefits for its residents are amazing, right?"
+{PAUSE ""}
+<BR>
+―Well, yeah. That's why it's so hard to move away.
+{PAUSE ""}
+<BR>
+"But apparently 3 years is the limit. 
+{PAUSE ""}
+Once a full 3 years have passed since admission, it's forced discharge."
+{PAUSE ""}
+<BR>
+―Really? Does <STYLE ID="4">Kogori-san</STYLE> know?<PG>
+"No way. There's no way anyone could tell her that now..."
+{PAUSE ""}
+<BR>
+―Yeah... She's so young, and so devoted. It'd be hard to tell her... 
+{PAUSE ""}
+But isn't taking care of <STYLE ID="1">Niimura-san</STYLE> our job?
+{PAUSE ""}
+<BR>
+"It is, but <STYLE ID="4">Kogori-san</STYLE> says she'll do whatever she can herself."
+{PAUSE ""}
+<BR>
+―That's admirable. Is there some reason for it?<PG>
+"Well, you can tell just by watching how <STYLE ID="4">Kogori-san</STYLE> acts, can't you?"
+{PAUSE ""}
+<BR>
+―Uh...
+{PAUSE ""}
+<BR>
+"Well, we're better off just handling it calmly and by the book. 
+{PAUSE ""}
+Don't get too involved with those two."
+{PAUSE ""}
+<BR>
+―You're right.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

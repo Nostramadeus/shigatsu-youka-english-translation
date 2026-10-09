@@ -1,0 +1,263 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=68, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1048, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=198, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=25, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=28, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=15, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=15, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1596, target=)
+; Links:
+;    0: TWdLink(count=1397, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\スチル\ろうそく.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Now, things are really heating up. Next person, please."
+{PAUSE ""}
+<BR>
+Obaasan<STYLE ID="1"> picked the doll at the left end.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "111" "グラフィック\立ち絵\アイテム\ろうそくフィルター.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\怪談テーブル.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\紙人形\紙人形新村春花.gal" "WAIT" "#1" "550" "540" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n120\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+<BR>
+<STYLE ID="2">Haruka Niimura</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="2">"Me, huh..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"Uh, what should I talk about...? It's tough going after </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Everyone was staring at a wryly smiling </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"A-ahem. Then I'll begin."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"When I was little, I got really into charms. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I got especially interested in curses. </STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<STYLE ID="2">Back then I felt like a black magician."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\そよかぜ.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\図書室.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,アイテム1,アイテム2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">―I think it was before I started second grade.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I was looking through the charm books in the school library when I found a book I'd never seen before.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\魔術書.gal" "NORMAL" "#1" "C" "C" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">A big book with a hard cover that didn't belong on an elementary-school bookshelf.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">When I opened it...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\lcm\魔術書.lcm" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Pictures of an old woman in a robe taking care of frogs, pictures of scenes where magic was being used.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I couldn't read the kanji, but I figured this was a book of curses.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I was having fun looking at the pictures, but on one of the pages, I found a piece of paper tucked in.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\助けたい人.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">On that paper, something was written in a kid's handwriting.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">'A charm to help someone you want to help,' it said.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I thought maybe there was a way to help people.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\図書室.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">When I had the teacher in the library read me the page the paper was tucked into,</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If there is someone you want to help, do what is written on this page. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But if you cannot help that person, you may die 10 years later."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">is apparently what it said.</STYLE><PG>
+<STYLE ID="1">If I did this charm, </STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="1">, who was sick back then, might get better.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But I might die before I grew up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I was scared, but I came to want to help her no matter what.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "アイテム1" "グラフィック\立ち絵\アイテム\紋章.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">I hesitated, but I decided to do it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The method was simple. Picture your best friend's face, draw the emblem from the book on a piece of paper, and keep it with you the whole time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The emblem was something even a kid could draw.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">That night, I had a strange dream.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\chorus_of_angels4.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "$FFFFFF" "WAIT" "#1" "C" "B" "0" "12" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\女神さま.gal" "NORMAL" "20" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The Goddess appeared, wrapped in dazzling light.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I gazed at the sight, entranced.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">And then the Goddess said:</STYLE><PG>
+<STYLE ID="1">"First, help the friend you love. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Then </STYLE><STYLE ID="4">your mother</STYLE><STYLE ID="1"> will be saved as well."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000" "20" "1000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">That was the strange dream.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But that friend lived far away.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I got a little disappointed.</STYLE><PG>
+<STYLE ID="1">But a few days after that, when I woke up in the morning,</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\七海荘昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供喜びバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1"> that friend was sleeping next to me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I was surprised, but happy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But my memory of what came after is kinda patchy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">What I vaguely remember is my friend getting attacked by someone, and me shielding my friend and getting hit on the head.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Dream or no dream, I was just desperate to protect my friend.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\マンション前.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\美冬腰に手バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">After we came back to Motoki-cho, </STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="1"> got better and better, my friend is right nearby, and I'm really happy now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I decided I'd use charms to help people rather than to curse them.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間暗い.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\ろうそくの明かり.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"That friend, of course, is </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thanks to </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="2"> coming to me back then, </STYLE><STYLE ID="4">Mom</STYLE><STYLE ID="2"> got better, and I get to be here like this. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thanks, </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="2">."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬うつむき.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Obasan</STYLE><STYLE ID="1"> was shedding big tears.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Everyone else was sniffling a little too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I barely remember it myself, but it seems I was of some help to </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">, and that honestly makes me happy.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島ツインテールバストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Uuu... </STYLE><STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="3">... I'm so glad for you..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE><STYLE ID="1">, not to be outdone by </STYLE><STYLE ID="4">Obasan</STYLE><STYLE ID="1">, started crying too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But wasn't this just a nice story, not a ghost story?</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"Zzz... zzz..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kana-chan</STYLE><STYLE ID="1"> had fallen asleep at some point; maybe it was boring for her.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I've heard a lot about how close <STYLE ID="5">Natsumi-chan</STYLE> and <STYLE ID="2">Haruka</STYLE> are, for a long time now. 
+{PAUSE ""}
+You two stay good friends from here on, too."
+{PAUSE ""}
+<BR>
+Obaasan<STYLE ID="1"> said it with a smile.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

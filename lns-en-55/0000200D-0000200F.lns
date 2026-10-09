@@ -1,0 +1,104 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=178, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=112, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=10, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=379, target=)
+; Links:
+;    0: TWdLink(count=308, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\外崎家リビング.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Look, <STYLE ID="1">Natsumi</STYLE>, how about this dolly?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"My, my, my! And what about this picture book, then?" [TN: he speaks a heavy regional dialect.]
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+"<STYLE ID="1">Natsumi</STYLE>, it's about time for your bath."
+{PAUSE ""}
+<BR>
+"In with Grandpa, then!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I can take it by myself."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{CHGVOL "VOICE" "0" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="1">Natsumi</STYLE>... what's the matter with her, I wonder? She's usually so much more cheerful..."
+{PAUSE ""}
+<BR>
+"Cherry blossoms out already, are they?"
+{PAUSE ""}
+<BR>
+"No, <STYLE ID="2">Akane</STYLE> said she'd be fine as long as she stays out of the wind..."
+{PAUSE ""}
+<BR>
+"Is that so..."<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\なつみ子供.gal" "NORMAL" "#1" "650" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Hey, Grandpa, Grandma."</STYLE>
+{PAUSE ""}
+<BR>
+"Hm? What is it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Grown-ups... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">why don't they help the people they want to help?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Why did </STYLE><STYLE ID="3">Dad</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1"> leave me behind?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I wanted to help them..."</STYLE><PG>
+"That's... 
+{PAUSE ""}
+well, your <STYLE ID="3">dad</STYLE> and <STYLE ID="2">mom</STYLE> have all sorts of things going on too..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm going to take my bath."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{CHGVOL "VOICE" "0" "5000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="2">Akane</STYLE> and the others... what happened to them, I wonder?"<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

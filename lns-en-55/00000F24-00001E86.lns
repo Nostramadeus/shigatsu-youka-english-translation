@@ -1,0 +1,1224 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=5511, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=8, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=30, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=82, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=7, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=せきばら, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=74, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=591, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1006, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=てきがいしん, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だいたいぶ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=のぞ, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=61, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+;   16: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こわいろ, unk10=4294967295, unk11=4294967295)
+;   17: TDecorate(count=36, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   18: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=とが, unk10=4294967295, unk11=4294967295)
+;   19: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もも, unk10=4294967295, unk11=4294967295)
+;   20: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おび, unk10=4294967295, unk11=4294967295)
+;   21: TDecorate(count=1, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=8364, target=)
+; Links:
+;    0: TWdLink(count=7428, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\女神\集落全景夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―By feel, it's around 11 p.m.
+{PAUSE ""}
+<BR>
+April 8 is almost over.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Mom's</STYLE> third-year memorial service is over, and ordinary days are about to start again.
+{PAUSE ""}
+<BR>
+Whether those ordinary days will be ordinary for me, I don't know.
+{PAUSE ""}
+<BR>
+If I do nothing, they'll probably turn into days that aren't ordinary at all.<PG>
+Going by the information and guesses from <STYLE ID="2">Natsumi</STYLE> and <STYLE ID="3">Goto</STYLE>―
+{PAUSE ""}
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "in_dream低.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "桜散る.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+By tomorrow morning, the Arata settlement will perish.
+{PAUSE ""}
+<BR>
+And as many Arata cherries will be born as there are residents.
+{PAUSE ""}
+<BR>
+The prophecy that today, something from outside would destroy the Arata settlement...
+{PAUSE ""}
+<BR>
+Was that <STYLE ID="4">Sakura-san's</STYLE> prophecy, or did Verde have some means of sending out information? I can't be sure.<PG>
+But if the Arata cherry is looking for hosts and killing the residents, like <STYLE ID="3">Goto</STYLE> guessed, then what it means for the Arata settlement to perish should change.
+{PAUSE ""}
+<BR>
+If everyone's minds have been taken over by the Arata cherry, then they're the Arata cherry's mind.
+{PAUSE ""}
+<BR>
+In other words, it's not
+{PAUSE ""}
+<BR>
+'the Arata settlement perishes = the residents perish'
+{PAUSE ""}
+<BR>
+but rather
+{PAUSE ""}
+<BR>
+'the Arata settlement perishes = the Arata cherry perishes'
+{PAUSE ""}
+<BR>
+―is that what it comes down to...?<PG>
+Thinking about it that way, it seems to add up.
+{PAUSE ""}
+<BR>
+If none of us had come, not me, not <STYLE ID="2">Natsumi</STYLE>, not <STYLE ID="3">Goto</STYLE>, and not the White Hannya either, the Arata cherry would probably have reproduced successfully without a hitch.
+{PAUSE ""}
+<BR>
+That's why the Arata cherry itself knows there's a chance we'll destroy it and save everyone.<PG>
+Even so, is it really possible for cherry trees to parasitize humans and reproduce...?
+{PAUSE ""}
+<BR>
+I've heard stories about parasites that take over insects' brains, or that breed inside human bodies, but...
+{PAUSE ""}
+<BR>
+But like <STYLE ID="3">Goto</STYLE> said, what's happening now defies common sense, so we need ideas that defy common sense.
+{PAUSE ""}
+<BR>
+I get that, but...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\女神\集落全景夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I've been going around in circles on thoughts like these for about 15 minutes now.
+{PAUSE ""}
+<BR>
+I've been watching the meeting hall, but there's no movement at all.
+{PAUSE ""}
+<BR>
+The lights are on, so there must be people inside.
+{PAUSE ""}
+<BR>
+There's a good chance nothing will move until morning.
+{PAUSE ""}
+<BR>
+Should I go in after all...?<PG>
+A little closer. Just a little closer.
+{PAUSE ""}
+<BR>
+At least close enough to hear the sounds inside―<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "700" "0"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Holding my breath, I feel for any presence inside.
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "3000" "PASS"}
+They're here... 
+{PAUSE ""}
+A lot of them.
+{PAUSE ""}
+<BR>
+From inside I can only faintly hear some <STYLE ID="5" RUBY="せきばら">throat-clearing</STYLE>, but there are definitely a lot of people in there.
+{PAUSE ""}
+<BR>
+Is there no lookout?
+{PAUSE ""}
+<BR>
+Never mind me, but if that White Hannya came again, it'd be a disaster for the residents, I'd think...<PG>
+No... wait a second.
+{PAUSE ""}
+<BR>
+They should be at least that cautious.
+{PAUSE ""}
+<BR>
+If they aren't, could it be... it's already too late...?
+{PAUSE ""}
+<BR>
+If everyone's already been completely taken over by the Arata cherry, then there's no saving them, is there...!<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "500" "NORMAL" "SKIP"}
+{STOPSND "VOICE" "200" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+―!!
+{PAUSE ""}
+<BR>
+Suddenly, someone's presence behind me...!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I draw my knife fast and spin around.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Chiga-nee</STYLE>!? <STYLE ID="7">Kana</STYLE>!?<PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\般若全身大.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\n人物1\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\n人物1\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神\般若全身.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Wha...!"</STYLE>
+{PAUSE ""}
+<BR>
+The White Hannya...!
+{PAUSE ""}
+<BR>
+The white hannya Noh mask is a mask that depicts a woman's vengeful spirit, said to be <STYLE ID="9" RUBY="てきがいしん">hostility</STYLE>―grudges and revenge―turned into art.
+{PAUSE ""}
+<BR>
+And, wrapped in white robes, it carries a well-worn nata and a mace.<PG>
+<STYLE ID="8">"Wh-what are you...! So you're an enemy after all...!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\死神\白般若鉈振り上げ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+And the White Hannya raises its nata.
+{PAUSE ""}
+<BR>
+I knew it. Right here, it's going to... me...!<PG>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "5" "200" "540" "1" "" "0"}
+{PLAYSND "SE\剣衝突.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\白般若鉈振り下ろし.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Without hesitation, it brings the blade down right where I was standing.
+{PAUSE ""}
+<BR>
+I dodge it by a hair, but the White Hannya's blatant show of hostility puts me on edge.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "20" "200" "0" "0" "" "0"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\春花こける.lcm" "WAIT" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+The White Hannya recovers its stance faster than I do, and the next thing I know it's hooked the head of its mace around my leg, and like a kid running on ice, I do a quarter turn in the air and land on my backside.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\鉈を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\女神\春花鉈当てられる.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Instantly, the nata is pressed to my throat.<PG>
+Dammit...! This is as far as I get...!?
+{PAUSE ""}
+<BR>
+The nata is badly chipped. Forget lopping my head off, it probably couldn't even sever an artery.
+{PAUSE ""}
+<BR>
+But the gap in strength is more than enough to kill my will to fight.
+{PAUSE ""}
+<BR>
+What's it going to do...?
+{PAUSE ""}
+　What's it going to do...!<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\白般若鉈振り下ろしハンマー上げ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And now it raises the mace high for a full swing.
+{PAUSE ""}
+<BR>
+My opponent is half-crouched, with both hands full of weapons.
+{PAUSE ""}
+<BR>
+This is my chance...!<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\SE\ナイフ投げる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "20" "200" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+I got my knife thrown before the White Hannya could bring the mace down.
+{PAUSE ""}
+<BR>
+The knife hits the White Hannya's mask, but it doesn't stick and just drops to the ground.
+{PAUSE ""}
+<BR>
+Still, it seems to have made the White Hannya flinch a little.
+{PAUSE ""}
+<BR>
+In that opening, I get up and put plenty of distance between us.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\般若全身.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Dammit! This thing is obviously holding back.
+{PAUSE ""}
+<BR>
+When it fought <STYLE ID="6">Chiga-nee</STYLE> and <STYLE ID="7">Kana</STYLE>, it was nothing like this.
+{PAUSE ""}
+<BR>
+Is every last one of them making a fool of me...?
+{PAUSE ""}
+<BR>
+Though thanks to that, I'm still unhurt...
+{PAUSE ""}
+<BR>
+What do I do? The knife's at its feet and I'm unarmed.
+{PAUSE ""}
+<BR>
+Is running my only option...?<PG>
+Besides, even if I turn my back and run, if it chases me there's nothing I can do.
+{PAUSE ""}
+<BR>
+Then I've got no choice but to show I don't want to fight.
+{PAUSE ""}
+<BR>
+If I go down now, <STYLE ID="2">Natsumi</STYLE> and <STYLE ID="3">Goto</STYLE> will be left on their own.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花横顔逆.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="8">"W-wait! I don't want to fight you!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n0\r\n2000\r\nDEC\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{MESON "500"}
+Making it clear I have no intention of fighting, I slowly back away.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-400\r\n2000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-400\r\n0\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\般若横.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n2000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\ナイフ投げる.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-500\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-500\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\詫言編　夢から\鉈を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\女神\春花鉈当てられる.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Once again I'm knocked down, the nata thrust at me.
+{PAUSE ""}
+<BR>
+I could tell the White Hannya was charging straight at me.
+{PAUSE ""}
+<BR>
+I got hit in the <STYLE ID="10" RUBY="だいたいぶ">thigh</STYLE> with the back of the nata and knocked flying with the mace.
+{PAUSE ""}
+<BR>
+And all with just enough force not to hurt me.<PG>
+Come to think of it, when this thing fought <STYLE ID="6">Chiga-nee</STYLE> and Kana, it didn't try to take them down in one blow either. It seemed to be wearing them down bit by bit.
+{PAUSE ""}
+<BR>
+What a rotten personality...<PG>
+<STYLE ID="8">"Wh-what are you trying to do...!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　If you're gonna do it, just get it over with! You want to make me suffer that much before you kill me!?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　So is this how you killed </STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="8"> and </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">, too!?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Is that why it's so quiet here!?"</STYLE>
+{PAUSE ""}
+<BR>
+This isn't a bargaining tactic, but an honest expression of anger.
+{PAUSE ""}
+<BR>
+A way of fighting that shows no purpose, as if it means to torment us slowly to death.
+{PAUSE ""}
+<BR>
+The more I take in my own anger and its attitude, the angrier I get.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\般若うつむき.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Hey, quit hiding your face and say something!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　You're just acting on your own self-righteous idea of justice anyway, right!?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Come on, say something!"</STYLE>
+{PAUSE ""}
+<BR>
+How will the White Hannya respond to such blatant provocation?
+{PAUSE ""}
+<BR>
+If it's not going to kill me right away, then I'll at least hit back with insults.
+{PAUSE ""}
+<BR>
+If I can't win with muscle, I'll look down on it with cheap insults...!<PG>
+<STYLE ID="8">"Come on, can't even show your face, you gutless Hannya!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　You're probably way better-looking WITH the mask on!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Come on, show me that butt-ugly mug of yours!"</STYLE>
+{PAUSE ""}
+<BR>
+I don't know what it makes of my insults, but the White Hannya just stands there for a while.
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+Did my insults hurt it?
+{PAUSE ""}
+<BR>
+No way. It's just thinking about how to torment me next.<PG>
+{MESOFF "500"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神\白般若鉈振り下ろし.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神\般若全身.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+............?
+{PAUSE ""}
+<BR>
+It put away its nata...?
+{PAUSE ""}
+<BR>
+What's it up to?
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And then the White Hannya vanished from in front of me in the blink of an eye.<PG>
+Even before I started insulting it, I was ready to be killed.
+{PAUSE ""}
+<BR>
+But it didn't even bother with my insults. It just stared at me.
+{PAUSE ""}
+<BR>
+What did that thing even want...
+{PAUSE ""}
+<BR>
+Why did it attack me...?<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ナイフ.gal" "NORMAL" "#1" "650" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I go to where the White Hannya was standing and pick up my knife.
+{PAUSE ""}
+<BR>
+What would've happened if I hadn't thrown my knife back then?
+{PAUSE ""}
+<BR>
+Would I have had my head smashed in with the mace, with the nata still pinning my neck...?<PG>
+No, right now the question is what to do about this meeting hall.
+{PAUSE ""}
+<BR>
+All that racket, and nothing's changed in the meeting hall.
+{PAUSE ""}
+<BR>
+Is everyone really not on guard against me, or is it already too late...
+{PAUSE ""}
+<BR>
+I remember <STYLE ID="3">Goto's</STYLE> words.<PG>
+{STOPSND "SE" "3000" "PASS"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Anyway, </STYLE><STYLE ID="8">Niimura-senpai</STYLE><STYLE ID="3">, don't do anything that puts you in danger!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　If you absolutely have to, come back here before you do, no matter what!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+I did promise. Before going in, I have to go back once and explain.
+{PAUSE ""}
+<BR>
+............
+{PAUSE ""}
+............
+{PAUSE ""}
+<BR>
+No, but I'm not going in... 
+{PAUSE ""}
+I'm not, so I'll at least take a little <STYLE ID="11" RUBY="のぞ">peek</STYLE>.
+{PAUSE ""}
+<BR>
+Just a quiet <STYLE ID="11" RUBY="のぞ">peek</STYLE> from the entrance.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Careful not to make a sound, I ease the entrance open.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\女神\集会場土下座.gal" "NORMAL" "#1" "C" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "$1A0000" "NORMAL" "#1" "C" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-100\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-100\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Ugh...!"</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\z50逆.ogg" "BGM" "REPEAT" "1000" "0"}
+The smell of the smoke from earlier still lingers.
+{PAUSE ""}
+<BR>
+It's not enough to choke me, but this stinging smell is nothing but unpleasant.
+{PAUSE ""}
+<BR>
+Because of this smell, I can't tell what's going on inside by scent alone.
+{PAUSE ""}
+<BR>
+I open it a little more so I can get a good look.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-300\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-300\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+What are they doing...?
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-600\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-600\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+People in red robes stay pressed flat on the tatami, as if bowing on their knees.
+{PAUSE ""}
+<BR>
+They don't move a muscle, and show no sign of even lifting their heads.
+{PAUSE ""}
+<BR>
+Could it be... it's already too late...?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神首つり.lcm" "REPEAT" "#1" "R" "T" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+From the ceiling, the Verde mummy still <STYLE ID="12" RUBY="つ">hangs</STYLE>, swinging idly back and forth as if mocking them on their knees.
+{PAUSE ""}
+<BR>
+I can't feel anything, but apparently that thing keeps giving off this invisible 'Blessing' or whatever.<PG>
+Right now I could probably steal the mummy and burn it quick, or hide it somewhere.
+{PAUSE ""}
+<BR>
+There's a chance <STYLE ID="6">Chiga-nee</STYLE> or <STYLE ID="7">Kana</STYLE> is keeping watch somewhere out of sight, though...
+{PAUSE ""}
+<BR>
+And I promised <STYLE ID="2">Natsumi</STYLE> and Goto I wouldn't go in on my own.
+{PAUSE ""}
+<BR>
+Should I just back off quietly...?<PG>
+No, if every second counts here, I should take the mummy out right now.
+{PAUSE ""}
+<BR>
+I don't know what state everyone's in, but if there's only a minute left on the clock, going back to report to <STYLE ID="2">Natsumi</STYLE> and Goto before I go in...
+{PAUSE ""}
+<BR>
+So... what should I do...<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{PLAYSND "最後の声・真呪殺\SE\夏菜泣き声.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{STOPSND "BGM" "5000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+............?
+{PAUSE ""}
+<BR>
+A voice...?
+{PAUSE ""}
+<BR>
+I can hear a voice.
+{PAUSE ""}
+<BR>
+A child's voice.
+{PAUSE ""}
+<BR>
+And... a little girl crying...<PG>
+Not bawling, and not muffling it either, but the quiet, sniffling sobs only a child makes―
+{PAUSE ""}
+<BR>
+And the only resident who'd make a sound like that...<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-960\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n-960\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "VOICE" "500" "PASS"}
+<STYLE ID="7">"</STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7">... </STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7">..."</STYLE>
+{PAUSE ""}
+<BR>
+So it is <STYLE ID="7">Kana's</STYLE> voice.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana</STYLE> still seems to have a clear head.
+{PAUSE ""}
+<BR>
+Without thinking, my grip on the knife tightens.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n0\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{DELETECG "000,111" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="7">Kana</STYLE> is coming this way...!
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+I quickly pull my face away from the door and hide behind the wall.
+{PAUSE ""}
+<BR>
+If <STYLE ID="7">Kana</STYLE> finds me, it won't go like it did with the White Hannya just now.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+Then, after the sound of the door opening, out of the meeting hall, alone, comes <STYLE ID="7">Kana</STYLE>.
+{PLAYSND "最後の声・真呪殺\SE\夏菜泣き声.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "5000" "PASS"}
+{PAUSE ""}
+<BR>
+Where is <STYLE ID="7">Kana</STYLE> planning to go?
+{PAUSE ""}
+<BR>
+But... she's still crying, same as before.
+{PAUSE ""}
+<BR>
+Like a lost child separated from her parents, she leaves the meeting hall with her head down.
+{PAUSE ""}
+<BR>
+And then...<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "500" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="8">Haruka-chan</STYLE><STYLE ID="7">...?"</STYLE>
+{PAUSE ""}
+<BR>
+With her back still to me, <STYLE ID="7">Kana</STYLE> calls my name.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Dammit...!"</STYLE>
+{PAUSE ""}
+<BR>
+That's <STYLE ID="7">Kana</STYLE> for you.
+{PAUSE ""}
+<BR>
+Even at a time like this she senses my presence, and doesn't even try to catch me off guard.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+I ready my knife and rack my brain for some way to get away without a fight.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana</STYLE> slowly turns her face toward me.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="8">What's wrong...?"</STYLE>
+{PAUSE ""}
+<BR>
+The moment I see <STYLE ID="7">Kana's</STYLE> face, the adrenaline drains right out of me.
+{PAUSE ""}
+<BR>
+I even loosen my grip on the knife.
+{PAUSE ""}
+<BR>
+That look on <STYLE ID="7">Kana's</STYLE> face took away any will I had to fight or to run.
+{PAUSE ""}
+<BR>
+That's how heartbreaking <STYLE ID="7">Kana's</STYLE> face was.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{MESON "500"}
+And <STYLE ID="7">Kana</STYLE> dropped to her knees on the still-damp ground and burst out crying.
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\Code_of_Honor_#2.ogg" "BGM" "REPEAT" "1000" "0"}
+As if a child crying for her lost parents had found their bodies.
+{PAUSE ""}
+<BR>
+I've lost both <STYLE ID="14">Dad</STYLE> and <STYLE ID="1">Mom</STYLE>, so I know why <STYLE ID="7">Kana</STYLE> is crying.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana</STYLE> is just crying because she's scared, and sad, and wants someone to help her.<PG>
+But I was still on my guard, so I couldn't run right over to <STYLE ID="7">Kana</STYLE> or say anything kind to her either. I just stood there.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Hey... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Haruka-chan</STYLE><STYLE ID="7">... help me..."</STYLE>
+{PAUSE ""}
+<BR>
+Should I answer her after all?
+{PAUSE ""}
+<BR>
+Or is it... a <STYLE ID="15" RUBY="わな">trap</STYLE>...?<PG>
+<STYLE ID="8">"</STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">, talk to me... What happened?"</STYLE>
+{PAUSE ""}
+<BR>
+Since I can't get close to her, I tried to answer so <STYLE ID="7">Kana</STYLE> could feel safe, as best I could, in my <STYLE ID="16" RUBY="こわいろ">tone of voice</STYLE>.<PG>
+And then,
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手前バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">Kana</STYLE> totters to her feet and starts walking toward me.
+{PAUSE ""}
+<BR>
+She reaches out as if to hug me and staggers my way, but I back away a little.
+{PAUSE ""}
+<BR>
+Even so, <STYLE ID="7">Kana</STYLE> keeps coming straight at me, and at last she wraps her arms around me.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜死ぬ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="8">Haruka-chan</STYLE><STYLE ID="7">... I'm sorry... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">I... I've been scared all this time... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Everyone went weird a long time ago... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Mommy</STYLE><STYLE ID="7">... got killed too..."</STYLE>
+{PAUSE ""}
+<BR>
+Clinging to me with all her strength, <STYLE ID="7">Kana</STYLE> pours out what's in her heart, then sinks to the ground again as if her knees have given out.
+{PAUSE ""}
+<BR>
+But <STYLE ID="7">Kana</STYLE> won't let go of me.<PG>
+I crouch down too and look <STYLE ID="7">Kana</STYLE> in the eye.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Come on, talk. What were you scared of?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Everyone went weird, but </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">, you're the only one who didn't?"</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="7">Kana</STYLE> nods silently.
+{PAUSE ""}
+<BR>
+And starts sniffling and crying again.<PG>
+<STYLE ID="8">"Since everyone went weird, </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">, you went along with them?"</STYLE>
+{PAUSE ""}
+<BR>
+―And again, <STYLE ID="7">Kana</STYLE> nods.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"The only one who didn't go weird... it was just you, </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">?"</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="7">Kana</STYLE> nods.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="6">Chiga-nee</STYLE><STYLE ID="8"> and </STYLE><STYLE ID="13">Kotaro-san</STYLE><STYLE ID="8"> are both too far gone?"</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="7">Kana</STYLE> nods.<PG>
+<STYLE ID="8">"Why were you the only one, </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">, who didn't go weird?"</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="7">Kana</STYLE> shakes her head.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Do you know how this happened?"</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="7">Kana</STYLE> shakes her head.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"You don't know anything?"</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="7">Kana</STYLE> nods.<PG>
+And just then―<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+The meeting hall door opens.
+{PAUSE ""}
+<BR>
+Then the residents come trooping out from inside, barefoot.
+{PAUSE ""}
+<BR>
+I ready my knife at once.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\背景\女神\死神行列.gal" "NORMAL" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"Everyone... where are you going...?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Hey..."</STYLE>
+{PAUSE ""}
+<BR>
+Still sitting on the ground, <STYLE ID="7">Kana</STYLE> lets out a cry that can't even become a cry.
+{PAUSE ""}
+<BR>
+<STYLE ID="17">The residents don't even look our way, and walk off toward who knows where.</STYLE>
+{PAUSE ""}
+<BR>
+And last of all, <STYLE ID="6">Chiga-nee</STYLE> and <STYLE ID="13">Kotaro-san</STYLE> come out from inside.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\背景\女神\幸太郎茅萱行列.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7">! </STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7">! Where are you going!?"</STYLE>
+{PAUSE ""}
+<BR>
+At her tearful cry, <STYLE ID="6">Chiga-nee</STYLE> and <STYLE ID="13">Kotaro-san</STYLE> show no reaction at all.
+{PAUSE ""}
+<BR>
+With no expression at all, the two of them head off somewhere, backs bent and arms hanging.<PG>
+Have their minds already been completely taken over by the Arata cherry?
+{PAUSE ""}
+<BR>
+Like <STYLE ID="3">Goto</STYLE> said, does it control the hosts' bodies, move them to the best spot to sprout, and have them give out there?
+{PAUSE ""}
+<BR>
+Is everyone already no different from a corpse?
+{PAUSE ""}
+<BR>
+Does that mean I didn't make it in time...?<PG>
+<STYLE ID="7">Kana</STYLE> gets up and runs weakly over to <STYLE ID="6">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Hey, </STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7">! </STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7">, come on!"</STYLE>
+{PAUSE ""}
+<BR>
+Even when she tugs at <STYLE ID="6">Chiga-nee's</STYLE> arm and shakes it, <STYLE ID="6">Chiga-nee</STYLE> just walks on.
+{PAUSE ""}
+<BR>
+Just walking, like a robot programmed only to walk.<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="7">"Ow...!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Kotaro-san</STYLE> stomps hard on <STYLE ID="7">Kana's</STYLE> foot.
+{PAUSE ""}
+<BR>
+But he didn't step on it on purpose. <STYLE ID="7">Kana's</STYLE> foot just happened to be there.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+And <STYLE ID="13">Kotaro-san</STYLE> loses his balance and falls right over.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\夏菜幸太郎馬乗り.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Hey, </STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7">! Don't move! Don't walk!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana</STYLE> throws herself on top of <STYLE ID="13">Kotaro-san</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="13">Kotaro-san</STYLE>, still down, keeps making walking motions with just his legs.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Chiga-nee</STYLE> shows no interest at all in the two of them and keeps walking.<PG>
+<STYLE ID="7">"Hey, </STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7">! </STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7">, come on!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"</STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">, stop it already...!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I can't stand to watch anymore, and pull <STYLE ID="7">Kana</STYLE> off <STYLE ID="13">Kotaro-san</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎横顔.gal" "NORMAL" "#1" "R" "540" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "人物1" "QUAKE" "1" "5" "5" "0" "30"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n100\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n100\r\n0\r\nDEC\r\nPASS">
+{WAIT "1" "NORMAL" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-500\r\n5000\r\nINC\r\nPASS">
+{MESON "500"}
+Then <STYLE ID="13">Kotaro-san</STYLE> gets to his feet as clumsily as a newborn fawn and follows after <STYLE ID="6">Chiga-nee</STYLE>.
+{PAUSE ""}
+<BR>
+Pulled away, <STYLE ID="7">Kana</STYLE> doesn't thrash. She just stops moving.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{QUAKESTOP "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n-500\r\n0\r\nINC\r\nPASS">
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"</STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7">... and </STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7">... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">their skin was cold..."</STYLE>
+{PAUSE ""}
+<BR>
+So it was too late after all...
+{PAUSE ""}
+<BR>
+By the time I got to the meeting hall, it was probably already impossible to save them.
+{PAUSE ""}
+<BR>
+By then, their body heat was already gone.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\集落全景夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Everyone walks off in different directions.
+{PAUSE ""}
+<BR>
+But they follow the settlement's paths properly, as if each of them is going home.
+{PAUSE ""}
+<BR>
+Is it their last homing instinct as human beings?
+{PAUSE ""}
+<BR>
+It seems they mean to meet their end in their own homes.<PG>
+Again <STYLE ID="7">Kana</STYLE> bursts out crying.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"I'm... I'm really all alone now... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">What's going to happen to everyone?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Hey, why won't anybody answer me?"</STYLE>
+{PAUSE ""}
+<BR>
+Of course. <STYLE ID="3">Goto's</STYLE> theory is only a guess, but <STYLE ID="7">Kana</STYLE> still doesn't know how the Arata cherry lives.
+{PAUSE ""}
+<BR>
+Should I be the one to tell her that everyone will be parasitized by a cherry tree and die?
+{PAUSE ""}
+<BR>
+This one's still only 12, right...?
+{PAUSE ""}
+<BR>
+And then―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神全身丸腰.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The White Hannya is watching me intently, empty-handed.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Hey, White Hannya! What are you playing at!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Were you trying to stop me from saving everyone earlier!?"</STYLE>
+{PAUSE ""}
+<BR>
+I close in on the White Hannya and <STYLE ID="18" RUBY="とが">call it out</STYLE> for getting in my way.
+{PAUSE ""}
+<BR>
+It just keeps staring at me, and doesn't even try to move, let alone answer.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\般若横.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Say something!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n960\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "200" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n960\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I shove the White Hannya with one hand, it takes just one step back.
+{PAUSE ""}
+<BR>
+But that's all. It doesn't even try to hit back.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n3\r\n-400\r\n2000\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n2000\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n3\r\n-400\r\n0\r\nNORMAL\r\nPASS">
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n600\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+<STYLE ID="8">"Hey, answer me! Did you get in my way knowing this would happen!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\般若うつむき.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+And the White Hannya hangs its head.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n3\r\n0\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n456\r\n人物2\r\n3\r\n0\r\n300\r\nDEC\r\nPASS">
+{MESON "500"}
+<STYLE ID="8">"What are you keeping quiet for! Quit messing with me!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "人物1" "QUAKE" "1" "15" "15" "500" "30"}
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+This time I land a kick on its left <STYLE ID="19" RUBY="もも">thigh</STYLE>.
+{PAUSE ""}
+<BR>
+And the White Hannya staggers, just like an ordinary person.<PG>
+<STYLE ID="8">"Why are you acting weak... It makes it look like I'm bullying you..."</STYLE>
+{PAUSE ""}
+<BR>
+It just takes my abuse, and takes my anger on its body.<PG>
+{MESOFF "500"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="8">"Jeez..."</STYLE>
+{PAUSE ""}
+<BR>
+The fight's gone out of me.
+{PAUSE ""}
+<BR>
+This thing takes in my anger as if to say, 'Your anger is entirely justified.'<PG>
+<STYLE ID="8">"This is ridiculous... </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Kana</STYLE><STYLE ID="8">, let's go. </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="8"> and the rest of us have a place to hide. There's a pretty nice cave."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"A cave... You mean the one with the ladder going underground?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　If it is, that's my secret base!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Ah, so it is... One wrong step and that could've been bad..."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―!!
+{PAUSE ""}
+<BR>
+Something cold at my throat―
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\歪むカオ.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\白般若春花ナイフ.gal" "NORMAL" "#1" "560" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A knife!
+{PAUSE ""}
+<BR>
+I knew it, <STYLE ID="7">Kana</STYLE>...!<PG>
+No, it's not <STYLE ID="7">Kana</STYLE>...
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana</STYLE> is holding nothing, and she's looking at whoever is behind me with a <STYLE ID="20" RUBY="おび">frightened</STYLE> face.
+{PAUSE ""}
+<BR>
+And from behind me, I can hear muffled breathing.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n60\r\n3000\r\nDEC\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n3\r\n60\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"What is it, you coward..."</STYLE>
+{PAUSE ""}
+<BR>
+The White Hannya is getting in my way again.
+{PAUSE ""}
+<BR>
+This time is it telling me not to let <STYLE ID="7">Kana</STYLE> join <STYLE ID="2">Natsumi</STYLE> and Goto...?<PG>
+<STYLE ID="8">"I'm grateful that you helped us and gave us important information. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">But that was for your own sake, not ours, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　What do you want?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Are you telling me to watch everyone die and turn into cherry trees together with </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="8"> and </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="8">?"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "グラフィック\背景\女神\荒田集集会所夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Everyone... into cherry trees...!?"</STYLE>
+{PAUSE ""}
+<BR>
+Oh no... I still hadn't gotten around to telling <STYLE ID="7">Kana</STYLE> that...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "bittersweet.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="7">"</STYLE><STYLE ID="8">Haruka-chan</STYLE><STYLE ID="7">... if that's how it is, it's okay. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">I'd heard something like that before. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Everyone's past saving now, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Then at least I want to be with </STYLE><STYLE ID="13">Daddy</STYLE><STYLE ID="7"> and </STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7"> at the end..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Hey, </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8">...!"</STYLE><PG>
+<STYLE ID="7">"It's okay. This happened because I kept quiet for a whole year. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">So... I'll at least do that much. </STYLE>
+{PAUSE ""}
+<STYLE ID="13">Daddy</STYLE><STYLE ID="7"> and </STYLE><STYLE ID="6">Sis</STYLE><STYLE ID="7">... let me be with them at the end, at least..."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+<STYLE ID="7">Kana</STYLE> weakly turns her steps toward the Niimura house.<PG>
+<STYLE ID="7">"Sorry, </STYLE><STYLE ID="8">Haruka-chan</STYLE><STYLE ID="7">... for pulling a knife on you and hitting you earlier..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Kana</STYLE> starts walking without turning to face me.
+{PAUSE ""}
+<BR>
+At the same moment, the White Hannya puts its knife away too.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神全身丸腰.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Hey, </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8"> isn't </STYLE><STYLE ID="21" RUBY="だま">tricking</STYLE><STYLE ID="8"> us, right?</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　Is </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8"> really sane?"</STYLE>
+{PAUSE ""}
+<BR>
+The White Hannya doesn't answer, and shows no sign of denying it either.
+{PAUSE ""}
+<BR>
+So its silence means yes?<PG>
+<STYLE ID="8">"Then that's fine. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">When morning comes, I'm getting out of here with </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="8"> and Goto. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">And I'll take </STYLE><STYLE ID="7">Kana</STYLE><STYLE ID="8"> in, and we'll live together in Motoki-cho. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">So... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">So don't get in my way anymore..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+I leave the meeting hall behind and decide to head back to <STYLE ID="7">Kana's</STYLE> secret base.
+{PAUSE ""}
+<BR>
+I'm worried about <STYLE ID="7">Kana</STYLE> too, but for now I'll let her do as she wants.<PG>
+The White Hannya doesn't come after me. It just watches me go from where it stands.
+{PAUSE ""}
+<BR>
+All I can do now is head to <STYLE ID="2">Natsumi</STYLE> and Goto.
+{PAUSE ""}
+<BR>
+There's no way left to save everyone.
+{PAUSE ""}
+<BR>
+It was all too late.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "VOICE" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

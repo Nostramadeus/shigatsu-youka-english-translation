@@ -1,0 +1,78 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=103, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=165, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=16, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=58, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=10, unk2=16755370, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=6, unk2=16755455, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=410, target=)
+; Links:
+;    0: TWdLink(count=366, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ夕方.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ黄入.gal" "NORMAL" "#1" "650" "C" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Senpai</STYLE>, pick up, quick...!"<PG>
+{STOPSND "SE" "0" "PASS"}
+"Hello, <STYLE ID="1">Senpai</STYLE>!? Where are you right now!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong, </STYLE>Goto<STYLE ID="1">? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Right now I'm in a taxi with </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">. We're going to the police station together now..."</STYLE>
+{PAUSE ""}
+<BR>
+"The police station?<STYLE ID="3"> </STYLE>Thank goodness... 
+{PAUSE ""}
+But, <STYLE ID="2">Niimura-senpai</STYLE> is...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Goto<STYLE ID="1">... I know what you want to say. But don't worry. </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1"> hasn't done anything."</STYLE><PG>
+"<STYLE ID="1">Senpai</STYLE>, but... 
+{PAUSE ""}
+The one who died in today's incident is―"<BR>
+<STYLE ID="1">"I know that too. That's why I'm going to the police. Together with </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"So you've figured it all out... About your <STYLE ID="4">dad</STYLE>, and about the culprit..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"About </STYLE><STYLE ID="4">Dad</STYLE><STYLE ID="1">, I figured that's probably how it is. But I don't know about the culprit. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Because </STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="1">―"</STYLE><BR>
+<STYLE ID="5">"</STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="5">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Niimura-senpai</STYLE><STYLE ID="3">'s yell could be heard faintly from the other end of the phone.</STYLE><PG>
+<STYLE ID="5">"</STYLE><STYLE ID="6">Natsumi</STYLE><STYLE ID="5">, I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well then, </STYLE>Goto<STYLE ID="1">. We'll be there soon."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\電話切れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "5000" "PASS"}
+{MESON "500"}
+<STYLE ID="1">Senpai</STYLE><STYLE ID="3"> hung up on me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">I have to get to the police station quickly too...!</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

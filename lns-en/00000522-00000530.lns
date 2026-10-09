@@ -1,0 +1,596 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1933, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぼうぜん, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=285, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=89, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=36, unk2=16755455, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=16755370, unk3=4294967295, unk4=20, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=515, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=・・・, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=293, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=356, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=61, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あんど, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=8, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しよう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4018, target=)
+; Links:
+;    0: TWdLink(count=3590, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "avemaria.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\山車道.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>Though this is only what I was told.
+{PAUSE ""}
+<BR>
+What the local police saw first was <STYLE ID="2">Kogori-senpai</STYLE>, sitting on the ground <STYLE ID="1" RUBY="ぼうぜん">in a daze</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花倒れる.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Beside her, collapsed on the asphalt, <STYLE ID="3">Niimura-senpai</STYLE>.<PG>
+An ambulance arrived along with the police, and both of my <STYLE ID="2">senpai</STYLE> were carried off to a nearby hospital.
+{PAUSE ""}
+<BR>
+There was nobody who looked like the culprit, and at the scene there were brake marks from a car.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Niimura-senpai</STYLE> was probably hit by the car the shinigami was riding in ― that is the inference. [TN: shinigami: a god of death]
+{PAUSE ""}
+<BR>
+And yet, brake marks.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\病院待合室.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Kogori-senpai</STYLE> was not hurt, but <STYLE ID="3">Niimura-senpai</STYLE> was in a condition where every second counted.
+{PAUSE ""}
+<BR>
+Emergency surgery was carried out, but the chance of saving her was said to be low.<PG>
+I reached the hospital and waited in the waiting area with <STYLE ID="2">Kogori-senpai</STYLE> for the surgery to end.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kogori-senpai</STYLE> did not answer when I called to her; the whole time,
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+she went on murmuring, like someone delirious.
+{PAUSE ""}
+<BR>
+What had <STYLE ID="2">Kogori-senpai</STYLE> seen at the scene?
+{PAUSE ""}
+<BR>
+She must have seen the moment <STYLE ID="3">Niimura-senpai</STYLE> was hit, and the moment the culprit fled.<PG>
+<STYLE ID="4">"It's because I asked her to help me... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If I had not asked </STYLE><STYLE ID="5">Haruka</STYLE><STYLE ID="4"> to protect me―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kogori-senpai</STYLE> was mumbling to herself in a low voice, her gaze angled down, staring at some point with unfocused eyes.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">, it's all right. I'll be right beside you the whole time."</STYLE><PG>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Goto</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Y-yes! What is it!?"</STYLE>
+{PAUSE ""}
+<BR>
+More than 4 hours had passed since <STYLE ID="2">Kogori-senpai</STYLE> was found, and at last she looked my way.
+{PAUSE ""}
+<BR>
+What had <STYLE ID="2">Senpai</STYLE> seen? What did <STYLE ID="2">Senpai</STYLE> know?<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">, she... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">she was done in."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"B-by whom!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">The shinigami."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Shi...?"</STYLE>
+{PAUSE ""}
+<BR>
+I had a feeling <STYLE ID="3">Niimura-senpai</STYLE> had said something like that on the phone.
+{PAUSE ""}
+<BR>
+But it can only be <STYLE ID="7" RUBY="・・・">that person</STYLE>, wearing a disguise.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"The shinigami is </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="2">'s dad."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+An answer came back that differed from my own deduction.
+{PAUSE ""}
+<BR>
+Had <STYLE ID="2">Kogori-senpai</STYLE> lost her mind?
+{PAUSE ""}
+<BR>
+Or was she saying exactly what she had seen?
+{PAUSE ""}
+<BR>
+I had no idea what else I should say.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\伊勢全身.gal" "WAIT" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"</STYLE><STYLE ID="6">Goto-chan</STYLE><STYLE ID="8">, sorry about this... keeping you out this late. </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Any minute now, </STYLE><STYLE ID="9">Kogori-san's mother</STYLE><STYLE ID="8"> is supposed to get here from Motoki Police Station."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="9">Kogori-senpai's mother</STYLE><STYLE ID="6"> only?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Would you come over here a moment?"</STYLE>
+{PAUSE ""}
+<BR>
+Was it hard for him to talk in front of <STYLE ID="2">Kogori-senpai</STYLE>?
+{PAUSE ""}
+<BR>
+Of course it would be. After all, <STYLE ID="10">Niimura-senpai's mother</STYLE> is...<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">, I'll be right back."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Goto</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"It's all right, I'll stay somewhere well inside </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">'s field of view. That is fine, isn't it? </STYLE><STYLE ID="8">Mister</STYLE><STYLE ID="6">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yeah, just a little way off."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,000,人物2" "1" "2000" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\背景\病院待合室2.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"So the culprit of this incident is, after all..."</STYLE>
+{PAUSE ""}
+<BR>
+I had been thinking about it the whole time.
+{PAUSE ""}
+<BR>
+No matter how I looked at it, I could only think that <STYLE ID="10">Niimura-senpai's mother</STYLE> was the suspicious one.
+{PAUSE ""}
+<BR>
+It clashed with the account of the only witness, <STYLE ID="2">Kogori-senpai</STYLE>, though...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"About that... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">A little while ago, </STYLE><STYLE ID="10">Mifuyu Niimura-san</STYLE><STYLE ID="8">'s body was found... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Her house caught fire, and the body was burned..."</STYLE><PG>
+Surely not! A suicide, because she thought she was cornered...?
+{PAUSE ""}
+<BR>
+But as a suicide with being the culprit for its reason, it is inexplicable.
+{PAUSE ""}
+<BR>
+Leave aside <STYLE ID="3">her daughter Niimura-senpai</STYLE> ― she left <STYLE ID="2">Kogori-senpai</STYLE> unharmed, and then killed herself?<PG>
+From fleeing the scene to killing herself, would that come to about 4 hours?
+{PAUSE ""}
+<BR>
+In terms of time that is perfectly possible, but...<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="8">Mister</STYLE><STYLE ID="6">... that is strange, isn't it... Then what did she chase both of my </STYLE><STYLE ID="2">senpai</STYLE><STYLE ID="6"> around for..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"Yeah. If it was suicide, I have no idea at all why she would die..."</STYLE>
+{PAUSE ""}
+<BR>
+If <STYLE ID="10">Niimura-senpai's mother</STYLE> is the culprit, her actions do not match up at all.
+{PAUSE ""}
+<BR>
+Is the culprit a different person...? Or was there a reason I cannot understand...?<PG>
+Is the shinigami's true identity really <STYLE ID="3">Niimura-senpai</STYLE>'s father after all?
+{PAUSE ""}
+<BR>
+No, I do not believe that! It has to be an elaborate trick!<PG>
+In any case, considering <STYLE ID="2">Kogori-senpai</STYLE>'s age and when <STYLE ID="3">Niimura-senpai</STYLE>'s father died, it is no wonder she does not remember his face.
+{PAUSE ""}
+<BR>
+So <STYLE ID="2">Kogori-senpai</STYLE>'s testimony cannot be relied on.
+{PAUSE ""}
+<BR>
+I will go on assuming that the culprit is <STYLE ID="10">Niimura-senpai's mother</STYLE>.<PG>
+Settle on a hypothesis, carry out the verification, and correct it if there is an error.
+{PAUSE ""}
+<BR>
+A dead person as the culprit, that is simply impossible.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Keep the theory that </STYLE><STYLE ID="10">Mifuyu Niimura</STYLE><STYLE ID="8"> is the culprit between us. I'm going to search </STYLE><STYLE ID="10">Mifuyu Niimura</STYLE><STYLE ID="8">'s house. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Goto-chan</STYLE><STYLE ID="8">, sorry, but... stay with </STYLE><STYLE ID="2">Kogori-san</STYLE><STYLE ID="8">, would you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Of course. That was my intention from the start. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">And also..."</STYLE>
+{PAUSE ""}
+<BR>
+I straightened up to face <STYLE ID="8">Ise-san</STYLE>.<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="8">Assistant Inspector Ise</STYLE><STYLE ID="6">. Thank you very much for going to such lengths for the people I care about!"</STYLE>
+{PAUSE ""}
+<BR>
+I bowed as deeply as I possibly could.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"No, it is wrong for me to be thanked. I am the one who has to apologize. In the end I was no use at all... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I let the culprit get away, and on top of that </STYLE><STYLE ID="3">Niimura-san</STYLE><STYLE ID="8"> ended up like that... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">I am truly sorry."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="8">Ise-san</STYLE> left those words behind and set off from the hospital.<PG>
+No, <STYLE ID="8">you</STYLE> truly did everything you could.
+{PAUSE ""}
+<BR>
+I am grateful from the bottom of my heart.<PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "800" "3000" "PASS"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE2" "NORMAL" "0" "0"}
+{CHGVOL "VOICE2" "1000" "3000" "WAIT"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE2" "1000" "PASS"}
+{MESON "500"}
+And then, as if changing places with him, <STYLE ID="9">Kogori-senpai's mother</STYLE> came rushing in.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Oh, </STYLE><STYLE ID="9">Auntie</STYLE><STYLE ID="6">! </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6"> is safe!"</STYLE>
+{PAUSE ""}
+<BR>
+When I called out like that, <STYLE ID="9">Auntie</STYLE> stopped where she was and looked toward <STYLE ID="2">Kogori-senpai</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Haah... thank goodness...!</STYLE> <STYLE ID="9">Really, thank goodness..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Auntie</STYLE> let out a cry of <STYLE ID="11" RUBY="あんど">relief</STYLE>.<PG>
+But,
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"</STYLE><STYLE ID="3">Haruka-chan</STYLE><STYLE ID="9">, what about her!?</STYLE>
+{PAUSE ""}
+　<STYLE ID="10">Mifuyu</STYLE><STYLE ID="9">... what happened to her!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+Straight away her expression changed again and she was shouting at me.
+{PAUSE ""}
+<BR>
+I felt an unaccountable wrongness in this manner of <STYLE ID="9">Auntie</STYLE>'s.
+{PAUSE ""}
+<BR>
+It is natural enough to worry about <STYLE ID="10">Niimura-senpai's mother</STYLE> and her family, friends of hers from long ago, but...<PG>
+And at that moment, a hypothesis took shape inside me.
+{PAUSE ""}
+<BR>
+A hypothesis with truly no grounds at all.
+{PAUSE ""}
+<BR>
+Rather than a hypothesis...
+{PAUSE ""}
+a guess.
+{PAUSE ""}
+<BR>
+But if that is so... Should I say this...?<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="9">Auntie</STYLE><STYLE ID="6">..."</STYLE>
+{PAUSE ""}
+<BR>
+I looked steadily into <STYLE ID="9">Auntie</STYLE>'s eyes.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"............</STYLE>
+{PAUSE ""}
+<STYLE ID="9">............!?"</STYLE>
+{PAUSE ""}
+<BR>
+I could see <STYLE ID="9">Auntie</STYLE>'s expression changing before my eyes.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"W-what is it...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"You know, don't you? The reason all this happened..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="6">Goto-chan</STYLE><STYLE ID="9">... that is..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6"> and </STYLE><STYLE ID="3">Niimura-senpai</STYLE><STYLE ID="6">, could it be that the two of them..."</STYLE>
+{PAUSE ""}
+<BR>
+When she heard me say that, <STYLE ID="9">Auntie</STYLE> let out a great sigh.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Of course... that's </STYLE><STYLE ID="6">Goto-chan</STYLE><STYLE ID="9"> for you... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">To get this far on nothing but that much information..."</STYLE>
+{PAUSE ""}
+<BR>
+Unfortunately, it seems my hypothesis was right.
+{PAUSE ""}
+<BR>
+But... even if it is so, when I think about <STYLE ID="2">Kogori-senpai</STYLE>...
+{PAUSE ""}
+<BR>
+What on earth is there that I can do...<PG>
+<STYLE ID="6">"When I think about </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">... I cannot tell </STYLE><STYLE ID="9">Auntie</STYLE><STYLE ID="6"> what to do, but..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">I</STYLE> fixed <STYLE ID="9">Auntie</STYLE>'s face with a sharp <STYLE ID="13" RUBY="にら">glare</STYLE>.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"But... that is why... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">that is why I cannot forgive </STYLE><STYLE ID="9">you</STYLE><STYLE ID="6">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Auntie</STYLE> kept her eyes on mine without looking away, and stayed silent.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"You're right. What we did was wrong after all. That is why it has come to this..."</STYLE>
+{PAUSE ""}
+<BR>
+So <STYLE ID="9">Auntie</STYLE> too had committed a wrong...
+{PAUSE ""}
+<BR>
+Then I will not repeat the same wrong.
+{PAUSE ""}
+<BR>
+So... as for what I can do...!<PG>
+<STYLE ID="6">"Then... then...!</STYLE>
+{PAUSE ""}
+　<STYLE ID="6">Then please turn yourself in!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"............"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ母腕組み.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+At last <STYLE ID="9">Auntie</STYLE> turned her eyes away from me.
+{PAUSE ""}
+<BR>
+And another great sigh.
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Turning myself in... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">You're right, I have to make all of it public. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Natsumi</STYLE><STYLE ID="9"> ― find a good way to tell her, would you... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">The patrol car that brought me here is outside, so I will go and talk to them."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="9">Auntie</STYLE> headed for the hospital exit without speaking to <STYLE ID="2">Kogori-senpai</STYLE>.<PG>
+<STYLE ID="6">"Aren't you going to say anything to </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\茜.gal" "WAIT" "#1" "650" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="9">"I cannot face </STYLE><STYLE ID="2">that girl</STYLE><STYLE ID="9"> anymore... </STYLE>
+{PAUSE ""}
+<STYLE ID="9">I'm sorry, </STYLE><STYLE ID="6">Goto-chan</STYLE><STYLE ID="9">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="9">Auntie</STYLE> left those words behind and went outside.
+{PAUSE ""}
+<BR>
+Left behind, I... could not make a sound, and shook with anger.
+{PAUSE ""}
+<BR>
+I hung my head and clenched my fists tight―
+{PAUSE ""}
+<BR>
+My body shook with anger at the person who caused this, and at the person who could have stopped it and did not.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="6">Goto</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔前逆.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Just now... wasn't </STYLE><STYLE ID="9">Mom</STYLE><STYLE ID="2"> here?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kogori-senpai</STYLE>, gone as hollow as an empty shell, stared outside with vacant eyes.
+{PAUSE ""}
+<BR>
+Outside, the patrol car's light bar was revolving, with no thought for the inpatients it disturbed.<PG>
+<STYLE ID="6">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="6">... </STYLE>
+{PAUSE ""}
+<STYLE ID="6">I am sorry!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"If only I had realized sooner...! Then none of this...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Kogori-senpai</STYLE> has no family left now.
+{PAUSE ""}
+<BR>
+<STYLE ID="14">Her dad</STYLE> is dead, and <STYLE ID="9">her mom</STYLE> will surely never return to society.<PG>
+<STYLE ID="2">"</STYLE><STYLE ID="6">Goto</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I'm sorry. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">It is our fault that </STYLE><STYLE ID="6">Goto</STYLE><STYLE ID="2"> has been hurt this badly..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="6">, that is not so! I stuck my nose in of my own accord, that is all...!"</STYLE><PG>
+If I were thinking of <STYLE ID="2">Kogori-senpai</STYLE>'s happiness, I should not have handed <STYLE ID="9">Auntie</STYLE> over to the police.
+{PAUSE ""}
+<BR>
+At the very least, I should have left her one family member.
+{PAUSE ""}
+<BR>
+But I kicked that option away.
+{PAUSE ""}
+<BR>
+That was the best course, and the only justice I could manage.
+{PAUSE ""}
+<BR>
+It was an Operation to keep the same wrong from being repeated.<PG>
+But... the anger and the shaking will not settle after all.
+{PAUSE ""}
+<BR>
+I myself, who had been no use for anything, was burning in that anger.
+{PAUSE ""}
+<BR>
+To think that all I could do was break <STYLE ID="2">Kogori-senpai</STYLE>'s family apart...
+{PAUSE ""}
+<BR>
+To think that all I did was make <STYLE ID="2">Kogori-senpai</STYLE> sadder still...<PG>
+The Operation...
+{PAUSE ""}
+is a failure.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+2 years later ― <STYLE ID="15" RUBY="しよう">Shiyo</STYLE> 802, April.<PG>
+{MESOFF "2000"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "WAIT"}
+{CREATECG "000" "グラフィック\背景\墓地.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ合掌.gal" "NORMAL" "#1" "500" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\墓新村家.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\墓地.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Shall we go...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ春花車いす.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Thank you... </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ春花車いす.gal" "NORMAL" "#1" "R" "-700" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"I'm the one who should thank you, for visiting </STYLE><STYLE ID="14">my dad</STYLE><STYLE ID="2">'s grave."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\なつみ春花車いす.gal" "NORMAL" "#1" "R" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="3">... thank you... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">for being alive..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{CREATECG "エンド画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "SE" "1000" "PASS"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\怖い効果音.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n春花の能面\r\n人物2\r\n4\r\n-377\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n春花の能面\r\n人物2\r\n4\r\n-377\r\n0\r\nNORMAL\r\nPASS">
+{CREATECG "000" "$000080" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{DELETECG "000,人物2" "1" "0" "0" "0" "" "0"}
+{STOPSND "VOICE" "0" "PASS"}
+{CREATECG "000" "グラフィック\背景\lcm\ルートエンド.lcm" "WAIT" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

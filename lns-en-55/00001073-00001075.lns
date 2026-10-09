@@ -1,0 +1,196 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=513, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=あきのふゆお, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=818, unk2=4294967295, unk3=4294967295, unk4=16, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=16, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=さ, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=16, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=6, unk2=4294967295, unk3=4294967295, unk4=16, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=じかふわごうせい, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1480, target=)
+; Links:
+;    0: TWdLink(count=1343, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\TALK_and_WALK.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス\リファレンス詳細\rrr1\1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"―And so, tonight in this park, there will be a special live show by big-name musicians!"
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\0.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+<BR>
+―Then it's sure to be packed to capacity tonight!
+{PAUSE ""}
+<BR>
+"That's right! There are lots of people who've been lined up since yesterday to claim a spot!
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\1.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "456" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+{PAUSE ""}
+　I'm told the concert organizers have hastily started handing out numbered tickets!
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム2" "4" "460" "100" "DEC" "WAIT"}
+{PAUSE ""}
+　That's all from here!"
+{PAUSE ""}
+<BR>
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\2.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+―Thank you, Yuki-chaaan!<PG>
+{MESOFF "500"}
+{PLAYSND "最後の声・真呪殺\青い目の猫.ogg" "BGM" "REPEAT" "900" "0"}
+{CHANGECG "000" "グラフィック\リファレンス\リファレンス詳細\rrr1\0.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+{MOTION "456" "アイテム1" "4" "460" "100" "DEC" "WAIT"}
+―Yes, and now it's 7 o'clock. 
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+On Wednesdays at this time, it's 'Sesame Rice Bean Trivia'! [TN: mame chishiki, "bean knowledge," is Japanese for trivia.]
+{PAUSE ""}
+　Okay, what's today's theme?
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\3.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "456" "アイテム2" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+{CHGVOL "BGM" "700" "1000" "PASS"}
+―Cherry blossoms!
+{PAUSE ""}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+　As Yuki-chan reported for us, Japan is now in the season of cherry blossoms in full bloom. 
+{MOTION "456" "アイテム2" "4" "540" "100" "DEC" "WAIT"}
+{PAUSE ""}
+Today we have with us <STYLE ID="1" RUBY="あきのふゆお">Fuyuo Akino</STYLE>-sensei, professor emeritus at Japan Horticultural University and an expert on cherry blossoms. 
+{PAUSE ""}
+{DELETECG "アイテム1,アイテム2" "1" "0" "0" "0" "" "0"}
+Thank you for joining us.
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPD TIME="4294967221">"Yes, yes, hello, nice to meet you, I'm called Akino, nice to meet you."</STYLE>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\4.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MOTION "789" "アイテム1" "3" "650" "200" "DEC" "WAIT"}
+<PG>
+<TXSPN>―Now, Sensei, I hear you'll be telling us a slightly unusual story about cherry blossoms today?
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPD TIME="4294967221">"Yes, that, right, about that, see, when this season comes around everyone gets all uninhibited, right?</STYLE>
+{MOTION "789" "アイテム1" "4" "540" "100" "DEC" "WAIT"}
+{PAUSE ""}
+<STYLE ID="2">　So, when this season comes around, the number of strange people goes up, right?</STYLE>
+{DELETECG "アイテム1,アイテム2" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">　So, and so, I thought I'd talk about why more people like that turn up, and I've thought about it all sorts of ways."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\5.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<TXSPN>―Oh ho, so there really is a reason why so-called perverts appear around this time of year?<PG>
+<STYLE ID="2"><TXSPD TIME="4294967221">"Yes, yes, see, cherry blossoms, see, contain a drug that's a precursor of the stimulant called methamphetamine, and so, that substance is called ephedrine, </STYLE>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<STYLE ID="2">so, when you breathe it in, everyone gets all merry, and people strip at hanami, and men and women get in the mood and start going at it, all sorts of things happen."</STYLE>
+{PAUSE ""}
+<BR>
+{DELETECG "アイテム1,アイテム2" "1" "0" "0" "0" "" "0"}
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\6.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<TXSPN>―Ah, um, Sensei, I'm sorry, but this is a morning program...
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE2" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\7.gal" "NORMAL" "#1" "960" "360" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<PG>
+<STYLE ID="2"><TXSPD TIME="4294967221">"And so, cherry trees, see, they're all clones, they're all the same."</STYLE>
+{PAUSE ""}
+<BR>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n440\r\n100\r\nDEC\r\nPASS">
+<TXSPN>―What do you mean, cherry trees are clones?
+{PAUSE ""}
+<BR>
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2"><TXSPD TIME="4294967221">"The Somei-yoshino cherry, see, was originally one single tree, but </STYLE>
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<STYLE ID="2">they propagate it from </STYLE><STYLE ID="3" RUBY="さ">cuttings</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="4" RUBY="つ">grafts</STYLE><STYLE ID="2">, so they're all the same tree. </STYLE>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\8.gal" "NORMAL" "#1" "960" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">So, see, the Somei-yoshino, rather than a variety, is more like a name given to one single cherry tree."</STYLE>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE2" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\9.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<PG>
+<TXSPN>―Then, the Somei-yoshino are all, originally, exactly the same tree?
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPD TIME="4294967221">"Those, see, with Somei-yoshino alone, they can't make seeds. So, it takes a Somei-yoshino and a cherry of another variety to make seeds. </STYLE>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{PAUSE ""}
+<STYLE ID="2">That, see, </STYLE>
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">is something other than a Somei-yoshino. </STYLE>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\10.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<STYLE ID="5" RUBY="じかふわごうせい">Self-incompatibility</STYLE><STYLE ID="2">, it's called, and the Somei-yoshino is a variety of cherry that absolutely cannot reproduce in nature."</STYLE>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+<PG>
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE2" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\11.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<STYLE ID="2">"So, the Somei-yoshino, see, won't increase in nature unless it makes use of another variety. Put that way it sounds like a parasite, but, the Somei-yoshino, in its natural state, reproduces by using other living things. </STYLE>
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+{PAUSE ""}
+{DELETECG "アイテム1" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">So, the Somei-yoshino is something like a pervert too, </STYLE>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE" "NORMAL" "1000" "0"}
+{CREATECG "アイテム1" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\12.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム1\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<STYLE ID="2">just when you think it's bred with one living thing, it goes and breeds with yet another living thing. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But, by then it's not a Somei-yoshino anymore, it's another variety. </STYLE>
+{PAUSE ""}
+<EVENT VALUE="MOTION\r\n789\r\nアイテム2\r\n4\r\n540\r\n100\r\nDEC\r\nPASS">
+<EVENT VALUE="MOTION\r\n456\r\nアイテム1\r\n4\r\n460\r\n100\r\nDEC\r\nPASS">
+<STYLE ID="2">Really, such a two-timer, huh. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Haah hah hah hah hah!"</STYLE><PG>
+{DELETECG "アイテム2" "1" "0" "0" "0" "" "0"}
+<STYLE ID="2">"So, cherry trees, see, they scatter stimulants around, and they reproduce by using other living things, </STYLE>
+{PLAYSND "リファレンス専用\シャベッター.ogg" "SE2" "NORMAL" "1000" "0"}
+{CREATECG "アイテム2" "グラフィック\リファレンス\リファレンス詳細\rrr1\シャベッター\13.gal" "NORMAL" "#1" "960" "380" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n456\r\nアイテム2\r\n3\r\n650\r\n200\r\nDEC\r\nPASS">
+<STYLE ID="2">they're that kind of plant, so I think the people who adore them are mostly strange too. Haah hah hah hah!"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>―Ah, ah... 
+{PAUSE ""}
+Sensei, thank you very much. 
+{PAUSE ""}
+Now then, after the commercials, the news.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1,アイテム2" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

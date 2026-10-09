@@ -1,0 +1,272 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=156, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=919, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=89, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=4, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=19, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1379, target=)
+; Links:
+;    0: TWdLink(count=1187, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\quiet-residential-area1.ogg" "BGM2" "REPEAT" "0" "0"}
+{CHGVOL "BGM2" "800" "2000" "WAIT"}
+{CHANGECG "000" "グラフィック\シナリオ\公園.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\シナリオ\桜とマンション.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\シナリオ\外廊下.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\シナリオ\自室背景.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "NORMAL" "NORMAL"}
+{MESON "500"}
+<TXSPN>Haruka<STYLE ID="1"> and the others had invited me, but I had turned them down and was lying on the futon in my room.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I didn't really know how much time had passed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It was the hour when the orange evening sun was dyeing the room.</STYLE><PG>
+Haruka<STYLE ID="1"> and the others, what are they doing now?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Surely they're enjoying the Cherry Blossom Festival at Central Park to the fullest.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But for me, going to the Cherry Blossom Festival is suicide.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">How people can love cherry blossoms, I can't understand at all.</STYLE><PG>
+<STYLE ID="2">"Haah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I heaved a big sigh.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It's not that I want to deny how people love the cherry blossoms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I know it's just me being strange.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Hardly anyone sinks into a gloomy funk at this time of year.</STYLE><PG>
+<STYLE ID="1">Through the open window, along with a light breeze, came the bustle of the outside.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">There was no sound that particularly bothered me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Now and then a child's voice, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">now and then the sound of a car, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">now and then the sound of the wind.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+<STYLE ID="1">And then...</STYLE>
+{PAUSE ""}
+{MESOFF "1000"}
+{STOPSND "BGM2" "500" "PASS"}
+{PLAYSND "SE\インターホン.ogg" "SE" "WAIT" "800" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">The intercom.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Getting up was a chore. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I thought about pretending nobody was home, but...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But in this season, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">at this hour, I had a pretty good idea who it would be.</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\室内ドア開閉.ogg" "SE" "WAIT" "1000" "0"}
+{PLAYSND "SE\室内歩き.ogg" "SE" "WAIT" "1000" "0"}
+{CREATECG "古郡玄関" "グラフィック\シナリオ\古郡玄関閉.gal" "WAIT" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\インターホン.ogg" "SE" "WAIT" "800" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Okay, okay, I'm opening it now.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\iron_door2_O.ogg" "SE" "NORMAL" "800" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "古郡玄関" "グラフィック\シナリオ\古郡玄関開.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "春花" "グラフィック\立ち絵\人物\春花バストアップ.gal" "WAIT" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "1000"}
+<STYLE ID="1">When I opened the door, a high-school girl with short hair was standing there.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Just as I thought, it was </STYLE>Haruka<STYLE ID="1">.</STYLE>
+{PAUSE ""}
+{MESOFF "1000"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "アサガオと始まり.ogg" "BGM" "REPEAT" "800" "100"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "1000"}
+"Hey!
+{PAUSE ""}
+　How's it going?"
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> greeted me cheerfully, in her usual way.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">so-so."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I answered with something like a polite smile.</STYLE><PG>
+{CHANGECG "春花" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+"So your April sickness still isn't any better this year." [TN: A pun on gogatsu-byo, 'May sickness,' Japan's term for the May blues.]
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1">, still smiling, twisted her mouth a little.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Well, it happens every year, so I'm used to it by now."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... 
+{PAUSE ""}
+Over on our end, <STYLE ID="3">Goto</STYLE> went around stuffing her face at one food stall after another, and it was rough."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Though she said it was rough, </STYLE>Haruka<STYLE ID="1"> sounded happy telling me.</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2"> may be tiny, but she's a big eater.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Where does all that food go?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">At last I managed to answer with a natural smile.</STYLE>
+{PAUSE ""}
+<BR>
+"Well, I had a few bites too, though.
+{PAUSE ""}
+<BR>
+So, here. Souvenir!"<PG>
+{CHANGECG "春花" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\ビニール.ogg" "SE" "WAIT" "1000" "0"}
+<STYLE ID="1">I was handed a plastic bag, neither big nor small.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">It felt pretty heavy in my hand.</STYLE>
+{PAUSE ""}
+<BR>
+"It's takoyaki. Eat it while it's hot. 
+{PAUSE ""}
+See you!"
+{PAUSE ""}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "春花" "1" "1000" "0" "0" "" "0"}
+{CHANGECG "古郡玄関" "グラフィック\シナリオ\古郡玄関閉.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\iron_door1_C.ogg" "SE" "WAIT" "1000" "0"}
+{PLAYSND "SE\靴足音.ogg" "SE" "WAIT" "500" "0"}
+{PLAYSND "SE\iron_door2_O.ogg" "SE" "WAIT" "500" "0"}
+{PLAYSND "SE\iron_door1_C.ogg" "SE" "NORMAL" "500" "0"}
+{MESON "1000"}
+<STYLE ID="1">Soon after the door closed, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I heard the door of the apartment next door open and close.</STYLE>
+{PAUSE ""}
+<BR>
+<BR>
+Haruka<STYLE ID="1"> had gone home at an oddly quick pace, but </STYLE>
+{PAUSE ""}
+<STYLE ID="1">she was probably worried about the strain on my body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Making </STYLE>Haruka<STYLE ID="1"> worry about me in all kinds of ways like this </STYLE>
+{PAUSE ""}
+<STYLE ID="1">has become my routine every year.</STYLE>
+{PAUSE ""}
+<BR>
+Haruka<STYLE ID="1"> doesn't mind. I know that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">But still, I feel bad.</STYLE><PG>
+<STYLE ID="2">"Haah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Heaving another big sigh, I took the plastic bag and went back to my room.</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{DELETECG "古郡玄関" "1" "1000" "0" "0" "" "0"}
+{STOPSND "BGM" "2000" "PASS"}
+{PLAYSND "SE\室内歩き.ogg" "SE" "WAIT" "1000" "0"}
+{PLAYSND "SE\室内ドア開閉.ogg" "SE" "WAIT" "1000" "0"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "BGM2" "REPEAT" "1000" "0"}
+{WAIT "2000" "NORMAL" "SKIP"}
+{CHANGECG "000" "グラフィック\シナリオ\自室背景.gal" "WAIT" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "BGM2" "0" "0" "PASS"}
+{PLAYSND "SE\small_window_C.ogg" "SE2" "WAIT" "1000" "0"}
+{MESON "1000"}
+<STYLE ID="1">It had gotten a little chilly, so I closed the window.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The bustle outside vanished, and the room was wrapped in silence.</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{PLAYSND "SE\ビニール.ogg" "SE" "WAIT" "1000" "0"}
+{MESON "1000"}
+<STYLE ID="1">I put the takoyaki on the desk and crawled under the futon.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>Haruka<STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">thank you..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "Lucky_You.ogg" "BGM" "REPEAT" "900" "0"}
+<STYLE ID="1">Sure enough, my </STYLE>best friend<STYLE ID="1"> knows me well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">She came by like this last year too, didn't she?</STYLE><PG>
+<STYLE ID="1">But this is the first time she's brought a gift along.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">I'm always the one being looked after, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">and I've hardly done anything to thank her.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The day before yesterday </STYLE>Haruka<STYLE ID="1"> seemed to have an upset stomach, but </STYLE>
+{PAUSE ""}
+<STYLE ID="1">the next time </STYLE>Haruka<STYLE ID="1"> isn't feeling well, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I'll bring a gift along and go visit her.</STYLE><PG>
+Haruka<STYLE ID="1"> calls this gloomy mood of mine April sickness.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">In this season when the cherry blossoms bloom, I sink into a funk.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">The reason, I don't know...</STYLE><PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

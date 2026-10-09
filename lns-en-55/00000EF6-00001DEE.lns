@@ -1,0 +1,786 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1575, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=207, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=987, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1502, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いかいよう, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いかいよう, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=た, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=た, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふ, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=86, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けんか, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=30, unk2=16755455, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=4, unk2=16755370, unk3=4294967295, unk4=40, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おえつ, unk10=4294967295, unk11=4294967295)
+;   15: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=けいれん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=5001, target=)
+; Links:
+;    0: TWdLink(count=4413, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\chilly_hell.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{PLAYMOVIE "光2.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>―Where is this...?
+{PAUSE ""}
+<BR>
+Why am I in a place like this?
+{PAUSE ""}
+<BR>
+I have to hurry... and get to <STYLE ID="1">Haruka's</STYLE> hospital room...<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "#1" "R" "B" "100" "11" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Oh, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">! Sorry I'm late."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">""</STYLE><PG>
+<STYLE ID="2">"But where is this? This isn't the hospital room, is it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">""</STYLE><PG>
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, come on..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">""</STYLE><PG>
+<STYLE ID="2">"What's wrong? Why won't you say anything?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+<STYLE ID="2">"Are you trying to say something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">""</STYLE><PG>
+<STYLE ID="2">"Maybe I imagined it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+<STYLE ID="2">"So you are... trying to say something?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPS>"Na... tsu..."</STYLE><PG>
+<STYLE ID="2"><TXSPN>"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">!? So you can talk!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">""</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">""</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "人物1" "11" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "SE" "5000" "PASS"}
+Where are you going...?
+{PAUSE ""}
+<BR>
+Hey, why won't you say anything?
+{PAUSE ""}
+<BR>
+Why...<PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\pipipi.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Are you awake?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE>...?
+{PAUSE ""}
+<BR>
+The room is dark...
+{PAUSE ""}
+<BR>
+Night...?
+{PAUSE ""}
+<BR>
+This is a hospital room...?<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">, can you hear me?"</STYLE>
+{PAUSE ""}
+<BR>
+At <STYLE ID="3">Goto's</STYLE> words, I slowly nod.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">, they say you have </STYLE><STYLE ID="4" RUBY="いかいよう">a stomach ulcer</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5" RUBY="いかいよう">A stomach ulcer</STYLE>...?
+{PAUSE ""}
+<BR>
+Come to think of it, just now, when I hugged <STYLE ID="1">Haruka</STYLE>, it feels like I vomited blood...<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"Sure enough, it looks like you'd </STYLE><STYLE ID="6" RUBY="た">built</STYLE><STYLE ID="3"> up a lot of stress. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But at this stage, they say it can be treated with an endoscope and medication."</STYLE>
+{PAUSE ""}
+<BR>
+I see... so I really had <STYLE ID="7" RUBY="た">built</STYLE> up more exhaustion than I'd imagined.
+{PAUSE ""}
+<BR>
+Is <STYLE ID="1">Haruka</STYLE> getting anxious...?<PG>
+<STYLE ID="2"><TXSPS>"How's... </STYLE><STYLE ID="1">Haru... ka</STYLE><STYLE ID="2">...?"</STYLE><PG>
+{MESOFF "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "BGM" "1000" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3"> is resting in her own room. So you don't need to worry."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE> must have taken care of things after that.
+{PAUSE ""}
+<BR>
+In the end, my exhaustion went past its limit, all the way to vomiting blood.
+{PAUSE ""}
+<BR>
+I should have listened to everyone sooner.<PG>
+<STYLE ID="3">"I'll be right beside you tonight, </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">. So please rest easy."</STYLE>
+{PAUSE ""}
+<BR>
+As always, <STYLE ID="3">Goto</STYLE> whispers to me in a gentle voice that seeps into my heart.
+{PAUSE ""}
+<BR>
+But if I'm going to be here anyway, I want to be with <STYLE ID="1">Haruka</STYLE> too.
+{PAUSE ""}
+<BR>
+If we're in the same hospital, then at least...<PG>
+<STYLE ID="2"><TXSPS>"I want... to go... to </STYLE><STYLE ID="1">Haruka's</STYLE><STYLE ID="2"> side..."</STYLE><PG>
+{MESOFF "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "BGM" "1000" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"Right now you have to stay in bed and rest. Please, don't push yourself any further."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"Rest... until when...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"They say they'll treat your stomach tomorrow, and you'll be in the hospital for a few days."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"Tomorrow... can I see </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"I'll take you there in a wheelchair."</STYLE><PG>
+In other words, <STYLE ID="3">Goto</STYLE> will be the one looking after me.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Forcing </STYLE><STYLE ID="3">Goto</STYLE> to carry the burden of my own selfishness...<PG>
+<STYLE ID="2"><TXSPS>"Can't Grandpa and Grandma... come here...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"I got hold of them, but apparently they're on a trip to Okinawa right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And a typhoon is coming, so they say they're stuck. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">In Okinawa, typhoons sometimes come this time of year."</STYLE><PG>
+So in the end, I have no choice but to be a burden on <STYLE ID="3">Goto</STYLE>...
+{PAUSE ""}
+<BR>
+Now I understand, just a little, how <STYLE ID="1">Haruka</STYLE> felt when she went so far as to call me a bother.
+{PAUSE ""}
+<BR>
+I want to make <STYLE ID="3">Goto's</STYLE> burden even a little lighter.<PG>
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... what time is it?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"It's 10:30 p.m."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... what are you going to do now?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"They set up a cot for me, so I'll sleep here. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'll be right next to you, so call me if anything happens."</STYLE><PG>
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... will you be able to sleep?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"I'll sleep when you do, </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But if you're sleepy, you can go ahead and sleep. I'm just a bit too awake right now..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"Did something... happen?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"There's no point hiding it anymore, so I'll just say it: I got scolded by my teacher over the presentation. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Senpai</STYLE><STYLE ID="3">, when I explained that you'd collapsed, they reluctantly accepted it, but..."</STYLE><PG>
+<STYLE ID="2"><TXSPS>"I... if you hadn't come, </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... would I have stayed collapsed on the roof... and not been found for a while?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"I suppose so. Coming back was the right decision, if I do say so myself!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... why... are you... so kind to me?"</STYLE><PG>
+<STYLE ID="3"><TXSPN>"Because when someone important to me is suffering, I suffer too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3">―you never left her side, so you understand that, don't you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"Yeah..."</STYLE><PG>
+Now that I'm in <STYLE ID="1"><TXSPN>Haruka's</STYLE> position, it has finally <STYLE ID="9" RUBY="ふ">sunk in</STYLE>.
+{PAUSE ""}
+<BR>
+Even if <STYLE ID="3">Goto</STYLE> looks after me with a pale face, it doesn't make me happy at all.
+{PAUSE ""}
+<BR>
+I absolutely don't want to make <STYLE ID="3">Goto</STYLE> suffer over something like that.
+{PAUSE ""}
+<BR>
+I've finally noticed my flesh-bound mask, by looking at my own mask from the outside.<PG>
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... the flesh-bound mask... has it come off...?"</STYLE><PG>
+{MESOFF "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "BGM" "1000" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"I finally understand... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">From the very beginning... I could only see things... through a narrow view..."</STYLE><PG>
+{MESOFF "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "BGM" "1000" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"Um... </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So that </STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3"> won't be a burden on you anymore, </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">, I'll say it clearly."</STYLE><PG>
+{MESOFF "0"}
+{CHGVOL "BGM" "0" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHGVOL "BGM" "1000" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="2"><TXSPS>"So I won't... be a burden...? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">　It's okay... from now on... I'll take it easy..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"</STYLE><STYLE ID="2">Senpai's</STYLE><STYLE ID="3"> flesh-bound mask..."</STYLE><PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"is still... biting into your face."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPN>It still hasn't come off?
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+<PG>
+I intend to refrain from anything that causes more trouble, and I'll wait patiently for <STYLE ID="1">Haruka</STYLE> to recover.
+{PAUSE ""}
+<BR>
+So a flesh-bound mask, on me...<PG>
+<STYLE ID="3">"Um... this is my fault too, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">when was the last time you heard </STYLE><STYLE ID="1">Niimura-senpai's</STYLE><STYLE ID="3"> voice?"</STYLE><PG>
+{MESOFF "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2"><TXSPS>"Huh? Just now, right before I collapsed... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Was I... asleep that long?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPN>"No... you collapsed today, during the day."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"I don't... really get what you mean..."</STYLE><PG>
+{MESOFF "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"Since </STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3"> woke up, has there been even one time when a conversation between me and </STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="3"> actually meshed?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2"><TXSPS>"............?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\肉付き\春花病室昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花入院3.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "14" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1"><TXSPN>"</STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">―what'd you come here for..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I... I'm thinking of coming to see you every other day, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"You matter to me, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, but I think I have to make sure I stay well first."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see..."</STYLE><PG>
+<STYLE ID="2">"Is that... okay?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Of course it's okay..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3">, is that all right with you?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I said it's fine, didn't I..."</STYLE>
+{PAUSE ""}
+<BR>
+Come to think of it, it doesn't quite seem to mesh...<PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\肉付き\吐血2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "14" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="10">"Hey, Natsumi! Goto! Hurry, call someone!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Senpai, what's wrong!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Goto! Hurry up!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Hey, Senpai, come on!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Goto! Go get someone, now!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">"Oh no! I'll go get someone!"</STYLE>
+{PAUSE ""}
+<BR>
+Just now, too, <STYLE ID="3">Goto</STYLE> was ignoring <STYLE ID="1">Haruka</STYLE>...?
+{PAUSE ""}
+<BR>
+No... it's like <STYLE ID="3">Goto</STYLE> couldn't hear <STYLE ID="1">Haruka's</STYLE> voice...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2"><TXSPS>"</STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">... did you and </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> have a </STYLE><STYLE ID="11" RUBY="けんか">fight</STYLE><STYLE ID="2">...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3"><TXSPN>"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">...!"</STYLE><PG>
+{MESOFF "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Please, wake up already!"</STYLE><PG>
+{MESOFF "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3">...!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\肉付き\春花横顔髪寝る.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "5000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"She's been asleep this whole time! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　In 2 years, she hasn't woken up even once!"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "bittersweet.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">, the reason everyone says you're tired... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">is because you're talking with </STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3">, who should be asleep!　</STYLE>
+{PAUSE ""}
+<STYLE ID="3">Not calling out to her like before, but clearly like you're having a conversation with someone invisible... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\倒れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1,000" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I yank the IV line out of my arm, ignore the pain in my stomach, and stand up.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="12">"Let me gooo!!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Where are you going!?"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="12">"To </STYLE><STYLE ID="13">Haruka</STYLE><STYLE ID="12">!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"You have to stay in bed!"</STYLE><PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="12">"No...! </STYLE><STYLE ID="13">Haruka</STYLE><STYLE ID="12">...!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+But I didn't even have the strength to push little <STYLE ID="3">Goto</STYLE> away.
+{PAUSE ""}
+<BR>
+All I can do is crouch down where I am and let out <STYLE ID="14" RUBY="おえつ">sobs</STYLE>.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto's</STYLE> voice is drowned out by my ugly frenzy.
+{PAUSE ""}
+<BR>
+It isn't sadness or anger, not that kind of feeling.<PG>
+A fact that, normally, I should never be able to accept―
+{PAUSE ""}
+I'm trying to accept, without a struggle, that <STYLE ID="1">Haruka</STYLE> hasn't woken up.
+{PAUSE ""}
+<BR>
+Somewhere in my heart, I myself had known it.
+{PAUSE ""}
+<BR>
+That <STYLE ID="1">Haruka</STYLE> was still asleep, all this time.<PG>
+I wanted <STYLE ID="1">Haruka</STYLE> to wake up soon.
+{PAUSE ""}
+<BR>
+With only that in mind, I kept talking to her every day.
+{PAUSE ""}
+<BR>
+But those days, before I knew it, had become a burden to me, and kept destroying my heart.
+{PAUSE ""}
+<BR>
+And little by little, the flesh-bound mask began to appear on my face.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\肉付き\肉付きイメージ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ横顔.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The story of the flesh-bound mask that <STYLE ID="3">Goto</STYLE> told is a legend meant to teach the importance of believing in the Buddha.
+{PAUSE ""}
+<BR>
+But in my case, it's one to protect a heart that was close to breaking―
+{PAUSE ""}
+a mask to cover up the truth―<PG>
+When I put on the mask, my vision narrows.
+{PAUSE ""}
+<BR>
+If my vision narrows to peepholes, I don't have to face the truth.
+{PAUSE ""}
+<BR>
+That way, my heart doesn't get destroyed.
+{PAUSE ""}
+<BR>
+The scenery I saw through the peepholes was a dreamlike illusion.<PG>
+My face, which accepted that mask, has become one with the mask.
+{PAUSE ""}
+<BR>
+My vision is narrow, and I can't tell for myself what kind of mask I'm wearing.
+{PAUSE ""}
+<BR>
+But to the people around me, I can only look like someone drowning in illusion, still wearing a cursed mask.
+{PAUSE ""}
+<BR>
+I knew―
+{PAUSE ""}
+I knew it...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\肉付き\なつみ病室夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Soon my <STYLE ID="14" RUBY="おえつ">sobbing</STYLE> turns into twitching <STYLE ID="15" RUBY="けいれん">spasms</STYLE> of my diaphragm.
+{PAUSE ""}
+<BR>
+How will my heart take the fact that, since that incident, <STYLE ID="1">Haruka</STYLE> has shown no sign of recovery?
+{PAUSE ""}
+<BR>
+Will it be able to bear it?
+{PAUSE ""}
+<BR>
+Will my heart just be broken, like this?<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">, let's get you back to bed."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">Goto</STYLE> pulls me by the hand, and I'm laid straight back down on the bed.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I'm sorry, </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">... that I couldn't tell you all this time..."</STYLE>
+{PAUSE ""}
+<BR>
+It's not your fault, <STYLE ID="3">Goto</STYLE>...
+{PAUSE ""}
+<BR>
+I was trying to look away from the truth, and that's why...<PG>
+<STYLE ID="2">"I'm the one... who's sorry..."</STYLE>
+{PAUSE ""}
+<BR>
+The words came out without my thinking.
+{PAUSE ""}
+<BR>
+They were sensible words, enough to surprise even me.
+{PAUSE ""}
+<BR>
+It seems my heart is still alive.<PG>
+<STYLE ID="2">"I... must have wanted to run away... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="2"> wasn't a burden to take care of. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="2"> ending up like that is the fact I wanted to run away from."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">, until you burned out, you never, ever ran away. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">The stomach ulcer is a message from your body telling you, </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">, to take a little rest."</STYLE><PG>
+<STYLE ID="2">"Yeah... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Was this... for the best...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">, you look frail, but you're not a weak person. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But... even so, you're not invincible."</STYLE><PG>
+<STYLE ID="2">"I think the words I was hearing from </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> were a voice that couldn't be voiced. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Even if </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> really had woken up, I'm sure </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> would say I was a bother."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I think so too. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3"> might be able to hear voices even though she isn't conscious. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And she's been trying somehow to get that through to you, </STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Heh... </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">, you believe in something supernatural like telepathy?"</STYLE><PG>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Kogori-senpai</STYLE><STYLE ID="3">, your intuition is the one thing I can believe in."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Then... even though </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> isn't awake, she's reacting to my voice, right? </STYLE>
+{PAUSE ""}
+<STYLE ID="2">I think I'll keep on talking to </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Even if she doesn't look conscious, I'm sure she can hear your voice. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But please don't overdo it. Right now, </STYLE><STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3"> must be really angry."</STYLE><PG>
+<STYLE ID="2">"You're right... I have to go apologize later..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">I'm so glad... I thought you'd fall apart more, but... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">you really are a strong person, </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">!"</STYLE><PG>
+<STYLE ID="2">"It's because you're by my side, </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="2">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Heh! I'm happy if I can be even a little help!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Listen... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">this is really selfish, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">could I see </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> now...?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Let's make that tomorrow..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I can't sleep unless I properly apologize to </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"I really don't want to go along with this... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">If you promise to go to </STYLE><STYLE ID="1">Niimura-senpai's</STYLE><STYLE ID="3"> room in the wheelchair and come back in 3 minutes... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">No, I can't, after all. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Right now, more than anything, please focus on getting better."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Okay..."</STYLE><PG>
+<STYLE ID="3">"There, there. Good girl, </STYLE><STYLE ID="2">Senpai</STYLE><STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Goto</STYLE> says that as she pats my head.
+{PAUSE ""}
+<BR>
+I meekly accept her hand.
+{PAUSE ""}
+<BR>
+All day today, I've been leaning on <STYLE ID="3">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Not just today. Until now, too, all along...<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\スイッチ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+Then <STYLE ID="3">Goto</STYLE> presses the nurse call button.
+{PAUSE ""}
+<BR>
+―Yes, what's the matter?
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"A sleeping aid for </STYLE><STYLE ID="2">Kogori-san</STYLE><STYLE ID="3">, please. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Also, her IV line came out, so that too..."</STYLE>
+{PAUSE ""}
+<BR>
+―Okaaay.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"You need to sleep soundly till morning."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Yeah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"But I'm really glad. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Niimura-senpai</STYLE><STYLE ID="3">―if you could face the truth about her this squarely, I should have told you sooner."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I'm the one who made it hard to say, though..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1,000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―The sleeping aid is mixed into my IV, and my consciousness starts drifting lightly toward dreams.
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "5000" "PASS"}
+Even before me, <STYLE ID="3">Goto</STYLE> begins to breathe softly in her sleep.
+{PAUSE ""}
+<BR>
+She must have been very tired today. You're the one who needs a good rest, <STYLE ID="3">Goto</STYLE>.
+{PAUSE ""}
+<BR>
+But...
+{PAUSE ""}
+<BR>
+I'm sorry, <STYLE ID="3">Goto</STYLE>.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,492 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1511, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1088, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=52, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=9, unk2=11195903, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=まれけつ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=108, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=7, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3122, target=)
+; Links:
+;    0: TWdLink(count=2782, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>It had turned 9:00.
+{PAUSE ""}
+<BR>
+It should be all right to call now.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ガラケ―赤入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "4000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+"Thank you for calling. IC Corporation, Kameda speaking."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"My name is Kogori. Has my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1"> come in to work?"</STYLE>
+{PAUSE ""}
+<BR>
+"Um, that would be <STYLE ID="2">Section Chief Kogori</STYLE>. 
+{PAUSE ""}
+Excuse me, but what is your relation to <STYLE ID="2">Kogori</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I am </STYLE><STYLE ID="2">Kogori</STYLE><STYLE ID="1">'s wife, Akane."</STYLE>
+{PAUSE ""}
+<BR>
+"Thank you. Please hold for a moment."<PG>
+<STYLE ID="1">"............</STYLE>
+{PAUSE ""}
+<STYLE ID="1">............"</STYLE>
+{PAUSE ""}
+<BR>
+"Sorry to keep you waiting. 
+{PAUSE ""}
+His schedule today has him going directly to a client, though."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Um, my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1"> said yesterday that he was going to Hokkaido on a business trip, but..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hokkaido...?
+{PAUSE ""}
+　No, I have not been informed of anything like that... 
+{PAUSE ""}
+Shall I try contacting the <STYLE ID="2">section chief</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, no, that's all right. Thank you, when you're so busy."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "4000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+"Yes! Thank you for calling! This is Parlor Sakurairo!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Good morning, this is Kogori."</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, <STYLE ID="1">Kogori-san</STYLE>. What's up?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm sorry, but I'd like to take today off..."</STYLE><PG>
+"A day off?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The truth is, I don't know where my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1"> has gone..."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh? What's that about?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's what I don't know, so I want to go to the police."</STYLE><PG>
+"Hmm... 
+{PAUSE ""}
+Well, all right. There was that thing just this morning, and I bet we'll have fewer customers than usual anyway."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm really sorry..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"Haah..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{STOPSND "SE" "1000" "PASS"}
+{PLAYSND "SE\店出入り.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\警察署外観.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\自動ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "1000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\警察署受付.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There was no one at the police station's reception desk.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um, excuse me."</STYLE>
+{PAUSE ""}
+<BR>
+I called toward the back, but no one came out.<PG>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="3">"Excuse meee!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+This time I tried calling out loudly.
+{PAUSE ""}
+<BR>
+Then a young man came tottering out from the back.<PG>
+"Ah, yes, yes, sorry!"
+{PAUSE ""}
+<BR>
+The man hurried over to me.
+{PAUSE ""}
+<BR>
+Because of this morning's incident, the police were probably in a frantic rush too.<PG>
+<STYLE ID="1">"Um... how do I file a missing person report?"</STYLE>
+{PAUSE ""}
+<BR>
+"Missing person?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1"> hasn't come home since last night..."</STYLE><PG>
+"............
+{PAUSE ""}
+Well, with an incident like that just this morning, you must be anxious. 
+{PAUSE ""}
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+Then, for now, could you fill in the fields in the bold boxes here?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Um, what happened in this morning's incident?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm sorry, but that sort of thing, to members of the public..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right... of course. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Um, is there a possibility that it's my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"Um... do you have something in mind?"<PG>
+<STYLE ID="1">"I wouldn't say something in mind, but I'm anxious, after all..."</STYLE>
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+I'll show you to another room."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Thank you."</STYLE>
+{PAUSE ""}
+<BR>
+This man was quick on the uptake, which was a help.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\裏\取調室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Was this an interrogation room?
+{PAUSE ""}
+<BR>
+One desk and three chairs.
+{PAUSE ""}
+<BR>
+I had been told to sit and wait for the time being.<PG>
+{PLAYSND "SE\室内ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+Then, right away, people who looked like police officers came in.
+{PAUSE ""}
+<BR>
+Three of them, at that, when things were this busy.<PG>
+"Um, <STYLE ID="1">Akane Kogori-san</STYLE>, given the situation, I'll ask my questions quickly. 
+{PAUSE ""}
+I hear your <STYLE ID="2">husband</STYLE> has been missing since yesterday."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+"When did you last see him?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yesterday morning."</STYLE>
+{PAUSE ""}
+<BR>
+"Did he seem different in any way?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No, not particularly..."</STYLE><PG>
+"Then when did you last hear from him?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yesterday evening. He said he'd suddenly been sent on a business trip to Hokkaido..."</STYLE>
+{PAUSE ""}
+<BR>
+"A business trip to Hokkaido? Then isn't he there?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"The thing is, when I checked with my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1">'s company just now, they said there was no such plan..."</STYLE>
+{PAUSE ""}
+<BR>
+"I see, that is strange... 
+{PAUSE ""}
+Hey, make sure you get that down."<PG>
+<STYLE ID="1">"So, with this morning's incident, I thought maybe... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Um, has the victim been identified?"</STYLE>
+{PAUSE ""}
+<BR>
+"No, nothing yet beyond that it's an adult male..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Couldn't I identify the body?"</STYLE>
+{PAUSE ""}
+<BR>
+At that, the men exchanged looks.<PG>
+"Well... 
+{PAUSE ""}
+I don't think we can rule out the possibility that <STYLE ID="2">your husband</STYLE> is the victim. 
+{PAUSE ""}
+So I think permission will be given for you to view the body. 
+{PAUSE ""}
+However..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"However, well... 
+{PAUSE ""}
+the state of the body is quite gruesome..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"So, just by looking at the face, probably..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see..."</STYLE><PG>
+"Um, do you know your <STYLE ID="2">husband</STYLE>'s blood type?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... it's cis-AB."</STYLE>
+{PAUSE ""}
+<BR>
+"Cis-AB..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, it's what they call a </STYLE><STYLE ID="4" RUBY="まれけつ">rare blood type</STYLE><STYLE ID="1">, about one in every several tens of thousands of people..."</STYLE><PG>
+"............
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">Kogori-san</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+"Earlier I said we knew nothing beyond that it was an adult male, but naturally, we do know the dental records and the blood type."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"The victim's blood type was... 
+{PAUSE ""}
+cis-AB."
+{PLAYSND "ネジの壊れたロボット.ogg" "BGM" "REPEAT" "1000" "0"}
+<PG>
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ah..."</STYLE>
+{PAUSE ""}
+<BR>
+"Um, <STYLE ID="1">Kogori-san</STYLE>. We can't yet say for certain that your <STYLE ID="2">husband</STYLE> is the victim, but if it's the same rare blood type, the chance that it's someone else is one in several tens of thousands."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm sorry, given the circumstances, but we'll need you to stay here for a while."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes..."</STYLE><PG>
+"Any other family?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I have a </STYLE><STYLE ID="5">daughter</STYLE><STYLE ID="1">. School's closed today, so I think she's at home..."</STYLE>
+{PAUSE ""}
+<BR>
+"Then, right away, to your <STYLE ID="5">daughter</STYLE>, about this―"
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="1">"Please wait!"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes?"<PG>
+<STYLE ID="1">"Um... there's a one in several tens of thousands chance that it isn't my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1">, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Well, I did say that, but..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then I don't want my </STYLE><STYLE ID="5">daughter</STYLE><STYLE ID="1"> told about it yet."</STYLE>
+{PAUSE ""}
+<BR>
+"But you see, <STYLE ID="1">Kogori-san</STYLE>."<PG>
+<STYLE ID="1">"Then which is more accurate, that or a DNA test?"</STYLE>
+{PAUSE ""}
+<BR>
+"Well, it's not as accurate as a DNA test, but..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then, from the police's standpoint, you can't announce yet that my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1"> is the victim, can you?"</STYLE>
+{PAUSE ""}
+<BR>
+"Well... at this stage..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Please, until you can truly be certain..."</STYLE><PG>
+"Your <STYLE ID="5">daughter</STYLE> will be an important witness too, you know."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I know... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I know, but..."</STYLE>
+{PAUSE ""}
+<BR>
+"Is there some reason you can't tell your <STYLE ID="5">daughter</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It isn't that... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Please let me contact her myself first."</STYLE>
+{PAUSE ""}
+<BR>
+"Understood."<PG>
+I can't tell <STYLE ID="5">Natsumi</STYLE> yet.
+{PAUSE ""}
+<BR>
+Not until the victim is confirmed.
+{PAUSE ""}
+<BR>
+There is a one in several tens of thousands chance that it isn't <STYLE ID="2">Ryoji-kun</STYLE>.
+{PAUSE ""}
+<BR>
+The police can't act openly yet either.
+{PAUSE ""}
+<BR>
+Then I...<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\ガラケ―赤入.gal" "NORMAL" "#1" "650" "C" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+There was hardly any charge left.
+{PAUSE ""}
+<BR>
+Last night I had been so taken up with waiting to hear from <STYLE ID="2">Ryoji-kun</STYLE> that I hadn't charged it properly.
+{PAUSE ""}
+<BR>
+I had to keep it short.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "4000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+<STYLE ID="5">"Hello...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Ah, hello, </STYLE><STYLE ID="5">Natsumi</STYLE><STYLE ID="1">? Getting along okay with </STYLE><STYLE ID="6">Haruka-chan</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+So that she would not sense the situation I was in now, I spoke in as bright a voice as I could.<PG>
+<STYLE ID="5">"Oh, yeah, we were watching a DVD together at </STYLE><STYLE ID="6">Haruka</STYLE><STYLE ID="5">'s place."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I see. Sorry, but I'll be home late today."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Huh...!? Why...?"</STYLE><PG>
+<STYLE ID="1">"We decided to go out drinking with people from work. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Sorry, but please look after the house till tonight! Look forward to a souvenir!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Okay. But..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Don't you know about the incident?"</STYLE><PG>
+<STYLE ID="1">"Incident?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Oh, you mean this morning? Sorry, my job keeps me on my feet all day, so I haven't heard a thing. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Oh! My phone's about to die!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"O-okay... I'll look after the house."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+At that point, the battery died.<PG>
+<STYLE ID="1">"Um, would there be a charger for this phone here?"</STYLE>
+{PAUSE ""}
+<BR>
+"This one's pretty old... We'll look, but... 
+{PAUSE ""}
+But you really should contact your <STYLE ID="5">daughter</STYLE> properly too. 
+{PAUSE ""}
+{PLAYSND "SE\reciever1.ogg" "VOICE" "NORMAL" "1000" "0"}
+If you use this phone here―"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Please! Don't tell my </STYLE><STYLE ID="5">daughter</STYLE><STYLE ID="1"> yet!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　</STYLE><STYLE ID="5">She</STYLE><STYLE ID="1"> adores my </STYLE><STYLE ID="2">husband</STYLE><STYLE ID="1">, and if I suddenly told her something like that...!"</STYLE>
+{PAUSE ""}
+<BR>
+"But sooner or later..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm not ready yet myself, either. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Please..."</STYLE><PG>
+"I see... 
+{PAUSE ""}
+Hey, contact <STYLE ID="7">Assistant Inspector Ise</STYLE>. Tell him we've found a person of interest."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

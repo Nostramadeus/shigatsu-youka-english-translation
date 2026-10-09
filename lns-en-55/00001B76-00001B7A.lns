@@ -1,0 +1,308 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=404, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=294, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=760, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=28, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=355, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ろうばい, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=134, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なら, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2200, target=)
+; Links:
+;    0: TWdLink(count=1980, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\深淵からの呼び声.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家夜.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hah... hah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Eri-nee<STYLE ID="1">, are you okay!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Y-yeah..."<PG>
+<STYLE ID="2">Somehow, we made it to the front of the Niimura house.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">We should be fine now that we've come this far―the scary part is that I can't say that.</STYLE><PG>
+"<STYLE ID="1">Kana-chan</STYLE>, where did the frog go?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Looks like it woke up on the way, and it got away..."</STYLE>
+{PAUSE ""}
+<BR>
+"So it wasn't dead."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"If you're just hunting, you don't need to kill it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana-chan</STYLE><STYLE ID="2"> looked back down the path we had come.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田集落1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"There wasn't any sign of people at all. And it didn't feel like anybody was after us. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="1"> really does have precognition, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, that's for sure."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's weird..."</STYLE><PG>
+<STYLE ID="2">Now that she mentioned it, I did feel there should have been at least a little sign of danger.</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+<STYLE ID="1">"</STYLE>Eri-nee<STYLE ID="1">! Someone's coming!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Swiftly, </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="2"> stepped in front of me and checked our surroundings.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">She wasn't only looking around. I could hear her breathing in little sniffs.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">She seemed to be searching the area with her sense of smell as well.</STYLE><PG>
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "0" "0"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "VOICE" "500" "PASS"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Oh, it's only </STYLE><STYLE ID="4">Grandma</STYLE><STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテール挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Oh, well, well, if it isn't the </STYLE><STYLE ID="1">genius hunter girl</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">Wait, doesn't look like the mood for that."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana-chan</STYLE><STYLE ID="2">'s eyes seemed to have told her this wasn't a friendly mood.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If so, I wish she'd noticed back at dinner...</STYLE><PG>
+<STYLE ID="2">No, wait a second!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2">'s premonition of danger can't be about running into </STYLE><STYLE ID="4">Obaasan</STYLE><STYLE ID="2">, can it!?</STYLE><PG>
+<STYLE ID="2">...Yeah, probably not.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If it were, the cave would actually have been the safer place.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">For now, does that mean we avoided the danger?</STYLE><PG>
+"W-well, it's nothing that serious! We were hunting with plenty of breaks!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, yeah! </STYLE>Eri-nee<STYLE ID="1"> was super good even though it was her first time! She really is a genius girl!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Oho, I'm looking forward to that."</STYLE><PG>
+{PLAYSND "BGM死月編\誰もいない校舎で.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "500" "PASS"}
+<STYLE ID="1">"</STYLE><STYLE ID="4">Grandma</STYLE><STYLE ID="1">, did you catch anything?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"This is what I got."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\追加・手直し\シニガミウオ.gal" "NORMAL" "#1" "C" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Obaasan</STYLE><STYLE ID="2"> held up a fish like a cutlassfish, one that had to be a good 80 centimeters long.</STYLE><PG>
+<STYLE ID="1">"Wow! That's a fine shinigami fish!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ha ha ha! Even at my age, something like this is easy! </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{DELETECG "アイテム1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">　How'd it go on your end?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah... um..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"So, </STYLE>Eri-nee<STYLE ID="1"> caught a giant bullfrog, but I messed up and let it get away..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Oh! </STYLE>Erina-chan<STYLE ID="4">, that's amazing for your first time!"</STYLE><PG>
+"Uh... um..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Credited with catching the frog, and on top of that called by my given name, I got visibly </STYLE><STYLE ID="5" RUBY="ろうばい">flustered</STYLE><STYLE ID="2">.</STYLE><PG>
+<STYLE ID="4">"Now </STYLE>Erina-chan<STYLE ID="4">'s a real hunter too! </STYLE>
+{PAUSE ""}
+<STYLE ID="4">　We're comrades-in-arms!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜手を上げるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Comrades-in-arms, comrades-in-arms!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ah, </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="2"> did it to get me and </STYLE><STYLE ID="4">Obaasan</STYLE><STYLE ID="2"> on good terms...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then I can't let that go to waste.</STYLE><PG>
+"A-ahahahaha! Genius girl Erina Goto! Once I get serious, even hunting is this easy!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">When I grinned at her, </STYLE><STYLE ID="4">Obaasan</STYLE><STYLE ID="2"> copied me and grinned right back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then we shook hands firmly.</STYLE><PG>
+<STYLE ID="4">"Welcome to Arata. </STYLE>Erina-chan<STYLE ID="4">, you're a fine warrior too!"</STYLE>
+{PAUSE ""}
+<BR>
+"Ehehe! Let's get along, <STYLE ID="4">Erika-chan</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It came about in a strange way, but I feel the bond between me and </STYLE><STYLE ID="4">Obaasan</STYLE><STYLE ID="2">―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">no, between me and </STYLE><STYLE ID="4">Erika-chan</STYLE><STYLE ID="2">, has grown deeper.</STYLE><PG>
+<STYLE ID="2">For </STYLE><STYLE ID="4">Erika-chan</STYLE><STYLE ID="2">, whether I really caught the frog probably doesn't matter at all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">More than that, gaining a comrade-in-arms more than 50 years older than me is the greatest trophy of all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And with that, the hunting contest is over! The result: a draw!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The Operation is a huge success!</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家玄関.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">I could hear dishes being washed in the kitchen, but there was no one in the living room.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ五島ツインテールバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Well, I've got a little something to take care of."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">Erika-chan</STYLE>, where are you going?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Just off with </STYLE><STYLE ID="6">Chigaya</STYLE><STYLE ID="4"> for a bit. There's a ritual we do the day before the memorial service, which is tomorrow."</STYLE>
+{PAUSE ""}
+<BR>
+"A ritual..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Actually, I'd planned on having all three of the Motoki-cho group watch it too... </STYLE>
+{PAUSE ""}
+Erina-chan<STYLE ID="4">, how about you, at least?"</STYLE><PG>
+"Hmm, I'm really interested, but... 
+{PAUSE ""}
+I'd like to wait for <STYLE ID="3">Kogori-senpai</STYLE>. She's probably bringing some important news. 
+{PAUSE ""}
+She's gone outside the settlement right now, and it seems that danger sense of hers kicked in."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I see. Then it's no time to be watching a ritual. I'll get the ritual done fast and head back myself."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">Obaasan</STYLE><STYLE ID="2"> left the living room, and from the kitchen came the squeak of a faucet being turned off.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Huh? So you got back. </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Phew, I'm taking a break too!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">Niimura-senpai</STYLE><STYLE ID="2"> dropped down onto the tatami with a thud.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I followed </STYLE><STYLE ID="8" RUBY="なら">her lead</STYLE><STYLE ID="2"> and sat down.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"So, how'd the so-called contest go?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ahh, a lot happened, and it ended in a draw!"
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"A draw, huh? Well, that's the most peaceful outcome! </STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Oh yeah, </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="7"> called me. Didn't she call you too, </STYLE>Goto<STYLE ID="7">? I told her to call you, </STYLE>Goto<STYLE ID="7">."</STYLE>
+{PAUSE ""}
+<BR>
+"She did. She told me to get out of there right away, but nothing happened."<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭かく.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Huh? </STYLE><STYLE ID="3">Natsumi</STYLE><STYLE ID="7">'s intuition misfiring? That's rare..."</STYLE>
+{PAUSE ""}
+<BR>
+"Right? So I'm planning to ask her all about it when she gets back."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Just then, </STYLE><STYLE ID="1">Kana-chan</STYLE><STYLE ID="2"> tugged at the hem of my skirt.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜寝るバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Eri-nee<STYLE ID="1">... I'm sleepy..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It's already 10 o'clock at night. That's probably a little late for an elementary schooler.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">―Then, the sound of the front door opening.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Was </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2"> back, or were </STYLE><STYLE ID="4">Erika-chan</STYLE><STYLE ID="2"> and the others heading off to that so-called ritual?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Either way, </STYLE><STYLE ID="3">Kogori-senpai</STYLE><STYLE ID="2"> would be coming into this living room before long.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,479 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3325, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=24, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=97, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=12, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ぬ, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=もうきん, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=70, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=36, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=8, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=7, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はい, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=5, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つ, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=35, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つな, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3978, target=)
+; Links:
+;    0: TWdLink(count=3628, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\春の山.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "WAIT"}
+{PLAYSND "環境音\ヘリ荒田.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "600" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\女神\朝日.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―Bright light hits my face.
+{PAUSE ""}
+<BR>
+And from far away, the sound of a helicopter.
+{PAUSE ""}
+<BR>
+Oh, right. They've finally come to get us.
+{PAUSE ""}
+<BR>
+That optimistic thought was the first thing that came to me.<PG>
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "SE2" "0" "PASS"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+But there are sights that can destroy a mood like that in a matter of seconds.<PG>
+{MESOFF "500"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\切ないストリングスが印象的な感動BGM.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\女神\朝日.gal" "NORMAL" "#1" "C" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "環境音\crows.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The scene that was so hard to see in the night is laid out vividly by the sunlight.
+{PAUSE ""}
+<BR>
+And the cries of crows.
+{PAUSE ""}
+<BR>
+Cawing and flapping wings, so many I can't even tell how many dozens there are.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\カラス.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The crows are swarming over the spot where <STYLE ID="1">Kana</STYLE> has fallen.
+{PAUSE ""}
+<BR>
+The crows are pecking at <STYLE ID="1">Kana</STYLE>'s body.<PG>
+Meanwhile, only a few of them are pecking lightly at <STYLE ID="2">another body</STYLE>, as if testing it.
+{PAUSE ""}
+<BR>
+The lump of flesh of a small, cute girl I recognize.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Dammit! Get away!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE>'s lookalike, that lump of flesh, has crows swarming it. I chase them off, then throw stones at the flock crowding the place where <STYLE ID="1">Kana</STYLE> was.
+{PAUSE ""}
+<BR>
+For a moment the crows scatter, but they soon go right back to <STYLE ID="1">Kana</STYLE>'s spot.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\女神\カラス飛んでいく.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As I keep up this fight, the crows fly off little by little, until only <STYLE ID="1">Kana</STYLE>'s and <STYLE ID="2">Goto</STYLE>'s remains and I are left behind.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana</STYLE>'s body has been ravaged until the bones of her whole body are exposed, and the only thing proving it was <STYLE ID="1">Kana</STYLE> is her blood-<STYLE ID="4" RUBY="ぬ">soaked</STYLE> clothing.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto</STYLE>'s body doesn't look like it's been eaten yet.<PG>
+The crows' beaks are <STYLE ID="4" RUBY="ぬ">wet</STYLE> with blood, and they flap away carrying little red things.
+{PAUSE ""}
+<BR>
+Like a sky burial, a great many crows turned <STYLE ID="5" RUBY="もうきん">birds of prey</STYLE> return <STYLE ID="1">Kana</STYLE>'s flesh to the heavens.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\秘密基地内部月光なし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Inside the cave, still dim, <STYLE ID="6">Natsumi</STYLE> has breathed her last.
+{PAUSE ""}
+<BR>
+Probably attacked the same way as <STYLE ID="2">Goto</STYLE>...<PG>
+<STYLE ID="7">Mom</STYLE> is nowhere to be seen.
+{PAUSE ""}
+<BR>
+<STYLE ID="8">Dad</STYLE>'s story was that <STYLE ID="7">Mom</STYLE> really had been dead.
+{PAUSE ""}
+<BR>
+And then, reborn as a divine messenger, she appeared in front of me.
+{PAUSE ""}
+<BR>
+She was supposedly meant to become the faithful servant of this Goddess thing.<PG>
+Where did <STYLE ID="7">Mom</STYLE> go?
+{PAUSE ""}
+<BR>
+Was she cast off by the Goddess for trying to save us, or did she become the Goddess's servant for real this time?
+{PAUSE ""}
+<BR>
+I can't say which is true, but there's one strange thing.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\朝日.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It's that I'm calmly looking at this scene I can't accept, without falling apart at all.
+{PAUSE ""}
+<BR>
+Why am I able to stay this calm?
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> both died, didn't they?
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Kana</STYLE> even got eaten by crows, didn't she?
+{PAUSE ""}
+<BR>
+How can I stay this calm?<PG>
+<STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE> came here only half a day ago.
+{PAUSE ""}
+<BR>
+I've been all alone this whole time, and now I'm just alone again, that's all.
+{PAUSE ""}
+<BR>
+Have I gotten too used to being alone?
+{PAUSE ""}
+<BR>
+Or was it that I got to see the end of <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>, who I thought I might never meet again, and that let me make peace with it?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\集落全景.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+There was no sign of anyone in the settlement.
+{PAUSE ""}
+<BR>
+I checked inside the houses, but there was no one.
+{PAUSE ""}
+<BR>
+To be precise... there were no people, but there were <STYLE ID="9" RUBY="はい">embryos</STYLE> in human shape.
+{PAUSE ""}
+<BR>
+Familiar-looking <STYLE ID="9" RUBY="はい">embryos</STYLE> lay inside the houses, lifeless.
+{PAUSE ""}
+<BR>
+<STYLE ID="10">Chiga-nee</STYLE>, <STYLE ID="11">Kotaro-san</STYLE>, Shirozaki-san, all of them had become <STYLE ID="9" RUBY="はい">embryos</STYLE>.<PG>
+It's not like I can tell an ordinary corpse from an <STYLE ID="9" RUBY="はい">embryo</STYLE>.
+{PAUSE ""}
+<BR>
+But unlike <STYLE ID="2">Goto</STYLE>'s and <STYLE ID="6">Natsumi</STYLE>'s bodies, I sensed a strange pulsing and breath from the villagers' bodies.
+{PAUSE ""}
+<BR>
+They should have been dead, and yet it was as if something were squirming inside.
+{PAUSE ""}
+<BR>
+A stench of life, far too vivid to call them dead, hung in the air.<PG>
+Will they really turn into cherry trees like this?
+{PAUSE ""}
+<BR>
+No, that probably won't happen.
+{PAUSE ""}
+<BR>
+People from outside are approaching this settlement.
+{PAUSE ""}
+<BR>
+They'll probably be carried down the mountain by human hands and dissected.
+{PAUSE ""}
+<BR>
+And this parasitic cherry will become known to humankind.<PG>
+If I stay in the settlement like this, I'm sure they'll take me in.
+{PAUSE ""}
+<BR>
+But even if they do take me in, where am I supposed to go?<PG>
+Even if I go back to Motoki-cho, there's no one I know there anymore.
+{PAUSE ""}
+<BR>
+In the Arata settlement, there aren't even any people left.
+{PAUSE ""}
+<BR>
+I never want to set foot in Megasawa City again.
+{PAUSE ""}
+<BR>
+There's no place for me to belong in the outside world.
+{PAUSE ""}
+<BR>
+So―
+{PAUSE ""}
+the place to belong that's left to me is―<PG>
+No, but before that, there's something I have to do.
+{PAUSE ""}
+<BR>
+In the Niimura house's kitchen, I found something that would do.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\集会場.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神首つり.lcm" "REPEAT" "#1" "L" "T" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In the end, when the Verde mummy first appeared, who was it that <STYLE ID="12" RUBY="つ">strung</STYLE> this one up?
+{PAUSE ""}
+<BR>
+Who was it that hit me?
+{PAUSE ""}
+<BR>
+If they hit me with only enough force not to knock me out, then―
+{PAUSE ""}
+Haha... I see...<PG>
+<STYLE ID="7">Mom</STYLE> was desperate to make this place look dangerous, so I'd get out of here quickly.
+{PAUSE ""}
+<BR>
+That's right, if I'd wanted to, I could have escaped the Arata settlement anytime.
+{PAUSE ""}
+<BR>
+But I worried about the settlement, feared for <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>, and stayed here.
+{PAUSE ""}
+<BR>
+So <STYLE ID="7">Mom</STYLE> took matters into her own hands to try to save us.<PG>
+Then she should've just told me so from the start.
+{PAUSE ""}
+<BR>
+Or did <STYLE ID="7">Mom</STYLE> have some reason she couldn't tell me?
+{PAUSE ""}
+<BR>
+For example, maybe she was being watched by <STYLE ID="8">Dad</STYLE> or this so-called Goddess.
+{PAUSE ""}
+<BR>
+Well, there's no way to find out now.<PG>
+Goodbye, Lady Verde.
+{PAUSE ""}
+<BR>
+Because of you, I've had a terrible time.
+{PAUSE ""}
+<BR>
+But... none of it was your fault, was it?
+{PAUSE ""}
+<BR>
+You just didn't want to hurt people, so you gouged out your eye, and then you died.
+{PAUSE ""}
+<BR>
+And for it to turn into something this twisted... your soul can't rest, can it?<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n456\r\n人物1\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\女神\サクラミイラ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="13">Sakura-san</STYLE>...
+{PAUSE ""}
+<BR>
+I'm sure <STYLE ID="13">Sakura-san</STYLE> ended up the way <STYLE ID="6">Natsumi</STYLE> did.
+{PAUSE ""}
+<BR>
+Just like <STYLE ID="6">Natsumi</STYLE> went strange at first, <STYLE ID="13">Sakura-san</STYLE> went strange too...
+{PAUSE ""}
+<BR>
+Anyone with precognition ends up cursed by the Verde mummy, as a matter of course.<PG>
+A year ago, <STYLE ID="13">Sakura-san</STYLE> probably told everyone to use Droga or something.
+{PAUSE ""}
+<BR>
+As a result, all the villagers went strange from the Droga and the Verde mummy, caused a horror like last night's, and turned into <STYLE ID="9" RUBY="はい">embryos</STYLE>.
+{PAUSE ""}
+<BR>
+For some reason it didn't seem to work on <STYLE ID="1">Kana</STYLE>, but in the end, the only difference for <STYLE ID="1">Kana</STYLE> was whether she became an <STYLE ID="9" RUBY="はい">embryo</STYLE> or food for crows.<PG>
+I strike a match and toss it onto the tatami.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "10000" "PASS"}
+{PLAYMOVIE "炎.wmv" "256" "C" "C" "REPEAT" "FALSE" "300" "0"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n100\r\n5000\r\nNORMAL\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{MESON "500"}
+The fire spreads to the two mummies, and that stench starts to drift from <STYLE ID="13">Sakura-san</STYLE>'s mummy.
+{PAUSE ""}
+<BR>
+Just as I thought, this smell is falsificaso.
+{PAUSE ""}
+<BR>
+The one who rigged <STYLE ID="13">Sakura-san</STYLE>'s mummy to cause trouble when it was set on fire must have been <STYLE ID="7">Mom</STYLE> too.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Mom</STYLE> had been watching over me for 2 years, struggling all alone, without anyone's help.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I hurry out of the meeting hall.
+{PAUSE ""}
+<BR>
+The sound of the helicopter I'd been hearing in the distance grows louder little by little.
+{PAUSE ""}
+<BR>
+If they see me, it'll be a hassle.<PG>
+{MESOFF "500"}
+{PLAYMOVIE "桜散る.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\サクラ\サクラ.lcm" "REPEAT" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Just as <STYLE ID="13">Sakura-san</STYLE> prophesied, the Arata settlement has perished.
+{PAUSE ""}
+<BR>
+And whether the 'something that comes from outside' she feared is what destroyed the Arata settlement, I don't know.
+{PAUSE ""}
+<BR>
+From the humans' standpoint, it probably has perished.
+{PAUSE ""}
+<BR>
+From the Arata cherry's standpoint, it probably defended it to the end.
+{PAUSE ""}
+<BR>
+But either way, the Arata cherry will probably perish.<PG>
+Because soon a whole crowd of the almighty humans will arrive.
+{PAUSE ""}
+<BR>
+Even I can predict that the outsiders will carry off every last one of the new <STYLE ID="9" RUBY="はい">embryos</STYLE>.
+{PAUSE ""}
+<BR>
+Couldn't the Arata cherry foresee this?
+{PAUSE ""}
+<BR>
+What would <STYLE ID="2">Goto</STYLE> say?<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"For plants, once they've borne seeds, it's mission complete!</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Whether the seeds actually sprout is up to the descendants left behind to manage on their own!"</STYLE>
+{PAUSE ""}
+<BR>
+That's probably what she'd say.
+{PAUSE ""}
+<BR>
+Humans look after their kids until they grow up, so maybe we win on that point.
+{PAUSE ""}
+<BR>
+Thinking about that, I try to find any point at all where humans come out ahead.<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+What could I have done to save everyone?
+{PAUSE ""}
+<BR>
+In these 24 hours, there must have been plenty of clues.
+{PAUSE ""}
+<BR>
+These should all <STYLE ID="14" RUBY="つな">connect</STYLE> to every event.
+{PAUSE ""}
+<BR>
+Everything I didn't understand or couldn't explain until now should all connect to what happened in these 24 hours.<PG>
+Thinking about that now... won't do any good...<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n123\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+More than that... I have to think about what I'm going to do from now on.<PG>
+A place where I can be, where on earth―<PG>
+{MESOFF "500"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\雲を乗り継ぐ冒険.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\女神\温泉.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\風呂飛込み.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+Haah... No matter how many times I get in, it feels great.
+{PAUSE ""}
+<BR>
+How many years has it been since I came here?
+{PAUSE ""}
+<BR>
+There's probably nobody anywhere living more like a hermit than me.
+{PAUSE ""}
+<BR>
+But I don't feel like going back to crowded places now.
+{PAUSE ""}
+<BR>
+Because I'm not lonely.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\山1.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―In the end, my place to belong was only ever here.
+{PAUSE ""}
+<BR>
+Because the Arata settlement existed, I was born, met <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>, and then came back here again.
+{PAUSE ""}
+<BR>
+On the train, when I imagined going back to Motoki-cho with <STYLE ID="6">Natsumi</STYLE> and <STYLE ID="2">Goto</STYLE>, it was so much fun, and it made me happy.<PG>
+Thinking that life like before would come back, and I'd get to spend fun days with the people I love.
+{PAUSE ""}
+<BR>
+Everyone's dead, but as long as I'm in this land where everyone returned to the heavens, I'm not lonely.<PG>
+That's the kind of person I am, so I've started seeing illusions a lot.
+{PAUSE ""}
+<BR>
+By my side are <STYLE ID="6">Natsumi</STYLE>, <STYLE ID="2">Goto</STYLE>, <STYLE ID="7">Mom</STYLE>, and <STYLE ID="1">Kana</STYLE> too, so I'm not lonely.
+{PAUSE ""}
+<BR>
+I know these are illusions.
+{PAUSE ""}
+<BR>
+If I look even a little closely, they all vanish in an instant.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "11" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="6">, you've been hurting all this time, so I think you can rest now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Natsumi</STYLE> said something like that to me in that cave.
+{PAUSE ""}
+<BR>
+So I'll take her up on it.
+{PAUSE ""}
+<BR>
+Even if it's an illusion, I'll take her up on it and go on living.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In these Arata mountains, where there's no more goddess, no more everyone, no one at all.
+{PAUSE ""}
+<BR>
+I'll go on living, always.
+{PAUSE ""}
+<BR>
+Until this life runs out, I'll live on this land as a person of Arata.
+{PAUSE ""}
+<BR>
+So... 
+{PAUSE ""}
+since everyone's here too... 
+{PAUSE ""}
+I'm not lonely.
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

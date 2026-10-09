@@ -1,0 +1,194 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=25, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=ＭＳ Ｐゴシック, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=365, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=238, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=115, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=895, target=)
+; Links:
+;    0: TWdLink(count=747, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "見えない光_2.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\駅前.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤入.gal" "NORMAL" "#1" "650" "C" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>“Please come to the police station right away. Mom is here too.”
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="2">Mom</STYLE><STYLE ID="1"> says she's at the police station..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Th-the police station!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, did something happen..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭抱える.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Ah, aaah..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">!? Are you okay!?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花座り込み.gal" "WAIT" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"No...! </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">, it's not like that...! I... I...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, calm down. Come on, deep breath."</STYLE>
+{STOPSND "BGM" "3000" "PASS"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "悲しみに包まれて.ogg" "BGM" "REPEAT" "0" "0"}
+{PLAYSND "環境音\電車進行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "800" "3000" "PASS"}
+{CHGVOL "BGM" "1000" "5000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\電車夕方.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Yeah, that's right! I thought if I sent you somewhere far away, </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">, you'd be okay! </STYLE>
+{PAUSE ""}
+<STYLE ID="3">　But I realized that if I'm with you, it's no good in the end!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really, what you're saying is a total mess! I bet your curse too, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, is just some messy, sloppy story!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's not sloppy! Everyone I've put a curse on up to now has died!"</STYLE><PG>
+{MESOFF "500"}
+{QUAKE "000,人物1" "QUAKE" "1" "15" "15" "0" "30"}
+{PLAYSND "SE\詫言編　夢から\ビンタ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花ビンタされる.gal" "NORMAL" "12" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKESTOP "500"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">"What's with that... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What's with that! You cry and apologize, you say you don't want me to die, and that's all!? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Why won't you say you'll save me? </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　If it were the other way around, I'd protect you no matter what, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Or those words, 'not my friend,' did you mean them?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Th-there's no way I did! I... </STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="3">...!"</STYLE><PG>
+<STYLE ID="1">"Then save me! </STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Protect me from the curse you put on me, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">! </STYLE>
+{PAUSE ""}
+<STYLE ID="4">　</STYLE><STYLE ID="1">If the shinigami shows up, save me. Please, right now the only one I can rely on is you, </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">."</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\山車道反転.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">, get away by yourself..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I'll be back in 3 minutes. I'm going to save you, no matter what."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Okay..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腕組みアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Even if it costs my life, I'll protect you."</STYLE><PG>
+{MESOFF "500"}
+{CHGVOL "BGM" "800" "2000" "PASS"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{STOPSND "VOICE" "10000" "PASS"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\車走行中.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\山車道1.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\背景\山車道2.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{WAIT "2000" "CLICK" "SKIP"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "SE\車爆走中.ogg" "VOICE" "REPEAT" "0" "50"}
+{CHGVOL "VOICE" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\山車道3.gal" "NORMAL" "1" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESOFF "500"}
+{STOPSND "BGM" "1000" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "VOICE" "0" "PASS"}
+{PLAYSND "SE\car-accident1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\スチル\春花かばう.gal" "WAIT" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "2500" "NORMAL" "SKIP"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "50"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{CREATECG "000" "グラフィック\立ち絵\人物\lcm\春花吹っ飛び.lcm" "WAIT" "#1" "C" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "強風.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "10000" "PASS"}
+{CREATECG "000" "グラフィック\イラスト\呪殺編\月の影に1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Ha... </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1">...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3"><TXSPS>"Ugh... ngh... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Na... tsumi</STYLE><STYLE ID="3">... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">you... okay...?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "avemaria.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\病院待合室.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+<STYLE ID="1"><TXSPN>"Because I said 'help me'... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If I hadn't told </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="1"> 'protect me'―"</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="4">That I begged </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="4"> to protect me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">That I lashed out at her, saying her feelings for me were only words.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Thinking back on it now, how foolish that was.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">My leaning on her, when I couldn't even protect myself, is what put </STYLE><STYLE ID="3">Haruka</STYLE><STYLE ID="4"> through that.</STYLE><PG>
+<STYLE ID="4">So, what I must do.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Haruka</STYLE><STYLE ID="4">―if she protected me... then I―</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+{PAUSE ""}
+{STOPSND "BGM" "5000" "PASS"}
+{MESOFF "3000"}
+<EVENT VALUE="TEXTCLEAR">
+<PG>
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

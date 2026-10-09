@@ -1,0 +1,74 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=81, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=320, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=5, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=22, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=470, target=)
+; Links:
+;    0: TWdLink(count=428, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\リファレンス用\背景\監視カメラ.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"<STYLE ID="1">Assistant Inspector Ise</STYLE>, I found it!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm, good."</STYLE><PG>
+<STYLE ID="1">"So they used the train. The Kogori couple owned a car, didn't they?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, but on this day they apparently went to Megasawa City by train."<PG>
+<STYLE ID="1">"Hmm... I don't get it... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If they own a car, why go out of their way to take the train... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Had they been drinking or something?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　And their movements after that?"</STYLE>
+{PAUSE ""}
+<BR>
+"We're checking with the Iizawa Prefectural Police now, and if possible we'll have them send the recorded footage from Megasawa Station."<PG>
+<STYLE ID="1">"I see... Six people suddenly vanished from Motoki-cho. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Three from the Kogori family, two from the Niimura family, and </STYLE><STYLE ID="2">Erina Goto</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If I remember right, they went to a Niimura family memorial service, didn't they?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Yes, we've confirmed that with the school the three of them attend."</STYLE><PG>
+<STYLE ID="1">"Which means what we don't understand is what the Kogori couple did. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The three high school girls headed to the Arata settlement by train, and then for some reason the Kogori couple boarded a train too, at a different time. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And then they went missing, just like that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">All right, once the footage arrives from the Iizawa Prefectural Police, we'll resume the investigation with the video. For now, dismissed. Get back to the field."</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, sir!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルト歩くずれ用.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">"What on earth is going on...?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　For the Kogori couple to go missing too..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

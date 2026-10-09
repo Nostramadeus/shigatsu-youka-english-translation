@@ -1,0 +1,102 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=444, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=61, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=なじ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=571, target=)
+; Links:
+;    0: TWdLink(count=507, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "エデンの桜\SE\チャイム.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\小学校教室.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Ow, ow, ow, ow... Good morning, everyone. 
+{PAUSE ""}
+How was Golden Week? I went picking mountain vegetables with my husband, and now my whole body is sore. 
+{PAUSE ""}
+Ugh, I really don't want to get old. Sore muscles from just that much... 
+{PAUSE ""}
+You're all still in elementary school, so you probably wouldn't understand."
+{STOPSND "VOICE" "10000" "PASS"}
+<PG>
+"Now then, I have some good news today. 
+{PAUSE ""}
+It's sudden, but a transfer student is joining this class."
+{PAUSE ""}
+<BR>
+―A transfer student?
+{PAUSE ""}
+<BR>
+―We're getting another classmate?
+{PAUSE ""}
+<BR>
+―Who is it, who is it!<PG>
+"All right, <STYLE ID="1">Niimura-san</STYLE>, please come in."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\sliding_wooden_door_C.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE2" "CLICK"}
+{MESON "500"}
+―<STYLE ID="1">Niimura</STYLE>...?
+{PAUSE ""}
+<BR>
+―Huh? I know <STYLE ID="1">this girl</STYLE>!
+{PAUSE ""}
+<BR>
+―Could it be...<PG>
+<STYLE ID="1">"Um... I'm Haruka Niimura. I've come back to Motoki-cho after 2 years."</STYLE>
+{PAUSE ""}
+<BR>
+―Oh! I knew it, it's <STYLE ID="1">Haruka Niimura-san</STYLE>!
+{PAUSE ""}
+<BR>
+―I remember! We were in the same class at nursery school!
+{PAUSE ""}
+<BR>
+―Your hair used to be longer, right?<PG>
+"Okay, okay, quiet down. <STYLE ID="1">Niimura-san</STYLE> has come back to Motoki-cho for family reasons. 
+{PAUSE ""}
+Everyone, please be nice to her."
+{PAUSE ""}
+<BR>
+―Okaaay!<BR>
+―Okaaay!<BR>
+―Okaaay!<BR>
+―Okaaay!<BR>
+―Okaaay!<PG>
+―<STYLE ID="1">Niimura-san</STYLE>, this seat's free, over here!
+{PAUSE ""}
+<BR>
+―Hurry, hurry, come on, come on!
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"O... okay..."</STYLE>
+{PAUSE ""}
+<BR>
+―Do you remember me!?
+{PAUSE ""}
+<BR>
+―You moved away right after, the year before last, right?<PG>
+"Ow, ow, ow... I can't lift my arms... 
+{PAUSE ""}
+Well, it's good she seems able to <STYLE ID="2" RUBY="なじ">fit in</STYLE>."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

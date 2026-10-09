@@ -1,0 +1,765 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1374, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=1570, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2237, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=55, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=231, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=な, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=か, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こうこつ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=5, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=14, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=わな, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=6049, target=)
+; Links:
+;    0: TWdLink(count=5492, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE2" "REPEAT" "0" "0"}
+{CHGVOL "VOICE2" "1000" "5000" "WAIT"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Haah... haah... haah..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> in my arms, this distance was as far as I could run.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">We're probably still in the woods near the settlement.</STYLE><PG>
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, you can put me down now. I can walk on my own."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Weakened from breathing in the smoke, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> seems to have finally gotten her strength back.</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "VOICE2" "500" "PASS"}
+<STYLE ID="1">Goto</STYLE><STYLE ID="2">'s offering, so I take her up on it and set her down.</STYLE><PG>
+{STOPSND "VOICE" "3000" "PASS"}
+<STYLE ID="2">But even if we want to rest, the ground is still muddy from the downpour earlier.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I can't quite bring myself to sit down right here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And never having done the mountain seclusion, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> especially would probably hate it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Chiga-nee</STYLE><STYLE ID="2"> and I talked in the abandoned house, but that's more than 20 minutes away, so all I can do is look for ground around here the rain hasn't soaked.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Uh, </STYLE>Senpai<STYLE ID="1">, I don't mind. Clothes getting a little dirty..."</STYLE>
+{PAUSE ""}
+<BR>
+"But if they don't have to get dirty, that's better, and out here we'd stand out. 
+{PAUSE ""}
+<STYLE ID="1">You</STYLE> wait here a sec. I'm gonna go look for a good spot. 
+{PAUSE ""}
+I'll be back in a minute."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Sorry..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\砂利を歩く.ogg" "VOICE" "REPEAT" "1000" "0"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">My stamina's nearly hit bottom too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Should I have eaten the stew </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> offered me...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I never found out whether it was poisoned, but </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> was eating it like normal.</STYLE><PG>
+{STOPSND "VOICE" "500" "PASS"}
+<STYLE ID="2">Hm? This is...</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "3000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地入口.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">A cave, huh...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It might be dry inside.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It's been almost a minute. I gotta get back.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田森1夜.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="1">Goto</STYLE>, I found a good spot."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島横顔.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Really?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, it's some kind of cave."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Did you check inside?"</STYLE>
+{PAUSE ""}
+<BR>
+"No, I didn't have that much time."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Nobody's been using it or anything, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Um, well..."<PG>
+<STYLE ID="2">I didn't sense anyone inside, but I can't rule out someone going in and out a lot.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A cave like that can't have just sat there without anyone ever noticing it...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But as long as we can rest even a little, that's fine. Even a little.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{STOPSND "VOICE" "500" "PASS"}
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> comes into the cave with me, and sure enough, nobody's there.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\秘密基地穴夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">A straw mat set in the corner, a shaft that looks deep, and a ladder.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It seems to lead underground.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It's a little too unsettling to really kick back and rest.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, what should we do...?"</STYLE>
+{PAUSE ""}
+<BR>
+"Let's rest just a bit. I'll keep watch for anybody coming."
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">I sit down on the ground.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Looks like most of the rain drained off down into the underground part.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島うつむき.gal" "NORMAL" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> follows my lead and sits down too.</STYLE><PG>
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, aren't you hungry?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　You haven't eaten lunch or dinner, right?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\paper-round1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\和菓子.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> pulls a whole bunch of Japanese sweets out of her pockets.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+"Why've <STYLE ID="1">you</STYLE> got stuff like that...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I stuffed in as much emergency food as I could fit. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Japanese sweets have lots of sugar, and they keep you full a long time. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And of course, they all have preservatives in them, so no need to worry."</STYLE><PG>
+"Preservatives, huh... Well, I'll gladly take one."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I pick up a dorayaki.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even the feel of the plastic wrapper takes me back, and I'd completely forgotten what sweetness tastes like.</STYLE><PG>
+"Haha... I haven't had anything sweet in 2 years..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Please don't eat it all in one go. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">If you suddenly take in a lot of sugar you're not used to, you can get nosebleeds or high blood sugar."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I follow </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">'s advice, hold back the urge to chomp down hard, and take just half a bite.</STYLE><PG>
+<STYLE ID="2">During the mountain seclusion, the only sweet things I could eat were the fruits that </STYLE><STYLE ID="5" RUBY="な">grow</STYLE><STYLE ID="2"> on the mountain.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But Arata or not, wild fruit isn't all that tasty.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Fruit grown by human hands is richer in both fragrance and sweetness.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\どら焼き.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">That's why the fragrance and sweetness of this half bite of dorayaki, so vivid it's heavenly, fill me up, heart and all.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Back in Motoki-cho I barely </STYLE><STYLE ID="6" RUBY="か">chewed</STYLE><STYLE ID="2">, but this time I kept </STYLE><STYLE ID="6" RUBY="か">chewing</STYLE><STYLE ID="2"> until the feel of the flour and the bean skins was gone.</STYLE><PG>
+"Haah... Can't beat this..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hehe, I'm glad."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> flashes me a big grin.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2">'s face like this really takes me back too.</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+"<STYLE ID="1">Goto</STYLE>, what happened at Arata Station...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Right, I'd better tell you before anything else..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "日没廃校.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\女神\電車待機.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Niimura-senpai<STYLE ID="2"> was checking the driver's seat when―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="3">"Mm... Don't make a sound. Get outside right now."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Suddenly those two forced their way into the train and had us out of it in no time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And then―</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">There was a buggy outside the station, and a grown man drove us in it all the way to the settlement.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Mm... Sorry. Wait here for just a little while."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">They didn't hit us or torture us or anything, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">after we got to the settlement, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="2"> started acting a little strange.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Hey, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">... are you scared?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"O-of course I'm scared... </STYLE><STYLE ID="4">Senpai</STYLE><STYLE ID="1">, aren't you scared?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみ考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"Why is it... Ever since I came here, I'm not all that scared. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Like someone's protecting me... that kind of feeling..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Wh-what are you talking about...! We've been kidnapped!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="4">, it's okay. This settlement is safe. I can tell by my intuition. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Because here... is where the Goddess is."</STYLE><PG>
+<STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="2"> had never been capable of anything but sensing danger, yet she said she could tell by intuition that this settlement was safe.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">After that, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="2"> had this </STYLE><STYLE ID="7" RUBY="こうこつ">enraptured</STYLE><STYLE ID="2"> look on her face the whole time... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">and, um... she kept saying things I couldn't make sense of.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Things like 'I'm happy,' or 'I'll get to meet the Goddess'...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">When the people of the settlement heard that, they said they would welcome </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="2"> as a divine messenger.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"What is a divine messenger, anyway...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"In Shinto, it means a messenger of the gods. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Apparently they're going to make </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> a servant of the goddess. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">In the first place, what role the goddess and divine messengers even have in this Verde faith..."</STYLE><PG>
+"So <STYLE ID="4">Natsumi</STYLE> went strange after coming here, even though nobody did anything to her?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes. I was with her the whole time, so there's no mistake. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Um... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">Can you believe what I'm saying?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I've been worried this whole time that maybe I've gone strange too..."</STYLE>
+{PAUSE ""}
+<BR>
+"If you've gone strange, <STYLE ID="1">Goto</STYLE>, then so have I. 
+{PAUSE ""}
+So if I'm sane, so are you, <STYLE ID="1">Goto</STYLE>."<PG>
+<STYLE ID="1">"That's a roundabout way of putting it..."</STYLE>
+{PAUSE ""}
+<BR>
+"Somehow I get how you feel way too well, <STYLE ID="1">Goto</STYLE>... 
+{PAUSE ""}
+like maybe I've gone strange too."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Anyway, that means you and I, </STYLE>Niimura-senpai<STYLE ID="1">, want the same thing, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah. We have to trust we haven't gone strange and get <STYLE ID="4">Natsumi</STYLE> out of there."<PG>
+<STYLE ID="1">"Right... </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">That's right...! We have to get </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> out of there, fast!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Or else something terrible will...!"</STYLE>
+{PAUSE ""}
+<BR>
+"What, what is it?"
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"What are you talking about!? Don't you understand what it means to welcome </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> as a divine messenger!?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Being a divine messenger means being a servant of the goddess!?"</STYLE><PG>
+<STYLE ID="2">Verde and </STYLE><STYLE ID="8">Sakura-san</STYLE><STYLE ID="2"> are goddesses―in other words, dead people.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Becoming the servant of a dead person means...</STYLE><PG>
+{PLAYSND "BGM死月編\竹林黒霧.ogg" "BGM" "REPEAT" "1000" "0"}
+"Hey! Then that means <STYLE ID="4">Natsumi</STYLE>'s gonna die!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That's what I've been telling you!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　And on top of that, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> is thrilled about it, saying it's a huge honor!?"</STYLE>
+{PAUSE ""}
+<BR>
+"Dammit, I can't just sit here...!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">I grip my knife and stand up―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">but the strength drains from my legs, and I sink limply back down.</STYLE><PG>
+"Wh-what is this... My legs..."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, are you okay!?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Uh, I didn't put any poison in the sweets, okay?"</STYLE>
+{PAUSE ""}
+<BR>
+"I know already. I ran all over the place today and hardly rested. 
+{PAUSE ""}
+My body's probably trying to force me to take a break... 
+{PAUSE ""}
+Dammit... but even so, I can't just sit here resting..."<PG>
+<STYLE ID="2">Sitting down to eat made the tension snap, and exhaustion comes rushing over me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If I lie down, I might fall asleep in under a minute.</STYLE><PG>
+<STYLE ID="1">"I understand you're anxious, but we have to make sure the rescue succeeds... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Let's come up with a proper plan before we move."</STYLE>
+{PAUSE ""}
+<BR>
+"You got any good ideas?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um, well..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">, it seems, can't come up with a plan to take </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> back on the spot.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> doesn't know the lay of the land around here either, so I guess it can't be helped...</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"Come to think of it, didn't someone come to help us at the meeting hall?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I was so confused I don't really remember..."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, someone did come."<PG>
+{MESOFF "500"}
+{PLAYSND "escape.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神\般若全身.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{PLAYMOVIE "桜.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "255"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"It was crazy strong. Against <STYLE ID="3">Chiga-nee</STYLE> and <STYLE ID="9">Kana</STYLE>, of all people, it was completely one-sided."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Who is that person...?"</STYLE>
+{PAUSE ""}
+<BR>
+"I don't know. 
+{PAUSE ""}
+White Hannya, white robes―I've never seen an outfit like that, not even in the Arata settlement."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Could it mean something...?"</STYLE><PG>
+"At least it means it knows the culture of the Arata settlement. 
+{PAUSE ""}
+Its weapons were a nata and a mace, too."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Maybe there's still someone sane inside the settlement."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah. It's wishful thinking, but right now the White Hannya is our hope. 
+{PAUSE ""}
+It must have burst in to save us."<PG>
+<STYLE ID="1">"Then surely... it's helping </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> too, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Who knows... <STYLE ID="4">Natsumi</STYLE> wants to become a divine messenger of <STYLE ID="4">her own</STYLE> accord, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE><PG>
+<STYLE ID="2">I don't know the White Hannya's true identity, but at least I can think of it as a force opposed to the Verde faith.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Still, as long as I don't know what the White Hannya is after, I can't count on anything it does.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The biggest problem is still how to save </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">On top of that, </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> wants to become a divine messenger of her own free will.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Saving someone who doesn't want to be saved isn't easy.</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地内部.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{MESON "500"}
+"So then, <STYLE ID="1">Goto</STYLE>, why did they take you to that meeting hall?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm not really sure, but something like I'd become one of them too..."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+"Haah... What, were they gonna put a curse on you too, <STYLE ID="1">Goto</STYLE>? It really is an evil cult..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Curses don't exist, but there probably is something similar to one. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The fact is, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> ended up like that. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Though what they were going to do to me, I can't say."</STYLE><PG>
+"No, not necessarily. <STYLE ID="4">Natsumi</STYLE> handed me a syringe at the Niimura house."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? </STYLE>Niimura-senpai<STYLE ID="1">, you saw </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1">?"</STYLE>
+{PAUSE ""}
+<BR>
+"I didn't tell you yet, did I? I went into the Niimura house first, looking for <STYLE ID="1">you</STYLE> two. 
+{PAUSE ""}
+And there was <STYLE ID="4">Natsumi</STYLE>, walking around the Niimura house freely. 
+{PAUSE ""}
+So she offers me food, and the next thing I know she's handing me a syringe―"<PG>
+<STYLE ID="1">"Food and a syringe... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I see, that's important information. </STYLE>
+{PAUSE ""}
+Niimura-senpai<STYLE ID="1">, you didn't eat the food she offered you, right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, it was way too suspicious... 
+{PAUSE ""}
+But <STYLE ID="4">Natsumi</STYLE> was eating it like it was nothing."<PG>
+<STYLE ID="1">"That food probably really didn't have anything in it. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1">'s aim, I think, was to put you, </STYLE>Niimura-senpai<STYLE ID="1">, at ease and get you to take the injection. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">No, of course part of it was probably concern for your health, </STYLE>Niimura-senpai<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"So what, you're saying apart from being in deep with the Verde faith, <STYLE ID="4">Natsumi</STYLE>'s basically no different?"<PG>
+<STYLE ID="1">"I think so. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The people who abducted me didn't try anything rough, either. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That </STYLE><STYLE ID="9">little kid</STYLE><STYLE ID="1"> was a bit scary, though..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The little kid she means must be </STYLE><STYLE ID="9">Kana</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It's true, </STYLE><STYLE ID="9">Kana</STYLE><STYLE ID="2"> marched </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> into the meeting hall at knifepoint.</STYLE><PG>
+"But I don't get it... 
+{PAUSE ""}
+If they meant to make you one of them, <STYLE ID="1">Goto</STYLE>, they must've been planning to inject <STYLE ID="1">you</STYLE> too. 
+{PAUSE ""}
+So why haven't they injected you until now...?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Hmm... maybe the injection isn't the only way to become one of them. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Look, </STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1"> ended up like that without any injection."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Either way, right now even </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> can't get to the truth.</STYLE><PG>
+"Okay, <STYLE ID="1">Goto</STYLE>, here's what we'll do. 
+{PAUSE ""}
+Right now the most important thing is rescuing <STYLE ID="4">Natsumi</STYLE>. 
+{PAUSE ""}
+If we drag her home, even by force, and get a doctor to look at her, things might work out, right?
+{PAUSE ""}
+　Waking up the rest of them can wait till after that, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You're right. And it'd be more reassuring to bring the police, too."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島電話.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">With that, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> takes out her phone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">They didn't even confiscate her phone? They're awfully sure of themselves.</STYLE><PG>
+<STYLE ID="1">"Hello, is this the police?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Yes―yes―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Looks like she got through all right.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">In that case, rather than forcing </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> out, it might be safer to just keep hiding.</STYLE><PG>
+<STYLE ID="1">"What!?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Yes―yes―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> turns to me without hanging up.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Senpai<STYLE ID="1">, they say the heavy rain caused a landslide, and they won't get here until dawn..."</STYLE>
+{PAUSE ""}
+<BR>
+"Seriously...? 
+{PAUSE ""}
+Hey, make sure you tell them the train driver's been killed too!?"<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島電話.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">At that, </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> nods and goes on explaining the situation into the phone.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I see. If the landslide means they can't get here, then nobody's even found the driver's murder yet.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"If worst comes to worst, they say they'll come get us by chopper at daybreak. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Is there a wide-open space somewhere?"</STYLE>
+{PAUSE ""}
+<BR>
+"Around here, that'd be the graveyard clearing. 
+{PAUSE ""}
+It's flat ground, all grass, no trees. 
+{PAUSE ""}
+It's a 10-minute walk from here."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then when we hear the chopper at dawn, we move."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah. But... 
+{PAUSE ""}
+I just hope <STYLE ID="4">Natsumi</STYLE> and the rest of us are still okay by then..."<PG>
+<STYLE ID="2">It probably isn't even past midnight yet.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">We have to keep hiding like this for another 8 hours.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If the weather turns bad again and the helicopter can't fly...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I have to think of some way to get at least </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2"> out of here.</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESOFF "500"}
+{WAIT "5000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Footsteps from the entrance...!</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> gets shoved behind me, and I ready my knife without getting up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> grabs the hem of my clothes with a trembling hand and curls up, perfectly still.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The footsteps are definitely heading our way.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Come on... If you're coming, then come...!</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "500" "WAIT"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">Natsumi</STYLE><STYLE ID="2">...!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> came alone...!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But if she yells or anything, </STYLE><STYLE ID="9">Kana</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="3">Chiga-nee</STYLE><STYLE ID="2"> will be here in no time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">What happened to that White Hannya!? So it didn't save </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> after all!?</STYLE><PG>
+"<STYLE ID="4">Natsumi</STYLE>! What did you come here for...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> probably won't attack me or </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even so, I keep my knife up.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Because </STYLE><STYLE ID="3">Chiga-nee</STYLE><STYLE ID="2"> or </STYLE><STYLE ID="9">Kana</STYLE><STYLE ID="2"> might come at us from behind.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島横顔逆.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"K-</STYLE><STYLE ID="4">Kogori-senpai</STYLE><STYLE ID="1">! What did you come here for!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2">'s trembling voice echoes through the cave.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If anyone's outside, they'll know we're here from </STYLE><STYLE ID="1">Goto</STYLE><STYLE ID="2">'s voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But the moment </STYLE><STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> showed up, hiding that we're here became pointless.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Goto</STYLE><STYLE ID="2"> must have spoken up on purpose, to find a way out of this as fast as possible.</STYLE><PG>
+"G-<STYLE ID="1">Goto</STYLE>, what do we do...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"All we can do is persuade her..."</STYLE>
+{PAUSE ""}
+<BR>
+"And how're we supposed to do that...!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\歩く響く.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> keeps coming, step by step, closer to us.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But in the dark, I can't make out her expression.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n300\r\nNORMAL\r\nPASS">
+{WAIT "500" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n0\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみ倒れる.gal" "NORMAL" "#1" "C" "C" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">............!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">Natsumi</STYLE><STYLE ID="2"> drops to the ground with a thud right where she is.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">What is this... Some new kind of </STYLE><STYLE ID="10" RUBY="わな">trap</STYLE><STYLE ID="2">?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">What's she planning, doing something like this...?</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

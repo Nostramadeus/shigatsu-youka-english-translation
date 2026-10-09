@@ -1,0 +1,1369 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=8902, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=24, unk2=4294967295, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=16755455, unk3=4294967295, unk4=48, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=55, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=1297, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かねざきつとむ, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つちだ, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふけ, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=22, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=らち, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=はら, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=174, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=6, unk2=13464752, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かな, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=11465, target=)
+; Links:
+;    0: TWdLink(count=10494, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "環境音\walk-snow1_.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "10000" "PASS"}
+{PLAYMOVIE "雪.wmv" "358" "C" "C" "REPEAT" "FALSE" "300" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\町娘背景\雪道.gal" "NORMAL" "#1" "C" "T" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>In this weather, the automobile could not be taken out.
+{PAUSE ""}
+<BR>
+The snow kept piling up, higher and higher.
+{PAUSE ""}
+<BR>
+I had to get back down to the foot of the mountain quickly.
+{PAUSE ""}
+<BR>
+My feet were losing the last of their feeling, and my fear of frostbite grew.<PG>
+My pace quickened of its own accord.
+{PAUSE ""}
+<BR>
+The breath I let out grew thicker, too.
+{PAUSE ""}
+<BR>
+Faster, faster still.
+{PAUSE ""}
+<BR>
+Truly, today had been a miserable day.<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Yes, today I had been through something terrible.
+{PAUSE ""}
+<BR>
+It seemed I had earned a great deal of resentment.
+{PAUSE ""}
+<BR>
+No, not from them alone.
+{PAUSE ""}
+<BR>
+I sacrificed many lives.<PG>
+At some point, had my heart gone numb as well?
+{PAUSE ""}
+<BR>
+The comrades who volunteered as test subjects were treated as things.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+{STOPSND "SE2" "0" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\集会場.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">"What are you doing here!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">"You thief!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="1">"What did you do to </STYLE><STYLE ID="2">Kikyo-san</STYLE><STYLE ID="1">!"</STYLE>
+{QUAKESTOP "500"}
+<PG>
+{PLAYSND "BGM死月編\Erica.ogg" "BGM" "REPEAT" "1000" "0"}
+When I learned the news of <STYLE ID="3">her</STYLE> death, I went at once to the Arata settlement.
+{PAUSE ""}
+<BR>
+But what awaited me was abuse and intimidation from the residents.
+{PAUSE ""}
+<BR>
+No one raised a hand against me, but as the price of the research I had carried out, they had lost their <STYLE ID="3">Grand Witch</STYLE> and their cherries.<PG>
+<STYLE ID="3">Kikyo-san's</STYLE> letter had said she would tell the residents how dangerous the Arata cherry was.
+{PAUSE ""}
+<BR>
+But judging from their attitude, it seemed that had been left undone.
+{PAUSE ""}
+<BR>
+My report is no doubt kept among the storehouse's books, but will it ever see the light of day again?<PG>
+No, even a woman as clever as <STYLE ID="3">Kikyo-san</STYLE> needed a great deal of time to decipher those books.
+{PAUSE ""}
+<BR>
+Few people would think of rummaging through them of their own accord.<PG>
+The Arata cherry―
+{PAUSE ""}
+<BR>
+It is a name I gave it on a whim.
+{PAUSE ""}
+<BR>
+But according to <STYLE ID="3">Kikyo-san</STYLE>, it is apparently called Shigatsu Youka.
+{PAUSE ""}
+<BR>
+Many times in the past, it has attacked the settlement and driven it to the brink of destruction.
+{PAUSE ""}
+<BR>
+Yet because of the way it lives, its true nature has never come to light, until today.<PG>
+Yes, right now the only ones who know this are myself and the sect's leaders.
+{PAUSE ""}
+<BR>
+As things stand, there is no way to warn those residents of the danger.
+{PAUSE ""}
+<BR>
+This is what I must do, the least I can do to make amends.
+{PAUSE ""}
+<BR>
+The least atonement I can offer, having sacrificed so many people and earned the residents' anger.
+{PAUSE ""}
+<BR>
+And I have a duty to pass on <STYLE ID="3">Kikyo-san's</STYLE> will, her last wishes.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{PLAYSND "環境音\walk-snow1_.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE2" "1000" "10000" "PASS"}
+{PLAYMOVIE "雪.wmv" "358" "C" "C" "REPEAT" "FALSE" "300" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\リファレンス用\町娘背景\雪道.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But I will surely not be permitted to set foot in the settlement again.
+{PAUSE ""}
+<BR>
+However I might try to persuade them, I cannot imagine they would listen. Still, the falsificaso should most likely have spared them from infection by Shigatsu Youka.
+{PAUSE ""}
+<BR>
+I confirmed that in the letter from <STYLE ID="3">Kikyo-san</STYLE>.<PG>
+But there is more.
+{PAUSE ""}
+<BR>
+Things I could not fit into my report.
+{PAUSE ""}
+<BR>
+I have a duty to tell them those things.
+{PAUSE ""}
+<BR>
+If only to repay <STYLE ID="3">Kikyo-san</STYLE>, who cooperated with us, I will carry on her will to protect the residents of Arata.<PG>
+But I had to deal with the problem in front of me.
+{PAUSE ""}
+<BR>
+I had to reach the foot of the mountain like this, without freezing.
+{PAUSE ""}
+<BR>
+Lights were gradually coming into view, so I was not likely to end up frozen to death.
+{PAUSE ""}
+<BR>
+Still, I do hate the cold.
+{PAUSE ""}
+<BR>
+I will hurry home.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{STOPSND "SE2" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+But the sect did not last long.<PG>
+{PLAYSND "togisuma.ogg" "BGM" "REPEAT" "1000" "0"}
+We exploited the believers' goodwill to experiment with Droga.
+{PAUSE ""}
+<BR>
+No, to begin with, being able to use Droga was a great honor for a believer.
+{PAUSE ""}
+<BR>
+That was why I, too, recruited believers who would cooperate with the experiments out of goodwill.<PG>
+But gradually Droga's true form began to show, and a believer who had fled the experiments blew the whistle from within.
+{PAUSE ""}
+<BR>
+In the end, the sect could hardly survive in such a state, and what Droga, supposedly a sacred implement, really was needs no saying.
+{PAUSE ""}
+<BR>
+Unfortunately, it was clear that the Droga we had held to be a sacred implement was a trap of Shigatsu Youka's, and the sect's doctrine no longer meant anything.
+{PAUSE ""}
+<BR>
+The Holy Cerejeira Church swiftly ceased to exist.<PG>
+But with that, I too lost my position.
+{PAUSE ""}
+<BR>
+I had to think about how I would support my family from then on.
+{PAUSE ""}
+<BR>
+It was shortly after that that I was summoned by the Director, one of the sect's leaders.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\リファレンス用\町娘背景\パイプいす.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Change my family register?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">Shinozaki-kun</STYLE>, if you're going to keep living in this country from here on, there's no other way."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............"</STYLE>
+{PAUSE ""}
+<BR>
+It was the last order I received from the Director.
+{PAUSE ""}
+<BR>
+'Change your name.'<PG>
+The Holy Cerejeira Church apparently had ties to the Japanese government as well, so changing my family register was likely possible.
+{PAUSE ""}
+<BR>
+But there were also affairs, such as building the railway, in which large sums of government money had changed hands.
+{PAUSE ""}
+<BR>
+The possibility that my personal details were known too, since I had claimed to be from the government, could not be ruled out.
+{PAUSE ""}
+<BR>
+If a former believer were to take us to court, what would become of my family, let alone me?
+{PAUSE ""}
+<BR>
+That, presumably, was what changing my family register meant.<PG>
+"<STYLE ID="4">Your</STYLE> name has already been decided. 
+{PAUSE ""}
+It's '<STYLE ID="5" RUBY="かねざきつとむ">Tsutomu Kanezaki</STYLE>.'"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Uh-huh..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="4">You</STYLE> already have a residence in Iizawa Prefecture. 
+{PAUSE ""}
+Changing your name alone should probably be enough for the time being."<PG>
+"<STYLE ID="4">You</STYLE> will take a post at the prefectural office from now on. 
+{PAUSE ""}
+By the way... 
+{PAUSE ""}
+I read <STYLE ID="4">your</STYLE> report with great interest myself. 
+{PAUSE ""}
+The Arata cherry―
+{PAUSE ""}
+I see. If you analyze Droga scientifically, it's no drug of God, just a tool for a fungus to breed, and to parasitize humans. 
+{PAUSE ""}
+To think that what our ancestors worshipped for hundreds of years would turn out to be that..."<PG>
+<STYLE ID="4">"I did not want to believe it either. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But I do not think the sect's thinking was mistaken. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">We began the scientific experiments on Droga for the sake of our comrades. If Droga could be mass-produced, every one of our comrades could gain the power of God. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">So, to that end, the experiments...!"</STYLE><PG>
+"I know. Nobody expected Droga to be that dangerous."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"We should have halted the Droga experiments the moment they were found to be dangerous, after all...!</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　So many of our comrades were sacrificed...!"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, it's just as <STYLE ID="4">you</STYLE> say."<PG>
+<STYLE ID="4">"And yet you ordered the experiments to continue...! Why!?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+At that, the Director placed both hands on the desk.<PG>
+"I'm sorry."
+{PAUSE ""}
+<BR>
+And then, just like that, he bowed his head to me.
+{PAUSE ""}
+<BR>
+The Director, apologizing without a single excuse.
+{PAUSE ""}
+<BR>
+Faced with that, I could say nothing.
+{PAUSE ""}
+<BR>
+No, the ones he truly ought to apologize to were not me but the comrades who served as test subjects and gave up their lives.<PG>
+<STYLE ID="4">"Please stop. Even that no longer means anything."</STYLE>
+{PAUSE ""}
+<BR>
+Showing sincerity as the Director did is important, but if so, there is something I must do so that no further tragedy is repeated.
+{PAUSE ""}
+<BR>
+Now, I might be able to get the Director's cooperation too.<PG>
+<STYLE ID="4">"Director, I would like to tell the residents of the Arata settlement, who cooperated with us, the results of our research. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Most likely, the residents have not seen the materials I handed to </STYLE><STYLE ID="3">Arata's representative</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+At this, the Director finally raised his head.
+{PAUSE ""}
+<BR>
+"Yes, that would be best. 
+{PAUSE ""}
+Our ancestors opposed the ban on Droga, left the Arata settlement, and founded the sect. 
+{PAUSE ""}
+The Arata settlement was the one in the right. We should do at least that much."<PG>
+<STYLE ID="4">"Then I have a request. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If I am to be made an official of Iizawa Prefecture, I would like you to put me in charge of managing the Arata district."</STYLE>
+{PAUSE ""}
+<BR>
+"What do you mean by that?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"The Arata district, where the Arata cherry grows. As I wrote in my report, the Arata district must be made state-owned land and placed under the state's watch. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If outsiders were to learn of Droga..."</STYLE><PG>
+"............
+{PAUSE ""}
+I'll square it with the prefecture's upper ranks as 'the person in charge of the Arata district.' 
+{PAUSE ""}
+Naturally, they won't be told about the Arata cherry."<PG>
+And so I went from a researcher of the sect to an official of Iizawa Prefecture.
+{PAUSE ""}
+<BR>
+But I had a hidden face.
+{PAUSE ""}
+<BR>
+While working as a prefectural official, I would carry on watching the Arata district and the Arata cherry.
+{PAUSE ""}
+<BR>
+And when the time was right, I would tell the people of Arata the truth about Shigatsu Youka.<PG>
+With only <STYLE ID="3">Kikyo-san's</STYLE> information, the limits on using Droga would not hold for long.
+{PAUSE ""}
+<BR>
+I had to go further, tell the people of Arata what I could not fit into that report, and destroy Shigatsu Youka.<PG>
+But there was a big problem.
+{PAUSE ""}
+<BR>
+My face was known to the people of Arata.
+{PAUSE ""}
+<BR>
+For the time being, I could not even meet the people of Arata.
+{PAUSE ""}
+<BR>
+Given how confidential the information was, sending a proxy to the Arata settlement would also be difficult.
+{PAUSE ""}
+<BR>
+I had even thought of changing my face with plastic surgery, but...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\町娘背景\ちゃぶ台.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Plastic surgery...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yeah, what do you think..."</STYLE>
+{PAUSE ""}
+<BR>
+When I talked it over with my wife, she made a plainly unhappy face.<PG>
+My wife had also been a member of the sect, but the leaders had told me not to speak of my research even to my family.
+{PAUSE ""}
+<BR>
+I had only told my wife not to volunteer as a test subject.<PG>
+"Do please reconsider. 
+{PAUSE ""}
+And besides, what would you say to the children?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Yeah. It won't do after all..."</STYLE>
+{PAUSE ""}
+<BR>
+My wife tells me she loves both the man inside me and my face.
+{PAUSE ""}
+<BR>
+It is no wonder she objects.<PG>
+Besides, some of the children are already old enough to understand.
+{PAUSE ""}
+<BR>
+Changing my face is not so simple a matter.<PG>
+Then I have no choice but to put off contacting the Arata settlement for now.
+{PAUSE ""}
+<BR>
+For a while, because of <STYLE ID="3">Kikyo-san's</STYLE> last wishes, the residents will likely keep their hands off Droga.
+{PAUSE ""}
+<BR>
+As time passes, I will age and my face will change, and the residents' memories will fade.
+{PAUSE ""}
+<BR>
+Meanwhile, I need to put the research results together further and set down in writing what the residents should do, so that even people without the knowledge can understand.<PG>
+In other words, I will summarize the reports so far and add further observations.
+{PAUSE ""}
+<BR>
+The experiments until now have only investigated the ecology of the Arata cherry.
+{PAUSE ""}
+<BR>
+I cannot say I have fully written out what kind of threat it poses to humans.
+{PAUSE ""}
+<BR>
+The last letter <STYLE ID="3">Kikyo-san</STYLE> sent me will also be important material.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―Several years passed after that.
+{PAUSE ""}
+<BR>
+I reworked the materials on those research results so that, as far as possible, even ordinary people could understand them.<PG>
+{MESOFF "500"}
+{PLAYSND "Shadows_creeping.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\レポート2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Anyone who has read the storehouse's books to some extent should be able to understand this.
+{PAUSE ""}
+<BR>
+What remains is how to get this to the people of the settlement and have them add it to the storehouse's books instead of throwing it away.
+{PAUSE ""}
+<BR>
+Simply mailing it is no guarantee that it will be kept with care.
+{PAUSE ""}
+<BR>
+Somehow I must make contact with the people of the settlement and have them accept it.<PG>
+For that, I must keep track of the situation in the settlement.
+{PAUSE ""}
+<BR>
+And find someone in the settlement who will accept this report.
+{PAUSE ""}
+<BR>
+In that case...<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\雪山.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+In the Arata settlement, a woman newly marrying in must undergo a trial called the mountain seclusion.
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Kikyo-san</STYLE>, too, apparently went through it before she married in.
+{PAUSE ""}
+<BR>
+Then it would be best to observe the situation on Mount Itohime continually and check for any sign of a woman there alone.
+{PAUSE ""}
+<BR>
+I will approach a woman whose sense of being one of Arata's people is still shallow, and have her take this report.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\女神\集落全景.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I used my subordinates, having them enter the Arata district, now state-owned land, at regular intervals under the name of inspections.
+{PAUSE ""}
+<BR>
+Naturally, I did not tell my subordinates the real purpose.
+{PAUSE ""}
+<BR>
+Since it was a thoroughly bureaucratic sort of job, the residents were given only the bare minimum of explanation, and the survey of the Arata district went on.
+{PAUSE ""}
+<BR>
+According to my subordinates' reports―<PG>
+As expected, the residents did not seem to welcome my subordinates coming in.
+{PAUSE ""}
+<BR>
+In the past I, calling myself an official of the state, had come in and taken away nearly all the cherries.
+{PAUSE ""}
+<BR>
+If something similar seemed to be happening, it was only natural that they would be wary.
+{PAUSE ""}
+<BR>
+Gradually the story grew in the telling, until even ugly rumors arose.<PG>
+Weren't they planning to take over the settlement?
+{PAUSE ""}
+<BR>
+Weren't they going to take the remaining cherries as well?
+{PAUSE ""}
+<BR>
+Weren't they going to drive the residents out for the sake of the rich plant and animal life?
+{PAUSE ""}
+<BR>
+Of course, I had given my subordinates no such orders.
+{PAUSE ""}
+<BR>
+The purpose was to confirm whether any new person had become a resident.<PG>
+I learned this only recently, but the residents of Arata have no family registers.
+{PAUSE ""}
+<BR>
+So I considered having the residents of Arata take family registers as well, but I gave the idea up.
+{PAUSE ""}
+<BR>
+Because then the residents would have to come to the prefectural office regularly for residency procedures.<PG>
+If they found out I was here, it would become troublesome.
+{PAUSE ""}
+<BR>
+Most likely they would refuse contact with outsiders even more than now, and even our entering would be in jeopardy.
+{PAUSE ""}
+<BR>
+Losing the ability to watch the Arata district, my true mission, would defeat the whole purpose.
+{PAUSE ""}
+<BR>
+However, I have told them to contact us in advance, only if a person of Arata is going to live outside.
+{PAUSE ""}
+<BR>
+In that case, a family register is issued promptly.<PG>
+To get back to the point: for that reason, it is difficult to check through the family registers whether anyone has become a person of Arata.
+{PAUSE ""}
+<BR>
+After all, I would have to keep checking the family registers of everyone in all of Japan.
+{PAUSE ""}
+<BR>
+And I cannot tell other municipalities the purpose.
+{PAUSE ""}
+<BR>
+It may be inefficient, but there is no choice but to confirm it with human eyes like this.<PG>
+{PLAYSND "環境音\ファミレス0.ogg" "SE" "REPEAT" "800" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\町娘背景\仕事場.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "BGM" "0" "PASS"}
+"Uh, <STYLE ID="4">Kanezaki-san</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"I've been calling you for a while now... 
+{PAUSE ""}
+You have a phone call from a <STYLE ID="6" RUBY="つちだ">Tsuchida</STYLE>-san."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ah, r-right..."</STYLE>
+{PAUSE ""}
+<BR>
+The voice reached my ears as I sat <STYLE ID="7" RUBY="ふけ">lost</STYLE> in thought.
+{PAUSE ""}
+<BR>
+Tsuchida... who is that...?<PG>
+{PLAYSND "SE\reciever1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="4">"Yes, Kanezaki speaking."</STYLE>
+{PAUSE ""}
+<BR>
+"It's been a while, <STYLE ID="4">Kanezaki-kun</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"That voice...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"I'm glad. To think you still remember my voice."</STYLE>
+{PAUSE ""}
+<BR>
+The caller was none other than the Director.<PG>
+"Are you free tonight?
+{PAUSE ""}
+　Phone or not, it's hard for <STYLE ID="4">you</STYLE> to talk at your workplace, isn't it?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Yes..."</STYLE>
+{PAUSE ""}
+<BR>
+"Then come to the place I'm about to tell you, at 7 p.m. That's all."<PG>
+Tsuchida was, of course, a false name.
+{PAUSE ""}
+<BR>
+For him to go out of his way to contact me at a time like this, the matter had to be very urgent.<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―At the appointed time, I entered the designated restaurant alone.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\料亭.gal" "NORMAL" "#1" "C" "B" "0" "2" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was an exclusive Japanese restaurant with nothing but private rooms.
+{PAUSE ""}
+<BR>
+I could not even guess what he meant to talk about.
+{PAUSE ""}
+<BR>
+Was it a check on my progress, or did he have some other intention?<PG>
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+Then, almost at once, the Director appeared.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"It has been a long time!"</STYLE>
+{PAUSE ""}
+<BR>
+I rose and bowed my head.<PG>
+"Stop that. I'm not the Director anymore."
+{PAUSE ""}
+<BR>
+The former Director, dressed in a perfectly ordinary suit.
+{PAUSE ""}
+<BR>
+It was the first time I had seen him dressed like this.
+{PAUSE ""}
+<BR>
+No doubt, like me, he was hiding his past and blending into society.<PG>
+"So? How are you doing?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes, well enough..."</STYLE>
+{PAUSE ""}
+<BR>
+"I see..."
+{PAUSE ""}
+<BR>
+The Director had gone out of his way to call me to a place with private rooms like this.
+{PAUSE ""}
+<BR>
+It looked to be a highly confidential matter, but...<PG>
+"............
+{PAUSE ""}
+<STYLE ID="4">You</STYLE> don't have a good reputation..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"What are you up to? Using your present position for some scheme?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"I have no idea at all what this is about..."</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm..."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+Just then, there was a knock at the door.
+{PAUSE ""}
+<BR>
+It seemed an attendant had come to take our order.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+―I ordered something without much thought and faced the Director again.<PG>
+{MESOFF "500"}
+{PLAYSND "BGM死月編\Abyss～深淵に至る窓～.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\料亭.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Uh, about this reputation of mine..."</STYLE>
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+I hear you've been running land grabs here and there."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Land grabs?"</STYLE>
+{PAUSE ""}
+<BR>
+"I heard you were buying up land by crooked means and lining your own pockets."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"What!? I know nothing at all about any such thing...!"</STYLE><PG>
+"............
+{PAUSE ""}
+Hmm... I can't imagine <STYLE ID="4">you</STYLE> lying to me..."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Of course I would not..."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\タバコ.ogg" "VOICE" "NORMAL" "1000" "0"}
+With that, the Director lit a cigarette.
+{PAUSE ""}
+<BR>
+The smoke he breathed out stained the clean room gray.<PG>
+"That's what I wanted to confirm today. 
+{PAUSE ""}
+Whether the rumor that a man named <STYLE ID="4">Tsutomu Kanezaki</STYLE> is running land grabs is true or not... 
+{PAUSE ""}
+Well, I can't imagine a man as earnest as <STYLE ID="4">you</STYLE> letting his position go to his head, so it's probably just a nasty rumor... 
+{PAUSE ""}
+But..."
+{PAUSE ""}
+<BR>
+When he drew on the cigarette a second time, smoke thicker than before drifted through the room.<PG>
+"But where there's smoke, there's fire. 
+{PAUSE ""}
+Where did the rumor about <STYLE ID="4">you</STYLE> come from? 
+{PAUSE ""}
+That's what I want to know. Any idea?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">I do..."</STYLE>
+{PAUSE ""}
+<BR>
+"I see... 
+{PAUSE ""}
+To do with Arata, as I thought?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes..."</STYLE><PG>
+I regularly send my subordinates in, under the name of a land survey.
+{PAUSE ""}
+<BR>
+To the residents, apparently, that looks like a takeover of their land.
+{PAUSE ""}
+<BR>
+The rumor had spread further, and by the time it finally reached the Director's ears, it was going around among the people involved as if it were true.<PG>
+"Japan may be a safe country, but there certainly are people who commit fraud. 
+{PAUSE ""}
+Plenty of people are after other people's property, too. 
+{PAUSE ""}
+Don't laugh it off because it's only a rumor. I want you to be very careful."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes..."</STYLE><PG>
+"And another thing: you want to give the settlement the addendum to that report of yours?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Yes. I believe I have a duty to tell the people of the settlement the secrets of the Arata cherry that I could not fully pass on to </STYLE><STYLE ID="3">Kikyo-san</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+"Hmm... And that's why you've been surveying the settlement all this time... 
+{PAUSE ""}
+Hahaha, <STYLE ID="4">you</STYLE> are as straightforward as ever."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............?"</STYLE><PG>
+"Then why not stop carrying it all <STYLE ID="4">yourself</STYLE> and ask someone who can be of use?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"But there is no one I could tell such a secret..."</STYLE>
+{PAUSE ""}
+<BR>
+"Am I not good enough?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Huh?"</STYLE>
+{PAUSE ""}
+<BR>
+"Can't I be of help?"<PG>
+<STYLE ID="4">"N-no, nothing of the sort!"</STYLE>
+{PAUSE ""}
+<BR>
+"Though, since I never got in touch with you until now, you could hardly have relied on me. 
+{PAUSE ""}
+You can leave that matter to me."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"But how on earth would you..."</STYLE><PG>
+"It's simple. Sneak into the settlement's storehouse and put the additional report on a bookshelf or somewhere. That should do, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Sneak in? But that..."</STYLE>
+{PAUSE ""}
+<BR>
+"That's what I mean when I call <STYLE ID="4">you</STYLE> straightforward. 
+{PAUSE ""}
+If you just keep waiting for a chance like this forever, you'll never <STYLE ID="9" RUBY="らち">get anywhere</STYLE>. 
+{PAUSE ""}
+And you don't want any more strange rumors springing up either, do you?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">You are right..."</STYLE><PG>
+"What about the Arata settlement's infrastructure? Water, electricity?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Infrastructure...? In Arata they still use firewood and wells."</STYLE>
+{PAUSE ""}
+<BR>
+"I see. Then in 3 days, we gather all the residents at that meeting hall, under the pretext of a briefing on bringing new electricity and gas lines to the settlement. 
+{PAUSE ""}
+In the meantime, we have someone who can pick locks sneak into the storehouse and slip the report into a suitable place. 
+{PAUSE ""}
+How about that?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But then the residents would not know the report exists, would they?"</STYLE><PG>
+"True enough. 
+{PAUSE ""}
+But even if you were naive enough to hand it over in person, they might dispose of it as something they can't make sense of. 
+{PAUSE ""}
+All the more so when it's information left by us, the people they hate."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"Well, it's no wonder you're not convinced... 
+{PAUSE ""}
+Then let's do this. What we do in 3 days stays the same as before. 
+{PAUSE ""}
+But we keep a copy of the report, and at a time <STYLE ID="4">you</STYLE> judge right, you hand the copy to the residents. 
+{PAUSE ""}
+How does that sound?"<PG>
+<STYLE ID="4">"In other words, hand over the same report after some time has passed?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's right. 
+{PAUSE ""}
+This way the report becomes theirs right away, and you can still hand it over in person later."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Thank you very much. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Then we will do it that way..."</STYLE><PG>
+―And so it was decided that the additional report would be given to the Arata settlement.
+{PAUSE ""}
+<BR>
+Though it would only be slipped in and added to the storehouse's books.
+{PAUSE ""}
+<BR>
+That alone, I did not think, would get the residents to read it properly.
+{PAUSE ""}
+<BR>
+As the Director said, there was nothing for it but to hand it over directly when the time was right.<PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+And 3 days later, word came from the Director that he had succeeded in adding the report to the storehouse's books as planned.
+{PAUSE ""}
+<BR>
+But apparently quite a few had been suspicious even of the pretext of bringing utilities to the settlement.
+{PAUSE ""}
+<BR>
+The settlement had been closed to outsiders to begin with, and now it seemed to shun contact with the outside even more than before.<PG>
+Worse still, it was apparently being said that a person called 'Tsutomu Kanezaki' was scheming to grab the settlement's land.
+{PAUSE ""}
+<BR>
+Now not only Hajime Shinozaki but Tsutomu Kanezaki as well had come to bear that disgrace.
+{PAUSE ""}
+<BR>
+At this rate, handing it over directly would be...<PG>
+I see. Without my realizing it, my position had become precarious.
+{PAUSE ""}
+<BR>
+Talk like this leaks out from somewhere and spreads to people outside as well.
+{PAUSE ""}
+<BR>
+If anyone looked into my background, it would be clear that there was no truth to it.
+{PAUSE ""}
+<BR>
+But such excuses do not work on ordinary citizens.
+{PAUSE ""}
+<BR>
+In that case...<PG>
+I must conduct myself as a good man, as far as I possibly can.
+{PAUSE ""}
+<BR>
+As a person who helps people in trouble and serves society.
+{PAUSE ""}
+<BR>
+To stand against such bad rumors, I must show good deeds that outweigh them.
+{PAUSE ""}
+<BR>
+It had already become a hard world for me to live in.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+―And more years passed after that.
+{PAUSE ""}
+<BR>
+It had been 15 years since the sect ceased to exist.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\リファレンス用\町娘背景\仕事場.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"Well then, I will be off first."</STYLE>
+{PAUSE ""}
+<BR>
+"Thanks for your hard work."
+{PAUSE ""}
+<BR>
+I left the workplace a little ahead of everyone else.<PG>
+{PLAYSND "BGM死月編\共有殺人.ogg" "BGM" "REPEAT" "1000" "0"}
+That rumor still seemed to be going around.
+{PAUSE ""}
+<BR>
+But in the end it was only a rumor. I was still able to work as a prefectural official.
+{PAUSE ""}
+<BR>
+What my colleagues thought of me, I did not know.
+{PAUSE ""}
+<BR>
+They surely knew of the rumor, but did they believe it, or did they not?<PG>
+Well, there is no doubt that I am innocent.
+{PAUSE ""}
+<BR>
+That said, I carried out inhumane experiments again and again and sacrificed many comrades.
+{PAUSE ""}
+<BR>
+Even if my family register changes and time passes, that sin does not disappear.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\県庁.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Perhaps helped along by that sense of guilt, I conducted myself as a good man as far as I could.
+{PAUSE ""}
+<BR>
+At first the aim had been to paint over the bad rumors, but at some point that began to change.
+{PAUSE ""}
+<BR>
+More than any groundless rumor, it was by my hand that many people had lost their lives.
+{PAUSE ""}
+<BR>
+As the least amends I could make, I piled good deed upon good deed.<PG>
+On my days off I did volunteer work, I lent a shoulder to anyone in trouble, and I gave a little money to any homeless person I came across.
+{PAUSE ""}
+<BR>
+Living like this, I feel almost as if I have become a buddha.
+{PAUSE ""}
+<BR>
+I am goodness itself, and many people have been saved by my hand.
+{PAUSE ""}
+<BR>
+If I grow that proud, my good deeds are in the end no more than worldly desires painted over.<PG>
+It is still some way off, but what should I do once I reach retirement?
+{PAUSE ""}
+<BR>
+Perhaps I should make the leap and take holy orders.
+{PAUSE ""}
+<BR>
+The Holy Cerejeira Church is gone, but whatever the religion, I believe faith is what keeps a person going.
+{PAUSE ""}
+<BR>
+Take holy orders, <STYLE ID="10" RUBY="はら">cast out</STYLE> the worldly desires hidden inside me, and live for the sake of others.
+{PAUSE ""}
+<BR>
+What would my family say?
+{PAUSE ""}
+<BR>
+I might not be able to see my sweet grandchild so often anymore.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\県庁夜道.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+As it happens, today is my grandchild's birthday.
+{PAUSE ""}
+<BR>
+So I had left work early and was hurrying home.
+{PAUSE ""}
+<BR>
+It happened just as I came to a street with few passersby.<PG>
+<STYLE ID="11">"Um, excuse me..."</STYLE>
+{PAUSE ""}
+<BR>
+Suddenly, from behind me, a young woman's voice.
+{PAUSE ""}
+<BR>
+For her to call out at a time and place like this, was she in some kind of trouble?<PG>
+<STYLE ID="4">"What's the matter?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\エリカ若い.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+When I turned around and answered, there was, as I had thought, a young woman.
+{PAUSE ""}
+<BR>
+Her face in the streetlight was pale, and she was in a cold sweat.
+{PAUSE ""}
+<BR>
+Her eyes were darting about, and she could not keep still.
+{PAUSE ""}
+<BR>
+She seemed to be in serious trouble.<PG>
+<STYLE ID="11">"Ah... um... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">my wallet... I lost it... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">and I can't get home... </STYLE>
+{PAUSE ""}
+<STYLE ID="11">Train fare..."</STYLE>
+{PAUSE ""}
+<BR>
+I see. A woman stranded alone on a dark road at this hour would naturally be uneasy.
+{PAUSE ""}
+<BR>
+Besides, it took a little while to reach the station from here.<PG>
+<STYLE ID="4">"A </STYLE><STYLE ID="11">young lady</STYLE><STYLE ID="4"> mustn't go walking about alone at this time of night. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Here, take a taxi with this."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\紙ペラ.ogg" "VOICE" "NORMAL" "1000" "0"}
+I held out two 1,000-yen bills.<PG>
+<STYLE ID="11">"Wait, please! Such a large sum...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Not at all. May God bless </STYLE><STYLE ID="11">you</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+I pressed the bills into <STYLE ID="11">her</STYLE> hand as she stood there, startled and flustered.<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+Now <STYLE ID="11">she</STYLE> should be all right.
+{PAUSE ""}
+<BR>
+By rights I should have walked her to somewhere she could catch a taxi, but today of all days, I was in a hurry too.
+{PAUSE ""}
+<BR>
+And then―<PG>
+"<STYLE ID="4">Grandpa</STYLE>!"
+{PAUSE ""}
+<BR>
+A small boy's voice came from far up ahead.
+{PAUSE ""}
+<BR>
+Home was only a few steps away now.
+{PAUSE ""}
+<BR>
+Which meant this voice was―<PG>
+<STYLE ID="4">"Oh, Cha-bo! Did you come to meet me?"</STYLE>
+{PAUSE ""}
+<BR>
+I scooped up my grandson as he ran to me.
+{PAUSE ""}
+<BR>
+That even someone as sinful as I am should be blessed with a grandson like this is truly something to be grateful for.<PG>
+<STYLE ID="11">"Um...!"</STYLE>
+{PAUSE ""}
+<BR>
+At my back, the voice of <STYLE ID="11">the woman from before</STYLE>.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\リファレンス用\立ち絵\エリカ若い.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="11">"I found my wallet! I'll give this back to you!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">The woman</STYLE> held out the 2,000 yen.<PG>
+<STYLE ID="4">"Oh, is that so? I'm glad to hear it. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But I've already given that to </STYLE><STYLE ID="11">you</STYLE><STYLE ID="4">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"That's not it...! The truth is, I never lost my wallet at all―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"In that case, when someone truly in need appears before </STYLE><STYLE ID="11">you</STYLE><STYLE ID="4">, please give this to them."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="11">"Huh...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Taken by an honest person like </STYLE><STYLE ID="11">you</STYLE><STYLE ID="4">, these 2,000 yen must be content too. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Well, then..."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+I walked on, still holding my grandson.
+{PAUSE ""}
+<BR>
+A lie like <STYLE ID="11">hers</STYLE> is a trifle compared with my sins.
+{PAUSE ""}
+<BR>
+More than that, I want to praise her for finding the courage to confess honestly.
+{PAUSE ""}
+<BR>
+<STYLE ID="11">She</STYLE>, I am sure, will put the 2,000 yen to good use.<PG>
+"<STYLE ID="4">Grandpa</STYLE>, who was <STYLE ID="11">that lady just now</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="11">The lady just now</STYLE><STYLE ID="4">?</STYLE>
+{PAUSE ""}
+<STYLE ID="4">　She looked like she was in all sorts of trouble, so I just helped her out a little."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\リファレンス用\町娘背景\ちゃぶ台.gal" "NORMAL" "#1" "C" "B" "0" "2" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="4">"I'm home."</STYLE>
+{PAUSE ""}
+<BR>
+I opened the front door together with my grandson.<PG>
+"Oh, welcome home. 
+{PAUSE ""}
+You are just in time. There is a telephone call for you from a Tsuchida-san."
+{STOPSND "BGM" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Tsuchida-san?"</STYLE>
+{PAUSE ""}
+<BR>
+My wife handed me the receiver of the telephone in the entryway.
+{PAUSE ""}
+<BR>
+The call had come at a remarkably convenient time.
+{PAUSE ""}
+<BR>
+And from the Director, no less.<PG>
+<STYLE ID="4">"Yes, hello?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, <STYLE ID="4">Kanezaki-kun</STYLE>, it's Tsuchida."
+{PAUSE ""}
+<BR>
+I glanced at my wife and grandson; they did not seem interested in the conversation.
+{PAUSE ""}
+<BR>
+I waited for the two of them to leave before answering.<PG>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="4">"What is it? It is unusual for you to call me at home."</STYLE>
+{PAUSE ""}
+<BR>
+"Sorry, but can you come out now? There's something urgent I need to talk about."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Ah... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Yes, understood. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">But I am sorry, today I cannot stay very long..."</STYLE>
+{PAUSE ""}
+<BR>
+"Don't worry. It'll be over quickly."
+{PAUSE ""}
+<BR>
+The Director told me where to go and hung up at once.<PG>
+I had been in touch with the Director about once every few months.
+{PAUSE ""}
+<BR>
+He always called me at my workplace, but this time he had called my home.
+{PAUSE ""}
+<BR>
+This was the first time that had happened.
+{PAUSE ""}
+<BR>
+It had to be a very urgent matter.<PG>
+<STYLE ID="4">"Sorry, I have to go out for a bit. I'll be right back."</STYLE>
+{PAUSE ""}
+<BR>
+I told my wife that and left the house again.
+{PAUSE ""}
+<BR>
+I did not want to disappoint my grandson too much, and Director or not, I would have him finish as quickly as he could.<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I hurried through the dim alleys.
+{PAUSE ""}
+<BR>
+It was darker than before.
+{PAUSE ""}
+<BR>
+And yet I had a bad feeling.
+{PAUSE ""}
+<BR>
+What could the urgent matter be?
+{PAUSE ""}
+<BR>
+Most likely something to do with the Arata cherry or the Arata settlement.
+{PAUSE ""}
+<BR>
+Even so, to be told at this late date that it was something urgent on that front, I could not guess what it might be.<PG>
+And then―<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\県庁夜道.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A presence behind me.
+{PAUSE ""}
+<BR>
+Not just a presence.
+{PAUSE ""}
+<BR>
+I felt a strong gaze, too.
+{PAUSE ""}
+<BR>
+Not a feeble one like that of <STYLE ID="12">the woman from earlier</STYLE>, but a strong gaze.<PG>
+When I turned around―<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "1000" "30"}
+{CHANGECG "000" "グラフィック\リファレンス用\町娘背景\夜道赤.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+I was aware of a large blade passing before my eyes.
+{PAUSE ""}
+<BR>
+But it took me some time to notice that its edge had bitten into my body.<PG>
+{PLAYSND "エデンの桜\Amblygo.ogg" "BGM" "REPEAT" "1000" "0"}
+What is this...?
+{PAUSE ""}
+<BR>
+Who...?
+{PAUSE ""}
+<BR>
+This man... 
+{PAUSE ""}
+I do not know him...
+{PAUSE ""}
+<BR>
+A man like this, I do not know.
+{PAUSE ""}
+<BR>
+Why is this happening to me...!<PG>
+Could it be... because of that rumor...
+{PAUSE ""}
+<BR>
+No, I have done nothing!
+{PAUSE ""}
+<BR>
+If you lost something through some twist of fate, it is not my doing!
+{PAUSE ""}
+<BR>
+But my voice would not come out, and against my will, the blade, drawn out of my body, came swinging down at me once more.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "1000" "30"}
+{CHANGECG "000" "$00002F" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+With that, I lost consciousness―
+{PAUSE ""}
+<BR>
+and never... 
+{PAUSE ""}
+woke again.
+{PAUSE ""}
+<BR>
+Without even being given time to think through what had happened―
+{PAUSE ""}
+<BR>
+I...<PG>
+If I could have, I would have handed that report directly to the people of the settlement.
+{PAUSE ""}
+<BR>
+But that, too, will never come to pass.
+{PAUSE ""}
+<BR>
+But―
+{PAUSE ""}
+<BR>
+In case something should happen to me before it could be <STYLE ID="13" RUBY="かな">fulfilled</STYLE>―
+{PAUSE ""}
+<BR>
+I had left a copy of that report with a junior of mine at the research institute.<PG>
+<TXSPS>If ever they are exposed to the threat of the Arata cherry... 
+{PAUSE ""}
+then that...
+{PAUSE ""}
+<BR>
+But who on earth would do this to me...
+{PAUSE ""}
+<BR>
+Suddenly summoned by the Director...
+{PAUSE ""}
+<BR>
+So... that is... how it is...<PG>
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{MESOFF "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\SE\電話着信音（アナログ02）.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\町娘背景\黒電話.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{PLAYSND "SE\reciever1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{MESON "500"}
+<TXSPN>"Hello, this is Tsuchida. 
+{PAUSE ""}
+Yes, as planned. 
+{PAUSE ""}
+I have confirmed <STYLE ID="4">his</STYLE> death. 
+{PAUSE ""}
+To be honest, it pains me, but now that it has come to this, it cannot be helped."<PG>
+"Yes, I understand. 
+{PAUSE ""}
+If these strange rumors kept spreading and <STYLE ID="4">his</STYLE> background became known to the public, we ourselves would be in danger too. 
+{PAUSE ""}
+It is exactly as you say. 
+{PAUSE ""}
+Yes, I promised a plea bargain behind the scenes and had <STYLE ID="4">him</STYLE> killed."<PG>
+"That settlement... 
+{PAUSE ""}
+I see. As before, they are not to be given family registers. 
+{PAUSE ""}
+Certainly, if something happened, it would be troublesome to have the local police go into the settlement. 
+{PAUSE ""}
+If they die, no one will know. If they are born, no one will know. 
+{PAUSE ""}
+Well, the bare minimum of social welfare will be enough for them."<PG>
+"The research institute in Motoki-cho?
+{PAUSE ""}
+　Yes, most likely the crime was committed by manipulated corpses. 
+{PAUSE ""}
+Yes, thankfully that rumor has completely faded as well. 
+{PAUSE ""}
+But the Arata cherry ought to be studied continuously. 
+{PAUSE ""}
+At the proper time... 
+{PAUSE ""}
+Let me see, some 60 years from now, it would be good to build a research institute in Motoki-cho once more."<PG>
+"However, should an incident involving that drug ever occur, it will have to be hushed up at once. 
+{PAUSE ""}
+If Droga were to become public, the order of the world would collapse. 
+{PAUSE ""}
+This is all to protect the order of the world. 
+{PAUSE ""}
+It is what <STYLE ID="4">he</STYLE> wanted too."<PG>
+"Well then, I will take my leave. 
+{PAUSE ""}
+Those who know this information must be reduced as far as possible. 
+{PAUSE ""}
+Yes, I will take care of my own matters myself. 
+{PAUSE ""}
+Thank you for everything until now."<PG>
+{MESOFF "500"}
+{PLAYSND "リファレンス専用\SE\受話器置く03.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"............"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\町娘背景\黒電話血.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "3000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\リファレンス用\町娘背景\黒電話赤.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

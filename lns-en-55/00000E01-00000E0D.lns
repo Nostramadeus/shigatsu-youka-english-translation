@@ -1,0 +1,678 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=1320, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=263, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=407, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=535, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=193, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=23, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=187, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=386, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=225, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=92, unk2=65280, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ふところ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=は, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=59, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4228, target=)
+; Links:
+;    0: TWdLink(count=3694, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "BGM死月編\ホラーサウンド.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家2階.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スグニゲロ.gal" "NORMAL" "#1" "C" "C" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―RUNNOW
+{PAUSE ""}
+<BR>
+But this was clearly a warning from Shirozaki-san.<PG>
+<STYLE ID="1">"Hey, what should I do...?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, calm down. I'm gonna go tell </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> right now, tell her to take us back to Motoki-cho."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">Haruka</STYLE> left the room.
+{PAUSE ""}
+<BR>
+Her tone had been slow, and quiet, as if to calm me down.<PG>
+<STYLE ID="1">"</STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="1">... why would </STYLE><STYLE ID="5">Shirozaki-san</STYLE><STYLE ID="1">... something this creepy..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"</STYLE><STYLE ID="1">Senpai</STYLE><STYLE ID="4">, it's all right. At least, the reason it's written in blood is that he needed to write a note without anyone getting suspicious. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">If he wanted to write anything during the thirteenth-year memorial service just now, this was simply the only way to do it." [TN: Buddhist memorials count the year of death as the first year.]</STYLE><PG>
+<STYLE ID="1">"Without anyone getting suspicious? Why...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"Probably </STYLE><STYLE ID="5">Shirozaki-san</STYLE><STYLE ID="4"> noticed. </STYLE>
+{PAUSE ""}
+<STYLE ID="4">That the residents' suspicions are aimed at </STYLE><STYLE ID="1">Kogori-senpai</STYLE><STYLE ID="4">...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"No...! So it's because I have a witch's power after all!?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　But I haven't told anyone else about my intuition!?"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ふすま早く開ける.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="2">! Pack your stuff, now! </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> says she's getting the car out!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"O-okay!"</STYLE>
+{PAUSE ""}
+<BR>
+I hadn't heard the cherry tree's voice, and yet things had turned dangerous.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kana-chan</STYLE> came running into the room.
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"</STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="6">, you're going home!? Is it really dangerous!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"</STYLE><STYLE ID="6">Kana-chan</STYLE><STYLE ID="4">... </STYLE>
+{PAUSE ""}
+<STYLE ID="4">Yeah, but it's okay. We're leaving by car right away."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物2" "1" "500" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="6">Kana-chan</STYLE> opened the closet and stuck her head inside.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜ナイフ1.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"I'm gonna protect </STYLE><STYLE ID="4">Eri-nee</STYLE><STYLE ID="6"> and everybody, just watch!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kana-chan</STYLE> seemed to have taken two knives out of the closet.
+{PAUSE ""}
+<BR>
+<STYLE ID="4">"But </STYLE><STYLE ID="6">Kana-chan</STYLE><STYLE ID="4">, isn't that dangerous?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Mm... </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="7">, </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱ナイフ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">to escape, we need </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="7">'s strength too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Chiga-nee</STYLE> came into the room holding a knife too.<PG>
+<STYLE ID="7">"Mm... </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="7">, follow the car and cover us. I'll fight them off from the roof of the car."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Got it!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\室内早歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+The two of them left the room.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"C'mon, don't just stand there! No luggage is worth more than your life!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+We stuffed in whatever we could grab and left the room.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家玄関.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"See you, </STYLE><STYLE ID="8">Grandma</STYLE><STYLE ID="2">! I'll come back later!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Wait! </STYLE><STYLE ID="1">Natsumi-chan</STYLE><STYLE ID="8">, take this with you."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\能面老女.gal" "NORMAL" "#1" "C" "B" "100" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+It was the Grand Witch's Noh mask that <STYLE ID="8">Erika-chan</STYLE> had been wearing earlier.<PG>
+<STYLE ID="8">"The Grand Witches of generations past used this. It's sure to serve as an amulet!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Something that important...?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　But for me to accept this..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="8">"There's nothing left I can do now but this... </STYLE>
+{PAUSE ""}
+<STYLE ID="8">Think of it as me, and take me along with you."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="2">, c'mon, we're going!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Th-thank you, </STYLE><STYLE ID="8">Erika-chan</STYLE><STYLE ID="1">!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸速い.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,アイテム1,人物1,人物2" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+With barely a goodbye, we left the Niimura main house.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家昼車.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"Come on, get in, quick!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Obasan</STYLE> was already in the driver's seat.
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\茅萱.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="7">"Mm... </STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="7">, it's all right! Nothing's wrong with the car!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\棒を振る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家昼車茅萱.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "300" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">Chiga-nee</STYLE> shouted that, then climbed straight up onto the roof of the car.<PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花腕組み全身.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="7">Chiga-nee</STYLE><STYLE ID="2">, what're you doing!? </STYLE><STYLE ID="7">Chiga-nee</STYLE><STYLE ID="2">, get in the car too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="3">! Leave this to </STYLE><STYLE ID="7">Chigaya-chan</STYLE><STYLE ID="3">! We're going!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Ah, geez! Don't blame me if you fall off!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\車ドア開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{PLAYSND "SE\車走行中ワゴン.ogg" "SE" "REPEAT" "1000" "0"}
+{MESON "500"}
+<STYLE ID="3">Obasan</STYLE> lurched the car into motion with <STYLE ID="7">Chiga-nee</STYLE> still on the roof.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\ワゴン後部座席昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2">, why won't you let </STYLE><STYLE ID="7">Chiga-nee</STYLE><STYLE ID="2"> in!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Given the time, nobody should have reached the foot of the mountain yet. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">So there's a good chance we'll be attacked on the mountain road!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　If anyone attacks us, </STYLE><STYLE ID="7">Chigaya-chan</STYLE><STYLE ID="3"> will drive them off!"</STYLE><PG>
+<STYLE ID="2">"</STYLE><STYLE ID="7">Chiga-nee</STYLE><STYLE ID="2"> won't fall off or anything, right...?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Don't underestimate </STYLE><STYLE ID="7">Chigaya-chan</STYLE><STYLE ID="3">'s athleticism. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Besides, even if they're using Droga, whoever's on this unsteady footing first has the advantage in a fight!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\スマフォ赤ストラップ入.gal" "NORMAL" "#1" "650" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2" "1" "500" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="1">"Hello? </STYLE><STYLE ID="9">Dad</STYLE><STYLE ID="1">!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="9">, are you all right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, but my intuition isn't working at all! Why is that...!?"</STYLE><PG>
+<STYLE ID="9">"</STYLE><STYLE ID="1">Natsumi</STYLE><STYLE ID="9">, calm down! </STYLE><STYLE ID="1">Your</STYLE><STYLE ID="9"> intuition isn't working because you're safe as things stand!</STYLE>
+{PAUSE ""}
+<STYLE ID="9">　Now listen to me carefully! Keep the car windows open the whole time. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">If there's any danger, you should notice it right away!"</STYLE><PG>
+<STYLE ID="1">"O-okay!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">"Everyone, keep your heads down! There are hunting rifles in Arata too!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"G-guns!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\swish.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At those words, we immediately squeezed down below the seats.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\能面老女.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム2" "グラフィック\立ち絵\アイテム\桜の枝.gal" "NORMAL" "#1" "C" "B" "0" "1" "2000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+Clutched in my hands were the cherry branch and the Grand Witch's Noh mask.
+{PAUSE ""}
+<BR>
+This Noh mask was heavy, and made of metal.
+{PAUSE ""}
+<BR>
+It was a Noh mask that had held up through generation after generation.
+{PAUSE ""}
+<BR>
+If <STYLE ID="8">Erika-chan</STYLE> says it'll be all right, then it'll surely be all right...!<PG>
+I tucked the Noh mask into <STYLE ID="10" RUBY="ふところ">the front of my clothes</STYLE> and hugged it tight.
+{PAUSE ""}
+<BR>
+Please, Grand Witches of generations past! Protect everyone...!<PG>
+{MESOFF "500"}
+{DELETECG "アイテム1,アイテム2" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="7">Sis</STYLE><STYLE ID="6">, be careful! Looks like there's some people up ahead!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Mm... understood! </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="7">, you absolutely can't fight! If they're using Droga, you have no chance!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\剣衝突.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+From right above us came a tremendous clash of metal.
+{PAUSE ""}
+<BR>
+When I cautiously turned my eyes toward the windshield―<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\死神\死神とびかかりC.lcm" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "人物1" "CLICK"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\死神\死神張り付き.gal" "NORMAL" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000,人物1" "QUAKE" "1" "100" "100" "0" "30"}
+{PLAYSND "SE\ベンチ殴る.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKESTOP "1000"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+............!?
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\危機.ogg" "BGM" "REPEAT" "1000" "0"}
+Several residents, still dressed for the thirteenth-year memorial service, were clinging to the car.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Mm... leave it to me!</STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "300" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "200" "0" "0" "" "0"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE2" "NORMAL" "1000" "0"}
+{CREATECG "111" "$0000FF" "NORMAL" "#1" "C" "B" "300" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111" "1" "200" "0" "0" "" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+　<STYLE ID="7">It's all right! I'll protect all of you, right to the end!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Chiga-nee</STYLE> seemed to have driven off the residents clinging to the car.<PG>
+But from all around the mountain road, shinigami after shinigami came leaping out toward the car.<PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神\死神とびかかりA.lcm" "WAIT" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+However you looked at it, they were leaping a good 3 meters high.
+{PAUSE ""}
+<BR>
+That was the effect of Droga―
+{PAUSE ""}
+<BR>
+Was <STYLE ID="7">Chiga-nee</STYLE> going to drive all of them off by herself...!?<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "14" "200" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\死神\死神とびかかりB.lcm" "WAIT" "#1" "C" "B" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\詫言編　夢から\hit_axe1大.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "人物2" "14" "200" "0" "0" "" "0"}
+{MESON "500"}
+But one after another, they were pushed back down to the ground.
+{PAUSE ""}
+<BR>
+So this was what it meant that whoever stood on the unsteady footing had the advantage of the ground.
+{PAUSE ""}
+<BR>
+Only their muscle strength had gone up, not their sense of balance.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">Chiga-nee</STYLE>, used to situations like this, had the advantage.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\dark_attack.ogg" "VOICE" "NORMAL" "1000" "0"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n0\r\n200\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The residents I'd thought had fallen off came <STYLE ID="11" RUBY="は">crawling</STYLE> back up.
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"</STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="7">, sorry! I can't cover this side!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"There's a sharp bend just ahead! I'll shake them off there!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{QUAKE "000,人物1" "QUAKE" "1" "5" "5" "0" "30"}
+{PLAYSND "SE\車爆走中.ogg" "SE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼ブラー.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">Obasan</STYLE> stepped hard on the gas.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\sceneswitch2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\詫言編　夢から\倒木幻影.gal" "NORMAL" "#1" "C" "B" "300" "20" "300" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "111,000" "20" "3000" "0" "0" "" "0"}
+{MESON "500"}
+............!!
+{PAUSE ""}
+<BR>
+<STYLE ID="5">That just now was clearly me sensing danger...!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Look out! </STYLE><STYLE ID="3">Obasan</STYLE><STYLE ID="1">, stop!"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "SE" "0" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\n人物1\r\n4\r\n540\r\n200\r\nNORMAL\r\nPASS">
+{PLAYSND "SE\詫言編　夢から\急ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{DELETECG "人物1" "1" "0" "0" "0" "" "0"}
+{QUAKESTOP "500"}
+{MESON "500"}
+The instant I shouted, the car slammed on its brakes.
+{PAUSE ""}
+<BR>
+The residents clinging to the car all slid off it at once.
+{PAUSE ""}
+<BR>
+The spot where we had slammed on the brakes was right where the mountain road swung around in a big hairpin bend―<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\倒木.gal" "NORMAL" "#1" "C" "C" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"That was close...!"</STYLE>
+{PAUSE ""}
+<BR>
+One meter ahead of the car, a single big tree lay on its side, blocking the road.
+{PAUSE ""}
+<BR>
+If we had kept going at that speed, we definitely would have crashed.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="7">Chigaya-chan</STYLE><STYLE ID="3">, are you all right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Mm... I'm fine!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　</STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="7">, you did well to notice it."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="1">Natsumi-chan</STYLE><STYLE ID="3">'s danger sense kicked in!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"D-danger sense!?</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　Then go back to the settlement, quickly! Right now, there should be no one in the settlement but the Niimura family!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\急ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼逆.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "アイテム1" "6" "500" "0" "0" "" "0"}
+{PLAYSND "SE\車爆走中.ogg" "SE" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼逆ブラー.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The car accelerated hard right there and spun 180 degrees.
+{PAUSE ""}
+<BR>
+Then it tore back the way we had come at breakneck speed.<PG>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="3">! Call </STYLE><STYLE ID="8">Grandma</STYLE><STYLE ID="3"> right now and tell her we're coming back!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"G-got it!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\軽くぶつかる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{QUAKE "000" "QUAKE" "1" "10" "10" "500" "30"}
+{MESON "500"}
+Then came the sound of someone else, one more person, climbing onto the roof.<PG>
+{MESOFF "500"}
+{QUAKE "000" "QUAKE" "1" "5" "5" "0" "30"}
+{CHANGECG "000" "グラフィック\立ち絵\人物\詫言編　始まり以降\車の上.lcm" "REPEAT" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{QUAKE "000" "QUAKE" "1" "5" "5" "0" "30"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="7">Sis</STYLE><STYLE ID="6">, are you okay!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Mm... I'm fine!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">Kana-chan</STYLE> seemed to have joined us here.<PG>
+<STYLE ID="7">"Mm... was there anyone with a gun!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"Just one! But I jumped them from behind and broke the gun!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="7">"Mm... then we're all right now. </STYLE>
+{PAUSE ""}
+<STYLE ID="6">Kana</STYLE><STYLE ID="7">, watch the front! I'll take the back!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="6">"You got it, </STYLE><STYLE ID="7">Sis</STYLE><STYLE ID="6">!"</STYLE>
+{PAUSE ""}
+<BR>
+The footsteps on the roof stopped completely.
+{PAUSE ""}
+<BR>
+The two of them seemed to be holding still, braced for an attack.<PG>
+{MESOFF "500"}
+{QUAKESTOP "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\ワゴン後部座席昼.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "R" "B" "100" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"</STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2">, I got through to </STYLE><STYLE ID="8">Grandma</STYLE><STYLE ID="2">! She says go to </STYLE><STYLE ID="6">Kana</STYLE><STYLE ID="2">'s secret base right away!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"That place has only one way in and out, so we just have to hold the ladder. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">And by the time they reach it, the Droga should have worn off."</STYLE><PG>
+<STYLE ID="2">"Can you take more Droga right after it wears off?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Apparently you can..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花頭抱える.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Wait, then those guys can come back as many times as they want! We won't be safe underground either, right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"It's all right. I'll guard the entrance."</STYLE><PG>
+<STYLE ID="2">"D-don't be stupid! There's no way you can take on monsters like that!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Using Droga puts a huge strain on the body. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Even if they use Droga again, they shouldn't have as much strength as before."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"But come on...!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Stop arguing and go underground with </STYLE><STYLE ID="1">Natsumi-chan</STYLE><STYLE ID="3"> and </STYLE><STYLE ID="4">Goto-chan</STYLE><STYLE ID="3">!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　Got it!?"</STYLE><PG>
+{MESOFF "500"}
+{QUAKE "000" "QUAKE" "1" "5" "5" "0" "30"}
+{CHANGECG "000" "グラフィック\立ち絵\人物\詫言編　始まり以降\車の上.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{QUAKE "000" "QUAKE" "1" "5" "5" "0" "30"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="7">"Mm... </STYLE><STYLE ID="3">Auntie</STYLE><STYLE ID="7">! Looks like we've shaken them off!</STYLE>
+{PAUSE ""}
+<STYLE ID="7">　It's safe to slow down!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Roger!"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "BGM" "5000" "PASS"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{QUAKESTOP "0"}
+{MESON "500"}
+―The car climbed the mountain, passed through the trees, entered the settlement―
+{PAUSE ""}
+<BR>
+After that, we made it to near the secret base without being attacked.<PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地昼.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="8">"Is everyone all right!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">"Inside, quickly!"</STYLE>
+{PAUSE ""}
+<BR>
+In front of the secret base, <STYLE ID="8">Erika-chan</STYLE> and <STYLE ID="12">Kotaro-san</STYLE> were already waiting.
+{PAUSE ""}
+<BR>
+{PLAYSND "BGM死月編\鬱蒼.ogg" "BGM" "REPEAT" "1000" "0"}
+For a moment, I felt quite uneasy that <STYLE ID="12">Kotaro-san</STYLE> was there, but―
+{PAUSE ""}
+<BR>
+Still, it meant that at least <STYLE ID="12">Kotaro-san</STYLE> hadn't been among the attackers.<PG>
+{MESOFF "500"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\桜の枝.gal" "NORMAL" "#1" "C" "B" "100" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Besides, I couldn't hear the cherry tree's voice anymore either.
+{PAUSE ""}
+<BR>
+Does that mean it's all right to keep going like this?
+{PAUSE ""}
+<BR>
+Don't hesitate...! Believe in yourself!
+{PAUSE ""}
+<BR>
+Even just now, I sensed the danger and we managed to avoid hitting the fallen tree...!<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2,アイテム1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"Huh? Where's </STYLE><STYLE ID="7">Chiga-nee</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="6">"</STYLE><STYLE ID="7">My big sister</STYLE><STYLE ID="6"> got off around the entrance to the settlement. She said she'd keep watch there."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="7">Chiga-nee</STYLE><STYLE ID="2"> all alone... is she gonna be okay...?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\美冬鉈.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"Well then, from here on I've got to do my part too."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物3" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカ鉈.gal" "NORMAL" "#1" "C" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="8">"Can't be helped... Guess I'll get some exercise for the first time in a while."</STYLE>
+{PAUSE ""}
+<BR>
+Even <STYLE ID="8">Erika-chan</STYLE> was gripping a nata.<PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"Hey! Can </STYLE><STYLE ID="8">Grandma</STYLE><STYLE ID="2"> and </STYLE><STYLE ID="3">Mom</STYLE><STYLE ID="2"> even fight!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE><STYLE ID="2">Haruka</STYLE><STYLE ID="3">, the women of Arata always put their lives on the line...!"</STYLE><PG>
+<STYLE ID="8">"</STYLE><STYLE ID="12">Kotaro</STYLE><STYLE ID="8">! Hurry, </STYLE><STYLE ID="12">you</STYLE><STYLE ID="8"> get underground too!</STYLE>
+{PAUSE ""}
+<STYLE ID="8">　You're not planning to fight with that belly sticking out, are you!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="12">"Damn...! Everyone, inside, quickly!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2,人物3" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">"Hey, </STYLE><STYLE ID="4">Goto</STYLE><STYLE ID="2">, what do we do!? Is it really okay to go with </STYLE><STYLE ID="12">Kotaro-san</STYLE><STYLE ID="2">!?"</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="4">"That's... hmm..."</STYLE>
+{PAUSE ""}
+<BR>
+As I thought, the two of them were wary of <STYLE ID="12">Kotaro-san</STYLE> too.
+{PLAYSND "環境音\山の中.ogg" "SE" "REPEAT" "1000" "0"}
+{STOPSND "BGM" "5000" "PASS"}
+{PAUSE ""}
+<BR>
+Even with <STYLE ID="6">Kana-chan</STYLE> along, I couldn't help balking at going into a sealed room underground with <STYLE ID="12">Kotaro-san</STYLE>.<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "0" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

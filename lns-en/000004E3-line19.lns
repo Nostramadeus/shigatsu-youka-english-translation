@@ -1,0 +1,38 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=59, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=4, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=11, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=92, target=)
+; Links:
+;    0: TWdLink(count=74, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "000" "グラフィック\背景\電車トンネル.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\春花覗き込み.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "忍び寄る影.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<TXSPN>That was not the face of someone telling a joke.
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE> has killed people with a curse before now.
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So... that's how it is..."</STYLE>
+{PAUSE ""}
+<BR>
+I noticed that my own voice was shaking.
+{PAUSE ""}
+<BR>
+And then <STYLE ID="1">Haruka</STYLE> went on.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{DELETECG "000,人物1" "1" "0" "0" "0" "" "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

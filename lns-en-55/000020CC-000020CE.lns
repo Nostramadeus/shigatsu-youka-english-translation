@@ -1,0 +1,95 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=549, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=マージャン, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=610, target=)
+; Links:
+;    0: TWdLink(count=551, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\たき火.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\電車詰所.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hey, wake up already, it's almost time."
+{PAUSE ""}
+<BR>
+―Mmm...
+{PAUSE ""}
+<BR>
+"Geez, that's what you get for staying up late at your age."
+{PAUSE ""}
+<BR>
+―Hwaah... 
+{PAUSE ""}
+Ah, almost time for the scheduled train... 
+{PAUSE ""}
+Sorry, but take over this next run for me...<PG>
+"Not again... Past 70 and you're still like this..."
+{PAUSE ""}
+<BR>
+―You're pretty doddery yourself these days.
+{PAUSE ""}
+<BR>
+"Driving trains is the only fun I've got. 
+{PAUSE ""}
+I retired and took it easy for a while, but driving trains just suits me after all."
+{PAUSE ""}
+<BR>
+―Well, same goes for me.<PG>
+"Then take your turn like you're supposed to..."
+{PAUSE ""}
+<BR>
+―You want me driving on no sleep? There'll be an accident.
+{PAUSE ""}
+<BR>
+"By that logic, I was up all night playing <STYLE ID="1" RUBY="マージャン">mahjong</STYLE> with you too. 
+{PAUSE ""}
+Ah, forget it, I'll go."
+{PAUSE ""}
+<BR>
+―Counting on you. There are only two drivers left for the Arata Station run, so look after yourself.<PG>
+"Always so glib... 
+{PAUSE ""}
+Well, it's fun, so it's fine."
+{PAUSE ""}
+<BR>
+―Hey, hey, changing the subject, but haven't the Arata folks seemed weird lately?
+{PAUSE ""}
+<BR>
+"You noticed too?"
+{PAUSE ""}
+<BR>
+―How do I put it... gloomy, or something...<PG>
+"They've always been gloomy, haven't they?"
+{PAUSE ""}
+<BR>
+―But I feel like up until a few years ago they were a little more cheerful.
+{PAUSE ""}
+<BR>
+"More than gloomy, it's like they've become different people?
+{PAUSE ""}
+　No life in them, all dull and heavy..."
+{PAUSE ""}
+<BR>
+―I can't put it well, but something like that. Driving out there's been scary lately.<BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

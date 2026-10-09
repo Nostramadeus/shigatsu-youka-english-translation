@@ -1,0 +1,157 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=185, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=171, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=15, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=91, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=570, target=)
+; Links:
+;    0: TWdLink(count=462, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{PLAYMOVIE "盗視.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "111" "グラフィック\背景\エデン\ノイズ\盗視ノイズ.lcm" "REPEAT" "#1" "C" "B" "600" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPS>"Hah... hah... 
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+Aaggghhhhhhhh..."
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1"><TXSPN>"It's all right, </STYLE>Chigaya<STYLE ID="1">. Grandma's right here."</STYLE>
+{PAUSE ""}
+<BR>
+<TXSPS>"Gr... <STYLE ID="1">Grandma</STYLE>...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1"><TXSPN>"Hm? What is it?"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+"Kill me...!
+{QUAKESTOP "500"}
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+　Hurry, kill me...!"
+{QUAKESTOP "500"}
+<PG>
+<STYLE ID="1">"No, you can't. If you kill your </STYLE><STYLE ID="2">mom</STYLE><STYLE ID="1">―"</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+"No! Hurry up and kill me!
+{QUAKESTOP "500"}
+{PAUSE ""}
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+　I can't take it! It hurts! Kill me!"
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"That won't do either, </STYLE>Chigaya<STYLE ID="1">. You're going to get better. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Right now, your </STYLE><STYLE ID="3">dad's</STYLE><STYLE ID="1"> looking for a way to cure </STYLE>you<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "5" "5" "0" "30"}
+"I can't take it...!
+{PAUSE ""}
+　It... hurts...! I can't bear it!
+{PAUSE ""}
+　Hurry! Kill me or <STYLE ID="2">Mom</STYLE>, I don't care which!"
+{PAUSE ""}
+<BR>
+{QUAKESTOP "0"}
+<STYLE ID="1">"</STYLE>Chigaya<STYLE ID="1">, just hold on a little longer. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Just a little more, and..."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\ギン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "BGM" "500" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n500\r\nNORMAL\r\nPASS">
+{DELETECG "000,111,人物1" "14" "500" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "500" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="3">"</STYLE><STYLE ID="1">Mom</STYLE><STYLE ID="3">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Kotaro</STYLE><STYLE ID="1">, did you find anything!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"How's </STYLE>Chigaya<STYLE ID="3"> doing!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"She just passed out."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Chigaya<STYLE ID="3">, hey, </STYLE>Chigaya<STYLE ID="3">!"</STYLE><PG>
+<STYLE ID="1">"</STYLE><STYLE ID="3">Kotaro</STYLE><STYLE ID="1">, </STYLE>Chigaya<STYLE ID="1"> keeps coming to and passing out like this. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So―"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Chigaya<STYLE ID="3"> might be cured, </STYLE><STYLE ID="2">Sakura</STYLE><STYLE ID="3"> says!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Really!?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"Hey, </STYLE>Chigaya<STYLE ID="3">! Hey!"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下1.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "15" "5000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Da...d...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Chigaya<STYLE ID="3">, it's all right now!</STYLE>
+{PAUSE ""}
+<STYLE ID="3">　It's all right now, isn't it!?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="2">Mom</STYLE>... 
+{PAUSE ""}
+thank goodness... 
+{PAUSE ""}
+But... 
+{PAUSE ""}
+I'm... so tired..."<PG>
+<STYLE ID="3">"Let's carry </STYLE>Chigaya<STYLE ID="3"> home! It's all right now!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"All right."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

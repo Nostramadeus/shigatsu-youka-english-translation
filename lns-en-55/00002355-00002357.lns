@@ -1,0 +1,69 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=72, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=113, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=230, target=)
+; Links:
+;    0: TWdLink(count=185, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\chilly_hell.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYMOVIE "光2.wmv" "256" "C" "C" "REPEAT" "FALSE" "0" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n3000\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n255\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>―Someone... help me...
+{PAUSE ""}
+<BR>
+―Help me...<PG>
+<STYLE ID="1">"Huh? What are you doing down there?"</STYLE>
+{PAUSE ""}
+<BR>
+―That voice... 
+{PAUSE ""}
+<STYLE ID="1">You</STYLE>'re alive!? You really are alive!?<PG>
+<STYLE ID="1">"Yeah, of course I'm alive... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">What are you doing down there? Come on, it's time to wake up."</STYLE>
+{PAUSE ""}
+<BR>
+―W-wait! Hey!
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Sorry, I'm about to wake up..."</STYLE>
+{PAUSE ""}
+<BR>
+―<STYLE ID="1">Natsumi</STYLE>...<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n255\r\nNORMAL\r\nPASS">
+{WAIT "3000" "CLICK" "SKIP"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\シナリオ\001\自室背景.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Mm... mmph!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　Hah, I feel like that was a tiring dream..."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

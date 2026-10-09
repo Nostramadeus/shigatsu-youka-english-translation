@@ -1,0 +1,206 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=319, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=271, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=17, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=239, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=だま, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=30, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1016, target=)
+; Links:
+;    0: TWdLink(count=878, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\バギー運転中.ogg" "SE" "REPEAT" "0" "0"}
+{PLAYSND "環境音\静かな雨.ogg" "SE2" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{CHGVOL "SE2" "1000" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYMOVIE "雨1.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\荒田山道昼ブラー.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Come on, hold on tight. If you fall off, you'll get badly hurt."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Don't even think about jumping off to get away. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">My daughters are following behind us."</STYLE><PG>
+"What are you... going to do with us?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Scared of dying?"</STYLE>
+{PAUSE ""}
+<BR>
+"We didn't come here to die. 
+{PAUSE ""}
+We came to get <STYLE ID="2">Niimura-senpai</STYLE>... <STYLE ID="2">Haruka-san</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Then you can relax. </STYLE><STYLE ID="2">Haruka-chan</STYLE><STYLE ID="1"> is sure to come back to the settlement too."</STYLE>
+{PAUSE ""}
+<BR>
+"You abducted us to lure <STYLE ID="2">Niimura-senpai</STYLE> to the settlement...?"<PG>
+<STYLE ID="1">"Half right, I'd say. Honestly, </STYLE>you<STYLE ID="1"> don't matter either way. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The one I need is </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+"You need <STYLE ID="3">Kogori-senpai</STYLE>...!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, sooner or later... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">No, you'll understand once we reach the settlement."</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\新村本家夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "SE" "1000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Now, get off. In you go."</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n1000\r\nNORMAL\r\nPASS">
+{DELETECG "000,人物1" "1" "1000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\静かな雨屋内.ogg" "SE" "REPEAT" "0" "0"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHGVOL "SE" "1000" "1000" "PASS"}
+{STOPSND "SE2" "2000" "PASS"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家玄関.gal" "NORMAL" "#1" "C" "B" "0" "2" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\なつみバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="3">"</STYLE>Goto<STYLE ID="3">... what do I do...?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="3">Kogori-senpai</STYLE>... 
+{PAUSE ""}
+What's going to happen to us...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I don't know... </STYLE>
+{PAUSE ""}
+<STYLE ID="3">But, w-w-w-"</STYLE>
+{PAUSE ""}
+<BR>
+"L-let's calm down..."
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"W- </STYLE>
+{PAUSE ""}
+<STYLE ID="3">w- </STYLE>
+{PAUSE ""}
+<STYLE ID="3">w-"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\詫言編　始まり以降\幸太郎バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Go on, step inside."</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Goto<STYLE ID="3">, it's okay. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">This is a safe place."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"This place... it's really wonderful. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Just like heaven."</STYLE><PG>
+"Wh-what are you saying!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"I know it by intuition. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">This is a place protected by the Goddess. We're going to live here happily forever."</STYLE>
+{PAUSE ""}
+<BR>
+"Please stop joking!
+{PAUSE ""}
+　Is this a plan to make them all drop their guard so we can escape!?
+{PAUSE ""}
+　If so...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"No, I'm not running away. I'm not going to leave here."</STYLE>
+{PAUSE ""}
+<BR>
+"I-I get it! It's that thing, right!?
+{PAUSE ""}
+　To <STYLE ID="4" RUBY="だま">fool</STYLE> your enemies, <STYLE ID="4" RUBY="だま">fool</STYLE> your friends first, like they say...!"<PG>
+<STYLE ID="3">"I'm serious. </STYLE>
+{PAUSE ""}
+Goto<STYLE ID="3">, if you're planning to run from here and expose this place to the world... </STYLE>
+{PAUSE ""}
+{STOPSND "SE" "0" "PASS"}
+<STYLE ID="3">I'll kill you right here, </STYLE>Goto<STYLE ID="3">."</STYLE>
+{PAUSE ""}
+<BR>
+"............!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well, are you two done talking?"</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\z50.ogg" "BGM" "REPEAT" "1000" "0"}
+"N-no! <STYLE ID="3">Senpai</STYLE>! Snap out of it!"
+{PAUSE ""}
+<BR>
+<STYLE ID="3">"</STYLE>Goto<STYLE ID="3">, you don't have to be scared. </STYLE>Goto<STYLE ID="3">, you'll be one of us soon too. </STYLE>
+{PAUSE ""}
+<STYLE ID="3">Right, </STYLE><STYLE ID="1">Kotaro-san</STYLE><STYLE ID="3">?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, I promise. Once that happens, there'll be nothing left to fear. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Now, come here."</STYLE>
+{PAUSE ""}
+<BR>
+"No! Don't touch me! Not a place like this, no way!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\ナイフを構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\夏菜ナイフ1.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="5">"Well, well? Where do you think you're going?"</STYLE>
+{PAUSE ""}
+<BR>
+"............!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE><STYLE ID="5">Kana</STYLE><STYLE ID="1">, it seems </STYLE>she<STYLE ID="1">'s frightened. </STYLE><STYLE ID="5">Kana</STYLE><STYLE ID="1">, you look after her kindly."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Got it, </STYLE><STYLE ID="1">Daddy</STYLE><STYLE ID="5">!"</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

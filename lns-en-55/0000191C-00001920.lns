@@ -1,0 +1,527 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=3801, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=16, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=155, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなみざき, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=たんび, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=9, unk2=4294967295, unk3=4294967295, unk4=60, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こはく, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=か, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ほうじゅん, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=こうこつ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=4374, target=)
+; Links:
+;    0: TWdLink(count=3997, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "SE\自転車こぐ.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\桜道.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "僕らの日常.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>After enjoying some cherry-blossom viewing with <STYLE ID="1">Niimura-senpai</STYLE> in Central Park, I'm riding my bicycle.
+{PAUSE ""}
+<BR>
+Everyone, can you guess where I'm about to go?
+{PAUSE ""}
+<BR>
+Home? Cram school? Or the bookstore?
+{PAUSE ""}
+<BR>
+Wrong on all counts.
+{PAUSE ""}
+<BR>
+Right now, I'm heading to Central Park.<PG>
+Heading from Central Park to Central Park: that's me, <STYLE ID="2">Erina Goto</STYLE>.
+{PAUSE ""}
+<BR>
+Most of you must have question marks floating over your heads.
+{PAUSE ""}
+<BR>
+But there are cases where the starting point and the destination are the same.
+{PAUSE ""}
+<BR>
+That's―yes, when you've forgotten something.
+{PAUSE ""}
+<BR>
+Right now, I'm heading back to Central Park to get back something I forgot.<PG>
+No, to be precise, rather than forgetting something, I should say I remembered an errand.
+{PAUSE ""}
+<BR>
+If I forgot this errand, I would disappoint the 40,000 people of Motoki-cho.
+{PAUSE ""}
+<BR>
+That event I haven't missed once since the year before last.
+{PAUSE ""}
+<BR>
+That event being held today!
+{PAUSE ""}
+<BR>
+And that is―<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "SE\自転車ブレーキ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "日曜日の朝.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\手直し・追加\大食い大会花見.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Everyone! At last, this day has come around again this year!
+{PAUSE ""}
+　The 70th Motoki Cherry Blossom Festival! And today, we hold its biggest event, the 3rd Motoki-cho Spring Eating Conte<TXSPS>eeeeest!"
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\SE\clapping-hands1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<TXSPN>Applause rises from all around. There are definitely more people in the park than when I was here with <STYLE ID="1">Niimura-senpai</STYLE> a little while ago.<PG>
+Looks like I somehow made it in time for the contest.
+{PAUSE ""}
+<BR>
+As the favorite to win, I'm the hero. That's why I show up late.
+{PAUSE ""}
+<BR>
+That said, maybe my lateness was a bit half-hearted... I made it back with 5 minutes to spare.<PG>
+"Now, contestants! Please come up on stage!"
+{PAUSE ""}
+<BR>
+The emcee keeps the greeting short, and the contestants take the stage.
+{PAUSE ""}
+<BR>
+One, two, three, four... 
+{PAUSE ""}
+Hmm, five participants, counting me.
+{PAUSE ""}
+<BR>
+Every one of them someone I beat last year.<PG>
+All the participants <STYLE ID="3" RUBY="にら">glare</STYLE> at me, but I brush it off with a big, easy grin.
+{PAUSE ""}
+<BR>
+Heh, <STYLE ID="3" RUBY="にら">glaring</STYLE> means nothing. Whoever eats is justice!<PG>
+On the stage there are chairs and a long table, with six chairs set out.
+{PAUSE ""}
+<BR>
+Even though there are five participants. Is someone running late?<PG>
+{STOPSND "BGM" "5000" "PASS"}
+"And now, everyone! Believe it or not, a challenger appears! Please come on out!"
+{PAUSE ""}
+<BR>
+A challenger? If she's appearing separately from the rest of us, does that mean she's the special guest?<PG>
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+The one who appears when called is a slender woman.
+{PAUSE ""}
+<BR>
+Her age... a little over 20, maybe?<PG>
+"Hey, isn't that the champion from the other day?"
+{PAUSE ""}
+<BR>
+"Yeah, yeah! She was on TV!"
+{PAUSE ""}
+<BR>
+Champion...? TV...?
+{PAUSE ""}
+<BR>
+I take another look at the guest's face.
+{PAUSE ""}
+<BR>
+Don't know her...<PG>
+"Well, the venue seems to be starting to buzz... 
+{PAUSE ""}
+That's right, she is the queen of competitive eating who took her first victory in fine style this past February, two months ago, on 'Big Eating Festival 800 ~Winter Battle~', broadcast nationwide on Japonica TV! It's Shinori <STYLE ID="4" RUBY="みなみざき">Minamizaki</STYLE>!"
+{PAUSE ""}
+<BR>
+"Nice to meet you. My name is Shinori Minamizaki. I look forward to competing with you."<PG>
+{PLAYSND "最後の声・真呪殺\大歓声.ogg" "VOICE" "NORMAL" "800" "0"}
+In contrast to the woman's polite greeting, the venue gets wildly excited.
+{PAUSE ""}
+{STOPSND "VOICE" "5000" "PASS"}
+<BR>
+I see, so this person is Japan's eating champion.
+{PAUSE ""}
+<BR>
+Coming out to an event in Motoki-cho like this, the champion must have time on her hands.<PG>
+Still, against an eating champion, I don't think I stand a chance.
+{PAUSE ""}
+<BR>
+I wouldn't say I've lost the will to fight, but I did eat all sorts of things with <STYLE ID="1">Niimura-senpai</STYLE> earlier...
+{PAUSE ""}
+<BR>
+Well, I'll eat for fun and help keep things lively.<PG>
+The seat I'm shown to is right next to the champion.
+{PAUSE ""}
+<BR>
+I see, so the idea is to show the difference between the previous champion and the national champion.
+{PAUSE ""}
+<BR>
+Feels like I'm being used as a stepping stone, but oh well, never mind, never mind.<PG>
+"Last year's champion, <STYLE ID="2">Erina Goto</STYLE>, how about it? How does it feel to sit next to the national champion?"
+{PAUSE ""}
+<BR>
+Even if you ask how it feels, I don't know this person...
+{PAUSE ""}
+<BR>
+<STYLE ID="4" RUBY="みなみざき">Minamizaki</STYLE>-san is looking my way with a smile that has no spite in it.
+{PAUSE ""}
+<BR>
+I'll just make some comment to liven things up.<PG>
+<STYLE ID="2">"Um... At last, a challenger who can stand up to me has arrived! Champion or not, I'll send her packing!"</STYLE>
+{PAUSE ""}
+<BR>
+So, being me, I state my resolve a little cheekily, just for form's sake.
+{PAUSE ""}
+<BR>
+{PLAYSND "最後の声・真呪殺\SE\clapping-hands1.ogg" "VOICE" "NORMAL" "1000" "0"}
+And then, applause and cheers in just about the amount I expected.
+{PAUSE ""}
+<BR>
+Honestly, this is kind of a pain...<PG>
+"Now, this year's dish is sauce yakisoba! 200 grams a plate!
+{PAUSE ""}
+　The ingredients are provided by Motoki-cho's kitchen, 'Supermarket Hanamaru'! The cooking is done by the local housewives!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\焼きそば.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+A paper plate piled with sauce yakisoba is set in front of me.
+{PAUSE ""}
+<BR>
+Apparently we can sprinkle on pickled red ginger and green laver flakes as we like.
+{PAUSE ""}
+<BR>
+Mayonnaise... none, huh.
+{PAUSE ""}
+<BR>
+For me, mayonnaise is a must on sauce yakisoba, though.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\大食い大会花見.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Now, at last, we begin the 3rd Motoki Eating Festival. 
+{PAUSE ""}
+The time limit is 15 minutes! Please count down with me!"
+{PAUSE ""}
+<BR>
+Huh? Wasn't it the 3rd Motoki-cho Eating Contest? Pretty sloppy...
+{PAUSE ""}
+<BR>
+While I'm thinking that, the countdown hits 1, and I hurriedly pick up my chopsticks.<PG>
+{STOPSND "BGM" "3000" "PASS"}
+"Begiiin!!"
+{PAUSE ""}
+<BR>
+As the emcee shouts, the mic howls with feedback, making it an ear-splitting starting signal.<PG>
+{PLAYSND "Attack頭.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\焼きそば.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+At the same moment, I lift the yakisoba with my chopsticks.
+{PAUSE ""}
+<BR>
+But less steam rises from the noodles than I expected.
+{PAUSE ""}
+<BR>
+Ah, it's cooled down more than I thought.<PG>
+I toss the yakisoba into my mouth.
+{PAUSE ""}
+<BR>
+Yeah, well, it tastes just like it looks, just as I expected. Not bad, not great.
+{PAUSE ""}
+<BR>
+First plate, done in 20 seconds. The next plate is set down right away.<PG>
+Ugh, this one's even colder... My spirits are sinking.
+{PAUSE ""}
+<BR>
+Well, it's the same conditions for everyone, so as a competition it's fair, but I still want to eat deliciously and have fun.
+{PAUSE ""}
+<BR>
+More than anything, I want mayonnaise.<PG>
+"One minute has passed! All six have finished two plates!"
+{PAUSE ""}
+<BR>
+At this pace, that's 30 plates in 15 minutes, 6 kilos by weight.
+{PAUSE ""}
+<BR>
+Wow, that's a huge amount...
+{PAUSE ""}
+<BR>
+In my case, there's what I ate with <STYLE ID="1">Niimura-senpai</STYLE>, so it might be a bit of a handicap.<PG>
+I start on my third plate.
+{PAUSE ""}
+<BR>
+{QUAKE "メッセージボックス土台" "QUAKE" "1" "15" "15" "0" "30"}
+<STYLE ID="2">"Hot!"</STYLE>
+{QUAKESTOP "500"}
+{PAUSE ""}
+<BR>
+This time it seems to be really fresh off the griddle.
+{PAUSE ""}
+<BR>
+I lift a lot of noodles at once and blow on them all in one go.<PG>
+Yeah, this hot, now we're talking! Delicious!
+{PAUSE ""}
+<BR>
+The slightly crispy charred bits you only get at a stall are great too.
+{PAUSE ""}
+<BR>
+My appetite naturally picks up.
+{PAUSE ""}
+<BR>
+But... I still want mayonnaise.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\大食い大会花見.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Five minutes are almost up! <STYLE ID="2">Goto</STYLE> and national champion Minamizaki are tied at 10 plates!"
+{PAUSE ""}
+<BR>
+Huh? Am I putting up a surprisingly good fight against the champion?
+{PAUSE ""}
+<BR>
+I wasn't really planning to compete, but it's delicious, so I feel like I could eat any amount.<PG>
+And after five minutes of eating all out, an ordinary person's stomach hits its limit right about here.
+{PAUSE ""}
+<BR>
+The pace of the four besides me and the champion drops all at once.
+{PAUSE ""}
+<BR>
+I steal a quick glance toward the champion.<PG>
+And at that very moment, our eyes meet.
+{PAUSE ""}
+<BR>
+It seems the champion has been staring at me.
+{PAUSE ""}
+<BR>
+I flash her a big grin just like that.
+{PAUSE ""}
+<BR>
+But for some reason the champion has a stern look on her face.
+{PAUSE ""}
+<BR>
+What's wrong? Surely she can't be at her limit already.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\焼きそば.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Even so, eating this much of the same thing is pretty painful.
+{PAUSE ""}
+<BR>
+Even with pickled red ginger and green laver flakes, the taste doesn't change much.
+{PAUSE ""}
+<BR>
+I really want mayonnaise.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\大食い大会花見.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Five minutes left! Facing these noodles that sit so heavy in the stomach, everyone's chopsticks have stopped except for <STYLE ID="2">Goto</STYLE> and Minamizaki!"
+{PAUSE ""}
+<BR>
+Hmm, I want a change in flavor... I miss mayonnaise...<PG>
+{STOPSND "BGM" "0" "PASS"}
+And then, at that moment―<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\明徴編最初\屋台.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Here you go! Grilled squid's ready! Grilled squid that's super tasty with mayo-soy sauce!"
+{PAUSE ""}
+<BR>
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+An <STYLE ID="5" RUBY="たんび">alluring</STYLE> sound rings out from the stall right in front of the stage.
+{PAUSE ""}
+<BR>
+Grilled squid―
+{PAUSE ""}
+<BR>
+A single ray of light shining into this carbohydrate hell.
+{PAUSE ""}
+<BR>
+That springiness, and yet that pleasantly clean bite.
+{PAUSE ""}
+<BR>
+Mild, yet full of flavor, a taste that leaves you wanting more.<PG>
+And most of all.
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+Ma
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+　yo
+{WAIT "300" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "200" "PASS"}
+{WAIT "200" "CLICK" "SKIP"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+　soy
+{WAIT "300" "CLICK" "SKIP"}
+{STOPSND "VOICE" "200" "PASS"}
+{WAIT "200" "CLICK" "SKIP"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+　sauce　!<PG>
+"Oh! <STYLE ID="2">Goto</STYLE>'s hands have stopped!
+{PAUSE ""}
+　Will last year's champion, who's hung on this far, go down in defeat here!?"
+{PAUSE ""}
+<BR>
+I want to eat it.
+{PAUSE ""}
+<BR>
+I want to eat it...! I want to eat it...!!
+{PAUSE ""}
+<BR>
+I want to eat grilled squid! I want to eat grilled squid with mayo-soy sauce!<PG>
+"One minute left! <STYLE ID="2">Goto</STYLE> has been moving her hands slowly for a while now, but her eyes are looking off somewhere else entirely!
+{PAUSE ""}
+　At this rate, Minamizaki is going to take her crown!"
+{PAUSE ""}
+<BR>
+Grilled squid.
+{PAUSE ""}
+<BR>
+Grilled squid.
+{PAUSE ""}
+<BR>
+Mayo-soy sauce.
+{PAUSE ""}
+<BR>
+Mayo-soy sauce!<PG>
+<TXSPS>Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid. Grilled squid.<PG>
+{STOPSND "BGM" "0" "PASS"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="6"><TXSPN>Ma</STYLE>
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+<STYLE ID="6">　yo</STYLE>
+{WAIT "300" "CLICK" "SKIP"}
+{STOPSND "VOICE" "200" "PASS"}
+{WAIT "200" "CLICK" "SKIP"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="6">　soy</STYLE>
+{WAIT "300" "CLICK" "SKIP"}
+{STOPSND "VOICE2" "200" "PASS"}
+{WAIT "200" "CLICK" "SKIP"}
+{PLAYSND "SE\drum-japanese1.ogg" "VOICE2" "NORMAL" "1000" "0"}
+<STYLE ID="6">　sauce　!</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\大食い大会花見.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "SE\椅子から立つ.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="2">"Sorry! I withdraw!"</STYLE>
+{PAUSE ""}
+<BR>
+"Whoa! With 30 seconds left, <STYLE ID="2">Goto</STYLE> suddenly withdraws! Has she decided she can't win like this after all!?"
+{PAUSE ""}
+<BR>
+I've withdrawn, so there's no point staying here anymore!
+{PAUSE ""}
+<BR>
+With the lightness of a ballerina, I leap off the stage and―<PG>
+{MESOFF "500"}
+{PLAYSND "HIRAHIRA.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\明徴編最初\屋台.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Excuse meee! Three grilled squid, please! Extra mayo!"</STYLE>
+{PAUSE ""}
+<BR>
+"Oh! <STYLE ID="2">Erina-chan</STYLE>, long time no see! Thanks as always!"
+{PAUSE ""}
+<BR>
+The grilled-squid man turns a smile my way.
+{PAUSE ""}
+<BR>
+How many meters was that long jump of mine from the stage?<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\イカ焼き.gal" "NORMAL" "12" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Grilled squid is held out in front of me.
+{PAUSE ""}
+<BR>
+The aroma of grilled squid, with plenty of mayo-soy sauce on the side.
+{PAUSE ""}
+<BR>
+Ah, this is it, this is it!<PG>
+The moment I grab the grilled squid, I bring one to my mouth.
+{PAUSE ""}
+<BR>
+But the grilled squid takes a very long time to reach my mouth.
+{PAUSE ""}
+<BR>
+That's how beautiful, how moving this sight is.<PG>
+The squid's body, giving off the scent of mayo and reflecting the light of a spring day.
+{PAUSE ""}
+<BR>
+Soy sauce of a clear <STYLE ID="7" RUBY="こはく">amber</STYLE> color.
+{PAUSE ""}
+<BR>
+This aroma isn't from soybean lees; it's the aroma of naturally brewed soy sauce.
+{PAUSE ""}
+<BR>
+And then the chili powder sprinkled on as if it were on the house.
+{PAUSE ""}
+<BR>
+It flaunts the aroma of the sea, and of charcoal, completely different from sauce yakisoba.<PG>
+{MESOFF "500"}
+{PLAYSND "SE\eat-meat1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "200" "CLICK" "SKIP"}
+{QUAKE "000" "QUAKE" "1" "15" "15" "0" "30"}
+{QUAKESTOP "1000"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+The pleasant, squishy <STYLE ID="8" RUBY="か">chew</STYLE> of the squid.
+{PAUSE ""}
+<BR>
+The squid flesh tearing off with a snap.
+{PAUSE ""}
+<BR>
+I lick off every bit of mayo on my lips.
+{PAUSE ""}
+<BR>
+Then comes the <STYLE ID="9" RUBY="ほうじゅん">rich</STYLE> aroma of the soy sauce.
+{PAUSE ""}
+<BR>
+The tingle of the chili powder.
+{PAUSE ""}
+<BR>
+Ah... eating is... 
+{PAUSE ""}
+ha-
+{PAUSE ""}
+ppi-
+{PAUSE ""}
+ne-
+{PAUSE ""}
+ss.<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\手直し・追加\大食い大会花見.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+While I'm drowning in my <STYLE ID="10" RUBY="こうこつ">ecstatic</STYLE> grilled-squid time, the awards ceremony is being held at the eating contest.
+{PAUSE ""}
+<BR>
+The champion, Shinori Minamizaki-san, wins with 18 plates.
+{PAUSE ""}
+<BR>
+I feel a strange gaze on my back.<PG>
+"<STYLE ID="2">Erina Goto-san</STYLE>... What would happen if <STYLE ID="2">she</STYLE> got serious? 
+{PAUSE ""}
+Until <STYLE ID="2">you</STYLE> step onto the competitive-eating stage again, I'll keep getting stronger too. 
+{PAUSE ""}
+I'm sure I'll meet <STYLE ID="2">you</STYLE> again."
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

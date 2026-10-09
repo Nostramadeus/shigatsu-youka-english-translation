@@ -1,0 +1,107 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=263, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=311, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=4, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みはら, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みはら, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=646, target=)
+; Links:
+;    0: TWdLink(count=582, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "Talking_Time.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\喫茶店夕方.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Boss, thank you for everything."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Hey, </STYLE>Momoko-chan<STYLE ID="1">, are you really―"</STYLE>
+{PAUSE ""}
+<BR>
+"I'm sorry, I've got a lot going on myself..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I understand that, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haah... I'll never find another girl better than </STYLE>you<STYLE ID="1">..."</STYLE><PG>
+"That's not true. 
+{PAUSE ""}
+<STYLE ID="2" RUBY="みはら">Mihara</STYLE>-san and Sayaka-chan are both full-fledged Primavera waitresses now. 
+{PAUSE ""}
+I trained them thoroughly, after all."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I suppose so... </STYLE>Momoko-chan<STYLE ID="1">, we can't keep relying on you forever. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Thank you so much, for everything until now."</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\sei_ge_cowbell01.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="1">―Hah! Hah! Oh, thank goodness! I made it!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Wait, </STYLE><STYLE ID="3" RUBY="みはら">Mihara</STYLE><STYLE ID="1">-san, we have customers..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―But Boss! Today is </STYLE>Momoko-san's<STYLE ID="1"> last day at work!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　I started working here because I looked up to </STYLE>Momoko-san<STYLE ID="1">, and yet... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">To think I won't get to see </STYLE>Momoko-san<STYLE ID="1"> like this anymore... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Uu...</STYLE><PG>
+"<STYLE ID="2" RUBY="みはら">Mihara</STYLE>-san, no crying. 
+{PAUSE ""}
+I never taught you it was okay to cry in the shop, did I?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―But, but! </STYLE>Momoko-san<STYLE ID="1"> won't be here anymore...!</STYLE>
+{PAUSE ""}
+<BR>
+"As long as you and Sayaka-chan are here, this shop will be fine."
+{PAUSE ""}
+<BR>
+<STYLE ID="4">―</STYLE>Momoko-san<STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Even just as a customer is fine, so please make sure you come here again!</STYLE>
+{PAUSE ""}
+<BR>
+"............"<PG>
+<STYLE ID="1">―For sure, okay!?</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, of course. I'll come again."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―That's a promise! Be sure to come again!</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, a promise. I've never lied to you, have I?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―Y-yes!</STYLE><PG>
+"Okay, then go get changed. Your shift starts now, right?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">―Okay! </STYLE>Momoko-san<STYLE ID="1">, thank you for everything!</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

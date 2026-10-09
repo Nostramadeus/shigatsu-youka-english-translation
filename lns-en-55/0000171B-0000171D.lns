@@ -1,0 +1,182 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=545, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=325, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=8, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いせ, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=20, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=11195903, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=22, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=23, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=5, unk2=2960895, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=いせだいじろう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1071, target=)
+; Links:
+;    0: TWdLink(count=951, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "Take_It.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\警察署受付.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Phew, good grief, an incident like that, here in Motoki-cho... 
+{PAUSE ""}
+Its only merits were peace and cherry blossoms, too. What's the world coming to."<PG>
+<STYLE ID="1">"Good work today, </STYLE>Assistant Inspector <STYLE ID="2" RUBY="いせ">Ise</STYLE><STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"Oh, good work. 
+{PAUSE ""}
+I heard <STYLE ID="3">Kogori-san's daughter</STYLE> is here?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, we had her identify the body a little while ago, and now she's waiting for her mother, </STYLE><STYLE ID="4">Akane-san</STYLE><STYLE ID="1">, to finish being questioned."</STYLE>
+{PAUSE ""}
+<BR>
+"You had her look at the body? Didn't <STYLE ID="3">the daughter</STYLE> object?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"We didn't actively encourage it, but... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">she said she wanted to face it properly."</STYLE><PG>
+"A levelheaded <STYLE ID="3">daughter</STYLE>. Did you go to the house to get her?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, and two friends came along with her then..."</STYLE>
+{PAUSE ""}
+<BR>
+"Friends? Did you get their names?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, </STYLE><STYLE ID="5">Haruka Niimura-san</STYLE><STYLE ID="1">, 17, and </STYLE><STYLE ID="6">Erina Goto-san</STYLE><STYLE ID="1">, 15."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚きバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"Wh...!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's wrong?"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"N-no, it's nothing... 
+{PAUSE ""}
+But... 
+{PAUSE ""}
+<STYLE ID="5">Haruka Niimura-san</STYLE>, huh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Something bothering you?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"No, just a little something. 
+{PAUSE ""}
+A long time ago, I heard a worrying rumor from a senior of mine."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh, so </STYLE><STYLE ID="5">Niimura-san</STYLE><STYLE ID="1"> is a delinquent girl?"</STYLE>
+{PAUSE ""}
+<BR>
+"It's not like that, but... 
+{PAUSE ""}
+Well, I'll look into this myself. 
+{PAUSE ""}
+And... 
+{PAUSE ""}
+did you say <STYLE ID="6">Erina Goto</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes, she's petite and didn't look at all like a high school student, but..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\真呪殺\バース\伊勢うつむくバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I see... damn it, I missed out."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Missed out?"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚きバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"No no no no no no! It's nothing! It's nothing at all!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Uh-huh..."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"But, <STYLE ID="6">Erina Goto</STYLE>―they call her a genius girl, don't they. 
+{PAUSE ""}
+I hope she doesn't get any funny ideas..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Funny ideas like what?"</STYLE><PG>
+"She's friends with <STYLE ID="3">the Kogori daughter</STYLE>, right?
+{PAUSE ""}
+　I mean, I hope she doesn't get the stupid idea of catching the culprit <STYLE ID="6">herself</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Oh, that's true... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">But, </STYLE>Assistant Inspector <STYLE ID="2" RUBY="いせ">Ise</STYLE><STYLE ID="1">, you knew </STYLE><STYLE ID="6">Goto-san</STYLE><STYLE ID="1"> is called a genius girl. </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">You're awfully well-informed, or, how should I put it..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\伊勢驚きバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{PLAYSND "伊勢.ogg" "BGM" "REPEAT" "1000" "0"}
+"Don't talk n-n-n-n-n-nonsense!
+{PAUSE ""}
+　This police officer, <STYLE ID="7" RUBY="いせだいじろう">Daijiro Ise</STYLE>, would never think of anything so indecent!
+{PAUSE ""}
+　Absolutely never!
+{PAUSE ""}
+　Young girls are to be adored, and laying a hand on them is out of the question!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Um... what are you talking about?"</STYLE>
+{PAUSE ""}
+<BR>
+"I told you, it's nothing!
+{PAUSE ""}
+　I have to look into <STYLE ID="5">Haruka Niimura-san</STYLE>! I'm busy!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "SE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Assistant Inspector <STYLE ID="2" RUBY="いせ">Ise</STYLE><STYLE ID="1">, the records room is the other way?"</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\伊勢バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"I-I-I know that! I just strayed from the path a little!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "SE" "NORMAL" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Aah... </STYLE>Assistant Inspector <STYLE ID="2" RUBY="いせ">Ise</STYLE><STYLE ID="1">, if only his tastes were normal, he'd be popular with women... What a waste."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "BGM" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

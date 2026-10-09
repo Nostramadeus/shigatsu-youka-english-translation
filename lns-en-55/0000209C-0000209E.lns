@@ -1,0 +1,197 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=706, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=みなかみ, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=170, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=14, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ちけん, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1027, target=)
+; Links:
+;    0: TWdLink(count=894, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\東京駅.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CREATECG "000" "グラフィック\リファレンス用\背景\さわ長城駅.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Made it at last. It's been a while since I came to <STYLE ID="1" RUBY="みなかみ">Minakami</STYLE> City. 
+{PAUSE ""}
+But maybe I got here a little early. There's still a whole hour until my appointment with the professor..."<PG>
+"I'll go into a cafe or something."<PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{PLAYSND "イエローカメラ.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\カフェ外装.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Ooh, the famous cafe chain, Ben's Coffee!
+{PAUSE ""}
+　Of course, there isn't one in Motoki-cho yet. 
+{PAUSE ""}
+Okay, let's go in!"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\風呂ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\カフェ内装.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">"Welcome. Please go ahead if you've decided on your order."</STYLE>
+{PAUSE ""}
+<BR>
+"Um, a cafe latte, please."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What size would you like?"</STYLE>
+{PAUSE ""}
+<BR>
+"The sizes are... 
+{PAUSE ""}
+um, Pequeno, 
+{PAUSE ""}
+Medio, 
+{PAUSE ""}
+Grande, 
+{PAUSE ""}
+Oversized...?
+{PAUSE ""}
+　Oh, these are Portuguese for small, medium, large, extra-large. 
+{PAUSE ""}
+Um, Medio, please!"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\カフェラテ.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Yeah, well, the taste is nothing special either way."<PG>
+"I'll go over my materials again while I've got the chance."<PG>
+"............
+{PAUSE ""}
+............
+{PAUSE ""}
+............"<PG>
+"Why is it... I can't concentrate... 
+{PAUSE ""}
+Maybe it's because I'm not used to this atmosphere..."<PG>
+"<STYLE ID="3">Kogori-senpai</STYLE>... Is she all right...? 
+{PAUSE ""}
+Should I give her a call...? 
+{PAUSE ""}
+No, but if she's asleep, I'd wake her up..."<PG>
+<STYLE ID="2">"Huh? </STYLE>Goto-san<STYLE ID="2">?"</STYLE>
+{STOPSND "BGM" "5000" "PASS"}
+{PLAYSND "環境音\ファミレス.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "900" "3000" "PASS"}
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\カフェ内装.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Oh, Professor, good morning."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>Goto-san<STYLE ID="2">, you were here too?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yes, I got here a little early."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"How are you feeling? Think you'll be okay?"</STYLE><PG>
+"Yes, I'm in perfect shape!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"I see. Well, </STYLE>Goto-san<STYLE ID="2">, the professors seem to have high hopes for your presentation. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Ah, sorry, was that too much pressure?"</STYLE>
+{PAUSE ""}
+<BR>
+"No... 
+{PAUSE ""}
+If people didn't expect that much of me, it wouldn't be worth doing..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>Goto-san<STYLE ID="2">, are you okay? You seem kind of down."</STYLE><PG>
+"Do I... 
+{PAUSE ""}
+Ahaha! I guess I really am a little nervous!?
+{PAUSE ""}
+　U-um, let's do the final check!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"All right."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"And so, regarding unapproved drugs going forward... 
+{PAUSE ""}
+um... 
+{PAUSE ""}
+Huh? What was it?"<PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\カフェ内装.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"In Japan in particular, the delay in drug approval... 
+{PAUSE ""}
+Jik-ken...?
+{PAUSE ""}
+　Huh? How do you read this kanji again...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="4" RUBY="ちけん">Clinical trials</STYLE><STYLE ID="2">, maybe?"</STYLE>
+{PAUSE ""}
+<BR>
+"Oh, right, chiken―clinical trials. 
+{PAUSE ""}
+Recruiting participants for clinical trials... 
+{PAUSE ""}
+um..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>Goto-san<STYLE ID="2">, are you really okay?"</STYLE><PG>
+"I'm... 
+{PAUSE ""}
+fine..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE><PG>
+"Professor... uh..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Hm?"</STYLE>
+{PAUSE ""}
+<BR>
+"Professor, I'm sorry! I'm going home after all!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Wait, </STYLE>Goto-san<STYLE ID="2">!?"</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "1000" "PASS"}
+{DELETECG "000" "1" "1000" "0" "0" "" "0"}
+{PLAYSND "SE\風呂ドア.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\アスファルトダッシュ.ogg" "VOICE" "REPEAT" "1000" "0"}
+{MESON "500"}
+"No, I can't leave <STYLE ID="3">Kogori-senpai</STYLE> alone after all...!
+{PAUSE ""}
+　<STYLE ID="3">Kogori-senpai</STYLE> is in a really bad way...!
+{PAUSE ""}
+　But... what am I supposed to say to <STYLE ID="3">Senpai</STYLE>...!?"
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

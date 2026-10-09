@@ -1,0 +1,60 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=101, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=178, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=かめだ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=315, target=)
+; Links:
+;    0: TWdLink(count=281, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\mike_noise.ogg" "SE" "REPEAT" "0" "10"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\録音.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Yes... hello?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"This is the Hayabusa Delivery Service service center; my name is </STYLE><STYLE ID="2" RUBY="かめだ">Kameda</STYLE><STYLE ID="1">. </STYLE>
+{PAUSE ""}
+Haruka Niimura-sama<STYLE ID="1">, is this your cell phone?"</STYLE>
+{PAUSE ""}
+<BR>
+"Hayabusa...?
+{PAUSE ""}
+　Ah, yes, yes, that's right, this is Niimura. I asked for a delivery earlier―"<PG>
+<STYLE ID="1">"Yes, it's about that. There seems to be an error in the address you filled in. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">The room number is written as Revo Heights 603, but would the correct one be 306?"</STYLE>
+{PAUSE ""}
+<BR>
+"Oh! I must've carelessly written it backward... 
+{PAUSE ""}
+306 is correct."<PG>
+<STYLE ID="1">"Understood. Then we will come to deliver the package we're holding for you today at 18:30."</STYLE>
+{PAUSE ""}
+<BR>
+"Okay, thank you."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Well then, good day."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

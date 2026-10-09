@@ -1,0 +1,538 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=640, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=237, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=2541, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=4, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=うやうや, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=35, unk2=16777215, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=めい, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごれいめいさま, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひきょうもの, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=17, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=おえつ, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=10, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=45, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=つな, unk10=4294967295, unk11=4294967295)
+;   14: TDecorate(count=3, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=くぐつし, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=3928, target=)
+; Links:
+;    0: TWdLink(count=3546, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "SE\電話呼び出し.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{STOPSND "VOICE" "0" "PASS"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Hello? <STYLE ID="1">Chigaya-chan</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... </STYLE>Auntie<STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Mm..."</STYLE>
+{PAUSE ""}
+<BR>
+"What is it? Something you forgot to tell me?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... Sorry to bother you when you're busy. Could we meet and talk one more time...?"</STYLE>
+{PAUSE ""}
+<BR>
+"............
+{PAUSE ""}
+Hang on a second. I'll call you right back."<PG>
+{MESOFF "500"}
+{PLAYSND "SE\電話切れる.ogg" "VOICE" "NORMAL" "1000" "0"}
+{STOPSND "VOICE" "5000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\茅萱の部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">There was no turning back now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I decided to trust </STYLE>Auntie<STYLE ID="2">.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\夕焼け.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="3">Dad</STYLE><STYLE ID="2"> coming under suspicion was more than I could stand, so I killed Mrs. Shirozaki.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">From there it rolled further and further in a bad direction, and now it was dragging in people from outside the Arata settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">If I kept quiet any longer, there was no way things would get better.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\携帯バイブ.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "アイテム1" "グラフィック\立ち絵\アイテム\携帯茅萱入.gal" "NORMAL" "#1" "650" "C" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "SE\携帯押す.ogg" "VOICE" "NORMAL" "1000" "0"}
+{MESON "500"}
+<STYLE ID="1">"Mm... Hello!?"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Chigaya-chan</STYLE>, I've cleared my schedule. 
+{PAUSE ""}
+Where would be good to meet? Somewhere out of sight?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... No, it's not like we'll be talking loudly..."</STYLE>
+{PAUSE ""}
+<BR>
+"Then... I have to stop by just one more client. 
+{PAUSE ""}
+Can you come to Ginza at 6 p.m.?
+{PAUSE ""}
+　The place is―"<PG>
+{MESOFF "500"}
+{DELETECG "000,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Auntie<STYLE ID="2"> told me to come at 6 p.m. to a place with a name I'd never heard of.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I had a feeling Ginza was all expensive places, though...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I couldn't very well go without makeup.</STYLE><PG>
+<STYLE ID="2">This time I warmed myself up properly in the tub, and put on a little makeup too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My clothes, too, as crisp as I could manage.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I don't wear makeup for college, drinking parties, or my part-time job, so I wasn't quite used to it.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "環境音\東京.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\エデン\銀座駅.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">In the end, I left home at the same time I always do for drinking parties, and got on the train.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But today the nerves were a different kind from usual.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Not looking for a wonderful encounter, but looking to </STYLE>Auntie<STYLE ID="2"> for help.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I would confess to </STYLE>Auntie<STYLE ID="2"> what I'd seen and what I'd done... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">and stop the curse-killings that had taken on a life of their own.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "SE" "5000" "PASS"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Following the map on my phone, where I ended up was...</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\料亭外観.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Another fancy-looking ryotei.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Once again </STYLE>Auntie<STYLE ID="2"> would probably be treating me, but even lunch had been in the tens of thousands.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Once I was earning money, I'd have to pay her back properly...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Or so I thought, but that probably isn't an option.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I've killed five people. There's no way I can go back to my old life.</STYLE><PG>
+<STYLE ID="2">But even my decision to confess to </STYLE>Auntie<STYLE ID="2"> is because I think it's for the best.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">So I'm sure I won't regret it.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Leaving things as they are is what would lead to regret.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "2000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\エデン\料亭玄関.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">When I went inside, a sunken hearth, old but polished to a shine, was waiting for me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">On the shelves sat dishes and iron kettles with eye-popping price tags.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">They seemed to sell all sorts of things as souvenirs.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Clearly a different world, one that had nothing to do with me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I even forgot to close the door, and just stood there.</STYLE><PG>
+<STYLE ID="2">"Welcome. Thank you for coming."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A woman who seemed to be the attendant knelt </STYLE><STYLE ID="4" RUBY="うやうや">respectfully</STYLE><STYLE ID="2"> and bowed with her fingertips to the floor.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Caught up in it, I bowed too.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I didn't know what to say, and a moment of silence passed.</STYLE><PG>
+<STYLE ID="2">"Do you know the name on the reservation?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Maybe she'd picked up on how stiff I was, and on my expression, because she quickly offered a question that was easy to answer.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... It's Niimura. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I think the reservation was probably made at short notice..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Ah, Niimura-sama. We have been expecting you. Please, this way."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It seemed I'd somehow been permitted to take off my shoes and step inside.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\室内歩き.ogg" "VOICE" "NORMAL" "1000" "0"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "#1" "C" "B" "0" "4" "2000" "960" "1" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">The room I was shown to had two legless floor chairs and a fairly large table.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">There was an alcove, too, and the sliding doors between the room and the hallway were thick.</STYLE>
+{PAUSE ""}
+<BR>
+Auntie<STYLE ID="2"> must have arranged a place where our voices wouldn't carry.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Since she'd gone this far for me, I had to talk to her with all the sincerity I had.</STYLE><PG>
+<STYLE ID="2">"What would you like to order? Or would you prefer to wait until </STYLE>your companion<STYLE ID="2"> arrives?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... Yes, I'll wait."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Certainly. I'll bring you some tea."</STYLE><PG>
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="2">Once the attendant left, the room went almost completely silent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">There was the presence of people in the other rooms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But even when I strained my ears, I could hardly make out any voices.</STYLE><PG>
+<STYLE ID="1">"Phew..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I let out a big breath and steadied myself.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then these stiff clothes started to feel cramped.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The smell of the makeup I wasn't used to bothered my nose a little.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I wanted to scrub my face with the hand towel right then and there.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">Chigaya-chan</STYLE>, sorry to keep you waiting."
+{PAUSE ""}
+<BR>
+Auntie<STYLE ID="2"> came in with the attendant.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The attendant set the one tea she'd brought in front of me.</STYLE><PG>
+"Thanks for showing me in! 
+{PAUSE ""}
+Oh, <STYLE ID="1">this girl</STYLE> here is my <STYLE ID="6" RUBY="めい">niece</STYLE>!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"My, </STYLE>Niimura-sama<STYLE ID="2">'s </STYLE><STYLE ID="7" RUBY="ごれいめいさま">niece</STYLE><STYLE ID="2">. </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Thank you for coming today. Please, take your time."</STYLE>
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+<STYLE ID="2">The attendant left without even taking our order.</STYLE><PG>
+"<STYLE ID="1">Chigaya-chan</STYLE>, I've asked them to hold the food. Let's get the talking done first."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+Auntie<STYLE ID="2"> seemed to have already guessed what kind of talk I meant to have.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">She must have thought it better for me to get everything out before we ate.</STYLE><PG>
+<STYLE ID="1">"Mm..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But how should I bring it up?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I'd been ready for this, and yet I kept thinking up ways to put it that would defend myself, even a little.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I really am a </STYLE><STYLE ID="8" RUBY="ひきょうもの">coward</STYLE><STYLE ID="2">.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\ノック.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{WAIT "500" "CLICK" "SKIP"}
+{PLAYSND "SE\詫言編　夢から\ふすま.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="2">"Excuse me."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The attendant brought one tea and two glasses of ice water.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And extra hand towels, and tissues.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It had turned into something like a counseling room.</STYLE><PG>
+"<STYLE ID="1">Chigaya-chan</STYLE>, if it's hard to talk about, shall I ask the questions?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">After the attendant left, to pry my closed mouth open, </STYLE>Auntie<STYLE ID="2"> made a move as well.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... It's okay, I'll tell it myself."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even so, I'd been like this for five whole minutes.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Still, </STYLE>Auntie<STYLE ID="2"> showed no sign of irritation, and kept trying to make it even a little easier for me to talk.</STYLE><PG>
+<STYLE ID="1">"Mm... </STYLE>Auntie<STYLE ID="1">... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Unable to look into the eyes of </STYLE>Auntie<STYLE ID="2">, whose smile never wavered, I dropped my gaze.</STYLE><PG>
+<STYLE ID="1">"Mm... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I did it. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">I..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I meant to accept whatever she said, without complaint.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Or would she just leave without saying anything?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">With my head down, I waited for </STYLE>Auntie<STYLE ID="2">'s reaction.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But sooner than I'd expected, </STYLE>Auntie<STYLE ID="2"> spoke.</STYLE><PG>
+"I see... 
+{PAUSE ""}
+It's been hard... all this time..."
+{PAUSE ""}
+<BR>
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+<STYLE ID="2">From across the table, </STYLE>Auntie<STYLE ID="2"> came and sat beside me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then, on my hand where it rested on the tatami, </STYLE>Auntie<STYLE ID="2"> laid her own.</STYLE><PG>
+"I'm glad you told me. 
+{PAUSE ""}
+What you just said took a lot of courage, I think. 
+{PAUSE ""}
+Thank you for telling me."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I hadn't said anything that deserved thanks or praise.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I'd only said something to be cursed and blamed for.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even so, </STYLE>Auntie<STYLE ID="2"> spared no words in caring for me.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "$2D2D2D" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\美冬茅萱.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">I threw myself against </STYLE>Auntie<STYLE ID="2">'s chest and held on.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I'd reached my limit.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Ever since I was 10, I'd carried it all by myself.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="9">Mom's</STYLE><STYLE ID="2"> death and beheading, the fear of losing my family, and murder.</STYLE><PG>
+<STYLE ID="2">Everything I'd hidden until now came gushing out of my whole body like a burst dam.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">What it really was, gushing out of me, was―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">nothing but emptiness, sadness, and guilt.</STYLE><PG>
+<STYLE ID="2">Could my </STYLE><STYLE ID="10" RUBY="おえつ">sobs</STYLE><STYLE ID="2"> be heard in the other rooms?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Sobs that even thick walls and sliding doors couldn't fully hold back.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even so, I couldn't stop.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Dark feelings sealed away for 10 years, once they burst out, don't stop until every last bit has come out.</STYLE><PG>
+<STYLE ID="2">All of it, </STYLE>Auntie<STYLE ID="2"> was taking head-on.</STYLE>
+{PAUSE ""}
+<BR>
+Auntie<STYLE ID="2"> stroked my head.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Just like </STYLE><STYLE ID="9">Mom</STYLE><STYLE ID="2">.</STYLE><PG>
+Auntie<STYLE ID="2"> and </STYLE><STYLE ID="11">Haruka</STYLE><STYLE ID="2"> aren't related by blood. I know that.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even so, </STYLE>Auntie<STYLE ID="2"> has doted on </STYLE><STYLE ID="11">Haruka</STYLE><STYLE ID="2"> and raised her with love.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Now I was being given a small share of that love too.</STYLE><PG>
+<STYLE ID="2">Gradually </STYLE>Auntie<STYLE ID="2">'s love began to mend the burst dam, the muddy torrent was held back, and my sobbing died down.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">How long had I cried?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Maybe only a minute. Maybe an hour.</STYLE>
+{PAUSE ""}
+<BR>
+Auntie<STYLE ID="2"> never once shifted her position, and took it all head-on.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\美冬バストアップ.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Feeling better?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Mm... Sorry, </STYLE>Auntie<STYLE ID="1">... Thank you."</STYLE><PG>
+"<STYLE ID="1">Chigaya-chan</STYLE>, I'll be honest with you too. 
+{PAUSE ""}
+10 years ago, I once seriously tried to kill some classmates who were bullying <STYLE ID="11">Haruka</STYLE>. 
+{PAUSE ""}
+So I understand very well how you feel, <STYLE ID="1">Chigaya-chan</STYLE>. 
+{PAUSE ""}
+Of course murder is wrong, but I could never blame you without hearing the circumstances."
+{PAUSE ""}
+<BR>
+Auntie<STYLE ID="2"> had a past like that too, then.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But why did </STYLE>Auntie<STYLE ID="2"> hold back?</STYLE><PG>
+"<STYLE ID="11">Haruka's</STYLE> real little sister, <STYLE ID="12">Natsumi-chan</STYLE>. <STYLE ID="12">That girl</STYLE> stopped me. 
+{PAUSE ""}
+<STYLE ID="12">Natsumi-chan</STYLE> is usually just an ordinary, slightly timid girl, but the tighter the spot, the stronger she gets. 
+{PAUSE ""}
+She never loses sight of herself, and she can choose, without hesitating, the future where everyone ends up happiest. 
+{PAUSE ""}
+<STYLE ID="11">Haruka</STYLE> and I were saved by <STYLE ID="12">Natsumi-chan</STYLE>."<PG>
+<STYLE ID="2">I see... so that's why she's bringing </STYLE><STYLE ID="12">Natsumi-chan</STYLE><STYLE ID="2"> to Arata...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">Natsumi-chan</STYLE><STYLE ID="2"> is what keeps everyone going.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">That's why she's needed...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">That's why she felt like </STYLE><STYLE ID="9">Mom</STYLE><STYLE ID="2">.</STYLE><PG>
+"And, you see, <STYLE ID="12">Natsumi-chan</STYLE>... 
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+has the same power <STYLE ID="9">Sakura-san</STYLE> had."
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{DELETECG "人物1,000" "33" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "忍び寄る影.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+<STYLE ID="2">In that instant, my heart whirled violently, and a feeling completely different from the one a second before raged through me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="12">Natsumi-chan</STYLE><STYLE ID="2"> had precognition. The moment I was sure of it, that feeling raged through me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It wasn't sadness, and it wasn't emptiness.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A strong sense that something was off, and doubt, raged in me, and something clicked into place.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\エデン\料亭部屋.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+Auntie<STYLE ID="2">'s chest―I lifted my face from it and downed a glass of water in one gulp.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">This was it. From here, my real talk with </STYLE>Auntie<STYLE ID="2"> would begin.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And I'd have to tell her about this strange constitution of mine, too.</STYLE>
+{PAUSE ""}
+<BR>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="2">All the scattered pieces were about to </STYLE><STYLE ID="13" RUBY="つな">connect</STYLE><STYLE ID="2"> into one.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "明かされた真実.ogg" "BGM" "REPEAT" "1000" "0"}
+{PLAYMOVIE "111.wmv" "256" "C" "C" "REPEAT" "FALSE" "100" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "$000080" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n100\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">That's right. I sensed a strange presence.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The presence of someone who isn't here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Some great will at work.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Someone is pulling the strings, and we are nothing but their puppets.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">For the first time, I sensed the presence of that </STYLE><STYLE ID="14" RUBY="くぐつし">puppeteer</STYLE><STYLE ID="2">.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------
