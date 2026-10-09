@@ -60,11 +60,19 @@ You need your own copy of the game and `uv` (pylivemaker runs through it). Extra
 
 ## License
 
-The author (New++) wrote on ci-en (2026-07-29) that fan translations may be published freely as long as they are clearly marked unofficial (非公式・二次創作). The same post forbids publishing program, image, audio or text data extracted from the game itself. So:
+The author (New++) wrote on ci-en (2026-07-29) two rules for fan work on this game:
 
-- Every file we ship says "Unofficial fan translation (非公式・二次創作). Not affiliated with New++."
-- This repo contains only our English text, our English pictures and our notes. The game's own files are never uploaded here; the patch adds loose files next to the player's own copy of the exe.
-- Please do not contact the author about this translation. Details: `research/_author-satsuki.md`.
+1. **Fan translations may be published freely**, as long as they are clearly marked unofficial (非公式・二次創作). Every file we ship says "Unofficial fan translation (非公式・二次創作). Not affiliated with New++."
+2. **Publishing data extracted directly from the game is forbidden**: program, images, audio, BGM, text data. Original wording: 「ゲーム本編のプログラム、画像、音声、BGM、テキストデータ等を直接抽出・複製して公開する行為」.
+
+Where this repo stands on rule 2, honestly:
+
+- **Kept:** the exe, the untouched scripts (`orig/`, `lns/`), the audio and the untouched pictures are not here and never will be. The patch adds loose files next to the player's own copy of the game.
+- **Bent:** the English pictures in `work/グラフィック/` and `work/images/out/` are the game's own pictures with the Japanese text painted out and English set in its place. That is derived from extracted image data. We publish them anyway, because a translation that leaves the menus, tutorial and in-game documents in Japanese is not a translation, and there is no other way to translate text baked into a picture.
+- **Bent:** the proofreading pages in `review/` show each Japanese line next to its English. Translators need the source to check a line. That is extracted text data, shown line by line, not the game as a whole.
+- The compiled English scripts (`.lsb`) are only in the patch zip on the Releases page, not in git.
+
+The rules cover the free version only. The author gives no help to translators; please do not contact them about this translation. Research and sources: `research/_author-satsuki.md`.
 
 ## Text format inside `.lns`
 
