@@ -15,9 +15,18 @@ Good to know:
 - **Japanese text left somewhere?** Screenshot it (Win+Shift+S) and open an issue here.
 
 
-Free LiveMaker 3 visual novel by New++ (freem game 19917, v2.0.0.4). Game lives at
-`F:\4gatsu_8ka_Ver2.0.0.4\死月妖花～四月八日～.exe` (1 GB, the whole game is packed inside the exe).
-This folder holds only the SCRIPTS (48 MB). Never copy the game here.
+Free LiveMaker 3 visual novel by New++ (freem game 19917, v2.0.0.4). The whole game is packed inside its 1 GB exe.
+This repo holds only the translation (scripts, tables, pictures, notes), never the game.
+
+
+## How this translation was made
+
+Short version: an AI translated it, one human set the rules, answered its questions and spot-checked the result.
+
+- **Who did what.** Claude (Anthropic). Opus 5.5 agents drafted and reviewed every line. A Fable 5.1 session orchestrated them, wrote the rule books from the owner's decisions, and reviewed the agents' output. The repo owner, one person, set the translation doctrine, answered the questions the AI raised, and proofread a sample by hand.
+- **The human share, in numbers.** Read roughly a fifth of the game in Japanese. Set the doctrine and the rules (ledger: `notes/v2/OWNER-RULINGS.md`). Answered about 40 translation questions. Proofread about 200 lines.
+- **Pipeline, per part of the game.** Several translator agents draft from the rule books and glossary. Separate reviewer agents then check every line against the Japanese. Compile, run a QA pass for leftover Japanese and broken tags, ship. A question the agents could not settle got a provisional answer, was shipped, and was logged for the owner; the owner's answer became a rule for the next part.
+- **What this means for you.** The text follows one set of rules from start to end, but past the opening it has had little human proofreading. Stiff, literal lines are intended (see the doctrine below). Mistranslations can be anywhere. The pages in `review/` show the Japanese next to each English line, so you can check a line and fix it.
 
 
 ## How to contribute
