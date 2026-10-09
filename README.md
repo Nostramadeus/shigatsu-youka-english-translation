@@ -1,5 +1,7 @@
 # Shigatsu Youka (死月妖花～四月八日～) English translation
 
+![Translation status](status.svg)
+
 ## Play it in English: 3 steps
 
 1. **Get the free Japanese game** (v2.0.0.4) from the author: https://www.freem.ne.jp/win/game/19917 . Unzip it anywhere.
@@ -24,7 +26,7 @@ This repo holds only the translation (scripts, tables, pictures, notes), never t
 Short version: an AI translated it, one human set the rules, answered its questions and spot-checked the result.
 
 - **Who did what.** Claude (Anthropic). Opus 5.5 agents drafted and reviewed every line. A Fable 5.1 session orchestrated them, wrote the rule books from the owner's decisions, and reviewed the agents' output. The repo owner, one person, set the translation doctrine, answered the questions the AI raised, and proofread a sample by hand.
-- **The human share, in numbers.** Read roughly a fifth of the game in Japanese. Set the doctrine and the rules (ledger: `notes/v2/OWNER-RULINGS.md`). Answered about 40 translation questions. Proofread about 200 lines.
+- **The human share, in numbers.** Read about 10 to 20 percent of the game in Japanese. Set the doctrine and the rules (ledger: `notes/v2/OWNER-RULINGS.md`). Answered about 40 translation questions. Proofread about 200 lines.
 - **Pipeline, per part of the game.** Several translator agents draft from the rule books and glossary. Separate reviewer agents then check every line against the Japanese. Compile, run a QA pass for leftover Japanese and broken tags, ship. A question the agents could not settle got a provisional answer, was shipped, and was logged for the owner; the owner's answer became a rule for the next part.
 - **What this means for you.** The text follows one set of rules from start to end, but past the opening it has had little human proofreading. Stiff, literal lines are intended (see the doctrine below). Mistranslations can be anywhere. The pages in `review/` show the Japanese next to each English line, so you can check a line and fix it.
 
@@ -44,7 +46,7 @@ Fix a line, add a glossary term, extend the translation. Pull requests and issue
 | `work/グラフィック/`, `work/images/out/` | the English pictures: shipped `.gal` files and the English PNGs they were built from | through `tools/images/` |
 | `notes/` | the translation rules (`v2/METHOD.md`, `v2/STYLE.md`, `v2/CORE-RULES.md`, `v2/OWNER-RULINGS.md`), glossary (`v2/GLOSSARY.tsv`), character voice sheets (`v2/CAST.md`), read-through summary (`v2/SUMMARY.md`), decisions log, open questions | read first; add a glossary row when you coin a term |
 | `review/` | proofreading pages, Japanese left, English right, one per script | regenerate with `tools/render_review.py` |
-| `tools/` | build scripts (pylivemaker): compile scripts, build tables, typeset pictures, assemble the patch | if you build |
+| `tools/` | build scripts (pylivemaker): compile scripts, build tables, typeset pictures, assemble the patch; `render_status.py` redraws `status.svg` above | if you build |
 | `research/` | what the author said about fan translations (the license) | no |
 
 **Rules in four lines**
