@@ -1,6 +1,6 @@
 """Assemble the playable English game folder and (optionally) the patch zip for friends.
 
-    uv run tools/build_en_folder.py            # sync F:/4gatsu_8ka_EN from work/ per tools/ship-list.txt
+    uv run tools/build_en_folder.py            # sync game/en (the English play folder) from work/ per tools/ship-list.txt
     uv run tools/build_en_folder.py --zip      # also write patch/shigatsu-youka-en-patch-YYYY-MM-DD.zip
 
 The EN folder holds a HARD LINK of the 1 GB exe (same bytes as the original folder, zero extra disk),
@@ -22,8 +22,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / 'work'
-EN_DIR = Path(os.environ.get('SY_EN_DIR', 'F:/4gatsu_8ka_EN'))
-JP_DIR = Path('F:/4gatsu_8ka_Ver2.0.0.4')
+EN_DIR = Path(os.environ.get('SY_EN_DIR', str(Path(__file__).resolve().parent.parent / 'game' / 'en')))  # the English play folder (exe hard-linked from game/jp)
+JP_DIR = Path(__file__).resolve().parent.parent / 'game' / 'jp'   # the untouched Japanese install (v2.0.0.4)
 SHIP_LIST = ROOT / 'tools' / 'ship-list.txt'
 SKIP_F2 = ROOT / 'tools' / 'harness' / 'work' / 'loose' / '000000F2.lsb'
 SKIP_1C = ROOT / 'tools' / 'harness' / 'work' / 'loose' / '0000001C.lsb'

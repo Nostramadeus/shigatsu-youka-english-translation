@@ -32,7 +32,7 @@ import win32process
 import win32ui
 from PIL import Image
 
-GAME_DIR = Path(os.environ.get("SY_GAME_DIR", "F:/4gatsu_8ka_Ver2.0.0.4"))  # SY_GAME_DIR overrides (EN play folder)
+GAME_DIR = Path(os.environ.get("SY_GAME_DIR", str(Path(__file__).resolve().parents[2] / "game" / "jp")))  # SY_GAME_DIR overrides (EN play folder)
 # Glob rather than hardcode: the title contains a wide tilde that is easy to get wrong
 # (U+FF5E vs U+301C) and the wrong codepoint gives a silent "file not found".
 _EXES = sorted(GAME_DIR.glob("*.exe"))
