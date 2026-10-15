@@ -2,9 +2,9 @@
 
 ![Translation status](status.svg)
 
-**Complete as of 2026-10-16.** Every story script, every data table (menus, titles, synopses, encyclopedia, credits) and every listed in-game picture is in English. Two things stay Japanese on purpose: the 43-second trailer video that plays after the author's afterword, and a handful of cells whose source text is already garbled in the original game.
+**Complete as of 2026-10-16.** Every story script, every data table (menus, titles, synopses, encyclopedia, credits) and every in-game picture is in English.
 
-**One honest gap.** Every line was checked against the Japanese by a second AI pass, but no human has yet played the final stretch of the game (the last scenes and the hidden routes) in English. The earlier parts were spot-played during translation. If you get there, you are the first: anything that reads oddly, open an issue with a screenshot.
+**One honest gap.** Every line was checked against the Japanese by a second AI pass, but no human has yet played the final stretch of the game in English. The earlier parts were spot-played during translation. Anything that reads oddly, open an issue with a screenshot.
 
 ## Play it in English: 3 steps
 
