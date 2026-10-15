@@ -1,0 +1,412 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=393, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=526, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1496, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=48, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=2, unk2=16757864, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=にら, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=4, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=3, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ひ, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2770, target=)
+; Links:
+;    0: TWdLink(count=2476, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥1.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<TXSPN>"<STYLE ID="1">Sakura</STYLE>, are you there?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束.gal" "NORMAL" "#1" "R" "B" "0" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Kotaro<STYLE ID="1">, you're early today."</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, I thought I'd better tell you about today as soon as I could."<PG>
+<STYLE ID="2">When I call out like this, </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> appears from out of nowhere.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">However, the lights in the cave have to be out, as they are now.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">So where </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> comes from and where she vanishes to, I still do not know.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">How many hundred times have I met </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> here by now?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> who appears before me, as beautiful as she was in life, clothed in white.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even so, </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> says she is dead.</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\和ぴあの２.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHGVOL "SE" "700" "3000" "PASS"}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ.lcm" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "サクラ明かり" "グラフィック\イラスト\死月編\裏\サクラ明かり.gal" "NORMAL" "#1" "R" "B" "100" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nサクラ明かり\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{CREATECG "111" "グラフィック\イラスト\死月編\裏\暗い小.gal" "NORMAL" "#1" "R" "B" "200" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1" "CLICK" "SKIP"}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">It makes me want to doubt that she really died.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Not only when we had to get our stories straight about the curse-killings, but even when I had no business at all, I came here and talked with </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2">.</STYLE><PG>
+<STYLE ID="2">The residents all used to say </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> was like a goddess.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I am no different. Alive or dead, </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> is like a goddess to me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And at the same time, my one and only wife.</STYLE><PG>
+<STYLE ID="2">Just that someone like me got to be with </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> is a miracle, I believe.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">On top of that, even after </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> died, I can meet her like this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Where could there be a man more blessed than this?</STYLE><PG>
+<STYLE ID="2">Still, lately I had begun thinking about a great many things.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">With </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="2"> coming here like this, the divine messengers needed will be assembled.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">At the same time, that means I will no longer be able to see </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> as I have until now.</STYLE><PG>
+<STYLE ID="2">If </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> were taken from me...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then what have I been doing all this for...</STYLE><PG>
+<STYLE ID="1">"Is something wrong?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, no, it's nothing."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ閉じ.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"I see... </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ.lcm" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">And what was it you needed to tell me so soon?"</STYLE>
+{PAUSE ""}
+<BR>
+"Today, after the thirteenth-year memorial service is over, I'll bring <STYLE ID="3">Natsumi-chan</STYLE> here."<PG>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ笑顔.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"I see... So it's finally time."</STYLE>
+{PAUSE ""}
+<BR>
+"But to do it, I'll be using the residents as a feint."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ.lcm" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"A feint?"</STYLE>
+{PAUSE ""}
+<BR>
+"I'll have the residents attack and take <STYLE ID="3">Natsumi-chan</STYLE> alive. By putting it about that <STYLE ID="3">Natsumi-chan</STYLE> is the culprit behind the curse-killings."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ閉じ.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"............"</STYLE><PG>
+"<STYLE ID="4">Chigaya</STYLE> and <STYLE ID="5">Kana</STYLE> will surely both take <STYLE ID="3">Natsumi-chan's</STYLE> side. 
+{PAUSE ""}
+If that happens, it'll be hard to kidnap her. So if everyone uses Droga, surely―"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............ </STYLE>
+{PAUSE ""}
+{CHGVOL "SE" "1000" "0" "PASS"}
+{STOPSND "BGM" "0" "PASS"}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ半閉じ暗い.gal" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "111" "グラフィック\イラスト\死月編\裏\暗い大.gal" "NORMAL" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+Kotaro<STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"............!"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I saw it for the first time.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sakura's</STYLE><STYLE ID="2"> expression, this one―</STYLE>
+{PAUSE ""}
+<STYLE ID="6" RUBY="にら">a glare</STYLE><STYLE ID="2">, that kind of expression.</STYLE><PG>
+{PLAYSND "最後の声・真呪殺\Ghost長い.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="1">"</STYLE>Kotaro<STYLE ID="1">, were you always this dim?"</STYLE>
+{PAUSE ""}
+<BR>
+"Huh...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">This too was a first.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sakura</STYLE><STYLE ID="2"> making a scornful remark about someone is beyond what I can imagine, even after hearing what she just said.</STYLE><PG>
+<STYLE ID="1">"Won't </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="1"> get killed, that way?"</STYLE>
+{PAUSE ""}
+<BR>
+"N-no, but the circular notice clearly says they're to take her alive."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ閉じ暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Is there any guarantee everyone will listen to that?</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ半閉じ暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">　They believe </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="1"> has been threatening this settlement, don't they?"</STYLE>
+{PAUSE ""}
+<BR>
+"That's...!"<PG>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ閉じ暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Haah... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Ten years spent on this, and if you failed over something like that, I'd be so disappointed."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Sakura</STYLE>...!"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ暗い.lcm" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Of course, if we moved directly, capturing her would be easy, you know?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　But if even once someone saw us, it would be a disaster. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">That's why we've relied on you, </STYLE>Kotaro<STYLE ID="1">, a living human, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Because I'm... a living human...?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ笑顔暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"That's right?"</STYLE><PG>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ閉じ暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Well, there's no stopping everyone now. </STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ半閉じ暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+Kotaro<STYLE ID="1">, you'll bring </STYLE><STYLE ID="3">Natsumi-chan</STYLE><STYLE ID="1"> here without fail, won't you?"</STYLE>
+{PAUSE ""}
+<BR>
+"............"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ見開き暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"All right?"</STYLE>
+{PAUSE ""}
+<BR>
+"Y-yeah... 
+{PAUSE ""}
+Without fail..."
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ笑顔暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Now, </STYLE>you<STYLE ID="1"> had better head back too."</STYLE><PG>
+"............"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ半閉じ暗い.gal" "REPEAT" "1" "200" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Go on. I can't let you see me vanish."</STYLE>
+{PAUSE ""}
+<BR>
+"Th-then... I'll come again after the thirteenth-year memorial service."<PG>
+{MESOFF "500"}
+{DELETECG "人物1,サクラ明かり,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下扉あく.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "SE\詫言編　夢から\鉄格子開閉.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下3.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{MESON "500"}
+<STYLE ID="2">It was probably the shortest conversation with </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> I had ever had.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Was that really </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> just now?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Alive or dead, she had been like a goddess to me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But the </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> of today...</STYLE><PG>
+<STYLE ID="1">"That's why we've relied on you, </STYLE>Kotaro<STYLE ID="1">, a living human, isn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sakura</STYLE><STYLE ID="2"> had been meeting me because I was a living human.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Not because I was her husband. Not because I was someone she loved.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Because a living human makes a handier pawn for advancing the plan.</STYLE><PG>
+<STYLE ID="2">Yes, </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> is dead, a divine messenger who obeys the will of </STYLE><STYLE ID="7">Shigatsu Youka</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I had known that from the start.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But meeting the dead </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> again and again...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even that had grown hazy in my mind, and I had come to feel that simply being able to meet her like this was happiness.</STYLE><PG>
+{MESOFF "0"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{STOPSND "SE" "0" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">That time 7 years ago...</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "bittersweet.ogg" "BGM" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\裏\秘密基地奥2グレー.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Kotaro<STYLE ID="1">..."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Sakura</STYLE>, I did it just as planned... 
+{PAUSE ""}
+I was being watched. 
+{PAUSE ""}
+But... this year, too, one person was killed."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It was hard for you, wasn't it..."</STYLE>
+{PAUSE ""}
+<BR>
+"It's what I chose. I don't regret it."
+{PAUSE ""}
+<BR>
+{PLAYSND "SE\down1.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<STYLE ID="2">But my legs were shaking so badly I could no longer stand.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="1">"</STYLE>Kotaro<STYLE ID="1">!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sakura</STYLE><STYLE ID="2"> rushed straight to me where I had sunk down,</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>Kotaro<STYLE ID="1">, it's okay."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">And </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> held me gently in her arms.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's okay. I'll always, always be on your side, </STYLE>Kotaro<STYLE ID="1">."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Held to a cold chest with no heartbeat, I shed tears without making a sound.</STYLE><PG>
+<STYLE ID="2">Of my own accord, I had helped with murder.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A settlement, small as it was, where everyone had lived by helping one another.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Leaving fellows like that to die...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">As that guilt threatened to crush me, this cold skin warmed me.</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\イラスト\死月編\裏\サクラ通常グレー.gal" "REPEAT" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Yes, </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> is dead, but she exists here like this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Even now, </STYLE><STYLE ID="1">Sakura's</STYLE><STYLE ID="2"> kindness soothes me.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sakura</STYLE><STYLE ID="2"> gone, and me living on in a world like that...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I need </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> after all...</STYLE><PG>
+<STYLE ID="2">Once a year, if someone in the settlement dies, another year of time with </STYLE><STYLE ID="1">Sakura</STYLE><STYLE ID="2"> is promised.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Who does the killing, I do not know.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Sakura</STYLE><STYLE ID="2"> herself, or </STYLE><STYLE ID="8">Eiichiro</STYLE><STYLE ID="2">, or some other corpse.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">All I have to do is stay silent.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Or misdirect everyone as needed.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Until this settlement is gone, I need only go on like this.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Walking along, going back over all that, I found I was already outside.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Before I knew it I had climbed the ladder and closed the entrance―</STYLE><PG>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地昼.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">I drew in a deep breath of the outside air.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Now, should I stop here?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Or should I keep going as I am?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">There cannot be any choice.</STYLE><PG>
+<STYLE ID="2">What happens if I stop here?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">To begin with, what would I have to do to 'stop'?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">That is simple: I only have to tell everyone to get away from here at once.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then how do I explain why they have to run?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">How could I explain away why I know any of this?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A choice... there cannot be one.</STYLE><PG>
+<STYLE ID="2">My life and my daughters' lives are already in the palm of the devil that nests here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Too late, I am made to realize how foolish I have been.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But now... there is no </STYLE><STYLE ID="9" RUBY="ひ">turning back</STYLE><STYLE ID="2">.</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

@@ -1,0 +1,31 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=250, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=267, target=)
+; Links:
+;    0: TWdLink(count=250, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "システム音\The_Lampe.ogg" "BGM" "REPEAT" "1000" "0"}
+{MESON "500"}
+<TXSPN>"<VAR NAME="プレイヤー名" unk3="50">-sama, thank you for visiting again today."<PG>
+"This time, there is one announcement for <VAR NAME="プレイヤー名" unk3="50">-sama."<PG>
+"This is a somewhat internal, or rather, a meta sort of talk..."<PG>
+"The truth is, this world holds a scrapped scenario."<PG>
+"That scenario was built all the way to the end, but was judged unsuitable to the world and the flow of the story..."<PG>
+"Still, since the route was made, I thought I would show it to <VAR NAME="プレイヤー名" unk3="50">-sama, who has visited us so many times."<PG>
+"However, as it is a route made early on, some of its settings differ slightly from the main story. Please bear with that."<PG>
+{MESOFF "500"}
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\立木三日お辞儀.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{DELETECG "立木三日,立木ボード,プレート" "1" "500" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

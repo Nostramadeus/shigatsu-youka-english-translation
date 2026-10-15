@@ -1,0 +1,95 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=328, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=338, unk2=16755370, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=3, unk2=16755455, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=2, unk2=65535, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=734, target=)
+; Links:
+;    0: TWdLink(count=671, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\キーン.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "000" "$FFFFFF" "NORMAL" "#1" "C" "B" "600" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{STOPSND "BGM" "3000" "PASS"}
+{MESON "500"}
+<TXSPN>"............!"<PG>
+"A presence..."<PG>
+"It seems someone is in this world."<PG>
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\春花通常.lcm" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+"No, the only ones who can exist in this world are I, the guide, and my guest, <VAR NAME="プレイヤー名" unk3="50">-sama."<PG>
+"Or else only someone I, the guide, have invited."<PG>
+"So no one but you and I should be able to exist here, and yet―"<PG>
+"............!
+{PAUSE ""}
+　Here it comes...!"<PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\n立木三日\r\n3\r\n500\r\n1000\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n立木三日\r\n3\r\n500\r\n0\r\nDEC\r\nPASS">
+{CREATECG "111" "$000000" "NORMAL" "#1" "C" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\イラスト\春花\合体前春花通常.lcm" "REPEAT" "#1" "100" "B" "600" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Hm? What's this place?"</STYLE><PG>
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\春花驚き.lcm" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+"............!?
+{PAUSE ""}
+　<STYLE ID="1">You</STYLE> are...!"<PG>
+{CHANGECG "人物2" "グラフィック\イラスト\春花\合体前春花驚き.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Huh!? You're...!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　There's two of me...!?"</STYLE><PG>
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\春花通常.lcm" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+"............ 
+{PAUSE ""}
+I see. So that is how it is. 
+{PAUSE ""}
+In this world, only I and <VAR NAME="プレイヤー名" unk3="50">-sama can exist."<PG>
+{PLAYSND "リファレンス専用\いにしえの伝説.ogg" "BGM" "REPEAT" "1000" "0"}
+"Put the other way around, my own self, strayed in from another dimension, can exist. 
+{PAUSE ""}
+Which dimension's me are <STYLE ID="1">you</STYLE>, I wonder?"<PG>
+{CHANGECG "人物2" "グラフィック\イラスト\春花\合体前春花.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Huh? I don't really get what you're saying..."</STYLE><PG>
+{CHANGECG "人物2" "グラフィック\イラスト\春花\合体前春花笑顔.lcm" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Ah, well, I get it, this is a dream. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haha, weird dream."</STYLE><PG>
+<STYLE ID="1">"I've gotta get up early today, you know. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Today </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1"> and </STYLE><STYLE ID="3">Goto</STYLE><STYLE ID="1"> and I are going to bury the hairpin. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Spare me the tiring dreams..."</STYLE><PG>
+"I see... <STYLE ID="1">the me of the last dimension I saw</STYLE>... 
+{PAUSE ""}
+The dimension that reached the truth and destroyed Shigatsu Youka..."<PG>
+"But why would <STYLE ID="1">the me of that dimension</STYLE> be here..."<PG>
+<STYLE ID="1">"I heard a voice calling for help, see. That's why I came here."</STYLE><PG>
+<STYLE ID="1">"Sounds like I'm supposed to get you out of this world and take you to the world I live in..."</STYLE><PG>
+<STYLE ID="1">"Though, well, two of me would cause a riot, hahaha!"</STYLE><PG>
+<STYLE ID="1">"Then let's do this. You and I are the same person. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">So we just have to become one, right?"</STYLE><PG>
+"Become one... with <STYLE ID="1">you</STYLE>...?"<PG>
+<STYLE ID="1">"Yeah. Then I can get you out of this world. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Come on, hurry up, I'm gonna wake up."</STYLE><PG>
+{CHANGECG "立木三日" "グラフィック\イラスト\立木\春花用立ち絵\春花悲しい.lcm" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+"............ 
+{PAUSE ""}
+<VAR NAME="プレイヤー名" unk3="50">-sama... 
+{PAUSE ""}
+What should I do..."
+{PAUSE ""}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

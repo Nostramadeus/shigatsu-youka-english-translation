@@ -1,0 +1,175 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=322, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=444, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=231, unk2=16755455, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=3, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=ごちそう, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=1118, target=)
+; Links:
+;    0: TWdLink(count=1000, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\店出入り.ogg" "SE" "NORMAL" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "BGM死月編\春の兆し.ogg" "BGM" "REPEAT" "1000" "0"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "500" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"Oh! Morning Zahha! My first-ever morning Zahha!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Well, it's a bit far from </STYLE>your<STYLE ID="1"> place."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"............"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's up, </STYLE><STYLE ID="2">Natsumi</STYLE><STYLE ID="1">?"</STYLE><PG>
+<STYLE ID="2">"After all, Russian-roulette―"</STYLE><BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島怒りバストアップ.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腕組み.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"Denied!"<BR>
+<STYLE ID="1">"Denied!</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　You just promised, like a minute ago!"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Boo! So cold..."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島挨拶バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"Anyway, <STYLE ID="1">Niimura-senpai</STYLE>, you're <STYLE ID="3" RUBY="ごちそう">treating</STYLE> us to ice cream, right!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"You sly little... One. Just one."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">The boss</STYLE> sure is generous again today!"<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"Oh, that reminds me, I had a weird dream last night."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\ザッハ中.gal" "NORMAL" "#1" "C" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\春花バストアップ.gal" "NORMAL" "#1" "L" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="2">"A weird dream?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yeah, like, there was another me, dressed in this insane getup. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">And then we fused together and I woke up."</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島考えるバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"Fusing with yourself in an insane getup...?
+{PAUSE ""}
+　Dirty jokes first thing in the morning?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"It's not!"</STYLE><PG>
+<STYLE ID="2">"Huh? Now that you mention it..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"What's up?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"No, </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> showed up in my dream too."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh? </STYLE><STYLE ID="2">You</STYLE><STYLE ID="1"> too?"</STYLE>
+{PAUSE ""}
+<BR>
+"Ah, come to think of it, in my dream too..."<PG>
+<STYLE ID="1">"</STYLE>Goto<STYLE ID="1">, you don't have to force yourself to play along."</STYLE>
+{PAUSE ""}
+<BR>
+"No, that's not it, really..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Whoa! So I showed up in both your dreams!?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　How much do you two love me, seriously! Hahaha!"</STYLE>
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\五島バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+"But how do I put it, it was kind of a strange dream. 
+{PAUSE ""}
+<STYLE ID="1">Niimura-senpai</STYLE> was talking with someone, and I said hello to that someone too..."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE>Goto<STYLE ID="2">, yours too!? Mine was like that too!"</STYLE><PG>
+{STOPSND "BGM" "3000" "PASS"}
+<STYLE ID="1">"............?</STYLE>
+{PAUSE ""}
+<STYLE ID="1">　So the two of you had the same dream?"</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Could that be it?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Oh, it's coming back to me!</STYLE>
+{PAUSE ""}
+{PLAYSND "in_dream.ogg" "BGM" "REPEAT" "1000" "0"}
+<STYLE ID="2">　</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2"> showed up in the dream and said there was someone she wanted to help, so come with her..."</STYLE><PG>
+"Right, right, mine was like that too. 
+{PAUSE ""}
+Come to think of it, <STYLE ID="2">Kogori-senpai</STYLE> was in my dream as well. 
+{PAUSE ""}
+And when I followed <STYLE ID="1">Niimura-senpai</STYLE>, there was a different <STYLE ID="1">Niimura-senpai</STYLE>..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Huh!? So there were two of me!?"</STYLE>
+{PAUSE ""}
+<BR>
+"It would seem so... 
+{PAUSE ""}
+Which means it overlaps with <STYLE ID="1">Niimura-senpai's</STYLE> dream too."<PG>
+<STYLE ID="1">"Strange things happen, huh. Why'd we dream that..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"</STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">, can't you remember any more?</STYLE>
+{PAUSE ""}
+<STYLE ID="2">　Why you tried to take us to the other </STYLE><STYLE ID="1">Haruka</STYLE><STYLE ID="2">?"</STYLE>
+{PAUSE ""}
+<BR>
+"I see, so if <STYLE ID="1">Niimura-senpai</STYLE> can remember that, we might understand this strange dream."<PG>
+{MESOFF "500"}
+{CHANGECG "人物2" "グラフィック\立ち絵\人物\春花腰に手1バストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"Let's see... I heard a voice calling for help. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Somebody wanting to be let out of there, to be saved."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"Mm-hm, mm-hm."</STYLE><BR>
+"Mm-hm, mm-hm."<PG>
+<STYLE ID="1">"Then you two showed up right then, and when we went toward the voice together..."</STYLE>
+{PAUSE ""}
+<BR>
+"And there was the other <STYLE ID="1">Niimura-senpai</STYLE>?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"So all three of us really did have the same dream..."</STYLE><PG>
+<STYLE ID="1">"Only, the other me, like I said, was in an insane getup..."</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">"What kind?"</STYLE><PG>
+{MESOFF "0"}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

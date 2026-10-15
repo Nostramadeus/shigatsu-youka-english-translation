@@ -2623,7 +2623,7 @@
 - known ambiguity / open questions: V525 (as of 000014D7)
 - as-of: 000021C9 (was 000014D7)
 
-## 後白河糸織 (Shiori Goshirakawa, reading V549; transfer student, Class 2-2)
+## 後白河糸織 (Iori Goshirakawa, ruby いおり in 00001533 (V549 settled P24); transfer student, Class 2-2)
 - first_appears: 00001533:8:157 (enters the classroom); first line 8:171 (as of 00001533)
 - pronoun(s): 私 ("私の名前も変わっとるけどな！" 8:218; "今の私は、誰でもないわけやし" 27:55) (as of 00001533)
 - pronoun FREQUENCY: about as often as typical (as of 00001533)

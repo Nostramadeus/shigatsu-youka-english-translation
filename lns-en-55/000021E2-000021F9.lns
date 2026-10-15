@@ -1,0 +1,36 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=95, unk2=16755370, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=116, target=)
+; Links:
+;    0: TWdLink(count=95, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+<TXSPN>"No, at the very end, I want to say goodbye properly, as myself, in my own words."<PG>
+{CHANGECG "立木三日" "グラフィック\イラスト\春花\合体春花喜び.gal" "NORMAL" "1" "1000" "0" "0" "" "0" "0" "0" "255" ""}
+"Thanks, <VAR NAME="プレイヤー名" unk3="50">!
+{PAUSE ""}
+　I'm really glad I got to meet you!"<PG>
+{MESOFF "500"}
+{CREATECG "立木三日2" "グラフィック\イラスト\春花\別れ.gal" "NORMAL" "#1" "C" "B" "600" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "立木三日" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Thank you, for saving me."<PG>
+{MESOFF "500"}
+{CHANGECG "立木三日2" "グラフィック\イラスト\春花\別れ白.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Goodbye..."<PG>
+{DELETECG "立木三日,111,立木三日,立木三日2" "14" "3000" "0" "0" "" "0"}
+"Goodbye..."<PG>
+{MESOFF "500"}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

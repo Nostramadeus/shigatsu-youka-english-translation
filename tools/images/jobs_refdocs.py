@@ -1295,8 +1295,8 @@ L69F = [
 _COLS69 = [  # (x0, x1, y_end of the JP column, English) right to left
     (339, 368, 600, "The dead come forth from Yomi and demon flowers beyond all nature stand in rows"),
     (305, 334, 600, "Those who have become corpses also become demon flowers and come forth from Yomi"),
-    (271, 298, 400, "Only the Jade Eye prevails"),
-    (236, 265, 615, "Those who have become Jade Eyes wither the demon flowers and return the dead to Yomi"),
+    (271, 298, 400, "Only the Green Eye prevails"),
+    (236, 265, 615, "Those who have become Green Eyes wither the demon flowers and return the dead to Yomi"),
     (169, 196, 600, "Descendants must without fail don a mask and vestments the color of blood and resist"),
 ]
 L69B = [(t, [x0, 12, x1, ye], {"rot": -90, "max_size": 15, "mask_color": [0, 75, 0, 80, 0, 50], "mask_grow": 3,
@@ -3828,7 +3828,7 @@ L156 = [
      "before 15 minutes have passed.",
      [12, 1990, 788, 2170], dict(_RBB, erase=[[8, 1994, 778, 2168]])),
     ("Shiyo 730, April 18", [12, 2204, 500, 2240], dict(_RBB, erase=[[8, 2206, 256, 2239]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [12, 2240, 790, 2276],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [12, 2240, 790, 2276],
      dict(_RBB, erase=[[8, 2241, 565, 2275]])),
 ]
 JOBS += [_rbjob(156, "report No.8 (parchment; diagrams kept)", L156)]
@@ -3861,11 +3861,11 @@ L162 = [
      "well, it is thought that the spores contained in Droga are precisely the cause of the muscle strengthening and "
      "danger sense.",
      [12, 1208, 788, 1388], dict(_RBB, erase=[[8, 1213, 778, 1387]])),
-    ("If that is so, we will have obtained the power of God scientifically, and the authority of the Cerejeira faith "
+    ("If that is so, we will have obtained the power of God scientifically, and the authority of the Holy Cerejeira Church "
      "will also grow.",
      [12, 1388, 788, 1460], dict(_RBB, erase=[[8, 1389, 778, 1457]])),
     ("Shiyo 730, September 30", [12, 1492, 500, 1528], dict(_RBB, erase=[[8, 1494, 259, 1527]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [12, 1528, 790, 1564],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [12, 1528, 790, 1564],
      dict(_RBB, erase=[[8, 1529, 563, 1562]])),
 ]
 JOBS += [_rbjob(162, "report No.9 (parchment; formulas and photo kept)", L162)]
@@ -3930,7 +3930,7 @@ def _rcell(text, x0, y0, x1, y1, size=16, align="center", pad=4, method="inpaint
             {"max_size": size, "align": align, "method": method, "erase": [[x0 + 4, y0 + 4, x1 - 3, y1 - 3]]})
 
 
-_SIG = "Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki"   # = lane B wording
+_SIG = "Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki"   # = lane B wording
 
 # ---- 190 "Orders to Analyze Droga" (800x1578): title, P1-P2, photo (art, kept), caption, P3-P4, two photographed letter
 # halves (ref 10's letter: the right photo = its first half, the left photo = the rest + signature; the shipped ref-10
@@ -4183,8 +4183,8 @@ R154_P = [
 ]
 R154_Q = [
     "Thus, inducing danger sense in fact requires fiercely strict conditions. We will carry out further verification "
-    "of whether it is truly practical under these conditions. If this is put to practical use, we of the Cerejeira "
-    "faith will truly gain the divine power called precognition.",
+    "of whether it is truly practical under these conditions. If this is put to practical use, we of the Holy Cerejeira "
+    "Church will truly gain the divine power called precognition.",
 ]
 _y154 = [406, 444, 482, 520, 587, 625, 663, 760, 798, 865, 903, 970, 1008, 1075, 1113, 1181]
 _t154 = [("Conditions for Acquiring the Power of Danger Sense",),
@@ -4277,7 +4277,7 @@ L163 = [
      "Droga scientifically. He must have something in mind.",
      [12, 1881, 788, 1988], dict(_RBB, erase=[[8, 1882, 778, 1985]])),
     ("Shiyo 730, October 10", [12, 2020, 500, 2056], dict(_RBB, erase=[[8, 2022, 275, 2055]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [12, 2056, 790, 2092],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [12, 2056, 790, 2092],
      dict(_RBB, erase=[[8, 2057, 564, 2090]])),
 ]
 JOBS += [_rbjob(163, "report No.10 (parchment; photos and diagram kept)", L163)]
@@ -4354,7 +4354,7 @@ L169 += [
      "will lead us.",
      [12, 2226, 788, 2476], dict(_RBB, erase=[[8, 2230, 785, 2474]])),
     ("Shiyo 731, January 9", [12, 2509, 500, 2545], dict(_RBB, erase=[[6, 2511, 238, 2544]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [12, 2545, 790, 2581],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [12, 2545, 790, 2581],
      dict(_RBB, erase=[[8, 2546, 563, 2579]])),
 ]
 JOBS += [_rbjob(169, "report No.11 (parchment; diagrams and table rules kept)", L169)]
@@ -4367,7 +4367,7 @@ L171 = [
      [12, 86, 788, 194], dict(_RBB, erase=[[8, 89, 778, 192]])),
     ("In ancient times, the use of Droga was forbidden in the Arata settlement by the Grand Witch of the time. The "
      "faction that opposed this, that is, our ancestors, took Droga out of the Arata settlement and built the "
-     "foundation of the Cerejeira faith in the land of Megasawa. As for why it was forbidden, the reason may be that "
+     "foundation of the Holy Cerejeira Church in the land of Megasawa. As for why it was forbidden, the reason may be that "
      "they had realized that humans could be used, as here, as tools for the reproduction of an unknown organism.",
      [12, 194, 788, 404], dict(_RBB, erase=[[8, 194, 778, 402]])),
     ("And Kichizo-sama told us to continue elucidating further whether there is any danger beyond humans being made "
@@ -4378,7 +4378,7 @@ L171 = [
      "plans.",
      [12, 544, 788, 616], dict(_RBB, erase=[[8, 545, 785, 613]])),
     ("Shiyo 731, March 2", [12, 648, 500, 684], dict(_RBB, erase=[[8, 650, 240, 683]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [12, 684, 790, 720],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [12, 684, 790, 720],
      dict(_RBB, erase=[[8, 685, 565, 718]])),
 ]
 JOBS += [_rbjob(171, "report No.12 (parchment)", L171)]
@@ -4408,7 +4408,7 @@ L174 = [
      "At the tips of the string-like parts are spherical sporangia.",
      [20, 1304, 780, 1372], dict(_RBL, max_size=22, erase=[[146, 1308, 646, 1368]])),
     ("Shiyo 731, March 25", [20, 1396, 500, 1430], dict(_RBB, max_size=22, erase=[[17, 1399, 259, 1428]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [20, 1430, 790, 1464],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [20, 1430, 790, 1464],
      dict(_RBB, max_size=22, erase=[[18, 1429, 499, 1459]])),
 ]
 JOBS += [_rbjob(174, "report No.13 (parchment; photos and the 30μ scale kept)", L174)]
@@ -4420,22 +4420,22 @@ JOBS += [{"id": "rep174-ov", "screen": "reference screen previews", "style": "se
 # ground, English set in the serif face like the calligraphy letters; the two faint, cropped handwritten lines under it
 # are below legibility in the original and stay as drawn), a snail photo with caption, date, signature.
 L176 = [
-    ("Old Records and the Jade-Eye Curse-Killing", [20, 18, 780, 72], dict(_RBL, max_size=36, erase=[[257, 21, 550, 69]])),
+    ("Old Records and the Green-Eye Curse-Killing", [20, 18, 780, 72], dict(_RBL, max_size=36, erase=[[257, 21, 550, 69]])),
     ("Alongside our research on the third generation, we had also been investigating the old records of the Arata "
      "settlement. Do you remember the \"green eye\" we reported earlier? Among those records there was a very "
-     "interesting account. There is a legend called the \"Jade-Eye curse-killing,\" and it said, \"Raise a boy "
+     "interesting account. There is a legend called the \"Green-Eye curse-killing,\" and it said, \"Raise a boy "
      "born with green eyes as he is, and kill a girl born with green eyes at once.\" Considering this sentence "
      "alone, it is thought that, because a green-eyed girl is a being who will one day bring calamity, the "
      "instruction to kill her at once was handed down.",
      [20, 76, 785, 318], dict(_RBB, erase=[[16, 98, 782, 309]])),
-    ("Jade-Eye Curse-Killing", [205, 385, 515, 480],
+    ("Green-Eye Curse-Killing", [205, 385, 515, 480],
      {"method": "inpaint", "mask_color": [0, 42, 0, 40, 0, 36], "max_size": 46, "align": "center", "color": "#151310",
       "erase": [[195, 368, 518, 500]]}),
     ("It would not be so unnatural to connect this with the recent incident. A green-eyed woman will one day bring "
-     "calamity. The wording \"Jade-Eye curse-killing\" can also be read as killing by the green eye. And then there "
+     "calamity. The wording \"Green-Eye curse-killing\" can also be read as killing by the green eye. And then there "
      "are the spores that germinated on the epidermis of the dead third-generation member. That spores germinate "
      "from a dead third-generation member suggests that, as a property of the Arata cherry, some form of "
-     "reproduction takes place from there. This Jade-Eye curse-killing, that is, even the abnormal behavior in "
+     "reproduction takes place from there. This Green-Eye curse-killing, that is, even the abnormal behavior in "
      "which a third-generation member dies or kills other second- or third-generation members, may have been due to "
      "parasitism by the Arata cherry. In this world there are also organisms that parasitize other organisms and "
      "manipulate their hosts' behavior. For example, Leucochloridium, which lives in North America and Europe, "
@@ -4443,11 +4443,11 @@ L176 = [
      [20, 672, 785, 1050], dict(_RBB, erase=[[16, 703, 790, 1035]])),
     ("A snail parasitized by Leucochloridium", [20, 1426, 780, 1462], dict(_RBL, max_size=22, erase=[[137, 1429, 666, 1458]])),
     ("Shiyo 731, April 19", [20, 1486, 500, 1522], dict(_RBB, max_size=22, erase=[[17, 1489, 259, 1519]])),
-    ("Cerejeira Faith, Physics and Chemistry Team: Hajime Shinozaki", [20, 1520, 790, 1552],
+    ("Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki", [20, 1520, 790, 1552],
      dict(_RBB, max_size=22, erase=[[18, 1519, 499, 1549]])),
 ]
 JOBS += [_rbjob(176, "report No.14 (parchment; photos kept, brush heading in the photo set in English)", L176)]
-# rr176 card = imgRB/ovcard.py 176 "Old Records and the Jade-Eye Curse-Killing" 4 82 84 34 white (the white chalk scribble kept).
+# rr176 card = imgRB/ovcard.py 176 "Old Records and the Green-Eye Curse-Killing" 4 82 84 34 white (the white chalk scribble kept).
 JOBS += [{"id": "rep176-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
           "items": [(O + "rr176.gal", "")]}]
 
@@ -4456,3 +4456,2748 @@ JOBS += [{"id": "rep176-ov", "screen": "reference screen previews", "style": "se
 # rr146 概要 (300x169) = background art only (snowy settlement at night, falling snow): no Japanese string on the card
 # (checked at 4x and histogram-equalized; alpha fully opaque, no hidden layer). Nothing to translate, so no rep146-ov and
 # no ov-p18 sheet: the shipped game keeps the original card. The 60x30 サムネ is below legibility: skipped. No 詳細 picture.
+
+# IMAGES18B-L2 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane L2): 書簡 letters 215 288 217 216 183 (part 18 list).
+# Same method as the 書簡 calligraphy letters (letter() helper, ref287 / _LET jobs): face 0 (pale paper) and face 1 (gold
+# paper) carry the same vertical brush text; English = horizontal blocks right to left, block 1 where the JP starts.
+# One job per face (ref<ID>-p0 inpaint, ref<ID>-p1 texfill) + the 概要 card ref<ID>-ov (mode asis): the card is a 1:1
+# crop of face 0 (work/images/_c/ovmatch7.py), rebuilt from the English face 0 by work/images/_c/img18bL2/ovcrop.py.
+# Body x0..x1 = the JP ink extents (work/images/_c/img18bL2/ink.py) widened 4 px. The 60x30 サムネ: below legibility.
+_L2M = [0, 85, 0, 85, 0, 85]
+
+
+def _l2jobs(rid, text, x0, x1, n, note, sig=None, sig_box=None, size=20):
+    _L = letter(text, x0, x1, n, sig, sig_box, size=size)
+    if sig:
+        _L[-1][2]["erase"] = [[sig_box[0], 300, sig_box[2], 450]]
+    lines = [(t, b, dict(o, mask_color=_L2M)) for t, b, o in _L]
+    base = {"style": "serif", "mode": "lines", "erase_first": True, "color": "#1a1208", "mask_grow": 3,
+            "mask_color": _L2M, "new": True, "lines": lines}
+    return [dict(base, id="ref%d-p0" % rid, screen="reference %d detail" % rid, erase="inpaint",
+                 note=note + " (face 0, pale paper)", items=[(D + "rrr%d/0.gal" % rid, "")]),
+            dict(base, id="ref%d-p1" % rid, screen="reference %d detail" % rid, erase="texfill",
+                 note=note + " (face 1, gold paper)", items=[(D + "rrr%d/1.gal" % rid, "")]),
+            {"id": "ref%d-ov" % rid, "screen": "reference screen previews", "style": "serif", "mode": "asis",
+             "chain": True, "items": [(O + "rr%d.gal" % rid, "")]}]
+
+
+# ---- 215 Young People These Days (861x450, 24 columns, ink x 20-847): 2 blocks; card rr215 = crop (561, 0) score 0.991
+L2_215 = ("How truly lamentable. Is even our faith in Lady Verde, which has continued for more than a hundred years, to end "
+          "with our generation? Just before he died, my grandfather left the words \"Be sure to worship Lady Verde,\" "
+          "and passed away. Even now I keep this in my heart and go on worshipping Lady Verde. Worshipping Lady "
+          "Verde is by no means some evil cult. We only pray, single-mindedly, for the peace of the settlement. We "
+          "have no intention of forcing our faith on harmless outsiders, much less of doing them harm. And yet look: "
+          "the young people of Arata these days as good as never pray to Lady Verde. Is this, too, the changing of "
+          "the times? Though, looked at the other way, one could also say that peaceful times have gone on even "
+          "without such prayers. What worries me is whether the disaster our ancestors went through more than a "
+          "hundred years ago will be repeated. For us, their descendants, the ancestors left many rules. After I, the "
+          "Grand Witch, am gone, I only hope the rules will not, of all things, be broken.")
+JOBS += _l2jobs(215, L2_215, 16, 851, 2, "letter (calligraphy)")
+
+
+# IMAGES18B-R1 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane R1): the finished report documents rrr<ID>/全体.gal of reports
+# 178 192 41 155 268 (part 18 list) + their 概要 cards rr<ID>. Pattern = IMAGESR-A: _rflow() reflows each paragraph group
+# from its first JP row at one size per page, _rerase() erases the JP rows (texfill on the paper), _rtitle() for the title.
+# Own footer / job helpers so the shared _SIG and _rjob defaults stay untouched for the other lanes: the signature uses the
+# GLOSSARY / shipped-script form of セレジェイラ聖教 ("the Holy Cerejeira Church"; IMAGESR's "Cerejeira Faith" is in no
+# shipped script: QIMAGES18BR1-01). 翠眼呪殺 = "Green-Eye Curse-Killing" (GLOSSARY, rulings-P18). Ink = median of the JP
+# glyph cores per page; boxes measured with work/images/_c/img18b-R1/rows.py + grid.py; end-y checks with plan.py.
+_R1SIG = "Holy Cerejeira Church, Physics and Chemistry Team: Hajime Shinozaki"
+
+
+def _r1foot(date, y_date, y_sig, x0=16, size=21):
+    """date + signature lines (JP rows start at y_date / y_sig); same boxes as _rfoot, lane-R1 signature."""
+    return [(date, [x0, y_date - 2, 560, y_date + 28], {"max_size": size, "erase": [[x0 - 6, y_date - 4, 600, y_date + 31]]}),
+            (_R1SIG, [x0, y_sig - 2, 792, y_sig + 28], {"max_size": size, "erase": [[x0 - 6, y_sig - 4, 600, y_sig + 31]]})]
+
+
+def _r1job(rid, lines, note, ink):
+    return dict(_rjob(rid, lines, note), color=ink)
+
+
+# ---- 178 "Past Events in the Arata Settlement" (800x1716): title, P1, two photographed letter halves (ref 16's letter
+# by its writer: the right photo = the first half, the left photo = the rest + signature; the shipped ref-16 English L16
+# is set in the photos, split where the JP photos split: "...in someone's hands," | "the things that threaten..."; the
+# 190 precedent), P2 (ruby over the name erased with its row), silhouette picture (art, kept), two-line caption, P3-P4,
+# date, signature. Ink #231803 (JP glyph cores 35,23,2).
+R178_A = [
+    "Droga is thought to have originated when it was developed in the Arata settlement around Shiyo 305. Its developer "
+    "was a Westerner named Ginosuke Niimura, who at first conducted research on the animals and plants living in the "
+    "Arata settlement. It is surmised from his diary that he gradually came to have doubts about the ecology of the "
+    "animals and plants, and arrived at the Arata cherry, and then at Droga.",
+]
+R178_B = [
+    "The first to use Droga in earnest was a traveling foot soldier who visited the Arata settlement, and Ginosuke "
+    "Niimura shared Droga with the foot soldier. As a result, the foot soldier used Droga and became the ruler of the "
+    "realm. This foot soldier was none other than the famous Fujiyoshiro. However, in Yoshiro's generation Droga "
+    "vanished from history, while in the Arata settlement it continued to be used quietly as a hunting tool. Thus, it "
+    "is unnatural that Droga, which was used in the Arata settlement, is not seen after Yoshiro's generation. For by "
+    "using Droga, the Fuji regime could likely have made itself stable from his son's generation on as well.",
+]
+R178_C = [
+    "What can be inferred from this is that, after Yoshiro's generation, either Droga could no longer be used, or they "
+    "realized that it was something that must not be used. The former case is hard to believe, since it continued to "
+    "be used in the Arata settlement. In the latter case, the results of our experiments so far have made clear that "
+    "the use of Droga is extremely dangerous. If Droga ceased to be used after Yoshiro because its side effects were "
+    "noticed, then the Arata settlement too must at least have noticed Droga's side effects. It was precisely because "
+    "they noticed those side effects that the concept of the \"Green-Eye Curse-Killing\" took shape, and the custom "
+    "of culling the third-generation women who suddenly begin to kill people came into being.",
+    "If so, some kind of harm caused by Droga must have occurred in the Arata settlement as well. According to the "
+    "records, that disaster apparently occurred three times. Could this be the reason our ancestors parted ways with "
+    "the Arata settlement?",
+]
+_k178 = L16.index("the things that threaten")
+_p178a, _e178a = _rflow(R178_A, 20, 788, 100, 22)
+_p178b, _e178b = _rflow(R178_B, 20, 788, 613, 22)
+_p178c, _e178c = _rflow(R178_C, 20, 788, 1230, 22)
+_ph178r, _f178r = _rflow([L16[:_k178].strip()], 422, 726, 309, 13, ls=0.93, gap=0, color="#3c3c3c")
+_ph178l, _f178l = _rflow([L16[_k178:].strip()], 84, 388, 313, 13, ls=0.93, gap=0, color="#3c3c3c")
+REP178 = ([_rtitle("Past Events in the Arata Settlement", 27, 63),
+           _rerase([14, 98, 792, 250]),
+           _rerase([414, 304, 728, 534], mask_color=[0, 200, 0, 200, 0, 200], mask_grow=2),
+           _rerase([76, 309, 394, 527], mask_color=[0, 200, 0, 200, 0, 200], mask_grow=2),
+           ("Ginosuke Niimura", [200, 498, 388, 516], {"max_size": 13, "align": "right", "color": "#3c3c3c", "erase": []}),
+           _rerase([14, 612, 792, 866]),
+           ("A picture said to show Fujiyoshiro in his foot-soldier days", [40, 1140, 760, 1168],
+            {"max_size": 21, "align": "center", "erase": [[150, 1140, 655, 1168]]}),
+           ("(Foot Soldier Spy at the Battle of Taruhazama, Tokyo City Museum collection)", [16, 1169, 784, 1198],
+            {"max_size": 21, "align": "center", "erase": [[150, 1169, 655, 1198]]}),
+           _rerase([14, 1229, 792, 1592])]
+          + _p178a + _ph178r + _ph178l + _p178b + _p178c + _r1foot("Shiyo 731, June 23", 1626, 1656))
+JOBS += [_r1job(178, REP178, "report (part 18 list; letter photos carry ref 16's English, silhouette kept)", "#231803")]
+
+# IMAGES18B-L2 2026-10-15: ref 288
+# ---- 288 Mother, I Am Sorry (826x450, 23 columns, ink x 23-814): 2 blocks; card rr288 = crop (526, 0) score 0.992
+L2_288 = ("Mother, I am sorry. After all, I am not fit to be the Grand Witch. Since your passing, Mother, I believe I "
+          "have tried my very best, such as I am, to uphold the traditions handed down from the ancestors. But it is "
+          "no longer the case that every resident has faith in Lady Verde, and the many rules are broken at will. It "
+          "is more than I can handle anymore. Why am I so incompetent? Someone like me cannot possibly govern the "
+          "settlement. Should the disaster said to have happened more than a hundred years ago happen again, it is "
+          "not something I could fully atone for even with my life. Every time I read 'The Teachings of Cerejeira,' "
+          "I grow uneasy. Will a hideous trumpet sound, the dead come back to life, evil divine messengers and the "
+          "demon king appear, and trample this Arata underfoot? Lord Ginosuke left these teachings because they have "
+          "meaning. If such things were to happen, it might be punishment for trampling on the teachings of our "
+          "ancestors.")
+JOBS += _l2jobs(288, L2_288, 19, 818, 2, "letter (calligraphy)")
+# IMAGES18B-R1 2026-10-15 (cont.): rr178 card = work/images/_c/img18b-R1/ovcard.py 178 "Past Events in the Arata Settlement"
+# 4 82 84 34 pink (1:1 window page (250, 0); the pink brush scribble over the text is protected and kept as drawn).
+JOBS += [{"id": "rep178-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr178.gal", "")]}]
+
+# IMAGES18B-L2 2026-10-15: ref 217
+# ---- 217 I Offer My Life (1561x450, 46 columns, ink x 28-1549): 3 blocks (ref68 precedent, 1345 px = 3);
+# card rr217 = crop (1260, 0) score 0.886
+L2_217 = ("Mother, this year I turn twenty-one. But please forgive me for ending this life with my own hands. Nearly a "
+          "year has passed since I became a witch, and the Grand Witch as well. The residents have begun using the "
+          "forbidden medicine to hunt. However much I tell them, they only answer, \"That's an old legend,\" or \"As if "
+          "medicine could make the demon king appear.\" Only my childhood friends, close to me in age, take my side. To "
+          "the older residents, the wisdom of the ancestors has already sunk to nothing more than a worthless old "
+          "saying, mere lore. And this, too, is something I must apologize for. One of my eyes has turned green. When "
+          "I tended the wound of a man who had gone hunting, I touched his blood. Since then my eye has been green. "
+          "Mother, I believe. The wisdom of the ancestors was never meant to bind us; it is meant to protect us. Will "
+          "I one day go mad and try to kill the residents? When I die, will many of the residents worship my corpse "
+          "and then become cherry trees? I cannot let this settlement, which has lasted nearly six hundred years, die "
+          "out in my generation. But Mother, please rest assured. I have finally understood. I have found the way to "
+          "kill the demon king, that is, the evil goddess, which even the great Lord Ginosuke could not uncover. She "
+          "is an evil being who will take over this settlement and wipe out the humans. The root cause, who "
+          "controls every cherry tree. I gave her the name Shigatsu Youka: the bewitching flower that blooms in the "
+          "month of death. I have found the way to kill Shigatsu Youka. I am blessed with dependable childhood "
+          "friends, and I am happy. But even so, it cannot be resolved without using my life. Mother, please forgive "
+          "me these two things. I will offer my life for the settlement. And I will seal away the Verde mummy. Verde "
+          "is that goddess's faithful servant. Verde must be sealed away too. To keep passing this on is the only "
+          "thing I can do.")
+JOBS += _l2jobs(217, L2_217, 24, 1553, 3, "letter (calligraphy)")
+
+
+# IMAGES18B-L1 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane L1): 書簡 letters 210 211 212 213 214 (part 18 list).
+# Same method as the 書簡 calligraphy letters (letter() helper; ref31-letter / ref86-letter / ref111 / ref208): face 0
+# (pale paper) and face 1 (gold / dark paper) carry the same vertical text; English = horizontal blocks right to left,
+# block 1 where the JP starts. One job per face (ref<ID>-p0 inpaint, ref<ID>-p1 texfill) + the 概要 card ref<ID>-ov
+# (mode asis; the card is a 1:1 crop of face 0, rebuilt from the English face 0 by work/images/_c/img18bL1/ovpaste.py).
+# Body x0..x1 = JP ink extents (work/images/_c/img18bL1/cols.py); block-0 erase widened to x0-2 .. x1+6 because face 1
+# is drawn 3 px right of face 0 (210 211 213 214). 210-213 brush = serif; 214 pen-hand typeface = handwriting
+# (QIMAGES18BL1-01). The 60x30 サムネ: below legibility. Log: notes/v2/_tmp/tl-log-IMAGES18B-L1.md.
+_L1M = [0, 85, 0, 85, 0, 85]
+
+
+def _l1jobs(rid, lines, erase0, note, style="serif"):
+    """lines = letter() output (one or more areas); erase0 = {line index: widened erase boxes}."""
+    for i, boxes in erase0.items():
+        lines[i][2]["erase"] = boxes
+    lines = [(t, b, dict(o, mask_color=_L1M)) for t, b, o in lines]
+    base = {"style": style, "mode": "lines", "erase_first": True, "color": "#1a1208", "mask_grow": 3,
+            "mask_color": _L1M, "new": True, "lines": lines}
+    return [dict(base, id="ref%d-p0" % rid, screen="reference %d detail" % rid, erase="inpaint",
+                 note=note + " (face 0, pale paper)", items=[(D + "rrr%d/0.gal" % rid, "")]),
+            dict(base, id="ref%d-p1" % rid, screen="reference %d detail" % rid, erase="texfill",
+                 note=note + " (face 1, gold paper)", items=[(D + "rrr%d/1.gal" % rid, "")]),
+            {"id": "ref%d-ov" % rid, "screen": "reference screen previews", "style": style, "mode": "asis",
+             "chain": True, "items": [(O + "rr%d.gal" % rid, "")]}]
+
+
+# ---- 210 Ginosuke's Diary 2 (769x450, 24 columns ink x 78-754 + signature x 20-41): 2 blocks, signature as ref16.
+L1_210 = ("I have made a tremendous discovery. It was by chance, but I was able to make a strange medicine from the "
+          "cherry trees in the Arata settlement. I originally compounded it to restore the strength of a sick person, "
+          "but the moment I gave them the medicine, they became agitated and grew abnormally strong. Even five adults "
+          "together could not hold them down. However, the effect wore off in about an hour. Sadly, perhaps because "
+          "they had driven their body too hard, they then suffered pain all over and in the end died. If this became "
+          "known to the world, this age of turmoil would only grow worse. I will not let it out of Arata. But I also "
+          "want to look for a way to put this medicine to good use. I can no longer use the medicine on the people "
+          "of this settlement, so if only there were some outsider I could trust. I cannot go back to my homeland "
+          "now, and if I am to do it, it would after all have to be one of the warlords of this land of the rising "
+          "sun. Which warlord can be trusted the most?")
+_L1_210 = letter(L1_210, 76, 756, 2, "Ginosuke Niimura", [16, 230, 60, 448])
+JOBS += _l1jobs(210, _L1_210, {0: [[74, 0, 762, 450]], 2: [[16, 300, 60, 450]]}, "letter (calligraphy)")
+
+# ---- 211 The Missing (1393x450, 39 columns ink x 27-1380): 3 blocks (ref68's 1345 px had 3).
+L1_211 = ("The residents of Arata, who numbered a hundred, are now down to half. A tragedy like that must never be "
+          "repeated. Just as I thought so, several of the surviving residents began to go mad. As if possessed by "
+          "something, they began to dig up the bodies of those who died in that conflict. They would not listen even "
+          "when told to stop. What is more, they gathered the bodies in one place and stayed close beside them, as "
+          "if the bodies were gods. Faced with this bizarre sight, we could do nothing. If we were to dispose of the "
+          "bodies in secret, what would they do? No, though I say they were possessed by something, they eat and "
+          "they sleep. They also do the necessary work as they always have. But whenever they have time, they stay "
+          "close beside the bodies, with nothing but rapturous faces and words praising the bodies. Eventually the "
+          "bodies rotted and gave off a stench, and when the rotting flesh began to show, they were at last "
+          "satisfied, it seems, and buried the bodies again in their original graves. But even so, the words "
+          "praising the bodies and the rapturous faces were never cured. Then, in the spring a year later, they "
+          "vanished. All of them at once, without a trace. We searched the area, and here and there cherry trees we "
+          "had never seen before had sprung up. Finding it suspicious, we examined the cherry trees: the clothes of "
+          "the people who had gone missing were wound around the roots. What is more, what seemed to be human bones "
+          "lay scattered around the roots. Did they go missing and become cherry trees? Even if that were so, being "
+          "reduced to bare bones in a single night is impossible. It is as baffling as the Teachings of Cerejeira "
+          "left by the great Lord Ginosuke, but the phenomenon is a different one.")
+_L1_211 = letter(L1_211, 25, 1382, 3)
+JOBS += _l1jobs(211, _L1_211, {0: [[23, 0, 1393, 450]]}, "letter (calligraphy)")
+
+# ---- 212 Worship the Goddess (827x450, hooded figure x 0-477 kept, 9 columns ink x 509-814): 1 block (QIMAGES18BL1-02).
+L1_212 = ("Worship Lady Verde, formerly Tomi. She sacrificed her life so that she would not bring disaster upon the "
+          "settlement. She ought to be worshiped. In the past, many died, went missing, and became cherry trees. At "
+          "that time, the Evil Goddess descended upon this land. To stand against such an evil goddess, we worship "
+          "our own Goddess. Lady Verde will help us.")
+_L1_212 = letter(L1_212, 506, 816, 1)
+JOBS += _l1jobs(212, _L1_212, {0: [[504, 0, 822, 450]]}, "letter (calligraphy; figure kept)")
+
+# ---- 213 The Fierce Sound and the Goddess (1708x450, red figure x 883-1128 kept): two text areas, each 2 blocks:
+# right of the figure (16 columns ink x 1148-1696) = paragraph 1, left of it (24 columns ink x 32-857) = paragraphs 2-4.
+L1_213R = ("I heard a strange story from one of the residents. On the night just before they went missing, the Fierce "
+           "Sound rang out, she says. It was a hideous sound beyond description, such that one could not tell where "
+           "it was coming from. Since most of the residents were asleep at the time, she was the only one who "
+           "noticed it. According to her, she heard the sound on her way to the privy. Then, right after that, a "
+           "beautiful girl she had never seen before appeared. A girl of some 15 years, wearing a red kimono. When "
+           "the girl appeared, they wandered unsteadily out of their houses and followed after her, she says. They "
+           "vanished, uttering the words \"Goddess, Goddess.\"")
+L1_213L = ("The woman who witnessed it grew frightened, wrapped herself in her futon and stayed that way until "
+           "morning, it seems; but because the scene was so unreal, she decided it must have been a dream. But with "
+           "the disappearances and then the matter of the new cherry trees, she was at last able to recognize that it "
+           "had not been a dream. Naturally, she is not to blame. Anyone who saw such a sight would shrink back. At "
+           "the very least, there is no doubt that the Fierce Sound and the girl said to be the Goddess are involved "
+           "in their disappearance. But where had such a girl been until now? This land of Arata should be no place "
+           "where a girl of tender years could live on her own. It is far too baffling to put down to her seeing "
+           "wrongly. Come to think of it, there was a similar passage in the Teachings of Cerejeira, which I read "
+           "before. A hideous trumpet sounded, divine messengers and an evil demon king called Abaddon appeared, and "
+           "Lord Ginosuke left his homeland and moved here to Arata, it said.")
+_L1_213 = letter(L1_213R, 1146, 1698, 2) + letter(L1_213L, 30, 859, 2)
+JOBS += _l1jobs(213, _L1_213, {0: [[1144, 0, 1704, 450]], 2: [[28, 0, 865, 450]]}, "letter (calligraphy; figure kept)")
+
+# ---- 214 Glory to Cerejeira (1284x450, pen-hand typeface, 36 columns ink x 25-1270): 3 blocks, handwriting face.
+L1_214 = ("The leader has died. I cannot put into words how much I was cared for here. In the first place, I came "
+          "here by a mere mistake. I had originally been heading for the Arata settlement, but I heard that they "
+          "worshiped a medicine that brings out strength as a sacred implement, and I was convinced that this very "
+          "place was the Arata settlement. But I talked with the late leader for many nights and came to see that "
+          "our values were close. It was not long after that that I joined the faith. It seems the forebears of this "
+          "sect were originally a faction that split off from the Arata settlement, and part of that culture is "
+          "still handed down today. Also, one day, I told the leader why I had come here. The leader then gave me an "
+          "instruction: \"Someday, I want you to unravel the sacred implement scientifically.\" Yes, that was the "
+          "very reason I had set out for the Arata settlement. I agreed at once. It was not long after that that the "
+          "leader died suddenly. The leader's will named me as successor. It is a great honor, but sooner or later I "
+          "must go into the world of politics. Then I will bring us and the government as close together as I can, "
+          "and work to secure the funds to research the medicine. There is the wall of the separation of religion "
+          "and state, but something like that can be dealt with one way or another. Surely the late leader named me "
+          "expecting that move of mine, too. Glory to the Holy Cerejeira Church.")
+_L1_214 = letter(L1_214, 23, 1272, 3)
+JOBS += _l1jobs(214, _L1_214, {0: [[21, 0, 1278, 450]]}, "letter (pen hand)", style="handwriting")
+
+
+# IMAGES18B-R1 2026-10-15 (cont.) ---- 192 "The Arata Incident" (800x1822): title, P1-P2, two photographed halves of ref 101's
+# letter (vertical; the right photo = the text up to the cut at its left edge, the left photo = two yokai-like drawings
+# (art, kept) + the last five columns, which overlap the right photo's last columns). The shipped ref-101 English L101
+# is set in the photos split at a sentence inside that overlap: right = up to "...killed, every last one.", left =
+# "But now that same Highness..." to the end (11 px: 12 px does not fit the left photo's 88 px text strip), two-line
+# caption, P3, the summary (a lead line + 5 bulleted items; bullets erased and re-set with each item), P4, date,
+# signature. Ink #251904 (JP glyph cores 37,25,4).
+R192_A = [
+    "Around Shiyo 340, infighting broke out in the Arata settlement. A single green-eyed woman suddenly attacked the "
+    "residents and tried to kill them. She was restrained at once, but a few days later, it is said, she died in a "
+    "frenzy just as she was. At the time there were also Westerners who had moved to the Arata settlement, but the "
+    "original residents began to suspect that the Westerners had brought in a curse. That woman was the first to be "
+    "born green-eyed, yet she was pure Japanese, with no Western blood mixed in. Even so, she became green-eyed and "
+    "went mad trying to kill. The residents' claim was that the green eyes had arisen because of dealings with the "
+    "Westerners, and that this had become a curse. From this time on, the conflict between the Westerners and the "
+    "residents came into the open, and there were several victims as each side tried to protect its place and its "
+    "life.",
+    "But the truly terrifying part came after this: once again there appeared people who suddenly turned green-eyed "
+    "and went mad trying to attack the residents. And not just one or two. Those who had turned green-eyed attacked "
+    "indigenous people and Westerners alike, without distinction, and the population, which had been about a "
+    "hundred, fell to half. Only when the last of the frenzied died did the situation finally settle, and they came "
+    "to think that it was not a curse by the Westerners. For if it were a curse by the Westerners, the attacks could "
+    "not have been directed at the Westerners' side. And the survivors still had one source of unease.",
+]
+R192_B = [
+    "It was the last remaining green-eyed girl. Her name was Tomi, and at the time she was a small child who could "
+    "still barely speak. Tomi alone, though green-eyed, did not go mad. The residents discussed what should be done "
+    "with Tomi. Green eyes are dangerous, so she should be killed at once. Tomi has not done anything yet, so they "
+    "should wait and see. Tomi is valuable for learning why this happened, so Tomi should be studied. Such opinions "
+    "flew back and forth, but in the end no answer was reached.",
+]
+R192_S = [
+    "Late March, Shiyo 340: a green-eyed woman went mad and died in a frenzy as she was",
+    "Infighting broke out between the indigenous people and the Westerners; about 50 died",
+    "People who suddenly turned green-eyed and tried to kill the residents appeared one after another",
+    "The last frenzied person died, and the conflict ended",
+    "Unable to decide what to do with the girl Tomi, the last green-eyed one",
+]
+R192_C = [
+    "Our ancestors left the Arata settlement about 150 years after this, an oddly long interval. It can be surmised "
+    "that a more decisive event occurred during these 150 years, and we are currently investigating the materials "
+    "from that time.",
+]
+_S192 = 22
+_k192 = L101.index("But now that same")
+_p192a, _e192a = _rflow(R192_A, 20, 788, 99, _S192)
+_p192b, _e192b = _rflow(R192_B, 20, 788, 1095, _S192)
+_y192 = _e192b + 14
+_l192 = [("To summarize:", [48, _y192, 788, _y192 + 28], {"max_size": _S192, "erase": []})]
+_y192 += 30
+for _it in R192_S:
+    _pi, _ei = _rflow([_it], 52, 788, _y192, _S192, gap=0)
+    _l192 += [("\u2022", [24, _y192, 46, _y192 + 28], {"max_size": _S192, "erase": []})] + _pi
+    _y192 = _ei + 3
+_p192c, _e192c = _rflow(R192_C, 20, 788, _y192 + 22, _S192)
+_ph192r, _f192r = _rflow([L101[:_k192].strip()], 436, 722, 749, 11, ls=0.93, gap=0, color="#3c3c3c")
+_ph192l, _f192l = _rflow([L101[_k192:].strip()], 293, 380, 749, 11, ls=0.93, gap=0, color="#3c3c3c")
+REP192 = ([_rtitle("The Arata Incident", 26, 63),
+           _rerase([14, 97, 792, 671]),
+           _rerase([430, 748, 726, 929], mask_color=[0, 200, 0, 200, 0, 200], mask_grow=2),   # top 748: texfill samples
+           _rerase([290, 748, 382, 929], mask_color=[0, 200, 0, 200, 0, 200], mask_grow=2),   # 4 px up (wood above 745)
+           ("A letter found among the Arata settlement's storehouse books,\nthought to concern the Arata Incident\n"
+            "Yokai-like figures are drawn on it", [16, 1000, 784, 1082],
+            {"max_size": 21, "align": "center", "erase": [[96, 1004, 710, 1032], [221, 1034, 581, 1062]]}),
+           _rerase([14, 1093, 792, 1305]),
+           _rerase([14, 1337, 792, 1546]),
+           _rerase([14, 1576, 792, 1667])]
+          + _p192a + _ph192r + _ph192l + _p192b + _l192 + _p192c + _r1foot("Shiyo 731, July 20", 1701, 1731))
+JOBS += [_r1job(192, REP192, "report (part 18 list; letter photos carry ref 101's English, yokai drawings kept)", "#251904")]
+
+# IMAGES18B-L2 2026-10-15: ref 216
+# ---- 216 Condolences (1181x450, 34 columns, ink x 27-1169): 2 blocks (ref182 precedent, 1090 px = 2).
+L2_216 = ("You were timid ever since you were a child, and shy, and yet kinder than anyone, a person who could think of "
+          "others. We are very proud that you became the Grand Witch. It was a short time, only one year, but as the "
+          "Grand Witch you worked for this settlement the whole time. Without you, this settlement would surely have "
+          "sunk beneath the cherry trees. But we succeeded in driving off that evil goddess. It is all thanks to you. "
+          "Even the old geezers who mocked you, calling it all old customs and rules, seem to have completely mended "
+          "their ways. We must pass this down to our descendants. Please, rest in peace. May there be eternal peace "
+          "in Arata. And Lord Ginosuke, though it was in such a form, it is an extraordinary honor to have met you. "
+          "But, Lord Ginosuke, how bitter it must have been for you, that 'The Teachings of Cerejeira' should be "
+          "misused like that. Shigatsu Youka misuses the knowledge Lord Ginosuke gained in his home country, rules the "
+          "humans and makes them kill one another. Shigatsu Youka misuses the cherry trees of Arata and misuses human "
+          "wisdom. Shigatsu Youka truly is the demon king, the evil goddess. You struck down that demon king. That "
+          "courage and wisdom will be handed down for a long time to come. Lord Ginosuke, and Tsubaki, our friend and "
+          "a great Grand Witch. Please, rest in peace.")
+JOBS += _l2jobs(216, L2_216, 23, 1173, 2, "letter (calligraphy)")[:2]
+# rr216 概要 is NOT a crop of face 0 (work/images/_c/ovmatch7.py best score 0.487: the card's JP is the same opening with
+# other column breaks), so it is typeset in place like ov-109: JP ink erased over the whole card (inpaint, the face-0 mask),
+# the opening of L2_216 pre-wrapped at the page's 20 px into x 8..296 (work/images/_c/img18bL2/ov216.py), first line's ink
+# top at the JP first glyph top (y 7); 6 whole lines (a 7th would show only its top 2 px at the card edge).
+JOBS += [{"id": "ref216-ov", "screen": "reference screen previews", "style": "serif", "mode": "lines", "erase": "inpaint",
+          "erase_first": True, "color": "#1a1208", "mask_grow": 3, "mask_color": _L2M, "new": True,
+          "note": "letter 概要 (not a crop of the detail: typeset in place)", "items": [(O + "rr216.gal", "")],
+          "lines": [("You were timid ever since you\nwere a child, and shy, and yet\nkinder than anyone, a person\n"
+                     "who could think of others. We are\nvery proud that you became the\nGrand Witch. It was a short time,",
+                     [8, 1, 296, 163], {"max_size": 20, "line_spacing": 1.12, "mask_color": _L2M,
+                                        "erase": [[0, 0, 300, 170]]})]}]
+
+# IMAGES18B-L2 2026-10-15: ref 183
+# ---- 183 Last Words (1904x450, 59 columns): addressee column x 1869-1893 (y 6-172), body x 124-1833, date column x 91-116
+# (y 132-438), signature columns x 62-85 (y 216-439) and x 32-54 (y 333-441). Body = 3 blocks (ref68 precedent, 1345 px = 3;
+# 1718 px here). Addressee, date and signature are set rot -90 in their own columns (the _LET signature precedent: reads
+# top-down; addressee from the column top, date / signature ending at the column bottom). Card rr183 = crop (1604, 0) 0.898.
+L2_183 = ("Thank you for presenting your reports the other day. Thanks to you, we now know what we must do, and I believe "
+          "the matter is already as good as settled. Sadly, however, I probably have no more than a few days left to "
+          "live. You seem to have devoted yourself until now to research into the true nature of the medicine and the "
+          "ecology of the cherry trees, but it appears you overlooked the existence of the \"root cause.\" In your "
+          "reports there was something called \"the Goddess\"; that is precisely the root cause of everything, the "
+          "king of the abyss nesting in this land of Arata. In the documents our ancestors wrote, it was written as "
+          "\"Abaddon.\" Abaddon means the king of the abyss, and there are also its close aides, the \"divine "
+          "messengers.\" The Arata settlement has been watched by Abaddon for several hundred years, and I will "
+          "probably be killed by a divine messenger. What Abaddon truly is: a girl who died long ago, that is, the "
+          "Goddess. It was written that Lord Ginosuke Niimura, one of our ancestors, suffered that disaster in his "
+          "home country, but who would have thought that such a danger lay hidden here as well. With words like "
+          "something out of a myth lined up like this, nothing but questions must come to your mind. But there is no "
+          "time. So that our descendants in the future are not exposed to the threat of this goddess, I need to leave "
+          "my words, even if only a little. Even if I tell the present residents in words, it will someday fade away. "
+          "Until now such history has been repeated, and the use and the banning of Droga have also been repeated. "
+          "Both the Arata cherry and Droga must be eradicated. But the enemy is far too mighty and vicious. I thought "
+          "that, by rights, the storehouse's books should all be disposed of too, so that our descendants cannot find "
+          "their way to Droga. But even without them, our descendants would one day make Droga on their own and "
+          "repeat the tragedy again. If so, I think I should deliberately leave the storehouse's books and leave "
+          "their danger behind as the wisdom of the ancestors, as a rule. The reports you gave us will also become "
+          "part of the storehouse's books, and to pass their danger on to our descendants, I will do my best to "
+          "preserve all of the storehouse's books. I thank you from the bottom of my heart for providing us with "
+          "valuable materials that were of use to us.")
+_X183 = [
+    ("Hajime Shinozaki-sama", [1862, 6, 1900, 330],
+     {"rot": -90, "max_size": 22, "align": "left", "mask_color": _L2M, "erase": [[1862, 0, 1900, 180]]}),
+    ("Shiyo 735, January 27", [86, 120, 121, 440],
+     {"rot": -90, "max_size": 22, "align": "right", "mask_color": _L2M, "erase": [[86, 125, 121, 445]]}),
+    ("Arata Settlement, Grand Witch", [57, 120, 89, 442],
+     {"rot": -90, "max_size": 22, "align": "right", "mask_color": _L2M, "erase": [[57, 208, 89, 446]]}),
+    ("Kikyo Niimura", [27, 250, 59, 444],
+     {"rot": -90, "max_size": 22, "align": "right", "mask_color": _L2M, "erase": [[27, 326, 59, 448]]}),
+]
+_J183 = _l2jobs(183, L2_183, 120, 1838, 3, "letter (calligraphy; addressee, date and signature rot -90 in their columns)")
+for _j in _J183[:2]:
+    _j["lines"] = _j["lines"] + _X183
+JOBS += _J183
+# IMAGES18B-R1 2026-10-15 (cont.): rr192 card = work/images/_c/img18b-R1/ovcard.py 192 "The Arata Incident" 18 70 80 34 pink
+# (1:1 window page (250, 0): the JP title rows sit at card y 27-63 = page y 26-63, title x 75 = page 324; ovprobe's 1.60 match
+# was thrown off by the pink brush scribble, which is protected and kept as drawn).
+JOBS += [{"id": "rep192-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr192.gal", "")]}]
+
+
+# IMAGES18B-R1 2026-10-15 (cont.) ---- 41 "The Descent of the Goddess" (800x1733): title, P1-P2, two photos of a letter (ref 213's
+# letter, shot at a distance: column pitch about 10 px, glyphs 7-8 px, below legibility in the original at native size, so the
+# photos stay as drawn: QIMAGES18BR1-07), caption, a dark drawing (art, no text, kept), two-line caption, P3, date, signature.
+# Ink #241804 (JP glyph cores 36,24,4).
+R41_A = [
+    "After the Arata Incident, something even stranger happened. A number of people appeared who tried to dig up the "
+    "corpses of those who had died in the Arata Incident and been buried in the ground. They are said to have stayed "
+    "close to the corpses they dug up and kept talking to them. It was as if they were worshiping the dead; they did "
+    "respond when those around them called to them, but their attachment to the corpses did not end. These perverts "
+    "ate and slept like ordinary people in daily life, and hunted and did farm work when needed. But whenever they had "
+    "time, their words and behavior stood out, as if they thought of nothing but the corpses, and this was apparently "
+    "extremely eerie.",
+    "Most of them were men (with a few women as well), and in the spring of the following year they all went missing "
+    "at once. But there is also a record that just before they vanished, \"the Fierce Sound\" rang out and the Goddess "
+    "descended. What these are metaphors for is unknown, but it can at least be surmised that there was an omen "
+    "before they vanished. What deserves attention here is \"the Fierce Sound\" and \"the Goddess.\" In Shiyo 341 it "
+    "would have been difficult to elucidate them scientifically, but now there is room to examine whether they can "
+    "be reproduced by some method.",
+]
+R41_B = [
+    "According to an investigation by the residents at the time, new cherry trees were apparently found nearby, as many "
+    "as the people who had vanished. It is said that they had suddenly sprung up in places where there should have "
+    "been no cherry trees until then. The residents apparently thought that the people who went missing might have "
+    "turned into cherry trees. As evidence, it is written that clothing thought to belong to the missing people was "
+    "wrapped around the roots of the cherry trees. If this is true, it may be a phenomenon connected to the life "
+    "cycle of the Arata cherry.",
+]
+_p41a, _e41a = _rflow(R41_A, 20, 788, 99, 22)
+_p41b, _e41b = _rflow(R41_B, 20, 788, 1368, 22)
+REP41 = ([_rtitle("The Descent of the Goddess", 27, 63),
+          _rerase([14, 97, 792, 551]),
+          ("A letter written about the Goddess and the Fierce Sound", [40, 884, 760, 912],
+           {"max_size": 21, "align": "center", "erase": [[196, 884, 610, 913]]}),
+          ("Picture of the Descent of the Goddess\n(Arata settlement storehouse books)", [40, 1276, 760, 1340],
+           {"max_size": 21, "align": "center", "erase": [[322, 1277, 482, 1306], [312, 1307, 493, 1339]]}),
+          _rerase([14, 1367, 792, 1578])]
+         + _p41a + _p41b + _r1foot("Shiyo 731, October 4", 1613, 1643))
+JOBS += [_r1job(41, REP41, "report (part 18 list; letter photos below legibility, kept; drawing kept)", "#241804")]
+# IMAGES18B-R1 2026-10-15 (cont.): rr41 card = work/images/_c/img18b-R1/ovcard.py 41 "The Descent of the Goddess" 4 82 84 34 bw mirror
+# (the card is a MIRRORED 1:1 window onto page (250, 0), faint text under black spray blobs and white chalk strokes; built
+# flipped, flipped back; the blobs and the chalk are protected and kept as drawn).
+JOBS += [{"id": "rep41-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr41.gal", "")]}]
+
+
+# IMAGES18B-R1 2026-10-15 (cont.) ---- 155 "The Goddess Verde" (800x1184): title, P1, a picture (hand holding an eye; art, kept)
+# with a 4-line caption to its right, P2, a picture (masked mummy; art, kept) with a 3-line caption to its right, date,
+# signature. Captions reflowed in their own column (x 416-788) at one caption size. Ink #221602 (JP glyph cores 34,22,2).
+R155_A = [
+    "In a report submitted earlier, I recorded the matter of Tomi, the last surviving green-eyed girl. In Shiyo 352, 12 "
+    "years after the Arata Incident, Tomi too was finally struck by that frenzy. She desperately resisted the murderous "
+    "intent and gouged out her green eye with her own hand. Even so, Tomi's frenzy did not subside, and in the end Tomi "
+    "thrust her hand through her eye into her brain and took her own life. With this, the last one with green eyes, "
+    "that is, the last of the green-eyed, was gone. The residents believed that women whose eyes had turned green "
+    "would, on reaching a certain age, be struck by murderous intent like this. The concept of the \"Green-Eye "
+    "Curse-Killing\" is also thought to have arisen in this period.",
+]
+R155_B = [
+    "Holding that Tomi had resisted that murderous intent and thrown away her life to protect the settlement, the "
+    "residents made her body into a mummy and preserved it. A custom arose of worshiping that body as an image of the "
+    "Goddess. Tomi's mummy was named Verde. Verde (verde) means \"green\" in Portuguese. Since then, a unique religion "
+    "in which Japanese and Western cultures intersect has taken shape in the Arata settlement.",
+]
+R155_C1 = ["Part of the Arata settlement storehouse books.",
+           "A picture thought to show Tomi gouging out her eye had been preserved.",
+           "(Around Shiyo 352?)"]
+R155_C2 = ["This too is from the Arata settlement storehouse books.",
+           "Verde's mummy wears a traditional Noh mask and red robes."]
+_S155 = 21
+_p155a, _e155a = _rflow(R155_A, 20, 788, 99, _S155)
+_p155b, _e155b = _rflow(R155_B, 20, 788, 643, _S155)
+_c155a, _f155a = _rflow(R155_C1, 416, 788, 433, 19, gap=0.25)
+_c155b, _f155b = _rflow(R155_C2, 422, 788, 908, 19, gap=0.25)
+REP155 = ([_rtitle("The Goddess Verde", 26, 63),
+           _rerase([14, 97, 792, 340]),
+           _rerase([410, 431, 790, 544]),
+           _rerase([14, 641, 792, 823]),
+           _rerase([416, 906, 790, 988])]
+          + _p155a + _c155a + _p155b + _c155b + _r1foot("Shiyo 731, December 16", 1099, 1129))
+JOBS += [_r1job(155, REP155, "report (part 18 list; two pictures kept, side captions reflowed)", "#221602")]
+# IMAGES18B-R1 2026-10-15 (cont.): rr155 card = work/images/_c/img18b-R1/ovcard.py 155 "The Goddess Verde" 18 70 80 34 chalk
+# (1:1 window page (250, 0) on a red ground; the white chalk katakana scribble over the text is protected and kept as drawn).
+JOBS += [{"id": "rep155-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr155.gal", "")]}]
+# IMAGES18B-R2 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane R2): the finished report documents rrr<ID>/全体.gal of reports
+# 269 270 272 273 274 (part 18 list) + their 概要 cards rr<ID>. Pattern = lane R1 / IMAGESR-A: _rflow() reflows each
+# paragraph group from its first JP row at one size per page, _rerase() erases the JP rows (texfill on the paper),
+# _rtitle() for the title. Signature = lane R1's _R1SIG (one wording for both lanes, QIMAGES18BR1-01). White labels on the
+# black / red diagram plates: flat fill of the plate colour inside erase boxes measured strictly inside the plate
+# (work/images/_c/img18b-R2/pcomp.py + boxchk.py + band.py; slanted arrows = a row of narrow boxes along the band), English
+# in white (rot = the arrow's slope). Ink = median of the JP glyph cores per page (col.py); end-y checks with plan.py.
+_R2BLK = "#030303"
+_R2RED = "#f20707"
+
+
+def _r2foot(date, y_date, y_sig, x0=16, size=21):
+    """date + signature lines (JP rows start at y_date / y_sig); same boxes as _rfoot, the lane-R1 signature _R1SIG."""
+    return [(date, [x0, y_date - 2, 560, y_date + 28], {"max_size": size, "erase": [[x0 - 6, y_date - 4, 600, y_date + 31]]}),
+            (_R1SIG, [x0, y_sig - 2, 792, y_sig + 28], {"max_size": size, "erase": [[x0 - 6, y_sig - 4, 600, y_sig + 31]]})]
+
+
+def _r2job(rid, lines, note, ink):
+    return dict(_rjob(rid, lines, note), color=ink)
+
+
+def _r2plate(text, box, erase, bg, size, **k):
+    """white label on a diagram plate: flat fill of the plate colour in the erase boxes, English in white."""
+    return (text, list(box), dict({"max_size": size, "align": "center", "color": "#ffffff", "method": "flat", "bg": bg,
+                                   "erase": [list(e) for e in erase]}, **k))
+
+
+def _r2cap(text, box, erase, size, **k):
+    return (text, list(box), dict({"max_size": size, "align": "center", "erase": [list(e) for e in erase]}, **k))
+
+
+def _r2bul(items, x0, x1, y0, size, bx=24, gap=3):
+    """bulleted items (bullet at bx, text from x0); returns (lines, end_y)."""
+    out, y = [], y0
+    for it in items:
+        p, e = _rflow([it], x0, x1, y, size, gap=0)
+        out += [("•", [bx, y, x0 - 4, y + size + 6], {"max_size": size, "erase": []})] + p
+        y = e + gap
+    return out, y - gap
+
+
+# ---- 269 "A Study of Arata Cherry Propagation" (800x5256): title, P1 + two bullets, two spore photos (10μ scale bars kept),
+# P2-P7, honey-fungus photo + two-line caption, P8 + two bullets + P9, tree photo + caption, P10, food-chain diagram (white
+# labels on black / red arrows; four slanted) + caption, P11-P12, diagram 2 (two arrow labels, two figure labels) + caption,
+# P13, diagram 3 (three arrow labels, red banner, three figure labels) + caption, P14-P15, date, signature.
+# Ink #1e1300 (JP glyph cores 30,19,0); the thin diagram labels and the diagram 2 / 3 captions #2a1b02 (cores 41-44,26-30,2).
+R269_A = [
+    "From among the reports up to the other day, we excerpt and summarize what concerns the propagation and life cycle "
+    "of the Arata cherry. The Arata cherry is a fungus that mimics the Somei-yoshino cherry. Roughly speaking, it is fair "
+    "to call it a mushroom. However, its mycelial mat is extremely wide and is thought to spread across the whole Arata "
+    "district. The Arata cherry has two kinds of spores.",
+]
+R269_AB = [
+    "Spores dispersed from the part that mimics flowers (photo, left)",
+    "Spores with a muscle-strengthening effect, stored in the roots (hyphae) (photo, right)",
+]
+R269_B = [
+    "First, it has mammals feed on its roots and strengthens their muscles. Through this, the mammals learn that feeding "
+    "on the roots of the Arata cherry gives them very great strength, and it becomes possible to encourage active "
+    "feeding (the first generation).",
+    "When a member of the first generation gives birth, the bleeding at childbirth makes the child second generation "
+    "without exception. The second generation can exercise precognition by inhaling the spores dispersed from the "
+    "flowers (however, with the situation at the time of touching the blood re-created). At birth, the mother suffers "
+    "from labor pains and exhaustion, but the child being born is also said to experience extremely great pain when "
+    "passing through the birth canal. It is thought that when a member of the second generation is struck by some "
+    "serious injury or pain, they become able to foresee danger to those nearby.",
+    "Furthermore, when a member of the second generation gives birth, the third generation is born. The third "
+    "generation, too, touch their mother's blood at birth and are green-eyed from birth. However, the ability to "
+    "foresee danger is limited to girls who have reached a certain age, and at that point an unbearable murderous "
+    "intent wells up toward the other members of the second and third generations.",
+    "When a member of the third generation dies, spores germinate from the surface of the body, and new spores form at "
+    "their tips. When those spores combine with the spores remaining inside the bodies of the first and second "
+    "generations, the fourth generation is born. The fourth generation come to hold an obsessive attachment to the "
+    "corpses of the third generation, become seedbeds for the cherry in about a year, and the propagation is complete.",
+    "In this way, the Arata cherry propagates by an extremely complex and time-consuming method. We will proceed to "
+    "consider why the Arata cherry chose such a complex method of propagation.",
+]
+R269_B2 = [
+    "What is the Arata cherry? It has been established that it is a fungus, but our supposition is that it is a true "
+    "fungus belonging to the honey fungi.",
+]
+R269_C = [
+    "Honey fungus is not a particularly rare mushroom; it is found in the mountains of Japan and is a common one, treated "
+    "as edible. However, honey fungus has two major characteristics:",
+]
+R269_CB = [
+    "On rare occasions it becomes an extremely huge mycelial mat (enough to swallow a mountain)",
+    "It has an extremely strong parasitic nature (a parasitic fungus)",
+]
+R269_C2 = [
+    "These two closely resemble the Arata cherry (those who work in forestry detest this honey fungus intensely, because "
+    "honey fungus, owing to its strong parasitic nature, makes one tree after another its seedbed and makes the trees "
+    "wither). Therefore, the Arata cherry is thought to be a relative of the honey fungus.",
+]
+R269_D = [
+    "Next, why does a relative of the honey fungus mimic the cherry? The advantage of mimicking the cherry lies in how "
+    "easily it gathers living things. Honeybees, birds, and the like have the habit of gathering, drawn by beautiful "
+    "flowers. What differs from the Somei-yoshino, however, is that it holds a scent and nectar that can gather a "
+    "greater number of insects. If many insects can be gathered, the birds and small animals that prey on them gather, "
+    "and then the mammals that prey on those gather as well. In other words, it can create a thick food chain. When "
+    "living things gather in this way, rich soil is made, and a paradise abundant in food comes into being. Also, the "
+    "reason that, among flowers, it mimics the cherry is thought to be to gather around it the animals that have woken "
+    "from hibernation in early spring. The more the mammals increase, the more candidates for the Arata cherry's "
+    "seedbeds increase, and the Arata cherry's propagation is carried out efficiently.",
+]
+R269_E = [
+    "Furthermore, we must also consider why the Arata cherry takes so much time over its propagation. Because the Arata "
+    "cherry needs to keep nutrients in its huge mycelial mat, it needs to keep the soil fertile at all times. For that, "
+    "many animals and plants must have their living spheres around it. To maintain such living spheres, the spores of "
+    "the Arata cherry must not be found out to be poison. If mammals that had fed on the roots of the Arata cherry were "
+    "to germinate at once, they would no longer feed on the Arata cherry, and there is a risk that they would leave the "
+    "surroundings of the Arata cherry. It is surmised that by taking time over its propagation, it aims to conceal the "
+    "conditions for becoming a seedbed. If there is no harm to the mammals, food is abundant, and when it comes to it, "
+    "there is even the means of feeding on the roots to strengthen their muscles: it becomes a place truly worthy of "
+    "being called a paradise.",
+    "Then why are the second and third generations endowed with the ability to sense danger? That answer, too, can be "
+    "explained by considering the life cycle of the Arata cherry. The second generation, regardless of age or sex, has "
+    "the ability to foresee danger under certain conditions. To individuals without the ability to sense danger, the "
+    "second generation are extremely precious beings. When this is so, the surrounding society will likely treat the "
+    "second generation with care. From the Arata cherry's standpoint, they can be called precious parasitic hosts that "
+    "spread its seedbeds, so the second generation must bear the next children.",
+]
+R269_G = [
+    "But what of the third generation? The third generation is the final host, and when they die, spores that take over "
+    "the first and second generations are dispersed from their epidermis. From the Arata cherry's point of view, the "
+    "third generation are individuals it wants to die as soon as possible. For that reason, it makes the surrounding "
+    "society kill the third generation quickly. But to make it kill the third generation, it must make them commit acts "
+    "that shake the surrounding society. That is, it prompts them to kill the second generation. It makes the "
+    "surrounding society learn the phenomenon that, once the third generation reach a certain age, they are driven by "
+    "an urge to kill the second generation, and makes it acquire the habit of killing the third generation quickly once "
+    "they are born. To make it easy to tell that a newborn child is third generation, the physical trait of one green "
+    "eye probably comes about.",
+]
+R269_H = [
+    "In the end, the third generation die, and the first and second generations around them are reduced to the fourth "
+    "generation. The fourth generation die in the spring of the following year and sprout cherry trees all at once. "
+    "However, by the time it comes to that generation, it is already extremely difficult to surmise that the cause is "
+    "the Arata cherry, and the surviving individuals once again lay hands on the roots of the Arata cherry.",
+    "The above is our study of the life cycle of the Arata cherry, Droga, and danger sense. However, many points are "
+    "still unclear, such as the mechanism of danger sense, the Fierce Sound, and the Goddess.",
+]
+_S269 = 20
+_L269 = "#2a1b02"
+_p269a, _e269a = _rflow(R269_A, 20, 788, 101, _S269)
+_b269a, _f269a = _r2bul(R269_AB, 52, 788, _e269a + 10, _S269)
+_p269b, _e269b = _rflow(R269_B, 20, 788, 645, _S269)
+_p269b2, _e269b2 = _rflow(R269_B2, 20, 788, _e269b + 18, _S269)
+_p269c, _e269c = _rflow(R269_C, 20, 788, 1824, _S269)
+_b269c, _f269c = _r2bul(R269_CB, 52, 788, _e269c + 3, _S269)
+_p269c2, _e269c2 = _rflow(R269_C2, 20, 788, _f269c + 3, _S269)
+_p269d, _e269d = _rflow(R269_D, 20, 788, 2459, _S269)
+_p269e, _e269e = _rflow(R269_E, 20, 788, 3155, _S269)
+_p269g, _e269g = _rflow(R269_G, 20, 788, 4092, _S269)
+_p269h, _e269h = _rflow(R269_H, 20, 788, 4817, _S269)
+REP269 = ([_rtitle("A Study of Arata Cherry Propagation", 26, 63),
+           _rerase([14, 98, 792, 342]), _rerase([14, 642, 792, 1397]), _rerase([14, 1821, 792, 2092]),
+           _rerase([14, 2456, 792, 2817]), _rerase([14, 3152, 792, 3755]), _rerase([14, 4089, 792, 4419]),
+           _rerase([14, 4814, 792, 5085]),
+           _r2cap("A photograph of honey fungus\nAlso called \"boribori\" in Hokkaido", [40, 1729, 760, 1792],
+                  [[314, 1731, 495, 1759], [186, 1761, 617, 1790]], 21, line_spacing=1.08),
+           _r2cap("A tree rotted by Armillaria root rot", [40, 2395, 760, 2426], [[251, 2396, 557, 2424]], 21),
+           _r2cap("It builds a food chain and draws in mammals, its hosts", [20, 3090, 780, 3122], [[110, 3091, 693, 3120]], 21),
+           _r2cap("Being precious beings, the second generation are treated with care", [20, 4010, 780, 4040],
+                  [[176, 4011, 632, 4038]], 20, color=_L269),
+           _r2cap("It hastens the deaths of the third generation to promote propagation", [20, 4760, 780, 4790],
+                  [[226, 4761, 570, 4788]], 20, color=_L269),
+           # food-chain diagram: straight arrows
+           _r2plate("Mammals", [10, 2962, 116, 2992], [[28, 2964, 98, 2988]], _R2BLK, 18),
+           _r2plate("Mammals", [700, 2966, 788, 3002], [[702, 2972, 772, 2997]], _R2BLK, 18),
+           _r2plate("Insects", [255, 2960, 302, 2982], [[265, 2959, 289, 2982]], _R2BLK, 14),
+           _r2plate("Insects", [490, 2972, 536, 2994], [[502, 2972, 526, 2996]], _R2BLK, 14),
+           _r2plate("Mimics\nthe cherry", [352, 2926, 424, 2974], [[365, 2920, 411, 2944], [365, 2948, 412, 2972]], _R2RED, 17,
+                    line_spacing=1.0),
+           # slanted arrows (rot = the arrow's slope; erase = narrow boxes along the band, all inside the plate)
+           _r2plate("Small animals", [143, 2911, 223, 2951],
+                    [[148, 2900, 158, 2930], [158, 2905, 168, 2935], [168, 2910, 178, 2940], [178, 2915, 188, 2945],
+                     [188, 2920, 198, 2949], [198, 2924, 208, 2954], [208, 2929, 218, 2964]], _R2BLK, 15, rot=-22, rot_h=18),
+           _r2plate("Small animals", [567, 2932, 647, 2972],
+                    [[568, 2952, 578, 2984], [578, 2950, 588, 2977], [588, 2946, 598, 2974], [598, 2942, 608, 2969],
+                     [608, 2938, 618, 2965], [618, 2934, 628, 2962], [628, 2930, 638, 2958], [638, 2926, 646, 2955]],
+                    _R2BLK, 15, rot=20, rot_h=18),
+           _r2plate("Birds", [158, 3009, 202, 3041], [[168, 3009, 180, 3039], [180, 3007, 190, 3036]], _R2BLK, 15, rot=15, rot_h=18),
+           _r2plate("Birds", [587, 3030, 631, 3062], [[596, 3029, 600, 3055], [600, 3030, 610, 3058], [610, 3033, 621, 3060]],
+                    _R2BLK, 15, rot=-15, rot_h=18),
+           # diagram 2
+           _r2plate("Danger sense", [258, 3802, 390, 3838], [[274, 3809, 366, 3833]], _R2BLK, 18),
+           _r2plate("Precious being", [270, 3901, 402, 3936], [[283, 3908, 397, 3932]], _R2BLK, 18),
+           _r2cap("Second generation", [140, 3964, 290, 3992], [[164, 3965, 258, 3991]], 18, color=_L269),
+           _r2cap("Surrounding society", [470, 3974, 650, 4002], [[515, 3975, 603, 4001]], 18, color=_L269),
+           # diagram 3
+           _r2plate("Danger sense", [336, 4455, 468, 4490], [[352, 4462, 443, 4486]], _R2BLK, 18),
+           _r2plate("Killing", [140, 4506, 226, 4540], [[158, 4511, 203, 4535]], _R2RED, 18),
+           _r2plate("Precious being", [346, 4554, 480, 4589], [[360, 4560, 475, 4585]], _R2BLK, 18),
+           _r2plate("A culture of regarding green eyes as dangerous takes shape", [90, 4700, 640, 4728],
+                    [[235, 4702, 554, 4726]], _R2RED, 18),
+           _r2cap("Third generation", [16, 4618, 168, 4645], [[42, 4619, 136, 4644]], 18, color=_L269),
+           _r2cap("Second generation", [212, 4617, 366, 4644], [[241, 4618, 336, 4643]], 18, color=_L269),
+           _r2cap("Surrounding society", [550, 4626, 730, 4654], [[592, 4627, 686, 4653]], 18, color=_L269)]
+          + _p269a + _b269a + _p269b + _p269b2 + _p269c + _b269c + _p269c2 + _p269d + _p269e + _p269g + _p269h
+          + _r2foot("Shiyo 732, June 30", 5150, 5180))
+JOBS += [_r2job(269, REP269, "report (part 18 list; photos and diagram art kept, 10μ scale bars kept)", "#1e1300")]
+
+
+# IMAGES18B-R1 2026-10-15 (cont.) ---- 268 "Fourth Generation Experiments" (800x4052): title; P1 + a 5-item numbered list + P2-P4
+# + three naming lines; diagram 1 (three figures, two black arrows with white labels, three labels under the figures); P5-P6
+# with two quoted lines; diagram 2 (an ellipse with a heading, two small labels, two diagonal black arrows with white labels,
+# a label under the crossed-out figure; the ellipse line stays); P7-P8; a photo (no text, kept); a lead line + 5 bulleted
+# items; diagram 3 (two black arrows with white labels); a two-line caption; P9-P10; date; signature. Numbered / bulleted
+# items: marker + hanging indent (the 192 pattern). 壱 / 弐 / 参 = (I) / (II) / (III) and 遺体（参） = "Corpse (III)" (the
+# shipped label forms, QIMAGES18BR1-09). Ink #231803 (JP glyph cores 35,24,3).
+def _r1list(items, marks, xm, xt, y, size, x1=788):
+    """numbered / bulleted items stacked from y: marker in [xm, xt - 4], text wrapped in [xt, x1]; returns (lines, end_y)."""
+    out = []
+    for mk, it in zip(marks, items):
+        p, e = _rflow([it], xt, x1, y, size, gap=0)
+        out += [(mk, [xm, y, xt - 4, y + int(size * 1.3)], {"max_size": size, "erase": []})] + p
+        y = e + 3
+    return out, y
+
+
+_S268 = 21
+_W268 = {"method": "flat", "bg": "#020101", "color": "#ffffff", "align": "center", "mask_color": [150, 255, 150, 255, 150, 255]}
+_D268 = {"method": "inpaint", "mask_color": [110, 255, 110, 255, 110, 255], "mask_grow": 3, "color": "#ffffff",
+         "rot_h": 18, "max_size": 15}
+R268_1 = [
+    "According to the earlier summary of the records, a person who meets certain conditions goes missing, and that "
+    "person becomes a cherry tree. This is surmised to be the Arata cherry's method of reproduction. A person who has "
+    "become a cherry tree is named the fourth generation. Summarizing, with Droga included, the process from the "
+    "Arata Incident to the phenomenon of humans changing into cherry trees:",
+]
+R268_L = [
+    "Droga was abused through the Arata Incident",
+    "The third generation was born from the blood spattered in the fighting",
+    "The incident ended when all of the frenzied third generation died",
+    "A few days later, people appear who dote on the corpses of the dead third generation",
+    "A year later, the doting ones go missing and become cherry trees (the doting ones are the fourth generation)",
+]
+R268_2 = [
+    "In the process above, there must have been a condition that turns a human into the fourth generation (the case "
+    "of Tomi excepted). In our research, we have in effect been able to reproduce up to 3. That being so, we must "
+    "experiment on how the corpse-doting ones of 4 can be produced. At least, not everyone went strange, so here we "
+    "will also surmise to some extent the conditions for becoming one who dotes.",
+    "Incidentally, new buds sprout on the epidermis of a third-generation corpse, and spores are further released "
+    "from there. That means these spores must combine with something so that sexual reproduction takes place. So "
+    "far, when it comes to spores inside the human body, there are the first and second generations. If the spores "
+    "of the third generation combine with the spores of the first and second generations and germinate as a cherry "
+    "tree, that would agree with both the records and our research so far.",
+    "So we decided to create one member of the third generation. Droga was administered to one person, others were "
+    "made to touch the blood in turn, and a second generation and a third generation were produced.",
+]
+R268_N = ["First generation (I)", "Second generation (II)", "Third generation (III)", "are the names we give them."]
+R268_3 = [
+    "When (II) and (III) were made to inhale cherry pollen, that precognition appeared in (II), and (III) went mad. "
+    "After confirming that (III) was driven by murderous intent toward (II), we promptly killed it. Afterward, (I) "
+    "and (II) were made to live together with the corpse of (III).",
+    "As a result, changes were seen in (I) and (II). A week after they began living together, once the decay of "
+    "(III) had advanced somewhat, (I) and (II) (hereafter the two are called \"the mutated\") came to show rapt "
+    "expressions and more and more delusional talk. When we listened to the mutated talk,",
+]
+R268_Q = ["\"Soon I will return to the earth,\"", "\"Corpse (III) is waiting,\""]
+R268_3b = [
+    "they said. Even when cherry pollen was cut off, the symptoms did not change, and they progressed regardless of "
+    "the season.",
+]
+R268_4 = [
+    "When the blood of the mutated was sampled, buds of about 100 microns had grown from 10-micron spores, and at the "
+    "tips of the buds, sexual spores different from those of Corpse (III) were confirmed. Many of those spores were "
+    "already conjugated with the corpse's spores, and here, for the first time, we were able to confirm the existence "
+    "of the fourth generation. The fourth generation is the life form that results when the first and second "
+    "generations undergo further mutation.",
+    "A year later, the two mutants died, and cherry trees about 3 meters in size arose (there was a ceiling, so their "
+    "growth is thought to have stopped at 3 meters). They were already in bloom, and their appearance closely "
+    "resembled the Somei Yoshino. Those cherry trees used not soil but the two mutants as their seedbed, and a week "
+    "later both had withered and died. As with ordinary fungi, unless the mutants die on organic matter such as soil, "
+    "the fruiting bodies presumably cannot grow stably. The site had a concrete floor, so it is thought they could "
+    "not take root. When found, most of the corpses' muscle, skin and internal organs had dissolved, and a colorless, "
+    "transparent mucus had spread across the floor (why the corpses dissolved is unknown).",
+]
+R268_S = [
+    "Formed when the spores inside the bodies of the first and second generations combine with the spores that arose "
+    "on the corpse of the third generation",
+    "The spores conjugate inside the bodies of the first and second generations (the first and second generations "
+    "transition into the fourth generation)",
+    "Rapt expressions and delusional talk are seen",
+    "The symptoms gradually progress, with a tendency to dote on Corpse (III)",
+    "One year after the spores conjugate, cherry trees grow from the first and second generations, and they die",
+]
+R268_5 = [
+    "The Arata cherry stores in its roots spores that produce a body-strengthening component, has mammals ingest "
+    "them, and germinates inside the mammals' bodies. They lie hidden in the body until the grandchildren's "
+    "generation, make that generation kill one another, and release sexual spores. The first and second generations "
+    "who absorb those become fruiting bodies and spread the reproductive range. This is the life cycle of the Arata "
+    "cherry.",
+    "However, after the earlier experiments, we cannot sacrifice the lives of any more of our brethren, and there "
+    "should have been none of our brethren in this experiment either. As for this time's test subjects, it seems "
+    "Kichizo-sama secured three cooperators from somewhere. Rumor has it they are prisoners serving life sentences "
+    "and condemned men who took plea bargains, but does Kichizo-sama have connections even in such places?",
+]
+_g268 = 0.45 * _S268
+_a268, _y = _rflow(R268_1, 20, 788, 99, _S268)
+_b268, _y = _r1list(R268_L, ["1.", "2.", "3.", "4.", "5."], 20, 48, _y + int(_g268 * 2), _S268)
+_c268, _y = _rflow(R268_2, 20, 788, _y + int(_g268 * 2), _S268)
+_d268, _e268a = _rflow(R268_N, 20, 788, _y + int(_g268), _S268, gap=0)
+_f268, _y = _rflow(R268_3, 20, 788, 1278, _S268)
+_q268, _y = _rflow(R268_Q, 30, 788, _y, _S268, gap=0)
+_h268, _e268b = _rflow(R268_3b, 20, 788, _y, _S268)
+_i268, _e268c = _rflow(R268_4, 20, 788, 2154, _S268)
+_j268 = [("The traits of the fourth generation are summarized as follows.", [20, 3061, 788, 3061 + int(_S268 * 1.3)],
+          {"max_size": _S268, "erase": []})]
+_k268, _e268d = _r1list(R268_S, ["•"] * 5, 22, 52, 3061 + int(_S268 * 1.3) + 2, _S268)
+_l268, _e268e = _rflow(R268_5, 20, 788, 3635, _S268)
+REP268 = ([_rtitle("Fourth Generation Experiments", 26, 63),
+           _rerase([14, 97, 792, 944]),
+           ("Blood", [208, 1082, 302, 1116], dict(_W268, max_size=20, erase=[[236, 1086, 286, 1113]])),
+           ("Blood", [446, 1082, 540, 1116], dict(_W268, max_size=20, erase=[[473, 1086, 523, 1113]])),
+           ("First generation (I)", [40, 1204, 262, 1234], {"max_size": 20, "align": "center", "erase": [[82, 1205, 219, 1233]]}),
+           ("Second generation (II)", [270, 1204, 504, 1234], {"max_size": 20, "align": "center", "erase": [[318, 1205, 455, 1233]]}),
+           ("Third generation (III)", [522, 1204, 752, 1234], {"max_size": 20, "align": "center", "erase": [[569, 1205, 705, 1233]]}),
+           _rerase([14, 1276, 792, 1639]),
+           ("Living together", [262, 1700, 546, 1752], {"max_size": 32, "align": "center", "erase": [[359, 1702, 450, 1750]]}),
+           ("I", [248, 1740, 290, 1766], {"max_size": 20, "align": "center", "erase": [[255, 1740, 282, 1766]]}),
+           ("II", [510, 1740, 552, 1766], {"max_size": 20, "align": "center", "erase": [[518, 1740, 544, 1766]]}),
+           ("", [277, 1955, 305, 1982], dict(_D268, erase=[[277, 1955, 305, 1982], [297, 1972, 321, 1998]])),
+           ("", [492, 1974, 514, 1998], dict(_D268, erase=[[492, 1974, 514, 1998], [512, 1956, 537, 1982]])),
+           ("Doting", [279, 1957, 319, 1997], dict(_D268, rot=-43, erase=[])),
+           ("Doting", [492, 1958, 532, 1998], dict(_D268, rot=45, erase=[])),
+           ("III (dead)", [330, 2112, 510, 2140], {"max_size": 20, "align": "center", "erase": [[375, 2113, 467, 2139]]}),
+           _rerase([14, 2152, 792, 2636]),
+           _rerase([14, 3059, 792, 3301]),
+           ("Doting", [412, 3378, 500, 3416], dict(_W268, max_size=20, erase=[[436, 3384, 488, 3412]])),
+           ("Spores", [430, 3456, 520, 3494], dict(_W268, max_size=20, erase=[[447, 3461, 496, 3488]])),
+           ("The first and second generations become the fourth generation\nthrough the effect of the spores released "
+            "from the dead third generation", [40, 3538, 760, 3596],
+            {"max_size": 20, "align": "center", "erase": [[167, 3540, 668, 3594]]}),
+           _rerase([14, 3633, 792, 3936])]
+          + _a268 + _b268 + _c268 + _d268 + _f268 + _q268 + _h268 + _i268 + _j268 + _k268 + _l268
+          + _r1foot("Shiyo 732, May 21", 3970, 4000))
+JOBS += [_r1job(268, REP268, "report (part 18 list; diagrams + photo kept, their labels set in English)", "#231803")]
+# IMAGES18B-R2 2026-10-15 (cont.): rr269 card = work/images/_c/img18b-R2/ovcard.py 269 "A Study of Arata Cherry Propagation"
+# 4 96 98 34 pink (1:1 window page (250, 0), ovprobe 0.47; the red brush scribble over the text is protected and kept as drawn).
+JOBS += [{"id": "rep269-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr269.gal", "")]}]
+# IMAGES18B-R1 2026-10-15 (cont.): rr268 card = work/images/_c/img18b-R1/ovcard.py 268 "Fourth Generation Experiments" 4 82 84 34
+# orangewhite (1:1 window page (250, 0) on a dark ground; the orange brush scribble and the soft white strokes over the text
+# are protected and kept as drawn).
+JOBS += [{"id": "rep268-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr268.gal", "")]}]
+# IMAGES18B-R2 2026-10-15 (cont.) ---- 270 "Methods of Suppressing the Urge to Kill" (800x2609): title, P1, diagram 1 (three
+# figures, art kept; white label on the red arrow; three figure labels set in two lines, the two right ones share one JP row)
+# + caption, P2-P3, diagram 2 (brain and spore photo kept; white label on the red arrow) + two-line caption, "Postscript"
+# heading, P4, photo (kept) + caption, P5-P6, date, signature. Ink #231803 (JP glyph cores 35,24,3); labels / captions
+# #271a04 (cores 38-40,25-30,3-9). JP typo 考えらえる read as 考えられる.
+R270_A = [
+    "Using condemned prisoners who had become third generation, we carried out various experiments. The main subject this "
+    "time was the Arata cherry's chain of command. As stated in the previous report, the Arata cherry takes over the brain "
+    "and spinal cord of the third generation and, under certain conditions, tries to kill the infected who are its "
+    "targets. Besides drugs and medical treatment, the method of suppressing this urge to kill is an extremely simple "
+    "one: making a third-generation member who is driven by the urge to kill faint. If they can be made to lose "
+    "consciousness, by anesthesia, a hard blow to the head, or the like, the third-generation member remains motionless "
+    "until waking. Also, if a third-generation member is restrained or the like and left driven by the urge to kill, they "
+    "faint and wake repeatedly at fixed intervals. This is thought to be the brain judging the danger and choosing to "
+    "faint of its own accord; at these times, too, the third-generation member becomes motionless, and on waking attempts "
+    "once again to kill the target.",
+]
+R270_B = [
+    "However, there are exceptions. In the case of a person in a vegetative state, even if they appear to be completely "
+    "without consciousness, they are merely unable to move their body, and their consciousness is in fact sometimes "
+    "awake. In other words, these are cases where one mistakenly believes from appearances that there is no "
+    "consciousness. When such a person in a vegetative state becomes third generation, they suddenly start to move and "
+    "try to kill the target. However, since their brain waves differ from those of a fully awake person, it becomes a "
+    "state of complete takeover, in which the body moves but cannot be moved by their own will. In such cases, the "
+    "symptoms subside if consciousness is extinguished with anesthesia or the like, but as soon as the anesthesia wears "
+    "off, they try to kill the target again.",
+]
+R270_B2 = [
+    "From the above, it is thought that the Arata cherry does not take over the person's will but, after all, acts "
+    "directly on the brain and spinal cord to try to kill the target. Since the person is forced into a killing they do "
+    "not want while still conscious, for the person it must be a nightmarish phenomenon. However, because carrying out a "
+    "killing brings a pleasure beyond anything normally imaginable, if they drown in that desire, it is entirely possible "
+    "that they will carry out the next killing half of their own will.",
+]
+R270_C = [
+    "In the case of most test subjects, they try to kill the target regardless of their own will, but very rarely there "
+    "are those who can slightly resist that urge. They are, as a rule, young people, roughly fifteen years old or under. "
+    "When those who had their first period at 15 or under were driven by the urge to kill, there were cases, with a "
+    "probability of about 30%, of their temporarily suppressing the urge to kill and fleeing the scene, or killing "
+    "themselves.",
+]
+R270_D = [
+    "Probably because they are at the stage of the growth period and the development of the nervous system is "
+    "incomplete, the takeover by the Arata cherry is not perfect either, and it is thought that there is a gap through "
+    "which the person's own will can intervene. However, that resistance does not last long either, and in the end it "
+    "comes to the conclusion of killing the target.",
+    "This is a personal question, but this time the test subject was a girl of tender years. It is hard to think that "
+    "she was a prisoner serving life imprisonment or a condemned prisoner either. Where are the test subjects being "
+    "brought from? This too is only a rumor, but I have also heard that one of our brethren offered up their own "
+    "daughter as a specimen for the sake of honor within the church.",
+]
+_S270 = 21
+_L270 = "#271a04"
+_R270 = "#f30a0b"
+_p270a, _e270a = _rflow(R270_A, 20, 788, 101, _S270)
+_p270b, _e270b = _rflow(R270_B, 20, 788, 733, _S270)
+_p270b2, _e270b2 = _rflow(R270_B2, 20, 788, _e270b + 18, _S270)
+_p270c, _e270c = _rflow(R270_C, 20, 788, 1634, _S270)
+_p270d, _e270d = _rflow(R270_D, 20, 788, 2208, _S270)
+REP270 = ([_rtitle("Methods of Suppressing the Urge to Kill", 26, 63),
+           _rerase([14, 98, 792, 429]), _rerase([14, 730, 792, 1242]), _rerase([14, 1631, 792, 1810]),
+           _rerase([14, 2205, 792, 2476]),
+           _r2plate("Urge to kill", [236, 516, 372, 548], [[253, 522, 346, 546]], _R270, 18),
+           _r2cap("Third\ngeneration", [126, 626, 250, 668], [[139, 631, 235, 658]], 17, color=_L270, line_spacing=1.0),
+           _r2cap("Second\ngeneration", [378, 624, 490, 666], [[387, 627, 482, 653]], 17, color=_L270, line_spacing=1.0),
+           _r2cap("Other third\ngeneration", [494, 624, 648, 666], [[499, 627, 641, 653]], 17, color=_L270, line_spacing=1.0),
+           _r2cap("It is possible to stop the killing behavior through fainting or anesthesia", [20, 671, 780, 701],
+                  [[186, 672, 621, 699]], 21, color=_L270),
+           _r2plate("Urge to kill", [318, 1362, 484, 1398], [[356, 1367, 448, 1391]], _R270, 18),
+           _r2cap("Faint radio waves from the spores send kill orders to the third generation's brain\n"
+                  "(submerging the person's own sense of self while leaving it intact)", [20, 1513, 780, 1572],
+                  [[82, 1516, 719, 1542], [222, 1543, 585, 1569]], 20, color=_L270, line_spacing=1.08),
+           ("Postscript", [20, 1600, 400, 1630], {"max_size": _S270, "erase": [[17, 1601, 77, 1629]]}),
+           _r2cap("A third-generation girl suffering from the urge to kill (15 years old)", [20, 2144, 780, 2176],
+                  [[164, 2145, 641, 2175]], 21, color=_L270)]
+          + _p270a + _p270b + _p270b2 + _p270c + _p270d + _r2foot("Shiyo 733, March 30", 2511, 2541))
+JOBS += [_r2job(270, REP270, "report (part 18 list; figures, brain diagram, spore photo, girl photo kept)", "#231803")]
+
+
+# IMAGES18B-O1 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane O1): objects 302 303 304 305 306 307 308 309 315 241 (part 18 list).
+# Handwritten memo pages (Momoko Goto's memos 1-8, Erina Goto's memo 11): the memo() precedent (ref85 / ref15 / ref132 / ref153):
+# one English line per JP row, Ink Free, in the JP row, one size per page; rows and the wrap come from work/images/_c/img18bO1/mk.py
+# (dark-pixel rows, band normalised to the page's row height, English wrapped evenly over each JP paragraph's rows). Latin-digit
+# dates stay as drawn. 241 is pixel-identical to rrr27/0 (ref27): the ref27 job re-run on rrr241/0.gal. Cards obj<ID>-ov =
+# refdoc_overview.py build <ID> (top crop at 0.375, the ov-p16 precedent; the English keeps the JP rows). The 60x30 サムネ: below
+# legibility. Log: notes/v2/_tmp/tl-log-IMAGES18B-O1.md.
+# IMAGES18B-O1 2026-10-15: ref 302 "Momoko Goto's Memo 1" (800x1132). memo() rows (img18bO1/mk.py); date 800.5.5 kept as drawn (Latin digits).
+RO1_302 = [[39, 158, 738, 191], [39, 200, 725, 232], [39, 240, 734, 272], [39, 280, 725, 312], [39, 320, 703, 352], [39, 360, 743, 392], [39, 400, 719, 432], [39, 440, 728, 472], [39, 480, 573, 512]]
+TO1_302 = [
+    "I'm going to try writing this thing called a diary for the first time. It's",
+    "almost a month since Erina died. I was actually going to leave home by",
+    "mid-May. But since Erina died, all I do is drift through the days in a daze.",
+    "What am I supposed to do with my life? Only noticing after she's dead... I'm",
+    "really such an idiot. Only now do I realize how big a part of my life Erina was.",
+    "I wanted to make up with her. I wanted us to always be sisters who",
+    "got along. If we had been, maybe that wouldn't have happened to Erina.",
+    "If I could see Erina again, I wouldn't care if my life were cut in half. I",
+    "don't need the money I've saved up, either. I'd throw away everything.",
+]
+JOBS += [
+    dict(_MEMO, id="obj302-0", screen="reference 302 detail", note="Momoko Goto's memo 1 (handwriting; date kept as drawn)",
+         items=[(D + "rrr302/0.gal", "")],
+         lines=memo(RO1_302, TO1_302, size=21, right=796)),
+    {"id": "obj302-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr302.gal", "")]},
+]
+# IMAGES18B-R2 2026-10-15 (cont.): rr270 card = work/images/_c/img18b-R2/ovcard.py 270 "Methods of Suppressing the Urge to Kill"
+# 4 96 98 34 chalk (1:1 window page (250, 0) on a red ground; ovprobe 0.18 was thrown off by the white chalk scribble over the text,
+# which is protected and kept as drawn).
+JOBS += [{"id": "rep270-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr270.gal", "")]}]
+# IMAGES18B-R2 2026-10-15 (cont.) ---- 272 "Treating the Curse-Killing" (800x2047): text only: title, P1 (ends mid-sentence into
+# three bullets), P2, bullet heading + P3, bullet heading + P4, P5, date, signature. One chained flow at one size from the first
+# JP row (_r2chain: kind "p" = paragraph, "b" = bulleted item; the number = the gap above it in px). Ink #241904 (cores 36,25,4).
+def _r2chain(seq, x0, x1, y0, size):
+    out, y = [], y0
+    for kind, text, gap in seq:
+        y += gap
+        if kind == "b":
+            p, e = _r2bul([text], x0 + 32, x1, y, size)
+        else:
+            p, e = _rflow([text], x0, x1, y, size, gap=0)
+        out += p
+        y = e
+    return out, y
+
+
+R272 = [
+    ("p", "In fact, when a member of the third generation is driven by murderous intent, there are several methods of "
+          "treating it. First, we will explain the mechanism by which the murderous intent arises. The spores that remain "
+          "inside the bodies of the third generation differ in quality from those of the first, second, and fourth "
+          "generations. Since the fourth generation is born by transitioning from the first or second generation, it is "
+          "not particularly unnatural that these three resemble one another. The third generation,", 0),
+    ("b", "Regular bleeding (menstruation, habitual bloodletting)", 22),
+    ("b", "Inhaling cherry pollen (it need not be the Arata cherry)", 3),
+    ("b", "Encountering a member of the second or third generation in a precognitive state", 3),
+    ("p", "are struck by murderous intent under these conditions. At this time, a faint electric current is generated by the "
+          "spores in the body, which takes over the brain and spinal cord and makes them kill the target. As for the "
+          "reason the spores emit a current, this too bears on the propagation of the Arata cherry. The Arata cherry grows "
+          "fruiting bodies that mimic the cherry in clusters and gives rise to a food chain there. By making the mammals "
+          "that stand at its top feed on the roots, it spreads the next infection. When a member of the third generation "
+          "dies, the first and second generations around them come to hold an obsessive attachment to the corpse and "
+          "gradually transition into the fourth generation. In other words, the earlier the third generation die, the "
+          "sooner the propagation comes. Then why does such murderous intent arise? Conceivable reasons are:", 22),
+    ("b", "When the second generation is the target of killing", 22),
+    ("p", "The idea is that by making those around them learn of the third generation's murderous intent and abnormal "
+          "behavior, it induces the people around them to kill the third generation. In fact, in the Arata settlement this "
+          "murderous intent was called the \"Green-Eye Curse-Killing,\" and there was apparently a law that children born "
+          "with green eyes were to be killed promptly (could it be that it changes the eye color so that such a "
+          "distinction can be made?).", 3),
+    ("b", "When the third generation is the target of killing", 22),
+    ("p", "In this case, the third-generation members with murderous intent exist, with high probability, as only two "
+          "individuals within the same society. If either one dies, the other's murderous intent subsides, but their "
+          "mother and grandmother are likely to be first or second generation. In other words, it can be said to be a "
+          "society that uses Droga. Before long, the people of that society hold an obsessive attachment to the corpse of "
+          "the third-generation member, and the surviving third-generation member loses their place and leaves the "
+          "society. One feature of the Arata cherry's ecology is that it grows fruiting bodies that mimic the cherry in "
+          "clusters. With these it draws in insects and small animals and gives rise to a food chain around it. Then it "
+          "carries out the takeover of the next society. In other words, it becomes possible to grow as many fruiting "
+          "bodies as possible within a narrower area. If there were two or more members of the third generation and they "
+          "died at close times, the fourth generation would be split into two groups, and it would become impossible to "
+          "propagate abundantly in a narrow area. So within one society, it is more convenient for there to be one member "
+          "of the third generation. The reason it is more convenient to propagate narrowly than widely is that this makes "
+          "it possible to crowd together more insects and small animals, and the mammals drawn to them; in fact, this "
+          "Arata cherry lives only in the Arata district. It is thought that in this way it widens its range at places "
+          "that do not stray too far from the mycelial mat underground, and propagates widely over a long span of years.", 3),
+    ("p", "We have digressed, but we now report the methods of treating this murderous intent of the third generation (the "
+          "curse-killing urge). The first is to kill off the spores in the body themselves. For this, a drug produced as a "
+          "by-product when Droga is made (hereafter called the \"wonder drug\") can be used as a remedy as it is. The other "
+          "is to remove the spores from the body altogether. It has already been established that infection spreads with "
+          "about 1 cc of blood; below that, symptoms such as awakening to precognition for only an instant occur, and the "
+          "spores are excreted by metabolism within a few seconds (this is not limited to the third generation). In other "
+          "words, if the spores are a trace amount, the curse-killing can be nullified by the human body's metabolic "
+          "function. Therefore, even without using the wonder drug, if bloodletting and transfusion are repeated to thin "
+          "the concentration of spores in the body, a de facto cure should be possible (however, since there is no change "
+          "in the amount of melanin in the iris, the eyes remain green).", 22),
+]
+_S272 = 22
+_p272, _e272 = _r2chain(R272, 20, 788, 101, _S272)
+REP272 = ([_rtitle("Treating the Curse-Killing", 26, 63), _rerase([14, 98, 792, 1909])]
+          + _p272 + _r2foot("Shiyo 733, May 6", 1944, 1975))
+JOBS += [_r2job(272, REP272, "report (part 18 list; text only)", "#241904")]
+# IMAGES18B-R2 2026-10-15 (cont.): rr272 card = work/images/_c/img18b-R2/ovcard.py 272 "Treating the Curse-Killing" 4 96 98 34 chalk
+# (1:1 window page (250, 0) on a purple ground; ovprobe 0.21 was thrown off by the white brush graffiti over the text, which is
+# protected and kept as drawn).
+JOBS += [{"id": "rep272-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr272.gal", "")]}]
+
+
+# IMAGES18B-O1 2026-10-15: ref 303 "Momoko Goto's Memo 2" (800x1132). memo() rows (img18bO1/mk.py); date 801.4.8 kept as drawn.
+RO1_303 = [[38, 157, 724, 190], [38, 200, 722, 232], [38, 239, 730, 271], [38, 279, 722, 312], [38, 320, 730, 352], [38, 360, 171, 392], [38, 440, 746, 472], [38, 480, 735, 512], [38, 520, 720, 552], [38, 560, 696, 592], [38, 600, 735, 632], [38, 642, 195, 674]]
+TO1_303 = [
+    "I wondered what notebook this was, and it turned out to be my diary. I've",
+    "left it untouched ever since I first wrote in it. Today was Erina's first-year",
+    "memorial service, so I'll write something down for now. It seems Erina was",
+    "looking into the flaying case and the Megasawa City case before she died,",
+    "and I found her memos. I wanted to know the truth about the cases, so I",
+    "used them as a guide and looked into all sorts of things this past year.",
+    "Mifuyu Niimura and Haruka Niimura are missing. They must be",
+    "the culprits. They killed Erina and ran off somewhere. I want to",
+    "know why Erina had to be killed. It's not that I'm thinking of",
+    "wanting to kill them, or of getting revenge. I want to know why",
+    "Erina went through something like that, and what they were",
+    "feeling when they killed her. I just want to know the truth.",
+]
+JOBS += [
+    dict(_MEMO, id="obj303-0", screen="reference 303 detail", note="Momoko Goto's memo 2 (handwriting; date kept as drawn)",
+         items=[(D + "rrr303/0.gal", "")],
+         lines=memo(RO1_303, TO1_303, size=21, right=796)),
+    {"id": "obj303-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr303.gal", "")]},
+]
+# IMAGES18B-R2 2026-10-15 (cont.) ---- 273 "The Role of the Spores" (800x1730): text only: title, P1, four bullet headings each
+# with its paragraph, P6, date, signature. One chained flow (_r2chain, defined in the 272 segment). Ink #241803 (cores 36,24,3).
+# JP typo 残留していたと胞子と結合 read as 残留していた胞子と結合.
+R273 = [
+    ("p", "The Arata cherry enters the bodies of mammals with Droga as its medium and makes its spores remain in the body for "
+          "a long time. In the experimental results so far, the spores remain in the body for at least four years or more. "
+          "The spores circulate through the body at all times together with the blood, but since they can obtain "
+          "sufficient nutrients from the blood, it is thought that as long as the host is alive, these spores also go on "
+          "living. The role of these spores changes with each generation.", 0),
+    ("b", "In the first generation", 22),
+    ("p", "Immediately after Droga is ingested, the spores secrete a large amount of α-ephedrine from within, and at the "
+          "same time also promote the secretion of adrenaline and noradrenaline. This makes the sympathetic nervous system "
+          "abnormally active, temporarily giving the host astonishing physical ability. This is the only symptom seen in "
+          "the first generation, but the spores continue to remain.", 3),
+    ("b", "In the second generation", 22),
+    ("p", "At the time of infection, the spores undergo rapid cell division and stop dividing when they reach a certain "
+          "amount. They react to cherry pollen (even other than the spores of the Arata cherry) and drive the autonomic "
+          "nervous system into disorder. However, in this case a trigger is needed, and re-creating the time of infection is "
+          "the condition. Also, since becoming second generation, except at childbirth, involves with high probability being "
+          "caught up in an accident or the like in which one is drenched in a large amount of blood, there are many cases in "
+          "which the situation at the time of infection becomes, as it is, a psychological disorder. However, when the host "
+          "has overcome that psychological disorder, ill health is no longer seen. Why ill health is necessary for the Arata "
+          "cherry is unknown, but at this stage the spores are incomplete, so both hormone secretion and precognition are "
+          "probably incomplete. It is also conceivable that a collapse of the hormone balance is simply the cause of the "
+          "ill health.", 3),
+    ("b", "In the third generation", 22),
+    ("p", "As with the second generation, cell division takes place at the time of infection. Unlike the second generation, "
+          "there is no ill health, and precognition activates without re-creating the psychological disorder. The spores "
+          "emit faint radio waves to the brain and spinal cord in order to kill the second- and third-generation members "
+          "who have precognition. Also, when the host dies, the spores germinate on the skin, and from there they send out "
+          "spores (hereafter called \"new spores\").", 3),
+    ("b", "In the fourth generation", 22),
+    ("p", "When the first and second generations inhale the new spores of the third generation, these combine with the "
+          "spores that had remained in the body all along. In other words, the spores of the Arata cherry are sexual "
+          "spores, and only here is the propagation of the Arata cherry carried out (the birth of the fourth generation). "
+          "In about a year, it completely takes over the body of the fourth generation, and fruiting bodies grow.", 3),
+    ("p", "From the above, considering mother-to-child infection, which is the Arata cherry's usual route of infection, the "
+          "life span of the spores is forty years at the shortest, and at the longest, as long as the host is alive. "
+          "However, even having investigated this far, it is unclear why precognition can be obtained. If there is such a "
+          "precise biological basis up to this point, it is thought that precognition also has a scientific basis. What I "
+          "am focusing on is the murderous intent of the third generation. The spores inside the bodies of the third "
+          "generation must be receiving some kind of information from outside and instructing the host to kill. If the way "
+          "this information from outside is received can be elucidated, the true nature of precognition can probably be "
+          "exposed as well.", 22),
+]
+_S273 = 22
+_p273, _e273 = _r2chain(R273, 20, 788, 101, _S273)
+REP273 = ([_rtitle("The Role of the Spores", 26, 63), _rerase([14, 98, 792, 1575])]
+          + _p273 + _r2foot("Shiyo 733, August 2", 1610, 1640))
+JOBS += [_r2job(273, REP273, "report (part 18 list; text only)", "#241803")]
+
+
+# IMAGES18B-O1 2026-10-15: ref 304 "Momoko Goto's Memo 3" (793x1122). memo() rows (img18bO1/mk.py); date 801.9.30 kept as drawn; the two rows of yada (14 + 14) set as 'no' x 28.
+RO1_304 = [[38, 156, 718, 186], [38, 196, 739, 226], [38, 236, 725, 266], [38, 278, 734, 308], [38, 316, 526, 346], [38, 356, 737, 386], [38, 396, 737, 426], [38, 437, 729, 467], [38, 477, 98, 507], [38, 516, 721, 546], [38, 557, 727, 587], [38, 596, 714, 626], [38, 636, 722, 666], [38, 677, 740, 707], [38, 716, 732, 746], [38, 757, 730, 787], [38, 797, 599, 827], [38, 836, 724, 866], [38, 876, 739, 906], [38, 916, 720, 946], [38, 956, 752, 986], [38, 1001, 721, 1023], [38, 1041, 721, 1063]]
+TO1_304 = [
+    "The Niimura family apparently comes from a place called the Arata district.",
+    "Those two should have nowhere else to turn. So they must be hiding in the",
+    "Arata district. But even searching online and at the library, I found out",
+    "almost nothing about the Arata settlement. Nowadays, it's strange for",
+    "nothing at all to be known about a place. Something must be behind this.",
+    "I was able to meet a professor who studies Iizawa",
+    "Prefecture in cultural anthropology. When I said I",
+    "was Erina's older sister, I got an appointment",
+    "surprisingly easily. Erina really was that brilliant, huh.",
+    "The Arata district is state-owned land; by law, ordinary citizens may not enter.",
+    "Supposedly there are many unusual plants and animals, so the whole area is",
+    "protected. But the professor says that's just the official line. As for the Arata",
+    "settlement in the district, its people have their own culture and are closed to",
+    "outsiders. That alone makes it the perfect place for Mifuyu Niimura to flee to.",
+    "Apparently a certain drug was made there long ago, and the land was made",
+    "state-owned so its existence wouldn't become public. The professor introduced me",
+    "to someone who knows the Arata district well. I'm going to meet them tomorrow.",
+    "Come to think of it, today is Erina's 17th birthday. Happy birthday,",
+    "Erina. I'd never once forgotten Erina's birthday. Am I maybe starting",
+    "to forget Erina? No, I don't want that. I don't want to forget Erina.",
+    "I want to keep thinking about Erina forever. I don't want that.",
+    "no no no no no no no no no no no no no no",
+    "no no no no no no no no no no no no no no",
+]
+JOBS += [
+    dict(_MEMO, id="obj304-0", screen="reference 304 detail", note="Momoko Goto's memo 3 (handwriting; date kept as drawn)",
+         items=[(D + "rrr304/0.gal", "")],
+         lines=memo(RO1_304, TO1_304, size=20, right=796)),
+    {"id": "obj304-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr304.gal", "")]},
+]
+# IMAGES18B-R2 2026-10-15 (cont.): rr273 card = work/images/_c/img18b-R2/ovcard.py 273 "The Role of the Spores" 4 96 98 34 chalk
+# (1:1 window page (250, 0) on a brown ground; ovprobe 0.26 was thrown off by the thin white handwriting over the text, which is
+# protected and kept as drawn).
+JOBS += [{"id": "rep273-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr273.gal", "")]}]
+# IMAGES18B-R2 2026-10-15 (cont.) ---- 274 "How the Eyes Turn Green" (800x1062): title, P1, a plain heading + four bullets, P2, P3
+# (one chained flow, _r2chain), a black arrow with a two-line white label (flat fill inside the arrow; the label runs 12 px into
+# the arrow head as in the JP) beside an eye drawing (art, kept), date, signature. Ink #150800 (JP glyph cores 21,8,0).
+R274 = [
+    ("p", "Because we had been concentrating on the investigation of the fourth generation until now, the report on the "
+          "third generation had been delayed, so we summarize the report here now.", 0),
+    ("p", "Characteristics of the third generation", 22),
+    ("b", "One eye is green", 3),
+    ("b", "They have precognition equal to or greater than the second generation's", 3),
+    ("b", "Sexually mature girls are driven by fierce murderous intent toward the second generation or another member of "
+          "the third generation", 3),
+    ("b", "They do not become the fourth generation", 3),
+    ("p", "As for the reason one eye turns green, eye color is determined by the amount and density of melanin pigment in "
+          "the iris. On becoming first generation, adrenaline and noradrenaline are secreted from the spores in large "
+          "amounts, and the precursors of adrenaline are tyrosine-type amino acids, that is, catecholamines. Since tyrosine "
+          "is also a material of melanin, there are also research results showing that when catecholamines are produced "
+          "in the brain, melanin forms as a by-product. The possibility that, for some reason, a change occurs in the "
+          "constitution of the third generation and the amount of melanin in the eyes changes cannot be ruled out either.", 22),
+    ("p", "In any case, it is thought that such a physical trait is seen in order to let the surrounding society know that "
+          "one is third generation, that is, a target to be eliminated at once.", 22),
+]
+_S274 = 23
+_p274, _e274 = _r2chain(R274, 20, 788, 101, _S274)
+REP274 = ([_rtitle("How the Eyes Turn Green", 27, 63), _rerase([14, 98, 792, 762]),
+           _r2plate("Eye color can tell whether a\nfrenzy (curse-killing) will occur", [134, 829, 422, 886],
+                    [[146, 830, 402, 884]], _R2BLK, 18, line_spacing=1.05)]
+          + _p274 + _r2foot("Shiyo 734, February 11", 979, 1009))
+JOBS += [_r2job(274, REP274, "report (part 18 list; eye drawing kept)", "#150800")]
+
+
+# IMAGES18B-O1 2026-10-15: note on ref 304 (above): rrr304/0.gal and rr304.gal are Bpp 8 grey-palette originals; batch.py renders
+# obj304-0 / obj304-ov and then fails at gal_write (palette refused). Encode them with work/images/_c/img18bO1/galpal.py ORIG OUT_PNG
+# work/<path>.gal (rr304.png from work/images/_c/img18bO1/ovbuild.py 304). rr305 has no alpha channel: card PNG = ovbuild.py 305.
+
+# IMAGES18B-O1 2026-10-15: ref 305 "Momoko Goto's Memo 4" (794x1123). memo() rows (img18bO1/mk.py); date 801.10.1 kept as drawn.
+RO1_305 = [[46, 132, 731, 162], [46, 168, 744, 200], [46, 208, 722, 240], [46, 248, 736, 280], [46, 288, 280, 318], [46, 321, 716, 353], [46, 362, 746, 392], [46, 400, 736, 432], [46, 440, 727, 472], [46, 480, 728, 510], [46, 513, 718, 548], [46, 556, 127, 586], [46, 592, 743, 624], [46, 632, 744, 664], [46, 672, 743, 702], [46, 704, 721, 742], [46, 744, 743, 777], [46, 784, 734, 816], [46, 828, 81, 858]]
+TO1_305 = [
+    "I'll sum up what I heard today. The person who met with me today was",
+    "someone named Shinji Tomobe, who researches physiology at Iizawa",
+    "University. Tomobe-san is quite old now, more someone with an honorary",
+    "post than a researcher. Tomobe-san said that long ago, he had heard",
+    "about a researcher for a certain religious group, named Hajime Shinozaki.",
+    "Mr. Shinozaki was trying to create something like a muscle-strength",
+    "enhancer, called Droga, from the cherry trees that grow wild in the Arata",
+    "settlement. But Droga's side effects were strong, and it was no use. Those",
+    "side effects apparently included too great a strain on the body, and, through",
+    "blood infection, other people falling into a depressed state or gaining a",
+    "danger-sense ability. But it was a long time ago, so Tomobe-san was vague",
+    "in places, and it was a shame that he only half remembered some parts.",
+    "I've heard about danger sense from Mom. Apparently one of",
+    "Erina's senpais had that kind of ability. And what's more, I heard",
+    "that person was killed by Mifuyu Niimura too. It's slowly coming",
+    "together. With Droga, someone could have caused the Megasawa",
+    "City case too, and if that led to bad blood between the Niimura",
+    "family and the Kogori family, it ties in with that flaying case as",
+    "well. I see, so Erina's death is the Arata settlement's fault too.",
+]
+JOBS += [
+    dict(_MEMO, id="obj305-0", screen="reference 305 detail", note="Momoko Goto's memo 4 (handwriting; date kept as drawn)",
+         items=[(D + "rrr305/0.gal", "")],
+         lines=memo(RO1_305, TO1_305, size=21, right=796)),
+    {"id": "obj305-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr305.gal", "")]},
+]
+# IMAGES18B-R2 2026-10-15 (cont.): rr274 card = work/images/_c/img18b-R2/ovcard.py 274 "How the Eyes Turn Green" 4 96 98 34 chalk
+# (1:1 window page (250, 0) on a red cracked ground; ovprobe 0.24 was thrown off by the white handwriting over the text, which is
+# protected and kept as drawn).
+JOBS += [{"id": "rep274-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr274.gal", "")]}]
+
+
+# IMAGES18B-O1 2026-10-15: ref 306 "Momoko Goto's Memo 5" (800x2312). memo() rows (img18bO1/mk.py); date 802.4.8 kept as drawn; the chant rows (Mifuyu Niimura die x 20 + die x 7, then die x 72) wrapped over the same rows; the red scrawl below (y 1290-2215) kept as drawn (QIMAGES18BO1-02).
+RO1_306 = [[39, 159, 743, 191], [39, 199, 734, 231], [39, 240, 730, 272], [39, 280, 733, 312], [39, 320, 148, 352], [39, 360, 731, 392], [39, 400, 719, 432], [39, 440, 744, 472], [39, 480, 727, 512], [39, 520, 727, 552], [39, 560, 736, 592], [39, 600, 71, 632], [39, 640, 719, 672], [39, 680, 712, 712], [39, 720, 715, 752], [39, 760, 719, 792], [39, 800, 712, 832], [39, 840, 744, 872], [39, 884, 721, 916], [39, 924, 721, 956], [39, 965, 721, 997], [39, 1005, 721, 1037], [39, 1045, 721, 1077], [39, 1085, 721, 1117]]
+TO1_306 = [
+    "Today was Erina's third-year memorial service. It hit me all over again",
+    "that Erina is dead. Erina being murdered is just so unfair, after all.",
+    "Erina wasn't the kind of girl to earn anyone's hatred. The culprit should",
+    "die. If the law judged them, it would surely be the death penalty.",
+    "There's no way they can be forgiven for running and hiding forever.",
+    "I also looked into Erina's relationships, and there's no doubt",
+    "she was on very good terms with Haruka Niimura. Killing",
+    "Erina must have been Mifuyu Niimura's own decision. So the",
+    "first one who should die is Mifuyu Niimura. Mifuyu Niimura",
+    "should die. She has to die. Why didn't I notice that until",
+    "now? That's right, Mifuyu Niimura just has to die. If the",
+    "police can't catch her, I have no choice but to do it myself.",
+    "Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura",
+    "die Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura die Mifuyu",
+    "Niimura die Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura die",
+    "Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura",
+    "die Mifuyu Niimura die Mifuyu Niimura die Mifuyu Niimura die Mifuyu",
+    "Niimura die Mifuyu Niimura die die die die die die die die",
+    "die die die die die die die die die die die die",
+    "die die die die die die die die die die die die",
+    "die die die die die die die die die die die die",
+    "die die die die die die die die die die die die",
+    "die die die die die die die die die die die die",
+    "die die die die die die die die die die die die",
+]
+JOBS += [
+    dict(_MEMO, id="obj306-0", screen="reference 306 detail", note="Momoko Goto's memo 5 (handwriting; date and the red scrawl kept as drawn)",
+         items=[(D + "rrr306/0.gal", "")],
+         lines=memo(RO1_306, TO1_306, size=22, right=796)),
+    {"id": "obj306-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr306.gal", "")]},
+]
+
+
+# IMAGES18B-O1 2026-10-15: ref 307 "Momoko Goto's Memo 6" (800x1131). memo() rows (img18bO1/mk.py) on dark pixels only; pale grey / pink scribbles behind the text: inpaint of the dark glyph pixels only (ref72 highlighter precedent), so the scribbles stay under the English; date kept.
+RO1_307 = [[39, 158, 729, 188], [39, 198, 741, 228], [39, 240, 735, 270], [39, 280, 375, 310], [39, 319, 744, 349], [39, 360, 714, 390], [39, 400, 720, 430], [39, 441, 738, 471], [39, 480, 234, 510], [39, 521, 722, 551], [39, 562, 738, 592], [39, 602, 746, 632], [39, 642, 264, 672], [39, 682, 735, 712], [39, 723, 712, 753]]
+TO1_307 = [
+    "If Mifuyu Niimura should die, then the Arata settlement that shelters",
+    "her is just as guilty. I'll kill every last one of them. What should I do",
+    "about Haruka Niimura? She probably hasn't done anything, and she took",
+    "very good care of Erina. I'll decide what to do with her once I see her face.",
+    "This past month, all I've thought about is how to kill Mifuyu Niimura and",
+    "the settlement's residents. I even saw it in a dream. I only know that",
+    "woman from photos, but her face as she coughed up blood beneath me, with",
+    "me astride her, twisted in agony, is a magnificent sight even now when I",
+    "remember it. But after that, the residents nearly killed me, and I woke up.",
+    "Yes, there are a lot of people I have to kill. Realistically, killing as",
+    "many as 30 people at once is hard. A knife won't do it, especially when",
+    "there's something like Droga. I absolutely need something like a gun.",
+    "I'll get one even if it means using up every last bit of my money.",
+    "Even so, my all-important savings are running low. Since Erina died, I",
+    "haven't taken many shifts at my part-time job, and everything costs money.",
+]
+JOBS += [
+    dict(_MEMO, erase="inpaint", mask_grow=3, text_only=False, id="obj307-0", screen="reference 307 detail", note="Momoko Goto's memo 6 (handwriting; scribbles and date kept)",
+         items=[(D + "rrr307/0.gal", "")],
+         lines=_mk(memo(RO1_307, TO1_307, size=21, right=796), mask_color=[0, 200, 0, 200, 0, 200], mask_grow=3)),
+    {"id": "obj307-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr307.gal", "")]},
+]
+
+
+# IMAGES18B-O1 2026-10-15: ref 308 "Momoko Goto's Memo 7" (800x2315). memo() rows (img18bO1/mk.py); two text blocks (y 157-873, 1303-1856); date 803.11.7 kept as drawn.
+RO1_308 = [[39, 154, 737, 192], [39, 198, 499, 231], [39, 240, 719, 272], [39, 280, 744, 312], [39, 320, 739, 352], [39, 360, 740, 392], [39, 400, 744, 432], [39, 440, 339, 472], [39, 480, 720, 512], [39, 520, 736, 552], [39, 560, 720, 592], [39, 600, 722, 632], [39, 640, 738, 672], [39, 680, 723, 712], [39, 720, 704, 753], [39, 762, 734, 794], [39, 800, 743, 832], [39, 844, 239, 876], [39, 1302, 722, 1334], [39, 1342, 730, 1374], [39, 1384, 722, 1416], [39, 1424, 741, 1456], [39, 1464, 744, 1496], [39, 1504, 752, 1536], [39, 1544, 744, 1576], [39, 1584, 115, 1616], [39, 1624, 743, 1656], [39, 1664, 735, 1696], [39, 1704, 735, 1736], [39, 1744, 72, 1776], [39, 1784, 735, 1816], [39, 1824, 455, 1856]]
+TO1_308 = [
+    "Today is the second-worst day of my life. There's the phrase 'sleep on",
+    "brushwood, taste gall'; for that, I'll write down what happened last night.",
+    "At long last, I managed to get a gun. Not only finding a",
+    "way to get one, but earning the dealers' trust took me a",
+    "whole year and a half. They aren't all that interested in",
+    "why I need a gun. They checked whether I was someone",
+    "it was safe to sell a gun to, and whether I might report",
+    "them to the police. Needless to say, I'm not a police spy.",
+    "Yesterday was the day of the deal. I met the dealer for the first",
+    "time. Beforehand, the guy had told me 2.5 million yen for a gun and",
+    "144 bullets. Compared with the going rate I had looked up, that",
+    "was outrageous. But I had no other choice. I went to meet the",
+    "dealer with the cash. But I can't forget his face when we met. For",
+    "a little while, he stared at my whole body and my face. And then he",
+    "said, \"The going rate's gone up. You'll need 4 million yen.\" I don't",
+    "have that kind of money anymore, and he knew it when he jacked up",
+    "the price. Before I could answer that I couldn't, he went on:",
+    "\"Spend the night with me tonight, and I'll keep it at 2.5 million.\"",
+    "It was truly humiliating. Even now, the feel of him is still all over",
+    "my body. But I had no option of defying him. I did everything he",
+    "told me to. Everything. When morning came, he and the 2.5 million",
+    "were gone. By my pillow lay the gun and bullets he had promised.",
+    "When I saw them, I thought of shooting myself in the head right",
+    "then and there. That's how humiliating it was. I actually put the",
+    "gun to my temple. But just then, Erina's face came into my mind.",
+    "If I'm going to die anyway, it'll be after I've seen it all through.",
+    "Either way, I'm going to be executed as a mass murderer.",
+    "In that case, I'll destroy the Arata settlement, ready to",
+    "die. My money, my body, my pride, my life: I don't care if I",
+    "throw them all away, if it's for Erina.",
+    "I'm really such an idiot. What would Erina think if",
+    "she saw me now? What is it that I'm even doing?",
+]
+JOBS += [
+    dict(_MEMO, id="obj308-0", screen="reference 308 detail", note="Momoko Goto's memo 7 (handwriting; date kept as drawn)",
+         items=[(D + "rrr308/0.gal", "")],
+         lines=memo(RO1_308, TO1_308, size=21, right=796)),
+    {"id": "obj308-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr308.gal", "")]},
+]
+
+
+# IMAGES18B-O1 2026-10-15: ref 309 "Momoko Goto's Memo 8" (800x2319). memo() rows (img18bO1/mk.py) on pixels <= 185 (the blue-grey tear stains are >= 192, the ink and the ink blurred by the stains are darker); erase = inpaint of those pixels only, so the stains stay (ref17 tear-stain precedent); the five large-type rows set in a larger size; date 804.4.6 kept.
+RO1_309 = [[38, 158, 725, 188], [38, 199, 744, 229], [38, 239, 724, 269], [38, 279, 671, 309], [38, 320, 742, 350], [38, 360, 740, 390], [38, 400, 723, 430], [38, 440, 725, 470], [38, 481, 717, 511], [38, 521, 715, 551], [38, 562, 627, 592], [38, 602, 736, 632], [38, 642, 732, 672], [38, 682, 726, 712], [38, 722, 744, 752], [38, 764, 726, 794], [38, 803, 707, 833], [38, 843, 733, 873], [38, 884, 716, 914], [38, 925, 102, 955], [38, 1305, 728, 1335], [38, 1346, 490, 1376], [38, 1427, 721, 1457], [38, 1468, 740, 1498], [38, 1508, 283, 1538], [38, 1593, 745, 1640], [38, 1659, 726, 1705], [38, 1727, 687, 1774], [38, 1795, 714, 1841], [38, 1862, 510, 1908], [38, 1964, 106, 1994], [38, 2045, 258, 2075], [38, 2124, 172, 2154]]
+TO1_309 = [
+    "After what happened when I got the gun, my heart was in utter turmoil.",
+    "A few friends used to get in touch with me now and then. Since Erina died,",
+    "they had looked out for me, and sometimes met up with me too. Until",
+    "that incident, I'd tried to treat my friends as normally as I could.",
+    "But my heart had reached its limit too. I took it out on my friends, or",
+    "ignored them. It's been about a month now with no word from",
+    "anyone. They must have given up on me. Well, that's fine. Nothing good",
+    "comes of getting involved with me. It's better if everyone hates me.",
+    "I hate myself too. Why did I end up like this? Every bit of it is Mifuyu",
+    "Niimura's fault. That woman derailed my life. I will never forgive that",
+    "woman, who killed Erina and drove me mad, or the settlement.",
+    "I've reached my limit. Once I had the gun, all that was left was to go to",
+    "the settlement, but honestly, I was hesitating over whether I'd really go",
+    "there to kill. Would I really kill as many as 30 people? Was I okay with",
+    "getting the death penalty for it? But it doesn't matter anymore. Life as it",
+    "is now is nothing but painful for me. In that case, I'll just end it all.",
+    "Tomorrow, I'm going to the Arata settlement. Really, I should have",
+    "scouted it out first, but I didn't have that much energy or money. Well, it's",
+    "not that hard anyway. Once I get to the settlement, all I have to do is",
+    "shoot dead everyone I meet. Okay, time to sleep. Tomorrow's an early day.",
+    "it hurts it hurts it hurts it hurts it hurts it hurts it hurts it hurts",
+    "it hurts it hurts it hurts it hurts it hurts it hurts it hurts it hurts",
+    "I want to redo everything. I wanted to stay close with",
+    "Erina. I wanted Erina to always love me. I wanted",
+    "everyone to like me. I wanted to keep liking everyone.",
+    "Don't talk nonsense. Be ready for all of",
+    "it. What have I done all this for? My",
+    "money, my body, my relationships, all",
+    "wrecked to get here, so don't go whining",
+    "now. I'm living only to kill people.",
+    "It hurts",
+    "I want to see Erina",
+    "Somebody help me",
+]
+JOBS += [
+    dict(_MEMO, erase="inpaint", mask_grow=3, text_only=False, id="obj309-0", screen="reference 309 detail", note="Momoko Goto's memo 8 (handwriting; tear stains and date kept)",
+         items=[(D + "rrr309/0.gal", "")],
+         lines=_mk(memo(RO1_309[0:25], TO1_309[0:25], size=21, right=796) + memo(RO1_309[25:30], TO1_309[25:30], size=36, right=796) + memo(RO1_309[30:33], TO1_309[30:33], size=21, right=796), mask_color=[0, 185, 0, 185, 0, 185], mask_grow=3)),
+    {"id": "obj309-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr309.gal", "")]},
+]
+
+
+# IMAGES18B-O2 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane O2): overview cards only, part 18 list (scenes 147 148 236 149 150
+# 151 160 161 165 166 168 243; side tales 204 205 206 207 279 280 281 282 283 290). Log notes/v2/_tmp/tl-log-IMAGES18B-O2.md.
+# Cards with legible Japanese: 166 (blackboard), 206 (book page: brush heading + two handwritten lines), 279 (document page).
+# Each is built by work/images/_c/img18bO2/card.py <ID> (erase the JP glyphs, set the English; see its docstring) into
+# work/images/out/... and shipped here as built (mode asis, the rep<ID>-ov / ov-p16 card pattern). No title is added: the JP
+# cards carry none (the IMAGES18B-L1 card rule). 206 = the book page shipped in 00000EDF-00001DB5 (heading + the two rules
+# verbatim); 279 = the document in 00002199 (ref 279's body), shipped English verbatim, page-level quotes dropped.
+# Skipped, no job: textless art 147 148 236 149 150 151 160 161 243 204 207 280 281 282 283 290; marks below legibility 165
+# (a ~4 px katakana wall sign), 168 (blurred menu slips), 205 (blurred book pages) (QIMAGES18BO2-01..03; QIMAGES8-01 /
+# QIMAGES9-02 / QIMAGES10-04 precedent). The 60x30 サムネ: below legibility, not extracted.
+JOBS += [
+    {"id": "ov166", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "note": "blackboard card (chalk heading + 3 lines, card.py 166)", "items": [(O + "rr166.gal", "")]},
+    {"id": "ov206", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "note": "book page card (brush heading + two rules, card.py 206)", "items": [(O + "rr206.gal", "")]},
+    {"id": "ov279", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "note": "document page card (tilted 12.5 deg, card.py 279)", "items": [(O + "rr279.gal", "")]},
+]
+
+
+# IMAGES18B-O1 2026-10-15: ref 315 "Erina Goto's Memo 11" (800x1843). memo() rows (img18bO1/mk.py), Erina's memo hand (the ref132 / ref153 pattern); the heading row one size up; the symbols (white circle, circled 1-3, middle dot, arrow) stay as drawn and the English starts after them (ref132 precedent: XO1_315 lines).
+RO1_315 = [[19, 24, 551, 56], [19, 111, 780, 137], [19, 137, 783, 164], [19, 164, 273, 191], [19, 246, 784, 271], [19, 271, 784, 296], [19, 304, 95, 325], [19, 379, 768, 406], [19, 406, 781, 433], [19, 433, 770, 460], [19, 460, 784, 486], [19, 486, 702, 512], [19, 568, 611, 595], [19, 706, 723, 729], [19, 729, 782, 757], [19, 757, 605, 784], [19, 809, 431, 840], [19, 892, 781, 919], [19, 919, 780, 944], [19, 945, 476, 972], [19, 1026, 780, 1053], [19, 1053, 781, 1080], [19, 1080, 779, 1107], [19, 1109, 783, 1136], [19, 1137, 116, 1159], [19, 1215, 778, 1242], [19, 1242, 768, 1269], [19, 1269, 679, 1296], [19, 1350, 780, 1376], [19, 1377, 367, 1402], [19, 1487, 759, 1512], [19, 1512, 680, 1538], [19, 1569, 593, 1593], [19, 1593, 782, 1620], [19, 1621, 772, 1647], [19, 1647, 520, 1674], [19, 1785, 366, 1808]]
+TO1_315 = [
+    "Let me sum up the danger sense I experienced",
+    "From what I've heard, what I experienced is a state that can actually happen.",
+    "In other words, touching the blood of someone with danger sense changed my",
+    "eye color, and I gained danger sense too. This is the third generation.",
+    "Most of what I experienced were events inside the danger",
+    "sense (from here on I'll write 'in the dream'), so there should",
+    "be some differences from real danger sense. The way I see it...",
+    "Probably not. That time I was able to dodge Mifuyu Niimura's attack, but",
+    "if someone really did that to me, I shouldn't have the time to get out of",
+    "the way. If I remember right, from sensing the danger to being attacked",
+    "I had about 2 seconds. I'm not that athletic, and if it really happened, I'd",
+    "panic. It was only in the dream: a hallucination made to suit me.",
+    "No to this one too. That would make the real me and the me in the dream contradict each other.",
+    "being third-generation, and grieved over Kogori-senpai's death.",
+    "Hmm, it does contradict after all. When I was cured",
+    "in the dream, the real me was still third-generation.",
+    "I guess that's about it for the differences in symptoms between the dream and reality.",
+    "This is a bit strange. Second generation or third generation, you can't",
+    "sense danger unless you can identify the other person. Even supposing",
+    "it was to protect my life, there's way too much information.",
+    "With the Noh mask and the red robes, there was no way to tell who it was. No,",
+    "maybe that's not so? At that point I already thought Niimura-senpai was",
+    "suspicious, and next in line, Mifuyu Niimura comes up as a culprit at the same time.",
+    "If it works on assumptions like that, does that mean I could recognize who it",
+    "was once I thought the shinigami was Mifuyu Niimura? Hmm, it's a bit vague...",
+    "This is strange too, isn't it. Simply sensing danger should have been enough, and even so,",
+    "there was far too much extra information. Droga's symptoms are one thing, but frankly,",
+    "the information about the people living in the Arata settlement shouldn't be needed.",
+    "I thought about it a lot, but this one bugs me a little too.",
+    "How do I put it... that girl's design? I guess you could call it.",
+    "There's probably a reason she looked like that, too. At first I thought she stood in for",
+    "Kogori-senpai, but then something like Kogori-senpai's ghost would be easier to understand.",
+    "Come to think of it...",
+    "Kogori-senpai said danger sense feels \"like receiving a signal from somewhere",
+    "else,\" didn't she? I've only experienced it once, so I can't say for sure, but",
+    "does that mean someone was sending me a signal? In other words...",
+    "Hmm... this smells a little fishy...",
+]
+XO1_315 = [
+    ("What is danger sense?", [43, 79, 796, 113], {"max_size": 18, "erase": [[40, 80, 200, 112]]}),
+    ("How is the real third generation different from what I experienced?", [43, 213, 796, 246], {"max_size": 18, "erase": [[40, 214, 535, 245]]}),
+    ("Can you dodge when you're attacked?", [43, 349, 796, 382], {"max_size": 18, "erase": [[40, 350, 482, 381]]}),
+    ("Do you feel revulsion toward the second generation?", [45, 541, 796, 571], {"max_size": 18, "erase": [[42, 542, 378, 570]]}),
+    ("The real me", [39, 593, 796, 625], {"max_size": 18, "erase": [[36, 594, 133, 624]]}),
+    ("At least until Kogori-senpai woke me up, I was third-generation", [43, 621, 796, 651], {"max_size": 18, "erase": [[40, 622, 627, 650]]}),
+    ("The me in the dream", [39, 646, 796, 677], {"max_size": 18, "erase": [[36, 647, 667, 676]]}),
+    ("Partway through, I was injected with falsificaso, was cured of", [43, 672, 796, 706], {"max_size": 18, "erase": [[40, 673, 781, 705]]}),
+    ("The content of the danger sense?", [42, 862, 796, 895], {"max_size": 18, "erase": [[39, 863, 579, 894]]}),
+    ("Why could I be sure Mifuyu Niimura was the shinigami?", [43, 997, 796, 1029], {"max_size": 18, "erase": [[40, 998, 445, 1028]]}),
+    ("How could I learn about people I didn't know at all?", [44, 1189, 796, 1218], {"max_size": 18, "erase": [[41, 1190, 625, 1217]]}),
+    ("That girl with no eyes?", [43, 1319, 796, 1353], {"max_size": 18, "erase": [[40, 1320, 242, 1352]]}),
+    ("Looks just like me", [39, 1406, 796, 1434], {"max_size": 18, "erase": [[36, 1407, 176, 1433]]}),
+    ("Has no eyes", [39, 1430, 796, 1460], {"max_size": 18, "erase": [[36, 1431, 215, 1459]]}),
+    ("Makes others kill people with danger sense", [39, 1456, 796, 1487], {"max_size": 18, "erase": [[36, 1457, 267, 1486]]}),
+    ("Knows that Mifuyu Niimura is the culprit", [39, 1671, 796, 1702], {"max_size": 18, "erase": [[36, 1672, 401, 1701]]}),
+    ("Knows the people of the Arata settlement well", [39, 1698, 796, 1731], {"max_size": 18, "erase": [[36, 1699, 469, 1730]]}),
+    ("Has no eyes, is another me, and wants the people with danger sense dead", [39, 1725, 796, 1755], {"max_size": 18, "erase": [[36, 1726, 548, 1754]]}),
+]
+JOBS += [
+    dict(_MEMO, id="obj315-0", screen="reference 315 detail", note="Erina Goto's memo 11 (handwriting; symbols kept as drawn)",
+         items=[(D + "rrr315/0.gal", "")],
+         lines=memo(RO1_315[0:1], TO1_315[0:1], size=24, right=796) + memo(RO1_315[1:37], TO1_315[1:37], size=18, right=796) + XO1_315),
+    {"id": "obj315-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr315.gal", "")]},
+]
+
+
+# IMAGES18B-O1 2026-10-15: ref 241 "The Truth, 14 Years On" (800x2281): rrr241/0.png is pixel-identical to rrr27/0.png (ref27,
+# shipped 2026-10-01; checked numerically, diff 0), so obj241-0 is the ref27 job (the ref-13 form at 0.8 + the handwritten
+# follow-up notes, the same English) run on rrr241/0.gal. Card rr241 = rr27's JP card (diff 0): refdoc_overview.py build 241.
+_O1_27 = next(j for j in JOBS if j["id"] == "ref27")
+JOBS += [
+    dict(_O1_27, id="obj241-0", screen="reference 241 detail",
+         note="death certificate, additional = ref27's page (pixel-identical; ref27's English)", items=[(D + "rrr241/0.gal", "")]),
+    {"id": "obj241-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "items": [(O + "rr241.gal", "")]},
+]
+
+
+# IMAGES18B-L3 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane L3): 書簡 letters 219 218 285 289 (part 19 list work/untr17/refimages.txt).
+# Same as lane L1 (its helper _l1jobs above is reused): face 0 (pale paper) and face 1 (gold / dark / grey paper) carry the
+# same vertical text, face 1 drawn 3 px right of face 0 on all four (work/images/_c/img18bL3/align.py); English = horizontal
+# blocks right to left, block 1 where the JP starts; body x0..x1 = JP ink extents (img18bL3/ink.py), block-0 erase widened
+# to x0-2 .. x1+6. One job per face (ref<ID>-p0 inpaint, ref<ID>-p1 texfill) + the 概要 card ref<ID>-ov (mode asis): every
+# card is a 1:1 crop of face 0 at its top right (work/images/_c/ovmatch7.py, scale 1.00, score >= 0.991), rebuilt from the
+# English face 0 at the English block-0 left edge and first line (img18bL3/ovpos.py + ovcrop.py, the rr101 fix).
+# 219 218 285 brush = serif (QIMAGES18BL1-01 ruling); 289 printed Mincho with ruby = serif (Cambria, printed precedent).
+# 289 face 1 is a REDACTED copy: seven black scribbles over six names. ref289-p1-set sets the English on face 1 like
+# face 0; img18bL3/redact289.py then blanks the six English spans marked {..} in L3_289M and pastes the seven JP scribbles
+# (cut from the JP face 1, turned 90 degrees, scaled to each span) over them; ref289-p1 (asis) ships that picture
+# (QIMAGES18BL3-01). The 60x30 サムネ: below legibility. Log: notes/v2/_tmp/tl-log-IMAGES18B-L3.md.
+
+
+def _l3strip(s):
+    return s.replace("{", "").replace("}", "")
+
+
+# ---- 219 The Sealed Goddess (967x450, 27 columns, ink x 23-954): 2 blocks; card rr219 = crop (667, 0) score 0.993
+L3_219 = ("Amazing. This is amazing. I've got talent. I found a mummy deep inside the underground storeroom. A mummy "
+          "wearing a Noh mask and red robes. It must be one of the ancestors, no doubt about it. I proposed that we "
+          "bring the mummy up above ground and enshrine it as a god. After all, when I looked into it, it turns out "
+          "she's the Goddess who saved the settlement long ago! I'm the one who found the Goddess. But everyone is "
+          "acting strange somehow. I thought they'd gladly agree, but they say, \"Why was it hidden in a place like "
+          "that?\" and \"Wasn't it sealed away because it's something that brings disaster?\" What's with them? Does it "
+          "gall them that much that I found the Goddess? Well, fine. I'll make her into a god even if I have to force "
+          "it. After all, she's in the storehouse's books, so there's no mistake that she's a god. True, I also found "
+          "places where it's written that the Goddess is bad news, or that she lays curses. But stuff like that is "
+          "obviously superstition. Besides, I know something. In this settlement there's a medicine that is no longer "
+          "used. A medicine made from the roots of the cherry trees. I looked that up in the storehouse's books too. "
+          "If anyone gets in my way, maybe I'll just make them disappear with that medicine.")
+JOBS += _l1jobs(219, letter(L3_219, 23, 954, 2), {0: [[21, 0, 960, 450]]}, "letter (calligraphy)")
+
+# ---- 218 Happiness in the Next Life (954x450, 26 columns, ink x 23-941): 2 blocks; card rr218 = crop (654, 0) score 0.991
+L3_218 = ("A green-eyed child was born. In accordance with the rules, we swiftly laid the child to rest. The child's "
+          "mother begged, \"I will leave the settlement with the child, so please let us go.\" It has been a long while "
+          "since I last saw a mother like this, but they all say the same words. If she leaves the settlement with the "
+          "child, the mother will fall under the groundless suspicion of having had relations with Westerners. If the "
+          "existence of Westerners comes under suspicion, the very survival of this settlement is at stake. That is "
+          "why we may neither let a green-eyed child live nor let it escape. If possible, I wanted the mother to hand "
+          "the child over herself, but as expected, that could not be. I too am a mother with a child. I understand "
+          "her feelings so well it hurts. But through that child, danger comes to the settlement. And the first one "
+          "to be killed is that mother. It pains me, but we took the child from her and cut off its head with a nata. "
+          "The mother's wailing is still seared into my ears. Such is the cold and cruel deed of me, the Grand Witch. "
+          "Though it was for the settlement, I took the life of an innocent baby. Will I fall into hell? But I pray "
+          "that at least that child may be born to a life full of happiness in the next life.")
+JOBS += _l1jobs(218, letter(L3_218, 23, 941, 2), {0: [[21, 0, 947, 450]]}, "letter (calligraphy)")
+
+# ---- 285 The Grand Witch's Death (827x450, 23 columns, ink x 24-815): 2 blocks; card rr285 = crop (527, 0) score 0.993
+L3_285 = ("The Grand Witch is dead. She was struck on the head. This must surely be the wrath of Lady Verde, of the "
+          "Goddess. The Grand Witch abolished Droga, wiped out the cherry trees down to the roots, and on top of that "
+          "hid Lady Verde away deep underground. How miserable we have been made to feel because of this selfish Grand "
+          "Witch! We people of Arata, who lost our god, lost Droga and lost even the cherry trees, have nothing left. "
+          "Yet sadly, in this settlement I am the only one who is sane. Everyone adored the Grand Witch and is "
+          "grieving her death. To adore that Grand Witch, who robbed us of what was irreplaceable, is sheer madness. "
+          "I have no allies. That is why only the Goddess, who brought divine punishment down on that Grand Witch, "
+          "stays on my side. But if I were to call the Goddess's body back above ground now, I would be regarded as "
+          "a traitor. Goddess, I am sorry. For now, please just wait for the day the Grand Witch's curse on everyone "
+          "is lifted.")
+JOBS += _l1jobs(285, letter(L3_285, 24, 815, 2), {0: [[22, 0, 821, 450]]}, "letter (calligraphy)")
+
+# ---- 289 Righteous Guidance (1286x450, printed Mincho with ruby, 38 columns, ink x 38-1262): 3 blocks (ref214's 1249 px
+# had 3); card rr289 = crop (986, 0) score 0.991. {..} = the spans blacked out on face 1 (redact289.py; face 0 shows all).
+L3_289M = ("It has been reported that all of the research by the Shinozaki Team is finished. Only a few of us, the "
+           "brethren of the Holy Cerejeira Church, remain. Now that they know the secret of Droga, which they revered as "
+           "a sacred implement, it cannot be helped if their hearts turn away. But that does not mean we can disband "
+           "the sect. What is needed is the will to take over the research findings and protect this country, the "
+           "world, from the threat of {Shigatsu Youka}. But neither can we make this public. If the secret of Droga "
+           "became known to the world, there would surely be scoundrels who would break in to misuse it. Fortunately, "
+           "my efforts paid off, and we are now able to intervene to some degree even in the police organization. "
+           "Should an incident occur in which Droga was used, it must be covered up at any cost. It must never become "
+           "known to the public. I too have been stricken by illness and have little life left. I must pass this on "
+           "to my children, and to our descendants. The {Holy Cerejeira Church} will have only this {Mikogami family} as "
+           "its brethren, and will let itself fade from the memories of all others. It goes against my wishes, but it "
+           "is the last righteous guidance I can give as the leader of the sect. Never lay a hand on Droga. And if "
+           "anyone does lay a hand on it, dispose of them swiftly. And do not forgive those people of the {Uneme "
+           "family} who split off from {Cerejeira}. Sooner or later they will surely try to rebuild the sect with the "
+           "power of Droga. The only ones who may rightly bear the name of Cerejeira are we, the {Mikogami} family.")
+L3_289 = _l3strip(L3_289M)
+_J289 = _l1jobs(289, letter(L3_289, 38, 1262, 3), {0: [[36, 0, 1268, 450]]}, "letter (printed)")
+_J289[1] = dict(_J289[1], id="ref289-p1-set",
+                note="letter (printed) (face 1, grey paper: English set; the scribbles go on after, img18bL3/redact289.py)")
+JOBS += _J289[:2] + [{"id": "ref289-p1", "screen": "reference 289 detail", "style": "serif", "mode": "asis",
+                      "chain": True, "items": [(D + "rrr289/1.gal", "")]}] + _J289[2:]
+# IMAGES18B-R3 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane R3): the finished report documents rrr<ID>/全体.gal of reports
+# 284 276 275 277 (part 19 list) + their 概要 cards rr<ID>. Pattern = lanes R1 / R2 (IMAGESR-A): one chained flow per text
+# group at one size per page (lane R2's _r2chain / _r2bul: kind "p" = paragraph, "b" = bulleted item, the number = the gap
+# above it in px: 22 = a JP blank line, 10 = a new paragraph without a blank line (_rflow's 0.4 line), 3 = the next item),
+# _rerase() erases the JP rows (texfill on the paper), _rtitle() for the title = the table row's English title. Footer =
+# lane R2's _r2foot (date + lane R1's signature _R1SIG, QIMAGES18BR1-01). Ink = median of the JP glyph cores per page
+# (work/images/_c/img18b-R3/col.py); end-y checks with img18b-R3/plan.py.
+# ---- 284 "The Fourth Generation" (800x1806): text only: title, P1, P2 (ends in "as for the infected," into three
+# bulleted items), P3 + two bullets, P4 + four bullets, P5, P6, date, signature. Ink #231803 (JP glyph cores 35,24,3).
+R284 = [
+    ("p", "At last enough information on the fourth generation has been gathered to report, so we summarize it in "
+          "writing. First of all, we wish to state this at the outset. The existence of the Arata cherry should be erased "
+          "from this world at once. It is not something humans should lay hands on (the details will be summarized at a "
+          "later date on a separate sheet).", 0),
+    ("p", "Now, we report anew on the existence of the fourth generation. Once more, as for the infected,", 10),
+    ("b", "The first generation: users of Droga. Only after use do they have extraordinary strength, dynamic vision, "
+          "and a painkilling effect.", 22),
+    ("b", "The second generation: those whose mucous membranes of the head touched the blood of the first generation. "
+          "Precognition (hallucinations disguised as such) and a depressive state set in when they inhale cherry pollen.", 3),
+    ("b", "The third generation: those whose mucous membranes of the head touched the blood of the second generation. "
+          "One eye turns green. They have precognition (hallucinations disguised as such) less limited than the second "
+          "generation's, but in sexually mature girls a fierce murderous intent wells up toward the second generation and "
+          "other members of the third generation.", 3),
+    ("p", "These cycles should be connected to the growth and propagation of the Arata cherry, but up to this point that "
+          "was not seen. Therefore we had supposed the existence of a fourth generation. To give the conclusion first, the "
+          "fourth generation does exist, but it is quite different in nature from the methods of infection so far. The "
+          "conditions for producing the fourth generation are as follows.", 22),
+    ("b", "Being of the first generation or the second generation", 22),
+    ("b", "Staying for a certain time in the same space as the corpse of a member of the third generation (no cremation "
+          "or the like)", 3),
+    ("p", "With this, the fourth generation is complete. That is, the first and second generations transition into the "
+          "fourth generation by meeting the above conditions. The characteristics of the fourth generation are as "
+          "follows.", 22),
+    ("b", "An abnormal fixation on the corpse of the third generation (affection, worship, etc.)", 22),
+    ("b", "A marked lack of intelligence (they lose their intelligence as time passes)", 3),
+    ("b", "Death about one year after onset", 3),
+    ("b", "On death, a fruiting body (a cherry tree) rapidly grows from the body", 3),
+    ("p", "The fourth generation is thus one that ends up in an extremely abnormal state. This fourth generation is the "
+          "final host of the Arata cherry, and it propagates by way of the first generation through to the fourth "
+          "generation. At first glance it seems an abnormal ecology, but looking at the natural world, that is not "
+          "necessarily so. For example, Leucochloridium, a parasite discovered in Germany in the 19th century, has "
+          "similar characteristics, and if we consider the Arata cherry a somewhat deviant example of the same, its "
+          "ecology too follows a cycle of sorts.", 22),
+    ("p", "However, as for why it evolved to take such a roundabout method of propagation, long-term observation is "
+          "needed. If additional research is to be done, it should be to seal off the Arata district and observe the "
+          "ecology of the Arata cherry. Most of the Arata cherries have been cut down, but the main body must be sleeping "
+          "beneath the ground there. This, however, is an extremely dangerous matter. As stated at the beginning, the "
+          "Arata cherry is not something humans should be involved with. Humans must not be in the land of Arata.", 22),
+]
+_S284 = 22
+_p284, _e284 = _r2chain(R284, 20, 788, 117, _S284)
+REP284 = ([_rtitle("The Fourth Generation", 44, 80), _rerase([14, 115, 792, 1660])]
+          + _p284 + _r2foot("Shiyo 734, June 2", 1691, 1721))
+JOBS += [_r2job(284, REP284, "report (part 19 list; text only)", "#231803")]
+# IMAGES18B-R3 2026-10-15 (cont.): rr284 card = work/images/_c/img18b-R3/ovcard.py 284 "The Fourth Generation" 8 116 117 34 chalk
+# (1:1 window page (250, 0) on a brown ground, img18b-R3/winchk.py 0.80; ovprobe 0.27 was thrown off by the white handwriting over
+# the text, which is protected and kept as drawn, QIMAGESRB-04).
+JOBS += [{"id": "rep284-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr284.gal", "")]}]
+
+
+# IMAGES18B-O3 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane O3): object 245 New Year's card (part 19 list work/untr17/refimages.txt).
+# 0.png = address side (400x592, printed: the ref48 postcard pattern, serif; the vertical address columns are set top-to-bottom
+# (rot -90) in the JP columns; postal-code digits, "NIPPON", the lottery digits 000000 and the stamp art kept), 1.png = picture
+# side (pen-hand message: the IMAGES18B-L1 ref214 pattern, handwriting face, one horizontal block in the JP text area, signature
+# rot -90); 1_1, 2..16 = flip frames (perspective views of one face) by refdoc_flip.py, shipped mode asis; rr245 = top crop of
+# face 0 (refdoc_overview.py build 245). The two .lcm motion files are not pictures (no job). The 60x30 サムネ: below legibility.
+# Boxes measured on the source with work/images/_c/img18bO3/meas.py / zoom.py. Log: notes/v2/_tmp/tl-log-IMAGES18B-O3.md.
+_O3V = {"rot": -90, "align": "center"}
+_O3K = [0, 200, 0, 200, 0, 200]           # black print and its grey edges (the red art has R > 200)
+_O3R = [150, 255, 0, 215, 0, 215]         # red print and its pink edges on white
+_O3W = {"method": "maskfill", "bg": "#ffffff"}
+_O3RED = "#d01020"
+_O3VW = dict(_O3V, **_O3W)
+L245_0 = [
+    ("Postcard", [166, 17, 296, 36], dict(_O3W, mask_color=_O3R, erase=[[168, 19, 294, 34]], color=_O3RED,
+                                          max_size=11, align="center")),
+    ("JAPAN POST", [70, 121, 114, 132], dict(_O3W, mask_color=_O3R, erase=[[72, 122, 111, 132]], color=_O3RED,
+                                             max_size=7, align="center")),
+    ("New Year's\nGreetings", [40, 176, 77, 210], dict(_O3W, mask_color=[120, 255, 0, 150, 0, 160],
+                                                       erase=[[48, 176, 64, 192], [54, 192, 71, 208]], color=_O3RED,
+                                                       max_size=9, align="center")),
+    ("3 Okayori-cho, Nakajima Ward, Minakami City, Sawa Prefecture", [334, 122, 394, 442],
+     dict(_O3VW, mask_color=_O3K, erase=[[337, 123, 362, 440]], max_size=16)),
+    ("Sawa Prison", [246, 122, 274, 226], dict(_O3VW, mask_color=_O3K, erase=[[248, 123, 270, 223]], max_size=16)),
+    ("Akane Kogori-sama", [194, 114, 238, 422], dict(_O3VW, mask_color=_O3K, erase=[[197, 117, 233, 419]], max_size=30)),
+    ("Room 408, Sunshine Village, 1-12 Nakagaoka 5-chome, Motoki City, Sawa Prefecture", [48, 238, 120, 464],
+     dict(_O3VW, mask_color=_O3K, erase=[[49, 239, 117, 462]], max_size=15)),
+    ("Natsumi Kogori", [20, 352, 50, 460], dict(_O3VW, mask_color=_O3K, erase=[[21, 358, 49, 456]], max_size=18)),
+    ("(recycled paper postcard)", [300, 505, 396, 518], dict(_O3W, mask_color=_O3R, erase=[[320, 505, 376, 518]],
+                                                             color=_O3RED, max_size=8, align="right")),
+    ("Drawing: Jan. 15   New Year's money handed out: Jan. 17-Jul. 17   (Bring it to a post office without cutting "
+     "off the number part.)", [6, 518, 396, 531], dict(_O3W, mask_color=_O3R, erase=[[18, 519, 378, 531]],
+                                                         color=_O3RED, max_size=8, align="center")),
+    ("Group B0000", [24, 540, 136, 565], {"method": "inpaint", "mask_color": [0, 170, 0, 150, 40, 255], "mask_grow": 3,
+                                          "erase": [[40, 541, 130, 564]], "color": "#20106a", "max_size": 15,
+                                          "align": "center"}),
+    ("New Year's\nmoney", [150, 538, 186, 560], {"method": "inpaint", "mask_color": [150, 255, 60, 255, 60, 255],
+                                                 "mask_grow": 2, "erase": [[154, 546, 187, 558]], "color": "#ffffff",
+                                                 "max_size": 9, "align": "center"}),
+]
+JOBS += [
+    {"id": "obj245-0", "screen": "reference 245 detail", "style": "serif", "mode": "lines", "erase": "maskfill",
+     "erase_first": True, "mask_grow": 3, "thr": 60, "color": INK, "new": True,
+     "note": "New Year's card, address side (postal codes, NIPPON, stamp art, lottery digits kept)",
+     "items": [(D + "rrr245/0.gal", "")], "lines": L245_0},
+]
+# IMAGES18B-R3 2026-10-15 (cont.) ---- 276 "Three Characteristics" (800x3360): title; text group A (P1, numbered heading + P2,
+# heading + P3, heading + P4, circled heading + P5 + four bullets); diagram 1 (heading on the paper; tree, dots, two figures,
+# person: art, kept; white labels on two horizontal and two slanted black arrows; three paper labels) + a two-line caption;
+# group B (circled heading + P6); diagram 2 (two horizontal black arrows with white labels; three paper labels) + a two-line
+# caption; group C (P7); date; signature. One chained flow per group at one size (_r2chain). Arrow labels: flat fill of the
+# plate colour inside boxes measured strictly inside the arrow (work/images/_c/img18b-R3/band.py + boxchk.py + cover2.py:
+# slanted arrows = a row of 10 px column boxes along the shaft, every white glyph pixel covered, no paper pixel inside),
+# English in white, rot = the shaft's slope (R2's _r2plate). Circled digits set as characters (Cambria has U+2460-2463).
+# 菌糸 = "hyphae" (GLOSSARY + shipped), 菌床 = "mycelial mat" (QIMAGES18BR2-02), 危険予知能力 = "the ability to sense danger"
+# (R2 269), 危険予知 = "danger sense" (GLOSSARY). Ink #241804 (body cores 36,24,4); labels and captions #281d08 (cores 40,29,8).
+R276_A = [
+    ("p", "The Arata cherry has several notable characteristics. First is its abnormal degree of gigantism. This does not "
+          "mean that each cherry tree is large. The main body sleeps deep underground and has spread its roots throughout "
+          "the very breeding ground. However, such a tendency toward gigantism is quite common in the natural world, so it "
+          "is not particularly important. The Arata cherry shows three major characteristics not seen in other organisms.", 0),
+    ("p", "1. The existence of intelligence", 22),
+    ("p", "The Arata cherry shows notable intelligence. For its own prosperity it infects mammals, beginning with us "
+          "humans, and uses its intelligence for growth and propagation.", 3),
+    ("p", "2. Manipulation of mammals", 22),
+    ("p", "This is deeply connected to the existence of intelligence, but the Arata cherry can spread hyphae throughout "
+          "the bodies of mammals and take over the flesh itself. This tendency is especially marked in corpses that have "
+          "completely lost consciousness. The Arata cherry extends its hyphae into the bodies of corpses whose decay has not "
+          "progressed much, and manipulates them as it pleases. Moreover, since a corpse's behavior depends on the "
+          "personality and intelligence the person had in life, at first glance it can even look as though they had come "
+          "back to life. Thinking of it the other way around, we can assume that the Arata cherry reuses the intelligence "
+          "of the people it has taken over just as it is, and the hypothesis can be made that this leads directly to the "
+          "Arata cherry's intelligence. By this reasoning, if the corpses and the main body of the Arata cherry become one, "
+          "it has the intelligence of the countless people who have died in Arata up to now, so it may possess an "
+          "intelligence surpassing that of humans.", 3),
+    ("p", "3. Five-sense perception", 22),
+    ("p", "When the Arata cherry manipulates mammals in this way, it should be manipulating them based on the intelligence "
+          "in its main body. However, the only thing linking the mammals and the Arata cherry is the spores in their "
+          "bodies, and they are physically separated. Yet minute biological fragments such as the spores in the body do "
+          "not have the power to manipulate mammals and make them use language (it is hard to think that a brain (the "
+          "spores) only microns in size could manipulate mammals). That is, in order to manipulate mammals, some kind of "
+          "pipe connecting the main body of the Arata cherry (the mycelial mat part) and the spores is necessary. What was "
+          "put forward as a hypothesis is the so-called brain waves. That is, the mechanism is that the main body sends "
+          "signals to each spore (mammal) by something like telepathy, and in response to those signals the spores run an "
+          "electric current through the brain and spinal cord. From this, two things are inferred.", 3),
+    ("p", "① The true nature of precognition", 22),
+    ("p", "With this hypothesis, it is possible to explain the ability to sense danger. The sequence is as follows.", 3),
+    ("b", "Using the countless scattered spores and cherry pollen as relay points, it probes the surroundings of all "
+          "mammals", 3),
+    ("b", "When a particular mammal falls into a dangerous situation, it sends a signal to the spores remaining in the "
+          "bodies of the second and third generations", 3),
+    ("b", "The second and third generations can learn of that mammal's dangerous situation", 3),
+    ("b", "As a limitation, precognition is possible only for mammals that the second and third generations perceive with "
+          "their five senses (because knowing the situation of every living thing would be too much information)", 3),
+]
+R276_B = [
+    ("p", "② Five-sense perception", 0),
+    ("p", "Under the mechanism of ①, it would be impossible unless the Arata cherry knew what the second and third "
+          "generations see and hear. That is, just as signals are sent from the Arata cherry to the spores in the body, it "
+          "is also possible for signals to be returned from the spores in the body to the Arata cherry. However, since the "
+          "amount of information the spores in the body can sense is limited, it is thought that at most they transmit what "
+          "was seen or heard, and that complex information such as thoughts is impossible.", 3),
+]
+R276_C = [
+    ("p", "If additional research is to be done, it should be to seal off the Arata district and observe the ecology of "
+          "the Arata cherry. Most of the Arata cherries have been cut down, but the main body must be sleeping beneath the "
+          "ground there. As we have said before, the Arata cherry should be erased from this world at once. All the more, "
+          "it is not something humans should even be permitted to take in hand. By taking Droga in hand, our ancestors "
+          "brought about many sacrifices, and abandoned Droga. Scientifically too, we cannot but say that our ancestors "
+          "were right. We are well aware that this statement is impermissible for the church. We will accept any "
+          "punishment without complaint. We must keep humans away from the land of Arata and destroy the Arata cherry, "
+          "the Goddess.", 0),
+]
+_S276 = 22
+_p276a, _e276a = _r2chain(R276_A, 20, 788, 99, _S276)
+_p276b, _e276b = _r2chain(R276_B, 20, 788, 2306, _S276)
+_p276c, _e276c = _r2chain(R276_C, 20, 788, 2911, _S276)
+_L276 = "#281d08"
+_A3_276 = [[170, 1930, 180, 1973], [180, 1929, 190, 1970], [190, 1928, 200, 1975], [200, 1942, 210, 1983], [210, 1950, 220, 1990],
+           [220, 1957, 230, 1998], [230, 1965, 240, 2006], [240, 1973, 250, 2015], [250, 1980, 260, 2021], [260, 1988, 270, 2029],
+           [270, 1995, 280, 2036], [280, 2003, 290, 2044], [290, 2011, 300, 2051], [300, 2018, 310, 2059], [310, 2026, 320, 2067],
+           [320, 2034, 330, 2084], [330, 2041, 340, 2083], [340, 2041, 345, 2083]]
+_A1_276 = [[545, 2009, 555, 2064], [555, 2010, 565, 2067], [565, 2005, 575, 2070], [575, 1999, 585, 2051], [585, 1993, 595, 2045],
+           [595, 1987, 605, 2039], [605, 1981, 615, 2033], [615, 1975, 625, 2027], [625, 1968, 635, 2021], [635, 1962, 645, 2014],
+           [645, 1956, 655, 2009], [655, 1950, 665, 2002], [665, 1953, 675, 1996]]
+REP276 = ([_rtitle("Three Characteristics", 26, 63), _rerase([14, 97, 792, 1612]), _rerase([14, 2302, 792, 2516]),
+           _rerase([14, 2907, 792, 3182]),
+           # diagram 1
+           ("The mechanism of danger sense", [20, 1640, 400, 1668], {"max_size": _S276, "erase": [[16, 1640, 276, 1669]]}),
+           _r2plate("② Recognizes the subject", [315, 1708, 605, 1743], [[362, 1708, 531, 1743]], _R2BLK, 20),
+           _r2plate("④ Notice of danger information", [278, 1840, 550, 1866], [[328, 1840, 519, 1866]], _R2BLK, 18),
+           _r2plate("③ Danger information exchange", [174, 1943, 346, 2075], _A3_276, _R2BLK, 16, rot=-37.6, rot_h=22),
+           _r2plate("① Recognizes presence", [547, 1968, 677, 2049], _A1_276, _R2BLK, 16, rot=32, rot_h=22),
+           _r2cap("Arata cherry", [100, 1886, 200, 1914], [[114, 1886, 185, 1913]], 18, color=_L276),
+           _r2cap("Relayed via spores or pollen\n(transmissible over several hundred km)", [270, 1880, 580, 1933],
+                  [[318, 1881, 530, 1932]], 18, color=_L276, line_spacing=1.0),
+           _r2cap("Foresees the subject's danger", [565, 1903, 795, 1930], [[587, 1904, 793, 1929]], 18, color=_L276),
+           _r2cap("Countless pollen grains and spores transmit the conditions around the subject\n"
+                  "If there is anything that poses a threat nearby, the infected are notified", [16, 2219, 784, 2276],
+                  [[170, 2219, 722, 2276]], 20, color=_L276, line_spacing=1.0),
+           # diagram 2
+           _r2plate("Five-sense information", [345, 2584, 612, 2610], [[422, 2584, 523, 2610]], _R2BLK, 18),
+           _r2plate("Voices and hallucinations", [312, 2710, 582, 2735], [[393, 2710, 516, 2735]], _R2BLK, 18),
+           _r2cap("Arata cherry", [92, 2769, 192, 2797], [[108, 2770, 177, 2795]], 18, color=_L276),
+           _r2cap("Relayed via spores or pollen\n(transmissible over several hundred km)", [285, 2752, 595, 2805],
+                  [[334, 2753, 546, 2804]], 18, color=_L276, line_spacing=1.0),
+           _r2cap("Perceived information", [606, 2770, 780, 2798], [[645, 2771, 738, 2797]], 18, color=_L276),
+           _r2cap("By the same principle, it is thought able to perceive the five-sense information of the infected\n"
+                  "In some cases, it can also give false precognitive information", [16, 2833, 784, 2890],
+                  [[152, 2833, 723, 2890]], 20, color=_L276, line_spacing=1.0)]
+          + _p276a + _p276b + _p276c + _r2foot("Shiyo 734, December 7", 3246, 3276))
+JOBS += [_r2job(276, REP276, "report (part 19 list; tree / figures / dots kept; arrow labels re-set)", "#241804")]
+
+
+# IMAGES18B-O3 2026-10-15 (cont.): ref 245 face 1 = picture side (rrr245/1, 400x592): pen-hand message in 10 vertical columns
+# (ink x 224-371, y 318-569) + signature column (x 208-218, y 503-566) on a pale green gradient. The IMAGES18B-L1 ref214 pattern:
+# handwriting face, one horizontal English block (letter(), n 1) in the JP text area, signature rot -90; erase = inpaint of the
+# glyph pixels (G <= 192; the gradient ground has G >= 204 in the box). "A Happy New Year!", the art and the photo are kept.
+_O3M1 = [0, 200, 0, 192, 0, 200]
+L245_1 = [
+    ("Happy New Year! Let's stay well in Shiyo 815 too! I told you this at our last visit too, but I finally moved into a "
+     "new apartment building! It's a fairly new apartment building called Sunshine Village. As you can see in the photo, "
+     "it's pretty big and impressive! I wrote the address on the front too, so please send your letters here! I'll come "
+     "to see you again!", [222, 318, 376, 570], {"max_size": 20, "line_spacing": 1.12, "erase": [[220, 315, 377, 572]]}),
+    ("Natsumi Kogori", [203, 498, 223, 572], {"rot": -90, "max_size": 26, "align": "right", "erase": [[205, 500, 222, 570]]}),
+]
+JOBS += [
+    {"id": "obj245-1", "screen": "reference 245 detail", "style": "handwriting", "mode": "lines", "erase": "inpaint",
+     "erase_first": True, "mask_grow": 3, "mask_color": _O3M1, "color": "#2e3826", "new": True,
+     "note": "New Year's card, picture side (handwriting; art, photo and the English greeting kept)",
+     "items": [(D + "rrr245/1.gal", "")], "lines": [(t, b, dict(o, mask_color=_O3M1)) for t, b, o in L245_1]},
+]
+# IMAGES18B-R3 2026-10-15 (cont.): rr276 card = work/images/_c/img18b-R3/ovcard.py 276 "Three Characteristics" 4 96 98 34 orangewhite
+# (1:1 window page (250, 0) on a green ground, img18b-R3/winchk.py 0.73; the orange brush scribble over the text is protected and
+# kept as drawn, QIMAGESRB-04; R1's mode "orangewhite").
+JOBS += [{"id": "rep276-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr276.gal", "")]}]
+
+
+# IMAGES18B-O3 2026-10-15 (cont.): ref 245 flip frames (refdoc_flip.py 245 <seq> 0,1 --mode full, four chained sequences from the
+# flattest view to the edge-on one: 1_1,2,3,4 / 9,10,11,12 (face 0) and 8,7,6,5 / 16,15,14,13 (face 1); log
+# work/images/_c/img18bO3/flip-full1.log). Face 0 frames: match 3.9-6.3 (4: 12.5, 12: 9.2, the edge-on ones). Face 1 frames were
+# rendered from another revision of the picture side (lighter green ground, message columns broken differently), so the raw
+# match stays 16-28 although the geometry registers: high-pass NCC on the unchanged art (img18bO3/flipchk.py) 0.85-0.87 for
+# 16 15 8 7 6, 0.77 for 14, 0.66 for 13; the frames now show the English face 1 with the final picture's colours. Frame 5 (76 px
+# wide, edge-on back view) did not register (NCC -0.02): no job, the Japanese original stays (the ref34 frame-10 precedent;
+# QIMAGES18BO3-06). The two .lcm motion files are not touched.
+_O3F = [("1_1", "serif"), ("2", "serif"), ("3", "serif"), ("4", "serif"), ("6", "handwriting"), ("7", "handwriting"),
+        ("8", "handwriting"), ("9", "serif"), ("10", "serif"), ("11", "serif"), ("12", "serif"), ("13", "handwriting"),
+        ("14", "handwriting"), ("15", "handwriting"), ("16", "handwriting")]
+JOBS += [{"id": "obj245-%s" % n, "screen": "reference 245 flip frames", "style": st, "mode": "asis", "chain": True,
+          "items": [(D + "rrr245/%s.gal" % n, "")]} for n, st in _O3F]
+
+
+# IMAGES18B-O3 2026-10-15 (cont.): rr245 card = refdoc_overview.py build 245 (top crop (0, 0, 400, 227) of the English face 0 at
+# 0.75, probe 11.25; the card's own alpha kept). The card carries no title (the JP card has none: a crop of the address side).
+JOBS += [{"id": "obj245-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr245.gal", "")]}]
+# IMAGES18B-R3 2026-10-15 (cont.) ---- 275 "The Purpose of Falsificacao" (800x1243): title (= the table row's English title,
+# verbatim: QIMAGES18BR3-03), P1, P2; a diagram (black deer, two black arrows, red deer: art, kept; a tall black bar with the
+# vertical label ドローガ over a dashed line (kept) and 相殺 below it, beside a shorter black bar with the vertical label 特効薬;
+# paper labels 根を捕食 / the caption under the bars / a two-line label under the red deer); P3; date; signature. Vertical bar
+# labels: flat fill of the bar colour inside boxes strictly inside the bar (boxchk.py: no paper pixel), English in white set
+# top-down (rot -90, the series precedent for vertical JP lines). 特効薬 = "wonder drug" (GLOSSARY, rulings-P18, lane R2's 272).
+# Ink #241803 (body cores 36,24,3); labels #271c05 (cores 37-40,26-30,5-8).
+R275_A = [
+    ("p", "As a method of treating the curse-killing, the most effective method is to give an intramuscular injection of "
+          "the wonder drug that appears as a by-product when Droga is produced. With this, the spores in the body quickly "
+          "die off, and the green eyes also return to normal. No notable side effects are seen either. We investigated "
+          "why the wonder drug comes into being as a by-product.", 0),
+    ("p", "To begin with, wild animals prey on the roots of the Arata cherry and so strengthen their muscles. In other "
+          "words, they are eating Droga and the wonder drug at the same time. If they did not take in the wonder drug, the "
+          "same phenomena as with the vaporized intake and the liquefied intake in the earlier experiments would occur: "
+          "that is, a severe strain on the body and a state of elation. By also taking in the components of the wonder "
+          "drug at the same time, which keep that under control to a certain degree, they can strengthen their muscles, "
+          "if not as much as with vaporization or liquefaction, and hold down the state of elation. Thus they succeed in "
+          "holding down excessive strain on the body.", 22),
+]
+R275_B = [
+    ("p", "Originally, if it is to be used as a muscle-strengthening agent, eating the roots as they are would be ideal, "
+          "but since that is difficult for humans, the method of use since ancient times has been to refine them and "
+          "extract only the Droga for use. Eating the roots is, to put it in a comparison, like taking in a poison and its "
+          "remedy at the same time, and taking in only refined Droga is the same as taking into the body only the poison "
+          "that is the muscle-strengthening agent.", 0),
+]
+_S275 = 22
+_p275a, _e275a = _r2chain(R275_A, 20, 788, 99, _S275)
+_p275b, _e275b = _r2chain(R275_B, 20, 788, 944, _S275)
+_L275 = "#271c05"
+_V275 = {"rot": -90, "align": "center", "color": "#ffffff", "method": "flat", "bg": "#010101"}
+REP275 = ([_rtitle("The Purpose of Falsificacao", 26, 63), _rerase([14, 97, 792, 521]), _rerase([14, 942, 792, 1125]),
+           ("Droga", [356, 562, 401, 668], dict(_V275, max_size=20, erase=[[358, 570, 400, 665]])),
+           ("Offset", [356, 682, 401, 770], dict(_V275, max_size=20, erase=[[358, 702, 400, 756]])),
+           ("Wonder drug", [413, 676, 459, 770], dict(_V275, max_size=20, erase=[[416, 682, 456, 766]])),
+           _r2cap("Eats the roots", [60, 720, 235, 748], [[97, 721, 196, 748]], 20, color=_L275),
+           _r2cap("The excess of Droga is offset by the wonder drug", [180, 791, 625, 821], [[241, 792, 582, 820]], 20,
+                  color=_L275),
+           _r2cap("Suppresses elation and strain\n(infection does occur)", [505, 851, 795, 907], [[540, 852, 770, 906]], 20,
+                  color=_L275, line_spacing=1.0)]
+          + _p275a + _p275b + _r2foot("Shiyo 734, December 7", 1158, 1188))
+JOBS += [_r2job(275, REP275, "report (part 19 list; deer / arrows / bars kept; bar and paper labels re-set)", "#241803")]
+# IMAGES18B-R3 2026-10-15 (cont.): rr275 card = work/images/_c/img18b-R3/ovcard.py 275 "The Purpose of Falsificacao" 4 96 98 34 bw mirror
+# (the card is a MIRRORED 1:1 window onto page (250, 0), img18b-R3/winchk2.py 0.43 mirrored vs 0.21 plain; the table row notes
+# ミラー; faint page text under a bold black handwritten overlay, which is protected and kept as drawn, QIMAGESRB-04; R1 rr41 pattern).
+JOBS += [{"id": "rep275-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr275.gal", "")]}]
+
+
+# IMAGES18B-O4 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane O4): objects 175 (0 + 部分拡大1) 184 249 (part 19 list) + 250 (0 + 1)
+# 252 258 259 (part 20 list) + 262 (part 21) + 266 (part 22). Job ids obj<ID>-<page> (obj175-zoom1 = rrr175/部分拡大1) and
+# obj<ID>-ov (the 概要 card, mode asis; every card is a top crop of its page, rebuilt from the English page by
+# refdoc_overview.py build / img18bO4/ovbuild.py). Pen-hand pages = memo() + Ink Free (img18bO4/mk.py, the O1 / ref189
+# pattern); printed pages = Cambria; brush letter = serif (QIMAGES18BL1-01). Log: notes/v2/_tmp/tl-log-IMAGES18B-O4.md.
+# The 60x30 サムネ: below legibility, not extracted. rrr250/1.gal (5-frame dissolve of page 0, no legible glyph): no job.
+# IMAGES18B-O4 2026-10-15: ref 250 "Eiichiro Niimura's Letter" (800x1132). page 0 only (1.gal = a 5-frame dissolve of this page, text below legibility in every frame: skipped). memo() rows (img18bO4/mk.py), the ref189 / ref153 ruled-letter pattern: one English line per JP row, inside the rules (right 690); signature right-aligned in its row.
+RO4_250 = [[113, 144, 680, 174], [113, 193, 687, 224], [113, 248, 681, 275], [113, 296, 679, 327], [113, 352, 682, 376], [113, 400, 696, 432], [113, 456, 684, 480], [113, 504, 681, 536], [113, 560, 687, 584], [113, 609, 687, 640], [113, 661, 688, 688], [113, 712, 688, 742], [113, 768, 243, 792]]
+TO4_250 = [
+    "Sakura, thank you for everything up to now. You were",
+    "always, always by my side, Sakura, and I think I was truly",
+    "blessed. But I can't stay here anymore. You held me back",
+    "together with my brother, but I've decided to leave",
+    "Arata after all. I'm leaving Arata Station at 8 this",
+    "morning, so by the time you're reading this, Sakura, I'll",
+    "already be gone. Because of me, you broke the rule, Sakura,",
+    "and on top of that made everyone lie. Even if you stay with",
+    "me, I'll surely just be a burden. I can't keep leaning on your",
+    "kindness anymore, Sakura. I'll find happiness my own way,",
+    "with my own strength. Please, Sakura, be happy too. I",
+    "may come home for a visit now and then, but if you don't",
+    "want to see me, that's fine too. I'm really sorry.",
+]
+JOBS += [
+    dict(_MEMO, id="obj250-0", screen="reference 250 detail", note="Eiichiro Niimura's letter (ruled paper)",
+         items=[(D + "rrr250/0.gal", "")],
+         lines=memo(RO4_250, TO4_250, size=22, right=690) + [("Eiichiro Niimura", [400, 868, 690, 897], {"max_size": 22, "align": "right", "erase": [[562, 869, 688, 896]]})]),
+    {"id": "obj250-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr250.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 252 "Sakura Niimura's Letter" (800x1132). memo() rows (img18bO4/mk.py), the ref189 / ref153 ruled-letter pattern: addressee row, one English line per JP row inside the rules (right 750), signature right-aligned in its row; the grey rules stay (text_only).
+RO4_252 = [[52, 112, 744, 138], [52, 160, 744, 192], [52, 213, 736, 240], [52, 264, 744, 296], [52, 317, 743, 344], [52, 368, 743, 395], [52, 417, 745, 448], [52, 470, 741, 498], [52, 523, 743, 552], [52, 574, 743, 600], [52, 624, 746, 655], [52, 678, 384, 703]]
+TO4_252 = [
+    "It's been a week. This is Sakura. I'm sorry that the other day,",
+    "though I listened to what you came to me about, I couldn't help",
+    "with anything. But I've thought it over since then, and thought",
+    "about whether I could help you even a little, Mifuyu-chan. In this",
+    "box are natas and maces that Shirozaki-san made, Noh masks, and red",
+    "robes, two of each. If you sell these, you shouldn't have trouble",
+    "getting by for a few months. But unfortunately, ongoing support",
+    "goes against the rule, so it's hard for me to help any more than this.",
+    "Please put these to good use. I'll think more, too, about how I can",
+    "help you and the others, Mifuyu-chan. But please, use these to",
+    "exchange for money. I absolutely did not send them to you as weapons.",
+    "Well then, let's meet at Soichiro's third-year memorial service next.",
+]
+JOBS += [
+    dict(_MEMO, id="obj252-0", screen="reference 252 detail", note="Sakura Niimura's letter (ruled paper)",
+         items=[(D + "rrr252/0.gal", "")],
+         lines=memo(RO4_252, TO4_252, size=22, right=750) + [("Mifuyu Niimura-sama", [46, 56, 450, 90], {"max_size": 22, "erase": [[47, 58, 186, 88]]}), ("Sakura Niimura", [400, 727, 750, 758], {"max_size": 22, "align": "right", "erase": [[618, 729, 747, 757]]})]),
+    {"id": "obj252-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr252.gal", "")]},
+]
+# IMAGES18B-R3 2026-10-15 (cont.) ---- 277 "External Release of the Reports" (800x970): text only: title; P1 + two bulleted
+# conditions + its continuation + two more bulleted conditions + its continuation (the JP sentence runs on after the second list:
+# lower-case continuation, lane R2's 272 pattern); P2; P3; one footer row = date + the writer's name only (no church / team line
+# on this page, so not _R1SIG). One chained flow at one size (_r2chain). 氏 = "Ms." (lane O1's 氏 = "Mr." precedent; 彼女 on the
+# page). Ink #231803 (JP glyph cores 35,24,3).
+R277 = [
+    ("p", "This investigation of Droga and the Arata cherry was made possible by the goodwill of Ms. Kikyo Niimura, an "
+          "original resident who is called \"the Grand Witch.\" However, two conditions were set at that time.", 0),
+    ("b", "Not to lay hands on the cherry trees of the Niimura main family (to preserve the samples)", 3),
+    ("b", "To disclose the results of the reports", 3),
+    ("p", "Those were the conditions. In particular, as for the latter, she wished to be told promptly once a treatment "
+          "for the side effects caused by Droga was found, so we will now compile this report and provide it to Ms. "
+          "Niimura. At that time we set conditions of our own as well,", 3),
+    ("b", "That the reports not be taken outside the settlement", 3),
+    ("b", "That they be kept under strict control", 3),
+    ("p", "those two. She said these posed no problem either, so the other day we provided the reports to Ms. Niimura.", 3),
+    ("p", "According to what she said, she had been especially troubled by the killings by the green-eyed and the mass "
+          "disappearances, and it seems that for her it would be enough just to find a lead toward solving them. This "
+          "report will probably be of use.", 22),
+    ("p", "Truly, I would like to study the Arata cherry more deeply, but it seems that part of the information in this "
+          "report has leaked within the church as well, and it will probably no longer be possible to keep up appearances "
+          "as a religious group. If permitted, I would like to continue the investigation personally, but what will become "
+          "of me, who made this report that is in effect a written accusation? However, the ancestors of Megasawa, "
+          "beginning with Kichizo-sama, truly sought to guide us toward our happiness. I know that there was no falsehood "
+          "in their hearts. It is only that they mistook the object of their worship. The Goddess, no, the evil god called "
+          "Shigatsu Youka.", 10),
+]
+_S277 = 22
+_p277, _e277 = _r2chain(R277, 20, 788, 99, _S277)
+REP277 = ([_rtitle("External Release of the Reports", 26, 63), _rerase([14, 97, 792, 855])]
+          + _p277
+          + [("Shiyo 735, January 9", [16, 886, 290, 916], {"max_size": 21, "erase": [[10, 884, 430, 919]]}),
+             ("Hajime Shinozaki", [300, 886, 600, 916], {"max_size": 21, "erase": []})])
+JOBS += [_r2job(277, REP277, "report (part 19 list; text only; footer = date + name)", "#231803")]
+
+
+
+# IMAGES18B-O5 2026-10-15 (notes/IMAGES18B-BRIEF.md, lane O5): overview cards only: part 19 scenes 242 246 177 244 180 181
+# 185 186 187 188 247 248 + side tales 291 292 293 294 (work/untr17/refimages.txt); part 20 scenes 251 253 254 256 257 297 260
+# (work/untr18); part 21 scenes 261 267 298 263 299 264 265 (work/untr19). Log notes/v2/_tmp/tl-log-IMAGES18B-O5.md.
+# NO JOBS: every SOURCE card (300x169) was read at 2x and the candidates zoomed at 3-12x (work/images/_c/img18bO5/sheet*.png, z*.png).
+# Skipped, no job: textless art 242 (office: pillar plaque and door plate blank) 177 244 (a round mesh of loops, no characters)
+# 180 181 185 186 187 188 247 248 291 292 293 294 251 254 257 297 260 261 267 298 263 299 264 265; marks below legibility
+# 246 (spreadsheet cells on a laptop screen), 253 (car license plate), 256 (phone bezel logo) (QIMAGES18BO5-01..03; the
+# QIMAGES18BO2-01..03 / QIMAGES8-01 / QIMAGES9-02 precedent). The 60x30 サムネ: below legibility, not extracted.
+# IMAGES18B-R3 2026-10-15 (cont.): rr277 card = work/images/_c/img18b-R3/ovcard.py 277 "External Release of the Reports" 4 96 98 34 dark mirror
+# (the card is a MIRRORED 1:1 window onto page (250, 0), img18b-R3/winchk2.py + a flipped comparison; faint page text on a light
+# pink ground under thin black pen handwriting, which is protected and kept as drawn, QIMAGESRB-04; protect mode "dark" =
+# every channel < 120, the counterpart of the simple "white" mode, QIMAGES18BR3-04).
+JOBS += [{"id": "rep277-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+          "items": [(O + "rr277.gal", "")]}]
+
+
+# IMAGES18B-O4 2026-10-15: ref 258 "Erina Goto's Memo 12" (800x1362). memo() rows (img18bO4/mk.py), Erina's memo hand (the ref315 pattern); the heading one size up; the six boxed rows in their own size (their English is ~1.6x the JP and the box is fixed), set from 5 px right of the kept bullet (XO4_258); the box border and the four arrow rows stay as drawn.
+RO4_258 = [[10, 49, 672, 82], [10, 110, 414, 134], [10, 134, 166, 157], [10, 161, 248, 183], [10, 183, 331, 207], [10, 233, 459, 256], [10, 282, 459, 304], [10, 504, 759, 530], [10, 530, 264, 552], [10, 554, 594, 578], [10, 582, 352, 602], [10, 604, 449, 627], [10, 630, 697, 654], [10, 654, 364, 676], [10, 704, 791, 728], [10, 728, 533, 752], [10, 777, 792, 800], [10, 805, 98, 824], [10, 854, 544, 876], [10, 904, 491, 926], [10, 926, 791, 950], [10, 950, 792, 975], [10, 975, 770, 1000], [10, 1001, 139, 1024], [10, 1049, 791, 1072], [10, 1078, 56, 1096], [10, 1101, 479, 1122], [10, 1126, 799, 1148], [10, 1151, 781, 1174], [10, 1174, 720, 1197], [10, 1222, 758, 1248], [10, 1248, 656, 1272], [10, 1296, 414, 1320]]
+TO4_258 = [
+    "Sudden news from Niimura-senpai's mother!!!",
+    "Murders every year in the Arata settlement, where her family home is!",
+    "The old people's suicides!",
+    "A body dead from a fall, with its head cut off!",
+    "Killed not with a knife, but with a blunt weapon!",
+    "What on earth awaits ahead...!?",
+    "For now, if I sum up what's happening...",
+    "That's about all that's clear as fact, but there must be a contradiction in here.",
+    "What we do know is the method of killing.",
+    "Chigaya-san testifies that she killed them with a knife, but they were actually beaten to death.",
+    "That's strange... No matter how you look at it, it's strange!",
+    "In other words, it's possible Chigaya-san didn't kill them.",
+    "The other thing that bugs me: Chigaya-san apparently has precognition like Kogori-senpai's, too.",
+    "If I tie this in...",
+    "Chigaya-san's precognition isn't precognition; she's receiving a signal",
+    "sent from someone. (Kogori-senpai once said it feels like that, too)",
+    "In other words, it's possible that someone is making Chigaya-san",
+    "hallucinate and hear things: \"I killed them with a knife.\"",
+    "There's only 1 answer to look for. All that's left is to track down who that someone really is.",
+    "I see, I'm gradually starting to see what precognition really is, too.",
+    "Precognition could be thought of as a trap to make what the precognitive",
+    "says believable. If Kogori-senpai told me, \"It's dangerous, so do X,\" I'd do",
+    "exactly that too, after all. So if Kogori-senpai received a will with malice",
+    "in it, the people around her would end up in danger instead.",
+    "But what I don't get is why someone was making",
+    "Chigaya-san hallucinate and hear things like that.",
+    "Oh, I get it! A scapegoat for when push comes to shove!",
+    "I don't know if 'someone' is human or not, but if it's a being nobody has recognized",
+    "until now, then 'someone' probably wants to keep hiding what it really is. So as long",
+    "as there's even one person convinced 'I'm the culprit,' it can get away. Is that it?",
+    "But still... then why is there such a fatal difference as a knife versus a blunt weapon...",
+    "Well, I guess I can think about this after I actually meet Chigaya-san.",
+    "Alright! Tomorrow I'm eating a feast at a ryotei!",
+]
+XO4_258 = [
+    ("Until Shiyo 789, old people kept killing themselves", [25, 330, 772, 359], {"max_size": 15, "erase": [[22, 331, 392, 358]]}),
+    ("Shiyo 790, Sakura Niimura-san threw herself to her death, and her head was cut off", [25, 354, 772, 383], {"max_size": 15, "erase": [[22, 355, 557, 382]]}),
+    ("Shiyo 791 to Shiyo 795, Chigaya Niimura-san killed residents who suspected her father was the culprit, one by one", [25, 380, 772, 409], {"max_size": 15, "erase": [[22, 381, 763, 408]]}),
+    ("Shiyo 793 to Shiyo 795, that father was kept under constant watch (he asked for it himself)", [25, 403, 772, 433], {"max_size": 15, "erase": [[22, 404, 771, 432]]}),
+    ("From Shiyo 796, they happen even though Chigaya-san didn't do it herself (the residents' doing?)", [25, 428, 772, 458], {"max_size": 15, "erase": [[22, 429, 732, 457]]}),
+    ("From Shiyo 798, Chigaya-san is in Tokyo for school (they happen with Chigaya-san not there)", [25, 452, 772, 483], {"max_size": 15, "erase": [[22, 453, 670, 482]]}),
+]
+JOBS += [
+    dict(_MEMO, id="obj258-0", screen="reference 258 detail", note="Erina Goto's memo 12 (handwriting; bullets, arrows and the box kept as drawn)",
+         items=[(D + "rrr258/0.gal", "")],
+         lines=memo(RO4_258[0:1], TO4_258[0:1], size=26, right=792) + memo(RO4_258[1:33], TO4_258[1:33], size=18, right=792) + XO4_258),
+    {"id": "obj258-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr258.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 259 "Erina Goto's Memo 13" (800x1510). memo() rows (img18bO4/mk.py), Erina's memo hand (the ref315 / 258 pattern); the heading one size up; circled numbers, arrows, the white circle and the bullets stay as drawn and the English starts after them (XO4_259); row 22 is split around its arrow.
+RO4_259 = [[20, 26, 748, 56], [20, 139, 751, 162], [20, 166, 360, 191], [20, 272, 471, 296], [20, 462, 318, 485], [20, 676, 227, 699], [20, 703, 144, 726], [50, 811, 200, 833], [20, 918, 770, 943], [20, 943, 771, 968], [20, 973, 93, 994], [20, 1024, 360, 1048], [20, 1052, 772, 1076], [20, 1081, 93, 1102], [20, 1107, 471, 1128], [20, 1134, 771, 1157], [20, 1158, 365, 1185], [20, 1187, 471, 1210], [20, 1214, 759, 1238], [20, 1240, 759, 1264], [20, 1376, 773, 1399], [20, 1401, 770, 1425], [20, 1429, 426, 1452]]
+TO4_259 = [
+    "Check whether there's anything Chiga-nee didn't tell us!",
+    "died every year. For the first 5 years Chiga-nee did it with her own hands, but for the 4",
+    "years after that, people died even though Chiga-nee has no memory of killing them.",
+    "she's the one who killed them, but given the situation, there's a contradiction.",
+    "death). After that, it happens every April (the dates vary)",
+    "Right now I'm on the bullet train home.",
+    "Goto's analysis!",
+    "whether there's anything in the Arata settlement that nobody knows",
+    "From what I've heard, Droga apparently has been made since hundreds of years",
+    "ago. And by Westerners who came over to Japan back then, at that. In other",
+    "words, there should be foreign languages mixed in with the archaic language.",
+    "And the important thing is to doubt everything.",
+    "On top of things that defy common sense getting mixed in,",
+    "'someone' must have gotten ahead of us many times over.",
+    "For example, trying to frame Chiga-nee as the culprit.",
+    "That way, if someone arrives at Chiga-nee being the culprit,",
+    "the chances of them getting as far as 'someone' go down.",
+    "Speaking of things that defy common sense, what could there be?",
+    "The existence of Droga and things like telepathy has already become clear.",
+    "Things like this that look like nothing but paranormal phenomena may well become obstacles too.",
+    "Things like that have to be kept in view too. But there must definitely be a scientific",
+    "basis for them. If you write off unknown phenomena as nothing but paranormal",
+    "phenomena, no matter how things turn out, you'll never get to the truth, after all.",
+]
+XO4_259 = [
+    ("What happened in the Arata settlement? (What)", [45, 82, 792, 111], {"max_size": 18, "erase": [[42, 83, 409, 110]]}),
+    ("After Sakura-san killed herself, her head was cut off by Kotaro-san. After that, 1 person", [45, 109, 792, 138], {"max_size": 18, "erase": [[42, 110, 776, 137]]}),
+    ("Who was killed, and who killed them (Who/Whom)", [45, 215, 792, 246], {"max_size": 18, "erase": [[42, 216, 431, 245]]}),
+    ("The people killed were all people who had doubts about Kotaro-san. Chiga-nee says", [45, 243, 792, 273], {"max_size": 18, "erase": [[42, 244, 774, 272]]}),
+    ("How were they killed (How)", [45, 325, 792, 353], {"max_size": 18, "erase": [[42, 326, 376, 352]]}),
+    ("Every head was smashed. But Chiga-nee thought she'd stabbed them to death with a knife.", [45, 349, 792, 379], {"max_size": 18, "erase": [[42, 350, 762, 378]]}),
+    ("When did the cases happen (When)", [45, 405, 792, 434], {"max_size": 18, "erase": [[42, 406, 321, 433]]}),
+    ("The first trigger was Shiyo 790, April 17 (Sakura-san's", [45, 431, 792, 461], {"max_size": 18, "erase": [[42, 432, 787, 460]]}),
+    ("Where did the cases happen? (Where)", [45, 511, 792, 541], {"max_size": 18, "erase": [[42, 512, 376, 540]]}),
+    ("The Arata settlement", [45, 539, 792, 569], {"max_size": 18, "erase": [[42, 540, 134, 568]]}),
+    ("Why did cases like these happen (Why)", [45, 592, 792, 623], {"max_size": 18, "erase": [[42, 593, 376, 622]]}),
+    ("What I asked Chiga-nee to do", [45, 754, 792, 783], {"max_size": 18, "erase": [[42, 755, 240, 782]]}),
+    ("Go to the Arata settlement as soon as possible, and look into", [32, 781, 792, 811], {"max_size": 18, "erase": [[29, 782, 761, 810]]}),
+    ("If there's writing she can't read in the storehouse's books or such, have her send photos", [32, 861, 792, 891], {"max_size": 18, "erase": [[29, 862, 603, 890]]}),
+    ("Dead people moving", [32, 1265, 792, 1293], {"max_size": 18, "erase": [[29, 1266, 295, 1292]]}),
+    ("Reading minds", [32, 1292, 792, 1321], {"max_size": 18, "erase": [[29, 1293, 183, 1320]]}),
+    ("Teleportation", [32, 1317, 792, 1347], {"max_size": 18, "erase": [[29, 1318, 140, 1346]]}),
+    ("Being able to kill just by willing it", [32, 1346, 792, 1374], {"max_size": 18, "erase": [[29, 1347, 250, 1373]]}),
+]
+JOBS += [
+    dict(_MEMO, id="obj259-0", screen="reference 259 detail", note="Erina Goto's memo 13 (handwriting; circled numbers, arrows, circle and bullets kept as drawn)",
+         items=[(D + "rrr259/0.gal", "")],
+         lines=memo(RO4_259[0:1], TO4_259[0:1], size=24, right=792) + memo(RO4_259[1:23], TO4_259[1:23], size=18, right=792) + XO4_259 + [("Doubt everything", [32, 836, 203, 863], {"max_size": 18, "erase": [[29, 837, 203, 862]]}), ("this is essential for finding the root of the Why", [230, 836, 792, 863], {"max_size": 18, "erase": [[229, 837, 617, 862]]})]),
+    {"id": "obj259-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
+     "items": [(O + "rr259.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 184 "Notice of Removal from Enrollment" (800x1132, printed notice on white, page frame x 32/767 y 32/1099).
+# Cambria (printed precedent), glyph mask = every channel <= 130 (the red seal over 京東大学 / 学長 is never in the mask and stays as
+# drawn), inpaint; header lines in their rows (right-aligned as the JP); body re-wrapped at 22 px, one entry per line (pitch 38,
+# paragraph gap 12; img18bO4/mk184.py) because the JP underline under 本日をもって除籍しました is redrawn under its English
+# ("has removed you from enrollment as of today") as a flat 1 px ellipse (QIMAGES18BO4-03).
+_M184 = [0, 130, 0, 130, 0, 130]
+L184 = [
+    ("No. 1026", [480, 136, 686, 161], {"max_size": 18, "align": "right", "erase": [[606, 137, 689, 161]]}),
+    ("Shiyo 801, October 8", [400, 163, 686, 188], {"max_size": 18, "align": "right", "erase": [[531, 164, 689, 187]]}),
+    ("Chigaya Niimura-dono", [113, 217, 480, 243], {"max_size": 18, "erase": [[110, 218, 213, 242]]}),
+    ("Kyoto University", [400, 270, 686, 295], {"max_size": 18, "align": "right", "erase": [[606, 271, 689, 295]]}),
+    ("President   Hiroshi Sayama", [380, 297, 686, 322], {"max_size": 18, "align": "right", "erase": [[550, 298, 689, 322]]}),
+    ("Notice of Removal from Enrollment", [116, 376, 684, 414], {"max_size": 27, "align": "center", "erase": [[324, 377, 477, 413]]}),
+    ("", [112, 476, 689, 604], {"erase": [[112, 476, 689, 604], [112, 621, 689, 749], [112, 767, 689, 894]]}),
+    ("Without taking the prescribed procedures, you have not", [116, 476, 686, 514], {"max_size": 22, "erase": []}),
+    ("attended a single class for about half a year, from Shiyo 801,", [116, 514, 686, 552], {"max_size": 22, "erase": []}),
+    ("April 13 to today.", [116, 552, 686, 590], {"max_size": 22, "erase": []}),
+    ("In addition, your tuition for the first semester of the Shiyo", [116, 602, 686, 640], {"max_size": 22, "erase": []}),
+    ("801 academic year is unpaid, and although we have inquired", [116, 640, 686, 678], {"max_size": 22, "erase": []}),
+    ("repeatedly in writing, we have received no reply of any", [116, 678, 686, 716], {"max_size": 22, "erase": []}),
+    ("kind.", [116, 716, 686, 754], {"max_size": 22, "erase": []}),
+    ("This university has determined that you no longer have any", [116, 766, 686, 804], {"max_size": 22, "erase": []}),
+    ("intention of remaining enrolled and, under University", [116, 804, 686, 842], {"max_size": 22, "erase": []}),
+    ("Regulations Article 10, Item 7, has removed you from", [116, 842, 686, 880], {"max_size": 22, "erase": [], "ellipse": [404, 872, 616, 872], "ellipse_w": 1}),
+    ("enrollment as of today. Please take note of this.", [116, 880, 686, 918], {"max_size": 22, "erase": [], "ellipse": [116, 910, 327, 910], "ellipse_w": 1}),
+    ("End", [560, 961, 686, 990], {"max_size": 20, "align": "right", "erase": [[635, 962, 689, 990]]}),
+]
+JOBS += [
+    {"id": "obj184-0", "screen": "reference 184 detail", "style": "serif", "mode": "lines", "erase": "inpaint",
+     "erase_first": True, "mask_grow": 2, "mask_color": _M184, "color": "#111111", "new": True,
+     "note": "notice of removal from enrollment (printed; red seal kept, underline redrawn)",
+     "items": [(D + "rrr184/0.gal", "")],
+     "lines": [(t, b, dict(o, mask_color=_M184)) for t, b, o in L184]},
+    {"id": "obj184-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "items": [(O + "rr184.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 249 "Arata Settlement Survey Report" (800x2301, two sheets, transparent seam y 1132-1168):
+# printed report = Cambria (the R-lane pattern), glyph mask every channel <= 130, inpaint on the white paper; the table
+# rules (incl. the light ones), the sheet edges and the bullets (x 74-81) stay; one size (17 px, line spacing 1.0) for the
+# whole page, each cell box = its wrapped height from the first JP text row (img18bO4/mk249.py, text249.py). 内約 = 内訳
+# and 形成期 = 形跡 (typos, translated as intended).
+_M249 = [0, 130, 0, 130, 0, 130]
+L249 = [
+    ("", [70, 103, 730, 162], {"erase": [[70, 103, 730, 162], [72, 207, 400, 232], [72, 240, 730, 333], [72, 345, 400, 369], [72, 378, 730, 504], [72, 516, 400, 541], [72, 549, 730, 575], [96, 586, 730, 645], [96, 657, 730, 682], [96, 694, 730, 719], [96, 731, 730, 756], [96, 765, 730, 857], [96, 866, 730, 891], [72, 902, 400, 927], [72, 936, 730, 962], [72, 1274, 400, 1299], [72, 1308, 730, 1333], [72, 1345, 400, 1370], [72, 1378, 730, 1605], [72, 1618, 400, 1642], [72, 1651, 730, 1710], [72, 1722, 400, 1746], [72, 1755, 730, 1881], [72, 1893, 400, 1918], [72, 1926, 730, 1985]]}),
+    ("The survey of the Arata settlement that existed in the Arata district is complete, so the series of events is reported here.", [74, 101, 728, 144], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("A phone call came in from a girl in the Arata settlement asking for help. However, since it was nighttime, the rescue was carried out early the next morning. According to the girl, the driver of the Arata Line train had been killed.", [74, 239, 728, 303], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("A rescue helicopter heads to the Arata settlement. Separately, another team confirms the death of the Arata Line driver. The neck had been severed with a sharp blade; death was instantaneous. In light of this, the information from the girl was judged highly credible, and a survey team for the Arata settlement was formed at once.", [74, 377, 728, 462], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("No survivors. Breakdown of the circumstances of death:", [74, 548, 728, 570], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Kana Niimura (15): When she was found, her death was at first thought to be from wild animals, but strictly speaking, she bled to death from losing her right arm.", [98, 585, 728, 628], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Erina Goto (17): Suffocation from compression of the neck.", [98, 653, 728, 675], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Natsumi Kogori (18): Died of a cerebral contusion", [98, 690, 728, 712], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Others: 25 people, cause of death unknown.", [98, 728, 728, 750], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Each of them died in what appears to be their own home. There were no external injuries, but since many of the bodies had the blood of the above victims on them, the victims are thought to have been killed by them.", [98, 764, 728, 828], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("The bodies are placed under the jurisdiction of the Iizawa Prefectural Police", [98, 862, 728, 884], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("2 mummies are found in the remains of a fire that broke out in the settlement.", [74, 935, 728, 957], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("A search of the Arata district is carried out on a scale of 300 people.", [74, 1307, 728, 1329], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("The causes of death of the 3 girls are determined as above.", [74, 1377, 728, 1399], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("The cause of death of the other 25 is multiple organ failure. Hyphae are detected in their bodies, and more than 1 month is thought to have passed since the hyphae developed in the brain. In other words, as of April 9 they would have been dead for more than 1 month, but from the rigidity and the state of decomposition of the bodies, it was found that the times of death of the brain and the body differ. They had been brain-dead for more than 1 month. However, since there are traces of their having lived until recently, it is thought that for some reason they were able to move even after brain death.", [74, 1411, 728, 1559], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Of the 2 mummies, one is found to have been dead about 1 year, and the other several hundred years or more. However, the damage is severe, and further examination is impossible.", [74, 1645, 728, 1709], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("On the instructions of the National Police Agency, the search of the Arata district is forcibly halted. No major leads. Also on the same day, all the bodies of those who died of multiple organ failure vanish, except for their bones. At that time, countless things that looked like plant branches had spread all through the body storage room.", [74, 1750, 728, 1835], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("All investigative authority passes to the National Police Agency. At the same time, all the bodies and the plant branches are also collected.", [74, 1922, 728, 1965], {"max_size": 17, "line_spacing": 1.0, "erase": []}),
+    ("Shiyo 802, April 8   22:00", [74, 207, 600, 233], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 9   5:00", [74, 345, 600, 370], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 9   7:00", [74, 516, 600, 542], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 9   9:00", [74, 902, 600, 928], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 10", [74, 1274, 600, 1300], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 15", [74, 1345, 600, 1371], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 16", [74, 1618, 600, 1643], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 17", [74, 1722, 600, 1747], {"max_size": 17, "erase": []}),
+    ("Shiyo 802, April 18", [74, 1893, 600, 1919], {"max_size": 17, "erase": []}),
+]
+JOBS += [
+    {"id": "obj249-0", "screen": "reference 249 detail", "style": "serif", "mode": "lines", "erase": "inpaint",
+     "erase_first": True, "mask_grow": 2, "mask_color": _M249, "color": "#111111", "new": True,
+     "note": "Arata settlement survey report (printed table; rules and bullets kept)",
+     "items": [(D + "rrr249/0.gal", "")],
+     "lines": [(t, b, dict(o, mask_color=_M249)) for t, b, o in L249]},
+    {"id": "obj249-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "items": [(O + "rr249.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 266 "Erika Niimura's Note" (600x1708, vertical brush letter on vertically ruled paper, two
+# sheets y 0-848 / 859-1708; transparent seam y 849-858). The 書簡 letter() pattern: serif, horizontal English blocks right
+# to left (one per sheet, top-aligned at the first JP column top), addressee / signature rot -90 in their columns (ref183);
+# glyph mask _L1M (every channel <= 85: the grey rules stay), inpaint. Sheet 1 block widened over its blank ruled columns
+# (QIMAGES18BO4-05). img18bO4/mk266.py.
+L266 = [
+    ("I'm heading out now to search for Chigaya. The place is the back of the underground storeroom. There's a chance Chigaya is there. I might need everyone's help too, so at least don't slack on getting ready. I may head for the summit of Mount Itohime. This should surely settle everything. Also, it looks like the lore handed down through the generations will be useful. The wisdom of the ancestors really is nothing to scoff at. Kotaro, as far as you're able, I'd like you to think, based on the rule and the rules that", [66, 88, 500, 661], {"max_size": 28, "line_spacing": 1.12, "erase": [[64, 80, 502, 765]]}),
+    ("this settlement has, about whether there's a way to help solve this. It's all right. This year, for sure.", [66, 947, 555, 1063], {"max_size": 28, "line_spacing": 1.12, "erase": [[460, 940, 556, 1625]]}),
+    ("To Kotaro,", [519, 86, 556, 420], {"rot": -90, "max_size": 24, "align": "left", "erase": [[519, 80, 556, 205]]}),
+    ("Erika Niimura", [402, 1300, 444, 1622], {"rot": -90, "max_size": 24, "align": "right", "erase": [[404, 1480, 442, 1626]]}),
+]
+JOBS += [
+    {"id": "obj266-0", "screen": "reference 266 detail", "style": "serif", "mode": "lines", "erase": "inpaint",
+     "erase_first": True, "mask_grow": 3, "mask_color": _L1M, "color": "#1a1208", "new": True,
+     "note": "Erika Niimura's note (vertical brush letter, two sheets; English blocks right to left)",
+     "items": [(D + "rrr266/0.gal", "")],
+     "lines": [(t, b, dict(o, mask_color=_L1M)) for t, b, o in L266]},
+    {"id": "obj266-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "items": [(O + "rr266.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 175 "The Person Who Took Custody" (800x520 newspaper page "Daily Iizawa" + 部分拡大1 400x357):
+# the ref104 / ref28 newspaper pattern (same page template: _GAME ad box, publisher block, masthead box). Vertical JP headlines
+# set rot -90; the article columns become horizontal English blocks in their column area (N104 way), one size (9 px) for the
+# article body; the photo and the LiveMaker logo / URL kept. The big blurred headline (legible) is set sharp in the blurred
+# glyphs' mid grey (QIMAGES18BO4-06); the blurred subhead and the blurred columns are below legibility and stay as drawn.
+# Close-up 1 = zoom_items at its own scale (match7.py: s 1.45, crop (2, 273), score 0.893; the QIMAGES7-04 method).
+N175_A = ("Before dawn on April 9, Kana Niimura-san (12), who lives in the Arata district, was taken into protection at the "
+          "Toyotake police box. Niimura-san appeared at the police box alone and is currently in temporary protective custody "
+          "at a child guidance center in Iizawa Prefecture. Niimura-san recently lost both her parents in an accident and, "
+          "having nowhere to go, reportedly")
+N175_B = ("asked the police box for help. Relatives or acquaintances of Niimura-san are asked to contact our company.")
+L175 = [
+    ("Daily Iizawa", [262, 6, 510, 27], dict(_NM4, align="center", max_size=12, erase=[[264, 8, 506, 27]])),
+    ("Shiyo 802, April 10   Sunday   No. 4511", [560, 6, 796, 27],
+     dict(_NM4, align="right", max_size=11, erase=[[571, 9, 785, 27]])),
+    ("DAILY\nIIZAWA", [706, 48, 776, 342], dict(_NH, rot=-90, align="center", max_size=34,
+                                              mask_color=[0, 90, 0, 90, 0, 90], erase=[[708, 52, 774, 340]])),
+    ("Publisher\nIizawa Newspaper Co.\n1-1 Shimatoki, Iizawa City,\nIizawa Prefecture\nPostal code 995-9876\n"
+     "(C) Megasawa Newspaper Co. 802\nTel 220(551)XXXX", [693, 355, 788, 440],
+     dict(_NM4, align="center", max_size=8, line_spacing=1.0, erase=[[693, 356, 788, 439]])),
+    _GAME,
+    ("Cherry Blossom Season Is Here!\nFull Bloom Everywhere", [610, 40, 676, 512],
+     dict(_NH, rot=-90, align="center", max_size=34, color="#6e6e6e", mask_color=[0, 205, 0, 205, 0, 205],
+          erase=[[612, 36, 672, 516]])),
+    ("Seeking Someone\nto Take Custody", [204, 300, 263, 460],
+     dict(_NH, rot=-90, align="center", max_size=24, mask_color=[0, 150, 0, 150, 0, 150], erase=[[205, 302, 262, 457]])),
+    (N175_A, [22, 286, 197, 397], dict(_NM4, max_size=9, erase=[[20, 284, 198, 398]])),
+    (N175_B, [124, 408, 197, 515], dict(_NM4, max_size=9, erase=[[123, 407, 198, 516]])),
+    ("Kana Niimura-san (12)", [24, 485, 114, 505], dict(_NM4, align="center", max_size=9, erase=[[28, 484, 112, 503]])),
+]
+Z175 = [(1, 1.45, 2, 273, 400, 357)]
+JOBS += [
+    {"id": "obj175-0", "screen": "reference 175 detail", "style": "serif", "mode": "lines", "erase": "inpaint",
+     "erase_first": True, "text_only": True, "thr": 60, "mask_grow": 3, "color": "#222222", "line_spacing": 1.05, "new": True,
+     "note": "newspaper page (photo, LiveMaker logo / URL and the blurred columns kept)", "items": [(D + "rrr175/0.gal", "")],
+     "lines": L175},
+    {"id": "obj175-zoom1", "screen": "reference 175 close-up", "style": "serif", "mode": "lines", "erase": "inpaint",
+     "erase_first": True, "text_only": True, "thr": 60, "mask_grow": 5, "color": "#222222", "line_spacing": 1.05,
+     "note": "newspaper close-up (same English as the page, own scale)", "items": zoom_items(175, L175, Z175), "lines": []},
+    {"id": "obj175-ov", "screen": "reference screen previews", "style": "serif", "mode": "asis", "chain": True,
+     "items": [(O + "rr175.gal", "")]},
+]
+
+
+# IMAGES18B-O4 2026-10-15: ref 262 "Analysis of Occult Magazine 'M'" (800x5210 web page; part 21 fence). Built by
+# work/images/_c/img18bO4/mk262.py (web text: text262.py + lay262.py; geometry: match262c.py). ORDER: paste262.py -> obj262-0
+# (chain=True, the paste8.py / ref109-zoom precedent) -> obj262-ov. Web text = gothic (ref157 precedent), one entry per
+# colour run (yellow spans = separate runs, ref98 precedent); erase-only entries fill the navy ground flat (inpaint on the
+# photo). Cover = gothic, inpaint per line. Panels P2 P4 P5 P6 P7 = the shipped L108 / L109 at their own scale (zoom_lines,
+# QIMAGES7-04) shifted into the panel, magazine ink / paper as the shipped jobs (maskfill, bg = the panel paper #fafafa);
+# P1 P3 P8 and P4's cut title / tape = pasted from the shipped English renders (paste262.py). P7: the two red-boxed JP words
+# stay as drawn (protect; ref17 Q1970 precedent), the English of those two columns starts below the boxes. The kana
+# wordplay (acrostic, reversed chant) is romanized with short glosses in [ ] (QIMAGES18BO4-08).
+_W262 = [
+    ("", [40, 31, 760, 77], {"erase": [[40, 31, 760, 77]], "method": "flat", "bg": "#0c0111"}),
+    ("", [55, 83, 735, 127], {"erase": [[55, 83, 735, 127]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 221, 508, 362], {"erase": [[26, 221, 508, 362]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 543, 774, 637], {"erase": [[26, 543, 774, 637]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 660, 140, 683], {"erase": [[28, 660, 140, 683]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 1182, 338, 1440], {"erase": [[26, 1182, 338, 1440]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 1440, 774, 1509], {"erase": [[26, 1440, 774, 1509]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 1578, 205, 1601], {"erase": [[28, 1578, 205, 1601]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 2128, 367, 2566], {"erase": [[26, 2128, 367, 2566]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 2588, 367, 2818], {"erase": [[26, 2588, 367, 2818]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3206, 774, 3255], {"erase": [[26, 3206, 774, 3255]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 3276, 158, 3301], {"erase": [[36, 3276, 158, 3301]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3345, 458, 3438], {"erase": [[26, 3345, 458, 3438]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 3460, 328, 3485], {"erase": [[28, 3460, 328, 3485]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3506, 458, 3737], {"erase": [[26, 3506, 458, 3737]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 3758, 368, 3784], {"erase": [[36, 3758, 368, 3784]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3804, 774, 3851], {"erase": [[26, 3804, 774, 3851]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 3873, 190, 4012], {"erase": [[36, 3873, 190, 4012]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4034, 440, 4057], {"erase": [[28, 4034, 440, 4057]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 4203, 696, 4258], {"erase": [[36, 4203, 696, 4258]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4279, 136, 4302], {"erase": [[28, 4279, 136, 4302]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 4302, 774, 4463], {"erase": [[26, 4302, 774, 4463]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 4554, 774, 4623], {"erase": [[26, 4554, 774, 4623]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 4642, 466, 4674], {"erase": [[36, 4642, 466, 4674]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 4692, 774, 4738], {"erase": [[26, 4692, 774, 4738]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4761, 434, 4783], {"erase": [[28, 4761, 434, 4783]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4806, 434, 4829], {"erase": [[28, 4806, 434, 4829]], "method": "inpaint", "mask_color": [140, 255, 140, 255, 140, 255], "mask_grow": 3}),
+    ("", [28, 5068, 732, 5146], {"erase": [[28, 5068, 732, 5146]], "method": "inpaint", "mask_color": [140, 255, 0, 140, 0, 150], "mask_grow": 3}),
+    ("", [30, 5165, 498, 5190], {"erase": [[30, 5165, 498, 5190]], "method": "inpaint", "mask_color": [140, 255, 140, 255, 140, 255], "mask_grow": 3}),
+    ("The Truth Hidden in Occult Magazine 'M'!", [99, 30, 705, 76], {"max_size": 34, "color": "#fdf8fe", "erase": [], "line_spacing": 1.0}),
+    ("A Mass Murder the State Itself Covered Up!", [80, 82, 724, 128], {"max_size": 34, "color": "#fdf8fe", "erase": [], "line_spacing": 1.0}),
+    ("Do you all know", [30, 222, 144, 245], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Occult Magazine 'M'?", [145, 222, 296, 245], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Those of you who view this", [297, 222, 492, 245], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("site probably know it. It is", [30, 245, 215, 268], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("a magazine with a long history, first", [216, 245, 465, 268], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("published in Shiyo 745,", [30, 268, 200, 291], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("and it carries ghosts, yokai, UFOs, UMAs", [201, 268, 487, 291], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("and other unknown phenomena. It has especially strong support", [30, 291, 478, 314], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("among middle and high school students, and even now it is often", [30, 314, 488, 337], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("used among students as something to talk about.", [30, 337, 377, 360], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Of course, I'm a fan of M too, and lately I've been collecting M's back issues, in other words the issues", [30, 544, 752, 567], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("published so far. Among them was something baffling, so I'll introduce it. It's", [30, 567, 565, 590], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the June and July issues of", [566, 567, 761, 590], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Shiyo 747,", [30, 590, 110, 613], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("quite old ones. But the back issues I got are well preserved, and the text and photos can be", [111, 590, 763, 613], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("seen clearly.", [30, 613, 122, 636], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("First, the June issue", [30, 660, 175, 683], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("The murder case of researchers that", [30, 1187, 275, 1210], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("happened in Motoki-cho, Sawa Prefecture.", [30, 1210, 315, 1233], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("In", [316, 1210, 332, 1233], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("late Shiyo 747, a public research group was", [30, 1233, 325, 1256], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("launched in Motoki-cho, Sawa Prefecture. Its", [30, 1256, 331, 1279], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("research purpose is said to have been to learn", [30, 1279, 342, 1302], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the true nature of a cherry tree said to have", [30, 1302, 327, 1325], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("suddenly sprouted in Shiyo 737. But a few", [30, 1325, 314, 1348], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("days after the research began, a case", [30, 1348, 285, 1371], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("occurred in which all the researchers", [30, 1371, 279, 1394], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("were", [280, 1371, 315, 1394], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("beaten to death at their lodgings in", [30, 1394, 268, 1417], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Motoki-cho.", [30, 1417, 113, 1440], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("This is the article on it.", [114, 1417, 271, 1440], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Normally you'd think someone beat the researchers to death, but the article at the time closes by saying it", [30, 1440, 774, 1463], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("will", [30, 1463, 57, 1486], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("approach the case from both sides, murder and curse, and run the continuation in the next issue.", [58, 1463, 737, 1486], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Including the curse is a very M-like way to close, as befits an occult magazine.", [30, 1486, 586, 1509], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("However, in the July issue,", [30, 1578, 221, 1601], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("As you can see, a yokai called", [30, 2129, 246, 2152], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Motokizakura-sama", [30, 2152, 172, 2175], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("suddenly appears, and the", [173, 2152, 361, 2175], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("article concludes that the murder case was its", [30, 2175, 356, 2198], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("doing. At a glance, you could say it's a very", [30, 2198, 335, 2221], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("M-like conclusion. But what's baffling is that,", [30, 2221, 348, 2244], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("rather than getting into the truth of the case, it", [30, 2244, 356, 2267], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("merely digs up rumors from Motoki-cho and", [30, 2267, 341, 2290], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("brings them in as the conclusion. In other", [30, 2290, 321, 2313], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("words,", [30, 2313, 80, 2336], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the only causal link to the case is that 'it", [81, 2313, 367, 2336], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("happened in Motoki-cho.'", [30, 2336, 214, 2359], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("What's more, this", [215, 2336, 337, 2359], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("murder case actually happened. Even so,", [30, 2359, 320, 2382], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("concluding without running the details of the", [30, 2382, 342, 2405], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("case, and without even making up something to", [30, 2405, 365, 2428], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("connect the case and the rumors, is rather", [30, 2428, 329, 2451], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("sloppy, isn't it? From the August issue on,", [30, 2451, 327, 2474], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("neither this case nor Motokizakura-sama", [30, 2474, 320, 2497], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("appears. To me it looks as if this case was", [30, 2497, 335, 2520], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("forcibly brought to a close.", [30, 2520, 221, 2543], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("I tried to get information on the case", [30, 2588, 290, 2611], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("elsewhere, but for some reason there was", [30, 2611, 329, 2634], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("none, either online or in libraries. Of course", [30, 2634, 338, 2657], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("there were articles from when the case first", [30, 2657, 339, 2680], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("happened, but nothing that looked into it deeply", [30, 2680, 370, 2703], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("and no impressions from the police or the like;", [30, 2703, 361, 2726], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("there was only what kind of case had", [30, 2726, 293, 2749], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("happened, and", [30, 2749, 137, 2772], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("what happened afterward is", [138, 2749, 335, 2772], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("completely unknown.", [30, 2772, 179, 2795], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("In other words, I thought", [180, 2772, 353, 2795], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("that perhaps, for some reason,", [30, 2795, 248, 2818], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("this murder case", [249, 2795, 369, 2818], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("was hushed up.", [30, 2818, 142, 2841], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("And there's one more strange thing about this July issue. When you read the text, there are a lot of", [30, 3207, 723, 3230], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("strange turns of phrase. For example, in this part,", [30, 3230, 377, 3253], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Sakura (rei no)' [the cherry (in question)]", [30, 3276, 341, 3299], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("is how it's written, and right below it, the phrase is 'rei no", [30, 3345, 434, 3368], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("sakura' [the cherry in question]. Normally you'd write 'rei no", [30, 3368, 452, 3391], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("sakura.' I thought there might be some intention behind this.", [30, 3391, 451, 3414], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("What's more, this: 'Where one falls, darkness lies.'", [30, 3460, 381, 3483], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("It feels like eerie wording for effect, but there is nothing at", [30, 3506, 445, 3529], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("all in this article about 'falling' or 'darkness.' I thought this", [30, 3529, 433, 3552], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("might be a hint from the reporter. After all, the previous", [30, 3552, 421, 3575], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("issue said it would pursue the truth of the murder case, yet", [30, 3575, 447, 3598], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the July issue wraps it up in this strange way.", [30, 3598, 350, 3621], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("If I were the", [351, 3598, 439, 3621], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("reporter, I'd want to write the truth in more detail,", [30, 3621, 378, 3644], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("and if for", [379, 3621, 446, 3644], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("some reason I couldn't write it, that would be terribly", [30, 3644, 402, 3667], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("frustrating. So at the very least, I'd want", [30, 3667, 310, 3690], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("to leave readers", [311, 3667, 430, 3690], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("some kind of hint.", [30, 3690, 159, 3713], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("'Sakura (rei no)' and 'Where one falls, darkness lies'", [30, 3758, 400, 3781], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("When I wondered whether I could expose the truth from these 2 points, I finally found something that", [30, 3804, 738, 3827], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("seemed to be it. In other words, if you follow the first characters of this article's paragraphs (danraku,", [30, 3827, 746, 3850], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'where one falls'),", [30, 3850, 160, 3873], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Mo'u sude ni [already]", [41, 3873, 209, 3896], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Mi'chi no uwasa [an unknown rumor]", [41, 3896, 305, 3919], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Ke'tsuron o ieba [to give the conclusion]", [41, 3919, 339, 3942], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Sa'kura (rei no) [that cherry tree]", [41, 3942, 289, 3965], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Re'i no sakura [that cherry tree]", [41, 3965, 274, 3988], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Ta'shika ni [indeed]", [41, 3988, 192, 4011], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("If you turn these into hiragana and line up the first characters,", [30, 4034, 462, 4057], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("mo mi ke sa re ta \u2192 momikesareta [hushed up]", [30, 4200, 717, 4260], {"max_size": 32, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("is what you get.", [30, 4279, 143, 4302], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("If my guess is right, wasn't it that the reporter, for some reason, was not allowed to write the continuation", [30, 4302, 769, 4325], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("and wanted to convey, as at least a hint, that", [30, 4325, 347, 4348], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'this case has been hushed up'?", [348, 4325, 577, 4348], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("As proof, not even the", [578, 4325, 739, 4348], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("newspapers ran any follow-up on the case. What's more, the ones killed were an 'official' research group.", [30, 4348, 770, 4371], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Couldn't one also think that", [30, 4371, 224, 4394], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the state hushed up this case?", [225, 4371, 446, 4394], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("And though the tree suddenly sprouted, the", [447, 4371, 754, 4394], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("state set up a research group for a single tree. That being so, you could say the state knew the true", [30, 4394, 731, 4417], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("nature of this cherry tree to some extent, and the group was made to look into its details further.", [30, 4417, 710, 4440], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("When I looked further into this matter, I got some interesting information. In Motoki-cho there are", [30, 4554, 712, 4577], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("apparently several households that worship Motokizakura-sama as a god. The words they chant when", [30, 4577, 744, 4600], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("they pray are", [30, 4600, 124, 4623], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("\"Taresaro Koniraku Sahan Iuyu Kinke\"", [30, 4646, 294, 4669], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("a strange phrase. As it is, you can't tell what it means, but if you read it backward,", [30, 4692, 605, 4715], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Kenki Yuui Nhasa Kuraniko Rosareta", [30, 4761, 285, 4784], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("kenkyuuin   wa   sakura   ni   korosareta", [30, 4806, 301, 4829], {"max_size": 15, "color": "#cfd0e4", "erase": [], "line_spacing": 1.0}),
+    ("The researchers were killed by the cherry", [26, 5066, 719, 5146], {"max_size": 38, "color": "#ff2538", "erase": [], "line_spacing": 1.0}),
+    ("Now, what do you make of this case?", [30, 5164, 281, 5189], {"max_size": 15, "color": "#cfd0e4", "erase": [], "line_spacing": 1.0}),
+]
+_CV262 = [
+    ("Finally solved!!  The truth about Bigfoot!!", [530, 139, 737, 157], {"color": "#e8e8e8", "mask_color": [150, 255, 150, 255, 150, 255], "erase": [[532, 139, 737, 157]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("Monthly Occult Report Magazine", [519, 163, 700, 179], {"color": "#7a48b8", "mask_color": [50, 160, 15, 110, 70, 230], "erase": [[519, 164, 630, 179]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("All phenomena,\nright here", [518, 210, 582, 236], {"color": "#dcd8d0", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[518, 211, 576, 235]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("April Issue", [516, 249, 574, 265], {"color": "#dcd8d0", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[516, 249, 560, 265]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("em", [693, 262, 738, 283], {"color": "#ff1a1a", "mask_color": [140, 255, 0, 110, 0, 110], "erase": [[690, 259, 740, 283]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("All-Out Special!", [517, 290, 600, 301], {"color": "#e81818", "mask_color": [140, 255, 0, 120, 0, 120], "erase": [[517, 290, 566, 301]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("Expose the truth of the eerie 'apocalyptic sound'!", [517, 301, 736, 314], {"color": "#ece8dc", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[517, 301, 712, 314]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("Spring Ghost Footage", [527, 326, 640, 341], {"color": "#eef040", "mask_color": [140, 255, 130, 255, 0, 150], "erase": [[527, 326, 598, 341]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("The lost 'Kowloon Walled City' mystery", [527, 341, 670, 352], {"color": "#e4ece4", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[527, 341, 622, 352]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 8}),
+    ("A new door to Maya civilization", [527, 351, 670, 362], {"color": "#e4ece4", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[527, 351, 622, 362]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 8}),
+    ("Plot hidden in the great quake", [527, 361, 670, 372], {"color": "#e4ece4", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[527, 361, 622, 372]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 8}),
+    ("5 psychic investigators", [527, 371, 670, 382], {"color": "#e4ece4", "mask_color": [130, 255, 130, 255, 120, 255], "erase": [[527, 371, 622, 382]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 8}),
+    ("This Month's DVD", [587, 414, 662, 425], {"color": "#f2dedb", "mask_color": [140, 255, 110, 255, 100, 255], "erase": [[587, 414, 630, 425]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("Qigong and yoga: what happens\nif you draw out 100% of the\nhuman body's abilities?", [587, 425, 745, 456], {"color": "#f2dedb", "mask_color": [140, 255, 110, 255, 100, 255], "erase": [[587, 425, 718, 446]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+    ("800 yen (tax incl.)", [655, 458, 745, 474], {"color": "#f2f0b8", "mask_color": [130, 255, 130, 255, 90, 255], "erase": [[686, 459, 737, 473]], "method": "inpaint", "mask_grow": 2, "line_spacing": 1.0, "max_size": 12}),
+]
+
+
+def _o4panel(L, ox, oy, s, W, H, dx, dy, color, drop=(), grow=3):
+    """a shipped magazine layout at its own scale inside a 262 panel (zoom_lines), shifted by (dx, dy); serif, the
+    shipped ink colour unless the line has its own, maskfill on the panel paper."""
+    out = []
+    for t, b, o in zoom_lines([e for e in L if e[0] not in drop], ox, oy, s, W, H):
+        o = dict(o)
+        o["erase"] = [[e[0] + dx, e[1] + dy, e[2] + dx, e[3] + dy] for e in o.get("erase", [])]
+        o.setdefault("color", color)
+        o.update(style="serif", line_spacing=1.05, bg="#fafafa", mask_grow=grow)
+        o.setdefault("method", "maskfill")
+        out.append((t, [b[0] + dx, b[1] + dy, b[2] + dx, b[3] + dy], o))
+    return out
+
+
+_P2 = _o4panel(L108, 95.1, 418.1, 1.5723, 445, 209, 342, 1184, _INK108)
+_P4 = _o4panel(L109, 429.4, 284.4, 1.1364, 406, 306, 372, 2121, "#a82c2c", drop=(T109, TAPE109))
+_P5 = _o4panel(L109, 93.5, 13.5, 1.1905, 351, 321, 389, 2442, "#a82c2c")
+_P6 = _o4panel(L109, 93.7, 273.7, 1.2853, 379, 347, 389, 2776, "#a82c2c")
+_P7 = _o4panel(L109, 93.2, 14.2, 1.6779, 169, 452, 462, 3275, "#a82c2c")
+# P7: the red boxes (x 490-528 y 3292-3396 around 桜（例の）, x 512-546 y 3520-3595 around 例の桜) stay as drawn (protect below);
+# the English of those two columns (M109_L2A, M109_L3A) starts 2 px below each box.
+for _k, _e in enumerate(_P7):
+    if _e[0] == M109_L2A:
+        _P7[_k] = (_e[0], [_e[1][0], 3398, _e[1][2], _e[1][3]], _e[2])
+    elif _e[0] == M109_L3A:
+        _P7[_k] = (_e[0], [_e[1][0], 3597, _e[1][2], _e[1][3]], _e[2])
+JOBS += [
+    {"id": "obj262-0", "screen": "reference 262 detail", "style": "gothic", "mode": "lines", "erase": "flat",
+     "erase_first": True, "chain": True, "mask_grow": 2, "color": "#d2cad6", "new": True,
+     "note": "web page on occult magazine 'M' (panels = refs 108 / 109 English; photos, logo and art kept)",
+     "items": [(D + "rrr262/0.gal", "")],
+     "protect": [[489, 3291, 529, 3397], [511, 3519, 547, 3596]],
+     "lines": _W262 + [(t, b, dict(o, style="gothic")) for t, b, o in _CV262] + _P2 + _P4 + _P5 + _P6 + _P7},
+    {"id": "obj262-ov", "screen": "reference screen previews", "style": "gothic", "mode": "asis", "chain": True,
+     "items": [(O + "rr262.gal", "")]},
+]
+
+
+# SWEEP-ACROSTIC 2026-10-16 (notes/SWEEP-ACROSTIC-BRIEF.md; owner ruling 2026-10-16 01:40): the hidden message of refs 109
+# and 262 rebuilt in English. The shipped jobs ref109 / ref109-zoom / obj262-0 above stay as they were; their copies here
+# carry new ids and the new text. ORDER: ref109-ac -> work/images/_c/paste8.py z109 -> ref109-zoom-ac ->
+# work/images/_c/sweepac/paste262ac.py -> obj262-0-ac (chain) [-> the 262 card only if its window changed].
+# ref 109: nine paragraphs whose first letters spell COVERED UP; only each paragraph's opening clause is new, every other
+# sentence is the shipped M109_* text word for word. The three long boxes R1 / R2 / L4 now hold two paragraphs each: one
+# text entry per paragraph, stacked in the shipped box at the largest common size <= the box's max_size, a half-line gap
+# between the two, the stack centred like the engine centres one string (_ac_split; computed per context, so the page,
+# every close-up and every 262 panel stack the paragraphs at their own scale). ref 262: the acrostic explanation in
+# English letters, the decoded "C-O-V-E-R-E-D U-P", the chant "Yrrehce Htybdel Likerew Srehcrae Sereht" and its backward
+# reading (sweepac/text262ac.py + lay262ac.py, built by sweepac/mkchunk.py); panels P4-P7 from the new 109 layout.
+AC109_P1 = ("Covering the Motoki-cho researcher slaughter case already in last month's issue, we have since obtained a "
+            "rumor that could be its basis.")
+AC109_P2 = ("Over the time since that cherry tree appeared, mysterious phenomena have been occurring in Motoki-cho, Sawa "
+            "Prefecture. It is a being called Motokizakura-sama, which could be taken for a spirit or for a yokai. Though "
+            "it bears the name Motokizakura-sama, it is said to appear before the people of Motoki-cho regardless of the "
+            "season and to bring happiness. However, how could such a being be tied to a slaughter case?")
+AC109_P3 = ("Various witnesses led us to an unknown rumor. According to them, Motokizakura-sama at first glance cannot be "
+            "told apart from an ordinary human, but the testimony agrees that it is a young woman wearing a kimono with a "
+            "cherry-blossom pattern. Furthermore, there are also stories of it being seen in separate places at the same "
+            "time, and it is said that there is not just one, but countless of them in the same form.")
+AC109_P4 = ("Encounter Motokizakura-sama, and you will apparently be blessed with sudden good fortune. However, the world "
+            "is not all good things. Behind it, it is said, a frightening face is hidden.")
+AC109_P5 = ("Reaching the conclusion, this being called Motokizakura-sama seems to be quite troublesome. While it brings "
+            "good fortune to those who happen to meet it, there are, it is said, also Motokizakura-sama who on rare "
+            "occasions bring death. Motokizakura-sama is also said to be an offshoot of that cherry tree, and whoever "
+            "carelessly touches or searches for it will be bewitched by Motokizakura-sama and taste eternal suffering. "
+            "There is a case like this.")
+AC109_P6A = "Even that cherry tree's uncanny nature draws people"     # + M109_L2B (unchanged) = paragraph 6
+AC109_P7A = ("Darker still: twin sisters, then 10 years old, were climbing and playing in that cherry tree when a woman "
+             "wearing a cherry-blossom-pattern kimono")             # + M109_L3B (unchanged) = paragraph 7
+AC109_P8 = ("Uncanny rumors about that cherry tree never seem to stop. Those who carelessly approach it are cursed to "
+            "death, and it is said that the one protecting the cherry tree's secret is Motokizakura-sama. If so, that "
+            "slaughter case too can be thought of as the work of Motokizakura-sama.")
+AC109_P9A = ("Perhaps some of you readers think it ridiculous that such an uncanny being could be the culprit. But please "
+             "think")                                               # + M109_L5 (unchanged) = paragraph 9
+_AC_SEP = "\x1e"   # paragraph break inside one text box; _ac_split turns it into stacked entries
+_AC109 = {M109_R1: AC109_P1 + _AC_SEP + AC109_P2, M109_R2: AC109_P3 + _AC_SEP + AC109_P4, M109_L1: AC109_P5,
+          M109_L2A: AC109_P6A, M109_L3A: AC109_P7A, M109_L4: AC109_P8 + _AC_SEP + AC109_P9A}
+_AC_D = _Dr.Draw(_Im.new("RGBA", (8, 8)))
+
+
+def _ac_split(lines, ls=1.05, gap=0.5):
+    """entries whose text holds several paragraphs (joined by _AC_SEP) -> one entry per paragraph, stacked in the entry's
+    box at the largest common size <= the entry's max_size whose lines fit with no gap (Cambria = the serif style,
+    typeset_ui.wrap / fit rules), then a gap between paragraphs of the leftover height, at most round(gap * line height)
+    px (at least 1/5 line after a paragraph whose last line is over 3/4 full, else one size smaller); the stack
+    centred vertically in the box (the engine centres one string). The first sub-entry keeps the erase boxes of the whole box, the others erase nothing; every sub-entry is
+    capped at the common size, its box is the paragraph's own line band (floor / ceil), so the engine sets that size."""
+    out = []
+    for e in lines:
+        t, b, o = e[0], e[1], (e[2] if len(e) > 2 else {})
+        if _AC_SEP not in t:
+            out.append(e)
+            continue
+        paras = t.split(_AC_SEP)
+        x0, y0, x1, y1 = b
+        bw, bh = x1 - x0, y1 - y0
+        best = None
+        for s in range(6, int(o["max_size"]) + 1):
+            f = _Fn.truetype("C:/Windows/Fonts/cambria.ttc", s)
+            a, d = f.getmetrics()
+            lh = (a + d) * o.get("line_spacing", ls)
+            ws = [_T.wrap(_AC_D, p, f, bw, 0) for p in paras]
+            body = lh * sum(len(w) for w in ws)
+            if max(_T.tlen(_AC_D, l, f) for w in ws for l in w) > bw or body > bh:
+                break
+            g = max(0, min(int(round(gap * lh)), int((bh - body) // (len(paras) - 1))))
+            # the break must show: a paragraph ending in a line over 3/4 of the box width needs a gap of >= 1/5 line
+            if any(_T.tlen(_AC_D, w[-1], f) > 0.75 * bw for w in ws[:-1]) and g < _math.ceil(0.2 * lh):
+                break
+            best = (s, lh, [len(w) for w in ws], g, body + g * (len(paras) - 1))
+        assert best, "paragraph stack does not fit in %r" % (b,)
+        s, lh, ns, g, tot = best
+        y = y0 + (bh - tot) / 2.0
+        for k, (p, n) in enumerate(zip(paras, ns)):
+            oo = dict(o, max_size=s)
+            oo["erase"] = o.get("erase", [list(b)]) if k == 0 else []
+            out.append((p, [x0, int(_math.floor(y)), x1, int(_math.ceil(y + n * lh))], oo))
+            y += n * lh + g
+    return out
+
+
+# page: the shipped layout L109 with the new text (boxes, erase boxes, sizes, colours unchanged)
+L109AC = [(_AC109.get(t, t), b, o) for t, b, o in L109]
+_L109AC = _ac_split(L109AC)
+# close-ups 1-3 + 4: the shipped construction (zoom_items, the close-up 3 x1 284 override, item 1 chained on
+# paste8.py z109 without the title, 部分拡大4 = the vertical title alone, unchanged), then the paragraph stacks per close-up
+_Z109AC = zoom_items(109, L109AC, Z109)
+for _k, _e in enumerate(_Z109AC[2][2]["lines"]):
+    if _e[0] == _AC109[M109_L4]:
+        _Z109AC[2][2]["lines"][_k] = (_e[0], [_e[1][0], _e[1][1], 284, _e[1][3]], _e[2])
+_n, _s, _ox, _oy, _w, _h = Z109[0]
+_Z109AC[0][2]["lines"] = zoom_lines([e for e in L109AC if e[0] != T109], _ox, _oy, _s, _w, _h)
+_Z109AC[0][2]["chain"] = True
+_Z109AC.append((_Z109[3][0], _Z109[3][1], dict(_Z109[3][2])))
+for _it in _Z109AC:
+    _it[2]["lines"] = _ac_split(_it[2]["lines"])
+_W262AC = [
+    ("", [40, 31, 760, 77], {"erase": [[40, 31, 760, 77]], "method": "flat", "bg": "#0c0111"}),
+    ("", [55, 83, 735, 127], {"erase": [[55, 83, 735, 127]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 221, 508, 362], {"erase": [[26, 221, 508, 362]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 543, 774, 637], {"erase": [[26, 543, 774, 637]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 660, 140, 683], {"erase": [[28, 660, 140, 683]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 1182, 338, 1440], {"erase": [[26, 1182, 338, 1440]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 1440, 774, 1509], {"erase": [[26, 1440, 774, 1509]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 1578, 205, 1601], {"erase": [[28, 1578, 205, 1601]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 2128, 367, 2566], {"erase": [[26, 2128, 367, 2566]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 2588, 367, 2818], {"erase": [[26, 2588, 367, 2818]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3206, 774, 3255], {"erase": [[26, 3206, 774, 3255]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 3276, 158, 3301], {"erase": [[36, 3276, 158, 3301]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3345, 458, 3438], {"erase": [[26, 3345, 458, 3438]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 3460, 328, 3485], {"erase": [[28, 3460, 328, 3485]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3506, 458, 3737], {"erase": [[26, 3506, 458, 3737]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 3758, 368, 3784], {"erase": [[36, 3758, 368, 3784]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 3804, 774, 3851], {"erase": [[26, 3804, 774, 3851]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 3873, 190, 4012], {"erase": [[36, 3873, 190, 4012]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4034, 440, 4057], {"erase": [[28, 4034, 440, 4057]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 4203, 696, 4258], {"erase": [[36, 4203, 696, 4258]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4279, 136, 4302], {"erase": [[28, 4279, 136, 4302]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 4302, 774, 4463], {"erase": [[26, 4302, 774, 4463]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 4554, 774, 4623], {"erase": [[26, 4554, 774, 4623]], "method": "flat", "bg": "#0c0111"}),
+    ("", [36, 4642, 466, 4674], {"erase": [[36, 4642, 466, 4674]], "method": "flat", "bg": "#0c0111"}),
+    ("", [26, 4692, 774, 4738], {"erase": [[26, 4692, 774, 4738]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4761, 434, 4783], {"erase": [[28, 4761, 434, 4783]], "method": "flat", "bg": "#0c0111"}),
+    ("", [28, 4806, 434, 4829], {"erase": [[28, 4806, 434, 4829]], "method": "inpaint", "mask_color": [140, 255, 140, 255, 140, 255], "mask_grow": 3}),
+    ("", [28, 5068, 732, 5146], {"erase": [[28, 5068, 732, 5146]], "method": "inpaint", "mask_color": [140, 255, 0, 140, 0, 150], "mask_grow": 3}),
+    ("", [30, 5165, 498, 5190], {"erase": [[30, 5165, 498, 5190]], "method": "inpaint", "mask_color": [140, 255, 140, 255, 140, 255], "mask_grow": 3}),
+    ("The Truth Hidden in Occult Magazine 'M'!", [99, 30, 705, 76], {"max_size": 34, "color": "#fdf8fe", "erase": [], "line_spacing": 1.0}),
+    ("A Mass Murder the State Itself Covered Up!", [80, 82, 724, 128], {"max_size": 34, "color": "#fdf8fe", "erase": [], "line_spacing": 1.0}),
+    ("Do you all know", [30, 222, 144, 245], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Occult Magazine 'M'?", [145, 222, 296, 245], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Those of you who view this", [297, 222, 492, 245], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("site probably know it. It is", [30, 245, 215, 268], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("a magazine with a long history, first", [216, 245, 465, 268], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("published in Shiyo 745,", [30, 268, 200, 291], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("and it carries ghosts, yokai, UFOs, UMAs", [201, 268, 487, 291], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("and other unknown phenomena. It has especially strong support", [30, 291, 478, 314], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("among middle and high school students, and even now it is often", [30, 314, 488, 337], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("used among students as something to talk about.", [30, 337, 377, 360], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Of course, I'm a fan of M too, and lately I've been collecting M's back issues, in other words the issues", [30, 544, 752, 567], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("published so far. Among them was something baffling, so I'll introduce it. It's", [30, 567, 565, 590], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the June and July issues of", [566, 567, 761, 590], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Shiyo 747,", [30, 590, 110, 613], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("quite old ones. But the back issues I got are well preserved, and the text and photos can be", [111, 590, 763, 613], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("seen clearly.", [30, 613, 122, 636], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("First, the June issue", [30, 660, 175, 683], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("The murder case of researchers that", [30, 1187, 275, 1210], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("happened in Motoki-cho, Sawa Prefecture.", [30, 1210, 315, 1233], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("In", [316, 1210, 332, 1233], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("late Shiyo 747, a public research group was", [30, 1233, 325, 1256], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("launched in Motoki-cho, Sawa Prefecture. Its", [30, 1256, 331, 1279], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("research purpose is said to have been to learn", [30, 1279, 342, 1302], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the true nature of a cherry tree said to have", [30, 1302, 327, 1325], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("suddenly sprouted in Shiyo 737. But a few", [30, 1325, 314, 1348], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("days after the research began, a case", [30, 1348, 285, 1371], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("occurred in which all the researchers", [30, 1371, 279, 1394], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("were", [280, 1371, 315, 1394], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("beaten to death at their lodgings in", [30, 1394, 268, 1417], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Motoki-cho.", [30, 1417, 113, 1440], {"max_size": 15, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("This is the article on it.", [114, 1417, 271, 1440], {"max_size": 15, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Normally you'd think someone beat the researchers to death, but the article at the time closes by saying it", [30, 1440, 774, 1463], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("will", [30, 1463, 57, 1486], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("approach the case from both sides, murder and curse, and run the continuation in the next issue.", [58, 1463, 737, 1486], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("Including the curse is a very M-like way to close, as befits an occult magazine.", [30, 1486, 586, 1509], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("However, in the July issue,", [30, 1578, 221, 1601], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("As you can see, a yokai called", [30, 2129, 246, 2152], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Motokizakura-sama", [30, 2152, 172, 2175], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("suddenly appears, and the", [173, 2152, 361, 2175], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("article concludes that the murder case was its", [30, 2175, 356, 2198], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("doing. At a glance, you could say it's a very", [30, 2198, 335, 2221], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("M-like conclusion. But what's baffling is that,", [30, 2221, 348, 2244], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("rather than getting into the truth of the case, it", [30, 2244, 356, 2267], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("merely digs up rumors from Motoki-cho and", [30, 2267, 341, 2290], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("brings them in as the conclusion. In other", [30, 2290, 321, 2313], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("words,", [30, 2313, 80, 2336], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the only causal link to the case is that 'it", [81, 2313, 367, 2336], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("happened in Motoki-cho.'", [30, 2336, 214, 2359], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("What's more, this", [215, 2336, 337, 2359], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("murder case actually happened. Even so,", [30, 2359, 320, 2382], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("concluding without running the details of the", [30, 2382, 342, 2405], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("case, and without even making up something to", [30, 2405, 365, 2428], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("connect the case and the rumors, is rather", [30, 2428, 329, 2451], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("sloppy, isn't it? From the August issue on,", [30, 2451, 327, 2474], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("neither this case nor Motokizakura-sama", [30, 2474, 320, 2497], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("appears. To me it looks as if this case was", [30, 2497, 335, 2520], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("forcibly brought to a close.", [30, 2520, 221, 2543], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("I tried to get information on the case", [30, 2588, 290, 2611], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("elsewhere, but for some reason there was", [30, 2611, 329, 2634], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("none, either online or in libraries. Of course", [30, 2634, 338, 2657], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("there were articles from when the case first", [30, 2657, 339, 2680], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("happened, but nothing that looked into it deeply", [30, 2680, 370, 2703], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("and no impressions from the police or the like;", [30, 2703, 361, 2726], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("there was only what kind of case had", [30, 2726, 293, 2749], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("happened, and", [30, 2749, 137, 2772], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("what happened afterward is", [138, 2749, 335, 2772], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("completely unknown.", [30, 2772, 179, 2795], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("In other words, I thought", [180, 2772, 353, 2795], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("that perhaps, for some reason,", [30, 2795, 248, 2818], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("this murder case", [249, 2795, 369, 2818], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("was covered up.", [30, 2818, 149, 2841], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("And there's one more strange thing about this July issue. When you read the text, there are a lot of", [30, 3207, 723, 3230], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("strange turns of phrase. For example, in this part,", [30, 3230, 377, 3253], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'Sakura (rei no)' [the cherry (in question)]", [30, 3276, 341, 3299], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("is how it's written, and right below it, the phrase is 'rei no", [30, 3345, 434, 3368], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("sakura' [the cherry in question]. Normally you'd write 'rei no", [30, 3368, 452, 3391], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("sakura.' I thought there might be some intention behind this.", [30, 3391, 451, 3414], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("What's more, this: 'Where one falls, darkness lies.'", [30, 3460, 381, 3483], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("It feels like eerie wording for effect, but there is nothing at", [30, 3506, 445, 3529], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("all in this article about 'falling' or 'darkness.' I thought this", [30, 3529, 433, 3552], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("might be a hint from the reporter. After all, the previous", [30, 3552, 421, 3575], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("issue said it would pursue the truth of the murder case, yet", [30, 3575, 447, 3598], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the July issue wraps it up in this strange way.", [30, 3598, 350, 3621], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("If I were the", [351, 3598, 439, 3621], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("reporter, I'd want to write the truth in more detail,", [30, 3621, 378, 3644], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("and if for", [379, 3621, 446, 3644], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("some reason I couldn't write it, that would be terribly", [30, 3644, 402, 3667], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("frustrating. So at the very least, I'd want", [30, 3667, 310, 3690], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("to leave readers", [311, 3667, 430, 3690], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("some kind of hint.", [30, 3690, 159, 3713], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("'Sakura (rei no)' and 'Where one falls, darkness lies'", [30, 3758, 400, 3781], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("When I wondered whether I could expose the truth from these 2 points, I finally found something that", [30, 3804, 738, 3827], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("seemed to be it. In other words, if you follow the first characters of this article's paragraphs", [30, 3827, 674, 3850], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("(where\u00a0one\u00a0falls),", [30, 3850, 163, 3873], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'C'overing the Motoki-cho...", [41, 3873, 238, 3896], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'O'ver the time...", [41, 3896, 158, 3919], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'V'arious witnesses...", [41, 3919, 189, 3942], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'E'ncounter Motokizakura-sama...", [41, 3942, 275, 3965], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'R'eaching the conclusion...", [41, 3965, 231, 3988], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'E'ven that cherry tree's...", [41, 3988, 219, 4011], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'D'arker still...", [41, 4011, 138, 4034], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'U'ncanny rumors...", [41, 4034, 172, 4057], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'P'erhaps some of you...", [41, 4057, 210, 4080], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("If you line up the first characters of these,", [30, 4103, 327, 4126], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("C-O-V-E-R-E-D U-P \u2192 covered up", [30, 4200, 565, 4260], {"max_size": 32, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("is what you get.", [30, 4279, 143, 4302], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("If my guess is right, wasn't it that the reporter, for some reason, was not allowed to write the continuation", [30, 4302, 769, 4325], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("and wanted to convey, as at least a hint, that", [30, 4325, 347, 4348], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("'this case has been covered up'?", [348, 4325, 584, 4348], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("As proof, not even the", [585, 4325, 746, 4348], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("newspapers ran any follow-up on the case. What's more, the ones killed were an 'official' research group.", [30, 4348, 770, 4371], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("Couldn't one also think that", [30, 4371, 224, 4394], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the state covered up this case?", [225, 4371, 453, 4394], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("And though the tree suddenly sprouted, the", [454, 4371, 761, 4394], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("state set up a research group for a single tree. That being so, you could say the state knew the true", [30, 4394, 731, 4417], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("nature of this cherry tree to some extent, and the group was made to look into its details further.", [30, 4417, 710, 4440], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("When I looked further into this matter, I got some interesting information. In Motoki-cho there are", [30, 4554, 712, 4577], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("apparently several households that worship Motokizakura-sama as a god. The words they chant when", [30, 4577, 744, 4600], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("they pray are", [30, 4600, 124, 4623], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("\"Yrrehce Htybdel Likerew Srehcrae Sereht\"", [30, 4646, 333, 4669], {"max_size": 16, "color": "#f5fa46", "erase": [], "line_spacing": 1.0}),
+    ("a strange phrase. As it is, you can't tell what it means, but if you read it backward,", [30, 4692, 605, 4715], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("theresearcherswerekilledbythecherry", [30, 4761, 290, 4784], {"max_size": 16, "color": "#d2cad6", "erase": [], "line_spacing": 1.0}),
+    ("the\u00a0\u00a0\u00a0researchers\u00a0\u00a0\u00a0were\u00a0\u00a0\u00a0killed\u00a0\u00a0\u00a0by\u00a0\u00a0\u00a0the\u00a0\u00a0\u00a0cherry", [30, 4806, 363, 4829], {"max_size": 15, "color": "#cfd0e4", "erase": [], "line_spacing": 1.0}),
+    ("The researchers were killed by the cherry", [26, 5066, 719, 5146], {"max_size": 38, "color": "#ff2538", "erase": [], "line_spacing": 1.0}),
+    ("Now, what do you make of this case?", [30, 5164, 281, 5189], {"max_size": 15, "color": "#cfd0e4", "erase": [], "line_spacing": 1.0}),
+]
+_P4AC = _ac_split(_o4panel(L109AC, 429.4, 284.4, 1.1364, 406, 306, 372, 2121, "#a82c2c", drop=(T109, TAPE109)))
+_P5AC = _ac_split(_o4panel(L109AC, 93.5, 13.5, 1.1905, 351, 321, 389, 2442, "#a82c2c"))
+_P6AC = _ac_split(_o4panel(L109AC, 93.7, 273.7, 1.2853, 379, 347, 389, 2776, "#a82c2c"))
+_P7AC = _ac_split(_o4panel(L109AC, 93.2, 14.2, 1.6779, 169, 452, 462, 3275, "#a82c2c"))
+# P7: the two red-boxed JP words stay as drawn (protect, QIMAGES18BO4-09); the English of those two columns (paragraph 6's
+# and paragraph 7's openers) starts 2 px below each box, as shipped.
+for _k, _e in enumerate(_P7AC):
+    if _e[0] == AC109_P6A:
+        _P7AC[_k] = (_e[0], [_e[1][0], 3398, _e[1][2], _e[1][3]], _e[2])
+    elif _e[0] == AC109_P7A:
+        _P7AC[_k] = (_e[0], [_e[1][0], 3597, _e[1][2], _e[1][3]], _e[2])
+JOBS += [
+    {"id": "ref109-ac", "screen": "reference 109 detail", "style": "serif", "mode": "lines", "erase": "maskfill",
+     "erase_first": True, "mask_grow": 2, "color": "#a82c2c", "line_spacing": 1.05, "new": True,
+     "note": "occult magazine spread (tree art and photos kept; acrostic rebuild)", "items": [(D + "rrr109/0.gal", "")],
+     "lines": _L109AC},
+    {"id": "ref109-zoom-ac", "screen": "reference 109 close-ups", "style": "serif", "mode": "lines", "erase": "maskfill",
+     "erase_first": True, "mask_grow": 3, "color": "#a82c2c", "line_spacing": 1.05,
+     "note": "magazine close-ups (same English as the page, own scale; acrostic rebuild)", "items": _Z109AC, "lines": []},
+    {"id": "obj262-0-ac", "screen": "reference 262 detail", "style": "gothic", "mode": "lines", "erase": "flat",
+     "erase_first": True, "chain": True, "mask_grow": 2, "color": "#d2cad6", "new": True,
+     "note": "web page on occult magazine 'M' (panels = refs 108 / 109 English; acrostic and chant in English letters)",
+     "items": [(D + "rrr262/0.gal", "")],
+     "protect": [[489, 3291, 529, 3397], [511, 3519, 547, 3596]],
+     "lines": _W262AC + [(t, b, dict(o, style="gothic")) for t, b, o in _CV262] + _P2 + _P4AC + _P5AC + _P6AC + _P7AC},
+]
+
+# SWEEP-PIC 2026-10-16 (notes/SWEEP-PICTURES-BRIEF.md; log notes/v2/_tmp/tl-log-SWEEP-PIC.md): NO new jobs. In-place string edits:
+# the IMAGESR report signature (lane B literals in L156 L162 L163 L169 L171 L174 L176 + lane A _SIG) now reads "Holy Cerejeira Church, ..."
+# (QIMAGES18BR1-01); rep176 "Jade-Eye" -> "Green-Eye" x6 (QIMAGES18BR1-02); rep269 "(mycelium)" -> "(hyphae)" (QIMAGES18BR3-02).
+# rrr302.gal (概要) and rr300.gal (概要): no job (unreferenced near-duplicate / textless art).
+# SWEEP-PIC 2026-10-16 follow-up (coordinator rulings QSWEEP-01 / -02): body "the Cerejeira faith" -> "the Holy Cerejeira Church" in
+# rep162 / rep154 / rep171; ref69-back columns 3-4 "Jade Eye(s)" -> "Green Eye(s)" (= tsv-en/リファレンスターゲット.tsv row 69); the
+# back-face turning frames 図画8 図画9 10-15 rebuilt with refdoc_flip.py 69 ... 0,1 --mode full; the front-face frames kept as shipped.

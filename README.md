@@ -2,6 +2,8 @@
 
 ![Translation status](status.svg)
 
+**Complete as of 2026-10-16.** Every story script, every data table (menus, titles, synopses, encyclopedia, credits) and every listed in-game picture is in English. Two things stay Japanese on purpose: the 43-second trailer video that plays after the author's afterword, and a handful of cells whose source text is already garbled in the original game.
+
 ## Play it in English: 3 steps
 
 1. **Get the free Japanese game** (v2.0.0.4) from the author: https://www.freem.ne.jp/win/game/19917 . Unzip it anywhere.

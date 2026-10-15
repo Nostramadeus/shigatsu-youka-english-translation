@@ -1,0 +1,28 @@
+;pylm
+; Font styles:
+; Display conditions:
+;    0: TWdCondition(count=16, target=)
+; Links:
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CREATECG "111" "$FFFFFF" "NORMAL" "#1" "C" "B" "200" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{PLAYSND "環境音\quiet-residential-area1.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{PLAYSND "最後の声・真呪殺\優しい言葉で低い.ogg" "BGM" "REPEAT" "1000" "0"}
+{STOPSND "SE" "5000" "PASS"}
+{CREATECG "000" "グラフィック\背景\エデン\学校屋上.gal" "NORMAL" "#1" "C" "T" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{DELETECG "111" "1" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-274\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n000\r\n4\r\n-274\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\フィオ\フィオバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

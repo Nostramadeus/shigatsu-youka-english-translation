@@ -1,0 +1,511 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=263, unk2=16776960, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=8, unk2=16755370, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=1078, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=28, unk2=8453888, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    4: TDecorate(count=5, unk2=65535, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    5: TDecorate(count=220, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    6: TDecorate(count=3, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    7: TDecorate(count=2, unk2=11271932, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    8: TDecorate(count=2, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+;    9: TDecorate(count=134, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   10: TDecorate(count=6, unk2=255, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;   11: TDecorate(count=2, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=えっけん, unk10=4294967295, unk11=4294967295)
+;   12: TDecorate(count=2, unk2=6413008, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+;   13: TDecorate(count=2, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=しんし, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=2125, target=)
+; Links:
+;    0: TWdLink(count=1755, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{PLAYSND "環境音\火事.ogg" "SE" "REPEAT" "1000" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYMOVIE "火の粉.wmv" "256" "C" "C" "REPEAT" "FALSE" "200" "0"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n3000\r\nNORMAL\r\nPASS">
+{CREATECG "000" "グラフィック\リファレンス用\背景\荒田火事美冬なし.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"A gunshot...?
+{PAUSE ""}
+　What was that? It came from where <STYLE ID="1">Haruka</STYLE> went."<PG>
+<STYLE ID="2">That gunfire just now is clearly not from a hunting rifle.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Probably a pistol―</STYLE>
+{PAUSE ""}
+<STYLE ID="2">an outsider's.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="1">Haruka</STYLE><STYLE ID="2">, I'm coming!</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "エデンの桜\Amblygo.ogg" "BGM" "REPEAT" "1000" "0"}
+{CHANGECG "000" "グラフィック\背景\キオク\山火事森.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+<STYLE ID="2">............?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Someone is walking.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Who...? That woman...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">She isn't anyone from the settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A pistol in her hand.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Blood all over her face.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">She is walking slowly, sluggishly, as if she were dying.</STYLE><PG>
+"............!
+{PAUSE ""}
+　I remember now...!"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\桃子血を浴びる.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">That is, if I remember right, a woman named </STYLE><STYLE ID="3">Momoko Goto</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Why would the woman who worked at Primavera...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Goto...</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I see. </STYLE><STYLE ID="4">Erina Goto's</STYLE><STYLE ID="2">...</STYLE><PG>
+<STYLE ID="2">So </STYLE><STYLE ID="3">she</STYLE><STYLE ID="2"> spent 4 whole years on a plan like this.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But how did she ever find her way here?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Someone who lives in the everyday world could never get all the way here in the middle of the night.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then one of the residents must have guided her...</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "1000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="3">She</STYLE><STYLE ID="2"> is heading slowly, sluggishly, toward the settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">What does she intend to do?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Could she be looking for me...?</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n0\r\nNORMAL\r\nPASS">
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "BGM" "0" "PASS"}
+{CHGVOL "SE" "0" "0" "PASS"}
+<STYLE ID="5">"―"</STYLE><PG>
+{MESOFF "0"}
+{CREATECG "000" "グラフィック\背景\キオク\山火事森.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n50\r\n0\r\nNORMAL\r\nPASS">
+{CHGVOL "SE" "1000" "0" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"Who's there!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">............</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">There's no one.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Just now, I definitely heard someone's voice.</STYLE><PG>
+<STYLE ID="2">No, but I think I heard the voice from far off―from the direction of the settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">At the very least, it can't have been </STYLE><STYLE ID="3">Momoko Goto's</STYLE><STYLE ID="2"> voice.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Could it be a resident who didn't get out in time?</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\砂利を走る.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHANGECG "000" "グラフィック\リファレンス用\背景\荒田火事美冬なし.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "500" "PASS"}
+{MESON "500"}
+<STYLE ID="3">Momoko Goto</STYLE><STYLE ID="2">―making sure she doesn't notice me, I get ahead of her and head back to the settlement.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It should have come from around here.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Who? Who is it? In a place this hot...</STYLE><PG>
+{CHGVOL "SE" "0" "0" "PASS"}
+<STYLE ID="5">"Over here, </STYLE>Mifuyu-chan<STYLE ID="5">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="5">Sakura-san</STYLE>...!
+{PAUSE ""}
+　Thank goodness, you're safe!"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"............ </STYLE>
+{PAUSE ""}
+<STYLE ID="5">But, you know, everyone has died."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"</STYLE><STYLE ID="6">Kotaro</STYLE><STYLE ID="5"> too, </STYLE>
+{PAUSE ""}
+<STYLE ID="7">Kana</STYLE><STYLE ID="5"> too, </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Haruka</STYLE><STYLE ID="5"> too. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Everyone, everyone has died."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Haruka</STYLE>!?
+{PAUSE ""}
+　Don't tell me <STYLE ID="3">Momoko Goto</STYLE>...!"<PG>
+<STYLE ID="5">"I'm grateful to </STYLE><STYLE ID="3">Momoko-san</STYLE><STYLE ID="5">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Because this settlement needs a great many corpses. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Hey, </STYLE>Mifuyu-chan<STYLE ID="5">, </STYLE>
+{PAUSE ""}
+<STYLE ID="5">that's why </STYLE>
+{PAUSE ""}
+{STOPSND "BGM" "0" "PASS"}
+you<STYLE ID="5"> too―"</STYLE><PG>
+{MESOFF "500"}
+{PLAYSND "エデンの桜\SE\菌糸.ogg" "VOICE" "REPEAT" "1000" "0"}
+{CREATECG "111" "グラフィック\背景\エデン\菌糸動き.lcm" "NORMAL" "#1" "C" "540" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n0\r\n5000\r\nDEC\r\nPASS">
+{WAIT "5000" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n111\r\n4\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{STOPSND "VOICE" "300" "PASS"}
+{DELETECG "人物1,111" "25" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"S-<STYLE ID="5">Sakura-san</STYLE>!?
+{PAUSE ""}
+　<STYLE ID="5">Sakura-san</STYLE>!?"
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Where did she go!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">She has vanished, just like smoke.</STYLE><PG>
+{MESOFF "500"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n3000\r\nNORMAL\r\nPASS">
+{CHANGECG "000" "グラフィック\背景\キオク\山火事夜.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="STOPMOVIE">
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">Even when I look up at the sky, there is only fire roaring up into the heavens.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">What does that mean...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A hallucination...?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">That's it, it's a hallucination!</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Or I'm just dreaming!</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000" "1" "0" "0" "0" "" "0"}
+{STOPSND "SE" "0" "PASS"}
+{PLAYSND "最後の声・真呪殺\SE\銃を構える.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\美冬横顔逆.gal" "NORMAL" "#1" "R" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\真呪殺\桃子銃逆.gal" "NORMAL" "#1" "-500" "C" "100" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n300\r\nDEC\r\nPASS">
+{WAIT "300" "CLICK" "SKIP"}
+<EVENT VALUE="MOTION\r\n789\r\n人物2\r\n3\r\n0\r\n0\r\nDEC\r\nPASS">
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\銃声.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "111" "$000080" "NORMAL" "#1" "C" "B" "200" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物1,人物2,111" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2"><TXSPS>What happened?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Was I shot?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="3">Momoko Goto</STYLE><STYLE ID="2">... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">Not bad.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,111" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{PLAYSND "SE\swish.ogg" "VOICE" "REPEAT" "1000" "0"}
+{WAIT "3000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2"><TXSPN>............ </STYLE>
+{PAUSE ""}
+<STYLE ID="2">............?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Am I being dragged?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Am I alive?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">That's impossible. I was shot in the head.</STYLE><PG>
+<STYLE ID="2">Could it have missed the vital spots?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But my eyes won't open.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My mind is hazy.</STYLE><PG>
+{MESOFF "500"}
+{STOPSND "VOICE" "500" "PASS"}
+{PLAYSND "環境音\洞窟内川.ogg" "SE" "REPEAT" "0" "0"}
+{CHGVOL "SE" "1000" "3000" "PASS"}
+{WAIT "2000" "CLICK" "SKIP"}
+{MESON "500"}
+"............ 
+{PAUSE ""}
+Where am I?"
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">A damp smell.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">A dark, oppressive space.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Is this the underground storeroom?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But it's strangely big for that.</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地地下扉あく2.gal" "NORMAL" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">An iron-barred door.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I see, this is the place that was closed off because of the danger of cave-ins.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Why am I here?</STYLE><PG>
+<STYLE ID="2">No, wait! Am I alive!?</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I sit up and run both hands all over my body.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I'm breathing.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My heart is beating.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">My body is warm, too.</STYLE><PG>
+<STYLE ID="5">"You're awake, </STYLE>Mifuyu-chan<STYLE ID="5">."</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束.gal" "NORMAL" "#1" "R" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+"<STYLE ID="5">Sakura-san</STYLE>! What is the meaning of this!?
+{PAUSE ""}
+　I was shot, wasn't I...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="5">"Hee hee, don't panic. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">More importantly, there's someone I want you to meet."</STYLE>
+{PAUSE ""}
+<BR>
+"Someone to meet... 
+{PAUSE ""}
+Right now, this isn't the time..."<PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="2">But </STYLE><STYLE ID="5">Sakura-san</STYLE><STYLE ID="2"> ignores what I said and drops her gaze to her feet.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="5">Sakura-san</STYLE><STYLE ID="2"> has something at her feet, wrapped in red cloth.</STYLE>
+{PAUSE ""}
+<BR>
+{MESOFF "500"}
+{STOPSND "SE" "3000" "PASS"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ能面.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "000" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="2">On the face of that something, a Noh mask.</STYLE><PG>
+<STYLE ID="5">"</STYLE>Mifuyu-chan<STYLE ID="5">, let me introduce you. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">Our goddess―</STYLE>
+{PAUSE ""}
+<STYLE ID="5">Lady Verde."</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "人物1" "1" "500" "0" "0" "" "0"}
+{WAIT "2000" "CLICK" "SKIP"}
+{PLAYSND "リファレンス専用\se_horror2.ogg" "VOICE" "NORMAL" "1000" "0"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\真呪殺\女神\ミイラ.gal" "NORMAL" "#1" "R" "B" "0" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "000" "$000080" "NORMAL" "#1" "C" "B" "0" "1" "1" "0" "0" "" "0" "0" "0" "255" ""}
+{WAITPLAY "VOICE" "CLICK"}
+{PLAYSND "最後の声・真呪殺\SE\E3839BE383A9E383BC3.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "1000" "PASS"}
+{MESON "500"}
+<STYLE ID="2">At that grotesque sight, plain at a single glance, I cover my mouth.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Under that Noh mask, the mummy of a human who seems to have died long, long ago.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">The goddess, Verde―</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">This is our goddess...?</STYLE><PG>
+<STYLE ID="5">"Don't be afraid, </STYLE>Mifuyu-chan<STYLE ID="5">. </STYLE>
+{PAUSE ""}
+You<STYLE ID="5"> are qualified to be a </STYLE><STYLE ID="8" RUBY="しんし">divine messenger</STYLE><STYLE ID="5">. </STYLE>
+{PAUSE ""}
+<STYLE ID="5">As a living first generation."</STYLE><PG>
+{STOPSND "BGM" "0" "PASS"}
+<STYLE ID="9">"That's right, </STYLE>Mifuyu-chan<STYLE ID="9">. </STYLE>
+{PAUSE ""}
+{MESOFF "500"}
+{PLAYSND "エデンの桜\絶対何か居る雰囲気のアレ.ogg" "BGM" "REPEAT" "0" "0"}
+{CHGVOL "BGM" "1000" "3000" "PASS"}
+{CHANGECG "000" "グラフィック\背景\詫言編　夢から\秘密基地奥2.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\エデン\サクラ白装束.gal" "NORMAL" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\立ち絵\人物\エデン\栄一郎白装束.gal" "NORMAL" "#1" "L" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="9">That's why </STYLE><STYLE ID="10">the Princess</STYLE><STYLE ID="9"> permitted </STYLE>you<STYLE ID="9"> an </STYLE><STYLE ID="11" RUBY="えっけん">audience</STYLE><STYLE ID="9"> with the Goddess."</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="9">Eiichiro-san</STYLE>...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"Now, </STYLE>Mifuyu-chan<STYLE ID="9">, let's go home to Motoki-cho with everyone. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">Just a little more and all the </STYLE><STYLE ID="12" RUBY="しんし">divine messengers</STYLE><STYLE ID="9"> will be assembled."</STYLE><PG>
+<STYLE ID="2">With everyone―</STYLE>
+{PAUSE ""}
+<STYLE ID="9">Eiichiro-san</STYLE><STYLE ID="2"> and I, together, to Motoki-cho.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I've been chosen as a </STYLE><STYLE ID="13" RUBY="しんし">divine messenger</STYLE><STYLE ID="2">.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="10">The Princess</STYLE><STYLE ID="2"> has allowed me to meet the goddess.</STYLE><PG>
+<STYLE ID="2">I don't understand at all what the two of them are saying.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">But... </STYLE>
+{PAUSE ""}
+<STYLE ID="2">But there is just one thing I can say.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It is―</STYLE><PG>
+"Goddess..."
+{PAUSE ""}
+<BR>
+<STYLE ID="9">"That's right. </STYLE>
+{PAUSE ""}
+Mifuyu-chan<STYLE ID="9">, greet the Goddess."</STYLE>
+{PAUSE ""}
+<BR>
+"Goddess... 
+{PAUSE ""}
+Verde... 
+{PAUSE ""}
+sama. 
+{PAUSE ""}
+My name is... 
+{PAUSE ""}
+Mifuyu Niimura."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I bow deeply to the motionless mummy.</STYLE><PG>
+<STYLE ID="2">The one thing I can say.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">It was a strange attachment to the mummy called the goddess.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I want to be with this goddess forever.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Then I'm happy, and everyone is happy, too.</STYLE><PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,人物2" "1" "3000" "0" "0" "" "0"}
+{MESON "500"}
+<STYLE ID="9">"Then, shall we go? </STYLE>
+{PAUSE ""}
+Mifuyu-chan<STYLE ID="9">, I'll let you meet her too. </STYLE>
+{PAUSE ""}
+<STYLE ID="9">At the top of the mountain, </STYLE><STYLE ID="10">the Princess</STYLE><STYLE ID="9"> is waiting."</STYLE>
+{PAUSE ""}
+<BR>
+"............ 
+{PAUSE ""}
+Yes, <STYLE ID="9">Eiichiro-san</STYLE>."
+{PAUSE ""}
+<BR>
+<STYLE ID="2">Happy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I am happy.</STYLE>
+{PAUSE ""}
+<BR>
+<STYLE ID="2">I got to meet the Goddess, and I am happy.</STYLE><BR>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "0"}
+{STOPSND "BGM" "0" "PASS"}
+{WAIT "3000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

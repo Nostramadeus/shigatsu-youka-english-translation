@@ -1,0 +1,55 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=212, unk2=4294967295, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=146, unk2=16755370, unk3=4294967295, unk4=0, unk5=0, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=395, target=)
+; Links:
+;    0: TWdLink(count=358, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{CHANGECG "立木三日" "グラフィック\イラスト\春花\合体春花怒り目閉じ口閉じ.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+{STOPSND "BGM" "5000" "PASS"}
+<EVENT VALUE="MOTION\r\n789\r\nムービー\r\n11\r\n0\r\n5000\r\nNORMAL\r\nPASS">
+<TXSPN>"Fine. Enough. 
+{PAUSE ""}
+I'm done listening to your lectures."<PG>
+"Too bad. I thought you actually understood me..."<PG>
+"In the end you're just a bystander too. In the end it's someone else's problem to you. You haven't thought about what I really want at all."<PG>
+{CREATECG "人物1" "グラフィック\イラスト\春花\合体前春花驚き.gal" "REPEAT" "#1" "100" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{CREATECG "人物2" "グラフィック\イラスト\立木\春花用立ち絵\春花通常.lcm" "NORMAL" "#1" "500" "B" "300" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "立木三日,雑談ゲージ" "14" "1000" "0" "0" "" "0"}
+<EVENT VALUE="STOPMOVIE">
+"I'll grab happiness my own way."<PG>
+<STYLE ID="1">"H-hey, what's wrong? What are you thinking!?"</STYLE><PG>
+"You be happy in your own dimension. I'll grab my own happiness myself."<PG>
+<STYLE ID="1">"Wha!? What on earth are you―"</STYLE><PG>
+"I learned everything. Shigatsu Youka has the power to bring the dead back. I don't need your help anymore."<PG>
+<STYLE ID="1">"Don't tell me you...!</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\イラスト\春花\合体前春花怒り.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">　Hey, stop! Even if you do that...!"</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\イラスト\春花\合体前春花驚き.gal" "REPEAT" "" "0" "0" "0" "" "0" "0" "0" "255" ""}
+{DELETECG "人物2" "14" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+<STYLE ID="1">"She's gone..."</STYLE><PG>
+{CHANGECG "人物1" "グラフィック\イラスト\春花\合体前春花怒り.gal" "REPEAT" "1" "100" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Hey, you! Please! Go after her! That's gonna turn out bad!"</STYLE><PG>
+{CHANGECG "人物1" "グラフィック\イラスト\春花\合体前春花ぼやけ驚き.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "100" ""}
+<STYLE ID="1">"Damn it, I can't stay in this world any longer...!</STYLE>
+{PAUSE ""}
+{CHANGECG "人物1" "グラフィック\イラスト\春花\合体前春花ぼやけ怒り.gal" "NORMAL" "1" "100" "0" "0" "" "0" "0" "0" "100" ""}
+<STYLE ID="1">　Please...!"</STYLE><PG>
+{MESOFF "0"}
+{DELETECG "人物1,111,人物2" "14" "1000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+{}
+<EVENT VALUE="NOREPAGE">
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------

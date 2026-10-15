@@ -9,11 +9,11 @@ Run: python tools/render_status.py  (stdlib only)
 """
 import pathlib
 
-SPENT_M = 100            # million tokens spent so far (parts 1-23 + side work; parts before the board estimated)
+SPENT_M = 116            # million tokens spent in all (parts 1-25, every picture batch, the final sweep; early parts estimated)
 REMAINING_M = {          # million tokens still to spend, by kind
-    "story text": 11,    # the last story scripts at the recent all-in rate (~2.7M per 1,000 cells)
-    "pictures": 7,       # picture batches parked on the board
-    "checks": 2,         # handwriting re-read, report pictures, final sweep
+    "story text": 0,     # every script is translated (2026-10-16)
+    "pictures": 0,       # every listed picture is typeset
+    "checks": 0,         # final sweep done
 }
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -35,8 +35,8 @@ out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBo
        f'<rect x="{PAD}" y="{BAR_Y}" width="{W - 2*PAD}" height="{BAR_H}" rx="{BAR_H//2}" fill="{GREY}"/>',
        f'<rect x="{PAD}" y="{BAR_Y}" width="{fill_w:.1f}" height="{BAR_H}" rx="{BAR_H//2}" fill="url(#g)"/>',
        f'<text x="{PAD + fill_w - 10:.1f}" y="{BAR_Y + 16}" text-anchor="end" font-size="13" font-weight="700" fill="#ffffff">{pct}%</text>',
-       f'<text x="{PAD}" y="{H - PAD - 14}" font-size="12" fill="{INK}">Work = AI token spend. Roughly {spent_r} million tokens spent, about {left_r} million to go.</text>',
-       f'<text x="{PAD}" y="{H - PAD + 4}" font-size="12" fill="{INK}">Left: the last story scripts, the in-game pictures (menus, letters, documents), a final check.</text>',
+       f'<text x="{PAD}" y="{H - PAD - 14}" font-size="12" fill="{INK}">Work = AI token spend. Roughly {spent_r} million tokens spent{"" if left == 0 else f", about {left_r} million to go"}.</text>',
+       f'<text x="{PAD}" y="{H - PAD + 4}" font-size="12" fill="{INK}">{"Every script, data table and in-game picture is translated. Bug reports and edits are welcome." if left == 0 else "Left: the last story scripts, the in-game pictures (menus, letters, documents), a final check."}</text>',
        "</svg>"]
 (ROOT / "status.svg").write_text("\n".join(out), encoding="utf-8")
 print(f"status.svg: {word} ({SPENT_M}M spent, ~{left}M left)")

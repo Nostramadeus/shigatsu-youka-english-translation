@@ -1,0 +1,104 @@
+;pylm
+; Font styles:
+;    0: TDecorate(count=110, unk2=5265653, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    1: TDecorate(count=225, unk2=13464750, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    2: TDecorate(count=12, unk2=8388863, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+;    3: TDecorate(count=1, unk2=4294967295, unk3=4294967295, unk4=0, unk5=1, unk6=0, unk7=4294967295, unk8=, ruby=, unk10=4294967295, unk11=4294967295)
+; Display conditions:
+;    0: TWdCondition(count=412, target=)
+; Links:
+;    0: TWdLink(count=348, event=, unk3=)
+;---------------------------------------
+; BEGIN DECOMPILED SCRIPT
+;---------------------------------------
+<SCENARIO VER="105">
+{WAIT "1000" "CLICK" "SKIP"}
+{CREATECG "000" "グラフィック\背景\詫言編　夢から\新村本家居間.gal" "NORMAL" "#1" "C" "B" "0" "1" "3000" "0" "0" "" "0" "0" "0" "255" ""}
+{WAIT "1000" "CLICK" "SKIP"}
+{MESON "500"}
+{CREATECG "文字カウント画像" "グラフィック\システム\文字カウント画像.gal" "NORMAL" "#1" "C" "B" "0" "1" "0" "0" "0" "" "0" "0" "0" "255" ""}
+<TXSPN>"............"<PG>
+{MESOFF "500"}
+{PLAYSND "SE\詫言編　夢から\引き戸.ogg" "VOICE" "NORMAL" "1000" "0"}
+{WAITPLAY "VOICE" "CLICK"}
+{CREATECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "#1" "R" "B" "0" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+"<STYLE ID="1">Mom</STYLE>...!"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"I'm home. It just finished. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Three of us examined her, so it should have been a properly objective autopsy."</STYLE>
+{PAUSE ""}
+<BR>
+"So <STYLE ID="2">Sakura</STYLE> really was..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"</STYLE>You<STYLE ID="1">'ve already..."</STYLE>
+{PAUSE ""}
+<BR>
+"Huh?"<PG>
+<STYLE ID="1">"No, never mind. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">More importantly, when </STYLE>you<STYLE ID="1"> first found </STYLE><STYLE ID="2">Sakura</STYLE><STYLE ID="1">, her head had already been cut off, hadn't it?"</STYLE>
+{PAUSE ""}
+<BR>
+"Yeah, no doubt about it..."
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"What's wrong?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Nothing."</STYLE><PG>
+{MESOFF "500"}
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカうつむき.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+{MESON "500"}
+<STYLE ID="1">"But, well, there was one odd thing."</STYLE>
+{PAUSE ""}
+<BR>
+"On <STYLE ID="2">Sakura</STYLE>'s body?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Yes. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">On the right ankle, there was a mark of a strong grip."</STYLE>
+{PAUSE ""}
+<BR>
+"The right ankle...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"Does anything come to mind?"</STYLE><PG>
+"No idea... 
+{PAUSE ""}
+Someone tried to pull <STYLE ID="2">Sakura</STYLE> up when she was about to fall?
+{PAUSE ""}
+<STYLE ID="3">　</STYLE>But then she'd have been hanging upside down...?"
+{PAUSE ""}
+<BR>
+<STYLE ID="1">"............"</STYLE>
+{PAUSE ""}
+<BR>
+"<STYLE ID="1">Mom</STYLE>?"
+{PAUSE ""}
+<BR>
+{CHANGECG "人物1" "グラフィック\立ち絵\人物\詫言編　始まり以降\エリカバストアップ.gal" "NORMAL" "1" "500" "0" "0" "" "0" "0" "0" "255" ""}
+<STYLE ID="1">"Ah, no... </STYLE>
+{PAUSE ""}
+<STYLE ID="1">Anyway, I'll see that this doesn't leak outside. </STYLE>
+{PAUSE ""}
+<STYLE ID="1">It would be a disaster if it got out that there's a murderer inside the settlement."</STYLE>
+{WAIT "100" "CLICK" "SKIP"}
+{DELETECG "文字カウント画像" "1" "0" "0" "0" "" "0"}
+<PG>
+{MESOFF "500"}
+{DELETECG "000,人物1,アイテム1" "1" "3000" "0" "0" "" "0"}
+{WAIT "1000" "CLICK" "SKIP"}
+<PG>
+{}
+<EVENT VALUE="MESEND">
+;---------------------------------------
+; END DECOMPILED SCRIPT
+;---------------------------------------
