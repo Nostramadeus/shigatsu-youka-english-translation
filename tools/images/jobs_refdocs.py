@@ -3794,7 +3794,7 @@ L156 = [
      "second generation. Likewise, we named those of our brethren who used Droga the first generation. Hereafter, "
      "they will be called the first generation and the second generation.",
      [12, 120, 788, 264], dict(_RBB, erase=[[8, 123, 778, 262]])),
-    ("Droga", [20, 356, 122, 392], dict(_RBL, max_size=22, erase=[[36, 358, 116, 390]])),
+    ("Droga", [20, 356, 122, 392], dict(_RBL, max_size=22, erase=[[36, 358, 116, 390], [117, 361, 146, 388]])),  # SWEEP-PIC: 2nd box = the last kana (syringe edge from x ~147)
     ("Blood", [350, 384, 470, 429], _rbw("#010101", erase=[[350, 382, 446, 431]])),
     ("First generation", [120, 546, 356, 582], dict(_RBL, erase=[[176, 548, 298, 580]])),
     ("Second generation", [462, 546, 708, 582], dict(_RBL, erase=[[523, 548, 644, 580]])),
@@ -3821,7 +3821,7 @@ L156 = [
     ("Usable within these 15 minutes", [262, 1840, 520, 1870], _rbw("#c00000", max_size=20, erase=[[268, 1840, 512, 1870]])),
     ("Re-creating the situation\nat the time of blood contact", [4, 1907, 262, 1964],
      dict(_RBL, max_size=19, erase=[[30, 1909, 168, 1962]])),
-    ("Ill health", [540, 1907, 700, 1936], dict(_RBL, max_size=19, erase=[[570, 1909, 665, 1936]])),
+    ("Ill health", [540, 1907, 700, 1936], dict(_RBL, max_size=19, mask_grow=5, erase=[[570, 1909, 665, 1936]])),  # SWEEP-PIC: grow 5 clears the glyph rims
     ("If Droga is to be used effectively, then beyond the first generation's muscle strengthening, we create the "
      "second generation and, when precognition becomes necessary, re-create the conditions of its creation. "
      "Precognition can be exercised immediately from that moment, so it suffices to end the re-created situation "
@@ -4258,7 +4258,7 @@ L163 = [
      "its reproduction and growth. In other words, the fact that spores were found inside the bodies of the second "
      "generation means that the Arata cherry is spreading its reproductive range by some method.",
      [12, 752, 788, 1110], dict(_RBB, erase=[[8, 756, 778, 1106]])),
-    ("Droga\n(spores)", [8, 1200, 140, 1272], dict(_RBL, max_size=22, erase=[[36, 1203, 130, 1270]])),
+    ("Droga\n(spores)", [8, 1200, 140, 1272], dict(_RBL, max_size=22, erase=[[36, 1203, 146, 1270]])),  # SWEEP-PIC: box to x 146 = the last kana
     ("Reproduction?", [352, 1226, 474, 1271], _rbw("#010101", max_size=22, erase=[[352, 1226, 452, 1271]])),
     ("First generation\n(intermediate host)", [80, 1388, 370, 1460], dict(_RBL, max_size=23, erase=[[150, 1390, 296, 1458]])),
     ("Second generation\n(intermediate host?)", [455, 1388, 765, 1460], dict(_RBL, max_size=23, erase=[[517, 1390, 692, 1458]])),
