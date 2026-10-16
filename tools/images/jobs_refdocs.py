@@ -7201,3 +7201,411 @@ JOBS += [
 # SWEEP-PIC 2026-10-16 follow-up (coordinator rulings QSWEEP-01 / -02): body "the Cerejeira faith" -> "the Holy Cerejeira Church" in
 # rep162 / rep154 / rep171; ref69-back columns 3-4 "Jade Eye(s)" -> "Green Eye(s)" (= tsv-en/リファレンスターゲット.tsv row 69); the
 # back-face turning frames 図画8 図画9 10-15 rebuilt with refdoc_flip.py 69 ... 0,1 --mode full; the front-face frames kept as shipped.
+
+# IMAGESPZ-PZ2 2026-10-16 (notes/IMAGESPZ-BRIEF.md, lane PZ2; rulings notes/v2/_tmp/rulings-IMAGESPZ.md): the report-puzzle UNSOLVED
+# sheets rrr<ID>/_full.gal of reports 176 178 192 284 (base sheet + pieces composed by tools/images/report_puzzle.py). Each job = the
+# shipped report job of that ID (same helper, same lines = the shipped body English verbatim, same erase boxes) with only the body mask
+# tightened to the darker sheet (work/images/_c/pz-PZ2/sep.py: glyph vs paper colour, glyph positions from 全体.png), + the scrawl lines
+# last (Ink Free "handwriting", stroke colour = mean of the stroke cores, one English line per JP line in its row; erase = texfill of the
+# stroke colour inside the JP row). Rows measured with work/images/_c/pz-PZ2/rows.py. Log: notes/v2/_tmp/tl-log-IMAGESPZ-PZ2.md.
+def _pz2body(lines, mask, drop=(), keep=()):
+    """the shipped body lines with the glyph mask replaced (lines whose text is in drop are left out; masks in keep stay)."""
+    out = []
+    for e in lines:
+        t, b, o = e[0], list(e[1]), (dict(e[2]) if len(e) > 2 else {})
+        if t and t in drop:
+            continue
+        if o.get("mask_color") not in [list(k) for k in keep]:
+            o["mask_color"] = list(mask)
+        out.append((t, b, o))
+    return out
+
+
+def _pz2scr(text, row, color, size, mask, grow=5, x1=790, align="left", rot=None, rot_h=None, erase=None):
+    """one scrawl line: JP row [x0, y0, x1, y1] -> English box over the same row, erase of the stroke colour in the row."""
+    x0, y0, xe, y1 = row
+    o = {"style": "handwriting", "color": color, "max_size": size, "align": align, "method": "texfill",
+         "mask_color": list(mask), "mask_grow": grow,
+         "erase": erase if erase is not None else [[max(x0 - 8, 0), max(y0 - 8, 0), min(xe + 8, 800), y1 + 8]]}
+    if rot:
+        o["rot"], o["rot_h"] = rot, rot_h
+    return (text, [max(x0 - 6, 0), y0 - 4, x1, y1 + 4], o)
+
+
+def _pz2job(rid, base, lines, note):
+    return dict(base, id="puz%d-full" % rid, screen="reference %d unsolved sheet" % rid, note=note,
+                items=[(D + "rrr%d/_full.gal" % rid, "")], lines=lines)
+
+
+# ---- 176 (800x1581): the shipped rep176 page burnt dark (black photo boxes, red / orange scorch) + a white chalk scrawl in 8 rows.
+# The brush-heading photo and the snail photo are solid black on this sheet: the heading line (inpaint in the photo) is left out.
+# Body mask: max channel <= 45 (sep.py: glyph 69 % caught at 40, paper 5 %; the shipped _RBM would take ~65 % of the paper).
+_PZ2_DARK176 = [0, 45, 0, 45, 0, 45]
+_PZ2_CHALK = [150, 255, 150, 255, 150, 255]
+_PZ2_C176 = "#ece2de"
+PZ176 = (_pz2body(L176, _PZ2_DARK176, drop=("Green-Eye Curse-Killing",))
+         + [_pz2scr("Dammit", [66, 99, 536, 225], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("Kuji and Hatanaka", [78, 280, 704, 399], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("apparently ran away.", [60, 460, 656, 560], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("Is faith in the Goddess", [33, 671, 750, 787], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("worth only that much?", [56, 833, 765, 938], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("I'm different.", [62, 1051, 593, 1178], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("With Droga,", [83, 1212, 635, 1296], _PZ2_C176, 110, _PZ2_CHALK),
+            _pz2scr("I will draw near to the Goddess.", [26, 1350, 774, 1481], _PZ2_C176, 110, _PZ2_CHALK)])
+JOBS += [_pz2job(176, _rbjob(176, "", L176), PZ176, "report 176 unsolved sheet (burnt page + white chalk scrawl, 8 rows)")]
+
+# IMAGESPZ-PZ2 2026-10-16 (cont.) ---- 178 (800x1716): the shipped rep178 page darkened (vignette, near-black paper) + a pink pen scrawl
+# in 21 rows, most slanted ~4-5 deg up to the right. Slanted rows: _pz2rot sets the English left-aligned on the JP centre line from the
+# JP row's left edge (centre y at x0 + slope from work/images/_c/pz-PZ2/colrows.py), rot = the slope; erase = the JP row's rectangle.
+# Body mask: max channel <= 22 (sep.py: paper median 52, glyph median 14; at 20 glyph 68 % / paper 3 %), grow 3; same boxes as REP178.
+_PZ2_INKF = "C:/Windows/Fonts/Inkfree.ttf"
+
+
+def _pz2rot(text, x0, yl, k, size, color, mask, erase, xmax=790, grow=4):
+    """a slanted scrawl line: JP centre line y = yl + k * (x - x0); English left-aligned on it from x0 at `size` (auto-fit shrinks
+    it only when it would run past xmax); rot = the JP slope; erase = the given JP row rectangle(s) (stroke-colour mask, texfill)."""
+    a = _math.atan(k)
+    seg = min((_Fn.truetype(_PZ2_INKF, size).getlength(text) + 10) * _math.cos(a), xmax - x0)
+    cx, cy, hh = x0 + seg / 2.0, yl + k * seg / 2.0, abs(k) * seg / 2.0 + 2
+    o = {"style": "handwriting", "color": color, "max_size": size, "method": "texfill", "mask_color": list(mask),
+         "mask_grow": grow, "erase": [list(e) for e in erase], "rot": round(-_math.degrees(a), 2), "rot_h": int(size * 1.45)}
+    return (text, [int(round(cx - seg / 2.0)), int(round(cy - hh)), int(round(cx + seg / 2.0)), int(round(cy + hh))], o)
+
+
+def _pz2flat(text, x0, yc, size, color, mask, erase, xmax=790, grow=4):
+    """a level scrawl line: English left-aligned from x0, centred on the JP row centre yc."""
+    o = {"style": "handwriting", "color": color, "max_size": size, "align": "left", "method": "texfill",
+         "mask_color": list(mask), "mask_grow": grow, "erase": [list(e) for e in erase]}
+    return (text, [x0 - 2, int(yc - size * 0.72), xmax, int(yc + size * 0.72)], o)
+
+
+def _pz2grow(lines, grow):
+    return [(t, b, dict(o, mask_grow=grow)) for t, b, o in lines]
+
+
+_PZ2_PINK = [130, 255, 75, 190, 95, 220]   # pink pen strokes (cores ~191,141,143; nothing else on the sheet falls in this range)
+_PZ2_C178 = "#bf8d8f"
+_s178 = 44                                  # JP glyphs ~40 px tall; Ink Free 44 = cap height ~37
+PZ178 = (_pz2grow(_pz2body(REP178, [0, 22, 0, 22, 0, 22]), 3) + [
+    _pz2rot("This is all I could find out.", 24, 74, -0.083, _s178, _PZ2_C178, _PZ2_PINK, [[18, 10, 646, 96]]),
+    _pz2rot("If any surviving brethren", 24, 136, -0.079, _s178, _PZ2_C178, _PZ2_PINK, [[18, 68, 632, 156]]),
+    _pz2rot("see this, please put it", 24, 195, -0.081, _s178, _PZ2_C178, _PZ2_PINK, [[18, 126, 622, 214]]),
+    _pz2flat("to use.", 43, 249, _s178, _PZ2_C178, _PZ2_PINK, [[37, 222, 256, 275]]),
+    _pz2rot("Someone is pulling the strings", 57, 376, -0.074, _s178, _PZ2_C178, _PZ2_PINK, [[50, 312, 662, 396]]),
+    _pz2rot("behind this experiment. It's Uneme.", 57, 433, -0.068, _s178, _PZ2_C178, _PZ2_PINK, [[50, 372, 662, 454]]),
+    _pz2rot("Written \"court lady,\" read \"Uneme.\"", 57, 500, -0.077, _s178, _PZ2_C178, _PZ2_PINK, [[50, 432, 662, 522]]),
+    _pz2rot("If that one sets eyes on you, you're", 57, 559, -0.075, _s178, _PZ2_C178, _PZ2_PINK, [[50, 492, 662, 575]]),
+    _pz2flat("finished.", 77, 615, _s178, _PZ2_C178, _PZ2_PINK, [[71, 589, 186, 642]]),
+    _pz2rot("Listen, Uneme is insane.", 81, 740, -0.079, _s178, _PZ2_C178, _PZ2_PINK, [[74, 670, 706, 756]]),
+    _pz2rot("That one is using this experiment,", 95, 862, -0.081, _s178, _PZ2_C178, _PZ2_PINK, [[88, 796, 690, 882]]),
+    _pz2rot("this Holy Cerejeira Church,", 95, 920, -0.068, _s178, _PZ2_C178, _PZ2_PINK, [[88, 855, 690, 940]]),
+    _pz2rot("trying to rake in obscene", 95, 981, -0.075, _s178, _PZ2_C178, _PZ2_PINK, [[88, 915, 690, 1003]]),
+    _pz2flat("profits.", 110, 1040, _s178, _PZ2_C178, _PZ2_PINK, [[104, 1014, 223, 1067]]),
+    _pz2rot("The reports Hajime Shinozaki-san", 112, 1167, -0.081, _s178, _PZ2_C178, _PZ2_PINK, [[105, 1098, 708, 1190]]),
+    _pz2rot("compiled are only surface matters,", 112, 1228, -0.079, _s178, _PZ2_C178, _PZ2_PINK, [[105, 1160, 742, 1250]]),
+    _pz2flat("nothing more.", 129, 1280, _s178, _PZ2_C178, _PZ2_PINK, [[123, 1252, 394, 1307]]),
+    _pz2rot("Whatever happens, brethren,", 146, 1408, -0.083, _s178, _PZ2_C178, _PZ2_PINK, [[140, 1340, 732, 1428]]),
+    _pz2flat("run.", 145, 1471, _s178, _PZ2_C178, _PZ2_PINK, [[139, 1445, 205, 1497]]),
+    _pz2rot("And let the outside world", 153, 1589, -0.075, _s178, _PZ2_C178, _PZ2_PINK, [[146, 1524, 742, 1610]]),
+    _pz2flat("know.", 160, 1653, _s178, _PZ2_C178, _PZ2_PINK, [[154, 1629, 221, 1678]])])
+JOBS += [_pz2job(178, _r1job(178, REP178, "", "#231803"), PZ178, "report 178 unsolved sheet (darkened page + pink pen scrawl, 21 rows)")]
+
+# IMAGESPZ-PZ2 2026-10-16 (cont.) ---- 192 (800x1822): the shipped rep192 page on a purple-grey scratched ground (dark at the top, lighter
+# in the middle) + a salmon-pink brush scrawl in 14 level rows (glyphs ~55-65 px). Body: REP192 verbatim, same boxes; the glyph mask is
+# picked per erase box by its centre y (sep.py per box: the largest max-channel threshold that takes <= ~6 % of the paper there).
+def _pz2bodyb(lines, bands, grow=3):
+    """the shipped body lines; each line's glyph mask = max channel <= the threshold of the band (y0, y1, thr) holding the centre of
+    its first erase box (lines that erase nothing are kept as they are)."""
+    out = []
+    for e in lines:
+        t, b, o = e[0], list(e[1]), (dict(e[2]) if len(e) > 2 else {})
+        eb = o.get("erase", [b])
+        if eb:
+            yc = (eb[0][1] + eb[0][3]) / 2.0
+            thr = [v for y0, y1, v in bands if y0 <= yc < y1][0]
+            o["mask_color"], o["mask_grow"] = [0, thr, 0, thr, 0, thr], grow
+        out.append((t, b, o))
+    return out
+
+
+_PZ2_SALMON = [205, 255, 60, 195, 0, 205]   # brush cores ~235,174,178; the grey paper / scratches stay below r 205 or above g 195
+_PZ2_C192 = "#ebaeb2"
+_s192 = 50
+PZ192 = (_pz2bodyb(REP192, [(0, 90, 25), (90, 740, 40), (740, 990, 85), (990, 1080, 85), (1080, 1320, 65), (1320, 1560, 48),
+                            (1560, 1680, 30), (1680, 1822, 25)]) + [
+    _pz2flat("I heard Uneme and Kichizo-sama", 4, 82, _s192, _PZ2_C192, _PZ2_SALMON, [[0, 43, 764, 121]]),
+    _pz2flat("talking.", 11, 170, _s192, _PZ2_C192, _PZ2_SALMON, [[5, 136, 446, 203]]),
+    _pz2flat("Damn you, Uneme.", 11, 341, _s192, _PZ2_C192, _PZ2_SALMON, [[5, 308, 456, 374]]),
+    _pz2flat("Toying with Kichizo-sama's pure", 14, 507, _s192, _PZ2_C192, _PZ2_SALMON, [[8, 461, 798, 553]]),
+    _pz2flat("heart.", 19, 600, _s192, _PZ2_C192, _PZ2_SALMON, [[13, 567, 320, 633]]),
+    _pz2flat("I heard some people ran away, but", 18, 763, _s192, _PZ2_C192, _PZ2_SALMON, [[12, 723, 800, 803]]),
+    _pz2flat("against Uneme's power, after all,", 27, 845, _s192, _PZ2_C192, _PZ2_SALMON, [[21, 806, 800, 884]]),
+    _pz2flat("is there really nothing to be", 28, 930, _s192, _PZ2_C192, _PZ2_SALMON, [[22, 892, 800, 967]]),
+    _pz2flat("done?", 32, 1029, _s192, _PZ2_C192, _PZ2_SALMON, [[26, 997, 258, 1061]]),
+    _pz2flat("Somehow I must bring back", 40, 1190, _s192, _PZ2_C192, _PZ2_SALMON, [[34, 1150, 800, 1229]]),
+    _pz2flat("Kichizo-sama's heart.", 30, 1280, _s192, _PZ2_C192, _PZ2_SALMON, [[24, 1245, 642, 1314]]),
+    _pz2flat("The Holy Cerejeira Church is not", 44, 1440, _s192, _PZ2_C192, _PZ2_SALMON, [[38, 1402, 800, 1477]]),
+    _pz2flat("an evil cult.", 44, 1536, _s192, _PZ2_C192, _PZ2_SALMON, [[38, 1507, 344, 1565]]),
+    _pz2flat("That Uneme is the root of all evil.", 52, 1699, _s192, _PZ2_C192, _PZ2_SALMON, [[46, 1660, 800, 1738]])])
+JOBS += [_pz2job(192, _r1job(192, REP192, "", "#251904"), PZ192, "report 192 unsolved sheet (purple-grey page + salmon brush scrawl, 14 rows)")]
+
+# IMAGESPZ-PZ3 2026-10-16 (notes/IMAGESPZ-BRIEF.md, lane PZ3; log notes/v2/_tmp/tl-log-IMAGESPZ-PZ3.md): the UNSOLVED report sheets
+# rrr274 / rrr275 / rrr277 _full.gal (base sheet + pieces composed; tools/images/report_puzzle.py cuts them afterwards). Ruling 1
+# (notes/v2/_tmp/rulings-IMAGESPZ.md): on these three the body is NOT typeset and NOT erased; scrawl lines only. Helper = lane R2 _r2job
+# (texfill, erase_first) re-labelled. One English line per JP scrawl row (work/images/_c/pz-PZ3/part.py balanced split, one size per
+# sheet), stroke-colour mask per row (rows.py / gap.py / core.py). 274: row 12 split around the eye drawing (QIMAGESPZPZ3-03).
+_PZ3O274 = {"style": "handwriting", "color": "#ffedeb", "max_size": 29, "align": "left", "mask_color": [180, 255, 170, 255, 170, 255], "mask_grow": 5}
+_PZ3_274 = [
+    ("Hatanaka is dead. Apparently his head was crushed", [25, 34, 785, 77], dict(_PZ3O274, erase=[[20, 34, 786, 77]])),  # 634/758 px
+    ("by a powerful force. They say it was pulverized", [30, 105, 785, 148], dict(_PZ3O274, erase=[[25, 106, 740, 148]])),  # 581/753 px
+    ("as if a cannonball had hit it. There's no way human", [30, 177, 785, 220], dict(_PZ3O274, erase=[[25, 178, 760, 219]])),  # 621/753 px
+    ("strength could do that. Was it the work of someone", [31, 248, 785, 291], dict(_PZ3O274, erase=[[26, 249, 765, 290]])),  # 629/752 px
+    ("who used Droga after all? Could it be that, to test", [30, 319, 785, 362], dict(_PZ3O274, erase=[[25, 320, 766, 361]])),  # 625/753 px
+    ("Droga's practical use, Droga has finally come to", [29, 390, 785, 433], dict(_PZ3O274, erase=[[24, 391, 766, 432]])),  # 575/754 px
+    ("be used outside the sect as well? If so, it may be", [29, 460, 785, 503], dict(_PZ3O274, erase=[[24, 461, 766, 503]])),  # 604/754 px
+    ("only a matter of time before I'm killed too.", [30, 530, 697, 573], dict(_PZ3O274, erase=[[25, 529, 590, 575]])),  # 528/665 px
+    ("Hatanaka's two sons grieved terribly, but now it has turned", [25, 602, 785, 645], dict(_PZ3O274, erase=[[20, 602, 756, 646]])),  # 733/758 px
+    ("into a fierce rage at the sect. Yes, this is how our rage will", [32, 674, 785, 717], dict(_PZ3O274, erase=[[27, 675, 744, 717]])),  # 721/751 px
+    ("be handed down across the generations. Never, ever forgive", [30, 744, 785, 787], dict(_PZ3O274, erase=[[25, 744, 762, 788]])),  # 732/753 px
+    ("the Holy Cerejeira Church. Even", [30, 818, 478, 861], dict(_PZ3O274, erase=[[25, 817, 483, 863]])),  # 392/446 px
+    ("if the sect", [630, 818, 785, 861], dict(_PZ3O274, erase=[[625, 817, 765, 863]])),  # 132/153 px
+    ("is destroyed, never forgive the Mikogami clan. No mercy,", [30, 888, 785, 931], dict(_PZ3O274, erase=[[25, 889, 748, 931]])),  # 686/753 px
+    ("down to the women and children of the last generation.", [29, 958, 785, 1001], dict(_PZ3O274, erase=[[24, 959, 782, 1001]])),  # 671/754 px
+]
+_PZ3O275 = {"style": "handwriting", "color": "#080200", "max_size": 35, "align": "left", "mask_color": [0, 60, 0, 50, 0, 50], "mask_grow": 4}
+_PZ3_275 = [
+    ("How could this be. Was I mistaken? I", [90, 84, 762, 134], dict(_PZ3O275, erase=[[85, 86, 727, 133]])),  # 559/670 px
+    ("thought one of the test subjects had carried", [89, 156, 762, 206], dict(_PZ3O275, erase=[[84, 158, 730, 205]])),  # 660/671 px
+    ("these reports out as an inside whistleblower", [89, 229, 762, 279], dict(_PZ3O275, erase=[[84, 229, 706, 280]])),  # 650/671 px
+    ("and left them somewhere people would see", [88, 301, 762, 351], dict(_PZ3O275, erase=[[83, 302, 686, 351]])),  # 623/672 px
+    ("them. But it's the reverse. Uneme staged", [88, 374, 762, 424], dict(_PZ3O275, erase=[[83, 375, 735, 423]])),  # 619/672 px
+    ("all of this. Doing this stirs up distrust", [89, 446, 762, 496], dict(_PZ3O275, erase=[[84, 446, 729, 496]])),  # 563/671 px
+    ("among the brethren and makes the sect", [89, 517, 762, 567], dict(_PZ3O275, erase=[[84, 519, 744, 566]])),  # 591/671 px
+    ("fall apart. Kichizo-sama will fall from power", [89, 592, 762, 642], dict(_PZ3O275, erase=[[84, 590, 728, 645]])),  # 641/671 px
+    ("too. All that will be left are the results of", [97, 661, 762, 711], dict(_PZ3O275, erase=[[92, 662, 732, 710]])),  # 620/663 px
+    ("the Droga research. Once the sect is gone,", [89, 730, 762, 780], dict(_PZ3O275, erase=[[84, 729, 730, 782]])),  # 622/671 px
+    ("Uneme will move the world, unhindered by", [87, 806, 762, 856], dict(_PZ3O275, erase=[[82, 806, 664, 857]])),  # 604/673 px
+    ("anyone, and make a fortune. But who should", [96, 877, 762, 927], dict(_PZ3O275, erase=[[91, 878, 727, 927]])),  # 645/664 px
+    ("I tell this truth to? The anti-sect forces", [87, 949, 762, 999], dict(_PZ3O275, erase=[[82, 949, 726, 1000]])),  # 614/673 px
+    ("can no longer be stopped. Ah, did everything", [88, 1021, 762, 1071], dict(_PZ3O275, erase=[[83, 1022, 731, 1071]])),  # 639/672 px
+    ("go just as Uneme wanted?", [89, 1093, 603, 1143], dict(_PZ3O275, erase=[[84, 1094, 504, 1142]])),  # 387/512 px
+    ("I TOLD YOU SO, YOU FOOLS", [33, 1164, 785, 1236], {"style": "handwriting", "color": "#6e0c12", "max_size": 44, "align": "left", "mask_color": [80, 255, 0, 45, 0, 60], "mask_grow": 5, "erase": [[26, 1158, 785, 1238]]}),
+]
+_PZ3O277 = {"style": "handwriting", "color": "#1b0000", "max_size": 28, "align": "left", "mask_color": [0, 90, 0, 70, 0, 70], "mask_grow": 3}
+_PZ3_277 = [
+    ("I heard it from a subordinate I trust. So it was all", [37, 46, 767, 88], dict(_PZ3O277, erase=[[32, 48, 756, 87]])),  # 617/728 px
+    ("something Uneme-san arranged. I had been looked", [37, 87, 767, 129], dict(_PZ3O277, erase=[[32, 90, 759, 127]])),  # 599/728 px
+    ("after since I was a child, so I never even tried to", [41, 129, 767, 171], dict(_PZ3O277, erase=[[36, 132, 751, 168]])),  # 601/724 px
+    ("doubt it. They say the reports so far had also been", [42, 170, 767, 212], dict(_PZ3O277, erase=[[37, 174, 750, 209]])),  # 609/723 px
+    ("falsified before they were delivered to me. Many of the", [35, 211, 767, 253], dict(_PZ3O277, erase=[[30, 212, 718, 252]])),  # 666/730 px
+    ("brethren were sacrificed. I was truly a fool.", [40, 253, 648, 295], dict(_PZ3O277, erase=[[35, 255, 531, 293]])),  # 523/606 px
+    ("But if I make this public, Uneme-san will set out in", [47, 336, 767, 378], dict(_PZ3O277, erase=[[42, 338, 758, 376]])),  # 616/718 px
+    ("earnest to crush the sect. On the surface, I will keep", [39, 377, 767, 419], dict(_PZ3O277, erase=[[34, 379, 752, 417]])),  # 645/726 px
+    ("Uneme-san's name out of it and write a memo calling for", [42, 417, 767, 459], dict(_PZ3O277, erase=[[37, 419, 755, 458]])),  # 672/723 px
+    ("the eradication of Droga and the erasure of its traces.", [44, 460, 767, 502], dict(_PZ3O277, erase=[[39, 463, 634, 499]])),  # 657/721 px
+    ("I too have little life left. If I go to where the brethren", [35, 541, 767, 583], dict(_PZ3O277, erase=[[30, 543, 759, 582]])),  # 689/730 px
+    ("who were sacrificed are and let them see me burned", [40, 583, 767, 625], dict(_PZ3O277, erase=[[35, 585, 749, 623]])),  # 622/725 px
+    ("in the flames of hell, will it be even a small comfort?", [40, 625, 767, 667], dict(_PZ3O277, erase=[[35, 626, 752, 666]])),  # 624/725 px
+    ("What I did is truly inexcusable.", [38, 666, 477, 708], dict(_PZ3O277, erase=[[33, 670, 394, 705]])),  # 365/437 px
+    ("But the Holy Cerejeira Church can never be allowed", [39, 748, 767, 790], dict(_PZ3O277, erase=[[34, 750, 753, 789]])),  # 608/726 px
+    ("to disband. From now on, a watch must be kept", [41, 789, 767, 831], dict(_PZ3O277, erase=[[36, 792, 746, 829]])),  # 562/724 px
+    ("for anyone who uses Droga. The Mikogami family", [39, 831, 767, 873], dict(_PZ3O277, erase=[[34, 833, 757, 871]])),  # 580/726 px
+    ("will not forgive those who misuse Droga.", [41, 872, 643, 914], dict(_PZ3O277, erase=[[36, 874, 634, 913]])),  # 482/600 px
+]
+JOBS += [
+    # 274 re-done after the QIMAGESPZPZ3-01 ruling (body readable on this sheet): body = the shipped REP274 lines verbatim, ink
+    # #150800, same erase boxes, BUT erased beforehand by work/images/_c/pz-PZ3/pre274.py (glyph mask from 全体.png with _RMASK:
+    # on the red sheet _RMASK takes the whole page and the cracks share the print colour), so this job CHAINS from that output:
+    # always run pre274.py right before `runpz-PZ3.sh puz274-full`, then `--previews-only` (preview = JP original | result).
+    # Scrawl lines after the body (drawn on top, ruling 4); eye drawing kept.
+    dict(_r2job(274, [(t, b, dict(o, erase=[])) for t, b, o in REP274] + _PZ3_274,
+                "unsolved sheet: body (REP274) + white chalk scrawl re-set; eye drawing kept (QIMAGESPZPZ3-01)", "#150800"),
+         id="puz274-full", screen="reference 274 unsolved sheet", chain=True, items=[(D + "rrr274/_full.gal", "")]),
+    dict(_r2job(275, _PZ3_275, "unsolved sheet: black brush scrawl + red katakana row re-set; mirrored ghost print kept (ruling 1)",
+                "#080200"),
+         id="puz275-full", screen="reference 275 unsolved sheet", style="handwriting", items=[(D + "rrr275/_full.gal", "")]),
+    dict(_r2job(277, _PZ3_277, "unsolved sheet: black pen scrawl re-set; mirrored ghost print + blood kept (ruling 1)", "#1b0000"),
+         id="puz277-full", screen="reference 277 unsolved sheet", style="handwriting", items=[(D + "rrr277/_full.gal", "")]),
+]
+# end IMAGESPZ-PZ3
+
+# IMAGESPZ-PZ2 2026-10-16 (cont.) ---- 284 (800x1806): the shipped rep284 page on dark red paper with pink blotches + a grey-white brush
+# scrawl in 15 level rows (glyphs ~43 px, x 75-709, pitch ~118). Body: REP284 verbatim, same boxes; mask per erase box (_pz2bodyb):
+# title 45, body 55, footer 60 (sep.py per y band: <= ~5 % of the paper).
+_PZ2_GREY = [150, 255, 150, 255, 150, 255]  # brush cores ~209,190,193; rows2.py: nothing outside the 15 rows reaches this range
+_PZ2_C284 = "#d1bec1"
+_s284 = 42
+
+
+def _pz2r284(text, y0, y1, x1=709):
+    return _pz2flat(text, 77, (y0 + y1) / 2.0, _s284, _PZ2_C284, _PZ2_GREY, [[69, y0 - 8, x1 + 8, y1 + 8]], xmax=795)
+
+
+PZ284 = (_pz2bodyb(REP284, [(0, 100, 45), (100, 1680, 55), (1680, 1806, 60)]) + [
+    _pz2r284("Word on the wind is, in Megasawa City,", 60, 102, 707),
+    _pz2r284("there's a move to break up the sect,", 177, 220, 696),
+    _pz2r284("it seems. Well, Uneme will probably crush", 296, 338, 703),
+    _pz2r284("it soon, but the people's will doesn't", 412, 456, 707),
+    _pz2r284("change that easily. If this faction", 531, 574, 704),
+    _pz2r284("would just grow, then even Uneme", 648, 692, 704),
+    _pz2r284("couldn't put it down so easily.", 767, 810, 709),
+    _pz2r284("Could it be Kuji, Hatanaka, or the like", 884, 928, 703),
+    _pz2r284("who made a move?", 1004, 1046, 232),
+    _pz2r284("Well, so the time that had to come", 1121, 1165, 696),
+    _pz2r284("has finally come, has it? I'd better", 1238, 1283, 708),
+    _pz2r284("hide myself soon too. Fortunately,", 1355, 1401, 677),
+    _pz2r284("the personal details of those involved", 1475, 1519, 706),
+    _pz2r284("in this research probably haven't leaked", 1593, 1637, 704),
+    _pz2r284("outside.", 1712, 1754, 330)])
+JOBS += [_pz2job(284, _r2job(284, REP284, "", "#231803"), PZ284, "report 284 unsolved sheet (red blotched page + grey-white brush scrawl, 15 rows)")]
+
+
+# IMAGESPZ-PZ1 2026-10-16 (notes/IMAGESPZ-BRIEF.md, lane PZ1; rulings notes/v2/_tmp/rulings-IMAGESPZ.md; log
+# notes/v2/_tmp/tl-log-IMAGESPZ-PZ1.md): the UNSOLVED report sheets rrr<ID>/_full.gal of reports 41 155 169 174 (base sheet + pieces
+# composed; tools/images/report_puzzle.py cuts 土台 / N / Na out of the render). Body = the shipped report job's lines verbatim and its
+# erase boxes, with a sheet-specific glyph mask + ink (the sheets are recoloured: the shipped masks would select the whole page;
+# work/images/_c/pz-PZ1/mk.py). Scrawl = style handwriting, one English line per JP line in its row, erased with a mask on the
+# stroke colour (texfill), set last so it crosses the body as drawn. Row boxes from work/images/_c/pz-PZ1/bbox.py.
+def _pz1body(lines, mask, noerase_below=None, plate=None):
+    """the shipped body lines with this sheet's glyph mask; erase boxes reaching below noerase_below dropped (art there);
+    flat-plate lines (white type on a plate) set without the plate fill in `plate` colour when given."""
+    out = []
+    for t, b, o in lines:
+        o = dict(o)
+        if o.get("method") == "flat" and plate:
+            o = {"erase": [], "color": plate, "align": o.get("align", "center"), "max_size": o.get("max_size", 24),
+                 "line_spacing": o.get("line_spacing", 1.0)}
+        else:
+            o["mask_color"] = mask
+            if noerase_below is not None:
+                o["erase"] = [e for e in o.get("erase", [b]) if e[3] <= noerase_below]
+        out.append((t, b, o))
+    return out
+
+
+def _pz1s(text, bb, ink, mask, size, pad=6, x1=792, tpad=0, **k):
+    """one scrawl line: bb = the JP row's stroke bbox [x0, y0, x1, y1]; text box from the row start to x1 (tpad px taller above and
+    below, so the line height does not cap the size under the JP stroke height), erase = bbox + pad."""
+    o = {"style": "handwriting", "color": ink, "mask_color": mask, "mask_grow": 5, "max_size": size, "align": "left",
+         "method": "texfill", "erase": [[max(0, bb[0] - pad), max(0, bb[1] - pad), bb[2] + pad, bb[3] + pad]]}
+    o.update(k)
+    return (text, [max(0, bb[0] - 4), max(0, bb[1] - tpad), x1, bb[3] + tpad], o)
+
+
+def _pz1job(rid, base, scrawl, note):
+    j = dict(base)
+    j.update(id="puz%d-full" % rid, screen="reference %d unsolved sheet" % rid, items=[(D + "rrr%d/_full.gal" % rid, "")],
+             lines=list(base.get("lines", [])) + scrawl, note=note, new=True)
+    return j
+
+
+# ---- 41 (800x1733): dark grey sheet, black handprints / drips, white chalk scrawl (10 rows, sentence case). The body on this sheet is
+# a MIRRORED ghost of the print (align.py: correlation with the left-right flipped 全体 -7.5 / -6.1 vs -1.3 / -0.7 unflipped), so the
+# body stays as drawn: no body erase, scrawl only (QIMAGESPZPZ1-01; ruling 1's criterion for 274 275 277). Chalk mask: every channel > 110.
+_PZ41M = [111, 255, 111, 255, 111, 255]
+_PZ41I = "#d0cecb"
+PZ41 = [_pz1s(t, bb, _PZ41I, _PZ41M, 84) for t, bb in (
+    ("This much", [60, 105, 547, 212]),
+    ("is nothing", [83, 242, 776, 355]),
+    ("I'm going to get close", [44, 450, 754, 594]),
+    ("to the Goddess", [52, 610, 703, 715]),
+    ("But it hurts", [107, 720, 646, 834]),
+    ("My head hurts", [50, 838, 637, 984]),
+    ("Ever since the", [46, 988, 750, 1139]),
+    ("green-eyed corpse", [47, 1152, 735, 1307]),
+    ("and I became one", [60, 1337, 614, 1484]),
+    ("What am I", [37, 1490, 783, 1730]))]
+JOBS += [_pz1job(41, {"style": "handwriting", "mode": "lines", "erase": "texfill", "erase_first": True, "mask_grow": 5,
+                      "mask_color": _PZ41M, "color": _PZ41I}, PZ41,
+                 "report 41 unsolved sheet (white chalk scrawl; mirrored ghost body kept as drawn)")]
+
+# ---- 155 (800x1184): red sheet with dark veins; the shipped REP155 page (body unmirrored, glyph cores ~40,0,0: mask [0,75,0,30,0,30]
+# catches 0.83-0.98 of them) + a pink-white chalk scrawl, 6 rows, ALL CAPS (ruling 2; QIMAGESPZPZ1-02).
+_PZ155M = [140, 255, 110, 255, 100, 255]
+_PZ155I = "#e8cfc8"
+PZ155 = [_pz1s(t, bb, _PZ155I, _PZ155M, 96) for t, bb in (
+    ("SAME AS EVER", [74, 45, 626, 170]),
+    ("MY HEAD HURTS", [72, 187, 455, 318]),
+    ("THE CORPSE STARTED", [62, 336, 758, 505]),
+    ("STINKING, DAMN IT", [38, 552, 664, 658]),
+    ("BUT I KIND OF LIKE", [65, 730, 755, 836]),
+    ("THIS ONE.", [58, 880, 477, 999]))]
+JOBS += [_pz1job(155, _r1job(155, _pz1body(REP155, [0, 75, 0, 30, 0, 30]), "", "#260000"), PZ155,
+                 "report 155 unsolved sheet (red page + pink-white chalk scrawl)")]
+
+# ---- 169 (800x2607): dark brown sheet with a faint body (unmirrored; contrast median -6 at the top) and red / black tree art over the
+# lower half. Body = L169 verbatim, ink #2c1614 (the darker JP strokes); erase (mask [0,58,0,32,0,32]) only for boxes ending above
+# y 1700 (under the tree the JP has no contrast and a colour mask would take the branches); the three Blood plates without plate fill
+# (QIMAGESPZPZ1-03). Scrawl, ALL CAPS: 5 white chalk rows (semi-transparent, mask r>=95 g>=82 b>=80), the red brush (クルシイ /
+# タスケテ / イタイ / ムスメヲカエセ as an L: down the left edge, then along the bottom / カエリタイ rising to the right), and a
+# pink-white two-row line at the bottom right.
+_PZ169W = [95, 255, 82, 255, 80, 255]
+_PZ169R = [105, 255, 0, 80, 0, 80]
+_PZ169P = [140, 255, 95, 255, 95, 255]
+PZ169 = ([_pz1s(t, bb, "#9c8c89", _PZ169W, 130, tpad=15) for t, bb in (
+             ("HAPPY", [72, 90, 589, 291]),
+             ("I CAN USE", [102, 379, 737, 521]),
+             ("DROGA", [65, 595, 646, 722]),
+             ("GLORY TO", [60, 782, 782, 940]),
+             ("CEREJEIRA", [71, 969, 723, 1156]))]
+         + [_pz1s(t, bb, "#881210", _PZ169R, 120, x1=760) for t, bb in (
+             ("IT'S AGONY", [126, 1399, 588, 1532]),
+             ("HELP ME", [82, 1552, 660, 1716]),
+             ("IT HURTS", [335, 1806, 697, 1998]))]
+         + [("", [26, 1808, 264, 2434],
+             {"mask_color": _PZ169R, "mask_grow": 5, "method": "texfill", "erase": [[26, 1808, 264, 2434], [101, 2418, 592, 2607]]})]
+         + [(t, b, {"style": "handwriting", "color": "#881210", "max_size": s, "align": "left", "erase": []}) for t, b, s in (
+             ("GIVE", [30, 1814, 262, 1935], 84),
+             ("MY", [30, 1941, 262, 2080], 84),
+             ("DAUGHTER", [30, 2085, 330, 2245], 84),
+             ("BACK", [30, 2290, 400, 2600], 110))]
+         + [("I WANT TO GO HOME", [290, 2178, 770, 2302],
+             {"style": "handwriting", "color": "#881210", "mask_color": _PZ169R, "mask_grow": 5, "max_size": 110, "rot": 15,
+              "rot_h": 110, "method": "texfill", "erase": [[264, 2196, 486, 2372], [478, 2083, 798, 2343]]})]
+         + [_pz1s(t, bb, "#c8a4a2", _PZ169P, 76, x1=770) for t, bb in (
+             ("THE GODDESS", [413, 2353, 767, 2447]),
+             ("IS GREAT", [487, 2467, 780, 2584]))])
+# IMAGESPZ-PZ1 2026-10-16 (cont.) checker round 1: 169's red block re-laid inside the page with no overlaps (the ムスメヲ column set as
+# horizontal words stacked in its spot, BACK at the column foot; the rising カエリタイ line kept at 15 deg inside x 276-783), red =
+# the JP brush sampled bright (#881210); every scrawl line drawn 9 times on a 0..2 px grid (_pz1bold) for a stroke weight near the JP.
+
+
+def _pz1bold(lines, d=2):
+    out = []
+    for t, b, o in lines:
+        out.append((t, b, o))
+        if t:
+            for dx in range(d + 1):
+                for dy in range(d + 1):
+                    if dx or dy:
+                        out.append((t, [b[0] + dx, b[1] + dy, b[2] + dx, b[3] + dy], dict(o, erase=[])))
+    return out
+
+
+PZ169 = _pz1bold(PZ169)
+JOBS += [_pz1job(169, _rbjob(169, "", _pz1body(L169, [0, 58, 0, 32, 0, 32], noerase_below=1700, plate="#6a4a48"),
+                             color="#2c1614", mask_color=[0, 58, 0, 32, 0, 32]), PZ169,
+                 "report 169 unsolved sheet (faint body; white chalk + red brush + pink-white scrawls)")]
+
+# ---- 174 (800x1490): ochre parchment, the shipped L174 page (body cores ~12,0,0: mask [0,60,0,35,0,35] catches 0.89-1.00 of them,
+# 0.00 of the paper) + two reds: a dark-crimson pen (rows 1, 2, 7) and a translucent red brush (rows 3-6, 8, 9); one erase mask
+# [65,200,0,45,0,40] for both. ALL CAPS (katakana scrawl). Digits as drawn.
+_PZ174M = [65, 200, 0, 45, 0, 40]
+_PZ174A = "#760604"   # checker round 1: every row in the JP brush red sampled bright (stroke cores ~100-118,4,2), drawn bold
+_PZ174B = "#760604"
+PZ174 = [_pz1s(t, bb, ink, _PZ174M, 84, tpad=12) for t, bb, ink in (
+    ("I'M IN ROOM 1015", [64, 58, 776, 136], _PZ174A),
+    ("MY SONS TOO, TWO OF THEM", [74, 163, 779, 278], _PZ174A),
+    ("YOU IN 1105", [87, 334, 681, 427], _PZ174B),
+    ("STOLE THE KEY", [51, 480, 765, 606], _PZ174B),
+    ("TO THE EAST DOOR", [59, 617, 730, 724], _PZ174B),
+    ("WHEN DO WE RUN", [73, 759, 683, 861], _PZ174B),
+    ("AS SOON AS TONIGHT", [48, 940, 726, 1076], _PZ174A),
+    ("GOT IT", [53, 1110, 440, 1280], _PZ174B),
+    ("AT ONE IN THE NIGHT", [107, 1326, 769, 1431], _PZ174B))]
+# checker round 1: over the dark lower photo the JP brush is dark red (~53,2,2), outside the mask above: one more erase-only pass
+# there (red with g, b <= 28), so the whole ワカッタ / コンヤニデモ strokes go; then every row bold (_pz1bold).
+PZ174 = _pz1bold(PZ174 + [("", [40, 985, 735, 1290], {"mask_color": [35, 200, 0, 28, 0, 26], "mask_grow": 4, "method": "texfill",
+                                                       "erase": [[40, 985, 735, 1290]]})])
+JOBS += [_pz1job(174, _rbjob(174, "", _pz1body(L174, [0, 60, 0, 35, 0, 35]), color="#0c0000", mask_color=[0, 60, 0, 35, 0, 35]),
+                 PZ174, "report 174 unsolved sheet (parchment page + two red scrawls)")]

@@ -16,8 +16,10 @@ import sys
 
 from livemaker.archive import LMArchive
 
-EXE = r"F:\4gatsu_8ka_Ver2.0.0.4\死月妖花～四月八日～.exe"
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+EXE = r"F:\4gatsu_8ka_Ver2.0.0.4\死月妖花～四月八日～.exe"
+if not os.path.exists(EXE):  # 2026-10-16: the install moved into the project
+    EXE = os.path.join(ROOT, "game", "jp", "死月妖花～四月八日～.exe")
 DEFAULT_OUT = os.path.join(ROOT, "work", "images", "gal")
 
 ap = argparse.ArgumentParser()
