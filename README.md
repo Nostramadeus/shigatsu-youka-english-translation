@@ -4,7 +4,7 @@
 
 **Complete as of 2026-10-16.** Every story script, every data table (menus, titles, synopses, encyclopedia, credits) and every in-game picture is in English.
 
-**Known Japanese leftovers (on purpose).** In the reference screen, a report puzzle's header prints a "Gimmick:" line naming the puzzle mechanic it uses (for example 移動 = Move, as in drag the pieces). Those ten short names stay in Japanese because the game also uses them as file names for the help movie and icon; the Help button next to them explains each mechanic in English. The promo video at the very end has no subtitles.
+**Known Japanese leftovers (on purpose).** In one screen, a header prints a "Gimmick" line such as 移動 (move). These lines stay in Japanese because the game also uses them as file names for other things; the Help button explains each mechanic in English anyway.
 
 **One honest gap.** Every line was checked against the Japanese by a second AI pass, but no human has yet played the final stretch of the game in English. The earlier parts were spot-played during translation. Anything that reads oddly, open an issue with a screenshot.
 
