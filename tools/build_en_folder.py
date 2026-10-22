@@ -83,7 +83,7 @@ def main(argv):
         with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
             for rel in shipped:
                 z.write(WORK / rel, rel)
-            for extra in ('README-EN.txt', 'README-BEFORE-PLAYING.txt', 'Play (fullscreen).cmd'):
+            for extra in ('README-EN.txt', 'README-BEFORE-PLAYING.txt', 'README-ABOUT-JUMPSCARES.txt', 'Play (fullscreen).cmd'):
                 f = ROOT / 'patch' / extra
                 if f.exists():
                     z.write(f, extra)

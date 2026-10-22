@@ -17,6 +17,7 @@
 
 Good to know:
 - **Boxes instead of letters?** Set Windows' system locale to Japanese (or run the exe through Locale Emulator) and add the Japanese language pack.
+- **One screamer-type jumpscare exists.** `README-ABOUT-JUMPSCARES.txt` in the zip says where it is, how it triggers (you have to stay on one encyclopedia entry), how to see it safely, and how the game itself lets you turn it off afterwards.
 - **Do not use the game's own full-screen button** (second button on the toolbar). It resizes every other window. Use Magpie instead: `README-BEFORE-PLAYING.txt` in the zip explains it.
 - **Do not look the game up online.** Store pages and wikis spoil its length and structure in the first paragraph.
 - **Updating the patch:** unzip the new one over the old. Saves keep working.
