@@ -2,6 +2,14 @@
 
 ![Translation status](status.svg)
 
+> ## 📖 Prefer to read it as a web page? No jumpscares, nothing moves.
+> **https://nostramadeus.github.io/shigatsu-youka-reader/** shows the whole game as still pictures and text, one row per text box,
+> in English or Japanese. Scenes unlock in the same order as the game, so it does not spoil the structure, and the story chart
+> works like the game's own navigator. No sound, no timing, no screen shakes, and the one screamer is left out.
+> Progress stays in your browser (export / import buttons). Good for anyone who wants the story without the horror-game delivery.
+>
+> ![What the reader looks like](reader-explainer.svg)
+
 **Complete as of 2026-10-16.** Every story script, every data table (menus, titles, synopses, encyclopedia, credits) and every in-game picture is in English.
 
 **Known Japanese leftovers (on purpose).** In one screen, a header prints a "Gimmick" line such as 移動 (move). These lines stay in Japanese because the game also uses them as file names for other things; the Help button explains each mechanic in English anyway.
