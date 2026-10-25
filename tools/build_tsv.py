@@ -20,6 +20,15 @@ def load(p, enc):
     return t.split(nl), nl
 
 
+def compatible_header(source, translated):
+    if source == translated:
+        return True
+    source_width = re.fullmatch(r'(.*) cha (\d+)', source)
+    base = source_width.group(1) if source_width else source
+    target_width = re.fullmatch(re.escape(base) + r' cha (\d+)', translated)
+    return target_width is not None and (source_width is None or int(target_width.group(1)) >= int(source_width.group(2)))
+
+
 def main(names):
     bad = 0
     for name in names:
@@ -42,7 +51,7 @@ def main(names):
         while len(e_hdr) - extra > len(hdr) and e_hdr[len(e_hdr) - 1 - extra] in EXTRA_COLS:
             extra += 1
         if len(e_hdr) - extra != len(hdr) or any(
-                a != b and not re.fullmatch(re.escape(a) + r' cha \d+', b) for a, b in zip(hdr, e_hdr)):
+                not compatible_header(a, b) for a, b in zip(hdr, e_hdr)):
             errs.append('header row changed')
         caps = []
         for h in (e_hdr or hdr):

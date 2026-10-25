@@ -4,10 +4,10 @@ Run: uv run --no-project --with pylivemaker python tools/images/gal_to_png.py SR
 Mirrors the folder structure under DST_DIR; skips files that already have a PNG; prints size/mode per file.
 """
 import os
+from pathlib import Path
 import sys
 
-from PIL import Image
-import livemaker.GalImagePlugin  # noqa: F401  (registers the GAL opener)
+from gal_decode import open_gal
 
 src, dst = sys.argv[1], sys.argv[2]
 files = []
@@ -27,7 +27,7 @@ for root, n in sorted(files):
         continue
     os.makedirs(os.path.dirname(out), exist_ok=True)
     try:
-        im = Image.open(os.path.join(root, n))
+        im = open_gal(Path(root, n).read_bytes())
         im.load()
         im.save(out)
         print(f"{rel}\t{im.size[0]}x{im.size[1]}\t{im.mode}\tframes={getattr(im, 'n_frames', 1)}")
@@ -36,3 +36,4 @@ for root, n in sorted(files):
         print(f"{rel}\tFAIL\t{e}")
         fail += 1
 print(f"done ok={ok} fail={fail}", file=sys.stderr)
+sys.exit(1 if fail else 0)

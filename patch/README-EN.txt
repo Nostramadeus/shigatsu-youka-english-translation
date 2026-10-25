@@ -4,10 +4,10 @@ Shigatsu Youka ~April 8th~ (死月妖花～四月八日～) -- unofficial Englis
 UNOFFICIAL FAN TRANSLATION (非公式・二次創作). Not affiliated with, endorsed by, or supported by New++. Please do not contact the author about this patch.
 
 What this is
-  A fan translation of the opening stretch of the free visual novel by New++ (v2.0.0.4):
-  story text, menus, notices, data tables and pictures for everything you can reach in that
-  stretch. Text beyond it is still Japanese for now. When story text turns Japanese, you have
-  reached the end of the translated stretch; more will follow.
+  An unofficial English translation of the free visual novel by New++ (v2.0.0.4).
+  The story translation is complete. The 2026-10-25 repair adds missed reference documents,
+  animated document states, selected filters and reference-help text/screenshots.
+  The original archive and actual patch ZIP are checked together, not just the old image-job list.
 
 Install (no game files are modified)
   1. Get the Japanese game v2.0.0.4 from the author (freem, game 19917) and unzip it.
@@ -32,7 +32,13 @@ Notes
     close once and ask you to start it again. This is the original game's behaviour.
   - Names are given name first. Honorifics (-san, -kun, -chan ...) are kept.
   - Translator notes appear at the end of a line as [TN: ...].
-  - The title logo is artwork and stays Japanese.
+  - Original cropped reference previews and flashing red background text stay Japanese
+    to preserve the original artwork and atmosphere; readable documents are translated separately.
+  - Other retained Japanese artwork includes title logos, a handwritten signature, unsolved
+    puzzle pieces with an English solved page, and narrow edge-on or unreadable incidental art.
+    These are documented exceptions, not a claim that every source image is textless.
+  - No human has played the entire final English build. Please report unexpected Japanese
+    with a screenshot at the translation repository's Issues page.
   - The two words on the window toolbar are part of the game engine and stay Japanese:
       終了 = Quit        画面切替 = Screen switch (windowed / full screen; see README-BEFORE-PLAYING)
   - Windows Defender sometimes flags the original exe. Nothing in this patch touches the exe.

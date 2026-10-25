@@ -12,9 +12,9 @@
 >
 > ![What the reader looks like](reader-explainer.svg)
 
-**Complete as of 2026-10-16.** Every story script, every data table (menus, titles, synopses, encyclopedia, credits) and every in-game picture is in English.
+**Story translation complete; reference repairs updated 2026-10-25.** The newest patch fixes reference documents and UI text missed in earlier builds. See the [release notes](https://github.com/Nostramadeus/shigatsu-youka-english-translation/releases/latest) for the exact scope and remaining limits.
 
-**Known Japanese leftovers (on purpose).** In one screen, a header prints a "Gimmick" line such as 移動 (move). These lines stay in Japanese because the game also uses them as file names for other things; the Help button explains each mechanic in English anyway.
+**Known Japanese leftovers (on purpose).** Some original artwork remains: the original cropped reference previews, Japanese flashing red background text, title logos, a handwritten signature, unsolved puzzle pieces whose solved page is in English, and narrow edge-on or unreadable incidental art. The previews and red backgrounds retain the original game's artwork and atmosphere; readable reference documents are translated separately. In one screen, a "Gimmick" header such as 移動 (move) also stays Japanese because the game uses that text as file names; Help explains the mechanic in English. These exceptions are not evidence that every unmodified image is textless.
 
 **One honest gap.** Every line was checked against the Japanese by a second AI pass, but no human has yet played the final stretch of the game in English. The earlier parts were spot-played during translation. Anything that reads oddly, open an issue with a screenshot.
 
@@ -43,6 +43,7 @@ This repo holds only the translation (scripts, tables, pictures, notes), never t
 Short version: an AI translated it, one human set the rules, answered its questions and spot-checked the result.
 
 - **Who did what.** Claude (Anthropic). Opus 5.5 agents drafted and reviewed every line. A Fable 5.1 session orchestrated them, wrote the rule books from the owner's decisions, and reviewed the agents' output. The repo owner, one person, set the translation doctrine, answered the questions the AI raised, and proofread a sample by hand.
+- **Reference repair audit (2026-10-25).** OpenAI Sol 6.1 workers translate and independently review the repaired reference text and images; Luna inventories the original archive. The audit compares original asset paths with the actual release ZIP instead of treating the existing image-job list as complete.
 - **The human share, in numbers.** Read about 10 to 20 percent of the game in Japanese. Set the doctrine and the rules (ledger: `notes/v2/OWNER-RULINGS.md`). Answered about 40 translation questions. Proofread about 200 lines.
 - **Pipeline, per part of the game.** Several translator agents draft from the rule books and glossary. Separate reviewer agents then check every line against the Japanese. Compile, run a QA pass for leftover Japanese and broken tags, ship. A question the agents could not settle got a provisional answer, was shipped, and was logged for the owner; the owner's answer became a rule for the next part.
 - **What this means for you.** The text follows one set of rules from start to end, but past the opening it has had little human proofreading. Stiff, literal lines are intended (see the doctrine below). Mistranslations can be anywhere. The pages in `review/` show the Japanese next to each English line, so you can check a line and fix it.

@@ -1805,12 +1805,12 @@ JOBS += [
 ]
 
 
-# ---- IMAGES4 2026-10-01: refs 50 / 54 (unlocked by navigator card 87) have no detail page; the 300x170 概要 is
-# typeset directly (like ov-6). White paper: flat fill per box, boxes kept between the underlines / frame rules.
+# ---- IMAGES4 2026-10-01: refs 50 / 54 (unlocked by navigator card 87), 300x170 概要 previews.
+# Full details exist and are translated below. White paper: flat fill per box, keeping the frame rules.
 # max_size = the JP glyph height measured on the source. The 60x30 thumbnails are below legibility: skipped.
 JOBS += [
     {"id": "ov-50", "screen": "reference screen preview", "style": "serif", "mode": "lines", "erase": "flat",
-     "color": INK, "max_size": 7, "new": True, "note": "medical certificate (overview only; no detail picture)",
+     "color": INK, "max_size": 7, "new": True, "note": "medical certificate overview crop",
      "items": [(O + "rr50.gal", "")],
      "lines": [("MEDICAL CERTIFICATE", [70, 50, 230, 67], {"align": "center", "max_size": 11}),
                ("Name:", [40, 80, 84, 92]),
@@ -1821,7 +1821,7 @@ JOBS += [
                ("Date of birth:", [34, 134, 84, 146]),
                ("Shiyo 757, December 3", [85, 134, 262, 146])]},
     {"id": "ov-54", "screen": "reference screen preview", "style": "serif", "mode": "lines", "erase": "flat",
-     "color": INK, "max_size": 6, "new": True, "note": "class report (overview only; no detail picture)",
+     "color": INK, "max_size": 6, "new": True, "note": "class report overview crop",
      "items": [(O + "rr54.gal", "")],
      "lines": [("Iizawa Prefectural Megasawa Second Elementary School", [100, 30, 270, 40], {"align": "right"}),
                ("Document Ho-115", [180, 40, 270, 50], {"align": "right"}),
@@ -1838,6 +1838,299 @@ JOBS += [
                 "serious fault. As homeroom teacher I cannot overlook the situation any further, and I would like "
                 "it to be addressed.", [28, 122, 268, 158]),
                ("(2) Course of action", [26, 160, 160, 170], {"erase": [[26, 162, 160, 170]]})]},
+]
+
+
+# ---- 2026-10-25: full object details omitted by the earlier overview-only scope (display 72/73/76).
+MEDICAL50 = [
+    ("MEDICAL CERTIFICATE", [160, 139, 640, 180], {"align": "center", "max_size": 30}),
+    ("Name:  Mifuyu Niimura", [112, 218, 690, 249], {"max_size": 21}),
+    ("Address:  2-1-5 Jogasaki, Motoki-cho,", [112, 267, 692, 298], {"max_size": 21}),
+    ("Motoki District, Sawa Prefecture", [226, 301, 692, 332], {"max_size": 21,
+                                                                 "erase": [[225, 315, 690, 343]]}),
+    ("Central Chateau 405", [226, 335, 692, 366], {"max_size": 21, "erase": []}),
+    ("Date of birth:  Shiyo 757, December 3", [112, 370, 692, 403], {"max_size": 21,
+                                                               "erase": [[112, 363, 692, 403]]}),
+    ("Diagnosis:  Acute stress disorder", [112, 459, 692, 492], {"max_size": 21}),
+    ("I certify that, owing to the above illness, a month of recuperation at home is necessary "
+     "from Shiyo 788, May 2.", [112, 552, 692, 638], {"max_size": 21, "line_spacing": 1.12}),
+    ("Remainder blank", [477, 680, 692, 710], {"align": "right", "max_size": 19}),
+    ("Shiyo 788, May 1", [468, 895, 692, 926], {"align": "right", "max_size": 21}),
+    ("Tajima Neuropsychiatric Clinic", [351, 942, 692, 975], {"align": "right", "max_size": 21}),
+    ("Director", [498, 990, 565, 1021], {"max_size": 20}),
+]
+CLASS54 = [
+    ("Iizawa Prefectural Megasawa Second Elementary School", [383, 86, 719, 105],
+     {"align": "right", "max_size": 13}),
+    ("Document Ho-115", [506, 106, 719, 125], {"align": "right", "max_size": 14}),
+    ("CLASS REPORT", [220, 139, 580, 174], {"align": "center", "max_size": 29}),
+    ("Report date", [71, 196, 146, 218], {"max_size": 14}),
+    ("Shiyo 789, November 10", [147, 194, 330, 218], {"style": "handwriting", "max_size": 17,
+                                                  "erase": [[138, 194, 330, 218]]}),
+    ("Class", [71, 224, 145, 246], {"max_size": 15}),
+    ("Year 1, Class 1", [147, 222, 330, 246], {"style": "handwriting", "max_size": 18,
+                                           "erase": [[138, 222, 330, 246]]}),
+    ("Teacher", [71, 251, 145, 274], {"max_size": 15}),
+    ("Midori Sasaki", [147, 249, 330, 274], {"style": "handwriting", "max_size": 18,
+                                         "erase": [[138, 249, 330, 274]]}),
+    ("(1) Details of the problem", [71, 304, 420, 324], {"max_size": 15}),
+    ("It appears that Haruka Niimura-san, in my class, is being bullied. It seems to stem from her having "
+     "shielded a classmate from bullying. From what I have observed, Haruka Niimura-san herself shows no "
+     "serious fault. As homeroom teacher I cannot overlook the situation any further, and I would like "
+     "to address it.", [75, 326, 712, 446], {"style": "handwriting", "max_size": 18}),
+    ("(2) Course of action", [71, 458, 420, 478], {"max_size": 15,
+                                                "erase": [[71, 436, 420, 456]]}),
+    ("I would like to visit the homes of Koji Kuji-kun and Kokona Hatanaka-san, who in particular have "
+     "been seen bullying, and report the situation.", [75, 480, 712, 551],
+     {"style": "handwriting", "max_size": 18}),
+    ("(3) From the grade head", [71, 567, 420, 587], {"max_size": 15}),
+    ("I investigated following Sasaki-sensei's report, but no particular bullying was observed. "
+     "There is no need to visit the homes of the 2 pupils mentioned above.", [75, 590, 712, 684],
+     {"style": "handwriting", "max_size": 18}),
+    ("(4) From the vice-principal", [71, 699, 420, 718], {"max_size": 15}),
+    ("In accordance with the grade head's wishes, action on this matter will be held off.",
+     [76, 723, 711, 811], {"style": "gothic", "max_size": 19}),
+    ("(5) Remarks", [71, 831, 420, 850], {"max_size": 15}),
+    ("There is no need to inform Hatanaka-san, the PTA chair, of this matter.",
+     [76, 855, 711, 943], {"style": "gothic", "max_size": 19}),
+    ("Principal", [493, 967, 542, 982], {"align": "center", "max_size": 11}),
+    ("Vice-principal", [545, 967, 594, 982], {"align": "center", "max_size": 8}),
+    ("Grade head", [598, 967, 647, 982], {"align": "center", "max_size": 9}),
+    ("Teacher", [652, 967, 700, 982], {"align": "center", "max_size": 11}),
+]
+GOTO59 = [
+    ("Hmm, something really is strange. Going out of her way to invite me where Kogori-senpai is...... "
+     "Because she invited me knowing that I'm investigating the case.", [10, 5, 790, 83]),
+    ("In other words, Niimura-senpai is trying to get information about the case out of me. "
+     "I need to be cautious before going to Senpai's house.", [10, 106, 790, 166]),
+    ("Kogori-senpai really hates these disturbing subjects. Both Niimura-senpai and I try to avoid "
+     "talking about them in front of Kogori-senpai. And yet she invited me, which means it's something "
+     "quite urgent.", [10, 171, 790, 256], {"erase": [[7, 181, 793, 256]]}),
+    ("I can't rule out the possibility that Niimura-senpai is involved in the case. "
+     "Let's examine that possibility!", [10, 280, 790, 343]),
+    ("☆ Could Niimura-senpai be the culprit?", [10, 352, 790, 381]),
+    ("The culprit's profile", [10, 381, 790, 406]),
+    ("・Can drive a car", [10, 406, 790, 431]),
+    ("・Knows human anatomy", [10, 431, 790, 456]),
+    ("・Is acquainted with the victim", [10, 456, 790, 481]),
+    ("・Lives in Motoki-cho", [10, 481, 790, 506]),
+    ("All these conditions have to be met. In other words, Niimura-senpai, who can't drive, "
+     "is unlikely to be the culprit.", [10, 506, 790, 554]),
+    ("Could there be an accomplice?", [10, 577, 790, 604]),
+    ("・Left the body there alive", [10, 604, 790, 629]),
+    ("・A gruesome state", [10, 629, 790, 654]),
+    ("・Possibly colored the body red", [10, 654, 790, 679]),
+    ("The method shows a very strong fixation, so the tendency points to a psychopath or a copycat "
+     "of the Megasawa City case. A psychopath is highly likely to act alone. With multiple copycats, "
+     "it would mean Niimura-senpai and someone else imitated the Megasawa City case. If Niimura-senpai "
+     "has an accomplice, the possibility of her being the culprit isn't entirely out of the question.",
+     [10, 679, 790, 816], {"erase": [[7, 678, 793, 804]]}),
+    ("Assuming she's the culprit, why invite me? To investigate the current situation, it would be "
+     "quicker to go to the park herself. Besides, Senpai must know the risk of hearing what I have "
+     "to say (I'll see through the culprit right away ☆).", [10, 823, 790, 903]),
+    ("There are 3 reasons she wouldn't go herself.", [10, 927, 790, 951]),
+    ("1. She's worried about Kogori-senpai's health", [10, 952, 790, 977]),
+    ("2. She's not the culprit, but she's involved", [10, 977, 790, 1002]),
+    ("3. She doesn't just want to hear from me; she has something to consult me about",
+     [10, 1002, 790, 1049], {"erase": [[7, 1002, 793, 1027]]}),
+    ("I see, I see. It's gradually coming into focus. There's a possibility that Niimura-senpai "
+     "is involved in the case to some extent. But she's worried about something to do with it. "
+     "Now, if I bring the Megasawa City case into this,", [10, 1051, 790, 1147]),
+    ("・First Megasawa City case: the victim was in elementary school, Year 2", [10, 1148, 790, 1173]),
+    ("・Second Megasawa City case: victims include an elementary school, Year 6 homeroom teacher",
+     [10, 1173, 790, 1198]),
+    ("・Third Megasawa City case: the victim was in junior high school, Year 3", [10, 1198, 790, 1223]),
+    ("→ The targets get older as the years go by. If a case happens this year, Shiyo 800, "
+     "it should happen around someone in high school, Year 3.", [10, 1223, 790, 1273]),
+    ("Yes, almost certain. Niimura-senpai has some connection with the Megasawa City case too. "
+     "Could Niimura-senpai have lived in Megasawa City before? I'll ask her about that as well. "
+     "It's all right! Leave it to the genius girl, Erina Goto!", [10, 1300, 790, 1448]),
+]
+JOBS += [
+    {"id": "ref50", "screen": "reference 50 detail (display 72)", "style": "serif", "mode": "lines",
+     "erase": "flat", "erase_first": True, "color": INK, "max_size": 21,
+     "note": "full medical certificate; original doctor signature and red seal preserved by owner ruling",
+     "items": [(D + "rrr50/0.gal", "")], "lines": MEDICAL50},
+    {"id": "ref54", "screen": "reference 54 detail (display 73)", "style": "serif", "mode": "lines", "chain": True,
+     "erase": "flat", "erase_first": True, "text_only": True, "mask_grow": 3, "thr": 60,
+     "color": INK, "max_size": 18, "note": "full class report; run refdoc54.py first; first cell expanded, seals kept",
+     "items": [(D + "rrr54/0.gal", "")], "lines": CLASS54},
+    dict(_MEMO, id="ref59", screen="reference 59 detail (display 76)", new=False, erase="flat",
+         note="full Goto memo; reasoning, arrows and source contradiction retained",
+         protect=[[10, 801, 30, 824]],
+         items=[(D + "rrr59/0.gal", "")], lines=[
+             (entry[0], entry[1], {"max_size": 18, **(entry[2] if len(entry) > 2 else {}),
+                                      "erase": [[7, 0, 793, 84], [7, 105, 793, 257], [7, 279, 793, 555],
+                                             [7, 576, 793, 904], [7, 925, 793, 1275], [7, 1295, 793, 1455]]
+                                      if index == 0 else []})
+             for index, entry in enumerate(GOTO59)]),
+]
+
+
+GOTO61 = [
+    "Information currently known.",
+    "・A bug is planted only in Niimura-senpai's phone. (I can't be certain it's a bug, but at least something is inside it.)",
+    "・Our phones have a Friend GPS function.",
+    "・Using these 2 functions, it's possible to know the other person's information and location with considerable accuracy.",
+    "↓",
+    "But if what the culprit can learn isn't just sound and location, I can trap them. "
+    "For example, stage a false incident in front of the phone.",
+    "Putting that aside for now, first I should think about who planted this bug. "
+    "Kogori-senpai's father gave her this phone 5 days ago as a gift for moving up a year and advancing to a new school. "
+    "And apparently Kogori-senpai's father designed the phone.",
+    "↓",
+    "Kogori-senpai's father planted the bug!!",
+    "But it was Kogori-senpai's father who was killed. The Megasawa City case comes up as the link. "
+    "Niimura-senpai seems to be involved in the Megasawa City case.",
+    "↓",
+    "If this case is connected too, was Kogori-senpai's father also involved in the Megasawa City case? "
+    "Then was her mother involved too? Niimura-senpai's mother may also be involved.",
+    "↓",
+    "However, Niimura-senpai and her mother have alibis...... "
+    "I see, I see: Kogori-senpai's parents were used to fabricate alibis. "
+    "These 2 may have carried out the crimes. That also explains why there are 2 victims every time.",
+    "In other words, here's the truth of the Megasawa City case.",
+    "・Niimura-senpai's father died in an accident, and her mother, who became mentally ill, moved to "
+    "Megasawa City with Senpai to recuperate.",
+    "↓",
+    "・Niimura-senpai came to be bullied over her family circumstances, and tried to kill her bullies by making paper dolls.",
+    "↓",
+    "・Her mother noticed this and asked the Kogori couple to kill them for her. "
+    "They chose April 8 as the day of the crimes, when they would have perfect alibis.",
+    "↓",
+    "・Niimura-senpai came to believe in the curse's fulfillment, and tried to eliminate the troubles "
+    "that befell her from then on with paper-doll curses.",
+    "↓",
+    "・The Kogori couple carried out the crimes on the same date, April 8. "
+    "The Kogori couple probably felt responsible for Niimura-senpai's father's death. "
+    "So they were helping the Niimura family to atone for it. "
+    "That's about how it goes, but there are still things I don't understand.",
+    "1. How were the crimes as if people were spirited away carried out? "
+    "Even if I can break the alibis, the killing method is unknown. I'll leave this as some kind of trick.",
+    "2. Is it really only a matter of the Niimura and Kogori families? "
+    "Could those 3 alone really have carried out such large-scale crimes? "
+    "I can't help thinking there's something wrong with those 3 alone carrying out the bizarre murders "
+    "that shook all of Japan 3 times.",
+    "↓",
+    "Niimura-senpai's mother may have an accomplice (probably a man). "
+    "But Senpai's mother's parents have already passed away, and she has no siblings. "
+    "Then perhaps someone on Senpai's father's side of the family is helping......?",
+]
+GOTO62 = [
+    "Shinigami in the Megasawa City case = the Kogori couple",
+    "Shinigami in the Motoki-cho case = Niimura-senpai's mother (Mifuyu Niimura)",
+    "That's the premise I'll think from. The method of making people seem spirited away can wait "
+    "(I'll know once I catch the culprit).",
+    "↓",
+    "What's puzzling about this case",
+    "・The paper doll appeared late",
+    "In the Megasawa City case it appeared before Niimura-senpai 1 week to 10 days in advance, "
+    "but today the paper doll appeared on the very morning the case happened. → Was this a spur-of-the-moment crime?",
+    "↓",
+    "But the bug had been planted. It's difficult to steal the phone from Niimura-senpai and plant a bug. "
+    "So the case may have been planned before April 3, when the phone was given to her as a present.",
+    "↓",
+    "They had planned the case, but something unexpected happened. "
+    "I wonder what...... I'll ask Niimura-senpai's opinion too.",
+    "Niimura-senpai's opinion",
+    "・Why kill only Ryoji Kogori-san? If Akane-san were left alive, she might tell the police the truth "
+    "about the Megasawa City case. So killing both at the same time would be the usual course.",
+    "I wonder if that's really so......",
+    "↓",
+    "If that were so, it would be either kill both at the same time or leave them alone. "
+    "Killing just one is far too risky.",
+    "Niimura-senpai's important opinion!",
+    "Killing only one makes sense too. Thinking of Kogori-senpai, even if the other survived alone, "
+    "she wouldn't confess to the police. Because that would brand Kogori-senpai 'the daughter "
+    "of a sick killer' and 'the daughter of a culprit in the Megasawa City case'. "
+    "I see. She even keeps quiet about Eiichiro Niimura-san, so she would keep quiet about the Megasawa City case......",
+    "↓",
+    "I see, the target was someone else. If Kogori isn't the culprit, the people who could be the remaining targets are",
+]
+from refdoc_memo import flow as _memo_flow
+
+POSTS47 = [
+    "Here it comes, here it comes............",
+    "Now, it's finally time",
+    "Yukipin's heeeere!!!!",
+    "Yukipin really is a goddess",
+    "Huge lol",
+    "Amazing lol",
+    "I wanna lick Yukipin's cheeks",
+    "That's way too careless lol",
+    "So jealous of cherry-blossom-viewing leave",
+    "The main event's competitive eating lol",
+    "I'd rather eat Yukipin than yakisoba",
+    "I'll buy Yukipin's half-eaten yakisoba\nfor 100,000 yen",
+    "Monster lol",
+    "Yukipin's segment is over......\nGuess I'll go to work",
+]
+
+
+def _sha47(text):
+    result = _sha(text)
+    result[0][2].update(method="flat", bg="#c7d9f1", erase=[[47, 8, 137, 35]])
+    result[1][2]["erase"] = [[11, 43, 304, 75]]
+    if "\n" in text or len(text) > 34:
+        result[1] = (text, [12, 34, 304, 77], result[1][2])
+    return result
+
+
+POLICE35 = [
+    ("Assistant Inspector", [79, 235, 232, 258], {"max_size": 16,
+                                                 "erase": [[79, 234, 232, 259]], "method": "flat", "bg": "#c7dbf4",
+                                                 "mask_color": [0, 120, 0, 120, 0, 120]}),
+    ("Daijiro Ise", [91, 277, 225, 300], {"max_size": 16, "method": "flat", "bg": "#c7dbf4",
+                                        "mask_color": [0, 120, 0, 120, 0, 120]}),
+    ("No.", [123, 338, 145, 364], {"max_size": 14, "method": "flat", "bg": "#c7dbf4",
+                                   "mask_color": [0, 120, 0, 120, 0, 120]}),
+    ("Sawa Prefectural\nPolice", [77, 644, 220, 677], {"max_size": 11, "align": "center",
+                                                    "color": "#3a381b", "erase": [[74, 644, 222, 677]],
+                                                    "mask_color": [0, 200, 0, 180, 0, 160], "mask_grow": 3}),
+]
+
+JOBS += [
+    dict(_MEMO, id="ref61", screen="reference 61 detail (display 80)", new=False, erase="flat",
+         note="full Goto memo; complete reasoning reflowed at 18px, no shortening",
+         items=[(D + "rrr61/0.gal", "")], lines=_memo_flow(GOTO61, 1418)),
+    dict(_MEMO, id="ref62", screen="reference 62 detail (display 81)", new=False, erase="flat",
+         note="full Goto memo; incomplete final sentence remains incomplete",
+         items=[(D + "rrr62/0.gal", "")], lines=_memo_flow(GOTO62, 882)),
+    {"id": "ref47-posts", "screen": "reference 47 posts (display 70)", "style": "serif", "mode": "lines",
+     "erase": "inpaint", "erase_first": True, "mask_color": [0, 120, 0, 120, 0, 120], "mask_grow": 2, "keep_alpha": True,
+     "color": "#222222", "note": "complete viewer posts; existing Oha-Oha! / Sha-better layout reused",
+     "items": [(D + "rrr47/%d.gal" % number, "", {"lines": _sha47(text),
+               "protect": [[296, 68, 310, 77]] if number in (11, 13) else []})
+               for number, text in enumerate(POSTS47)], "lines": []},
+    {"id": "ref35", "screen": "reference 35 police badge (display 38)", "style": "serif", "mode": "lines",
+     "erase": "inpaint", "erase_first": True, "mask_grow": 2, "color": "#172a31",
+     "note": "full police badge; original English, number, photo and gold emblem retained",
+     "items": [(D + "rrr35/0.gal", ""), (D + "rrr35/1.gal", "")], "lines": POLICE35},
+    {"id": "ov-47", "screen": "reference 47 overview", "style": "gothic", "mode": "lines",
+     "erase": "inpaint", "erase_first": True, "stroke": 1, "stroke_color": "#ffffff", "color": "#153f80",
+     "note": "O69 logo-art exception; full English reading above untouched source logo, root-approved geometry",
+     "items": [(O + "rr47.gal", "")],
+     "lines": [("Lightning Thunder Visit♪ Yukipin", [4, 0, 296, 24], {"max_size": 18, "erase": []})]},
+    {"id": "ov-47-chat", "screen": "reference 47 overview viewer card", "style": "serif", "mode": "lines",
+     "erase": "flat", "erase_first": True, "chain": True, "keep_alpha": True,
+     "note": "tiny viewer card translated separately; logo-art exception does not waive its text",
+     "items": [(O + "rr47.gal", "")],
+     "lines": [("Oha-Oha!", [219, 146, 245, 158], {"style": "serif", "color": "#1c2e46", "max_size": 6,
+                 "method": "flat", "bg": "#c7d9f1", "erase": [[219, 146, 244, 158]]}),
+               ("Now, it's finally time", [205, 158, 299, 170], {"style": "serif", "color": "#222222", "max_size": 6,
+                 "method": "flat", "bg": "#c7d9f1", "erase": [[205, 158, 299, 170]]})]},
+    {"id": "ov-repair-memos", "screen": "reference memo overviews", "style": "serif", "mode": "asis", "chain": True,
+     "note": "top crops rebuilt from complete English details with refdoc_overview.py",
+     "items": [(O + "rr%d.gal" % number, "") for number in (59, 61, 62)], "lines": []},
+    {"id": "ov-22-label", "screen": "reference 22 overview", "style": "gothic", "mode": "lines",
+     "erase": "inpaint", "erase_first": True, "color": "#b82525", "mask_grow": 2,
+     "note": "readable produce-box label; tomato illustration and all numbers retained",
+     "items": [(O + "rr22.gal", "")],
+     "lines": [("Tomato", [162, 39, 218, 65], {"max_size": 13, "align": "center",
+                "mask_color": [120, 255, 0, 130, 0, 130], "erase": [[162, 39, 218, 65]]})]},
+    {"id": "ref152-repair", "screen": "reference 152 turn states", "style": "serif", "mode": "asis", "chain": True,
+     "note": "refdoc152.py piecewise shaded carry from accepted faces; original alpha and unrelated artwork retained",
+     "items": [(D + "rrr152/%02d.gal" % number, "") for number in range(1, 19) if number != 13]},
 ]
 
 

@@ -44,7 +44,10 @@ def candidates(d, ow, oh):
 def probe(rid):
     d, o = detail(rid), overview(rid)
     best = None
-    for name, box in candidates(d, *o.size):
+    options = list(candidates(d, *o.size))
+    if str(rid) == "59":
+        options.append(("registered original crop", (3, 5, 795, 454)))
+    for name, box in options:
         c = d.crop(box).resize(o.size, Image.LANCZOS)
         diff = np.abs(np.array(c).astype(int) - np.array(o).astype(int)).mean()
         if best is None or diff < best[0]:
@@ -65,7 +68,7 @@ def build(rid):
     out = en.crop(best[2]).resize(o.size, Image.LANCZOS)
     # IMAGES3: keep the original 概要's alpha (rounded card corners); the RGB comes from the English page
     out = out.convert("RGBA")
-    out.putalpha(Image.open(PNG / ("リファレンス概要/rr%s.png" % rid)).getchannel("A"))
+    out.putalpha(Image.open(PNG / ("リファレンス概要/rr%s.png" % rid)).convert("RGBA").getchannel("A"))
     p = OUT / ("リファレンス概要/rr%s.png" % rid)
     p.parent.mkdir(parents=True, exist_ok=True)
     out.save(p)

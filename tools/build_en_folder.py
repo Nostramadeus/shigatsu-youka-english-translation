@@ -3,6 +3,8 @@
     uv run tools/build_en_folder.py            # sync game/en (the English play folder) from work/ per tools/ship-list.txt
     uv run tools/build_en_folder.py --zip      # also write patch/shigatsu-youka-en-patch-YYYY-MM-DD.zip
 
+Set SY_PATCH_DIR to place the ZIP in a different build-output directory.
+
 The EN folder holds a HARD LINK of the 1 GB exe (same bytes as the original folder, zero extra disk),
 live.dll, Readme.txt, and the translated loose files. LiveMaker loads loose files next to the exe in their
 archive-relative path and they override the archive, so nothing is patched into the exe (see tools/harness/README).
@@ -17,7 +19,7 @@ import os
 import shutil
 import sys
 import zipfile
-from datetime import date
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -42,6 +44,14 @@ def ship_entries():
         if line:
             out.append(line.replace('\\', '/'))
     return out
+
+
+def zip_entry(archive, source, name):
+    entry = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+    entry.create_system = 3
+    entry.external_attr = 0o100644 << 16
+    entry.compress_type = zipfile.ZIP_DEFLATED
+    archive.writestr(entry, source.read_bytes())
 
 
 def main(argv):
@@ -78,15 +88,17 @@ def main(argv):
         shutil.copyfile(readme, EN_DIR / 'README-EN.txt')
     print(f'EN folder: {len(shipped)} files shipped, {len(pending)} pending: {pending}')
     if '--zip' in argv:
-        out = ROOT / 'patch' / f'shigatsu-youka-en-patch-{date.today().isoformat()}.zip'
+        if pending:
+            sys.exit('REFUSING to package: ship-list files are missing')
+        out = Path(os.environ.get('SY_PATCH_DIR', str(ROOT / 'patch'))) / f'shigatsu-youka-en-patch-{datetime.now(timezone.utc).date().isoformat()}.zip'
         out.parent.mkdir(exist_ok=True)
         with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
             for rel in shipped:
-                z.write(WORK / rel, rel)
+                zip_entry(z, WORK / rel, rel)
             for extra in ('README-EN.txt', 'README-BEFORE-PLAYING.txt', 'README-ABOUT-JUMPSCARES.txt', 'Play (fullscreen).cmd'):
                 f = ROOT / 'patch' / extra
                 if f.exists():
-                    z.write(f, extra)
+                    zip_entry(z, f, extra)
         print('zip:', out, out.stat().st_size, 'bytes')
     return 0
 
