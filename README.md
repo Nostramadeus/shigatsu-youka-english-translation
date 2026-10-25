@@ -1,5 +1,7 @@
 # Shigatsu Youka (死月妖花～四月八日～) English translation
 
+**Contact:** [afrotankrob@gmail.com](mailto:afrotankrob@gmail.com)
+
 ![Translation status](status.svg)
 
 > ## 📖 Prefer to read it as a web page? No jumpscares, nothing moves.
