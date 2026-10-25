@@ -1,7 +1,7 @@
 ABOUT JUMPSCARES (unofficial English patch)
 
-The game has exactly ONE screamer-type jumpscare. It is not random. Here is how it works,
-so you can decide what to do about it. No story is spoiled below.
+This note describes the optional timed encyclopedia screamer. It is not random.
+It is NOT a promise that the rest of the game is free of sudden pictures or loud sounds.
 
 WHERE
   In the encyclopedia (the "D" / dictionary screen), tab "Events".
@@ -9,20 +9,22 @@ WHERE
   details say that no such incident exists.
 
 HOW IT TRIGGERS
-  It only fires if you STAY on that entry's page. A hidden counter runs while the entry
-  is open. After a while the screen turns red with a beep, and a few moments later a
-  face appears with a scream sound. Open the entry, read it, leave: nothing happens.
+  Finishing the story unit does not trigger it by itself. A hidden timer runs while
+  that particular entry is open. Waiting there can produce a red screen, a beep,
+  then a face and a scream. Someone can miss it without the English patch being broken.
 
-IF YOU WANT TO SEE IT SAFELY
-  Mute the game (or turn the volume down) and look away from the screen while you wait
-  on that entry. The face and the scream are the whole event; nothing else happens.
+IF YOU WANT TO AVOID IT
+  Do not linger on that entry or deliberately wait for the timer. You do not need to
+  trigger it to read the translation. This note does not ask you to test it.
 
-TURNING IT OFF FOR GOOD
+THE GAME'S OWN SWITCH
   After you have seen it once, a new chatter topic with Mika appears
   ("There was a super scary thing in the dictionary!"). Pick that topic and choose the
-  first answer. The game then never shows the screamer again. The patch does not change
-  this: editing the game's own switch could break saves, so it is left as the author made it.
+  first answer. That switch disables this encyclopedia effect. If it has never appeared,
+  the topic may not yet be available. This is NOT a global switch for every horror effect.
+  The English patch leaves these trigger conditions and saved settings unchanged.
 
 EVERYTHING ELSE
   The rest of the game has startling moments (screen shakes, sudden pictures, loud
-  sounds) like any horror visual novel, but no other screamer of this kind.
+  sounds). Other effects are not necessarily controlled by Mika's encyclopedia switch.
+  Source-code checks are not a full playthrough or a guarantee that no later scare exists.

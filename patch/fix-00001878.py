@@ -1,8 +1,24 @@
 """R1 2026-09-26: encyclopedia names are printed from the display column 表示名, the key column stays Japanese.
 See patch/dispcol.py. Run by tools/compile_en.sh (or directly: IN.lsb OUT.lsb; idempotent)."""
+import copy
 import os, sys
+from livemaker.lsb import LMScript
+from livemaker.lsb.core import OpeData, OpeDataType, Param, ParamType
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from dispcol import run
+
+PLACE_IDX = 834
+PLACE_HEIGHT = 'GetProp("テキスト矩形", 6) - 5'
+source = LMScript.from_file(sys.argv[1])
+if len(source.commands) <= PLACE_IDX:
+    sys.exit(f'fix-00001878: missing PLACE command {PLACE_IDX}')
+place = source.commands[PLACE_IDX]
+if place.type.name != 'MesNew' or str(place['Name']) != '"場所詳細"':
+    sys.exit(f'fix-00001878: unexpected PLACE target at idx {PLACE_IDX}')
+if str(place['PR_HEIGHT']) not in (PLACE_HEIGHT, '20000'):
+    sys.exit(f'fix-00001878: unexpected PLACE height {place["PR_HEIGHT"]}')
+
 SITES = [
     (750, 'PR_TEXT', '場所名', '表示名'),
     (751, 'PR_TEXT', '場所名', '表示名'),
@@ -22,9 +38,6 @@ run(SITES, 'fix-00001878')
 # becomes the script's own cursor-free lookup, the form idx 1630 uses:
 #     DBDirectGetStr("物リスト", "物名", @Sender, 0, 0, "表示名", "NG")
 # Only PR_TEXT of idx 1669 changes; the object name, every DBLocate / Exists / ImgNew path still use 物名 / @Sender.
-import copy
-from livemaker.lsb import LMScript
-
 TEXT_IDX, TEMPLATE_IDX = 1669, 1630
 WANT = 'DBDirectGetStr("物リスト", "物名", @Sender, 0, 0, "表示名", "NG")'
 dst = sys.argv[2]
@@ -46,3 +59,13 @@ else:
         sys.exit(f'fix-00001878: rebuilt idx {TEXT_IDX} reads {cap["PR_TEXT"]}')
     open(dst, 'wb').write(s.to_lsb())
     print('fix-00001878: item caption reads 表示名')
+
+place = s.commands[PLACE_IDX]
+if str(place['PR_HEIGHT']) == '20000':
+    print('fix-00001878: PLACE scroll buffer already fixed')
+else:
+    place['PR_HEIGHT'].entries = [OpeData(
+        type=OpeDataType.To, name='____arg',
+        operands=[Param(value=20000, type=ParamType.Int)])]
+    open(dst, 'wb').write(s.to_lsb())
+    print('fix-00001878: PLACE scroll buffer height 20000')

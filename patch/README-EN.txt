@@ -37,6 +37,11 @@ Notes
   - Other retained Japanese artwork includes title logos, a handwritten signature, unsolved
     puzzle pieces with an English solved page, and narrow edge-on or unreadable incidental art.
     These are documented exceptions, not a claim that every source image is textless.
+  - Follow-up UI repair: eight normal first-arc character totals are recalculated from
+    compiled English text; place descriptions use the same tall scroll buffer as other entries.
+    Other route/reference counters and some synopsis clipping remain under investigation.
+    Existing mid-scene saves may keep a cached old total until the scene is entered again.
+    This follow-up was checked without launching the game; it was not visually playtested.
   - No human has played the entire final English build. Please report unexpected Japanese
     with a screenshot at the translation repository's Issues page.
   - The two words on the window toolbar are part of the game engine and stay Japanese:
