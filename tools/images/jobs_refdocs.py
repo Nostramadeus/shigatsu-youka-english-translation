@@ -1716,7 +1716,7 @@ L16 = ("It pains my heart to have deceived that man. But it was necessary for us
        "happen again. May everlasting peace come to this land of Arata.")
 L182 = ("How great a reward will I get? Since that day the pounding in my chest will not settle, and I cannot sleep "
         "at night. It truly can only be called chance, but I knew that face. For years I had served him in the "
-        "Emperor's palace. But Lord Kiyomori's strength was plain as day. I went over to Lord Kiyomori's side and "
+        "Emperor's palace. But Lord Kiyomori's strength was clearer than looking at a fire. I went over to Lord Kiyomori's side and "
         "tried to strike down the rebels. In the end they escaped, but Lord Kiyomori declared publicly, \"The "
         "rebels have been put to death.\" Well, after being shown such a difference in strength, they would never "
         "again think of defying him. But perhaps I had not yet won Lord Kiyomori's trust, for to my regret I was "
@@ -1880,7 +1880,7 @@ CLASS54 = [
      "to address it.", [75, 326, 712, 446], {"style": "handwriting", "max_size": 18}),
     ("(2) Course of action", [71, 458, 420, 478], {"max_size": 15,
                                                 "erase": [[71, 436, 420, 456]]}),
-    ("I would like to visit the homes of Koji Kuji-kun and Kokona Hatanaka-san, who in particular have "
+    ("I would like to visit once the homes of Koji Kuji-kun and Kokona Hatanaka-san, who in particular have "
      "been seen bullying, and report the situation.", [75, 480, 712, 551],
      {"style": "handwriting", "max_size": 18}),
     ("(3) From the grade head", [71, 567, 420, 587], {"max_size": 15}),
@@ -2012,7 +2012,7 @@ GOTO61 = [
     "I can't help thinking there's something wrong with those 3 alone carrying out the bizarre murders "
     "that shook all of Japan 3 times.",
     "↓",
-    "Niimura-senpai's mother may have an accomplice (probably a man). "
+    "Niimura-senpai's mother may have an accomplice (probably the mastermind). "
     "But Senpai's mother's parents have already passed away, and she has no siblings. "
     "Then perhaps someone on Senpai's father's side of the family is helping......?",
 ]
@@ -2045,7 +2045,7 @@ GOTO62 = [
     "of a sick killer' and 'the daughter of a culprit in the Megasawa City case'. "
     "I see. She even keeps quiet about Eiichiro Niimura-san, so she would keep quiet about the Megasawa City case......",
     "↓",
-    "I see, the target was someone else. If Kogori isn't the culprit, the people who could be the remaining targets are",
+    "I see, the target was someone else. If the Kogori family isn't the culprit, the people who could be the remaining targets are",
 ]
 from refdoc_memo import flow as _memo_flow
 
