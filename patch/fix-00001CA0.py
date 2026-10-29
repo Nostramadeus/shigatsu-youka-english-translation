@@ -11,6 +11,7 @@ gets the same x2.5 as patch/fix-0000001C.py: 1000000 -> 2500000. (These six rows
 125k-206k EN, so the bar ran past 500 px in the original too; the swap keeps the original proportion.)
 Each site must match its original expression exactly, with the constant either 1000000 or 2500000, or the script
 refuses to write; an already-fixed file is accepted as is (idempotent).
+Second stage, game follow-up r2 2026-10-30: the completion percent at idx 1109-1160 without 32-bit overflow (end of file).
 """
 import sys
 from livemaker.lsb import LMScript
@@ -46,4 +47,34 @@ for idx, no in SITES.items():
         sys.exit('fix-00001CA0: idx %d is neither the original nor the fixed expression: %r' % (idx, norm))
     consts[0].value = NEW
 print('fix-00001CA0: unlock bar scale x2.5 at idx %s' % sorted(SITES))
+
+# ---- Game follow-up r2 (2026-10-30): R1 "Overall completion" without a 32-bit overflow -----------------------------
+# The True-Jusatsu unlock animation (label 00001CE9, idx 1109-1160) counts the completion from 進行率1 down to 進行率2 and
+# rebuilds 全体進行率 from the globals 終了テキスト数 / 総テキスト数1 / 総テキスト数2 that 0000001C idx 3707-3722 summed
+# (this script only reads them). Same X = 終了テキスト数 * 1000 / (総テキスト数n / 100) and the same exact overflow-free
+# rewrite as patch/fix-0000001C.py (see patch/exprfix.py permille_fixed).
+import os  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import exprfix as xf  # noqa: E402
+
+R1 = [  # (idx, command, original expression)
+    (1109, 'Calc', xf.r1_rate(xf.T1, '進行率1')),
+    (1112, 'Calc', xf.r1_rate(xf.T2, '進行率2')),
+    (1139, 'If', xf.r1_mod_lt(xf.T1, 100)),
+    (1141, 'Calc', xf.r1_frac_pad(xf.T2, '0', 10)),
+    (1143, 'Calc', xf.r1_frac_pad(xf.T1, '0', 10)),
+    (1144, 'Elseif', xf.r1_mod_lt(xf.T1, 10)),
+    (1146, 'Calc', xf.r1_frac_pad(xf.T2, '00', 100)),
+    (1148, 'Calc', xf.r1_frac_pad(xf.T1, '00', 100)),
+    (1149, 'If', xf.r1_over(xf.T1, 14)),
+    (1153, 'Calc', xf.r1_frac(xf.T2)),
+    (1155, 'Calc', xf.r1_frac(xf.T1)),
+    (1157, 'Calc', xf.r1_whole_pct(xf.T2)),
+    (1159, 'Calc', xf.r1_whole_pct(xf.T1)),
+    (1160, 'If', xf.r1_over(xf.T2, 15)),
+]
+done, already = xf.apply_sites(s, [(i, kind, None, shape, xf.permille_fixed(shape), None) for i, kind, shape in R1],
+                               'fix-00001CA0')
+print('fix-00001CA0: r2 completion percent without overflow at %d sites (%d rewritten, %d already fixed)'
+      % (len(R1), done, already))
 open(dst, 'wb').write(s.to_lsb())

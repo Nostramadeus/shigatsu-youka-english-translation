@@ -22,7 +22,9 @@ def _operands(parser):
             yield o
 
 
-def run(sites, tag):
+def run(sites, tag, extra=None):
+    """extra(script), optional (game follow-up r2, 2026-10-30): more guarded edits on the same loaded script, called
+    after every display site checked out and before the one write; it exits on a mismatch, so nothing is written."""
     src, dst = sys.argv[1], sys.argv[2]
     s = LMScript.from_file(src)
     errs, done, already = [], 0, 0
@@ -44,5 +46,7 @@ def run(sites, tag):
         done += 1
     if errs:
         sys.exit(f'{tag}: ' + '; '.join(errs))
+    if extra is not None:
+        extra(s)
     open(dst, 'wb').write(s.to_lsb())
     print(f'{tag}: {done} display sites repointed, {already} already fixed')

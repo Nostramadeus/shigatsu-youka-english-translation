@@ -11,6 +11,9 @@ The last test forgets the title, so a title wider than the person block is cut a
 becomes  width(date) < width(person) & width(title) < width(person)  so the card takes the widest of the
 three lines. Nothing else changes. The script checks the original expression first and refuses to write if it
 does not match (a re-extracted or already-fixed file), except that an already-fixed file is accepted as is.
+
+Later stages in this file: F9 bar scales (FIX1), counter repair 2026-10-29 (guarded bar sites), and game follow-up r2
+2026-10-30 (R1 completion percent without 32-bit overflow, R4 Int() on the two-route compare; see the end of the file).
 """
 import copy
 import sys
@@ -136,4 +139,48 @@ if len(eq) != 1 or [o.value for o in eq[0].operands] not in (['現行編名', '_
 eq[0].operands[0].value = '____0'          # "True Jusatsu Arc" == "True Jusatsu Arc": always true
 print('fix-0000001C: bar scales x2.5 (incl. %d guarded sites), idx 145 min width for every card: %s'
       % (len(GUARDED), s2.commands[145]))
+
+
+# ---- Game follow-up r2 (2026-10-30, consumer audit of the English totals; patch/exprfix.py does the checking) ----
+# R1 "Overall completion" (label 00001B30, idx 3707-3756). idx 3707-3722 sum the totals: 総テキスト数1 (arcs 1-5),
+# 総テキスト数2 (every arc) and 終了テキスト数 (finished scenes); nothing else in the game writes them (00001CA0 only
+# reads them). The percent is X = 終了テキスト数 * 1000 / (総テキスト数n / 100) in 0.001 % units. With English totals
+# (総テキスト数2 = 3,333,322) the product 終了テキスト数 * 1000 passes 2^31 once 2,147,484 characters are finished (64 %).
+# The engine's integer width is unverified, so every X is rewritten to the exact overflow-free form
+#     (E / D) * 1000 + (E % D) * 1000 / D,   D = 総テキスト数n / 100
+# which gives the same digits as the original for every E >= 0 (largest step about 10 x 総テキスト数n). Not chosen:
+# x250 / (T / 400) changes the last digits (T / 400 truncates differently), and dividing E, T1, T2 by 4 after the loop
+# needs new commands (jumps and other files address this script by command index).
+# R4 the two-route length bar on the hover card (idx 130) and the selection screen (idx 308, copy at idx 6041) picks the
+# shorter route with `If ナビ文字数 <= JCopy(ナビ文字数2, 2)`; both are STRING variables, so "11770" <= "9494" is true
+# (rows 32 and 119 have English totals of different digit counts). Both sides get Int(). The `!=` tests one command
+# earlier (idx 128/306/6039) stay as they are: string != is the same as number != for these canonical digit strings,
+# and there ナビ文字数2 is "" for every scene without a second route, so an Int() would run Int("") on every hover.
+import os  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import exprfix as xf  # noqa: E402
+
+R1 = [  # (idx, command, original expression)
+    (3732, 'If', xf.r1_mod_lt(xf.T1, 100)),
+    (3734, 'Calc', xf.r1_frac_pad(xf.T2, '0', 10)),
+    (3736, 'Calc', xf.r1_frac_pad(xf.T1, '0', 10)),
+    (3737, 'Elseif', xf.r1_mod_lt(xf.T1, 10)),
+    (3739, 'Calc', xf.r1_frac_pad(xf.T2, '00', 100)),
+    (3741, 'Calc', xf.r1_frac_pad(xf.T1, '00', 100)),
+    (3742, 'If', xf.r1_over(xf.T1, 14)),
+    (3746, 'Calc', xf.r1_frac(xf.T2)),
+    (3748, 'Calc', xf.r1_frac(xf.T1)),
+    (3750, 'Calc', xf.r1_whole(xf.T2)),
+    (3752, 'Calc', xf.r1_whole(xf.T1)),
+    (3753, 'If', xf.r1_over(xf.T2, 15)),
+]
+R4_SHAPE = [(11, '____0', 'JCopy', [xf.V('ナビ文字数2'), xf.I(2)]),
+            (16, '____1', None, [xf.V('ナビ文字数'), xf.V('____0')]),
+            (1, '____arg', None, [xf.V('____1')])]
+R4 = [130, 308, 6041]
+R2_SITES = ([(i, kind, None, shape, xf.permille_fixed(shape), None) for i, kind, shape in R1]
+            + [(i, 'If', None, R4_SHAPE, xf.int_compare_fixed(R4_SHAPE, 16), None) for i in R4])
+done, already = xf.apply_sites(s2, R2_SITES, 'fix-0000001C')
+print('fix-0000001C: r2 completion percent without overflow at %d sites, Int() compare at %d sites '
+      '(%d rewritten, %d already fixed)' % (len(R1), len(R4), done, already))
 open(dst, 'wb').write(s2.to_lsb())
