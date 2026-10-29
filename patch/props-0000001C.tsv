@@ -6,3 +6,9 @@
 # FIX1 2026-09-26 (F6, F15): tutorial body. PR_FONTCHANGEABLED unset = full-width advance for Latin; 0 = proportional
 # (in-game A/B test work/_fix1/shots/compare_ABCD.png; face and border are not the lever on this box).
 1123	PR_FONTCHANGEABLED	-	0
+# FIX3 2026-10-29 (friend report, synopsis clipped): the scenario-synopsis boxes (main body idx 3779, route boxes
+# 3773/3776) had PR_FONTCHANGEABLED unset = full-width advance for Latin, so English wrapped at ~2x the lines and ran
+# off the 500 px box ("New Route" cut). Same cure as idx 1123.
+3773	PR_FONTCHANGEABLED	-	0
+3776	PR_FONTCHANGEABLED	-	0
+3779	PR_FONTCHANGEABLED	-	0

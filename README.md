@@ -15,7 +15,7 @@
 
 **Story translation complete; reference repairs updated 2026-10-25.** The newest patch fixes reference documents and UI text missed in earlier builds. See the [release notes](https://github.com/Nostramadeus/shigatsu-youka-english-translation/releases/latest) for the exact scope and remaining limits.
 
-**UI follow-up (2026-10-25 r2).** Eight normal first-arc character totals are corrected, and place descriptions use the existing tall scroll-buffer layout. Other route/reference counters and some synopsis clipping remain under investigation. This follow-up uses nonvisual checks, not an in-game playtest.
+**Counter and layout follow-up (2026-10-29).** Every scene, hidden-route and reference character total shown by the game is now English (the "6743/4301 chars (156%)" plates), the scenario synopsis boxes no longer cut off their text, and the break-off dialog fits its English captions. Checked on the compiled data and with automated tests, not by an on-screen playthrough; see the release notes.
 
 **Known Japanese leftovers (on purpose).** Some original artwork remains: the original cropped reference previews, Japanese flashing red background text, title logos, a handwritten signature, unsolved puzzle pieces whose solved page is in English, and narrow edge-on or unreadable incidental art. The previews and red backgrounds retain the original game's artwork and atmosphere; readable reference documents are translated separately. In one screen, a "Gimmick" header such as 移動 (move) also stays Japanese because the game uses that text as file names; Help explains the mechanic in English. These exceptions are not evidence that every unmodified image is textless.
 
