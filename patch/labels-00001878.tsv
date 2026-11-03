@@ -32,7 +32,8 @@
   さわけん    みなかみし	
 佐波県西佐波市桜岡地区	Sakuraoka district, Nishisawa City, Sawa Prefecture
  さわけん  　 にしさわし　さくらおかちく	
-荒田集落	The Arata settlement	idx:643
+# lane1 2026-11-03: idx 669 (closed-settlement map view) sets the same 全景テキスト caption to 荒田集落 via SetProp 50; its text is never read back (the @Sender compares at 642/681/683/738 are object names and stay Japanese).
+荒田集落	The Arata settlement	idx:643|669
 あらたしゅうらく	
 # BUG: tutorial caption advance (2026-09-26). Same ruling as Q2363: the fixed-pitch faces make
 # English about twice as wide. PR_FONTNAME is a string, so it moves with the label map.
@@ -50,3 +51,8 @@
 アクシデント	Accidents	idx:1209
 その他	Other	idx:1212
 ヘルプ終了	End Help	idx:1215
+# lane1 2026-11-03 (follow-up): person page with no data for the selected arc, idx 2222
+# 人物解説 = "現在、" ++ 事典編 ++ "/" ++ フォーカス人物 ++ "のデータはありません。" (displayed text only; the name operand is
+# turned into the 人物名簿 表示名 by patch/fix-00001878.py).
+現在、	Currently, there is no data for 	idx:2222
+のデータはありません。	.	idx:2222

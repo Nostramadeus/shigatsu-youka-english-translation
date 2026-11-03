@@ -30,20 +30,20 @@ class FirstArcTotalsTests(unittest.TestCase):
     def load_script(self, name):
         return LMScript.from_file(BytesIO((ROOT / "work" / name).read_bytes()), call_name=name)
 
-    def test_known_compiled_route_totals(self):
+    def test_known_compiled_route_totals(self):  # 2026-11-03: 138/170/206/202 -3 per Central Park -> Chuo Park
         self.assertEqual(self.totals, {
-            "138": 13282, "145": 8065, "147": 5219, "205": 6985,
-            "162": 13290, "170": 12836, "206": 9325, "202": 10259,
+            "138": 13276, "145": 8065, "147": 5219, "205": 6985,
+            "162": 13290, "170": 12833, "206": 9319, "202": 10256,
         })
 
     def test_dead_legacy_block_excluded_and_all_live_blocks_included(self):
         script = self.load_script("000005C1.lsb")
-        self.assertEqual(block_count(script, 11, "000005C7"), 15417)
+        self.assertEqual(block_count(script, 11, "000005C7"), 15411)
         self.assertEqual(sum(block_count(script, *block) for block in ROUTES["138"].blocks),
                          self.totals["138"])
         script = self.load_script("0000062C.lsb")
         self.assertEqual([block_count(script, *block) for block in ROUTES["170"].blocks],
-                         [7224, 44, 5568])
+                         [7221, 44, 5568])  # 2026-11-03: -3 per "Central Park" -> "Chuo Park" (was 7224)
 
     def test_only_eight_count1_cells_change(self):
         repaired = repair_table(self.source, self.totals)

@@ -164,7 +164,7 @@ def main():
                         wi, wk = spec.split('.', 1)
                         if str(i) != wi.strip() or k != wk.strip():
                             continue
-                    elif str(i) != spec:
+                    elif str(i) not in [x.strip() for x in spec.split('|')]:  # idx:643|669 = either command (2026-11-03)
                         continue
                 elif ctx and ctx not in safe_str(expr):
                     continue

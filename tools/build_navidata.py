@@ -40,6 +40,7 @@ HARD GATES (exit 1)
 3. same row count as the original.
 """
 import csv
+import re
 import sys
 from pathlib import Path
 
@@ -79,6 +80,8 @@ def project(table, tmap):
         cells = (r + [''] * NCOL)[:NCOL]
         if n and cells[0] == TERMINATOR:
             continue
+        if not n:  # 2026-11-03 (lane 1): a tsv width declaration (概要 -> "概要 cha 120") is not part of this file's header
+            cells = [re.sub(r' (cha|chr) \d+$', '', c) for c in cells]
         if n:
             for c in KEISEN:
                 cells[c] = tmap.get(cells[c], cells[c])

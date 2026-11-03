@@ -23,7 +23,7 @@ from count_chars import blocks  # noqa: E402
 # single block (the three counters-audit.json fixtures), stale residual with a JP-empty block on the route,
 # three blocks across a message-box restyle, the player-name VAR row, and one not-consumed report row.
 SAMPLE = {'1', '37', '38', '46', '223', '295', '41'}
-FIXTURE_EN = {'1': 3322, '37': 1331, '38': 2464}   # counters-audit.json "reference_reproductions"
+FIXTURE_EN = {'1': 3322, '37': 1328, '38': 2464}   # counters-audit.json "reference_reproductions"; 37 was 1331 before Central Park -> Chuo Park (2026-11-03)
 
 
 def orig_counts():

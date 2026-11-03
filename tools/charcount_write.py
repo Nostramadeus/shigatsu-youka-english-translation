@@ -189,10 +189,13 @@ def merge_text(paths, rows, name):
     if len(erows) != len(rows):
         sys.exit('%s: tsv-en has %d rows, orig %d' % (name, len(erows), len(rows)))
     h, eh = rows[0].split('\t'), erows[0].split('\t')
-    if len(h) != len(eh) or any(a != b and not re.fullmatch(re.escape(a) + r' cha \d+', b) for a, b in zip(h, eh)):
+    # 2026-11-03 (lane 1): same header rule as tools/build_tsv.py (a width may be added or raised, " chr N" too:
+    # 実況/172 row 23 is 208 CP932 bytes against "テキスト chr 200"); the widened tsv-en header is what ships.
+    from build_tsv import compatible_header
+    if len(h) != len(eh) or any(not compatible_header(a, b) for a, b in zip(h, eh)):
         sys.exit('%s: tsv-en header differs from orig' % name)
     tcols = [i for i, x in enumerate(h) if x.split(' ')[0] == 'テキスト']
-    out = [rows[0]]
+    out = [erows[0]]
     for j in range(1, len(rows)):
         c, ec = rows[j].split('\t'), erows[j].split('\t')
         if len(c) != len(ec):

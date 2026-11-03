@@ -1973,7 +1973,7 @@ GOTO61 = [
     "・Our phones have a Friend GPS function.",
     "・Using these 2 functions, it's possible to know the other person's information and location with considerable accuracy.",
     "↓",
-    "But if what the culprit can learn isn't just sound and location, I can trap them. "
+    "But if the only information the culprit can learn is sound and location, I can also trap them. "
     "For example, stage a false incident in front of the phone.",
     "Putting that aside for now, first I should think about who planted this bug. "
     "Kogori-senpai's father gave her this phone 5 days ago as a gift for moving up a year and advancing to a new school. "

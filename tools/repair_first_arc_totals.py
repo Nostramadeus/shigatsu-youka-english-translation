@@ -33,7 +33,7 @@ class Route:
 
 ROUTES = {
     "138": Route("000005C1", 5869,
-                 "77c12baa7ed0d5e75c80d603fade00054b1187c956e333cf2c32910b1d62dcbc",
+                 "6c18d56e5efe3d8f14640954ea475f618daa5d36a86a66ccc0a8b5560c7ee403",
                  ((21, "0000242B"), (25, "line25"))),
     "145": Route("000005D6", 3642,
                  "5944453f09b2b334787557fec827b22c2ad7a2891f769b6fd5757193f39178bf",
@@ -48,15 +48,22 @@ ROUTES = {
                  "7da562bdc361468528df11a79b7f1fec20a71998b528775b8d0ccb603c50fd5d",
                  ((8, "00000620"),)),
     "170": Route("0000062C", 5422,
-                 "484b4e5b3b6bb61662d1d53a61a1a8b43b5498b1ae9fc883cc62174117ca399d",
+                 "71fc4ab30a49eda583ef22635414e9fdb28dde9ce1c49eb3e67d8c4ddd3f03c8",
                  ((11, "0000063A"), (15, "line15"), (19, "line19"))),
     "206": Route("00000641", 4057,
-                 "491af8e2c73f288f2a52c1bf3f7d632d7cfddd178f4a0891b92c064a2917d11c",
+                 "c6810a883acb7b0bfd94077acde883450ff4af93e07fb266b8d85652a9ac7734",
                  ((11, "0000064C"),)),
     "202": Route("00000656", 4472,
-                 "51996383945d991a0da583ccba5915ae87ce4422f3361e0ffc606ada7a676762",
+                 "42f47f43ed1f42fa09aaa37b57cbdfd05049ba8a462b17af4ced718fde3886b9",
                  ((11, "00000681"), (17, "0000185B"))),
 }
+
+
+# Route review 2026-11-03 (lane 1, Central Park -> Chuo Park): 000005C1, 0000062C, 00000641 and 00000656 were
+# recompiled with only that phrase changed (extraction diff old vs new = the phrase + style reference counts);
+# command count, TextIns indices and block labels are unchanged (block_count re-checks them). Digests above are the
+# new builds. PREVIOUS_EN = the totals of the previous builds, the values the table held before this change.
+PREVIOUS_EN = {"138": 13282, "170": 12836, "206": 9325, "202": 10259}
 
 
 def block_count(script, command_index, block_name):
@@ -134,7 +141,8 @@ def repair_table(data, totals):
         if number in seen or len(cells) != len(header):
             raise ValueError(f"duplicate or malformed scenario row: {number}")
         seen.add(number)
-        expected = (str(ROUTES[number].original_total), str(totals[number]))
+        expected = (str(ROUTES[number].original_total), str(totals[number]),
+                    str(PREVIOUS_EN.get(number, totals[number])))
         if (cells[count_column] not in expected or cells[branch_column] != "0"
                 or cells[core_column] != "0"):
             raise ValueError(f"unexpected scenario counts: {number}")

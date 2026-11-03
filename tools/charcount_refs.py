@@ -404,7 +404,7 @@ def positive_ids(lines, col):
     return out
 
 
-def run(table=TABLE, jp_store=JP_STORE, extract_root=EXTRACT, write=False, ids=None, report=None):
+def run(table=TABLE, jp_store=JP_STORE, extract_root=EXTRACT, write=False, ids=None, report=None, recount=False):
     """Returns (results, failures). results: [(ID, disp, lsb, stored JP, JP, EN, proof, status)]."""
     raw = Path(table).read_bytes().decode('utf-8')
     nl = '\r\n' if '\r\n' in raw else '\n'
@@ -419,6 +419,7 @@ def run(table=TABLE, jp_store=JP_STORE, extract_root=EXTRACT, write=False, ids=N
                 raise Refused('duplicate ID %s in %s' % (rid, table))
             rowidx[rid] = k
     store = read_store(Path(jp_store))
+    prior = set(store)
     covered = set(REFS) | set(NOT_CONSUMED)
     failures = []
     if ids is None:
@@ -468,7 +469,11 @@ def run(table=TABLE, jp_store=JP_STORE, extract_root=EXTRACT, write=False, ids=N
             if en <= 0:
                 raise Refused('empty English route')
             res[5] = str(en)
-            if cells[col] not in (str(stored), str(en)):
+            # --recount (lane 1, 2026-11-03): the shipped English text changed (Central Park -> Chuo Park), so a row
+            # this script already converted holds an OLDER English total. Accepted only for rows whose JP is in the
+            # JP store (= written by an earlier --write of this script), never for a cell nobody converted.
+            old_en = recount and rid in prior and cells[col].strip().isdigit()
+            if cells[col] not in (str(stored), str(en)) and not old_en:
                 raise Refused('cell holds %s, expected JP %d or EN %d' % (cells[col], stored, en))
             res[6] = ('stale residual +%d' % STALE_OK[rid]) if rid in STALE_OK else 'exact-unique'
             if want:
@@ -526,10 +531,12 @@ def main(argv=None):
     ap.add_argument('--extract-dir', type=Path, default=EXTRACT)
     ap.add_argument('--ids', help='comma-separated reference IDs (default: all)')
     ap.add_argument('--report', type=Path, help='write a per-row TSV report here')
+    ap.add_argument('--recount', action='store_true',
+                    help='accept an older English total in rows already converted (after a text change)')
     a = ap.parse_args(argv)
     ids = set(a.ids.split(',')) if a.ids else None
     try:
-        _, failures = run(a.table, a.jp_store, a.extract_dir, a.write, ids, a.report)
+        _, failures = run(a.table, a.jp_store, a.extract_dir, a.write, ids, a.report, a.recount)
     except Refused as e:
         print('REFUSED:', e)
         return 2

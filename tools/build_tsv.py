@@ -1,8 +1,9 @@
 """Convert a UTF-8 translated data table tsv-en/<name>.tsv into the CP932 file the game loads,
 work/データベース/<name>.tsv, after checking it against orig/データベース/<name>.tsv.
     uv run tools/build_tsv.py 注意.tsv [more.tsv ...]
+    uv run tools/build_tsv.py --check <names>     (all checks, writes nothing)
 Checks (all hard): same row count, same column count per row, header row identical (a column may gain " cha N", FIX2), every cell CP932-encodable,
-no cell longer than the header's "cha N" cap for that column, a cell that was empty/"0" in the source stays so.
+no cell longer than its column width in CP932 BYTES (" cha N" / " chr N"; no declaration = 80), a cell that was empty/"0" in the source stays so.
 The translated file keeps the literal backslash-n sequences the source uses for line breaks.
 """
 import re
@@ -12,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DB = 'データベース'
 EXTRA_COLS = ('表示名',)   # R1 2026-09-26: allowed trailing display columns (see the header check)
+CHECK_ONLY = False   # 2026-11-03: --check
 
 
 def load(p, enc):
@@ -20,13 +22,25 @@ def load(p, enc):
     return t.split(nl), nl
 
 
+UNTYPED_CAP = 80   # FIX2 2026-09-26: the engine cuts a column with no width declaration at 80 bytes
+
+
 def compatible_header(source, translated):
+    """A header cell may stay as it is, gain " cha N", or raise the N of its own " cha N" / " chr N" (2026-11-03:
+    chr too; 実況 tables declare " chr 200"). The type word and the column name never change."""
     if source == translated:
         return True
-    source_width = re.fullmatch(r'(.*) cha (\d+)', source)
+    source_width = re.fullmatch(r'(.*) (cha|chr) (\d+)', source)
     base = source_width.group(1) if source_width else source
-    target_width = re.fullmatch(re.escape(base) + r' cha (\d+)', translated)
-    return target_width is not None and (source_width is None or int(target_width.group(1)) >= int(source_width.group(2)))
+    kind = source_width.group(2) if source_width else 'cha'
+    target_width = re.fullmatch(re.escape(base) + ' ' + kind + r' (\d+)', translated)
+    return target_width is not None and (source_width is None or int(target_width.group(1)) >= int(source_width.group(3)))
+
+
+def cell_cap(header):
+    """Byte width of a column: N of " cha N" / " chr N" (any case), else the untyped 80-byte cut."""
+    m = re.search(r' (cha|chr) (\d+)$', header, re.IGNORECASE)
+    return int(m.group(2)) if m else UNTYPED_CAP
 
 
 def main(names):
@@ -53,16 +67,19 @@ def main(names):
         if len(e_hdr) - extra != len(hdr) or any(
                 not compatible_header(a, b) for a, b in zip(hdr, e_hdr)):
             errs.append('header row changed')
-        caps = []
-        for h in (e_hdr or hdr):
-            m = re.search(r' cha (\d+)$', h)
-            caps.append(int(m.group(1)) if m else None)
+        # 2026-11-03 (friend report: encyclopedia "...Megasawa Cit"): the width is in CP932 BYTES, not characters.
+        # The old check counted characters, so a 1591-character cell with two 2-byte quotes (1594 bytes) passed
+        # a 1592 cap and the game cut the last 2 bytes. A column with no declaration is cut at UNTYPED_CAP bytes;
+        # that only fails a cell whose own Japanese source fitted (some author cells already exceed it).
+        caps = [cell_cap(h) for h in (e_hdr or hdr)]
+        s_caps = [cell_cap(h) for h in hdr]
         for r, (sr, er) in enumerate(zip(s_rows, e_rows)):
             sc, ec = sr.split('\t'), er.split('\t')
             if extra and len(ec) == len(sc) + extra:
                 for c, b in enumerate(ec[len(sc):], len(sc)):
                     try:
-                        b.encode('cp932')
+                        if r and len(b.encode('cp932')) > caps[c]:
+                            errs.append(f'row {r} col {c}: {len(b.encode("cp932"))} bytes > cap {caps[c]}')
                     except UnicodeEncodeError as ex:
                         errs.append(f'row {r} col {c}: not CP932: {ex.object[ex.start:ex.end]!r}')
                 ec = ec[:len(sc)]
@@ -76,13 +93,21 @@ def main(names):
                     b.encode('cp932')
                 except UnicodeEncodeError as ex:
                     errs.append(f'row {r} col {c}: not CP932: {ex.object[ex.start:ex.end]!r}')
-                if c < len(caps) and caps[c] and len(b) > caps[c]:
-                    errs.append(f'row {r} col {c}: {len(b)} chars > cap {caps[c]}')
+                if r and c < len(caps):
+                    try:
+                        nb, na = len(b.encode('cp932')), len(a.encode('cp932'))
+                    except UnicodeEncodeError:
+                        continue  # reported above
+                    if nb > caps[c] and not (na > s_caps[c] and nb <= na):
+                        errs.append(f'row {r} col {c}: {nb} bytes > cap {caps[c]}')
         if errs:
             bad += 1
             print(f'{name}: {len(errs)} errors')
             for e in errs[:40]:
                 print('  ', e)
+            continue
+        if CHECK_ONLY:
+            print(f'{name}: ok (check only, nothing written)')
             continue
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(s_nl.join(e_rows).encode('cp932'))
@@ -92,4 +117,5 @@ def main(names):
 
 
 if __name__ == '__main__':
-    sys.exit(main(sys.argv[1:]))
+    CHECK_ONLY = '--check' in sys.argv   # 2026-11-03: run every check, write nothing
+    sys.exit(main([a for a in sys.argv[1:] if a != '--check']))
