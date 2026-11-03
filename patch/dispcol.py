@@ -231,3 +231,56 @@ def display_var(sites, tag):
             parser.entries = new + ents
             print(f'{tag}: display site idx {idx}: {parser}')
     return hook
+
+
+# Lane 1, 2026-11-03 (keyaudit2 C1/C2/C3). Two more shapes of the same 人物名簿 名前 <-> 表示名 mapping:
+#  key_at_dblocate: DBLocate("名前", X) where X holds the ENGLISH display name (a reference viewer, a save-slot
+#      person) -> DBLocate("名前", DBDirectGetStr("人物名簿", "表示名", X, 0, 0, "名前", X)). A name that is not a
+#      表示名 comes back unchanged, so the locate fails exactly where it failed in Japanese.
+#  wrap_result: a Caption whose whole PR_TEXT is a person KEY (a table name) -> its 表示名.
+def _lit_values(ents):
+    return {e.name: e.operands[0].value for e in ents
+            if e.type.name == 'To' and e.name.startswith('____') and len(e.operands) == 1
+            and isinstance(getattr(e.operands[0], 'value', None), str) and e.operands[0].type.name == 'Str'}
+
+
+def key_at_dblocate(sites, tag):
+    def hook(s):
+        from livemaker.lsb.core import OpeFuncType
+        for idx, prop in sites:
+            parser = s.commands[idx][prop]
+            ents = list(parser.entries)
+            if _has_lookup(ents):
+                print(f'{tag}: DBLocate site idx {idx} already fixed')
+                continue
+            lit = _lit_values(ents)
+            loc = [k for k, e in enumerate(ents) if e.func == OpeFuncType.DBLocate and len(e.operands) == 2
+                   and lit.get(e.operands[0].value) == '名前']
+            if len(loc) != 1:
+                sys.exit(f'{tag}: idx {idx} {prop}: expected one DBLocate("名前", ...), found {len(loc)}: {parser}')
+            k = loc[0]
+            key = ents[k].operands[1].value
+            new, res = _lookup(_temps_max(ents) + 1, key, '表示名', '名前')
+            ents[k].operands[1].value = res
+            parser.entries = ents[:k] + new + ents[k:]
+            print(f'{tag}: DBLocate site idx {idx}: {parser}')
+    return hook
+
+
+def wrap_result(sites, tag):
+    def hook(s):
+        from livemaker.lsb.core import ParamType
+        for idx, prop in sites:
+            parser = s.commands[idx][prop]
+            ents = list(parser.entries)
+            if _has_lookup(ents):
+                print(f'{tag}: display site idx {idx} already fixed')
+                continue
+            last = ents[-1]
+            if last.name != '____arg' or len(last.operands) != 1 or last.operands[0].type != ParamType.Var:
+                sys.exit(f'{tag}: idx {idx} {prop}: unexpected shape {parser}')
+            new, res = _lookup(_temps_max(ents) + 1, last.operands[0].value, '名前', '表示名')
+            last.operands[0].value = res
+            parser.entries = ents[:-1] + new + [last]
+            print(f'{tag}: display site idx {idx}: {parser}')
+    return hook

@@ -9,7 +9,7 @@ English references run about 2.3x the Japanese length, so both get x2.5: 200000 
 Each site must hold its original expression with the constant either the original or the fixed value."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from dispcol import run
+from dispcol import run, key_at_dblocate, wrap_result
 import exprfix as xf
 
 SITES = [
@@ -31,6 +31,12 @@ R2 = [
 def r2(script):
     done, already = xf.apply_sites(script, R2, 'fix-0000001E')
     print('fix-0000001E: r2 reference length bar x2.5 at idx 372/373 (%d rewritten, %d already fixed)' % (done, already))
+    # Lane 1 2026-11-03 (keyaudit2): C1 the reference viewer name (English, from リファレンスデータベース 閲覧人物) is
+    # mapped back to the 人物名簿 key before DBLocate, so the viewer-name colour is found again (idx 609/610 detail
+    # panel, 1567/1568 partial comment). C3 the "people unlocked" banner (idx 2437 DBGetActive(), idx 2531
+    # データベース名 = the person table name, a key) prints the 人物名簿 表示名.
+    key_at_dblocate([(609, 'Calc'), (610, 'Calc'), (1567, 'Calc'), (1568, 'Calc')], 'fix-0000001E')(script)
+    wrap_result([(2437, 'PR_TEXT'), (2531, 'PR_TEXT')], 'fix-0000001E')(script)
 
 
 run(SITES, 'fix-0000001E', extra=r2)

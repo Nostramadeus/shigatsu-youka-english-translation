@@ -140,6 +140,31 @@ def transform(table, m, cols, datecols=()):
     return out
 
 
+# keyaudit2 C6 (lane 1, 2026-11-03): the navigator's reference cards. 0000001C idx 686-732 set rNum to one of these 20
+# reference IDs (the card's thumbnail is rr<rNum>.gal, i.e. that reference), and the hover caption at idx 737 prints
+# 二元配列[rNum] = FILE LINE rNum (line 0 = header; checked against orig: for 9 of the 20 IDs the Japanese title on
+# line rNum is reference ID rNum's title, on line rNum+1 none, on line rNum-1 none). The other lines are stale and
+# showed the wrong document even in Japanese. Decision (orchestrator): title, viewer, viewed date and format of these
+# 20 lines come from the shipped English reference database row with that ID, so the caption describes the
+# reference the thumbnail shows. The other 80 lines are never read and stay as the value maps leave them.
+CARD_IDS = (95, 53, 19, 45, 65, 66, 72, 73, 69, 76, 75, 90, 33, 48, 32, 84, 51, 71, 23, 97)
+CARD_COLS = {0: 'タイトル', 6: '閲覧人物', 7: '閲覧年月日', 9: '形式'}
+
+
+def fill_cards(table):
+    en = rd(EN, '\t', 'utf-8')
+    hdr = en[0]
+    by_id = {r[hdr.index('ID')]: r for r in en[1:] if len(r) == len(hdr)}
+    out = [list(r) for r in table]
+    for rid in CARD_IDS:
+        row = by_id.get(str(rid))
+        if row is None or rid >= len(out):
+            raise SystemExit('fill_cards: reference ID %d missing (tsv row or txt line)' % rid)
+        for c, col in CARD_COLS.items():
+            out[rid][c] = row[hdr.index(col)]
+    return out
+
+
 def encode(table):
     return ('\r\n'.join(','.join(r) for r in table) + '\r\n').encode('cp932')
 
@@ -179,6 +204,7 @@ def main(argv):
         return 0
 
     out = transform(table, m, TRANSLATE, DATE_COLUMNS)
+    out = fill_cards(out)
 
     bad = hazards(out)
     if bad:
