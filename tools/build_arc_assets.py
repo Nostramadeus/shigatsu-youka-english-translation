@@ -73,6 +73,11 @@ def main():
         dst.mkdir(parents=True, exist_ok=True)
         for jp, en in pairs:
             s = src / (jp + suf)
+            # 2026-11-05: a picture the patch re-letters under its JP name (tools/images/arc_logo_en.py ->
+            # work/グラフィック/メニュー/右クリック/呪殺編ロゴ.gal, the encyclopedia dropdown entry) is also the source of
+            # the English-named copy (the selected-arc logo), so both show the same English picture.
+            if (dst / (jp + suf)).exists():
+                s = dst / (jp + suf)
             if not s.exists():
                 absent.append(str(s.relative_to(ROOT / 'work' / 'images' / 'gal')))
                 continue
