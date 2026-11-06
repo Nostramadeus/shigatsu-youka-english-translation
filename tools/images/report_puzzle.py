@@ -112,6 +112,26 @@ def ratio_apply(en_rgb, jp_rgb, jp_rgb_ref):
     return np.clip(out, 0, 255)
 
 
+def _blur_rgb(a, k):
+    if k <= 1:
+        return a.astype(np.float32)
+    return np.stack([_blur(a[..., c].astype(np.float32), k) for c in range(3)], axis=2)
+
+
+def overlay_apply(crop_en, p_jp, crop_jp, mask):
+    """A piece drawn OVER an opaque base (rrr268, 2026-11-06: the base has no holes; each piece is a soft-edged, blurred disc of the
+    same page with its own white glowing stroke on top). The ratio method would drop that stroke (bright marks are masked as JP
+    strokes). Here the piece is rebuilt ADDITIVELY: English crop blurred like the piece + (JP piece - blurred JP crop) = the fade, the
+    blur and the stroke carried over, the page content swapped. With crop_en == crop_jp the result is exactly the JP piece."""
+    best_k, best_d = 1, None
+    for k in (1, 3, 5, 7, 9, 11, 13, 15):
+        d = float(np.abs(p_jp - _blur_rgb(crop_jp, k))[mask].mean()) if mask.any() else 0.0
+        if best_d is None or d < best_d - 0.05:
+            best_k, best_d = k, d
+    out = _blur_rgb(crop_en, best_k) + (p_jp - _blur_rgb(crop_jp, best_k))
+    return np.clip(out, 0, 255), best_k, best_d
+
+
 def cut(rid, src_full, out_dir, write_gals):
     jp_dir = PNG + "rrr%d/" % rid
     full_en = rgba(src_full)
@@ -130,7 +150,13 @@ def cut(rid, src_full, out_dir, write_gals):
         crop_en = full_en[y:y + h, x:x + w, :3]
         crop_jp = full_jp[y:y + h, x:x + w, :3]
         p = np.zeros_like(p_jp)
-        p[..., :3] = ratio_apply(crop_en, p_jp[..., :3], crop_jp)
+        mask = p_jp[..., 3] > 128
+        under = base_jp[y:y + h, x:x + w, 3] > 128
+        if mask.any() and (under[mask].mean() > 0.99):
+            p[..., :3], k, d = overlay_apply(crop_en, p_jp[..., :3], crop_jp, mask)
+            print("  rrr%d/%d: overlay piece (base opaque under it), blur %d, fit %.2f" % (rid, i, k, d))
+        else:
+            p[..., :3] = ratio_apply(crop_en, p_jp[..., :3], crop_jp)
         p[..., 3] = p_jp[..., 3]
         save(p, out_dir + "%d.png" % i, p_jp)
         made.append(str(i))

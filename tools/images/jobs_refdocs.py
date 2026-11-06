@@ -7902,3 +7902,445 @@ PZ174 = _pz1bold(PZ174 + [("", [40, 985, 735, 1290], {"mask_color": [35, 200, 0,
                                                        "erase": [[40, 985, 735, 1290]]})])
 JOBS += [_pz1job(174, _rbjob(174, "", _pz1body(L174, [0, 60, 0, 35, 0, 35]), color="#0c0000", mask_color=[0, 60, 0, 35, 0, 35]),
                  PZ174, "report 174 unsolved sheet (parchment page + two red scrawls)")]
+
+# IMAGESPZ2-PZ5 2026-11-06 (notes/IMAGESPZ2-BRIEF.md, lane PZ5; rulings notes/v2/_tmp/rulings-IMAGESPZ2.md; log
+# notes/v2/_tmp/tl-log-IMAGESPZ2-PZ5.md): the UNSOLVED report sheets rrr<ID>/_full.gal of reports 171 and 268 (base sheet + pieces
+# composed; tools/images/report_puzzle.py cuts 土台 / N / Na out of the render). Same pattern as the IMAGESPZ-PZ1 block (its helpers
+# _pz1body / _pz1s / _pz1job / _pz1bold are reused): body = the shipped report job's lines verbatim with a sheet-specific glyph mask + ink;
+# scrawl = style handwriting, one English line per JP row in that row, erased with a mask on the stroke colour, set last (on top).
+# ---- 171 (800x729): the shipped L171 page on dark olive-green paper with rust stains (body unmirrored, glyph cores ~9,14,0: mask
+# [0,50,0,50,0,40] catches 0.99-1.00 of them) + a translucent maroon brush scrawl, 5 rows, katakana: ALL CAPS (ruling 2). Rows 1-2 =
+# one sentence split over the two rows; one common size 64 (row 1 is the widest); every row drawn bold (_pz1bold d=1, 4 draws).
+# Checker round 1 (IMGCHECKPZ2): the JP brush is TRANSLUCENT (the body print shows through it). Opacity sampled (opac.py: stroke over
+# paper vs stroke over the body glyphs): a 0.61 / 0.68 / 0.73 for rows 1-2 / 3-4 / 5, pure brush colour (43,0,1) / (48,0,0) / (54,0,0).
+# The English uses that colour with a per-draw alpha a' = 1 - (1 - a) ** (1 / 4), so the 4 bold draws build up to a in the stroke core
+# (batch.py composites each draw's RGBA layer). " R" pairs get a no-break space first: Ink Free's R overhangs the plain space by 12 px.
+_PZ5NB = chr(160)   # no-break space
+_PZ5_171B = [0, 50, 0, 50, 0, 40]
+_PZ5_171M = [30, 130, 0, 55, 0, 45]
+PZ5_171 = _pz1bold([_pz1s(t, bb, ink, _PZ5_171M, 64, x1=x1) for t, bb, ink, x1 in (
+    ("IF ANYONE SEES THIS", [76, 36, 768, 163], "#2b000135", 795),
+    ("MEMO, LET ME KNOW", [62, 190, 781, 316], "#2b000135", 795),
+    ("MY " + _PZ5NB + "ROOM", [40, 350, 775, 485], "#3000003f", 795),
+    ("1105", [48, 496, 285, 586], "#3000003f", 290),
+    ("LET'S " + _PZ5NB + "RUN", [285, 550, 728, 690], "#36000047", 795))], d=1)
+JOBS += [_pz1job(171, _rbjob(171, "", _pz1body(L171, _PZ5_171B), color="#0a0e01", mask_color=_PZ5_171B), PZ5_171,
+                 "report 171 unsolved sheet (olive-green page + maroon brush scrawl)")]
+# ---- 268 (800x4052, no holes: the 15 pieces lie on top of an opaque base; rulings 268 ruling): the shipped REP268 page on near-black
+# brown paper (body unmirrored, reads normally: typeset) + an amber brush scrawl, 43 level rows in 6 paragraphs (first person 俺).
+# Body: REP268 verbatim, same boxes; glyph mask = max channel <= the band's threshold (sep.py per band: the largest that takes <= ~4 %
+# of the paper; the page lightens downward), ink = the JP glyph cores; the white-on-black diagram labels are dim grey on this sheet
+# (label px ~32-52): flat plates keep #020101 with the English in that grey, the two rotated arrow labels are erased with a dim-grey
+# mask. Scrawl: amber mask [105,255,70,210,20,150] (0 px outside the rows on the mask view), colour = the stroke cores (75th pct),
+# each paragraph split over its JP rows (work/images/_c/pz2-PZ5/part268.py balanced partition), one common size 32, drawn bold (d=1).
+_PZ5_268BANDS = [(0, 90, 35), (90, 1000, 35), (1000, 1700, 40), (1700, 2700, 45), (2700, 4100, 50)]
+_PZ5_268G = "#3a342f"
+
+
+def _pz5body268(lines, bands):
+    """REP268 lines: plain lines get the band's dark glyph mask; flat plates keep their plate and take the dim label grey;
+    the inpaint arrow labels get a dim-grey mask and the same grey."""
+    out = []
+    for t, b, o in lines:
+        o = dict(o)
+        if o.get("method") == "flat":
+            o["color"] = _PZ5_268G
+        elif o.get("method") == "inpaint":
+            o["mask_color"] = [25, 110, 20, 100, 15, 90]
+            o["color"] = _PZ5_268G
+        elif "mask_color" not in o:
+            eb = o.get("erase") or [b]
+            yc = (eb[0][1] + eb[0][3]) / 2.0
+            thr = [v for y0, y1, v in bands if y0 <= yc < y1][0]
+            o["mask_color"] = [0, thr, 0, thr, 0, thr]
+        out.append((t, b, o))
+    return out
+
+
+_PZ5_268M = [105, 255, 70, 210, 20, 150]
+_PZ5_268C = "#ae8a59"
+_s268p5 = 32
+PZ5_268S = _pz1bold([
+    _pz2flat("I should be all right now that I've run this", 80, 112, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 86, 727, 138]], grow=5),
+    _pz2flat("far. I escaped with the guy from " + _PZ5NB + "Room 1015.", 81, 191, _s268p5, _PZ5_268C, _PZ5_268M, [[73, 164, 735, 218]], grow=5),
+    _pz2flat("Like me, he was a believer in the Holy Cerejeira", 80, 271, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 244, 733, 298]], grow=5),
+    _pz2flat("Church. But that's all in the past. By taking", 80, 350, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 321, 727, 379]], grow=5),
+    _pz2flat("part in that experiment, I was finally able to", 79, 430, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 402, 715, 459]], grow=5),
+    _pz2flat("see the dark side of the Holy Cerejeira Church.", 75, 511, _s268p5, _PZ5_268C, _PZ5_268M, [[67, 485, 613, 538]], grow=5),
+    _pz2flat("No, at first it was a great honor for me, and for", 79, 671, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 645, 715, 698]], grow=5),
+    _pz2flat("Hatanaka and the others too. Being able to use", 80, 751, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 724, 754, 778]], grow=5),
+    _pz2flat("Droga, a sacred implement, is the highest honor", 75, 829, _s268p5, _PZ5_268C, _PZ5_268M, [[67, 800, 749, 858]], grow=5),
+    _pz2flat("for a member of the sect. But what came of it?", 79, 909, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 880, 737, 939]], grow=5),
+    _pz2flat("At first we did feel Droga's effects firsthand", 74, 989, _s268p5, _PZ5_268C, _PZ5_268M, [[66, 960, 720, 1019]], grow=5),
+    _pz2flat("and were elated, but little by little the", 77, 1071, _s268p5, _PZ5_268C, _PZ5_268M, [[69, 1044, 735, 1098]], grow=5),
+    _pz2flat("experiments started getting strange. We knew", 80, 1150, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 1121, 756, 1179]], grow=5),
+    _pz2flat("from the start that it was an experiment, but", 79, 1231, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 1204, 748, 1258]], grow=5),
+    _pz2flat("from a certain point on, its inhumane side began", 76, 1312, _s268p5, _PZ5_268C, _PZ5_268M, [[68, 1286, 726, 1338]], grow=5),
+    _pz2flat("to stand out. Well, now that it's come to this,", 80, 1391, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 1365, 747, 1417]], grow=5),
+    _pz2flat("I'm lucky just to have gotten away this far.", 80, 1470, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 1442, 310, 1499]], grow=5),
+    _pz2flat("That evil cult must be wiped out. First, I'll", 79, 1632, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 1607, 742, 1658]], grow=5),
+    _pz2flat("make everything about this evil cult public", 79, 1711, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 1683, 713, 1739]], grow=5),
+    _pz2flat("to the brethren who haven't taken part in", 74, 1791, _s268p5, _PZ5_268C, _PZ5_268M, [[66, 1765, 736, 1818]], grow=5),
+    _pz2flat("the experiments yet. They probably won't be", 82, 1869, _s268p5, _PZ5_268C, _PZ5_268M, [[74, 1841, 737, 1898]], grow=5),
+    _pz2flat("convinced right away, but even if it takes years,", 78, 1951, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 1924, 760, 1978]], grow=5),
+    _pz2flat("that evil cult must be destroyed. And then", 78, 2031, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 2004, 724, 2059]], grow=5),
+    _pz2flat("there's this Kichizo Mikogami or whatever, the", 79, 2109, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 2081, 705, 2138]], grow=5),
+    _pz2flat("current " + _PZ5NB + "Representative who sprang up out of", 78, 2190, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 2162, 753, 2218]], grow=5),
+    _pz2flat("nowhere. Because that guy started talking about", 78, 2272, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 2246, 734, 2299]], grow=5),
+    _pz2flat("unraveling Droga scientifically, we became guinea", 74, 2350, _s268p5, _PZ5_268C, _PZ5_268M, [[66, 2321, 732, 2379]], grow=5),
+    _pz2flat("pigs. Well, I suppose he really did want to unravel", 80, 2431, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 2404, 747, 2458]], grow=5),
+    _pz2flat("it. But the way he went about it is no good.", 80, 2511, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 2484, 484, 2538]], grow=5),
+    _pz2flat("One thing bothers me, though. The Kichizo", 79, 2670, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 2642, 735, 2698]], grow=5),
+    _pz2flat("Mikogami I know was a man of both virtue", 78, 2750, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 2722, 752, 2778]], grow=5),
+    _pz2flat("and learning. If that experiment put the", 80, 2831, _s268p5, _PZ5_268C, _PZ5_268M, [[72, 2802, 728, 2860]], grow=5),
+    _pz2flat("brethren in danger, he would step in to stop it.", 78, 2910, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 2882, 750, 2938]], grow=5),
+    _pz2flat("Looks like Kichizo Mikogami has changed too.", 78, 2992, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 2966, 503, 3018]], grow=5),
+    _pz2flat("No, one thing that bothers me is that the", 78, 3150, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 3123, 721, 3178]], grow=5),
+    _pz2flat("experiment facilities themselves were all state of", 74, 3229, _s268p5, _PZ5_268C, _PZ5_268M, [[66, 3199, 768, 3259]], grow=5),
+    _pz2flat("the art, and it was even possible to mass-produce", 82, 3309, _s268p5, _PZ5_268C, _PZ5_268M, [[74, 3280, 698, 3338]], grow=5),
+    _pz2flat("Droga for the experiments. Droga should", 79, 3390, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 3362, 737, 3418]], grow=5),
+    _pz2flat("have been rare for the sect, so how could they", 79, 3468, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 3439, 738, 3498]], grow=5),
+    _pz2flat("mass-produce it? In the first place, even for the", 78, 3551, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 3524, 720, 3578]], grow=5),
+    _pz2flat("Holy Cerejeira Church, would there really be enough", 78, 3630, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 3602, 724, 3658]], grow=5),
+    _pz2flat("money for facilities and research on that scale?", 79, 3709, _s268p5, _PZ5_268C, _PZ5_268M, [[71, 3681, 687, 3738]], grow=5),
+    _pz2flat("Is some mysterious power at work...?", 78, 3871, _s268p5, _PZ5_268C, _PZ5_268M, [[70, 3845, 635, 3898]], grow=5),
+], d=1)
+# checker round 1 (IMGCHECKPZ2): faint JP date fragments right of the English date (anti-aliased rims above the band's max-channel 50):
+# one more erase-only pass over the whole JP date row, max channel <= 62, grow 3 (runs with the other erases, before any text is set).
+_PZ5_268DATE = ("", [10, 3963, 345, 4003], {"mask_color": [0, 62, 0, 62, 0, 62], "mask_grow": 3, "erase": [[10, 3963, 345, 4003]]})
+JOBS += [_pz1job(268, _r1job(268, _pz5body268(REP268 + [_PZ5_268DATE], _PZ5_268BANDS), "", "#160d05"), PZ5_268S,
+                 "report 268 unsolved sheet (near-black page + amber brush scrawl, 43 rows)")]
+# end IMAGESPZ2-PZ5
+
+# IMAGESPZ2-PZ6 2026-11-06 (notes/IMAGESPZ2-BRIEF.md, lane PZ6; rulings notes/v2/_tmp/rulings-IMAGESPZ2.md; log
+# notes/v2/_tmp/tl-log-IMAGESPZ2-PZ6.md): the UNSOLVED report sheets rrr272 / 276 / 273 / 270 _full.gal (base sheet + pieces
+# composed; tools/images/report_puzzle.py cuts them afterwards). Body = the shipped REP<ID> lines VERBATIM (same boxes, same helper
+# _r2job, same ink) with erase=[], because the body is erased beforehand by work/images/_c/pz2-PZ6/pre.py (the pre274.py pattern:
+# the shipped _RMASK takes the whole dark sheet, so the glyph mask comes from the JP finished page 全体.png through _RMASK, limited to
+# the shipped erase boxes; the scrawl strokes (stroke-colour mask, grown) are erased in the same pass in the body boxes and the
+# scrawl rows). So every puz job of this block CHAINS from the pre.py output: always run pre.py <ID> ... right before
+# `runpz2-PZ6.sh puz<ID>-full`, then `--previews-only` (preview = JP original | result). The exact pre.py command is in the
+# comment above each job. Scrawl lines last (drawn on top, ruling 4): Ink Free "handwriting", one English line per JP row,
+# left-aligned at the JP row's left edge, one size per sheet (work/images/_c/pz2-PZ6/part.py balanced split).
+# ---- 272 (800x2047, purple / black grunge): pale blue-grey brush with a dark outline, 16 JP rows in 3 paragraphs, JP glyphs ~48 px.
+# Fill colour only (cores 151,163,182): batch.py "lines" mode has a job-level outline only, which would also outline the body.
+# pre.py 272 90 255 95 255 100 255 5 -5 --rows '<the 16 JP rows, see the log>'
+_PZ6O272 = {"style": "handwriting", "color": "#97a3b6", "max_size": 48, "align": "left", "erase": []}
+_PZ6_272 = [
+    ("Endo is dead. He was a close", [36, 47, 787, 113], _PZ6O272),
+    ("friend I met in this sect.", [36, 174, 787, 240], _PZ6O272),
+    ("Ironically, this sect killed Endo,", [45, 299, 787, 365], _PZ6O272),
+    ("and I picked up his bones.", [34, 426, 787, 492], _PZ6O272),
+    ("But maybe this was for the best.", [47, 553, 787, 619], _PZ6O272),
+    ("His last month in particular was", [47, 678, 787, 744], _PZ6O272),
+    ("unbearable to look at. He would", [46, 804, 787, 870], _PZ6O272),
+    ("answer when called, but he kept", [40, 931, 787, 997], _PZ6O272),
+    ("muttering nothing but the names of", [34, 1057, 787, 1123], _PZ6O272),
+    ("the men who died in the green-eye", [38, 1183, 787, 1249], _PZ6O272),
+    ("experiments. He looked alive, but", [40, 1310, 787, 1376], _PZ6O272),
+    ("he was already dead.", [40, 1435, 787, 1501], _PZ6O272),
+    ("How long do we have to keep", [34, 1561, 787, 1627], _PZ6O272),
+    ("doing things like this? By", [35, 1687, 787, 1753], _PZ6O272),
+    ("now, this sect is probably", [44, 1814, 787, 1880], _PZ6O272),
+    ("finished too.", [42, 1941, 787, 2007], _PZ6O272),
+]
+
+
+def _pz6job(rid, rep, scrawl, note, ink):
+    return dict(_r2job(rid, [(t, b, dict(o, erase=[])) for t, b, o in rep] + scrawl, note, ink),
+                id="puz%d-full" % rid, screen="reference %d unsolved sheet" % rid, chain=True,
+                items=[(D + "rrr%d/_full.gal" % rid, "")])
+
+
+def _pz6heavy(lines, outline, ring=2, bold=1):
+    """checker round 1 (272): the JP brush is thick, opaque and outlined. Each line is drawn as a dark outline ring (8 copies at
+    +-ring px) under a bold fill (the line repeated at 0..bold px offsets), all erase=[]; the fill keeps the sampled colour."""
+    out = []
+    for t, b, o in lines:
+        for dx, dy in ((-ring, 0), (ring, 0), (0, -ring), (0, ring), (-ring, -ring), (ring, ring), (-ring, ring), (ring, -ring)):
+            out.append((t, [b[0] + dx, b[1] + dy, b[2] + dx, b[3] + dy], dict(o, color=outline, erase=[])))
+        for dx in range(bold + 1):
+            for dy in range(bold + 1):
+                out.append((t, [b[0] + dx, b[1] + dy, b[2] + dx, b[3] + dy], dict(o, erase=[])))
+    return out
+
+
+# 272 checker round 1: heavy scrawl (outline #1a1222 = the JP outline cores, ring 2, bold 1).
+JOBS += [_pz6job(272, REP272, _pz6heavy(_PZ6_272, "#1a1222"),
+                 "unsolved sheet: body (REP272) + blue-grey brush scrawl re-set, outlined + bold (pre.py chain)", "#241904")]
+# ---- 276 (800x3360, olive page + red splatter): pale cream pen (on the green-filtered sheet its cores read 130,143,67), 33 JP rows in
+# 5 paragraphs, JP glyphs ~36 px, pitch ~76; English 26 px (paragraph 2 is the tightest fit; ruling 6: no row added, >= 22). Plus a
+# black brush in 2 rows over the footer (glyphs ~55 px; English 44 px = the largest at which row 2 fits from the JP left edge).
+# pre.py 276 70 255 35 255 22 255 4 --rows '<work/images/_c/pz2-PZ6/rows276.json>' --scr-rows-only (cream mask in the rows only:
+# the diagram's white plate labels stay out of it). The black brush is erased by its own lines (mask max channel <= 30; the red
+# splatter is r ~43, the olive paper max channel >= ~55).
+_PZ6O276 = {"style": "handwriting", "color": "#828f43", "max_size": 26, "align": "left", "erase": []}
+_PZ6B276 = {"style": "handwriting", "color": "#0a0a00", "max_size": 44, "align": "left", "method": "texfill",
+            "mask_color": [0, 30, 0, 30, 0, 30], "mask_grow": 3}
+_PZ6_276 = [
+    ("It seems someone inside the sect blew the whistle. I", [45, 186, 792, 225], _PZ6O276),
+    ("hear Hajime Shinozaki formally raised the threat of the", [45, 261, 792, 300], _PZ6O276),
+    ("research in a report. He must have been in a delicate", [45, 338, 792, 377], _PZ6O276),
+    ("position too. But as far as I'm concerned, Hajime", [45, 413, 792, 452], _PZ6O276),
+    ("Shinozaki is just as guilty. I'd like to kill him with my own", [45, 489, 792, 528], _PZ6O276),
+    ("hands, but, well, I'll think about what to do depending on", [45, 565, 792, 604], _PZ6O276),
+    ("this whistleblowing and on how things move from here.", [45, 642, 792, 681], _PZ6O276),
+    ("Perhaps in response to that, quite a few of our comrades have", [45, 949, 792, 988], _PZ6O276),
+    ("gathered too. The time to destroy the sect is finally drawing near.", [45, 1024, 792, 1063], _PZ6O276),
+    ("From what I've heard, there's a high-ranking government official", [45, 1102, 792, 1141], _PZ6O276),
+    ("who egged on Representative Kichizo Mikogami. Representative", [45, 1177, 792, 1216], _PZ6O276),
+    ("Mikogami also came from a family of high-ranking government", [45, 1253, 792, 1292], _PZ6O276),
+    ("officials, but apparently, grieving over his own lack of talent,", [45, 1330, 792, 1369], _PZ6O276),
+    ("he converted and joined the sect. Because a man like Kichizo", [45, 1405, 792, 1444], _PZ6O276),
+    ("Mikogami became the Representative, someone in the government", [45, 1480, 792, 1519], _PZ6O276),
+    ("he had long been friends with must have approached him.", [45, 1558, 792, 1597], _PZ6O276),
+    ("Representative Mikogami, to uncover the mysteries of", [45, 1709, 792, 1748], _PZ6O276),
+    ("Droga, and the guy who approached the Representative,", [45, 1785, 792, 1824], _PZ6O276),
+    ("to make money off Droga: their interests matched.", [45, 1863, 792, 1902], _PZ6O276),
+    ("The one who ordered these inhumane experiments", [45, 1937, 792, 1976], _PZ6O276),
+    ("is probably the guy who approached the Representative.", [45, 2016, 792, 2055], _PZ6O276),
+    ("Even so, I have no intention of forgiving the Representative.", [45, 2167, 792, 2206], _PZ6O276),
+    ("Letting a guy like that get close to him: that is exactly", [45, 2241, 792, 2280], _PZ6O276),
+    ("his responsibility as the sect's Representative. I'll look a", [45, 2315, 792, 2354], _PZ6O276),
+    ("little more into the guy who approached the Representative.", [45, 2394, 792, 2433], _PZ6O276),
+    ("Now, it's almost time. Soon the Holy Cerejeira Church will", [45, 2656, 792, 2695], _PZ6O276),
+    ("be finished. I will have my revenge, no matter what. On", [45, 2733, 792, 2772], _PZ6O276),
+    ("the Mikogami family, and on the guy who approached the", [45, 2809, 792, 2848], _PZ6O276),
+    ("Representative too. Hatanaka's sons seem to be burning for", [45, 2884, 792, 2923], _PZ6O276),
+    ("revenge as well. That's right, we were made to put our faith", [45, 2959, 792, 2998], _PZ6O276),
+    ("in a devil's drug called Droga. There's anger at the sect,", [45, 3038, 792, 3077], _PZ6O276),
+    ("but they must be angry at their own foolishness too. I'm", [45, 3111, 792, 3150], _PZ6O276),
+    ("the same. That is why we will destroy the root of all evil.", [45, 3188, 792, 3227], _PZ6O276),
+    ("That fool Kuji.", [60, 3238, 792, 3302], dict(_PZ6B276, erase=[[55, 3234, 430, 3304]])),
+    ("Walked right into Uneme's scheme.", [120, 3294, 792, 3354], dict(_PZ6B276, erase=[[115, 3290, 730, 3356]])),
+]
+JOBS += [_pz6job(276, REP276, _PZ6_276, "unsolved sheet: body (REP276) + cream pen scrawl + black brush rows re-set (pre.py chain)",
+                 "#241804")]
+# ---- 273 (800x1730, a torn tan page in 4 paper fragments with transparent gaps between them): the body print is a MIRRORED
+# ghost (title and rows read reversed): not typeset, not erased (ruling 1). Two scrawls: a cream pen in ~35 row segments (the
+# fragments are rotated -11.75 / +12.5 / +2 / -3.25 deg, so rows are set along each fragment's slant, rot) and a big dark-brown brush
+# in 4 rows over the whole page (katakana / kanji: ALL CAPS, ruling 2). Both erased by work/images/_c/pz2-PZ6/pre273.py (texfill whose
+# sources must be on the paper); always run pre273.py right before `runpz2-PZ6.sh puz273-full`, then `--previews-only`.
+# Cream lines: work/images/_c/pz2-PZ6/lay273.py - each JP segment's English starts at the JP segment start on its centre line and
+# stays on its own fragment (no text over a tear gap); where it does not fit, ONE added parallel line just below (ruling 6), or just
+# above where the JP row sits on a tear edge; one size 24 (JP ~30 px). Torn-away JP text = "..." in the English.
+# Brown lines: level (the brush is not rotated with the fragments), each box checked on its own fragment (bchk.py, >= 0.999 of the ink).
+_PZ6O273 = {"style": "handwriting", "color": "#b7a69e", "max_size": 24, "align": "center", "erase": []}
+_PZ6B273 = {"style": "handwriting", "color": "#452b22", "align": "center", "erase": []}
+_PZ6_273 = [
+    ("WRONG", [110, 140, 690, 310], dict(_PZ6B273, max_size=120)),
+    ("IS", [95, 800, 445, 1070], dict(_PZ6B273, max_size=150)),
+    ("NOT", [495, 830, 795, 1070], dict(_PZ6B273, max_size=140)),
+    ("MIKOGAMI", [30, 1395, 630, 1525], dict(_PZ6B273, max_size=100)),
+    ("I managed to meet a few of the brethren. I", [59, 88, 526, 189], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 0 line 0
+    ("told them about those inhumane experiments", [76, 152, 543, 253], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 1 line 0
+    ("Hatanaka and I went through, but \"Mikogami-sama", [96, 203, 638, 320], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 2 line 0
+    ("would never do such a thing,\" \"Are you saying", [110, 286, 568, 385], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 3 line 0
+    ("Droga is evil?\": not one of them will listen. Rather", [175, 333, 685, 443], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 4 line 0
+    ("than not", [181, 536, 280, 562], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 5 line 0
+    ("believing it,", [176, 561, 300, 592], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 5 line 1
+    ("they are jealous of us,", [333, 425, 564, 477], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 6 line 0
+    ("I suppose. We were", [166, 597, 372, 647], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 7 line 0
+    ("chosen and used Droga,", [453, 470, 696, 525], dict(_PZ6O273, rot=11.75, rot_h=34)),  # seg 8 line 0
+    ("they were not chosen.", [150, 663, 378, 718], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 9 line 0
+    ("This ...", [489, 703, 567, 709], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 10 line 1
+    ("But I won't give up.", [133, 723, 352, 776], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 11 line 0
+    ("Without fail, I'll destroy", [491, 745, 751, 758], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 12 line 0
+    ("that", [492, 770, 553, 776], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 12 line 1
+    ("Holy Cerejeira Church or", [116, 785, 366, 845], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 13 line 0
+    ("whatever it is.", [111, 810, 271, 849], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 13 line 1
+    ("Especially the Mikogami", [490, 810, 744, 823], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 14 line 0
+    ("clan deserves the death", [91, 850, 344, 910], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 15 line 0
+    ("penalty.", [86, 875, 174, 898], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 15 line 1
+    ("Even if it takes", [475, 874, 647, 884], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 16 line 0
+    ("years.", [65, 914, 133, 933], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 17 line 0
+    ("But lately ...", [45, 970, 178, 1004], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 18 line 0
+    ("is in bad shape. Hatanaka", [403, 1000, 682, 1014], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 19 line 0
+    ("the so-called second", [29, 1031, 235, 1081], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 20 line 0
+    ("generation", [24, 1056, 139, 1085], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 20 line 1
+    ("... since he underwent the experiments,", [345, 1064, 748, 1082], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 21 line 0
+    ("when", [332, 1088, 395, 1095], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 21 line 1
+    ("the cherry", [16, 1096, 131, 1126], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 22 line 0
+    ("blooms", [11, 1121, 88, 1142], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 22 line 1
+    ("... he feels terribly drained, apparently.", [370, 1126, 774, 1144], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 23 (checker round 1: one line, no added line over the next row)
+    ("...", [6, 1162, 30, 1172], dict(_PZ6O273, rot=-12.5, rot_h=34)),  # seg 24 line 0
+    ("... said he could sense danger too", [396, 1157, 737, 1173], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 25 line -1
+    ("... when", [221, 1208, 306, 1217], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 26 line 0
+    ("...", [218, 1237, 243, 1242], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 26 line 1
+    ("... speaking of a person's ... use", [55, 1291, 377, 1313], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 27 line 1
+    ("... certainly", [583, 1283, 701, 1291], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 28 line 1
+    ("... he was saying. If that's true, Droga", [61, 1320, 474, 1347], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 29 line 0
+    ("... But", [607, 1320, 680, 1326], dict(_PZ6O273, rot=-2.0, rot_h=34)),  # seg 30 line 0
+    ("is a drug beyond human knowledge ... I", [72, 1383, 476, 1410], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 31 line 0
+    ("suppose", [73, 1426, 165, 1435], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 31 line 1
+    ("but a drug permitted only to God. If humans use it,", [77, 1439, 624, 1474], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 32 line 0
+    ("side effects appear, as in those experiments ...", [88, 1504, 573, 1535], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 33 line 0
+    ("... maybe.", [98, 1589, 200, 1599], dict(_PZ6O273, rot=3.25, rot_h=34)),  # seg 34 line 0
+]
+# checker round 1: brush word 2 larger (the largest size on its fragment, bchk), bolder (brown ring 1 + bold 1) and drawn LAST,
+# over the cream line that crosses it; the other brush words stay under the cream rows.
+_PZ6W2_273 = [("THE ROOT", [115, 672, 465, 768], dict(_PZ6B273, max_size=68)),
+              ("OF IT ALL", [505, 694, 795, 786], dict(_PZ6B273, max_size=62))]
+JOBS += [_pz6job(273, [], _PZ6_273 + _pz6heavy(_PZ6W2_273, "#452b22", ring=1, bold=1),
+                 "unsolved sheet: cream pen + brown brush scrawls re-set; mirrored ghost print kept (pre273.py chain)", "#b7a69e")]
+# ---- 270 (800x2609, deep blood-red page): white chalk, 13 rows written UPSIDE DOWN (the sheet turned 180 deg: horizontal rows that
+# read top to bottom when the page is rotated; not a vertical column, so the rulings-file vertical rule does not apply), glyphs
+# ~110-140 px. Katakana-heavy broken voice: ALL CAPS (ruling 2). English set the same way: rot 180, each line starting at the JP row's
+# start (page right edge of the row) and running leftwards on the page; one size 71 (paragraph 1 is the tightest fit; ruling 6).
+# Body: REP270 verbatim (the print reads normally), erased by pre.py with the chalk:
+# pre.py 270 150 255 130 255 130 255 4 --rows '<work/images/_c/pz2-PZ6/rows270.json>'
+_PZ6O270 = {"style": "handwriting", "color": "#e9c8bb", "max_size": 71, "align": "center", "erase": [], "rot": 180, "rot_h": 103}
+_PZ6_270 = [
+    ("HOW MANY DAYS HAS", [50, 2418, 756, 2422], _PZ6O270),
+    ("IT BEEN NOW SINCE", [50, 2251, 767, 2255], _PZ6O270),
+    ("I LAST SAW ANYONE?", [9, 2071, 741, 2075], _PZ6O270),
+    ("BUT THAT'S FINE.", [133, 1870, 770, 1874], _PZ6O270),
+    ("I HAVE", [511, 1639, 764, 1643], _PZ6O270),
+    ("HIM.", [574, 1470, 753, 1474], _PZ6O270),
+    ("HE DIED, BUT", [292, 1265, 777, 1269], _PZ6O270),
+    ("HE GOES ON", [355, 1050, 781, 1054], _PZ6O270),
+    ("LIVING IN", [385, 851, 785, 855], _PZ6O270),
+    ("MY HEART.", [404, 688, 773, 692], _PZ6O270),
+    ("WHEN I THINK", [237, 481, 760, 485], _PZ6O270),
+    ("ABOUT HIM,", [326, 294, 765, 298], _PZ6O270),
+    ("I'M HAPPY.", [351, 104, 725, 108], _PZ6O270),
+]
+JOBS += [_pz6job(270, REP270, _PZ6_270, "unsolved sheet: body (REP270) + upside-down white chalk scrawl re-set (pre.py chain)", "#231803")]
+# end IMAGESPZ2-PZ6
+
+# IMAGESPZ2-PZ4 2026-11-06 (notes/IMAGESPZ2-BRIEF.md, lane PZ4; rulings notes/v2/_tmp/rulings-IMAGESPZ2.md; log
+# notes/v2/_tmp/tl-log-IMAGESPZ2-PZ4.md): the UNSOLVED sheet rrr269/_full.gal (800x5256, base + 22 pieces composed). The page =
+# the JP 全体 darkened (tone curve + texture) + a red brush scrawl (45 rows, cores #b93c47 with a dark-red outline) + a huge black
+# brush column (three vertical statements, glyphs ~200-300 px). Body readable on this sheet (ruling 1): REP269 verbatim, same
+# boxes, colours mapped to the sheet (ink #1e1300 -> #1c1107, _L269 -> #191207, plate labels = JP label cores). ALL erasing is
+# done beforehand by work/images/_c/pz2-PZ4/pre269.py (ratio relight: out = texfilled(_full / g(全体)) * g(全体 with the
+# shipped rep269-whole erase replayed); red rows + black brush bands masked), so this job CHAINS from that output: always run
+# pre269.py right before `runpz2-PZ4.sh puz269-full`, then `--previews-only`. Lines: body first, black column (rotated, the
+# 270 vertical rule, bolded by 8 offset copies), red rows last (one English line per JP row, Ink Free 32, one size per sheet).
+_PZ4R = {"style": "handwriting", "color": "#b93c47", "max_size": 32, "align": "left", "erase": []}
+_PZ4_RED = [
+    ("Apparently Kuji and Hatanaka somehow managed to", [35, 27, 790, 74], _PZ4R),  # 708 px
+    ("make good their escape. So much so that even I don't", [35, 129, 790, 176], _PZ4R),  # 737 px
+    ("know their whereabouts, but once this matter settles", [35, 231, 790, 278], _PZ4R),  # 742 px
+    ("down, they may come back to Megasawa someday.", [35, 332, 790, 379], _PZ4R),  # 674 px
+    ("Uneme is apparently searching frantically for Kuji and", [35, 538, 790, 585], _PZ4R),  # 719 px
+    ("Hatanaka. Even so, since many people in this sect are", [35, 641, 790, 688], _PZ4R),  # 722 px
+    ("taking part in the Droga experiments, there are not", [35, 743, 790, 790], _PZ4R),  # 713 px
+    ("that many brethren who can cooperate. With Uneme's", [35, 846, 790, 893], _PZ4R),  # 733 px
+    ("power he could probably move the police or underground", [35, 947, 790, 994], _PZ4R),  # 747 px
+    ("organizations, but that would earn Kichizo-sama's", [35, 1050, 790, 1097], _PZ4R),  # 682 px
+    ("distrust, and Uneme too will probably want to avoid any", [35, 1153, 790, 1200], _PZ4R),  # 751 px
+    ("conspicuous moves.", [35, 1255, 790, 1302], _PZ4R),  # 254 px
+    ("But from now on, the surveillance should become", [35, 1459, 790, 1506], _PZ4R),  # 655 px
+    ("considerably stricter. Until now, the experiments have", [35, 1562, 790, 1609], _PZ4R),  # 727 px
+    ("held together thanks to the brethren's cooperative", [35, 1664, 790, 1711], _PZ4R),  # 707 px
+    ("attitude, but if there has been an escape like this one,", [35, 1768, 790, 1815], _PZ4R),  # 745 px
+    ("others plotting to escape the same way will surely", [35, 1870, 790, 1917], _PZ4R),  # 682 px
+    ("appear. If people escape, information about these", [35, 1973, 790, 2020], _PZ4R),  # 688 px
+    ("experiments may leak to the outside. This makes it", [35, 2074, 790, 2121], _PZ4R),  # 697 px
+    ("just like a prison.", [35, 2177, 790, 2224], _PZ4R),  # 228 px
+    ("Even so, I can't imagine Uneme giving up", [35, 2382, 790, 2429], _PZ4R),  # 560 px
+    ("that easily. Uneme is a relentless, greedy", [35, 2484, 790, 2531], _PZ4R),  # 551 px
+    ("man. The Kuji family and the Hatanaka", [35, 2586, 790, 2633], _PZ4R),  # 534 px
+    ("family may come under Uneme's watch for", [35, 2689, 790, 2736], _PZ4R),  # 566 px
+    ("many generations to come. Because they", [35, 2791, 790, 2838], _PZ4R),  # 548 px
+    ("may have stolen documents with notes on", [35, 2894, 790, 2941], _PZ4R),  # 565 px
+    ("these experiments, experiment supplies and", [35, 2996, 790, 3043], _PZ4R),  # 587 px
+    ("the like, and be keeping them in their homes.", [35, 3099, 790, 3146], _PZ4R),  # 608 px
+    ("Kichizo-sama, please open your eyes soon. You", [35, 3303, 790, 3350], _PZ4R),  # 605 px
+    ("are being deceived by Uneme. You were surely", [35, 3406, 790, 3453], _PZ4R),  # 605 px
+    ("someone who simply wished for the happiness of", [35, 3508, 790, 3555], _PZ4R),  # 654 px
+    ("everyone in the Holy Cerejeira Church. No, surely", [35, 3610, 790, 3657], _PZ4R),  # 650 px
+    ("you still think so even now. But this research", [35, 3712, 790, 3759], _PZ4R),  # 614 px
+    ("needs both money and the government's", [35, 3815, 790, 3862], _PZ4R),  # 543 px
+    ("power. That is why Uneme sidled up and came", [35, 3917, 790, 3964], _PZ4R),  # 619 px
+    ("swarming to the profits that Droga brings.", [35, 4020, 790, 4067], _PZ4R),  # 596 px
+    ("I would like to somehow tell Hajime", [35, 4224, 790, 4271], _PZ4R),  # 481 px
+    ("Shinozaki-san about this too, but it might", [35, 4328, 790, 4375], _PZ4R),  # 578 px
+    ("only cause trouble instead. Hajime-san is a", [35, 4430, 790, 4477], _PZ4R),  # 565 px
+    ("researcher who was assigned the experiments", [35, 4532, 790, 4579], _PZ4R),  # 625 px
+    ("by Kichizo-sama, and does not have", [35, 4634, 790, 4681], _PZ4R),  # 474 px
+    ("the authority to manage these experiments.", [35, 4736, 790, 4783], _PZ4R),  # 608 px
+    ("Will I too someday go from research institute staff", [35, 4941, 790, 4988], _PZ4R),  # 703 px
+    ("member to test subject? Would it be better to run", [35, 5044, 790, 5091], _PZ4R),  # 686 px
+    ("away?", [35, 5146, 790, 5193], _PZ4R),  # 86 px
+]
+# QIMAGESPZ2PZ4-02 / -03 rulings (2026-11-06): ALL CAPS, "IT WAS ALL PLANNED", "CEREJEIRA WAS FRAMED"; one common size 120 (the
+# largest at which "IT WAS ALL PLANNED" fits its 1280 px column segment; nothing cut).
+_PZ4K = {"style": "handwriting", "color": "#130c08", "max_size": 120, "align": "center", "erase": []}
+_PZ4_BLK = [("IT'S ALL LIES", [265, 40, 475, 1220], dict(_PZ4K, rot=-90)),
+            ("IT WAS ALL PLANNED", [380, 1140, 537, 2410], dict(_PZ4K, rot=-97.0, rot_h=170)),
+            ("CEREJEIRA", [323, 2300, 643, 3890], dict(_PZ4K, rot=-101.4, rot_h=170)),
+            ("WAS FRAMED", [316, 3640, 538, 5110], dict(_PZ4K, rot=-98.6, rot_h=170))]
+
+
+def _pz4bold(lines, r=3):
+    out = []
+    for t, b, o in lines:
+        out.append((t, b, o))
+        for dx, dy in ((r, 0), (-r, 0), (0, r), (0, -r), (2, 2), (-2, -2), (2, -2), (-2, 2)):
+            out.append((t, [b[0] + dx, b[1] + dy, b[2] + dx, b[3] + dy], dict(o, erase=[])))
+    return out
+
+
+def _pz4body(lines):
+    out = []
+    for t, b, o in lines:
+        o2 = dict(o, erase=[])
+        if o.get("color") == _L269:
+            o2["color"] = "#191207"
+        if o.get("method") == "flat":
+            o2["color"] = "#663030" if o.get("bg") == _R2RED else "#4a3e3e"
+        out.append((t, b, o2))
+    return out
+
+
+JOBS += [dict(_r2job(269, _pz4body(REP269) + _pz4bold(_PZ4_BLK) + _PZ4_RED,
+                     "unsolved sheet: body (REP269) + black brush column + red brush scrawl re-set (pre-erased by pre269.py)", "#1c1107"),
+              id="puz269-full", screen="reference 269 unsolved sheet", chain=True, items=[(D + "rrr269/_full.gal", "")])]
+# end IMAGESPZ2-PZ4
+# IMAGESPZ2-PZ7 2026-11-06 (lane PZ7; log notes/v2/_tmp/tl-log-IMAGESPZ2-PZ6.md section "PZ7 (276 fixes)"): checker round 1 fixes for
+# puz276-full (review/images/IMGCHECKPZ2.tsv). Overrides the PZ6 puz276-full job: same REP276 body, same cream / brush scrawl
+# (_PZ6_276, drawn last = on top), five diagram labels moved so neither they nor the cream rows hide each other. The JP plates are
+# still flat-filled by pre.py from the shipped rep276-whole erase boxes (unchanged). Re-render: pre.py 276 70 255 35 255 22 255 4
+# --scr-rows-only --rows "$(cat work/images/_c/pz2-PZ6/rows276.json)" -> runpz2-PZ6.sh puz276-full -> the same + --previews-only.
+_PZ7_276 = {
+    # plate 2: the cream row 17 covers the whole plate; label set just under the arrow body, white on the red splatter
+    "② Recognizes the subject": _r2plate("② Recognizes the subject", [315, 1749, 605, 1785], [[362, 1708, 531, 1743]], _R2BLK, 20),
+    # arrow 3: moved down the arrow so the circled 3 sits in the gap under row 20; it crosses row 21 only
+    "③ Danger information exchange": _r2plate("③ Danger information exchange", [210, 1966, 390, 2100], _A3_276, _R2BLK, 16,
+                                              rot=-37.6, rot_h=22),
+    # arrow 1: two lines, moved up the arrow toward its tail, clear of row 21 (which ends at x ~663)
+    "① Recognizes presence": _r2plate("① Recognizes\npresence", [594, 1958, 694, 2018], _A1_276, _R2BLK, 15, rot=32, rot_h=38,
+                                      line_spacing=1.0),
+    # caption beside "km)": taken out of the body list here and set from _PZ7X_276 below (it needs its own erase)
+    "Foresees the subject's danger": None,
+    # figure label near the right edge: 17 px (was 18), box narrowed so it ends ~30 px inside the page
+    "Perceived information": _r2cap("Perceived information", [604, 2770, 770, 2798], [[645, 2771, 738, 2797]], 17, color=_L276),
+}
+# "Foresees the subject's danger": moved down below the "km)" caption line, right-aligned at the page edge, 16 px (was 18). Its old
+# place keeps a readable dark ghost of the JP label after pre.py (the English used to cover it): re-erased here, texfill on the
+# ghost pixels only (g >= 4; the clean red splatter there reads g 0-3).
+_PZ7X_276 = [("Foresees the subject's danger", [586, 1928, 794, 1952],
+              {"max_size": 16, "align": "right", "color": _L276, "mask_color": [0, 255, 4, 255, 0, 255], "mask_grow": 2,
+               "method": "texfill", "erase": [[586, 1902, 795, 1931]]})]
+# cream row 21 crosses the white arrow-3 label: a 1 px dark ring (the JP pen's soft dark edge) keeps the row legible on top of it.
+_PZ7S_276 = [l for t, b, o in _PZ6_276 for l in (
+    _pz6heavy([(t, b, o)], "#1e1e06", ring=1, bold=0) if t.startswith("is probably the guy") else [(t, b, o)])]
+_REP276_PZ7 = [_PZ7_276.get(t, (t, b, o)) for t, b, o in REP276]
+_REP276_PZ7 = [x for x in _REP276_PZ7 if x is not None]
+assert sum(1 for t, b, o in REP276 if t in _PZ7_276) == len(_PZ7_276), "PZ7: a 276 label text no longer matches REP276"
+assert len(_PZ7S_276) == len(_PZ6_276) + 8
+# checker re-check (IMGCHECKPZ2.tsv row 13): cream row 23 (box y 2241-2280) hid the second line of the diagram-1 caption (glyphs
+# ~2251-2272). Drawing the caption on top was tried: the two then muddle each other. Row 23 moved DOWN 27 px instead, into the gap
+# under the caption (ink ~2276-2303; row 24 ink starts ~2323; row 22 and the caption untouched): both read, nothing resized.
+# The same row carries a small extra erase: the pre.py texfill left dark-olive blocks (g 10-30, r 24-34; the olive paper is g > 30,
+# the splatter g < 5) over the right half of the uncovered caption line 2; texfill on those pixels only.
+_PZ7S_276 = [(t, [b[0], 2268, b[2], 2307], dict(o, erase=[[540, 2238, 700, 2276]], mask_color=[0, 40, 8, 40, 0, 15], mask_grow=1,
+                                                   method="texfill"))
+             if t.startswith("Letting a guy like that") else (t, b, o) for t, b, o in _PZ7S_276]
+assert sum(1 for t, b, o in _PZ7S_276 if b[1] == 2268) == 1
+JOBS[:] = [j for j in JOBS if j.get("id") != "puz276-full"]
+JOBS += [_pz6job(276, _REP276_PZ7, _PZ7X_276 + _PZ7S_276,
+                 "unsolved sheet: body (REP276) + cream pen scrawl + black brush rows re-set (pre.py chain); PZ7 label moves", "#241804")]
+# end IMAGESPZ2-PZ7
