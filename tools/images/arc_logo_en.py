@@ -1,5 +1,9 @@
 """arc_logo_en.py - English lettering for the encyclopedia arc-selector logo of 呪殺編 (smoke test r2, 2026-11-05).
 
+NOT SHIPPED (owner decision 2026-11-06, Q2445 closed): a name inside a picture is translated only if that name appears
+nowhere else in English; the arc names are English in the game text, so every arc logo stays the original Japanese art.
+Kept for reference: the output PNG and its .gal sit in work/images/out/グラフィック/メニュー/右クリック/ and are in no ship list.
+
     PYTHONUTF8=1 uv run --no-project --with pillow --with numpy python tools/images/arc_logo_en.py [--style A|B|C] [--sheet OUT.png]
 
 WHY: the encyclopedia's arc selector (00001878 idx 1875 = the selected arc, path built from the English arc name;
