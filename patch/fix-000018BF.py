@@ -12,4 +12,7 @@ import pointmul  # noqa: E402
 src, dst = sys.argv[1], sys.argv[2]
 s = LMScript.from_file(src)
 pointmul.apply(s, [(45, xf.I(500), '書簡残ポイント')], 'fix-000018BF')
+# Lane W 2026-11-14: two-line reply captions and their echo lines (patch/layoutw.py)
+import layoutw  # noqa: E402
+layoutw.fix_18bf(s)
 open(dst, 'wb').write(s.to_lsb())

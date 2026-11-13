@@ -67,6 +67,11 @@ for idx, (old, new) in CUTS.items():
     else:
         ints[0].value = new
         cut_done += 1
+# Lane W 2026-11-14: two-line reply captions and their echo lines (patch/layoutw.py)
+import os  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import layoutw  # noqa: E402
+layoutw.fix_189a(s)
 open(dst, 'wb').write(s.to_lsb())
 print(f'fix-0000189A: chatter key length {OLD} -> {NEW} at {done} sites ({already} already fixed)')
 print(f'fix-0000189A: answer excerpt cuts 35/38 -> 62/73 at {cut_done} sites ({cut_already} already fixed)')
