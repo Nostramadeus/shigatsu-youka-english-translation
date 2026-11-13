@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DB = 'データベース'
-EXTRA_COLS = ('表示名',)   # R1 2026-09-26: allowed trailing display columns (see the header check)
+EXTRA_COLS = ('表示名', 'ポイント倍率100')   # R1 2026-09-26: allowed trailing display columns (see the header check); 2026-11-13: ポイント倍率100 = whole-number point multiplier of 編.tsv (points must not depend on the Windows decimal symbol)
 CHECK_ONLY = False   # 2026-11-03: --check
 
 

@@ -77,4 +77,31 @@ done, already = xf.apply_sites(s, [(i, kind, None, shape, xf.permille_fixed(shap
                                'fix-00001CA0')
 print('fix-00001CA0: r2 completion percent without overflow at %d sites (%d rewritten, %d already fixed)'
       % (len(R1), done, already))
+# ---- Lane X5 2026-11-13 ---------------------------------------------------------------------------------------------
+# (a) NEW-STRINGS-fable row 9: idx 1137 / 1163 SetProp "全体進行率" 50 draw  "全体進行率" ++ " " ++ 表示進行率 ++ "%".
+#     Only the Value's first literal becomes "Overall completion" (labels-00001CA0.tsv line 2 without its trailing
+#     spaces); the object name stays Japanese (a label map would also hit the ObjName literal).
+# (b) Cursed-date spacing (x2 PROGRESS Q1): idx 605 (Caption シナリオ日時 PR_TEXT) and 607 (SetProp Value) join 呪日 and
+#     呪時間 with nothing between them, so the English date printed "January 112:34": one " " literal goes between them.
+X5_LABEL = ('"全体進行率" ++ " " ++ 表示進行率 ++ "%"', '"Overall completion" ++ " " ++ 表示進行率 ++ "%"')
+x5_todo, x5_already = [], 0
+for idx in (1137, 1163):
+    c = s.commands[idx]
+    if c.type.name != 'SetProp' or (str(c['ObjName']), str(c['ObjProp'])) != ('"全体進行率"', '50'):
+        sys.exit('fix-00001CA0: idx %d is not SetProp "全体進行率" 50' % idx)
+    now = str(c['Value'])
+    if now == X5_LABEL[1]:
+        x5_already += 1
+        continue
+    ops = [o for e in c['Value'].entries for o in e.operands if int(o.type) == xf.STR and o.value == '全体進行率']
+    if now != X5_LABEL[0] or len(ops) != 1:
+        sys.exit('fix-00001CA0: idx %d Value is neither the original nor the fixed label: %r' % (idx, now))
+    x5_todo.append((idx, c, ops[0]))
+for idx, c, op in x5_todo:
+    op.value = 'Overall completion'
+    if str(c['Value']) != X5_LABEL[1]:
+        sys.exit('fix-00001CA0: idx %d label rewrite check failed' % idx)
+print('fix-00001CA0: X5 completion label at idx 1137/1163 (%d rewritten, %d already fixed)' % (len(x5_todo), x5_already))
+done, already = xf.date_space(s, [(605, 'Caption', 'PR_TEXT'), (607, 'SetProp', 'Value')], 'fix-00001CA0')
+print('fix-00001CA0: X5 space between day and hour at idx 605/607 (%d rewritten, %d already fixed)' % (done, already))
 open(dst, 'wb').write(s.to_lsb())

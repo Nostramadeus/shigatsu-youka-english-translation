@@ -17,6 +17,8 @@
 
 **Counter and layout follow-up (2026-10-29).** Every scene, hidden-route and reference character total shown by the game is now English (the "6743/4301 chars (156%)" plates), the scenario synopsis boxes no longer cut off their text, and the break-off dialog fits its English captions. Checked on the compiled data and with automated tests, not by an on-screen playthrough; see the release notes.
 
+**Found by accident (2026-11-13): about 30,000 characters of side text are still Japanese.** They were set aside early in the project and never picked up again; a bug report led us to them. They are being translated now and will come in a later patch.
+
 **Known Japanese leftovers (on purpose).** Some original artwork remains: the original cropped reference previews, Japanese flashing red background text, title logos, a handwritten signature, unsolved puzzle pieces of the report puzzles that carry no extra writing (their solved page is in English; the 18 sheets with a handwritten note over the page are translated), and narrow edge-on or unreadable incidental art. The previews and red backgrounds retain the original game's artwork and atmosphere; readable reference documents are translated separately. In one screen, a "Gimmick" header such as 移動 (move) also stays Japanese because the game uses that text as file names; Help explains the mechanic in English. These exceptions are not evidence that every unmodified image is textless.
 
 **One honest gap.** Every line was checked against the Japanese by a second AI pass, but no human has yet played the final stretch of the game in English. The earlier parts were spot-played during translation. Anything that reads oddly, open an issue with a screenshot.
@@ -35,6 +37,30 @@ Good to know:
 - **Do not look the game up online.** Store pages and wikis spoil its length and structure in the first paragraph.
 - **Updating the patch:** unzip the new one over the old. Saves keep working.
 - **Japanese text left somewhere?** Screenshot it (Win+Shift+S) and open an issue here.
+- **A year or a number looks wrong?** It may be in the original too. See "Not sure" right below.
+
+## Not sure: numbers that do not add up in the original
+
+In a few places the Japanese game itself prints a year or a number that does not agree with the rest of the story:
+a year in the narration that differs from the date shown above the scene, and a document whose year differs from what other notes say.
+
+We do not know whether these are slips by the author or on purpose. A mystery game may do this deliberately.
+So **the English copies the Japanese exactly in these places and corrects nothing.** If a date looks off to you, check the list below before
+reporting it. Anything not on the list is welcome as an issue.
+
+<details>
+<summary><b>Spoilers: the exact places (click to open)</b></summary>
+
+| Where | What the game prints | Why it looks off |
+|---|---|---|
+| Wabigoto Arc [Apology], scenario "Two Years Later" (date above the scene: Shiyo 790-04-06) | The narration opens with "Shiyo 800, April" and says Eiichiro's third-year memorial is coming up. | The scene's own date is 790. A third-year memorial falls two years after a death, and the story puts that death in Shiyo 788. So 790 is expected. The Japanese prints 祀耀800年. |
+| Wabigoto Arc [Apology], scenario "Seeing Off" (date above the scene: Shiyo 790-05-01) | The narration opens with "Shiyo 800, May 1". Later the same scenario says ten years pass and gives "Shiyo 800, April 7". | The first date would have to be 790. The Japanese prints 祀耀800年 both times. Patches up to 2026-11-06 printed 790 here; later patches print 800 like the original. |
+| A death certificate among the reference documents | The year 790. | Other notes in the game give 788 for the same death. |
+
+Not on this list because they are consistent: the encyclopedia entries that speak of a thirteenth-year memorial in Shiyo 800
+(a thirteenth-year memorial falls twelve years after a death: 788 + 12 = 800).
+
+</details>
 
 
 Free LiveMaker 3 visual novel by New++ (freem game 19917, v2.0.0.4). The whole game is packed inside its 1 GB exe.

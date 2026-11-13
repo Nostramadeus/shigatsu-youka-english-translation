@@ -3,7 +3,7 @@ See patch/dispcol.py. Run by tools/compile_en.sh (or directly: IN.lsb OUT.lsb; i
 import copy
 import os, sys
 from livemaker.lsb import LMScript
-from livemaker.lsb.core import OpeData, OpeDataType, Param, ParamType
+from livemaker.lsb.core import OpeData, OpeDataType, OpeFuncType, Param, ParamType
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from dispcol import run
@@ -114,3 +114,40 @@ else:
     print('fix-00001878: reading caption idx 519 blank')
 open(dst, 'wb').write(s.to_lsb())
 print('fix-00001878: badge columns Japanese again, 事典編 normalised at entry, person names via 表示名')
+
+# Lane X1 2026-11-13 (notes/FIT-MODEL-2.md 4.2; friend report: name plate "Mifuyu Niimur"). On a People-page click the
+# plate 人物テキスト土台 slides to x 490 (idx 554 PropMotion, ObjProp 3 = PR_LEFT). The arc selector 編選択 (idx 1866, x 680,
+# PRIORITY 4000) is drawn over everything from x 680, so a long English name lost its end. With the name Caption at 26 px
+# (patch/props-00001878.tsv, idx 516/518) the plate now keeps x 490 when it fits and moves left only as far as needed,
+# never past x 410 (the scroll-up icon at idx 602 covers x 301..409):
+#     Max(410, Min(490, 676 - GetProp("人物テキスト土台", 5)))      676 = 680 minus a 4 px gap
+# GetProp index 5 = PR_WIDTH (idx 527 tests left 3 + width 5 against @ScrWidth; pylivemaker PropertyType PR_NONE 0 .. PR_WIDTH 6).
+# Min / Max are engine functions the game runs already (ノベルシステム/■オプション_テキスト速度.lsb idx 14, 18).
+# The plate width was set at idx 521/523 (caption width + 4) before the click, so the value is read at the slide.
+SLIDE_IDX = 554
+SLIDE_WANT = 'Max(410, Min(490, 676 - GetProp("人物テキスト土台", 5)))'
+s = LMScript.from_file(dst)
+sl = s.commands[SLIDE_IDX]
+if sl.type.name != 'PropMotion' or str(sl['ObjName']) != '"人物テキスト土台"' or str(sl['ObjProp']) != '3':
+    sys.exit(f'fix-00001878: idx {SLIDE_IDX} is {sl.type.name} {sl.get("ObjName")} {sl.get("ObjProp")}, not the plate slide')
+cur = str(sl['Value'])
+if cur == SLIDE_WANT:
+    print('fix-00001878: name plate slide idx 554 already fixed')
+elif cur != '490':
+    sys.exit(f'fix-00001878: idx {SLIDE_IDX} Value {cur!r}, expected 490')
+else:
+    S, V, I = ParamType.Str, ParamType.Var, ParamType.Int
+    sl['Value'].entries = [
+        OpeData(type=OpeDataType.To, name='____0', operands=[Param(value='人物テキスト土台', type=S)]),
+        OpeData(type=OpeDataType.Func, name='____1', func=OpeFuncType.GetProp,
+                operands=[Param(value='____0', type=V), Param(value=5, type=I)]),
+        OpeData(type=OpeDataType.Minus, name='____2', operands=[Param(value=676, type=I), Param(value='____1', type=V)]),
+        OpeData(type=OpeDataType.Func, name='____3', func=OpeFuncType.Min,
+                operands=[Param(value=490, type=I), Param(value='____2', type=V)]),
+        OpeData(type=OpeDataType.Func, name='____4', func=OpeFuncType.Max,
+                operands=[Param(value=410, type=I), Param(value='____3', type=V)]),
+        OpeData(type=OpeDataType.To, name='____arg', operands=[Param(value='____4', type=V)])]
+    if str(sl['Value']) != SLIDE_WANT:
+        sys.exit(f'fix-00001878: rebuilt idx {SLIDE_IDX} reads {sl["Value"]}')
+    open(dst, 'wb').write(s.to_lsb())
+    print('fix-00001878: name plate slide idx 554 = ' + SLIDE_WANT)

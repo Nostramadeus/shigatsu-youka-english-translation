@@ -37,6 +37,18 @@ def r2(script):
     # データベース名 = the person table name, a key) prints the 人物名簿 表示名.
     key_at_dblocate([(609, 'Calc'), (610, 'Calc'), (1567, 'Calc'), (1568, 'Calc')], 'fix-0000001E')(script)
     wrap_result([(2437, 'PR_TEXT'), (2531, 'PR_TEXT')], 'fix-0000001E')(script)
+    # Lane X4 2026-11-13 (Fix 1, patch/pointmul.py): the 8 reward sites read the whole-number column ポイント倍率100
+    # instead of DBGetFloat("ポイント倍率"): 1000 * x -> 10 * DBGetInt(..), 500 * x -> 5 * DBGetInt(..).
+    pointmul.apply(script, POINT_SITES, 'fix-0000001E')
+    # Lane X5 2026-11-13 (coordinator follow-up): idx 4484 SetProp @Sender 50 joined 呪日 and 呪時間 with nothing
+    # between them ("January 112:34"); one " " literal goes between them (patch/exprfix.py date_space).
+    done, already = xf.date_space(script, [(4484, 'SetProp', 'Value')], 'fix-0000001E')
+    print('fix-0000001E: X5 space between day and hour at idx 4484 (%d rewritten, %d already fixed)' % (done, already))
 
+
+import pointmul  # noqa: E402
+P1, P2 = '書簡残ポイント', 'シナリオ前ポイント'
+POINT_SITES = [(320, xf.I(1000), P1), (321, xf.I(1000), P2), (2556, xf.I(500), P1), (2557, xf.I(500), P2),
+               (2567, xf.I(1000), P1), (2568, xf.I(1000), P2), (5213, xf.I(1000), P1), (5214, xf.I(1000), P2)]
 
 run(SITES, 'fix-0000001E', extra=r2)

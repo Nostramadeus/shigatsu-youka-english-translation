@@ -13,3 +13,20 @@
 # FIX2 2026-09-26 (F27): the detail box now gets the full summary (DB width fix); 20 of 360 rows wrap one line
 # more (max one). Box raised by one 18 px line pitch so the node checkboxes stay clear of the "Left:" bar.
 528	PR_TOP	410	390
+# shorten-restore R3 2026-11-13 (coordinator decision 1): the encyclopedia-unlock notice caption that prints a thing's
+# 簡易説明 is one line from x 110 in a 960-wide row (850 px). Restored English needs up to 774 px at 22 px (1158 at 30).
+# Font 30 -> 22; PR_TOP 5 -> 9 keeps the vertical centre (row base 40 px high: 5 + 30/2 = 9 + 22/2 = 20).
+# Only the 簡易説明 captions (idx 2425 list notice, 2525 single notice); the place / event / person captions
+# (2415/2420/2437, 2515/2520/2531) keep 30.
+2425	PR_FONTHEIGHT	30	22
+2425	PR_TOP	5	9
+2525	PR_FONTHEIGHT	30	22
+2525	PR_TOP	5	9
+# lane X4 2026-11-13 (Fix 3): the place notice captions (詳細チャプター, bold ＭＳ Ｐ明朝, 850 px from x 110) cut 7 English
+# place titles at 30 (widest 1170 px). Largest size from 22 down with 0 CLIP and 0 TIGHT in tools/fit_check.py's model = 20
+# (widest 804 px, 事典場所 key 25; at 21 it is 854 px). PR_TOP left at 5 (open question to the coordinator).
+2415	PR_FONTHEIGHT	30	20
+2515	PR_FONTHEIGHT	30	20
+# X5 2026-11-13 E: unlock-notice captions 2415/2515 centred for font 20 (x4 Q4 rule: top 10)
+2415	PR_TOP	5	10
+2515	PR_TOP	5	10

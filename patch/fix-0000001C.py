@@ -183,4 +183,78 @@ R2_SITES = ([(i, kind, None, shape, xf.permille_fixed(shape), None) for i, kind,
 done, already = xf.apply_sites(s2, R2_SITES, 'fix-0000001C')
 print('fix-0000001C: r2 completion percent without overflow at %d sites, Int() compare at %d sites '
       '(%d rewritten, %d already fixed)' % (len(R1), len(R4), done, already))
+
+
+# ---- Lane X4 2026-11-13 (Fix 2): the map hover tests idx 904 / 906 end in  `全体進行率 >= 22`. 全体進行率 is a STRING
+# ("8.565", "100.000", "44.800"; 00001CA0 also writes "...%"), and text-to-number conversion of a text with a point
+# depends on the Windows decimal symbol. The operand becomes the whole-number part of the text, with functions the game
+# already uses (argument order from existing uses: JPos(needle, text) 000018BF idx 100; JCopy(text, start, count)
+# 0000001C idx 5935; StrToIntDef(text, default) archive セーブロードメニュー idx 25):
+#     StrToIntDef(JCopy(全体進行率 ++ ".", 1, JPos(".", 全体進行率 ++ ".") - 1), 0) >= 22
+# The appended "." makes a text without a point (or "") give its whole text; StrToIntDef gives 0 for "".
+# Each literal is its own temporary and each temporary is read once, as the compiler writes them. No new variable.
+def _f(v):
+    return (3, v)
+
+
+def hover_shape(obj0, obj1, obj6, flag20):
+    """obj0 / obj1 / obj6 = the object-name literals (English after the label maps, Japanese in orig/): taken from the
+    command itself by hover_names(); everything else, and obj0 also at ____4, must match exactly."""
+    S, V, I = xf.S, xf.V, xf.I
+    sh = [(1, '____%d' % i, None, [S(t)]) for i, t in
+          enumerate([obj0, obj1, '矩形', '矩形', obj0, '矩形', obj6, '詫言編2背景'])]
+    sh += [(11, '____8', 'Exists', [V('____7')]), (11, '____9', 'GetProp', [V('____6'), I(4)]),
+           (11, '____10', 'GetProp', [V('____5'), I(14)]), (11, '____11', 'GetProp', [V('____4'), I(4)]),
+           (11, '____12', 'GetProp', [V('____3'), I(14)]), (11, '____13', 'GetProp', [V('____2'), I(13)]),
+           (11, '____14', 'Exists', [V('____1')]), (11, '____15', 'Exists', [V('____0')]),
+           (2, '____16', None, [V('____13'), V('@MouseX')]), (2, '____17', None, [V('____12'), V('@MouseY')]),
+           (2, '____18', None, [V('____10'), V('@MouseY')]),
+           (12, '____19', None, [V('____15'), _f(1)]), (12, '____20', None, [V('____14'), _f(flag20)]),
+           (13, '____21', None, [V('背景用矩形位置x'), V('エデンの桜横')]), (13, '____22', None, [V('____16'), V('エデンの桜横')]),
+           (15, '____23', None, [V('____17'), V('____11')]), (14, '____24', None, [V('____18'), V('____9')]),
+           (12, '____25', None, [V('____8'), _f(0)]), (15, '____26', None, [V('解禁編'), I(3)]),
+           (15, '____27', None, [V('全体進行率'), I(22)])]
+    prev = '____19'
+    for k, rhs in zip(range(28, 36), ['____20', '____21', '____22', '____23', '____24', '____25', '____26', '____27']):
+        sh.append((8, '____%d' % k, None, [V(prev), V(rhs)]))
+        prev = '____%d' % k
+    return sh + [(1, '____arg', None, [V('____35')])]
+
+
+def pct_fixed(shape):
+    S, V, I = xf.S, xf.V, xf.I
+    hit = [i for i, s in enumerate(shape) if s[0] == 15 and s[3] == [V('全体進行率'), I(22)]]
+    if len(hit) != 1:
+        raise ValueError('expected one 全体進行率 >= 22, found %d' % len(hit))
+    n = xf._max_temp(shape) + 1
+    t = ['____%d' % (n + k) for k in range(9)]
+    new = [(1, t[0], None, [S('.')]), (1, t[1], None, [S('.')]), (1, t[2], None, [S('.')]),
+           (19, t[3], None, [V('全体進行率'), V(t[0])]),            # 全体進行率 ++ "."   (copied from)
+           (19, t[4], None, [V('全体進行率'), V(t[2])]),            # 全体進行率 ++ "."   (searched)
+           (11, t[5], 'JPos', [V(t[1]), V(t[4])]),                 # JPos(".", ...)
+           (3, t[6], None, [V(t[5]), I(1)]),                       # - 1
+           (11, t[7], 'JCopy', [V(t[3]), I(1), V(t[6])]),          # JCopy(..., 1, count)
+           (11, t[8], 'StrToIntDef', [V(t[7]), I(0)])]             # StrToIntDef(..., 0)
+    k = hit[0]
+    cmp_ = (shape[k][0], shape[k][1], None, [V(t[8]), I(22)])
+    return shape[:k] + new + [cmp_] + shape[k + 1:]
+
+
+def hover_names(idx):
+    ents = s2.commands[idx]['Calc'].entries
+    names = {e.name: e.operands[0].value for e in ents[:8] if int(e.type) == 1 and len(e.operands) == 1}
+    if sorted(names) != ['____%d' % i for i in range(8)]:
+        sys.exit('fix-0000001C: idx %d does not start with the 8 object-name literals' % idx)
+    return names['____0'], names['____1'], names['____6']
+
+
+X4_SITES = [(i, 'Elseif', None, hover_shape(*hover_names(i), flag), pct_fixed(hover_shape(*hover_names(i), flag)), None)
+            for i, flag in ((904, 1), (906, 0))]
+done, already = xf.apply_sites(s2, X4_SITES, 'fix-0000001C')
+print('fix-0000001C: X4 whole-number part of 全体進行率 in the >= 22 test at idx 904/906 (%d rewritten, %d already fixed)'
+      % (done, already))
+# ---- Lane X5 2026-11-13: cursed-date spacing (x2 PROGRESS Q1) in the unlock notice text, idx 4029 Calc 通知シナリオ:
+# 呪日 and 呪時間 were joined with nothing between them ("January 112:34"); one " " literal goes between them.
+done, already = xf.date_space(s2, [(4029, 'Calc', 'Calc')], 'fix-0000001C')
+print('fix-0000001C: X5 space between day and hour at idx 4029 (%d rewritten, %d already fixed)' % (done, already))
 open(dst, 'wb').write(s2.to_lsb())

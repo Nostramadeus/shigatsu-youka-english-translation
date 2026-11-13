@@ -9,3 +9,11 @@
 # The toast now stops at x 570 (text ends ~938) and its background box is 40 px wider. Text unchanged.
 251	PR_WIDTH	350	390
 257	Value	610	570
+# shorten-restore R3 2026-11-13 (coordinator decision 1): the encyclopedia-unlock notice caption that prints a thing's
+# 簡易説明 is one line from x 110 in a 960-wide row (850 px). Restored English needs up to 774 px at 22 px (1158 at 30).
+# Font 30 -> 22; PR_TOP 5 -> 9 keeps the vertical centre (row base 40 px high: 5 + 30/2 = 9 + 22/2 = 20).
+# idx 135 is the one caption of each notice row (person name, or the 簡易説明 for things via the variable fallback).
+# lane X4 2026-11-13 (Fix 3): 終了時用事典解禁通知 can also be a place title (事典場所 詳細チャプター); key 25 is 881 px at 22 (room 850). Largest size from 22 down with 0 CLIP and 0 TIGHT over all four source columns = 20 (widest 804 px). PR_TOP stays 9.
+135	PR_FONTHEIGHT	30	20
+135	PR_TOP	5	10
+# X5 2026-11-13 E: idx 135 PR_TOP 9 -> 10 (row above), font 20 centred by the x4 Q4 rule

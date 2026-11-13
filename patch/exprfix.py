@@ -235,3 +235,45 @@ def obj_is(name, prop):
         got = (str(cmd['ObjName']), str(cmd['ObjProp']))
         return None if got == (name, prop) else 'animates %s/%s, expected %s/%s' % (got + (name, prop))
     return check
+
+
+def date_space(script, sites, tag, left='呪日', right='呪時間'):
+    """Lane X5 2026-11-13 (cursed-date spacing, x2 PROGRESS Q1): in a ++ chain `... ++ 呪日 ++ 呪時間 ++ ...` put one " "
+    literal between the two variables. sites = [(idx, command type, property)]. A site whose printed expression holds
+    `呪日 ++ 呪時間` once (and no fixed form) is rewritten; one that holds `呪日 ++ " " ++ 呪時間` once is already fixed
+    and left alone; anything else stops the script before any change. After the rewrite the printed expression must
+    equal the old one with only that spot changed. Returns (rewritten, already fixed)."""
+    old_t, new_t = '%s ++ %s' % (left, right), '%s ++ " " ++ %s' % (left, right)
+    plan = []
+    for idx, kind, key in sites:
+        cmd = script.commands[idx]
+        if cmd.type.name != kind:
+            sys.exit('%s: idx %d is %s, expected %s' % (tag, idx, cmd.type.name, kind))
+        p = cmd[key] if key in cmd.keys() else None
+        if not isinstance(p, LiveParser):
+            sys.exit('%s: idx %d has no expression property %s' % (tag, idx, key))
+        now = str(p)
+        if now.count(new_t) == 1 and now.count(old_t) == 0:
+            plan.append((idx, p, None))
+            continue
+        ents = sigs(p.entries)
+        hit = [k for k in range(len(ents) - 1)
+               if ents[k][0] == int(OpeDataType.ComboStr) and len(ents[k][3]) == 2 and ents[k][3][1] == (VAR, left)
+               and ents[k + 1][0] == int(OpeDataType.ComboStr) and ents[k + 1][3] == [(VAR, ents[k][1]), (VAR, right)]]
+        if now.count(old_t) != 1 or now.count(new_t) != 0 or len(hit) != 1:
+            sys.exit('%s: idx %d %s is neither the original nor the fixed date expression: %r' % (tag, idx, key, now))
+        k = hit[0]
+        name = '____%d' % (_max_temp(ents) + 1)
+        fixed = ents[:k + 1] + [(int(OpeDataType.ComboStr), name, None, [(VAR, ents[k][1]), (STR, ' ')]),
+                                (ents[k + 1][0], ents[k + 1][1], None, [(VAR, name), (VAR, right)])] + ents[k + 2:]
+        plan.append((idx, p, (now, fixed)))
+    done = 0
+    for idx, p, todo in plan:
+        if todo is None:
+            continue
+        now, fixed = todo
+        _rebuild(p, fixed)
+        if sigs(p.entries) != fixed or str(p) != now.replace(old_t, new_t):
+            sys.exit('%s: idx %d date rewrite check failed: %r' % (tag, idx, str(p)))
+        done += 1
+    return done, len(sites) - done
