@@ -54,7 +54,7 @@ ROUTES = {
                  "c6810a883acb7b0bfd94077acde883450ff4af93e07fb266b8d85652a9ac7734",
                  ((11, "0000064C"),)),
     "202": Route("00000656", 4472,
-                 "42f47f43ed1f42fa09aaa37b57cbdfd05049ba8a462b17af4ced718fde3886b9",
+                 "f826e8c01d5a68d915c6d1023f2c972ec89401848c16414c5f73a67a1c629623",
                  ((11, "00000681"), (17, "0000185B"))),
 }
 
@@ -63,6 +63,9 @@ ROUTES = {
 # recompiled with only that phrase changed (extraction diff old vs new = the phrase + style reference counts);
 # command count, TextIns indices and block labels are unchanged (block_count re-checks them). Digests above are the
 # new builds. PREVIOUS_EN = the totals of the previous builds, the values the table held before this change.
+# Route review 2026-11-14: 00000656 was recompiled on 2026-11-13 (staff-roll lines; shipped in patch-2026-11-13). Its two route
+# blocks keep their command indices and labels (block_count re-checks them) and the route total is still 10256, the
+# value the table holds. Only the digest of route 202 was updated.
 PREVIOUS_EN = {"138": 13282, "170": 12836, "206": 9325, "202": 10259}
 
 
