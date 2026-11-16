@@ -274,3 +274,66 @@ On-screen driver with the real mouse and keyboard (added 2026-09-26, run 1). The
   physical pixels of the 1440x810 panel.
 - `mouse/walk_run1.py` replays `walk_run1.cmds` (run 1's exact command list). `mouse/screens.md`
   maps every screen and its clickables.
+
+## State tests (tools/harness/state/) - set state, call a routine, read state
+
+Added 2026-11-16. No clicks, no screenshots. `run_state_test.py` boots the JP or EN build OFF-SCREEN and
+MUTED into an injected test block instead of the title, sets variables, calls one routine, makes the game
+write `save.dat`, quits, and prints the requested values as TSV (`name<TAB>value`). Details and evidence:
+`state/PROGRESS.md`.
+
+    cd <repo>/tools/harness/state
+    UVRUN="uv run --no-project --python 3.12 --with pywin32 --with pycaw --with pillow --with comtypes --with pylivemaker"
+    PYTHONUTF8=1 PYTHONIOENCODING=utf-8 $UVRUN python run_state_test.py --build en \
+        --set st173=5 --set st32=0 --call 0000001C.lsb:00002413 \
+        --dump "st32,st173,裏ルート変数[158],裏ルート変数[173],裏ルート解禁"
+
+| flag | what |
+|---|---|
+| `--build jp\|en` | which build; the test folder is `work/state-test/<build>/` |
+| `--set NAME=INT` | repeatable, or `;`-separated. Array cell: `裏ルート変数[173]=0`. String: `NAME="text"` |
+| `--call PAGE.lsb:X` | X = a Label name (`00002413`) or a 0-based command index (`5886`) |
+| `--dump "a,b[i]"` | values to print; read from the status block (Scope 3), else from the test save slot. 1-D indexes only |
+| `--init "P:L,..."` | Calls run before the sets. Default `0000001C.lsb:000024C7,00001F85.lsb:00001F86` = what the navigator runs on entry (0000001C idx 1001 and 1030: rk/st/解禁通知 VarNew, DB tables, SetArray) |
+| `--timeout S` | hard limit per run, default 240 |
+| `--where` | third column: `status` or `slot:STATETEST` |
+| `--read-save PATH` | decode any save.dat (a player's too) with `--dump`; no game launch |
+| `--plan FILE --builds jp,en` | run every case of a TSV plan on each build, one table with expected values, stop at the first JP/EN difference (`plans/issue8.tsv` is the example) |
+| `--trace` | debug: a GameSave after every step, so a failed run says how far it got |
+| `--pause-ms N` | debug: a Wait of N ms before every block command; the time an engine error dialog appears (log, relative to the logo video window closing = the dispatcher jump) names the command |
+| `--start-save PATH` | single runs (2026-11-16): boot from a COPY of this save.dat instead of a fresh game (the copy is a new file in the test folder, deleted in `finally`). The block then also sets the run marker by Calc, since the save already holds one. Pair with `--init none` (no init Calls) to see only what the engine's own boot path does. Proven: the engine loads save.dat before 0000001C idx 1001, and VarNew on an existing variable keeps its value (rk119 fix P5, work/bugs-2026-11-16/rk119-fix/) |
+
+A run takes ~20 s (save at ~14 s after launch). Each output line is `name<TAB>value`.
+
+How it works: `inject.py` appends a block to `000000F2.lsb`: `VarNew ZZ_STATETEST_MARK=<random nonce>`
+and `ZZ_STATETEST_STEP=0` (Scope 3), the init Calls, one `Calc` per `--set`, the `Call`, `STEP=99`, then the
+game's own save pattern - `Call 00001F85.lsb:00001FDC` (idx 204, `DBClearTable()`), `Wait 1`,
+`GameSave No=150` caption `STATETEST`, `Wait 1` - then `Wait 1000`, `Terminate`. The three boot-dispatcher
+Jumps (初回起動チェック / 全部了承 / else) are retargeted to it. Everything before the dispatcher is the
+engine's normal fresh boot (no save.dat): ゲームメイン -> 変数初期化 -> navigator pre-title init ->
+000000F2 boot -> logo. The runner accepts only a save.dat holding this run's nonce AND step 99, so an
+engine autosave can never be mistaken for the result.
+
+Two traps, both cost a run (2026-11-16):
+- **A GameSave without the `Call 00001F85.lsb:204` before it raised an engine error dialog** (Delphi
+  `TMessageForm`, OK button only; its text is a non-window label, unreadable without a screenshot). Every
+  GameSave in the game is preceded by that Call; the block now does the same. Without it the engine's own
+  pre-title autosave is 8.4 MB; with it the test save is 13 KB.
+- **pylivemaker 1.2.1 cannot re-serialize a parsed GameSave**: `GameSave.__init__` assigns the parsed
+  Caption to `No` (typo, command.py:1529). `inject.py` builds a fresh GameSave with explicit parsers in the
+  game's caption shape (`____0 = "text"`, `____arg = ____0`).
+
+**Hard links.** `work/state-test/jp/` and `.../en/` are HARD LINKS of every file in `game/jp/` and
+`game/en/` except `save.dat`, `SS/` and `jp-sightings/` (the 1 GB exe costs no disk). A write through a
+hard link changes the original, so the runner never writes into a linked file: it deletes the link,
+then creates a new file. Every delete is checked to be inside `work/state-test/<build>/`. Each run
+re-syncs the folder first (relinks anything stale, so a new `game/en` build is picked up).
+
+**Cleanup, every run, also on failure (`finally`).** `taskkill /PID /T /F`, then `tasklist` by PID and by
+image name (logged); the injected `000000F2.lsb` and `save.dat` deleted; the folder re-synced (the EN
+`000000F2.lsb` hard link comes back); the engine's `%TEMP%` litter from this run (`fon*.tmp`, `~lv*.wmv`)
+deleted. The runner refuses to start while any game process is running (it may be the owner's).
+
+Evidence per run: `work/state-test/runs/<stamp>-<build>-<label>/` = `run.log` (injected block listing,
+windows seen, timings, tasklist result), `save.dat` (copy), `result.tsv`. Nothing here ships: the
+patched `000000F2.lsb` exists only inside the test folder during a run.

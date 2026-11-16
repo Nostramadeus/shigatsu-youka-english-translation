@@ -88,4 +88,10 @@ fi
 if [ "$src" != "lns" ] && [ -f "patch/fix-$id.py" ]; then
   PYTHONUTF8=1 uv run --no-project --with pylivemaker python "patch/fix-$id.py" "work/$id.lsb" "work/$id.lsb"
 fi
+# APPENDED BLOCK (2026-11-16, rk119 fix): patch/append-<id>.tsv = checked renames + ONE command block appended at the
+# END of the script + a Jump retargeted into it, so no existing command index moves (tools/lsb_append.py). LAST step:
+# it checks the original span byte for byte, so nothing may rewrite the file after it.
+if [ "$src" != "lns" ] && [ -f "patch/append-$id.tsv" ]; then
+  PYTHONUTF8=1 uv run --no-project --with pylivemaker python tools/lsb_append.py "work/$id.lsb" "work/$id.lsb" "patch/append-$id.tsv"
+fi
 ls -la "work/$id.lsb"

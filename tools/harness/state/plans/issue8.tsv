@@ -1,0 +1,8 @@
+# GitHub issue #8: does finishing 173 "Proof" open Proof's hidden route without 32 "Rubbing the Wrong Way"?
+# Loop under test: 0000001C idx 5887-5917 (Label 00002413). Rows of 裏ルート.tsv: row 4 = 173 needs 元連番 32;
+# row 0 = 158 needs 元連番 173. Expected values from the static reading; "-" = not stated by the brief.
+# columns: test <TAB> set (;-list) <TAB> call <TAB> dump (,-list) <TAB> expect (,-list aligned with dump)
+test	set	call	dump	expect
+T0		0000001C.lsb:00002413	st32,st173,裏ルート変数[158],裏ルート変数[173],裏ルート解禁	0,0,0,0,0
+T1	st173=5;st32=0	0000001C.lsb:00002413	st32,st173,裏ルート変数[158],裏ルート変数[173],裏ルート解禁	0,5,3,0,-
+T2	st173=5;st32=10	0000001C.lsb:00002413	st32,st173,裏ルート変数[158],裏ルート変数[173],裏ルート解禁	10,5,-,3,-
