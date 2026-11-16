@@ -233,6 +233,7 @@ class Fix00001CA0(Base):
 
 R6_RANGE = range(538, 562)
 R6_CHANGED = [538, 539, 540, 541, 546, 547, 553, 554, 555, 556, 557, 558, 559, 560, 561]
+POPUP_SITES = [105, 110, 115]        # retreat tests of the three unlock popups: == 610 -> == 570
 
 
 def r6_text(text):
@@ -252,11 +253,13 @@ class Fix00001F8A(Base):
                 before, after = text(o.commands[idx]), text(s.commands[idx])
                 if tree == 'orig' or idx in R6_RANGE:
                     want = r6_text(before) if idx in R6_RANGE else before
+                    if idx in POPUP_SITES:           # 2026-11-16: unlock popup rests at x 570 (props-000016C3.tsv)
+                        want = before.replace('== 610', '== 570')
                     self.assertEqual(after, want, '%s idx %d' % (tree, idx))
                 if before != after:
                     changed.append(idx)
             if tree == 'orig':
-                self.assertEqual(changed, R6_CHANGED)
+                self.assertEqual(changed, sorted(POPUP_SITES + R6_CHANGED))
             self.assertIn('% 220 <= 132', str(s.commands[539]))
             self.assertIn('% 220 > 132', str(s.commands[559]))
 

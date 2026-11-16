@@ -17,7 +17,7 @@ import sys
 from livemaker.lsb.core import LiveParser, OpeData, OpeDataType, OpeFuncType, Param, ParamType
 
 VAR, INT, STR = int(ParamType.Var), int(ParamType.Int), int(ParamType.Str)
-EXPR_KEY = {'If': 'Calc', 'Elseif': 'Calc', 'Calc': 'Calc', 'PropMotion': 'Value'}
+EXPR_KEY = {'If': 'Calc', 'Elseif': 'Calc', 'Calc': 'Calc', 'PropMotion': 'Value', 'Exit': 'Calc'}
 
 
 def sig(e):

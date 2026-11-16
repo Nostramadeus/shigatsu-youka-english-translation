@@ -14,6 +14,12 @@ point inside a step moves with it, 60 -> 132 (60 % of the step, as in the origin
 `文字数誤差 % 100` in the block becomes 220 (24 + 2 sites) and the two `% ... 60` tests become 132; nothing outside
 idx 538-561 changes (the percent displays at idx 348-365 also read 文字数誤差 and stay as they are).
 
+Reference popup (bug 2026-11-16). Since patch-2026-11-03 the "reference unlocked" popup rests at x 570, not 610
+(patch/props-000016C3.tsv, PropMotion Value idx 374/397/420). idx 105, 110, 115 here still test
+`GetProp("リファレンス解禁土台<n>", 3) == 610` before they start the retreat, so the popup never retreats by itself.
+Fix: that one literal 610 -> 570 in those three expressions (the click test is patch/fix-000016C3.py idx 460). The other
+610 literals in this script (PR_LEFT=610 at idx 553, 585, 827, ...) are not the popup and stay.
+
 Each (command, property) must hold exactly its original expression, or the fixed one (idempotent); anything else and
 the script refuses to write. Checks: patch/exprfix.py.
 """
@@ -98,6 +104,25 @@ SITES = [  # (idx, command, property, original expression)
 ]
 
 
+REF_X_OLD, REF_X_NEW = 610, 570
+
+
+def ref_retreat(n):                     # If (Exists("リファレンス撤収<n>") == 0 & GetProp("リファレンス解禁土台<n>", 3) == 610)
+    return [(1, '____0', None, [S('リファレンス撤収' + n)]), (1, '____1', None, [S('リファレンス解禁土台' + n)]),
+            (11, '____2', 'GetProp', [V('____1'), I(3)]), (11, '____3', 'Exists', [V('____0')]),
+            (12, '____4', None, [V('____3'), (3, 0)]), (12, '____5', None, [V('____2'), I(REF_X_OLD)]),
+            (8, '____6', None, [V('____4'), V('____5')]), (1, '____arg', None, [V('____6')])]
+
+
+REF_SITES = [(105, 'If', 'Calc', ref_retreat('')), (110, 'If', 'Calc', ref_retreat('2')),
+             (115, 'If', 'Calc', ref_retreat('3'))]
+
+
+def ref_fixed(shape):
+    """The popup's resting-x test == 610 -> == 570 (entry ____5, operand 1); nothing else."""
+    return xf.const_fixed(shape, {('____5', 1): (REF_X_OLD, REF_X_NEW)})
+
+
 def fixed(shape):
     """文字数誤差 / 100 and 文字数誤差 % 100 -> 220; a > or <= test of such a % result against 60 -> 132."""
     mods = {s[1] for s in shape if s[0] == 6 and s[3] == [V(D), I(STEP_OLD)]}
@@ -121,8 +146,10 @@ src, dst = sys.argv[1], sys.argv[2]
 s = LMScript.from_file(src)
 if len(s.commands) != 854:
     sys.exit('fix-00001F8A: %d commands, expected 854 (not 00001F8A, or its structure changed)' % len(s.commands))
-done, already = xf.apply_sites(s, [(i, kind, key, shape, fixed(shape), None) for i, kind, key, shape in SITES],
+done, already = xf.apply_sites(s, [(i, kind, key, shape, fixed(shape), None) for i, kind, key, shape in SITES]
+                               + [(i, kind, key, shape, ref_fixed(shape), None) for i, kind, key, shape in REF_SITES],
                                'fix-00001F8A')
-print('fix-00001F8A: r2 staff roll step %d -> %d characters, show/fade point %d -> %d, %d expressions '
-      '(%d rewritten, %d already fixed)' % (STEP_OLD, STEP_NEW, SHOW_OLD, SHOW_NEW, len(SITES), done, already))
+print('fix-00001F8A: r2 staff roll step %d -> %d characters, show/fade point %d -> %d; reference popup resting x '
+      '%d -> %d; %d expressions (%d rewritten, %d already fixed)'
+      % (STEP_OLD, STEP_NEW, SHOW_OLD, SHOW_NEW, REF_X_OLD, REF_X_NEW, len(SITES) + len(REF_SITES), done, already))
 open(dst, 'wb').write(s.to_lsb())
