@@ -255,11 +255,13 @@ class Fix00001F8A(Base):
                     want = r6_text(before) if idx in R6_RANGE else before
                     if idx in POPUP_SITES:           # 2026-11-16: unlock popup rests at x 570 (props-000016C3.tsv)
                         want = before.replace('== 610', '== 570')
+                    if idx == 302:  # issue8 2026-11-18: hidden-route suffixes stripped from the title lookup
+                        want = before.replace(', ナビタイトル名, 0, 0,', ', ' + 'StringReplace(' * 4 + 'ナビタイトル名, " (Hidden Route)", ""), " (Hidden Route 2)", ""), " (Hidden Route 3)", ""), " (Hidden Route 4)", ""), 0, 0,')
                     self.assertEqual(after, want, '%s idx %d' % (tree, idx))
                 if before != after:
                     changed.append(idx)
             if tree == 'orig':
-                self.assertEqual(changed, sorted(POPUP_SITES + R6_CHANGED))
+                self.assertEqual(changed, sorted(POPUP_SITES + R6_CHANGED + [302]))
             self.assertIn('% 220 <= 132', str(s.commands[539]))
             self.assertIn('% 220 > 132', str(s.commands[559]))
 

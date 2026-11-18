@@ -62,6 +62,48 @@ Not on this list because they are consistent: the encyclopedia entries that spea
 
 </details>
 
+## Bugs of the original game that the patch fixes
+
+The Japanese game has a few small bugs of its own. Where one of them can spoil the story or hide progress, the English patch fixes it
+instead of copying it. Everything else behaves exactly like the original.
+
+<details>
+<summary><b>Spoilers (arc and scenario names): what was fixed, and how to see it in the original (click to open)</b></summary>
+
+**1. A hidden route could open too early** (fixed in patch-2026-11-18; reported in issue #8)
+
+What the original does: the game remembers "which scenario is selected" in one place, and loading a save does not restore it.
+For a normal scenario the game corrects it right after loading. For a hidden route (裏ルート) it does not. If a save made inside a
+hidden route is loaded after the mouse has rested on another scenario on the map, the game finishes the route believing it belongs
+to that other scenario, and marks that scenario's hidden route as "Played" (プレイ済み).
+
+Steps in the unpatched Japanese game (Jusatsu Arc [Killing by Curse]):
+
+1. Finish "Proof" (証明). The notice for the hidden route of "Self-Blame" (自責) appears.
+2. Open the hidden route (裏ルート) of "Self-Blame" (自責).
+3. Inside the hidden route, save: a quick save (クイックセーブ, right-click the save icon) or a numbered slot.
+4. Use "Break off" (中断) to go back to the map.
+5. Rest the mouse on "Proof" (証明) so that its summary panel (あらすじ) shows.
+6. Load the save from step 3 and read the hidden route to the end.
+
+Result: the hidden route of "Self-Blame" says "Status: Broken off" (状態：中断), and the hidden route of "Proof" says
+"Status: Played" (状態：プレイ済み) and can be opened, although "Rubbing the Wrong Way" (逆撫で) in the Wabigoto Arc [Apology] has not
+been read. That route gives away a twist of the arc. If the mouse rests on a scenario that has no hidden route, that scenario gets a
+hidden-route button it should not have. Without step 5 nothing goes wrong.
+
+What the patch changes: after a load, the game now finds the right scenario for a hidden route too. Nothing else is different.
+
+Saves that already have this are not changed by the patch. Signs: a hidden route that is open although the scenario it depends on
+is unread, or a hidden route you read to the end that still says "Broken off". Reading that route to the end once more sets it to "Played".
+
+**2. Reference No.137 never showed as complete** (fixed in patch-2026-11-16)
+
+What the original does: a typo in the script stores the progress of reference No.137 in the place that belongs to No.136. The two
+entries overwrite each other, so No.137 can stay incomplete and its "complete" popup can be skipped. The patch gives No.137 its own
+progress value and carries over what an older save already had.
+
+</details>
+
 
 Free LiveMaker 3 visual novel by New++ (freem game 19917, v2.0.0.4). The whole game is packed inside its 1 GB exe.
 This repo holds only the translation (scripts, tables, pictures, notes), never the game.

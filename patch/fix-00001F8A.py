@@ -118,6 +118,37 @@ REF_SITES = [(105, 'If', 'Calc', ref_retreat('')), (110, 'If', 'Calc', ref_retre
              (115, 'If', 'Calc', ref_retreat('3'))]
 
 
+# Issue 8 (bug 2026-11-18, ORIGINAL-GAME bug, same in JP). While a scenario is on screen, idx 302 (Label 00001F8D)
+# re-derives 選択シナリオ from the title: DBDirectGetStr("ナビデータ", "タイトル", ナビタイトル名, 0, 0, "連番", 選択シナリオ).
+# Inside a hidden route ナビタイトル名 = title ++ " (Hidden Route)" / " (Hidden Route 2)" / " 3)" / " 4)" (0000001C idx
+# 6124-6130), which matches no row, so a stale 選択シナリオ survives a slot load and the route-end write (000015DC idx
+# 2362) lands on the wrong 裏ルート変数 cell. Fix: the lookup key is ナビタイトル名 with those four suffixes removed
+# (StringReplace(source, old, new), the argument order of 0000001C idx 104). A normal title holds none of them, so
+# normal play computes the same value. Checks: work/bugs-2026-11-18/issue8-fix/PROGRESS.md.
+HR = [' (Hidden Route)', ' (Hidden Route 2)', ' (Hidden Route 3)', ' (Hidden Route 4)']
+SEL = '選択シナリオ'
+ISSUE8_OLD = [(1, '____0', None, [S('ナビデータ')]), (1, '____1', None, [S('タイトル')]), (1, '____2', None, [S('連番')]),
+              (11, '____3', 'DBDirectGetStr', [V('____0'), V('____1'), V('ナビタイトル名'), (3, 0), (3, 0), V('____2'),
+                                               V(SEL)]),
+              (1, SEL, None, [V('____3')])]
+
+
+def issue8_fixed():
+    out = ISSUE8_OLD[:3]
+    key, n = 'ナビタイトル名', 3
+    for suffix in HR:   # ____n = suffix, ____n+1 = "", ____n+2 = StringReplace(key, ____n, ____n+1)
+        a, b, r = '____%d' % n, '____%d' % (n + 1), '____%d' % (n + 2)
+        out += [(1, a, None, [S(suffix)]), (1, b, None, [S('')]), (11, r, 'StringReplace', [V(key), V(a), V(b)])]
+        key, n = r, n + 3
+    res = '____%d' % n
+    out += [(11, res, 'DBDirectGetStr', [V('____0'), V('____1'), V(key), (3, 0), (3, 0), V('____2'), V(SEL)]),
+            (1, SEL, None, [V(res)])]
+    return out
+
+
+ISSUE8_SITES = [(302, 'Calc', 'Calc', ISSUE8_OLD, issue8_fixed(), None)]
+
+
 def ref_fixed(shape):
     """The popup's resting-x test == 610 -> == 570 (entry ____5, operand 1); nothing else."""
     return xf.const_fixed(shape, {('____5', 1): (REF_X_OLD, REF_X_NEW)})
@@ -147,9 +178,12 @@ s = LMScript.from_file(src)
 if len(s.commands) != 854:
     sys.exit('fix-00001F8A: %d commands, expected 854 (not 00001F8A, or its structure changed)' % len(s.commands))
 done, already = xf.apply_sites(s, [(i, kind, key, shape, fixed(shape), None) for i, kind, key, shape in SITES]
-                               + [(i, kind, key, shape, ref_fixed(shape), None) for i, kind, key, shape in REF_SITES],
+                               + [(i, kind, key, shape, ref_fixed(shape), None) for i, kind, key, shape in REF_SITES]
+                               + ISSUE8_SITES,
                                'fix-00001F8A')
 print('fix-00001F8A: r2 staff roll step %d -> %d characters, show/fade point %d -> %d; reference popup resting x '
-      '%d -> %d; %d expressions (%d rewritten, %d already fixed)'
-      % (STEP_OLD, STEP_NEW, SHOW_OLD, SHOW_NEW, REF_X_OLD, REF_X_NEW, len(SITES) + len(REF_SITES), done, already))
+      '%d -> %d; issue8 hidden-route suffixes stripped from the idx 302 title lookup; %d expressions (%d rewritten, '
+      '%d already fixed)'
+      % (STEP_OLD, STEP_NEW, SHOW_OLD, SHOW_NEW, REF_X_OLD, REF_X_NEW, len(SITES) + len(REF_SITES) + len(ISSUE8_SITES),
+         done, already))
 open(dst, 'wb').write(s.to_lsb())
