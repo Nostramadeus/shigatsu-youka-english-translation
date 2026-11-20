@@ -40,7 +40,7 @@ P0_TIER2 = ("The day before the incident, Mr. Kogori had told his family he was 
             "He was reportedly still breathing when he was found.")
 P0_LOWER = [
     "At around 9 p.m. the same day, Erina Goto (15), a local resident, was found murdered by an unknown "
-    "assailant near Jogaoka Nursery School. The cause of death was a crushed brain from a violent blow to the "
+    "assailant near Shirogaoka Nursery School. The cause of death was a crushed brain from a violent blow to the "
     "head. Then, at around 11 p.m., Akane Kogori (42) and Natsumi Kogori (16), who lived nearby, were also "
     "found murdered in their home.",
     "Ryoji Kogori, found early in the morning, and Akane and Natsumi, killed that night, were one family, and "
@@ -69,7 +69,7 @@ PICS = {
                  kind="stack", en=["THE", "MOTOKI", "DAILY"], sizes=[40, 48, 48], erase="diag", bold=True, spread=True, hatch=0.12),
             dict(id="0-publisher", jp="発行所 / 元木雑誌社 / 佐波県元木町城ケ丘1-1 / 郵便番号 909-0028 / ©元木雑誌社 紀耀800年 / 電話 128(991)XXXX",
                  rect=(1132, 520, 1298, 648), glyph=16, kind="stack",
-                 en=["Publisher", "Motoki Magazine Co.", "1-1 Jogaoka, Motoki-cho,", "Sawa Pref.  Postal code 909-0028",
+                 en=["Publisher", "Motoki Magazine Co.", "1-1 Shirogaoka, Motoki-cho,", "Sawa Pref.  Postal code 909-0028",
                      "© Motoki Magazine Co., Shiyo 800", "Tel. 128(991)XXXX"],
                  sizes=[12, 17, 12, 12, 12, 12], erase="paper", bold_lines=[1]),
             dict(id="0-ad", jp="プログラミング / 不要のゲーム / 開発ツール", rect=(1132, 658, 1298, 740), glyph=22,

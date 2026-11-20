@@ -73,6 +73,80 @@ def _engine_items():
     return items
 
 
+# Encyclopedia tutorial map (チュートリアル場所.gal) labels, owner-approved 2026-11-20 (review page
+# work/feedback-20261120/pictures/edit/REVIEW.html). Names = tsv-en/事典場所.tsv 表示名 word for word (never
+# shortened: two labels take two lines, Revo Heights sits left of its dot). Japanese label + yellow underline
+# erased (bright text OR yellowish pixels inside the region, dilated 1 px, cv2 TELEA radius 4); English in Cambria
+# 14 px #f2f6ff with a 1 px #101820 outline and the original's yellow underline (colour sampled from it).
+# (Japanese, region of the Japanese text + underline without the dot, English lines, side of the dot, right limit)
+TUT_MAP_LABELS = [
+    ("五島家", (231, 76, 282, 99), ["Goto Home"], "R", 370),
+    ("元木高校", (386, 107, 448, 129), ["Motoki High School"], "R", 519),
+    ("中央公園", (295, 133, 354, 155), ["Chuo Park"], "R", 420),
+    ("元木学習塾", (150, 194, 224, 217), ["Motoki", "Cram School"], "R", 231),
+    ("元木警察署", (241, 195, 316, 217), ["Motoki Police Station"], "R", 440),
+    ("ザッハ35号店", (438, 263, 522, 285), ["Zahha Store", "No. 35"], "R", 519),
+    ("レボハイツ", (453, 303, 522, 325), ["Revo Heights"], "L", 519),
+]
+
+
+def _tut_map_labels(im):
+    import math
+    import numpy as np
+    import cv2
+    from PIL import Image, ImageDraw, ImageFont
+    arr = np.array(im.convert("RGBA"))
+    rgb = arr[:, :, :3].astype(int)
+    mask = np.zeros(arr.shape[:2], np.uint8)
+    ucols, jp_boxes, dots = [], [], []
+    for jp, (rx0, ry0, rx1, ry1), en, side, lim in TUT_MAP_LABELS:
+        sub = rgb[ry0:ry1, rx0:rx1]
+        m = (sub[:, :, 0] > 140) & (sub[:, :, 1] > 140)
+        ys, xs = np.where(m)
+        jp_boxes.append((rx0 + xs.min(), ry0 + ys.min(), rx0 + xs.max() + 1, ry0 + ys.max() + 1))
+        yel = (sub[:, :, 0] > 150) & (sub[:, :, 1] > 140) & (sub[:, :, 2] < 110)
+        if yel.any():
+            ucols.append(sub[yel].mean(axis=0))
+        my = (sub[:, :, 0] > 100) & (sub[:, :, 1] > 90) & (sub[:, :, 2] < sub[:, :, 0] - 35)
+        mask[ry0:ry1, rx0:rx1] |= (m | my).astype(np.uint8)
+        dz = rgb[ry0 - 4:ry1 + 4, rx0 - 16:rx0]           # blue dot left of the text
+        bl = (dz[:, :, 2] - dz[:, :, 0] > 40) & (dz[:, :, 2] > 90)
+        yy, xx = np.where(bl)
+        dots.append((rx0 - 16 + xx.mean(), ry0 - 4 + yy.mean()) if len(xx) else (rx0 - 6, (ry0 + ry1) / 2))
+    mask = cv2.dilate(mask, np.ones((3, 3), np.uint8), iterations=1)
+    bgr = cv2.cvtColor(arr[:, :, :3], cv2.COLOR_RGB2BGR)
+    arr[:, :, :3] = cv2.cvtColor(cv2.inpaint(bgr, mask * 255, 4, cv2.INPAINT_TELEA), cv2.COLOR_BGR2RGB)
+    ucol = tuple(int(v) for v in np.mean(ucols, axis=0)) + (255,)
+    out = Image.fromarray(arr)
+    d = ImageDraw.Draw(out)
+    serif = "C:/Windows/Fonts/cambria.ttc"
+    chosen = None
+    for fs in (14, 13):
+        f = ImageFont.truetype(serif, fs, index=0)
+        ok = True
+        for (jp, rb, en, side, lim), (dx, dy) in zip(TUT_MAP_LABELS, dots):
+            w = max(d.textlength(t, font=f) for t in en)
+            if (side == "R" and rb[0] + w > lim) or (side == "L" and dx - 8 - w < 20):
+                ok = False
+        if ok:
+            chosen = fs
+            break
+    if not chosen:
+        raise RuntimeError("tutorial map labels do not fit at 13 px")
+    f = ImageFont.truetype(serif, chosen, index=0)
+    asc, dsc = f.getmetrics()
+    lh = asc + dsc - 1
+    for (jp, rb, en, side, lim), (dx, dy), jb in zip(TUT_MAP_LABELS, dots, jp_boxes):
+        top = dy - (len(en) * lh) / 2
+        for i, t in enumerate(en):
+            w = d.textlength(t, font=f)
+            x = jb[0] if side == "R" else dx - 8 - w
+            base = top + i * lh + asc - 1
+            d.text((x, base), t, font=f, fill="#f2f6ff", stroke_width=1, stroke_fill="#101820", anchor="ls")
+            d.line([(x, base + 2), (x + w, base + 2)], fill=ucol, width=1)
+    return out
+
+
 JOBS = [
     # ==== right-click menu: the item buttons (navy = normal, dark red = hover) ==============================
     dict(id="rc-buttons", screen="right-click menu", style="gothic", erase="flat", max_size=26,
@@ -163,24 +237,27 @@ JOBS = [
                 ("Events", [38, 150, 250, 200]), ("Things and Concepts", [326, 150, 560, 200]),
                 ("Points left 21132", [0, 296, 160, 338])],
          wording="GLOSSARY (Things and Concepts), tsv-en/チュートリアル.tsv (people, events)", new=True),
-    dict(id="word-tut-map", screen="encyclopedia tutorial mock screen (map labels)", style="serif",
+    dict(id="word-tut-map", screen="encyclopedia tutorial mock screen (map title)", style="serif",
          erase="inpaint", mode="lines", mask_color=[120, 255, 120, 255, 120, 255], color="#f2f6ff",
          max_size=15, mask_grow=9, align="left", stroke=1, stroke_color="#101820",
          items=[(W + "チュートリアル場所.gal", None)],
-         lines=[("Motoki-cho, Sawa Prefecture", [196, 4, 434, 48]),
-                ("Goto house", [234, 78, 332, 98]), ("Motoki H.S.", [386, 106, 492, 126]),
-                ("Chuo Park", [298, 134, 396, 154]), ("Cram school", [148, 188, 246, 208]),
-                ("Police stn.", [248, 200, 352, 220]), ("Zahha #35", [430, 264, 530, 284]),
-                ("Repo Heights", [454, 294, 558, 314])],
-         wording="GLOSSARY (Motoki-cho, Sawa Prefecture, Motoki High School, Chuo Park, the Motoki cram school, "
-                 "Motoki Police Station, Zahha)", new=True,
-         note="map labels abbreviated so the English fits the same spots; the title's furigana line is dropped; "
-              "五島家 = Goto house and レポハイツ = Repo Heights are new (Q2444)"),
+         lines=[("Motoki-cho, Sawa Prefecture", [196, 4, 434, 48])],
+         wording="GLOSSARY (Motoki-cho, Sawa Prefecture)", new=True,
+         note="map title; the title's furigana line is dropped. The 7 map labels are set by word-tut-map-labels "
+              "(2026-11-20; the old abbreviated labels Goto house / Motoki H.S. / Cram school / Police stn. / "
+              "Zahha #35 / Repo Heights are gone)"),
+    dict(id="word-tut-map-labels", screen="encyclopedia tutorial mock screen (map labels)", style="serif",
+         mode="func", func=_tut_map_labels, chain=True,
+         items=[(W + "チュートリアル場所.gal", None)],
+         wording="tsv-en/事典場所.tsv 表示名 (Goto Home, Motoki High School, Chuo Park, Motoki Cram School, "
+                 "Motoki Police Station, Zahha Store No. 35, Revo Heights)",
+         note="owner-approved 2026-11-20 (work/feedback-20261120/pictures/edit/REVIEW.html); see TUT_MAP_LABELS"),
     dict(id="word-tut-caption", screen="encyclopedia tutorial mock screens (caption)", style="gothic",
          erase="inpaint", chain=True, mask_color=[0, 110, 0, 110, 0, 110], box=[0, 0, 108, 34], textbox=[4, 4, 100, 30],
          color="#0a0a0a", stroke=0, max_size=20, keep_edges=True,
          items=[(W + "チュートリアルカテゴリ.gal", "Encyclopedia"), (W + "チュートリアル人物.gal", "Encyclopedia"),
-                (W + "チュートリアル出来事.gal", "Encyclopedia"), (W + "チュートリアル場所.gal", "Encyclopedia"),
+                (W + "チュートリアル出来事.gal", "Encyclopedia"),
+                (W + "チュートリアル場所.gal", "Encyclopedia", {"comp": "zip"}),  # lossless: 2026-11-20 map labels
                 (W + "チュートリアル物.gal", "Encyclopedia")],
          wording="GLOSSARY (encyclopedia)",
          note="the five mock screens the encyclopedia tutorial shows; their list rows are deliberately pixelated "

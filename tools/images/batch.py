@@ -639,6 +639,11 @@ def process_item(job, path, string, font_small, overrides=None):
             raise RuntimeError("asis needs chain=True and a built out PNG")
         before = Image.open(PNG_DIR + path.replace(".gal", ".png")).convert("RGBA")
         notes.append("as built")
+    elif job.get("mode") == "func":
+        # 2026-11-20: the picture is built by a function of the job module, job["func"](RGBA image) -> RGBA image
+        # (jobs_tierb.py word-tut-map-labels); chain=True hands it the previous job's output
+        im = job["func"](im)
+        notes.append("built by %s" % job["func"].__name__)
     elif job.get("mode") == "blank":
         # erase the lettering and set nothing (shatter frames: the shards keep their shape, the Japanese goes)
         info = analyze(im, job)
@@ -676,7 +681,7 @@ def process_item(job, path, string, font_small, overrides=None):
     out_gal = OUT_GAL + path
     os.makedirs(os.path.dirname(out_gal), exist_ok=True)
     # small pictures go zip (pixel exact); big photo-like ones keep the original JPEG mode. Both load in-game.
-    comp = "zip" if im.size[0] * im.size[1] <= 200000 else "keep"
+    comp = job.get("comp") or ("zip" if im.size[0] * im.size[1] <= 200000 else "keep")   # job/item key comp (2026-11-20)
     GW.write_gal(orig_gal, out_png, out_gal, comp, None, 0)
     back = Image.open(out_gal)
     back.load()

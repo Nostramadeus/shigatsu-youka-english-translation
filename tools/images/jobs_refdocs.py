@@ -685,7 +685,7 @@ NP_PAGE = [
     (NP_SUB, [262, 270, 394, 306], dict(_NB2, max_size=13)),
     (NP_MID, [262, 307, 394, 388], dict(_NB2, max_size=11, erase=[[258, 270, 395, 388]])),
     (NP_R3, [266, 393, 548, 512], dict(_NB2, max_size=11)),
-    ("Two second-graders butchered", [610, 104, 666, 476], dict(_NB2, rot=-90, max_size=40, align="center")),
+    ("Two second-graders slaughtered", [610, 104, 666, 476], dict(_NB2, rot=-90, max_size=40, align="center")),
     ("Broad daylight: a bizarre case with no witnesses", [572, 176, 607, 464],
      dict(_NB2, rot=-90, max_size=20, align="center")),
     ("Impossible for a human?", [204, 58, 252, 302], dict(_NB2, rot=-90, max_size=30, align="center")),
@@ -1369,7 +1369,7 @@ NP29 = [
     (N29_D, [263, 268, 415, 390], dict(_NB2, max_size=11)),
     (N29_E, [263, 394, 549, 512], dict(_NB2, max_size=11)),
     ("The nightmare of 4 years ago returns", [612, 150, 666, 508], dict(_NB2, rot=-90, max_size=40, align="center")),
-    ("Elementary school teacher and PTA president butchered", [568, 118, 612, 418],
+    ("Elementary school teacher and PTA president slaughtered", [568, 118, 612, 418],
      dict(_NB2, rot=-90, max_size=20, align="center")),
     ("Again, no clues", [568, 420, 612, 508], dict(_NB2, rot=-90, max_size=20, align="center")),
     ("Truly impossible for a human?", [202, 55, 256, 335], dict(_NB2, rot=-90, max_size=30, align="center")),
@@ -1404,7 +1404,7 @@ JOBS += [
      "lines": []},
 ]
 
-N91_CAP = "Chuo Park, where the first butchered body was found (photographed 7:30 a.m.)"
+N91_CAP = "Chuo Park, where the first slaughtered body was found (photographed 7:30 a.m.)"
 N91_1 = ("Shortly after 5 a.m. on April 8, the brutally murdered body of a man was found in Chuo Park. The victim "
          "was Ryoji Kogori-san (42), a Motoki-cho resident; he was found by a man who was setting up a stall for "
          "the 70th Motoki Cherry Festival.")
@@ -1424,7 +1424,7 @@ N91_5 = ("Mifuyu Niimura-san (42) and Haruka Niimura-san (17), also residents of
 NP91 = [
     ("THE MOTOKI DAILY", [270, 4, 516, 30], dict(_NB2, max_size=15, align="center")),
     ("Shiyo 800, April 9   Thursday   No. 12561", [520, 4, 796, 30], dict(_NB2, max_size=13, align="right")),
-    ("4 butchered in Motoki-cho", [26, 48, 664, 134], {"style": "gothic", "color": "#ffffff", "max_size": 66,
+    ("4 Slaughtered in Motoki-cho", [26, 48, 664, 134], {"style": "gothic", "color": "#ffffff", "max_size": 66,
                                                        "align": "center", "method": "flat", "bg": "#000000", "no_rules": True,
                                                        "erase": [[24, 46, 666, 136]]}),
     (N91_CAP, [58, 370, 404, 394], dict(_NG2, max_size=12, align="center")),
@@ -1472,13 +1472,13 @@ R7 = [[19, 7, 400, 26], [9, 32, 400, 51], [8, 56, 400, 76], [8, 105, 400, 126], 
       [16, 503, 520, 522], [16, 528, 520, 548], [16, 553, 520, 572], [8, 602, 520, 622], [16, 627, 520, 646],
       [16, 652, 520, 671], [16, 677, 520, 696], [16, 701, 520, 721], [9, 727, 520, 746]]
 T7 = ["An incident at Chuo Park!!", "So April 8 really is that kind of day??", "Look into the Megasawa City murders!",
-      "Megasawa City murders: findings (online)", "1st: Shiyo 790, April 8", "two second-graders butchered",
-      "2nd: Shiyo 794, April 8", "a teacher and the PTA president butchered", "3rd: Shiyo 797, April 8",
-      "two junior high students butchered", "This time: Shiyo 800, April 8", "one butchered (identity unknown)",
+      "Megasawa City murders: findings (online)", "1st: Shiyo 790, April 8", "two second-graders slaughtered",
+      "2nd: Shiyo 794, April 8", "a teacher and the PTA president slaughtered", "3rd: Shiyo 797, April 8",
+      "two junior high students slaughtered", "This time: Shiyo 800, April 8", "one slaughtered (identity unknown)",
       "What the three incidents other than this one have in common...", "・They happened on April 8",
       "・The victims were connected with schools", "・They happened in Megasawa City", "・Every 3 to 4 years",
-      "・Butchered in a truly awful state", "・No suspects, no clues", "What they have in common with this incident...",
-      "・It happened on April 8", "・Every 3 to 4 years", "・Butchered in a truly awful state",
+      "・Slaughtered in a truly awful state", "・No suspects, no clues", "What they have in common with this incident...",
+      "・It happened on April 8", "・Every 3 to 4 years", "・Slaughtered in a truly awful state",
       "・Suspects, clues? (not much time has passed yet)", "Maybe it's a copycat after all..."]
 R7R = [[411, 177, 647, 194], [409, 199, 609, 216], [409, 222, 563, 238], [411, 243, 687, 261], [409, 266, 684, 283],
        [412, 288, 680, 306]]

@@ -78,6 +78,22 @@ def move_offscreen(hwnd):
         win32gui.SetWindowPos(hwnd, 0, OFFSCREEN_X, OFFSCREEN_Y, 0, 0, flags)
     except Exception:
         pass
+    hide_from_alt_tab(hwnd)
+
+
+def hide_from_alt_tab(hwnd):
+    """Tool-window style: the parked window leaves Alt+Tab and the taskbar (owner 2026-11-16:
+    picking it in Alt+Tab sent his keys into the test). Still renders; never activates."""
+    try:
+        ex = win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE)
+        want = (ex | win32con.WS_EX_TOOLWINDOW) & ~win32con.WS_EX_APPWINDOW
+        if want != ex:
+            win32gui.SetWindowLong(hwnd, win32con.GWL_EXSTYLE, want)
+            win32gui.SetWindowPos(hwnd, 0, 0, 0, 0, 0,
+                                  win32con.SWP_NOMOVE | win32con.SWP_NOSIZE | win32con.SWP_NOZORDER
+                                  | win32con.SWP_NOACTIVATE | win32con.SWP_FRAMECHANGED)
+    except Exception:
+        pass
 
 
 class Parker(threading.Thread):

@@ -195,6 +195,12 @@ class Parker(threading.Thread):
                                             % (time.time() - self.t0, h, cls, win32gui.GetWindowText(h), rect))
                         if rect[0] > OFF_X + 1000:
                             win32gui.SetWindowPos(h, 0, OFF_X, OFF_Y, 0, 0, flags)
+                        # tool-window style: out of Alt+Tab and the taskbar (owner 2026-11-16)
+                        ex = win32gui.GetWindowLong(h, -20)              # GWL_EXSTYLE
+                        want = (ex | 0x80) & ~0x40000                    # +WS_EX_TOOLWINDOW, -WS_EX_APPWINDOW
+                        if want != ex:
+                            win32gui.SetWindowLong(h, -20, want)
+                            win32gui.SetWindowPos(h, 0, 0, 0, 0, 0, 0x0001 | 0x0002 | 0x0004 | 0x0010 | 0x0020)
                     except Exception:
                         pass
             time.sleep(0.01)
