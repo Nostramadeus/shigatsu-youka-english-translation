@@ -1405,7 +1405,7 @@ JOBS += [
 ]
 
 N91_CAP = "Chuo Park, where the first slaughtered body was found (photographed 7:30 a.m.)"
-N91_1 = ("Shortly after 5 a.m. on April 8, the brutally murdered body of a man was found in Chuo Park. The victim "
+N91_1 = ("Shortly after 5 a.m. on April 8, the slaughtered body of a man was found in Chuo Park. The victim "
          "was Ryoji Kogori-san (42), a Motoki-cho resident; he was found by a man who was setting up a stall for "
          "the 70th Motoki Cherry Festival.")
 N91_2 = ("The day before the incident, Kogori-san told his family he was going on a business trip, and no one had "

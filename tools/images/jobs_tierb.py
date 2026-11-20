@@ -211,10 +211,10 @@ JOBS = [
          items=[(M + "メインメニュー.gal", "Main menu")], new=True),
     # ==== encyclopedia: category banners ====================================================================
     dict(id="word-banners", screen="encyclopedia (category banners)", style="serif", erase="inpaint", max_size=58,
-         items=[(W + "人物.gal", "People", {"box": [6, 6, 220, 97], "textbox": [10, 14, 216, 90]}),
+         items=[(W + "人物.gal", "People", {"box": [6, 6, 220, 97], "textbox": [8, 14, 176, 90]}),  # 2026-11-21: ends left of the silhouettes
                 (W + "事件.gal", "Events", {"box": [6, 6, 205, 97], "textbox": [10, 14, 200, 90]}),
                 (W + "場所.gal", "Places", {"box": [6, 6, 210, 97], "textbox": [10, 14, 205, 90]}),
-                (W + "物.gal", "Things and Concepts", {"box": [6, 6, 282, 97], "textbox": [10, 14, 248, 90]}),
+                (W + "物.gal", "Things and Concepts", {"box": [6, 6, 282, 97], "textbox": [10, 14, 248, 90], "erase": "texfill"}),  # 2026-11-21: inpaint left smudges
                 (W + "ギャラリー.gal", "Gallery", {"box": [6, 6, 322, 97], "textbox": [10, 14, 260, 90]}),
                 (W + "楽曲紹介.gal", "Music", {"box": [6, 6, 284, 97], "textbox": [10, 14, 258, 90]})],
          wording="GLOSSARY (Things and Concepts), tsv-en/チュートリアル.tsv (people, events)", new=True),
@@ -230,12 +230,18 @@ JOBS = [
          items=[(W + "事典更新.gal", "Encyclopedia updated")],
          wording="GLOSSARY (encyclopedia)", new=True),
     dict(id="word-tut-category", screen="encyclopedia tutorial mock screen (category buttons)", style="serif",
-         erase="inpaint", mode="lines", mask_color=[150, 255, 150, 255, 140, 255], color="#f4f4f0",
-         max_size=34, mask_grow=7, align="center",
+         erase="texfill", mode="lines", mask_color=[110, 255, 110, 255, 100, 255], color="#f4f4f0",
+         max_size=34, mask_grow=6, align="left",   # 2026-11-21: texfill + wider mask: no glyph edges or smudges left
          items=[(W + "チュートリアルカテゴリ.gal", None)],
-         lines=[("People", [38, 74, 250, 124]), ("Places", [326, 74, 540, 124]),
-                ("Events", [38, 150, 250, 200]), ("Things and Concepts", [326, 150, 560, 200]),
-                ("Points left 21132", [0, 296, 160, 338])],
+         # 2026-11-21: each box = the Japanese text area left of the button's icon (silhouettes x>=143, gun/knife
+         # x>=165, compass x>=450, magnifier x>=500), so no English crosses an icon or a button border;
+         # Things and Concepts on two lines like the 物.gal banner; Points left at the Japanese size and spot
+         # 場所: rows 76-88 share space with the orange New!!, so they are erased first with a white-only mask
+         lines=[("People", [38, 70, 140, 120]),
+                ("", [332, 79, 446, 89], {"mask_color": [90, 255, 90, 255, 90, 255], "mask_grow": 3, "method": "maskfill", "bg": "#00210e"}),
+                ("Places", [332, 80, 446, 122], {"erase": [[332, 89, 446, 122]], "method": "maskfill", "bg": "#00210e"}),  # flat face colour: texfill would pull orange down
+                ("Events", [38, 152, 162, 202]), ("Things and\nConcepts", [332, 150, 494, 204]),
+                ("Points left 21132", [3, 318, 150, 337], {"max_size": 13})],
          wording="GLOSSARY (Things and Concepts), tsv-en/チュートリアル.tsv (people, events)", new=True),
     dict(id="word-tut-map", screen="encyclopedia tutorial mock screen (map title)", style="serif",
          erase="inpaint", mode="lines", mask_color=[120, 255, 120, 255, 120, 255], color="#f2f6ff",
@@ -254,11 +260,15 @@ JOBS = [
          note="owner-approved 2026-11-20 (work/feedback-20261120/pictures/edit/REVIEW.html); see TUT_MAP_LABELS"),
     dict(id="word-tut-caption", screen="encyclopedia tutorial mock screens (caption)", style="gothic",
          erase="inpaint", chain=True, mask_color=[0, 110, 0, 110, 0, 110], box=[0, 0, 108, 34], textbox=[4, 4, 100, 30],
-         color="#0a0a0a", stroke=0, max_size=20, keep_edges=True,
-         items=[(W + "チュートリアルカテゴリ.gal", "Encyclopedia"), (W + "チュートリアル人物.gal", "Encyclopedia"),
-                (W + "チュートリアル出来事.gal", "Encyclopedia"),
-                (W + "チュートリアル場所.gal", "Encyclopedia", {"comp": "zip"}),  # lossless: 2026-11-20 map labels
-                (W + "チュートリアル物.gal", "Encyclopedia")],
+         color="#0a0a0a", stroke=0, max_size=20, keep_edges=True, passes=2,
+         # 2026-11-21: the shipped title bars are this job applied twice (it chained on its own stale output);
+         # passes=2 gives those bytes from a clean folder; chain=False on the pictures no earlier job touches, so a
+         # re-run never stacks a third pass. 場所 keeps 1 pass (shipped 2026-11-20 that way).
+         items=[(W + "チュートリアルカテゴリ.gal", "Encyclopedia"),
+                (W + "チュートリアル人物.gal", "Encyclopedia", {"chain": False}),
+                (W + "チュートリアル出来事.gal", "Encyclopedia", {"chain": False}),
+                (W + "チュートリアル場所.gal", "Encyclopedia", {"comp": "zip", "passes": 1}),  # lossless: 2026-11-20 map labels
+                (W + "チュートリアル物.gal", "Encyclopedia", {"chain": False})],
          wording="GLOSSARY (encyclopedia)",
          note="the five mock screens the encyclopedia tutorial shows; their list rows are deliberately pixelated "
               "in the original and stay as they are"),

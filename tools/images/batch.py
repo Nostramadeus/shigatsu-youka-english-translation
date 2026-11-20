@@ -664,17 +664,22 @@ def process_item(job, path, string, font_small, overrides=None):
             im.alpha_composite(layer, (int(cx - layer.size[0] / 2), int(cy - layer.size[1] / 2)))
             notes.append("%s@%dpx rot%d" % (text[:12], size, job.get("rotate", 45)))
     else:
-        info = analyze(im, job)
-        im = erase(im, info, method, job.get("mask_grow", 5))
-        fill = job.get("color") or hexcol(info["fill"])
-        outline = job.get("stroke_color") or (hexcol(info["outline"]) if info["outline"] is not None else None)
-        stroke = job.get("stroke", 1 if (info["outline"] is not None or info["glyph"]) else 0)
-        if outline is None and stroke:
-            outline = "#000000" if sum(info["fill"]) > 380 else "#ffffff"
-        size, lines = set_text(im, string, style, job.get("textbox") or info["textbox"], fill, outline, stroke,
-                               spacing=job.get("spacing", 0), line_spacing=job.get("line_spacing", 1.0),
-                               caps=job.get("caps", False), max_size=job.get("max_size", 0))
-        notes.append("%dpx box=%s fill=%s%s" % (size, info["textbox"], fill, (" outline=" + outline) if stroke else ""))
+        # job/item key passes (2026-11-21): erase + set N times, each pass on the previous pass's result. passes=2
+        # reproduces pictures that were shipped after the job had run twice on its own output (chain on a stale
+        # out PNG), so a run from a clean folder gives the shipped bytes.
+        for _pass in range(job.get("passes", 1)):
+            info = analyze(im, job)
+            im = erase(im, info, method, job.get("mask_grow", 5))
+            fill = job.get("color") or hexcol(info["fill"])
+            outline = job.get("stroke_color") or (hexcol(info["outline"]) if info["outline"] is not None else None)
+            stroke = job.get("stroke", 1 if (info["outline"] is not None or info["glyph"]) else 0)
+            if outline is None and stroke:
+                outline = "#000000" if sum(info["fill"]) > 380 else "#ffffff"
+            size, lines = set_text(im, string, style, job.get("textbox") or info["textbox"], fill, outline, stroke,
+                                   spacing=job.get("spacing", 0), line_spacing=job.get("line_spacing", 1.0),
+                                   caps=job.get("caps", False), max_size=job.get("max_size", 0))
+        notes.append("%dpx box=%s fill=%s%s%s" % (size, info["textbox"], fill, (" outline=" + outline) if stroke else "",
+                                                  (" passes=%d" % job["passes"]) if job.get("passes", 1) > 1 else ""))
     out_png = OUT_PNG + path.replace(".gal", ".png")
     os.makedirs(os.path.dirname(out_png), exist_ok=True)
     im.save(out_png)
