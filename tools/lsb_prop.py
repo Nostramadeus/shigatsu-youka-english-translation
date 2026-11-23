@@ -26,6 +26,13 @@ from livemaker.lsb import LMScript
 SKIP = ('type', 'LineNo', 'Indent', 'Mute', 'NotUpdate', 'components')
 FLAG_PROPS = {'PR_FONTCHANGEABLED', 'PR_FONTBORDER', 'PR_FONTSHADOW', 'PR_VISIBLE', 'PR_ANTIALIAS', 'PR_PAUSED',
               'PR_TEXTPAUSED', 'PR_HANDLEKEY', 'PR_CAPTURELINK'}
+# 2026-11-23: a few properties are plain strings that are UNSET in the original (no literal for the label maps to
+# replace), e.g. PR_FONTNAME on the top info bar caption. Rows for these write the value as a string literal.
+STR_PROPS = {'PR_FONTNAME'}
+
+
+def lit(prop, new):
+    return new if prop in STR_PROPS else int(new)
 
 
 def val(cmd, key):
@@ -102,12 +109,13 @@ def main(argv):
                     # writes a literal argument: one To-op named ____arg holding one Param. Flags get
                     # ParamType.Flag (as on 0000001C idx 3859 PR_FONTCHANGEABLED), everything else Int.
                     from livemaker.lsb.core import OpeData, OpeDataType, Param, ParamType
-                    ptype = ParamType.Flag if prop in FLAG_PROPS else ParamType.Int
+                    ptype = (ParamType.Str if prop in STR_PROPS else
+                             ParamType.Flag if prop in FLAG_PROPS else ParamType.Int)
                     lp.entries = [OpeData(type=OpeDataType.To, name='____arg',
-                                          operands=[Param(value=int(new), type=ptype)])]
+                                          operands=[Param(value=lit(prop, new), type=ptype)])]
                 else:
                     prm = ents[0].operands[0]            # same in-place mutation lsb_strings uses
-                    prm.value = int(new)
+                    prm.value = lit(prop, new)
             print('%d\t%s\t%s\t%s\t->\t%s' % (idx, cmd.type.name, prop, old, new))
         if bad:
             print('%d PROBLEMS, nothing written' % bad, file=sys.stderr)

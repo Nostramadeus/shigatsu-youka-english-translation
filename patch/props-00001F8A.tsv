@@ -19,3 +19,8 @@
 682	PR_HEIGHT	200	290
 686	PR_HEIGHT	200	290
 689	PR_HEIGHT	200	290
+# 2026-11-23 friend report: the top info bar (Caption 現情報, shown when the mouse is at the top edge) ran off the
+# right edge. It has no font name, so it uses the default face; in English 66 of 516 bars (scenarios + references)
+# were wider than 960 px with the pinned marker. Segoe UI 16 (narrow Windows UI face, tools/fit_gdi.py): widest bar
+# 854 px, none over. Every word kept. The same caption is created in 0000001C idx 4460 and 00001F8A idx 340.
+340	PR_FONTNAME	-	Segoe UI

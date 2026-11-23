@@ -5862,10 +5862,10 @@ TO1_304 = [
     "Arata district. But even searching online and at the library, I found out",
     "almost nothing about the Arata settlement. Nowadays, it's strange for",
     "nothing at all to be known about a place. Something must be behind this.",
-    "I was able to meet a professor who studies Iizawa",
-    "Prefecture in cultural anthropology. When I said I",
+    "I was able to meet a cultural anthropology professor",   # 2026-11-23 friend report: word order
+    "who studies Iizawa Prefecture. When I said I",          # (私は文化人類学で飯沢県のことを調べている教授に会うことができた)
     "was Erina's older sister, I got an appointment",
-    "surprisingly easily. Erina really was that brilliant, huh.",
+    "surprisingly easily. Erina really was that brilliant after all, huh.",   # 2026-11-23 reviewer: やっぱり
     "The Arata district is state-owned land; by law, ordinary citizens may not enter.",
     "Supposedly there are many unusual plants and animals, so the whole area is",
     "protected. But the professor says that's just the official line. As for the Arata",
@@ -5995,7 +5995,12 @@ TO1_306 = [
 JOBS += [
     dict(_MEMO, id="obj306-0", screen="reference 306 detail", note="Momoko Goto's memo 5 (handwriting; date and the red scrawl kept as drawn)",
          items=[(D + "rrr306/0.gal", "")],
-         lines=memo(RO1_306, TO1_306, size=22, right=796)),
+         lines=memo(RO1_306, TO1_306, size=22, right=796)
+         # 2026-11-23 friend report ("can't be translated, does it mean anything?"): the thin red pen strokes under the
+         # brush zigzags are 死ね written at least four times (QIMAGES18BO1-02). Art kept; a small note in the white
+         # area to the right of the scrawl's top, erasing nothing (atmosphere picture rule, owner 2026-11-16).
+         + [('[Under the strokes, in thin red pen, again and again: "Die"]', [548, 1300, 790, 1440],
+             {"erase": [], "style": "gothic", "color": "#555555", "max_size": 15, "align": "left"})]),
     {"id": "obj306-ov", "screen": "reference screen previews", "style": "handwriting", "mode": "asis", "chain": True,
      "items": [(O + "rr306.gal", "")]},
 ]

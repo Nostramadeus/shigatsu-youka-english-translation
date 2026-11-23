@@ -29,3 +29,15 @@
 2315	PR_LEFT	573	629
 2316	PR_LEFT	573	629
 2317	PR_LEFT	573	629
+# 2026-11-23 friend report: the scenario-change warning (idx 1533) sat right of centre and touched the right edge.
+# The caption has no width; HALIGN=1 centres lines on the widest one, which starts at PR_LEFT. English is now 3 lines
+# (widest 475 px in MS PMincho 30, tools/fit_gdi.py) -> left (960-475)/2 = 242; top 15 px up so the 3-line block keeps the old middle.
+# idx 1535 (no-scenario-left notice, widest line 667 px) had the same cause: left (960-667)/2 = 146.
+1533	PR_LEFT	149	242
+1533	PR_TOP	123	108
+1535	PR_LEFT	91	146
+# 2026-11-23 friend report: the top info bar (Caption 現情報, shown when the mouse is at the top edge) ran off the
+# right edge. It has no font name, so it uses the default face; in English 66 of 516 bars (scenarios + references)
+# were wider than 960 px with the pinned marker. Segoe UI 16 (narrow Windows UI face, tools/fit_gdi.py): widest bar
+# 854 px, none over. Every word kept. The same caption is created in 0000001C idx 4460 and 00001F8A idx 340.
+4460	PR_FONTNAME	-	Segoe UI
