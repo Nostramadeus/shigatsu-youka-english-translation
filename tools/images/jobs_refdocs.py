@@ -3588,6 +3588,7 @@ L132 = [
 ]
 
 # ---- 134 map in an old book (800x450, mottled orange): near-black brush lettering, texfill; red X, ladder, blobs kept.
+# 2026-11-26: a second pass, job ref134-clean (end of this file), cleans the paper right of "here."; run both together.
 _K134 = {"mask_color": [0, 90, 0, 60, 0, 60], "max_size": 26}
 L134 = [
     ("Altar", [96, 102, 216, 136], dict(_K134, align="center", erase=[[124, 102, 188, 135]])),
@@ -3596,7 +3597,7 @@ L134 = [
     ("To Mount Itohime", [162, 413, 450, 449], dict(_K134, align="left", erase=[[164, 414, 283, 448]])),
     ("Not to be taken outside the house", [334, 289, 792, 317], dict(_K134, max_size=21, align="left",
                                                                         erase=[[334, 289, 438, 316]])),
-    ("Verji shall be sealed here.", [334, 321, 792, 349], dict(_K134, max_size=21, align="left",
+    ("Verde shall be sealed here.", [334, 321, 792, 349], dict(_K134, max_size=21, align="left",
                                                                erase=[[334, 321, 689, 349]])),
     ("Breaking the seal is forbidden under any circumstances.", [334, 352, 792, 382],
      dict(_K134, max_size=21, align="left", erase=[[334, 352, 769, 382]])),
@@ -8349,3 +8350,53 @@ JOBS[:] = [j for j in JOBS if j.get("id") != "puz276-full"]
 JOBS += [_pz6job(276, _REP276_PZ7, _PZ7X_276 + _PZ7S_276,
                  "unsolved sheet: body (REP276) + cream pen scrawl + black brush rows re-set (pre.py chain); PZ7 label moves", "#241804")]
 # end IMAGESPZ2-PZ7
+
+# ---- 2026-11-26 reviewer (work/bugs-2026-11-26/pictures): right of "Verde shall be sealed here." the ref134 texfill (dark
+# pixels only) left two dark dots (x 583-588, y 336-342) and pale outlines of the old glyphs (x 595-690). Second pass on
+# ref134's output: the box x 578-692, y 321-349 ("here." ends at x 575) is replaced by the window of clean paper from the
+# same picture that best matches the box border (no ink below lum 110 within 6 px, never from the text block x 320-800,
+# y 280-425), edges feathered over 5 px. Deterministic and idempotent (the box itself is never a source).
+# Run it together with ref134 so the chain starts from a fresh ref134 output:
+#     batch.py --jobs jobs_refdocs --only ref134,ref134-clean --no-ship
+_C134 = (578, 321, 692, 349)
+
+
+def _ref134_clean(im):
+    import numpy as _np
+    import cv2 as _cv2
+    a = _np.array(im.convert("RGBA"))
+    x0, y0, x1, y1 = _C134
+    h, w = y1 - y0, x1 - x0
+    lum = a[:, :, :3].astype(_np.float32) @ _np.array([0.299, 0.587, 0.114], _np.float32)
+    bad = _cv2.dilate((lum < 110).astype(_np.uint8), _np.ones((13, 13), _np.uint8)).astype(bool)
+    bad[280:425, 320:800] = True
+    H, W = bad.shape
+    ii = _np.pad(_np.cumsum(_np.cumsum(bad.astype(_np.int32), 0), 1), ((1, 0), (1, 0)))
+    ref = [a[y0 - 1, x0:x1, :3], a[y1, x0:x1, :3], a[y0:y1, x0 - 1, :3], a[y0:y1, x1, :3]]
+    ref = [r.astype(_np.float32) for r in ref]
+    best = None
+    for sy in range(0, H - h, 2):
+        for sx in range(0, W - w, 2):
+            if ii[sy + h, sx + w] - ii[sy, sx + w] - ii[sy + h, sx] + ii[sy, sx]:
+                continue
+            c = a[sy:sy + h, sx:sx + w, :3].astype(_np.float32)
+            e = (_np.abs(c[0] - ref[0]).mean() + _np.abs(c[-1] - ref[1]).mean() + _np.abs(c[:, 0] - ref[2]).mean()
+                 + _np.abs(c[:, -1] - ref[3]).mean())
+            if best is None or e < best[0]:
+                best = (e, sx, sy)
+    assert best, "ref134-clean: no clean paper window"
+    _, sx, sy = best
+    yy, xx = _np.mgrid[0:h, 0:w]
+    wgt = _np.clip(_np.minimum.reduce([yy + 1, h - yy, xx + 1, w - xx]).astype(_np.float32) / 5.0, 0, 1)[:, :, None]
+    cur = a[y0:y1, x0:x1].astype(_np.float32)
+    pat = a[sy:sy + h, sx:sx + w].astype(_np.float32)
+    out = cur * (1 - wgt) + pat * wgt
+    out[:, :, 3] = cur[:, :, 3]
+    a[y0:y1, x0:x1] = _np.clip(out + 0.5, 0, 255).astype(_np.uint8)
+    print("ref134-clean: box %s <- paper at (%d, %d), border mismatch %.1f" % (_C134, sx, sy, best[0] / 4))
+    return _Im.fromarray(a, "RGBA")
+
+
+JOBS += [{"id": "ref134-clean", "screen": "reference 134 detail", "style": "serif", "mode": "func", "chain": True,
+          "func": _ref134_clean, "note": "second pass on ref134: clean paper right of 'here.' (reviewer 2026-11-26)",
+          "items": [(D + "rrr134/0.gal", "")]}]

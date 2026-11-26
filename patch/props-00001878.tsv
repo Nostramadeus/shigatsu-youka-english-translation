@@ -17,3 +17,8 @@
 # so it lives in patch/fix-00001878.py.
 516	PR_FONTHEIGHT	30	26
 518	PR_FONTHEIGHT	30	26
+# bugs-2026-11-26 (friend report, map label cut off): the Caption 2035テキスト (idx 1019, ＭＳ Ｐ明朝 20, PR_FONTSTYLE 1 = bold,
+# at 2,2 in its box) is clipped by the box 右クリック2035 (idx 1018, 186 px; the Japanese 祀耀815年元木市へ is 180). GDI widths
+# (tools/fit_gdi.py, weight 700): "Right-click for" 134, "Motoki City, Shiyo 815" 215 (MS PGothic fallback 209). Box 186 -> 224
+# (2 px left, 7 px right); its x stays GetProp("元木町全景", 3) = 640, so it ends at x 864 of the 960 px window. Text unchanged.
+1018	PR_WIDTH	186	224
