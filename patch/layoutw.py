@@ -95,6 +95,59 @@ def _expr_top(base, objs):
     return b.e + [OpeData(type=T.To, name='____arg', operands=[V(acc)])]
 
 
+ROOM = 600   # header B / B2 start at x 350 (履歴座標), screen edge 960 -> 610 px; 10 px margin
+
+
+def split_entries(existing, obj, room=ROOM):
+    """2026-11-27 (friend report: chatter question 318 cut off at the right edge; 39 of 476 questions are wider than
+    610 px at ＭＳ Ｐ明朝 20 bold). Entries that, when the Caption `obj` is wider than `room`, replace the first space
+    after the middle of its text with CR LF (two lines); otherwise they set the same text back. No loop, no text change
+    in the tables, works for any text (player nickname included). Prepended to an expression that runs right after the
+    Caption is created; the expression's own GetProp(obj, 6) then reads the new height.
+        t = GetProp(obj, 50); h = Int(JLength(t) / 2); p = JPos(" ", JCopy(t, h + 1, 9999)); bp = h + p
+        n = Min(1, Max(0, GetProp(obj, 5) - room)) * Min(1, p)
+        q = bp * n + (JLength(t) + 1) * (1 - n)        (n = 0: q is past the end, so the text comes back whole)
+        SetProp(obj, 50, JCopy(t, 1, q - 1) ++ JCopy(CR LF, 3 - 2 * n, 2) ++ JCopy(t, q + n, 9999))
+    Engine fact (test 2026-11-27, work/bugs-2026-11-27/chatter-header): JCopy with count 0 returns the WHOLE rest,
+    not "", so no JCopy here may get count 0 for a non-empty string; start positions past the end give ""."""
+    b = _B(existing)
+    o = b.s(obj)
+    w = b.f(F.GetProp, V(o), I(5))
+    t = b.f(F.GetProp, V(o), I(50))
+    L = b.f(F.JLength, V(t))
+    h = b.f(F.Int, V(b.add(T.Div, [V(L), I(2)])))
+    p = b.f(F.JPos, V(b.s(' ')), V(b.f(F.JCopy, V(t), V(b.plus(V(h), I(1))), I(9999))))
+    bp = b.plus(V(h), V(p))
+    over = b.f(F.Min, I(1), V(b.f(F.Max, I(0), V(b.add(T.Minus, [V(w), I(room)])))))
+    n = b.mul(V(over), V(b.f(F.Min, I(1), V(p))))
+    keep = b.add(T.Minus, [I(1), V(n)])
+    q = b.plus(V(b.mul(V(bp), V(n))), V(b.mul(V(b.plus(V(L), I(1))), V(keep))))
+    head = b.f(F.JCopy, V(t), I(1), V(b.add(T.Minus, [V(q), I(1)])))
+    brk = b.f(F.JCopy, V(_crlf(b)), V(b.plus(I(1), V(b.mul(I(2), V(keep))))), I(2))
+    tail = b.f(F.JCopy, V(t), V(b.plus(V(q), V(n))), I(9999))
+    b.f(F.SetProp, V(o), I(50), V(b.cat(b.cat(head, brk), tail)))
+    return b.e
+
+
+def join_squeeze_entries(existing, obj, room=ROOM, line=None, line_base=None):
+    """2026-11-27: keep the header stack inside the title bar (gauge 雑談ゲージ starts at y 57 = title height, 0000189A
+    316) once header B2 is shown. Entries: CR LF in the text of `obj` -> one space (one line again), then width =
+    Min(width, room) (the engine squeezes a Caption into a set width, W-FACTS A1). With `line`: that underline's TOP =
+    line_base + GetProp(obj, 6).
+        SetProp(obj, 50, StringReplace(GetProp(obj, 50), CR LF, " ")); SetProp(obj, 5, Min(GetProp(obj, 5), room))"""
+    b = _B(existing)
+    o = b.s(obj)
+    b.f(F.SetProp, V(o), I(50), V(b.f(F.StringReplace, V(b.f(F.GetProp, V(o), I(50))), V(_crlf(b)), V(b.s(' ')))))
+    b.f(F.SetProp, V(o), I(5), V(b.f(F.Min, V(b.f(F.GetProp, V(o), I(5))), I(room))))
+    if line:
+        b.f(F.SetProp, V(b.s(line)), I(4), V(b.plus(V(b.f(F.GetProp, V(o), I(6))), I(line_base))))
+    return b.e
+
+
+def _has_split(lp):
+    return any(e.func == F.SetProp for e in lp.entries)
+
+
 def _int_only(lp):
     e = lp.entries
     if len(e) == 1 and e[0].name == '____arg' and len(e[0].operands) == 1 and e[0].operands[0].type == P.Int:
@@ -154,6 +207,18 @@ def fix_18bf(s, tag='fix-000018BF W'):
         else:
             assert v is None and 'GetProp' in str(c['PR_TOP']), '%d PR_TOP unexpected' % idx
             done.append('%d already' % idx)
+    # 2026-11-27 (work/bugs-2026-11-27/chatter-header): header B alone = two lines when too wide (280, right after
+    # B is made). When B2 is made (248) B goes back to one line squeezed to ROOM and its underline 項目線 back up;
+    # B2 itself is one line squeezed to ROOM (249). The stack then ends at y ~50 like the Japanese, above the gauge.
+    for idx, obj, make in ((280, '選択項目', lambda e: split_entries(e, '選択項目')),
+                           (248, '選択項目2', lambda e: join_squeeze_entries(e, '選択項目', line='項目線', line_base=7)),
+                           (249, '選択項目2', lambda e: join_squeeze_entries(e, '選択項目2'))):
+        lp = C[idx]['PR_TOP']
+        if _has_split(lp):
+            done.append('%d header fit already' % idx)
+        else:
+            lp.entries = make(lp.entries) + lp.entries
+            done.append('%d header fit' % idx)
     lp = C[248]['PR_FONTHEIGHT']
     v = _int_only(lp)
     assert v in (20, 18), '248 font %r' % v
