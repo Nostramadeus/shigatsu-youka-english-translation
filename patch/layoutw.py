@@ -11,6 +11,8 @@ fix_18bf (called by patch/fix-000018BF.py):
   249 項目線2 PR_TOP: 52 -> GetProp("選択項目2", 4) + GetProp("選択項目2", 6) + 2
 fix_189a (called by patch/fix-0000189A.py): idx 958/960 (info list) and 1437/1439 (choice info) wrap the
   DBGetStr("キャプション" ++ ...) of the "You:" line in StringReplace(.., "\\n", Chr(13) ++ Chr(10) ++ indent).
+  2026-11-27 fix3: idx 1267 / 1342 / 743 squeeze the topic rows, the one-time "Caution!" dialog question and the
+  new-topic notice to their room only when wider (squeeze_entries; work/bugs-2026-11-27/chatter-header/fix3).
 Every site is checked by structure; a second run reports "already fixed" and changes nothing."""
 import re
 from livemaker.lsb.core import OpeData, OpeDataType as T, Param, ParamType as P, OpeFuncType as F
@@ -144,6 +146,26 @@ def join_squeeze_entries(existing, obj, room=ROOM, line=None, line_base=None):
     return b.e
 
 
+# 2026-11-27 fix3 (work/bugs-2026-11-27/chatter-header/fix3): three more one-line Captions that showed chatter
+# questions past the screen edge. Room = right screen edge minus 10 px (minus 10 px on the left too for the
+# centred dialog). Measured with tools/fit_gdi.py over all 476 questions (fix3/tools/site_widths.py):
+LIST_ROOM = 520      # topic rows (ＭＳ Ｐゴシック 20): フィルター at x 300 + row left 130 = text from x 430; 72 over, worst 72 %
+CAUTION_ROOM = 940   # one-time "Caution!" dialog 一回警告 (x -1..961), ＭＳ 明朝 25, centred: x 10..950; 10 over, worst 87 %
+NOTICE_ROOM = 600    # new-topic notice (one Caption, CR LF lines; rect x 350 in 雑談タイトル), ＭＳ 明朝 20; 70 over, worst 72 %
+
+
+def squeeze_entries(existing, obj, room, var=None):
+    """2026-11-27 fix3: entries that squeeze the Caption `obj` (or `obj` ++ variable `var`, a per-row name) to `room`
+    only when it is wider: SetProp(o, 5, Min(GetProp(o, 5), room)). One line stays one line; a Caption with several
+    CR LF lines narrows every line by the same factor. Text and height are untouched."""
+    b = _B(existing)
+    o = b.s(obj)
+    if var:
+        o = b.cat(o, var)
+    b.f(F.SetProp, V(o), I(5), V(b.f(F.Min, V(b.f(F.GetProp, V(o), I(5))), I(room))))
+    return b.e
+
+
 def _has_split(lp):
     return any(e.func == F.SetProp for e in lp.entries)
 
@@ -250,4 +272,34 @@ def fix_189a(s, tag='fix-0000189A W'):
         assert len(hits) == 1, '%d: %d caption reads' % (idx, len(hits))
         _wrap_replace(E, hits[0], tail)
         done.append('%d StringReplace' % idx)
+    # 2026-11-27 fix3: squeeze to the room only when too wide (squeeze_entries), each prepended to the first
+    # expression that runs after the Caption's text is final:
+    #  1267 WhileLoop Calc (番号 = 番号 + 1) of the topic-row loop 1199-1267: row Caption "選択肢" ++ 番号 (1202),
+    #       text final after 1259-1266 (nickname /立木/, /桜/); 番号 is still this row's number here.
+    #  1342 SetProp 選択テキスト left (the dialog's centring): squeeze first, the original entries then centre the
+    #       squeezed width. Two lines measured NO room: text y 120 + 2 lines > buttons at y 170 (fix3/PROGRESS.md).
+    #  743  PropMotion テキスト移動 Value, right after the notice Caption 話題解禁テキスト (741) and its Sound (742).
+    C2 = [c.type.name for c in C]
+    c = C[1202]
+    assert C2[1202] == 'Caption' and str(c['Name']) == '"選択肢" ++ 番号' and str(c['PR_PARENT']) == '"フィルターダミー"' \
+        and str(c['PR_TEXT']) == '選択肢[番号]', '1202 shape'
+    assert C2[1259] == 'SetProp' and '/立木/' in str(C[1259]['Value']) and C2[1266] == 'SetProp' \
+        and '/桜/' in str(C[1266]['Value']), '1259-1266 shape'
+    assert C2[1267] == 'WhileLoop' and C[1267]['Start'] == 1199 and C2[1199] == 'While', '1267 shape'
+    assert C2[1341] == 'Caption' and str(C[1341]['Name']) == '"選択テキスト"' \
+        and str(C[1341]['PR_PARENT']) == '"一回警告"', '1341 shape'
+    assert C2[1342] == 'SetProp' and str(C[1342]['ObjName']) == '"選択テキスト"' and str(C[1342]['ObjProp']) == '3', '1342 shape'
+    assert C2[741] == 'Caption' and str(C[741]['Name']) == '"話題解禁テキスト"' \
+        and '解禁話題通知' in str(C[741]['PR_TEXT']), '741 shape'
+    assert C2[743] == 'PropMotion' and str(C[743]['ObjName']) == '"話題解禁テキスト矩形"', '743 shape'
+    for idx, key, obj, room, var, want in ((1267, 'Calc', '選択肢', LIST_ROOM, '番号', '番号 = 番号 + 1'),
+                                           (1342, 'Value', '選択テキスト', CAUTION_ROOM, None, None),
+                                           (743, 'Value', '話題解禁テキスト', NOTICE_ROOM, None, '-1000')):
+        lp = C[idx][key]
+        if _has_split(lp):
+            done.append('%d squeeze already' % idx)
+            continue
+        assert want is None or str(lp) == want, '%d %s unexpected: %s' % (idx, key, lp)
+        lp.entries = squeeze_entries(lp.entries, obj, room, var) + lp.entries
+        done.append('%d squeeze %s <= %d' % (idx, obj, room))
     print('%s: %s' % (tag, '; '.join(done)))
